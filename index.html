@@ -807,10 +807,6 @@
                 <input class="fb-input" type="email" id="notifyEmail-es" placeholder="Tu email" autocomplete="email">
                 <div class="notify-checks">
                     <label class="notify-check">
-                        <input type="checkbox" id="notifyGH-es" checked>
-                        <span>🐙 Lanzamiento en GitHub</span>
-                    </label>
-                    <label class="notify-check">
                         <input type="checkbox" id="notifyPS-es" checked>
                         <span>▶️ Lanzamiento en Play Store</span>
                     </label>
@@ -1001,10 +997,6 @@
             <div class="notify-form" id="notifyFormEl-en">
                 <input class="fb-input" type="email" id="notifyEmail-en" placeholder="Your email" autocomplete="email">
                 <div class="notify-checks">
-                    <label class="notify-check">
-                        <input type="checkbox" id="notifyGH-en" checked>
-                        <span>🐙 GitHub release</span>
-                    </label>
                     <label class="notify-check">
                         <input type="checkbox" id="notifyPS-en" checked>
                         <span>▶️ Play Store launch</span>
@@ -1289,7 +1281,6 @@
     // ─── NOTIFY ───
     async function sendNotify(lang) {
         const email  = document.getElementById('notifyEmail-' + lang).value.trim();
-        const gh     = document.getElementById('notifyGH-' + lang).checked;
         const ps     = document.getElementById('notifyPS-' + lang).checked;
         const status = document.getElementById('notifyStatus-' + lang);
         const btn    = document.querySelector('#notifyFormEl-' + lang + ' .notify-btn');
@@ -1299,7 +1290,7 @@
             status.className = 'notify-status err';
             return;
         }
-        if (!gh && !ps) {
+        if (!ps) {
             status.textContent = lang === 'es' ? '⚠️ Marca al menos una opción' : '⚠️ Select at least one option';
             status.className = 'notify-status err';
             return;
@@ -1315,7 +1306,7 @@
             return;
         }
 
-        const plats = [gh ? 'GitHub' : null, ps ? 'Play Store' : null].filter(Boolean).join(' + ');
+        const plats = ps ? 'Play Store' : '';
 
         try {
             await emailjs.send(EJS_SERVICE_ID, EJS_TPL_VICTOR, { user_email: email, platforms: plats });
