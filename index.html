@@ -539,6 +539,11 @@
         }
         .contact-row .email { font-size: 15px; color: #BB86FC; }
 
+        /* ─── CAPTURAS REALES ─── */
+        .real-screenshot { margin-top: 14px; text-align: center; }
+        .real-screenshot .label { font-size: 12px; color: #666; margin-bottom: 6px; }
+        .real-screenshot img { max-width: 100%; border-radius: 12px; border: 1px solid #2a2a2a; }
+
         /* ─── NOTIFY ─── */
         .notify-form { display: flex; flex-direction: column; gap: 10px; }
         .notify-checks { display: flex; gap: 16px; flex-wrap: wrap; margin: 2px 0; }
@@ -691,9 +696,8 @@
         <div class="section" id="mockups-es">
             <h2>📱 Así se ve Lecturameter</h2>
             <p class="sub" style="font-size:13px; color:#888; margin-bottom:12px;">Toca un libro para ver sus sesiones (demo)</p>
-            <div class="book-grid" id="bookGrid-es">
-                <!-- Cada libro se genera con JS -->
-            </div>
+            <div class="book-grid" id="bookGrid-es"></div>
+            <div class="real-screenshot"><div class="label">📸 Captura real</div><img src="captura_libros_real_es.jpg" alt="Biblioteca" loading="lazy" onerror="this.style.display='none'"></div>
         </div>
 
         <!-- DETALLE -->
@@ -721,6 +725,7 @@
                 </div>
                 <div style="font-size:12px; color:#888;">📄 688 páginas totales · 🎯 3-659 funcionales</div>
             </div>
+            <div class="real-screenshot"><div class="label">📸 Captura real</div><img src="captura_detalle_real_es.jpg" alt="Detalle" loading="lazy" onerror="this.style.display='none'"></div>
         </div>
 
         <!-- HISTORIAL -->
@@ -733,9 +738,8 @@
                 </div>
                 <div id="historyList-es"></div>
             </div>
+            <div class="real-screenshot"><div class="label">📸 Captura real</div><img src="captura_historial_real_es.jpg" alt="Historial" loading="lazy" onerror="this.style.display='none'"></div>
         </div>
-
-        <!-- ESTADÍSTICAS -->
         <div class="section" id="stats-es" style="margin-top:16px;">
             <h2>📊 Estadísticas</h2>
             <p class="sub" style="font-size:13px; color:#888; margin-bottom:12px;">Resumen de tus hábitos de lectura</p>
@@ -773,9 +777,8 @@
                     <div class="timestamp">14:17 · 26/06/2026</div>
                 </div>
             </div>
+            <div class="real-screenshot"><div class="label">📸 Captura real</div><img src="captura_widget_real_es.png" alt="Widget" loading="lazy" onerror="this.style.display='none'"></div>
         </div>
-
-        <!-- ENLACES -->
         <div class="section" id="links-es" style="margin-top:16px;">
             <h2>🔗 Enlaces</h2>
             <div class="links-grid">
@@ -793,7 +796,7 @@
         <!-- NOTIFY ES -->
         <div class="section" id="notify-es" style="margin-top:16px;">
             <h2>🔔 Avísame cuando salga</h2>
-            <p style="font-size:13px; color:#bbb; margin-top:8px; margin-bottom:12px;">Te llegará un mensaje cuando esté disponible. <span style="font-size:13px; color:#bbb;">Si no lo ves, revisa la carpeta de spam.</span></p>
+            <p style="font-size:13px; color:#bbb; margin-top:8px; margin-bottom:12px;">Te llegará un mensaje cuando esté disponible. <span style="font-size:11px; color:#555;">Si no lo ves, revisa spam.</span></p>
             <div class="notify-form" id="notifyFormEl-es">
                 <input class="fb-input" type="email" id="notifyEmail-es" placeholder="Tu email" autocomplete="email">
                 <div class="notify-checks">
@@ -892,6 +895,7 @@
             <h2>📱 Lecturameter in action</h2>
             <p class="sub" style="font-size:13px; color:#888; margin-bottom:12px;">Tap a book to see its sessions (demo)</p>
             <div class="book-grid" id="bookGrid-en"></div>
+            <div class="real-screenshot"><div class="label">📸 Real screenshot</div><img src="captura_libros_real_en.jpg" alt="Library" loading="lazy" onerror="this.style.display='none'"></div>
         </div>
         <!-- Detail (inglés) -->
         <div id="detail-en" style="margin-top:16px;">
@@ -918,6 +922,7 @@
                 </div>
                 <div style="font-size:12px; color:#888;">📄 672 total pages · 🎯 3-659 functional</div>
             </div>
+            <div class="real-screenshot"><div class="label">📸 Real screenshot</div><img src="captura_detalle_real_en.jpg" alt="Book detail" loading="lazy" onerror="this.style.display='none'"></div>
         </div>
         <!-- History (inglés) -->
         <div id="history-en" style="margin-top:16px;">
@@ -929,8 +934,8 @@
                 </div>
                 <div id="historyList-en"></div>
             </div>
+            <div class="real-screenshot"><div class="label">📸 Real screenshot</div><img src="captura_historial_real_en.jpg" alt="History" loading="lazy" onerror="this.style.display='none'"></div>
         </div>
-        <!-- Stats (inglés) -->
         <div class="section" id="stats-en" style="margin-top:16px;">
             <h2>📊 Stats</h2>
             <p class="sub" style="font-size:13px; color:#888; margin-bottom:12px;">Summary of your reading habits</p>
@@ -967,8 +972,8 @@
                     <div class="timestamp">14:17 · 06/26/2026</div>
                 </div>
             </div>
+            <div class="real-screenshot"><div class="label">📸 Real screenshot</div><img src="captura_widget_real_en.png" alt="Widget" loading="lazy" onerror="this.style.display='none'"></div>
         </div>
-        <!-- Links (inglés) -->
         <div class="section" id="links-en" style="margin-top:16px;">
             <h2>🔗 Links</h2>
             <div class="links-grid">
@@ -985,7 +990,7 @@
         <!-- Notify EN -->
         <div class="section" id="notify-en" style="margin-top:16px;">
             <h2>🔔 Notify me when it's out</h2>
-            <p style="font-size:13px; color:#bbb; margin-top:8px; margin-bottom:12px;">You'll receive a message when it's available. <span style="font-size:13px; color:#bbb;">If you don't see it, check your spam folder.</span></p>
+            <p style="font-size:13px; color:#bbb; margin-top:8px; margin-bottom:12px;">You'll receive a message when it's available. <span style="font-size:11px; color:#555;">If you don't see it, check spam.</span></p>
             <div class="notify-form" id="notifyFormEl-en">
                 <input class="fb-input" type="email" id="notifyEmail-en" placeholder="Your email" autocomplete="email">
                 <div class="notify-checks">
