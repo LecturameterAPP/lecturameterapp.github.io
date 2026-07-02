@@ -656,6 +656,7 @@
             .detail-mock .header .cover { width: 40px; height: 56px; }
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -792,7 +793,7 @@
         <!-- NOTIFY ES -->
         <div class="section" id="notify-es" style="margin-top:16px;">
             <h2>🔔 Avísame cuando salga</h2>
-            <p style="font-size:13px; color:#bbb; margin-top:8px; margin-bottom:12px;">Te mando un mensaje cuando esté disponible. Sin spam, solo el anuncio.</p>
+            <p style="font-size:13px; color:#bbb; margin-top:8px; margin-bottom:12px;">Te mando un mensaje cuando esté disponible.</p>
             <div class="notify-form" id="notifyFormEl-es">
                 <input class="fb-input" type="email" id="notifyEmail-es" placeholder="Tu email" autocomplete="email">
                 <div class="notify-checks">
@@ -984,7 +985,7 @@
         <!-- Notify EN -->
         <div class="section" id="notify-en" style="margin-top:16px;">
             <h2>🔔 Notify me when it's out</h2>
-            <p style="font-size:13px; color:#bbb; margin-top:8px; margin-bottom:12px;">I'll let you know when it's available. No spam, just the announcement.</p>
+            <p style="font-size:13px; color:#bbb; margin-top:8px; margin-bottom:12px;">I'll let you know when it's available.</p>
             <div class="notify-form" id="notifyFormEl-en">
                 <input class="fb-input" type="email" id="notifyEmail-en" placeholder="Your email" autocomplete="email">
                 <div class="notify-checks">
@@ -1264,6 +1265,55 @@
         renderBooks(lang);
         generateHistory(lang);
         renderStats(lang);
+    }
+
+    // ─── EMAILJS CONFIG ───
+    const EJS_PUBLIC_KEY   = '3cdH3XtjBWBRKC9tS';
+    const EJS_SERVICE_ID   = 'service_l1psqa9';
+    const EJS_TPL_VICTOR   = 'template_nlxdksn';
+    const EJS_TPL_USER     = 'template_pmpiafh';
+    emailjs.init(EJS_PUBLIC_KEY);
+
+    // ─── NOTIFY ───
+    async function sendNotify(lang) {
+        const email  = document.getElementById('notifyEmail-' + lang).value.trim();
+        const gh     = document.getElementById('notifyGH-' + lang).checked;
+        const ps     = document.getElementById('notifyPS-' + lang).checked;
+        const status = document.getElementById('notifyStatus-' + lang);
+        const btn    = document.querySelector('#notifyFormEl-' + lang + ' .notify-btn');
+
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            status.textContent = lang === 'es' ? '⚠️ Email no válido' : '⚠️ Invalid email';
+            status.className = 'notify-status err';
+            return;
+        }
+        if (!gh && !ps) {
+            status.textContent = lang === 'es' ? '⚠️ Marca al menos una opción' : '⚠️ Select at least one option';
+            status.className = 'notify-status err';
+            return;
+        }
+        btn.disabled = true;
+        status.textContent = lang === 'es' ? 'Guardando...' : 'Saving...';
+        status.className = 'notify-status';
+
+        const plats = [gh ? 'GitHub' : null, ps ? 'Play Store' : null].filter(Boolean).join(' + ');
+
+        try {
+            await emailjs.send(EJS_SERVICE_ID, EJS_TPL_VICTOR, { user_email: email, platforms: plats });
+            await emailjs.send(EJS_SERVICE_ID, EJS_TPL_USER,   { user_email: email, platforms: plats });
+
+            status.textContent = lang === 'es'
+                ? 'Añadido a la lista de avisos. ¡Muchas gracias! :)'
+                : 'Added to the list. Thank you so much! :)';
+            status.className = 'notify-status ok';
+            document.getElementById('notifyEmail-' + lang).value = '';
+        } catch (e) {
+            status.textContent = lang === 'es'
+                ? '❌ Error. Prueba en lecturameter.app@gmail.com'
+                : '❌ Failed. Try lecturameter.app@gmail.com';
+            status.className = 'notify-status err';
+            btn.disabled = false;
+        }
     }
 
     // ─── FEEDBACK ───
