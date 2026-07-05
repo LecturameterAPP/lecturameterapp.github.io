@@ -515,11 +515,31 @@
             flex: 1;
             min-width: 140px;
             text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .links-grid .link-box:hover {
+            background: #353535;
+            border-color: #555;
         }
         .links-grid .link-box .icon { width: 32px; height: 32px; }
         .links-grid .link-box .icon svg { width: 100%; height: 100%; fill: #ccc; }
         .links-grid .link-box .text { font-size: 14px; color: #ccc; }
         .links-grid .link-box .text .sub { font-size: 11px; color: #666; }
+
+        /* ─── SOCIAL LINKS (colores específicos) ─── */
+        .link-box.x { border-color: #1DA1F2; }
+        .link-box.x .icon svg { fill: #1DA1F2; }
+        .link-box.x .text { color: #1DA1F2; }
+        .link-box.x .text .sub { color: #1DA1F2; opacity: 0.7; }
+        .link-box.x:hover { border-color: #1DA1F2; background: #1a2a3a; }
+
+        .link-box.reddit { border-color: #FF5700; }
+        .link-box.reddit .icon svg { fill: #FF5700; }
+        .link-box.reddit .text { color: #FF5700; }
+        .link-box.reddit .text .sub { color: #FF5700; opacity: 0.7; }
+        .link-box.reddit:hover { border-color: #FF5700; background: #2a1a10; }
 
         .privacy-text {
             background: #1a1a1a;
@@ -656,6 +676,7 @@
                 font-size: 11px;
                 gap: 4px;
             }
+            .links-grid .link-box { min-width: 120px; padding: 12px 16px; }
         }
         @media (max-width: 400px) {
             .features-grid { grid-template-columns: 1fr; }
@@ -697,7 +718,7 @@
         <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
             <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Backup de demostración</div>
             <p style="font-size:13px; color:#bbb; margin-bottom:10px;">¿Quieres probar la app con datos de ejemplo? Descarga este backup con 10 libros clásicos repartidos en todas las categorías (leyendo, terminado, releyendo, quiero leer, abandonado) y sesiones de lectura incluidas.</p>
-            <a href="https://drive.google.com/file/d/1RKJOiPP9J-0AdoonzIo5jeYM07AX9nWs/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Descargar backup demo</a>
+            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Descargar backup demo</a>
             <div style="font-size:12px; color:#888; margin-top:12px; line-height:1.6;">
                 <strong style="color:#aaa;">Cómo usarlo:</strong><br>
                 1. Descarga el archivo JSON en tu móvil<br>
@@ -802,6 +823,8 @@
             </div>
             <div class="real-screenshot left"><div class="label">📸 Captura real</div><img src="captura_widget_real_es.png" class="widget-cap" alt="Widget" loading="lazy"></div>
         </div>
+
+        <!-- ENLACES PRINCIPALES -->
         <div class="section" id="links-es" style="margin-top:16px;">
             <h2>🔗 Enlaces</h2>
             <div class="links-grid">
@@ -812,6 +835,21 @@
                 <a href="https://github.com/LecturameterAPP/Lecturameter/releases/tag/1.5" target="_blank" rel="noopener" class="link-box" style="text-decoration:none; color:inherit;">
                     <div class="icon"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="#BB86FC"/></svg></div>
                     <div class="text" style="color:#BB86FC;">GitHub<div class="sub" style="color:#10b981;">⬇ APK directo</div></div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ─── REDES SOCIALES (NUEVO) ─── -->
+        <div class="section" id="social-es" style="margin-top:16px;">
+            <h2>🌐 Redes sociales</h2>
+            <div class="links-grid">
+                <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" class="link-box x">
+                    <div class="icon"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
+                    <div class="text">X (Twitter)<div class="sub">@LecturameterAPP</div></div>
+                </a>
+                <a href="https://www.reddit.com/user/LM_Reader_Dev/" target="_blank" rel="noopener" class="link-box reddit">
+                    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0zm5.8 13.4c.2.3.2.7 0 1-.2.3-.5.4-.9.4s-.7-.1-.9-.4c-.2-.3-.2-.7 0-1 .2-.3.5-.4.9-.4s.7.1.9.4zm-2.3 3.6c-1 1-2.4 1.6-3.5 1.6s-2.5-.6-3.5-1.6c-.2-.2-.2-.5 0-.7.2-.2.5-.2.7 0 .8.8 1.8 1.2 2.8 1.2s2-.4 2.8-1.2c.2-.2.5-.2.7 0 .2.2.2.5 0 .7zm-5.9-2.2c-.4 0-.7-.1-.9-.4-.2-.3-.2-.7 0-1 .2-.3.5-.4.9-.4s.7.1.9.4c.2.3.2.7 0 1-.2.3-.5.4-.9.4zm1.1-3.6c.2-.1.4-.2.6-.2.2 0 .4.1.6.2l.1-.1c.3-.3.7-.5 1.1-.5s.8.2 1.1.5l.1.1c.2-.1.4-.2.6-.2.2 0 .4.1.6.2.3.3.3.7 0 1-.3.3-.7.3-1 0-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1z"/></svg></div>
+                    <div class="text">Reddit<div class="sub">u/LM_Reader_Dev</div></div>
                 </a>
             </div>
         </div>
@@ -902,7 +940,7 @@
             <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:4px;">
                 <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="btn-download">1. Join the testers group</a>
                 <span style="color:#666; font-size:20px;">→</span>
-                <a href=https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn-download" style="background:#2d2d2d; color:#BB86FC; border:1.5px solid #BB86FC;">2. Install on Play Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn-download" style="background:#2d2d2d; color:#BB86FC; border:1.5px solid #BB86FC;">2. Install on Play Store</a>
             </div>
             <p style="font-size:12px; color:#888; margin-top:10px;">Join the group first, then install via button 2. A direct APK is also available on GitHub below.</p>
             <p style="font-size:12px; color:#666; margin-top:4px;">Close test · Official Play Store launch coming soon</p>
@@ -912,7 +950,7 @@
         <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
             <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Demo backup</div>
             <p style="font-size:13px; color:#bbb; margin-bottom:10px;">Want to try the app with sample data? Download this backup with 10 classic books across all categories (reading, finished, rereading, want to read, dropped) with reading sessions included.</p>
-            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Download demo backup</a>
+            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Download demo backup</a>
             <div style="font-size:12px; color:#888; margin-top:12px; line-height:1.6;">
                 <strong style="color:#aaa;">How to use it:</strong><br>
                 1. Download the JSON file to your phone<br>
@@ -1014,6 +1052,8 @@
             </div>
             <div class="real-screenshot left"><div class="label">📸 Real screenshot</div><img src="captura_widget_real_en.png" class="widget-cap" alt="Widget" loading="lazy"></div>
         </div>
+
+        <!-- ENLACES PRINCIPALES (inglés) -->
         <div class="section" id="links-en" style="margin-top:16px;">
             <h2>🔗 Links</h2>
             <div class="links-grid">
@@ -1027,6 +1067,22 @@
                 </a>
             </div>
         </div>
+
+        <!-- ─── REDES SOCIALES (NUEVO INGLÉS) ─── -->
+        <div class="section" id="social-en" style="margin-top:16px;">
+            <h2>🌐 Social Media</h2>
+            <div class="links-grid">
+                <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" class="link-box x">
+                    <div class="icon"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
+                    <div class="text">X (Twitter)<div class="sub">@LecturameterAPP</div></div>
+                </a>
+                <a href="https://www.reddit.com/user/LM_Reader_Dev/" target="_blank" rel="noopener" class="link-box reddit">
+                    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0zm5.8 13.4c.2.3.2.7 0 1-.2.3-.5.4-.9.4s-.7-.1-.9-.4c-.2-.3-.2-.7 0-1 .2-.3.5-.4.9-.4s.7.1.9.4zm-2.3 3.6c-1 1-2.4 1.6-3.5 1.6s-2.5-.6-3.5-1.6c-.2-.2-.2-.5 0-.7.2-.2.5-.2.7 0 .8.8 1.8 1.2 2.8 1.2s2-.4 2.8-1.2c.2-.2.5-.2.7 0 .2.2.2.5 0 .7zm-5.9-2.2c-.4 0-.7-.1-.9-.4-.2-.3-.2-.7 0-1 .2-.3.5-.4.9-.4s.7.1.9.4c.2.3.2.7 0 1-.2.3-.5.4-.9.4zm1.1-3.6c.2-.1.4-.2.6-.2.2 0 .4.1.6.2l.1-.1c.3-.3.7-.5 1.1-.5s.8.2 1.1.5l.1.1c.2-.1.4-.2.6-.2.2 0 .4.1.6.2.3.3.3.7 0 1-.3.3-.7.3-1 0-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1z"/></svg></div>
+                    <div class="text">Reddit<div class="sub">u/LM_Reader_Dev</div></div>
+                </a>
+            </div>
+        </div>
+
         <!-- Notify EN -->
         <div class="section" id="notify-en" style="margin-top:16px;">
             <h2>🔔 Notify me when it's out</h2>
