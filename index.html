@@ -72,6 +72,7 @@
             transition: background 0.2s;
             border: none;
             cursor: pointer;
+            text-decoration: none;
         }
         .btn-download.disabled { opacity: 0.5; pointer-events: none; }
 
@@ -98,7 +99,7 @@
             100% { opacity: 1; transform: translateX(0); }
         }
         .book-card {
-            opacity: 0; /* invisible hasta que se anime */
+            opacity: 0;
         }
         .book-card.visible {
             animation: slideIn 0.4s ease forwards;
@@ -312,7 +313,7 @@
         }
         .detail-mock .rating-block .num { color: #aaa; font-size: 13px; }
 
-        /* ─── STAT PILLS CON COLORES ─── */
+        /* ─── STAT PILLS ─── */
         .stat-pills {
             display: flex;
             flex-wrap: nowrap;
@@ -378,7 +379,7 @@
         .hi-date { font-size: 12px; color: #888; }
         .hi-stats { display: flex; flex-wrap: nowrap; gap: 0; white-space: nowrap; overflow: hidden; }
 
-        /* ─── WIDGET CON BARRA DE PROGRESO ─── */
+        /* ─── WIDGET ─── */
         .widget-sim {
             width: 100%;
             max-width: 460px;
@@ -435,7 +436,7 @@
         }
         .widget-sim .timestamp { font-size: 9px; color: #555; margin-top: 2px; }
 
-        /* ─── ESTADÍSTICAS Y GRÁFICO ─── */
+        /* ─── ESTADÍSTICAS ─── */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -451,8 +452,6 @@
         }
         .stats-grid .stat-box .number { font-size: 22px; font-weight: 700; color: #fff; }
         .stats-grid .stat-box .label { font-size: 11px; color: #888; margin-top: 2px; }
-
-        /* colores stat-boxes */
         .stat-box.c-purple { border-top-color: #BB86FC; }
         .stat-box.c-purple .number { color: #BB86FC; }
         .stat-box.c-blue   { border-top-color: #3b82f6; }
@@ -496,6 +495,7 @@
         .bar-chart .bar-item .bar-label { font-size: 9px; color: #888; margin-top: 4px; }
         .bar-chart .bar-item .bar-value { font-size: 9px; color: #aaa; margin-bottom: 2px; }
 
+        /* ─── LINKS ─── */
         .links-grid {
             display: flex;
             flex-wrap: wrap;
@@ -517,7 +517,7 @@
             text-align: center;
             text-decoration: none;
             color: inherit;
-            transition: background 0.2s, border-color 0.2s;
+            transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
         }
         .links-grid .link-box:hover {
             background: #353535;
@@ -528,18 +528,31 @@
         .links-grid .link-box .text { font-size: 14px; color: #ccc; }
         .links-grid .link-box .text .sub { font-size: 11px; color: #666; }
 
-        /* ─── SOCIAL LINKS (colores específicos) ─── */
+        /* ─── SOCIAL LINKS ─── */
         .link-box.x { border-color: #1DA1F2; }
         .link-box.x .icon svg { fill: #1DA1F2; }
         .link-box.x .text { color: #1DA1F2; }
         .link-box.x .text .sub { color: #1DA1F2; opacity: 0.7; }
         .link-box.x:hover { border-color: #1DA1F2; background: #1a2a3a; }
 
-        .link-box.reddit { border-color: #FF5700; }
-        .link-box.reddit .icon svg { fill: #FF5700; }
-        .link-box.reddit .text { color: #FF5700; }
-        .link-box.reddit .text .sub { color: #FF5700; opacity: 0.7; }
-        .link-box.reddit:hover { border-color: #FF5700; background: #2a1a10; }
+        .link-box.reddit { border-color: #FF4500; }
+        .link-box.reddit .icon svg { fill: #FF4500; }
+        .link-box.reddit .text { color: #FF4500; }
+        .link-box.reddit .text .sub { color: #FF4500; opacity: 0.7; }
+        .link-box.reddit:hover { border-color: #FF4500; background: #2a1a10; }
+
+        /* Play Store y GitHub con colores más brillantes */
+        .link-box.playstore { border-color: #34A853; }
+        .link-box.playstore .icon svg { fill: #34A853; }
+        .link-box.playstore .text { color: #34A853; }
+        .link-box.playstore .text .sub { color: #34A853; opacity: 0.7; }
+        .link-box.playstore:hover { border-color: #34A853; background: #1a2a1a; }
+
+        .link-box.github { border-color: #8B5CF6; }
+        .link-box.github .icon svg { fill: #8B5CF6; }
+        .link-box.github .text { color: #8B5CF6; }
+        .link-box.github .text .sub { color: #8B5CF6; opacity: 0.8; }
+        .link-box.github:hover { border-color: #8B5CF6; background: #1a1028; box-shadow: 0 0 12px rgba(139,92,246,0.3); }
 
         .privacy-text {
             background: #1a1a1a;
@@ -559,7 +572,7 @@
         }
         .contact-row .email { font-size: 15px; color: #BB86FC; }
 
-        /* ─── CAPTURAS REALES ─── */
+        /* ─── CAPTURAS ─── */
         .real-screenshot { margin-top: 14px; text-align: center; }
         .real-screenshot .label { font-size: 12px; color: #666; margin-bottom: 6px; }
         .real-screenshot img { max-width: 100%; max-height: 500px; width: auto; border-radius: 12px; border: 1px solid #2a2a2a; }
@@ -603,7 +616,7 @@
         .notify-status.ok  { color: #10b981; }
         .notify-status.err { color: #ef4444; }
 
-        /* ─── FEEDBACK FORM ─── */
+        /* ─── FEEDBACK ─── */
         .feedback-form { display: flex; flex-direction: column; gap: 10px; }
         .fb-input, .fb-textarea {
             background: #1a1a1a;
@@ -637,7 +650,6 @@
         .fb-status.ok  { color: #10b981; }
         .fb-status.err { color: #ef4444; }
 
-        /* ─── TÍTULOS ─── */
         h2 { font-size: 20px; font-weight: 600; color: #ccc; margin-bottom: 10px; }
 
         .footer {
@@ -649,7 +661,6 @@
             text-align: center;
         }
 
-        /* ─── RESPONSIVE ─── */
         @media (max-width: 600px) {
             .container { padding: 16px 12px; }
             .hero h1 { font-size: 26px; }
@@ -718,7 +729,7 @@
         <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
             <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Backup de demostración</div>
             <p style="font-size:13px; color:#bbb; margin-bottom:10px;">¿Quieres probar la app con datos de ejemplo? Descarga este backup con 10 libros clásicos repartidos en todas las categorías (leyendo, terminado, releyendo, quiero leer, abandonado) y sesiones de lectura incluidas.</p>
-            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Descargar backup demo</a>
+            <a href="https://drive.google.com/file/d/1RKJOiPP9J-0AdoonzIo5jeYM07AX9nWs/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Descargar backup demo</a>
             <div style="font-size:12px; color:#888; margin-top:12px; line-height:1.6;">
                 <strong style="color:#aaa;">Cómo usarlo:</strong><br>
                 1. Descarga el archivo JSON en tu móvil<br>
@@ -828,18 +839,18 @@
         <div class="section" id="links-es" style="margin-top:16px;">
             <h2>🔗 Enlaces</h2>
             <div class="links-grid">
-                <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="link-box" style="text-decoration:none; color:inherit;">
-                    <div class="icon"><svg viewBox="0 0 512 512"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" fill="#10b981"/></svg></div>
-                    <div class="text" style="color:#10b981;">Play Store<div class="sub" style="color:#10b981;">▶ Prueba cerrada</div></div>
+                <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="link-box playstore">
+                    <div class="icon"><svg viewBox="0 0 512 512"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" fill="#34A853"/></svg></div>
+                    <div class="text">Play Store<div class="sub">▶ Prueba cerrada</div></div>
                 </a>
-                <a href="https://github.com/LecturameterAPP/Lecturameter/releases/tag/1.5" target="_blank" rel="noopener" class="link-box" style="text-decoration:none; color:inherit;">
-                    <div class="icon"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="#BB86FC"/></svg></div>
-                    <div class="text" style="color:#BB86FC;">GitHub<div class="sub" style="color:#10b981;">⬇ APK directo</div></div>
+                <a href="https://github.com/LecturameterAPP/Lecturameter/releases/tag/1.5" target="_blank" rel="noopener" class="link-box github">
+                    <div class="icon"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="#8B5CF6"/></svg></div>
+                    <div class="text">GitHub<div class="sub" style="color:#8B5CF6;">⬇ APK directo</div></div>
                 </a>
             </div>
         </div>
 
-        <!-- ─── REDES SOCIALES (NUEVO) ─── -->
+        <!-- ─── REDES SOCIALES CON LOGO OFICIAL DE REDDIT ─── -->
         <div class="section" id="social-es" style="margin-top:16px;">
             <h2>🌐 Redes sociales</h2>
             <div class="links-grid">
@@ -848,7 +859,14 @@
                     <div class="text">X (Twitter)<div class="sub">@LecturameterAPP</div></div>
                 </a>
                 <a href="https://www.reddit.com/user/LM_Reader_Dev/" target="_blank" rel="noopener" class="link-box reddit">
-                    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0zm5.8 13.4c.2.3.2.7 0 1-.2.3-.5.4-.9.4s-.7-.1-.9-.4c-.2-.3-.2-.7 0-1 .2-.3.5-.4.9-.4s.7.1.9.4zm-2.3 3.6c-1 1-2.4 1.6-3.5 1.6s-2.5-.6-3.5-1.6c-.2-.2-.2-.5 0-.7.2-.2.5-.2.7 0 .8.8 1.8 1.2 2.8 1.2s2-.4 2.8-1.2c.2-.2.5-.2.7 0 .2.2.2.5 0 .7zm-5.9-2.2c-.4 0-.7-.1-.9-.4-.2-.3-.2-.7 0-1 .2-.3.5-.4.9-.4s.7.1.9.4c.2.3.2.7 0 1-.2.3-.5.4-.9.4zm1.1-3.6c.2-.1.4-.2.6-.2.2 0 .4.1.6.2l.1-.1c.3-.3.7-.5 1.1-.5s.8.2 1.1.5l.1.1c.2-.1.4-.2.6-.2.2 0 .4.1.6.2.3.3.3.7 0 1-.3.3-.7.3-1 0-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1z"/></svg></div>
+                    <div class="icon">
+                        <!-- SVG oficial de Reddit (actualizado 2023) -->
+                        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                            <defs><style>.cls-1{fill:#fff;}.cls-1,.cls-2{stroke-width:0px;}.cls-2{fill:#ff4500;}</style></defs>
+                            <rect class="cls-2" x="0" y="0" width="256" height="256"/>
+                            <path class="cls-1" d="m154.04,60.36c2.22,9.41,10.67,16.42,20.76,16.42,11.78,0,21.33-9.55,21.33-21.33s-9.55-21.33-21.33-21.33c-10.3,0-18.89,7.3-20.89,17.01-17.25,1.85-30.72,16.48-30.72,34.21,0,.04,0,.07,0,.11-18.76.79-35.89,6.13-49.49,14.56-5.05-3.91-11.39-6.24-18.27-6.24-16.51,0-29.89,13.38-29.89,29.89,0,11.98,7.04,22.3,17.21,27.07.99,34.7,38.8,62.61,85.31,62.61s84.37-27.94,85.31-62.67c10.09-4.8,17.07-15.09,17.07-27,0-16.51-13.38-29.89-29.89-29.89-6.85,0-13.16,2.31-18.2,6.19-13.72-8.49-31.04-13.83-49.99-14.54,0-.03,0-.05,0-.08,0-12.7,9.44-23.24,21.68-24.97Zm-81.54,82.27c.5-10.84,7.7-19.16,16.07-19.16s14.77,8.79,14.27,19.63c-.5,10.84-6.75,14.78-15.13,14.78s-15.71-4.41-15.21-15.25Zm95.06-19.16c8.38,0,15.58,8.32,16.07,19.16.5,10.84-6.84,15.25-15.21,15.25s-14.63-3.93-15.13-14.78c-.5-10.84,5.89-19.63,14.27-19.63Zm-9.96,44.24c1.57.16,2.57,1.79,1.96,3.25-5.15,12.31-17.31,20.96-31.5,20.96s-26.34-8.65-31.5-20.96c-.61-1.46.39-3.09,1.96-3.25,9.2-.93,19.15-1.44,29.54-1.44s20.34.52,29.54,1.44Z"/>
+                        </svg>
+                    </div>
                     <div class="text">Reddit<div class="sub">u/LM_Reader_Dev</div></div>
                 </a>
             </div>
@@ -878,12 +896,9 @@
             <h2>🔒 Política de privacidad</h2>
             <div class="privacy-text">
                 <p><strong>Última actualización:</strong> 1 de julio de 2026</p>
-
                 <p style="margin-top:8px;">Lecturameter <strong>no recopila, almacena ni transmite ningún dato personal a servidores externos</strong>, salvo en los siguientes casos:</p>
-
                 <p style="margin-top:10px; color:#ddd;"><strong>1. Google Drive (opcional)</strong></p>
                 <p>Si activas la copia de seguridad en la nube, la app se conecta a tu cuenta de Google mediante OAuth2 para guardar una copia de tus libros y sesiones en la raíz de tu Drive. <strong>Solo tú tienes acceso a esos archivos.</strong> En ningún caso el desarrollador puede ver, modificar ni eliminar esos datos.</p>
-
                 <p style="margin-top:10px; color:#ddd;"><strong>2. APIs externas de metadatos</strong></p>
                 <p>Para buscar portadas y metadatos de libros, la app puede consultar las siguientes APIs directamente desde tu dispositivo (sin pasar por servidores propios):</p>
                 <ul style="padding-left:18px; margin:6px 0;">
@@ -894,7 +909,6 @@
                     <li>Hardcover</li>
                 </ul>
                 <p>Estas llamadas no incluyen datos personales; solo el título o ISBN buscado.</p>
-
                 <p style="margin-top:10px; color:#ddd;"><strong>3. Permisos de la app</strong></p>
                 <ul style="padding-left:18px; margin:6px 0;">
                     <li><strong>Internet:</strong> necesario para buscar portadas y hacer backup en Drive.</li>
@@ -902,13 +916,10 @@
                     <li><strong>Cuenta de Google (OAuth2):</strong> solo si usas el backup en Drive. Puedes revocar el acceso en cualquier momento desde tu cuenta de Google.</li>
                     <li><strong>Arranque del dispositivo (BOOT_COMPLETED):</strong> para reprogramar alarmas de recordatorio tras reinicio.</li>
                 </ul>
-
                 <p style="margin-top:10px; color:#ddd;"><strong>4. Datos generados localmente</strong></p>
                 <p>Toda la información (libros, sesiones, estadísticas) se almacena exclusivamente en el dispositivo del usuario. Lecturameter no tiene servidores propios y no accede a estos datos.</p>
-
                 <p style="margin-top:10px; color:#ddd;"><strong>5. Contacto</strong></p>
                 <p>Para cualquier consulta sobre privacidad: <span style="color:#BB86FC;">lecturameter.app@gmail.com</span></p>
-
                 <p style="margin-top:10px; font-size:11px; color:#666;">También puedes leerlo en <a href="https://lecturameterapp.github.io/lecturameter-policy/" target="_blank" style="color:#BB86FC;">GitHub Pages</a>.</p>
             </div>
         </div>
@@ -950,7 +961,7 @@
         <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
             <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Demo backup</div>
             <p style="font-size:13px; color:#bbb; margin-bottom:10px;">Want to try the app with sample data? Download this backup with 10 classic books across all categories (reading, finished, rereading, want to read, dropped) with reading sessions included.</p>
-            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Download demo backup</a>
+            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Download demo backup</a>
             <div style="font-size:12px; color:#888; margin-top:12px; line-height:1.6;">
                 <strong style="color:#aaa;">How to use it:</strong><br>
                 1. Download the JSON file to your phone<br>
@@ -968,14 +979,14 @@
             <div class="feature-card"><div class="icon">🌐</div><div class="title">Multiple editions</div><div class="desc">Different languages without losing sessions.</div></div>
             <div class="feature-card"><div class="icon">☁️</div><div class="title">Local and drive backup</div><div class="desc">Automatic backups locally and on Google Drive.</div></div>
         </div>
-        <!-- Libros (en inglés con datos en inglés) -->
+        <!-- Libros -->
         <div class="section" id="mockups-en">
             <h2>📱 Lecturameter in action</h2>
             <p class="sub" style="font-size:13px; color:#888; margin-bottom:12px;">Tap a book to see its sessions (demo)</p>
             <div class="book-grid" id="bookGrid-en"></div>
             <div class="real-screenshot"><div class="label">📸 Real screenshot</div><img src="captura_libros_real_en.jpg" alt="Library" loading="lazy"></div>
         </div>
-        <!-- Detail (inglés) -->
+        <!-- Detail -->
         <div id="detail-en" style="margin-top:16px;">
             <h2>📖 Book detail</h2>
             <div class="detail-mock">
@@ -1002,7 +1013,7 @@
             </div>
             <div class="real-screenshot"><div class="label">📸 Real screenshot</div><img src="captura_detalle_real_en.jpg" alt="Book detail" loading="lazy"></div>
         </div>
-        <!-- History (inglés) -->
+        <!-- History -->
         <div id="history-en" style="margin-top:16px;">
             <h2>📋 Session history</h2>
             <div class="history-container" id="historyContainer-en">
@@ -1030,7 +1041,7 @@
                 <div class="bar-chart" id="barChart-en"></div>
             </div>
         </div>
-        <!-- Widget (inglés) -->
+        <!-- Widget -->
         <div class="section" id="widget-en" style="margin-top:16px;">
             <h2>🧩 Widget</h2>
             <p class="sub" style="font-size:13px; color:#888; margin-bottom:10px;">Your book wherever you want, with cover and stats</p>
@@ -1057,18 +1068,18 @@
         <div class="section" id="links-en" style="margin-top:16px;">
             <h2>🔗 Links</h2>
             <div class="links-grid">
-                <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="link-box" style="text-decoration:none; color:inherit;">
-                    <div class="icon"><svg viewBox="0 0 512 512"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" fill="#10b981"/></svg></div>
-                    <div class="text" style="color:#10b981;">Play Store<div class="sub" style="color:#10b981;">▶ Close test</div></div>
+                <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="link-box playstore">
+                    <div class="icon"><svg viewBox="0 0 512 512"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" fill="#34A853"/></svg></div>
+                    <div class="text">Play Store<div class="sub">▶ Close test</div></div>
                 </a>
-                <a href="https://github.com/LecturameterAPP/Lecturameter/releases/tag/1.4" target="_blank" rel="noopener" class="link-box" style="text-decoration:none; color:inherit;">
-                    <div class="icon"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="#BB86FC"/></svg></div>
-                    <div class="text" style="color:#BB86FC;">GitHub<div class="sub" style="color:#10b981;">⬇ Direct APK</div></div>
+                <a href="https://github.com/LecturameterAPP/Lecturameter/releases/tag/1.4" target="_blank" rel="noopener" class="link-box github">
+                    <div class="icon"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="#8B5CF6"/></svg></div>
+                    <div class="text">GitHub<div class="sub" style="color:#8B5CF6;">⬇ Direct APK</div></div>
                 </a>
             </div>
         </div>
 
-        <!-- ─── REDES SOCIALES (NUEVO INGLÉS) ─── -->
+        <!-- ─── REDES SOCIALES (inglés) ─── -->
         <div class="section" id="social-en" style="margin-top:16px;">
             <h2>🌐 Social Media</h2>
             <div class="links-grid">
@@ -1077,7 +1088,14 @@
                     <div class="text">X (Twitter)<div class="sub">@LecturameterAPP</div></div>
                 </a>
                 <a href="https://www.reddit.com/user/LM_Reader_Dev/" target="_blank" rel="noopener" class="link-box reddit">
-                    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0zm5.8 13.4c.2.3.2.7 0 1-.2.3-.5.4-.9.4s-.7-.1-.9-.4c-.2-.3-.2-.7 0-1 .2-.3.5-.4.9-.4s.7.1.9.4zm-2.3 3.6c-1 1-2.4 1.6-3.5 1.6s-2.5-.6-3.5-1.6c-.2-.2-.2-.5 0-.7.2-.2.5-.2.7 0 .8.8 1.8 1.2 2.8 1.2s2-.4 2.8-1.2c.2-.2.5-.2.7 0 .2.2.2.5 0 .7zm-5.9-2.2c-.4 0-.7-.1-.9-.4-.2-.3-.2-.7 0-1 .2-.3.5-.4.9-.4s.7.1.9.4c.2.3.2.7 0 1-.2.3-.5.4-.9.4zm1.1-3.6c.2-.1.4-.2.6-.2.2 0 .4.1.6.2l.1-.1c.3-.3.7-.5 1.1-.5s.8.2 1.1.5l.1.1c.2-.1.4-.2.6-.2.2 0 .4.1.6.2.3.3.3.7 0 1-.3.3-.7.3-1 0-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1-.1 0-.2.1-.3.1-.1.1-.2.1-.3.1-.1 0-.2-.1-.3-.1-.1-.1-.2-.1-.3-.1z"/></svg></div>
+                    <div class="icon">
+                        <!-- SVG oficial de Reddit (actualizado 2023) -->
+                        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                            <defs><style>.cls-1{fill:#fff;}.cls-1,.cls-2{stroke-width:0px;}.cls-2{fill:#ff4500;}</style></defs>
+                            <rect class="cls-2" x="0" y="0" width="256" height="256"/>
+                            <path class="cls-1" d="m154.04,60.36c2.22,9.41,10.67,16.42,20.76,16.42,11.78,0,21.33-9.55,21.33-21.33s-9.55-21.33-21.33-21.33c-10.3,0-18.89,7.3-20.89,17.01-17.25,1.85-30.72,16.48-30.72,34.21,0,.04,0,.07,0,.11-18.76.79-35.89,6.13-49.49,14.56-5.05-3.91-11.39-6.24-18.27-6.24-16.51,0-29.89,13.38-29.89,29.89,0,11.98,7.04,22.3,17.21,27.07.99,34.7,38.8,62.61,85.31,62.61s84.37-27.94,85.31-62.67c10.09-4.8,17.07-15.09,17.07-27,0-16.51-13.38-29.89-29.89-29.89-6.85,0-13.16,2.31-18.2,6.19-13.72-8.49-31.04-13.83-49.99-14.54,0-.03,0-.05,0-.08,0-12.7,9.44-23.24,21.68-24.97Zm-81.54,82.27c.5-10.84,7.7-19.16,16.07-19.16s14.77,8.79,14.27,19.63c-.5,10.84-6.75,14.78-15.13,14.78s-15.71-4.41-15.21-15.25Zm95.06-19.16c8.38,0,15.58,8.32,16.07,19.16.5,10.84-6.84,15.25-15.21,15.25s-14.63-3.93-15.13-14.78c-.5-10.84,5.89-19.63,14.27-19.63Zm-9.96,44.24c1.57.16,2.57,1.79,1.96,3.25-5.15,12.31-17.31,20.96-31.5,20.96s-26.34-8.65-31.5-20.96c-.61-1.46.39-3.09,1.96-3.25,9.2-.93,19.15-1.44,29.54-1.44s20.34.52,29.54,1.44Z"/>
+                        </svg>
+                    </div>
                     <div class="text">Reddit<div class="sub">u/LM_Reader_Dev</div></div>
                 </a>
             </div>
@@ -1102,17 +1120,14 @@
             </div>
         </div>
 
-        <!-- Privacy (inglés) -->
+        <!-- Privacy -->
         <div class="section" id="privacy-en" style="margin-top:16px;">
             <h2>🔒 Privacy Policy</h2>
             <div class="privacy-text">
                 <p><strong>Last updated:</strong> July 1, 2026</p>
-
                 <p style="margin-top:8px;">Lecturameter <strong>does not collect, store, or transmit any personal data to external servers</strong>, except in the following cases:</p>
-
                 <p style="margin-top:10px; color:#ddd;"><strong>1. Google Drive (optional)</strong></p>
                 <p>If you enable cloud backup, the app connects to your Google account via OAuth2 to save a copy of your books and sessions to the root of your Drive. <strong>Only you have access to those files.</strong> The developer cannot view, modify, or delete that data under any circumstances.</p>
-
                 <p style="margin-top:10px; color:#ddd;"><strong>2. External metadata APIs</strong></p>
                 <p>To search for book covers and metadata, the app may query the following APIs directly from your device (not through any proprietary server):</p>
                 <ul style="padding-left:18px; margin:6px 0;">
@@ -1123,7 +1138,6 @@
                     <li>Hardcover</li>
                 </ul>
                 <p>These calls do not include personal data — only the title or ISBN being searched.</p>
-
                 <p style="margin-top:10px; color:#ddd;"><strong>3. App permissions</strong></p>
                 <ul style="padding-left:18px; margin:6px 0;">
                     <li><strong>Internet:</strong> required to search for covers and back up to Drive.</li>
@@ -1131,17 +1145,14 @@
                     <li><strong>Google account (OAuth2):</strong> only if you use Drive backup. You can revoke access at any time from your Google account.</li>
                     <li><strong>Device boot (BOOT_COMPLETED):</strong> to reschedule reading reminders after a reboot.</li>
                 </ul>
-
                 <p style="margin-top:10px; color:#ddd;"><strong>4. Locally generated data</strong></p>
                 <p>All data (books, sessions, statistics) is stored exclusively on the user's device. Lecturameter has no proprietary servers and does not access this data.</p>
-
                 <p style="margin-top:10px; color:#ddd;"><strong>5. Contact</strong></p>
                 <p>For any privacy-related questions: <span style="color:#BB86FC;">lecturameter.app@gmail.com</span></p>
-
                 <p style="margin-top:10px; font-size:11px; color:#666;">You can also read it on <a href="https://lecturameterapp.github.io/lecturameter-policy/" target="_blank" style="color:#BB86FC;">GitHub Pages</a>.</p>
             </div>
         </div>
-        <!-- Contact (inglés) -->
+        <!-- Contact -->
         <div class="section" id="contact-en" style="margin-top:16px;">
             <h2>📨 Contact</h2>
             <p style="font-size:13px; color:#bbb; margin-bottom:12px;">Questions, suggestions, or issues? Write to me and I'll get back to you.</p>
