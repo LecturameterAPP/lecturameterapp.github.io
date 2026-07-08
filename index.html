@@ -12,13 +12,35 @@
     <meta property="og:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Lecturameter – Tu tracker de lectura para Android">
     <meta name="twitter:description" content="Organiza tu biblioteca, cronometra sesiones y consulta estadísticas detalladas. Sin anuncios, sin suscripciones.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
-    <!-- Favicon -->
     <link rel="icon" href="https://lecturameterapp.github.io/ic_launcher_round.png">
+    <link rel="canonical" href="https://lecturameterapp.github.io/">
+
+    <!-- Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Lecturameter",
+      "description": "Organiza tu biblioteca, cronometra sesiones y consulta estadísticas detalladas. Sin anuncios, sin suscripciones.",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Víctor (Lecturameter)",
+        "email": "lecturameter.app@gmail.com"
+      }
+    }
+    </script>
+
     <style>
         /* ─── RESET ─── */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -29,15 +51,13 @@
             padding: 16px;
         }
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
             background: #1e1e1e;
             border-radius: 24px;
             padding: 24px 20px;
             box-shadow: 0 8px 30px rgba(0,0,0,0.6);
         }
-
-        /* ─── SELECTOR DE IDIOMA ─── */
         .lang-bar {
             display: flex;
             justify-content: flex-end;
@@ -63,7 +83,6 @@
         .lang-content { display: none; }
         .lang-content.active { display: block; }
 
-        /* ─── HERO ─── */
         .hero { text-align: center; padding: 16px 0 8px; }
         .hero h1 { font-size: 32px; font-weight: 700; color: #BB86FC; }
         .hero .tagline { font-size: 16px; color: #aaa; margin: 4px 0 12px; }
@@ -83,7 +102,6 @@
         }
         .btn-download.disabled { opacity: 0.5; pointer-events: none; }
 
-        /* ─── FEATURES ─── */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -100,293 +118,130 @@
         .feature-card .title { font-weight: 600; font-size: 14px; color: #ddd; }
         .feature-card .desc { font-size: 12px; color: #999; margin-top: 2px; }
 
-        /* ─── ANIMACIÓN DE ENTRADA ─── */
-        @keyframes slideIn {
-            0% { opacity: 0; transform: translateX(30px); }
-            100% { opacity: 1; transform: translateX(0); }
+        .screenshot-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin: 20px 0;
         }
-        .book-card {
-            opacity: 0;
-        }
-        .book-card.visible {
-            animation: slideIn 0.4s ease forwards;
-        }
-        .book-card.visible:nth-child(1) { animation-delay: 0.05s; }
-        .book-card.visible:nth-child(2) { animation-delay: 0.12s; }
-        .book-card.visible:nth-child(3) { animation-delay: 0.19s; }
-        .book-card.visible:nth-child(4) { animation-delay: 0.26s; }
-        .book-card.visible:nth-child(5) { animation-delay: 0.33s; }
-
-        /* ─── CARDS ─── */
-        .book-grid { display: flex; flex-direction: column; gap: 12px; }
-        .book-card {
-            position: relative;
+        .screenshot-item {
             background: #2d2d2d;
-            border-radius: 14px;
-            padding: 12px 14px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: transform 0.2s;
             display: flex;
             flex-direction: column;
-            gap: 6px;
+        }
+        .screenshot-item:hover { transform: scale(1.02); }
+        .screenshot-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #333;
+            background: #000;
+            aspect-ratio: 9 / 16;
+            object-fit: contain;
+        }
+        .screenshot-item .label {
+            padding: 10px 12px;
+            font-size: 14px;
+            color: #ccc;
+            text-align: center;
+            background: #1e1e1e;
+            flex-shrink: 0;
+        }
+        .screenshot-item .label .sub {
+            font-size: 12px;
+            color: #888;
+            display: block;
+            margin-top: 4px;
+        }
+
+        .cta-notify {
+            background: #1a1a2e;
+            border-radius: 16px;
+            padding: 20px 24px;
+            margin: 20px 0 24px;
+            border: 1px solid #BB86FC;
+            text-align: center;
+        }
+        .cta-notify h2 { font-size: 20px; color: #BB86FC; margin-bottom: 6px; }
+        .cta-notify p { font-size: 14px; color: #bbb; margin-bottom: 14px; }
+        .notify-form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+        .notify-form .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            width: 100%;
+            max-width: 460px;
+        }
+        .notify-form input[type="email"] {
+            flex: 1;
+            min-width: 200px;
+            background: #1a1a1a;
+            border: 1px solid #444;
+            border-radius: 30px;
+            padding: 10px 18px;
+            font-size: 14px;
+            color: #e0e0e0;
+            outline: none;
+        }
+        .notify-form input[type="email"]:focus { border-color: #BB86FC; }
+        .notify-form .captcha-check {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #ccc;
+            cursor: pointer;
+            margin: 4px 0;
+        }
+        .notify-form .captcha-check input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #BB86FC;
+            cursor: pointer;
+        }
+        .notify-btn {
+            background: #BB86FC;
+            color: #121212;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 28px;
+            font-size: 15px;
+            font-weight: 600;
             cursor: pointer;
             transition: background 0.2s;
+            font-family: inherit;
         }
-        .book-card:hover { background: #353535; }
-        .book-card .shelf-bar {
-            position: absolute;
-            left: 0;
-            top: 8px;
-            bottom: 8px;
-            width: 4px;
-            border-radius: 0 4px 4px 0;
-        }
-        .book-card .shelf-bar.rereading { background: #06b6d4; }
-        .book-card .shelf-bar.reading { background: #f59e0b; }
-        .book-card .shelf-bar.finished { background: #10b981; }
-        .book-card .shelf-bar.pending { background: #8B5CF6; }
-        .book-card .shelf-bar.dropped { background: #ef4444; }
+        .notify-btn:hover { background: #a06ce0; }
+        .notify-btn:disabled { opacity: 0.5; cursor: default; }
+        .notify-status { font-size: 13px; }
+        .notify-status.ok  { color: #10b981; }
+        .notify-status.err { color: #ef4444; }
 
-        .book-card .row {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-        .book-card .cover {
-            width: 56px;
-            height: 76px;
-            border-radius: 6px;
-            flex-shrink: 0;
-            background-color: #1a1a2e;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .book-card .info { flex: 1; min-width: 0; }
-        .book-card .title {
-            font-weight: 600;
-            font-size: 15px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-        }
-        .book-card .author { font-size: 13px; color: #999; }
-        .book-card .badge {
-            font-size: 11px;
-            padding: 2px 12px;
-            border-radius: 30px;
-            font-weight: 500;
-            flex-shrink: 0;
-        }
-        .badge.rereading { background: #06b6d4; color: #121212; }
-        .badge.reading { background: #f59e0b; color: #121212; }
-        .badge.finished { background: #10b981; color: #121212; }
-        .badge.pending { background: #8B5CF6; color: #fff; }
-        .badge.dropped { background: #ef4444; color: #fff; }
-        .book-card .meta { font-size: 11px; color: #666; margin-top: 2px; }
-        .book-card .rating {
-            font-size: 12px;
-            color: #f59e0b;
-            margin-top: 2px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .book-card .actions {
-            display: flex;
-            gap: 12px;
-            margin-top: 4px;
-            padding-left: 4px;
-        }
-        .book-card .actions .action-btn {
-            background: none;
-            border: none;
-            color: #888;
-            font-size: 18px;
-            cursor: default;
-            padding: 2px 4px;
-            border-radius: 4px;
-            transition: 0.2s;
-        }
-        .book-card .actions .action-btn.refresh { color: #f59e0b; }
-        .book-card .actions .action-btn.edit { color: #60a5fa; }
-        .book-card .delete-icon {
-            position: absolute;
-            top: 8px;
-            right: 12px;
-            font-size: 14px;
-            color: #555;
-            cursor: default;
-        }
-
-        /* ─── SESIONES ─── */
-        .sessions {
-            display: none;
-            padding: 12px 12px 4px;
-            background: #1a1a1a;
-            border-radius: 10px;
-            margin-top: 4px;
-        }
-        .sessions.open { display: block; }
-        .sessions .session-header {
-            display: grid;
-            grid-template-columns: 1fr 0.8fr 0.8fr 1fr 0.8fr;
-            gap: 6px;
-            font-size: 11px;
-            font-weight: 600;
-            color: #888;
-            padding-bottom: 4px;
-            border-bottom: 1px solid #2a2a2a;
-        }
-        .session-row {
-            display: grid;
-            grid-template-columns: 1fr 0.8fr 0.8fr 1fr 0.8fr;
-            gap: 6px;
-            font-size: 13px;
-            color: #bbb;
-            padding: 6px 0;
-            border-bottom: 1px solid #2a2a2a;
-        }
-        .session-row:last-child { border-bottom: none; }
-        .session-row .date { color: #aaa; }
-        .session-row .pages { color: #10b981; }
-        .session-row .time { color: #60a5fa; }
-        .session-row .range { color: #f59e0b; }
-        .session-row .pace { color: #BB86FC; }
-
-        /* ─── DETALLE DE LIBRO ─── */
-        .detail-mock {
-            background: #2d2d2d;
-            border-radius: 14px;
-            padding: 16px;
-            margin-top: 16px;
+        .privacy-highlight {
+            background: #0d1a1a;
+            border-radius: 16px;
+            padding: 18px 22px;
+            margin: 20px 0;
+            border-left: 6px solid #10b981;
             display: flex;
             flex-direction: column;
-            gap: 12px;
-        }
-        .detail-mock .header {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-        .detail-mock .header .cover {
-            width: 56px;
-            height: 76px;
-            border-radius: 6px;
-            flex-shrink: 0;
-            background-color: #1a1a2e;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .detail-mock .header .title {
-            font-weight: 600;
-            font-size: 17px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-        }
-        .detail-mock .header .title .flag { margin-right: 6px; }
-        .detail-mock .header .author {
-            font-size: 13px;
-            color: #999;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-        .detail-mock .header .author .isbn {
-            font-size: 11px;
-            color: #666;
-            font-family: monospace;
-        }
-        .detail-mock .header .badge {
-            font-size: 12px;
-            padding: 4px 14px;
-            border-radius: 30px;
-            font-weight: 500;
-            background: #06b6d4;
-            color: #121212;
-            flex-shrink: 0;
-        }
-        .detail-mock .rating-block {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-            color: #f59e0b;
-        }
-        .detail-mock .rating-block .num { color: #aaa; font-size: 13px; }
-
-        /* ─── STAT PILLS ─── */
-        .stat-pills {
-            display: flex;
-            flex-wrap: nowrap;
-            gap: 8px;
-            margin: 4px 0;
-            overflow-x: auto;
-            padding-bottom: 4px;
-        }
-        .stat-pill {
-            padding: 4px 14px;
-            border-radius: 30px;
-            font-size: 12px;
-            color: #fff;
-            display: flex;
-            align-items: center;
             gap: 6px;
-            white-space: nowrap;
-            flex-shrink: 0;
         }
-        .stat-pill .num { font-weight: 600; color: #fff; }
-        .stat-pill .label { color: rgba(255,255,255,0.7); font-size: 10px; }
-        .stat-pill.days { background: #6b7280; }
-        .stat-pill.time { background: #3b82f6; }
-        .stat-pill.pages { background: #10b981; }
-        .stat-pill.percent { background: #f59e0b; }
-        .stat-pill.pace { background: #8b5cf6; }
+        .privacy-highlight .icon { font-size: 28px; }
+        .privacy-highlight .title { font-weight: 700; font-size: 18px; color: #10b981; }
+        .privacy-highlight .desc { font-size: 14px; color: #ccc; line-height: 1.5; }
+        .privacy-highlight .desc strong { color: #fff; }
 
-        /* ─── HISTORIAL ─── */
-        .history-container {
-            background: #2d2d2d;
-            border-radius: 14px;
-            padding: 14px;
-            margin-top: 12px;
-        }
-        .history-header {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 10px;
-        }
-        .history-header .summary { font-size: 12px; color: #888; }
-        .history-header .order-btn {
-            background: none;
-            border: 1px solid #444;
-            padding: 4px 12px;
-            border-radius: 30px;
-            font-size: 11px;
-            color: #aaa;
-            cursor: pointer;
-        }
-        .history-item {
-            background: #1a1a1a;
-            border-radius: 10px;
-            padding: 8px 12px;
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-            font-size: 13px;
-            color: #bbb;
-            margin-bottom: 6px;
-        }
-        .hi-date { font-size: 12px; color: #888; }
-        .hi-stats { display: flex; flex-wrap: nowrap; gap: 0; white-space: nowrap; overflow: hidden; }
-
-        /* ─── WIDGET ─── */
         .widget-sim {
             width: 100%;
             max-width: 460px;
@@ -443,7 +298,6 @@
         }
         .widget-sim .timestamp { font-size: 9px; color: #555; margin-top: 2px; }
 
-        /* ─── ESTADÍSTICAS ─── */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -502,7 +356,6 @@
         .bar-chart .bar-item .bar-label { font-size: 9px; color: #888; margin-top: 4px; }
         .bar-chart .bar-item .bar-value { font-size: 9px; color: #aaa; margin-bottom: 2px; }
 
-        /* ─── LINKS ─── */
         .links-grid {
             display: flex;
             flex-wrap: wrap;
@@ -535,7 +388,6 @@
         .links-grid .link-box .text { font-size: 14px; color: #ccc; }
         .links-grid .link-box .text .sub { font-size: 11px; color: #666; }
 
-        /* ─── SOCIAL LINKS ─── */
         .link-box.x { border-color: #1DA1F2; }
         .link-box.x .icon svg { fill: #1DA1F2; }
         .link-box.x .text { color: #1DA1F2; }
@@ -548,7 +400,6 @@
         .link-box.reddit .text .sub { color: #FF4500; opacity: 0.7; }
         .link-box.reddit:hover { border-color: #FF4500; background: #2a1a10; }
 
-        /* Play Store y GitHub con colores más brillantes */
         .link-box.playstore { border-color: #34A853; }
         .link-box.playstore .icon svg { fill: #34A853; }
         .link-box.playstore .text { color: #34A853; }
@@ -568,60 +419,6 @@
             font-size: 13px;
             color: #bbb;
         }
-        .contact-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            align-items: center;
-            margin-top: 8px;
-        }
-        .contact-row .email { font-size: 15px; color: #BB86FC; }
-
-        /* ─── CAPTURAS ─── */
-        .real-screenshot { margin-top: 14px; text-align: center; }
-        .real-screenshot .label { font-size: 12px; color: #666; margin-bottom: 6px; }
-        .real-screenshot img { max-width: 100%; max-height: 500px; width: auto; border-radius: 12px; border: 1px solid #2a2a2a; }
-        .real-screenshot img.widget-cap { max-height: 160px; border: none; }
-        .real-screenshot.left { text-align: left; }
-
-        /* ─── NOTIFY ─── */
-        .notify-form { display: flex; flex-direction: column; gap: 10px; }
-        .notify-checks { display: flex; gap: 16px; flex-wrap: wrap; margin: 2px 0; }
-        .notify-check {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-            color: #ccc;
-            cursor: pointer;
-        }
-        .notify-check input[type="checkbox"] {
-            width: 18px;
-            height: 18px;
-            accent-color: #BB86FC;
-            cursor: pointer;
-            flex-shrink: 0;
-        }
-        .notify-btn {
-            background: #2d2d2d;
-            color: #BB86FC;
-            border: 1.5px solid #BB86FC;
-            border-radius: 30px;
-            padding: 10px 22px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s, color 0.2s;
-            font-family: inherit;
-            align-self: flex-start;
-        }
-        .notify-btn:hover { background: #BB86FC; color: #121212; }
-        .notify-btn:disabled { opacity: 0.5; cursor: default; }
-        .notify-status { font-size: 13px; }
-        .notify-status.ok  { color: #10b981; }
-        .notify-status.err { color: #ef4444; }
-
-        /* ─── FEEDBACK ─── */
         .feedback-form { display: flex; flex-direction: column; gap: 10px; }
         .fb-input, .fb-textarea {
             background: #1a1a1a;
@@ -656,7 +453,6 @@
         .fb-status.err { color: #ef4444; }
 
         h2 { font-size: 20px; font-weight: 600; color: #ccc; margin-bottom: 10px; }
-
         .footer {
             margin-top: 32px;
             padding-top: 12px;
@@ -666,6 +462,9 @@
             text-align: center;
         }
 
+        @media (max-width: 900px) {
+            .screenshot-gallery { grid-template-columns: repeat(2, 1fr); }
+        }
         @media (max-width: 600px) {
             .container { padding: 16px 12px; }
             .hero h1 { font-size: 26px; }
@@ -674,36 +473,23 @@
             .feature-card .icon { font-size: 20px; }
             .feature-card .title { font-size: 13px; }
             .feature-card .desc { font-size: 11px; }
-            .book-card .cover { width: 48px; height: 64px; }
-            .book-card .title { font-size: 14px; }
-            .stat-pills { gap: 6px; }
-            .stat-pill { font-size: 11px; padding: 3px 10px; }
-            .detail-mock .header .cover { width: 48px; height: 64px; }
-            .widget-sim { flex-wrap: wrap; padding: 12px; }
-            .widget-sim .cover { width: 44px; height: 60px; }
+            .screenshot-gallery { grid-template-columns: 1fr 1fr; gap: 10px; }
+            .screenshot-item .label { font-size: 12px; }
+            .screenshot-item .label .sub { font-size: 10px; }
             .stats-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
             .stats-grid .stat-box { padding: 8px; }
             .stats-grid .stat-box .number { font-size: 18px; }
             .bar-chart { height: 100px; gap: 4px; }
             .bar-chart .bar-item .bar { max-width: 20px; }
-            .sessions .session-header,
-            .session-row {
-                grid-template-columns: 1fr 0.6fr 0.6fr 0.8fr 0.6fr;
-                font-size: 11px;
-                gap: 4px;
-            }
             .links-grid .link-box { min-width: 120px; padding: 12px 16px; }
         }
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
             .features-grid { grid-template-columns: 1fr; }
             .stats-grid { grid-template-columns: 1fr 1fr; }
-            .bar-chart { height: 80px; }
-            .bar-chart .bar-item .bar { max-width: 16px; }
-            .book-card .cover { width: 40px; height: 56px; }
-            .detail-mock .header .cover { width: 40px; height: 56px; }
+            .screenshot-gallery { grid-template-columns: 1fr; }
+            .screenshot-item img { max-height: 400px; }
         }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -730,19 +516,83 @@
             <p style="font-size:12px; color:#666; margin-top:4px;">Prueba cerrada · Lanzamiento oficial en Play Store próximamente</p>
         </div>
 
-        <!-- Demo JSON -->
-        <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
-            <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Copia de Seguridad de demostración</div>
-            <p style="font-size:13px; color:#bbb; margin-bottom:10px;">¿Quieres probar la app con datos de ejemplo? Descarga este backup con 10 libros clásicos repartidos en todas las categorías (leyendo, terminado, releyendo, quiero leer, abandonado) y sesiones de lectura incluidas.</p>
-            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Descargar backup demo</a>
-            <div style="font-size:12px; color:#888; margin-top:12px; line-height:1.6;">
-                <strong style="color:#aaa;">Cómo usarlo:</strong><br>
-                1. Descarga el archivo JSON en tu móvil<br>
-                2. Abre Lecturameter → Ajustes → Restaurar backup local<br>
-                3. Selecciona el archivo descargado<br>
-                4. ¡Listo! Explora la biblioteca, estadísticas y widget
+        <!-- CTA NOTIFICACIÓN -->
+        <div class="cta-notify">
+            <h2>📩 Recibe un aviso cuando la app esté disponible</h2>
+            <p>Te llegará un correo en cuanto se lance oficialmente. Sin spam, solo un aviso.</p>
+            <div class="notify-form" id="notifyFormEs">
+                <div class="row">
+                    <input class="fb-input" type="email" id="notifyEmailEs" placeholder="Tu email" autocomplete="email">
+                </div>
+                <label class="captcha-check">
+                    <input type="checkbox" id="notifyCaptchaEs">
+                    <span>No soy un robot</span>
+                </label>
+                <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:center;">
+                    <button class="notify-btn" onclick="sendNotify('es')">Avísame</button>
+                    <span class="notify-status" id="notifyStatusEs"></span>
+                </div>
             </div>
         </div>
+
+        <!-- GALERÍA DE CAPTURAS (8 elementos) -->
+        <div class="section">
+            <h2>📱 Así se ve Lecturameter</h2>
+            <p style="font-size:13px; color:#888; margin-bottom:12px;">Capturas reales de la aplicación</p>
+            <div class="screenshot-gallery">
+
+                <!-- 1. Biblioteca -->
+                <div class="screenshot-item">
+                    <img src="captura_libros_real_es.jpg" alt="Biblioteca" loading="lazy">
+                    <div class="label">📚 Biblioteca <span class="sub">Organiza tus libros por estanterías</span></div>
+                </div>
+
+                <!-- 2. Detalle -->
+                <div class="screenshot-item">
+                    <img src="captura_detalle_real_es.jpg" alt="Detalle" loading="lazy">
+                    <div class="label">📖 Detalle del libro <span class="sub">Sesiones, estadísticas y cronómetro</span></div>
+                </div>
+
+                <!-- 3. Historial -->
+                <div class="screenshot-item">
+                    <img src="captura_historial_es.jpg" alt="Historial" loading="lazy">
+                    <div class="label">📋 Historial global <span class="sub">Resumen por libro con sesiones, tiempo y páginas</span></div>
+                </div>
+
+                <!-- 4. Heatmap anual -->
+                <div class="screenshot-item">
+                    <img src="captura_heatmap_es.jpg" alt="Estadísticas anuales" loading="lazy">
+                    <div class="label">📊 Estadísticas anuales <span class="sub">Páginas leídas mes a mes</span></div>
+                </div>
+
+                <!-- 5. Heatmap mensual -->
+                <div class="screenshot-item">
+                    <img src="captura_heatmap_mayo_es.jpg" alt="Estadísticas mensuales" loading="lazy">
+                    <div class="label">📊 Mapa de calor mensual <span class="sub">Intensidad de lectura día a día</span></div>
+                </div>
+
+                <!-- 6. Widget -->
+                <div class="screenshot-item">
+                    <img src="captura_widget_real_en.png" alt="Widget" loading="lazy">
+                    <div class="label">🧩 Widget <span class="sub">Tu libro en la pantalla de inicio</span></div>
+                </div>
+
+                <!-- 7. (placeholder) Sesiones -->
+                <div class="screenshot-item" style="opacity:0.5; filter:grayscale(1);">
+                    <img src="captura_widget_real_en.png" alt="Sesiones (próximamente)" loading="lazy" style="object-fit:cover; background:#1a1a2e;">
+                    <div class="label">⏱️ Sesiones de lectura <span class="sub">Próximamente</span></div>
+                </div>
+
+                <!-- 8. (placeholder) Ajustes -->
+                <div class="screenshot-item" style="opacity:0.5; filter:grayscale(1);">
+                    <img src="captura_widget_real_en.png" alt="Ajustes (próximamente)" loading="lazy" style="object-fit:cover; background:#1a1a2e;">
+                    <div class="label">⚙️ Ajustes y Backup <span class="sub">Próximamente</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FEATURES -->
         <div class="features-grid">
             <div class="feature-card"><div class="icon">⏱️</div><div class="title">Cronómetro</div><div class="desc">Funciona con la pantalla apagada.</div></div>
             <div class="feature-card"><div class="icon">📊</div><div class="title">Estadísticas</div><div class="desc">Gráficos, Wrapped anual, heatmap.</div></div>
@@ -752,57 +602,21 @@
             <div class="feature-card"><div class="icon">☁️</div><div class="title">Backup Local y en Drive</div><div class="desc">Copias automáticas en local y Google Drive.</div></div>
         </div>
 
-        <!-- LIBROS -->
-        <div class="section" id="mockups-es">
-            <h2>📱 Así se ve Lecturameter</h2>
-            <p class="sub" style="font-size:13px; color:#888; margin-bottom:12px;">Toca un libro para ver sus sesiones (demo)</p>
-            <div class="book-grid" id="bookGrid-es"></div>
-            <div class="real-screenshot"><div class="label">📸 Captura real</div><img src="captura_libros_real_es.jpg" alt="Biblioteca" loading="lazy"></div>
+        <!-- PRIVACIDAD DESTACADA -->
+        <div class="privacy-highlight">
+            <div class="icon">🔒</div>
+            <div class="title">Tus datos solo están en tu dispositivo</div>
+            <div class="desc">
+                <strong>Lecturameter no recopila ni envía tus datos a ningún servidor.</strong> 
+                Tu biblioteca, sesiones y estadísticas se guardan exclusivamente en tu móvil. 
+                Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos. 
+                Sin anuncios, sin suscripciones, sin tracking.
+            </div>
         </div>
 
-        <!-- DETALLE -->
-        <div id="detail-es" style="margin-top:16px;">
-            <h2>📖 Detalle del libro</h2>
-            <div class="detail-mock">
-                <div class="header">
-                    <div class="cover" style="background-image:url('https://covers.openlibrary.org/b/id/15234768-L.jpg');"></div>
-                    <div class="info">
-                        <div class="title"><span class="flag">🇪🇸</span> El Imperio Final</div>
-                        <div class="author">
-                            <span>Brandon Sanderson</span>
-                            <span class="isbn">ISBN: 978-84-9872-345-6</span>
-                        </div>
-                    </div>
-                    <span class="badge" style="background:#06b6d4;color:#121212;">Releyendo</span>
-                </div>
-                <div class="rating-block"><span>★★★★★</span> <span class="num">9/10</span></div>
-                <div class="stat-pills">
-                    <span class="stat-pill days"><span class="num">23</span> <span class="label">días</span></span>
-                    <span class="stat-pill time"><span class="num">1h 5m</span></span>
-                    <span class="stat-pill pages"><span class="num">120</span> <span class="label">págs</span></span>
-                    <span class="stat-pill percent"><span class="num">18%</span></span>
-                    <span class="stat-pill pace"><span class="num">5.2</span> <span class="label">p/d</span></span>
-                </div>
-                <div style="font-size:12px; color:#888;">📄 688 páginas totales · 🎯 3-659 funcionales</div>
-            </div>
-            <div class="real-screenshot"><div class="label">📸 Captura real</div><img src="captura_detalle_real_es.jpg" alt="Detalle" loading="lazy"></div>
-        </div>
-
-        <!-- HISTORIAL -->
-        <div id="history-es" style="margin-top:16px;">
-            <h2>📋 Historial de sesiones</h2>
-            <div class="history-container" id="historyContainer-es">
-                <div class="history-header">
-                    <span class="summary" id="historySummary-es">7 ses · 3h 6m total · 120 págs · 0.6 p/m</span>
-                    <button class="order-btn" onclick="toggleOrder('es')">Más antiguo primero</button>
-                </div>
-                <div id="historyList-es"></div>
-            </div>
-            <div class="real-screenshot"><div class="label">📸 Captura real</div><img src="captura_historial_real_es.jpg" alt="Historial" loading="lazy"></div>
-        </div>
-        <div class="section" id="stats-es" style="margin-top:16px;">
-            <h2>📊 Estadísticas</h2>
-            <p class="sub" style="font-size:13px; color:#888; margin-bottom:12px;">Resumen de tus hábitos de lectura</p>
+        <!-- STATS (demo) -->
+        <div class="section" style="margin-top:16px;">
+            <h2>📊 Estadísticas de ejemplo</h2>
             <div class="stats-grid" id="statsGrid-es">
                 <div class="stat-box c-purple"><div class="number" id="totalBooks-es">5</div><div class="label">Libros totales</div></div>
                 <div class="stat-box c-blue">  <div class="number" id="totalSessions-es">7</div><div class="label">Sesiones</div></div>
@@ -817,31 +631,8 @@
             </div>
         </div>
 
-        <!-- WIDGET -->
-        <div class="section" id="widget-es" style="margin-top:16px;">
-            <h2>🧩 Widget</h2>
-            <p class="sub" style="font-size:13px; color:#888; margin-bottom:10px;">Tu libro donde tú quieras, con portada y estadísticas</p>
-            <div class="widget-sim">
-                <div class="cover" style="background-image:url('https://covers.openlibrary.org/b/id/15234768-L.jpg');"></div>
-                <div class="info">
-                    <div class="title">El Imperio Final</div>
-                    <div class="author">Brandon Sanderson</div>
-                    <div class="stats-pills">
-                        <span class="pill">📅 <span class="num">23</span> días</span>
-                        <span class="pill">⏱️ <span class="num">1h 5m</span></span>
-                        <span class="pill">📖 <span class="num">6</span> ses</span>
-                        <span class="pill">📄 <span class="num">20</span>p</span>
-                        <span class="pill">📊 <span class="num">18</span>%</span>
-                    </div>
-                    <div class="progress-bar"><div class="fill" style="width:18%;"></div></div>
-                    <div class="timestamp">14:17 · 26/06/2026</div>
-                </div>
-            </div>
-            <div class="real-screenshot left"><div class="label">📸 Captura real</div><img src="captura_widget_real_es.png" class="widget-cap" alt="Widget" loading="lazy"></div>
-        </div>
-
-        <!-- ENLACES PRINCIPALES -->
-        <div class="section" id="links-es" style="margin-top:16px;">
+        <!-- ENLACES Y REDES SOCIALES -->
+        <div class="section" style="margin-top:16px;">
             <h2>🔗 Enlaces</h2>
             <div class="links-grid">
                 <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="link-box playstore">
@@ -852,13 +643,6 @@
                     <div class="icon"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="#8B5CF6"/></svg></div>
                     <div class="text">GitHub<div class="sub" style="color:#8B5CF6;">⬇ APK directo</div></div>
                 </a>
-            </div>
-        </div>
-
-        <!-- ─── REDES SOCIALES ─── -->
-        <div class="section" id="social-es" style="margin-top:16px;">
-            <h2>🌐 Redes sociales</h2>
-            <div class="links-grid">
                 <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" class="link-box x">
                     <div class="icon"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
                     <div class="text">X (Twitter)<div class="sub">@LecturameterAPP</div></div>
@@ -876,27 +660,22 @@
             </div>
         </div>
 
-        <!-- NOTIFY ES -->
-        <div class="section" id="notify-es" style="margin-top:16px;">
-            <h2>🔔 Avísame cuando salga</h2>
-            <p style="font-size:13px; color:#bbb; margin-top:8px; margin-bottom:12px;">Te llegará un mensaje cuando esté disponible. <span style="font-size:11px; color:#555;">Si no lo ves, revisa spam.</span></p>
-            <div class="notify-form" id="notifyFormEl-es">
-                <input class="fb-input" type="email" id="notifyEmail-es" placeholder="Tu email" autocomplete="email">
-                <div class="notify-checks">
-                    <label class="notify-check">
-                        <input type="checkbox" id="notifyPS-es" checked>
-                        <span>▶️ Lanzamiento en Play Store</span>
-                    </label>
-                </div>
-                <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-                    <button class="notify-btn" onclick="sendNotify('es')">Avísame</button>
-                    <span class="notify-status" id="notifyStatus-es"></span>
-                </div>
+        <!-- DEMO JSON -->
+        <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
+            <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Copia de Seguridad de demostración</div>
+            <p style="font-size:13px; color:#bbb; margin-bottom:10px;">¿Quieres probar la app con datos de ejemplo? Descarga este backup con 10 libros clásicos repartidos en todas las categorías (leyendo, terminado, releyendo, quiero leer, abandonado) y sesiones de lectura incluidas.</p>
+            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Descargar backup demo</a>
+            <div style="font-size:12px; color:#888; margin-top:12px; line-height:1.6;">
+                <strong style="color:#aaa;">Cómo usarlo:</strong><br>
+                1. Descarga el archivo JSON en tu móvil<br>
+                2. Abre Lecturameter → Ajustes → Restaurar backup local<br>
+                3. Selecciona el archivo descargado<br>
+                4. ¡Listo! Explora la biblioteca, estadísticas y widget
             </div>
         </div>
 
-        <!-- POLÍTICA -->
-        <div class="section" id="privacy-es" style="margin-top:16px;">
+        <!-- POLÍTICA DE PRIVACIDAD -->
+        <div class="section" style="margin-top:16px;">
             <h2>🔒 Política de privacidad</h2>
             <div class="privacy-text">
                 <p><strong>Última actualización:</strong> 1 de julio de 2026</p>
@@ -929,7 +708,7 @@
         </div>
 
         <!-- CONTACTO -->
-        <div class="section" id="contact-es" style="margin-top:16px;">
+        <div class="section" style="margin-top:16px;">
             <h2>📨 Contacto</h2>
             <p style="font-size:13px; color:#bbb; margin-bottom:12px;">¿Dudas, sugerencias o problemas? Escríbeme y te responderé.</p>
             <div class="feedback-form" id="feedbackForm-es">
@@ -947,7 +726,6 @@
 
     <!-- ─── CONTENIDO EN INGLÉS ─── -->
     <div id="content-en" class="lang-content">
-        <!-- Hero -->
         <div class="hero">
             <h1>Lecturameter</h1>
             <p class="tagline">Track your reading habits, letter by letter. No ads, no subscriptions.</p>
@@ -961,17 +739,77 @@
             <p style="font-size:12px; color:#666; margin-top:4px;">Closed testing · Official Play Store launch coming soon</p>
         </div>
 
-        <!-- Demo JSON -->
-        <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
-            <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Demo backup</div>
-            <p style="font-size:13px; color:#bbb; margin-bottom:10px;">Want to try the app with sample data? Download this backup with 10 classic books across all categories (reading, finished, rereading, want to read, dropped) with reading sessions included.</p>
-            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Download demo backup</a>
-            <div style="font-size:12px; color:#888; margin-top:12px; line-height:1.6;">
-                <strong style="color:#aaa;">How to use it:</strong><br>
-                1. Download the JSON file to your phone<br>
-                2. Open Lecturameter → Settings → Restore local backup<br>
-                3. Select the downloaded file<br>
-                4. Done! Explore the library, stats and widget
+        <div class="cta-notify">
+            <h2>📩 Get notified when the app is out</h2>
+            <p>You'll receive an email when it's officially launched. No spam, just one alert.</p>
+            <div class="notify-form" id="notifyFormEn">
+                <div class="row">
+                    <input class="fb-input" type="email" id="notifyEmailEn" placeholder="Your email" autocomplete="email">
+                </div>
+                <label class="captcha-check">
+                    <input type="checkbox" id="notifyCaptchaEn">
+                    <span>I'm not a robot</span>
+                </label>
+                <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:center;">
+                    <button class="notify-btn" onclick="sendNotify('en')">Notify me</button>
+                    <span class="notify-status" id="notifyStatusEn"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📱 Lecturameter in action</h2>
+            <p style="font-size:13px; color:#888; margin-bottom:12px;">Real screenshots of the app</p>
+            <div class="screenshot-gallery">
+
+                <!-- 1. Library -->
+                <div class="screenshot-item">
+                    <img src="captura_libros_real_es.jpg" alt="Library" loading="lazy">
+                    <div class="label">📚 Library <span class="sub">Organize your books by shelves</span></div>
+                </div>
+
+                <!-- 2. Detail -->
+                <div class="screenshot-item">
+                    <img src="captura_detalle_real_es.jpg" alt="Book detail" loading="lazy">
+                    <div class="label">📖 Book detail <span class="sub">Sessions, stats and timer</span></div>
+                </div>
+
+                <!-- 3. History -->
+                <div class="screenshot-item">
+                    <img src="captura_historial_en.jpg" alt="History" loading="lazy">
+                    <div class="label">📋 Global history <span class="sub">Summary by book with sessions, time and pages</span></div>
+                </div>
+
+                <!-- 4. Annual stats -->
+                <div class="screenshot-item">
+                    <img src="captura_heatmap_en.jpg" alt="Annual stats" loading="lazy">
+                    <div class="label">📊 Annual stats <span class="sub">Pages read month by month</span></div>
+                </div>
+
+                <!-- 5. Monthly heatmap -->
+                <div class="screenshot-item">
+                    <img src="captura_heatmap_mayo_en.jpg" alt="Monthly heatmap" loading="lazy">
+                    <div class="label">📊 Monthly heatmap <span class="sub">Reading intensity day by day</span></div>
+                </div>
+
+                <!-- 6. Widget -->
+                <div class="screenshot-item">
+                    <img src="captura_widget_real_en.png" alt="Widget" loading="lazy">
+                    <div class="label">🧩 Widget <span class="sub">Your book on the home screen</span></div>
+                </div>
+
+                <!-- 7. (placeholder) Sessions -->
+                <div class="screenshot-item" style="opacity:0.5; filter:grayscale(1);">
+                    <img src="captura_widget_real_en.png" alt="Sessions (coming soon)" loading="lazy" style="object-fit:cover; background:#1a1a2e;">
+                    <div class="label">⏱️ Reading sessions <span class="sub">Coming soon</span></div>
+                </div>
+
+                <!-- 8. (placeholder) Settings -->
+                <div class="screenshot-item" style="opacity:0.5; filter:grayscale(1);">
+                    <img src="captura_widget_real_en.png" alt="Settings (coming soon)" loading="lazy" style="object-fit:cover; background:#1a1a2e;">
+                    <div class="label">⚙️ Settings & Backup <span class="sub">Coming soon</span></div>
+                </div>
+
             </div>
         </div>
 
@@ -983,55 +821,20 @@
             <div class="feature-card"><div class="icon">🌐</div><div class="title">Multiple editions</div><div class="desc">Different languages without losing sessions.</div></div>
             <div class="feature-card"><div class="icon">☁️</div><div class="title">Local and drive backup</div><div class="desc">Automatic backups locally and on Google Drive.</div></div>
         </div>
-        <!-- Libros -->
-        <div class="section" id="mockups-en">
-            <h2>📱 Lecturameter in action</h2>
-            <p class="sub" style="font-size:13px; color:#888; margin-bottom:12px;">Tap a book to see its sessions (demo)</p>
-            <div class="book-grid" id="bookGrid-en"></div>
-            <div class="real-screenshot"><div class="label">📸 Real screenshot</div><img src="captura_libros_real_en.jpg" alt="Library" loading="lazy"></div>
-        </div>
-        <!-- Detail -->
-        <div id="detail-en" style="margin-top:16px;">
-            <h2>📖 Book detail</h2>
-            <div class="detail-mock">
-                <div class="header">
-                    <div class="cover" style="background-image:url('https://covers.openlibrary.org/b/id/15101787-L.jpg');"></div>
-                    <div class="info">
-                        <div class="title"><span class="flag">🇬🇧</span> Mistborn: The Final Empire</div>
-                        <div class="author">
-                            <span>Brandon Sanderson</span>
-                            <span class="isbn">ISBN: 978-0-7653-5675-8</span>
-                        </div>
-                    </div>
-                    <span class="badge" style="background:#06b6d4;color:#121212;">Rereading</span>
-                </div>
-                <div class="rating-block"><span>★★★★★</span> <span class="num">9/10</span></div>
-                <div class="stat-pills">
-                    <span class="stat-pill days"><span class="num">23</span> <span class="label">days</span></span>
-                    <span class="stat-pill time"><span class="num">1h 5m</span></span>
-                    <span class="stat-pill pages"><span class="num">120</span> <span class="label">pgs</span></span>
-                    <span class="stat-pill percent"><span class="num">18%</span></span>
-                    <span class="stat-pill pace"><span class="num">5.2</span> <span class="label">p/d</span></span>
-                </div>
-                <div style="font-size:12px; color:#888;">📄 672 total pages · 🎯 3-659 functional</div>
+
+        <div class="privacy-highlight">
+            <div class="icon">🔒</div>
+            <div class="title">Your data stays only on your device</div>
+            <div class="desc">
+                <strong>Lecturameter does not collect or send your data to any server.</strong> 
+                Your library, sessions, and statistics are stored exclusively on your phone. 
+                If you enable Google Drive backup, only you have access to those files. 
+                No ads, no subscriptions, no tracking.
             </div>
-            <div class="real-screenshot"><div class="label">📸 Real screenshot</div><img src="captura_detalle_real_en.jpg" alt="Book detail" loading="lazy"></div>
         </div>
-        <!-- History -->
-        <div id="history-en" style="margin-top:16px;">
-            <h2>📋 Session history</h2>
-            <div class="history-container" id="historyContainer-en">
-                <div class="history-header">
-                    <span class="summary" id="historySummary-en">7 ses · 3h 6m total · 120 pgs · 0.6 p/m</span>
-                    <button class="order-btn" onclick="toggleOrder('en')">Oldest first</button>
-                </div>
-                <div id="historyList-en"></div>
-            </div>
-            <div class="real-screenshot"><div class="label">📸 Real screenshot</div><img src="captura_historial_real_en.jpg" alt="History" loading="lazy"></div>
-        </div>
-        <div class="section" id="stats-en" style="margin-top:16px;">
-            <h2>📊 Stats</h2>
-            <p class="sub" style="font-size:13px; color:#888; margin-bottom:12px;">Summary of your reading habits</p>
+
+        <div class="section" style="margin-top:16px;">
+            <h2>📊 Example Stats</h2>
             <div class="stats-grid" id="statsGrid-en">
                 <div class="stat-box c-purple"><div class="number" id="totalBooks-en">5</div><div class="label">Total books</div></div>
                 <div class="stat-box c-blue">  <div class="number" id="totalSessions-en">7</div><div class="label">Sessions</div></div>
@@ -1045,31 +848,8 @@
                 <div class="bar-chart" id="barChart-en"></div>
             </div>
         </div>
-        <!-- Widget -->
-        <div class="section" id="widget-en" style="margin-top:16px;">
-            <h2>🧩 Widget</h2>
-            <p class="sub" style="font-size:13px; color:#888; margin-bottom:10px;">Your book wherever you want, with cover and stats</p>
-            <div class="widget-sim">
-                <div class="cover" style="background-image:url('https://covers.openlibrary.org/b/id/15101787-L.jpg');"></div>
-                <div class="info">
-                    <div class="title">Mistborn: The Final Empire</div>
-                    <div class="author">Brandon Sanderson</div>
-                    <div class="stats-pills">
-                        <span class="pill">📅 <span class="num">23</span> days</span>
-                        <span class="pill">⏱️ <span class="num">1h 5m</span></span>
-                        <span class="pill">📖 <span class="num">6</span> ses</span>
-                        <span class="pill">📄 <span class="num">20</span>p</span>
-                        <span class="pill">📊 <span class="num">18</span>%</span>
-                    </div>
-                    <div class="progress-bar"><div class="fill" style="width:18%;"></div></div>
-                    <div class="timestamp">14:17 · 06/26/2026</div>
-                </div>
-            </div>
-            <div class="real-screenshot left"><div class="label">📸 Real screenshot</div><img src="captura_widget_real_en.png" class="widget-cap" alt="Widget" loading="lazy"></div>
-        </div>
 
-        <!-- ENLACES PRINCIPALES (inglés) -->
-        <div class="section" id="links-en" style="margin-top:16px;">
+        <div class="section" style="margin-top:16px;">
             <h2>🔗 Links</h2>
             <div class="links-grid">
                 <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="link-box playstore">
@@ -1080,13 +860,6 @@
                     <div class="icon"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="#8B5CF6"/></svg></div>
                     <div class="text">GitHub<div class="sub" style="color:#8B5CF6;">⬇ Direct APK</div></div>
                 </a>
-            </div>
-        </div>
-
-        <!-- ─── REDES SOCIALES (inglés) ─── -->
-        <div class="section" id="social-en" style="margin-top:16px;">
-            <h2>🌐 Social Media</h2>
-            <div class="links-grid">
                 <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" class="link-box x">
                     <div class="icon"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
                     <div class="text">X (Twitter)<div class="sub">@LecturameterAPP</div></div>
@@ -1104,27 +877,20 @@
             </div>
         </div>
 
-        <!-- Notify EN -->
-        <div class="section" id="notify-en" style="margin-top:16px;">
-            <h2>🔔 Notify me when it's out</h2>
-            <p style="font-size:13px; color:#bbb; margin-top:8px; margin-bottom:12px;">You'll receive a message when it's available. <span style="font-size:11px; color:#555;">If you don't see it, check spam.</span></p>
-            <div class="notify-form" id="notifyFormEl-en">
-                <input class="fb-input" type="email" id="notifyEmail-en" placeholder="Your email" autocomplete="email">
-                <div class="notify-checks">
-                    <label class="notify-check">
-                        <input type="checkbox" id="notifyPS-en" checked>
-                        <span>▶️ Play Store launch</span>
-                    </label>
-                </div>
-                <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-                    <button class="notify-btn" onclick="sendNotify('en')">Notify me</button>
-                    <span class="notify-status" id="notifyStatus-en"></span>
-                </div>
+        <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
+            <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Demo backup</div>
+            <p style="font-size:13px; color:#bbb; margin-bottom:10px;">Want to try the app with sample data? Download this backup with 10 classic books across all categories (reading, finished, rereading, want to read, dropped) with reading sessions included.</p>
+            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Download demo backup</a>
+            <div style="font-size:12px; color:#888; margin-top:12px; line-height:1.6;">
+                <strong style="color:#aaa;">How to use it:</strong><br>
+                1. Download the JSON file to your phone<br>
+                2. Open Lecturameter → Settings → Restore local backup<br>
+                3. Select the downloaded file<br>
+                4. Done! Explore the library, stats and widget
             </div>
         </div>
 
-        <!-- Privacy -->
-        <div class="section" id="privacy-en" style="margin-top:16px;">
+        <div class="section" style="margin-top:16px;">
             <h2>🔒 Privacy Policy</h2>
             <div class="privacy-text">
                 <p><strong>Last updated:</strong> July 1, 2026</p>
@@ -1155,8 +921,8 @@
                 <p style="margin-top:10px; font-size:11px; color:#666;">You can also read it on <a href="https://lecturameterapp.github.io/lecturameter-policy/" target="_blank" style="color:#BB86FC;">GitHub Pages</a>.</p>
             </div>
         </div>
-        <!-- Contact -->
-        <div class="section" id="contact-en" style="margin-top:16px;">
+
+        <div class="section" style="margin-top:16px;">
             <h2>📨 Contact</h2>
             <p style="font-size:13px; color:#bbb; margin-bottom:12px;">Questions, suggestions, or issues? Write to me and I'll get back to you.</p>
             <div class="feedback-form" id="feedbackForm-en">
@@ -1168,12 +934,20 @@
                 </div>
             </div>
         </div>
+
         <div class="footer">© 2026 Lecturameter</div>
     </div>
 </div>
 
 <script>
-    // ─── DATOS ───
+    // ─── EMAILJS ───
+    const EJS_PUBLIC_KEY   = '3cdH3XtjBWBRKC9tS';
+    const EJS_SERVICE_ID   = 'service_l1psqa9';
+    const EJS_TPL_VICTOR   = 'template_nlxdksn';
+    const EJS_TPL_USER     = 'template_pmpiafh';
+    try { emailjs.init(EJS_PUBLIC_KEY); } catch(e) { console.warn('EmailJS no cargó:', e); }
+
+    // ─── DATOS PARA ESTADÍSTICAS ───
     const sessionData = [
         { date: '03/06/2026', pages: 19, time: 25, range: '9-27' },
         { date: '05/06/2026', pages: 14, time: 26, range: '28-41' },
@@ -1183,7 +957,6 @@
         { date: '26/06/2026', pages: 42, time: 65, range: '87-128' },
         { date: '30/06/2026', pages: 28, time: 32, range: '129-156' }
     ];
-
     const totalPages = sessionData.reduce((s, e) => s + e.pages, 0);
     const totalMinutes = sessionData.reduce((s, e) => s + e.time, 0);
     const hours = Math.floor(totalMinutes / 60);
@@ -1191,155 +964,6 @@
     const totalTimeStr = hours ? `${hours}h ${mins}m` : `${mins}m`;
     const avgPagesSession = (totalPages / sessionData.length).toFixed(1);
     const avgPace = (totalPages / totalMinutes).toFixed(1);
-
-    // ─── LIBROS ───
-    const booksEs = [
-        { id: 1, title: 'El Imperio Final', author: 'Brandon Sanderson', meta: 'Fantasía · 688 págs', rating: 9, stars: 5, status: 'rereading', cover: 'https://covers.openlibrary.org/b/id/15234768-L.jpg', sessions: sessionData.slice(0,3) },
-        { id: 2, title: 'El Nombre del Viento', author: 'Patrick Rothfuss', meta: 'Fantasía · 880 págs', rating: 8, stars: 4, status: 'finished', cover: 'https://covers.openlibrary.org/b/id/15234772-L.jpg', sessions: sessionData.slice(0,3) },
-        { id: 3, title: 'El Dragón Renacido', author: 'Robert Jordan', meta: 'Fantasía · 688 págs', rating: 8, stars: 4, status: 'reading', cover: 'https://covers.openlibrary.org/b/id/10208465-L.jpg', sessions: sessionData.slice(0,3) },
-        { id: 4, title: 'Dune', author: 'Frank Herbert', meta: 'Ciencia Ficción · 784 págs', rating: 0, stars: 0, status: 'pending', cover: 'https://covers.openlibrary.org/b/id/14636513-L.jpg', sessions: [] },
-        { id: 5, title: 'Proyecto Hail Mary', author: 'Andy Weir', meta: 'Ciencia Ficción · 544 págs', rating: 5, stars: 3, status: 'dropped', cover: 'https://covers.openlibrary.org/b/id/15234773-L.jpg', sessions: sessionData.slice(0,2) }
-    ];
-
-    const booksEn = [
-        { id: 1, title: 'Mistborn: The Final Empire', author: 'Brandon Sanderson', meta: 'Fantasy · 672 pages', rating: 9, stars: 5, status: 'rereading', cover: 'https://covers.openlibrary.org/b/id/15101787-L.jpg', sessions: sessionData.slice(0,3) },
-        { id: 2, title: 'The Name of the Wind', author: 'Patrick Rothfuss', meta: 'Fantasy · 672 pages', rating: 8, stars: 4, status: 'finished', cover: 'https://covers.openlibrary.org/b/id/12391248-L.jpg', sessions: sessionData.slice(0,3) },
-        { id: 3, title: 'The Dragon Reborn', author: 'Robert Jordan', meta: 'Fantasy · 624 pages', rating: 8, stars: 4, status: 'reading', cover: 'https://covers.openlibrary.org/b/id/908775-L.jpg', sessions: sessionData.slice(0,3) },
-        { id: 4, title: 'Dune', author: 'Frank Herbert', meta: 'Science Fiction · 896 pages', rating: 0, stars: 0, status: 'pending', cover: 'https://covers.openlibrary.org/b/id/7885536-L.jpg', sessions: [] },
-        { id: 5, title: 'Project Hail Mary', author: 'Andy Weir', meta: 'Science Fiction · 497 pages', rating: 5, stars: 3, status: 'dropped', cover: 'https://covers.openlibrary.org/b/id/15208263-L.jpg', sessions: sessionData.slice(0,2) }
-    ];
-
-    function renderStars(count) {
-        return '★'.repeat(count) + '☆'.repeat(5 - count);
-    }
-
-    function renderBookCard(book, lang) {
-        const statusMap = {
-            rereading: { label: lang === 'es' ? 'Releyendo' : 'Rereading', cls: 'rereading' },
-            reading: { label: lang === 'es' ? 'Leyendo' : 'Reading', cls: 'reading' },
-            finished: { label: lang === 'es' ? 'Leído' : 'Finished', cls: 'finished' },
-            pending: { label: lang === 'es' ? 'Quiero leer' : 'Want to read', cls: 'pending' },
-            dropped: { label: lang === 'es' ? 'Abandonado' : 'Dropped', cls: 'dropped' }
-        };
-        const st = statusMap[book.status] || statusMap.pending;
-        let sessionsHtml = '';
-        if (book.sessions && book.sessions.length) {
-            let header = lang === 'es' ? 
-                '<div class="session-header"><span>Fecha</span><span>Págs</span><span>Tiempo</span><span>Inicio-Fin</span><span>Págs/min</span></div>' :
-                '<div class="session-header"><span>Date</span><span>Pages</span><span>Time</span><span>Start-End</span><span>Pages/min</span></div>';
-            let rows = book.sessions.map(s => {
-                let pace = (s.pages / s.time).toFixed(1);
-                return `<div class="session-row"><span class="date">${s.date}</span><span class="pages">${s.pages}</span><span class="time">${s.time} min</span><span class="range">${s.range}</span><span class="pace">${pace}</span></div>`;
-            }).join('');
-            sessionsHtml = `<div class="sessions">${header}${rows}</div>`;
-        } else {
-            sessionsHtml = `<div class="sessions"><div class="session-row" style="justify-content:center; color:#666; font-size:12px; padding:8px 0;">${lang === 'es' ? 'Sin sesiones' : 'No sessions'}</div></div>`;
-        }
-
-        let ratingHtml = '';
-        if (book.rating > 0) {
-            ratingHtml = `<div class="rating"><span class="stars">${renderStars(book.stars)}</span> <span class="num">${book.rating}/10</span></div>`;
-        }
-
-        return `
-            <div class="book-card" onclick="toggleSessions(this)">
-                <div class="shelf-bar ${st.cls}"></div>
-                <span class="delete-icon">🗑️</span>
-                <div class="row">
-                    <div class="cover" style="background-image:url('${book.cover}');"></div>
-                    <div class="info">
-                        <div class="title">${book.title}</div>
-                        <div class="author">${book.author}</div>
-                        <div class="meta">${book.meta}</div>
-                        ${ratingHtml}
-                    </div>
-                    <span class="badge ${st.cls}">${st.label}</span>
-                </div>
-                ${sessionsHtml}
-                <div class="actions">
-                    <span class="action-btn refresh" title="${lang === 'es' ? 'Recargar' : 'Refresh'}">⟳</span>
-                    <span class="action-btn edit" title="${lang === 'es' ? 'Editar' : 'Edit'}">✎</span>
-                </div>
-            </div>
-        `;
-    }
-
-    function renderBooks(lang) {
-        const gridId = lang === 'es' ? 'bookGrid-es' : 'bookGrid-en';
-        const grid = document.getElementById(gridId);
-        if (!grid) return;
-        const books = lang === 'es' ? booksEs : booksEn;
-        grid.innerHTML = books.map(b => renderBookCard(b, lang)).join('');
-        observeCards(grid);
-    }
-
-    function observeCards(grid) {
-        const cards = grid.querySelectorAll('.book-card');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-        cards.forEach(card => observer.observe(card));
-    }
-
-    function toggleSessions(card) {
-        const sessions = card.querySelector('.sessions');
-        if (sessions) sessions.classList.toggle('open');
-    }
-
-    let orderState = { es: 'oldest', en: 'oldest' };
-
-    function generateHistory(lang) {
-        const listId = 'historyList-' + lang;
-        const summaryId = 'historySummary-' + lang;
-        const container = document.getElementById(listId);
-        const summary = document.getElementById(summaryId);
-        if (!container) return;
-
-        const order = orderState[lang] || 'oldest';
-        const sorted = [...sessionData];
-        sorted.sort((a,b) => {
-            const da = new Date(a.date.split('/').reverse().join('-'));
-            const db = new Date(b.date.split('/').reverse().join('-'));
-            return order === 'oldest' ? da - db : db - da;
-        });
-
-        const btn = container.parentElement.querySelector('.order-btn');
-        if (btn) {
-            btn.textContent = order === 'oldest' 
-                ? (lang === 'es' ? 'Más antiguo primero' : 'Oldest first')
-                : (lang === 'es' ? 'Más nuevo primero' : 'Newest first');
-        }
-
-        let html = '';
-        sorted.forEach((s, i) => {
-            const pace = (s.pages / s.time).toFixed(1);
-            html += `
-                <div class="history-item">
-                    <div class="hi-date">#${i+1} · ${s.date}</div>
-                    <div class="hi-stats">
-                        <span style="color:#10b981;">${s.pages} ${lang === 'es' ? 'págs' : 'pgs'}</span><span style="color:#555;"> · </span><span style="color:#60a5fa;">${s.time} min</span><span style="color:#555;"> · </span><span style="color:#f59e0b;">${s.range}</span><span style="color:#555;"> · </span><span style="color:#BB86FC;">${pace} p/m</span>
-                    </div>
-                </div>
-            `;
-        });
-        container.innerHTML = html;
-
-        if (summary) {
-            summary.textContent = lang === 'es'
-                ? `${sessionData.length} ses · ${totalTimeStr} total · ${totalPages} págs · ${avgPace} p/m`
-                : `${sessionData.length} ses · ${totalTimeStr} total · ${totalPages} pgs · ${avgPace} p/m`;
-        }
-    }
-
-    function toggleOrder(lang) {
-        orderState[lang] = orderState[lang] === 'oldest' ? 'newest' : 'oldest';
-        generateHistory(lang);
-    }
 
     function renderStats(lang) {
         const prefix = lang === 'es' ? '-es' : '-en';
@@ -1372,41 +996,24 @@
         chartContainer.innerHTML = barsHtml;
     }
 
-    function setLang(lang) {
-        document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-        document.getElementById('content-' + lang).classList.add('active');
-        document.querySelectorAll('.lang-bar button').forEach(b => b.classList.remove('active'));
-        document.getElementById('btn-' + lang).classList.add('active');
-        document.documentElement.lang = lang;
-        renderBooks(lang);
-        generateHistory(lang);
-        renderStats(lang);
-    }
-
-    // ─── EMAILJS CONFIG ───
-    const EJS_PUBLIC_KEY   = '3cdH3XtjBWBRKC9tS';
-    const EJS_SERVICE_ID   = 'service_l1psqa9';
-    const EJS_TPL_VICTOR   = 'template_nlxdksn';
-    const EJS_TPL_USER     = 'template_pmpiafh';
-    try { emailjs.init(EJS_PUBLIC_KEY); } catch(e) { console.warn('EmailJS no cargó:', e); }
-
     // ─── NOTIFY ───
     async function sendNotify(lang) {
         const email  = document.getElementById('notifyEmail-' + lang).value.trim();
-        const ps     = document.getElementById('notifyPS-' + lang).checked;
+        const captcha = document.getElementById('notifyCaptcha-' + lang).checked;
         const status = document.getElementById('notifyStatus-' + lang);
-        const btn    = document.querySelector('#notifyFormEl-' + lang + ' .notify-btn');
+        const btn    = document.querySelector('#notifyForm' + (lang === 'es' ? 'Es' : 'En') + ' .notify-btn');
 
         if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             status.textContent = lang === 'es' ? '⚠️ Email no válido' : '⚠️ Invalid email';
             status.className = 'notify-status err';
             return;
         }
-        if (!ps) {
-            status.textContent = lang === 'es' ? '⚠️ Marca al menos una opción' : '⚠️ Select at least one option';
+        if (!captcha) {
+            status.textContent = lang === 'es' ? '⚠️ Por favor, marca que no eres un robot' : '⚠️ Please confirm you are not a robot';
             status.className = 'notify-status err';
             return;
         }
+
         btn.disabled = true;
         status.textContent = lang === 'es' ? 'Guardando...' : 'Saving...';
         status.className = 'notify-status';
@@ -1418,17 +1025,16 @@
             return;
         }
 
-        const plats = ps ? 'Play Store' : '';
-
         try {
-            await emailjs.send(EJS_SERVICE_ID, EJS_TPL_VICTOR, { user_email: email, platforms: plats });
-            await emailjs.send(EJS_SERVICE_ID, EJS_TPL_USER,   { user_email: email, platforms: plats });
+            await emailjs.send(EJS_SERVICE_ID, EJS_TPL_VICTOR, { user_email: email, platforms: 'Play Store' });
+            await emailjs.send(EJS_SERVICE_ID, EJS_TPL_USER,   { user_email: email, platforms: 'Play Store' });
 
             status.textContent = lang === 'es'
-                ? 'Añadido a la lista de avisos. ¡Muchas gracias! :)'
-                : 'Added to the list. Thank you so much! :)';
+                ? '¡Añadido! Recibirás un correo cuando la app esté lista.'
+                : 'Added! You\'ll receive an email when the app is ready.';
             status.className = 'notify-status ok';
             document.getElementById('notifyEmail-' + lang).value = '';
+            document.getElementById('notifyCaptcha-' + lang).checked = false;
         } catch (e) {
             status.textContent = lang === 'es'
                 ? '❌ Error. Prueba en lecturameter.app@gmail.com'
@@ -1476,6 +1082,16 @@
             status.className = 'fb-status err';
             btn.disabled = false;
         }
+    }
+
+    // ─── IDIOMA ───
+    function setLang(lang) {
+        document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+        document.getElementById('content-' + lang).classList.add('active');
+        document.querySelectorAll('.lang-bar button').forEach(b => b.classList.remove('active'));
+        document.getElementById('btn-' + lang).classList.add('active');
+        document.documentElement.lang = lang;
+        renderStats(lang);
     }
 
     document.addEventListener('DOMContentLoaded', function() {
