@@ -16,7 +16,15 @@
     <meta name="twitter:title" content="Lecturameter – Tu tracker de lectura para Android">
     <meta name="twitter:description" content="Organiza tu biblioteca, cronometra sesiones y consulta estadísticas detalladas. Sin anuncios, sin suscripciones.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
-    <link rel="icon" href="https://lecturameterapp.github.io/ic_launcher_round.png">
+
+    <!-- ─── ICONOS ─── -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+
     <link rel="canonical" href="https://lecturameterapp.github.io/">
 
     <!-- Schema JSON-LD -->
@@ -82,6 +90,24 @@
         }
         .lang-content { display: none; }
         .lang-content.active { display: block; }
+
+        /* ─── NAV ─── */
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            padding: 12px 0 20px;
+            border-bottom: 1px solid #333;
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: #BB86FC; }
 
         .hero { text-align: center; padding: 16px 0 8px; }
         .hero h1 { font-size: 32px; font-weight: 700; color: #BB86FC; }
@@ -215,6 +241,12 @@
             text-align: center;
         }
         .captcha-row input:focus { border-color: #BB86FC; }
+        .captcha-row .captcha-question {
+            background: #2d2d2d;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-weight: 600;
+        }
         .notify-btn {
             background: #BB86FC;
             color: #121212;
@@ -228,7 +260,11 @@
             font-family: inherit;
         }
         .notify-btn:hover { background: #a06ce0; }
-        .notify-btn:disabled { opacity: 0.5; cursor: default; }
+        .notify-btn:disabled {
+            opacity: 0.6;
+            cursor: default;
+            background: #555;
+        }
         .notify-status { font-size: 13px; }
         .notify-status.ok  { color: #10b981; }
         .notify-status.err { color: #ef4444; }
@@ -247,7 +283,7 @@
         .privacy-highlight .icon { font-size: 28px; }
         .privacy-highlight .title { font-weight: 700; font-size: 18px; color: #10b981; }
         .privacy-highlight .desc { font-size: 14px; color: #ccc; line-height: 1.5; }
-        .privacy-highlight .desc strong { color: #fff; }
+        .privacy-highlight .desc span.highlight { font-weight: 600; color: #fff; }
 
         .widget-sim {
             width: 100%;
@@ -426,6 +462,7 @@
             font-size: 13px;
             color: #bbb;
         }
+        .privacy-text span.highlight { font-weight: 600; color: #fff; }
         .feedback-form { display: flex; flex-direction: column; gap: 10px; }
         .fb-input, .fb-textarea {
             background: #1a1a1a;
@@ -489,6 +526,7 @@
             .bar-chart { height: 100px; gap: 4px; }
             .bar-chart .bar-item .bar { max-width: 20px; }
             .links-grid .link-box { min-width: 120px; padding: 12px 16px; }
+            .nav-links { gap: 10px; font-size: 12px; }
         }
         @media (max-width: 420px) {
             .features-grid { grid-template-columns: 1fr; }
@@ -507,11 +545,20 @@
         <button id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
     </div>
 
+    <!-- ─── MENÚ DE NAVEGACIÓN (enlaces internos) ─── -->
+    <nav class="nav-links">
+        <a href="#features">Características</a>
+        <a href="#screenshots">Capturas</a>
+        <a href="#stats">Estadísticas</a>
+        <a href="#privacy">Privacidad</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
     <!-- ─── CONTENIDO EN ESPAÑOL ─── -->
     <div id="content-es" class="lang-content active">
         <!-- Hero -->
         <div class="hero">
-            <h1>Lecturameter</h1>
+            <h1>Lecturameter – Tu tracker de lectura para Android</h1>
             <p class="tagline">Seguimiento de tus lecturas, letra a letra. Sin anuncios, sin suscripciones.</p>
             <p class="desc">App para Android que organiza tu biblioteca, cronometra tus sesiones y te muestra estadísticas detalladas. También hace backup automático en Google Drive.</p>
             <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:4px;">
@@ -523,7 +570,7 @@
             <p style="font-size:12px; color:#666; margin-top:4px;">Prueba cerrada · Lanzamiento oficial en Play Store próximamente</p>
         </div>
 
-        <!-- CTA NOTIFICACIÓN (con captcha matemático) -->
+        <!-- CTA NOTIFICACIÓN con captcha matemático -->
         <div class="cta-notify">
             <h2>📩 Recibe un aviso cuando la app esté disponible</h2>
             <p>Te llegará un correo en cuanto se lance oficialmente. Sin spam, solo un aviso.</p>
@@ -532,8 +579,9 @@
                     <input class="fb-input" type="email" id="notifyEmailEs" placeholder="Tu email" autocomplete="email">
                 </div>
                 <div class="captcha-row">
-                    <span id="captchaQuestionEs">¿Cuánto es 2 + 3?</span>
-                    <input type="text" id="captchaInputEs" autocomplete="off" aria-label="Respuesta del captcha">
+                    <span>🔐</span>
+                    <span class="captcha-question" id="captchaQuestionEs">2 + 3 = ?</span>
+                    <input type="text" id="captchaInputEs" placeholder="?" autocomplete="off" maxlength="2">
                 </div>
                 <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:center;">
                     <button class="notify-btn" id="notifyBtnEs" onclick="sendNotify('es')">Avísame</button>
@@ -542,8 +590,8 @@
             </div>
         </div>
 
-        <!-- GALERÍA (6 capturas reales, sin placeholders) -->
-        <div class="section">
+        <!-- GALERÍA DE CAPTURAS (6 reales) -->
+        <div class="section" id="screenshots">
             <h2>📱 Así se ve Lecturameter</h2>
             <p style="font-size:13px; color:#888; margin-bottom:12px;">Capturas reales de la aplicación</p>
             <div class="screenshot-gallery">
@@ -560,9 +608,9 @@
                     <div class="label">📖 Detalle del libro <span class="sub">Sesiones, estadísticas y cronómetro</span></div>
                 </div>
 
-                <!-- 3. Historial (usando el nombre real que tienes) -->
+                <!-- 3. Historial -->
                 <div class="screenshot-item">
-                    <img src="captura_historial_real_es.jpg" alt="Historial" loading="lazy">
+                    <img src="captura_historial_es.jpg" alt="Historial" loading="lazy">
                     <div class="label">📋 Historial global <span class="sub">Resumen por libro con sesiones, tiempo y páginas</span></div>
                 </div>
 
@@ -578,7 +626,7 @@
                     <div class="label">📊 Mapa de calor mensual <span class="sub">Intensidad de lectura día a día</span></div>
                 </div>
 
-                <!-- 6. Widget (usando la española si la tienes, o la misma) -->
+                <!-- 6. Widget -->
                 <div class="screenshot-item">
                     <img src="captura_widget_real_es.png" alt="Widget" loading="lazy">
                     <div class="label">🧩 Widget <span class="sub">Tu libro en la pantalla de inicio</span></div>
@@ -588,7 +636,7 @@
         </div>
 
         <!-- FEATURES -->
-        <div class="features-grid">
+        <div class="features-grid" id="features">
             <div class="feature-card"><div class="icon">⏱️</div><div class="title">Cronómetro</div><div class="desc">Funciona con la pantalla apagada.</div></div>
             <div class="feature-card"><div class="icon">📊</div><div class="title">Estadísticas</div><div class="desc">Gráficos, Wrapped anual, heatmap.</div></div>
             <div class="feature-card"><div class="icon">🧩</div><div class="title">Widget</div><div class="desc">Tu libro en la pantalla de inicio.</div></div>
@@ -602,7 +650,7 @@
             <div class="icon">🔒</div>
             <div class="title">Tus datos solo están en tu dispositivo</div>
             <div class="desc">
-                <strong>Lecturameter no recopila ni envía tus datos a ningún servidor.</strong> 
+                <span class="highlight">Lecturameter no recopila ni envía tus datos a ningún servidor.</span> 
                 Tu biblioteca, sesiones y estadísticas se guardan exclusivamente en tu móvil. 
                 Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos. 
                 Sin anuncios, sin suscripciones, sin tracking.
@@ -610,7 +658,7 @@
         </div>
 
         <!-- STATS (demo) -->
-        <div class="section" style="margin-top:16px;">
+        <div class="section" id="stats">
             <h2>📊 Estadísticas de ejemplo</h2>
             <div class="stats-grid" id="statsGrid-es">
                 <div class="stat-box c-purple"><div class="number" id="totalBooks-es">5</div><div class="label">Libros totales</div></div>
@@ -634,7 +682,7 @@
                     <div class="icon"><svg viewBox="0 0 512 512"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" fill="#34A853"/></svg></div>
                     <div class="text">Grupo de testers<div class="sub">▶ Únete para probar</div></div>
                 </a>
-                <a href="https://github.com/LecturameterAPP/Lecturameter/releases/tag/v2.6" target="_blank" rel="noopener" class="link-box github">
+                <a href="https://github.com/LecturameterAPP/Lecturameter/releases/tag/1.5" target="_blank" rel="noopener" class="link-box github">
                     <div class="icon"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="#8B5CF6"/></svg></div>
                     <div class="text">GitHub<div class="sub" style="color:#8B5CF6;">⬇ APK directo</div></div>
                 </a>
@@ -661,7 +709,7 @@
             <p style="font-size:13px; color:#bbb; margin-bottom:10px;">¿Quieres probar la app con datos de ejemplo? Descarga este backup con 10 libros clásicos repartidos en todas las categorías (leyendo, terminado, releyendo, quiero leer, abandonado) y sesiones de lectura incluidas.</p>
             <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Descargar backup demo</a>
             <div style="font-size:12px; color:#888; margin-top:12px; line-height:1.6;">
-                <strong style="color:#aaa;">Cómo usarlo:</strong><br>
+                <span style="font-weight:600; color:#aaa;">Cómo usarlo:</span><br>
                 1. Descarga el archivo JSON en tu móvil<br>
                 2. Abre Lecturameter → Ajustes → Restaurar backup local<br>
                 3. Selecciona el archivo descargado<br>
@@ -670,14 +718,14 @@
         </div>
 
         <!-- POLÍTICA DE PRIVACIDAD -->
-        <div class="section" style="margin-top:16px;">
+        <div class="section" id="privacy">
             <h2>🔒 Política de privacidad</h2>
             <div class="privacy-text">
-                <p><strong>Última actualización:</strong> 1 de julio de 2026</p>
-                <p style="margin-top:8px;">Lecturameter <strong>no recopila, almacena ni transmite ningún dato personal a servidores externos</strong>, salvo en los siguientes casos:</p>
-                <p style="margin-top:10px; color:#ddd;"><strong>1. Google Drive (opcional)</strong></p>
-                <p>Si activas la copia de seguridad en la nube, la app se conecta a tu cuenta de Google mediante OAuth2 para guardar una copia de tus libros y sesiones en la raíz de tu Drive. <strong>Solo tú tienes acceso a esos archivos.</strong> En ningún caso el desarrollador puede ver, modificar ni eliminar esos datos.</p>
-                <p style="margin-top:10px; color:#ddd;"><strong>2. APIs externas de metadatos</strong></p>
+                <p><span class="highlight">Última actualización:</span> 1 de julio de 2026</p>
+                <p style="margin-top:8px;">Lecturameter <span class="highlight">no recopila, almacena ni transmite ningún dato personal a servidores externos</span>, salvo en los siguientes casos:</p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">1. Google Drive (opcional)</span></p>
+                <p>Si activas la copia de seguridad en la nube, la app se conecta a tu cuenta de Google mediante OAuth2 para guardar una copia de tus libros y sesiones en la raíz de tu Drive. <span class="highlight">Solo tú tienes acceso a esos archivos.</span> En ningún caso el desarrollador puede ver, modificar ni eliminar esos datos.</p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">2. APIs externas de metadatos</span></p>
                 <p>Para buscar portadas y metadatos de libros, la app puede consultar las siguientes APIs directamente desde tu dispositivo (sin pasar por servidores propios):</p>
                 <ul style="padding-left:18px; margin:6px 0;">
                     <li>OpenLibrary</li>
@@ -687,23 +735,23 @@
                     <li>Hardcover</li>
                 </ul>
                 <p>Estas llamadas no incluyen datos personales; solo el título o ISBN buscado.</p>
-                <p style="margin-top:10px; color:#ddd;"><strong>3. Permisos de la app</strong></p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">3. Permisos de la app</span></p>
                 <ul style="padding-left:18px; margin:6px 0;">
-                    <li><strong>Internet:</strong> necesario para buscar portadas y hacer backup en Drive.</li>
-                    <li><strong>Almacenamiento local:</strong> para guardar backups en el dispositivo.</li>
-                    <li><strong>Cuenta de Google (OAuth2):</strong> solo si usas el backup en Drive. Puedes revocar el acceso en cualquier momento desde tu cuenta de Google.</li>
-                    <li><strong>Arranque del dispositivo (BOOT_COMPLETED):</strong> para reprogramar alarmas de recordatorio tras reinicio.</li>
+                    <li><span class="highlight">Internet:</span> necesario para buscar portadas y hacer backup en Drive.</li>
+                    <li><span class="highlight">Almacenamiento local:</span> para guardar backups en el dispositivo.</li>
+                    <li><span class="highlight">Cuenta de Google (OAuth2):</span> solo si usas el backup en Drive. Puedes revocar el acceso en cualquier momento desde tu cuenta de Google.</li>
+                    <li><span class="highlight">Arranque del dispositivo (BOOT_COMPLETED):</span> para reprogramar alarmas de recordatorio tras reinicio.</li>
                 </ul>
-                <p style="margin-top:10px; color:#ddd;"><strong>4. Datos generados localmente</strong></p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">4. Datos generados localmente</span></p>
                 <p>Toda la información (libros, sesiones, estadísticas) se almacena exclusivamente en el dispositivo del usuario. Lecturameter no tiene servidores propios y no accede a estos datos.</p>
-                <p style="margin-top:10px; color:#ddd;"><strong>5. Contacto</strong></p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">5. Contacto</span></p>
                 <p>Para cualquier consulta sobre privacidad: <span style="color:#BB86FC;">lecturameter.app@gmail.com</span></p>
                 <p style="margin-top:10px; font-size:11px; color:#666;">También puedes leerlo en <a href="https://lecturameterapp.github.io/lecturameter-policy/" target="_blank" style="color:#BB86FC;">GitHub Pages</a>.</p>
             </div>
         </div>
 
         <!-- CONTACTO -->
-        <div class="section" style="margin-top:16px;">
+        <div class="section" id="contact">
             <h2>📨 Contacto</h2>
             <p style="font-size:13px; color:#bbb; margin-bottom:12px;">¿Dudas, sugerencias o problemas? Escríbeme y te responderé.</p>
             <div class="feedback-form" id="feedbackForm-es">
@@ -722,7 +770,7 @@
     <!-- ─── CONTENIDO EN INGLÉS ─── -->
     <div id="content-en" class="lang-content">
         <div class="hero">
-            <h1>Lecturameter</h1>
+            <h2 style="font-size:32px; font-weight:700; color:#BB86FC;">Lecturameter – Your Android reading tracker</h2>
             <p class="tagline">Track your reading habits, letter by letter. No ads, no subscriptions.</p>
             <p class="desc">Android app that organizes your library, times your reading sessions, and gives you detailed stats. Also backs up automatically to Google Drive.</p>
             <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:4px;">
@@ -734,7 +782,6 @@
             <p style="font-size:12px; color:#666; margin-top:4px;">Closed testing · Official Play Store launch coming soon</p>
         </div>
 
-        <!-- CTA NOTIFICACIÓN EN INGLÉS -->
         <div class="cta-notify">
             <h2>📩 Get notified when the app is out</h2>
             <p>You'll receive an email when it's officially launched. No spam, just one alert.</p>
@@ -743,8 +790,9 @@
                     <input class="fb-input" type="email" id="notifyEmailEn" placeholder="Your email" autocomplete="email">
                 </div>
                 <div class="captcha-row">
-                    <span id="captchaQuestionEn">What is 2 + 3?</span>
-                    <input type="text" id="captchaInputEn" autocomplete="off" aria-label="Captcha answer">
+                    <span>🔐</span>
+                    <span class="captcha-question" id="captchaQuestionEn">2 + 3 = ?</span>
+                    <input type="text" id="captchaInputEn" placeholder="?" autocomplete="off" maxlength="2">
                 </div>
                 <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:center;">
                     <button class="notify-btn" id="notifyBtnEn" onclick="sendNotify('en')">Notify me</button>
@@ -753,37 +801,42 @@
             </div>
         </div>
 
-        <!-- GALERÍA EN INGLÉS -->
-        <div class="section">
+        <div class="section" id="screenshots-en">
             <h2>📱 Lecturameter in action</h2>
             <p style="font-size:13px; color:#888; margin-bottom:12px;">Real screenshots of the app</p>
             <div class="screenshot-gallery">
 
+                <!-- 1. Library -->
                 <div class="screenshot-item">
-                    <img src="captura_libros_real_es.jpg" alt="Library" loading="lazy">
+                    <img src="captura_libros_real_en.jpg" alt="Library" loading="lazy">
                     <div class="label">📚 Library <span class="sub">Organize your books by shelves</span></div>
                 </div>
 
+                <!-- 2. Detail -->
                 <div class="screenshot-item">
                     <img src="captura_detalle_real_en.jpg" alt="Book detail" loading="lazy">
                     <div class="label">📖 Book detail <span class="sub">Sessions, stats and timer</span></div>
                 </div>
 
+                <!-- 3. History -->
                 <div class="screenshot-item">
-                    <img src="captura_historial_real_en.jpg" alt="History" loading="lazy">
+                    <img src="captura_historial_en.jpg" alt="History" loading="lazy">
                     <div class="label">📋 Global history <span class="sub">Summary by book with sessions, time and pages</span></div>
                 </div>
 
+                <!-- 4. Annual stats -->
                 <div class="screenshot-item">
                     <img src="captura_heatmap_en.jpg" alt="Annual stats" loading="lazy">
                     <div class="label">📊 Annual stats <span class="sub">Pages read month by month</span></div>
                 </div>
 
+                <!-- 5. Monthly heatmap -->
                 <div class="screenshot-item">
                     <img src="captura_heatmap_mayo_en.jpg" alt="Monthly heatmap" loading="lazy">
                     <div class="label">📊 Monthly heatmap <span class="sub">Reading intensity day by day</span></div>
                 </div>
 
+                <!-- 6. Widget -->
                 <div class="screenshot-item">
                     <img src="captura_widget_real_en.png" alt="Widget" loading="lazy">
                     <div class="label">🧩 Widget <span class="sub">Your book on the home screen</span></div>
@@ -792,8 +845,7 @@
             </div>
         </div>
 
-        <!-- FEATURES EN INGLÉS -->
-        <div class="features-grid">
+        <div class="features-grid" id="features-en">
             <div class="feature-card"><div class="icon">⏱️</div><div class="title">Timer</div><div class="desc">Works with the screen off.</div></div>
             <div class="feature-card"><div class="icon">📊</div><div class="title">Stats</div><div class="desc">Charts, Wrapped, heatmap.</div></div>
             <div class="feature-card"><div class="icon">🧩</div><div class="title">Widget</div><div class="desc">Your book on the home screen.</div></div>
@@ -806,15 +858,14 @@
             <div class="icon">🔒</div>
             <div class="title">Your data stays only on your device</div>
             <div class="desc">
-                <strong>Lecturameter does not collect or send your data to any server.</strong> 
+                <span class="highlight">Lecturameter does not collect or send your data to any server.</span> 
                 Your library, sessions, and statistics are stored exclusively on your phone. 
                 If you enable Google Drive backup, only you have access to those files. 
                 No ads, no subscriptions, no tracking.
             </div>
         </div>
 
-        <!-- STATS EN INGLÉS -->
-        <div class="section" style="margin-top:16px;">
+        <div class="section" id="stats-en">
             <h2>📊 Example Stats</h2>
             <div class="stats-grid" id="statsGrid-en">
                 <div class="stat-box c-purple"><div class="number" id="totalBooks-en">5</div><div class="label">Total books</div></div>
@@ -830,7 +881,6 @@
             </div>
         </div>
 
-        <!-- LINKS EN INGLÉS -->
         <div class="section" style="margin-top:16px;">
             <h2>🔗 Links</h2>
             <div class="links-grid">
@@ -838,7 +888,7 @@
                     <div class="icon"><svg viewBox="0 0 512 512"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" fill="#34A853"/></svg></div>
                     <div class="text">Testers group<div class="sub">▶ Join to test</div></div>
                 </a>
-                <a href="https://github.com/LecturameterAPP/Lecturameter/releases/tag/v2.6" target="_blank" rel="noopener" class="link-box github">
+                <a href="https://github.com/LecturameterAPP/Lecturameter/releases/tag/1.5" target="_blank" rel="noopener" class="link-box github">
                     <div class="icon"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="#8B5CF6"/></svg></div>
                     <div class="text">GitHub<div class="sub" style="color:#8B5CF6;">⬇ Direct APK</div></div>
                 </a>
@@ -859,13 +909,12 @@
             </div>
         </div>
 
-        <!-- DEMO JSON EN INGLÉS -->
         <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
             <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Demo backup</div>
             <p style="font-size:13px; color:#bbb; margin-bottom:10px;">Want to try the app with sample data? Download this backup with 10 classic books across all categories (reading, finished, rereading, want to read, dropped) with reading sessions included.</p>
             <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Download demo backup</a>
             <div style="font-size:12px; color:#888; margin-top:12px; line-height:1.6;">
-                <strong style="color:#aaa;">How to use it:</strong><br>
+                <span style="font-weight:600; color:#aaa;">How to use it:</span><br>
                 1. Download the JSON file to your phone<br>
                 2. Open Lecturameter → Settings → Restore local backup<br>
                 3. Select the downloaded file<br>
@@ -873,15 +922,14 @@
             </div>
         </div>
 
-        <!-- PRIVACY POLICY EN INGLÉS -->
-        <div class="section" style="margin-top:16px;">
+        <div class="section" id="privacy-en">
             <h2>🔒 Privacy Policy</h2>
             <div class="privacy-text">
-                <p><strong>Last updated:</strong> July 1, 2026</p>
-                <p style="margin-top:8px;">Lecturameter <strong>does not collect, store, or transmit any personal data to external servers</strong>, except in the following cases:</p>
-                <p style="margin-top:10px; color:#ddd;"><strong>1. Google Drive (optional)</strong></p>
-                <p>If you enable cloud backup, the app connects to your Google account via OAuth2 to save a copy of your books and sessions to the root of your Drive. <strong>Only you have access to those files.</strong> The developer cannot view, modify, or delete that data under any circumstances.</p>
-                <p style="margin-top:10px; color:#ddd;"><strong>2. External metadata APIs</strong></p>
+                <p><span class="highlight">Last updated:</span> July 1, 2026</p>
+                <p style="margin-top:8px;">Lecturameter <span class="highlight">does not collect, store, or transmit any personal data to external servers</span>, except in the following cases:</p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">1. Google Drive (optional)</span></p>
+                <p>If you enable cloud backup, the app connects to your Google account via OAuth2 to save a copy of your books and sessions to the root of your Drive. <span class="highlight">Only you have access to those files.</span> The developer cannot view, modify, or delete that data under any circumstances.</p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">2. External metadata APIs</span></p>
                 <p>To search for book covers and metadata, the app may query the following APIs directly from your device (not through any proprietary server):</p>
                 <ul style="padding-left:18px; margin:6px 0;">
                     <li>OpenLibrary</li>
@@ -891,23 +939,22 @@
                     <li>Hardcover</li>
                 </ul>
                 <p>These calls do not include personal data — only the title or ISBN being searched.</p>
-                <p style="margin-top:10px; color:#ddd;"><strong>3. App permissions</strong></p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">3. App permissions</span></p>
                 <ul style="padding-left:18px; margin:6px 0;">
-                    <li><strong>Internet:</strong> required to search for covers and back up to Drive.</li>
-                    <li><strong>Local storage:</strong> to save backups on the device.</li>
-                    <li><strong>Google account (OAuth2):</strong> only if you use Drive backup. You can revoke access at any time from your Google account.</li>
-                    <li><strong>Device boot (BOOT_COMPLETED):</strong> to reschedule reading reminders after a reboot.</li>
+                    <li><span class="highlight">Internet:</span> required to search for covers and back up to Drive.</li>
+                    <li><span class="highlight">Local storage:</span> to save backups on the device.</li>
+                    <li><span class="highlight">Google account (OAuth2):</span> only if you use Drive backup. You can revoke access at any time from your Google account.</li>
+                    <li><span class="highlight">Device boot (BOOT_COMPLETED):</span> to reschedule reading reminders after a reboot.</li>
                 </ul>
-                <p style="margin-top:10px; color:#ddd;"><strong>4. Locally generated data</strong></p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">4. Locally generated data</span></p>
                 <p>All data (books, sessions, statistics) is stored exclusively on the user's device. Lecturameter has no proprietary servers and does not access this data.</p>
-                <p style="margin-top:10px; color:#ddd;"><strong>5. Contact</strong></p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">5. Contact</span></p>
                 <p>For any privacy-related questions: <span style="color:#BB86FC;">lecturameter.app@gmail.com</span></p>
                 <p style="margin-top:10px; font-size:11px; color:#666;">You can also read it on <a href="https://lecturameterapp.github.io/lecturameter-policy/" target="_blank" style="color:#BB86FC;">GitHub Pages</a>.</p>
             </div>
         </div>
 
-        <!-- CONTACT EN INGLÉS -->
-        <div class="section" style="margin-top:16px;">
+        <div class="section" id="contact-en">
             <h2>📨 Contact</h2>
             <p style="font-size:13px; color:#bbb; margin-bottom:12px;">Questions, suggestions, or issues? Write to me and I'll get back to you.</p>
             <div class="feedback-form" id="feedbackForm-en">
@@ -930,51 +977,54 @@
     const EJS_SERVICE_ID   = 'service_l1psqa9';
     const EJS_TPL_VICTOR   = 'template_nlxdksn';
     const EJS_TPL_USER     = 'template_pmpiafh';
-    try { emailjs.init(EJS_PUBLIC_KEY); } catch(e) { console.warn('EmailJS no cargó:', e); }
+    try { emailjs.init(EJS_PUBLIC_KEY); } catch(e) { console.warn('EmailJS init error:', e); }
 
-    // ─── CAPTCHA MATEMÁTICO ───
+    // ─── CAPTCHA ───
     function generateCaptcha(lang) {
         const a = Math.floor(Math.random() * 9) + 1;
         const b = Math.floor(Math.random() * 9) + 1;
         const questionEl = document.getElementById('captchaQuestion' + (lang === 'es' ? 'Es' : 'En'));
-        const inputEl = document.getElementById('captchaInput' + (lang === 'es' ? 'Es' : 'En'));
         if (questionEl) {
-            const text = lang === 'es' ? `¿Cuánto es ${a} + ${b}?` : `What is ${a} + ${b}?`;
-            questionEl.textContent = text;
-        }
-        if (inputEl) {
-            inputEl.dataset.answer = String(a + b);
-            inputEl.value = '';
+            questionEl.textContent = a + ' + ' + b + ' = ?';
+            questionEl.dataset.answer = String(a + b);
         }
     }
 
+    document.addEventListener('DOMContentLoaded', function() {
+        generateCaptcha('es');
+        generateCaptcha('en');
+    });
+
     // ─── NOTIFY ───
     async function sendNotify(lang) {
-        const email  = document.getElementById('notifyEmail-' + lang).value.trim();
-        const captchaInput = document.getElementById('captchaInput' + (lang === 'es' ? 'Es' : 'En'));
-        const captchaAnswer = captchaInput.value.trim();
-        const expected = captchaInput.dataset.answer;
-        const status = document.getElementById('notifyStatus-' + lang);
-        const btn    = document.getElementById('notifyBtn' + (lang === 'es' ? 'Es' : 'En'));
+        const prefix = lang === 'es' ? 'Es' : 'En';
+        const email  = document.getElementById('notifyEmail' + prefix).value.trim();
+        const captchaInput = document.getElementById('captchaInput' + prefix).value.trim();
+        const status = document.getElementById('notifyStatus' + prefix);
+        const btn    = document.getElementById('notifyBtn' + prefix);
 
         if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             status.textContent = lang === 'es' ? '⚠️ Email no válido' : '⚠️ Invalid email';
             status.className = 'notify-status err';
             return;
         }
-        if (captchaAnswer !== expected) {
-            status.textContent = lang === 'es' ? '⚠️ Respuesta del captcha incorrecta' : '⚠️ Incorrect captcha answer';
+
+        const questionEl = document.getElementById('captchaQuestion' + prefix);
+        const expected = questionEl.dataset.answer;
+        if (captchaInput !== expected) {
+            status.textContent = lang === 'es' ? '⚠️ Respuesta incorrecta, intenta de nuevo' : '⚠️ Wrong answer, try again';
             status.className = 'notify-status err';
-            generateCaptcha(lang); // regenerar para evitar frustración
+            generateCaptcha(lang);
+            document.getElementById('captchaInput' + prefix).value = '';
             return;
         }
 
         btn.disabled = true;
-        status.textContent = lang === 'es' ? 'Guardando...' : 'Saving...';
+        status.textContent = lang === 'es' ? '⏳ Enviando...' : '⏳ Sending...';
         status.className = 'notify-status loading';
 
         if (typeof emailjs === 'undefined') {
-            status.textContent = lang === 'es' ? '❌ Error de conexión. Prueba en lecturameter.app@gmail.com' : '❌ Connection error. Try lecturameter.app@gmail.com';
+            status.textContent = lang === 'es' ? '❌ Error. Prueba en lecturameter.app@gmail.com' : '❌ Error. Try lecturameter.app@gmail.com';
             status.className = 'notify-status err';
             btn.disabled = false;
             generateCaptcha(lang);
@@ -989,15 +1039,17 @@
                 ? '✅ ¡Añadido! Recibirás un correo cuando la app esté lista.'
                 : '✅ Added! You\'ll receive an email when the app is ready.';
             status.className = 'notify-status ok';
-            document.getElementById('notifyEmail-' + lang).value = '';
+            document.getElementById('notifyEmail' + prefix).value = '';
+            document.getElementById('captchaInput' + prefix).value = '';
             generateCaptcha(lang);
         } catch (e) {
+            console.error('EmailJS error:', e);
             status.textContent = lang === 'es'
-                ? '❌ Error. Prueba en lecturameter.app@gmail.com'
-                : '❌ Failed. Try lecturameter.app@gmail.com';
+                ? '❌ Error al enviar. Prueba en lecturameter.app@gmail.com'
+                : '❌ Failed to send. Try lecturameter.app@gmail.com';
             status.className = 'notify-status err';
+        } finally {
             btn.disabled = false;
-            generateCaptcha(lang);
         }
     }
 
@@ -1041,18 +1093,7 @@
         }
     }
 
-    // ─── IDIOMA ───
-    function setLang(lang) {
-        document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-        document.getElementById('content-' + lang).classList.add('active');
-        document.querySelectorAll('.lang-bar button').forEach(b => b.classList.remove('active'));
-        document.getElementById('btn-' + lang).classList.add('active');
-        document.documentElement.lang = lang;
-        renderStats(lang);
-        generateCaptcha(lang);
-    }
-
-    // ─── STATS ───
+    // ─── DATOS PARA ESTADÍSTICAS ───
     const sessionData = [
         { date: '03/06/2026', pages: 19, time: 25, range: '9-27' },
         { date: '05/06/2026', pages: 14, time: 26, range: '28-41' },
@@ -1099,6 +1140,16 @@
             `;
         });
         chartContainer.innerHTML = barsHtml;
+    }
+
+    // ─── IDIOMA ───
+    function setLang(lang) {
+        document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+        document.getElementById('content-' + lang).classList.add('active');
+        document.querySelectorAll('.lang-bar button').forEach(b => b.classList.remove('active'));
+        document.getElementById('btn-' + lang).classList.add('active');
+        document.documentElement.lang = lang;
+        renderStats(lang);
     }
 
     document.addEventListener('DOMContentLoaded', function() {
