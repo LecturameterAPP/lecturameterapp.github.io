@@ -194,21 +194,27 @@
             outline: none;
         }
         .notify-form input[type="email"]:focus { border-color: #BB86FC; }
-        .notify-form .captcha-check {
+        .captcha-row {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
             font-size: 14px;
             color: #ccc;
-            cursor: pointer;
-            margin: 4px 0;
         }
-        .notify-form .captcha-check input[type="checkbox"] {
-            width: 18px;
-            height: 18px;
-            accent-color: #BB86FC;
-            cursor: pointer;
+        .captcha-row input {
+            width: 60px;
+            background: #1a1a1a;
+            border: 1px solid #444;
+            border-radius: 8px;
+            padding: 6px 10px;
+            font-size: 14px;
+            color: #e0e0e0;
+            outline: none;
+            text-align: center;
         }
+        .captcha-row input:focus { border-color: #BB86FC; }
         .notify-btn {
             background: #BB86FC;
             color: #121212;
@@ -226,6 +232,7 @@
         .notify-status { font-size: 13px; }
         .notify-status.ok  { color: #10b981; }
         .notify-status.err { color: #ef4444; }
+        .notify-status.loading { color: #f59e0b; }
 
         .privacy-highlight {
             background: #0d1a1a;
@@ -516,7 +523,7 @@
             <p style="font-size:12px; color:#666; margin-top:4px;">Prueba cerrada · Lanzamiento oficial en Play Store próximamente</p>
         </div>
 
-        <!-- CTA NOTIFICACIÓN -->
+        <!-- CTA NOTIFICACIÓN (con captcha matemático) -->
         <div class="cta-notify">
             <h2>📩 Recibe un aviso cuando la app esté disponible</h2>
             <p>Te llegará un correo en cuanto se lance oficialmente. Sin spam, solo un aviso.</p>
@@ -524,18 +531,18 @@
                 <div class="row">
                     <input class="fb-input" type="email" id="notifyEmailEs" placeholder="Tu email" autocomplete="email">
                 </div>
-                <label class="captcha-check">
-                    <input type="checkbox" id="notifyCaptchaEs">
-                    <span>No soy un robot</span>
-                </label>
+                <div class="captcha-row">
+                    <span id="captchaQuestionEs">¿Cuánto es 2 + 3?</span>
+                    <input type="text" id="captchaInputEs" autocomplete="off" aria-label="Respuesta del captcha">
+                </div>
                 <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:center;">
-                    <button class="notify-btn" onclick="sendNotify('es')">Avísame</button>
+                    <button class="notify-btn" id="notifyBtnEs" onclick="sendNotify('es')">Avísame</button>
                     <span class="notify-status" id="notifyStatusEs"></span>
                 </div>
             </div>
         </div>
 
-        <!-- GALERÍA DE CAPTURAS (8 elementos) -->
+        <!-- GALERÍA (6 capturas reales, sin placeholders) -->
         <div class="section">
             <h2>📱 Así se ve Lecturameter</h2>
             <p style="font-size:13px; color:#888; margin-bottom:12px;">Capturas reales de la aplicación</p>
@@ -553,9 +560,9 @@
                     <div class="label">📖 Detalle del libro <span class="sub">Sesiones, estadísticas y cronómetro</span></div>
                 </div>
 
-                <!-- 3. Historial -->
+                <!-- 3. Historial (usando el nombre real que tienes) -->
                 <div class="screenshot-item">
-                    <img src="captura_historial_es.jpg" alt="Historial" loading="lazy">
+                    <img src="captura_historial_real_es.jpg" alt="Historial" loading="lazy">
                     <div class="label">📋 Historial global <span class="sub">Resumen por libro con sesiones, tiempo y páginas</span></div>
                 </div>
 
@@ -571,22 +578,10 @@
                     <div class="label">📊 Mapa de calor mensual <span class="sub">Intensidad de lectura día a día</span></div>
                 </div>
 
-                <!-- 6. Widget -->
+                <!-- 6. Widget (usando la española si la tienes, o la misma) -->
                 <div class="screenshot-item">
                     <img src="captura_widget_real_en.png" alt="Widget" loading="lazy">
                     <div class="label">🧩 Widget <span class="sub">Tu libro en la pantalla de inicio</span></div>
-                </div>
-
-                <!-- 7. (placeholder) Sesiones -->
-                <div class="screenshot-item" style="opacity:0.5; filter:grayscale(1);">
-                    <img src="captura_widget_real_en.png" alt="Sesiones (próximamente)" loading="lazy" style="object-fit:cover; background:#1a1a2e;">
-                    <div class="label">⏱️ Sesiones de lectura <span class="sub">Próximamente</span></div>
-                </div>
-
-                <!-- 8. (placeholder) Ajustes -->
-                <div class="screenshot-item" style="opacity:0.5; filter:grayscale(1);">
-                    <img src="captura_widget_real_en.png" alt="Ajustes (próximamente)" loading="lazy" style="object-fit:cover; background:#1a1a2e;">
-                    <div class="label">⚙️ Ajustes y Backup <span class="sub">Próximamente</span></div>
                 </div>
 
             </div>
@@ -739,6 +734,7 @@
             <p style="font-size:12px; color:#666; margin-top:4px;">Closed testing · Official Play Store launch coming soon</p>
         </div>
 
+        <!-- CTA NOTIFICACIÓN EN INGLÉS -->
         <div class="cta-notify">
             <h2>📩 Get notified when the app is out</h2>
             <p>You'll receive an email when it's officially launched. No spam, just one alert.</p>
@@ -746,73 +742,57 @@
                 <div class="row">
                     <input class="fb-input" type="email" id="notifyEmailEn" placeholder="Your email" autocomplete="email">
                 </div>
-                <label class="captcha-check">
-                    <input type="checkbox" id="notifyCaptchaEn">
-                    <span>I'm not a robot</span>
-                </label>
+                <div class="captcha-row">
+                    <span id="captchaQuestionEn">What is 2 + 3?</span>
+                    <input type="text" id="captchaInputEn" autocomplete="off" aria-label="Captcha answer">
+                </div>
                 <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:center;">
-                    <button class="notify-btn" onclick="sendNotify('en')">Notify me</button>
+                    <button class="notify-btn" id="notifyBtnEn" onclick="sendNotify('en')">Notify me</button>
                     <span class="notify-status" id="notifyStatusEn"></span>
                 </div>
             </div>
         </div>
 
+        <!-- GALERÍA EN INGLÉS -->
         <div class="section">
             <h2>📱 Lecturameter in action</h2>
             <p style="font-size:13px; color:#888; margin-bottom:12px;">Real screenshots of the app</p>
             <div class="screenshot-gallery">
 
-                <!-- 1. Library -->
                 <div class="screenshot-item">
                     <img src="captura_libros_real_es.jpg" alt="Library" loading="lazy">
                     <div class="label">📚 Library <span class="sub">Organize your books by shelves</span></div>
                 </div>
 
-                <!-- 2. Detail -->
                 <div class="screenshot-item">
-                    <img src="captura_detalle_real_es.jpg" alt="Book detail" loading="lazy">
+                    <img src="captura_detalle_real_en.jpg" alt="Book detail" loading="lazy">
                     <div class="label">📖 Book detail <span class="sub">Sessions, stats and timer</span></div>
                 </div>
 
-                <!-- 3. History -->
                 <div class="screenshot-item">
-                    <img src="captura_historial_en.jpg" alt="History" loading="lazy">
+                    <img src="captura_historial_real_en.jpg" alt="History" loading="lazy">
                     <div class="label">📋 Global history <span class="sub">Summary by book with sessions, time and pages</span></div>
                 </div>
 
-                <!-- 4. Annual stats -->
                 <div class="screenshot-item">
                     <img src="captura_heatmap_en.jpg" alt="Annual stats" loading="lazy">
                     <div class="label">📊 Annual stats <span class="sub">Pages read month by month</span></div>
                 </div>
 
-                <!-- 5. Monthly heatmap -->
                 <div class="screenshot-item">
                     <img src="captura_heatmap_mayo_en.jpg" alt="Monthly heatmap" loading="lazy">
                     <div class="label">📊 Monthly heatmap <span class="sub">Reading intensity day by day</span></div>
                 </div>
 
-                <!-- 6. Widget -->
                 <div class="screenshot-item">
                     <img src="captura_widget_real_en.png" alt="Widget" loading="lazy">
                     <div class="label">🧩 Widget <span class="sub">Your book on the home screen</span></div>
                 </div>
 
-                <!-- 7. (placeholder) Sessions -->
-                <div class="screenshot-item" style="opacity:0.5; filter:grayscale(1);">
-                    <img src="captura_widget_real_en.png" alt="Sessions (coming soon)" loading="lazy" style="object-fit:cover; background:#1a1a2e;">
-                    <div class="label">⏱️ Reading sessions <span class="sub">Coming soon</span></div>
-                </div>
-
-                <!-- 8. (placeholder) Settings -->
-                <div class="screenshot-item" style="opacity:0.5; filter:grayscale(1);">
-                    <img src="captura_widget_real_en.png" alt="Settings (coming soon)" loading="lazy" style="object-fit:cover; background:#1a1a2e;">
-                    <div class="label">⚙️ Settings & Backup <span class="sub">Coming soon</span></div>
-                </div>
-
             </div>
         </div>
 
+        <!-- FEATURES EN INGLÉS -->
         <div class="features-grid">
             <div class="feature-card"><div class="icon">⏱️</div><div class="title">Timer</div><div class="desc">Works with the screen off.</div></div>
             <div class="feature-card"><div class="icon">📊</div><div class="title">Stats</div><div class="desc">Charts, Wrapped, heatmap.</div></div>
@@ -833,6 +813,7 @@
             </div>
         </div>
 
+        <!-- STATS EN INGLÉS -->
         <div class="section" style="margin-top:16px;">
             <h2>📊 Example Stats</h2>
             <div class="stats-grid" id="statsGrid-en">
@@ -849,6 +830,7 @@
             </div>
         </div>
 
+        <!-- LINKS EN INGLÉS -->
         <div class="section" style="margin-top:16px;">
             <h2>🔗 Links</h2>
             <div class="links-grid">
@@ -877,6 +859,7 @@
             </div>
         </div>
 
+        <!-- DEMO JSON EN INGLÉS -->
         <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
             <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Demo backup</div>
             <p style="font-size:13px; color:#bbb; margin-bottom:10px;">Want to try the app with sample data? Download this backup with 10 classic books across all categories (reading, finished, rereading, want to read, dropped) with reading sessions included.</p>
@@ -890,6 +873,7 @@
             </div>
         </div>
 
+        <!-- PRIVACY POLICY EN INGLÉS -->
         <div class="section" style="margin-top:16px;">
             <h2>🔒 Privacy Policy</h2>
             <div class="privacy-text">
@@ -922,6 +906,7 @@
             </div>
         </div>
 
+        <!-- CONTACT EN INGLÉS -->
         <div class="section" style="margin-top:16px;">
             <h2>📨 Contact</h2>
             <p style="font-size:13px; color:#bbb; margin-bottom:12px;">Questions, suggestions, or issues? Write to me and I'll get back to you.</p>
@@ -947,81 +932,52 @@
     const EJS_TPL_USER     = 'template_pmpiafh';
     try { emailjs.init(EJS_PUBLIC_KEY); } catch(e) { console.warn('EmailJS no cargó:', e); }
 
-    // ─── DATOS PARA ESTADÍSTICAS ───
-    const sessionData = [
-        { date: '03/06/2026', pages: 19, time: 25, range: '9-27' },
-        { date: '05/06/2026', pages: 14, time: 26, range: '28-41' },
-        { date: '14/06/2026', pages: 19, time: 26, range: '28-41' },
-        { date: '18/06/2026', pages: 18, time: 28, range: '55-72' },
-        { date: '24/06/2026', pages: 14, time: 22, range: '73-86' },
-        { date: '26/06/2026', pages: 42, time: 65, range: '87-128' },
-        { date: '30/06/2026', pages: 28, time: 32, range: '129-156' }
-    ];
-    const totalPages = sessionData.reduce((s, e) => s + e.pages, 0);
-    const totalMinutes = sessionData.reduce((s, e) => s + e.time, 0);
-    const hours = Math.floor(totalMinutes / 60);
-    const mins = totalMinutes % 60;
-    const totalTimeStr = hours ? `${hours}h ${mins}m` : `${mins}m`;
-    const avgPagesSession = (totalPages / sessionData.length).toFixed(1);
-    const avgPace = (totalPages / totalMinutes).toFixed(1);
-
-    function renderStats(lang) {
-        const prefix = lang === 'es' ? '-es' : '-en';
-        const el = (id) => document.getElementById(id + prefix);
-        if (el('totalBooks')) el('totalBooks').textContent = '5';
-        if (el('totalSessions')) el('totalSessions').textContent = sessionData.length;
-        if (el('totalPages')) el('totalPages').textContent = totalPages;
-        if (el('totalTime')) el('totalTime').textContent = totalTimeStr;
-        if (el('avgPagesSession')) el('avgPagesSession').textContent = avgPagesSession;
-        if (el('avgPace')) el('avgPace').textContent = avgPace;
-
-        const chartContainer = document.getElementById('barChart' + prefix);
-        if (!chartContainer) return;
-        const dayMap = {};
-        sessionData.forEach(s => { dayMap[s.date] = (dayMap[s.date] || 0) + s.pages; });
-        const days = Object.keys(dayMap);
-        const maxVal = Math.max(...Object.values(dayMap), 1);
-        let barsHtml = '';
-        days.forEach(day => {
-            const val = dayMap[day];
-            const height = Math.max(4, (val / maxVal) * 100);
-            barsHtml += `
-                <div class="bar-item">
-                    <div class="bar-value">${val}</div>
-                    <div class="bar" style="height:${height}%;"></div>
-                    <div class="bar-label">${day.split('/')[0]}/${day.split('/')[1]}</div>
-                </div>
-            `;
-        });
-        chartContainer.innerHTML = barsHtml;
+    // ─── CAPTCHA MATEMÁTICO ───
+    function generateCaptcha(lang) {
+        const a = Math.floor(Math.random() * 9) + 1;
+        const b = Math.floor(Math.random() * 9) + 1;
+        const questionEl = document.getElementById('captchaQuestion' + (lang === 'es' ? 'Es' : 'En'));
+        const inputEl = document.getElementById('captchaInput' + (lang === 'es' ? 'Es' : 'En'));
+        if (questionEl) {
+            const text = lang === 'es' ? `¿Cuánto es ${a} + ${b}?` : `What is ${a} + ${b}?`;
+            questionEl.textContent = text;
+        }
+        if (inputEl) {
+            inputEl.dataset.answer = String(a + b);
+            inputEl.value = '';
+        }
     }
 
     // ─── NOTIFY ───
     async function sendNotify(lang) {
         const email  = document.getElementById('notifyEmail-' + lang).value.trim();
-        const captcha = document.getElementById('notifyCaptcha-' + lang).checked;
+        const captchaInput = document.getElementById('captchaInput' + (lang === 'es' ? 'Es' : 'En'));
+        const captchaAnswer = captchaInput.value.trim();
+        const expected = captchaInput.dataset.answer;
         const status = document.getElementById('notifyStatus-' + lang);
-        const btn    = document.querySelector('#notifyForm' + (lang === 'es' ? 'Es' : 'En') + ' .notify-btn');
+        const btn    = document.getElementById('notifyBtn' + (lang === 'es' ? 'Es' : 'En'));
 
         if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             status.textContent = lang === 'es' ? '⚠️ Email no válido' : '⚠️ Invalid email';
             status.className = 'notify-status err';
             return;
         }
-        if (!captcha) {
-            status.textContent = lang === 'es' ? '⚠️ Por favor, marca que no eres un robot' : '⚠️ Please confirm you are not a robot';
+        if (captchaAnswer !== expected) {
+            status.textContent = lang === 'es' ? '⚠️ Respuesta del captcha incorrecta' : '⚠️ Incorrect captcha answer';
             status.className = 'notify-status err';
+            generateCaptcha(lang); // regenerar para evitar frustración
             return;
         }
 
         btn.disabled = true;
         status.textContent = lang === 'es' ? 'Guardando...' : 'Saving...';
-        status.className = 'notify-status';
+        status.className = 'notify-status loading';
 
         if (typeof emailjs === 'undefined') {
             status.textContent = lang === 'es' ? '❌ Error de conexión. Prueba en lecturameter.app@gmail.com' : '❌ Connection error. Try lecturameter.app@gmail.com';
             status.className = 'notify-status err';
             btn.disabled = false;
+            generateCaptcha(lang);
             return;
         }
 
@@ -1030,17 +986,18 @@
             await emailjs.send(EJS_SERVICE_ID, EJS_TPL_USER,   { user_email: email, platforms: 'Play Store' });
 
             status.textContent = lang === 'es'
-                ? '¡Añadido! Recibirás un correo cuando la app esté lista.'
-                : 'Added! You\'ll receive an email when the app is ready.';
+                ? '✅ ¡Añadido! Recibirás un correo cuando la app esté lista.'
+                : '✅ Added! You\'ll receive an email when the app is ready.';
             status.className = 'notify-status ok';
             document.getElementById('notifyEmail-' + lang).value = '';
-            document.getElementById('notifyCaptcha-' + lang).checked = false;
+            generateCaptcha(lang);
         } catch (e) {
             status.textContent = lang === 'es'
                 ? '❌ Error. Prueba en lecturameter.app@gmail.com'
                 : '❌ Failed. Try lecturameter.app@gmail.com';
             status.className = 'notify-status err';
             btn.disabled = false;
+            generateCaptcha(lang);
         }
     }
 
@@ -1092,6 +1049,56 @@
         document.getElementById('btn-' + lang).classList.add('active');
         document.documentElement.lang = lang;
         renderStats(lang);
+        generateCaptcha(lang);
+    }
+
+    // ─── STATS ───
+    const sessionData = [
+        { date: '03/06/2026', pages: 19, time: 25, range: '9-27' },
+        { date: '05/06/2026', pages: 14, time: 26, range: '28-41' },
+        { date: '14/06/2026', pages: 19, time: 26, range: '28-41' },
+        { date: '18/06/2026', pages: 18, time: 28, range: '55-72' },
+        { date: '24/06/2026', pages: 14, time: 22, range: '73-86' },
+        { date: '26/06/2026', pages: 42, time: 65, range: '87-128' },
+        { date: '30/06/2026', pages: 28, time: 32, range: '129-156' }
+    ];
+    const totalPages = sessionData.reduce((s, e) => s + e.pages, 0);
+    const totalMinutes = sessionData.reduce((s, e) => s + e.time, 0);
+    const hours = Math.floor(totalMinutes / 60);
+    const mins = totalMinutes % 60;
+    const totalTimeStr = hours ? `${hours}h ${mins}m` : `${mins}m`;
+    const avgPagesSession = (totalPages / sessionData.length).toFixed(1);
+    const avgPace = (totalPages / totalMinutes).toFixed(1);
+
+    function renderStats(lang) {
+        const prefix = lang === 'es' ? '-es' : '-en';
+        const el = (id) => document.getElementById(id + prefix);
+        if (el('totalBooks')) el('totalBooks').textContent = '5';
+        if (el('totalSessions')) el('totalSessions').textContent = sessionData.length;
+        if (el('totalPages')) el('totalPages').textContent = totalPages;
+        if (el('totalTime')) el('totalTime').textContent = totalTimeStr;
+        if (el('avgPagesSession')) el('avgPagesSession').textContent = avgPagesSession;
+        if (el('avgPace')) el('avgPace').textContent = avgPace;
+
+        const chartContainer = document.getElementById('barChart' + prefix);
+        if (!chartContainer) return;
+        const dayMap = {};
+        sessionData.forEach(s => { dayMap[s.date] = (dayMap[s.date] || 0) + s.pages; });
+        const days = Object.keys(dayMap);
+        const maxVal = Math.max(...Object.values(dayMap), 1);
+        let barsHtml = '';
+        days.forEach(day => {
+            const val = dayMap[day];
+            const height = Math.max(4, (val / maxVal) * 100);
+            barsHtml += `
+                <div class="bar-item">
+                    <div class="bar-value">${val}</div>
+                    <div class="bar" style="height:${height}%;"></div>
+                    <div class="bar-label">${day.split('/')[0]}/${day.split('/')[1]}</div>
+                </div>
+            `;
+        });
+        chartContainer.innerHTML = barsHtml;
     }
 
     document.addEventListener('DOMContentLoaded', function() {
