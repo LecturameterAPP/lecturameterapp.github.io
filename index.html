@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Lecturameter – Tu tracker de lectura para Android</title>
-    <meta name="description" content="Organiza tu biblioteca, cronometra sesiones y consulta estadísticas detalladas. Sin anuncios, sin suscripciones.">
+    <meta name="description" content="Organiza tu biblioteca, cronometra sesiones de lectura y consulta estadísticas detalladas en tu móvil Android. Sin anuncios, sin suscripciones y con total privacidad.">
     <meta property="og:title" content="Lecturameter – Tu tracker de lectura para Android">
-    <meta property="og:description" content="Organiza tu biblioteca, cronometra sesiones y consulta estadísticas detalladas. Sin anuncios, sin suscripciones.">
+    <meta property="og:description" content="Organiza tu biblioteca, cronometra sesiones de lectura y consulta estadísticas detalladas en tu móvil Android. Sin anuncios, sin suscripciones y con total privacidad.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io">
     <meta property="og:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
@@ -14,7 +14,7 @@
     <meta property="og:image:height" content="512">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Lecturameter – Tu tracker de lectura para Android">
-    <meta name="twitter:description" content="Organiza tu biblioteca, cronometra sesiones y consulta estadísticas detalladas. Sin anuncios, sin suscripciones.">
+    <meta name="twitter:description" content="Organiza tu biblioteca, cronometra sesiones de lectura y consulta estadísticas detalladas en tu móvil Android. Sin anuncios, sin suscripciones y con total privacidad.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
 
     <!-- ─── ICONOS ─── -->
@@ -33,7 +33,7 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Lecturameter",
-      "description": "Organiza tu biblioteca, cronometra sesiones y consulta estadísticas detalladas. Sin anuncios, sin suscripciones.",
+      "description": "Organiza tu biblioteca, cronometra sesiones de lectura y consulta estadísticas detalladas en tu móvil Android. Sin anuncios, sin suscripciones y con total privacidad.",
       "applicationCategory": "LifestyleApplication",
       "operatingSystem": "Android",
       "offers": {
@@ -95,7 +95,7 @@
         .nav-links {
             display: flex;
             flex-wrap: wrap;
-            gap: 16px;
+            gap: 12px 20px;
             justify-content: center;
             padding: 12px 0 20px;
             border-bottom: 1px solid #333;
@@ -106,12 +106,13 @@
             text-decoration: none;
             font-size: 14px;
             transition: color 0.2s;
+            white-space: nowrap;
         }
         .nav-links a:hover { color: #BB86FC; }
 
         .hero { text-align: center; padding: 16px 0 8px; }
         .hero h1 { font-size: 32px; font-weight: 700; color: #BB86FC; }
-        .hero .tagline { font-size: 16px; color: #aaa; margin: 4px 0 12px; }
+        .hero .tagline { font-size: 16px; color: #ccc; margin: 4px 0 12px; }
         .hero .desc { font-size: 14px; color: #ccc; max-width: 600px; margin: 0 auto 16px; }
         .btn-download {
             display: inline-block;
@@ -126,7 +127,20 @@
             cursor: pointer;
             text-decoration: none;
         }
+        .btn-download:hover { background: #a06ce0; }
+        .btn-download.secondary {
+            background: #2d2d2d;
+            color: #BB86FC;
+            border: 1.5px solid #BB86FC;
+        }
+        .btn-download.secondary:hover { background: #3d3d3d; }
         .btn-download.disabled { opacity: 0.5; pointer-events: none; }
+
+        .hero .steps-hint {
+            font-size: 12px;
+            color: #888;
+            margin-top: 8px;
+        }
 
         .features-grid {
             display: grid;
@@ -142,7 +156,7 @@
         }
         .feature-card .icon { font-size: 24px; }
         .feature-card .title { font-weight: 600; font-size: 14px; color: #ddd; }
-        .feature-card .desc { font-size: 12px; color: #999; margin-top: 2px; }
+        .feature-card .desc { font-size: 12px; color: #aaa; margin-top: 2px; }
 
         .screenshot-gallery {
             display: grid;
@@ -284,6 +298,35 @@
         .privacy-highlight .title { font-weight: 700; font-size: 18px; color: #10b981; }
         .privacy-highlight .desc { font-size: 14px; color: #ccc; line-height: 1.5; }
         .privacy-highlight .desc span.highlight { font-weight: 600; color: #fff; }
+
+        /* ─── TESTIMONIALS ─── */
+        .testimonials-section {
+            margin: 24px 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .testimonial-card {
+            background: #2d2d2d;
+            border-radius: 14px;
+            padding: 20px 18px;
+            border-top: 4px solid #BB86FC;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .testimonial-card .quote {
+            font-size: 15px;
+            color: #ccc;
+            font-style: italic;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .testimonial-card .source {
+            font-size: 12px;
+            color: #888;
+        }
 
         .widget-sim {
             width: 100%;
@@ -463,6 +506,17 @@
             color: #bbb;
         }
         .privacy-text span.highlight { font-weight: 600; color: #fff; }
+
+        /* ─── CONTACT FORM ─── */
+        .contact-section {
+            background: #1a1a2e;
+            border-radius: 16px;
+            padding: 20px 24px;
+            margin: 24px 0 16px;
+            border: 1px solid #BB86FC;
+        }
+        .contact-section h2 { color: #BB86FC; }
+
         .feedback-form { display: flex; flex-direction: column; gap: 10px; }
         .fb-input, .fb-textarea {
             background: #1a1a1a;
@@ -506,9 +560,23 @@
             text-align: center;
         }
 
+        /* ─── MEDIA QUERIES ─── */
+        @media (max-width: 1024px) {
+            .testimonials-section {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+        }
+
         @media (max-width: 900px) {
             .screenshot-gallery { grid-template-columns: repeat(2, 1fr); }
+            .testimonials-section { grid-template-columns: repeat(2, 1fr); }
         }
+
+        @media (max-width: 768px) {
+            .testimonials-section { grid-template-columns: repeat(2, 1fr); }
+        }
+
         @media (max-width: 600px) {
             .container { padding: 16px 12px; }
             .hero h1 { font-size: 26px; }
@@ -526,13 +594,21 @@
             .bar-chart { height: 100px; gap: 4px; }
             .bar-chart .bar-item .bar { max-width: 20px; }
             .links-grid .link-box { min-width: 120px; padding: 12px 16px; }
-            .nav-links { gap: 10px; font-size: 12px; }
+            .nav-links { gap: 8px 14px; font-size: 12px; }
+            .nav-links a { font-size: 12px; }
+            .testimonials-section { grid-template-columns: 1fr; gap: 14px; }
+            .testimonial-card { padding: 16px; }
+            .testimonial-card .quote { font-size: 14px; }
         }
+
         @media (max-width: 420px) {
             .features-grid { grid-template-columns: 1fr; }
             .stats-grid { grid-template-columns: 1fr 1fr; }
             .screenshot-gallery { grid-template-columns: 1fr; }
             .screenshot-item img { max-height: 400px; }
+            .hero h1 { font-size: 22px; }
+            .hero .tagline { font-size: 14px; }
+            .btn-download { font-size: 14px; padding: 8px 20px; }
         }
     </style>
 </head>
@@ -545,11 +621,12 @@
         <button id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
     </div>
 
-    <!-- ─── MENÚ DE NAVEGACIÓN (enlaces internos) ─── -->
+    <!-- ─── MENÚ DE NAVEGACIÓN ─── -->
     <nav class="nav-links">
         <a href="#features">Características</a>
         <a href="#screenshots">Capturas</a>
         <a href="#stats">Estadísticas</a>
+        <a href="#testimonials">Opiniones</a>
         <a href="#privacy">Privacidad</a>
         <a href="#contact">Contacto</a>
     </nav>
@@ -564,16 +641,16 @@
             <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:4px;">
                 <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="btn-download">1. Unirse al grupo de testers</a>
                 <span style="color:#666; font-size:20px;">→</span>
-                <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn-download" style="background:#2d2d2d; color:#BB86FC; border:1.5px solid #BB86FC;">2. Instalar en Play Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn-download secondary">2. Instalar en Play Store</a>
             </div>
-            <p style="font-size:12px; color:#888; margin-top:10px;">Primero únete al grupo, después instala desde el botón 2. También hay un APK directo en GitHub más abajo.</p>
+            <p class="steps-hint">⚠️ Primero únete al grupo (paso 1), después instala desde el paso 2. Sin el grupo, la instalación no funcionará.</p>
             <p style="font-size:12px; color:#666; margin-top:4px;">Prueba cerrada · Lanzamiento oficial en Play Store próximamente</p>
         </div>
 
-        <!-- CTA NOTIFICACIÓN con captcha matemático -->
+        <!-- CTA NOTIFICACIÓN (texto actualizado) -->
         <div class="cta-notify">
             <h2>📩 Recibe un aviso cuando la app esté disponible</h2>
-            <p>Te llegará un correo en cuanto se lance oficialmente. Sin spam, solo un aviso.</p>
+            <p>Te llegará un único correo cuando se lance oficialmente. Sin spam, solo un aviso.</p>
             <div class="notify-form" id="notifyFormEs">
                 <div class="row">
                     <input class="fb-input" type="email" id="notifyEmailEs" placeholder="Tu email" autocomplete="email">
@@ -590,7 +667,7 @@
             </div>
         </div>
 
-        <!-- GALERÍA DE CAPTURAS (6 reales) -->
+        <!-- GALERÍA DE CAPTURAS -->
         <div class="section" id="screenshots">
             <h2>📱 Así se ve Lecturameter</h2>
             <p style="font-size:13px; color:#888; margin-bottom:12px;">Capturas reales de la aplicación</p>
@@ -608,9 +685,9 @@
                     <div class="label">📖 Detalle del libro <span class="sub">Sesiones, estadísticas y cronómetro</span></div>
                 </div>
 
-                <!-- 3. Historial -->
+                <!-- 3. Historial (con "s" en capturas) -->
                 <div class="screenshot-item">
-                    <img src="captura_historial_es.jpg" alt="Historial" loading="lazy">
+                    <img src="capturas_historial_es.jpg" alt="Historial" loading="lazy">
                     <div class="label">📋 Historial global <span class="sub">Resumen por libro con sesiones, tiempo y páginas</span></div>
                 </div>
 
@@ -643,6 +720,25 @@
             <div class="feature-card"><div class="icon">📖</div><div class="title">Páginas funcionales</div><div class="desc">Ignora prólogos, índices, apéndices.</div></div>
             <div class="feature-card"><div class="icon">🌐</div><div class="title">Múltiples ediciones</div><div class="desc">Idiomas distintos sin perder sesiones.</div></div>
             <div class="feature-card"><div class="icon">☁️</div><div class="title">Backup Local y en Drive</div><div class="desc">Copias automáticas en local y Google Drive.</div></div>
+        </div>
+
+        <!-- TESTIMONIALS -->
+        <div class="section" id="testimonials">
+            <h2>🗣️ Lo que dicen los primeros usuarios</h2>
+            <div class="testimonials-section">
+                <div class="testimonial-card">
+                    <div class="quote">"Uso el cronómetro para leer antes de dormir, y va de maravilla incluso con la pantalla apagada."</div>
+                    <div class="source">— Feedback interno</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">"El resumen anual es un detallazo. Ver mis estadísticas me motiva a seguir leyendo."</div>
+                    <div class="source">— Tester de Google Group</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">"Me gusta que los datos no salgan del móvil. Es justo lo que busco en una app de este tipo."</div>
+                    <div class="source">— Mensaje privado en Reddit</div>
+                </div>
+            </div>
         </div>
 
         <!-- PRIVACIDAD DESTACADA -->
@@ -746,12 +842,12 @@
                 <p>Toda la información (libros, sesiones, estadísticas) se almacena exclusivamente en el dispositivo del usuario. Lecturameter no tiene servidores propios y no accede a estos datos.</p>
                 <p style="margin-top:10px; color:#ddd;"><span class="highlight">5. Contacto</span></p>
                 <p>Para cualquier consulta sobre privacidad: <span style="color:#BB86FC;">lecturameter.app@gmail.com</span></p>
-                <p style="margin-top:10px; font-size:11px; color:#666;">También puedes leerlo en <a href="https://lecturameterapp.github.io/lecturameter-policy/" target="_blank" style="color:#BB86FC;">GitHub Pages</a>.</p>
+                <p style="margin-top:10px; font-size:11px; color:#666;">También puedes leerlo en <a href="https://lecturameterapp.github.io/lecturameter-policy/?v=1" target="_blank" style="color:#BB86FC;">GitHub Pages</a>.</p>
             </div>
         </div>
 
-        <!-- CONTACTO -->
-        <div class="section" id="contact">
+        <!-- CONTACTO (con Formspree) -->
+        <div class="contact-section" id="contact">
             <h2>📨 Contacto</h2>
             <p style="font-size:13px; color:#bbb; margin-bottom:12px;">¿Dudas, sugerencias o problemas? Escríbeme y te responderé.</p>
             <div class="feedback-form" id="feedbackForm-es">
@@ -776,15 +872,16 @@
             <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:4px;">
                 <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="btn-download">1. Join the testers group</a>
                 <span style="color:#666; font-size:20px;">→</span>
-                <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn-download" style="background:#2d2d2d; color:#BB86FC; border:1.5px solid #BB86FC;">2. Install on Play Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn-download secondary">2. Install on Play Store</a>
             </div>
-            <p style="font-size:12px; color:#888; margin-top:10px;">Join the group first, then install via button 2. A direct APK is also available on GitHub below.</p>
+            <p class="steps-hint">⚠️ Join the group first (step 1), then install from step 2. Without the group, installation won't work.</p>
             <p style="font-size:12px; color:#666; margin-top:4px;">Closed testing · Official Play Store launch coming soon</p>
         </div>
 
+        <!-- CTA NOTIFICACIÓN (texto actualizado en inglés) -->
         <div class="cta-notify">
             <h2>📩 Get notified when the app is out</h2>
-            <p>You'll receive an email when it's officially launched. No spam, just one alert.</p>
+            <p>You'll receive one single email when it's officially launched. No spam, just one alert.</p>
             <div class="notify-form" id="notifyFormEn">
                 <div class="row">
                     <input class="fb-input" type="email" id="notifyEmailEn" placeholder="Your email" autocomplete="email">
@@ -852,6 +949,25 @@
             <div class="feature-card"><div class="icon">📖</div><div class="title">Functional pages</div><div class="desc">Ignore prologues, indexes, appendices.</div></div>
             <div class="feature-card"><div class="icon">🌐</div><div class="title">Multiple editions</div><div class="desc">Different languages without losing sessions.</div></div>
             <div class="feature-card"><div class="icon">☁️</div><div class="title">Local and drive backup</div><div class="desc">Automatic backups locally and on Google Drive.</div></div>
+        </div>
+
+        <!-- TESTIMONIALS EN -->
+        <div class="section" id="testimonials-en">
+            <h2>🗣️ What early users say</h2>
+            <div class="testimonials-section">
+                <div class="testimonial-card">
+                    <div class="quote">"I use the timer for my bedtime reading, and it works great even with the screen off."</div>
+                    <div class="source">— Internal feedback</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">"The yearly recap is a nice touch. Seeing my stats keeps me motivated to read more."</div>
+                    <div class="source">— Google Group tester</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">"I like that my data stays on my phone. That's exactly what I want from an app like this."</div>
+                    <div class="source">— Private Reddit message</div>
+                </div>
+            </div>
         </div>
 
         <div class="privacy-highlight">
@@ -950,11 +1066,12 @@
                 <p>All data (books, sessions, statistics) is stored exclusively on the user's device. Lecturameter has no proprietary servers and does not access this data.</p>
                 <p style="margin-top:10px; color:#ddd;"><span class="highlight">5. Contact</span></p>
                 <p>For any privacy-related questions: <span style="color:#BB86FC;">lecturameter.app@gmail.com</span></p>
-                <p style="margin-top:10px; font-size:11px; color:#666;">You can also read it on <a href="https://lecturameterapp.github.io/lecturameter-policy/" target="_blank" style="color:#BB86FC;">GitHub Pages</a>.</p>
+                <p style="margin-top:10px; font-size:11px; color:#666;">You can also read it on <a href="https://lecturameterapp.github.io/lecturameter-policy/?v=1" target="_blank" style="color:#BB86FC;">GitHub Pages</a>.</p>
             </div>
         </div>
 
-        <div class="section" id="contact-en">
+        <!-- CONTACT EN (con Formspree) -->
+        <div class="contact-section" id="contact-en">
             <h2>📨 Contact</h2>
             <p style="font-size:13px; color:#bbb; margin-bottom:12px;">Questions, suggestions, or issues? Write to me and I'll get back to you.</p>
             <div class="feedback-form" id="feedbackForm-en">
@@ -1053,7 +1170,7 @@
         }
     }
 
-    // ─── FEEDBACK ───
+    // ─── FEEDBACK con Formspree ───
     async function sendFeedback(lang) {
         const name    = document.getElementById('fbName-' + lang).value.trim();
         const message = document.getElementById('fbMsg-' + lang).value.trim();
@@ -1065,30 +1182,42 @@
             status.className = 'fb-status err';
             return;
         }
+
         btn.disabled = true;
-        status.textContent = lang === 'es' ? 'Enviando...' : 'Sending...';
+        status.textContent = lang === 'es' ? '⏳ Enviando...' : '⏳ Sending...';
         status.className = 'fb-status';
 
         try {
-            const res = await fetch('https://formsubmit.co/ajax/lecturameter.app@gmail.com', {
+            const res = await fetch('https://formspree.io/f/mgojjnyj', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
                 body: JSON.stringify({
-                    name:     name || (lang === 'es' ? 'Anónimo' : 'Anonymous'),
-                    message:  message,
+                    name: name || (lang === 'es' ? 'Anónimo' : 'Anonymous'),
+                    message: message,
                     _subject: 'Feedback Lecturameter'
                 })
             });
+
             const data = await res.json();
-            if (data.success === 'true' || data.success === true) {
+
+            if (res.ok) {
                 status.textContent = lang === 'es' ? '✅ ¡Enviado! Gracias.' : '✅ Sent! Thank you.';
                 status.className = 'fb-status ok';
                 document.getElementById('fbName-' + lang).value = '';
                 document.getElementById('fbMsg-' + lang).value = '';
-            } else { throw new Error(); }
+            } else {
+                throw new Error(data.error || 'Error desconocido');
+            }
         } catch (e) {
-            status.textContent = lang === 'es' ? '❌ Error. Prueba en lecturameter.app@gmail.com' : '❌ Failed. Try lecturameter.app@gmail.com';
+            console.error('Formspree error:', e);
+            status.textContent = lang === 'es'
+                ? '❌ Error al enviar. Prueba en lecturameter.app@gmail.com'
+                : '❌ Failed to send. Try lecturameter.app@gmail.com';
             status.className = 'fb-status err';
+        } finally {
             btn.disabled = false;
         }
     }
