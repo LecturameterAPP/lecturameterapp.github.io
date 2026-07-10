@@ -202,15 +202,19 @@ body {
     position: relative;
     z-index: 2;
 }
-.phone img {
+.phone img, .phone video {
     width: 100%;
     display: block;
     border-radius: 25px;
 }
+.phone video { object-fit: cover; }
 .phone.mini {
     width: 100%;
     max-width: 250px;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), 0 0 44px rgba(108, 99, 255, 0.14);
+}
+.phone.mini.big {
+    max-width: 320px;
 }
 .float-chip {
     position: absolute;
@@ -295,7 +299,9 @@ body {
     transition: transform 0.15s, border-color 0.2s;
 }
 .feature-card:hover { transform: translateY(-3px); border-color: var(--accent); }
-.feature-card .icon { font-size: 26px; }
+.feature-card .icon { font-size: 26px; line-height: 1; }
+.feature-card .icon.goodreads-icon { display: block; width: 32px; height: 32px; font-size: 0; }
+.feature-card .icon.goodreads-icon svg { width: 100%; height: 100%; display: block; }
 .feature-card .title { font-weight: 700; font-size: 15px; color: #fff; margin-top: 8px; }
 .feature-card .desc { font-size: 13px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
 
