@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Política de privacidad – Lecturameter</title>
+    <meta name="description" content="Política de privacidad de Lecturameter: tus datos de lectura se guardan solo en tu dispositivo. Sin servidores propios, sin anuncios, sin tracking. Backup opcional en tu Google Drive.">
+    <meta property="og:title" content="Política de privacidad – Lecturameter">
+    <meta property="og:description" content="Tus datos de lectura se guardan solo en tu dispositivo. Sin servidores propios, sin anuncios, sin tracking.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lecturameterapp.github.io/privacy.html">
+    <meta property="og:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Política de privacidad – Lecturameter">
+    <meta name="twitter:description" content="Tus datos de lectura se guardan solo en tu dispositivo. Sin servidores propios, sin anuncios, sin tracking.">
+    <meta name="twitter:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
+
+    <!-- ─── ICONOS ─── -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+
+    <link rel="canonical" href="https://lecturameterapp.github.io/privacy.html">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- ─── BARRA DE IDIOMA ─── -->
+    <div class="lang-bar">
+        <button id="btn-es" class="active" onclick="setLang('es')">🇪🇸 Español</button>
+        <button id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
+    </div>
+
+    <!-- ─── MENÚ DE NAVEGACIÓN ─── -->
+    <nav class="nav-links">
+        <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+        <a href="features.html" data-es="Características" data-en="Features">Características</a>
+        <a href="stats.html" data-es="Estadísticas" data-en="Stats">Estadísticas</a>
+        <a href="privacy.html" class="active" data-es="Privacidad" data-en="Privacy">Privacidad</a>
+        <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+
+    <!-- ─── CONTENIDO EN ESPAÑOL ─── -->
+    <div id="content-es" class="lang-content active">
+        <div class="hero">
+            <h1 style="font-size:28px;">🔒 Privacidad</h1>
+            <p class="tagline">Tus datos solo están en tu dispositivo</p>
+        </div>
+
+        <!-- PRIVACIDAD DESTACADA -->
+        <div class="privacy-highlight">
+            <div class="icon">🔒</div>
+            <div class="title">Tus datos solo están en tu dispositivo</div>
+            <div class="desc">
+                <span class="highlight">Lecturameter no recopila ni envía tus datos a ningún servidor.</span>
+                Tu biblioteca, sesiones y estadísticas se guardan exclusivamente en tu móvil.
+                Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos.
+                Sin anuncios, sin suscripciones, sin tracking.
+            </div>
+        </div>
+
+        <!-- POLÍTICA DE PRIVACIDAD -->
+        <div class="section" id="privacy">
+            <h2>Política de privacidad completa</h2>
+            <div class="privacy-text">
+                <p><span class="highlight">Última actualización:</span> 1 de julio de 2026</p>
+                <p style="margin-top:8px;">Lecturameter <span class="highlight">no recopila, almacena ni transmite ningún dato personal a servidores externos</span>, salvo en los siguientes casos:</p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">1. Google Drive (opcional)</span></p>
+                <p>Si activas la copia de seguridad en la nube, la app se conecta a tu cuenta de Google mediante OAuth2 para guardar una copia de tus libros y sesiones en la raíz de tu Drive. <span class="highlight">Solo tú tienes acceso a esos archivos.</span> En ningún caso el desarrollador puede ver, modificar ni eliminar esos datos.</p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">2. APIs externas de metadatos</span></p>
+                <p>Para buscar portadas y metadatos de libros, la app puede consultar las siguientes APIs directamente desde tu dispositivo (sin pasar por servidores propios):</p>
+                <ul style="padding-left:18px; margin:6px 0;">
+                    <li>OpenLibrary</li>
+                    <li>Google Books</li>
+                    <li>MangaDex</li>
+                    <li>AniList</li>
+                    <li>Hardcover</li>
+                </ul>
+                <p>Estas llamadas no incluyen datos personales; solo el título o ISBN buscado.</p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">3. Permisos de la app</span></p>
+                <ul style="padding-left:18px; margin:6px 0;">
+                    <li><span class="highlight">Internet:</span> necesario para buscar portadas y hacer backup en Drive.</li>
+                    <li><span class="highlight">Almacenamiento local:</span> para guardar backups en el dispositivo.</li>
+                    <li><span class="highlight">Cuenta de Google (OAuth2):</span> solo si usas el backup en Drive. Puedes revocar el acceso en cualquier momento desde tu cuenta de Google.</li>
+                    <li><span class="highlight">Arranque del dispositivo (BOOT_COMPLETED):</span> para reprogramar alarmas de recordatorio tras reinicio.</li>
+                </ul>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">4. Datos generados localmente</span></p>
+                <p>Toda la información (libros, sesiones, estadísticas) se almacena exclusivamente en el dispositivo del usuario. Lecturameter no tiene servidores propios y no accede a estos datos.</p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">5. Contacto</span></p>
+                <p>Para cualquier consulta sobre privacidad: <span style="color:#BB86FC;">lecturameter.app@gmail.com</span></p>
+                <p style="margin-top:10px; font-size:11px; color:#8a8a8a;">También puedes leerlo en <a href="https://lecturameterapp.github.io/lecturameter-policy/?v=1" target="_blank" rel="noopener" style="color:#BB86FC;">GitHub Pages</a>.</p>
+            </div>
+        </div>
+
+        <div class="footer">© 2026 Lecturameter · <a href="contact.html" style="color:#8a8a8a;">Contacto</a></div>
+    </div>
+
+    <!-- ─── CONTENIDO EN INGLÉS ─── -->
+    <div id="content-en" class="lang-content">
+        <div class="hero">
+            <h2 style="font-size:28px; font-weight:700; color:#BB86FC;">🔒 Privacy</h2>
+            <p class="tagline">Your data stays only on your device</p>
+        </div>
+
+        <div class="privacy-highlight">
+            <div class="icon">🔒</div>
+            <div class="title">Your data stays only on your device</div>
+            <div class="desc">
+                <span class="highlight">Lecturameter does not collect or send your data to any server.</span>
+                Your library, sessions, and statistics are stored exclusively on your phone.
+                If you enable Google Drive backup, only you have access to those files.
+                No ads, no subscriptions, no tracking.
+            </div>
+        </div>
+
+        <div class="section" id="privacy-en">
+            <h2>Full Privacy Policy</h2>
+            <div class="privacy-text">
+                <p><span class="highlight">Last updated:</span> July 1, 2026</p>
+                <p style="margin-top:8px;">Lecturameter <span class="highlight">does not collect, store, or transmit any personal data to external servers</span>, except in the following cases:</p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">1. Google Drive (optional)</span></p>
+                <p>If you enable cloud backup, the app connects to your Google account via OAuth2 to save a copy of your books and sessions to the root of your Drive. <span class="highlight">Only you have access to those files.</span> The developer cannot view, modify, or delete that data under any circumstances.</p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">2. External metadata APIs</span></p>
+                <p>To search for book covers and metadata, the app may query the following APIs directly from your device (not through any proprietary server):</p>
+                <ul style="padding-left:18px; margin:6px 0;">
+                    <li>OpenLibrary</li>
+                    <li>Google Books</li>
+                    <li>MangaDex</li>
+                    <li>AniList</li>
+                    <li>Hardcover</li>
+                </ul>
+                <p>These calls do not include personal data — only the title or ISBN being searched.</p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">3. App permissions</span></p>
+                <ul style="padding-left:18px; margin:6px 0;">
+                    <li><span class="highlight">Internet:</span> required to search for covers and back up to Drive.</li>
+                    <li><span class="highlight">Local storage:</span> to save backups on the device.</li>
+                    <li><span class="highlight">Google account (OAuth2):</span> only if you use Drive backup. You can revoke access at any time from your Google account.</li>
+                    <li><span class="highlight">Device boot (BOOT_COMPLETED):</span> to reschedule reading reminders after a reboot.</li>
+                </ul>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">4. Locally generated data</span></p>
+                <p>All data (books, sessions, statistics) is stored exclusively on the user's device. Lecturameter has no proprietary servers and does not access this data.</p>
+                <p style="margin-top:10px; color:#ddd;"><span class="highlight">5. Contact</span></p>
+                <p>For any privacy-related questions: <span style="color:#BB86FC;">lecturameter.app@gmail.com</span></p>
+                <p style="margin-top:10px; font-size:11px; color:#8a8a8a;">You can also read it on <a href="https://lecturameterapp.github.io/lecturameter-policy/?v=1" target="_blank" rel="noopener" style="color:#BB86FC;">GitHub Pages</a>.</p>
+            </div>
+        </div>
+
+        <div class="footer">© 2026 Lecturameter · <a href="contact.html" style="color:#8a8a8a;">Contact</a></div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

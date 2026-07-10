@@ -8,7 +8,7 @@
     <meta property="og:title" content="Lecturameter – Tu tracker de lectura para Android">
     <meta property="og:description" content="Organiza tu biblioteca, cronometra sesiones de lectura y consulta estadísticas detalladas en tu móvil Android. Sin anuncios, sin suscripciones y con total privacidad.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lecturameterapp.github.io">
+    <meta property="og:url" content="https://lecturameterapp.github.io/">
     <meta property="og:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
@@ -26,6 +26,7 @@
     <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
 
     <link rel="canonical" href="https://lecturameterapp.github.io/">
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Schema JSON-LD -->
     <script type="application/ld+json">
@@ -33,6 +34,7 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Lecturameter",
+      "url": "https://lecturameterapp.github.io/",
       "description": "Organiza tu biblioteca, cronometra sesiones de lectura y consulta estadísticas detalladas en tu móvil Android. Sin anuncios, sin suscripciones y con total privacidad.",
       "applicationCategory": "LifestyleApplication",
       "operatingSystem": "Android",
@@ -44,573 +46,15 @@
       "author": {
         "@type": "Person",
         "name": "Víctor (Lecturameter)",
-        "email": "lecturameter.app@gmail.com"
+        "email": "lecturameter.app@gmail.com",
+        "sameAs": [
+          "https://x.com/LecturameterAPP",
+          "https://www.reddit.com/user/LM_Reader_Dev/",
+          "https://github.com/LecturameterAPP"
+        ]
       }
     }
     </script>
-
-    <style>
-        /* ─── RESET ─── */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #121212;
-            color: #e0e0e0;
-            padding: 16px;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            background: #1e1e1e;
-            border-radius: 24px;
-            padding: 24px 20px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.6);
-        }
-        .lang-bar {
-            display: flex;
-            justify-content: flex-end;
-            gap: 8px;
-            margin-bottom: 20px;
-        }
-        .lang-bar button {
-            background: none;
-            border: 2px solid #333;
-            padding: 6px 18px;
-            border-radius: 30px;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            color: #aaa;
-            transition: 0.2s ease;
-        }
-        .lang-bar button.active {
-            border-color: #BB86FC;
-            background: rgba(187,134,252,0.12);
-            color: #BB86FC;
-        }
-        .lang-content { display: none; }
-        .lang-content.active { display: block; }
-
-        /* ─── NAV ─── */
-        .nav-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px 20px;
-            justify-content: center;
-            padding: 12px 0 20px;
-            border-bottom: 1px solid #333;
-            margin-bottom: 20px;
-        }
-        .nav-links a {
-            color: #aaa;
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.2s;
-            white-space: nowrap;
-        }
-        .nav-links a:hover { color: #BB86FC; }
-
-        .hero { text-align: center; padding: 16px 0 8px; }
-        .hero h1 { font-size: 32px; font-weight: 700; color: #BB86FC; }
-        .hero .tagline { font-size: 16px; color: #ccc; margin: 4px 0 12px; }
-        .hero .desc { font-size: 14px; color: #ccc; max-width: 600px; margin: 0 auto 16px; }
-        .btn-download {
-            display: inline-block;
-            background: #BB86FC;
-            color: #121212;
-            font-weight: 600;
-            padding: 10px 28px;
-            border-radius: 40px;
-            font-size: 16px;
-            transition: background 0.2s;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .btn-download:hover { background: #a06ce0; }
-        .btn-download.secondary {
-            background: #2d2d2d;
-            color: #BB86FC;
-            border: 1.5px solid #BB86FC;
-        }
-        .btn-download.secondary:hover { background: #3d3d3d; }
-        .btn-download.disabled { opacity: 0.5; pointer-events: none; }
-
-        .hero .steps-hint {
-            font-size: 12px;
-            color: #888;
-            margin-top: 8px;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-            margin: 24px 0 20px;
-        }
-        .feature-card {
-            background: #2d2d2d;
-            border-radius: 14px;
-            padding: 14px;
-            border-left: 4px solid #BB86FC;
-        }
-        .feature-card .icon { font-size: 24px; }
-        .feature-card .title { font-weight: 600; font-size: 14px; color: #ddd; }
-        .feature-card .desc { font-size: 12px; color: #aaa; margin-top: 2px; }
-
-        .screenshot-gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            margin: 20px 0;
-        }
-        .screenshot-item {
-            background: #2d2d2d;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid #333;
-            transition: transform 0.2s;
-            display: flex;
-            flex-direction: column;
-        }
-        .screenshot-item:hover { transform: scale(1.02); }
-        .screenshot-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-bottom: 1px solid #333;
-            background: #000;
-            aspect-ratio: 9 / 16;
-            object-fit: contain;
-        }
-        .screenshot-item .label {
-            padding: 10px 12px;
-            font-size: 14px;
-            color: #ccc;
-            text-align: center;
-            background: #1e1e1e;
-            flex-shrink: 0;
-        }
-        .screenshot-item .label .sub {
-            font-size: 12px;
-            color: #888;
-            display: block;
-            margin-top: 4px;
-        }
-
-        .cta-notify {
-            background: #1a1a2e;
-            border-radius: 16px;
-            padding: 20px 24px;
-            margin: 20px 0 24px;
-            border: 1px solid #BB86FC;
-            text-align: center;
-        }
-        .cta-notify h2 { font-size: 20px; color: #BB86FC; margin-bottom: 6px; }
-        .cta-notify p { font-size: 14px; color: #bbb; margin-bottom: 14px; }
-        .notify-form {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            align-items: center;
-        }
-        .notify-form .row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-            width: 100%;
-            max-width: 460px;
-        }
-        .notify-form input[type="email"] {
-            flex: 1;
-            min-width: 200px;
-            background: #1a1a1a;
-            border: 1px solid #444;
-            border-radius: 30px;
-            padding: 10px 18px;
-            font-size: 14px;
-            color: #e0e0e0;
-            outline: none;
-        }
-        .notify-form input[type="email"]:focus { border-color: #BB86FC; }
-        .captcha-row {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            justify-content: center;
-            font-size: 14px;
-            color: #ccc;
-        }
-        .captcha-row input {
-            width: 60px;
-            background: #1a1a1a;
-            border: 1px solid #444;
-            border-radius: 8px;
-            padding: 6px 10px;
-            font-size: 14px;
-            color: #e0e0e0;
-            outline: none;
-            text-align: center;
-        }
-        .captcha-row input:focus { border-color: #BB86FC; }
-        .captcha-row .captcha-question {
-            background: #2d2d2d;
-            padding: 4px 14px;
-            border-radius: 30px;
-            font-weight: 600;
-        }
-        .notify-btn {
-            background: #BB86FC;
-            color: #121212;
-            border: none;
-            border-radius: 30px;
-            padding: 10px 28px;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-            font-family: inherit;
-        }
-        .notify-btn:hover { background: #a06ce0; }
-        .notify-btn:disabled {
-            opacity: 0.6;
-            cursor: default;
-            background: #555;
-        }
-        .notify-status { font-size: 13px; }
-        .notify-status.ok  { color: #10b981; }
-        .notify-status.err { color: #ef4444; }
-        .notify-status.loading { color: #f59e0b; }
-
-        .privacy-highlight {
-            background: #0d1a1a;
-            border-radius: 16px;
-            padding: 18px 22px;
-            margin: 20px 0;
-            border-left: 6px solid #10b981;
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-        }
-        .privacy-highlight .icon { font-size: 28px; }
-        .privacy-highlight .title { font-weight: 700; font-size: 18px; color: #10b981; }
-        .privacy-highlight .desc { font-size: 14px; color: #ccc; line-height: 1.5; }
-        .privacy-highlight .desc span.highlight { font-weight: 600; color: #fff; }
-
-        /* ─── TESTIMONIALS ─── */
-        .testimonials-section {
-            margin: 24px 0;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-        .testimonial-card {
-            background: #2d2d2d;
-            border-radius: 14px;
-            padding: 20px 18px;
-            border-top: 4px solid #BB86FC;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .testimonial-card .quote {
-            font-size: 15px;
-            color: #ccc;
-            font-style: italic;
-            margin-bottom: 8px;
-            line-height: 1.5;
-        }
-        .testimonial-card .source {
-            font-size: 12px;
-            color: #888;
-        }
-
-        .widget-sim {
-            width: 100%;
-            max-width: 460px;
-            background: #1a1a1a;
-            border-radius: 16px;
-            padding: 14px;
-            margin: 16px 0 8px;
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            border: 1px solid #333;
-        }
-        .widget-sim .cover {
-            width: 48px;
-            height: 64px;
-            border-radius: 6px;
-            flex-shrink: 0;
-            background-color: #1a1a2e;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .widget-sim .info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
-        .widget-sim .title { font-weight: 600; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-        .widget-sim .author { font-size: 12px; color: #999; }
-        .widget-sim .stats-pills {
-            display: flex;
-            flex-wrap: nowrap;
-            gap: 4px;
-        }
-        .widget-sim .stats-pills .pill {
-            background: #2d2d2d;
-            padding: 2px 8px;
-            border-radius: 20px;
-            font-size: 9px;
-            color: #bbb;
-            white-space: nowrap;
-        }
-        .widget-sim .stats-pills .pill .num { color: #fff; font-weight: 500; }
-        .widget-sim .progress-bar {
-            width: 100%;
-            height: 4px;
-            background: #333;
-            border-radius: 4px;
-            overflow: hidden;
-            margin-top: 2px;
-        }
-        .widget-sim .progress-bar .fill {
-            height: 100%;
-            width: 18%;
-            background: #0EA5E9;
-            border-radius: 4px;
-            transition: width 0.3s;
-        }
-        .widget-sim .timestamp { font-size: 9px; color: #555; margin-top: 2px; }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 12px;
-            margin: 16px 0;
-        }
-        .stats-grid .stat-box {
-            background: #1a1a1a;
-            border-radius: 12px;
-            padding: 10px 12px;
-            text-align: center;
-            border-top: 3px solid transparent;
-        }
-        .stats-grid .stat-box .number { font-size: 22px; font-weight: 700; color: #fff; }
-        .stats-grid .stat-box .label { font-size: 11px; color: #888; margin-top: 2px; }
-        .stat-box.c-purple { border-top-color: #BB86FC; }
-        .stat-box.c-purple .number { color: #BB86FC; }
-        .stat-box.c-blue   { border-top-color: #3b82f6; }
-        .stat-box.c-blue   .number { color: #3b82f6; }
-        .stat-box.c-green  { border-top-color: #10b981; }
-        .stat-box.c-green  .number { color: #10b981; }
-        .stat-box.c-orange { border-top-color: #f59e0b; }
-        .stat-box.c-orange .number { color: #f59e0b; }
-        .stat-box.c-cyan   { border-top-color: #06b6d4; }
-        .stat-box.c-cyan   .number { color: #06b6d4; }
-        .stat-box.c-violet { border-top-color: #8b5cf6; }
-        .stat-box.c-violet .number { color: #8b5cf6; }
-
-        .bar-chart {
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            gap: 6px;
-            height: 140px;
-            margin-top: 12px;
-            padding: 0 4px 4px;
-            border-bottom: 1px solid #333;
-            border-left: 1px solid #333;
-        }
-        .bar-chart .bar-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex: 1;
-            height: 100%;
-            justify-content: flex-end;
-        }
-        .bar-chart .bar-item .bar {
-            width: 100%;
-            max-width: 28px;
-            background: #BB86FC;
-            border-radius: 4px 4px 0 0;
-            min-height: 4px;
-            transition: height 0.3s;
-        }
-        .bar-chart .bar-item .bar-label { font-size: 9px; color: #888; margin-top: 4px; }
-        .bar-chart .bar-item .bar-value { font-size: 9px; color: #aaa; margin-bottom: 2px; }
-
-        .links-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin: 12px 0;
-        }
-        .links-grid .link-box {
-            background: #2d2d2d;
-            border-radius: 12px;
-            padding: 14px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            border: 1px solid #333;
-            flex: 1;
-            min-width: 140px;
-            text-align: center;
-            text-decoration: none;
-            color: inherit;
-            transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
-        }
-        .links-grid .link-box:hover {
-            background: #353535;
-            border-color: #555;
-        }
-        .links-grid .link-box .icon { width: 32px; height: 32px; }
-        .links-grid .link-box .icon svg { width: 100%; height: 100%; fill: #ccc; }
-        .links-grid .link-box .text { font-size: 14px; color: #ccc; }
-        .links-grid .link-box .text .sub { font-size: 11px; color: #666; }
-
-        .link-box.x { border-color: #1DA1F2; }
-        .link-box.x .icon svg { fill: #1DA1F2; }
-        .link-box.x .text { color: #1DA1F2; }
-        .link-box.x .text .sub { color: #1DA1F2; opacity: 0.7; }
-        .link-box.x:hover { border-color: #1DA1F2; background: #1a2a3a; }
-
-        .link-box.reddit { border-color: #FF4500; }
-        .link-box.reddit .icon svg { fill: #FF4500; }
-        .link-box.reddit .text { color: #FF4500; }
-        .link-box.reddit .text .sub { color: #FF4500; opacity: 0.7; }
-        .link-box.reddit:hover { border-color: #FF4500; background: #2a1a10; }
-
-        .link-box.playstore { border-color: #34A853; }
-        .link-box.playstore .icon svg { fill: #34A853; }
-        .link-box.playstore .text { color: #34A853; }
-        .link-box.playstore .text .sub { color: #34A853; opacity: 0.7; }
-        .link-box.playstore:hover { border-color: #34A853; background: #1a2a1a; }
-
-        .link-box.github { border-color: #8B5CF6; }
-        .link-box.github .icon svg { fill: #8B5CF6; }
-        .link-box.github .text { color: #8B5CF6; }
-        .link-box.github .text .sub { color: #8B5CF6; opacity: 0.8; }
-        .link-box.github:hover { border-color: #8B5CF6; background: #1a1028; box-shadow: 0 0 12px rgba(139,92,246,0.3); }
-
-        .privacy-text {
-            background: #1a1a1a;
-            padding: 14px 16px;
-            border-radius: 12px;
-            font-size: 13px;
-            color: #bbb;
-        }
-        .privacy-text span.highlight { font-weight: 600; color: #fff; }
-
-        /* ─── CONTACT FORM ─── */
-        .contact-section {
-            background: #1a1a2e;
-            border-radius: 16px;
-            padding: 20px 24px;
-            margin: 24px 0 16px;
-            border: 1px solid #BB86FC;
-        }
-        .contact-section h2 { color: #BB86FC; }
-
-        .feedback-form { display: flex; flex-direction: column; gap: 10px; }
-        .fb-input, .fb-textarea {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 10px;
-            padding: 10px 14px;
-            font-size: 14px;
-            color: #e0e0e0;
-            font-family: inherit;
-            outline: none;
-            transition: border-color 0.2s;
-            resize: vertical;
-        }
-        .fb-input:focus, .fb-textarea:focus { border-color: #BB86FC; }
-        .fb-input::placeholder, .fb-textarea::placeholder { color: #555; }
-        .fb-btn {
-            background: #BB86FC;
-            color: #121212;
-            border: none;
-            border-radius: 30px;
-            padding: 10px 22px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-            font-family: inherit;
-        }
-        .fb-btn:hover { background: #a06ce0; }
-        .fb-btn:disabled { opacity: 0.5; cursor: default; }
-        .fb-status { font-size: 13px; }
-        .fb-status.ok  { color: #10b981; }
-        .fb-status.err { color: #ef4444; }
-
-        h2 { font-size: 20px; font-weight: 600; color: #ccc; margin-bottom: 10px; }
-        .footer {
-            margin-top: 32px;
-            padding-top: 12px;
-            border-top: 1px solid #2a2a2a;
-            font-size: 12px;
-            color: #666;
-            text-align: center;
-        }
-
-        /* ─── MEDIA QUERIES ─── */
-        @media (max-width: 1024px) {
-            .testimonials-section {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 16px;
-            }
-        }
-
-        @media (max-width: 900px) {
-            .screenshot-gallery { grid-template-columns: repeat(2, 1fr); }
-            .testimonials-section { grid-template-columns: repeat(2, 1fr); }
-        }
-
-        @media (max-width: 768px) {
-            .testimonials-section { grid-template-columns: repeat(2, 1fr); }
-        }
-
-        @media (max-width: 600px) {
-            .container { padding: 16px 12px; }
-            .hero h1 { font-size: 26px; }
-            .features-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
-            .feature-card { padding: 10px; }
-            .feature-card .icon { font-size: 20px; }
-            .feature-card .title { font-size: 13px; }
-            .feature-card .desc { font-size: 11px; }
-            .screenshot-gallery { grid-template-columns: 1fr 1fr; gap: 10px; }
-            .screenshot-item .label { font-size: 12px; }
-            .screenshot-item .label .sub { font-size: 10px; }
-            .stats-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
-            .stats-grid .stat-box { padding: 8px; }
-            .stats-grid .stat-box .number { font-size: 18px; }
-            .bar-chart { height: 100px; gap: 4px; }
-            .bar-chart .bar-item .bar { max-width: 20px; }
-            .links-grid .link-box { min-width: 120px; padding: 12px 16px; }
-            .nav-links { gap: 8px 14px; font-size: 12px; }
-            .nav-links a { font-size: 12px; }
-            .testimonials-section { grid-template-columns: 1fr; gap: 14px; }
-            .testimonial-card { padding: 16px; }
-            .testimonial-card .quote { font-size: 14px; }
-        }
-
-        @media (max-width: 420px) {
-            .features-grid { grid-template-columns: 1fr; }
-            .stats-grid { grid-template-columns: 1fr 1fr; }
-            .screenshot-gallery { grid-template-columns: 1fr; }
-            .screenshot-item img { max-height: 400px; }
-            .hero h1 { font-size: 22px; }
-            .hero .tagline { font-size: 14px; }
-            .btn-download { font-size: 14px; padding: 8px 20px; }
-        }
-    </style>
 </head>
 <body>
 <div class="container">
@@ -623,12 +67,11 @@
 
     <!-- ─── MENÚ DE NAVEGACIÓN ─── -->
     <nav class="nav-links">
-        <a href="#features">Características</a>
-        <a href="#screenshots">Capturas</a>
-        <a href="#stats">Estadísticas</a>
-        <a href="#testimonials">Opiniones</a>
-        <a href="#privacy">Privacidad</a>
-        <a href="#contact">Contacto</a>
+        <a href="index.html" class="active" data-es="Inicio" data-en="Home">Inicio</a>
+        <a href="features.html" data-es="Características" data-en="Features">Características</a>
+        <a href="stats.html" data-es="Estadísticas" data-en="Stats">Estadísticas</a>
+        <a href="privacy.html" data-es="Privacidad" data-en="Privacy">Privacidad</a>
+        <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
     </nav>
 
     <!-- ─── CONTENIDO EN ESPAÑOL ─── -->
@@ -640,14 +83,14 @@
             <p class="desc">App para Android que organiza tu biblioteca, cronometra tus sesiones y te muestra estadísticas detalladas. También hace backup automático en Google Drive.</p>
             <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:4px;">
                 <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="btn-download">1. Unirse al grupo de testers</a>
-                <span style="color:#666; font-size:20px;">→</span>
+                <span style="color:#8a8a8a; font-size:20px;">→</span>
                 <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn-download secondary">2. Instalar en Play Store</a>
             </div>
             <p class="steps-hint">⚠️ Primero únete al grupo (paso 1), después instala desde el paso 2. Sin el grupo, la instalación no funcionará.</p>
-            <p style="font-size:12px; color:#666; margin-top:4px;">Prueba cerrada · Lanzamiento oficial en Play Store próximamente</p>
+            <p style="font-size:12px; color:#8a8a8a; margin-top:4px;">Prueba cerrada · Lanzamiento oficial en Play Store próximamente</p>
         </div>
 
-        <!-- CTA NOTIFICACIÓN (texto actualizado) -->
+        <!-- CTA NOTIFICACIÓN -->
         <div class="cta-notify">
             <h2>📩 Recibe un aviso cuando la app esté disponible</h2>
             <p>Te llegará un único correo cuando se lance oficialmente. Sin spam, solo un aviso.</p>
@@ -665,61 +108,6 @@
                     <span class="notify-status" id="notifyStatusEs"></span>
                 </div>
             </div>
-        </div>
-
-        <!-- GALERÍA DE CAPTURAS -->
-        <div class="section" id="screenshots">
-            <h2>📱 Así se ve Lecturameter</h2>
-            <p style="font-size:13px; color:#888; margin-bottom:12px;">Capturas reales de la aplicación</p>
-            <div class="screenshot-gallery">
-
-                <!-- 1. Biblioteca -->
-                <div class="screenshot-item">
-                    <img src="captura_libros_real_es.jpg" alt="Biblioteca" loading="lazy">
-                    <div class="label">📚 Biblioteca <span class="sub">Organiza tus libros por estanterías</span></div>
-                </div>
-
-                <!-- 2. Detalle -->
-                <div class="screenshot-item">
-                    <img src="captura_detalle_real_es.jpg" alt="Detalle" loading="lazy">
-                    <div class="label">📖 Detalle del libro <span class="sub">Sesiones, estadísticas y cronómetro</span></div>
-                </div>
-
-                <!-- 3. Historial (con "s" en capturas) -->
-                <div class="screenshot-item">
-                    <img src="capturas_historial_es.jpg" alt="Historial" loading="lazy">
-                    <div class="label">📋 Historial global <span class="sub">Resumen por libro con sesiones, tiempo y páginas</span></div>
-                </div>
-
-                <!-- 4. Heatmap anual -->
-                <div class="screenshot-item">
-                    <img src="captura_heatmap_es.jpg" alt="Estadísticas anuales" loading="lazy">
-                    <div class="label">📊 Estadísticas anuales <span class="sub">Páginas leídas mes a mes</span></div>
-                </div>
-
-                <!-- 5. Heatmap mensual -->
-                <div class="screenshot-item">
-                    <img src="captura_heatmap_mayo_es.jpg" alt="Estadísticas mensuales" loading="lazy">
-                    <div class="label">📊 Mapa de calor mensual <span class="sub">Intensidad de lectura día a día</span></div>
-                </div>
-
-                <!-- 6. Widget -->
-                <div class="screenshot-item">
-                    <img src="captura_widget_real_es.png" alt="Widget" loading="lazy">
-                    <div class="label">🧩 Widget <span class="sub">Tu libro en la pantalla de inicio</span></div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- FEATURES -->
-        <div class="features-grid" id="features">
-            <div class="feature-card"><div class="icon">⏱️</div><div class="title">Cronómetro</div><div class="desc">Funciona con la pantalla apagada.</div></div>
-            <div class="feature-card"><div class="icon">📊</div><div class="title">Estadísticas</div><div class="desc">Gráficos, Wrapped anual, heatmap.</div></div>
-            <div class="feature-card"><div class="icon">🧩</div><div class="title">Widget</div><div class="desc">Tu libro en la pantalla de inicio.</div></div>
-            <div class="feature-card"><div class="icon">📖</div><div class="title">Páginas funcionales</div><div class="desc">Ignora prólogos, índices, apéndices.</div></div>
-            <div class="feature-card"><div class="icon">🌐</div><div class="title">Múltiples ediciones</div><div class="desc">Idiomas distintos sin perder sesiones.</div></div>
-            <div class="feature-card"><div class="icon">☁️</div><div class="title">Backup Local y en Drive</div><div class="desc">Copias automáticas en local y Google Drive.</div></div>
         </div>
 
         <!-- TESTIMONIALS -->
@@ -746,27 +134,11 @@
             <div class="icon">🔒</div>
             <div class="title">Tus datos solo están en tu dispositivo</div>
             <div class="desc">
-                <span class="highlight">Lecturameter no recopila ni envía tus datos a ningún servidor.</span> 
-                Tu biblioteca, sesiones y estadísticas se guardan exclusivamente en tu móvil. 
-                Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos. 
+                <span class="highlight">Lecturameter no recopila ni envía tus datos a ningún servidor.</span>
+                Tu biblioteca, sesiones y estadísticas se guardan exclusivamente en tu móvil.
+                Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos.
                 Sin anuncios, sin suscripciones, sin tracking.
-            </div>
-        </div>
-
-        <!-- STATS (demo) -->
-        <div class="section" id="stats">
-            <h2>📊 Estadísticas de ejemplo</h2>
-            <div class="stats-grid" id="statsGrid-es">
-                <div class="stat-box c-purple"><div class="number" id="totalBooks-es">5</div><div class="label">Libros totales</div></div>
-                <div class="stat-box c-blue">  <div class="number" id="totalSessions-es">7</div><div class="label">Sesiones</div></div>
-                <div class="stat-box c-green">  <div class="number" id="totalPages-es">120</div><div class="label">Páginas leídas</div></div>
-                <div class="stat-box c-orange"> <div class="number" id="totalTime-es">3h 6m</div><div class="label">Tiempo total</div></div>
-                <div class="stat-box c-cyan">   <div class="number" id="avgPagesSession-es">17.1</div><div class="label">Media págs/sesión</div></div>
-                <div class="stat-box c-violet">  <div class="number" id="avgPace-es">0.6</div><div class="label">Media p/min</div></div>
-            </div>
-            <div style="margin-top:16px;">
-                <h3 style="font-size:15px; font-weight:600; color:#ccc; margin-bottom:6px;">📈 Páginas por día</h3>
-                <div class="bar-chart" id="barChart-es"></div>
+                <a href="privacy.html" style="color:#10b981; font-weight:600;">Lee la política completa →</a>
             </div>
         </div>
 
@@ -799,68 +171,7 @@
             </div>
         </div>
 
-        <!-- DEMO JSON -->
-        <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
-            <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Copia de Seguridad de demostración</div>
-            <p style="font-size:13px; color:#bbb; margin-bottom:10px;">¿Quieres probar la app con datos de ejemplo? Descarga este backup con 10 libros clásicos repartidos en todas las categorías (leyendo, terminado, releyendo, quiero leer, abandonado) y sesiones de lectura incluidas.</p>
-            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Descargar backup demo</a>
-            <div style="font-size:12px; color:#888; margin-top:12px; line-height:1.6;">
-                <span style="font-weight:600; color:#aaa;">Cómo usarlo:</span><br>
-                1. Descarga el archivo JSON en tu móvil<br>
-                2. Abre Lecturameter → Ajustes → Restaurar backup local<br>
-                3. Selecciona el archivo descargado<br>
-                4. ¡Listo! Explora la biblioteca, estadísticas y widget
-            </div>
-        </div>
-
-        <!-- POLÍTICA DE PRIVACIDAD -->
-        <div class="section" id="privacy">
-            <h2>🔒 Política de privacidad</h2>
-            <div class="privacy-text">
-                <p><span class="highlight">Última actualización:</span> 1 de julio de 2026</p>
-                <p style="margin-top:8px;">Lecturameter <span class="highlight">no recopila, almacena ni transmite ningún dato personal a servidores externos</span>, salvo en los siguientes casos:</p>
-                <p style="margin-top:10px; color:#ddd;"><span class="highlight">1. Google Drive (opcional)</span></p>
-                <p>Si activas la copia de seguridad en la nube, la app se conecta a tu cuenta de Google mediante OAuth2 para guardar una copia de tus libros y sesiones en la raíz de tu Drive. <span class="highlight">Solo tú tienes acceso a esos archivos.</span> En ningún caso el desarrollador puede ver, modificar ni eliminar esos datos.</p>
-                <p style="margin-top:10px; color:#ddd;"><span class="highlight">2. APIs externas de metadatos</span></p>
-                <p>Para buscar portadas y metadatos de libros, la app puede consultar las siguientes APIs directamente desde tu dispositivo (sin pasar por servidores propios):</p>
-                <ul style="padding-left:18px; margin:6px 0;">
-                    <li>OpenLibrary</li>
-                    <li>Google Books</li>
-                    <li>MangaDex</li>
-                    <li>AniList</li>
-                    <li>Hardcover</li>
-                </ul>
-                <p>Estas llamadas no incluyen datos personales; solo el título o ISBN buscado.</p>
-                <p style="margin-top:10px; color:#ddd;"><span class="highlight">3. Permisos de la app</span></p>
-                <ul style="padding-left:18px; margin:6px 0;">
-                    <li><span class="highlight">Internet:</span> necesario para buscar portadas y hacer backup en Drive.</li>
-                    <li><span class="highlight">Almacenamiento local:</span> para guardar backups en el dispositivo.</li>
-                    <li><span class="highlight">Cuenta de Google (OAuth2):</span> solo si usas el backup en Drive. Puedes revocar el acceso en cualquier momento desde tu cuenta de Google.</li>
-                    <li><span class="highlight">Arranque del dispositivo (BOOT_COMPLETED):</span> para reprogramar alarmas de recordatorio tras reinicio.</li>
-                </ul>
-                <p style="margin-top:10px; color:#ddd;"><span class="highlight">4. Datos generados localmente</span></p>
-                <p>Toda la información (libros, sesiones, estadísticas) se almacena exclusivamente en el dispositivo del usuario. Lecturameter no tiene servidores propios y no accede a estos datos.</p>
-                <p style="margin-top:10px; color:#ddd;"><span class="highlight">5. Contacto</span></p>
-                <p>Para cualquier consulta sobre privacidad: <span style="color:#BB86FC;">lecturameter.app@gmail.com</span></p>
-                <p style="margin-top:10px; font-size:11px; color:#666;">También puedes leerlo en <a href="https://lecturameterapp.github.io/lecturameter-policy/?v=1" target="_blank" style="color:#BB86FC;">GitHub Pages</a>.</p>
-            </div>
-        </div>
-
-        <!-- CONTACTO (con Formspree) -->
-        <div class="contact-section" id="contact">
-            <h2>📨 Contacto</h2>
-            <p style="font-size:13px; color:#bbb; margin-bottom:12px;">¿Dudas, sugerencias o problemas? Escríbeme y te responderé.</p>
-            <div class="feedback-form" id="feedbackForm-es">
-                <input class="fb-input" type="text" id="fbName-es" placeholder="Tu nombre (opcional)" autocomplete="off">
-                <textarea class="fb-textarea" id="fbMsg-es" placeholder="Tu mensaje..." rows="4"></textarea>
-                <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-                    <button class="fb-btn" onclick="sendFeedback('es')">📤 Enviar feedback</button>
-                    <span class="fb-status" id="fbStatus-es"></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">© 2026 Lecturameter</div>
+        <div class="footer">© 2026 Lecturameter · <a href="privacy.html" style="color:#8a8a8a;">Política de privacidad</a> · <a href="contact.html" style="color:#8a8a8a;">Contacto</a></div>
     </div>
 
     <!-- ─── CONTENIDO EN INGLÉS ─── -->
@@ -871,14 +182,14 @@
             <p class="desc">Android app that organizes your library, times your reading sessions, and gives you detailed stats. Also backs up automatically to Google Drive.</p>
             <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:4px;">
                 <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="btn-download">1. Join the testers group</a>
-                <span style="color:#666; font-size:20px;">→</span>
+                <span style="color:#8a8a8a; font-size:20px;">→</span>
                 <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn-download secondary">2. Install on Play Store</a>
             </div>
             <p class="steps-hint">⚠️ Join the group first (step 1), then install from step 2. Without the group, installation won't work.</p>
-            <p style="font-size:12px; color:#666; margin-top:4px;">Closed testing · Official Play Store launch coming soon</p>
+            <p style="font-size:12px; color:#8a8a8a; margin-top:4px;">Closed testing · Official Play Store launch coming soon</p>
         </div>
 
-        <!-- CTA NOTIFICACIÓN (texto actualizado en inglés) -->
+        <!-- CTA NOTIFICACIÓN EN -->
         <div class="cta-notify">
             <h2>📩 Get notified when the app is out</h2>
             <p>You'll receive one single email when it's officially launched. No spam, just one alert.</p>
@@ -896,59 +207,6 @@
                     <span class="notify-status" id="notifyStatusEn"></span>
                 </div>
             </div>
-        </div>
-
-        <div class="section" id="screenshots-en">
-            <h2>📱 Lecturameter in action</h2>
-            <p style="font-size:13px; color:#888; margin-bottom:12px;">Real screenshots of the app</p>
-            <div class="screenshot-gallery">
-
-                <!-- 1. Library -->
-                <div class="screenshot-item">
-                    <img src="captura_libros_real_en.jpg" alt="Library" loading="lazy">
-                    <div class="label">📚 Library <span class="sub">Organize your books by shelves</span></div>
-                </div>
-
-                <!-- 2. Detail -->
-                <div class="screenshot-item">
-                    <img src="captura_detalle_real_en.jpg" alt="Book detail" loading="lazy">
-                    <div class="label">📖 Book detail <span class="sub">Sessions, stats and timer</span></div>
-                </div>
-
-                <!-- 3. History -->
-                <div class="screenshot-item">
-                    <img src="captura_historial_en.jpg" alt="History" loading="lazy">
-                    <div class="label">📋 Global history <span class="sub">Summary by book with sessions, time and pages</span></div>
-                </div>
-
-                <!-- 4. Annual stats -->
-                <div class="screenshot-item">
-                    <img src="captura_heatmap_en.jpg" alt="Annual stats" loading="lazy">
-                    <div class="label">📊 Annual stats <span class="sub">Pages read month by month</span></div>
-                </div>
-
-                <!-- 5. Monthly heatmap -->
-                <div class="screenshot-item">
-                    <img src="captura_heatmap_mayo_en.jpg" alt="Monthly heatmap" loading="lazy">
-                    <div class="label">📊 Monthly heatmap <span class="sub">Reading intensity day by day</span></div>
-                </div>
-
-                <!-- 6. Widget -->
-                <div class="screenshot-item">
-                    <img src="captura_widget_real_en.png" alt="Widget" loading="lazy">
-                    <div class="label">🧩 Widget <span class="sub">Your book on the home screen</span></div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="features-grid" id="features-en">
-            <div class="feature-card"><div class="icon">⏱️</div><div class="title">Timer</div><div class="desc">Works with the screen off.</div></div>
-            <div class="feature-card"><div class="icon">📊</div><div class="title">Stats</div><div class="desc">Charts, Wrapped, heatmap.</div></div>
-            <div class="feature-card"><div class="icon">🧩</div><div class="title">Widget</div><div class="desc">Your book on the home screen.</div></div>
-            <div class="feature-card"><div class="icon">📖</div><div class="title">Functional pages</div><div class="desc">Ignore prologues, indexes, appendices.</div></div>
-            <div class="feature-card"><div class="icon">🌐</div><div class="title">Multiple editions</div><div class="desc">Different languages without losing sessions.</div></div>
-            <div class="feature-card"><div class="icon">☁️</div><div class="title">Local and drive backup</div><div class="desc">Automatic backups locally and on Google Drive.</div></div>
         </div>
 
         <!-- TESTIMONIALS EN -->
@@ -974,26 +232,11 @@
             <div class="icon">🔒</div>
             <div class="title">Your data stays only on your device</div>
             <div class="desc">
-                <span class="highlight">Lecturameter does not collect or send your data to any server.</span> 
-                Your library, sessions, and statistics are stored exclusively on your phone. 
-                If you enable Google Drive backup, only you have access to those files. 
+                <span class="highlight">Lecturameter does not collect or send your data to any server.</span>
+                Your library, sessions, and statistics are stored exclusively on your phone.
+                If you enable Google Drive backup, only you have access to those files.
                 No ads, no subscriptions, no tracking.
-            </div>
-        </div>
-
-        <div class="section" id="stats-en">
-            <h2>📊 Example Stats</h2>
-            <div class="stats-grid" id="statsGrid-en">
-                <div class="stat-box c-purple"><div class="number" id="totalBooks-en">5</div><div class="label">Total books</div></div>
-                <div class="stat-box c-blue">  <div class="number" id="totalSessions-en">7</div><div class="label">Sessions</div></div>
-                <div class="stat-box c-green">  <div class="number" id="totalPages-en">120</div><div class="label">Pages read</div></div>
-                <div class="stat-box c-orange"> <div class="number" id="totalTime-en">3h 6m</div><div class="label">Total time</div></div>
-                <div class="stat-box c-cyan">   <div class="number" id="avgPagesSession-en">17.1</div><div class="label">Avg pages/session</div></div>
-                <div class="stat-box c-violet">  <div class="number" id="avgPace-en">0.6</div><div class="label">Avg p/min</div></div>
-            </div>
-            <div style="margin-top:16px;">
-                <h3 style="font-size:15px; font-weight:600; color:#ccc; margin-bottom:6px;">📈 Pages per day</h3>
-                <div class="bar-chart" id="barChart-en"></div>
+                <a href="privacy.html" style="color:#10b981; font-weight:600;">Read the full policy →</a>
             </div>
         </div>
 
@@ -1014,10 +257,9 @@
                 </a>
                 <a href="https://www.reddit.com/user/LM_Reader_Dev/" target="_blank" rel="noopener" class="link-box reddit">
                     <div class="icon">
-                        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                            <defs><style>.cls-1{fill:#fff;}.cls-1,.cls-2{stroke-width:0px;}.cls-2{fill:#ff4500;}</style></defs>
-                            <rect class="cls-2" x="0" y="0" width="256" height="256"/>
-                            <path class="cls-1" d="m154.04,60.36c2.22,9.41,10.67,16.42,20.76,16.42,11.78,0,21.33-9.55,21.33-21.33s-9.55-21.33-21.33-21.33c-10.3,0-18.89,7.3-20.89,17.01-17.25,1.85-30.72,16.48-30.72,34.21,0,.04,0,.07,0,.11-18.76.79-35.89,6.13-49.49,14.56-5.05-3.91-11.39-6.24-18.27-6.24-16.51,0-29.89,13.38-29.89,29.89,0,11.98,7.04,22.3,17.21,27.07.99,34.7,38.8,62.61,85.31,62.61s84.37-27.94,85.31-62.67c10.09-4.8,17.07-15.09,17.07-27,0-16.51-13.38-29.89-29.89-29.89-6.85,0-13.16,2.31-18.2,6.19-13.72-8.49-31.04-13.83-49.99-14.54,0-.03,0-.05,0-.08,0-12.7,9.44-23.24,21.68-24.97Zm-81.54,82.27c.5-10.84,7.7-19.16,16.07-19.16s14.77,8.79,14.27,19.63c-.5,10.84-6.75,14.78-15.13,14.78s-15.71-4.41-15.21-15.25Zm95.06-19.16c8.38,0,15.58,8.32,16.07,19.16.5,10.84-6.84,15.25-15.21,15.25s-14.63-3.93-15.13-14.78c-.5-10.84,5.89-19.63,14.27-19.63Zm-9.96,44.24c1.57.16,2.57,1.79,1.96,3.25-5.15,12.31-17.31,20.96-31.5,20.96s-26.34-8.65-31.5-20.96c-.61-1.46.39-3.09,1.96-3.25,9.2-.93,19.15-1.44,29.54-1.44s20.34.52,29.54,1.44Z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                            <rect fill="#ff4500" x="0" y="0" width="256" height="256"/>
+                            <path fill="#fff" d="m154.04,60.36c2.22,9.41,10.67,16.42,20.76,16.42,11.78,0,21.33-9.55,21.33-21.33s-9.55-21.33-21.33-21.33c-10.3,0-18.89,7.3-20.89,17.01-17.25,1.85-30.72,16.48-30.72,34.21,0,.04,0,.07,0,.11-18.76.79-35.89,6.13-49.49,14.56-5.05-3.91-11.39-6.24-18.27-6.24-16.51,0-29.89,13.38-29.89,29.89,0,11.98,7.04,22.3,17.21,27.07.99,34.7,38.8,62.61,85.31,62.61s84.37-27.94,85.31-62.67c10.09-4.8,17.07-15.09,17.07-27,0-16.51-13.38-29.89-29.89-29.89-6.85,0-13.16,2.31-18.2,6.19-13.72-8.49-31.04-13.83-49.99-14.54,0-.03,0-.05,0-.08,0-12.7,9.44-23.24,21.68-24.97Zm-81.54,82.27c.5-10.84,7.7-19.16,16.07-19.16s14.77,8.79,14.27,19.63c-.5,10.84-6.75,14.78-15.13,14.78s-15.71-4.41-15.21-15.25Zm95.06-19.16c8.38,0,15.58,8.32,16.07,19.16.5,10.84-6.84,15.25-15.21,15.25s-14.63-3.93-15.13-14.78c-.5-10.84,5.89-19.63,14.27-19.63Zm-9.96,44.24c1.57.16,2.57,1.79,1.96,3.25-5.15,12.31-17.31,20.96-31.5,20.96s-26.34-8.65-31.5-20.96c-.61-1.46.39-3.09,1.96-3.25,9.2-.93,19.15-1.44,29.54-1.44s20.34.52,29.54,1.44Z"/>
                         </svg>
                     </div>
                     <div class="text">Reddit<div class="sub">u/LM_Reader_Dev</div></div>
@@ -1025,266 +267,12 @@
             </div>
         </div>
 
-        <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
-            <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Demo backup</div>
-            <p style="font-size:13px; color:#bbb; margin-bottom:10px;">Want to try the app with sample data? Download this backup with 10 classic books across all categories (reading, finished, rereading, want to read, dropped) with reading sessions included.</p>
-            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Download demo backup</a>
-            <div style="font-size:12px; color:#888; margin-top:12px; line-height:1.6;">
-                <span style="font-weight:600; color:#aaa;">How to use it:</span><br>
-                1. Download the JSON file to your phone<br>
-                2. Open Lecturameter → Settings → Restore local backup<br>
-                3. Select the downloaded file<br>
-                4. Done! Explore the library, stats and widget
-            </div>
-        </div>
-
-        <div class="section" id="privacy-en">
-            <h2>🔒 Privacy Policy</h2>
-            <div class="privacy-text">
-                <p><span class="highlight">Last updated:</span> July 1, 2026</p>
-                <p style="margin-top:8px;">Lecturameter <span class="highlight">does not collect, store, or transmit any personal data to external servers</span>, except in the following cases:</p>
-                <p style="margin-top:10px; color:#ddd;"><span class="highlight">1. Google Drive (optional)</span></p>
-                <p>If you enable cloud backup, the app connects to your Google account via OAuth2 to save a copy of your books and sessions to the root of your Drive. <span class="highlight">Only you have access to those files.</span> The developer cannot view, modify, or delete that data under any circumstances.</p>
-                <p style="margin-top:10px; color:#ddd;"><span class="highlight">2. External metadata APIs</span></p>
-                <p>To search for book covers and metadata, the app may query the following APIs directly from your device (not through any proprietary server):</p>
-                <ul style="padding-left:18px; margin:6px 0;">
-                    <li>OpenLibrary</li>
-                    <li>Google Books</li>
-                    <li>MangaDex</li>
-                    <li>AniList</li>
-                    <li>Hardcover</li>
-                </ul>
-                <p>These calls do not include personal data — only the title or ISBN being searched.</p>
-                <p style="margin-top:10px; color:#ddd;"><span class="highlight">3. App permissions</span></p>
-                <ul style="padding-left:18px; margin:6px 0;">
-                    <li><span class="highlight">Internet:</span> required to search for covers and back up to Drive.</li>
-                    <li><span class="highlight">Local storage:</span> to save backups on the device.</li>
-                    <li><span class="highlight">Google account (OAuth2):</span> only if you use Drive backup. You can revoke access at any time from your Google account.</li>
-                    <li><span class="highlight">Device boot (BOOT_COMPLETED):</span> to reschedule reading reminders after a reboot.</li>
-                </ul>
-                <p style="margin-top:10px; color:#ddd;"><span class="highlight">4. Locally generated data</span></p>
-                <p>All data (books, sessions, statistics) is stored exclusively on the user's device. Lecturameter has no proprietary servers and does not access this data.</p>
-                <p style="margin-top:10px; color:#ddd;"><span class="highlight">5. Contact</span></p>
-                <p>For any privacy-related questions: <span style="color:#BB86FC;">lecturameter.app@gmail.com</span></p>
-                <p style="margin-top:10px; font-size:11px; color:#666;">You can also read it on <a href="https://lecturameterapp.github.io/lecturameter-policy/?v=1" target="_blank" style="color:#BB86FC;">GitHub Pages</a>.</p>
-            </div>
-        </div>
-
-        <!-- CONTACT EN (con Formspree) -->
-        <div class="contact-section" id="contact-en">
-            <h2>📨 Contact</h2>
-            <p style="font-size:13px; color:#bbb; margin-bottom:12px;">Questions, suggestions, or issues? Write to me and I'll get back to you.</p>
-            <div class="feedback-form" id="feedbackForm-en">
-                <input class="fb-input" type="text" id="fbName-en" placeholder="Your name (optional)" autocomplete="off">
-                <textarea class="fb-textarea" id="fbMsg-en" placeholder="Your message..." rows="4"></textarea>
-                <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-                    <button class="fb-btn" onclick="sendFeedback('en')">📤 Send feedback</button>
-                    <span class="fb-status" id="fbStatus-en"></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">© 2026 Lecturameter</div>
+        <div class="footer">© 2026 Lecturameter · <a href="privacy.html" style="color:#8a8a8a;">Privacy policy</a> · <a href="contact.html" style="color:#8a8a8a;">Contact</a></div>
     </div>
 </div>
 
-<script>
-    // ─── EMAILJS ───
-    const EJS_PUBLIC_KEY   = '3cdH3XtjBWBRKC9tS';
-    const EJS_SERVICE_ID   = 'service_l1psqa9';
-    const EJS_TPL_VICTOR   = 'template_nlxdksn';
-    const EJS_TPL_USER     = 'template_pmpiafh';
-    try { emailjs.init(EJS_PUBLIC_KEY); } catch(e) { console.warn('EmailJS init error:', e); }
-
-    // ─── CAPTCHA ───
-    function generateCaptcha(lang) {
-        const a = Math.floor(Math.random() * 9) + 1;
-        const b = Math.floor(Math.random() * 9) + 1;
-        const questionEl = document.getElementById('captchaQuestion' + (lang === 'es' ? 'Es' : 'En'));
-        if (questionEl) {
-            questionEl.textContent = a + ' + ' + b + ' = ?';
-            questionEl.dataset.answer = String(a + b);
-        }
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-        generateCaptcha('es');
-        generateCaptcha('en');
-    });
-
-    // ─── NOTIFY ───
-    async function sendNotify(lang) {
-        const prefix = lang === 'es' ? 'Es' : 'En';
-        const email  = document.getElementById('notifyEmail' + prefix).value.trim();
-        const captchaInput = document.getElementById('captchaInput' + prefix).value.trim();
-        const status = document.getElementById('notifyStatus' + prefix);
-        const btn    = document.getElementById('notifyBtn' + prefix);
-
-        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            status.textContent = lang === 'es' ? '⚠️ Email no válido' : '⚠️ Invalid email';
-            status.className = 'notify-status err';
-            return;
-        }
-
-        const questionEl = document.getElementById('captchaQuestion' + prefix);
-        const expected = questionEl.dataset.answer;
-        if (captchaInput !== expected) {
-            status.textContent = lang === 'es' ? '⚠️ Respuesta incorrecta, intenta de nuevo' : '⚠️ Wrong answer, try again';
-            status.className = 'notify-status err';
-            generateCaptcha(lang);
-            document.getElementById('captchaInput' + prefix).value = '';
-            return;
-        }
-
-        btn.disabled = true;
-        status.textContent = lang === 'es' ? '⏳ Enviando...' : '⏳ Sending...';
-        status.className = 'notify-status loading';
-
-        if (typeof emailjs === 'undefined') {
-            status.textContent = lang === 'es' ? '❌ Error. Prueba en lecturameter.app@gmail.com' : '❌ Error. Try lecturameter.app@gmail.com';
-            status.className = 'notify-status err';
-            btn.disabled = false;
-            generateCaptcha(lang);
-            return;
-        }
-
-        try {
-            await emailjs.send(EJS_SERVICE_ID, EJS_TPL_VICTOR, { user_email: email, platforms: 'Play Store' });
-            await emailjs.send(EJS_SERVICE_ID, EJS_TPL_USER,   { user_email: email, platforms: 'Play Store' });
-
-            status.textContent = lang === 'es'
-                ? '✅ ¡Añadido! Recibirás un correo cuando la app esté lista.'
-                : '✅ Added! You\'ll receive an email when the app is ready.';
-            status.className = 'notify-status ok';
-            document.getElementById('notifyEmail' + prefix).value = '';
-            document.getElementById('captchaInput' + prefix).value = '';
-            generateCaptcha(lang);
-        } catch (e) {
-            console.error('EmailJS error:', e);
-            status.textContent = lang === 'es'
-                ? '❌ Error al enviar. Prueba en lecturameter.app@gmail.com'
-                : '❌ Failed to send. Try lecturameter.app@gmail.com';
-            status.className = 'notify-status err';
-        } finally {
-            btn.disabled = false;
-        }
-    }
-
-    // ─── FEEDBACK con Formspree ───
-    async function sendFeedback(lang) {
-        const name    = document.getElementById('fbName-' + lang).value.trim();
-        const message = document.getElementById('fbMsg-' + lang).value.trim();
-        const status  = document.getElementById('fbStatus-' + lang);
-        const btn     = document.querySelector('#feedbackForm-' + lang + ' .fb-btn');
-
-        if (!message) {
-            status.textContent = lang === 'es' ? '⚠️ Escribe un mensaje' : '⚠️ Please write a message';
-            status.className = 'fb-status err';
-            return;
-        }
-
-        btn.disabled = true;
-        status.textContent = lang === 'es' ? '⏳ Enviando...' : '⏳ Sending...';
-        status.className = 'fb-status';
-
-        try {
-            const res = await fetch('https://formspree.io/f/mgojjnyj', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({
-                    name: name || (lang === 'es' ? 'Anónimo' : 'Anonymous'),
-                    message: message,
-                    _subject: 'Feedback Lecturameter'
-                })
-            });
-
-            const data = await res.json();
-
-            if (res.ok) {
-                status.textContent = lang === 'es' ? '✅ ¡Enviado! Gracias.' : '✅ Sent! Thank you.';
-                status.className = 'fb-status ok';
-                document.getElementById('fbName-' + lang).value = '';
-                document.getElementById('fbMsg-' + lang).value = '';
-            } else {
-                throw new Error(data.error || 'Error desconocido');
-            }
-        } catch (e) {
-            console.error('Formspree error:', e);
-            status.textContent = lang === 'es'
-                ? '❌ Error al enviar. Prueba en lecturameter.app@gmail.com'
-                : '❌ Failed to send. Try lecturameter.app@gmail.com';
-            status.className = 'fb-status err';
-        } finally {
-            btn.disabled = false;
-        }
-    }
-
-    // ─── DATOS PARA ESTADÍSTICAS ───
-    const sessionData = [
-        { date: '03/06/2026', pages: 19, time: 25, range: '9-27' },
-        { date: '05/06/2026', pages: 14, time: 26, range: '28-41' },
-        { date: '14/06/2026', pages: 19, time: 26, range: '28-41' },
-        { date: '18/06/2026', pages: 18, time: 28, range: '55-72' },
-        { date: '24/06/2026', pages: 14, time: 22, range: '73-86' },
-        { date: '26/06/2026', pages: 42, time: 65, range: '87-128' },
-        { date: '30/06/2026', pages: 28, time: 32, range: '129-156' }
-    ];
-    const totalPages = sessionData.reduce((s, e) => s + e.pages, 0);
-    const totalMinutes = sessionData.reduce((s, e) => s + e.time, 0);
-    const hours = Math.floor(totalMinutes / 60);
-    const mins = totalMinutes % 60;
-    const totalTimeStr = hours ? `${hours}h ${mins}m` : `${mins}m`;
-    const avgPagesSession = (totalPages / sessionData.length).toFixed(1);
-    const avgPace = (totalPages / totalMinutes).toFixed(1);
-
-    function renderStats(lang) {
-        const prefix = lang === 'es' ? '-es' : '-en';
-        const el = (id) => document.getElementById(id + prefix);
-        if (el('totalBooks')) el('totalBooks').textContent = '5';
-        if (el('totalSessions')) el('totalSessions').textContent = sessionData.length;
-        if (el('totalPages')) el('totalPages').textContent = totalPages;
-        if (el('totalTime')) el('totalTime').textContent = totalTimeStr;
-        if (el('avgPagesSession')) el('avgPagesSession').textContent = avgPagesSession;
-        if (el('avgPace')) el('avgPace').textContent = avgPace;
-
-        const chartContainer = document.getElementById('barChart' + prefix);
-        if (!chartContainer) return;
-        const dayMap = {};
-        sessionData.forEach(s => { dayMap[s.date] = (dayMap[s.date] || 0) + s.pages; });
-        const days = Object.keys(dayMap);
-        const maxVal = Math.max(...Object.values(dayMap), 1);
-        let barsHtml = '';
-        days.forEach(day => {
-            const val = dayMap[day];
-            const height = Math.max(4, (val / maxVal) * 100);
-            barsHtml += `
-                <div class="bar-item">
-                    <div class="bar-value">${val}</div>
-                    <div class="bar" style="height:${height}%;"></div>
-                    <div class="bar-label">${day.split('/')[0]}/${day.split('/')[1]}</div>
-                </div>
-            `;
-        });
-        chartContainer.innerHTML = barsHtml;
-    }
-
-    // ─── IDIOMA ───
-    function setLang(lang) {
-        document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-        document.getElementById('content-' + lang).classList.add('active');
-        document.querySelectorAll('.lang-bar button').forEach(b => b.classList.remove('active'));
-        document.getElementById('btn-' + lang).classList.add('active');
-        document.documentElement.lang = lang;
-        renderStats(lang);
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-        setLang('es');
-    });
-</script>
-
+<!-- Scripts al final del body (no bloquean renderizado) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

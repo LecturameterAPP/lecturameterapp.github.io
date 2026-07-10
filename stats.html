@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Estadísticas de lectura – Lecturameter</title>
+    <meta name="description" content="Ejemplo de las estadísticas de lectura de Lecturameter: sesiones, páginas leídas, tiempo total, ritmo de lectura y gráficos de páginas por día en tu Android.">
+    <meta property="og:title" content="Estadísticas de lectura – Lecturameter">
+    <meta property="og:description" content="Ejemplo de las estadísticas de lectura de Lecturameter: sesiones, páginas leídas, tiempo total, ritmo y gráficos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lecturameterapp.github.io/stats.html">
+    <meta property="og:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Estadísticas de lectura – Lecturameter">
+    <meta name="twitter:description" content="Ejemplo de las estadísticas de lectura de Lecturameter: sesiones, páginas leídas, tiempo total, ritmo y gráficos.">
+    <meta name="twitter:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
+
+    <!-- ─── ICONOS ─── -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+
+    <link rel="canonical" href="https://lecturameterapp.github.io/stats.html">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- ─── BARRA DE IDIOMA ─── -->
+    <div class="lang-bar">
+        <button id="btn-es" class="active" onclick="setLang('es')">🇪🇸 Español</button>
+        <button id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
+    </div>
+
+    <!-- ─── MENÚ DE NAVEGACIÓN ─── -->
+    <nav class="nav-links">
+        <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+        <a href="features.html" data-es="Características" data-en="Features">Características</a>
+        <a href="stats.html" class="active" data-es="Estadísticas" data-en="Stats">Estadísticas</a>
+        <a href="privacy.html" data-es="Privacidad" data-en="Privacy">Privacidad</a>
+        <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+
+    <!-- ─── CONTENIDO EN ESPAÑOL ─── -->
+    <div id="content-es" class="lang-content active">
+        <div class="hero">
+            <h1 style="font-size:28px;">📊 Estadísticas de ejemplo</h1>
+            <p class="tagline">Así resume Lecturameter tu actividad de lectura</p>
+        </div>
+
+        <div class="section" id="stats">
+            <div class="stats-grid" id="statsGrid-es">
+                <div class="stat-box c-purple"><div class="number" id="totalBooks-es">5</div><div class="label">Libros totales</div></div>
+                <div class="stat-box c-blue">  <div class="number" id="totalSessions-es">7</div><div class="label">Sesiones</div></div>
+                <div class="stat-box c-green">  <div class="number" id="totalPages-es">120</div><div class="label">Páginas leídas</div></div>
+                <div class="stat-box c-orange"> <div class="number" id="totalTime-es">3h 6m</div><div class="label">Tiempo total</div></div>
+                <div class="stat-box c-cyan">   <div class="number" id="avgPagesSession-es">17.1</div><div class="label">Media págs/sesión</div></div>
+                <div class="stat-box c-violet">  <div class="number" id="avgPace-es">0.6</div><div class="label">Media p/min</div></div>
+            </div>
+            <div style="margin-top:16px;">
+                <h3 style="font-size:15px; font-weight:600; color:#ccc; margin-bottom:6px;">📈 Páginas por día</h3>
+                <div class="bar-chart" id="barChart-es"></div>
+            </div>
+            <p style="font-size:13px; color:#9a9a9a; margin-top:14px;">En la app también encontrarás el mapa de calor mensual, las estadísticas anuales y el resumen Wrapped de fin de año. Puedes verlos en las <a href="features.html" style="color:#BB86FC;">capturas reales</a>.</p>
+        </div>
+
+        <div class="footer">© 2026 Lecturameter · <a href="privacy.html" style="color:#8a8a8a;">Política de privacidad</a> · <a href="contact.html" style="color:#8a8a8a;">Contacto</a></div>
+    </div>
+
+    <!-- ─── CONTENIDO EN INGLÉS ─── -->
+    <div id="content-en" class="lang-content">
+        <div class="hero">
+            <h2 style="font-size:28px; font-weight:700; color:#BB86FC;">📊 Example Stats</h2>
+            <p class="tagline">This is how Lecturameter summarizes your reading activity</p>
+        </div>
+
+        <div class="section" id="stats-en">
+            <div class="stats-grid" id="statsGrid-en">
+                <div class="stat-box c-purple"><div class="number" id="totalBooks-en">5</div><div class="label">Total books</div></div>
+                <div class="stat-box c-blue">  <div class="number" id="totalSessions-en">7</div><div class="label">Sessions</div></div>
+                <div class="stat-box c-green">  <div class="number" id="totalPages-en">120</div><div class="label">Pages read</div></div>
+                <div class="stat-box c-orange"> <div class="number" id="totalTime-en">3h 6m</div><div class="label">Total time</div></div>
+                <div class="stat-box c-cyan">   <div class="number" id="avgPagesSession-en">17.1</div><div class="label">Avg pages/session</div></div>
+                <div class="stat-box c-violet">  <div class="number" id="avgPace-en">0.6</div><div class="label">Avg p/min</div></div>
+            </div>
+            <div style="margin-top:16px;">
+                <h3 style="font-size:15px; font-weight:600; color:#ccc; margin-bottom:6px;">📈 Pages per day</h3>
+                <div class="bar-chart" id="barChart-en"></div>
+            </div>
+            <p style="font-size:13px; color:#9a9a9a; margin-top:14px;">The app also includes the monthly heatmap, annual statistics, and the year-end Wrapped recap. Check them out in the <a href="features.html" style="color:#BB86FC;">real screenshots</a>.</p>
+        </div>
+
+        <div class="footer">© 2026 Lecturameter · <a href="privacy.html" style="color:#8a8a8a;">Privacy policy</a> · <a href="contact.html" style="color:#8a8a8a;">Contact</a></div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
