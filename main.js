@@ -216,6 +216,12 @@ function setLang(lang) {
     });
 
     renderStats(lang);
+
+    // Ocultar H1 del idioma inactivo a crawlers
+    ['es', 'en'].forEach(l => {
+        const h1 = document.querySelector('#content-' + l + ' h1');
+        if (h1) h1.setAttribute('aria-hidden', l !== lang ? 'true' : 'false');
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function() {

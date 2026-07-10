@@ -172,6 +172,7 @@ body {
     box-shadow: none;
 }
 .btn-download.secondary:hover { background: var(--card-2); }
+.btn-download.btn-download-sm { font-size: 14px; padding: 9px 22px; }
 .cta-arrow { color: var(--muted); font-size: 18px; }
 .steps-hint {
     font-size: 13px;
