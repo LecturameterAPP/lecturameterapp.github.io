@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto – Lecturameter</title>
     <meta name="description" content="Contacta con el desarrollador de Lecturameter: envía dudas, sugerencias o problemas sobre la app de seguimiento de lectura para Android y recibe respuesta por email.">
     <meta property="og:title" content="Contacto – Lecturameter">
@@ -27,27 +27,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
 
-    <!-- ─── BARRA DE IDIOMA ─── -->
-    <div class="lang-bar">
-        <button id="btn-es" class="active" onclick="setLang('es')">🇪🇸 Español</button>
-        <button id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
+<!-- ─── BARRA SUPERIOR ─── -->
+<header class="topbar">
+    <div class="topbar-inner">
+        <a href="index.html" class="brand"><img src="ic_launcher_round.png" alt="Lecturameter">Lecturameter</a>
+        <nav class="nav-links">
+            <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+            <a href="index.html#caracteristicas" data-es="Características" data-en="Features">Características</a>
+            <a href="index.html#estadisticas" data-es="Estadísticas" data-en="Stats">Estadísticas</a>
+            <a href="privacy.html" data-es="Privacidad" data-en="Privacy">Privacidad</a>
+            <a href="contact.html" class="active" data-es="Contacto" data-en="Contact">Contacto</a>
+        </nav>
+        <div class="lang-bar">
+            <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
+            <button id="btn-en" onclick="setLang('en')">EN</button>
+        </div>
     </div>
+</header>
 
-    <!-- ─── MENÚ DE NAVEGACIÓN ─── -->
-    <nav class="nav-links">
-        <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
-        <a href="features.html" data-es="Características" data-en="Features">Características</a>
-        <a href="stats.html" data-es="Estadísticas" data-en="Stats">Estadísticas</a>
-        <a href="privacy.html" data-es="Privacidad" data-en="Privacy">Privacidad</a>
-        <a href="contact.html" class="active" data-es="Contacto" data-en="Contact">Contacto</a>
-    </nav>
+<div class="container">
 
     <!-- ─── CONTENIDO EN ESPAÑOL ─── -->
     <div id="content-es" class="lang-content active">
-        <div class="hero">
-            <h1 style="font-size:28px;">📨 Contacto</h1>
+        <div class="page-hero">
+            <h1>📨 Contacto</h1>
             <p class="tagline">¿Dudas, sugerencias o problemas? Escríbeme y te responderé.</p>
         </div>
 
@@ -55,22 +59,27 @@
         <div class="contact-section" id="contact">
             <div class="feedback-form" id="feedbackForm-es">
                 <input class="fb-input" type="text" id="fbName-es" placeholder="Tu nombre (opcional)" autocomplete="off">
-                <textarea class="fb-textarea" id="fbMsg-es" placeholder="Tu mensaje..." rows="4"></textarea>
+                <textarea class="fb-textarea" id="fbMsg-es" placeholder="Tu mensaje..." rows="5"></textarea>
+                <div class="captcha-row">
+                    <span>🔐</span>
+                    <span class="captcha-question" id="captchaQuestionFb-es">2 + 3 = ?</span>
+                    <input type="text" id="captchaInputFb-es" placeholder="?" autocomplete="off" maxlength="2">
+                </div>
                 <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-                    <button class="fb-btn" onclick="sendFeedback('es')">📤 Enviar feedback</button>
+                    <button class="fb-btn" onclick="sendFeedback('es')">Enviar mensaje</button>
                     <span class="fb-status" id="fbStatus-es"></span>
                 </div>
             </div>
-            <p style="font-size:12px; color:#9a9a9a; margin-top:12px;">También puedes escribir directamente a <span style="color:#BB86FC;">lecturameter.app@gmail.com</span></p>
+            <p style="font-size:12.5px; color:var(--muted); margin-top:14px;">También puedes escribir directamente a <span style="color:var(--accent);">lecturameter.app@gmail.com</span></p>
         </div>
 
-        <div class="footer">© 2026 Lecturameter · <a href="privacy.html" style="color:#8a8a8a;">Política de privacidad</a></div>
+        <div class="footer">© 2026 Lecturameter · <a href="privacy.html">Política de privacidad</a></div>
     </div>
 
     <!-- ─── CONTENIDO EN INGLÉS ─── -->
     <div id="content-en" class="lang-content">
-        <div class="hero">
-            <h2 style="font-size:28px; font-weight:700; color:#BB86FC;">📨 Contact</h2>
+        <div class="page-hero">
+            <div class="h1">📨 Contact</div>
             <p class="tagline">Questions, suggestions, or issues? Write to me and I'll get back to you.</p>
         </div>
 
@@ -78,16 +87,21 @@
         <div class="contact-section" id="contact-en">
             <div class="feedback-form" id="feedbackForm-en">
                 <input class="fb-input" type="text" id="fbName-en" placeholder="Your name (optional)" autocomplete="off">
-                <textarea class="fb-textarea" id="fbMsg-en" placeholder="Your message..." rows="4"></textarea>
+                <textarea class="fb-textarea" id="fbMsg-en" placeholder="Your message..." rows="5"></textarea>
+                <div class="captcha-row">
+                    <span>🔐</span>
+                    <span class="captcha-question" id="captchaQuestionFb-en">2 + 3 = ?</span>
+                    <input type="text" id="captchaInputFb-en" placeholder="?" autocomplete="off" maxlength="2">
+                </div>
                 <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-                    <button class="fb-btn" onclick="sendFeedback('en')">📤 Send feedback</button>
+                    <button class="fb-btn" onclick="sendFeedback('en')">Send message</button>
                     <span class="fb-status" id="fbStatus-en"></span>
                 </div>
             </div>
-            <p style="font-size:12px; color:#9a9a9a; margin-top:12px;">You can also write directly to <span style="color:#BB86FC;">lecturameter.app@gmail.com</span></p>
+            <p style="font-size:12.5px; color:var(--muted); margin-top:14px;">You can also write directly to <span style="color:var(--accent);">lecturameter.app@gmail.com</span></p>
         </div>
 
-        <div class="footer">© 2026 Lecturameter · <a href="privacy.html" style="color:#8a8a8a;">Privacy policy</a></div>
+        <div class="footer">© 2026 Lecturameter · <a href="privacy.html">Privacy policy</a></div>
     </div>
 </div>
 
