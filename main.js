@@ -10,14 +10,30 @@ if (typeof emailjs !== 'undefined') {
 }
 
 // ─── CAPTCHA ───
-function generateCaptcha(lang) {
+// Genera una pregunta aritmética en el elemento indicado (por id).
+function newCaptcha(questionId) {
     const a = Math.floor(Math.random() * 9) + 1;
     const b = Math.floor(Math.random() * 9) + 1;
-    const questionEl = document.getElementById('captchaQuestion' + (lang === 'es' ? 'Es' : 'En'));
+    const questionEl = document.getElementById(questionId);
     if (questionEl) {
         questionEl.textContent = a + ' + ' + b + ' = ?';
         questionEl.dataset.answer = String(a + b);
     }
+}
+
+// Comprueba la respuesta; si falla, regenera la pregunta y limpia el input.
+function checkCaptcha(questionId, inputId) {
+    const questionEl = document.getElementById(questionId);
+    const inputEl = document.getElementById(inputId);
+    if (!questionEl || !inputEl) return true;
+    if (inputEl.value.trim() === questionEl.dataset.answer) return true;
+    newCaptcha(questionId);
+    inputEl.value = '';
+    return false;
+}
+
+function generateCaptcha(lang) {
+    newCaptcha('captchaQuestion' + (lang === 'es' ? 'Es' : 'En'));
 }
 
 // ─── NOTIFY ───
@@ -34,13 +50,9 @@ async function sendNotify(lang) {
         return;
     }
 
-    const questionEl = document.getElementById('captchaQuestion' + prefix);
-    const expected = questionEl.dataset.answer;
-    if (captchaInput !== expected) {
+    if (!checkCaptcha('captchaQuestion' + prefix, 'captchaInput' + prefix)) {
         status.textContent = lang === 'es' ? '⚠️ Respuesta incorrecta, intenta de nuevo' : '⚠️ Wrong answer, try again';
         status.className = 'notify-status err';
-        generateCaptcha(lang);
-        document.getElementById('captchaInput' + prefix).value = '';
         return;
     }
 
@@ -91,6 +103,12 @@ async function sendFeedback(lang) {
         return;
     }
 
+    if (!checkCaptcha('captchaQuestionFb-' + lang, 'captchaInputFb-' + lang)) {
+        status.textContent = lang === 'es' ? '⚠️ Respuesta incorrecta, intenta de nuevo' : '⚠️ Wrong answer, try again';
+        status.className = 'fb-status err';
+        return;
+    }
+
     btn.disabled = true;
     status.textContent = lang === 'es' ? '⏳ Enviando...' : '⏳ Sending...';
     status.className = 'fb-status';
@@ -116,6 +134,8 @@ async function sendFeedback(lang) {
             status.className = 'fb-status ok';
             document.getElementById('fbName-' + lang).value = '';
             document.getElementById('fbMsg-' + lang).value = '';
+            const fbCaptchaInput = document.getElementById('captchaInputFb-' + lang);
+            if (fbCaptchaInput) { fbCaptchaInput.value = ''; newCaptcha('captchaQuestionFb-' + lang); }
         } else {
             throw new Error(data.error || 'Error desconocido');
         }
@@ -204,4 +224,6 @@ document.addEventListener('DOMContentLoaded', function() {
     setLang(lang);
     generateCaptcha('es');
     generateCaptcha('en');
+    newCaptcha('captchaQuestionFb-es');
+    newCaptcha('captchaQuestionFb-en');
 });

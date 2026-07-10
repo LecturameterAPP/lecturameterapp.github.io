@@ -27,27 +27,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
 
-    <!-- ─── BARRA DE IDIOMA ─── -->
-    <div class="lang-bar">
-        <button id="btn-es" class="active" onclick="setLang('es')">🇪🇸 Español</button>
-        <button id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
+<!-- ─── BARRA SUPERIOR ─── -->
+<header class="topbar">
+    <div class="topbar-inner">
+        <a href="index.html" class="brand"><img src="ic_launcher_round.png" alt="Lecturameter">Lecturameter</a>
+        <nav class="nav-links">
+            <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+            <a href="index.html#caracteristicas" data-es="Características" data-en="Features">Características</a>
+            <a href="index.html#estadisticas" data-es="Estadísticas" data-en="Stats">Estadísticas</a>
+            <a href="privacy.html" class="active" data-es="Privacidad" data-en="Privacy">Privacidad</a>
+            <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+        </nav>
+        <div class="lang-bar">
+            <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
+            <button id="btn-en" onclick="setLang('en')">EN</button>
+        </div>
     </div>
+</header>
 
-    <!-- ─── MENÚ DE NAVEGACIÓN ─── -->
-    <nav class="nav-links">
-        <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
-        <a href="features.html" data-es="Características" data-en="Features">Características</a>
-        <a href="stats.html" data-es="Estadísticas" data-en="Stats">Estadísticas</a>
-        <a href="privacy.html" class="active" data-es="Privacidad" data-en="Privacy">Privacidad</a>
-        <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
-    </nav>
+<div class="container">
 
     <!-- ─── CONTENIDO EN ESPAÑOL ─── -->
     <div id="content-es" class="lang-content active">
-        <div class="hero">
-            <h1 style="font-size:28px;">🔒 Privacidad</h1>
+        <div class="page-hero">
+            <h1>🔒 Privacidad</h1>
             <p class="tagline">Tus datos solo están en tu dispositivo</p>
         </div>
 
@@ -101,8 +105,8 @@
 
     <!-- ─── CONTENIDO EN INGLÉS ─── -->
     <div id="content-en" class="lang-content">
-        <div class="hero">
-            <h2 style="font-size:28px; font-weight:700; color:#BB86FC;">🔒 Privacy</h2>
+        <div class="page-hero">
+            <div class="h1">🔒 Privacy</div>
             <p class="tagline">Your data stays only on your device</p>
         </div>
 

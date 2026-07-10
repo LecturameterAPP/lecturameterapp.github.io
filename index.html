@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter – Tu tracker de lectura para Android</title>
     <meta name="description" content="Organiza tu biblioteca, cronometra sesiones de lectura y consulta estadísticas detalladas en tu móvil Android. Sin anuncios, sin suscripciones y con total privacidad.">
     <meta property="og:title" content="Lecturameter – Tu tracker de lectura para Android">
@@ -57,62 +57,168 @@
     </script>
 </head>
 <body>
-<div class="container">
 
-    <!-- ─── BARRA DE IDIOMA ─── -->
-    <div class="lang-bar">
-        <button id="btn-es" class="active" onclick="setLang('es')">🇪🇸 Español</button>
-        <button id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
+<!-- ─── BARRA SUPERIOR ─── -->
+<header class="topbar">
+    <div class="topbar-inner">
+        <a href="index.html" class="brand"><img src="ic_launcher_round.png" alt="Lecturameter">Lecturameter</a>
+        <nav class="nav-links">
+            <a href="index.html" class="active" data-es="Inicio" data-en="Home">Inicio</a>
+            <a href="#caracteristicas" data-es="Características" data-en="Features">Características</a>
+            <a href="#estadisticas" data-es="Estadísticas" data-en="Stats">Estadísticas</a>
+            <a href="privacy.html" data-es="Privacidad" data-en="Privacy">Privacidad</a>
+            <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+        </nav>
+        <div class="lang-bar">
+            <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
+            <button id="btn-en" onclick="setLang('en')">EN</button>
+        </div>
     </div>
+</header>
 
-    <!-- ─── MENÚ DE NAVEGACIÓN ─── -->
-    <nav class="nav-links">
-        <a href="index.html" class="active" data-es="Inicio" data-en="Home">Inicio</a>
-        <a href="features.html" data-es="Características" data-en="Features">Características</a>
-        <a href="stats.html" data-es="Estadísticas" data-en="Stats">Estadísticas</a>
-        <a href="privacy.html" data-es="Privacidad" data-en="Privacy">Privacidad</a>
-        <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
-    </nav>
+<div class="container">
 
     <!-- ─── CONTENIDO EN ESPAÑOL ─── -->
     <div id="content-es" class="lang-content active">
-        <!-- Hero -->
+
+        <!-- HERO -->
         <div class="hero">
-            <h1>Lecturameter – Tu tracker de lectura para Android</h1>
-            <p class="tagline">Seguimiento de tus lecturas, letra a letra. Sin anuncios, sin suscripciones.</p>
-            <p class="desc">App para Android que organiza tu biblioteca, cronometra tus sesiones y te muestra estadísticas detalladas. También hace backup automático en Google Drive.</p>
-            <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:4px;">
-                <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="btn-download">1. Unirse al grupo de testers</a>
-                <span style="color:#8a8a8a; font-size:20px;">→</span>
-                <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn-download secondary">2. Instalar en Play Store</a>
+            <div class="hero-copy">
+                <h1>Tu vida lectora,<br><span class="grad">medida y organizada</span></h1>
+                <p class="tagline">Lecturameter organiza tu biblioteca, cronometra tus sesiones (incluso con la pantalla apagada) y convierte tu año de lectura en estadísticas que dan gusto mirar.</p>
+                <ul class="hero-checks">
+                    <li>Sin anuncios</li>
+                    <li>Sin suscripciones</li>
+                    <li>Tus datos solo en tu móvil</li>
+                </ul>
+                <div class="hero-cta">
+                    <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="btn-download">1. Unirse al grupo de testers</a>
+                    <span class="cta-arrow">→</span>
+                    <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn-download secondary">2. Instalar en Play Store</a>
+                </div>
+                <p class="steps-hint">⚠️ Primero únete al grupo (paso 1) y después instala (paso 2). Sin el grupo, la instalación no funcionará.</p>
+                <p class="hero-subnote">Prueba cerrada · Lanzamiento oficial en Play Store próximamente</p>
             </div>
-            <p class="steps-hint">⚠️ Primero únete al grupo (paso 1), después instala desde el paso 2. Sin el grupo, la instalación no funcionará.</p>
-            <p style="font-size:12px; color:#8a8a8a; margin-top:4px;">Prueba cerrada · Lanzamiento oficial en Play Store próximamente</p>
-        </div>
-
-        <!-- CTA NOTIFICACIÓN -->
-        <div class="cta-notify">
-            <h2>📩 Recibe un aviso cuando la app esté disponible</h2>
-            <p>Te llegará un único correo cuando se lance oficialmente. Sin spam, solo un aviso.</p>
-            <div class="notify-form" id="notifyFormEs">
-                <div class="row">
-                    <input class="fb-input" type="email" id="notifyEmailEs" placeholder="Tu email" autocomplete="email">
-                </div>
-                <div class="captcha-row">
-                    <span>🔐</span>
-                    <span class="captcha-question" id="captchaQuestionEs">2 + 3 = ?</span>
-                    <input type="text" id="captchaInputEs" placeholder="?" autocomplete="off" maxlength="2">
-                </div>
-                <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:center;">
-                    <button class="notify-btn" id="notifyBtnEs" onclick="sendNotify('es')">Avísame</button>
-                    <span class="notify-status" id="notifyStatusEs"></span>
-                </div>
+            <div class="hero-visual">
+                <div class="float-chip c1"><span class="big">3h 30m</span>tiempo total</div>
+                <div class="float-chip c2"><span class="big">136</span>páginas leídas</div>
+                <div class="float-chip c3"><span class="big">17,0</span>págs/día</div>
+                <div class="phone"><img src="captura_libros_real_es.jpg" alt="Biblioteca de Lecturameter con estanterías de libros" fetchpriority="high"></div>
             </div>
         </div>
 
-        <!-- TESTIMONIALS -->
+        <!-- CARACTERÍSTICAS -->
+        <div class="section" id="caracteristicas">
+            <div class="section-head">
+                <h2>📚 Así funciona Lecturameter</h2>
+                <p>Capturas reales de la aplicación. Cada pantalla está pensada para que registrar tu lectura cueste lo mínimo.</p>
+            </div>
+
+            <div class="showcase">
+                <div class="shot"><div class="phone mini"><img src="captura_libros_real_es.jpg" alt="Biblioteca por estanterías" loading="lazy"></div></div>
+                <div class="info">
+                    <h3>Una biblioteca con estanterías de verdad</h3>
+                    <p>Tus libros se ordenan en Leyendo, Leído, Releyendo, Quiero leer y Abandonado. Las portadas y géneros se descargan solos, y si vienes de Goodreads puedes importar toda tu biblioteca en CSV.</p>
+                    <ul>
+                        <li>Búsqueda por título, autor o ISBN</li>
+                        <li>Importación y exportación Goodreads (CSV)</li>
+                        <li>Soporte para manga y múltiples ediciones</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="showcase flip">
+                <div class="shot"><div class="phone mini"><img src="captura_detalle_real_es.jpg" alt="Detalle del libro con cronómetro y sesiones" loading="lazy"></div></div>
+                <div class="info">
+                    <h3>Cronómetro que sigue contando con la pantalla apagada</h3>
+                    <p>Pulsa Iniciar y lee. Al parar, la sesión se guarda sola con su tiempo, páginas y ritmo. Las páginas funcionales descuentan prólogos, índices y apéndices para que el ritmo sea el real.</p>
+                    <ul>
+                        <li>Sesiones automáticas con ritmo págs/min</li>
+                        <li>Páginas funcionales configurables</li>
+                        <li>Puntuación, comentario y fechas por lectura</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="showcase">
+                <div class="shot"><div class="phone mini"><img src="captura_historial_real_es.jpg" alt="Historial global de sesiones" loading="lazy"></div></div>
+                <div class="info">
+                    <h3>Historial completo de todo lo que has leído</h3>
+                    <p>Un resumen por libro con sesiones, tiempo y páginas de cada lectura y relectura. Tu registro lector completo, siempre a un toque.</p>
+                    <ul>
+                        <li>Resumen por libro y por sesión</li>
+                        <li>Relecturas contadas por separado</li>
+                        <li>Retos de lectura: páginas, libros, rachas…</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="showcase flip">
+                <div class="shot"><div class="phone mini"><img src="captura_widget_real_es.png" alt="Widget de Lecturameter en la pantalla de inicio" loading="lazy"></div></div>
+                <div class="info">
+                    <h3>Tu libro actual, en la pantalla de inicio</h3>
+                    <p>El widget muestra el libro que estás leyendo con su progreso y estadísticas rápidas, sin abrir la app.</p>
+                    <ul>
+                        <li>Progreso y ritmo de un vistazo</li>
+                        <li>Configurable desde Ajustes</li>
+                        <li>Copias de seguridad automáticas en local y Google Drive</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card"><div class="icon">🎯</div><div class="title">Retos de lectura</div><div class="desc">Metas de páginas, libros, sesiones, minutos o rachas de días. Anuales o con tus propias fechas.</div></div>
+                <div class="feature-card"><div class="icon">📖</div><div class="title">Páginas funcionales</div><div class="desc">Ignora prólogos, índices y apéndices para calcular tu ritmo real.</div></div>
+                <div class="feature-card"><div class="icon">🌐</div><div class="title">Múltiples ediciones</div><div class="desc">Cambia de edición o idioma sin perder las sesiones registradas.</div></div>
+                <div class="feature-card"><div class="icon">🔁</div><div class="title">Goodreads</div><div class="desc">Importa tu biblioteca en CSV y expórtala igual de fácil. Tus datos nunca quedan atrapados.</div></div>
+                <div class="feature-card"><div class="icon">☁️</div><div class="title">Backup local y Drive</div><div class="desc">Copias de seguridad automáticas en el móvil y en tu Google Drive.</div></div>
+                <div class="feature-card"><div class="icon">📴</div><div class="title">100% offline</div><div class="desc">Todo funciona sin conexión. Internet solo se usa para portadas y metadatos.</div></div>
+            </div>
+        </div>
+
+        <!-- ESTADÍSTICAS -->
+        <div class="section" id="estadisticas">
+            <div class="section-head">
+                <h2>📊 Estadísticas que motivan a seguir leyendo</h2>
+                <p>Mapa de calor, resumen anual estilo Wrapped, comparativas entre años y el detalle de cada sesión. Esto es un ejemplo real de lo que verás.</p>
+            </div>
+
+            <div class="stats-panel">
+                <div class="stats-grid" id="statsGrid-es">
+                    <div class="stat-box c-purple"><div class="number" id="totalBooks-es">5</div><div class="label">Libros totales</div></div>
+                    <div class="stat-box c-blue">  <div class="number" id="totalSessions-es">7</div><div class="label">Sesiones</div></div>
+                    <div class="stat-box c-green">  <div class="number" id="totalPages-es">120</div><div class="label">Páginas leídas</div></div>
+                    <div class="stat-box c-orange"> <div class="number" id="totalTime-es">3h 6m</div><div class="label">Tiempo total</div></div>
+                    <div class="stat-box c-cyan">   <div class="number" id="avgPagesSession-es">17.1</div><div class="label">Media págs/sesión</div></div>
+                    <div class="stat-box c-violet">  <div class="number" id="avgPace-es">0.6</div><div class="label">Media p/min</div></div>
+                </div>
+                <div class="chart-title">Páginas por día</div>
+                <div class="bar-chart" id="barChart-es"></div>
+            </div>
+
+            <div class="screenshot-gallery">
+                <div class="screenshot-item">
+                    <img src="captura_stats_anual_es.jpg" alt="Estadísticas anuales con mapa de calor mensual" loading="lazy">
+                    <div class="label">Mapa de calor anual <span class="sub">Tu intensidad de lectura, mes a mes</span></div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="captura_heatmap_mayo_es.jpg" alt="Mapa de calor mensual de lectura" loading="lazy">
+                    <div class="label">Detalle mensual <span class="sub">Cada día con sus páginas leídas</span></div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="captura_wrapped_top_es.jpg" alt="Resumen anual con tus autores y géneros más leídos" loading="lazy">
+                    <div class="label">Tu año lector <span class="sub">Top de autores y géneros, estilo Wrapped</span></div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="captura_wrapped_vs_es.jpg" alt="Comparativa de lectura entre 2026 y 2025" loading="lazy">
+                    <div class="label">Comparativa entre años <span class="sub">¿Este año lees más que el pasado?</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TESTIMONIOS -->
         <div class="section" id="testimonials">
-            <h2>🗣️ Lo que dicen los primeros usuarios</h2>
+            <div class="section-head"><h2>🗣️ Lo que dicen los primeros usuarios</h2></div>
             <div class="testimonials-section">
                 <div class="testimonial-card">
                     <div class="quote">"Uso el cronómetro para leer antes de dormir, y va de maravilla incluso con la pantalla apagada."</div>
@@ -138,21 +244,55 @@
                 Tu biblioteca, sesiones y estadísticas se guardan exclusivamente en tu móvil.
                 Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos.
                 Sin anuncios, sin suscripciones, sin tracking.
-                <a href="privacy.html" style="color:#10b981; font-weight:600;">Lee la política completa →</a>
+                <a href="privacy.html">Lee la política completa →</a>
+            </div>
+        </div>
+
+        <!-- CTA NOTIFICACIÓN -->
+        <div class="cta-notify">
+            <h2>📩 Recibe un aviso cuando la app esté disponible</h2>
+            <p>Te llegará un único correo cuando se lance oficialmente. Sin spam, solo un aviso.</p>
+            <div class="notify-form" id="notifyFormEs">
+                <div class="row">
+                    <input class="fb-input" type="email" id="notifyEmailEs" placeholder="Tu email" autocomplete="email">
+                </div>
+                <div class="captcha-row">
+                    <span>🔐</span>
+                    <span class="captcha-question" id="captchaQuestionEs">2 + 3 = ?</span>
+                    <input type="text" id="captchaInputEs" placeholder="?" autocomplete="off" maxlength="2">
+                </div>
+                <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:center;">
+                    <button class="notify-btn" id="notifyBtnEs" onclick="sendNotify('es')">Avísame</button>
+                    <span class="notify-status" id="notifyStatusEs"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEMO BACKUP -->
+        <div class="demo-backup">
+            <div class="db-title">📦 Copia de seguridad de demostración</div>
+            <p>¿Quieres probar la app con datos de ejemplo? Descarga este backup con 10 libros clásicos repartidos en todas las categorías (leyendo, terminado, releyendo, quiero leer, abandonado) y sesiones de lectura incluidas.</p>
+            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:9px 22px;">Descargar backup demo</a>
+            <div class="steps">
+                <span class="steps-title">Cómo usarlo:</span><br>
+                1. Descarga el archivo JSON en tu móvil<br>
+                2. Abre Lecturameter → Ajustes → Restaurar backup local<br>
+                3. Selecciona el archivo descargado<br>
+                4. ¡Listo! Explora la biblioteca, estadísticas y widget
             </div>
         </div>
 
         <!-- ENLACES Y REDES SOCIALES -->
-        <div class="section" style="margin-top:16px;">
-            <h2>🔗 Enlaces</h2>
+        <div class="section" style="margin-top:8px;">
+            <h2>Enlaces</h2>
             <div class="links-grid">
                 <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="link-box playstore">
                     <div class="icon"><svg viewBox="0 0 512 512"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" fill="#34A853"/></svg></div>
-                    <div class="text">Grupo de testers<div class="sub">▶ Únete para probar</div></div>
+                    <div class="text">Grupo de testers<div class="sub">Únete para probar</div></div>
                 </a>
                 <a href="https://github.com/LecturameterAPP/Lecturameter/releases/tag/1.5" target="_blank" rel="noopener" class="link-box github">
                     <div class="icon"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="#8B5CF6"/></svg></div>
-                    <div class="text">GitHub<div class="sub" style="color:#8B5CF6;">⬇ APK directo</div></div>
+                    <div class="text">GitHub<div class="sub">APK directo</div></div>
                 </a>
                 <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" class="link-box x">
                     <div class="icon"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
@@ -160,10 +300,9 @@
                 </a>
                 <a href="https://www.reddit.com/user/LM_Reader_Dev/" target="_blank" rel="noopener" class="link-box reddit">
                     <div class="icon">
-                        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                            <defs><style>.cls-1{fill:#fff;}.cls-1,.cls-2{stroke-width:0px;}.cls-2{fill:#ff4500;}</style></defs>
-                            <rect class="cls-2" x="0" y="0" width="256" height="256"/>
-                            <path class="cls-1" d="m154.04,60.36c2.22,9.41,10.67,16.42,20.76,16.42,11.78,0,21.33-9.55,21.33-21.33s-9.55-21.33-21.33-21.33c-10.3,0-18.89,7.3-20.89,17.01-17.25,1.85-30.72,16.48-30.72,34.21,0,.04,0,.07,0,.11-18.76.79-35.89,6.13-49.49,14.56-5.05-3.91-11.39-6.24-18.27-6.24-16.51,0-29.89,13.38-29.89,29.89,0,11.98,7.04,22.3,17.21,27.07.99,34.7,38.8,62.61,85.31,62.61s84.37-27.94,85.31-62.67c10.09-4.8,17.07-15.09,17.07-27,0-16.51-13.38-29.89-29.89-29.89-6.85,0-13.16,2.31-18.2,6.19-13.72-8.49-31.04-13.83-49.99-14.54,0-.03,0-.05,0-.08,0-12.7,9.44-23.24,21.68-24.97Zm-81.54,82.27c.5-10.84,7.7-19.16,16.07-19.16s14.77,8.79,14.27,19.63c-.5,10.84-6.75,14.78-15.13,14.78s-15.71-4.41-15.21-15.25Zm95.06-19.16c8.38,0,15.58,8.32,16.07,19.16.5,10.84-6.84,15.25-15.21,15.25s-14.63-3.93-15.13-14.78c-.5-10.84,5.89-19.63,14.27-19.63Zm-9.96,44.24c1.57.16,2.57,1.79,1.96,3.25-5.15,12.31-17.31,20.96-31.5,20.96s-26.34-8.65-31.5-20.96c-.61-1.46.39-3.09,1.96-3.25,9.2-.93,19.15-1.44,29.54-1.44s20.34.52,29.54,1.44Z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                            <rect fill="#ff4500" x="0" y="0" width="256" height="256" rx="36"/>
+                            <path fill="#fff" d="m154.04,60.36c2.22,9.41,10.67,16.42,20.76,16.42,11.78,0,21.33-9.55,21.33-21.33s-9.55-21.33-21.33-21.33c-10.3,0-18.89,7.3-20.89,17.01-17.25,1.85-30.72,16.48-30.72,34.21,0,.04,0,.07,0,.11-18.76.79-35.89,6.13-49.49,14.56-5.05-3.91-11.39-6.24-18.27-6.24-16.51,0-29.89,13.38-29.89,29.89,0,11.98,7.04,22.3,17.21,27.07.99,34.7,38.8,62.61,85.31,62.61s84.37-27.94,85.31-62.67c10.09-4.8,17.07-15.09,17.07-27,0-16.51-13.38-29.89-29.89-29.89-6.85,0-13.16,2.31-18.2,6.19-13.72-8.49-31.04-13.83-49.99-14.54,0-.03,0-.05,0-.08,0-12.7,9.44-23.24,21.68-24.97Zm-81.54,82.27c.5-10.84,7.7-19.16,16.07-19.16s14.77,8.79,14.27,19.63c-.5,10.84-6.75,14.78-15.13,14.78s-15.71-4.41-15.21-15.25Zm95.06-19.16c8.38,0,15.58,8.32,16.07,19.16.5,10.84-6.84,15.25-15.21,15.25s-14.63-3.93-15.13-14.78c-.5-10.84,5.89-19.63,14.27-19.63Zm-9.96,44.24c1.57.16,2.57,1.79,1.96,3.25-5.15,12.31-17.31,20.96-31.5,20.96s-26.34-8.65-31.5-20.96c-.61-1.46.39-3.09,1.96-3.25,9.2-.93,19.15-1.44,29.54-1.44s20.34.52,29.54,1.44Z"/>
                         </svg>
                     </div>
                     <div class="text">Reddit<div class="sub">u/LM_Reader_Dev</div></div>
@@ -171,47 +310,150 @@
             </div>
         </div>
 
-        <div class="footer">© 2026 Lecturameter · <a href="privacy.html" style="color:#8a8a8a;">Política de privacidad</a> · <a href="contact.html" style="color:#8a8a8a;">Contacto</a></div>
+        <div class="footer">© 2026 Lecturameter · <a href="privacy.html">Política de privacidad</a> · <a href="contact.html">Contacto</a></div>
     </div>
 
     <!-- ─── CONTENIDO EN INGLÉS ─── -->
     <div id="content-en" class="lang-content">
+
+        <!-- HERO EN -->
         <div class="hero">
-            <h2 style="font-size:32px; font-weight:700; color:#BB86FC;">Lecturameter – Your Android reading tracker</h2>
-            <p class="tagline">Track your reading habits, letter by letter. No ads, no subscriptions.</p>
-            <p class="desc">Android app that organizes your library, times your reading sessions, and gives you detailed stats. Also backs up automatically to Google Drive.</p>
-            <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:12px; margin-top:4px;">
-                <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="btn-download">1. Join the testers group</a>
-                <span style="color:#8a8a8a; font-size:20px;">→</span>
-                <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn-download secondary">2. Install on Play Store</a>
+            <div class="hero-copy">
+                <h1>Your reading life,<br><span class="grad">measured and organized</span></h1>
+                <p class="tagline">Lecturameter organizes your library, times your sessions (even with the screen off) and turns your reading year into stats you'll love to look at.</p>
+                <ul class="hero-checks">
+                    <li>No ads</li>
+                    <li>No subscriptions</li>
+                    <li>Your data stays on your phone</li>
+                </ul>
+                <div class="hero-cta">
+                    <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="btn-download">1. Join the testers group</a>
+                    <span class="cta-arrow">→</span>
+                    <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn-download secondary">2. Install on Play Store</a>
+                </div>
+                <p class="steps-hint">⚠️ Join the group first (step 1), then install (step 2). Without the group, installation won't work.</p>
+                <p class="hero-subnote">Closed testing · Official Play Store launch coming soon</p>
             </div>
-            <p class="steps-hint">⚠️ Join the group first (step 1), then install from step 2. Without the group, installation won't work.</p>
-            <p style="font-size:12px; color:#8a8a8a; margin-top:4px;">Closed testing · Official Play Store launch coming soon</p>
+            <div class="hero-visual">
+                <div class="float-chip c1"><span class="big">3h 30m</span>total time</div>
+                <div class="float-chip c2"><span class="big">136</span>pages read</div>
+                <div class="float-chip c3"><span class="big">17.0</span>pages/day</div>
+                <div class="phone"><img src="captura_libros_real_en.jpg" alt="Lecturameter library with book shelves" fetchpriority="high"></div>
+            </div>
         </div>
 
-        <!-- CTA NOTIFICACIÓN EN -->
-        <div class="cta-notify">
-            <h2>📩 Get notified when the app is out</h2>
-            <p>You'll receive one single email when it's officially launched. No spam, just one alert.</p>
-            <div class="notify-form" id="notifyFormEn">
-                <div class="row">
-                    <input class="fb-input" type="email" id="notifyEmailEn" placeholder="Your email" autocomplete="email">
+        <!-- FEATURES EN -->
+        <div class="section" id="features">
+            <div class="section-head">
+                <h2>📚 How Lecturameter works</h2>
+                <p>Real screenshots of the app. Every screen is designed so that logging your reading takes as little effort as possible.</p>
+            </div>
+
+            <div class="showcase">
+                <div class="shot"><div class="phone mini"><img src="captura_libros_real_en.jpg" alt="Library with shelves" loading="lazy"></div></div>
+                <div class="info">
+                    <h3>A library with real shelves</h3>
+                    <p>Your books are sorted into Reading, Read, Rereading, Want to read and Dropped. Covers and genres download automatically, and if you come from Goodreads you can import your whole library as CSV.</p>
+                    <ul>
+                        <li>Search by title, author or ISBN</li>
+                        <li>Goodreads import and export (CSV)</li>
+                        <li>Manga support and multiple editions</li>
+                    </ul>
                 </div>
-                <div class="captcha-row">
-                    <span>🔐</span>
-                    <span class="captcha-question" id="captchaQuestionEn">2 + 3 = ?</span>
-                    <input type="text" id="captchaInputEn" placeholder="?" autocomplete="off" maxlength="2">
+            </div>
+
+            <div class="showcase flip">
+                <div class="shot"><div class="phone mini"><img src="captura_detalle_real_en.jpg" alt="Book detail with timer and sessions" loading="lazy"></div></div>
+                <div class="info">
+                    <h3>A timer that keeps counting with the screen off</h3>
+                    <p>Tap Start and read. When you stop, the session is saved automatically with its time, pages and pace. Functional pages subtract prologues, indexes and appendices so your pace is the real one.</p>
+                    <ul>
+                        <li>Automatic sessions with pages/min pace</li>
+                        <li>Configurable functional pages</li>
+                        <li>Rating, comment and dates per read</li>
+                    </ul>
                 </div>
-                <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:center;">
-                    <button class="notify-btn" id="notifyBtnEn" onclick="sendNotify('en')">Notify me</button>
-                    <span class="notify-status" id="notifyStatusEn"></span>
+            </div>
+
+            <div class="showcase">
+                <div class="shot"><div class="phone mini"><img src="captura_historial_real_en.jpg" alt="Global session history" loading="lazy"></div></div>
+                <div class="info">
+                    <h3>A complete history of everything you've read</h3>
+                    <p>A per-book summary with sessions, time and pages for every read and reread. Your full reading record, always one tap away.</p>
+                    <ul>
+                        <li>Summary per book and per session</li>
+                        <li>Rereads counted separately</li>
+                        <li>Reading challenges: pages, books, streaks…</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="showcase flip">
+                <div class="shot"><div class="phone mini"><img src="captura_widget_real_en.png" alt="Lecturameter widget on the home screen" loading="lazy"></div></div>
+                <div class="info">
+                    <h3>Your current book, on the home screen</h3>
+                    <p>The widget shows the book you're reading with its progress and quick stats, without opening the app.</p>
+                    <ul>
+                        <li>Progress and pace at a glance</li>
+                        <li>Configurable from Settings</li>
+                        <li>Automatic local and Google Drive backups</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card"><div class="icon">🎯</div><div class="title">Reading challenges</div><div class="desc">Goals for pages, books, sessions, minutes or day streaks. Yearly or with your own dates.</div></div>
+                <div class="feature-card"><div class="icon">📖</div><div class="title">Functional pages</div><div class="desc">Ignore prologues, indexes and appendices to compute your real pace.</div></div>
+                <div class="feature-card"><div class="icon">🌐</div><div class="title">Multiple editions</div><div class="desc">Switch edition or language without losing your logged sessions.</div></div>
+                <div class="feature-card"><div class="icon">🔁</div><div class="title">Goodreads</div><div class="desc">Import your library as CSV and export it just as easily. Your data is never locked in.</div></div>
+                <div class="feature-card"><div class="icon">☁️</div><div class="title">Local & Drive backup</div><div class="desc">Automatic backups on your phone and on your Google Drive.</div></div>
+                <div class="feature-card"><div class="icon">📴</div><div class="title">100% offline</div><div class="desc">Everything works without a connection. Internet is only used for covers and metadata.</div></div>
+            </div>
+        </div>
+
+        <!-- STATS EN -->
+        <div class="section" id="stats">
+            <div class="section-head">
+                <h2>📊 Stats that keep you reading</h2>
+                <p>Heatmap, Wrapped-style yearly recap, year-over-year comparisons and the detail of every session. This is a real example of what you'll see.</p>
+            </div>
+
+            <div class="stats-panel">
+                <div class="stats-grid" id="statsGrid-en">
+                    <div class="stat-box c-purple"><div class="number" id="totalBooks-en">5</div><div class="label">Total books</div></div>
+                    <div class="stat-box c-blue">  <div class="number" id="totalSessions-en">7</div><div class="label">Sessions</div></div>
+                    <div class="stat-box c-green">  <div class="number" id="totalPages-en">120</div><div class="label">Pages read</div></div>
+                    <div class="stat-box c-orange"> <div class="number" id="totalTime-en">3h 6m</div><div class="label">Total time</div></div>
+                    <div class="stat-box c-cyan">   <div class="number" id="avgPagesSession-en">17.1</div><div class="label">Avg pages/session</div></div>
+                    <div class="stat-box c-violet">  <div class="number" id="avgPace-en">0.6</div><div class="label">Avg p/min</div></div>
+                </div>
+                <div class="chart-title">Pages per day</div>
+                <div class="bar-chart" id="barChart-en"></div>
+            </div>
+
+            <div class="screenshot-gallery">
+                <div class="screenshot-item">
+                    <img src="captura_stats_anual_es.jpg" alt="Annual stats with monthly heatmap" loading="lazy">
+                    <div class="label">Annual heatmap <span class="sub">Your reading intensity, month by month</span></div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="captura_heatmap_mayo_en.jpg" alt="Monthly reading heatmap" loading="lazy">
+                    <div class="label">Monthly detail <span class="sub">Every day with its pages read</span></div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="captura_wrapped_top_es.jpg" alt="Yearly recap with your most-read authors and genres" loading="lazy">
+                    <div class="label">Your reading year <span class="sub">Top authors and genres, Wrapped style</span></div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="captura_wrapped_vs_es.jpg" alt="Reading comparison between 2026 and 2025" loading="lazy">
+                    <div class="label">Year vs year <span class="sub">Are you reading more than last year?</span></div>
                 </div>
             </div>
         </div>
 
         <!-- TESTIMONIALS EN -->
         <div class="section" id="testimonials-en">
-            <h2>🗣️ What early users say</h2>
+            <div class="section-head"><h2>🗣️ What early users say</h2></div>
             <div class="testimonials-section">
                 <div class="testimonial-card">
                     <div class="quote">"I use the timer for my bedtime reading, and it works great even with the screen off."</div>
@@ -236,20 +478,54 @@
                 Your library, sessions, and statistics are stored exclusively on your phone.
                 If you enable Google Drive backup, only you have access to those files.
                 No ads, no subscriptions, no tracking.
-                <a href="privacy.html" style="color:#10b981; font-weight:600;">Read the full policy →</a>
+                <a href="privacy.html">Read the full policy →</a>
             </div>
         </div>
 
-        <div class="section" style="margin-top:16px;">
-            <h2>🔗 Links</h2>
+        <!-- CTA NOTIFICACIÓN EN -->
+        <div class="cta-notify">
+            <h2>📩 Get notified when the app is out</h2>
+            <p>You'll receive one single email when it's officially launched. No spam, just one alert.</p>
+            <div class="notify-form" id="notifyFormEn">
+                <div class="row">
+                    <input class="fb-input" type="email" id="notifyEmailEn" placeholder="Your email" autocomplete="email">
+                </div>
+                <div class="captcha-row">
+                    <span>🔐</span>
+                    <span class="captcha-question" id="captchaQuestionEn">2 + 3 = ?</span>
+                    <input type="text" id="captchaInputEn" placeholder="?" autocomplete="off" maxlength="2">
+                </div>
+                <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:center;">
+                    <button class="notify-btn" id="notifyBtnEn" onclick="sendNotify('en')">Notify me</button>
+                    <span class="notify-status" id="notifyStatusEn"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEMO BACKUP EN -->
+        <div class="demo-backup">
+            <div class="db-title">📦 Demo backup</div>
+            <p>Want to try the app with sample data? Download this backup with 10 classic books across all categories (reading, finished, rereading, want to read, dropped) with reading sessions included.</p>
+            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:9px 22px;">Download demo backup</a>
+            <div class="steps">
+                <span class="steps-title">How to use it:</span><br>
+                1. Download the JSON file to your phone<br>
+                2. Open Lecturameter → Settings → Restore local backup<br>
+                3. Select the downloaded file<br>
+                4. Done! Explore the library, stats and widget
+            </div>
+        </div>
+
+        <div class="section" style="margin-top:8px;">
+            <h2>Links</h2>
             <div class="links-grid">
                 <a href="https://groups.google.com/g/lecturameter-testers" target="_blank" rel="noopener" class="link-box playstore">
                     <div class="icon"><svg viewBox="0 0 512 512"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" fill="#34A853"/></svg></div>
-                    <div class="text">Testers group<div class="sub">▶ Join to test</div></div>
+                    <div class="text">Testers group<div class="sub">Join to test</div></div>
                 </a>
                 <a href="https://github.com/LecturameterAPP/Lecturameter/releases/tag/1.5" target="_blank" rel="noopener" class="link-box github">
                     <div class="icon"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="#8B5CF6"/></svg></div>
-                    <div class="text">GitHub<div class="sub" style="color:#8B5CF6;">⬇ Direct APK</div></div>
+                    <div class="text">GitHub<div class="sub">Direct APK</div></div>
                 </a>
                 <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" class="link-box x">
                     <div class="icon"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
@@ -258,7 +534,7 @@
                 <a href="https://www.reddit.com/user/LM_Reader_Dev/" target="_blank" rel="noopener" class="link-box reddit">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                            <rect fill="#ff4500" x="0" y="0" width="256" height="256"/>
+                            <rect fill="#ff4500" x="0" y="0" width="256" height="256" rx="36"/>
                             <path fill="#fff" d="m154.04,60.36c2.22,9.41,10.67,16.42,20.76,16.42,11.78,0,21.33-9.55,21.33-21.33s-9.55-21.33-21.33-21.33c-10.3,0-18.89,7.3-20.89,17.01-17.25,1.85-30.72,16.48-30.72,34.21,0,.04,0,.07,0,.11-18.76.79-35.89,6.13-49.49,14.56-5.05-3.91-11.39-6.24-18.27-6.24-16.51,0-29.89,13.38-29.89,29.89,0,11.98,7.04,22.3,17.21,27.07.99,34.7,38.8,62.61,85.31,62.61s84.37-27.94,85.31-62.67c10.09-4.8,17.07-15.09,17.07-27,0-16.51-13.38-29.89-29.89-29.89-6.85,0-13.16,2.31-18.2,6.19-13.72-8.49-31.04-13.83-49.99-14.54,0-.03,0-.05,0-.08,0-12.7,9.44-23.24,21.68-24.97Zm-81.54,82.27c.5-10.84,7.7-19.16,16.07-19.16s14.77,8.79,14.27,19.63c-.5,10.84-6.75,14.78-15.13,14.78s-15.71-4.41-15.21-15.25Zm95.06-19.16c8.38,0,15.58,8.32,16.07,19.16.5,10.84-6.84,15.25-15.21,15.25s-14.63-3.93-15.13-14.78c-.5-10.84,5.89-19.63,14.27-19.63Zm-9.96,44.24c1.57.16,2.57,1.79,1.96,3.25-5.15,12.31-17.31,20.96-31.5,20.96s-26.34-8.65-31.5-20.96c-.61-1.46.39-3.09,1.96-3.25,9.2-.93,19.15-1.44,29.54-1.44s20.34.52,29.54,1.44Z"/>
                         </svg>
                     </div>
@@ -267,7 +543,7 @@
             </div>
         </div>
 
-        <div class="footer">© 2026 Lecturameter · <a href="privacy.html" style="color:#8a8a8a;">Privacy policy</a> · <a href="contact.html" style="color:#8a8a8a;">Contact</a></div>
+        <div class="footer">© 2026 Lecturameter · <a href="privacy.html">Privacy policy</a> · <a href="contact.html">Contact</a></div>
     </div>
 </div>
 
