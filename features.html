@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Características y capturas – Lecturameter</title>
+    <meta name="description" content="Descubre las características de Lecturameter con capturas reales: biblioteca por estanterías, cronómetro con pantalla apagada, historial de sesiones, mapa de calor y widget para Android.">
+    <meta property="og:title" content="Características y capturas – Lecturameter">
+    <meta property="og:description" content="Descubre las características de Lecturameter con capturas reales: biblioteca, cronómetro, historial, estadísticas y widget.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lecturameterapp.github.io/features.html">
+    <meta property="og:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Características y capturas – Lecturameter">
+    <meta name="twitter:description" content="Descubre las características de Lecturameter con capturas reales: biblioteca, cronómetro, historial, estadísticas y widget.">
+    <meta name="twitter:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
+
+    <!-- ─── ICONOS ─── -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+
+    <link rel="canonical" href="https://lecturameterapp.github.io/features.html">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- ─── BARRA DE IDIOMA ─── -->
+    <div class="lang-bar">
+        <button id="btn-es" class="active" onclick="setLang('es')">🇪🇸 Español</button>
+        <button id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
+    </div>
+
+    <!-- ─── MENÚ DE NAVEGACIÓN ─── -->
+    <nav class="nav-links">
+        <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+        <a href="features.html" class="active" data-es="Características" data-en="Features">Características</a>
+        <a href="stats.html" data-es="Estadísticas" data-en="Stats">Estadísticas</a>
+        <a href="privacy.html" data-es="Privacidad" data-en="Privacy">Privacidad</a>
+        <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+
+    <!-- ─── CONTENIDO EN ESPAÑOL ─── -->
+    <div id="content-es" class="lang-content active">
+        <div class="hero">
+            <h1 style="font-size:28px;">📱 Así se ve Lecturameter</h1>
+            <p class="tagline">Capturas reales de la aplicación</p>
+        </div>
+
+        <!-- GALERÍA DE CAPTURAS -->
+        <div class="section" id="screenshots">
+            <div class="screenshot-gallery">
+
+                <!-- 1. Biblioteca -->
+                <div class="screenshot-item">
+                    <img src="captura_libros_real_es.jpg" alt="Biblioteca de Lecturameter con estanterías de libros" loading="lazy">
+                    <div class="label">📚 Biblioteca <span class="sub">Organiza tus libros por estanterías</span></div>
+                </div>
+
+                <!-- 2. Detalle -->
+                <div class="screenshot-item">
+                    <img src="captura_detalle_real_es.jpg" alt="Detalle del libro con sesiones y cronómetro" loading="lazy">
+                    <div class="label">📖 Detalle del libro <span class="sub">Sesiones, estadísticas y cronómetro</span></div>
+                </div>
+
+                <!-- 3. Historial -->
+                <div class="screenshot-item">
+                    <img src="captura_historial_es.jpg" alt="Historial global de sesiones de lectura" loading="lazy">
+                    <div class="label">📋 Historial global <span class="sub">Resumen por libro con sesiones, tiempo y páginas</span></div>
+                </div>
+
+                <!-- 4. Heatmap anual -->
+                <div class="screenshot-item">
+                    <img src="captura_heatmap_es.jpg" alt="Estadísticas anuales de páginas leídas" loading="lazy">
+                    <div class="label">📊 Estadísticas anuales <span class="sub">Páginas leídas mes a mes</span></div>
+                </div>
+
+                <!-- 5. Heatmap mensual -->
+                <div class="screenshot-item">
+                    <img src="captura_heatmap_mayo_es.jpg" alt="Mapa de calor mensual de lectura" loading="lazy">
+                    <div class="label">📊 Mapa de calor mensual <span class="sub">Intensidad de lectura día a día</span></div>
+                </div>
+
+                <!-- 6. Widget -->
+                <div class="screenshot-item">
+                    <img src="captura_widget_real_es.png" alt="Widget de Lecturameter en la pantalla de inicio" loading="lazy">
+                    <div class="label">🧩 Widget <span class="sub">Tu libro en la pantalla de inicio</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FEATURES -->
+        <div class="section">
+            <h2>✨ Características</h2>
+            <div class="features-grid" id="features">
+                <div class="feature-card"><div class="icon">⏱️</div><div class="title">Cronómetro</div><div class="desc">Funciona con la pantalla apagada.</div></div>
+                <div class="feature-card"><div class="icon">📊</div><div class="title">Estadísticas</div><div class="desc">Gráficos, Wrapped anual, heatmap.</div></div>
+                <div class="feature-card"><div class="icon">🧩</div><div class="title">Widget</div><div class="desc">Tu libro en la pantalla de inicio.</div></div>
+                <div class="feature-card"><div class="icon">📖</div><div class="title">Páginas funcionales</div><div class="desc">Ignora prólogos, índices, apéndices.</div></div>
+                <div class="feature-card"><div class="icon">🌐</div><div class="title">Múltiples ediciones</div><div class="desc">Idiomas distintos sin perder sesiones.</div></div>
+                <div class="feature-card"><div class="icon">☁️</div><div class="title">Backup Local y en Drive</div><div class="desc">Copias automáticas en local y Google Drive.</div></div>
+            </div>
+        </div>
+
+        <!-- DEMO JSON -->
+        <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
+            <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Copia de Seguridad de demostración</div>
+            <p style="font-size:13px; color:#bbb; margin-bottom:10px;">¿Quieres probar la app con datos de ejemplo? Descarga este backup con 10 libros clásicos repartidos en todas las categorías (leyendo, terminado, releyendo, quiero leer, abandonado) y sesiones de lectura incluidas.</p>
+            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Descargar backup demo</a>
+            <div style="font-size:12px; color:#9a9a9a; margin-top:12px; line-height:1.6;">
+                <span style="font-weight:600; color:#aaa;">Cómo usarlo:</span><br>
+                1. Descarga el archivo JSON en tu móvil<br>
+                2. Abre Lecturameter → Ajustes → Restaurar backup local<br>
+                3. Selecciona el archivo descargado<br>
+                4. ¡Listo! Explora la biblioteca, estadísticas y widget
+            </div>
+        </div>
+
+        <div class="footer">© 2026 Lecturameter · <a href="privacy.html" style="color:#8a8a8a;">Política de privacidad</a> · <a href="contact.html" style="color:#8a8a8a;">Contacto</a></div>
+    </div>
+
+    <!-- ─── CONTENIDO EN INGLÉS ─── -->
+    <div id="content-en" class="lang-content">
+        <div class="hero">
+            <h2 style="font-size:28px; font-weight:700; color:#BB86FC;">📱 Lecturameter in action</h2>
+            <p class="tagline">Real screenshots of the app</p>
+        </div>
+
+        <div class="section" id="screenshots-en">
+            <div class="screenshot-gallery">
+
+                <!-- 1. Library -->
+                <div class="screenshot-item">
+                    <img src="captura_libros_real_en.jpg" alt="Lecturameter library with book shelves" loading="lazy">
+                    <div class="label">📚 Library <span class="sub">Organize your books by shelves</span></div>
+                </div>
+
+                <!-- 2. Detail -->
+                <div class="screenshot-item">
+                    <img src="captura_detalle_real_en.jpg" alt="Book detail with sessions and timer" loading="lazy">
+                    <div class="label">📖 Book detail <span class="sub">Sessions, stats and timer</span></div>
+                </div>
+
+                <!-- 3. History -->
+                <div class="screenshot-item">
+                    <img src="captura_historial_en.jpg" alt="Global reading session history" loading="lazy">
+                    <div class="label">📋 Global history <span class="sub">Summary by book with sessions, time and pages</span></div>
+                </div>
+
+                <!-- 4. Annual stats -->
+                <div class="screenshot-item">
+                    <img src="captura_heatmap_en.jpg" alt="Annual reading statistics" loading="lazy">
+                    <div class="label">📊 Annual stats <span class="sub">Pages read month by month</span></div>
+                </div>
+
+                <!-- 5. Monthly heatmap -->
+                <div class="screenshot-item">
+                    <img src="captura_heatmap_mayo_en.jpg" alt="Monthly reading heatmap" loading="lazy">
+                    <div class="label">📊 Monthly heatmap <span class="sub">Reading intensity day by day</span></div>
+                </div>
+
+                <!-- 6. Widget -->
+                <div class="screenshot-item">
+                    <img src="captura_widget_real_en.png" alt="Lecturameter widget on the home screen" loading="lazy">
+                    <div class="label">🧩 Widget <span class="sub">Your book on the home screen</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>✨ Features</h2>
+            <div class="features-grid" id="features-en">
+                <div class="feature-card"><div class="icon">⏱️</div><div class="title">Timer</div><div class="desc">Works with the screen off.</div></div>
+                <div class="feature-card"><div class="icon">📊</div><div class="title">Stats</div><div class="desc">Charts, Wrapped, heatmap.</div></div>
+                <div class="feature-card"><div class="icon">🧩</div><div class="title">Widget</div><div class="desc">Your book on the home screen.</div></div>
+                <div class="feature-card"><div class="icon">📖</div><div class="title">Functional pages</div><div class="desc">Ignore prologues, indexes, appendices.</div></div>
+                <div class="feature-card"><div class="icon">🌐</div><div class="title">Multiple editions</div><div class="desc">Different languages without losing sessions.</div></div>
+                <div class="feature-card"><div class="icon">☁️</div><div class="title">Local and drive backup</div><div class="desc">Automatic backups locally and on Google Drive.</div></div>
+            </div>
+        </div>
+
+        <div style="background:#2d2d2d; border-radius:14px; padding:16px 18px; margin:16px 0 8px; border-left:4px solid #f59e0b;">
+            <div style="font-size:15px; font-weight:600; color:#f59e0b; margin-bottom:6px;">📦 Demo backup</div>
+            <p style="font-size:13px; color:#bbb; margin-bottom:10px;">Want to try the app with sample data? Download this backup with 10 classic books across all categories (reading, finished, rereading, want to read, dropped) with reading sessions included.</p>
+            <a href="https://drive.google.com/file/d/1gN0S2mxdlvLh3XUbQKKndC9KVwLfHTrd/view?usp=sharing" target="_blank" rel="noopener" class="btn-download" style="font-size:14px; padding:8px 22px;">⬇ Download demo backup</a>
+            <div style="font-size:12px; color:#9a9a9a; margin-top:12px; line-height:1.6;">
+                <span style="font-weight:600; color:#aaa;">How to use it:</span><br>
+                1. Download the JSON file to your phone<br>
+                2. Open Lecturameter → Settings → Restore local backup<br>
+                3. Select the downloaded file<br>
+                4. Done! Explore the library, stats and widget
+            </div>
+        </div>
+
+        <div class="footer">© 2026 Lecturameter · <a href="privacy.html" style="color:#8a8a8a;">Privacy policy</a> · <a href="contact.html" style="color:#8a8a8a;">Contact</a></div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
