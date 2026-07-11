@@ -233,13 +233,18 @@ body {
     position: relative;
     z-index: 2;
 }
-.phone img, .phone video {
+.phone img {
+    width: 100%;
+    display: block;
+    border-radius: 25px;
+}
+.phone video {
     width: 100%;
     display: block;
     border-radius: 25px;
     aspect-ratio: 9 / 20;
+    object-fit: cover;
 }
-.phone video { object-fit: cover; }
 .phone.mini {
     width: 100%;
     max-width: 250px;
@@ -415,7 +420,7 @@ body {
 .stat-box.c-cyan   { border-top-color: #06b6d4; }
 .stat-box.c-cyan   .number { color: #06b6d4; }
 .stat-box.c-violet { border-top-color: #8b5cf6; }
-.stat-box.c-violet .number { color: #8b5cf6; }
+.stat-box.c-violet .number { color: #a78bfa; }
 
 .chart-title { font-size: 14px; font-weight: 600; color: var(--muted); margin: 18px 0 4px; }
 .bar-chart {
