@@ -564,12 +564,13 @@ body {
 }
 .donut-body {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 .donut-svg {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     flex-shrink: 0;
 }
 .donut-legend {
@@ -579,7 +580,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    min-width: 0;
+    width: 100%;
 }
 .donut-legend li {
     display: flex;
@@ -1034,7 +1035,7 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 }
 /* Library: cover — ratio 1220:1080 ≈ card ratio 340:300, prácticamente sin recorte */
 .bf-lib .bf-media img {
-    object-fit: cover;
+    object-fit: contain;
     object-position: top center;
 }
 /* Stats: cover — imagen 1220×1335 portrait, recorta mínimo por los lados */
@@ -1130,7 +1131,6 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     }
     /* En móvil las cards son landscape → cover muestra más contenido que contain */
     .bf-timer .bf-media video,
-    .bf-lib .bf-media img,
     .bf-stats .bf-media img { object-fit: cover; object-position: top center; }
     .bf-lib .bf-media,
     .bf-stats .bf-media { height: 340px; }
