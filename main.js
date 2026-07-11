@@ -222,6 +222,19 @@ function setLang(lang) {
         const h1 = document.querySelector('#content-' + l + ' h1');
         if (h1) h1.setAttribute('aria-hidden', l !== lang ? 'true' : 'false');
     });
+
+    // Actualizar title y meta description con el idioma activo
+    const _titles = {
+        es: 'Lecturameter – Tu tracker de lectura para Android',
+        en: 'Lecturameter – Your Android reading tracker'
+    };
+    const _descs = {
+        es: 'Organiza tu biblioteca, cronometra sesiones de lectura y consulta estadísticas en tu móvil Android. Sin anuncios, sin suscripciones, 100% privada.',
+        en: 'Organize your library, time reading sessions and view detailed stats on Android. No ads, no subscriptions, fully private.'
+    };
+    document.title = _titles[lang] || _titles.es;
+    const _metaDesc = document.querySelector('meta[name="description"]');
+    if (_metaDesc) _metaDesc.content = _descs[lang] || _descs.es;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -232,4 +245,5 @@ document.addEventListener('DOMContentLoaded', function() {
     generateCaptcha('en');
     newCaptcha('captchaQuestionFb-es');
     newCaptcha('captchaQuestionFb-en');
+    document.querySelectorAll('.gallery-phone img').forEach(function(img){ img.loading = 'lazy'; });
 });
