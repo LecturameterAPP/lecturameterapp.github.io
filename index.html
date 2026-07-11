@@ -213,16 +213,45 @@
                 <h2>Más que un registro</h2>
                 <p>Calendarios de actividad, retos personalizados y el detalle de cada sesión.</p>
             </div>
+            <p class="gallery-zoom-hint">🔍 Pulsa cualquier captura para ampliarla</p>
             <div class="gallery-phones-grid">
-                <div class="gallery-phone">
-                    <img src="captura_calendario_es.jpg" alt="Calendario de lectura mensual">
+                <div class="gallery-phone" data-src="screen_library_es.jpg">
+                    <img src="screen_library_es.jpg" alt="Biblioteca personal">
                     <div class="gallery-caption">
-                        <h4>Calendario mensual</h4>
-                        <p>Visualiza tus días de lectura con un mapa de color por páginas leídas.</p>
+                        <h4>Biblioteca personal</h4>
+                        <p>Organiza tus libros por estado y ve todo de un vistazo.</p>
                     </div>
                 </div>
-                <div class="gallery-phone">
-                    <img src="captura_retos_en.jpg" alt="Retos de lectura">
+                <div class="gallery-phone" data-src="screen_stats_year_es.jpg">
+                    <img src="screen_stats_year_es.jpg" alt="Estadísticas anuales">
+                    <div class="gallery-caption">
+                        <h4>Estadísticas anuales</h4>
+                        <p>Un mapa de calor con toda tu actividad del año.</p>
+                    </div>
+                </div>
+                <div class="gallery-phone" data-src="screen_heatmap_es.jpg">
+                    <img src="screen_heatmap_es.jpg" alt="Mapa de calor horario">
+                    <div class="gallery-caption">
+                        <h4>Mapa de calor horario</h4>
+                        <p>Descubre en qué horas y días lees más.</p>
+                    </div>
+                </div>
+                <div class="gallery-phone" data-src="screen_calendar_may_es.jpg">
+                    <img src="screen_calendar_may_es.jpg" alt="Calendario mensual mayo">
+                    <div class="gallery-caption">
+                        <h4>Calendario mensual</h4>
+                        <p>Visualiza tus días de lectura con un mapa de color por páginas.</p>
+                    </div>
+                </div>
+                <div class="gallery-phone" data-src="screen_calendar_jun_es.jpg">
+                    <img src="screen_calendar_jun_es.jpg" alt="Calendario mensual junio">
+                    <div class="gallery-caption">
+                        <h4>Detalle por mes</h4>
+                        <p>Toca cualquier mes para ver cada día en detalle.</p>
+                    </div>
+                </div>
+                <div class="gallery-phone" data-src="screen_challenges_es.jpg">
+                    <img src="screen_challenges_es.jpg" alt="Retos de lectura">
                     <div class="gallery-caption">
                         <h4>Retos de lectura</h4>
                         <p>Crea metas por libros, rachas o páginas y sigue tu progreso en directo.</p>
@@ -454,16 +483,45 @@
                 <h2>More than a reading log</h2>
                 <p>Activity calendars, custom challenges and the detail of every session.</p>
             </div>
+            <p class="gallery-zoom-hint">🔍 Tap any screenshot to expand it</p>
             <div class="gallery-phones-grid">
-                <div class="gallery-phone">
-                    <img src="captura_calendario_en.jpg" alt="Monthly reading calendar">
+                <div class="gallery-phone" data-src="screen_library_en.jpg">
+                    <img src="screen_library_en.jpg" alt="Personal library">
+                    <div class="gallery-caption">
+                        <h4>Personal library</h4>
+                        <p>Organise your books by status and see everything at a glance.</p>
+                    </div>
+                </div>
+                <div class="gallery-phone" data-src="screen_stats_year_en.jpg">
+                    <img src="screen_stats_year_en.jpg" alt="Yearly statistics">
+                    <div class="gallery-caption">
+                        <h4>Yearly statistics</h4>
+                        <p>A heat map of your entire reading activity across the year.</p>
+                    </div>
+                </div>
+                <div class="gallery-phone" data-src="screen_heatmap_en.jpg">
+                    <img src="screen_heatmap_en.jpg" alt="Hourly heatmap">
+                    <div class="gallery-caption">
+                        <h4>Hourly heatmap</h4>
+                        <p>Discover which hours and days you read the most.</p>
+                    </div>
+                </div>
+                <div class="gallery-phone" data-src="screen_calendar_may_en.jpg">
+                    <img src="screen_calendar_may_en.jpg" alt="Monthly calendar May">
                     <div class="gallery-caption">
                         <h4>Monthly calendar</h4>
                         <p>Visualise your reading days with a colour map by pages read.</p>
                     </div>
                 </div>
-                <div class="gallery-phone">
-                    <img src="captura_retos_en.jpg" alt="Reading challenges">
+                <div class="gallery-phone" data-src="screen_calendar_jun_en.jpg">
+                    <img src="screen_calendar_jun_en.jpg" alt="Monthly calendar June">
+                    <div class="gallery-caption">
+                        <h4>Month detail</h4>
+                        <p>Tap any month to see each day in detail.</p>
+                    </div>
+                </div>
+                <div class="gallery-phone" data-src="screen_challenges_en.jpg">
+                    <img src="screen_challenges_en.jpg" alt="Reading challenges">
                     <div class="gallery-caption">
                         <h4>Reading challenges</h4>
                         <p>Set goals by books, streaks or pages and track your progress live.</p>
@@ -568,8 +626,36 @@
     </div>
 </main>
 
+<!-- Lightbox overlay -->
+<div class="lbx-overlay" id="lightbox">
+    <button class="lbx-close" id="lbxClose">&#x2715;</button>
+    <img class="lbx-img" id="lbxImg" src="" alt="">
+</div>
+
 <!-- Scripts al final del body (no bloquean renderizado) -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
 <script src="main.js" defer></script>
+<script>
+(function(){
+    var overlay = document.getElementById('lightbox');
+    var img = document.getElementById('lbxImg');
+    var closeBtn = document.getElementById('lbxClose');
+    document.querySelectorAll('.gallery-phone').forEach(function(card){
+        card.addEventListener('click', function(){
+            img.src = card.dataset.src;
+            overlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    function closeLbx(){
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+        img.src = '';
+    }
+    closeBtn.addEventListener('click', closeLbx);
+    overlay.addEventListener('click', function(e){ if(e.target===overlay) closeLbx(); });
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeLbx(); });
+})();
+</script>
 </body>
 </html>
