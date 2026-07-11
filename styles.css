@@ -831,22 +831,17 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     background: var(--bg-soft);
     border-bottom: 1px solid var(--line);
 }
-.bf-media img {
-    width: 100%;
-    display: block;
-    object-fit: contain;
-    object-position: center top;
-    max-height: 400px;
-}
+.bf-timer .bf-media { height: 360px; }
+.bf-lib .bf-media,
+.bf-stats .bf-media  { height: 280px; }
+.bf-media img,
 .bf-media video {
     width: 100%;
+    height: 100%;
     display: block;
     object-fit: cover;
-    object-position: center top;
-    max-height: 360px;
+    object-position: top center;
 }
-.bf-lib .bf-media img,
-.bf-stats .bf-media img { max-height: 220px; }
 .bf-body { padding: 16px 18px; }
 .bf-tag {
     font-size: 10px;
@@ -896,7 +891,7 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     overflow: hidden;
     background: var(--bg-soft);
     border-bottom: 1px solid var(--line);
-    height: 320px;
+    height: 380px;
 }
 .sf-thumb img {
     width: 100%;
@@ -923,10 +918,9 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 @media (max-width: 960px) {
     .bento-features { grid-template-columns: 1fr; }
     .bf-timer, .bf-lib, .bf-stats { grid-column: auto; grid-row: auto; }
-    .bf-media img { max-height: 300px; }
-    .bf-media video { max-height: 280px; }
-    .bf-lib .bf-media img,
-    .bf-stats .bf-media img { max-height: 200px; }
+    .bf-timer .bf-media { height: 280px; }
+    .bf-lib .bf-media,
+    .bf-stats .bf-media { height: 220px; }
     .stats-feature-cards { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
