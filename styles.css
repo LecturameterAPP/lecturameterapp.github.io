@@ -905,9 +905,9 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     object-fit: contain;
     object-position: center;
 }
-/* Library: cover — ratio 1220:1080 ≈ card ratio 340:300, prácticamente sin recorte */
+/* Library: contain — 1220×1280, shows tabs+book1+book2 with ~27px side bars */
 .bf-lib .bf-media img {
-    object-fit: cover;
+    object-fit: contain;
     object-position: top center;
 }
 /* Stats: contain — imagen 1220×1150, scaleH gana → 12 meses completos, ~11px barras */
@@ -1001,10 +1001,10 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
         background: var(--card);
         padding-top: 16px;
     }
-    /* En móvil las cards son landscape → cover muestra más contenido que contain */
-    .bf-timer .bf-media video,
+    /* En móvil: timer cover, bento side cards mantienen contain */
+    .bf-timer .bf-media video { object-fit: cover; object-position: top center; }
     .bf-lib .bf-media img,
-    .bf-stats .bf-media img { object-fit: cover; object-position: top center; }
+    .bf-stats .bf-media img { object-fit: contain; object-position: top center; }
     .bf-lib .bf-media,
     .bf-stats .bf-media { height: 340px; }
 }
