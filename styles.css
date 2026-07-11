@@ -905,10 +905,14 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     object-fit: contain;
     object-position: center;
 }
-/* Side card screenshots: cover llena el ancho de la card (340px vs 148px con contain) */
-.bf-lib .bf-media img,
-.bf-stats .bf-media img {
+/* Library: cover — ratio 1220:1080 ≈ card ratio 340:300, prácticamente sin recorte */
+.bf-lib .bf-media img {
     object-fit: cover;
+    object-position: top center;
+}
+/* Stats: contain — imagen 1220×1150, scaleH gana → 12 meses completos, ~11px barras */
+.bf-stats .bf-media img {
+    object-fit: contain;
     object-position: top center;
 }
 .bf-body { padding: 16px 18px; }
