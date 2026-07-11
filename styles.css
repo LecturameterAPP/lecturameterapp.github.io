@@ -823,7 +823,14 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     transition: border-color 0.2s, transform 0.15s;
 }
 .bf-card:hover { border-color: var(--accent); }
-.bf-timer { grid-column: 1 / 3; grid-row: 1 / 3; }
+.bf-timer {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 .bf-lib   { grid-column: 3; grid-row: 1; }
 .bf-stats { grid-column: 3; grid-row: 2; }
 .bf-media {
@@ -831,15 +838,20 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     background: var(--bg-soft);
     border-bottom: 1px solid var(--line);
 }
-.bf-timer {
-    display: flex;
-    flex-direction: column;
-}
+/* Timer: media cubre toda la card, body se superpone abajo */
 .bf-timer .bf-media {
-    flex: 1;
-    min-height: 280px;
+    position: absolute;
+    inset: 0;
+    border-bottom: none;
     background: linear-gradient(160deg, #131b30 0%, #1a2340 60%, #0d1424 100%);
 }
+.bf-timer .bf-body {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to bottom, transparent 0%, rgba(13,20,36,0.94) 38%);
+    padding-top: 56px;
+}
+/* Side cards: altura explícita */
 .bf-lib .bf-media,
 .bf-stats .bf-media  { height: 280px; }
 .bf-media img,
