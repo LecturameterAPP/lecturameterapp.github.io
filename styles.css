@@ -851,19 +851,17 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     background: linear-gradient(to bottom, transparent 0%, rgba(13,20,36,0.94) 38%);
     padding-top: 56px;
 }
-/* Side cards: altura fija para ver el contenido principal sin ocupar km de página */
+/* Side cards: altura calculada para que la captura completa (contain) quepa bien */
 .bf-lib .bf-media,
-.bf-stats .bf-media  { height: 480px; }
+.bf-stats .bf-media  { height: 300px; }
 .bf-media img,
 .bf-media video {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover;
-    object-position: top center;
+    object-fit: contain;
+    object-position: center;
 }
-/* Timer video: portrait en card landscape — mostrar completo */
-.bf-timer .bf-media video { object-fit: contain; }
 .bf-body { padding: 16px 18px; }
 .bf-tag {
     font-size: 10px;
@@ -943,17 +941,19 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     .bf-timer .bf-media {
         position: static;
         background: var(--bg-soft);
-        height: 320px;
+        height: 260px;
     }
     .bf-timer .bf-body {
         position: static;
         background: var(--card);
         padding-top: 16px;
     }
-    .bf-timer .bf-media video { object-fit: cover; }
+    /* En móvil las cards son landscape → cover muestra más contenido que contain */
+    .bf-timer .bf-media video,
+    .bf-lib .bf-media img,
+    .bf-stats .bf-media img { object-fit: cover; object-position: top center; }
     .bf-lib .bf-media,
-    .bf-stats .bf-media { height: 340px; }
-    .stats-feature-cards { grid-template-columns: repeat(2, 1fr); }
+    .bf-stats .bf-media { height: 260px; }
 }
 @media (max-width: 768px) {
     .metrics-strip { grid-template-columns: repeat(2, 1fr); }
