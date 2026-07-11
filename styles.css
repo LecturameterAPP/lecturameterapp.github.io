@@ -851,9 +851,9 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     background: linear-gradient(to bottom, transparent 0%, rgba(13,20,36,0.94) 38%);
     padding-top: 56px;
 }
-/* Side cards: aspect-ratio para mostrar la captura completa */
+/* Side cards: altura fija para ver el contenido principal sin ocupar km de página */
 .bf-lib .bf-media,
-.bf-stats .bf-media  { aspect-ratio: 1220 / 2502; }
+.bf-stats .bf-media  { height: 480px; }
 .bf-media img,
 .bf-media video {
     width: 100%;
@@ -943,7 +943,7 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     .bf-timer .bf-media {
         position: static;
         background: var(--bg-soft);
-        aspect-ratio: 1220 / 2502;
+        height: 320px;
     }
     .bf-timer .bf-body {
         position: static;
@@ -952,7 +952,7 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     }
     .bf-timer .bf-media video { object-fit: cover; }
     .bf-lib .bf-media,
-    .bf-stats .bf-media { aspect-ratio: 1220 / 2502; }
+    .bf-stats .bf-media { height: 340px; }
     .stats-feature-cards { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
