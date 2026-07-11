@@ -896,7 +896,7 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     overflow: hidden;
     background: var(--bg-soft);
     border-bottom: 1px solid var(--line);
-    height: 200px;
+    height: 320px;
 }
 .sf-thumb img {
     width: 100%;
@@ -935,7 +935,7 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     .ms-cell:nth-child(1),
     .ms-cell:nth-child(2) { border-bottom: 1px solid var(--line); }
     .stats-feature-cards { grid-template-columns: 1fr; }
-    .sf-thumb { height: 160px; }
+    .sf-thumb { height: 260px; }
 }
 @media (max-width: 600px) {
     .metrics-strip { border-radius: 12px; }
