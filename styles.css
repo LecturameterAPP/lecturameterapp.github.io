@@ -831,17 +831,22 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     background: var(--bg-soft);
     border-bottom: 1px solid var(--line);
 }
-.bf-media img,
+.bf-media img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: center top;
+    max-height: 400px;
+}
 .bf-media video {
     width: 100%;
     display: block;
     object-fit: cover;
-    object-position: top;
+    object-position: center top;
+    max-height: 360px;
 }
-.bf-timer .bf-media img,
-.bf-timer .bf-media video { max-height: 360px; }
 .bf-lib .bf-media img,
-.bf-stats .bf-media img   { max-height: 175px; }
+.bf-stats .bf-media img { max-height: 220px; }
 .bf-body { padding: 16px 18px; }
 .bf-tag {
     font-size: 10px;
@@ -918,8 +923,8 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 @media (max-width: 960px) {
     .bento-features { grid-template-columns: 1fr; }
     .bf-timer, .bf-lib, .bf-stats { grid-column: auto; grid-row: auto; }
-    .bf-timer .bf-media img,
-    .bf-timer .bf-media video { max-height: 280px; }
+    .bf-media img { max-height: 300px; }
+    .bf-media video { max-height: 280px; }
     .bf-lib .bf-media img,
     .bf-stats .bf-media img { max-height: 200px; }
     .stats-feature-cards { grid-template-columns: repeat(2, 1fr); }
