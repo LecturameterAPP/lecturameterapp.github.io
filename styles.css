@@ -851,9 +851,9 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     background: linear-gradient(to bottom, transparent 0%, rgba(13,20,36,0.94) 38%);
     padding-top: 56px;
 }
-/* Side cards: altura explícita */
+/* Side cards: aspect-ratio para mostrar la captura completa */
 .bf-lib .bf-media,
-.bf-stats .bf-media  { height: 280px; }
+.bf-stats .bf-media  { aspect-ratio: 1220 / 2502; }
 .bf-media img,
 .bf-media video {
     width: 100%;
@@ -862,6 +862,8 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     object-fit: cover;
     object-position: top center;
 }
+/* Timer video: portrait en card landscape — mostrar completo */
+.bf-timer .bf-media video { object-fit: contain; }
 .bf-body { padding: 16px 18px; }
 .bf-tag {
     font-size: 10px;
@@ -938,9 +940,19 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 @media (max-width: 960px) {
     .bento-features { grid-template-columns: 1fr; }
     .bf-timer, .bf-lib, .bf-stats { grid-column: auto; grid-row: auto; }
-    .bf-timer .bf-media { height: 280px; }
+    .bf-timer .bf-media {
+        position: static;
+        background: var(--bg-soft);
+        aspect-ratio: 1220 / 2502;
+    }
+    .bf-timer .bf-body {
+        position: static;
+        background: var(--card);
+        padding-top: 16px;
+    }
+    .bf-timer .bf-media video { object-fit: cover; }
     .bf-lib .bf-media,
-    .bf-stats .bf-media { height: 220px; }
+    .bf-stats .bf-media { aspect-ratio: 1220 / 2502; }
     .stats-feature-cards { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
