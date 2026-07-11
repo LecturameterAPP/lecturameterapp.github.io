@@ -507,6 +507,7 @@ body {
 }
 .gallery-caption {
     padding: 10px 12px 12px;
+    margin-top: auto;
 }
 .gallery-caption h4 {
     font-size: 13px;
@@ -959,9 +960,9 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     object-fit: cover;
     object-position: top center;
 }
-/* Stats: contain — imagen 1220×1150, scaleH gana → 12 meses completos, ~11px barras */
+/* Stats: cover — imagen 1220×1335 portrait, recorta mínimo por los lados */
 .bf-stats .bf-media img {
-    object-fit: contain;
+    object-fit: cover;
     object-position: top center;
 }
 .bf-body { padding: 16px 18px; }
