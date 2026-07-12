@@ -223,6 +223,13 @@ body {
     z-index: 1;
     pointer-events: none;
 }
+.phone-wrap {
+    position: relative;
+    width: min(270px, 80%);
+}
+.phone-wrap .phone {
+    width: 100%;
+}
 .phone {
     width: min(270px, 80%);
     background: #0a0f1e;
@@ -267,11 +274,11 @@ body {
     animation: float 5s ease-in-out infinite;
 }
 .float-chip .big { display: block; font-size: 17px; font-weight: 700; }
-.float-chip.c1 { top: 8%; left: 0; color: var(--muted); }
+.float-chip.c1 { top: 8%; left: -30px; color: var(--muted); }
 .float-chip.c1 .big { color: #5ac8fa; }
-.float-chip.c2 { top: 42%; right: -2%; animation-delay: 1.2s; }
+.float-chip.c2 { top: 42%; right: -30px; animation-delay: 1.2s; }
 .float-chip.c2 .big { color: var(--green); }
-.float-chip.c3 { bottom: 10%; left: 2%; animation-delay: 2.4s; }
+.float-chip.c3 { bottom: 10%; left: -20px; animation-delay: 2.4s; }
 .float-chip.c3 .big { color: var(--accent); }
 @keyframes float {
     0%, 100% { transform: translateY(0); }
@@ -889,7 +896,21 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     .hero-copy h1 { font-size: 40px; }
     .features-grid { grid-template-columns: repeat(2, 1fr); }
     .testimonials-section { grid-template-columns: 1fr; gap: 12px; }
-    /* Chips: de absolute a fila horizontal bajo el móvil */
+    /* Chips: de absolute a fila horizontal bajo el teléfono */
+    .phone-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        max-width: min(300px, 88vw);
+        gap: 8px;
+        padding-bottom: 8px;
+    }
+    .phone-wrap .phone {
+        flex-basis: 100%;
+        width: 100%;
+        order: 0;
+    }
     .float-chip {
         position: static;
         animation: none;
@@ -899,16 +920,9 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
         padding: 5px 12px;
         font-size: 10px;
         order: 1;
-        min-width: 85px;
+        min-width: 82px;
     }
     .float-chip .big { font-size: 13px; }
-    .hero-visual {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-        padding-bottom: 12px;
-    }
-    .hero-visual .phone { order: 0; width: 100%; max-width: min(270px, 80%); }
 }
 
 @media (max-width: 600px) {
