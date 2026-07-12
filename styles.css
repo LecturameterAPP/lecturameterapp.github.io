@@ -511,7 +511,11 @@ body {
 }
 .gallery-phone img {
     width: 100%;
+    height: auto;
     display: block;
+    aspect-ratio: 1220 / 1300;
+    object-fit: cover;
+    object-position: top;
 }
 .gallery-caption {
     padding: 10px 12px 12px;
