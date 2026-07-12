@@ -528,10 +528,10 @@ body {
     margin: 0 0 14px;
     opacity: 0.8;
 }
-@media (max-width: 860px) {
+@media (max-width: 768px) {
     .gallery-phones-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .gallery-phones-grid { grid-template-columns: 1fr; max-width: 380px; }
 }
 
