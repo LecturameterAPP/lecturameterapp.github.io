@@ -889,7 +889,26 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     .hero-copy h1 { font-size: 40px; }
     .features-grid { grid-template-columns: repeat(2, 1fr); }
     .testimonials-section { grid-template-columns: 1fr; gap: 12px; }
-    .float-chip { display: none; }
+    /* Chips: de absolute a fila horizontal bajo el móvil */
+    .float-chip {
+        position: static;
+        animation: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 12px;
+        font-size: 10px;
+        order: 1;
+        min-width: 85px;
+    }
+    .float-chip .big { font-size: 13px; }
+    .hero-visual {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding-bottom: 12px;
+    }
+    .hero-visual .phone { order: 0; width: 100%; max-width: min(270px, 80%); }
 }
 
 @media (max-width: 600px) {
@@ -1129,8 +1148,9 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
         background: var(--card);
         padding-top: 16px;
     }
-    /* En móvil las cards son landscape → cover muestra más contenido que contain */
-    .bf-timer .bf-media video,
+    /* Timer: contain para no recortar el vídeo portrait */
+    .bf-timer .bf-media { height: 360px; }
+    .bf-timer .bf-media video { object-fit: contain; object-position: center; }
     .bf-stats .bf-media img { object-fit: cover; object-position: top center; }
     .bf-lib .bf-media,
     .bf-stats .bf-media { height: 340px; }
