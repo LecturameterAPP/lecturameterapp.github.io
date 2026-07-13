@@ -275,7 +275,7 @@ body {
     animation: float 5s ease-in-out infinite;
 }
 .float-chip .big { display: block; font-size: 17px; font-weight: 700; }
-.float-chip.c1 { top: -14%; left: -30px; color: var(--muted); }
+.float-chip.c1 { top: 6%; left: -30px; color: var(--muted); }
 .float-chip.c1 .big { color: #5ac8fa; }
 .float-chip.c2 { top: 42%; right: -30px; animation-delay: 1.2s; }
 .float-chip.c2 .big { color: var(--green); }
@@ -1070,33 +1070,6 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     display: block;
     object-fit: contain;
     object-position: center;
-}
-/* Library: phone frame centrado en el media */
-.bf-lib .bf-media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 18px 14px;
-    background: linear-gradient(160deg, #131b30 0%, #0a0f1e 100%);
-}
-.phone-card {
-    height: 100%;
-    background: #0a0f1e;
-    border: 2.5px solid var(--line);
-    border-radius: 26px;
-    padding: 6px;
-    box-shadow: 0 12px 36px rgba(0,0,0,0.55), 0 0 50px rgba(108,99,255,0.35);
-    transition: transform 0.15s ease;
-    flex-shrink: 0;
-}
-.phone-card:hover { transform: scale(1.03); }
-.bf-lib .bf-media .phone-card img {
-    height: 100%;
-    width: auto;
-    border-radius: 21px;
-    display: block;
-    object-fit: cover;
-    object-position: top center;
 }
 /* Stats: click-to-expand wrapper */
 .bf-lbx {
