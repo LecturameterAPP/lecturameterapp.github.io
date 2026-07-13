@@ -275,7 +275,7 @@ body {
     animation: float 5s ease-in-out infinite;
 }
 .float-chip .big { display: block; font-size: 17px; font-weight: 700; }
-.float-chip.c1 { top: 8%; left: -30px; color: var(--muted); }
+.float-chip.c1 { top: -14%; left: -30px; color: var(--muted); }
 .float-chip.c1 .big { color: #5ac8fa; }
 .float-chip.c2 { top: 42%; right: -30px; animation-delay: 1.2s; }
 .float-chip.c2 .big { color: var(--green); }
