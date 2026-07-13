@@ -1086,6 +1086,10 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     object-fit: cover;
     object-position: top center;
 }
+.bf-lib .bf-lbx img {
+    object-fit: contain;
+    object-position: top center;
+}
 .bf-body { padding: 16px 18px; }
 .bf-tag {
     font-size: 10px;
