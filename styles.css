@@ -807,6 +807,9 @@ body {
 .link-box.github { border-color: rgba(139, 92, 246, 0.5); }
 .link-box.github:hover { border-color: #8B5CF6; background: #1c1433; box-shadow: 0 0 12px rgba(139, 92, 246, 0.3); }
 
+.link-box.instagram { border-color: rgba(214, 36, 159, 0.5); }
+.link-box.instagram:hover { border-color: #d6249f; background: #271229; box-shadow: 0 0 12px rgba(214, 36, 159, 0.25); }
+
 .privacy-text {
     background: var(--card);
     padding: 14px 16px;
