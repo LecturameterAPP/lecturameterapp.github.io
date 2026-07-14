@@ -1017,6 +1017,9 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 .ms-num.ms-accent { color: var(--accent); }
 .ms-num.ms-orange { color: var(--orange); }
 .ms-label { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.ms-qual { display: block; font-size: 17px; font-weight: 700; color: #fff; letter-spacing: -.01em; }
+.ms-qual.ms-green  { color: var(--green); }
+.ms-qual.ms-orange { color: var(--orange); }
 
 /* ─── IDEA 03: BENTO FEATURES ─── */
 .bento-features {
