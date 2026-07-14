@@ -184,6 +184,7 @@ body {
     padding: 9px 13px;
     display: inline-block;
 }
+.hero-category { font-size: 13px; color: var(--muted); margin-top: 6px; margin-bottom: 2px; letter-spacing: .02em; }
 .hero-subnote { font-size: 12px; color: var(--muted); margin-top: 10px; }
 .subnote-link { color: var(--accent); text-decoration: none; font-weight: 600; }
 .subnote-link:hover { text-decoration: underline; }
