@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Política de privacidad – Lecturameter</title>
-    <meta name="description" content="Política de privacidad de Lecturameter: tus datos de lectura viven en tu dispositivo y tus propios backups. Sin analytics, sin publicidad, sin cuentas.">
+    <meta name="description" content="Política de privacidad de Lecturameter: tus libros, sesiones y estadísticas viven solo en tu dispositivo y en tus propios backups. Sin analíticas, sin publicidad, sin cuentas.">
     <meta property="og:title" content="Política de privacidad – Lecturameter">
-    <meta property="og:description" content="Tus datos de lectura viven en tu dispositivo y tus propios backups. Sin analytics, sin publicidad, sin cuentas.">
+    <meta property="og:description" content="Tus libros, sesiones y estadísticas viven solo en tu dispositivo y en tus propios backups. Sin analíticas, sin publicidad, sin cuentas.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/privacidad.html">
     <meta property="og:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Política de privacidad – Lecturameter">
-    <meta name="twitter:description" content="Tus datos de lectura viven en tu dispositivo y tus propios backups. Sin analytics, sin publicidad, sin cuentas.">
+    <meta name="twitter:description" content="Tus libros, sesiones y estadísticas viven solo en tu dispositivo y en tus propios backups. Sin analíticas, sin publicidad, sin cuentas.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/ic_launcher_round.png">
     <meta name="robots" content="index, follow">
 
@@ -25,6 +25,9 @@
     <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
 
     <link rel="canonical" href="https://lecturameterapp.github.io/privacidad.html">
+    <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/privacidad.html?lang=es">
+    <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/privacidad.html?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/privacidad.html">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -34,70 +37,168 @@
     <div class="topbar-inner">
         <a href="index.html" class="brand"><img src="ic_launcher_round.png" alt="Lecturameter">Lecturameter</a>
         <nav class="nav-links">
-            <a href="index.html">Inicio</a>
-            <a href="index.html#caracteristicas">Características</a>
-            <a href="index.html#precios">Precios</a>
-            <a href="privacidad.html" class="active">Privacidad</a>
-            <a href="contact.html">Contacto</a>
+            <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+            <a href="index.html#caracteristicas" data-es="Características" data-en="Features">Características</a>
+            <a href="index.html#precios" data-es="Precios" data-en="Pricing">Precios</a>
+            <a href="privacidad.html" class="active" data-es="Privacidad" data-en="Privacy">Privacidad</a>
+            <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
         </nav>
+        <div class="lang-bar">
+            <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
+            <button id="btn-en" onclick="setLang('en')">EN</button>
+        </div>
     </div>
 </header>
 
 <div class="container">
-    <div class="page-hero">
-        <h1>🔒 Política de privacidad</h1>
-        <p class="tagline">Tus datos de lectura son tuyos. Punto.</p>
-    </div>
 
-    <!-- PRIVACIDAD DESTACADA -->
-    <div class="privacy-highlight">
-        <div class="icon">🔒</div>
-        <div class="title">Lo esencial, sin letra pequeña</div>
-        <div class="desc">
-            <span class="highlight">Lecturameter no tiene servidor propio para tu biblioteca.</span>
-            Tus libros, sesiones y estadísticas viven solo en tu móvil y en tus propios backups (fichero local o tu Google Drive).
-            Sin analytics, sin publicidad, sin cuentas de usuario.
+    <!-- ─── CONTENIDO EN ESPAÑOL ─── -->
+    <div id="content-es" class="lang-content active">
+        <div class="page-hero">
+            <h1>🔒 Política de privacidad</h1>
+            <p class="tagline">Tus datos de lectura son tuyos. Punto.</p>
         </div>
-    </div>
 
-    <div class="section" id="privacidad">
-        <h2>Política completa</h2>
-        <div class="privacy-text">
-            <p><span class="highlight">Última actualización:</span> 16 de julio de 2026</p>
-
-            <p style="margin-top:14px; color:#ddd;"><span class="highlight">1. Tu biblioteca y tus backups</span></p>
-            <p>Los datos de tu lectura (libros, sesiones, estadísticas, retos) se guardan exclusivamente en tu dispositivo. Si haces una copia de seguridad, esta se guarda como fichero local en tu móvil o, si lo activas, en tu propia cuenta de Google Drive. En el caso de Drive, la app solo tiene acceso a los ficheros que ella misma crea, no a tu Drive completo. Nadie más que tú puede ver esos archivos.</p>
-
-            <p style="margin-top:14px; color:#ddd;"><span class="highlight">2. Búsquedas de libros, manga y cómics</span></p>
-            <p>Cuando buscas un título o un ISBN para añadir un libro, la app envía ese término de búsqueda a catálogos públicos externos para traer portada y datos básicos. En esa consulta no se incluyen datos personales, solo el texto o el ISBN buscado.</p>
-
-            <p style="margin-top:14px; color:#ddd;"><span class="highlight">3. Feedback y encuestas opcionales</span></p>
-            <p>Si envías feedback o respondes a alguna encuesta opcional dentro de la app, ese texto se envía junto con algunos datos técnicos del dispositivo (por ejemplo, modelo o versión de Android) a un servidor propio, para poder leerlo y mejorar la app. Esto solo ocurre si tú decides enviarlo.</p>
-
-            <p style="margin-top:14px; color:#ddd;"><span class="highlight">4. Compra de Lecturameter Pro</span></p>
-            <p>Los pagos de Lecturameter Pro los gestiona y procesa Google Play. Lecturameter no ve ni almacena tus datos de pago en ningún momento.</p>
-
-            <p style="margin-top:14px; color:#ddd;"><span class="highlight">5. Canje de códigos</span></p>
-            <p>Si canjeas un código (por ejemplo, de una promoción), la app envía ese código y un identificador de tu dispositivo a un servidor de canje, para comprobar que el código es válido y activarlo en tu instalación.</p>
-
-            <p style="margin-top:14px; color:#ddd;"><span class="highlight">6. Lo que no hacemos</span></p>
-            <ul style="padding-left:18px; margin:6px 0;">
-                <li>No usamos analytics ni herramientas de seguimiento.</li>
-                <li>No mostramos publicidad.</li>
-                <li>No hace falta crear ninguna cuenta para usar la app.</li>
-                <li>No vendemos ni compartimos tus datos con terceros.</li>
-            </ul>
-
-            <p style="margin-top:14px; color:#ddd;"><span class="highlight">7. Contacto</span></p>
-            <p>Para cualquier duda sobre esta política: <span style="color:#BB86FC;">lecturameter.app@gmail.com</span></p>
-
-            <p style="margin-top:14px; color:#ddd;"><span class="highlight">8. Cambios en esta política</span></p>
-            <p>Si esta política cambia, actualizaremos esta misma página con la nueva fecha en la parte superior.</p>
+        <!-- PRIVACIDAD DESTACADA -->
+        <div class="privacy-highlight">
+            <div class="icon">🔒</div>
+            <div class="title">Lo esencial, sin letra pequeña</div>
+            <div class="desc">
+                <span class="highlight">Lecturameter no tiene servidor propio para tu biblioteca.</span>
+                Tus libros, sesiones y estadísticas viven solo en tu móvil y en tus propios backups (un archivo local o tu Google Drive).
+                Sin analíticas, sin publicidad, sin cuentas de usuario, y nunca vendemos tus datos.
+            </div>
         </div>
+
+        <!-- POLÍTICA COMPLETA -->
+        <div class="section" id="privacidad">
+            <h2>Política completa</h2>
+            <div class="privacy-text">
+                <p><span class="highlight">Última actualización:</span> 17 de julio de 2026</p>
+                <p style="margin-top:8px;">Esta página es el espejo de la política de privacidad que verás dentro de la app. Te explica, en lenguaje sencillo, qué datos guarda Lecturameter y qué sale de tu dispositivo. No hay nada oculto: esto es exactamente lo que hace la app, ni más ni menos.</p>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">1. Dónde viven tus datos</span></p>
+                <p>Tus libros, sesiones de lectura, estadísticas, retos y bingo se guardan solo en tu dispositivo (la app es offline-first). Si activas las copias de seguridad, se guardan donde tú elijas: un archivo local en tu propio dispositivo, o tu Google Drive. En el caso de Drive, la app solo puede ver y tocar los archivos que ella misma ha creado ahí (permiso <span class="highlight">drive.file</span>), nunca el resto de tu Drive. Nadie más que tú puede ver esos archivos.</p>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">2. Sin analíticas, sin publicidad, sin cuentas</span></p>
+                <ul style="padding-left:18px; margin:6px 0;">
+                    <li>No usamos analíticas de uso ni herramientas de seguimiento.</li>
+                    <li>No mostramos publicidad.</li>
+                    <li>No hace falta crear ninguna cuenta para usar la app.</li>
+                    <li>No vendemos ni compartimos tus datos con terceros.</li>
+                </ul>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">3. Búsqueda y escaneo de libros</span></p>
+                <p>Cuando buscas un libro o escaneas un ISBN, ese texto o código se envía a catálogos públicos de libros, manga y cómics para traer datos como el título, la portada o el autor. En estas consultas no se envía ningún dato personal tuyo, solo el término o el ISBN buscado. Los catálogos que consulta la app son:</p>
+                <ul style="padding-left:18px; margin:6px 0;">
+                    <li>Google Books</li>
+                    <li>Open Library</li>
+                    <li>Wikidata</li>
+                    <li>MangaDex</li>
+                    <li>AniList</li>
+                    <li>MangaUpdates</li>
+                    <li>Kitsu</li>
+                </ul>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">4. Feedback y encuestas</span></p>
+                <p>Enviar feedback o responder a una encuesta dentro de la app es totalmente opcional. Si decides hacerlo, se envía el texto que has escrito junto con información técnica del dispositivo (modelo, versión de Android y versión de la app) a un servidor propio de Lecturameter, para que el desarrollador pueda leerlo y mejorar la app. Esto solo ocurre si tú lo envías.</p>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">5. Lecturameter Pro y canje de códigos</span></p>
+                <p>Los pagos de Lecturameter Pro los procesa Google Play: la app nunca ve ni guarda tus datos de pago. Si canjeas un código de promoción, ese código y un identificador de tu dispositivo se envían al servidor de canje de Lecturameter, solo para validar el código y controlar en cuántos dispositivos se puede usar.</p>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">6. Permisos de la app</span></p>
+                <ul style="padding-left:18px; margin:6px 0;">
+                    <li><span class="highlight">Internet:</span> para buscar libros, hacer backup en Drive, enviar feedback y canjear códigos.</li>
+                    <li><span class="highlight">Almacenamiento e imágenes locales:</span> para guardar y leer tus copias de seguridad y las portadas en el dispositivo.</li>
+                    <li><span class="highlight">Cámara:</span> solo para escanear el código de barras (ISBN) de un libro. No se guardan ni se envían fotos.</li>
+                    <li><span class="highlight">Notificaciones:</span> para mostrarte recordatorios de lectura y el cronómetro de la sesión activa.</li>
+                    <li><span class="highlight">Cuenta de Google (OAuth2, opcional):</span> solo si activas el backup en Drive. Puedes revocar el acceso en cualquier momento desde tu cuenta de Google.</li>
+                </ul>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">7. Contacto</span></p>
+                <p>Si tienes cualquier duda sobre privacidad, escribe a <span style="color:#BB86FC;">lecturameter.app@gmail.com</span>.</p>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">8. Cambios en esta política</span></p>
+                <p>Si esta política cambia, actualizaremos esta misma página con la nueva fecha en la parte superior.</p>
+            </div>
+        </div>
+
+        <div class="footer">© 2026 Lecturameter · <a href="index.html">Inicio</a> · <a href="contact.html">Contacto</a></div>
     </div>
 
-    <div class="footer">© 2026 Lecturameter · <a href="index.html">Inicio</a> · <a href="contact.html">Contacto</a></div>
+    <!-- ─── CONTENIDO EN INGLÉS ─── -->
+    <div id="content-en" class="lang-content">
+        <div class="page-hero">
+            <div class="h1">🔒 Privacy policy</div>
+            <p class="tagline">Your reading data is yours. Period.</p>
+        </div>
+
+        <div class="privacy-highlight">
+            <div class="icon">🔒</div>
+            <div class="title">The essentials, no fine print</div>
+            <div class="desc">
+                <span class="highlight">Lecturameter has no server of its own for your library.</span>
+                Your books, sessions, and statistics live only on your phone and in your own backups (a local file or your Google Drive).
+                No analytics, no ads, no user accounts, and we never sell your data.
+            </div>
+        </div>
+
+        <div class="section" id="privacy">
+            <h2>Full policy</h2>
+            <div class="privacy-text">
+                <p><span class="highlight">Last updated:</span> July 17, 2026</p>
+                <p style="margin-top:8px;">This page mirrors the privacy policy you see inside the app. It explains, in plain language, what data Lecturameter keeps and what leaves your device. Nothing here is hidden: this is exactly what the app does, nothing more.</p>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">1. Where your data lives</span></p>
+                <p>Your books, reading sessions, statistics, challenges, and bingo are stored only on your device (the app is offline-first). If you turn on backups, they are saved wherever you choose: a local file on your own device, or your Google Drive. For Drive, the app can only see and touch the files it created there itself (the <span class="highlight">drive.file</span> scope), never the rest of your Drive. No one but you can see those files.</p>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">2. No analytics, no ads, no accounts</span></p>
+                <ul style="padding-left:18px; margin:6px 0;">
+                    <li>We use no usage analytics and no tracking tools.</li>
+                    <li>We show no ads.</li>
+                    <li>You don't need to create any account to use the app.</li>
+                    <li>We never sell or share your data with third parties.</li>
+                </ul>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">3. Searching and scanning books</span></p>
+                <p>When you search for a book or scan an ISBN, that text or code is sent to public book, manga, and comic catalogs to fetch details like the title, cover, or author. No personal data of yours is sent in these lookups, only the search term or the ISBN. The catalogs the app queries are:</p>
+                <ul style="padding-left:18px; margin:6px 0;">
+                    <li>Google Books</li>
+                    <li>Open Library</li>
+                    <li>Wikidata</li>
+                    <li>MangaDex</li>
+                    <li>AniList</li>
+                    <li>MangaUpdates</li>
+                    <li>Kitsu</li>
+                </ul>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">4. Feedback and surveys</span></p>
+                <p>Sending feedback or answering a survey inside the app is entirely optional. If you choose to, the text you wrote is sent along with technical device information (model, Android version, and app version) to Lecturameter's own server, so the developer can read it and improve the app. This only happens if you send it.</p>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">5. Lecturameter Pro and code redemption</span></p>
+                <p>Lecturameter Pro payments are handled by Google Play: the app never sees or stores your payment details. If you redeem a promo code, that code and a device identifier are sent to Lecturameter's redemption server, only to validate the code and limit how many devices can use it.</p>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">6. App permissions</span></p>
+                <ul style="padding-left:18px; margin:6px 0;">
+                    <li><span class="highlight">Internet:</span> to search for books, back up to Drive, send feedback, and redeem codes.</li>
+                    <li><span class="highlight">Local storage and images:</span> to save and read your backups and book covers on the device.</li>
+                    <li><span class="highlight">Camera:</span> only to scan a book's barcode (ISBN). No photos are stored or sent.</li>
+                    <li><span class="highlight">Notifications:</span> to show reading reminders and the active session timer.</li>
+                    <li><span class="highlight">Google account (OAuth2, optional):</span> only if you enable Drive backup. You can revoke access at any time from your Google account.</li>
+                </ul>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">7. Contact</span></p>
+                <p>If you have any privacy questions, write to <span style="color:#BB86FC;">lecturameter.app@gmail.com</span>.</p>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">8. Changes to this policy</span></p>
+                <p>If this policy changes, we will update this same page with the new date at the top.</p>
+            </div>
+        </div>
+
+        <div class="footer">© 2026 Lecturameter · <a href="index.html">Home</a> · <a href="contact.html">Contact</a></div>
+    </div>
 </div>
 
+<script src="main.js"></script>
 </body>
 </html>

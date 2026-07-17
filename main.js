@@ -32,64 +32,6 @@ function checkCaptcha(questionId, inputId) {
     return false;
 }
 
-function generateCaptcha(lang) {
-    newCaptcha('captchaQuestion' + (lang === 'es' ? 'Es' : 'En'));
-}
-
-// ─── NOTIFY ───
-async function sendNotify(lang) {
-    const prefix = lang === 'es' ? 'Es' : 'En';
-    const email  = document.getElementById('notifyEmail' + prefix).value.trim();
-    const captchaInput = document.getElementById('captchaInput' + prefix).value.trim();
-    const status = document.getElementById('notifyStatus' + prefix);
-    const btn    = document.getElementById('notifyBtn' + prefix);
-
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        status.textContent = lang === 'es' ? '⚠️ Email no válido' : '⚠️ Invalid email';
-        status.className = 'notify-status err';
-        return;
-    }
-
-    if (!checkCaptcha('captchaQuestion' + prefix, 'captchaInput' + prefix)) {
-        status.textContent = lang === 'es' ? '⚠️ Respuesta incorrecta, intenta de nuevo' : '⚠️ Wrong answer, try again';
-        status.className = 'notify-status err';
-        return;
-    }
-
-    btn.disabled = true;
-    status.textContent = lang === 'es' ? '⏳ Enviando...' : '⏳ Sending...';
-    status.className = 'notify-status loading';
-
-    if (typeof emailjs === 'undefined') {
-        status.textContent = lang === 'es' ? '❌ Error. Prueba en lecturameter.app@gmail.com' : '❌ Error. Try lecturameter.app@gmail.com';
-        status.className = 'notify-status err';
-        btn.disabled = false;
-        generateCaptcha(lang);
-        return;
-    }
-
-    try {
-        await emailjs.send(EJS_SERVICE_ID, EJS_TPL_VICTOR, { user_email: email, platforms: 'Play Store' });
-        await emailjs.send(EJS_SERVICE_ID, EJS_TPL_USER,   { user_email: email, platforms: 'Play Store' });
-
-        status.textContent = lang === 'es'
-            ? '✅ ¡Añadido! Recibirás un correo cuando la app esté lista.'
-            : '✅ Added! You\'ll receive an email when the app is ready.';
-        status.className = 'notify-status ok';
-        document.getElementById('notifyEmail' + prefix).value = '';
-        document.getElementById('captchaInput' + prefix).value = '';
-        generateCaptcha(lang);
-    } catch (e) {
-        console.error('EmailJS error:', e);
-        status.textContent = lang === 'es'
-            ? '❌ Error al enviar. Prueba en lecturameter.app@gmail.com'
-            : '❌ Failed to send. Try lecturameter.app@gmail.com';
-        status.className = 'notify-status err';
-    } finally {
-        btn.disabled = false;
-    }
-}
-
 // ─── FEEDBACK con Formspree ───
 async function sendFeedback(lang) {
     const name    = document.getElementById('fbName-' + lang).value.trim();
@@ -241,8 +183,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let lang = 'es';
     try { lang = localStorage.getItem('lm_lang') || 'es'; } catch(e) {}
     setLang(lang);
-    generateCaptcha('es');
-    generateCaptcha('en');
     newCaptcha('captchaQuestionFb-es');
     newCaptcha('captchaQuestionFb-en');
     document.querySelectorAll('.gallery-phone img').forEach(function(img){ img.loading = 'lazy'; });
