@@ -1321,3 +1321,15 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 .themes-row figure { margin: 0; width: 150px; }
 .themes-row img { width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line, #2a2f3a); display: block; }
 .themes-row figcaption { margin-top: 6px; font-size: 0.82rem; color: var(--muted, #9aa3b2); }
+/* En movil los 5 temas se mantienen en una sola fila deslizable, sin partirse en bloques */
+@media (max-width: 600px) {
+    .themes-row {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 8px;
+    }
+    .themes-row figure { flex: 0 0 118px; width: 118px; scroll-snap-align: center; }
+}
