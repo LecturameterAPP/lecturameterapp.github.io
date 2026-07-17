@@ -677,38 +677,7 @@ body {
 .privacy-highlight .desc span.highlight { font-weight: 600; color: #fff; }
 .privacy-highlight a { color: var(--green); font-weight: 600; text-decoration: none; }
 
-/* ─── NOTIFY CTA ─── */
-.cta-notify {
-    background: linear-gradient(135deg, rgba(108, 99, 255, 0.14), rgba(108, 99, 255, 0.04));
-    border-radius: 20px;
-    padding: 26px 24px;
-    margin: 26px 0;
-    border: 1px solid var(--accent);
-    text-align: center;
-}
-.cta-notify h2 { font-size: 21px; color: #fff; margin-bottom: 6px; }
-.cta-notify p { font-size: 14px; color: var(--muted); margin-bottom: 16px; }
-.notify-form { display: flex; flex-direction: column; gap: 12px; align-items: center; }
-.notify-form .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    width: 100%;
-    max-width: 460px;
-}
-.notify-form input[type="email"] {
-    flex: 1;
-    min-width: 200px;
-    background: var(--bg);
-    border: 1px solid var(--line);
-    border-radius: 30px;
-    padding: 11px 18px;
-    font-size: 14px;
-    color: var(--text);
-    outline: none;
-}
-.notify-form input[type="email"]:focus { border-color: var(--accent); }
+/* ─── CAPTCHA ─── */
 .captcha-row {
     display: flex;
     align-items: center;
@@ -737,24 +706,6 @@ body {
     font-weight: 600;
     color: var(--text);
 }
-.notify-btn {
-    background: linear-gradient(135deg, #7b73ff, #6c63ff);
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    padding: 11px 30px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: filter 0.2s;
-    font-family: inherit;
-}
-.notify-btn:hover { filter: brightness(1.1); }
-.notify-btn:disabled { opacity: 0.6; cursor: default; filter: none; }
-.notify-status { font-size: 13px; }
-.notify-status.ok  { color: var(--green); }
-.notify-status.err { color: var(--red); }
-.notify-status.loading { color: var(--orange); }
 
 /* ─── DEMO BACKUP ─── */
 .demo-backup {
@@ -795,12 +746,11 @@ body {
 .links-grid .link-box .text { font-size: 14px; color: var(--text); }
 .links-grid .link-box .text .sub { font-size: 11px; color: var(--muted); }
 
-/* Donaciones: los mismos colores de marca y los mismos emojis que la pantalla de Ajustes de la
-   app (Ko-fi #29ABE0 con el cafe, PayPal #0070BA con el corazon), para que la web y la app digan
-   lo mismo. Hasta ahora la web pedia la donacion y no decia donde hacerla. */
-.donate-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 14px 0 0; }
-.donate-row .link-box { flex-direction: row; gap: 12px; justify-content: flex-start; text-align: left; }
-.donate-row .link-box .emoji { font-size: 22px; line-height: 1; }
+/* Donaciones: usan la MISMA estructura y estilo que las redes del pie (.links-grid .link-box),
+   con los colores de marca de la app (Ko-fi #29ABE0 con el cafe, PayPal #0070BA con el corazon)
+   para que Ko-fi y PayPal parezcan dos redes mas, integradas con el resto. */
+.donate-links { margin-top: 14px; }
+.links-grid .link-box .emoji { display: block; width: 32px; font-size: 26px; line-height: 32px; text-align: center; }
 .link-box.kofi { border-color: rgba(41, 171, 224, 0.45); }
 .link-box.kofi:hover { border-color: #29ABE0; background: rgba(41, 171, 224, 0.10); }
 .link-box.paypal { border-color: rgba(0, 112, 186, 0.45); }
