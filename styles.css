@@ -795,6 +795,17 @@ body {
 .links-grid .link-box .text { font-size: 14px; color: var(--text); }
 .links-grid .link-box .text .sub { font-size: 11px; color: var(--muted); }
 
+/* Donaciones: los mismos colores de marca y los mismos emojis que la pantalla de Ajustes de la
+   app (Ko-fi #29ABE0 con el cafe, PayPal #0070BA con el corazon), para que la web y la app digan
+   lo mismo. Hasta ahora la web pedia la donacion y no decia donde hacerla. */
+.donate-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 14px 0 0; }
+.donate-row .link-box { flex-direction: row; gap: 12px; justify-content: flex-start; text-align: left; }
+.donate-row .link-box .emoji { font-size: 22px; line-height: 1; }
+.link-box.kofi { border-color: rgba(41, 171, 224, 0.45); }
+.link-box.kofi:hover { border-color: #29ABE0; background: rgba(41, 171, 224, 0.10); }
+.link-box.paypal { border-color: rgba(0, 112, 186, 0.45); }
+.link-box.paypal:hover { border-color: #0070BA; background: rgba(0, 112, 186, 0.10); }
+
 .link-box.x { border-color: rgba(29, 161, 242, 0.5); }
 .link-box.x .icon svg { fill: #1DA1F2; }
 .link-box.x:hover { border-color: #1DA1F2; background: #14243a; }
