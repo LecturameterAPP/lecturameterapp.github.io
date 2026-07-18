@@ -930,33 +930,75 @@
 <!-- Lightbox overlay -->
 <div class="lbx-overlay" id="lightbox">
     <button class="lbx-close" id="lbxClose">&#x2715;</button>
+    <button class="lbx-nav" id="lbxPrev">&#x2039;</button>
     <img class="lbx-img" id="lbxImg" src="" alt="">
+    <button class="lbx-nav" id="lbxNext">&#x203a;</button>
+    <span class="lbx-cap" id="lbxCap"></span>
 </div>
 
 <!-- Scripts al final del body (no bloquean renderizado) -->
 <script src="main.js" defer></script>
 <script>
 (function(){
-    var overlay = document.getElementById('lightbox');
-    var img = document.getElementById('lbxImg');
+    var overlay  = document.getElementById('lightbox');
+    var img      = document.getElementById('lbxImg');
     var closeBtn = document.getElementById('lbxClose');
-    document.querySelectorAll('[data-src]').forEach(function(card){
+    var prevBtn  = document.getElementById('lbxPrev');
+    var nextBtn  = document.getElementById('lbxNext');
+    var cap      = document.getElementById('lbxCap');
+    var group = [], idx = 0;
+
+    function showAt(i) {
+        idx = (i + group.length) % group.length;
+        var el = group[idx];
+        img.src = el.dataset.src;
+        var fc = el.querySelector && el.querySelector('figcaption');
+        cap.textContent = fc ? fc.textContent : '';
+        cap.style.display = fc ? '' : 'none';
+        var hasNav = group.length > 1;
+        prevBtn.style.display = hasNav ? '' : 'none';
+        nextBtn.style.display = hasNav ? '' : 'none';
+    }
+    function openLbx(g, i) {
+        group = g; showAt(i);
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeLbx() {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+        img.src = ''; group = [];
+    }
+
+    // Figures inside .themes-row → carousel
+    document.querySelectorAll('.themes-row figure[data-src]').forEach(function(fig){
+        fig.style.cursor = 'zoom-in';
+        fig.addEventListener('click', function(e){
+            e.stopPropagation();
+            var row = fig.closest('.themes-row');
+            var g = Array.from(row.querySelectorAll('figure[data-src]'));
+            openLbx(g, g.indexOf(fig));
+        });
+    });
+    // Other [data-src] elements → single view
+    document.querySelectorAll('[data-src]:not(figure)').forEach(function(card){
         card.style.cursor = 'zoom-in';
         card.addEventListener('click', function(e){
             e.stopPropagation();
-            img.src = card.dataset.src;
-            overlay.classList.add('open');
-            document.body.style.overflow = 'hidden';
+            openLbx([card], 0);
         });
     });
-    function closeLbx(){
-        overlay.classList.remove('open');
-        document.body.style.overflow = '';
-        img.src = '';
-    }
+
+    prevBtn.addEventListener('click', function(e){ e.stopPropagation(); showAt(idx - 1); });
+    nextBtn.addEventListener('click', function(e){ e.stopPropagation(); showAt(idx + 1); });
     closeBtn.addEventListener('click', closeLbx);
-    overlay.addEventListener('click', function(e){ if(e.target===overlay) closeLbx(); });
-    document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeLbx(); });
+    overlay.addEventListener('click', function(e){ if(e.target === overlay) closeLbx(); });
+    document.addEventListener('keydown', function(e){
+        if (!overlay.classList.contains('open')) return;
+        if (e.key === 'Escape')      closeLbx();
+        if (e.key === 'ArrowLeft')   showAt(idx - 1);
+        if (e.key === 'ArrowRight')  showAt(idx + 1);
+    });
 })();
 </script>
 </body>
