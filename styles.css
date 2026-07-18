@@ -664,6 +664,40 @@ body {
     border-radius: 8px;
 }
 .lbx-close:hover { opacity: 1; background: rgba(255,255,255,0.1); }
+.lbx-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 48px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+    background: rgba(0,0,0,0.35);
+    border: none;
+    padding: 12px 10px 14px;
+    border-radius: 10px;
+    z-index: 10000;
+    transition: opacity 0.15s, background 0.15s;
+    user-select: none;
+}
+.lbx-nav:hover { opacity: 1; background: rgba(255,255,255,0.15); }
+#lbxPrev { left: 10px; }
+#lbxNext { right: 10px; }
+.lbx-cap {
+    position: fixed;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,0.9);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    background: rgba(0,0,0,0.5);
+    padding: 4px 16px;
+    border-radius: 20px;
+    pointer-events: none;
+}
+.themes-row figure { cursor: zoom-in; }
 
 /* ─── PRIVACY HIGHLIGHT ─── */
 .privacy-highlight {
