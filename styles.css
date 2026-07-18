@@ -1368,6 +1368,11 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     border-radius: 16px;
     display: block;
 }
+.widget-nobg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 /* Stats widget (pure CSS recreation) */
 .sw {
