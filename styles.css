@@ -515,15 +515,9 @@ body {
     height: auto;
     display: block;
 }
-.gallery-phone--wide {
-    justify-content: center;
-}
 .gallery-phone--wide img {
-    aspect-ratio: 720 / 1455;
-    object-fit: contain;
-    object-position: center;
     background: var(--card);
-    padding: 12px 6px;
+    padding: 10px 8px;
     box-sizing: border-box;
 }
 .gallery-caption {
@@ -1344,6 +1338,7 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 .widget-demo {
     width: 100%;
     max-width: 420px;
+    margin: 0 auto;
 }
 .book-widget img {
     width: 100%;
