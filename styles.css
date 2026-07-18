@@ -1011,10 +1011,8 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 .bf-timer {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
 }
 .bf-lib   { grid-column: 3; grid-row: 1; }
 .bf-stats { grid-column: 3; grid-row: 2; }
@@ -1023,18 +1021,23 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     background: var(--bg-soft);
     border-bottom: 1px solid var(--line);
 }
-/* Timer: media cubre toda la card, body se superpone abajo */
+/* Timer: video arriba con alto flexible, texto debajo sobre fondo solido.
+   El video va absoluto dentro del area de media para que su alto intrinseco
+   no infle la card en el grid. */
 .bf-timer .bf-media {
-    position: absolute;
-    inset: 0;
-    border-bottom: none;
+    flex: 1;
+    min-height: 0;
+    position: relative;
     background: linear-gradient(160deg, #131b30 0%, #1a2340 60%, #0d1424 100%);
 }
+.bf-timer .bf-media video {
+    position: absolute;
+    inset: 0;
+    object-fit: contain;
+    object-position: center;
+}
 .bf-timer .bf-body {
-    position: relative;
-    z-index: 2;
-    background: linear-gradient(to bottom, transparent 0%, rgba(13,20,36,0.94) 38%);
-    padding-top: 56px;
+    background: var(--card);
 }
 /* Side cards */
 .bf-lib .bf-media,
@@ -1144,19 +1147,10 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     .bento-features { grid-template-columns: 1fr; }
     .bf-timer, .bf-lib, .bf-stats { grid-column: auto; grid-row: auto; }
     .bf-timer .bf-media {
-        position: static;
-        background: var(--bg-soft);
-        height: 300px;
+        flex: none;
+        height: 360px;
     }
-    .bf-timer .bf-body {
-        position: static;
-        background: var(--card);
-        padding-top: 16px;
-    }
-    /* Timer: contain para no recortar el vídeo portrait */
-    .bf-timer .bf-media { height: 360px; }
-    .bf-timer .bf-media video { object-fit: contain; object-position: center; }
-    .bf-stats .bf-media img { object-fit: cover; object-position: top center; }
+    .bf-stats .bf-media img { object-fit: contain; object-position: top center; }
     .bf-lib .bf-media,
     .bf-stats .bf-media { height: 340px; }
 }
