@@ -515,6 +515,17 @@ body {
     height: auto;
     display: block;
 }
+.gallery-phone--wide {
+    justify-content: center;
+}
+.gallery-phone--wide img {
+    aspect-ratio: 720 / 1455;
+    object-fit: contain;
+    object-position: center;
+    background: var(--card);
+    padding: 12px 6px;
+    box-sizing: border-box;
+}
 .gallery-caption {
     padding: 10px 12px 12px;
     margin-top: auto;
@@ -1051,7 +1062,8 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     object-fit: cover;
     object-position: top center;
 }
-.bf-lib .bf-lbx img {
+.bf-lib .bf-lbx img,
+.bf-stats .bf-lbx img {
     object-fit: contain;
     object-position: top center;
 }
@@ -1294,4 +1306,166 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
         padding-bottom: 8px;
     }
     .themes-row figure { flex: 0 0 160px; width: 160px; scroll-snap-align: center; }
+}
+
+/* ─── WIDGETS SHOWCASE ─── */
+.widgets-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin: 8px 0 24px;
+    align-items: start;
+}
+.widget-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.widget-type-label {
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+}
+.widget-type-desc {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.5;
+    margin-bottom: 16px;
+    max-width: 380px;
+}
+.pro-badge-sm {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #fff;
+    background: linear-gradient(135deg, #7b73ff, #6c63ff);
+    padding: 2px 8px;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+.widget-demo {
+    width: 100%;
+    max-width: 420px;
+}
+.book-widget img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+}
+
+/* Stats widget (pure CSS recreation) */
+.sw {
+    background: #1a2340;
+    border-radius: 16px;
+    padding: 10px 12px 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    border: 1px solid var(--line);
+}
+.sw-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    padding: 0 2px;
+}
+.sw-title {
+    font-size: 10px;
+    color: var(--muted);
+}
+.sw-time {
+    font-size: 10px;
+    color: var(--muted);
+}
+.sw-stats-row {
+    display: flex;
+    align-items: center;
+}
+.sw-cell {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 2px;
+    background: rgba(139, 139, 255, 0.06);
+}
+.sw-val {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.sw-lbl {
+    font-size: 9px;
+    color: var(--muted);
+    margin-top: 1px;
+}
+.sw-vsep {
+    width: 1px;
+    align-self: stretch;
+    background: rgba(148, 163, 184, 0.2);
+}
+.sw-hsep {
+    height: 1px;
+    background: rgba(148, 163, 184, 0.2);
+    margin: 1px 0;
+}
+.sw-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 4px 4px 2px;
+}
+.sw-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.sw-bar-label {
+    font-size: 9px;
+    color: var(--muted);
+    width: 52px;
+    flex-shrink: 0;
+    text-align: left;
+}
+.sw-bar-track {
+    flex: 1;
+    height: 6px;
+    background: rgba(139, 139, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+.sw-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.6s ease;
+}
+.sw-bar-green { background: #10B981; }
+.sw-bar-red { background: #F87171; }
+.sw-bar-delta {
+    font-size: 9px;
+    font-weight: 700;
+    width: 38px;
+    text-align: right;
+    flex-shrink: 0;
+}
+.sw-delta-green { color: #10B981; }
+.sw-delta-red { color: #F87171; }
+.sw-footer {
+    font-size: 10px;
+    color: var(--muted);
+    padding: 3px 2px 0;
+}
+
+@media (max-width: 768px) {
+    .widgets-showcase { grid-template-columns: 1fr; gap: 28px; }
+}
+@media (max-width: 480px) {
+    .sw-val { font-size: 13px; }
+    .sw-lbl { font-size: 8px; }
+    .sw-bar-label { width: 44px; font-size: 8px; }
 }
