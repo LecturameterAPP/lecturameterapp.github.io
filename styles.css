@@ -1198,7 +1198,7 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     border-radius: 20px;
     text-transform: uppercase;
 }
-.pricing-pro-icon { width: 72px; height: 72px; border-radius: 22%; margin-bottom: 12px; }
+.pricing-pro-icon { width: 72px; height: 72px; border-radius: 22%; margin-bottom: 20px; }
 .pricing-name {
     font-size: 13px;
     font-weight: 700;
