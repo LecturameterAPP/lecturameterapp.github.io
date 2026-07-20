@@ -1504,31 +1504,37 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 /* ─── PRECIOS REGIONALES ─── */
 .price-regional-link { margin-top: -8px; }
 
+.regional-head { text-align: center; }
+.regional-head p { max-width: 640px; margin-left: auto; margin-right: auto; }
+
 .regional-details { border: none; }
 .regional-details summary {
     list-style: none;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    padding-bottom: 6px;
-    margin-bottom: 0;
+    gap: 8px;
+    padding: 8px 20px;
+    margin: 16px auto 24px;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+    background: transparent;
     user-select: none;
+    transition: background 0.15s, color 0.15s;
 }
+.regional-details summary { display: flex; justify-content: center; }
 .regional-details summary::-webkit-details-marker { display: none; }
-.regional-details summary h2 { margin: 0; }
 .regional-details summary::after {
     content: '▾';
-    font-size: 18px;
-    color: var(--accent);
-    flex-shrink: 0;
+    font-size: 14px;
     transition: transform 0.2s ease;
     display: inline-block;
 }
 .regional-details[open] summary::after { transform: rotate(-180deg); }
-.regional-details summary:hover h2 { color: var(--accent); }
-.regional-intro { font-size: 14px; color: var(--muted); line-height: 1.6; margin: 12px 0 24px; }
+.regional-details summary:hover { background: rgba(139,139,255,0.08); }
 .price-regional-link a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139, 139, 255, 0.4); }
 .price-regional-link a:hover { border-bottom-color: var(--accent); }
 
