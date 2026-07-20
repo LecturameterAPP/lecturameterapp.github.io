@@ -1491,3 +1491,41 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     .sw-lbl { font-size: 8px; }
     .sw-bar-label { width: 44px; font-size: 8px; }
 }
+
+/* ─── PRECIOS REGIONALES ─── */
+.price-regional-link { margin-top: -8px; }
+.price-regional-link a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139, 139, 255, 0.4); }
+.price-regional-link a:hover { border-bottom-color: var(--accent); }
+
+.regional-tier { margin-bottom: 28px; }
+.regional-tier h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+}
+.regional-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 8px 20px;
+}
+.regional-list li {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 7px 12px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 9px;
+}
+.rp-country { font-size: 13.5px; color: var(--text); }
+.rp-price { font-size: 13.5px; font-weight: 700; color: var(--accent); white-space: nowrap; }
+.regional-note { font-size: 12.5px; color: var(--muted); line-height: 1.6; margin-top: 14px; }
+
+@media (max-width: 560px) {
+    .regional-list { grid-template-columns: 1fr; }
+}
