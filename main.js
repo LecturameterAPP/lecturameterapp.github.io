@@ -1,5 +1,19 @@
 // ─── Lecturameter web · JS compartido ───
 
+// ─── PRECIOS REGIONALES: abrir <details> al navegar al anchor ───
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href="#precios-regionales"], a[href="#regional-pricing"]').forEach(a => {
+        a.addEventListener('click', () => {
+            const id = a.getAttribute('href').slice(1);
+            const section = document.getElementById(id);
+            if (section) {
+                const det = section.querySelector('details.regional-details');
+                if (det) det.open = true;
+            }
+        });
+    });
+});
+
 // ─── EMAILJS ───
 const EJS_PUBLIC_KEY   = '3cdH3XtjBWBRKC9tS';
 const EJS_SERVICE_ID   = 'service_l1psqa9';
