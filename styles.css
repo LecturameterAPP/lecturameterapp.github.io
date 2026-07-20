@@ -1492,8 +1492,43 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     .sw-bar-label { width: 44px; font-size: 8px; }
 }
 
+/* ─── PRECIO AL MES ─── */
+.price-per-month {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 4px;
+    letter-spacing: 0.01em;
+}
+
 /* ─── PRECIOS REGIONALES ─── */
 .price-regional-link { margin-top: -8px; }
+
+.regional-details { border: none; }
+.regional-details summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 6px;
+    margin-bottom: 0;
+    user-select: none;
+}
+.regional-details summary::-webkit-details-marker { display: none; }
+.regional-details summary h2 { margin: 0; }
+.regional-details summary::after {
+    content: '▾';
+    font-size: 18px;
+    color: var(--accent);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+.regional-details[open] summary::after { transform: rotate(-180deg); }
+.regional-details summary:hover h2 { color: var(--accent); }
+.regional-intro { font-size: 14px; color: var(--muted); line-height: 1.6; margin: 12px 0 24px; }
 .price-regional-link a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139, 139, 255, 0.4); }
 .price-regional-link a:hover { border-bottom-color: var(--accent); }
 
