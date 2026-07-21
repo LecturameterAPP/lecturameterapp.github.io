@@ -1,18 +1,5 @@
 // ─── Lecturameter web · JS compartido ───
 
-// ─── PRECIOS REGIONALES: abrir <details> al navegar al anchor ───
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('a[href="#precios-regionales"], a[href="#regional-pricing"]').forEach(a => {
-        a.addEventListener('click', () => {
-            const id = a.getAttribute('href').slice(1);
-            const section = document.getElementById(id);
-            if (section) {
-                const det = section.querySelector('details.regional-details');
-                if (det) det.open = true;
-            }
-        });
-    });
-});
 
 // ─── EMAILJS ───
 const EJS_PUBLIC_KEY   = '3cdH3XtjBWBRKC9tS';
@@ -169,6 +156,11 @@ function setLang(lang) {
     // Traducir el menú de navegación
     document.querySelectorAll('.nav-links a[data-es]').forEach(a => {
         a.textContent = lang === 'es' ? a.dataset.es : a.dataset.en;
+    });
+
+    // Actualizar hrefs de navegación según idioma
+    document.querySelectorAll('.nav-links a[data-href-es]').forEach(a => {
+        a.href = lang === 'es' ? a.dataset.hrefEs : a.dataset.hrefEn;
     });
 
     renderStats(lang);
