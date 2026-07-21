@@ -777,6 +777,9 @@ body {
    con los colores de marca de la app (Ko-fi #29ABE0 con el cafe, PayPal #0070BA con el corazon)
    para que Ko-fi y PayPal parezcan dos redes mas, integradas con el resto. */
 .donate-links { margin-top: 14px; }
+.donate-pro-note { margin-top: 16px; font-size: 13px; color: var(--muted); line-height: 1.5; }
+.donate-pro-note a { color: var(--accent); text-decoration: none; }
+.donate-pro-note a:hover { text-decoration: underline; }
 .links-grid .link-box .emoji { display: block; width: 32px; font-size: 26px; line-height: 32px; text-align: center; }
 .link-box.kofi { border-color: rgba(41, 171, 224, 0.45); }
 .link-box.kofi:hover { border-color: #29ABE0; background: rgba(41, 171, 224, 0.10); }
