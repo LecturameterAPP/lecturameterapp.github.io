@@ -34,7 +34,7 @@
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/?lang=es">
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/?lang=en">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="styles.css?v=250718h">
+    <link rel="stylesheet" href="styles.css?v=250721a">
 
     <!-- Schema JSON-LD -->
     <script type="application/ld+json">
@@ -74,9 +74,10 @@
         <a href="index.html" class="brand"><img src="ic_launcher_round.png" alt="Lecturameter" width="192" height="192">Lecturameter</a>
         <nav class="nav-links">
             <a href="index.html" class="active" data-es="Inicio" data-en="Home">Inicio</a>
-            <a href="#caracteristicas" data-es="Características" data-en="Features">Características</a>
-            <a href="#precios" data-es="Precios" data-en="Pricing">Precios</a>
-            <a href="#estadisticas" data-es="Estadísticas" data-en="Stats">Estadísticas</a>
+            <a href="#caracteristicas" data-href-es="#caracteristicas" data-href-en="#features" data-es="Características" data-en="Features">Características</a>
+            <a href="#precios" data-href-es="#precios" data-href-en="#pricing" data-es="Precios" data-en="Pricing">Precios</a>
+            <a href="precios-regionales.html" data-es="Precio regional" data-en="Regional pricing">Precio regional</a>
+            <a href="#estadisticas" data-href-es="#estadisticas" data-href-en="#stats" data-es="Estadísticas" data-en="Stats">Estadísticas</a>
             <a href="privacidad.html" data-es="Privacidad" data-en="Privacy">Privacidad</a>
             <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
         </nav>
@@ -205,7 +206,7 @@
                     <div class="pricing-name">Lecturameter Pro</div>
                     <div class="price-row"><span class="price-old">4,99 €</span><span class="price-new">2,99 €</span></div>
                     <p class="price-note">Precio de lanzamiento. Sube a 4,99 € después. Una compra única, no una suscripción.</p>
-                    <p class="price-note price-regional-link">El precio está adaptado a cada país: en varios mercados es bastante más bajo. <a href="#precios-regionales">Mira los precios por región</a>.</p>
+                    <p class="price-note price-regional-link">El precio está adaptado a cada país: en varios mercados es bastante más bajo. <a href="precios-regionales.html">Mira los precios por región</a>.</p>
                     <p class="price-trial">🕒 Prueba Pro gratis 7 días, dentro de la propia app</p>
                     <ul class="pricing-list">
                         <li>Temas Cuero, Aurora y OLED</li>
@@ -218,65 +219,6 @@
                     <div class="pricing-foot">Todo lo demás sigue siendo gratis. Pro solo añade extras.</div>
                 </div>
             </div>
-            <div class="section" id="precios-regionales">
-                <div class="section-head regional-head">
-                    <h2>Precios por región</h2>
-                    <p>2,99 € es el precio de lanzamiento en España. En países donde ese importe es demasiado, Pro cuesta bastante menos: prefiero que la app llegue a quien quiera usarla antes que dejar fuera a medio mundo. Estos son los precios de lanzamiento. Cuando termine la oferta, cada tramo sube en la misma proporción: el de 0,99 € pasa a 1,79 €, el de 1,79 € a 2,99 € y el resto a 4,99 €.</p>
-                </div>
-                <details class="regional-details">
-                <summary>Ver precios por país</summary>
-
-                <div class="regional-tier">
-                    <h3>Alrededor de 0,99 €</h3>
-                    <ul class="regional-list">
-                        <li><span class="rp-country">India</span><span class="rp-prices"><span class="rp-now">110 INR</span><span class="rp-arrow">→</span><span class="rp-later">199 INR</span></span></li>
-                        <li><span class="rp-country">Turquía</span><span class="rp-prices"><span class="rp-now">53,99 TRY</span><span class="rp-arrow">→</span><span class="rp-later">97,99 TRY</span></span></li>
-                        <li><span class="rp-country">Indonesia</span><span class="rp-prices"><span class="rp-now">17.000 IDR</span><span class="rp-arrow">→</span><span class="rp-later">31.000 IDR</span></span></li>
-                        <li><span class="rp-country">Filipinas</span><span class="rp-prices"><span class="rp-now">66 PHP</span><span class="rp-arrow">→</span><span class="rp-later">119 PHP</span></span></li>
-                        <li><span class="rp-country">Egipto</span><span class="rp-prices"><span class="rp-now">55,99 EGP</span><span class="rp-arrow">→</span><span class="rp-later">99,99 EGP</span></span></li>
-                        <li><span class="rp-country">Pakistán</span><span class="rp-prices"><span class="rp-now">270 PKR</span><span class="rp-arrow">→</span><span class="rp-later">490 PKR</span></span></li>
-                        <li><span class="rp-country">Nigeria</span><span class="rp-prices"><span class="rp-now">1.420 NGN</span><span class="rp-arrow">→</span><span class="rp-later">2.570 NGN</span></span></li>
-                        <li><span class="rp-country">Vietnam</span><span class="rp-prices"><span class="rp-now">25.000 VND</span><span class="rp-arrow">→</span><span class="rp-later">45.000 VND</span></span></li>
-                        <li><span class="rp-country">Ucrania</span><span class="rp-prices"><span class="rp-now">49,99 UAH</span><span class="rp-arrow">→</span><span class="rp-later">89,99 UAH</span></span></li>
-                        <li><span class="rp-country">Kenia</span><span class="rp-prices"><span class="rp-now">200 KES</span><span class="rp-arrow">→</span><span class="rp-later">360 KES</span></span></li>
-                        <li><span class="rp-country">Marruecos</span><span class="rp-prices"><span class="rp-now">10,99 MAD</span><span class="rp-arrow">→</span><span class="rp-later">19,99 MAD</span></span></li>
-                        <li><span class="rp-country">Bangladés</span><span class="rp-prices"><span class="rp-now">150 BDT</span><span class="rp-arrow">→</span><span class="rp-later">270 BDT</span></span></li>
-                        <li><span class="rp-country">Argentina</span><span class="rp-prices"><span class="rp-now">0,96 USD</span><span class="rp-arrow">→</span><span class="rp-later">1,74 USD</span></span></li>
-                    </ul>
-                </div>
-
-                <div class="regional-tier">
-                    <h3>Alrededor de 1,79 €</h3>
-                    <ul class="regional-list">
-                        <li><span class="rp-country">México</span><span class="rp-prices"><span class="rp-now">35 MXN</span><span class="rp-arrow">→</span><span class="rp-later">59 MXN</span></span></li>
-                        <li><span class="rp-country">Brasil</span><span class="rp-prices"><span class="rp-now">8,99 BRL</span><span class="rp-arrow">→</span><span class="rp-later">14,99 BRL</span></span></li>
-                        <li><span class="rp-country">Colombia</span><span class="rp-prices"><span class="rp-now">5.500 COP</span><span class="rp-arrow">→</span><span class="rp-later">9.200 COP</span></span></li>
-                        <li><span class="rp-country">Chile</span><span class="rp-prices"><span class="rp-now">1.900 CLP</span><span class="rp-arrow">→</span><span class="rp-later">3.200 CLP</span></span></li>
-                        <li><span class="rp-country">Perú</span><span class="rp-prices"><span class="rp-now">5,99 PEN</span><span class="rp-arrow">→</span><span class="rp-later">9,99 PEN</span></span></li>
-                        <li><span class="rp-country">Polonia</span><span class="rp-prices"><span class="rp-now">8,09 PLN</span><span class="rp-arrow">→</span><span class="rp-later">13,49 PLN</span></span></li>
-                        <li><span class="rp-country">Rumanía</span><span class="rp-prices"><span class="rp-now">9,49 RON</span><span class="rp-arrow">→</span><span class="rp-later">15,99 RON</span></span></li>
-                        <li><span class="rp-country">Hungría</span><span class="rp-prices"><span class="rp-now">699 HUF</span><span class="rp-arrow">→</span><span class="rp-later">1.170 HUF</span></span></li>
-                        <li><span class="rp-country">Chequia</span><span class="rp-prices"><span class="rp-now">44,99 CZK</span><span class="rp-arrow">→</span><span class="rp-later">74,99 CZK</span></span></li>
-                        <li><span class="rp-country">Sudáfrica</span><span class="rp-prices"><span class="rp-now">32,99 ZAR</span><span class="rp-arrow">→</span><span class="rp-later">54,99 ZAR</span></span></li>
-                        <li><span class="rp-country">Malasia</span><span class="rp-prices"><span class="rp-now">7,49 MYR</span><span class="rp-arrow">→</span><span class="rp-later">12,49 MYR</span></span></li>
-                        <li><span class="rp-country">Tailandia</span><span class="rp-prices"><span class="rp-now">62 THB</span><span class="rp-arrow">→</span><span class="rp-later">104 THB</span></span></li>
-                    </ul>
-                </div>
-
-                <div class="regional-tier">
-                    <h3>Resto de países</h3>
-                    <ul class="regional-list">
-                        <li><span class="rp-country">España</span><span class="rp-prices"><span class="rp-now">2,99 EUR</span><span class="rp-arrow">→</span><span class="rp-later">4,99 EUR</span></span></li>
-                        <li><span class="rp-country">Alemania</span><span class="rp-prices"><span class="rp-now">3,59 EUR</span><span class="rp-arrow">→</span><span class="rp-later">5,99 EUR</span></span></li>
-                        <li><span class="rp-country">Estados Unidos</span><span class="rp-prices"><span class="rp-now">3,39 USD</span><span class="rp-arrow">→</span><span class="rp-later">5,69 USD</span></span></li>
-                        <li><span class="rp-country">Reino Unido</span><span class="rp-prices"><span class="rp-now">3,09 GBP</span><span class="rp-arrow">→</span><span class="rp-later">5,19 GBP</span></span></li>
-                        <li><span class="rp-country">Canadá</span><span class="rp-prices"><span class="rp-now">4,79 CAD</span><span class="rp-arrow">→</span><span class="rp-later">7,99 CAD</span></span></li>
-                        <li><span class="rp-country">Australia</span><span class="rp-prices"><span class="rp-now">5,49 AUD</span><span class="rp-arrow">→</span><span class="rp-later">8,99 AUD</span></span></li>
-                        <li><span class="rp-country">Japón</span><span class="rp-prices"><span class="rp-now">620 JPY</span><span class="rp-arrow">→</span><span class="rp-later">1.040 JPY</span></span></li>
-                    </ul>
-                    <p class="regional-note">Los precios que ves son los que pagas: llevan el impuesto de tu país ya incluido. La lista completa la ves en la ficha de Google Play desde tu país. Las diferencias entre unos y otros son la conversión de Google y los impuestos de cada sitio, no un recargo mío.</p>
-                </div>
-                </details>
             <div class="themes-strip">
                 <h3>Los temas, en tu biblioteca</h3>
                 <div class="themes-row">
@@ -522,6 +464,22 @@
             </div>
         </div>
 
+        <!-- APOYA EL PROYECTO -->
+        <div class="section" id="apoyar">
+            <h2>Apoya el proyecto</h2>
+            <p>Si te gusta Lecturameter, puedes invitarme a un cafe. Tambien hay propinas dentro de la app, con precios adaptados a cada pais.</p>
+            <div class="donate-links links-grid">
+                <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="link-box kofi">
+                    <div class="icon">☕</div>
+                    <div class="text">Ko-fi<div class="sub">ko-fi.com/lecturameter</div></div>
+                </a>
+                <a href="https://paypal.me/Lecturameter" target="_blank" rel="noopener" class="link-box paypal">
+                    <div class="icon">💙</div>
+                    <div class="text">PayPal<div class="sub">paypal.me/Lecturameter</div></div>
+                </a>
+            </div>
+        </div>
+
         <!-- ENLACES Y REDES SOCIALES -->
         <div class="section" style="margin-top:8px;">
             <h2>Enlaces</h2>
@@ -674,7 +632,7 @@
                     <div class="pricing-name">Lecturameter Pro</div>
                     <div class="price-row"><span class="price-old">4.99 EUR</span><span class="price-new">2.99 EUR</span></div>
                     <p class="price-note">Launch price. Goes up to 4.99 EUR after. One-time purchase, not a subscription.</p>
-                    <p class="price-note price-regional-link">The price is adapted to each country, and it is a lot lower in several markets. <a href="#regional-pricing">See the regional prices</a>.</p>
+                    <p class="price-note price-regional-link">The price is adapted to each country, and it is a lot lower in several markets. <a href="precios-regionales.html">See the regional prices</a>.</p>
                     <p class="price-trial">🕒 Try Pro free for 7 days, right inside the app</p>
                     <ul class="pricing-list">
                         <li>Leather, Aurora and OLED themes</li>
@@ -687,65 +645,6 @@
                     <div class="pricing-foot">Everything else stays free. Pro just adds extras.</div>
                 </div>
             </div>
-            <div class="section" id="regional-pricing">
-                <div class="section-head regional-head">
-                    <h2>Regional pricing</h2>
-                    <p>2.99 EUR is the launch price in Spain. In countries where that amount is too much, Pro costs considerably less: I would rather the app reach anyone who wants to use it than price half the world out. These are the launch prices. When the offer ends each tier goes up by the same proportion: the 0.99 EUR tier becomes 1.79 EUR, the 1.79 EUR tier becomes 2.99 EUR and the rest becomes 4.99 EUR.</p>
-                </div>
-                <details class="regional-details">
-                <summary>See prices by country</summary>
-
-                <div class="regional-tier">
-                    <h3>Around 0.99 EUR</h3>
-                    <ul class="regional-list">
-                        <li><span class="rp-country">India</span><span class="rp-prices"><span class="rp-now">110 INR</span><span class="rp-arrow">→</span><span class="rp-later">199 INR</span></span></li>
-                        <li><span class="rp-country">Türkiye</span><span class="rp-prices"><span class="rp-now">53.99 TRY</span><span class="rp-arrow">→</span><span class="rp-later">97.99 TRY</span></span></li>
-                        <li><span class="rp-country">Indonesia</span><span class="rp-prices"><span class="rp-now">17,000 IDR</span><span class="rp-arrow">→</span><span class="rp-later">31,000 IDR</span></span></li>
-                        <li><span class="rp-country">Philippines</span><span class="rp-prices"><span class="rp-now">66 PHP</span><span class="rp-arrow">→</span><span class="rp-later">119 PHP</span></span></li>
-                        <li><span class="rp-country">Egypt</span><span class="rp-prices"><span class="rp-now">55.99 EGP</span><span class="rp-arrow">→</span><span class="rp-later">99.99 EGP</span></span></li>
-                        <li><span class="rp-country">Pakistan</span><span class="rp-prices"><span class="rp-now">270 PKR</span><span class="rp-arrow">→</span><span class="rp-later">490 PKR</span></span></li>
-                        <li><span class="rp-country">Nigeria</span><span class="rp-prices"><span class="rp-now">1,420 NGN</span><span class="rp-arrow">→</span><span class="rp-later">2,570 NGN</span></span></li>
-                        <li><span class="rp-country">Vietnam</span><span class="rp-prices"><span class="rp-now">25,000 VND</span><span class="rp-arrow">→</span><span class="rp-later">45,000 VND</span></span></li>
-                        <li><span class="rp-country">Ukraine</span><span class="rp-prices"><span class="rp-now">49.99 UAH</span><span class="rp-arrow">→</span><span class="rp-later">89.99 UAH</span></span></li>
-                        <li><span class="rp-country">Kenya</span><span class="rp-prices"><span class="rp-now">200 KES</span><span class="rp-arrow">→</span><span class="rp-later">360 KES</span></span></li>
-                        <li><span class="rp-country">Morocco</span><span class="rp-prices"><span class="rp-now">10.99 MAD</span><span class="rp-arrow">→</span><span class="rp-later">19.99 MAD</span></span></li>
-                        <li><span class="rp-country">Bangladesh</span><span class="rp-prices"><span class="rp-now">150 BDT</span><span class="rp-arrow">→</span><span class="rp-later">270 BDT</span></span></li>
-                        <li><span class="rp-country">Argentina</span><span class="rp-prices"><span class="rp-now">0.96 USD</span><span class="rp-arrow">→</span><span class="rp-later">1.74 USD</span></span></li>
-                    </ul>
-                </div>
-
-                <div class="regional-tier">
-                    <h3>Around 1.79 EUR</h3>
-                    <ul class="regional-list">
-                        <li><span class="rp-country">Mexico</span><span class="rp-prices"><span class="rp-now">35 MXN</span><span class="rp-arrow">→</span><span class="rp-later">59 MXN</span></span></li>
-                        <li><span class="rp-country">Brazil</span><span class="rp-prices"><span class="rp-now">8.99 BRL</span><span class="rp-arrow">→</span><span class="rp-later">14.99 BRL</span></span></li>
-                        <li><span class="rp-country">Colombia</span><span class="rp-prices"><span class="rp-now">5,500 COP</span><span class="rp-arrow">→</span><span class="rp-later">9,200 COP</span></span></li>
-                        <li><span class="rp-country">Chile</span><span class="rp-prices"><span class="rp-now">1,900 CLP</span><span class="rp-arrow">→</span><span class="rp-later">3,200 CLP</span></span></li>
-                        <li><span class="rp-country">Peru</span><span class="rp-prices"><span class="rp-now">5.99 PEN</span><span class="rp-arrow">→</span><span class="rp-later">9.99 PEN</span></span></li>
-                        <li><span class="rp-country">Poland</span><span class="rp-prices"><span class="rp-now">8.09 PLN</span><span class="rp-arrow">→</span><span class="rp-later">13.49 PLN</span></span></li>
-                        <li><span class="rp-country">Romania</span><span class="rp-prices"><span class="rp-now">9.49 RON</span><span class="rp-arrow">→</span><span class="rp-later">15.99 RON</span></span></li>
-                        <li><span class="rp-country">Hungary</span><span class="rp-prices"><span class="rp-now">699 HUF</span><span class="rp-arrow">→</span><span class="rp-later">1,170 HUF</span></span></li>
-                        <li><span class="rp-country">Czechia</span><span class="rp-prices"><span class="rp-now">44.99 CZK</span><span class="rp-arrow">→</span><span class="rp-later">74.99 CZK</span></span></li>
-                        <li><span class="rp-country">South Africa</span><span class="rp-prices"><span class="rp-now">32.99 ZAR</span><span class="rp-arrow">→</span><span class="rp-later">54.99 ZAR</span></span></li>
-                        <li><span class="rp-country">Malaysia</span><span class="rp-prices"><span class="rp-now">7.49 MYR</span><span class="rp-arrow">→</span><span class="rp-later">12.49 MYR</span></span></li>
-                        <li><span class="rp-country">Thailand</span><span class="rp-prices"><span class="rp-now">62 THB</span><span class="rp-arrow">→</span><span class="rp-later">104 THB</span></span></li>
-                    </ul>
-                </div>
-
-                <div class="regional-tier">
-                    <h3>Everywhere else</h3>
-                    <ul class="regional-list">
-                        <li><span class="rp-country">Spain</span><span class="rp-prices"><span class="rp-now">2.99 EUR</span><span class="rp-arrow">→</span><span class="rp-later">4.99 EUR</span></span></li>
-                        <li><span class="rp-country">Germany</span><span class="rp-prices"><span class="rp-now">3.59 EUR</span><span class="rp-arrow">→</span><span class="rp-later">5.99 EUR</span></span></li>
-                        <li><span class="rp-country">United States</span><span class="rp-prices"><span class="rp-now">3.39 USD</span><span class="rp-arrow">→</span><span class="rp-later">5.69 USD</span></span></li>
-                        <li><span class="rp-country">United Kingdom</span><span class="rp-prices"><span class="rp-now">3.09 GBP</span><span class="rp-arrow">→</span><span class="rp-later">5.19 GBP</span></span></li>
-                        <li><span class="rp-country">Canada</span><span class="rp-prices"><span class="rp-now">4.79 CAD</span><span class="rp-arrow">→</span><span class="rp-later">7.99 CAD</span></span></li>
-                        <li><span class="rp-country">Australia</span><span class="rp-prices"><span class="rp-now">5.49 AUD</span><span class="rp-arrow">→</span><span class="rp-later">8.99 AUD</span></span></li>
-                        <li><span class="rp-country">Japan</span><span class="rp-prices"><span class="rp-now">620 JPY</span><span class="rp-arrow">→</span><span class="rp-later">1,040 JPY</span></span></li>
-                    </ul>
-                    <p class="regional-note">What you see is what you pay: local tax is already included. You can see the full list on the Google Play listing from your own country. The gaps between them are Google's currency conversion and local taxes, not a surcharge from me.</p>
-                </div>
-                </details>
             <div class="themes-strip">
                 <h3>The themes, in your library</h3>
                 <div class="themes-row">
@@ -988,6 +887,22 @@
                 2. Open Lecturameter → Settings → Restore local backup<br>
                 3. Select the downloaded file<br>
                 4. Done! Explore the library, stats and widget
+            </div>
+        </div>
+
+        <!-- SUPPORT THE PROJECT -->
+        <div class="section" id="support">
+            <h2>Support the project</h2>
+            <p>If you like Lecturameter, you can buy me a coffee. There are also tips inside the app, with prices adapted to each country.</p>
+            <div class="donate-links links-grid">
+                <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="link-box kofi">
+                    <div class="icon">☕</div>
+                    <div class="text">Ko-fi<div class="sub">ko-fi.com/lecturameter</div></div>
+                </a>
+                <a href="https://paypal.me/Lecturameter" target="_blank" rel="noopener" class="link-box paypal">
+                    <div class="icon">💙</div>
+                    <div class="text">PayPal<div class="sub">paypal.me/Lecturameter</div></div>
+                </a>
             </div>
         </div>
 
