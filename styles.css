@@ -110,13 +110,13 @@ body {
     align-items: center;
     padding: 48px 0 32px;
 }
-.hero-copy h1 {
+.hero-copy h1, .hero-copy h2.hero-heading {
     font-size: 54px;
     line-height: 1.1;
     font-weight: 800;
     color: #fff;
 }
-.hero-copy h1 .grad {
+.hero-copy h1 .grad, .hero-copy h2.hero-heading .grad {
     background: linear-gradient(90deg, #a5a1ff, #6c63ff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -814,7 +814,7 @@ body {
 
 /* ─── CONTACT FORM ─── */
 .page-hero { text-align: center; padding: 36px 0 10px; }
-.page-hero h1, .page-hero .h1 {
+.page-hero h1, .page-hero h2.page-heading, .page-hero .h1 {
     font-size: 30px;
     font-weight: 800;
     color: #fff;
@@ -890,7 +890,7 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-    .hero-copy h1 { font-size: 40px; }
+    .hero-copy h1, .hero-copy h2.hero-heading { font-size: 40px; }
     .features-grid { grid-template-columns: repeat(2, 1fr); }
     .testimonials-section { grid-template-columns: 1fr; gap: 12px; }
     /* Chips: de absolute a fila horizontal bajo el teléfono */
@@ -928,7 +928,7 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     .nav-links { gap: 2px; }
     .nav-links a { font-size: 12.5px; padding: 5px 8px; }
     .brand { font-size: 15px; }
-    .hero-copy h1 { font-size: 34px; }
+    .hero-copy h1, .hero-copy h2.hero-heading { font-size: 34px; }
     .hero-copy .tagline { font-size: 15px; }
     .features-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
     .feature-card { padding: 12px; }
@@ -950,7 +950,7 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 @media (max-width: 420px) {
     .features-grid { grid-template-columns: 1fr; }
     .screenshot-gallery { grid-template-columns: 1fr; }
-    .hero-copy h1 { font-size: 30px; }
+    .hero-copy h1, .hero-copy h2.hero-heading { font-size: 30px; }
 }
 
 /* ─── IDEA 01: SOCIAL PROOF BADGE ─── */
