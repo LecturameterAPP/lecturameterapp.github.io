@@ -36,7 +36,7 @@
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/?lang=es">
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/?lang=en">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="styles.css?v=250721a">
+    <link rel="stylesheet" href="styles.css?v=250726a">
 
     <!-- Schema JSON-LD -->
     <script type="application/ld+json">
@@ -129,8 +129,23 @@
             </div>
         </div>
 
+        <!-- QUÉ MIDE (plan 26-07, punto 7): las estadísticas son el motivo de la app y
+             estaban enterradas en una tarjeta a mitad de página. Ahora se ven al entrar. -->
+        <div class="section-head" style="margin-top:26px;">
+            <h2>Esto es lo que Lecturameter mide por ti</h2>
+            <p>Seis cifras que la app calcula sola con cada sesión que registras. Ninguna se inventa: si aún no hay datos, no aparece.</p>
+        </div>
+        <div class="metrics-strip stats-strip">
+            <div class="ms-cell"><span class="ms-num ms-accent">págs/día</span><div class="ms-label">Tu ritmo real de avance</div></div>
+            <div class="ms-cell"><span class="ms-num ms-green">págs/min</span><div class="ms-label">Tu velocidad con el cronómetro</div></div>
+            <div class="ms-cell"><span class="ms-num">h : m</span><div class="ms-label">Tiempo total de lectura</div></div>
+            <div class="ms-cell"><span class="ms-num ms-orange">racha</span><div class="ms-label">Días seguidos leyendo</div></div>
+            <div class="ms-cell"><span class="ms-num">% leído</span><div class="ms-label">Cuánto llevas de cada libro</div></div>
+            <div class="ms-cell"><span class="ms-num ms-accent">sesiones</span><div class="ms-label">Cuándo y cuánto lees</div></div>
+        </div>
+
         <!-- MÉTRICAS -->
-        <div class="metrics-strip">
+        <div class="metrics-strip" style="margin-top:18px;">
             <div class="ms-cell"><span class="ms-qual">Sin cuenta</span><div class="ms-label">No hace falta registrarse</div></div>
             <div class="ms-cell"><span class="ms-qual">Sin servidores</span><div class="ms-label">Todo se queda en tu móvil</div></div>
             <div class="ms-cell"><span class="ms-qual ms-orange">Sin anuncios</span><div class="ms-label">Ahora y siempre</div></div>
@@ -210,6 +225,7 @@
                     <p class="price-note">Precio de lanzamiento. Sube a 4,99 € después. Una compra única, no una suscripción.</p>
                     <p class="price-note price-regional-link">El precio está adaptado a cada país: en varios mercados es bastante más bajo. <a href="precios-regionales.html">Mira los precios por región</a>.</p>
                     <p class="price-trial">🕒 Prueba Pro gratis 7 días, dentro de la propia app</p>
+                    <p class="price-trial">💳 Sin tarjeta: la prueba gratis no te pide ningún dato de pago</p>
                     <ul class="pricing-list">
                         <li>Temas Cuero, Aurora y OLED</li>
                         <li>Icono dorado alternativo</li>
@@ -546,8 +562,22 @@
             </div>
         </div>
 
+        <!-- WHAT IT MEASURES EN (plan 26-07, point 7) -->
+        <div class="section-head" style="margin-top:26px;">
+            <h2>This is what Lecturameter measures for you</h2>
+            <p>Six figures the app works out on its own from every session you log. None of them are made up: if there is no data yet, the figure simply does not show.</p>
+        </div>
+        <div class="metrics-strip stats-strip">
+            <div class="ms-cell"><span class="ms-num ms-accent">pages/day</span><div class="ms-label">Your real pace</div></div>
+            <div class="ms-cell"><span class="ms-num ms-green">pages/min</span><div class="ms-label">Your speed, timed</div></div>
+            <div class="ms-cell"><span class="ms-num">h : m</span><div class="ms-label">Total reading time</div></div>
+            <div class="ms-cell"><span class="ms-num ms-orange">streak</span><div class="ms-label">Days in a row reading</div></div>
+            <div class="ms-cell"><span class="ms-num">% read</span><div class="ms-label">How far into each book</div></div>
+            <div class="ms-cell"><span class="ms-num ms-accent">sessions</span><div class="ms-label">When and how much you read</div></div>
+        </div>
+
         <!-- METRICS EN -->
-        <div class="metrics-strip">
+        <div class="metrics-strip" style="margin-top:18px;">
             <div class="ms-cell"><span class="ms-qual">No account</span><div class="ms-label">No sign-up needed</div></div>
             <div class="ms-cell"><span class="ms-qual">No servers</span><div class="ms-label">Everything stays on your phone</div></div>
             <div class="ms-cell"><span class="ms-qual ms-orange">No ads</span><div class="ms-label">Now and always</div></div>
@@ -627,6 +657,7 @@
                     <p class="price-note">Launch price. Goes up to 4.99 EUR after. One-time purchase, not a subscription.</p>
                     <p class="price-note price-regional-link">The price is adapted to each country, and it is a lot lower in several markets. <a href="precios-regionales.html">See the regional prices</a>.</p>
                     <p class="price-trial">🕒 Try Pro free for 7 days, right inside the app</p>
+                    <p class="price-trial">💳 No card needed: the free trial never asks for payment details</p>
                     <ul class="pricing-list">
                         <li>Leather, Aurora and OLED themes</li>
                         <li>Alternative gold icon</li>

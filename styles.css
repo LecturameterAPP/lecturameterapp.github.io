@@ -1012,6 +1012,28 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 .ms-qual.ms-green  { color: var(--green); }
 .ms-qual.ms-orange { color: var(--orange); }
 
+/* Plan 26-07 (7): tira de las metricas que mide la app. Reusa .metrics-strip pero con seis
+   celdas, y sus rotulos son palabras (pags/dia, racha...), no numeros: por eso baja el
+   tamano y se permite el ajuste de linea, que .ms-num no contemplaba. */
+/* Doble clase a proposito: las reglas responsive genericas de .metrics-strip viven mas
+   abajo en el fichero y ganarian por orden con igual especificidad. */
+.metrics-strip.stats-strip { grid-template-columns: repeat(6, 1fr); }
+.metrics-strip.stats-strip .ms-num { font-size: 19px; letter-spacing: -.01em; }
+.metrics-strip.stats-strip .ms-cell { padding: 18px 10px; }
+@media (max-width: 900px) {
+    .metrics-strip.stats-strip { grid-template-columns: repeat(3, 1fr); }
+    .metrics-strip.stats-strip .ms-cell { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .metrics-strip.stats-strip .ms-cell:nth-child(3n) { border-right: none; }
+    .metrics-strip.stats-strip .ms-cell:nth-last-child(-n+3) { border-bottom: none; }
+}
+@media (max-width: 560px) {
+    .metrics-strip.stats-strip { grid-template-columns: repeat(2, 1fr); }
+    .metrics-strip.stats-strip .ms-num { font-size: 17px; }
+    .metrics-strip.stats-strip .ms-cell { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .metrics-strip.stats-strip .ms-cell:nth-child(2n) { border-right: none; }
+    .metrics-strip.stats-strip .ms-cell:nth-last-child(-n+2) { border-bottom: none; }
+}
+
 /* ─── IDEA 03: BENTO FEATURES ─── */
 .bento-features {
     display: grid;
