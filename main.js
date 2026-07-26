@@ -186,8 +186,12 @@ function setLang(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    let lang = 'es';
-    try { lang = localStorage.getItem('lm_lang') || 'es'; } catch(e) {}
+    let lang;
+    try { lang = localStorage.getItem('lm_lang'); } catch(e) {}
+    if (!lang) {
+        const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        lang = browserLang.startsWith('es') ? 'es' : 'en';
+    }
     setLang(lang);
     newCaptcha('captchaQuestionFb-es');
     newCaptcha('captchaQuestionFb-en');
