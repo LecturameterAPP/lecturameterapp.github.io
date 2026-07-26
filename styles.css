@@ -1011,6 +1011,8 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 .ms-qual { display: block; font-size: 17px; font-weight: 700; color: #fff; letter-spacing: -.01em; }
 .ms-qual.ms-green  { color: var(--green); }
 .ms-qual.ms-orange { color: var(--orange); }
+.ms-qual.ms-accent { color: var(--accent); }
+.ms-qual.ms-red    { color: var(--red); }
 
 /* Plan 26-07 (7): tira de las metricas que mide la app. Reusa .metrics-strip pero con seis
    celdas, y sus rotulos son palabras (pags/dia, racha...), no numeros: por eso baja el
