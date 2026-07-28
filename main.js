@@ -223,32 +223,19 @@ function renderWhatsNew(lang) {
 }
 
 function loadWhatsNew() {
-    fetch('whatsnew.json')
+    var base = document.querySelector('script[src*="main.js"]');
+    var jsonUrl = base ? base.src.replace('main.js', 'whatsnew.json') : '../whatsnew.json';
+    var lang = document.documentElement.lang || 'es';
+    fetch(jsonUrl)
         .then(function(r) { return r.json(); })
         .then(function(data) {
             _whatsnewData = data;
-            renderWhatsNew('es');
-            renderWhatsNew('en');
+            renderWhatsNew(lang);
         })
         .catch(function() {
-            ['es', 'en'].forEach(function(lang) {
-                var c = document.getElementById('whatsnew-' + lang);
-                if (c) c.innerHTML = '<div class="whatsnew-error">' +
-                    (lang === 'es' ? 'No se pudieron cargar las notas.' : 'Could not load patch notes.') + '</div>';
-            });
+            var c = document.getElementById('whatsnew-' + lang);
+            if (c) c.innerHTML = '<div class="whatsnew-error">' +
+                (lang === 'es' ? 'No se pudieron cargar las notas.' : 'Could not load patch notes.') + '</div>';
         });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    let lang;
-    try { lang = localStorage.getItem('lm_lang'); } catch(e) {}
-    if (!lang) {
-        const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-        lang = browserLang.startsWith('es') ? 'es' : 'en';
-    }
-    setLang(lang);
-    loadWhatsNew();
-    newCaptcha('captchaQuestionFb-es');
-    newCaptcha('captchaQuestionFb-en');
-    document.querySelectorAll('.gallery-phone img').forEach(function(img){ img.loading = 'lazy'; });
-});

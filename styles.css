@@ -83,7 +83,7 @@ body {
 .nav-links a.active { color: var(--accent); font-weight: 600; background: var(--accent-soft); }
 
 .lang-bar { display: flex; gap: 6px; }
-.lang-bar button {
+.lang-bar button, .lang-bar a {
     background: none;
     border: 1.5px solid var(--line);
     padding: 5px 14px;
@@ -92,9 +92,10 @@ body {
     font-weight: 500;
     cursor: pointer;
     color: var(--muted);
+    text-decoration: none;
     transition: 0.2s ease;
 }
-.lang-bar button.active {
+.lang-bar button.active, .lang-bar a.active {
     border-color: var(--accent);
     background: var(--accent-soft);
     color: var(--accent);
