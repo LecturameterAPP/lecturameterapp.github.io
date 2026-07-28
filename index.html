@@ -417,6 +417,7 @@
                     <p>Lo que está en camino después del lanzamiento. Sin fechas concretas.</p>
                 </div>
                 <div class="roadmap-pagi-wrap">
+                    <div class="pagi-bubble" id="pagi-bubble-es"></div>
                     <div class="roadmap-pagi-glow"></div>
                     <svg id="pagi-es" class="pagi-svg pagi-mascot" data-expr="neutral" viewBox="-36 -8 272 468" width="72" overflow="visible" role="img" aria-label="Pagi, la mascota de Lecturameter">
                         <g class="body-g">
@@ -872,6 +873,7 @@
                     <p>What's coming after launch. No firm dates.</p>
                 </div>
                 <div class="roadmap-pagi-wrap">
+                    <div class="pagi-bubble" id="pagi-bubble-en"></div>
                     <div class="roadmap-pagi-glow"></div>
                     <svg id="pagi-en" class="pagi-svg pagi-mascot" data-expr="neutral" viewBox="-36 -8 272 468" width="72" overflow="visible" role="img" aria-label="Pagi, Lecturameter's mascot">
                         <g class="body-g">
@@ -1143,6 +1145,18 @@
 
     tick();
     setInterval(tick, 2500);
+
+    document.querySelectorAll('.pagi-mascot').forEach(function(svg) {
+        svg.addEventListener('click', function() {
+            var lang = document.documentElement.lang || 'es';
+            var bubble = svg.closest('.roadmap-pagi-wrap').querySelector('.pagi-bubble');
+            if (!bubble) return;
+            bubble.textContent = lang === 'en' ? 'Hey! Stop!' : '¡Eh, para!';
+            bubble.classList.add('show');
+            clearTimeout(bubble._tid);
+            bubble._tid = setTimeout(function() { bubble.classList.remove('show'); }, 1800);
+        });
+    });
 })();
 </script>
 </body>
