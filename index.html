@@ -421,7 +421,7 @@
                     <div class="roadmap-pagi-glow"></div>
                     <svg id="pagi-es" class="pagi-svg pagi-mascot" data-expr="neutral" viewBox="-36 -8 272 468" width="72" overflow="visible" role="img" aria-label="Pagi, la mascota de Lecturameter">
                         <g class="body-g">
-                            <path d="M 0 26 Q 0 0 26 0 L 174 0 Q 200 0 200 26 L 200 440 L 100 396 L 0 440 Z" fill="var(--accent)"/>
+                            <path class="pagi-body" d="M 0 26 Q 0 0 26 0 L 174 0 Q 200 0 200 26 L 200 440 L 100 396 L 0 440 Z" fill="var(--accent)"/>
                             <circle cx="100" cy="27" r="13" fill="#1D1822" opacity="0.28"/>
                             <rect x="32" y="296" width="136" height="19" rx="9.5" fill="rgba(0,0,0,0.15)"/>
                             <rect class="pagi-bar" x="32" y="296" width="88" height="19" rx="9.5" fill="rgba(255,255,255,0.6)"/>
@@ -430,6 +430,10 @@
                             <rect x="44" y="384" width="112" height="7" rx="3.5" fill="rgba(0,0,0,0.18)"/>
                             <ellipse class="arm-l" cx="-24" cy="238" rx="20" ry="14" fill="var(--accent)"/>
                             <ellipse class="arm-r" cx="224" cy="238" rx="20" ry="14" fill="var(--accent)"/>
+                            <ellipse class="steam-1" cx="62" cy="-28" rx="10" ry="7" fill="#C03030" style="display:none"/>
+                            <ellipse class="steam-2" cx="134" cy="-36" rx="8" ry="6" fill="#C03030" style="display:none"/>
+                            <circle class="blush blush-l" cx="44" cy="192" r="24" fill="#D94040" style="display:none"/>
+                            <circle class="blush blush-r" cx="156" cy="192" r="24" fill="#D94040" style="display:none"/>
                             <g class="eye-g">
                                 <ellipse class="pagi-sclera" cx="88" cy="152" rx="56" ry="62" fill="white"/>
                                 <g class="pupil-g">
@@ -877,7 +881,7 @@
                     <div class="roadmap-pagi-glow"></div>
                     <svg id="pagi-en" class="pagi-svg pagi-mascot" data-expr="neutral" viewBox="-36 -8 272 468" width="72" overflow="visible" role="img" aria-label="Pagi, Lecturameter's mascot">
                         <g class="body-g">
-                            <path d="M 0 26 Q 0 0 26 0 L 174 0 Q 200 0 200 26 L 200 440 L 100 396 L 0 440 Z" fill="var(--accent)"/>
+                            <path class="pagi-body" d="M 0 26 Q 0 0 26 0 L 174 0 Q 200 0 200 26 L 200 440 L 100 396 L 0 440 Z" fill="var(--accent)"/>
                             <circle cx="100" cy="27" r="13" fill="#1D1822" opacity="0.28"/>
                             <rect x="32" y="296" width="136" height="19" rx="9.5" fill="rgba(0,0,0,0.15)"/>
                             <rect class="pagi-bar" x="32" y="296" width="88" height="19" rx="9.5" fill="rgba(255,255,255,0.6)"/>
@@ -886,6 +890,10 @@
                             <rect x="44" y="384" width="112" height="7" rx="3.5" fill="rgba(0,0,0,0.18)"/>
                             <ellipse class="arm-l" cx="-24" cy="238" rx="20" ry="14" fill="var(--accent)"/>
                             <ellipse class="arm-r" cx="224" cy="238" rx="20" ry="14" fill="var(--accent)"/>
+                            <ellipse class="steam-1" cx="62" cy="-28" rx="10" ry="7" fill="#C03030" style="display:none"/>
+                            <ellipse class="steam-2" cx="134" cy="-36" rx="8" ry="6" fill="#C03030" style="display:none"/>
+                            <circle class="blush blush-l" cx="44" cy="192" r="24" fill="#D94040" style="display:none"/>
+                            <circle class="blush blush-r" cx="156" cy="192" r="24" fill="#D94040" style="display:none"/>
                             <g class="eye-g">
                                 <ellipse class="pagi-sclera" cx="88" cy="152" rx="56" ry="62" fill="white"/>
                                 <g class="pupil-g">
@@ -1144,17 +1152,71 @@
     }
 
     tick();
-    setInterval(tick, 2500);
+    var cycleTimer = setInterval(tick, 2500);
+    var angryTimer = null;
+
+    function applyAngry(svg) {
+        svg.setAttribute('data-expr', 'enfadado');
+        svg.querySelector('.pagi-brow').setAttribute('d', 'M 38 62 L 68 82 L 88 70 L 108 82 L 138 62');
+        svg.querySelector('.pagi-brow').setAttribute('stroke-linejoin', 'round');
+        svg.querySelector('.eye-g').style.display = '';
+        svg.querySelector('.pagi-sclera').setAttribute('ry', '58');
+        svg.querySelector('.pagi-pupil').setAttribute('cx', '88');
+        svg.querySelector('.pagi-pupil').setAttribute('cy', '168');
+        svg.querySelector('.pagi-pupil').setAttribute('r', '30');
+        svg.querySelector('.pagi-hl1').setAttribute('cx', '100');
+        svg.querySelector('.pagi-hl1').setAttribute('cy', '155');
+        svg.querySelector('.pagi-hl1').setAttribute('r', '10');
+        svg.querySelector('.pagi-hl2').setAttribute('cx', '75');
+        svg.querySelector('.pagi-hl2').setAttribute('cy', '183');
+        svg.querySelector('.pagi-hl2').setAttribute('r', '4.5');
+        svg.querySelector('.pagi-sclera-closed').style.display = 'none';
+        svg.querySelector('.pagi-eye-closed').style.display = 'none';
+        svg.querySelector('.tear').style.display = 'none';
+        svg.querySelector('.pagi-stars').style.display = 'none';
+        svg.querySelector('.arm-l').setAttribute('cy', '210');
+        svg.querySelector('.arm-r').setAttribute('cy', '210');
+        svg.querySelector('.steam-1').style.display = '';
+        svg.querySelector('.steam-2').style.display = '';
+        svg.querySelector('.blush-l').style.display = '';
+        svg.querySelector('.blush-r').style.display = '';
+        var bar = svg.querySelector('.pagi-bar');
+        bar.style.display = ''; bar.setAttribute('width', '52');
+    }
+
+    function clearAngry(svg) {
+        svg.querySelector('.pagi-brow').removeAttribute('stroke-linejoin');
+        svg.querySelector('.pagi-sclera').setAttribute('ry', '62');
+        svg.querySelector('.pagi-pupil').setAttribute('r', '31');
+        svg.querySelector('.pagi-hl1').setAttribute('r', '10.5');
+        svg.querySelector('.pagi-hl2').setAttribute('r', '5');
+        svg.querySelector('.steam-1').style.display = 'none';
+        svg.querySelector('.steam-2').style.display = 'none';
+        svg.querySelector('.blush-l').style.display = 'none';
+        svg.querySelector('.blush-r').style.display = 'none';
+    }
 
     document.querySelectorAll('.pagi-mascot').forEach(function(svg) {
         svg.addEventListener('click', function() {
             var lang = document.documentElement.lang || 'es';
             var bubble = svg.closest('.roadmap-pagi-wrap').querySelector('.pagi-bubble');
             if (!bubble) return;
+
+            clearInterval(cycleTimer);
+            clearTimeout(angryTimer);
+
+            document.querySelectorAll('.pagi-mascot').forEach(function(s) { applyAngry(s); });
+
             bubble.textContent = lang === 'en' ? 'Hey! Stop!' : '¡Eh, para!';
             bubble.classList.add('show');
             clearTimeout(bubble._tid);
             bubble._tid = setTimeout(function() { bubble.classList.remove('show'); }, 1800);
+
+            angryTimer = setTimeout(function() {
+                document.querySelectorAll('.pagi-mascot').forEach(function(s) { clearAngry(s); });
+                tick();
+                cycleTimer = setInterval(tick, 2500);
+            }, 2000);
         });
     });
 })();
