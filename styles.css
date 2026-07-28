@@ -1601,3 +1601,144 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
 @media (max-width: 560px) {
     .regional-list { grid-template-columns: 1fr; }
 }
+
+/* ─── ROADMAP ─── */
+.roadmap-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+.roadmap-head-text h2 {
+    font-size: 27px;
+    font-weight: 800;
+    color: #fff;
+    text-align: left;
+    margin: 0 0 6px;
+}
+.roadmap-head-text > p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+.roadmap-pagi-wrap {
+    position: relative;
+    flex-shrink: 0;
+    padding-top: 4px;
+}
+.roadmap-pagi-glow {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(ellipse, rgba(139,139,255,0.32), transparent 68%);
+    filter: blur(18px);
+    pointer-events: none;
+    z-index: 0;
+}
+.pagi-svg { position: relative; z-index: 1; display: block; }
+@keyframes pagi-float{0%,100%{transform:translateY(-2.2%) rotate(-0.7deg)}50%{transform:translateY(2.2%) rotate(0.7deg)}}
+@keyframes pagi-ponder{0%,100%{transform:translateY(-1.4%) rotate(-2.6deg)}50%{transform:translateY(1.4%) rotate(-1.2deg)}}
+@keyframes pagi-droop{0%,100%{transform:translateY(-0.8%) rotate(-0.4deg)}50%{transform:translateY(1.8%) rotate(0.4deg)}}
+@keyframes pagi-hop{0%{transform:translateY(0) rotate(0)}18%{transform:translateY(0) scaleY(.94) rotate(0)}42%{transform:translateY(-7%) rotate(-2deg)}62%{transform:translateY(-4%) rotate(2deg)}82%{transform:translateY(0) scaleY(.97) rotate(0)}100%{transform:translateY(0) rotate(0)}}
+@keyframes pagi-blink{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.08)}}
+@keyframes pagi-glance{0%,26%{transform:translate(0,0)}33%,44%{transform:translate(-9px,3px)}52%,63%{transform:translate(10px,-2px)}71%,100%{transform:translate(0,0)}}
+@keyframes pagi-muse{0%,26%{transform:translate(0,0)}30%,44%{transform:translate(-9px,3px)}52%,63%{transform:translate(8px,-2px)}71%,100%{transform:translate(0,0)}}
+@keyframes pagi-arm-l{0%,100%{transform:translate(-1.5%,2.4%)}50%{transform:translate(1.5%,-2.4%)}}
+@keyframes pagi-arm-r{0%,100%{transform:translate(1.5%,-2.4%)}50%{transform:translate(-1.5%,2.6%)}}
+@keyframes pagi-arm-ponder{0%,100%{transform:translate(6%,-2%)}50%{transform:translate(2%,-8%)}}
+@keyframes pagi-cheer-l{0%,100%{transform:translate(-4%,6%) rotate(-8deg)}50%{transform:translate(2%,-26%) rotate(16deg)}}
+@keyframes pagi-cheer-r{0%,100%{transform:translate(4%,6%) rotate(8deg)}50%{transform:translate(-2%,-26%) rotate(-16deg)}}
+@keyframes pagi-tear-fall{0%,40%{transform:translateY(0);opacity:0}55%{opacity:1}90%,100%{transform:translateY(46px);opacity:0}}
+@keyframes pagi-spark{0%,100%{transform:scale(.5);opacity:.35}50%{transform:scale(1);opacity:1}}
+@keyframes pagi-star{0%,100%{transform:scale(.45) rotate(-18deg);opacity:.4}50%{transform:scale(1) rotate(12deg);opacity:1}}
+.pagi-mascot .body-g{transform-origin:100px 248px;animation:pagi-float 4.2s ease-in-out infinite}
+.pagi-mascot .eye-g{transform-box:fill-box;transform-origin:center;animation:pagi-blink 6.5s ease-in-out infinite}
+.pagi-mascot .pupil-g{animation:pagi-glance 7.5s ease-in-out infinite}
+.pagi-mascot .arm-l{animation:pagi-arm-l 3.4s ease-in-out infinite}
+.pagi-mascot .arm-r{animation:pagi-arm-r 3.8s ease-in-out infinite}
+.pagi-mascot[data-expr="pensativo"] .body-g{animation-name:pagi-ponder;animation-duration:5.6s}
+.pagi-mascot[data-expr="pensativo"] .pupil-g{animation-name:pagi-muse;animation-duration:6.4s}
+.pagi-mascot[data-expr="pensativo"] .arm-l{animation-duration:5.2s}
+.pagi-mascot[data-expr="pensativo"] .arm-r{transform-box:fill-box;transform-origin:20% 50%;animation:pagi-arm-ponder 3.2s ease-in-out infinite}
+.pagi-mascot[data-expr="triste"] .body-g{animation-name:pagi-droop;animation-duration:6.8s}
+.pagi-mascot[data-expr="triste"] .arm-l{animation-duration:7s}
+.pagi-mascot[data-expr="triste"] .arm-r{animation-duration:7s;animation-delay:1s}
+.pagi-mascot[data-expr="triste"] .tear{transform-origin:106px 208px;animation:pagi-tear-fall 3.8s ease-in infinite}
+.pagi-mascot[data-expr="celebrando"] .body-g{animation:pagi-hop 1.15s cubic-bezier(.3,.7,.4,1) infinite}
+.pagi-mascot[data-expr="celebrando"] .arm-l{transform-box:fill-box;transform-origin:80% 50%;animation:pagi-cheer-l .575s ease-in-out infinite}
+.pagi-mascot[data-expr="celebrando"] .arm-r{transform-box:fill-box;transform-origin:20% 50%;animation:pagi-cheer-r .575s ease-in-out infinite}
+.pagi-mascot .sp1{transform-box:fill-box;transform-origin:center;animation:pagi-spark 2.1s ease-in-out infinite}
+.pagi-mascot .sp2{transform-box:fill-box;transform-origin:center;animation:pagi-spark 2.1s ease-in-out infinite .5s}
+.pagi-mascot .sp3{transform-box:fill-box;transform-origin:center;animation:pagi-spark 1.7s ease-in-out infinite .9s}
+.pagi-mascot .sp4{transform-box:fill-box;transform-origin:center;animation:pagi-spark 1.9s ease-in-out infinite .2s}
+.pagi-mascot .sp5{transform-box:fill-box;transform-origin:center;animation:pagi-spark 2.4s ease-in-out infinite 1.1s}
+.pagi-mascot .sp6{transform-box:fill-box;transform-origin:center;animation:pagi-spark 2.2s ease-in-out infinite .7s}
+.pagi-mascot .sp7{transform-box:fill-box;transform-origin:center;animation:pagi-spark 2s ease-in-out infinite .35s}
+.pagi-mascot .sp8{transform-box:fill-box;transform-origin:center;animation:pagi-spark 1.8s ease-in-out infinite 1.3s}
+.pagi-mascot .st1{transform-box:fill-box;transform-origin:center;animation:pagi-star 2.3s ease-in-out infinite}
+.pagi-mascot .st2{transform-box:fill-box;transform-origin:center;animation:pagi-star 2.6s ease-in-out infinite .6s}
+.pagi-mascot .st3{transform-box:fill-box;transform-origin:center;animation:pagi-star 2.1s ease-in-out infinite 1s}
+.pagi-mascot .st4{transform-box:fill-box;transform-origin:center;animation:pagi-star 2.8s ease-in-out infinite .3s}
+@media (prefers-reduced-motion: reduce) {
+    .pagi-mascot .body-g, .pagi-mascot .eye-g, .pagi-mascot .pupil-g,
+    .pagi-mascot .arm-l, .pagi-mascot .arm-r, .pagi-mascot .tear,
+    .pagi-mascot .sp1,.pagi-mascot .sp2,.pagi-mascot .sp3,.pagi-mascot .sp4,
+    .pagi-mascot .sp5,.pagi-mascot .sp6,.pagi-mascot .sp7,.pagi-mascot .sp8,
+    .pagi-mascot .st1,.pagi-mascot .st2,.pagi-mascot .st3,.pagi-mascot .st4 { animation: none; }
+}
+.roadmap-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.roadmap-item {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 15px 18px;
+    transition: border-color 0.2s, background 0.2s;
+}
+.roadmap-item:hover {
+    border-color: rgba(139,139,255,0.5);
+    background: var(--card-2);
+}
+.roadmap-item-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+}
+.roadmap-item h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+.roadmap-item p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.55;
+    margin: 0;
+}
+.roadmap-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.badge-dev   { background: rgba(139,139,255,0.16); color: var(--accent);  border: 1px solid rgba(139,139,255,0.32); }
+.badge-soon  { background: rgba(16,185,129,0.14);  color: var(--green);   border: 1px solid rgba(16,185,129,0.28); }
+.badge-study { background: rgba(90,162,245,0.14);  color: #5aa2f5;        border: 1px solid rgba(90,162,245,0.28); }
+.badge-cond  { background: rgba(245,158,11,0.14);  color: var(--orange);  border: 1px solid rgba(245,158,11,0.28); }
+@media (max-width: 620px) {
+    .roadmap-head { flex-direction: column-reverse; gap: 12px; }
+    .roadmap-items { grid-template-columns: 1fr; }
+}
