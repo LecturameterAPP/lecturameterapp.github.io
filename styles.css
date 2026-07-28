@@ -1749,3 +1749,78 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     .roadmap-head { flex-direction: column-reverse; gap: 12px; }
     .roadmap-items { grid-template-columns: 1fr; }
 }
+
+/* ─── WHAT'S NEW / NOTAS DEL PARCHE ─── */
+.whatsnew-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+.whatsnew-group {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px;
+}
+.whatsnew-group-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.whatsnew-group-title .wn-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.wn-dot-new { background: var(--green); }
+.wn-dot-fix { background: var(--orange); }
+.whatsnew-group-title.wn-new { color: var(--green); }
+.whatsnew-group-title.wn-fix { color: var(--orange); }
+.whatsnew-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.whatsnew-list li {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.5;
+    padding-left: 14px;
+    position: relative;
+}
+.whatsnew-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--line);
+}
+.whatsnew-loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    padding: 20px 0;
+}
+.whatsnew-error {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 12px 0;
+}
+@media (max-width: 620px) {
+    .whatsnew-container { grid-template-columns: 1fr; }
+}
