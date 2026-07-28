@@ -1,0 +1,29 @@
+{
+  "notesVersion": 1,
+  "es": {
+    "new": [
+      "Versión de lanzamiento de Lecturameter",
+      "Sesiones, ediciones por libro y fecha estimada de fin",
+      "Búsqueda sin conexión, estadísticas, rachas y Wrapped",
+      "Widgets y copias en Google Drive"
+    ],
+    "fixes": [
+      "Avisos con reintento si falla una compra o propina",
+      "Títulos en español con sus tildes y eñes",
+      "Botones de copias con mejor contraste"
+    ]
+  },
+  "en": {
+    "new": [
+      "Lecturameter launch version",
+      "Sessions, per-book editions and an estimated finish date",
+      "Offline search, stats, streaks and yearly Wrapped",
+      "Widgets and Google Drive backups"
+    ],
+    "fixes": [
+      "Retry prompts if a purchase or tip fails",
+      "Spanish titles now show their accents",
+      "Backup buttons with better contrast"
+    ]
+  }
+}
