@@ -173,17 +173,6 @@ body {
 }
 .btn-download.secondary:hover { background: var(--card-2); }
 .btn-download.btn-download-sm { font-size: 14px; padding: 9px 22px; }
-.cta-arrow { color: var(--muted); font-size: 18px; }
-.steps-hint {
-    font-size: 13px;
-    color: var(--orange);
-    margin-top: 14px;
-    background: rgba(245, 158, 11, 0.09);
-    border: 1px solid rgba(245, 158, 11, 0.3);
-    border-radius: 10px;
-    padding: 9px 13px;
-    display: inline-block;
-}
 .hero-category { font-size: 13px; color: var(--muted); margin-top: 6px; margin-bottom: 2px; letter-spacing: .02em; }
 .hero-subnote { font-size: 12px; color: var(--muted); margin-top: 10px; }
 .subnote-link { color: var(--accent); text-decoration: none; font-weight: 600; }
@@ -951,33 +940,6 @@ h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px;
     .features-grid { grid-template-columns: 1fr; }
     .screenshot-gallery { grid-template-columns: 1fr; }
     .hero-copy h1, .hero-copy h2.hero-heading { font-size: 30px; }
-}
-
-/* ─── IDEA 01: SOCIAL PROOF BADGE ─── */
-.hero-proof-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 14px;
-    background: rgba(16, 185, 129, 0.1);
-    border: 1px solid rgba(16, 185, 129, 0.3);
-    border-radius: 100px;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--green);
-    margin-bottom: 16px;
-}
-.badge-pulse {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--green);
-    animation: badge-pulse 2s infinite;
-    flex-shrink: 0;
-}
-@keyframes badge-pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
 }
 
 /* ─── IDEA 02: METRICS STRIP ─── */
