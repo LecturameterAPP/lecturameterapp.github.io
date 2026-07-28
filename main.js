@@ -165,10 +165,15 @@ function setLang(lang) {
 
     renderStats(lang);
 
-    // Ocultar H1 del idioma inactivo a crawlers
+    // Ocultar contenido inactivo a crawlers
     ['es', 'en'].forEach(l => {
-        const h1 = document.querySelector('#content-' + l + ' h1');
+        const block = document.getElementById('content-' + l);
+        const h1 = block ? block.querySelector('h1') : null;
         if (h1) h1.setAttribute('aria-hidden', l !== lang ? 'true' : 'false');
+        if (block) {
+            if (l !== lang) block.setAttribute('translate', 'no');
+            else block.removeAttribute('translate');
+        }
     });
 
     // Actualizar title y meta description con el idioma activo
