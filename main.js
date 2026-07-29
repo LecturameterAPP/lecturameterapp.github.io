@@ -239,3 +239,11 @@ function loadWhatsNew() {
         });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    try {
+        var saved = localStorage.getItem('lm_lang');
+        if (saved && document.getElementById('content-' + saved)) {
+            setLang(saved);
+        }
+    } catch(e) {}
+});
