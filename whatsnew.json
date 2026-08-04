@@ -9,6 +9,8 @@
       "Más pantallas se adaptan al girar el móvil"
     ],
     "fixes": [
+      "Restaurar compra recupera el Pro canjeado con código tras reinstalar la app",
+      "Widgets en tema Claro respetan el color de fondo en móviles con HyperOS",
       "La prueba gratis no se puede reactivar borrando datos ni cambiando la fecha",
       "Aviso claro al restaurar copias de seguridad dañadas",
       "Pagi flotante se puede ocultar por separado del resto de Pagis",
@@ -24,6 +26,8 @@
       "More screens adapt when you rotate your phone"
     ],
     "fixes": [
+      "Restore purchase now recovers Pro unlocked with a code after reinstalling",
+      "Widgets in Light theme keep their background color on HyperOS phones",
       "Free trial can no longer be reactivated by clearing data or changing the date",
       "Clear message when restoring a damaged backup",
       "Floating Pagi can be hidden separately from the other Pagis",
