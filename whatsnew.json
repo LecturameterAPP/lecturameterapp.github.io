@@ -1,29 +1,33 @@
 {
-  "notesVersion": 1,
+  "notesVersion": 2,
   "es": {
     "new": [
-      "Versión de lanzamiento de Lecturameter",
-      "Sesiones, ediciones por libro y fecha estimada de fin",
-      "Búsqueda sin conexión, estadísticas, rachas y Wrapped",
-      "Widgets y copias en Google Drive"
+      "Sesión inmersiva con Pagi, portada grande, cronómetro y sonidos ambientales",
+      "Bingo con historial navegable, filtros y detalle de casillas",
+      "Reto diario y bingo protegidos contra cambios de fecha del dispositivo",
+      "Toca la portada en el detalle o al añadir un libro para verla ampliada",
+      "Más pantallas se adaptan al girar el móvil"
     ],
     "fixes": [
-      "Avisos con reintento si falla una compra o propina",
-      "Títulos en español con sus tildes y eñes",
-      "Botones de copias con mejor contraste"
+      "La prueba gratis no se puede reactivar borrando datos ni cambiando la fecha",
+      "Aviso claro al restaurar copias de seguridad dañadas",
+      "Pagi flotante se puede ocultar por separado del resto de Pagis",
+      "Escáner ISBN funciona en horizontal y vertical"
     ]
   },
   "en": {
     "new": [
-      "Lecturameter launch version",
-      "Sessions, per-book editions and an estimated finish date",
-      "Offline search, stats, streaks and yearly Wrapped",
-      "Widgets and Google Drive backups"
+      "Immersive session with Pagi, big cover, timer and ambient sounds",
+      "Richer bingo: navigable history with filters and per-card square detail",
+      "Daily challenge and bingo protected against device date changes",
+      "Tap the cover in book details or when adding a book to zoom in",
+      "More screens adapt when you rotate your phone"
     ],
     "fixes": [
-      "Retry prompts if a purchase or tip fails",
-      "Spanish titles now show their accents",
-      "Backup buttons with better contrast"
+      "Free trial can no longer be reactivated by clearing data or changing the date",
+      "Clear message when restoring a damaged backup",
+      "Floating Pagi can be hidden separately from the other Pagis",
+      "ISBN scanner works in landscape and portrait"
     ]
   }
 }
