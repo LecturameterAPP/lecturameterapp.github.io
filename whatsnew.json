@@ -1,37 +1,25 @@
 {
-  "notesVersion": 2,
+  "notesVersion": 3,
   "es": {
     "new": [
-      "Sesión inmersiva con Pagi, portada grande, cronómetro y sonidos ambientales",
-      "Bingo con historial navegable, filtros y detalle de casillas",
-      "Reto diario y bingo protegidos contra cambios de fecha del dispositivo",
-      "Toca la portada en el detalle o al añadir un libro para verla ampliada",
-      "Más pantallas se adaptan al girar el móvil"
+      "La barra de sonido de la sesión inmersiva se expande también en horizontal, con anterior/siguiente y bucle/secuencia",
+      "Los grupos de sonido resaltan mejor el color de acento del tema"
     ],
     "fixes": [
-      "Restaurar compra recupera el Pro canjeado con código tras reinstalar la app",
-      "Widgets en tema Claro respetan el color de fondo en móviles con HyperOS",
-      "La prueba gratis no se puede reactivar borrando datos ni cambiando la fecha",
-      "Aviso claro al restaurar copias de seguridad dañadas",
-      "Pagi flotante se puede ocultar por separado del resto de Pagis",
-      "Escáner ISBN funciona en horizontal y vertical"
+      "El modo horizontal ya no se queda bloqueado en vertical al girar el móvil cuando usas la app en un idioma distinto al del sistema",
+      "Más aire entre la tarjeta de sonido y los botones del cronómetro al expandirla",
+      "Cambiar de categoría de sonido ya funciona: toca una pestaña y empieza a sonar esa categoría"
     ]
   },
   "en": {
     "new": [
-      "Immersive session with Pagi, big cover, timer and ambient sounds",
-      "Richer bingo: navigable history with filters and per-card square detail",
-      "Daily challenge and bingo protected against device date changes",
-      "Tap the cover in book details or when adding a book to zoom in",
-      "More screens adapt when you rotate your phone"
+      "The immersive session's sound bar now expands in landscape too, with previous/next and loop/sequence",
+      "Sound groups highlight your theme's accent colour more clearly"
     ],
     "fixes": [
-      "Restore purchase now recovers Pro unlocked with a code after reinstalling",
-      "Widgets in Light theme keep their background color on HyperOS phones",
-      "Free trial can no longer be reactivated by clearing data or changing the date",
-      "Clear message when restoring a damaged backup",
-      "Floating Pagi can be hidden separately from the other Pagis",
-      "ISBN scanner works in landscape and portrait"
+      "Landscape no longer gets stuck in portrait when you use the app in a language different from your phone's",
+      "More breathing room between the sound card and the timer buttons when expanded",
+      "Switching sound category now works: tap a tab and that category starts playing"
     ]
   }
 }
