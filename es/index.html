@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter – Tu tracker de lectura para Android</title>
-    <meta name="description" content="App gratuita de seguimiento de lecturas para Android. Registra sesiones, ve cuánto lees y descubre tus patrones. Sin anuncios ni suscripciones, tus datos solo en tu móvil.">
+    <meta name="description" content="Cronometra sesiones, organiza tu biblioteca y descubre tus patrones de lectura. Android, gratis, sin anuncios ni suscripciones.">
     <meta property="og:title" content="Lecturameter – Tu tracker de lectura para Android">
-    <meta property="og:description" content="App gratuita de seguimiento de lecturas para Android. Registra sesiones, ve cuánto lees y descubre tus patrones. Sin anuncios ni suscripciones, tus datos solo en tu móvil.">
+    <meta property="og:description" content="Cronometra sesiones, organiza tu biblioteca y descubre tus patrones de lectura.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/es/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=250718b">
@@ -17,7 +17,7 @@
     <meta property="og:locale:alternate" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Lecturameter – Tu tracker de lectura para Android">
-    <meta name="twitter:description" content="App gratuita de seguimiento de lecturas para Android. Registra sesiones, ve cuánto lees y descubre tus patrones. Sin anuncios ni suscripciones, tus datos solo en tu móvil.">
+    <meta name="twitter:description" content="Cronometra sesiones, organiza tu biblioteca y descubre tus patrones de lectura.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=250718b">
     <meta name="twitter:image:alt" content="Lecturameter – Tu tracker de lectura para Android">
     <meta name="robots" content="index, follow">
@@ -29,13 +29,12 @@
     <link rel="apple-touch-icon" href="../apple-touch-icon.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" sizes="192x192" href="../android-chrome-192x192.png">
 
     <link rel="canonical" href="https://lecturameterapp.github.io/es/">
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/">
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=250728b">
+    <link rel="stylesheet" href="../styles.css?v=3.1">
 
     <script type="application/ld+json">
     {
@@ -48,772 +47,524 @@
       "featureList": "Biblioteca por estanterías, cronómetro con pantalla apagada, historial de sesiones, mapa de calor, resumen anual, retos de lectura personalizables, backup en Google Drive, importación Goodreads CSV, mayormente offline",
       "applicationCategory": "BookApplication",
       "operatingSystem": "Android",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "EUR"
-      },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
       "author": {
         "@type": "Person",
-        "name": "Víctor (Lecturameter)",
+        "name": "Victor (Lecturameter)",
         "email": "lecturameter.app@gmail.com",
-        "sameAs": [
-          "https://x.com/LecturameterAPP",
-          "https://www.reddit.com/user/LM_Reader_Dev/"
-        ]
+        "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"¿Puedo importar mi biblioteca desde Goodreads?","acceptedAnswer":{"@type":"Answer","text":"Sí. Exporta tu biblioteca como CSV desde goodreads.com/review/import. En Lecturameter, ve a Ajustes > Importar/Exportar > Importar CSV. La app mapea automáticamente título, autor, estado, valoración y fechas."}},
+        {"@type":"Question","name":"¿Y desde StoryGraph?","acceptedAnswer":{"@type":"Answer","text":"También. Desde la versión 3.5 puedes exportar tu biblioteca desde app.thestorygraph.com (Gestionar cuenta > Gestionar tus datos > Exportar biblioteca). El CSV te llega por email."}},
+        {"@type":"Question","name":"¿Mis datos son míos?","acceptedAnswer":{"@type":"Answer","text":"Totalmente. Tus datos se almacenan solo en tu móvil. No hay servidor propio ni se envía nada sin tu consentimiento. Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos."}},
+        {"@type":"Question","name":"¿Tiene suscripción?","acceptedAnswer":{"@type":"Answer","text":"No. La app es gratuita con opción Pro de pago único. No hay suscripciones."}},
+        {"@type":"Question","name":"¿Funciona sin conexión?","acceptedAnswer":{"@type":"Answer","text":"Casi todo funciona offline. Solo necesitas conexión para buscar libros nuevos y para subir backups a Google Drive."}},
+        {"@type":"Question","name":"¿Hay versión para iPhone?","acceptedAnswer":{"@type":"Answer","text":"No, de momento solo Android. Si hay suficiente interés, se estudiaría. Puedes apuntarte a la lista de espera por email."}},
+        {"@type":"Question","name":"¿Puedo probarlo antes de pagar?","acceptedAnswer":{"@type":"Answer","text":"Sí. Hay una prueba gratuita de 7 días de las funciones Pro, sin poner tarjeta. Al terminar la prueba, aunque no compres Pro, te regalamos un tema Pro a tu elección."}}
+      ]
     }
     </script>
 </head>
 <body>
 
-<header class="topbar">
-    <div class="topbar-inner">
-        <a href="../" class="brand"><img src="../ic_launcher_round.png" alt="Lecturameter" width="192" height="192">Lecturameter</a>
-        <nav class="nav-links">
-            <a href="./" class="active">Inicio</a>
-            <a href="#caracteristicas">Características</a>
-            <a href="#precios">Precios</a>
-            <a href="../precios-regionales.html">Precio regional</a>
-            <a href="#estadisticas">Estadísticas</a>
-            <a href="#notas-parche">Novedades</a>
-            <a href="#roadmap">Roadmap</a>
-            <a href="../privacidad.html">Privacidad</a>
-            <a href="../contact.html">Contacto</a>
-        </nav>
-        <div class="lang-bar">
-            <a href="./" class="active">ES</a>
-            <a href="../en/">EN</a>
+<!-- ═══ NAV ═══ -->
+<nav class="nav-bar">
+    <div class="nav-inner">
+        <a href="../" class="nav-brand">
+            <img src="../ic_launcher_round.png" alt="Lecturameter" width="28" height="28">
+            Lecturameter
+        </a>
+        <ul class="nav-pills">
+            <li><a href="#funciones" class="active">Funciones</a></li>
+            <li><a href="#temas">Temas</a></li>
+            <li><a href="#precios">Pro</a></li>
+            <li><a href="#novedades">Novedades</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button class="nav-theme-btn" aria-label="Cambiar tema">☾</button>
+            <a href="../en/" class="nav-lang-btn">EN</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+                <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                Descargar
+            </a>
         </div>
+        <button class="nav-hamburger" aria-label="Menu">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
     </div>
-</header>
+</nav>
 
-<main class="container">
-
-    <div class="hero">
-        <div class="hero-copy">
-            <h1>Descubre<br><span class="grad">cómo lees de verdad</span></h1>
-            <p class="hero-category">App gratuita de lectura · Android</p>
-            <p class="tagline">¿A qué ritmo avanzas? ¿En cuántos días terminarás el libro? ¿Cuántos libros llevas este año? Lecturameter te lo cuenta: gratis, sin anuncios, solo en tu móvil.</p>
-            <ul class="hero-checks">
-                <li>Sin cuenta</li>
-                <li>Sin anuncios</li>
-                <li>Sin suscripciones</li>
-                <li>Sin telemetría</li>
-            </ul>
-            <div class="hero-cta">
-                <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn-download">Descargar en Google Play</a>
-            </div>
-            <p class="hero-subnote">Gratis, sin anuncios · <a href="../contact.html" class="subnote-link">¿Dudas?</a></p>
-            <div class="hero-mini-trust">
-                <em>"El cronómetro va de maravilla incluso con la pantalla apagada"</em>
-                <span>— Feedback de usuario durante la prueba cerrada</span>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="phone-wrap">
-                <div class="float-chip c1"><span class="big">3h 30m</span>tiempo total</div>
-                <div class="float-chip c2"><span class="big">136</span>páginas leídas</div>
-                <div class="float-chip c3"><span class="big">17,0</span>págs/día</div>
-                <div class="phone"><img src="../captura_libros_real_es.jpg?v=250727" alt="Biblioteca de Lecturameter con estanterías de libros" fetchpriority="high" width="720" height="1464"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section-head" style="margin-top:26px;">
-        <h2>Esto es lo que Lecturameter mide por ti</h2>
-        <p>Seis cifras que la app calcula sola con cada sesión que registras. Ninguna se inventa: si aún no hay datos, no aparece.</p>
-    </div>
-    <div class="metrics-strip stats-strip">
-        <div class="ms-cell"><span class="ms-num ms-accent">Págs/día</span><div class="ms-label">Tu ritmo real de avance</div></div>
-        <div class="ms-cell"><span class="ms-num ms-green">Págs/min</span><div class="ms-label">Tu velocidad con el cronómetro</div></div>
-        <div class="ms-cell"><span class="ms-num">H : m</span><div class="ms-label">Tiempo total de lectura</div></div>
-        <div class="ms-cell"><span class="ms-num ms-orange">Racha</span><div class="ms-label">Días seguidos leyendo</div></div>
-        <div class="ms-cell"><span class="ms-num">% leído</span><div class="ms-label">Cuánto llevas de cada libro</div></div>
-        <div class="ms-cell"><span class="ms-num ms-accent">Sesiones</span><div class="ms-label">Cuándo y cuánto lees</div></div>
-    </div>
-
-    <div class="section" id="caracteristicas">
-        <div class="section-head">
-            <h2>Conócete más como lector.</h2>
-            <p>Capturas reales. Pantallas del app tal como las verás en tu móvil.</p>
-        </div>
-
-        <div class="bento-features">
-            <div class="bf-card bf-timer">
-                <div class="bf-media">
-                    <video autoplay muted loop playsinline poster="../captura_historial_real_es.jpg?v=250718b"><source src="../timer_video_es.mp4" type="video/mp4"></video>
+<!-- ═══ 1. HERO ═══ -->
+<section class="band band-hero" id="inicio">
+    <div class="container">
+        <div class="hero">
+            <div class="hero-copy">
+                <p class="hero-eyebrow">App gratuita de lectura para Android</p>
+                <h1>Tu lectura,<br><span class="grad">letra a letra.</span></h1>
+                <p class="hero-tagline">Cronometra sesiones, organiza tu biblioteca y descubre tus patrones de lectura. Gratis, sin anuncios.</p>
+                <p class="hero-privacy">
+                    <svg viewBox="0 0 16 16"><path d="M8 1a4 4 0 0 0-4 4v2H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V5a4 4 0 0 0-4-4zm-2 4a2 2 0 1 1 4 0v2H6V5z"/></svg>
+                    Sin cuenta, sin telemetría, tus datos solo en tu móvil.
+                </p>
+                <ul class="hero-checks">
+                    <li>Sin anuncios</li>
+                    <li>Sin suscripciones</li>
+                    <li>Offline</li>
+                    <li>100% privada</li>
+                </ul>
+                <div class="hero-cta">
+                    <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Descargar en Google Play</a>
                 </div>
-                <div class="bf-body">
-                    <div class="bf-tag">Cronómetro</div>
-                    <h3>Sigue contando con la pantalla apagada</h3>
-                    <p>Pulsa Iniciar y lee. Al terminar descubrirás tu ritmo real: páginas por minuto, horas de lectura y si estás leyendo más rápido que antes. Las páginas funcionales descuentan prólogos e índices para que el dato sea honesto.</p>
+                <div class="testimonial">
+                    <q>La interfaz se ve limpia y ordenada. Se nota que hay cuidado en cada detalle.</q>
+                    <cite>— Reseña en Google Play</cite>
                 </div>
             </div>
-            <div class="bf-card bf-lib">
-                <div class="bf-media bf-lbx" data-src="../capturas recortadas biblioteca es.jpg?v=250718c">
-                    <img src="../capturas recortadas biblioteca es.jpg?v=250718c" alt="Biblioteca con estanterías" loading="lazy" width="1061" height="1282">
-                </div>
-                <div class="bf-body">
-                    <div class="bf-tag">Biblioteca</div>
-                    <h3>Todos tus libros organizados</h3>
-                    <p>Leyendo, Leído, Releyendo, Quiero leer, Abandonado. Ve cuántos libros llevas, qué géneros dominas y qué tienes pendiente. Portadas automáticas e importación desde Goodreads.</p>
-                </div>
-            </div>
-            <div class="bf-card bf-stats">
-                <div class="bf-media bf-lbx" data-src="../captura_stats_meses_es.jpg?v=250718f">
-                    <img src="../captura_stats_meses_es.jpg?v=250718f" alt="Estadísticas anuales por meses" loading="lazy" width="1080" height="1417">
-                </div>
-                <div class="bf-body">
-                    <div class="bf-tag">Estadísticas</div>
-                    <h3>Descubre tus patrones de lectura</h3>
-                    <p>¿Lees más en verano? ¿Por las noches? ¿Con qué libros eres más constante? El mapa de calor y las estadísticas anuales te lo revelan todo de un golpe.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="data-sources">
-        <p>Las búsquedas de libros, manga y cómics en Lecturameter se apoyan en diversas APIs de catálogos abiertos y públicos, junto con una base de datos propia.</p>
-    </div>
-
-    <div class="privacy-highlight">
-        <div class="icon">🔒</div>
-        <div class="title">Tus datos solo están en tu dispositivo</div>
-        <div class="desc">
-            <span class="highlight">Lecturameter no recopila ni envía tus datos a ningún servidor.</span>
-            Tu biblioteca, sesiones y estadísticas se guardan exclusivamente en tu móvil.
-            Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos.
-            Sin anuncios, sin suscripciones, sin tracking.
-            <a href="../privacidad.html">Lee la política completa →</a>
-        </div>
-    </div>
-
-    <div class="section" id="estadisticas">
-        <div class="section-head">
-            <h2>Estadísticas que motivan a seguir leyendo</h2>
-            <p>Mapa de calor, comparativas entre años y el detalle de cada sesión. Esto es un ejemplo real de lo que verás.</p>
-        </div>
-
-        <div class="stats-panel">
-            <div class="stats-grid" id="statsGrid-es">
-                <div class="stat-box c-purple"><div class="number" id="totalBooks-es">5</div><div class="label">Libros totales</div></div>
-                <div class="stat-box c-blue">  <div class="number" id="totalSessions-es">7</div><div class="label">Sesiones</div></div>
-                <div class="stat-box c-green">  <div class="number" id="totalPages-es">120</div><div class="label">Páginas leídas</div></div>
-                <div class="stat-box c-orange"> <div class="number" id="totalTime-es">3h 6m</div><div class="label">Tiempo total</div></div>
-                <div class="stat-box c-cyan">   <div class="number" id="avgPagesSession-es">17.1</div><div class="label">Media págs/sesión</div></div>
-                <div class="stat-box c-violet">  <div class="number" id="avgPace-es">0.6</div><div class="label">Media p/min</div></div>
-            </div>
-            <div class="chart-title">Páginas por día</div>
-            <div class="bar-chart" id="barChart-es"></div>
-
-            <div class="donuts-row">
-
-                <div class="donut-card">
-                    <div class="donut-label">Por género</div>
-                    <div class="donut-total-note">111 libros</div>
-                    <div class="donut-body">
-                        <svg viewBox="0 0 120 120" class="donut-svg">
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="var(--line)" stroke-width="20"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#7C3AED" stroke-width="20" stroke-dasharray="147.7 314.16" transform="rotate(-90 60 60)"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#10B981" stroke-width="20" stroke-dasharray="116.2 314.16" transform="rotate(79.2 60 60)"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#0891B2" stroke-width="20" stroke-dasharray="12.6 314.16" transform="rotate(212.4 60 60)"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#D97706" stroke-width="20" stroke-dasharray="12.6 314.16" transform="rotate(226.8 60 60)"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#EF4444" stroke-width="20" stroke-dasharray="9.4 314.16"  transform="rotate(241.2 60 60)"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#9333EA" stroke-width="20" stroke-dasharray="6.3 314.16"  transform="rotate(252.0 60 60)"/>
-                        </svg>
-                        <ul class="donut-legend">
-                            <li><span class="d-dot" style="background:#7C3AED"></span><span>Manga</span><b>47%</b></li>
-                            <li><span class="d-dot" style="background:#10B981"></span><span>Fantasía</span><b>37%</b></li>
-                            <li><span class="d-dot" style="background:#0891B2"></span><span>Terror</span><b>4%</b></li>
-                            <li><span class="d-dot" style="background:#D97706"></span><span>Aventura</span><b>4%</b></li>
-                            <li><span class="d-dot" style="background:#EF4444"></span><span>Ciencia ficción</span><b>3%</b></li>
-                            <li><span class="d-dot" style="background:#9333EA"></span><span>Mitología</span><b>2%</b></li>
-                        </ul>
+            <div class="hero-visual">
+                <div class="phone-wrap">
+                    <div class="float-chip c1"><span class="big">3h 30m</span>tiempo total</div>
+                    <div class="float-chip c2"><span class="big">136</span>páginas leídas</div>
+                    <div class="float-chip c3"><span class="big">17,0</span>págs/día</div>
+                    <div class="phone">
+                        <img src="../captura_libros_real_es.jpg?v=3.0" alt="Biblioteca de Lecturameter" fetchpriority="high" width="720" height="1464">
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <div class="donut-card">
-                    <div class="donut-label">Por estado</div>
-                    <div class="donut-total-note">111 libros</div>
-                    <div class="donut-body">
-                        <svg viewBox="0 0 120 120" class="donut-svg">
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="var(--line)" stroke-width="20"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#10B981" stroke-width="20" stroke-dasharray="276.5 314.16" transform="rotate(-90 60 60)"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#0891B2" stroke-width="20" stroke-dasharray="12.6 314.16" transform="rotate(226.8 60 60)"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#D97706" stroke-width="20" stroke-dasharray="12.6 314.16" transform="rotate(241.2 60 60)"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#3B82F6" stroke-width="20" stroke-dasharray="6.3 314.16"  transform="rotate(255.6 60 60)"/>
-                        </svg>
-                        <ul class="donut-legend">
-                            <li><span class="d-dot" style="background:#10B981"></span><span>Leídos</span><b>88%</b></li>
-                            <li><span class="d-dot" style="background:#0891B2"></span><span>Pendiente</span><b>4%</b></li>
-                            <li><span class="d-dot" style="background:#D97706"></span><span>Abandonado</span><b>4%</b></li>
-                            <li><span class="d-dot" style="background:#3B82F6"></span><span>Leyendo</span><b>2%</b></li>
-                        </ul>
+<!-- ═══ 2. MÉTRICAS ═══ -->
+<section class="band" id="metricas">
+    <div class="container">
+        <div class="section-head">
+            <h2>Esto es lo que Lecturameter mide por ti</h2>
+            <p>Seis cifras que la app calcula sola con cada sesión que registras. Ninguna se inventa: si aún no hay datos, no aparece.</p>
+        </div>
+        <div class="metrics-strip">
+            <div class="metric-box"><span class="metric-val c-accent">Págs/día</span><span class="metric-label">Tu ritmo real de avance</span></div>
+            <div class="metric-box"><span class="metric-val c-blue">Págs/min</span><span class="metric-label">Tu velocidad con el cronómetro</span></div>
+            <div class="metric-box"><span class="metric-val c-green">H : m</span><span class="metric-label">Tiempo total de lectura</span></div>
+            <div class="metric-box"><span class="metric-val c-orange">Racha</span><span class="metric-label">Días seguidos leyendo</span></div>
+            <div class="metric-box"><span class="metric-val c-accent">% leído</span><span class="metric-label">Cuánto llevas de cada libro</span></div>
+            <div class="metric-box"><span class="metric-val c-green">Sesiones</span><span class="metric-label">Cuándo y cuánto lees</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ ACCENT BAND ═══ -->
+<div class="band-accent">
+    <div class="container">
+        <p class="accent-quote">El cronómetro va de maravilla incluso con la pantalla apagada.</p>
+    </div>
+</div>
+
+<!-- ═══ 3. TRES PILARES ═══ -->
+<section class="band band-alt" id="funciones">
+    <div class="container">
+        <div class="section-head">
+            <h2>Capturas reales. Así se ve la app.</h2>
+            <p>Tres pilares: biblioteca, cronómetro y estadísticas.</p>
+        </div>
+
+        <!-- Pilar 1: Biblioteca -->
+        <div class="showcase">
+            <div class="shot">
+                <div class="phone">
+                    <img src="../captura_libros_real_es.jpg?v=3.0" alt="Biblioteca con estanterías" loading="lazy" width="720" height="1464" data-lbx="../captura_libros_real_es.jpg?v=3.0">
+                </div>
+            </div>
+            <div class="info">
+                <h3>Todos tus libros, en orden.</h3>
+                <p>Cinco estados, búsqueda por título, autor o ISBN, fichas completas con portada, géneros y ediciones.</p>
+                <ul>
+                    <li>Búsqueda instantánea por título, autor o ISBN</li>
+                    <li>Fichas con portada, géneros y ediciones</li>
+                    <li>Manga y cómics con seguimiento por páginas</li>
+                    <li>Portadas automáticas de fuentes abiertas</li>
+                </ul>
+                <div class="import-callout">
+                    <strong>Importación CSV automática.</strong> Trae tu biblioteca desde Goodreads o StoryGraph en segundos. La app reconoce sola de cuál viene.
+                </div>
+            </div>
+        </div>
+
+        <!-- Pilar 2: Cronómetro -->
+        <div class="showcase flip">
+            <div class="shot">
+                <div class="phone">
+                    <video autoplay muted loop playsinline poster="../screen_timer_main_es.jpg?v=3.0">
+                        <source src="../timer_video_es.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Cronometra sin pensar en el cronómetro.</h3>
+                <p>Pulsa Iniciar y lee. Al terminar sabrás cuánto has avanzado, a qué ritmo y si vas más rápido que antes.</p>
+                <ul>
+                    <li>Modo normal: crono + minibar mientras usas otras apps</li>
+                    <li>Modo inmersivo: portada grande, foco total en leer</li>
+                    <li>Si la app se cierra o se bloquea, el tiempo no se pierde</li>
+                    <li>Sonidos ambiente opcionales (lluvia, chimenea, bosque...)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pilar 3: Estadísticas -->
+        <div class="showcase">
+            <div class="shot">
+                <div class="phone">
+                    <img src="../captura_stats_meses_es.jpg?v=3.0" alt="Estadísticas anuales" loading="lazy" width="1080" height="1417" data-lbx="../captura_stats_meses_es.jpg?v=3.0">
+                </div>
+            </div>
+            <div class="info">
+                <h3>El detalle de cómo lees.</h3>
+                <p>Mapa de calor, comparativas entre meses, resumen anual. Todo lo que necesitas para conocerte como lector.</p>
+                <ul>
+                    <li>Mapa de calor horario y mensual</li>
+                    <li>Evolución mes a mes con gráficos</li>
+                    <li>Wrapped anual con géneros, rachas y autores</li>
+                    <li>Historial completo de todas tus sesiones</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ 3. ESCAPARATE ═══ -->
+<section class="band" id="escaparate">
+    <div class="container">
+        <div class="section-head">
+            <h2>Conócete más como lector</h2>
+            <p>Retos, bingos, widgets y más funciones para sacarle todo el jugo a tu lectura.</p>
+        </div>
+        <div class="grid-cards">
+            <div class="grid-card">
+                <div class="grid-card-media">
+                    <img src="../screen_challenges_es.jpg?v=3.0" alt="Retos de lectura" loading="lazy" width="1080" height="2126" data-lbx="../screen_challenges_es.jpg?v=3.0">
+                </div>
+                <div class="grid-card-body">
+                    <h3>Retos de lectura</h3>
+                    <p>Pon metas por páginas, rachas o géneros. Hasta 15 retos activos gratis, ilimitados con Pro.</p>
+                </div>
+            </div>
+            <div class="grid-card">
+                <div class="grid-card-media">
+                    <img src="../screen_calendar_may_es.jpg?v=3.0" alt="Bingo lector" loading="lazy" width="1080" height="2126" data-lbx="../screen_calendar_may_es.jpg?v=3.0">
+                </div>
+                <div class="grid-card-body">
+                    <h3>Bingo lector</h3>
+                    <p>Cada mes dos bingos nuevos con casillas temáticas. Completa filas, columnas o el cartón entero.</p>
+                </div>
+            </div>
+            <div class="grid-card">
+                <div class="grid-card-body" style="padding-top:24px;">
+                    <h3>Widgets</h3>
+                    <p>Ve tu progreso desde la pantalla de inicio sin abrir la app. Widget de libro (gratis) y widget de comparativa mensual (Pro).</p>
+                    <div style="margin-top:12px;">
+                        <img src="../widget_libro_es.png" alt="Widget de libro" loading="lazy" width="1220" height="434" style="border-radius:10px;">
                     </div>
                 </div>
-
-                <div class="donut-card">
-                    <div class="donut-label">Por idioma</div>
-                    <div class="donut-total-note">111 libros</div>
-                    <div class="donut-body">
-                        <svg viewBox="0 0 120 120" class="donut-svg">
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="var(--line)" stroke-width="20"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#7C3AED" stroke-width="20" stroke-dasharray="131.9 314.16" transform="rotate(-90 60 60)"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#D97706" stroke-width="20" stroke-dasharray="131.9 314.16" transform="rotate(61.2 60 60)"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#10B981" stroke-width="20" stroke-dasharray="37.7 314.16"  transform="rotate(212.4 60 60)"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#9333EA" stroke-width="20" stroke-dasharray="6.3 314.16"   transform="rotate(255.6 60 60)"/>
-                            <circle r="50" cx="60" cy="60" fill="none" stroke="#EF4444" stroke-width="20" stroke-dasharray="3.1 314.16"   transform="rotate(262.8 60 60)"/>
-                        </svg>
-                        <ul class="donut-legend">
-                            <li><span class="d-dot" style="background:#7C3AED"></span><span>Español</span><b>42%</b></li>
-                            <li><span class="d-dot" style="background:#D97706"></span><span>Japonés</span><b>42%</b></li>
-                            <li><span class="d-dot" style="background:#10B981"></span><span>English</span><b>12%</b></li>
-                            <li><span class="d-dot" style="background:#9333EA"></span><span>EE.UU.</span><b>2%</b></li>
-                            <li><span class="d-dot" style="background:#EF4444"></span><span>UK</span><b>1%</b></li>
-                        </ul>
-                    </div>
-                </div>
-
             </div>
-
         </div>
-
     </div>
+</section>
 
-    <div class="section">
+<!-- ═══ 4. PAGI + TEMAS ═══ -->
+<section class="band band-alt" id="temas">
+    <div class="container">
         <div class="section-head">
-            <h2>Un año de lectura tiene mucho que contarte</h2>
-            <p>Desde el ritmo de cada sesión hasta tu Wrapped anual. Todo lo que necesitas para conocerte como lector.</p>
+            <h2>Conoce a Pagi y elige tu estilo</h2>
+            <p>Pagi es la mascota de Lecturameter: un punto de libro animado que te acompaña mientras lees. Y la app tiene cinco temas para que la sientas tuya.</p>
         </div>
-        <p class="gallery-zoom-hint">🔍 Pulsa cualquier captura para ampliarla</p>
-        <div class="gallery-phones-grid">
-            <div class="gallery-phone gallery-phone--wide" data-src="../capturas recortadas biblioteca es.jpg?v=250718c">
-                <img src="../capturas recortadas biblioteca es.jpg?v=250718c" alt="Biblioteca personal" width="1061" height="1282" loading="lazy">
-                <div class="gallery-caption">
-                    <h3>Tu biblioteca completa</h3>
-                    <p>Ve de un vistazo qué has leído, qué estás leyendo y cuánto tienes pendiente.</p>
-                </div>
-            </div>
-            <div class="gallery-phone" data-src="../screen_timer_main_es.jpg?v=250718k">
-                <img src="../screen_timer_main_es.jpg?v=250718k" alt="Pantalla principal con timer" width="720" height="1546" loading="lazy">
-                <div class="gallery-caption">
-                    <h3>El timer integrado</h3>
-                    <p>Pulsa el botón del timer y empieza a medir tu sesión de lectura. El tiempo se guarda automáticamente.</p>
-                </div>
-            </div>
-            <div class="gallery-phone" data-src="../captura_stats_meses_es.jpg?v=250718f">
-                <img src="../captura_stats_meses_es.jpg?v=250718f" alt="Estadísticas anuales" width="1080" height="1417" loading="lazy">
-                <div class="gallery-caption">
-                    <h3>Tu año, de un vistazo</h3>
-                    <p>El mapa de calor anual revela en qué meses lees más, tus rachas y tus caídas.</p>
-                </div>
-            </div>
-            <div class="gallery-phone" data-src="../screen_calendar_may_es.jpg?v=250718g">
-                <img src="../screen_calendar_may_es.jpg?v=250718g" alt="Calendario mensual mayo" width="1080" height="2126" loading="lazy">
-                <div class="gallery-caption">
-                    <h3>Mes a mes, en color</h3>
-                    <p>Cada día con color según las páginas leídas. ¿Cuántos días sin leer tienes en mayo?</p>
-                </div>
-            </div>
-            <div class="gallery-phone gallery-phone--wide" data-src="../Hetmap horario recortado es.jpg?v=250718b">
-                <img src="../Hetmap horario recortado es.jpg?v=250718b" alt="Mapa de calor horario" width="1220" height="1054" loading="lazy">
-                <div class="gallery-caption">
-                    <h3>¿Cuándo lees más?</h3>
-                    <p>El mapa de calor por hora y día de la semana te descubre tus hábitos reales.</p>
-                </div>
-            </div>
-            <div class="gallery-phone" data-src="../screen_challenges_es.jpg?v=250718g">
-                <img src="../screen_challenges_es.jpg?v=250718g" alt="Retos y bingo lector" width="1080" height="2126" loading="lazy">
-                <div class="gallery-caption">
-                    <h3>Retos y bingo lector</h3>
-                    <p>Pon metas por páginas, rachas o géneros. O juega al bingo: casillas que tú defines, a marcar a lo largo del año.</p>
-                </div>
-            </div>
+
+        <div style="display:flex;justify-content:center;margin-bottom:32px;">
+            <svg class="pagi-mascot" data-expr="neutral" viewBox="-36 -8 272 468" width="100" overflow="visible" role="img" aria-label="Pagi, la mascota de Lecturameter">
+                <g class="body-g">
+                    <path class="pagi-body" d="M 0 26 Q 0 0 26 0 L 174 0 Q 200 0 200 26 L 200 440 L 100 396 L 0 440 Z" fill="var(--pagi-color)"/>
+                    <circle cx="100" cy="27" r="13" fill="#1D1822" opacity="0.28"/>
+                    <rect x="32" y="296" width="136" height="19" rx="9.5" fill="rgba(0,0,0,0.15)"/>
+                    <rect class="pagi-bar" x="32" y="296" width="88" height="19" rx="9.5" fill="rgba(255,255,255,0.6)"/>
+                    <rect x="44" y="340" width="112" height="7" rx="3.5" fill="rgba(0,0,0,0.18)"/>
+                    <rect x="44" y="362" width="112" height="7" rx="3.5" fill="rgba(0,0,0,0.18)"/>
+                    <rect x="44" y="384" width="112" height="7" rx="3.5" fill="rgba(0,0,0,0.18)"/>
+                    <ellipse class="arm-l" cx="-24" cy="238" rx="20" ry="14" fill="var(--pagi-color)"/>
+                    <ellipse class="arm-r" cx="224" cy="238" rx="20" ry="14" fill="var(--pagi-color)"/>
+                    <g class="eye-g">
+                        <ellipse class="pagi-sclera" cx="88" cy="152" rx="56" ry="62" fill="white"/>
+                        <g class="pupil-g">
+                            <circle class="pagi-pupil" cx="86" cy="152" r="31" fill="#1D1822"/>
+                            <circle class="pagi-hl1" cx="98" cy="139" r="10.5" fill="white"/>
+                            <circle class="pagi-hl2" cx="73" cy="167" r="5" fill="white" opacity="0.75"/>
+                        </g>
+                    </g>
+                    <path class="pagi-brow" d="M 42 74 Q 88 46 134 76" fill="none" stroke="#1D1822" stroke-width="9" stroke-linecap="round"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="themes-gallery">
+            <figure class="theme-card">
+                <img src="../tema_claro_es.jpg?v=3.0" alt="Tema Claro" loading="lazy" width="360" height="713" data-lbx="../tema_claro_es.jpg?v=3.0">
+                <figcaption><span class="theme-swatch" style="background:#41755A"></span>Claro &middot; Gratis</figcaption>
+            </figure>
+            <figure class="theme-card">
+                <img src="../tema_oscuro_es.jpg?v=3.0" alt="Tema Oscuro" loading="lazy" width="360" height="713" data-lbx="../tema_oscuro_es.jpg?v=3.0">
+                <figcaption><span class="theme-swatch" style="background:#4B3DE8"></span>Oscuro &middot; Gratis</figcaption>
+            </figure>
+            <figure class="theme-card">
+                <img src="../tema_aurora_es.jpg?v=3.0" alt="Tema Aurora" loading="lazy" width="360" height="713" data-lbx="../tema_aurora_es.jpg?v=3.0">
+                <figcaption><span class="theme-swatch" style="background:#C08CE8"></span>Aurora &middot; Pro</figcaption>
+            </figure>
+            <figure class="theme-card">
+                <img src="../tema_oled_es.jpg?v=3.0" alt="Tema OLED" loading="lazy" width="360" height="713" data-lbx="../tema_oled_es.jpg?v=3.0">
+                <figcaption><span class="theme-swatch" style="background:#C9CDD2"></span>OLED &middot; Pro</figcaption>
+            </figure>
+            <figure class="theme-card">
+                <img src="../tema_cuero_es.jpg?v=3.0" alt="Tema Cuero" loading="lazy" width="360" height="713" data-lbx="../tema_cuero_es.jpg?v=3.0">
+                <figcaption><span class="theme-swatch" style="background:#E0A93F"></span>Cuero &middot; Pro</figcaption>
+            </figure>
         </div>
     </div>
+</section>
 
-    <div class="section" id="widgets-es">
-        <div class="section-head">
-            <h2>Widgets</h2>
-            <p>Tu lectura siempre visible en la pantalla de inicio, sin abrir la app.</p>
-        </div>
-        <div class="widgets-showcase">
-            <div class="widget-column">
-                <h3 class="widget-type-label">Widget de libro</h3>
-                <p class="widget-type-desc">Ve de un vistazo tu progreso en el libro actual: días, tiempo, sesiones, páginas y porcentaje.</p>
-                <div class="widget-demo book-widget">
-                    <img src="../widget_libro_es.png" alt="Widget de libro en pantalla de inicio" loading="lazy" width="1220" height="434">
-                </div>
-            </div>
-            <div class="widget-column">
-                <h3 class="widget-type-label">Widget de comparativa mensual <span class="pro-badge-sm">PRO</span></h3>
-                <p class="widget-type-desc">Compara tu mes actual con el anterior. Cada dato lleva su + o su - delante, y las barras salen verdes o rojas para ver al instante si vas mejor o peor.</p>
-                <div class="widget-demo widget-nobg">
-                    <img src="../widget_pro_es.png?v=250720" alt="Widget de comparativa mensual en pantalla de inicio" loading="lazy" width="1170" height="600">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section" id="testimonials">
-        <div class="section-head"><h2>Lo que dicen los primeros usuarios</h2></div>
-        <div class="testimonials-section">
-            <div class="testimonial-card">
-                <div class="quote">"Uso el cronómetro para leer antes de dormir, y va de maravilla incluso con la pantalla apagada."</div>
-                <div class="source">— Feedback interno</div>
-            </div>
-            <div class="testimonial-card">
-                <div class="quote">"El resumen anual es un detallazo. Ver mis estadísticas me motiva a seguir leyendo."</div>
-                <div class="source">— Feedback de usuario durante la prueba cerrada</div>
-            </div>
-            <div class="testimonial-card">
-                <div class="quote">"Me gusta que los datos no salgan del móvil. Es justo lo que busco en una app de este tipo."</div>
-                <div class="source">— Mensaje privado en Reddit</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section" id="notas-parche">
-        <div class="section-head">
-            <h2>Novedades</h2>
-            <p>Lo que ha cambiado en la última versión.</p>
-        </div>
-        <div class="whatsnew-container" id="whatsnew-es">
-            <div class="whatsnew-loading">Cargando notas...</div>
-        </div>
-    </div>
-
-
-    <div class="section" id="precios">
+<!-- ═══ 5. FREE vs PRO ═══ -->
+<section class="band" id="precios">
+    <div class="container">
         <div class="section-head">
             <h2>Gratis para siempre. Pro si quieres más.</h2>
-            <p>Si quieres sacarle mayor provecho a la app puedes hacerlo con la versión Pro, en una compra única. ¡Puedes probar las funciones Pro durante 7 días para saber si te convencen! Al final de la prueba, incluso si no compras Pro, te regalamos uno de los 3 temas Pro, a tu elección.</p>
+            <p>Prueba las funciones Pro durante 7 días sin poner tarjeta. Al final de la prueba, incluso si no compras Pro, te regalamos uno de los 3 temas Pro a tu elección.</p>
         </div>
         <div class="pricing-grid">
             <div class="pricing-card">
-                <img src="../ic_launcher_round.png" alt="Icono Lecturameter" class="pricing-pro-icon" width="72" height="72" loading="lazy">
+                <img src="../ic_launcher_round.png" alt="Lecturameter" class="pricing-icon" width="56" height="56" loading="lazy">
                 <div class="pricing-name">Gratis</div>
-                <div class="price-row"><span class="price-free">0 €</span></div>
+                <div class="price-row"><span class="price-free">0 &#8364;</span></div>
                 <p class="price-note">Toda la app de siempre, gratis para siempre.</p>
                 <ul class="pricing-list">
                     <li>Biblioteca completa</li>
                     <li>Sesiones y cronómetro</li>
                     <li>Widget de libro en la pantalla de inicio</li>
-                    <li>Estadísticas avanzadas y mapas de calor (mensual y horario)</li>
+                    <li>Estadísticas avanzadas y mapas de calor</li>
                     <li>Wrapped anual e historial (siempre gratis)</li>
                     <li>Bingo lector</li>
-                    <li>Retos de lectura (hasta 15) e historial completo</li>
+                    <li>Retos de lectura (hasta 15) e historial</li>
                     <li>Backups locales y en Google Drive</li>
                 </ul>
-                <div class="pricing-foot">Estas funciones nunca pasarán a ser pro.</div>
+                <div class="pricing-foot">Estas funciones nunca pasarán a ser Pro.</div>
             </div>
             <div class="pricing-card pro">
                 <div class="pricing-badge">Oferta de lanzamiento</div>
-                <img src="../ic_launcher_pro.png" alt="Icono Lecturameter Pro" class="pricing-pro-icon" width="72" height="72" loading="lazy">
+                <img src="../ic_launcher_pro.png" alt="Lecturameter Pro" class="pricing-icon" width="56" height="56" loading="lazy">
                 <div class="pricing-name">Lecturameter Pro</div>
-                <div class="price-row"><span class="price-old">4,99 €</span><span class="price-new">2,99 €</span></div>
-                <p class="price-note">Precio de lanzamiento. Sube a 4,99 € después. Una compra única, no una suscripción.</p>
-                <p class="price-note price-regional-link">El precio está adaptado a cada país: en varios mercados es bastante más bajo. <a href="../precios-regionales.html">Mira los precios por región</a>.</p>
-                <p class="price-trial">🕒 Prueba Pro gratis 7 días, dentro de la propia app</p>
-                <p class="price-trial">💳 Sin tarjeta: la prueba gratis no te pide ningún dato de pago</p>
+                <div class="price-row">
+                    <span class="price-old">4,99 &#8364;</span>
+                    <span class="price-new">2,99 &#8364;</span>
+                </div>
+                <p class="price-note">Precio de lanzamiento. Sube a 4,99 &#8364; después. Una compra única, no una suscripción.</p>
+                <p class="price-note"><a href="../precios-regionales.html">Ver precios por región</a></p>
+                <p class="price-trial">Prueba Pro gratis 7 días, dentro de la app</p>
+                <p class="price-trial">Sin tarjeta: la prueba no pide datos de pago</p>
                 <ul class="pricing-list">
                     <li>Temas Cuero, Aurora y OLED</li>
+                    <li>Cronómetro inmersivo</li>
                     <li>Icono dorado alternativo</li>
                     <li>Widget de comparativa mensual</li>
                     <li>Más de 15 retos activos a la vez</li>
-                    <li>Ediciones sin límite</li>
-                    <li>Un bingo mensual extra 3x3 (más desafiante)</li>
+                    <li>Ediciones ilimitadas</li>
+                    <li>Bingo mensual extra 3x3 (más difícil)</li>
                 </ul>
                 <div class="pricing-foot">Todo lo demás sigue siendo gratis. Pro solo añade extras.</div>
             </div>
         </div>
-        <div class="themes-strip">
-            <h3>Los temas, en tu biblioteca</h3>
-            <div class="themes-row">
-                <figure data-src="../tema_claro_es.jpg?v=250727"><img src="../tema_claro_es.jpg?v=250727" alt="Tema Claro" width="360" height="713" loading="lazy"><figcaption>Claro · Gratis</figcaption></figure>
-                <figure data-src="../tema_oscuro_es.jpg?v=250727"><img src="../tema_oscuro_es.jpg?v=250727" alt="Tema Oscuro" width="360" height="713" loading="lazy"><figcaption>Oscuro · Gratis</figcaption></figure>
-                <figure data-src="../tema_aurora_es.jpg?v=250727"><img src="../tema_aurora_es.jpg?v=250727" alt="Tema Aurora" width="360" height="713" loading="lazy"><figcaption>Aurora · Pro</figcaption></figure>
-                <figure data-src="../tema_oled_es.jpg?v=250727"><img src="../tema_oled_es.jpg?v=250727" alt="Tema OLED" width="360" height="713" loading="lazy"><figcaption>OLED · Pro</figcaption></figure>
-                <figure data-src="../tema_cuero_es.jpg?v=250727"><img src="../tema_cuero_es.jpg?v=250727" alt="Tema Cuero" width="360" height="713" loading="lazy"><figcaption>Cuero · Pro</figcaption></figure>
+    </div>
+</section>
+
+<!-- ═══ 6. NOVEDADES ═══ -->
+<section class="band band-alt" id="novedades">
+    <div class="container">
+        <div class="section-head">
+            <h2>Novedades en v3.5</h2>
+            <p>Lo último que hemos añadido a Lecturameter.</p>
+        </div>
+        <div class="whatsnew-grid">
+            <div class="whatsnew-col">
+                <h3>Nuevo</h3>
+                <ul>
+                    <li>Sesión inmersiva con Pagi, portada grande, cronómetro y sonidos ambientales</li>
+                    <li>Bingo con historial navegable, filtros y detalle de casillas</li>
+                    <li>Reto diario y bingo protegidos contra cambios de fecha del dispositivo</li>
+                    <li>Toca la portada en el detalle o al añadir un libro para verla ampliada</li>
+                    <li>Más pantallas se adaptan al girar el móvil</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>Correcciones</h3>
+                <ul>
+                    <li>Restaurar compra recupera el Pro canjeado con código tras reinstalar la app</li>
+                    <li>Widgets en tema Claro respetan el color de fondo en móviles con HyperOS</li>
+                    <li>La prueba gratis no se puede reactivar borrando datos ni cambiando la fecha</li>
+                    <li>Aviso claro al restaurar copias de seguridad dañadas</li>
+                    <li>Pagi flotante se puede ocultar por separado del resto de Pagis</li>
+                    <li>Escáner ISBN funciona en horizontal y vertical</li>
+                </ul>
             </div>
         </div>
     </div>
+</section>
 
-    <div class="section" id="roadmap" style="padding-top:40px;">
-        <div class="roadmap-head">
-            <div class="roadmap-head-text">
-                <h2>Roadmap</h2>
-                <p>Lo que está en camino. Sin fechas concretas.</p>
-            </div>
-            <div class="roadmap-pagi-wrap">
-                <div class="pagi-bubble" id="pagi-bubble-es"></div>
-                <div class="roadmap-pagi-glow"></div>
-                <svg id="pagi-es" class="pagi-svg pagi-mascot" data-expr="neutral" viewBox="-36 -8 272 468" width="72" overflow="visible" role="img" aria-label="Pagi, la mascota de Lecturameter">
-                    <g class="body-g">
-                        <path class="pagi-body" d="M 0 26 Q 0 0 26 0 L 174 0 Q 200 0 200 26 L 200 440 L 100 396 L 0 440 Z" fill="var(--accent)"/>
-                        <circle cx="100" cy="27" r="13" fill="#1D1822" opacity="0.28"/>
-                        <rect x="32" y="296" width="136" height="19" rx="9.5" fill="rgba(0,0,0,0.15)"/>
-                        <rect class="pagi-bar" x="32" y="296" width="88" height="19" rx="9.5" fill="rgba(255,255,255,0.6)"/>
-                        <rect x="44" y="340" width="112" height="7" rx="3.5" fill="rgba(0,0,0,0.18)"/>
-                        <rect x="44" y="362" width="112" height="7" rx="3.5" fill="rgba(0,0,0,0.18)"/>
-                        <rect x="44" y="384" width="112" height="7" rx="3.5" fill="rgba(0,0,0,0.18)"/>
-                        <ellipse class="arm-l" cx="-24" cy="238" rx="20" ry="14" fill="var(--accent)"/>
-                        <ellipse class="arm-r" cx="224" cy="238" rx="20" ry="14" fill="var(--accent)"/>
-                        <ellipse class="steam-1" cx="62" cy="-28" rx="10" ry="7" fill="#C03030" style="display:none"/>
-                        <ellipse class="steam-2" cx="134" cy="-36" rx="8" ry="6" fill="#C03030" style="display:none"/>
-                        <circle class="blush blush-l" cx="44" cy="192" r="24" fill="#D94040" style="display:none"/>
-                        <circle class="blush blush-r" cx="156" cy="192" r="24" fill="#D94040" style="display:none"/>
-                        <g class="eye-g">
-                            <ellipse class="pagi-sclera" cx="88" cy="152" rx="56" ry="62" fill="white"/>
-                            <g class="pupil-g">
-                                <circle class="pagi-pupil" cx="86" cy="152" r="31" fill="#1D1822"/>
-                                <circle class="pagi-hl1" cx="98" cy="139" r="10.5" fill="white"/>
-                                <circle class="pagi-hl2" cx="73" cy="167" r="5" fill="white" opacity="0.75"/>
-                            </g>
-                        </g>
-                        <ellipse class="pagi-sclera-closed" cx="88" cy="160" rx="56" ry="46" fill="white" style="display:none"/>
-                        <path class="pagi-eye-closed" d="M 36 158 Q 88 134 140 158" fill="none" stroke="#1D1822" stroke-width="11" stroke-linecap="round" style="display:none"/>
-                        <path class="pagi-brow" d="M 42 74 Q 88 46 134 76" fill="none" stroke="#1D1822" stroke-width="9" stroke-linecap="round"/>
-                        <g class="tear" style="display:none"><path d="M 106 208 Q 116 226 106 240 Q 96 226 106 208 Z" fill="#A8C8E8" opacity="0.85"/></g>
-                        <g class="pagi-stars" style="display:none" fill="#E8B93F">
-                            <path class="st1" d="M 0 -15 Q 2.4 -2.4 15 0 Q 2.4 2.4 0 15 Q -2.4 2.4 -15 0 Q -2.4 -2.4 0 -15 Z" transform="translate(-62 40)"/>
-                            <path class="st2" d="M 0 -12 Q 1.9 -1.9 12 0 Q 1.9 1.9 0 12 Q -1.9 1.9 -12 0 Q -1.9 -1.9 0 -12 Z" transform="translate(262 52)"/>
-                            <path class="st3" d="M 0 -10 Q 1.6 -1.6 10 0 Q 1.6 1.6 0 10 Q -1.6 1.6 -10 0 Q -1.6 -1.6 0 -10 Z" transform="translate(112 -74)"/>
-                            <path class="st4" d="M 0 -9 Q 1.4 -1.4 9 0 Q 1.4 1.4 0 9 Q -1.4 1.4 -9 0 Q -1.4 -1.4 0 -9 Z" transform="translate(-52 318)"/>
-                            <circle class="sp1" cx="-68" cy="122" r="7"/>
-                            <circle class="sp2" cx="268" cy="134" r="7"/>
-                            <circle class="sp3" cx="-58" cy="192" r="5"/>
-                            <circle class="sp4" cx="258" cy="204" r="5"/>
-                            <circle class="sp5" cx="-74" cy="258" r="3.5"/>
-                            <circle class="sp6" cx="274" cy="270" r="3.5"/>
-                            <circle class="sp7" cx="54" cy="-44" r="5.5"/>
-                            <circle class="sp8" cx="164" cy="-54" r="4"/>
-                        </g>
-                    </g>
-                </svg>
-            </div>
+<!-- ═══ 7. ROADMAP ═══ -->
+<section class="band" id="roadmap">
+    <div class="container">
+        <div class="section-head">
+            <h2>Lo que viene</h2>
+            <p>Esto es lo que estamos preparando para las próximas versiones. Sin fechas fijas: todo sale cuando está listo.</p>
         </div>
-        <div class="roadmap-items">
-            <div class="roadmap-item">
-                <div class="roadmap-item-header">
-                    <span class="roadmap-badge badge-dev">En desarrollo</span>
-                    <h3>Pági, la mascota</h3>
-                </div>
-                <p>Un marcapáginas animado que flota en la app mientras la usas. Cambia de expresión según lo que estés haciendo: celebra cuando terminas un libro, se pone pensativo cuando buscas, y te acompaña siempre que quieras tenerlo.</p>
+        <div class="roadmap-list">
+            <div class="roadmap-item glow">
+                <span class="roadmap-tag soon">Pronto</span>
+                <h3>Universo Lector</h3>
+                <p>Un mapa estelar de todos los libros que has leído. Cada libro es una estrella; los abandonados, asteroides.</p>
+            </div>
+            <div class="roadmap-item glow">
+                <span class="roadmap-tag soon">Pronto</span>
+                <h3>Momento de cierre con Pagi</h3>
+                <p>Pantalla de celebración cuando marcas un libro como terminado. Pagi te felicita.</p>
             </div>
             <div class="roadmap-item">
-                <div class="roadmap-item-header">
-                    <span class="roadmap-badge badge-soon">Próximamente</span>
-                    <h3>Encuesta a usuarios</h3>
-                </div>
-                <p>Quiero saber qué valoras más antes de elegir qué construir. La encuesta priorizará las siguientes funciones según lo que diga la comunidad.</p>
+                <span class="roadmap-tag planned">Planificado</span>
+                <h3>Rating con medias estrellas</h3>
+                <p>Puntúa tus libros con más precisión: de 1 a 5 estrellas con incrementos de media estrella.</p>
             </div>
             <div class="roadmap-item">
-                <div class="roadmap-item-header">
-                    <span class="roadmap-badge badge-study">En estudio</span>
-                    <h3>Recomendaciones de libros</h3>
-                </div>
-                <p>Sugerencias basadas en lo que ya has leído y tus géneros favoritos. Todavía decidiendo cómo hacerlo bien y de forma privada.</p>
+                <span class="roadmap-tag planned">Planificado</span>
+                <h3>Tarjetas compartibles</h3>
+                <p>Genera una imagen bonita de cualquier libro para compartir en WhatsApp, Instagram o donde quieras.</p>
             </div>
             <div class="roadmap-item">
-                <div class="roadmap-item-header">
-                    <span class="roadmap-badge badge-study">En estudio</span>
-                    <h3>Mejoras en búsqueda offline</h3>
-                </div>
-                <p>La base de datos local y la búsqueda offline seguirán mejorando: más libros, mejores portadas y datos más precisos.</p>
+                <span class="roadmap-tag planned">Planificado</span>
+                <h3>Recordatorios de lectura</h3>
+                <p>Notificaciones a la hora que elijas para recordarte que es momento de leer.</p>
             </div>
             <div class="roadmap-item">
-                <div class="roadmap-item-header">
-                    <span class="roadmap-badge badge-cond">Si hay demanda</span>
-                    <h3>iOS</h3>
-                </div>
-                <p>Lecturameter es Android porque es lo que uso y sé construir. Si hay suficiente interés de la comunidad, lo estudiaría seriamente.</p>
-            </div>
-            <div class="roadmap-item">
-                <div class="roadmap-item-header">
-                    <span class="roadmap-badge badge-study">En estudio</span>
-                    <h3>Cronómetro inmersivo</h3>
-                </div>
-                <p>Una pantalla de sesión estilo reproductor de música: portada del libro a pantalla completa, tu ritmo actual, predicción de fecha de fin actualizada en tiempo real. Pági celebra contigo cuando terminas.</p>
-            </div>
-            <div class="roadmap-item">
-                <div class="roadmap-item-header">
-                    <span class="roadmap-badge badge-study">En estudio</span>
-                    <h3>Reto diario</h3>
-                </div>
-                <p>Un objetivo de páginas o minutos para cada día. Pequeño, sin presión. Para los que quieren un punto de anclaje sin comprometerse con un reto de semanas.</p>
-            </div>
-            <div class="roadmap-item">
-                <div class="roadmap-item-header">
-                    <span class="roadmap-badge badge-study">En estudio</span>
-                    <h3>Nuevos gráficos y estadísticas</h3>
-                </div>
-                <p>Más formas de ver tus datos: distribución de sesiones a lo largo del día, evolución del ritmo libro a libro, comparativas entre géneros. Todavía decidiendo qué aporta más.</p>
+                <span class="roadmap-tag planned">Planificado</span>
+                <h3>Más idiomas</h3>
+                <p>Lecturameter en más idiomas europeos. Si quieres ayudar a traducir, escríbenos.</p>
             </div>
         </div>
     </div>
+</section>
 
-    <div class="section" id="apoyar">
-        <h2>Apoya el proyecto</h2>
-        <p>Si te gusta Lecturameter, puedes invitarme a un café. También hay propinas dentro de la app, con precios adaptados a cada país.</p>
-        <div class="donate-links links-grid">
-            <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="link-box kofi">
-                <div class="icon">☕</div>
-                <div class="text">Ko-fi<div class="sub">ko-fi.com/lecturameter</div></div>
-            </a>
-            <a href="https://paypal.me/Lecturameter" target="_blank" rel="noopener" class="link-box paypal">
-                <div class="icon">💙</div>
-                <div class="text">PayPal<div class="sub">paypal.me/Lecturameter</div></div>
-            </a>
+<!-- ═══ 8. FAQ ═══ -->
+<section class="band band-alt" id="faq">
+    <div class="container">
+        <div class="section-head">
+            <h2>Preguntas frecuentes</h2>
         </div>
-        <p class="donate-pro-note">Las donaciones de 4,99 € o más incluyen un código Pro equivalente. Manda el justificante a <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a> y te lo envío en menos de 24 h.</p>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-q">¿Puedo importar mi biblioteca desde Goodreads?</button>
+                <div class="faq-a"><div class="faq-a-inner">Sí. Exporta tu biblioteca como CSV desde goodreads.com/review/import. En Lecturameter, ve a Ajustes > Importar/Exportar > Importar CSV. La app mapea automáticamente título, autor, estado, valoración y fechas.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">¿Y desde StoryGraph?</button>
+                <div class="faq-a"><div class="faq-a-inner">También. Desde la versión 3.5 puedes exportar tu biblioteca desde app.thestorygraph.com (Gestionar cuenta > Gestionar tus datos > Exportar biblioteca). El CSV te llega por email.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">¿Mis datos son míos?</button>
+                <div class="faq-a"><div class="faq-a-inner">Totalmente. Tus datos se almacenan solo en tu móvil. No hay servidor propio ni se envía nada sin tu consentimiento. Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">¿Tiene suscripción?</button>
+                <div class="faq-a"><div class="faq-a-inner">No. La app es gratuita con opción Pro de pago único. No hay suscripciones.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">¿Funciona sin conexión?</button>
+                <div class="faq-a"><div class="faq-a-inner">Casi todo funciona offline. Solo necesitas conexión para buscar libros nuevos y para subir backups a Google Drive.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">¿Hay versión para iPhone?</button>
+                <div class="faq-a"><div class="faq-a-inner">No, de momento solo Android. Si hay suficiente interés, se estudiaría. Puedes apuntarte a la lista de espera enviando un email a <a href="mailto:lecturameter.app@gmail.com?subject=Lista%20de%20espera%20iOS&body=Quiero%20apuntarme%20a%20la%20lista%20de%20espera%20de%20Lecturameter%20para%20iOS.">lecturameter.app@gmail.com</a>.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">¿Puedo probarlo antes de pagar?</button>
+                <div class="faq-a"><div class="faq-a-inner">Sí. Hay una prueba gratuita de 7 días de las funciones Pro, sin poner tarjeta. Al terminar la prueba, aunque no compres Pro, te regalamos un tema Pro a tu elección.</div></div>
+            </div>
+        </div>
     </div>
+</section>
 
-    <div class="section" style="margin-top:8px;">
-        <h2>Enlaces</h2>
-        <div class="links-grid">
-            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="link-box playstore">
-                <div class="icon"><svg viewBox="0 0 512 512"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" fill="#34A853"/></svg></div>
-                <div class="text">Google Play<div class="sub">Descargar la app</div></div>
-            </a>
-            <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" class="link-box x">
-                <div class="icon"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
-                <div class="text">X (Twitter)<div class="sub">@LecturameterAPP</div></div>
-            </a>
-            <a href="https://www.reddit.com/user/LM_Reader_Dev/" target="_blank" rel="noopener" class="link-box reddit">
-                <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                        <rect fill="#ff4500" x="0" y="0" width="256" height="256" rx="36"/>
-                        <path fill="#fff" d="m154.04,60.36c2.22,9.41,10.67,16.42,20.76,16.42,11.78,0,21.33-9.55,21.33-21.33s-9.55-21.33-21.33-21.33c-10.3,0-18.89,7.3-20.89,17.01-17.25,1.85-30.72,16.48-30.72,34.21,0,.04,0,.07,0,.11-18.76.79-35.89,6.13-49.49,14.56-5.05-3.91-11.39-6.24-18.27-6.24-16.51,0-29.89,13.38-29.89,29.89,0,11.98,7.04,22.3,17.21,27.07.99,34.7,38.8,62.61,85.31,62.61s84.37-27.94,85.31-62.67c10.09-4.8,17.07-15.09,17.07-27,0-16.51-13.38-29.89-29.89-29.89-6.85,0-13.16,2.31-18.2,6.19-13.72-8.49-31.04-13.83-49.99-14.54,0-.03,0-.05,0-.08,0-12.7,9.44-23.24,21.68-24.97Zm-81.54,82.27c.5-10.84,7.7-19.16,16.07-19.16s14.77,8.79,14.27,19.63c-.5,10.84-6.75,14.78-15.13,14.78s-15.71-4.41-15.21-15.25Zm95.06-19.16c8.38,0,15.58,8.32,16.07,19.16.5,10.84-6.84,15.25-15.21,15.25s-14.63-3.93-15.13-14.78c-.5-10.84,5.89-19.63,14.27-19.63Zm-9.96,44.24c1.57.16,2.57,1.79,1.96,3.25-5.15,12.31-17.31,20.96-31.5,20.96s-26.34-8.65-31.5-20.96c-.61-1.46.39-3.09,1.96-3.25,9.2-.93,19.15-1.44,29.54-1.44s20.34.52,29.54,1.44Z"/>
-                    </svg>
+<!-- ═══ 9. FOOTER ═══ -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-cta">
+            <h3>Empieza a registrar tu lectura de verdad.</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Descargar en Google Play</a>
+        </div>
+
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Producto</h4>
+                <a href="#funciones">Funciones</a>
+                <a href="#precios">Precios</a>
+                <a href="../precios-regionales.html">Precios regionales</a>
+                <a href="#novedades">Novedades</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
+                <a href="../privacidad.html">Política de privacidad</a>
+                <div class="donate-row">
+                    <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi">Ko-fi</a>
+                    <a href="https://paypal.me/Lecturameter" target="_blank" rel="noopener" class="donate-btn paypal">PayPal</a>
                 </div>
-                <div class="text">Reddit<div class="sub">u/LM_Reader_Dev</div></div>
-            </a>
-            <a href="https://www.reddit.com/r/Lecturameter/" target="_blank" rel="noopener" class="link-box reddit">
-                <div class="icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z" fill="#FF4500"/></svg></div>
-                <div class="text">Reddit<div class="sub">r/Lecturameter</div></div>
-            </a>
+            </div>
+            <div class="footer-col">
+                <h4>Redes</h4>
+                <div class="footer-social">
+                    <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" aria-label="Google Play">
+                        <svg viewBox="0 0 24 24"><path d="M1 2.571C1 1.804 1.459 1.2 2.144.988L12.233 12 2.144 23.012C1.46 22.8 1 22.196 1 21.429V2.571z" fill="#4285F4"/><path d="M2.144 23.012L14.396 12l3.167 3.096L5.07 22.47a2.325 2.325 0 01-2.926.542z" fill="#EA4335"/><path d="M22.14 10.693l-4.578 2.636L14.396 12l3.166-3.096 4.578 2.636c.86.495.86 1.658 0 2.153z" fill="#FBBC04"/><path d="M2.144.988A2.325 2.325 0 015.07 1.53l12.492 7.374L14.396 12 2.144.988z" fill="#34A853"/></svg>
+                    </a>
+                    <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" aria-label="X / Twitter">
+                        <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                    </a>
+                    <a href="https://www.reddit.com/user/LM_Reader_Dev/" target="_blank" rel="noopener" aria-label="Reddit">
+                        <svg viewBox="0 0 24 24"><path fill="#FF4500" d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/lecturameter.app/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="5.5" fill="url(#ig)"/><path fill="#fff" d="M12 3.8c2.67 0 2.987.01 4.04.058 2.71.124 3.98 1.407 4.102 4.102.048 1.053.058 1.37.058 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.692-1.39 3.977-4.102 4.1-1.053.05-1.37.06-4.04.06-2.67 0-2.987-.01-4.04-.06-2.717-.123-3.977-1.412-4.102-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.127-2.694 1.39-3.978 4.102-4.102 1.053-.047 1.37-.058 4.04-.058zM12 2c-2.716 0-3.056.012-4.123.06-3.6.164-5.613 2.174-5.777 5.777C2.012 8.944 2 9.284 2 12s.012 3.057.06 4.123c.164 3.6 2.174 5.614 5.777 5.777 1.067.049 1.407.06 4.123.06s3.057-.011 4.123-.06c3.6-.163 5.615-2.174 5.777-5.777.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122c-.163-3.604-2.174-5.614-5.777-5.778C15.056 2.012 14.716 2 12 2zm0 4.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27zm0 8.468a3.333 3.333 0 1 1 0-6.666 3.333 3.333 0 0 1 0 6.666zm5.338-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>
+                    </a>
+                    <a href="https://linktr.ee/lecturameter" target="_blank" rel="noopener" aria-label="Linktree">
+                        <svg viewBox="0 0 24 24" fill="#43E660"><path d="M13.736 5.853l4.005-4.117 2.325 2.38-4.2 4.005h5.908v3.305h-5.937l4.229 4.108-2.325 2.334-5.74-5.769-5.741 5.769-2.325-2.325 4.229-4.108H2.226V8.121h5.909l-4.2-4.004 2.324-2.381 4.005 4.117V0h3.472zm-3.472 10.306h3.472V24h-3.472z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; 2026 Lecturameter &middot; Proyecto independiente</span>
+            <a href="../en/">English version</a>
         </div>
     </div>
+</footer>
 
-    <div class="footer">© 2026 Lecturameter · <a href="../privacidad.html">Política de privacidad</a> · <a href="../contact.html">Contacto</a></div>
-
-</main>
-
+<!-- Lightbox -->
 <div class="lbx-overlay" id="lightbox">
-    <button class="lbx-close" id="lbxClose">&#x2715;</button>
-    <button class="lbx-nav" id="lbxPrev">&#x2039;</button>
-    <img class="lbx-img" id="lbxImg" src="" alt="">
-    <button class="lbx-nav" id="lbxNext">&#x203a;</button>
-    <span class="lbx-cap" id="lbxCap"></span>
+    <button class="lbx-close">&#x2715;</button>
+    <img class="lbx-img" src="" alt="">
 </div>
 
-<script>
-(function(){
-    var overlay  = document.getElementById('lightbox');
-    var img      = document.getElementById('lbxImg');
-    var closeBtn = document.getElementById('lbxClose');
-    var prevBtn  = document.getElementById('lbxPrev');
-    var nextBtn  = document.getElementById('lbxNext');
-    var cap      = document.getElementById('lbxCap');
-    var group = [], idx = 0;
-
-    function showAt(i) {
-        idx = (i + group.length) % group.length;
-        var el = group[idx];
-        img.src = el.dataset.src;
-        var fc = el.querySelector && el.querySelector('figcaption');
-        cap.textContent = fc ? fc.textContent : '';
-        cap.style.display = fc ? '' : 'none';
-        var hasNav = group.length > 1;
-        prevBtn.style.display = hasNav ? '' : 'none';
-        nextBtn.style.display = hasNav ? '' : 'none';
-    }
-    function openLbx(g, i) {
-        group = g; showAt(i);
-        overlay.classList.add('open');
-        document.body.style.overflow = 'hidden';
-    }
-    function closeLbx() {
-        overlay.classList.remove('open');
-        document.body.style.overflow = '';
-        img.src = ''; group = [];
-    }
-
-    document.querySelectorAll('.themes-row figure[data-src]').forEach(function(fig){
-        fig.style.cursor = 'zoom-in';
-        fig.addEventListener('click', function(e){
-            e.stopPropagation();
-            var row = fig.closest('.themes-row');
-            var g = Array.from(row.querySelectorAll('figure[data-src]'));
-            openLbx(g, g.indexOf(fig));
-        });
-    });
-    document.querySelectorAll('[data-src]:not(figure)').forEach(function(card){
-        card.style.cursor = 'zoom-in';
-        card.addEventListener('click', function(e){
-            e.stopPropagation();
-            openLbx([card], 0);
-        });
-    });
-
-    prevBtn.addEventListener('click', function(e){ e.stopPropagation(); showAt(idx - 1); });
-    nextBtn.addEventListener('click', function(e){ e.stopPropagation(); showAt(idx + 1); });
-    closeBtn.addEventListener('click', closeLbx);
-    overlay.addEventListener('click', function(e){ if(e.target === overlay) closeLbx(); });
-    document.addEventListener('keydown', function(e){
-        if (!overlay.classList.contains('open')) return;
-        if (e.key === 'Escape')      closeLbx();
-        if (e.key === 'ArrowLeft')   showAt(idx - 1);
-        if (e.key === 'ArrowRight')  showAt(idx + 1);
-    });
-})();
-
-(function() {
-    var BROWS = {
-        neutral:    'M 42 74 Q 88 46 134 76',
-        leyendo:    'M 44 84 Q 88 60 132 82',
-        pensativo:  'M 42 80 Q 88 56 136 76',
-        triste:     'M 42 64 Q 88 82 136 60',
-        celebrando: 'M 42 68 Q 88 44 134 70'
-    };
-    var PUPILS = {
-        neutral:    {cx:86,cy:152, h1x:98,h1y:139, h2x:73,h2y:167},
-        leyendo:    {cx:79,cy:170, h1x:91,h1y:157, h2x:66,h2y:185},
-        pensativo:  {cx:102,cy:134, h1x:114,h1y:121, h2x:89,h2y:149},
-        celebrando: {cx:89,cy:145, h1x:101,h1y:132, h2x:76,h2y:160}
-    };
-    var ARM_CY = { neutral:238, leyendo:252, pensativo:244, triste:262, celebrando:198 };
-    var BAR_W  = { neutral:16, leyendo:88, pensativo:61, triste:0, celebrando:136 };
-    var STATES = ['neutral','leyendo','pensativo','triste','celebrando'];
-    var stateIdx = 0;
-
-    function applyState(svg, state) {
-        svg.setAttribute('data-expr', state);
-        svg.querySelector('.pagi-brow').setAttribute('d', BROWS[state]);
-
-        var eyeG = svg.querySelector('.eye-g');
-        var scClosed = svg.querySelector('.pagi-sclera-closed');
-        var eyeClosed = svg.querySelector('.pagi-eye-closed');
-        var tear = svg.querySelector('.tear');
-        var stars = svg.querySelector('.pagi-stars');
-
-        if (state === 'triste') {
-            eyeG.style.display = 'none';
-            scClosed.style.display = '';
-            eyeClosed.style.display = '';
-            tear.style.display = '';
-        } else {
-            eyeG.style.display = '';
-            scClosed.style.display = 'none';
-            eyeClosed.style.display = 'none';
-            tear.style.display = 'none';
-            var p = PUPILS[state];
-            svg.querySelector('.pagi-pupil').setAttribute('cx',p.cx);
-            svg.querySelector('.pagi-pupil').setAttribute('cy',p.cy);
-            svg.querySelector('.pagi-hl1').setAttribute('cx',p.h1x);
-            svg.querySelector('.pagi-hl1').setAttribute('cy',p.h1y);
-            svg.querySelector('.pagi-hl2').setAttribute('cx',p.h2x);
-            svg.querySelector('.pagi-hl2').setAttribute('cy',p.h2y);
-        }
-
-        stars.style.display = state === 'celebrando' ? '' : 'none';
-
-        var cy = ARM_CY[state];
-        svg.querySelector('.arm-l').setAttribute('cy', cy);
-        svg.querySelector('.arm-r').setAttribute('cy', cy);
-
-        var bar = svg.querySelector('.pagi-bar');
-        if (BAR_W[state] === 0) { bar.style.display = 'none'; }
-        else { bar.style.display = ''; bar.setAttribute('width', BAR_W[state]); }
-    }
-
-    function tick() {
-        var state = STATES[stateIdx];
-        document.querySelectorAll('.pagi-mascot').forEach(function(svg) { applyState(svg, state); });
-        stateIdx = (stateIdx + 1) % STATES.length;
-    }
-
-    tick();
-    var cycleTimer = setInterval(tick, 2500);
-    var angryTimer = null;
-
-    function applyAngry(svg) {
-        svg.setAttribute('data-expr', 'enfadado');
-        svg.querySelector('.pagi-brow').setAttribute('d', 'M 38 62 L 68 82 L 88 70 L 108 82 L 138 62');
-        svg.querySelector('.pagi-brow').setAttribute('stroke-linejoin', 'round');
-        svg.querySelector('.eye-g').style.display = '';
-        svg.querySelector('.pagi-sclera').setAttribute('ry', '58');
-        svg.querySelector('.pagi-pupil').setAttribute('cx', '88');
-        svg.querySelector('.pagi-pupil').setAttribute('cy', '168');
-        svg.querySelector('.pagi-pupil').setAttribute('r', '30');
-        svg.querySelector('.pagi-hl1').setAttribute('cx', '100');
-        svg.querySelector('.pagi-hl1').setAttribute('cy', '155');
-        svg.querySelector('.pagi-hl1').setAttribute('r', '10');
-        svg.querySelector('.pagi-hl2').setAttribute('cx', '75');
-        svg.querySelector('.pagi-hl2').setAttribute('cy', '183');
-        svg.querySelector('.pagi-hl2').setAttribute('r', '4.5');
-        svg.querySelector('.pagi-sclera-closed').style.display = 'none';
-        svg.querySelector('.pagi-eye-closed').style.display = 'none';
-        svg.querySelector('.tear').style.display = 'none';
-        svg.querySelector('.pagi-stars').style.display = 'none';
-        svg.querySelector('.arm-l').setAttribute('cy', '210');
-        svg.querySelector('.arm-r').setAttribute('cy', '210');
-        svg.querySelector('.steam-1').style.display = '';
-        svg.querySelector('.steam-2').style.display = '';
-        svg.querySelector('.blush-l').style.display = '';
-        svg.querySelector('.blush-r').style.display = '';
-        var bar = svg.querySelector('.pagi-bar');
-        bar.style.display = ''; bar.setAttribute('width', '52');
-    }
-
-    function clearAngry(svg) {
-        svg.querySelector('.pagi-brow').removeAttribute('stroke-linejoin');
-        svg.querySelector('.pagi-sclera').setAttribute('ry', '62');
-        svg.querySelector('.pagi-pupil').setAttribute('r', '31');
-        svg.querySelector('.pagi-hl1').setAttribute('r', '10.5');
-        svg.querySelector('.pagi-hl2').setAttribute('r', '5');
-        svg.querySelector('.steam-1').style.display = 'none';
-        svg.querySelector('.steam-2').style.display = 'none';
-        svg.querySelector('.blush-l').style.display = 'none';
-        svg.querySelector('.blush-r').style.display = 'none';
-    }
-
-    document.querySelectorAll('.pagi-mascot').forEach(function(svg) {
-        svg.addEventListener('click', function() {
-            var bubble = svg.closest('.roadmap-pagi-wrap').querySelector('.pagi-bubble');
-            if (!bubble) return;
-
-            clearInterval(cycleTimer);
-            clearTimeout(angryTimer);
-
-            document.querySelectorAll('.pagi-mascot').forEach(function(s) { applyAngry(s); });
-
-            bubble.textContent = '¡Eh, para!';
-            bubble.classList.add('show');
-            clearTimeout(bubble._tid);
-            bubble._tid = setTimeout(function() { bubble.classList.remove('show'); }, 1800);
-
-            angryTimer = setTimeout(function() {
-                document.querySelectorAll('.pagi-mascot').forEach(function(s) { clearAngry(s); });
-                tick();
-                cycleTimer = setInterval(tick, 2500);
-            }, 2000);
-        });
-    });
-})();
-</script>
-<script src="../main.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    try { localStorage.setItem('lm_lang', 'es'); } catch(e) {}
-    renderStats('es');
-    loadWhatsNew();
-    newCaptcha('captchaQuestionFb-es');
-});
-</script>
+<script src="../main.js?v=3.0"></script>
 </body>
 </html>
