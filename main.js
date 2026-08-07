@@ -328,6 +328,127 @@
         }, { passive: true });
     }
 
+    // ─── PAGI LAGO (iOS section) ───
+    var pagiLago = document.querySelector('.pagi-lago');
+    if (pagiLago) {
+        var lagoCache = {};
+        var lagoState = null;
+        var lagoTimer = null;
+        var lagoLang = (document.documentElement.lang || 'es').slice(0, 2);
+        var LAGO_HAPPY = lagoLang === 'en'
+            ? ['iOS coming soon!', 'More readers to meet!', 'Get your AirPods ready!', 'See you on the App Store.']
+            : ['¡iOS pronto!', '¡Voy a conocer más lectores!', '¡Preparad los AirPods!', 'Nos vemos en el App Store.'];
+        var LAGO_ANGRY = lagoLang === 'en'
+            ? ['You are not taking me there…', 'I prefer Android.', 'I refuse to jump the fence.', 'Do NOT put me in a box.']
+            : ['¿A que no me llevas?', 'Prefiero Android.', 'No pienso saltar la manzana.', 'Ni se te ocurra meterme ahí.'];
+
+        function fetchLago(name) {
+            if (lagoCache[name]) return Promise.resolve(lagoCache[name]);
+            return fetch('../pagi/lago-' + name + '.svg').then(function (r) { return r.text(); }).then(function (t) {
+                lagoCache[name] = t;
+                return t;
+            });
+        }
+        function setLago(name) {
+            lagoState = name;
+            fetchLago(name).then(function (svg) { if (lagoState === name) pagiLago.innerHTML = svg; });
+        }
+        function pickLagoPhrase(arr, prev) {
+            var pool = arr.filter(function (x) { return x !== prev; });
+            return pool[Math.floor(Math.random() * pool.length)];
+        }
+        var lagoStatus = document.querySelector('#ios .ios-status');
+        var lagoLastPhrase = null;
+        function flashLagoPhrase(arr, cls) {
+            if (!lagoStatus) return;
+            var p = pickLagoPhrase(arr, lagoLastPhrase);
+            lagoLastPhrase = p;
+            lagoStatus.textContent = p;
+            lagoStatus.className = 'ios-status ' + cls;
+            clearTimeout(flashLagoPhrase._t);
+            flashLagoPhrase._t = setTimeout(function () {
+                if (lagoStatus.textContent === p) { lagoStatus.textContent = ''; lagoStatus.className = 'ios-status'; }
+            }, 3200);
+        }
+
+        setLago('neutro');
+
+        var pendingLagoClick = null;
+        var LAGO_DBL_MS = 350;
+        pagiLago.addEventListener('click', function () {
+            if (pendingLagoClick) {
+                clearTimeout(pendingLagoClick);
+                pendingLagoClick = null;
+                if (lagoTimer) clearTimeout(lagoTimer);
+                setLago('enfadado');
+                flashLagoPhrase(LAGO_ANGRY, 'err');
+                lagoTimer = setTimeout(function () { setLago('neutro'); }, 3500);
+                return;
+            }
+            pendingLagoClick = setTimeout(function () {
+                pendingLagoClick = null;
+                if (lagoTimer) clearTimeout(lagoTimer);
+                setLago('feliz');
+                flashLagoPhrase(LAGO_HAPPY, 'ok');
+                lagoTimer = setTimeout(function () { setLago('neutro'); }, 3000);
+            }, LAGO_DBL_MS);
+        });
+        pagiLago.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pagiLago.click(); }
+        });
+
+        // Eye tracking on lago (only in neutro state, only pointer:fine)
+        if (window.matchMedia('(pointer: fine)').matches) {
+            var LAGO_MAX_X = 18, LAGO_MAX_Y = 20;
+            var lagoRaf = false, lagoLX = 0, lagoLY = 0;
+            function updateLagoPupil() {
+                lagoRaf = false;
+                var pupil = pagiLago.querySelector('.pg-pupil-lago');
+                if (!pupil) return;
+                var svg = pupil.ownerSVGElement;
+                if (!svg) return;
+                var r = svg.getBoundingClientRect();
+                if (!r.width) return;
+                var cx = r.left + r.width * 0.5;
+                var cy = r.top + r.height * 0.5;
+                var dx = lagoLX - cx, dy = lagoLY - cy;
+                var dist = Math.hypot(dx, dy) || 1;
+                var norm = Math.min(1, dist / 400);
+                var tx = (dx / dist) * LAGO_MAX_X * norm;
+                var ty = (dy / dist) * LAGO_MAX_Y * norm;
+                pupil.setAttribute('transform', 'translate(' + tx.toFixed(1) + ' ' + ty.toFixed(1) + ')');
+            }
+            window.addEventListener('mousemove', function (e) {
+                lagoLX = e.clientX; lagoLY = e.clientY;
+                if (!lagoRaf) { lagoRaf = true; requestAnimationFrame(updateLagoPupil); }
+            }, { passive: true });
+        }
+    }
+
+    // ─── iOS WAITLIST (mailto MVP) ───
+    window.submitIosWaitlist = function (e, lang) {
+        e.preventDefault();
+        var form = e.target;
+        var email = (form.email.value || '').trim();
+        var name = (form.name.value || '').trim();
+        var status = form.querySelector('.ios-status');
+        if (!email || email.indexOf('@') < 1) {
+            if (status) { status.textContent = lang === 'en' ? 'Please enter a valid email.' : 'Introduce un email válido.'; status.className = 'ios-status err'; }
+            return false;
+        }
+        var subject = 'iOS waitlist';
+        var body = 'Email: ' + email + '\n' + (name ? 'Name: ' + name + '\n' : '') + '\n(Sent from lecturameterapp.github.io)';
+        var href = 'mailto:lecturameter.app@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        window.location.href = href;
+        if (status) {
+            status.textContent = lang === 'en'
+                ? 'Opening your email app… if nothing happens, write directly to lecturameter.app@gmail.com.'
+                : 'Abriendo tu cliente de email… si no pasa nada, escríbenos directamente a lecturameter.app@gmail.com.';
+            status.className = 'ios-status ok';
+        }
+        return false;
+    };
+
     // ─── PAGI STAR EYE TRACKING (only while in neutral state) ───
     (function () {
         if (!window.matchMedia('(pointer: fine)').matches) return;
