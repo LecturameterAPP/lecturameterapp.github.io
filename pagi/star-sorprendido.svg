@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 -60 400 370" overflow="visible">
+  <style>
+    @keyframes pg-blink{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.08)}}
+    @keyframes pg-qbob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    @keyframes pg-body{0%,100%{transform:translateY(-5px) rotate(-1deg)}50%{transform:translateY(5px) rotate(1deg)}}
+    @keyframes pg-al{0%,100%{transform:translate(-3px,4px)}50%{transform:translate(3px,-4px)}}
+    @keyframes pg-ar{0%,100%{transform:translate(3px,-4px)}50%{transform:translate(-3px,4px)}}
+    .eye{transform-box:fill-box;transform-origin:center;animation:pg-blink 6.5s ease-in-out infinite}
+    .bg{animation:pg-body 3.8s ease-in-out infinite;transform-origin:120px 132px;transform-box:fill-box}
+    .al{transform-box:fill-box;transform-origin:center;animation:pg-al 3.4s ease-in-out infinite}
+    .ar{transform-box:fill-box;transform-origin:center;animation:pg-ar 3.8s ease-in-out infinite}
+    .qm{transform-box:fill-box;transform-origin:center}
+  </style>
+  <g class="bg">
+    <g fill="#E8B93F" font-family="system-ui,sans-serif" text-anchor="middle" font-weight="700">
+      <text class="qm" x="-18" y="58" font-size="48" style="animation:pg-qbob 2.3s ease-in-out infinite">?</text>
+      <text class="qm" x="258" y="48" font-size="40" style="animation:pg-qbob 2.6s ease-in-out infinite .6s">?</text>
+      <text class="qm" x="120" y="-2" font-size="32" style="animation:pg-qbob 2.1s ease-in-out infinite 1s">?</text>
+    </g>
+    <ellipse class="al" cx="2" cy="92" rx="13" ry="9" fill="currentColor"/>
+    <ellipse class="ar" cx="238" cy="92" rx="13" ry="9" fill="currentColor"/>
+    <path d="M 110 35 Q 120 20 130 35 L 158 79 L 209 93 Q 227 97 215 111 L 182 152 L 185 205 Q 186 223 169 216 L 120 197 L 71 216 Q 54 223 55 205 L 58 152 L 25 111 Q 14 97 31 93 L 82 79 Z" fill="currentColor"/>
+    <circle cx="120" cy="42" r="7" fill="#1D1822" opacity=".25"/>
+    <rect x="75" y="165" width="90" height="11" rx="5.5" fill="#000" opacity=".13"/>
+    <rect x="75" y="165" width="36" height="11" rx="5.5" fill="#fff" opacity=".55"/>
+    <rect x="84" y="182" width="72" height="4.5" rx="2.2" fill="#1D1822" opacity=".15"/>
+    <rect x="84" y="191" width="72" height="4.5" rx="2.2" fill="#1D1822" opacity=".15"/>
+    <g class="eye">
+      <ellipse cx="106" cy="112" rx="34" ry="40" fill="#fff"/>
+      <g>
+        <circle cx="106" cy="108" r="18" fill="#1D1822"/>
+        <circle cx="114" cy="99" r="6.5" fill="#fff"/>
+        <circle cx="97" cy="120" r="3" fill="#fff" opacity=".75"/>
+      </g>
+    </g>
+    <path d="M68 46 Q106 22 144 48" fill="none" stroke="#1D1822" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>

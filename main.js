@@ -234,6 +234,12 @@
             origSetPagi(name);
         };
 
+        // Expose safe setter for shared idle handler (only touches state when currently neutral, or when reverting to neutral)
+        window.__lmStarSetState = function (target) {
+            if (target === 'sorprendido' && pagiState === 'neutral') { setPagi('sorprendido'); }
+            else if (target === 'neutral' && pagiState === 'sorprendido') { setPagi('neutral'); }
+        };
+
         pagiStar.addEventListener('click', function () {
             if (pendingStarClick) {
                 clearTimeout(pendingStarClick);
@@ -300,33 +306,80 @@
         });
     }
 
-    // ─── PAGI HERO EYE TRACKING ───
-    var pagiHeroPupil = document.querySelector('.pagi-hero .pg-pupil');
-    if (pagiHeroPupil && window.matchMedia('(pointer: fine)').matches) {
-        var heroSvg = pagiHeroPupil.ownerSVGElement;
-        // MAX in SVG units. Eye white ellipse rx=56/ry=62, pupil r=31 → safe room = 25×31.
-        // Cap at 14×18 so pupil never touches the iris edge.
-        var MAX_X = 14, MAX_Y = 18;
-        var rafPending = false;
-        var lastX = 0, lastY = 0;
-        function updatePupil() {
-            rafPending = false;
-            var r = heroSvg.getBoundingClientRect();
+    // ─── PAGI HERO EYE TRACKING (re-queries per frame so it survives SVG swaps) ───
+    (function () {
+        if (!window.matchMedia('(pointer: fine)').matches) return;
+        var heroContainer = document.querySelector('.pagi-hero');
+        if (!heroContainer) return;
+        var HERO_MAX_X = 14, HERO_MAX_Y = 18;
+        var heroRaf = false, heroLX = 0, heroLY = 0;
+        function updateHeroPupil() {
+            heroRaf = false;
+            var pupil = heroContainer.querySelector('.pg-pupil');
+            if (!pupil) return;
+            var svg = pupil.ownerSVGElement;
+            if (!svg) return;
+            var r = svg.getBoundingClientRect();
             if (!r.width) return;
             var cx = r.left + r.width * 0.42;
             var cy = r.top + r.height * 0.38;
-            var dx = lastX - cx, dy = lastY - cy;
+            var dx = heroLX - cx, dy = heroLY - cy;
             var dist = Math.hypot(dx, dy) || 1;
             var norm = Math.min(1, dist / 400);
-            var tx = (dx / dist) * MAX_X * norm;
-            var ty = (dy / dist) * MAX_Y * norm;
-            pagiHeroPupil.setAttribute('transform', 'translate(' + tx.toFixed(1) + ' ' + ty.toFixed(1) + ')');
+            var tx = (dx / dist) * HERO_MAX_X * norm;
+            var ty = (dy / dist) * HERO_MAX_Y * norm;
+            pupil.setAttribute('transform', 'translate(' + tx.toFixed(1) + ' ' + ty.toFixed(1) + ')');
         }
         window.addEventListener('mousemove', function (e) {
-            lastX = e.clientX; lastY = e.clientY;
-            if (!rafPending) { rafPending = true; requestAnimationFrame(updatePupil); }
+            heroLX = e.clientX; heroLY = e.clientY;
+            if (!heroRaf) { heroRaf = true; requestAnimationFrame(updateHeroPupil); }
         }, { passive: true });
-    }
+    })();
+
+    // ─── SHARED IDLE HANDLER (30s idle → all Pagis to their "surprised/confused" state) ───
+    (function () {
+        var IDLE_MS = 30000;
+        var idleTimer = null;
+        var isIdle = false;
+        var handlers = [];
+        function trigger() { isIdle = true; handlers.forEach(function (h) { try { h.onIdle(); } catch (e) {} }); }
+        function reset() {
+            if (isIdle) { isIdle = false; handlers.forEach(function (h) { try { h.onActive(); } catch (e) {} }); }
+            clearTimeout(idleTimer);
+            idleTimer = setTimeout(trigger, IDLE_MS);
+        }
+        ['mousemove', 'scroll', 'keydown', 'touchstart', 'click'].forEach(function (ev) {
+            window.addEventListener(ev, reset, { passive: true });
+        });
+
+        // Hero → hero-sorprendido on idle, restore original on activity
+        var heroContainer = document.querySelector('.pagi-hero');
+        if (heroContainer) {
+            var heroOriginalHTML = heroContainer.innerHTML;
+            var heroSorprSvg = null;
+            handlers.push({
+                onIdle: function () {
+                    if (heroSorprSvg) { heroContainer.innerHTML = heroSorprSvg; return; }
+                    fetch('../pagi/hero-sorprendido.svg').then(function (r) { return r.text(); }).then(function (t) {
+                        heroSorprSvg = t;
+                        if (isIdle) heroContainer.innerHTML = t;
+                    });
+                },
+                onActive: function () { heroContainer.innerHTML = heroOriginalHTML; }
+            });
+        }
+        // Star → sorprendido on idle (setter is registered later in this file; look up dynamically)
+        handlers.push({
+            onIdle: function () { if (window.__lmStarSetState) window.__lmStarSetState('sorprendido'); },
+            onActive: function () { if (window.__lmStarSetState) window.__lmStarSetState('neutral'); }
+        });
+        // Lago → confuso on idle
+        handlers.push({
+            onIdle: function () { if (window.__lmLagoSetState) window.__lmLagoSetState('confuso'); },
+            onActive: function () { if (window.__lmLagoSetState) window.__lmLagoSetState('neutro'); }
+        });
+        reset();
+    })();
 
     // ─── THEME PILLS (temas section: change Pagi mascot color) ───
     (function () {
@@ -444,24 +497,11 @@
             if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pagiLago.click(); }
         });
 
-        // Idle → confuso after 30s no interaction; back to neutro on any input.
-        var lagoIdleTimer = null;
-        var lagoIsIdle = false;
-        function resetLagoIdle() {
-            if (lagoIsIdle) {
-                lagoIsIdle = false;
-                if (lagoState === 'confuso') { if (lagoTimer) clearTimeout(lagoTimer); setLago('neutro'); }
-            }
-            clearTimeout(lagoIdleTimer);
-            lagoIdleTimer = setTimeout(function () {
-                lagoIsIdle = true;
-                if (lagoState === 'neutro') { if (lagoTimer) clearTimeout(lagoTimer); setLago('confuso'); }
-            }, 30000);
-        }
-        ['mousemove', 'scroll', 'keydown', 'touchstart', 'click'].forEach(function (ev) {
-            window.addEventListener(ev, resetLagoIdle, { passive: true });
-        });
-        resetLagoIdle();
+        // Expose safe setter for shared idle handler
+        window.__lmLagoSetState = function (target) {
+            if (target === 'confuso' && lagoState === 'neutro') { if (lagoTimer) clearTimeout(lagoTimer); setLago('confuso'); }
+            else if (target === 'neutro' && lagoState === 'confuso') { if (lagoTimer) clearTimeout(lagoTimer); setLago('neutro'); }
+        };
 
         // Eye tracking on lago (only in neutro state, only pointer:fine)
         if (window.matchMedia('(pointer: fine)').matches) {
@@ -513,21 +553,34 @@
         setStatus(lang === 'en' ? 'Opening your email app… if nothing happens, write directly to lecturameter.app@gmail.com.' : 'Abriendo tu cliente de email… si no pasa nada, escríbenos directamente a lecturameter.app@gmail.com.', true);
     };
 
-    // ─── iOS WAITLIST (mailto MVP) ───
+    // ─── iOS WAITLIST (mailto MVP + captcha) ───
+    (function () {
+        var q = document.querySelector('.ios-captcha-question');
+        if (q) {
+            var a = 1 + Math.floor(Math.random() * 8);
+            var b = 1 + Math.floor(Math.random() * 8);
+            q.textContent = a + ' + ' + b + ' = ?';
+            q.dataset.expected = String(a + b);
+        }
+    })();
     window.submitIosWaitlist = function (e, lang) {
         e.preventDefault();
         var form = e.target;
         var email = (form.email.value || '').trim();
         var name = (form.name.value || '').trim();
         var status = form.querySelector('.ios-status');
-        if (!email || email.indexOf('@') < 1) {
-            if (status) { status.textContent = lang === 'en' ? 'Please enter a valid email.' : 'Introduce un email válido.'; status.className = 'ios-status err'; }
-            return false;
+        var capQ = form.querySelector('.ios-captcha-question');
+        var capI = form.querySelector('.ios-captcha-input');
+        function fail(msg) { if (status) { status.textContent = msg; status.className = 'ios-status err'; } return false; }
+        if (!email || email.indexOf('@') < 1) return fail(lang === 'en' ? 'Please enter a valid email.' : 'Introduce un email válido.');
+        if (capQ && capI) {
+            var expected = parseInt(capQ.dataset.expected || '-1', 10);
+            var given = parseInt((capI.value || '').trim(), 10);
+            if (isNaN(given) || given !== expected) return fail(lang === 'en' ? 'Captcha wrong, try again.' : 'Captcha incorrecto, prueba otra vez.');
         }
         var subject = 'iOS waitlist';
         var body = 'Email: ' + email + '\n' + (name ? 'Name: ' + name + '\n' : '') + '\n(Sent from lecturameterapp.github.io)';
-        var href = 'mailto:lecturameter.app@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-        window.location.href = href;
+        window.location.href = 'mailto:lecturameter.app@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
         if (status) {
             status.textContent = lang === 'en'
                 ? 'Opening your email app… if nothing happens, write directly to lecturameter.app@gmail.com.'

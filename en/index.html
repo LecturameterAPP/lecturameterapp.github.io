@@ -38,7 +38,7 @@
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/">
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=4.4">
+    <link rel="stylesheet" href="../styles.css?v=4.5">
 
     <script type="application/ld+json">
     {
@@ -592,6 +592,11 @@
             <form class="ios-waitlist" onsubmit="return submitIosWaitlist(event, 'en')">
                 <input type="email" name="email" placeholder="you@email.com" required autocomplete="email" aria-label="Email">
                 <input type="text" name="name" placeholder="Your name (optional)" autocomplete="name" aria-label="Name">
+                <div class="ios-captcha-row">
+                    <span aria-hidden="true">🔐</span>
+                    <span class="ios-captcha-question" aria-label="Anti-spam question">2 + 3 = ?</span>
+                    <input type="text" class="ios-captcha-input" placeholder="?" autocomplete="off" maxlength="2" required aria-label="Captcha answer">
+                </div>
                 <button type="submit">Notify me</button>
                 <p class="ios-note">At most one email when it's ready. No newsletter, no spam. You can also write directly to <a href="mailto:lecturameter.app@gmail.com?subject=iOS%20waitlist">lecturameter.app@gmail.com</a>.</p>
                 <p class="ios-status" role="status" aria-live="polite"></p>
@@ -709,6 +714,6 @@
     <img class="lbx-img" src="" alt="">
 </div>
 
-<script src="../main.js?v=4.4"></script>
+<script src="../main.js?v=4.5"></script>
 </body>
 </html>
