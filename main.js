@@ -336,19 +336,27 @@
         }, { passive: true });
     })();
 
-    // ─── SHARED IDLE HANDLER (30s idle → all Pagis to their "surprised/confused" state) ───
+    // ─── SHARED IDLE HANDLER (15s idle → all Pagis to their "surprised/confused" state) ───
     (function () {
-        var IDLE_MS = 30000;
+        var IDLE_MS = 15000;
+        var MOUSE_THRESHOLD = 6; // ignore <6px mouse jitter so a still hand doesn't reset the timer
         var idleTimer = null;
         var isIdle = false;
         var handlers = [];
+        var lastX = null, lastY = null;
         function trigger() { isIdle = true; handlers.forEach(function (h) { try { h.onIdle(); } catch (e) {} }); }
         function reset() {
             if (isIdle) { isIdle = false; handlers.forEach(function (h) { try { h.onActive(); } catch (e) {} }); }
             clearTimeout(idleTimer);
             idleTimer = setTimeout(trigger, IDLE_MS);
         }
-        ['mousemove', 'scroll', 'keydown', 'touchstart', 'click'].forEach(function (ev) {
+        function onMouseMove(e) {
+            if (lastX !== null && Math.abs(e.clientX - lastX) < MOUSE_THRESHOLD && Math.abs(e.clientY - lastY) < MOUSE_THRESHOLD) return;
+            lastX = e.clientX; lastY = e.clientY;
+            reset();
+        }
+        window.addEventListener('mousemove', onMouseMove, { passive: true });
+        ['scroll', 'keydown', 'touchstart', 'click'].forEach(function (ev) {
             window.addEventListener(ev, reset, { passive: true });
         });
 

@@ -520,10 +520,11 @@ html:not([data-theme="dark"]) .theme-pill.active { color: #fff; }
 .page-hero { text-align: center; margin-bottom: 40px; }
 .page-hero h1, .page-hero .page-heading { font-size: 34px; margin-bottom: 12px; color: var(--text-strong, #fff); }
 .page-hero .tagline { color: var(--text-muted, #9aa3bf); font-size: 17px; }
-.privacy-highlight { background: var(--card, #1a2340); border: 1px solid var(--line, rgba(255,255,255,0.08)); border-radius: 14px; padding: 22px 24px; margin: 26px 0; display: flex; gap: 16px; align-items: flex-start; }
-.privacy-highlight .icon { font-size: 26px; flex-shrink: 0; }
-.privacy-highlight h2, .privacy-highlight h3 { color: var(--text-strong, #fff); margin-bottom: 6px; font-size: 17px; }
-.privacy-highlight p { color: var(--text, #e2e6f3); line-height: 1.6; }
+.privacy-highlight { background: var(--card, #1a2340); border: 1px solid var(--line, rgba(255,255,255,0.08)); border-radius: 14px; padding: 22px 26px; margin: 26px 0; }
+.privacy-highlight .icon { font-size: 26px; float: left; margin: 0 14px 0 0; line-height: 1.2; }
+.privacy-highlight h2, .privacy-highlight h3 { color: var(--text-strong, #fff); margin-bottom: 10px; font-size: 18px; display: inline-block; }
+.privacy-highlight p { color: var(--text, #e2e6f3); line-height: 1.6; clear: none; }
+.privacy-highlight::after { content: ""; display: block; clear: both; }
 .privacy-text { color: var(--text, #e2e6f3); line-height: 1.7; }
 .privacy-text p { margin: 12px 0; }
 .privacy-text ul { padding-left: 22px; margin: 10px 0; }
