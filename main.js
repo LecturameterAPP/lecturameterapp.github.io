@@ -338,7 +338,7 @@
 
     // ─── SHARED IDLE HANDLER (15s idle → all Pagis to their "surprised/confused" state) ───
     (function () {
-        var IDLE_MS = 15000;
+        var IDLE_MS = 8000;
         var MOUSE_THRESHOLD = 6; // ignore <6px mouse jitter so a still hand doesn't reset the timer
         var idleTimer = null;
         var isIdle = false;
