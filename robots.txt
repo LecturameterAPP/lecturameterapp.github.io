@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /*mockup*.html$
+Disallow: /SIGUE_*.md$
 Sitemap: https://lecturameterapp.github.io/sitemap.xml

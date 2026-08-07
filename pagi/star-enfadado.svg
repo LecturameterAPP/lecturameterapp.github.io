@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 -60 400 370" overflow="visible">
+  <style>
+    @keyframes pse-steam{0%{transform:translateY(0);opacity:0}20%{opacity:.85}80%{opacity:.5}100%{transform:translateY(-22px);opacity:0}}
+    @keyframes pse-blush{0%,100%{opacity:.15}40%,60%{opacity:.55}}
+    @keyframes pse-wild{0%{transform:translate(0,0) rotate(0deg)}10%{transform:translate(22px,-16px) rotate(36deg)}20%{transform:translate(-20px,12px) rotate(72deg)}30%{transform:translate(28px,10px) rotate(108deg)}40%{transform:translate(-14px,-24px) rotate(144deg)}50%{transform:translate(18px,20px) rotate(180deg)}60%{transform:translate(-28px,-6px) rotate(216deg)}70%{transform:translate(12px,22px) rotate(252deg)}80%{transform:translate(-22px,-20px) rotate(288deg)}90%{transform:translate(24px,14px) rotate(324deg)}100%{transform:translate(0,0) rotate(360deg)}}
+    @keyframes pse-sal{0%,30%{transform:translate(-5px,28px) rotate(-6deg)}40%{transform:translate(-12px,-40px) rotate(-42deg)}50%{transform:translate(-5px,26px) rotate(-6deg)}60%{transform:translate(-14px,-46px) rotate(-48deg)}70%,100%{transform:translate(-5px,28px) rotate(-6deg)}}
+    @keyframes pse-sar{0%,30%{transform:translate(5px,28px) rotate(6deg)}40%{transform:translate(12px,-40px) rotate(42deg)}50%{transform:translate(5px,26px) rotate(6deg)}60%{transform:translate(14px,-46px) rotate(48deg)}70%,100%{transform:translate(5px,28px) rotate(6deg)}}
+    @keyframes pse-flush{0%,100%{fill:currentColor}35%,65%{fill:#8C2A20}}
+    .pse-bg{animation:pse-wild 1.5s linear 2 forwards;transform-origin:120px 132px}
+    .pse-flush{animation:pse-flush 1.8s ease-in-out infinite}
+    .pse-al{transform-box:fill-box;transform-origin:80% 50%;animation:pse-sal 2.4s ease-in-out infinite,pse-flush 1.8s ease-in-out infinite}
+    .pse-ar{transform-box:fill-box;transform-origin:20% 50%;animation:pse-sar 2.4s ease-in-out infinite,pse-flush 1.8s ease-in-out infinite}
+    .pse-steam1{animation:pse-steam 1.2s ease-out infinite;transform-box:fill-box;transform-origin:center}
+    .pse-steam2{animation:pse-steam 1.2s ease-out infinite .6s;transform-box:fill-box;transform-origin:center}
+    .pse-blush{animation:pse-blush 2.4s ease-in-out infinite}
+  </style>
+  <g class="pse-bg">
+    <ellipse class="pse-steam1" cx="88" cy="-8" rx="8" ry="5.5" fill="#C03030"/>
+    <ellipse class="pse-steam2" cx="148" cy="-14" rx="6.5" ry="4.5" fill="#C03030"/>
+    <g fill="#D94040">
+      <circle class="pse-blush" cx="68" cy="138" r="16"/>
+      <circle class="pse-blush" cx="152" cy="138" r="16"/>
+    </g>
+    <ellipse class="pse-al pse-flush" cx="2" cy="98" rx="13" ry="9" fill="currentColor"/>
+    <ellipse class="pse-ar pse-flush" cx="238" cy="98" rx="13" ry="9" fill="currentColor"/>
+    <path class="pse-flush" d="M 110 35 Q 120 20 130 35 L 158 79 L 209 93 Q 227 97 215 111 L 182 152 L 185 205 Q 186 223 169 216 L 120 197 L 71 216 Q 54 223 55 205 L 58 152 L 25 111 Q 14 97 31 93 L 82 79 Z" fill="currentColor"/>
+    <circle cx="120" cy="42" r="7" fill="#1D1822" opacity=".25"/>
+    <rect x="75" y="165" width="90" height="11" rx="5.5" fill="#000" opacity=".13"/>
+    <rect x="75" y="165" width="16" height="11" rx="5.5" fill="#fff" opacity=".55"/>
+    <rect x="84" y="182" width="72" height="4.5" rx="2.2" fill="#1D1822" opacity=".15"/>
+    <rect x="84" y="191" width="72" height="4.5" rx="2.2" fill="#1D1822" opacity=".15"/>
+    <g style="transform-box:fill-box;transform-origin:center;transform:scaleY(.6)">
+      <ellipse cx="106" cy="112" rx="32" ry="32" fill="#fff"/>
+      <circle cx="106" cy="120" r="18" fill="#1D1822"/>
+      <circle cx="114" cy="111" r="6.5" fill="#fff"/>
+      <circle cx="97" cy="132" r="3" fill="#fff" opacity=".75"/>
+    </g>
+    <path d="M66 62 L86 75 L106 65 L126 75 L146 62" fill="none" stroke="#1D1822" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

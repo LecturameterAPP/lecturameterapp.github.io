@@ -50,14 +50,298 @@
             themeBtn.textContent = getIsDark() ? '☾' : '☀';
         }
 
+        // Swap screenshots for current theme. Two strategies:
+        //  - imgs with data-src-dark: switch src/data-lbx between stored light and dark variants.
+        //  - otherwise: replace _claro_ <-> _oscuro_ token in path.
+        // Theme gallery is always skipped (each figure shows a specific theme).
+        function swapCapturesForTheme() {
+            var dark = getIsDark();
+            document.querySelectorAll('img[src*="capturas%20para%20v3/"], img[src*="capturas para v3/"]').forEach(function (img) {
+                if (img.closest('.themes-gallery')) return;
+                var explicitDark = img.getAttribute('data-src-dark');
+                if (explicitDark) {
+                    if (!img.dataset.srcLight) img.dataset.srcLight = img.getAttribute('src');
+                    var target = dark ? explicitDark : img.dataset.srcLight;
+                    img.setAttribute('src', target);
+                    if (img.hasAttribute('data-lbx')) img.setAttribute('data-lbx', target);
+                    return;
+                }
+                var from = dark ? '_claro_' : '_oscuro_';
+                var to   = dark ? '_oscuro_' : '_claro_';
+                ['src', 'data-lbx'].forEach(function (attr) {
+                    var v = img.getAttribute(attr);
+                    if (v && v.indexOf(from) !== -1) img.setAttribute(attr, v.split(from).join(to));
+                });
+            });
+        }
+
         themeBtn.addEventListener('click', function () {
             var next = getIsDark() ? 'light' : 'dark';
             document.documentElement.setAttribute('data-theme', next);
             localStorage.setItem('lm-theme', next);
             updateIcon();
+            swapCapturesForTheme();
+            if (typeof window.__lmUpdateTimerVideo === 'function') window.__lmUpdateTimerVideo();
         });
 
         updateIcon();
+        swapCapturesForTheme();
+    }
+
+    // ─── TIMER VIDEO (normal / immersive × light / dark × es / en) ───
+    var timerShot = document.querySelector('.timer-shot');
+    if (timerShot) {
+        var timerVideo = timerShot.querySelector('video');
+        var soundBtn = timerShot.querySelector('.sound-btn');
+        var modeButtons = timerShot.querySelectorAll('.mode-toggle button');
+
+        function currentTheme() {
+            var attr = document.documentElement.getAttribute('data-theme');
+            if (attr) return attr;
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function currentMode() {
+            return timerShot.getAttribute('data-mode') || 'normal';
+        }
+
+        function updateTimerVideo(forcePlay) {
+            var lang = timerVideo.getAttribute('data-lang');
+            var theme = currentTheme();
+            var mode = currentMode();
+            var src = '../timer_video_' + lang + '_' + theme + '_' + mode + '.mp4';
+            var currentSrc = timerVideo.currentSrc || timerVideo.src;
+            if (currentSrc.indexOf(src.replace('../', '')) === -1) {
+                timerVideo.src = src;
+                timerVideo.load();
+            }
+            if (mode === 'normal') {
+                timerVideo.muted = true;
+                soundBtn.classList.add('muted');
+            }
+            if (forcePlay) {
+                var playAttempt = timerVideo.play();
+                if (playAttempt && playAttempt.catch) playAttempt.catch(function () {});
+            }
+        }
+
+        modeButtons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                modeButtons.forEach(function (b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+                timerShot.setAttribute('data-mode', btn.getAttribute('data-mode'));
+                updateTimerVideo(true);
+            });
+        });
+
+        soundBtn.addEventListener('click', function () {
+            timerVideo.muted = !timerVideo.muted;
+            soundBtn.classList.toggle('muted', timerVideo.muted);
+            if (!timerVideo.muted) {
+                var p = timerVideo.play();
+                if (p && p.catch) p.catch(function () {});
+            }
+        });
+
+        // React to system theme changes when user hasn't forced one
+        var mq = window.matchMedia('(prefers-color-scheme: dark)');
+        if (mq.addEventListener) mq.addEventListener('change', function () { updateTimerVideo(false); });
+        else if (mq.addListener) mq.addListener(function () { updateTimerVideo(false); });
+
+        // Expose an updater for the theme toggle handler below
+        window.__lmUpdateTimerVideo = function () { updateTimerVideo(false); };
+
+        updateTimerVideo(false);
+    }
+
+    // ─── PAGI STAR CLICK (Universo Lector) ───
+    var pagiStar = document.querySelector('.roadmap-item.universo .pagi-star');
+    if (pagiStar) {
+        pagiStar.style.cursor = 'pointer';
+        var neutralHTML = pagiStar.innerHTML;
+        var pagiState = 'neutral';
+        var pagiCache = {};
+        var pagiTimer = null;
+
+        function fetchPagi(name) {
+            if (pagiCache[name]) return Promise.resolve(pagiCache[name]);
+            return fetch('../pagi/star-' + name + '.svg').then(function (r) { return r.text(); }).then(function (t) {
+                pagiCache[name] = t;
+                return t;
+            });
+        }
+
+        function setPagi(name) {
+            pagiState = name;
+            if (name === 'neutral') {
+                pagiStar.innerHTML = neutralHTML;
+                return;
+            }
+            fetchPagi(name).then(function (svg) {
+                if (pagiState === name) pagiStar.innerHTML = svg;
+            });
+        }
+
+        var pendingStarClick = null;
+        var STAR_DBL_MS = 350;
+        var pagiCard = pagiStar.closest('.roadmap-item');
+        var pagiCardP = pagiCard && pagiCard.querySelector('p');
+        var pagiCardPOriginal = pagiCardP ? pagiCardP.innerHTML : null;
+        var lang = (document.documentElement.lang || 'es').slice(0, 2);
+        var HAPPY = lang === 'en'
+            ? ['Pagi applauds you!', 'Shine, little star!', 'Shhh, I\'m reading.', 'Pagi is watching…']
+            : ['¡Pagi te aplaude!', '¡Brilla, estrellita!', 'Shhh, estoy leyendo.', 'Pagi te observa…'];
+        var ANGRY = lang === 'en'
+            ? ['Ouch! That hurt!', 'Enough clicks!', 'Grr, leave me alone.', 'Not funny anymore.']
+            : ['¡Ay! ¡Eso ha dolido!', '¡Basta ya de clicks!', 'Grr, déjame en paz.', 'Ya no tiene gracia.'];
+        function pickRandom(arr, prev) {
+            var pool = arr.filter(function (x) { return x !== prev; });
+            return pool[Math.floor(Math.random() * pool.length)];
+        }
+        var lastPhrase = null;
+        function setCardPhrase(arr) {
+            if (!pagiCardP) return;
+            var phrase = pickRandom(arr, lastPhrase);
+            lastPhrase = phrase;
+            pagiCardP.textContent = phrase;
+        }
+        function restoreCardPhrase() {
+            if (pagiCardP && pagiCardPOriginal !== null) {
+                pagiCardP.innerHTML = pagiCardPOriginal;
+                lastPhrase = null;
+            }
+        }
+
+        function burstSparks(angry) {
+            var n = angry ? 8 : 6;
+            for (var i = 0; i < n; i++) {
+                var s = document.createElement('span');
+                s.className = 'pagi-spark' + (angry ? ' angry' : '');
+                var ang = (Math.PI * 2 * i) / n + (Math.random() - 0.5) * 0.4;
+                var dist = 40 + Math.random() * 30;
+                s.style.setProperty('--dx', (Math.cos(ang) * dist).toFixed(1) + 'px');
+                s.style.setProperty('--dy', (Math.sin(ang) * dist).toFixed(1) + 'px');
+                s.style.width = s.style.height = (5 + Math.random() * 5).toFixed(0) + 'px';
+                pagiStar.appendChild(s);
+                setTimeout(function (el) { return function () { el.remove(); }; }(s), 800);
+            }
+        }
+        var origSetPagi = setPagi;
+        setPagi = function (name) {
+            if (name === 'neutral') restoreCardPhrase();
+            else if (name === 'celebrando') { setCardPhrase(HAPPY); burstSparks(false); }
+            else if (name === 'enfadado') { setCardPhrase(ANGRY); burstSparks(true); pagiStar.classList.add('pagi-spin-once'); setTimeout(function(){pagiStar.classList.remove('pagi-spin-once');}, 700); }
+            origSetPagi(name);
+        };
+
+        pagiStar.addEventListener('click', function () {
+            if (pendingStarClick) {
+                clearTimeout(pendingStarClick);
+                pendingStarClick = null;
+                if (pagiTimer) clearTimeout(pagiTimer);
+                setPagi('enfadado');
+                pagiTimer = setTimeout(function () { setPagi('neutral'); }, 3500);
+                return;
+            }
+            pendingStarClick = setTimeout(function () {
+                pendingStarClick = null;
+                if (pagiTimer) clearTimeout(pagiTimer);
+                setPagi('celebrando');
+                pagiTimer = setTimeout(function () { setPagi('neutral'); }, 3000);
+            }, STAR_DBL_MS);
+        });
+    }
+
+    // ─── PAGI FAQ CLICK (dark, pensativo → celebrando → enfadado) ───
+    var pagiFaq = document.querySelector('.pagi-faq');
+    if (pagiFaq) {
+        var faqCache = {};
+        var faqState = null;
+        var faqTimer = null;
+
+        function fetchFaqPagi(name) {
+            if (faqCache[name]) return Promise.resolve(faqCache[name]);
+            return fetch('../pagi/dark-' + name + '.svg').then(function (r) { return r.text(); }).then(function (t) {
+                faqCache[name] = t;
+                return t;
+            });
+        }
+
+        function setFaqPagi(name) {
+            faqState = name;
+            fetchFaqPagi(name).then(function (svg) {
+                if (faqState === name) pagiFaq.innerHTML = svg;
+            });
+        }
+
+        setFaqPagi('pensativo');
+
+        var pendingClick = null;
+        var DBL_MS = 350;
+
+        pagiFaq.addEventListener('click', function () {
+            if (pendingClick) {
+                clearTimeout(pendingClick);
+                pendingClick = null;
+                if (faqTimer) clearTimeout(faqTimer);
+                setFaqPagi('enfadado');
+                faqTimer = setTimeout(function () { setFaqPagi('pensativo'); }, 3500);
+                return;
+            }
+            pendingClick = setTimeout(function () {
+                pendingClick = null;
+                if (faqTimer) clearTimeout(faqTimer);
+                setFaqPagi('celebrando');
+                faqTimer = setTimeout(function () { setFaqPagi('pensativo'); }, 3000);
+            }, DBL_MS);
+        });
+        pagiFaq.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pagiFaq.click(); }
+        });
+    }
+
+    // ─── PAGI HERO EYE TRACKING ───
+    var pagiHeroPupil = document.querySelector('.pagi-hero .pg-pupil');
+    if (pagiHeroPupil && window.matchMedia('(pointer: fine)').matches) {
+        pagiHeroPupil.style.transition = 'transform 0.28s cubic-bezier(.2,.7,.3,1)';
+        pagiHeroPupil.style.transformBox = 'fill-box';
+        pagiHeroPupil.style.transformOrigin = 'center';
+        var heroSvg = document.querySelector('.pagi-hero svg');
+        var MAX = 9;
+        var rafPending = false;
+        var lastX = 0, lastY = 0;
+        function updatePupil() {
+            rafPending = false;
+            var r = heroSvg.getBoundingClientRect();
+            var cx = r.left + r.width * 0.42;
+            var cy = r.top + r.height * 0.38;
+            var dx = lastX - cx, dy = lastY - cy;
+            var dist = Math.hypot(dx, dy) || 1;
+            var norm = Math.min(1, dist / 400);
+            var tx = (dx / dist) * MAX * norm;
+            var ty = (dy / dist) * MAX * norm;
+            pagiHeroPupil.style.transform = 'translate(' + tx.toFixed(2) + 'px,' + ty.toFixed(2) + 'px)';
+        }
+        window.addEventListener('mousemove', function (e) {
+            lastX = e.clientX; lastY = e.clientY;
+            if (!rafPending) { rafPending = true; requestAnimationFrame(updatePupil); }
+        }, { passive: true });
+    }
+
+    // ─── REVEAL ON SCROLL ───
+    var revealEls = document.querySelectorAll('.reveal-up');
+    if (revealEls.length && 'IntersectionObserver' in window) {
+        var revealObs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (e.isIntersecting) {
+                    e.target.classList.add('in-view');
+                    revealObs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+        revealEls.forEach(function (el) { revealObs.observe(el); });
+    } else {
+        revealEls.forEach(function (el) { el.classList.add('in-view'); });
     }
 
     // ─── FAQ ACCORDION ───
@@ -84,18 +368,47 @@
     if (overlay) {
         var lbxImg = overlay.querySelector('.lbx-img');
         var lbxClose = overlay.querySelector('.lbx-close');
+        var lbxPrev = overlay.querySelector('.lbx-prev');
+        var lbxNext = overlay.querySelector('.lbx-next');
+        var currentGroup = [];
+        var currentIndex = -1;
+
+        function srcOf(el) { return el.getAttribute('data-lbx') || el.getAttribute('src'); }
+
+        function openLbxFrom(el) {
+            var container = el.closest('.themes-gallery');
+            currentGroup = container
+                ? Array.prototype.slice.call(container.querySelectorAll('[data-lbx]'))
+                : [el];
+            currentIndex = currentGroup.indexOf(el);
+            if (currentIndex < 0) currentIndex = 0;
+            var multi = currentGroup.length > 1;
+            overlay.classList.toggle('has-nav', multi);
+            lbxImg.src = srcOf(currentGroup[currentIndex]);
+            overlay.classList.add('open');
+        }
+
+        function nav(delta) {
+            if (!currentGroup.length) return;
+            currentIndex = (currentIndex + delta + currentGroup.length) % currentGroup.length;
+            lbxImg.src = srcOf(currentGroup[currentIndex]);
+        }
 
         document.querySelectorAll('[data-lbx]').forEach(function (el) {
             el.style.cursor = 'zoom-in';
-            el.addEventListener('click', function () {
-                lbxImg.src = el.getAttribute('data-lbx') || el.src;
-                overlay.classList.add('open');
-            });
+            el.addEventListener('click', function () { openLbxFrom(el); });
         });
 
-        function closeLbx() { overlay.classList.remove('open'); }
-        if (lbxClose) lbxClose.addEventListener('click', closeLbx);
+        function closeLbx() { overlay.classList.remove('open'); overlay.classList.remove('has-nav'); }
+        if (lbxClose) lbxClose.addEventListener('click', function (e) { e.stopPropagation(); closeLbx(); });
+        if (lbxPrev) lbxPrev.addEventListener('click', function (e) { e.stopPropagation(); nav(-1); });
+        if (lbxNext) lbxNext.addEventListener('click', function (e) { e.stopPropagation(); nav(1); });
         overlay.addEventListener('click', function (e) { if (e.target === overlay) closeLbx(); });
-        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLbx(); });
+        document.addEventListener('keydown', function (e) {
+            if (!overlay.classList.contains('open')) return;
+            if (e.key === 'Escape') closeLbx();
+            else if (e.key === 'ArrowLeft') nav(-1);
+            else if (e.key === 'ArrowRight') nav(1);
+        });
     }
 })();

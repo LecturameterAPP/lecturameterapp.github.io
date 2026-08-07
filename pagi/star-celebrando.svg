@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 -60 400 370" overflow="visible">
+  <style>
+    @keyframes psc-blink{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.08)}}
+    @keyframes psc-glance{0%,26%{transform:translate(0,0)}33%,44%{transform:translate(-6px,2px)}52%,63%{transform:translate(7px,-2px)}71%,100%{transform:translate(0,0)}}
+    @keyframes psc-sparkle{0%,100%{transform:scale(.5);opacity:.3}50%{transform:scale(1);opacity:1}}
+    @keyframes psc-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    @keyframes psc-hop{0%{transform:translateY(0)}18%{transform:translateY(0) scaleY(.94)}42%{transform:translateY(-12px)}62%{transform:translateY(-6px)}82%{transform:translateY(0) scaleY(.97)}100%{transform:translateY(0)}}
+    @keyframes psc-cl{0%,100%{transform:translate(-4%,6%) rotate(-8deg)}50%{transform:translate(2%,-26%) rotate(16deg)}}
+    @keyframes psc-cr{0%,100%{transform:translate(4%,6%) rotate(8deg)}50%{transform:translate(-2%,-26%) rotate(-16deg)}}
+    .psc-bg{animation:psc-hop 1.15s cubic-bezier(.3,.7,.4,1) infinite;transform-origin:120px 132px}
+    .psc-spin{animation:psc-spin 5s linear infinite;transform-origin:120px 132px}
+    .psc-eye{transform-box:fill-box;transform-origin:center;animation:psc-blink 6.5s ease-in-out infinite}
+    .psc-pupil{animation:psc-glance 7.5s ease-in-out infinite}
+    .psc-al{transform-box:fill-box;transform-origin:80% 50%;animation:psc-cl .575s ease-in-out infinite}
+    .psc-ar{transform-box:fill-box;transform-origin:20% 50%;animation:psc-cr .575s ease-in-out infinite}
+    .psc-sk{transform-box:fill-box;transform-origin:center}
+  </style>
+  <g class="psc-bg">
+    <g class="psc-spin">
+      <g fill="#E8B93F">
+        <path class="psc-sk" style="animation:psc-sparkle 2.1s ease-in-out infinite" d="M0-13Q2-2 13 0Q2 2 0 13Q-2 2-13 0Q-2-2 0-13Z" transform="translate(-38 58)"/>
+        <path class="psc-sk" style="animation:psc-sparkle 2.3s ease-in-out infinite .5s" d="M0-10Q1.6-1.6 10 0Q1.6 1.6 0 10Q-1.6 1.6-10 0Q-1.6-1.6 0-10Z" transform="translate(278 68)"/>
+        <path class="psc-sk" style="animation:psc-sparkle 1.8s ease-in-out infinite .9s" d="M0-9Q1.4-1.4 9 0Q1.4 1.4 0 9Q-1.4 1.4-9 0Q-1.4-1.4 0-9Z" transform="translate(120 -32)"/>
+        <circle class="psc-sk" style="animation:psc-sparkle 2s ease-in-out infinite .3s" cx="-44" cy="112" r="5"/>
+        <circle class="psc-sk" style="animation:psc-sparkle 2.2s ease-in-out infinite .7s" cx="284" cy="118" r="5"/>
+        <circle class="psc-sk" style="animation:psc-sparkle 2.1s ease-in-out infinite 1.3s" cx="62" cy="-22" r="4"/>
+        <circle class="psc-sk" style="animation:psc-sparkle 1.9s ease-in-out infinite .2s" cx="180" cy="-28" r="3"/>
+      </g>
+    </g>
+    <ellipse class="psc-al" cx="2" cy="86" rx="13" ry="9" fill="currentColor" transform="rotate(-26,2,86)"/>
+    <ellipse class="psc-ar" cx="238" cy="86" rx="13" ry="9" fill="currentColor" transform="rotate(26,238,86)"/>
+    <path d="M 110 35 Q 120 20 130 35 L 158 79 L 209 93 Q 227 97 215 111 L 182 152 L 185 205 Q 186 223 169 216 L 120 197 L 71 216 Q 54 223 55 205 L 58 152 L 25 111 Q 14 97 31 93 L 82 79 Z" fill="currentColor"/>
+    <circle cx="120" cy="42" r="7" fill="#1D1822" opacity=".25"/>
+    <rect x="75" y="165" width="90" height="11" rx="5.5" fill="#000" opacity=".13"/>
+    <rect x="75" y="165" width="90" height="11" rx="5.5" fill="#fff" opacity=".55"/>
+    <rect x="84" y="182" width="72" height="4.5" rx="2.2" fill="#1D1822" opacity=".15"/>
+    <rect x="84" y="191" width="72" height="4.5" rx="2.2" fill="#1D1822" opacity=".15"/>
+    <g class="psc-eye">
+      <ellipse cx="106" cy="112" rx="32" ry="36" fill="#fff"/>
+      <g class="psc-pupil">
+        <circle cx="105" cy="106" r="18" fill="#1D1822"/>
+        <circle cx="113" cy="97" r="6.5" fill="#fff"/>
+        <circle cx="96" cy="118" r="3" fill="#fff" opacity=".75"/>
+      </g>
+    </g>
+    <path d="M72 66 Q106 42 140 68" fill="none" stroke="#1D1822" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>

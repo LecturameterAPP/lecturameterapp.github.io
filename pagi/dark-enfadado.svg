@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -80 400 580" overflow="visible">
+  <style>
+    @keyframes pagi-stomp{0%,28%{transform:translateY(0) rotate(0deg)}36%{transform:translateY(0) scaleY(0.92) rotate(0deg)}44%{transform:translateY(-7%) rotate(-3.5deg)}52%{transform:translateY(0) scaleY(0.94) rotate(0deg)}60%{transform:translateY(-5.5%) rotate(3deg)}70%{transform:translateY(0) scaleY(0.96) rotate(0deg)}82%,100%{transform:translateY(0) rotate(0deg)}}
+    @keyframes pagi-flush{0%,100%{fill:currentColor}35%,65%{fill:#8C2A20}}
+    @keyframes pagi-arm-shake-l{0%,30%{transform:translate(-4%,30%) rotate(-6deg)}40%{transform:translate(-12%,-44%) rotate(-42deg)}50%{transform:translate(-4%,28%) rotate(-6deg)}60%{transform:translate(-14%,-50%) rotate(-48deg)}70%{transform:translate(-4%,26%) rotate(-6deg)}82%,100%{transform:translate(-4%,30%) rotate(-6deg)}}
+    @keyframes pagi-arm-shake-r{0%,30%{transform:translate(4%,30%) rotate(6deg)}40%{transform:translate(12%,-44%) rotate(42deg)}50%{transform:translate(4%,28%) rotate(6deg)}60%{transform:translate(14%,-50%) rotate(48deg)}70%{transform:translate(4%,26%) rotate(6deg)}82%,100%{transform:translate(4%,30%) rotate(6deg)}}
+    @keyframes pagi-brow{0%,28%{d:path("M 42 74 Q 88 52 134 74")}40%,64%{d:path("M 38 62 L 68 82 L 88 70 L 108 82 L 138 62")}80%,100%{d:path("M 42 74 Q 88 52 134 74")}}
+    @keyframes pagi-squint{0%,28%{transform:scaleY(1)}40%,64%{transform:scaleY(0.62)}80%,100%{transform:scaleY(1)}}
+    @keyframes pagi-steam{0%{transform:translateY(0) scaleX(1);opacity:0}20%{opacity:0.85}80%{opacity:0.5}100%{transform:translateY(-32px) scaleX(0.5);opacity:0}}
+    @keyframes pagi-blush{0%,100%{opacity:0.2}40%,60%{opacity:0.6}}
+    .body-g{transform-origin:100px 248px;animation:pagi-stomp 2.4s cubic-bezier(.3,.6,.4,1) infinite}
+    .flush{animation:pagi-flush 2.4s ease-in-out infinite}
+    .arm-l{transform-box:fill-box;transform-origin:80% 50%;animation:pagi-arm-shake-l 2.4s ease-in-out infinite,pagi-flush 2.4s ease-in-out infinite}
+    .arm-r{transform-box:fill-box;transform-origin:20% 50%;animation:pagi-arm-shake-r 2.4s ease-in-out infinite,pagi-flush 2.4s ease-in-out infinite}
+    .brow-anim{animation:pagi-brow 2.4s ease-in-out infinite}
+    .eye-g{transform-box:fill-box;transform-origin:center;animation:pagi-squint 2.4s ease-in-out infinite}
+    .steam-1{animation:pagi-steam 1.2s ease-out infinite}
+    .steam-2{animation:pagi-steam 1.2s ease-out infinite 0.6s}
+    .blush{animation:pagi-blush 2.4s ease-in-out infinite}
+  </style>
+  <g class="body-g">
+    <path class="flush" d="M 0 26 Q 0 0 26 0 L 174 0 Q 200 0 200 26 L 200 440 L 100 396 L 0 440 Z"/>
+    <ellipse class="arm-l" cx="-24" cy="210" rx="20" ry="14"/>
+    <ellipse class="arm-r" cx="224" cy="210" rx="20" ry="14"/>
+    <circle cx="100" cy="27" r="13" fill="#1D1822" opacity="0.28"/>
+    <rect x="32" y="296" width="136" height="19" rx="9.5" fill="#000000" opacity="0.15"/>
+    <rect class="flush" x="32" y="296" width="52" height="19" rx="9.5" opacity="0.65"/>
+    <rect x="44" y="340" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"/>
+    <rect x="44" y="362" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"/>
+    <rect x="44" y="384" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"/>
+    <ellipse class="steam-1" cx="62" cy="-28" rx="10" ry="7" fill="#C03030"/>
+    <ellipse class="steam-2" cx="134" cy="-36" rx="8" ry="6" fill="#C03030"/>
+    <circle class="blush" cx="44" cy="192" r="24" fill="#D94040"/>
+    <circle class="blush" cx="156" cy="192" r="24" fill="#D94040"/>
+    <g class="eye-g">
+      <ellipse cx="88" cy="160" rx="56" ry="58" fill="#FFFFFF"/>
+      <circle cx="88" cy="168" r="30" fill="#1D1822"/>
+      <circle cx="100" cy="155" r="10" fill="#FFFFFF"/>
+      <circle cx="75" cy="183" r="4.5" fill="#FFFFFF" opacity="0.75"/>
+    </g>
+    <path class="brow-anim" d="M 38 62 L 68 82 L 88 70 L 108 82 L 138 62" fill="none" stroke="#1D1822" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
