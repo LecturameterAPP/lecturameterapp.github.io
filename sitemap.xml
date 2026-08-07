@@ -4,16 +4,7 @@
   <url>
     <loc>https://lecturameterapp.github.io/es/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/" />
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://lecturameterapp.github.io/en/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/" />
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -21,9 +12,12 @@
   </url>
   <url>
     <loc>https://lecturameterapp.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/" />
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lecturameterapp.github.io/privacidad.html</loc>
