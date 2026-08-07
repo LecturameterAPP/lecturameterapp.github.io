@@ -328,6 +328,53 @@
         }, { passive: true });
     }
 
+    // ─── THEME PILLS (temas section: change Pagi mascot color) ───
+    (function () {
+        var pills = document.querySelectorAll('.theme-pills .theme-pill');
+        var mascot = document.querySelector('.pagi-mascot');
+        if (!pills.length || !mascot) return;
+        pills.forEach(function (pill) {
+            pill.addEventListener('click', function () {
+                var color = pill.getAttribute('data-color');
+                mascot.style.setProperty('--pagi-color', color);
+                pills.forEach(function (p) { p.classList.remove('active'); p.setAttribute('aria-selected', 'false'); p.style.removeProperty('--pill-color'); });
+                pill.classList.add('active');
+                pill.setAttribute('aria-selected', 'true');
+                pill.style.setProperty('--pill-color', color);
+            });
+        });
+    })();
+
+    // ─── PAGI FAQ EYE TRACKING (only in pensativo state) ───
+    (function () {
+        if (!window.matchMedia('(pointer: fine)').matches) return;
+        var faqContainer = document.querySelector('.pagi-faq');
+        if (!faqContainer) return;
+        var FAQ_MAX_X = 12, FAQ_MAX_Y = 15;
+        var faqRaf = false, faqLX = 0, faqLY = 0;
+        function updateFaqPupil() {
+            faqRaf = false;
+            var pupil = faqContainer.querySelector('.pg-pupil-faq');
+            if (!pupil) return;
+            var svg = pupil.ownerSVGElement;
+            if (!svg) return;
+            var r = svg.getBoundingClientRect();
+            if (!r.width) return;
+            var cx = r.left + r.width * 0.5;
+            var cy = r.top + r.height * 0.4;
+            var dx = faqLX - cx, dy = faqLY - cy;
+            var dist = Math.hypot(dx, dy) || 1;
+            var norm = Math.min(1, dist / 400);
+            var tx = (dx / dist) * FAQ_MAX_X * norm;
+            var ty = (dy / dist) * FAQ_MAX_Y * norm;
+            pupil.setAttribute('transform', 'translate(' + tx.toFixed(1) + ' ' + ty.toFixed(1) + ')');
+        }
+        window.addEventListener('mousemove', function (e) {
+            faqLX = e.clientX; faqLY = e.clientY;
+            if (!faqRaf) { faqRaf = true; requestAnimationFrame(updateFaqPupil); }
+        }, { passive: true });
+    })();
+
     // ─── PAGI LAGO (iOS section) ───
     var pagiLago = document.querySelector('.pagi-lago');
     if (pagiLago) {
@@ -396,6 +443,25 @@
         pagiLago.addEventListener('keydown', function (e) {
             if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pagiLago.click(); }
         });
+
+        // Idle → confuso after 30s no interaction; back to neutro on any input.
+        var lagoIdleTimer = null;
+        var lagoIsIdle = false;
+        function resetLagoIdle() {
+            if (lagoIsIdle) {
+                lagoIsIdle = false;
+                if (lagoState === 'confuso') { if (lagoTimer) clearTimeout(lagoTimer); setLago('neutro'); }
+            }
+            clearTimeout(lagoIdleTimer);
+            lagoIdleTimer = setTimeout(function () {
+                lagoIsIdle = true;
+                if (lagoState === 'neutro') { if (lagoTimer) clearTimeout(lagoTimer); setLago('confuso'); }
+            }, 30000);
+        }
+        ['mousemove', 'scroll', 'keydown', 'touchstart', 'click'].forEach(function (ev) {
+            window.addEventListener(ev, resetLagoIdle, { passive: true });
+        });
+        resetLagoIdle();
 
         // Eye tracking on lago (only in neutro state, only pointer:fine)
         if (window.matchMedia('(pointer: fine)').matches) {

@@ -476,6 +476,19 @@ body { padding-top: 48px; }
 .ios-band { background: linear-gradient(180deg, transparent 0%, rgba(65,117,90,0.06) 50%, transparent 100%); }
 .ios-hero { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: center; max-width: 900px; margin: 0 auto; padding-top: 20px; }
 .pagi-lago { width: 220px; max-width: 100%; margin: 0 auto; color: #41755A; cursor: pointer; user-select: none; position: relative; overflow: visible; padding: 40px; box-sizing: content-box; }
+:root[data-theme="dark"] .pagi-lago,
+html:not([data-theme="light"]) .pagi-lago { color: #6366F1; }
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .pagi-lago { color: #6366F1; }
+}
+
+/* ─── THEME PILLS (temas section) ─── */
+.theme-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 0 0 32px; }
+.theme-pill { border: 1.5px solid var(--border, rgba(255,255,255,0.15)); background: transparent; color: var(--text, #e0e0e0); padding: 8px 18px; border-radius: 999px; font: inherit; font-weight: 600; font-size: 14px; cursor: pointer; transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s; }
+.theme-pill:hover { transform: translateY(-1px); }
+.theme-pill.active { background: var(--pill-color, var(--accent, #41755A)); color: #fff; border-color: var(--pill-color, var(--accent, #41755A)); }
+:root[data-theme="light"] .theme-pill.active,
+html:not([data-theme="dark"]) .theme-pill.active { color: #fff; }
 .pagi-lago svg { width: 100%; height: auto; display: block; overflow: visible; }
 .ios-waitlist { display: flex; flex-direction: column; gap: 12px; }
 .ios-waitlist input { background: var(--bg-elev, #1a1a2e); border: 1.5px solid var(--border, rgba(255,255,255,0.12)); color: var(--text, #e0e0e0); padding: 12px 14px; border-radius: 10px; font-size: 15px; font-family: inherit; transition: border-color 0.2s; }

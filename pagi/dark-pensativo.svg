@@ -11,7 +11,7 @@
     .q2{transform-box:fill-box;transform-origin:center;animation:pagi-qmark 2.6s ease-in-out infinite 0.9s}
     .q3{transform-box:fill-box;transform-origin:center;animation:pagi-qmark 2.6s ease-in-out infinite 1.6s}
     .eye-g{transform-box:fill-box;transform-origin:center;animation:pagi-blink 6.5s ease-in-out infinite}
-    .pupil-g{animation:pagi-muse 6.4s ease-in-out infinite}
+    .pupil-g{}
     .arm-l{animation:pagi-arm-l 5.2s ease-in-out infinite}
     .arm-r{transform-box:fill-box;transform-origin:20% 50%;animation:pagi-arm-ponder 3.2s ease-in-out infinite}
   </style>
@@ -32,7 +32,7 @@
     <ellipse class="arm-r" cx="224" cy="244" rx="20" ry="14" fill="currentColor"/>
     <g class="eye-g">
       <ellipse cx="88" cy="152" rx="56" ry="62" fill="#FFFFFF"/>
-      <g class="pupil-g">
+      <g class="pupil-g pg-pupil-faq">
         <circle cx="102" cy="134" r="31" fill="#1D1822"/>
         <circle cx="114" cy="121" r="10.5" fill="#FFFFFF"/>
         <circle cx="89" cy="149" r="5" fill="#FFFFFF" opacity="0.75"/>

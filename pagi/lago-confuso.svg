@@ -12,17 +12,20 @@
     .l-eye { transform-box:fill-box; transform-origin:center; animation:lago-tilt 3.2s ease-in-out infinite; }
     .l-q { transform-box:fill-box; transform-origin:center; }
   </style>
+  <defs><clipPath id="lago-body-c"><path d="M 100 34 C 82 8, 18 12, 14 62 C 6 104, 8 152, 34 190 C 56 220, 76 232, 100 234 C 124 232, 144 220, 166 190 C 192 152, 194 104, 186 62 C 182 12, 118 8, 100 34 Z"/></clipPath></defs>
   <g class="l-body">
-    <path d="M 100 34 C 82 8, 18 12, 14 62 C 6 104, 8 152, 34 190 C 56 220, 76 232, 100 234 C 124 232, 144 220, 166 190 C 192 152, 194 104, 186 62 C 182 12, 118 8, 100 34 Z" fill="#41755A"/>
-    <path d="M 100 34 C 104 14, 110 2, 116 -18" fill="none" stroke="#41755A" stroke-width="5" stroke-linecap="round"/>
-    <path d="M 108 6 C 126 -22, 160 -20, 148 -2 C 138 12, 116 14, 108 6 Z" fill="#41755A"/>
-    <rect x="46" y="172" width="108" height="13" rx="6.5" fill="rgba(0,0,0,0.15)"/>
-    <rect x="46" y="172" width="72" height="13" rx="6.5" fill="rgba(255,255,255,0.55)"/>
-    <rect x="54" y="198" width="92" height="6" rx="3" fill="rgba(255,255,255,0.22)"/>
-    <rect x="54" y="212" width="92" height="6" rx="3" fill="rgba(255,255,255,0.22)"/>
-    <rect x="54" y="226" width="92" height="6" rx="3" fill="rgba(255,255,255,0.22)"/>
-    <ellipse class="l-arm-l" cx="-20" cy="130" rx="18" ry="12" fill="#41755A"/>
-    <ellipse class="l-arm-r" cx="220" cy="130" rx="18" ry="12" fill="#41755A"/>
+    <path d="M 100 34 C 82 8, 18 12, 14 62 C 6 104, 8 152, 34 190 C 56 220, 76 232, 100 234 C 124 232, 144 220, 166 190 C 192 152, 194 104, 186 62 C 182 12, 118 8, 100 34 Z" fill="currentColor"/>
+    <path d="M 100 34 C 104 14, 110 2, 116 -18" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 108 6 C 126 -22, 160 -20, 148 -2 C 138 12, 116 14, 108 6 Z" fill="currentColor"/>
+    <g clip-path="url(#lago-body-c)">
+      <rect x="46" y="172" width="108" height="13" rx="6.5" fill="rgba(0,0,0,0.15)"/>
+      <rect x="46" y="172" width="72" height="13" rx="6.5" fill="rgba(255,255,255,0.55)"/>
+      <rect x="54" y="198" width="92" height="6" rx="3" fill="rgba(255,255,255,0.22)"/>
+      <rect x="54" y="212" width="92" height="6" rx="3" fill="rgba(255,255,255,0.22)"/>
+      <rect x="54" y="226" width="92" height="6" rx="3" fill="rgba(255,255,255,0.22)"/>
+    </g>
+    <ellipse class="l-arm-l" cx="-20" cy="130" rx="18" ry="12" fill="currentColor"/>
+    <ellipse class="l-arm-r" cx="220" cy="130" rx="18" ry="12" fill="currentColor"/>
     <text class="l-q" style="animation:lago-question 2.8s ease-in-out infinite" x="-66" y="82" font-size="40" font-family="system-ui,-apple-system,sans-serif" font-weight="bold" fill="#F0D060">?</text>
     <text class="l-q" style="animation:lago-question2 3.2s ease-in-out infinite 0.9s" x="216" y="100" font-size="30" font-family="system-ui,-apple-system,sans-serif" font-weight="bold" fill="#F0D060">?</text>
     <text class="l-q" style="animation:lago-question 2.5s ease-in-out infinite 1.5s" x="134" y="-50" font-size="24" font-family="system-ui,-apple-system,sans-serif" font-weight="bold" fill="#F0D060" opacity="0.65">?</text>
