@@ -303,24 +303,23 @@
     // ─── PAGI HERO EYE TRACKING ───
     var pagiHeroPupil = document.querySelector('.pagi-hero .pg-pupil');
     if (pagiHeroPupil && window.matchMedia('(pointer: fine)').matches) {
-        pagiHeroPupil.style.transition = 'transform 0.28s cubic-bezier(.2,.7,.3,1)';
-        pagiHeroPupil.style.transformBox = 'fill-box';
-        pagiHeroPupil.style.transformOrigin = 'center';
-        var heroSvg = document.querySelector('.pagi-hero svg');
-        var MAX = 9;
+        var heroSvg = pagiHeroPupil.ownerSVGElement;
+        var MAX = 18;
         var rafPending = false;
         var lastX = 0, lastY = 0;
         function updatePupil() {
             rafPending = false;
             var r = heroSvg.getBoundingClientRect();
+            if (!r.width) return;
             var cx = r.left + r.width * 0.42;
             var cy = r.top + r.height * 0.38;
             var dx = lastX - cx, dy = lastY - cy;
             var dist = Math.hypot(dx, dy) || 1;
             var norm = Math.min(1, dist / 400);
-            var tx = (dx / dist) * MAX * norm;
-            var ty = (dy / dist) * MAX * norm;
-            pagiHeroPupil.style.transform = 'translate(' + tx.toFixed(2) + 'px,' + ty.toFixed(2) + 'px)';
+            var scale = heroSvg.viewBox.baseVal.width / r.width;
+            var tx = (dx / dist) * MAX * norm * scale;
+            var ty = (dy / dist) * MAX * norm * scale;
+            pagiHeroPupil.setAttribute('transform', 'translate(' + tx.toFixed(1) + ' ' + ty.toFixed(1) + ')');
         }
         window.addEventListener('mousemove', function (e) {
             lastX = e.clientX; lastY = e.clientY;
@@ -329,7 +328,8 @@
     }
 
     // ─── REVEAL ON SCROLL ───
-    var revealEls = document.querySelectorAll('.reveal-up');
+    var revealSelectors = '.reveal-up, .section-head, .theme-card, .pricing-card, .roadmap-item, .whatsnew-col';
+    var revealEls = document.querySelectorAll(revealSelectors);
     if (revealEls.length && 'IntersectionObserver' in window) {
         var revealObs = new IntersectionObserver(function (entries) {
             entries.forEach(function (e) {
@@ -339,7 +339,9 @@
                 }
             });
         }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
-        revealEls.forEach(function (el) { revealObs.observe(el); });
+        revealEls.forEach(function (el) {
+            if (!el.classList.contains('in-view')) revealObs.observe(el);
+        });
     } else {
         revealEls.forEach(function (el) { el.classList.add('in-view'); });
     }
