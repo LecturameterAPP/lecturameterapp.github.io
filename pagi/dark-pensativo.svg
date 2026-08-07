@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -80 400 580" overflow="visible">
+  <style>
+    @keyframes pagi-ponder{0%,100%{transform:translateY(-1.4%) rotate(-2.6deg)}50%{transform:translateY(1.4%) rotate(-1.2deg)}}
+    @keyframes pagi-muse{0%,26%{transform:translate(0,0)}30%,44%{transform:translate(-9px,3px)}52%,63%{transform:translate(8px,-2px)}71%,100%{transform:translate(0,0)}}
+    @keyframes pagi-blink{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(0.08)}}
+    @keyframes pagi-arm-l{0%,100%{transform:translate(-1.5%,2.4%)}50%{transform:translate(1.5%,-2.4%)}}
+    @keyframes pagi-arm-ponder{0%,100%{transform:translate(6%,-2%)}50%{transform:translate(2%,-8%)}}
+    @keyframes pagi-qmark{0%,100%{transform:translateY(0);opacity:0.35}50%{transform:translateY(-8px);opacity:1}}
+    .body-g{transform-origin:100px 248px;animation:pagi-ponder 5.6s ease-in-out infinite}
+    .q1{transform-box:fill-box;transform-origin:center;animation:pagi-qmark 2.6s ease-in-out infinite}
+    .q2{transform-box:fill-box;transform-origin:center;animation:pagi-qmark 2.6s ease-in-out infinite 0.9s}
+    .q3{transform-box:fill-box;transform-origin:center;animation:pagi-qmark 2.6s ease-in-out infinite 1.6s}
+    .eye-g{transform-box:fill-box;transform-origin:center;animation:pagi-blink 6.5s ease-in-out infinite}
+    .pupil-g{animation:pagi-muse 6.4s ease-in-out infinite}
+    .arm-l{animation:pagi-arm-l 5.2s ease-in-out infinite}
+    .arm-r{transform-box:fill-box;transform-origin:20% 50%;animation:pagi-arm-ponder 3.2s ease-in-out infinite}
+  </style>
+  <g fill="#E8B93F" font-family="sans-serif" text-anchor="middle" font-weight="700">
+    <text class="q1" x="-16" y="18" font-size="66">?</text>
+    <text class="q2" x="240" y="-6" font-size="54">?</text>
+    <text class="q3" x="110" y="-58" font-size="46">?</text>
+  </g>
+  <g class="body-g">
+    <path d="M 0 26 Q 0 0 26 0 L 174 0 Q 200 0 200 26 L 200 440 L 100 396 L 0 440 Z" fill="currentColor"/>
+    <circle cx="100" cy="27" r="13" fill="#1D1822" opacity="0.28"/>
+    <rect x="32" y="296" width="136" height="19" rx="9.5" fill="#000000" opacity="0.15"/>
+    <rect x="32" y="296" width="61" height="19" rx="9.5" fill="#FFFFFF" opacity="0.6"/>
+    <rect x="44" y="340" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"/>
+    <rect x="44" y="362" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"/>
+    <rect x="44" y="384" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"/>
+    <ellipse class="arm-l" cx="-24" cy="244" rx="20" ry="14" fill="currentColor"/>
+    <ellipse class="arm-r" cx="224" cy="244" rx="20" ry="14" fill="currentColor"/>
+    <g class="eye-g">
+      <ellipse cx="88" cy="152" rx="56" ry="62" fill="#FFFFFF"/>
+      <g class="pupil-g">
+        <circle cx="102" cy="134" r="31" fill="#1D1822"/>
+        <circle cx="114" cy="121" r="10.5" fill="#FFFFFF"/>
+        <circle cx="89" cy="149" r="5" fill="#FFFFFF" opacity="0.75"/>
+      </g>
+    </g>
+    <path d="M 42 80 Q 88 56 136 76" fill="none" stroke="#1D1822" stroke-width="9" stroke-linecap="round"/>
+  </g>
+</svg>

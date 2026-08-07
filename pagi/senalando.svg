@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-260 -20 540 480" role="img" aria-label="Pagi señalando">
+  <style>
+    @keyframes pg-float    { 0%,100%{transform:translateY(-8px) rotate(-.7deg)}50%{transform:translateY(8px) rotate(.7deg)} }
+    @keyframes pg-arm-r    { 0%,100%{transform:translate(6px,-8px)}50%{transform:translate(-6px,8px)} }
+    @keyframes pg-blink    { 0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.08)} }
+    @keyframes stick-pulse { 0%,100%{opacity:.7}50%{opacity:1} }
+    .pg-body   { animation: pg-float 4.2s ease-in-out infinite; transform-box: fill-box; transform-origin: 100px 248px; }
+    .pg-arm-r  { animation: pg-arm-r 3.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .pg-blink  { animation: pg-blink 6.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .pg-stick  { animation: stick-pulse 2.5s ease-in-out infinite; }
+  </style>
+  <g class="pg-body">
+    <ellipse cx="224" cy="238" rx="20" ry="14" fill="currentColor" class="pg-arm-r"/>
+    <ellipse cx="-24" cy="180" rx="20" ry="14" fill="currentColor" transform="rotate(-22,-24,180)"/>
+    <line x1="-24" y1="180" x2="-231" y2="312" stroke="currentColor" stroke-width="14" stroke-linecap="round" opacity="0.25"/>
+    <line x1="-24" y1="180" x2="-231" y2="312" stroke="#F8F5F0" stroke-width="7" stroke-linecap="round" class="pg-stick"/>
+    <circle cx="-231" cy="312" r="12" fill="currentColor" opacity="0.9"/>
+    <path d="M 0 26 Q 0 0 26 0 L 174 0 Q 200 0 200 26 L 200 440 L 100 396 L 0 440 Z" fill="currentColor"/>
+    <circle cx="100" cy="27" r="13" fill="#1D1822" opacity="0.28"/>
+    <rect x="32" y="296" width="136" height="19" rx="9.5" fill="#000" opacity="0.15"/>
+    <rect x="32" y="296" width="88" height="19" rx="9.5" fill="#fff" opacity="0.6"/>
+    <rect x="44" y="340" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"/>
+    <rect x="44" y="362" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"/>
+    <rect x="44" y="384" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"/>
+    <g class="pg-blink">
+      <ellipse cx="88" cy="152" rx="56" ry="62" fill="#fff"/>
+      <circle cx="72" cy="156" r="31" fill="#1D1822"/>
+      <circle cx="84" cy="143" r="10.5" fill="#fff"/>
+      <circle cx="59" cy="170" r="5" fill="#fff" opacity="0.75"/>
+    </g>
+    <path d="M 42 74 Q 88 46 134 76" fill="none" stroke="#1D1822" stroke-width="9" stroke-linecap="round"/>
+  </g>
+</svg>

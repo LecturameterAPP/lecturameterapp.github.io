@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-60 -50 360 320">
+  <ellipse cx="2" cy="102" rx="13" ry="9" fill="currentColor"/>
+  <ellipse cx="238" cy="102" rx="13" ry="9" fill="currentColor"/>
+  <path d="M 110 35 Q 120 20 130 35 L 158 79 L 209 93 Q 227 97 215 111 L 182 152 L 185 205 Q 186 223 169 216 L 120 197 L 71 216 Q 54 223 55 205 L 58 152 L 25 111 Q 14 97 31 93 L 82 79 Z" fill="currentColor"/>
+  <circle cx="120" cy="42" r="7" fill="#1D1822" opacity=".25"/>
+  <rect x="75" y="165" width="90" height="11" rx="5.5" fill="#000" opacity=".13"/>
+  <rect x="75" y="165" width="60" height="11" rx="5.5" fill="#fff" opacity=".55"/>
+  <rect x="84" y="182" width="72" height="4.5" rx="2.2" fill="#1D1822" opacity=".15"/>
+  <rect x="84" y="191" width="72" height="4.5" rx="2.2" fill="#1D1822" opacity=".15"/>
+  <ellipse cx="106" cy="112" rx="32" ry="36" fill="#fff"/>
+  <circle cx="104" cy="112" r="18" fill="#1D1822"/>
+  <circle cx="112" cy="103" r="6.5" fill="#fff"/>
+  <circle cx="95" cy="124" r="3" fill="#fff" opacity=".75"/>
+  <path d="M72 73 Q106 50 140 75" fill="none" stroke="#1D1822" stroke-width="7" stroke-linecap="round"/>
+</svg>
