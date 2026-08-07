@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Social card · mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F1E8; --paper:#FFFDF6; --accent:#41755A; --accent-text:#365E48;
+    --text-strong:#0F0D0A; --text:#3A352E; --muted:#7A7266; --line:#DED7C7;
+    --serif:'Fraunces','Iowan Old Style',Georgia,serif;
+    --sans:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#c9c2b2;display:flex;justify-content:center;align-items:flex-start;padding:24px;font-family:var(--sans);overflow-x:hidden}
+
+  .card{
+    width:1200px;height:630px;background:var(--bg);position:relative;overflow:hidden;
+    display:flex;
+  }
+  /* textura sutil de papel */
+  .card::before{
+    content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;
+    background:
+      radial-gradient(circle at 18% 22%, rgba(65,117,90,.05), transparent 40%),
+      radial-gradient(circle at 82% 80%, rgba(65,117,90,.05), transparent 42%);
+  }
+
+  .inner{position:relative;flex:1;margin:34px;border:1px solid var(--line);
+    display:grid;grid-template-columns:1fr 452px;
+    height:calc(630px - 68px);grid-template-rows:1fr;}
+
+  /* ---------- IZQUIERDA ---------- */
+  .left{padding:44px 40px 72px 48px;display:flex;flex-direction:column;position:relative}
+  .masthead{display:flex;justify-content:space-between;align-items:baseline;
+    font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+    padding-bottom:16px;border-bottom:1.5px solid var(--text-strong);font-weight:600}
+  .masthead .folio{color:var(--text-strong);font-family:var(--serif);font-weight:700;letter-spacing:.05em}
+
+  .kicker{margin-top:auto;font-size:14px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--accent);font-weight:700}
+  h1{font-family:var(--serif);color:var(--text-strong);font-weight:800;
+    font-size:56px;line-height:1.02;letter-spacing:-.01em;margin-top:14px}
+  h1 .grad{color:var(--accent);font-style:italic}
+  .signature{margin-top:30px;max-width:520px}
+  .signature .phrase{font-family:var(--serif);font-style:italic;font-size:22px;
+    line-height:1.35;color:var(--text)}
+  .signature .rule{width:64px;height:2px;background:var(--accent);margin-top:14px}
+  .card-url{position:absolute;bottom:40px;left:48px;font-size:13px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--muted);font-weight:600;font-family:var(--sans)}
+
+  .pagi-inline{display:inline-block;vertical-align:-28px;width:38px;margin-left:8px}
+  .pagi-inline svg{width:100%;height:auto;display:block}
+  .pagi-inline svg [fill="#4B3DE8"],
+  .pagi-inline svg [fill="#4b3de8"]{fill:var(--accent)!important}
+
+  /* checks en panel derecho */
+  .right-checks{position:absolute;top:28px;left:18px;z-index:4;
+    display:flex;flex-direction:column;gap:9px}
+  .right-checks li{list-style:none;display:flex;align-items:center;gap:7px;
+    font-size:13px;font-weight:700;color:var(--text-strong);font-family:var(--sans)}
+  .right-checks svg{width:16px;height:16px;color:var(--accent);flex-shrink:0}
+
+  /* ---------- DERECHA ---------- */
+  .right{position:relative;background:linear-gradient(160deg,#EFE9DB,#F5F1E8);
+    border-left:1px solid var(--line);overflow:hidden}
+  .phone{position:absolute;top:75%;left:52%;transform:translate(-50%,-50%) rotate(0deg);
+    width:296px;height:602px;border-radius:38px;background:#0d1424;
+    padding:10px;box-shadow:0 24px 50px rgba(20,20,20,.32);}
+  .phone img{width:100%;height:100%;object-fit:cover;border-radius:26px;display:block}
+  .badge{position:absolute;top:28px;right:28px;z-index:4;background:var(--accent);color:#fff;
+    font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    padding:7px 14px;border-radius:999px;box-shadow:0 3px 10px rgba(65,117,90,.35)}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="inner">
+      <div class="left">
+        <div class="masthead">
+          <span>Lecturameter Magazine</span>
+          <span class="folio">No. 1 · Summer 2026</span>
+        </div>
+
+        <p class="kicker">Your reading tracker · Android</p>
+        <h1>Discover <span class="grad">how&nbsp;you read</span> for real<span class="pagi-inline"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-36 -8 272 468" overflow="visible"><defs></defs><g class="body-g"><path d="M 0 26 Q 0 0 26 0 L 174 0 Q 200 0 200 26 L 200 440 L 100 396 L 0 440 Z" fill="var(--accent)"></path><circle cx="100" cy="27" r="13" fill="#1D1822" opacity="0.28"></circle><rect x="32" y="296" width="136" height="19" rx="9.5" fill="#000000" opacity="0.15"></rect><rect x="32" y="296" width="16.32" height="19" rx="9.5" fill="#FFFFFF" opacity="0.6"></rect><rect x="44" y="340" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"></rect><rect x="44" y="362" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"></rect><rect x="44" y="384" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"></rect><ellipse class="arm-l" cx="-24" cy="238" rx="20" ry="14" fill="var(--accent)"></ellipse><ellipse class="arm-r" cx="224" cy="238" rx="20" ry="14" fill="var(--accent)"></ellipse><g class="eye-g"><ellipse cx="88" cy="152" rx="56" ry="62" fill="#FFFFFF"></ellipse><g class="pupil-g"><circle cx="86" cy="152" r="31" fill="#1D1822"></circle><circle cx="98" cy="139" r="10.5" fill="#FFFFFF"></circle><circle cx="73" cy="167" r="5" fill="#FFFFFF" opacity="0.75"></circle></g></g><path d="M 42 74 Q 88 46 134 76" fill="none" stroke="#1D1822" stroke-width="9" stroke-linecap="round"></path></g></svg></span></h1>
+        <div class="signature">
+          <p class="phrase">Everything you need to know yourself as a reader.</p>
+          <div class="rule"></div>
+        </div>
+        <p class="card-url">lecturameterapp.github.io</p>
+      </div>
+
+      <div class="right">
+        <ul class="right-checks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>No account</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>No ads</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>No subscriptions</li>
+        </ul>
+        <div class="badge">Free</div>
+        <div class="phone">
+          <img src="capturas%20para%20v3/tema_claro_en.jpg" alt="Lecturameter app">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
