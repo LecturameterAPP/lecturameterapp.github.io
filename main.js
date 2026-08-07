@@ -304,7 +304,9 @@
     var pagiHeroPupil = document.querySelector('.pagi-hero .pg-pupil');
     if (pagiHeroPupil && window.matchMedia('(pointer: fine)').matches) {
         var heroSvg = pagiHeroPupil.ownerSVGElement;
-        var MAX = 18;
+        // MAX in SVG units. Eye white ellipse rx=56/ry=62, pupil r=31 → safe room = 25×31.
+        // Cap at 14×18 so pupil never touches the iris edge.
+        var MAX_X = 14, MAX_Y = 18;
         var rafPending = false;
         var lastX = 0, lastY = 0;
         function updatePupil() {
@@ -316,9 +318,8 @@
             var dx = lastX - cx, dy = lastY - cy;
             var dist = Math.hypot(dx, dy) || 1;
             var norm = Math.min(1, dist / 400);
-            var scale = heroSvg.viewBox.baseVal.width / r.width;
-            var tx = (dx / dist) * MAX * norm * scale;
-            var ty = (dy / dist) * MAX * norm * scale;
+            var tx = (dx / dist) * MAX_X * norm;
+            var ty = (dy / dist) * MAX_Y * norm;
             pagiHeroPupil.setAttribute('transform', 'translate(' + tx.toFixed(1) + ' ' + ty.toFixed(1) + ')');
         }
         window.addEventListener('mousemove', function (e) {
@@ -326,6 +327,37 @@
             if (!rafPending) { rafPending = true; requestAnimationFrame(updatePupil); }
         }, { passive: true });
     }
+
+    // ─── PAGI STAR EYE TRACKING (only while in neutral state) ───
+    (function () {
+        if (!window.matchMedia('(pointer: fine)').matches) return;
+        var starContainer = document.querySelector('.roadmap-item.universo .pagi-star');
+        if (!starContainer) return;
+        // Star: pupil r=18 inside eye rx=32/ry=36 → safe room 14×18 SVG units.
+        var STAR_MAX_X = 12, STAR_MAX_Y = 15;
+        var starRafPending = false, starLastX = 0, starLastY = 0;
+        function updateStar() {
+            starRafPending = false;
+            var pupil = starContainer.querySelector('.pg-pupil-star');
+            if (!pupil) return; // state swapped out of neutral, tracker idles
+            var svg = pupil.ownerSVGElement;
+            if (!svg) return;
+            var r = svg.getBoundingClientRect();
+            if (!r.width) return;
+            var cx = r.left + r.width * 0.46;
+            var cy = r.top + r.height * 0.50;
+            var dx = starLastX - cx, dy = starLastY - cy;
+            var dist = Math.hypot(dx, dy) || 1;
+            var norm = Math.min(1, dist / 400);
+            var tx = (dx / dist) * STAR_MAX_X * norm;
+            var ty = (dy / dist) * STAR_MAX_Y * norm;
+            pupil.setAttribute('transform', 'translate(' + tx.toFixed(1) + ' ' + ty.toFixed(1) + ')');
+        }
+        window.addEventListener('mousemove', function (e) {
+            starLastX = e.clientX; starLastY = e.clientY;
+            if (!starRafPending) { starRafPending = true; requestAnimationFrame(updateStar); }
+        }, { passive: true });
+    })();
 
     // ─── REVEAL ON SCROLL ───
     var revealSelectors = '.reveal-up, .section-head, .theme-card, .pricing-card, .roadmap-item, .whatsnew-col';
