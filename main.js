@@ -425,6 +425,28 @@
         }
     }
 
+    // ─── CONTACT FORM sendFeedback (mailto — global for contact.html) ───
+    window.sendFeedback = function (lang) {
+        var nameEl = document.getElementById('fbName-' + lang);
+        var msgEl = document.getElementById('fbMsg-' + lang);
+        var capQEl = document.getElementById('captchaQuestionFb-' + lang);
+        var capIEl = document.getElementById('captchaInputFb-' + lang);
+        var status = document.getElementById('fbStatus-' + lang);
+        if (!msgEl || !capIEl || !capQEl) return;
+        var name = (nameEl && nameEl.value || '').trim();
+        var msg = (msgEl.value || '').trim();
+        var capMatch = (capQEl.textContent || '').match(/(\d+)\s*\+\s*(\d+)/);
+        var expected = capMatch ? (parseInt(capMatch[1], 10) + parseInt(capMatch[2], 10)) : null;
+        var given = parseInt((capIEl.value || '').trim(), 10);
+        var setStatus = function (txt, ok) { if (status) { status.textContent = txt; status.style.color = ok ? '#41755A' : '#d9534f'; } };
+        if (!msg) { setStatus(lang === 'en' ? 'Please write a message.' : 'Escribe un mensaje.', false); return; }
+        if (expected !== null && given !== expected) { setStatus(lang === 'en' ? 'Captcha wrong, try again.' : 'Captcha incorrecto, prueba otra vez.', false); return; }
+        var subject = lang === 'en' ? 'Feedback from web' : 'Mensaje desde la web';
+        var body = (name ? 'Name: ' + name + '\n\n' : '') + msg + '\n\n(Sent from lecturameterapp.github.io)';
+        window.location.href = 'mailto:lecturameter.app@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        setStatus(lang === 'en' ? 'Opening your email app… if nothing happens, write directly to lecturameter.app@gmail.com.' : 'Abriendo tu cliente de email… si no pasa nada, escríbenos directamente a lecturameter.app@gmail.com.', true);
+    };
+
     // ─── iOS WAITLIST (mailto MVP) ───
     window.submitIosWaitlist = function (e, lang) {
         e.preventDefault();

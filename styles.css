@@ -475,8 +475,8 @@ body { padding-top: 48px; }
 /* ─── iOS WAITLIST SECTION ─── */
 .ios-band { background: linear-gradient(180deg, transparent 0%, rgba(65,117,90,0.06) 50%, transparent 100%); }
 .ios-hero { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: center; max-width: 900px; margin: 0 auto; padding-top: 20px; }
-.pagi-lago { width: 220px; max-width: 100%; margin: 0 auto; color: #41755A; cursor: pointer; user-select: none; position: relative; }
-.pagi-lago svg { width: 100%; height: auto; display: block; }
+.pagi-lago { width: 220px; max-width: 100%; margin: 0 auto; color: #41755A; cursor: pointer; user-select: none; position: relative; overflow: visible; padding: 40px; box-sizing: content-box; }
+.pagi-lago svg { width: 100%; height: auto; display: block; overflow: visible; }
 .ios-waitlist { display: flex; flex-direction: column; gap: 12px; }
 .ios-waitlist input { background: var(--bg-elev, #1a1a2e); border: 1.5px solid var(--border, rgba(255,255,255,0.12)); color: var(--text, #e0e0e0); padding: 12px 14px; border-radius: 10px; font-size: 15px; font-family: inherit; transition: border-color 0.2s; }
 .ios-waitlist input:focus { outline: none; border-color: #41755A; }
