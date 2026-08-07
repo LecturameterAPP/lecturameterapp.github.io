@@ -565,7 +565,8 @@
         try { saved = localStorage.getItem('lm_lang'); } catch (e) {}
         var urlLang = null;
         try { urlLang = new URLSearchParams(location.search).get('lang'); } catch (e) {}
-        var lang = urlLang || saved || ((navigator.language || 'es').toLowerCase().startsWith('en') ? 'en' : 'es');
+        // Default EN; ES only if explicitly requested via URL or saved preference.
+        var lang = urlLang || saved || 'en';
         window.setLang(lang);
     })();
 

@@ -32,18 +32,19 @@
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
     <script>
     (function() {
         var saved;
         try { saved = localStorage.getItem('lm_lang'); } catch(e) {}
-        var lang = saved || ((navigator.language || navigator.userLanguage || 'en').toLowerCase().startsWith('es') ? 'es' : 'en');
+        // Default is English; users can switch to ES via the language toggle (saved to localStorage).
+        var lang = saved === 'es' ? 'es' : 'en';
         window.location.replace(lang === 'es' ? '/es/' : '/en/');
     })();
     </script>
     <noscript>
-        <meta http-equiv="refresh" content="0;url=/es/">
+        <meta http-equiv="refresh" content="0;url=/en/">
     </noscript>
     <style>
         body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }

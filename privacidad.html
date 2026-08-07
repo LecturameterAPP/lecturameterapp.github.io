@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,8 +61,8 @@
         </nav>
         <div class="lang-bar">
             <button class="nav-theme-btn" aria-label="Cambiar tema">☾</button>
-            <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
-            <button id="btn-en" onclick="setLang('en')">EN</button>
+            <button id="btn-es" onclick="setLang('es')">ES</button>
+            <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
         </div>
     </div>
 </header>
@@ -70,7 +70,7 @@
 <div class="container">
 
     <!-- ─── CONTENIDO EN ESPAÑOL ─── -->
-    <div id="content-es" class="lang-content active">
+    <div id="content-es" class="lang-content">
         <div class="page-hero">
             <h1>🔒 Política de privacidad</h1>
             <p class="tagline">Tus datos de lectura son tuyos. Punto.</p>
@@ -153,7 +153,7 @@
     </div>
 
     <!-- ─── CONTENIDO EN INGLÉS ─── -->
-    <div id="content-en" class="lang-content">
+    <div id="content-en" class="lang-content active">
         <div class="page-hero">
             <h2 class="page-heading">🔒 Privacy policy</h2>
             <p class="tagline">Your reading data is yours. Period.</p>

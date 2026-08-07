@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,8 +63,8 @@
         </nav>
         <div class="lang-bar">
             <button class="nav-theme-btn" aria-label="Cambiar tema">☾</button>
-            <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
-            <button id="btn-en" onclick="setLang('en')">EN</button>
+            <button id="btn-es" onclick="setLang('es')">ES</button>
+            <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
         </div>
     </div>
 </header>
@@ -72,7 +72,7 @@
 <div class="container">
 
     <!-- CONTENIDO EN ESPAÑOL -->
-    <div id="content-es" class="lang-content active">
+    <div id="content-es" class="lang-content">
         <div class="page-hero">
             <h1>Precios por región</h1>
             <p class="tagline">Pro cuesta menos en los países donde 2,99 EUR es demasiado.</p>
@@ -147,7 +147,7 @@
     </div>
 
     <!-- CONTENIDO EN INGLES -->
-    <div id="content-en" class="lang-content">
+    <div id="content-en" class="lang-content active">
         <div class="page-hero">
             <h2 class="page-heading">Regional pricing</h2>
             <p class="tagline">Pro costs less in countries where 2.99 EUR is too much.</p>
