@@ -109,9 +109,9 @@
             var lang = timerVideo.getAttribute('data-lang');
             var theme = currentTheme();
             var mode = currentMode();
-            var src = '../timer_video_' + lang + '_' + theme + '_' + mode + '.mp4';
+            var src = '/timer_video_' + lang + '_' + theme + '_' + mode + '.mp4';
             var currentSrc = timerVideo.currentSrc || timerVideo.src;
-            if (currentSrc.indexOf(src.replace('../', '')) === -1) {
+            if (currentSrc.indexOf(src) === -1) {
                 timerVideo.src = src;
                 timerVideo.load();
             }

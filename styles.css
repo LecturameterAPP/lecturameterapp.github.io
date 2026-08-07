@@ -476,8 +476,7 @@ body { padding-top: 48px; }
 .ios-band { background: linear-gradient(180deg, transparent 0%, rgba(65,117,90,0.06) 50%, transparent 100%); }
 .ios-hero { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: center; max-width: 900px; margin: 0 auto; padding-top: 20px; }
 .pagi-lago { width: 220px; max-width: 100%; margin: 0 auto; color: #41755A; cursor: pointer; user-select: none; position: relative; overflow: visible; padding: 40px; box-sizing: content-box; }
-:root[data-theme="dark"] .pagi-lago,
-html:not([data-theme="light"]) .pagi-lago { color: #6366F1; }
+:root[data-theme="dark"] .pagi-lago { color: #6366F1; }
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) .pagi-lago { color: #6366F1; }
 }
@@ -493,8 +492,8 @@ html:not([data-theme="dark"]) .theme-pill.active { color: #fff; }
 .ios-waitlist { display: flex; flex-direction: column; gap: 12px; }
 .ios-waitlist input { background: var(--bg-elev, #1a1a2e); border: 1.5px solid var(--border, rgba(255,255,255,0.12)); color: var(--text, #e0e0e0); padding: 12px 14px; border-radius: 10px; font-size: 15px; font-family: inherit; transition: border-color 0.2s; }
 .ios-waitlist input:focus { outline: none; border-color: #41755A; }
-.ios-waitlist button { background: #41755A; color: #fff; border: none; padding: 13px 20px; border-radius: 10px; font-weight: 700; font-size: 15px; cursor: pointer; transition: transform 0.15s, background 0.2s; align-self: flex-start; font-family: inherit; }
-.ios-waitlist button:hover { background: #4d876a; transform: translateY(-1px); }
+.ios-waitlist button { background: var(--accent); color: var(--on-accent); border: none; padding: 13px 20px; border-radius: 10px; font-weight: 700; font-size: 15px; cursor: pointer; transition: transform 0.15s, background 0.2s; align-self: flex-start; font-family: inherit; }
+.ios-waitlist button:hover { background: var(--accent-strong); transform: translateY(-1px); }
 .ios-note { font-size: 12.5px; color: var(--text-muted, #888); line-height: 1.5; margin: 4px 0 0; }
 .ios-note a { color: #41755A; }
 .ios-captcha-row { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--card, #1a2340); border: 1.5px dashed var(--line, rgba(255,255,255,0.15)); border-radius: 10px; font-size: 14px; }
@@ -808,23 +807,14 @@ html:not([data-theme="light"]) .tag-free {
 
 /* ─── PAGI + TEMAS ─── */
 .themes-gallery {
-    display: flex;
-    gap: 18px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: visible;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 8px 24px 20px;
-    margin: 0 -24px;
-    scrollbar-width: thin;
-    scrollbar-color: var(--line) transparent;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    padding: 8px 0 20px;
+    max-width: 100%;
 }
-.themes-gallery::-webkit-scrollbar { height: 6px; }
-.themes-gallery::-webkit-scrollbar-track { background: transparent; }
-.themes-gallery::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
-.themes-gallery > .theme-card { scroll-snap-align: center; flex: 0 0 auto; }
-.theme-card { margin: 0; width: 180px; text-align: center; }
+.themes-gallery > .theme-card { min-width: 0; }
+.theme-card { margin: 0; width: 100%; text-align: center; }
 .theme-card img {
     width: 100%;
     display: block;
@@ -1396,8 +1386,7 @@ html:not([data-theme="light"]) .tag-free {
     .grid-card-hz .grid-card-media { flex: none; border-right: none; border-bottom: 1px solid var(--line); }
     .widgets-duo { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr; }
-    .themes-gallery { gap: 10px; }
-    .theme-card { width: 140px; }
+    .themes-gallery { gap: 8px; }
     .section-head h2 { font-size: 22px; }
     .showcase .info h3 { font-size: 19px; }
     .footer-bottom { flex-direction: column; text-align: center; }
@@ -1406,15 +1395,9 @@ html:not([data-theme="light"]) .tag-free {
 }
 
 @media (max-width: 480px) {
-    .themes-gallery {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 8px;
-    }
-    .theme-card { flex: 0 0 150px; width: 150px; scroll-snap-align: center; }
+    .themes-gallery { grid-template-columns: repeat(5, 1fr); gap: 6px; }
+    .theme-card figcaption { font-size: 11px; }
+    .theme-card img { padding: 3px; border-width: 2px; border-radius: 12px; }
 }
 
 /* ─── PAGI HERO ─── */
