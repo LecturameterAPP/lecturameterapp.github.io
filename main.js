@@ -539,6 +539,36 @@
         }
     }
 
+    // ─── SUBPAGE LANGUAGE TOGGLE (setLang — global for privacy/contact/precios) ───
+    window.setLang = function (lang) {
+        if (lang !== 'es' && lang !== 'en') lang = 'es';
+        document.documentElement.lang = lang;
+        document.querySelectorAll('.lang-content').forEach(function (el) {
+            el.classList.toggle('active', el.id === 'content-' + lang);
+        });
+        document.querySelectorAll('.lang-bar button').forEach(function (btn) {
+            btn.classList.toggle('active', btn.id === 'btn-' + lang);
+        });
+        document.querySelectorAll('[data-es][data-en]').forEach(function (el) {
+            var txt = el.getAttribute('data-' + lang);
+            if (txt != null) el.textContent = txt;
+        });
+        document.querySelectorAll('[data-href-es][data-href-en]').forEach(function (el) {
+            var href = el.getAttribute('data-href-' + lang);
+            if (href != null) el.setAttribute('href', href);
+        });
+        try { localStorage.setItem('lm_lang', lang); } catch (e) {}
+    };
+    (function () {
+        if (!document.querySelector('.lang-content')) return;
+        var saved = null;
+        try { saved = localStorage.getItem('lm_lang'); } catch (e) {}
+        var urlLang = null;
+        try { urlLang = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+        var lang = urlLang || saved || ((navigator.language || 'es').toLowerCase().startsWith('en') ? 'en' : 'es');
+        window.setLang(lang);
+    })();
+
     // ─── CONTACT FORM sendFeedback (mailto — global for contact.html) ───
     window.sendFeedback = function (lang) {
         var nameEl = document.getElementById('fbName-' + lang);
