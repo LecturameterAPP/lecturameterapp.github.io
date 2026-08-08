@@ -38,7 +38,8 @@
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/">
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="./styles.css?v=4.9">
+    <link rel="stylesheet" href="./styles.css?v=5.0">
+    <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
 
     <script type="application/ld+json">
     {
@@ -72,7 +73,16 @@
         "name": "Victor (Lecturameter)",
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
-      }
+      },
+      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Lecturameter",
+      "url": "https://lecturameterapp.github.io/"
     }
     </script>
     <script type="application/ld+json">
@@ -92,6 +102,13 @@
     </script>
 </head>
 <body>
+
+<!-- PROMO BAR -->
+<div id="promo-bar" class="promo-bar">
+    <span class="promo-pill">FREE</span>
+    <span>Lecturameter is free forever · No ads · No subscriptions</span>
+    <button class="promo-close" aria-label="Close" onclick="dismissPromo()">×</button>
+</div>
 
 <!-- NAV -->
 <nav class="nav-bar">
@@ -145,7 +162,7 @@
                 </div>
                 <div class="testimonial reveal-up in-view d5">
                     <q>You can tell there's love in every detail.</q>
-                    <cite>— Google Play review</cite>
+                    <cite>Google Play review</cite>
                 </div>
             </div>
             <div class="hero-visual reveal-up in-view d2">
@@ -714,6 +731,6 @@
     <img class="lbx-img" src="" alt="">
 </div>
 
-<script src="./main.js?v=4.9"></script>
+<script src="./main.js?v=5.0"></script>
 </body>
 </html>

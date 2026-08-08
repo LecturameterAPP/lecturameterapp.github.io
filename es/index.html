@@ -38,7 +38,8 @@
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/">
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=4.9">
+    <link rel="stylesheet" href="../styles.css?v=5.0">
+    <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
 
     <script type="application/ld+json">
     {
@@ -72,7 +73,8 @@
         "name": "Victor (Lecturameter)",
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
-      }
+      },
+      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
     }
     </script>
     <script type="application/ld+json">
@@ -92,6 +94,13 @@
     </script>
 </head>
 <body>
+
+<!-- PROMO BAR -->
+<div id="promo-bar" class="promo-bar">
+    <span class="promo-pill">GRATIS</span>
+    <span>Lecturameter es gratis para siempre · Sin anuncios · Sin suscripciones</span>
+    <button class="promo-close" aria-label="Cerrar" onclick="dismissPromo()">×</button>
+</div>
 
 <!-- ═══ NAV ═══ -->
 <nav class="nav-bar">
@@ -145,7 +154,7 @@
                 </div>
                 <div class="testimonial reveal-up in-view d5">
                     <q>Se nota que hay cariño en cada detalle.</q>
-                    <cite>— Reseña en Google Play</cite>
+                    <cite>Reseña en Google Play</cite>
                 </div>
             </div>
             <div class="hero-visual reveal-up in-view d2">
@@ -714,6 +723,6 @@
     <img class="lbx-img" src="" alt="">
 </div>
 
-<script src="../main.js?v=4.9"></script>
+<script src="../main.js?v=5.0"></script>
 </body>
 </html>

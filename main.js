@@ -747,3 +747,9 @@
         });
     }
 })();
+
+// ─── PROMO BAR ───
+function dismissPromo() {
+    localStorage.setItem('promo-dismissed', '1');
+    document.documentElement.classList.add('promo-dismissed');
+}

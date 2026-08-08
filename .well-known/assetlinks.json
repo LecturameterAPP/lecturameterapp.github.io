@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.lecturameter.public",
+    "sha256_cert_fingerprints": [
+      "00:CF:0A:47:DE:E8:FD:D1:03:D5:BF:B1:FC:57:87:74:52:23:00:DC:29:BF:07:BE:FD:CB:2F:F5:34:AD:88:0E"
+    ]
+  }
+}]
