@@ -398,9 +398,9 @@
             pill.addEventListener('click', function () {
                 var color = pill.getAttribute('data-color');
                 mascot.style.setProperty('--pagi-color', color);
-                pills.forEach(function (p) { p.classList.remove('active'); p.setAttribute('aria-selected', 'false'); p.style.removeProperty('--pill-color'); });
+                pills.forEach(function (p) { p.classList.remove('active'); p.setAttribute('aria-pressed', 'false'); p.style.removeProperty('--pill-color'); });
                 pill.classList.add('active');
-                pill.setAttribute('aria-selected', 'true');
+                pill.setAttribute('aria-pressed', 'true');
                 pill.style.setProperty('--pill-color', color);
             });
         });

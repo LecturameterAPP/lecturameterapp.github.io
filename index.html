@@ -38,7 +38,7 @@
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/">
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="./styles.css?v=5.0">
+    <link rel="stylesheet" href="./styles.css?v=5.3">
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
 
     <script type="application/ld+json">
@@ -418,12 +418,12 @@
             </svg>
         </div>
 
-        <div class="theme-pills" role="tablist" aria-label="Change Pagi color">
-            <button type="button" class="theme-pill active" data-color="#41755A" role="tab" aria-selected="true">Light</button>
-            <button type="button" class="theme-pill" data-color="#4B3DE8" role="tab">Dark</button>
-            <button type="button" class="theme-pill" data-color="#C08CE8" role="tab">Aurora</button>
-            <button type="button" class="theme-pill" data-color="#C9CDD2" role="tab">OLED</button>
-            <button type="button" class="theme-pill" data-color="#E0A93F" role="tab">Leather</button>
+        <div class="theme-pills" role="group" aria-label="Change Pagi color">
+            <button type="button" class="theme-pill active" data-color="#41755A" aria-pressed="true">Light</button>
+            <button type="button" class="theme-pill" data-color="#4B3DE8" aria-pressed="false">Dark</button>
+            <button type="button" class="theme-pill" data-color="#C08CE8" aria-pressed="false">Aurora</button>
+            <button type="button" class="theme-pill" data-color="#C9CDD2" aria-pressed="false">OLED</button>
+            <button type="button" class="theme-pill" data-color="#E0A93F" aria-pressed="false">Leather</button>
         </div>
 
         <div class="themes-gallery">
@@ -611,7 +611,7 @@
                 <input type="text" name="name" placeholder="Your name (optional)" autocomplete="name" aria-label="Name">
                 <div class="ios-captcha-row">
                     <span aria-hidden="true">🔐</span>
-                    <span class="ios-captcha-question" aria-label="Anti-spam question">2 + 3 = ?</span>
+                    <span class="ios-captcha-question">2 + 3 = ?</span>
                     <input type="text" class="ios-captcha-input" placeholder="?" autocomplete="off" maxlength="2" required aria-label="Captcha answer">
                 </div>
                 <button type="submit">Notify me</button>
@@ -686,10 +686,10 @@
                 <a href="./privacidad.html">Privacy policy</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
-                        <img src="./kofi_logo.svg?v=1" alt="Ko-fi" />
+                        <img src="./kofi_logo.svg?v=1" alt="Ko-fi">
                     </a>
                     <a href="https://paypal.me/Lecturameter" target="_blank" rel="noopener" class="donate-btn paypal" aria-label="PayPal">
-                        <img src="./paypal_logo.svg?v=1" alt="PayPal" />
+                        <img src="./paypal_logo.svg?v=1" alt="PayPal">
                     </a>
                 </div>
             </div>
@@ -728,9 +728,9 @@
     <button class="lbx-close" aria-label="Close">&#x2715;</button>
     <button class="lbx-nav lbx-prev" aria-label="Previous">&#x2039;</button>
     <button class="lbx-nav lbx-next" aria-label="Next">&#x203A;</button>
-    <img class="lbx-img" src="" alt="">
+    <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script src="./main.js?v=5.0"></script>
+<script src="./main.js?v=5.3"></script>
 </body>
 </html>
