@@ -753,3 +753,17 @@ function dismissPromo() {
     localStorage.setItem('promo-dismissed', '1');
     document.documentElement.classList.add('promo-dismissed');
 }
+
+// ─── STARTUPBAR OFFSET ───
+new MutationObserver(function (mutations) {
+    for (var i = 0; i < mutations.length; i++) {
+        var nodes = mutations[i].addedNodes;
+        for (var j = 0; j < nodes.length; j++) {
+            var n = nodes[j];
+            if (n.nodeType === 1 && n.style && parseInt(n.style.top) === 0 && parseInt(n.style.height) === 36) {
+                document.documentElement.classList.add('startupbar-active');
+                return;
+            }
+        }
+    }
+}).observe(document.body, { childList: true });

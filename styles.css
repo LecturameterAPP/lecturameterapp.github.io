@@ -250,6 +250,13 @@ html.promo-dismissed .nav-bar { top: 0; }
 body { padding-top: 86px; }
 html.promo-dismissed body { padding-top: 48px; }
 
+/* ─── STARTUPBAR OFFSET ─── */
+html.startupbar-active .promo-bar { top: 36px; }
+html.startupbar-active .nav-bar { top: 74px; }
+html.startupbar-active.promo-dismissed .nav-bar { top: 36px; }
+html.startupbar-active body { padding-top: 122px; }
+html.startupbar-active.promo-dismissed body { padding-top: 84px; }
+
 /* ─── HERO ─── */
 .hero {
     display: grid;
