@@ -46,28 +46,30 @@
 </head>
 <body>
 
-<!-- BARRA SUPERIOR -->
-<header class="topbar">
-    <div class="topbar-inner">
-        <a href="index.html" class="brand"><img src="ic_launcher_round.png" alt="Lecturameter">Lecturameter</a>
-        <nav class="nav-links">
-            <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
-            <a href="es/#caracteristicas" data-href-es="es/#caracteristicas" data-href-en="en/#features" data-es="Características" data-en="Features">Características</a>
-            <a href="es/#precios" data-href-es="es/#precios" data-href-en="en/#pricing" data-es="Precios" data-en="Pricing">Precios</a>
-            <a href="precios-regionales.html" class="active" data-es="Precio regional" data-en="Regional pricing">Precio regional</a>
-            <a href="es/#estadisticas" data-href-es="es/#estadisticas" data-href-en="en/#stats" data-es="Estadísticas" data-en="Stats">Estadísticas</a>
-            <a href="es/#notas-parche" data-href-es="es/#notas-parche" data-href-en="en/#patch-notes" data-es="Novedades" data-en="What's new">Novedades</a>
-            <a href="es/#roadmap" data-href-es="es/#roadmap" data-href-en="en/#roadmap-en" data-es="Roadmap" data-en="Roadmap">Roadmap</a>
-            <a href="privacidad.html" data-es="Privacidad" data-en="Privacy">Privacidad</a>
-            <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
-        </nav>
-        <div class="lang-bar">
-            <button class="nav-theme-btn" aria-label="Cambiar tema">☾</button>
-            <button id="btn-es" onclick="setLang('es')">ES</button>
-            <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+<!-- NAV -->
+<nav class="nav-bar">
+    <div class="nav-inner">
+        <a href="./" class="nav-brand">
+            <img src="./ic_launcher_round.png" alt="Lecturameter" width="28" height="28">
+            Lecturameter
+        </a>
+        <ul class="nav-pills">
+            <li><a href="./#features">Features</a></li>
+            <li><a href="./#themes">Themes</a></li>
+            <li><a href="./#pricing">Pro</a></li>
+            <li><a href="./#whatsnew">New</a></li>
+            <li><a href="./#roadmap">Roadmap</a></li>
+            <li><a href="precios-regionales.html" class="active">Regional pricing</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button class="nav-theme-btn" aria-label="Toggle theme">☾</button>
+            <a href="./es/" class="nav-lang-btn">ES</a>
         </div>
+        <button class="nav-hamburger" aria-label="Menu">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
     </div>
-</header>
+</nav>
 
 <div class="container">
 
