@@ -573,6 +573,14 @@ html:not([data-theme="dark"]) .theme-pill.active { color: #fff; }
 .privacy-highlight h2, .privacy-highlight h3 { color: var(--text-strong, #fff); margin-bottom: 10px; font-size: 18px; display: inline-block; }
 .privacy-highlight p { color: var(--text, #e2e6f3); line-height: 1.6; clear: none; }
 .privacy-highlight::after { content: ""; display: block; clear: both; }
+
+/* Regional pricing tables */
+.regional-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+.regional-table thead { background: var(--bg-soft, #131b30); }
+.regional-table th { padding: 12px; text-align: left; font-weight: 700; color: var(--text-strong, #fff); border: 1px solid var(--line, #2a3557); }
+.regional-table td { padding: 12px; color: var(--text, #e2e6f3); border: 1px solid var(--line, #2a3557); }
+.regional-table tbody tr:hover { background: var(--bg-alt, #0a0f1e); }
+@media (max-width: 640px) { .regional-table { font-size: 12px; } .regional-table th, .regional-table td { padding: 8px; } }
 .privacy-text { color: var(--text, #e2e6f3); line-height: 1.7; }
 .privacy-text p { margin: 12px 0; }
 .privacy-text ul { padding-left: 22px; margin: 10px 0; }
