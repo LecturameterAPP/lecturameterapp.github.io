@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precios por región - Lecturameter</title>
-    <meta name="description" content="Precios regionales de Lecturameter Pro: adaptados a cada país para que la app llegue a todo el mundo. Consulta el precio de lanzamiento en tu región.">
+    <meta name="description" content="Precios regionales de Lecturameter Pro: adaptados a cada país para que la app llegue a todo el mundo. Consulta el precio en tu región.">
     <meta property="og:title" content="Precios por región - Lecturameter">
     <meta property="og:description" content="Precios regionales de Lecturameter Pro: adaptados a cada país para que la app llegue a todo el mundo.">
     <meta property="og:type" content="website">
@@ -29,13 +29,15 @@
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/precios-regionales.html?lang=en">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/precios-regionales.html">
     <link rel="stylesheet" href="styles.css?v=5.5">
+    <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
+    <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Precios por región – Lecturameter",
-      "dateModified": "2026-07-22",
+      "dateModified": "2026-08-26",
       "author": {
         "@type": "Person",
         "name": "Víctor (Lecturameter)",
@@ -45,6 +47,12 @@
     </script>
 </head>
 <body>
+<!-- PROMO BAR -->
+<div id="promo-bar" class="promo-bar">
+    <span class="promo-pill">FREE</span>
+    <span>Lecturameter is free forever · No ads · No subscriptions</span>
+    <button class="promo-close" aria-label="Close" onclick="dismissPromo()">×</button>
+</div>
 
 <!-- NAV -->
 <nav class="nav-bar">
@@ -77,76 +85,215 @@
     <div id="content-es" class="lang-content">
         <div class="page-hero">
             <h1>Precios por región</h1>
-            <p class="tagline">Pro cuesta menos en los países donde 2,99 EUR es demasiado.</p>
-            <p style="font-size:13px; color:var(--muted); margin-top:6px;">Por Víctor (Lecturameter) · Actualizada el 22 de julio de 2026</p>
+            <p class="tagline">Pro cuesta menos en los países donde 4,99 EUR es demasiado.</p>
+            <p style="font-size:13px; color:var(--muted); margin-top:6px;">Por Víctor (Lecturameter) · Actualizada el 26 de agosto de 2026</p>
         </div>
 
         <div class="section">
             <div class="section-head regional-head">
-                <p>2,99 EUR es el precio de lanzamiento en España. En países donde ese importe es demasiado, Pro cuesta bastante menos: prefiero que la app llegue a quien quiera usarla antes que dejar fuera a medio mundo. Estos son los precios de lanzamiento. Cuando termine la oferta, cada tramo sube en la misma proporción: el de 0,99 EUR pasa a 1,79 EUR, el de 1,79 EUR a 2,99 EUR y el resto a 4,99 EUR.</p>
+                <p>4,99 EUR es el precio en España. En países donde ese importe es demasiado, Pro cuesta bastante menos: prefiero que la app llegue a quien quiera usarla antes que dejar fuera a medio mundo.</p>
             </div>
 
             <div class="regional-tier">
-                <h3>Alrededor de 0,99 EUR &rarr; Alrededor de 1,79 EUR</h3>
+                <h3>Alrededor de 1,79 EUR</h3>
                 <table class="regional-table">
                     <thead>
-                        <tr><th>País</th><th>Lanzamiento</th><th>Después</th></tr>
+                        <tr><th>País</th><th>Precio</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>India</td><td>110 INR</td><td>199 INR</td></tr>
-                        <tr><td>Turquía</td><td>53,99 TRY</td><td>97,99 TRY</td></tr>
-                        <tr><td>Indonesia</td><td>17.000 IDR</td><td>31.000 IDR</td></tr>
-                        <tr><td>Filipinas</td><td>66 PHP</td><td>119 PHP</td></tr>
-                        <tr><td>Egipto</td><td>55,99 EGP</td><td>99,99 EGP</td></tr>
-                        <tr><td>Pakistán</td><td>270 PKR</td><td>490 PKR</td></tr>
-                        <tr><td>Nigeria</td><td>1.420 NGN</td><td>2.570 NGN</td></tr>
-                        <tr><td>Vietnam</td><td>25.000 VND</td><td>45.000 VND</td></tr>
-                        <tr><td>Ucrania</td><td>49,99 UAH</td><td>89,99 UAH</td></tr>
-                        <tr><td>Kenia</td><td>200 KES</td><td>360 KES</td></tr>
-                        <tr><td>Marruecos</td><td>10,99 MAD</td><td>19,99 MAD</td></tr>
-                        <tr><td>Bangladés</td><td>150 BDT</td><td>270 BDT</td></tr>
-                        <tr><td>Argentina</td><td>0,96 USD</td><td>1,74 USD</td></tr>
+                        <tr><td>Argentina</td><td>1,74 USD</td></tr>
+                        <tr><td>Bangladés</td><td>270 BDT</td></tr>
+                        <tr><td>Egipto</td><td>99,99 EGP</td></tr>
+                        <tr><td>Filipinas</td><td>119 PHP</td></tr>
+                        <tr><td>India</td><td>199 INR</td></tr>
+                        <tr><td>Indonesia</td><td>31.000 IDR</td></tr>
+                        <tr><td>Kenia</td><td>360 KES</td></tr>
+                        <tr><td>Marruecos</td><td>19,99 MAD</td></tr>
+                        <tr><td>Nigeria</td><td>2.570 NGN</td></tr>
+                        <tr><td>Pakistán</td><td>490 PKR</td></tr>
+                        <tr><td>Turquía</td><td>97,99 TRY</td></tr>
+                        <tr><td>Ucrania</td><td>89,99 UAH</td></tr>
+                        <tr><td>Vietnam</td><td>45.000 VND</td></tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="regional-tier">
-                <h3>Alrededor de 1,79 EUR &rarr; Alrededor de 2,99 EUR</h3>
+                <h3>Alrededor de 2,99 EUR</h3>
                 <table class="regional-table">
                     <thead>
-                        <tr><th>País</th><th>Lanzamiento</th><th>Después</th></tr>
+                        <tr><th>País</th><th>Precio</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>México</td><td>35 MXN</td><td>59 MXN</td></tr>
-                        <tr><td>Brasil</td><td>8,99 BRL</td><td>14,99 BRL</td></tr>
-                        <tr><td>Colombia</td><td>5.500 COP</td><td>9.200 COP</td></tr>
-                        <tr><td>Chile</td><td>1.900 CLP</td><td>3.200 CLP</td></tr>
-                        <tr><td>Perú</td><td>5,99 PEN</td><td>9,99 PEN</td></tr>
-                        <tr><td>Polonia</td><td>8,09 PLN</td><td>13,49 PLN</td></tr>
-                        <tr><td>Rumania</td><td>9,49 RON</td><td>15,99 RON</td></tr>
-                        <tr><td>Hungría</td><td>699 HUF</td><td>1.170 HUF</td></tr>
-                        <tr><td>Chequia</td><td>44,99 CZK</td><td>74,99 CZK</td></tr>
-                        <tr><td>Sudáfrica</td><td>32,99 ZAR</td><td>54,99 ZAR</td></tr>
-                        <tr><td>Malasia</td><td>7,49 MYR</td><td>12,49 MYR</td></tr>
-                        <tr><td>Tailandia</td><td>62 THB</td><td>104 THB</td></tr>
+                        <tr><td>Brasil</td><td>14,99 BRL</td></tr>
+                        <tr><td>Chile</td><td>3.200 CLP</td></tr>
+                        <tr><td>Chequia</td><td>74,99 CZK</td></tr>
+                        <tr><td>Colombia</td><td>9.200 COP</td></tr>
+                        <tr><td>Hungría</td><td>1.170 HUF</td></tr>
+                        <tr><td>Malasia</td><td>12,49 MYR</td></tr>
+                        <tr><td>México</td><td>59 MXN</td></tr>
+                        <tr><td>Perú</td><td>9,99 PEN</td></tr>
+                        <tr><td>Polonia</td><td>13,49 PLN</td></tr>
+                        <tr><td>Rumania</td><td>15,99 RON</td></tr>
+                        <tr><td>Sudáfrica</td><td>54,99 ZAR</td></tr>
+                        <tr><td>Tailandia</td><td>104 THB</td></tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="regional-tier">
-                <h3>Resto de países &rarr; 4,99 EUR</h3>
+                <h3>Resto de países</h3>
                 <table class="regional-table">
                     <thead>
-                        <tr><th>País</th><th>Lanzamiento</th><th>Después</th></tr>
+                        <tr><th>País</th><th>Precio</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>España</td><td>2,99 EUR</td><td>4,99 EUR</td></tr>
-                        <tr><td>Alemania</td><td>3,59 EUR</td><td>5,99 EUR</td></tr>
-                        <tr><td>Estados Unidos</td><td>3,39 USD</td><td>5,69 USD</td></tr>
-                        <tr><td>Reino Unido</td><td>3,09 GBP</td><td>5,19 GBP</td></tr>
-                        <tr><td>Canadá</td><td>4,79 CAD</td><td>7,99 CAD</td></tr>
-                        <tr><td>Australia</td><td>5,49 AUD</td><td>8,99 AUD</td></tr>
-                        <tr><td>Japón</td><td>620 JPY</td><td>1.040 JPY</td></tr>
+                        <tr><td>Alemania</td><td>5,99 EUR</td></tr>
+                        <tr><td>Angola</td><td>5,83 USD</td></tr>
+                        <tr><td>Antigua y Barbuda</td><td>5,83 USD</td></tr>
+                        <tr><td>Arabia Saudí</td><td>24,99 SAR</td></tr>
+                        <tr><td>Argelia</td><td>775,00 DZD</td></tr>
+                        <tr><td>Armenia</td><td>5,83 USD</td></tr>
+                        <tr><td>Aruba</td><td>5,83 USD</td></tr>
+                        <tr><td>Australia</td><td>8,99 AUD</td></tr>
+                        <tr><td>Austria</td><td>5,99 EUR</td></tr>
+                        <tr><td>Azerbaiyán</td><td>5,83 USD</td></tr>
+                        <tr><td>Bahamas</td><td>5,83 USD</td></tr>
+                        <tr><td>Baréin</td><td>6,49 USD</td></tr>
+                        <tr><td>Belice</td><td>5,83 USD</td></tr>
+                        <tr><td>Benín</td><td>4,99 EUR</td></tr>
+                        <tr><td>Bermudas</td><td>5,99 USD</td></tr>
+                        <tr><td>Bielorrusia</td><td>7,00 USD</td></tr>
+                        <tr><td>Bolivia</td><td>66,99 BOB</td></tr>
+                        <tr><td>Bosnia y Herzegovina</td><td>5,83 USD</td></tr>
+                        <tr><td>Bulgaria</td><td>5,99 EUR</td></tr>
+                        <tr><td>Burkina Faso</td><td>4,99 EUR</td></tr>
+                        <tr><td>Bélgica</td><td>5,99 EUR</td></tr>
+                        <tr><td>Cabo Verde</td><td>5,83 USD</td></tr>
+                        <tr><td>Camboya</td><td>5,99 USD</td></tr>
+                        <tr><td>Camerún</td><td>3.900 XAF</td></tr>
+                        <tr><td>Canadá</td><td>7,99 CAD</td></tr>
+                        <tr><td>Catar</td><td>21,00 QAR</td></tr>
+                        <tr><td>Chad</td><td>5,83 USD</td></tr>
+                        <tr><td>Chipre</td><td>5,99 EUR</td></tr>
+                        <tr><td>Ciudad del Vaticano</td><td>4,99 EUR</td></tr>
+                        <tr><td>Comoras</td><td>5,83 USD</td></tr>
+                        <tr><td>Congo</td><td>5,83 USD</td></tr>
+                        <tr><td>Corea del Sur</td><td>8.900 KRW</td></tr>
+                        <tr><td>Costa Rica</td><td>2.600,00 CRC</td></tr>
+                        <tr><td>Croacia</td><td>5,99 EUR</td></tr>
+                        <tr><td>Côte d'Ivoire</td><td>3.900 XOF</td></tr>
+                        <tr><td>Dinamarca</td><td>47,00 DKK</td></tr>
+                        <tr><td>Dominica</td><td>5,83 USD</td></tr>
+                        <tr><td>Ecuador</td><td>5,99 USD</td></tr>
+                        <tr><td>El Salvador</td><td>5,99 USD</td></tr>
+                        <tr><td>Emiratos Árabes Unidos</td><td>21,99 AED</td></tr>
+                        <tr><td>Eritrea</td><td>5,83 USD</td></tr>
+                        <tr><td>Eslovaquia</td><td>5,99 EUR</td></tr>
+                        <tr><td>Eslovenia</td><td>5,99 EUR</td></tr>
+                        <tr><td>España</td><td>4,99 EUR</td></tr>
+                        <tr><td>Estados Unidos</td><td>5,99 USD</td></tr>
+                        <tr><td>Estonia</td><td>5,99 EUR</td></tr>
+                        <tr><td>Finlandia</td><td>6,49 EUR</td></tr>
+                        <tr><td>Fiyi</td><td>5,83 USD</td></tr>
+                        <tr><td>Francia</td><td>5,99 EUR</td></tr>
+                        <tr><td>Gabón</td><td>4,99 EUR</td></tr>
+                        <tr><td>Gambia</td><td>5,83 USD</td></tr>
+                        <tr><td>Georgia</td><td>19,00 GEL</td></tr>
+                        <tr><td>Ghana</td><td>80,00 GHS</td></tr>
+                        <tr><td>Gibraltar</td><td>4,29 GBP</td></tr>
+                        <tr><td>Granada</td><td>5,83 USD</td></tr>
+                        <tr><td>Grecia</td><td>5,99 EUR</td></tr>
+                        <tr><td>Guatemala</td><td>5,83 USD</td></tr>
+                        <tr><td>Guinea</td><td>5,99 USD</td></tr>
+                        <tr><td>Guinea-Bisáu</td><td>4,99 EUR</td></tr>
+                        <tr><td>Haití</td><td>5,83 USD</td></tr>
+                        <tr><td>Honduras</td><td>5,83 USD</td></tr>
+                        <tr><td>Hong Kong</td><td>44,90 HKD</td></tr>
+                        <tr><td>Irak</td><td>7.650 IQD</td></tr>
+                        <tr><td>Irlanda</td><td>5,99 EUR</td></tr>
+                        <tr><td>Islandia</td><td>6,19 EUR</td></tr>
+                        <tr><td>Islas Caimán</td><td>5,99 USD</td></tr>
+                        <tr><td>Islas Salomón</td><td>5,83 USD</td></tr>
+                        <tr><td>Islas Turcas y Caicos</td><td>5,99 USD</td></tr>
+                        <tr><td>Islas Vírgenes Británicas</td><td>5,99 USD</td></tr>
+                        <tr><td>Israel</td><td>17,00 ILS</td></tr>
+                        <tr><td>Italia</td><td>5,99 EUR</td></tr>
+                        <tr><td>Jamaica</td><td>5,83 USD</td></tr>
+                        <tr><td>Japón</td><td>1.020 JPY</td></tr>
+                        <tr><td>Jordania</td><td>4,10 JOD</td></tr>
+                        <tr><td>Kazajistán</td><td>3.090,00 KZT</td></tr>
+                        <tr><td>Kirguistán</td><td>5,83 USD</td></tr>
+                        <tr><td>Kuwait</td><td>5,99 USD</td></tr>
+                        <tr><td>Laos</td><td>5,83 USD</td></tr>
+                        <tr><td>Letonia</td><td>5,99 EUR</td></tr>
+                        <tr><td>Liberia</td><td>5,83 USD</td></tr>
+                        <tr><td>Libia</td><td>5,83 USD</td></tr>
+                        <tr><td>Liechtenstein</td><td>5,00 CHF</td></tr>
+                        <tr><td>Lituania</td><td>5,99 EUR</td></tr>
+                        <tr><td>Luxemburgo</td><td>5,99 EUR</td></tr>
+                        <tr><td>Líbano</td><td>5,83 USD</td></tr>
+                        <tr><td>Macao</td><td>46,99 MOP</td></tr>
+                        <tr><td>Macedonia del Norte</td><td>5,83 USD</td></tr>
+                        <tr><td>Maldivas</td><td>5,83 USD</td></tr>
+                        <tr><td>Mali</td><td>4,99 EUR</td></tr>
+                        <tr><td>Malta</td><td>5,89 EUR</td></tr>
+                        <tr><td>Mauricio</td><td>5,83 USD</td></tr>
+                        <tr><td>Micronesia</td><td>5,99 USD</td></tr>
+                        <tr><td>Moldavia</td><td>7,00 USD</td></tr>
+                        <tr><td>Mongolia</td><td>20.900,00 MNT</td></tr>
+                        <tr><td>Mozambique</td><td>5,83 USD</td></tr>
+                        <tr><td>Myanmar (Birmania)</td><td>12.000 MMK</td></tr>
+                        <tr><td>Mónaco</td><td>5,99 EUR</td></tr>
+                        <tr><td>Namibia</td><td>5,83 USD</td></tr>
+                        <tr><td>Nepal</td><td>6,59 USD</td></tr>
+                        <tr><td>Nicaragua</td><td>5,83 USD</td></tr>
+                        <tr><td>Noruega</td><td>69,00 NOK</td></tr>
+                        <tr><td>Nueva Zelanda</td><td>10,99 NZD</td></tr>
+                        <tr><td>Níger</td><td>4,99 EUR</td></tr>
+                        <tr><td>Omán</td><td>5,99 USD</td></tr>
+                        <tr><td>Países Bajos</td><td>5,99 EUR</td></tr>
+                        <tr><td>Panamá</td><td>5,99 USD</td></tr>
+                        <tr><td>Papúa Nueva Guinea</td><td>5,83 USD</td></tr>
+                        <tr><td>Paraguay</td><td>30.000 PYG</td></tr>
+                        <tr><td>Portugal</td><td>5,99 EUR</td></tr>
+                        <tr><td>Reino Unido</td><td>4,99 GBP</td></tr>
+                        <tr><td>República Centroafricana</td><td>4,99 EUR</td></tr>
+                        <tr><td>República Democrática del Congo</td><td>5,83 USD</td></tr>
+                        <tr><td>República Dominicana</td><td>5,83 USD</td></tr>
+                        <tr><td>Ruanda</td><td>5,83 USD</td></tr>
+                        <tr><td>Rusia</td><td>489,00 RUB</td></tr>
+                        <tr><td>Samoa</td><td>5,83 USD</td></tr>
+                        <tr><td>San Cristóbal y Nieves</td><td>5,83 USD</td></tr>
+                        <tr><td>San Marino</td><td>4,99 EUR</td></tr>
+                        <tr><td>Santa Lucía</td><td>5,83 USD</td></tr>
+                        <tr><td>Senegal</td><td>3.900 XOF</td></tr>
+                        <tr><td>Serbia</td><td>699 RSD</td></tr>
+                        <tr><td>Seychelles</td><td>5,83 USD</td></tr>
+                        <tr><td>Sierra Leona</td><td>5,83 USD</td></tr>
+                        <tr><td>Singapur</td><td>7,99 SGD</td></tr>
+                        <tr><td>Somalia</td><td>5,83 USD</td></tr>
+                        <tr><td>Sri Lanka</td><td>1.900,00 LKR</td></tr>
+                        <tr><td>Suecia</td><td>69,00 SEK</td></tr>
+                        <tr><td>Suiza</td><td>4,70 CHF</td></tr>
+                        <tr><td>Surinam</td><td>5,83 USD</td></tr>
+                        <tr><td>Taiwán</td><td>200,00 TWD</td></tr>
+                        <tr><td>Tanzania</td><td>15.000,00 TZS</td></tr>
+                        <tr><td>Tayikistán</td><td>5,83 USD</td></tr>
+                        <tr><td>Togo</td><td>4,99 EUR</td></tr>
+                        <tr><td>Tonga</td><td>5,83 USD</td></tr>
+                        <tr><td>Trinidad y Tobago</td><td>5,83 USD</td></tr>
+                        <tr><td>Turkmenistán</td><td>5,83 USD</td></tr>
+                        <tr><td>Túnez</td><td>5,83 USD</td></tr>
+                        <tr><td>Uganda</td><td>6,88 USD</td></tr>
+                        <tr><td>Uruguay</td><td>5,83 USD</td></tr>
+                        <tr><td>Uzbekistán</td><td>6,53 USD</td></tr>
+                        <tr><td>Vanuatu</td><td>5,83 USD</td></tr>
+                        <tr><td>Venezuela</td><td>5,83 USD</td></tr>
+                        <tr><td>Yemen</td><td>5,83 USD</td></tr>
+                        <tr><td>Yibuti</td><td>5,83 USD</td></tr>
+                        <tr><td>Zambia</td><td>5,83 USD</td></tr>
+                        <tr><td>Zimbabue</td><td>5,83 USD</td></tr>
                     </tbody>
                 </table>
                 <p class="regional-note">Los precios que ves son los que pagas: llevan el impuesto de tu país ya incluido. La lista completa la ves en la ficha de Google Play desde tu país. Las diferencias entre unos y otros son la conversión de Google y los impuestos de cada sitio, no un recargo mío.</p>
@@ -167,76 +314,216 @@
     <div id="content-en" class="lang-content active">
         <div class="page-hero">
             <h2 class="page-heading">Regional pricing</h2>
-            <p class="tagline">Pro costs less in countries where 2.99 EUR is too much.</p>
-            <p style="font-size:13px; color:var(--muted); margin-top:6px;">By Víctor (Lecturameter) · Updated July 22, 2026</p>
+            <p class="tagline">Pro costs less in countries where 4.99 EUR is too much.</p>
+            <p style="font-size:13px; color:var(--muted); margin-top:6px;">By Víctor (Lecturameter) · Updated August 26, 2026</p>
         </div>
 
         <div class="section">
             <div class="section-head regional-head">
-                <p>2.99 EUR is the launch price in Spain. In countries where that amount is too much, Pro costs considerably less: I would rather the app reach anyone who wants to use it than price half the world out. These are the launch prices. When the offer ends each tier goes up by the same proportion: the 0.99 EUR tier becomes 1.79 EUR, the 1.79 EUR tier becomes 2.99 EUR and the rest becomes 4.99 EUR.</p>
+                <p>4.99 EUR is the price in Spain. In countries where that amount is too much, Pro costs considerably less: I would rather the app reach anyone who wants to use it than price half the world out.</p>
             </div>
 
             <div class="regional-tier">
-                <h3>Around 0.99 EUR &rarr; Around 1.79 EUR</h3>
+                <h3>Around 1.79 EUR</h3>
                 <table class="regional-table">
                     <thead>
-                        <tr><th>Country</th><th>Launch</th><th>After</th></tr>
+                        <tr><th>Country</th><th>Price</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>India</td><td>110 INR</td><td>199 INR</td></tr>
-                        <tr><td>Turkiye</td><td>53.99 TRY</td><td>97.99 TRY</td></tr>
-                        <tr><td>Indonesia</td><td>17,000 IDR</td><td>31,000 IDR</td></tr>
-                        <tr><td>Philippines</td><td>66 PHP</td><td>119 PHP</td></tr>
-                        <tr><td>Egypt</td><td>55.99 EGP</td><td>99.99 EGP</td></tr>
-                        <tr><td>Pakistan</td><td>270 PKR</td><td>490 PKR</td></tr>
-                        <tr><td>Nigeria</td><td>1,420 NGN</td><td>2,570 NGN</td></tr>
-                        <tr><td>Vietnam</td><td>25,000 VND</td><td>45,000 VND</td></tr>
-                        <tr><td>Ukraine</td><td>49.99 UAH</td><td>89.99 UAH</td></tr>
-                        <tr><td>Kenya</td><td>200 KES</td><td>360 KES</td></tr>
-                        <tr><td>Morocco</td><td>10.99 MAD</td><td>19.99 MAD</td></tr>
-                        <tr><td>Bangladesh</td><td>150 BDT</td><td>270 BDT</td></tr>
-                        <tr><td>Argentina</td><td>0.96 USD</td><td>1.74 USD</td></tr>
+                        <tr><td>Argentina</td><td>1.74 USD</td></tr>
+                        <tr><td>Bangladesh</td><td>270 BDT</td></tr>
+                        <tr><td>Egypt</td><td>99.99 EGP</td></tr>
+                        <tr><td>Philippines</td><td>119 PHP</td></tr>
+                        <tr><td>India</td><td>199 INR</td></tr>
+                        <tr><td>Indonesia</td><td>31,000 IDR</td></tr>
+                        <tr><td>Kenya</td><td>360 KES</td></tr>
+                        <tr><td>Morocco</td><td>19.99 MAD</td></tr>
+                        <tr><td>Nigeria</td><td>2,570 NGN</td></tr>
+                        <tr><td>Pakistan</td><td>490 PKR</td></tr>
+                        <tr><td>Turkiye</td><td>97.99 TRY</td></tr>
+                        <tr><td>Ukraine</td><td>89.99 UAH</td></tr>
+                        <tr><td>Vietnam</td><td>45,000 VND</td></tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="regional-tier">
-                <h3>Around 1.79 EUR &rarr; Around 2.99 EUR</h3>
+                <h3>Around 2.99 EUR</h3>
                 <table class="regional-table">
                     <thead>
-                        <tr><th>Country</th><th>Launch</th><th>After</th></tr>
+                        <tr><th>Country</th><th>Price</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>Mexico</td><td>35 MXN</td><td>59 MXN</td></tr>
-                        <tr><td>Brazil</td><td>8.99 BRL</td><td>14.99 BRL</td></tr>
-                        <tr><td>Colombia</td><td>5,500 COP</td><td>9,200 COP</td></tr>
-                        <tr><td>Chile</td><td>1,900 CLP</td><td>3,200 CLP</td></tr>
-                        <tr><td>Peru</td><td>5.99 PEN</td><td>9.99 PEN</td></tr>
-                        <tr><td>Poland</td><td>8.09 PLN</td><td>13.49 PLN</td></tr>
-                        <tr><td>Romania</td><td>9.49 RON</td><td>15.99 RON</td></tr>
-                        <tr><td>Hungary</td><td>699 HUF</td><td>1,170 HUF</td></tr>
-                        <tr><td>Czechia</td><td>44.99 CZK</td><td>74.99 CZK</td></tr>
-                        <tr><td>South Africa</td><td>32.99 ZAR</td><td>54.99 ZAR</td></tr>
-                        <tr><td>Malaysia</td><td>7.49 MYR</td><td>12.49 MYR</td></tr>
-                        <tr><td>Thailand</td><td>62 THB</td><td>104 THB</td></tr>
+                        <tr><td>Brazil</td><td>14.99 BRL</td></tr>
+                        <tr><td>Chile</td><td>3,200 CLP</td></tr>
+                        <tr><td>Czechia</td><td>74.99 CZK</td></tr>
+                        <tr><td>Colombia</td><td>9,200 COP</td></tr>
+                        <tr><td>Hungary</td><td>1,170 HUF</td></tr>
+                        <tr><td>Malaysia</td><td>12.49 MYR</td></tr>
+                        <tr><td>Mexico</td><td>59 MXN</td></tr>
+                        <tr><td>Peru</td><td>9.99 PEN</td></tr>
+                        <tr><td>Poland</td><td>13.49 PLN</td></tr>
+                        <tr><td>Romania</td><td>15.99 RON</td></tr>
+                        <tr><td>South Africa</td><td>54.99 ZAR</td></tr>
+                        <tr><td>Thailand</td><td>104 THB</td></tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="regional-tier">
-                <h3>Everywhere else &rarr; 4.99 EUR</h3>
+                <h3>Everywhere else</h3>
                 <table class="regional-table">
                     <thead>
-                        <tr><th>Country</th><th>Launch</th><th>After</th></tr>
+                        <tr><th>Country</th><th>Price</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>Spain</td><td>2.99 EUR</td><td>4.99 EUR</td></tr>
-                        <tr><td>Germany</td><td>3.59 EUR</td><td>5.99 EUR</td></tr>
-                        <tr><td>United States</td><td>3.39 USD</td><td>5.69 USD</td></tr>
-                        <tr><td>United Kingdom</td><td>3.09 GBP</td><td>5.19 GBP</td></tr>
-                        <tr><td>Canada</td><td>4.79 CAD</td><td>7.99 CAD</td></tr>
-                        <tr><td>Australia</td><td>5.49 AUD</td><td>8.99 AUD</td></tr>
-                        <tr><td>Japan</td><td>620 JPY</td><td>1,040 JPY</td></tr>
+                        <tr><td>Algeria</td><td>775.00 DZD</td></tr>
+                        <tr><td>Angola</td><td>5.83 USD</td></tr>
+                        <tr><td>Antigua and Barbuda</td><td>5.83 USD</td></tr>
+                        <tr><td>Armenia</td><td>5.83 USD</td></tr>
+                        <tr><td>Aruba</td><td>5.83 USD</td></tr>
+                        <tr><td>Australia</td><td>8.99 AUD</td></tr>
+                        <tr><td>Austria</td><td>5.99 EUR</td></tr>
+                        <tr><td>Azerbaijan</td><td>5.83 USD</td></tr>
+                        <tr><td>Bahamas</td><td>5.83 USD</td></tr>
+                        <tr><td>Bahrain</td><td>6.49 USD</td></tr>
+                        <tr><td>Belarus</td><td>7.00 USD</td></tr>
+                        <tr><td>Belgium</td><td>5.99 EUR</td></tr>
+                        <tr><td>Belize</td><td>5.83 USD</td></tr>
+                        <tr><td>Benin</td><td>4.99 EUR</td></tr>
+                        <tr><td>Bermuda</td><td>5.99 USD</td></tr>
+                        <tr><td>Bolivia</td><td>66.99 BOB</td></tr>
+                        <tr><td>Bosnia and Herzegovina</td><td>5.83 USD</td></tr>
+                        <tr><td>Bulgaria</td><td>5.99 EUR</td></tr>
+                        <tr><td>Burkina Faso</td><td>4.99 EUR</td></tr>
+                        <tr><td>Cambodia</td><td>5.99 USD</td></tr>
+                        <tr><td>Cameroon</td><td>3,900 XAF</td></tr>
+                        <tr><td>Canada</td><td>7.99 CAD</td></tr>
+                        <tr><td>Cape Verde</td><td>5.83 USD</td></tr>
+                        <tr><td>Central African Republic</td><td>4.99 EUR</td></tr>
+                        <tr><td>Chad</td><td>5.83 USD</td></tr>
+                        <tr><td>Comoros</td><td>5.83 USD</td></tr>
+                        <tr><td>Congo</td><td>5.83 USD</td></tr>
+                        <tr><td>Costa Rica</td><td>2,600.00 CRC</td></tr>
+                        <tr><td>Côte d'Ivoire</td><td>3,900 XOF</td></tr>
+                        <tr><td>Croatia</td><td>5.99 EUR</td></tr>
+                        <tr><td>Cyprus</td><td>5.99 EUR</td></tr>
+                        <tr><td>Czech Republic</td><td>149.99 CZK</td></tr>
+                        <tr><td>Democratic Republic of the Congo</td><td>5.83 USD</td></tr>
+                        <tr><td>Denmark</td><td>47.00 DKK</td></tr>
+                        <tr><td>Djibouti</td><td>5.83 USD</td></tr>
+                        <tr><td>Dominica</td><td>5.83 USD</td></tr>
+                        <tr><td>Dominican Republic</td><td>5.83 USD</td></tr>
+                        <tr><td>Ecuador</td><td>5.99 USD</td></tr>
+                        <tr><td>El Salvador</td><td>5.99 USD</td></tr>
+                        <tr><td>Eritrea</td><td>5.83 USD</td></tr>
+                        <tr><td>Estonia</td><td>5.99 EUR</td></tr>
+                        <tr><td>Fiji</td><td>5.83 USD</td></tr>
+                        <tr><td>Finland</td><td>6.49 EUR</td></tr>
+                        <tr><td>France</td><td>5.99 EUR</td></tr>
+                        <tr><td>Gabon</td><td>4.99 EUR</td></tr>
+                        <tr><td>Gambia</td><td>5.83 USD</td></tr>
+                        <tr><td>Georgia</td><td>19.00 GEL</td></tr>
+                        <tr><td>Germany</td><td>5.99 EUR</td></tr>
+                        <tr><td>Ghana</td><td>80.00 GHS</td></tr>
+                        <tr><td>Gibraltar</td><td>4.29 GBP</td></tr>
+                        <tr><td>Greece</td><td>5.99 EUR</td></tr>
+                        <tr><td>Grenada</td><td>5.83 USD</td></tr>
+                        <tr><td>Guatemala</td><td>5.83 USD</td></tr>
+                        <tr><td>Guinea</td><td>5.99 USD</td></tr>
+                        <tr><td>Guinea-Bissau</td><td>4.99 EUR</td></tr>
+                        <tr><td>Haiti</td><td>5.83 USD</td></tr>
+                        <tr><td>Honduras</td><td>5.83 USD</td></tr>
+                        <tr><td>Hong Kong</td><td>44.90 HKD</td></tr>
+                        <tr><td>Iceland</td><td>6.19 EUR</td></tr>
+                        <tr><td>Iraq</td><td>7,650 IQD</td></tr>
+                        <tr><td>Ireland</td><td>5.99 EUR</td></tr>
+                        <tr><td>Israel</td><td>17.00 ILS</td></tr>
+                        <tr><td>Italy</td><td>5.99 EUR</td></tr>
+                        <tr><td>Jamaica</td><td>5.83 USD</td></tr>
+                        <tr><td>Japan</td><td>1,020 JPY</td></tr>
+                        <tr><td>Jordan</td><td>4.10 JOD</td></tr>
+                        <tr><td>Kazakhstan</td><td>3,090.00 KZT</td></tr>
+                        <tr><td>Kuwait</td><td>5.99 USD</td></tr>
+                        <tr><td>Kyrgyzstan</td><td>5.83 USD</td></tr>
+                        <tr><td>Laos</td><td>5.83 USD</td></tr>
+                        <tr><td>Latvia</td><td>5.99 EUR</td></tr>
+                        <tr><td>Lebanon</td><td>5.83 USD</td></tr>
+                        <tr><td>Liberia</td><td>5.83 USD</td></tr>
+                        <tr><td>Libya</td><td>5.83 USD</td></tr>
+                        <tr><td>Liechtenstein</td><td>5.00 CHF</td></tr>
+                        <tr><td>Lithuania</td><td>5.99 EUR</td></tr>
+                        <tr><td>Luxembourg</td><td>5.99 EUR</td></tr>
+                        <tr><td>Macao</td><td>46.99 MOP</td></tr>
+                        <tr><td>Madagascar</td><td>5.83 USD</td></tr>
+                        <tr><td>Maldives</td><td>5.83 USD</td></tr>
+                        <tr><td>Mali</td><td>4.99 EUR</td></tr>
+                        <tr><td>Malta</td><td>5.89 EUR</td></tr>
+                        <tr><td>Mauritius</td><td>5.83 USD</td></tr>
+                        <tr><td>Micronesia</td><td>5.99 USD</td></tr>
+                        <tr><td>Moldova</td><td>7.00 USD</td></tr>
+                        <tr><td>Monaco</td><td>5.99 EUR</td></tr>
+                        <tr><td>Mongolia</td><td>20,900.00 MNT</td></tr>
+                        <tr><td>Mozambique</td><td>5.83 USD</td></tr>
+                        <tr><td>Myanmar (Burma)</td><td>12,000 MMK</td></tr>
+                        <tr><td>Namibia</td><td>5.83 USD</td></tr>
+                        <tr><td>Nepal</td><td>6.59 USD</td></tr>
+                        <tr><td>Netherlands</td><td>5.99 EUR</td></tr>
+                        <tr><td>New Zealand</td><td>10.99 NZD</td></tr>
+                        <tr><td>Nicaragua</td><td>5.83 USD</td></tr>
+                        <tr><td>Niger</td><td>4.99 EUR</td></tr>
+                        <tr><td>North Macedonia</td><td>5.83 USD</td></tr>
+                        <tr><td>Norway</td><td>69.00 NOK</td></tr>
+                        <tr><td>Oman</td><td>5.99 USD</td></tr>
+                        <tr><td>Panama</td><td>5.99 USD</td></tr>
+                        <tr><td>Papua New Guinea</td><td>5.83 USD</td></tr>
+                        <tr><td>Paraguay</td><td>30,000 PYG</td></tr>
+                        <tr><td>Portugal</td><td>5.99 EUR</td></tr>
+                        <tr><td>Qatar</td><td>21.00 QAR</td></tr>
+                        <tr><td>Rwanda</td><td>5.83 USD</td></tr>
+                        <tr><td>Russia</td><td>489.00 RUB</td></tr>
+                        <tr><td>Saint Kitts and Nevis</td><td>5.83 USD</td></tr>
+                        <tr><td>Saint Lucia</td><td>5.83 USD</td></tr>
+                        <tr><td>Samoa</td><td>5.83 USD</td></tr>
+                        <tr><td>San Marino</td><td>4.99 EUR</td></tr>
+                        <tr><td>Saudi Arabia</td><td>24.99 SAR</td></tr>
+                        <tr><td>Senegal</td><td>3,900 XOF</td></tr>
+                        <tr><td>Serbia</td><td>699 RSD</td></tr>
+                        <tr><td>Seychelles</td><td>5.83 USD</td></tr>
+                        <tr><td>Sierra Leone</td><td>5.83 USD</td></tr>
+                        <tr><td>Singapore</td><td>7.99 SGD</td></tr>
+                        <tr><td>Slovakia</td><td>5.99 EUR</td></tr>
+                        <tr><td>Slovenia</td><td>5.99 EUR</td></tr>
+                        <tr><td>Solomon Islands</td><td>5.83 USD</td></tr>
+                        <tr><td>Somalia</td><td>5.83 USD</td></tr>
+                        <tr><td>South Korea</td><td>8,900 KRW</td></tr>
+                        <tr><td>Spain</td><td>4.99 EUR</td></tr>
+                        <tr><td>Sri Lanka</td><td>1,900.00 LKR</td></tr>
+                        <tr><td>Suriname</td><td>5.83 USD</td></tr>
+                        <tr><td>Sweden</td><td>69.00 SEK</td></tr>
+                        <tr><td>Switzerland</td><td>4.70 CHF</td></tr>
+                        <tr><td>Taiwan</td><td>200.00 TWD</td></tr>
+                        <tr><td>Tajikistan</td><td>5.83 USD</td></tr>
+                        <tr><td>Tanzania</td><td>15,000.00 TZS</td></tr>
+                        <tr><td>Togo</td><td>4.99 EUR</td></tr>
+                        <tr><td>Tonga</td><td>5.83 USD</td></tr>
+                        <tr><td>Trinidad and Tobago</td><td>5.83 USD</td></tr>
+                        <tr><td>Tunisia</td><td>5.83 USD</td></tr>
+                        <tr><td>Turkmenistan</td><td>5.83 USD</td></tr>
+                        <tr><td>Turks and Caicos Islands</td><td>5.99 USD</td></tr>
+                        <tr><td>Uganda</td><td>6.88 USD</td></tr>
+                        <tr><td>United Arab Emirates</td><td>21.99 AED</td></tr>
+                        <tr><td>United Kingdom</td><td>4.99 GBP</td></tr>
+                        <tr><td>United States</td><td>5.99 USD</td></tr>
+                        <tr><td>Uruguay</td><td>5.83 USD</td></tr>
+                        <tr><td>Uzbekistan</td><td>6.53 USD</td></tr>
+                        <tr><td>Vanuatu</td><td>5.83 USD</td></tr>
+                        <tr><td>Vatican City</td><td>4.99 EUR</td></tr>
+                        <tr><td>Venezuela</td><td>5.83 USD</td></tr>
+                        <tr><td>British Virgin Islands</td><td>5.99 USD</td></tr>
+                        <tr><td>Yemen</td><td>5.83 USD</td></tr>
+                        <tr><td>Zambia</td><td>5.83 USD</td></tr>
+                        <tr><td>Zimbabwe</td><td>5.83 USD</td></tr>
                     </tbody>
                 </table>
                 <p class="regional-note">What you see is what you pay: local tax is already included. You can see the full list on the Google Play listing from your own country. The gaps between them are Google's currency conversion and local taxes, not a surcharge from me.</p>
