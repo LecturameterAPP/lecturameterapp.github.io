@@ -1,25 +1,79 @@
 {
-  "notesVersion": 3,
+  "notesVersion": 4,
   "es": {
     "new": [
-      "La barra de sonido de la sesión inmersiva se expande también en horizontal, con anterior/siguiente y bucle/secuencia",
-      "Los grupos de sonido resaltan mejor el color de acento del tema"
+      "Los Ajustes se han reorganizado por secciones.",
+      "La app ahora soporta más de 40 idiomas distintos. Podéis dar feedback sobre ello desde Ajustes > Feedback.",
+      "Nuevas secciones en ajustes: Notas del Parche, Notificaciones, Recordatorios y Gestión de Tags.",
+      "Notificaciones: notificaciones in-app para retos, bingos, meta diaria, sesiones sospechosamente largas y aviso de recuperación de datos tras restaurar una copia. Desactivables globalmente o una por una.",
+      "Cumplir un reto, terminar un bingo (y los dos a la vez) y comprar Pro tienen imágenes compartibles.",
+      "Recordatorios: podéis crear recordatorios personalizados de lectura que hará saltar una notificación a la hora y día que queráis.",
+      "Sistema de tags: hasta 3 etiquetas por libro, buscables con # en la barra de búsqueda. Puedes gestionarlos desde el icono del rail y desde ajustes.",
+      "Mantener pulsado en la card de un libro abre un menú con múltiples opciones rápidas.",
+      "Desde el menú rápido puedes agregar o quitar tags seleccionando múltiples libros a la vez.",
+      "Los detalles del libro han sido mejorados visualmente.",
+      "Las puntuaciones de libros pasan a ser 5 estrellas con medias puntuaciones. Vuestras antiguas puntuaciones han sido migradas (1 punto = 0,5 estrellas).",
+      "Puedes compartir cualquier libro de tu biblioteca con una imagen. Desde el menú de 3 puntos dentro del libro o desde el menú rápido.",
+      "Cuando termines un libro podrás compartir el momento con una imagen a través de un pop-up.",
+      "A cada lado de la portada puedes poner fotos reales del canto y lomo de tu libro físico.",
+      "El sistema de notas ha sido mejorado: frases favoritas, notas y opinión final. Tú eliges qué ver en la card del libro.",
+      "Llegan los Hitos Universales, una nueva sección que combina las estadísticas con un sistema de trofeos (hitos).",
+      "Llega el tema Ocaso para los usuarios Pro, un tema que mezcla azules y naranjas simulando el atardecer.",
+      "En el icono de las 3 rayas de la barra de búsqueda ahora se puede cambiar entre modo cuadrícula y modo lista.",
+      "El CSV que genera la app se puede guardar localmente y hacer autobackup local y en la nube.",
+      "El backup en JSON tiene una opción para desactivar que las fotos de los lomos y cantos se guarden. (Muchas fotos ocupan mucho espacio.)",
+      "Tras restaurar un backup JSON o importar/restaurar un CSV aparecerá una notificación si algún libro no tiene portada, ISBN, autor o páginas. Se pueden resolver desde esa misma notificación.",
+      "Al importar un backup JSON puedes decidir qué restaurar exactamente.",
+      "Las cards de los libros son ligeramente más pequeñas.",
+      "Pagi se puede ampliar y encoger con gestos de zoom."
     ],
     "fixes": [
-      "El modo horizontal ya no se queda bloqueado en vertical al girar el móvil cuando usas la app en un idioma distinto al del sistema",
-      "Más aire entre la tarjeta de sonido y los botones del cronómetro al expandirla",
-      "Cambiar de categoría de sonido ya funciona: toca una pestaña y empieza a sonar esa categoría"
+      "Mejoras de visualización de la app en modo horizontal y en pantallas de distintos tamaños.",
+      "Mejoras en la búsqueda de libros.",
+      "Mejoras que permiten el desarrollo de la app en iOS.",
+      "El Widget Pro ahora es más claro enseñando la diferencia entre meses.",
+      "Se ha mejorado la sección de orden para añadir filtros.",
+      "Arreglados varios bugs y crashes.",
+      "Las acciones destructivas, como borrar un libro, se pueden revertir durante un pequeño tiempo mediante un mensaje que aparece abajo.",
+      "Cambiar un libro de estado o estantería de la biblioteca muestra ahora un pequeño mensaje abajo."
     ]
   },
   "en": {
     "new": [
-      "The immersive session's sound bar now expands in landscape too, with previous/next and loop/sequence",
-      "Sound groups highlight your theme's accent colour more clearly"
+      "Settings have been reorganised into sections.",
+      "The app now supports more than 40 languages. You can send feedback about them from Settings > Feedback.",
+      "New Settings sections: Patch Notes, Notifications, Reminders and Tag Management.",
+      "Notifications: in-app notifications for challenges, bingos, daily goal, suspiciously long sessions (did you forget to stop the timer?) and a data-recovery notice after restoring a backup. All of them can be turned off globally or one by one.",
+      "Completing a challenge, finishing a bingo (or both at once) and buying Pro now show shareable images.",
+      "Reminders: create custom reading reminders that fire a notification on the day and time you pick.",
+      "Tag system: up to 3 tags per book, searchable with # in the search bar. Manage them from the rail icon and from Settings.",
+      "Long-pressing a book card opens a menu with several quick actions.",
+      "From the quick-actions menu you can add or remove tags on several selected books at once.",
+      "Book details have been given a visual refresh.",
+      "Book ratings are now 5 stars with half-star support. Your old ratings have been migrated (1 point = 0.5 stars).",
+      "You can share any book in your library as an image, from the 3-dot menu inside the book or from the quick-actions menu.",
+      "When you finish a book, a pop-up lets you share the moment as an image.",
+      "You can now add real photos of the spine and edges of your physical book next to the cover.",
+      "The notes system has been improved: favourite quotes, notes and final thoughts. You choose what shows up on the book card.",
+      "Universal Milestones arrive: a new section that mixes your stats with a trophy system.",
+      "New Sunset theme for Pro users, blending blues and oranges to feel like dusk.",
+      "The 3-lines icon in the search bar now lets you switch between grid and list mode.",
+      "The CSV generated by the app can now be saved locally and included in auto-backup, both local and in the cloud.",
+      "The JSON backup has an option to leave out the spine and edge photos. (Lots of photos take up a lot of space.)",
+      "After restoring a JSON backup or importing/restoring a CSV, you'll get a notification if any book is missing cover, ISBN, author or pages. You can fix them straight from that notification.",
+      "When importing a JSON backup you can pick exactly what to restore.",
+      "Book cards are slightly smaller now.",
+      "You can pinch to zoom Pagi in and out."
     ],
     "fixes": [
-      "Landscape no longer gets stuck in portrait when you use the app in a language different from your phone's",
-      "More breathing room between the sound card and the timer buttons when expanded",
-      "Switching sound category now works: tap a tab and that category starts playing"
+      "Better layout in landscape and on displays of different sizes.",
+      "Improvements to book search.",
+      "Groundwork for the app to run on iOS.",
+      "The Pro widget now shows the difference between months more clearly.",
+      "The sort section has been improved and now includes filters.",
+      "Fixed several bugs and crashes.",
+      "Destructive actions, like deleting a book, can now be undone for a short while via a message that appears at the bottom.",
+      "Changing a book's status or shelf now shows a brief confirmation at the bottom."
     ]
   }
 }
