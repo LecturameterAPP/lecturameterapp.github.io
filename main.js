@@ -755,15 +755,26 @@ function dismissPromo() {
 }
 
 // ─── STARTUPBAR OFFSET ───
-new MutationObserver(function (mutations) {
-    for (var i = 0; i < mutations.length; i++) {
-        var nodes = mutations[i].addedNodes;
-        for (var j = 0; j < nodes.length; j++) {
-            var n = nodes[j];
-            if (n.nodeType === 1 && n.style && parseInt(n.style.top) === 0 && parseInt(n.style.height) === 36) {
-                document.documentElement.classList.add('startupbar-active');
-                return;
-            }
+function detectStartupBar() {
+    if (document.documentElement.classList.contains('startupbar-active')) return true;
+    // Match by iframe src, or by any fixed/absolute node pinned to top with height ~36-48px
+    var iframe = document.querySelector('iframe[src*="startupbar"], iframe[src*="startup"]');
+    if (iframe) { document.documentElement.classList.add('startupbar-active'); return true; }
+    var nodes = document.body.children;
+    for (var i = 0; i < nodes.length; i++) {
+        var n = nodes[i];
+        if (n.id === 'promo-bar' || n.tagName === 'NAV' || n.tagName === 'SCRIPT') continue;
+        var cs = getComputedStyle(n);
+        if ((cs.position === 'fixed' || cs.position === 'sticky') && parseInt(cs.top) < 4) {
+            var h = parseInt(cs.height);
+            if (h >= 28 && h <= 52) { document.documentElement.classList.add('startupbar-active'); return true; }
         }
     }
-}).observe(document.body, { childList: true });
+    return false;
+}
+new MutationObserver(detectStartupBar).observe(document.body, { childList: true, subtree: true });
+// Fallback poll in case the widget injects via shadow DOM or delayed
+var _sbTries = 0;
+var _sbTimer = setInterval(function () {
+    if (detectStartupBar() || ++_sbTries > 20) clearInterval(_sbTimer);
+}, 500);

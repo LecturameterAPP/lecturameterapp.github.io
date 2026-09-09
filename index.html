@@ -91,8 +91,7 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type":"Question","name":"Can I import my library from Goodreads?","acceptedAnswer":{"@type":"Answer","text":"Yes. Export your library as CSV from goodreads.com/review/import. In Lecturameter, go to Settings > Import/Export > Import CSV. The app automatically maps title, author, status, rating and dates."}},
-        {"@type":"Question","name":"And from StoryGraph?","acceptedAnswer":{"@type":"Answer","text":"Also yes. Since version 3.5, you can export your library from app.thestorygraph.com (Manage Account > Manage Your Data > Export StoryGraph Library). The CSV arrives by email."}},
+        {"@type":"Question","name":"Can I bring my library from other apps?","acceptedAnswer":{"@type":"Answer","text":"Yes. Go to Settings > Import/Export and follow the step-by-step wizard. Supported apps: Goodreads (CSV) — export from goodreads.com > My Books > Import and export > Export Library. StoryGraph (CSV) — export from app.thestorygraph.com > Manage account > Import/Export > Export STG Library (CSV arrives by email). Bookmory (.bookmory or XLSX) — Settings > Backup > Export. Fable / ShelfBridge (CSV) — export via the ShelfBridge extension. Lecturameter CSV — exported from another device running Lecturameter. Other apps (Babelio, Pagebound, Book Tracker, Bookshelf, Delibrista…) — any CSV compatible with the Goodreads/StoryGraph format."}},
         {"@type":"Question","name":"Is my data mine?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Your data is stored only on your phone. There is no server and nothing is sent without your consent. If you enable Google Drive backup, only you have access to those files."}},
         {"@type":"Question","name":"Is there a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. The app is free with an optional one-time Pro purchase. No subscriptions."}},
         {"@type":"Question","name":"Does it work offline?","acceptedAnswer":{"@type":"Answer","text":"Almost everything works offline. You only need a connection to search for new books and to upload Google Drive backups."}},
@@ -122,7 +121,8 @@
             <li><a href="#features" class="active">Features</a></li>
             <li><a href="#themes">Themes</a></li>
             <li><a href="#pricing">Pro</a></li>
-            <li><a href="#whatsnew">New</a></li>
+            <li><a href="#whatsnew">Patch notes</a></li>
+            <li><a href="#history">History</a></li>
             <li><a href="#roadmap">Roadmap</a></li>
             <li><a href="#faq">FAQ</a></li>
         </ul>
@@ -503,35 +503,109 @@
     </div>
 </section>
 
-<!-- 6. WHAT'S NEW -->
+<!-- 6. PATCH NOTES -->
 <section class="band band-alt" id="whatsnew">
     <div class="container">
         <div class="section-head">
-            <h2>What's new <span class="grad">in v3.5</span></h2>
+            <h2>Patch notes <span class="grad">v3.6</span></h2>
             <p>The latest additions to Lecturameter.</p>
         </div>
-        <div class="whatsnew-grid">
-            <div class="whatsnew-col">
-                <h3>New</h3>
-                <ul>
-                    <li>Immersive session with Pagi, big cover, timer and ambient sounds</li>
-                    <li>Richer bingo: navigable history with filters and per-card square detail</li>
-                    <li>Daily challenge and bingo protected against device date changes</li>
-                    <li>Tap the cover in book details or when adding a book to zoom in</li>
-                    <li>More screens adapt when you rotate your phone</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Fixes</h3>
-                <ul>
-                    <li>Restore purchase now recovers Pro unlocked with a code after reinstalling</li>
-                    <li>Widgets in Light theme keep their background color on HyperOS phones</li>
-                    <li>Free trial can no longer be reactivated by clearing data or changing the date</li>
-                    <li>Clear message when restoring a damaged backup</li>
-                    <li>Floating Pagi can be hidden separately from the other Pagis</li>
-                    <li>ISBN scanner works in landscape and portrait</li>
-                </ul>
-            </div>
+        <div class="whatsnew-list">
+            <h3>New</h3>
+            <ul>
+                <li>This update brings a good number of changes to Lecturameter: we've reorganized the app, improved data management, added new ways to personalize your library and, above all, brought in new ways to share your reading experience.</li>
+            </ul>
+            <h4>Organization, data and personalization</h4>
+            <ul>
+                <li><strong>Reorganized Settings:</strong> Settings are now split into sections so it's much easier to find every option.</li>
+                <li><strong>More than 40 languages:</strong> Lecturameter significantly expands its language support. If you spot any error or have suggestions, you can send us feedback from Settings &gt; Feedback.</li>
+                <li><strong>New quick data management menu:</strong> the ↑↓ menu becomes a shortcut to the main data-related actions, and you can still open the full Settings menu from there.</li>
+                <li>New dedicated sections in Settings for <strong>Patch notes, Notifications, Reminders and Tag management</strong>.</li>
+                <li><strong>Revamped onboarding and import:</strong> both flows have been reviewed and improved to make it easier to get started with Lecturameter and to bring your library over from another app.</li>
+                <li><strong>More flexible JSON import:</strong> you can now choose exactly which items you want to restore when importing a backup.</li>
+                <li><strong>More complete CSV:</strong> the CSVs generated by Lecturameter can now be stored locally and used for automatic backups, both locally and in the cloud.</li>
+                <li><strong>Configurable JSON backup:</strong> you can decide whether to include the spine and edge photos of your books. A handy option if you have lots of photos and want to keep backups lighter.</li>
+                <li><strong>Warnings after importing or restoring:</strong> after restoring a JSON or importing/restoring a CSV, Lecturameter will let you know if it finds books missing cover, ISBN, author or page count, and you'll be able to fix those issues right from the notification.</li>
+            </ul>
+            <h4>Notifications and reminders</h4>
+            <ul>
+                <li>Lecturameter notifications can now be configured from <strong>Settings &gt; Notifications</strong>. You'll find alerts for: challenges and Bingo, daily goal, suspiciously long reading sessions (in case you forgot to stop the timer) and data recovery after restoring a backup. You can turn all notifications off at once or pick which ones you want to receive individually.</li>
+                <li>On top of that, <strong>custom Reminders</strong> are here: you can create reading reminders for whatever day and time you want, and Lecturameter will take care of nudging you.</li>
+            </ul>
+            <h4>Tags and library management</h4>
+            <ul>
+                <li>A much more complete <strong>tag</strong> system arrives. You can add up to <strong>3 tags per book</strong>.</li>
+                <li>Tags can be searched directly by typing <strong>#</strong> in the search bar.</li>
+                <li>You can manage all your tags from the corresponding icon in the rail or from Settings.</li>
+                <li>Long-pressing a book card opens a <strong>quick actions menu</strong>. From that menu you can select several books and <strong>add or remove tags in bulk</strong>.</li>
+            </ul>
+            <h4>Books, cards and notes</h4>
+            <ul>
+                <li>Each book's details have been given a facelift so browsing your info feels smoother and more visual.</li>
+                <li>Cards now come in <strong>4 possible sizes</strong>. The default size is slightly bigger than before, but you can change it in Settings &gt; Personalization.</li>
+                <li>Ratings move to the <strong>5-star system with half stars</strong>. Your previous ratings have been migrated automatically: 1 point from the old system equals 0.5 stars.</li>
+                <li>The notes system is now split into <strong>favorite quotes, notes and final opinion</strong>.</li>
+                <li>You can pick which information you want to show on each book's card.</li>
+                <li>You can add real photos of the <strong>spine and edge</strong> of your physical book on both sides of the cover.</li>
+                <li><strong>Pagi now supports pinch gestures</strong>, so you can make it bigger or smaller to your liking.</li>
+                <li>You can change how you view your library from the <strong>three-lines</strong> icon in the search bar, switching between <strong>grid and list mode</strong>.</li>
+            </ul>
+            <h4>Sharing your reading moments</h4>
+            <ul>
+                <li>There are more things you can turn into a shareable image now:</li>
+                <li>Share any book in your library from its three-dot menu or from the quick menu.</li>
+                <li>When you finish a book, you can share the moment straight from the completion pop-up.</li>
+                <li>Completing a challenge generates a shareable image. Finishing a Bingo does too.</li>
+                <li>The <strong>yearly, monthly and hourly</strong> heatmaps (both frequency and speed) are now shareable as well.</li>
+                <li>The <strong>stats of a book</strong> are too. The resulting image carries not just the stats, but also the start date (and end date if it has one).</li>
+                <li>If you finish a challenge and a Bingo at the same time, there's a special image for that moment.</li>
+                <li>The <strong>Pro</strong> purchase also has its own shareable image.</li>
+            </ul>
+            <h4>Comics and future audiobook support</h4>
+            <ul>
+                <li>The app has better support for <strong>comics</strong>. This is groundwork for the next update, which will start distinguishing comics, audiobooks and general books (digital/physical).</li>
+            </ul>
+            <h4>Universal Milestones</h4>
+            <ul>
+                <li>This section, which I've been trying so hard to make work, is <strong>on hold</strong>, at least for now. There are several reasons, but the main one is that in none of its iterations does it look and feel the way I imagine it. It'll be explored in 3.7.</li>
+            </ul>
+            <h4>Ocaso theme</h4>
+            <ul>
+                <li>Pro users also get a new theme: <strong>Ocaso</strong>, a mix of blues and oranges inspired by sunset colors.</li>
+            </ul>
+
+            <h3>Fixes</h3>
+            <ul>
+                <li>On top of the new features, this version includes a good bunch of internal improvements and UX polish.</li>
+                <li>Better app layout in <strong>landscape mode</strong> and on screens of different sizes.</li>
+                <li>General improvements to <strong>book search</strong>. You should be able to see more books than before, a bit faster, with more reliable data, and repeating a search on the same day should resolve almost instantly.</li>
+                <li>Architecture improvements that let us keep moving forward with <strong>Lecturameter for iOS</strong> development.</li>
+                <li>The <strong>Pro Widget</strong> now shows the difference between the current and previous month more clearly.</li>
+                <li>The daily challenge tip has been replaced by a notification badge on the challenges icon.</li>
+                <li>The <strong>sorting</strong> section has been improved to include filters by tags and by book rating.</li>
+                <li>Destructive actions, like deleting a book, can now be <strong>undone for a few seconds</strong> through the message that appears at the bottom of the screen.</li>
+                <li>You can now <strong>reset the tips</strong> without having to go through the tutorial again (Settings &gt; Help &gt; Reset tips).</li>
+                <li><strong>Pagi</strong> will no longer cover screen titles or appear in Settings, to avoid it hiding important elements.</li>
+                <li>Changing a book's status or shelf now also shows a small confirmation message at the bottom.</li>
+                <li>Numerous bug fixes, visual issues and crashes resolved.</li>
+                <li>This update reorganizes a good chunk of Lecturameter so managing your library, your data and your reading history is simpler, and so you can share more parts of your reader story, paving the way for what's coming next.</li>
+            </ul>
+        </div>
+        <p style="text-align:center; margin-top:2rem;">
+            <a href="#roadmap" class="btn">And for the next version...</a>
+        </p>
+    </div>
+</section>
+
+<!-- 6.5 VERSION HISTORY -->
+<section class="band" id="history">
+    <div class="container">
+        <div class="section-head">
+            <h2>Version history</h2>
+            <p>Version history will fill up as new patch notes are published.</p>
+        </div>
+        <div class="version-history-list">
+            <p class="empty-state" style="text-align:center; color:var(--muted); font-size:0.95rem; padding:2rem 0;">Previous version notes will appear here.</p>
         </div>
     </div>
 </section>
@@ -544,54 +618,25 @@
             <p>Here's what we're working on for future versions. No fixed dates: everything ships when it's ready.</p>
         </div>
         <div class="roadmap-list">
-            <div class="roadmap-item glow universo">
-                <span class="roadmap-tag soon">Soon</span>
-                <h3>Reader Universe</h3>
-                <p>A star map of every book you've read. Each book is a star; abandoned ones become asteroids.</p>
-                <div class="pagi-star" aria-hidden="true">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-60 -50 360 320">
-                        <ellipse cx="2" cy="102" rx="13" ry="9" fill="currentColor"/>
-                        <ellipse cx="238" cy="102" rx="13" ry="9" fill="currentColor"/>
-                        <path d="M 110 35 Q 120 20 130 35 L 158 79 L 209 93 Q 227 97 215 111 L 182 152 L 185 205 Q 186 223 169 216 L 120 197 L 71 216 Q 54 223 55 205 L 58 152 L 25 111 Q 14 97 31 93 L 82 79 Z" fill="currentColor"/>
-                        <circle cx="120" cy="42" r="7" fill="#1D1822" opacity=".25"/>
-                        <rect x="75" y="165" width="90" height="11" rx="5.5" fill="#000" opacity=".13"/>
-                        <rect x="75" y="165" width="60" height="11" rx="5.5" fill="#fff" opacity=".55"/>
-                        <rect x="84" y="182" width="72" height="4.5" rx="2.2" fill="#1D1822" opacity=".15"/>
-                        <rect x="84" y="191" width="72" height="4.5" rx="2.2" fill="#1D1822" opacity=".15"/>
-                        <ellipse cx="106" cy="112" rx="32" ry="36" fill="#fff"/>
-                        <g class="pg-pupil-star">
-                        <circle cx="104" cy="112" r="18" fill="#1D1822"/>
-                        <circle cx="112" cy="103" r="6.5" fill="#fff"/>
-                        <circle cx="95" cy="124" r="3" fill="#fff" opacity=".75"/>
-                        </g>
-                        <path d="M72 73 Q106 50 140 75" fill="none" stroke="#1D1822" stroke-width="7" stroke-linecap="round"/>
-                    </svg>
-                </div>
-            </div>
             <div class="roadmap-item glow">
                 <span class="roadmap-tag soon">Soon</span>
-                <h3>Closing moment with Pagi</h3>
-                <p>A celebration screen when you mark a book as finished. Pagi cheers for you.</p>
+                <h3>Audiobook and comic support</h3>
+                <p>The app will distinguish comics, audiobooks and physical/digital books, each with its own specific metadata.</p>
+            </div>
+            <div class="roadmap-item">
+                <span class="roadmap-tag soon">Soon</span>
+                <h3>Challenges widget</h3>
+                <p>A new home screen widget showing your active challenges and their progress at a glance.</p>
             </div>
             <div class="roadmap-item">
                 <span class="roadmap-tag planned">Planned</span>
-                <h3>Half-star ratings</h3>
-                <p>Rate your books more precisely: from 1 to 5 stars in half-star increments.</p>
+                <h3>Add books, comics and audiobooks in bulk</h3>
+                <p>A flow to register several items at once without going through them one by one.</p>
             </div>
             <div class="roadmap-item">
                 <span class="roadmap-tag planned">Planned</span>
-                <h3>Shareable cards</h3>
-                <p>Generate a beautiful image of any book to share on WhatsApp, Instagram or wherever you like.</p>
-            </div>
-            <div class="roadmap-item">
-                <span class="roadmap-tag planned">Planned</span>
-                <h3>Reading reminders</h3>
-                <p>Notifications at the time you choose to remind you it's time to read.</p>
-            </div>
-            <div class="roadmap-item">
-                <span class="roadmap-tag planned">Planned</span>
-                <h3>More languages</h3>
-                <p>Lecturameter in more European languages. Want to help translate? Drop us a line.</p>
+                <h3>Universal Milestones revisited</h3>
+                <p>We're revisiting Universal Milestones with a new iteration that works and looks the way it should.</p>
             </div>
         </div>
     </div>
@@ -631,12 +676,16 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">Can I import my library from Goodreads?</button>
-                <div class="faq-a"><div class="faq-a-inner">Yes. Export your library as CSV from goodreads.com/review/import. In Lecturameter, go to Settings > Import/Export > Import CSV. The app automatically maps title, author, status, rating and dates.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">And from StoryGraph?</button>
-                <div class="faq-a"><div class="faq-a-inner">Also yes. Since version 3.5, you can export your library from app.thestorygraph.com (Manage Account > Manage Your Data > Export StoryGraph Library). The CSV arrives by email.</div></div>
+                <button class="faq-q">Can I bring my library from other apps?</button>
+                <div class="faq-a"><div class="faq-a-inner">Yes. Go to <strong>Settings &gt; Import/Export</strong> and follow the step-by-step wizard. Supported apps:
+                    <ul>
+                        <li><strong>Goodreads</strong> (CSV) — goodreads.com &gt; My Books &gt; Import and export &gt; Export Library.</li>
+                        <li><strong>StoryGraph</strong> (CSV) — app.thestorygraph.com &gt; Manage account &gt; Import/Export &gt; Export STG Library. The CSV arrives by email.</li>
+                        <li><strong>Bookmory</strong> (.bookmory or XLSX) — Settings &gt; Backup &gt; Export.</li>
+                        <li><strong>Fable / ShelfBridge</strong> (CSV) — export via the ShelfBridge extension.</li>
+                        <li><strong>Lecturameter CSV</strong> — if you exported from another device running Lecturameter.</li>
+                        <li><strong>Other apps</strong> (Babelio, Pagebound, Book Tracker, Bookshelf, Delibrista…) — any CSV compatible with the Goodreads/StoryGraph format.</li>
+                    </ul></div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Is my data mine?</button>
@@ -676,7 +725,8 @@
                 <a href="#features">Features</a>
                 <a href="#pricing">Pricing</a>
                 <a href="./precios-regionales.html">Regional prices</a>
-                <a href="#whatsnew">What's new</a>
+                <a href="#whatsnew">Patch notes</a>
+                <a href="#history">Version history</a>
                 <a href="#roadmap">Roadmap</a>
                 <a href="#faq">FAQ</a>
             </div>
