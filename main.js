@@ -397,7 +397,10 @@
         pills.forEach(function (pill) {
             pill.addEventListener('click', function () {
                 var color = pill.getAttribute('data-color');
+                var gradient = pill.getAttribute('data-gradient');
                 mascot.style.setProperty('--pagi-color', color);
+                var body = mascot.querySelector('.pagi-body');
+                if (body) body.setAttribute('fill', gradient || 'var(--pagi-color)');
                 pills.forEach(function (p) { p.classList.remove('active'); p.setAttribute('aria-pressed', 'false'); p.style.removeProperty('--pill-color'); });
                 pill.classList.add('active');
                 pill.setAttribute('aria-pressed', 'true');

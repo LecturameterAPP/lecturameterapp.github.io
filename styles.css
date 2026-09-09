@@ -871,7 +871,7 @@ html:not([data-theme="light"]) .tag-free {
 /* ─── PAGI + TEMAS ─── */
 .themes-gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 16px;
     padding: 8px 20px 20px;
     width: min(1300px, calc(100vw - 40px));
@@ -1462,7 +1462,7 @@ html:not([data-theme="light"]) .tag-free {
 }
 
 @media (max-width: 480px) {
-    .themes-gallery { grid-template-columns: repeat(5, 1fr); gap: 6px; }
+    .themes-gallery { grid-template-columns: repeat(6, 1fr); gap: 6px; }
     .theme-card figcaption { font-size: 11px; }
     .theme-card img { padding: 3px; border-width: 2px; border-radius: 12px; }
 }

@@ -389,6 +389,12 @@
 
         <div style="display:flex;justify-content:center;margin-bottom:32px;">
             <svg class="pagi-mascot" data-expr="neutral" viewBox="-36 -8 272 468" width="100" overflow="visible" role="img" aria-label="Pagi, la mascota de Lecturameter">
+                <defs>
+                    <linearGradient id="pagi-grad-ocaso" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#F07838"/>
+                        <stop offset="100%" stop-color="#C83468"/>
+                    </linearGradient>
+                </defs>
                 <g class="body-g">
                     <path class="pagi-body" d="M 0 26 Q 0 0 26 0 L 174 0 Q 200 0 200 26 L 200 440 L 100 396 L 0 440 Z" fill="var(--pagi-color)"/>
                     <circle cx="100" cy="27" r="13" fill="#1D1822" opacity="0.28"/>
@@ -418,7 +424,7 @@
             <button type="button" class="theme-pill" data-color="#C08CE8" aria-pressed="false">Aurora</button>
             <button type="button" class="theme-pill" data-color="#C9CDD2" aria-pressed="false">OLED</button>
             <button type="button" class="theme-pill" data-color="#E0A93F" aria-pressed="false">Cuero</button>
-            <button type="button" class="theme-pill" data-color="#E07840" aria-pressed="false">Ocaso</button>
+            <button type="button" class="theme-pill" data-color="#E07840" data-gradient="url(#pagi-grad-ocaso)" aria-pressed="false">Ocaso</button>
         </div>
 
         <div class="themes-gallery">
@@ -444,7 +450,7 @@
             </figure>
             <figure class="theme-card">
                 <img src="../capturas%20para%20v3/tema_ocaso_es.jpg" alt="Tema Ocaso" loading="lazy" width="360" height="715" data-lbx="../capturas%20para%20v3/tema_ocaso_es.jpg">
-                <figcaption><span class="theme-swatch" style="background:#E07840"></span><strong>Ocaso</strong> <span class="pro-tag">Pro</span></figcaption>
+                <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #F07838, #C83468)"></span><strong>Ocaso</strong> <span class="pro-tag">Pro</span></figcaption>
             </figure>
         </div>
     </div>
