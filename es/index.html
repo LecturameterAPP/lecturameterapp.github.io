@@ -83,7 +83,7 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type":"Question","name":"¿Puedo traer mi biblioteca desde otras apps?","acceptedAnswer":{"@type":"Answer","text":"Sí. Ve a Ajustes > Importar/Exportar y sigue el asistente paso a paso. Apps soportadas: Goodreads (CSV) — exporta desde goodreads.com > My Books > Import and export > Export Library. StoryGraph (CSV) — exporta desde app.thestorygraph.com > Manage account > Import/Export > Export STG Library (el CSV llega por email). Bookmory (.bookmory o XLSX) — Ajustes > Copia de seguridad > Exportar. Fable / ShelfBridge (CSV) — exporta mediante la extensión ShelfBridge. CSV de Lecturameter — si exportaste desde otro dispositivo con Lecturameter. Otras apps (Babelio, Pagebound, Book Tracker, Bookshelf, Delibrista…) — cualquier CSV compatible con el formato de Goodreads/StoryGraph."}},
+        {"@type":"Question","name":"¿Puedo traer mi biblioteca desde otras apps?","acceptedAnswer":{"@type":"Answer","text":"Sí. Ve a Ajustes > Importar/Exportar y sigue el asistente paso a paso. Apps soportadas: Goodreads (CSV): exporta desde goodreads.com > My Books > Import and export > Export Library. StoryGraph (CSV): exporta desde app.thestorygraph.com > Manage account > Import/Export > Export STG Library (el CSV llega por email). Bookmory (.bookmory o XLSX): Ajustes > Copia de seguridad > Exportar. Fable / ShelfBridge (CSV): exporta mediante la extensión ShelfBridge. CSV de Lecturameter: si exportaste desde otro dispositivo con Lecturameter. Otras apps (Babelio, Pagebound, Book Tracker, Bookshelf, Delibrista…): cualquier CSV compatible con el formato de Goodreads/StoryGraph."}},
         {"@type":"Question","name":"¿Mis datos son míos?","acceptedAnswer":{"@type":"Answer","text":"Totalmente. Tus datos se almacenan solo en tu móvil. No hay servidor propio ni se envía nada sin tu consentimiento. Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos."}},
         {"@type":"Question","name":"¿Tiene suscripción?","acceptedAnswer":{"@type":"Answer","text":"No. La app es gratuita con opción Pro de pago único. No hay suscripciones."}},
         {"@type":"Question","name":"¿Funciona sin conexión?","acceptedAnswer":{"@type":"Answer","text":"Casi todo funciona offline. Solo necesitas conexión para buscar libros nuevos y para subir backups a Google Drive."}},
@@ -502,103 +502,35 @@
             <h2>Notas de Parche <span class="grad">v3.6</span></h2>
             <p>Lo último que hemos añadido a Lecturameter.</p>
         </div>
-        <div class="whatsnew-list">
-            <h3>Nuevo</h3>
-            <ul>
-                <li>Esta actualización trae un buen número de cambios a Lecturameter: hemos reorganizado la app, mejorado la gestión de datos, añadido nuevas formas de personalizar vuestra biblioteca y, sobre todo, incorporado nuevas maneras de compartir vuestra experiencia de lectura.</li>
-            </ul>
-            <h4>Organización, datos y personalización</h4>
-            <ul>
-                <li><strong>Ajustes reorganizados:</strong> los Ajustes ahora están divididos por secciones para que resulte mucho más fácil encontrar cada opción.</li>
-                <li><strong>Más de 40 idiomas:</strong> Lecturameter amplía considerablemente su soporte de idiomas. Si encontráis algún error o tenéis sugerencias, podéis enviarnos feedback desde Ajustes &gt; Feedback.</li>
-                <li><strong>Nuevo menú rápido de gestión de datos:</strong> el menú de ↑↓ se convierte en un acceso rápido a las principales acciones relacionadas con la gestión de datos, con la posibilidad de entrar también en el menú completo de Ajustes.</li>
-                <li>Nuevas secciones específicas en Ajustes para <strong>Notas del Parche, Notificaciones, Recordatorios y Gestión de Tags</strong>.</li>
-                <li><strong>Onboarding e importación renovados:</strong> ambos flujos han sido revisados y mejorados para hacer más sencillo empezar a usar Lecturameter y traer vuestra biblioteca desde otra aplicación.</li>
-                <li><strong>Importación de JSON más flexible:</strong> ahora podéis elegir exactamente qué elementos queréis restaurar al importar una copia de seguridad.</li>
-                <li><strong>CSV más completo:</strong> los CSV generados por Lecturameter ahora pueden guardarse localmente y utilizarse para realizar copias de seguridad automáticas, tanto en local como en la nube.</li>
-                <li><strong>Backup JSON configurable:</strong> podéis decidir si queréis incluir las fotografías del canto y el lomo de los libros. Una opción especialmente útil si tenéis muchas fotos y queréis mantener las copias de seguridad más ligeras.</li>
-                <li><strong>Avisos tras importar o restaurar:</strong> después de restaurar un JSON o importar/restaurar un CSV, Lecturameter os avisará si encuentra libros a los que les falta portada, ISBN, autor o número de páginas, y podréis solucionar esos problemas directamente desde la notificación.</li>
-            </ul>
-            <h4>Notificaciones y recordatorios</h4>
-            <ul>
-                <li>Las notificaciones de Lecturameter ahora pueden configurarse desde <strong>Ajustes &gt; Notificaciones</strong>. Encontraréis avisos para: retos y bingos, meta diaria, sesiones de lectura sospechosamente largas (por si os habéis olvidado de parar el cronómetro) y recuperación de datos después de restaurar una copia de seguridad. Podéis desactivar todas las notificaciones de golpe o decidir cuáles queréis recibir individualmente.</li>
-                <li>Además, llegan los <strong>Recordatorios personalizados</strong>: podéis crear recordatorios de lectura para el día y la hora que queráis y Lecturameter se encargará de avisaros.</li>
-            </ul>
-            <h4>Tags y gestión de la biblioteca</h4>
-            <ul>
-                <li>Llega un sistema de <strong>tags</strong> mucho más completo. Podéis añadir hasta <strong>3 etiquetas por libro</strong>.</li>
-                <li>Los tags se pueden buscar directamente utilizando <strong>#</strong> en la barra de búsqueda.</li>
-                <li>Podéis gestionar todas vuestras etiquetas desde el icono correspondiente del rail o desde Ajustes.</li>
-                <li>Manteniendo pulsada una card de libro se abre un <strong>menú de acciones rápidas</strong>. Desde ese menú podéis seleccionar varios libros y <strong>añadir o quitar tags en masa</strong>.</li>
-            </ul>
-            <h4>Libros, cards y notas</h4>
-            <ul>
-                <li>Los detalles de cada libro han recibido un lavado de cara para que consultar vuestra información sea más cómodo y visual.</li>
-                <li>Las cards ahora tienen <strong>4 posibles tamaños</strong>. El tamaño por defecto es un poquito más grande que antes, pero podéis cambiarlo en Ajustes &gt; Personalización.</li>
-                <li>Las puntuaciones pasan al sistema de <strong>5 estrellas con medias puntuaciones</strong>. Vuestras puntuaciones anteriores se han migrado automáticamente: 1 punto del sistema anterior equivale a 0,5 estrellas.</li>
-                <li>El sistema de notas se divide ahora en <strong>frases favoritas, notas y opinión final</strong>.</li>
-                <li>Podéis elegir qué información queréis mostrar en la card de cada libro.</li>
-                <li>Podéis añadir fotografías reales del <strong>canto y el lomo</strong> de vuestro libro físico a ambos lados de la portada.</li>
-                <li><strong>Pagi ahora admite gestos de zoom</strong>, así que podéis ampliarlo o encogerlo a vuestro gusto.</li>
-                <li>Podéis cambiar la forma de visualizar vuestra biblioteca desde el icono de <strong>tres rayas</strong> de la barra de búsqueda, alternando entre <strong>modo cuadrícula y modo lista</strong>.</li>
-            </ul>
-            <h4>Compartir vuestros momentos de lectura</h4>
-            <ul>
-                <li>Ahora hay más cosas que podéis convertir en una imagen para compartir:</li>
-                <li>Compartir cualquier libro de vuestra biblioteca desde su menú de tres puntos o desde el menú rápido.</li>
-                <li>Al terminar un libro, podéis compartir el momento directamente desde el pop-up de finalización.</li>
-                <li>Cumplir un reto genera una imagen compartible. Terminar un bingo también.</li>
-                <li>Los mapas de calor <strong>anual, mensual y horario</strong> (tanto frecuencia como velocidad) ahora también son compartibles.</li>
-                <li>Las <strong>estadísticas de un libro</strong> también. La imagen resultante llevará no sólo las stats, sino también la fecha de inicio (y fin si tiene).</li>
-                <li>Si completáis un reto y un bingo a la vez, habrá una imagen especial para ese momento.</li>
-                <li>La compra de <strong>Pro</strong> también cuenta con su propia imagen compartible.</li>
-            </ul>
-            <h4>Cómics y futuro soporte a audiolibros</h4>
-            <ul>
-                <li>La app tiene mejor soporte para <strong>cómics</strong>. Esto es en preparación para la siguiente actualización, que empezará a distinguir cómics, audiolibros y libros en general (digitales/físicos).</li>
-            </ul>
-            <h4>Hitos Universales</h4>
-            <ul>
-                <li>Esta sección, que tanto he estado intentando hacer funcionar, queda <strong>aparcada</strong>, al menos de momento. Hay varios motivos, pero el principal es que en ninguna de sus iteraciones consigo que se vea y funcione como yo lo imagino. Se explorará en 3.7.</li>
-            </ul>
-            <h4>Tema Ocaso</h4>
-            <ul>
-                <li>Los usuarios Pro reciben además un nuevo tema: <strong>Ocaso</strong>, una combinación de azules y naranjas inspirada en los colores del atardecer.</li>
-            </ul>
-
-            <h3>Correcciones</h3>
-            <ul>
-                <li>Además de las nuevas funciones, esta versión incluye una buena cantidad de mejoras internas y de experiencia de uso.</li>
-                <li>Mejor visualización de la aplicación en <strong>modo horizontal</strong> y en pantallas de diferentes tamaños.</li>
-                <li>Mejoras generales en la <strong>búsqueda de libros</strong>. Deberíais ser capaces de ver más libros que antes, un poco más rápido, con datos más fiables y repetir una búsqueda en un mismo día debería resolverse prácticamente al instante.</li>
-                <li>Mejoras en la arquitectura que permiten continuar avanzando con el <strong>desarrollo de Lecturameter para iOS</strong>.</li>
-                <li>El <strong>Widget Pro</strong> muestra ahora de forma más clara la diferencia entre el mes actual y el anterior.</li>
-                <li>El tip del reto diario ha desaparecido en favor de un icono de notificación en el icono de retos.</li>
-                <li>La sección de <strong>ordenación</strong> se ha mejorado para incorporar filtros por tags y por valoración del libro.</li>
-                <li>Las acciones destructivas, como borrar un libro, ahora pueden <strong>revertirse durante unos segundos</strong> mediante el mensaje que aparece en la parte inferior de la pantalla.</li>
-                <li>Ahora se pueden <strong>resetear los tips</strong> sin necesidad de pasar por el tutorial de nuevo (Ajustes &gt; Ayuda &gt; Reiniciar tips).</li>
-                <li><strong>Pagi</strong> ya no tapará los títulos de las pantallas ni aparecerá en Ajustes, para evitar que tape elementos importantes.</li>
-                <li>Cambiar un libro de estado o estantería también muestra ahora un pequeño mensaje de confirmación en la parte inferior.</li>
-                <li>Corrección de numerosos bugs, problemas de visualización y crashes.</li>
-                <li>Esta actualización reorganiza buena parte de Lecturameter para que gestionar vuestra biblioteca, vuestros datos y vuestro historial de lectura sea más sencillo y para que podáis compartir más partes de vuestra historia lectora, preparando el terreno para lo que va a llegar en el futuro.</li>
-            </ul>
+        <div class="whatsnew-grid">
+            <div class="whatsnew-col">
+                <h3>Nuevo</h3>
+                <ul>
+                    <li>Ajustes reorganizados por secciones</li>
+                    <li>Sistema de <strong>tags</strong> (hasta 3 por libro, búsqueda con #)</li>
+                    <li>Cards y detalle de libro renovados, 4 tamaños de card</li>
+                    <li>Rating de <strong>5 estrellas con medias</strong></li>
+                    <li>Notas divididas: frases, notas y opinión</li>
+                    <li>Compartir libros, retos, bingos, heatmaps y stats</li>
+                    <li>Recordatorios de lectura personalizables</li>
+                    <li>Tema <strong>Ocaso</strong> para Pro</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>Correcciones</h3>
+                <ul>
+                    <li>Mejor visualización horizontal y en pantallas grandes</li>
+                    <li>Búsqueda de libros más rápida y fiable</li>
+                    <li>Widget Pro con comparativa mensual</li>
+                    <li>Acciones destructivas con deshacer</li>
+                    <li>Reset de tips desde Ajustes &gt; Ayuda</li>
+                    <li>Pagi ya no tapa títulos ni aparece en Ajustes</li>
+                </ul>
+            </div>
         </div>
         <p style="text-align:center; margin-top:2rem;">
             <a href="#roadmap" class="btn">Y para la próxima versión...</a>
         </p>
-    </div>
-</section>
-
-<!-- ═══ 6.5 HISTORIAL DE VERSIONES ═══ -->
-<section class="band" id="historial">
-    <div class="container">
-        <div class="section-head">
-            <h2>Historial de versiones</h2>
-            <p>El historial de versiones se irá rellenando conforme salgan nuevas notas de parche.</p>
-        </div>
-        <div class="version-history-list">
-            <p class="empty-state" style="text-align:center; color:var(--muted); font-size:0.95rem; padding:2rem 0;">Las notas de versiones anteriores aparecerán aquí.</p>
-        </div>
     </div>
 </section>
 
@@ -671,12 +603,12 @@
                 <button class="faq-q">¿Puedo traer mi biblioteca desde otras apps?</button>
                 <div class="faq-a"><div class="faq-a-inner">Sí. Ve a <strong>Ajustes &gt; Importar/Exportar</strong> y sigue el asistente paso a paso. Apps soportadas:
                     <ul>
-                        <li><strong>Goodreads</strong> (CSV) — goodreads.com &gt; My Books &gt; Import and export &gt; Export Library.</li>
-                        <li><strong>StoryGraph</strong> (CSV) — app.thestorygraph.com &gt; Manage account &gt; Import/Export &gt; Export STG Library. El CSV llega por email.</li>
-                        <li><strong>Bookmory</strong> (.bookmory o XLSX) — Ajustes &gt; Copia de seguridad &gt; Exportar.</li>
-                        <li><strong>Fable / ShelfBridge</strong> (CSV) — exporta mediante la extensión ShelfBridge.</li>
-                        <li><strong>CSV de Lecturameter</strong> — si exportaste desde otro dispositivo con Lecturameter.</li>
-                        <li><strong>Otras apps</strong> (Babelio, Pagebound, Book Tracker, Bookshelf, Delibrista…) — cualquier CSV compatible con el formato de Goodreads/StoryGraph.</li>
+                        <li><strong>Goodreads</strong> (CSV): goodreads.com &gt; My Books &gt; Import and export &gt; Export Library.</li>
+                        <li><strong>StoryGraph</strong> (CSV): app.thestorygraph.com &gt; Manage account &gt; Import/Export &gt; Export STG Library. El CSV llega por email.</li>
+                        <li><strong>Bookmory</strong> (.bookmory o XLSX): Ajustes &gt; Copia de seguridad &gt; Exportar.</li>
+                        <li><strong>Fable / ShelfBridge</strong> (CSV): exporta mediante la extensión ShelfBridge.</li>
+                        <li><strong>CSV de Lecturameter</strong>: si exportaste desde otro dispositivo con Lecturameter.</li>
+                        <li><strong>Otras apps</strong> (Babelio, Pagebound, Book Tracker, Bookshelf, Delibrista…): cualquier CSV compatible con el formato de Goodreads/StoryGraph.</li>
                     </ul></div></div>
             </div>
             <div class="faq-item">
@@ -698,6 +630,32 @@
             <div class="faq-item">
                 <button class="faq-q">¿Puedo probarlo antes de pagar?</button>
                 <div class="faq-a"><div class="faq-a-inner">Sí. Hay una prueba gratuita de 7 días de las funciones Pro, sin poner tarjeta. Al terminar la prueba, aunque no compres Pro, te regalamos un tema Pro a tu elección.</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ HISTORIAL DE VERSIONES ═══ -->
+<section class="band" id="historial">
+    <div class="container">
+        <div class="section-head">
+            <h2>Historial de versiones</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-q">v3.5 &middot; Barra de sonido inmersiva, mejoras en horizontal</button>
+                <div class="faq-a"><div class="faq-a-inner">
+                    <strong>Nuevo</strong>
+                    <ul>
+                        <li>La barra de sonido de la sesión inmersiva se expande también en horizontal, con anterior/siguiente y bucle/secuencia</li>
+                        <li>Los grupos de sonido resaltan mejor el color de acento del tema</li>
+                    </ul>
+                    <strong>Correcciones</strong>
+                    <ul>
+                        <li>El modo horizontal ya no se queda bloqueado en vertical al girar el móvil cuando usas la app en un idioma distinto al del sistema</li>
+                        <li>Más aire entre la tarjeta de sonido y los botones del cronómetro al expandirla</li>
+                    </ul>
+                </div></div>
             </div>
         </div>
     </div>
