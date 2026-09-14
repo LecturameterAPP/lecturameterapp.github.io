@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro de lectura para Android · Lecturameter</title>
+    <meta name="description" content="Un cronómetro de lectura de verdad para Android. Pantalla apagada, resumen de sesión, páginas registradas, sin cuenta, sin telemetría. Modo inmersivo y páginas por minuto reales.">
+    <meta property="og:title" content="Cronómetro de lectura para Android · Lecturameter">
+    <meta property="og:description" content="Un cronómetro de lectura de verdad para Android. Pantalla apagada, resumen de sesión, páginas registradas, sin cuenta, sin telemetría.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lecturameterapp.github.io/es/funciones/cronometro-lectura/">
+    <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Cronómetro de lectura Lecturameter para Android">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cronómetro de lectura para Android · Lecturameter">
+    <meta name="twitter:description" content="Un cronómetro de lectura de verdad para Android. Pantalla apagada, resumen de sesión, páginas registradas, sin cuenta, sin telemetría.">
+    <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#121212">
+    <meta name="author" content="Victor (Lecturameter)">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon-16x16.png">
+    <link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
+    <link rel="manifest" href="../../../site.webmanifest">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+
+    <link rel="canonical" href="https://lecturameterapp.github.io/es/funciones/cronometro-lectura/">
+    <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/cronometro-lectura/">
+    <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/reading-timer/">
+    <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/reading-timer/">
+    <link rel="stylesheet" href="../../../styles.css?v=5.4">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Lecturameter",
+      "url": "https://lecturameterapp.github.io/es/funciones/cronometro-lectura/",
+      "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
+      "description": "Cronómetro de lectura para Android con pantalla apagada, resumen de sesión, páginas registradas y cálculo de ritmo.",
+      "applicationCategory": "BookApplication",
+      "operatingSystem": "Android",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"¿Funciona el cronómetro con la pantalla apagada?","acceptedAnswer":{"@type":"Answer","text":"Sí. Tanto el cronómetro normal como el inmersivo del modo Pro."}},
+        {"@type":"Question","name":"¿Gasta batería?","acceptedAnswer":{"@type":"Answer","text":"El cronómetro sólo cuenta tiempo, no mantiene la pantalla ni usa GPS. El consumo es muy bajo."}},
+        {"@type":"Question","name":"¿Puedo editar una sesión después?","acceptedAnswer":{"@type":"Answer","text":"Sí. Puedes cambiar páginas, minutos y la página de inicio, o borrarla."}},
+        {"@type":"Question","name":"¿Y si leo el mismo libro en papel y en ebook?","acceptedAnswer":{"@type":"Answer","text":"No hay problema, puedes seguir usando el cronómetro mientras lees el ebook y o bien estimar la página real y luego editarla o comprobar en libro físico el número de página equivalente al del ebook."}}
+      ]
+    }
+    </script>
+</head>
+<body>
+
+<nav class="nav-bar">
+    <div class="nav-inner">
+        <a href="../../../es/" class="nav-brand">
+            <img src="../../../ic_launcher_round.png" alt="Lecturameter" width="28" height="28">
+            Lecturameter
+        </a>
+        <ul class="nav-pills">
+            <li><a href="../../../es/#funciones">Funciones</a></li>
+            <li><a href="../../../es/#temas">Temas</a></li>
+            <li><a href="../../../es/#precios">Pro</a></li>
+            <li><a href="../../../es/#faq">FAQ</a></li>
+            <li><a href="../../../es/blog/">Blog</a></li>
+        </ul>
+        <div class="nav-controls">
+            <a href="../../../en/features/reading-timer/" class="nav-lang-btn">EN</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">Descargar</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+<section class="band band-hero">
+    <div class="container">
+        <div class="hero-copy" style="max-width:820px;margin:0 auto;text-align:center;">
+            <p class="hero-eyebrow">Función</p>
+            <h1>Cronómetro de lectura para Android</h1>
+            <p class="hero-tagline">Un cronómetro de lectura de verdad. Pantalla apagada, resumen de sesión, páginas registradas, sin cuenta, sin telemetría.</p>
+            <div class="hero-cta">
+                <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Descargar en Google Play</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:820px;">
+        <h2>Qué hace</h2>
+        <p>Lecturameter cronometra cómo lees de verdad y de ahí saca tus estadísticas propias.</p>
+        <p>Empiezas una sesión, dejas el teléfono, lees. Cuando paras rellenas la página hasta la que has llegado y tu ritmo lo calcula Lecturameter automáticamente gracias al cronómetro. Todo eso va a tu historial propio del libro, al global y se usarán para tu resumen semanal, resumen anual y para los widgets. Ninguno de estos datos sale de tu móvil.</p>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container">
+        <div class="section-head" style="max-width:820px;margin:0 auto;">
+            <h2>Modo inmersivo</h2>
+            <p>El cronómetro tiene dos modos:</p>
+            <ul>
+                <li>Normal mantiene el teléfono activo con una interfaz suave para poder parar el crono desde dentro de la app. Sigue funcionando con la pantalla apagada o en otra app y tienes una notificación para controlarlo.</li>
+                <li>El inmersivo, exclusivo de usuarios Pro, que tiene una pantalla propia con la portada del libro, la barra de progreso y sonidos entre los que puedes cambiar y auto activación del modo no molestar si quieres. Sigue funcionando con la pantalla apagada, en otra pantalla de Lecturameter o en otra app y tienes una notificación para controlarlo.</li>
+            </ul>
+        </div>
+        <div class="showcase" style="margin-top:2rem;">
+            <div class="shot timer-shot" data-mode="normal">
+                <div class="phone timer-phone">
+                    <button class="sound-btn muted" type="button" aria-label="Activar sonido"></button>
+                    <video autoplay muted loop playsinline data-lang="es"></video>
+                </div>
+                <div class="mode-toggle" role="tablist" aria-label="Modo del cronómetro">
+                    <button type="button" data-mode="normal" class="active">Normal</button>
+                    <button type="button" data-mode="immersive">Inmersivo</button>
+                </div>
+            </div>
+            <div class="info">
+                <p>El modo normal muestra la interfaz con un cronómetro suave y sin distracciones. El inmersivo apaga la pantalla y mantiene la sesión en segundo plano. Los dos te dan un resumen al terminar.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:820px;">
+        <h2>Recuperación</h2>
+        <p>Si te olvidas de parar el cronómetro, Lecturameter te propone recortar la sesión al abrir la app. Si el móvil se reinicia o el sistema mata la app, el cronómetro recuerda el tiempo que marcaba. No pierdes nada.</p>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container" style="max-width:820px;">
+        <h2>Ritmo real</h2>
+        <p>Cada sesión registra las páginas que introduces. Con el tiempo tienes tu ritmo real en páginas por minuto, por libro, por día, por semana y por año. No es una estimación. El número que ves es la media de lo que has leído.</p>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:820px;">
+        <h2>Widgets y acceso rápido</h2>
+        <ul>
+            <li>Un widget de libro en la pantalla de inicio muestra qué estás leyendo y tu progreso. Hacer click en el libro te lleva a los detalles del libro dentro de Lecturameter.</li>
+            <li>El widget de comparativa mensual, exclusivo de usuarios Pro, que compara tu mes actual contra el mes anterior.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container" style="max-width:820px;">
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq-list">
+            <div class="faq-item"><button class="faq-q">¿Funciona el cronómetro con la pantalla apagada?</button><div class="faq-a"><div class="faq-a-inner">Sí. Tanto el cronómetro normal como el inmersivo del modo Pro.</div></div></div>
+            <div class="faq-item"><button class="faq-q">¿Gasta batería?</button><div class="faq-a"><div class="faq-a-inner">El cronómetro sólo cuenta tiempo, no mantiene la pantalla ni usa GPS. El consumo es muy bajo.</div></div></div>
+            <div class="faq-item"><button class="faq-q">¿Puedo editar una sesión después?</button><div class="faq-a"><div class="faq-a-inner">Sí. Puedes cambiar páginas, minutos y la página de inicio, o borrarla.</div></div></div>
+            <div class="faq-item"><button class="faq-q">¿Y si leo el mismo libro en papel y en ebook?</button><div class="faq-a"><div class="faq-a-inner">No hay problema, puedes seguir usando el cronómetro mientras lees el ebook y o bien estimar la página real y luego editarla o comprobar en libro físico el número de página equivalente al del ebook.</div></div></div>
+        </div>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="text-align:center;">
+        <h2>Pruébalo en Android</h2>
+        <p><a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Descargar en Google Play</a></p>
+        <p style="margin-top:1.5rem;font-size:0.95em;opacity:0.85;">
+            Ver también:
+            <a href="../registro-lectura/">Tracker de lectura</a> &middot;
+            <a href="../estadisticas-lectura/">Estadísticas</a> &middot;
+            <a href="../alternativa-goodreads/">Alternativa a Goodreads</a> &middot;
+            <a href="../../../es/blog/">Blog</a>
+        </p>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <span>&copy; 2026 Lecturameter &middot; Proyecto independiente</span>
+            <a href="../../../es/">Inicio</a>
+        </div>
+    </div>
+</footer>
+
+<script src="../../../main.js?v=5.4" defer></script>
+</body>
+</html>

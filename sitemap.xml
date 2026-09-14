@@ -43,4 +43,170 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <!-- Feature pages EN -->
+  <url>
+    <loc>https://lecturameterapp.github.io/en/features/reading-timer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/reading-timer/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/cronometro-lectura/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/reading-timer/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/en/features/reading-tracker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/reading-tracker/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/registro-lectura/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/reading-tracker/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/en/features/goodreads-alternative/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/goodreads-alternative/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/alternativa-goodreads/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/goodreads-alternative/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/en/features/reading-statistics/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/reading-statistics/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/estadisticas-lectura/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/reading-statistics/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Feature pages ES -->
+  <url>
+    <loc>https://lecturameterapp.github.io/es/funciones/cronometro-lectura/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/cronometro-lectura/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/reading-timer/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/reading-timer/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/funciones/registro-lectura/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/registro-lectura/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/reading-tracker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/reading-tracker/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/funciones/alternativa-goodreads/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/alternativa-goodreads/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/goodreads-alternative/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/goodreads-alternative/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/funciones/estadisticas-lectura/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/estadisticas-lectura/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/reading-statistics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/reading-statistics/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog indexes -->
+  <url>
+    <loc>https://lecturameterapp.github.io/blog/</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/blog/</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog posts EN -->
+  <url>
+    <loc>https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/a-que-velocidad-leo-de-verdad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/fantasia-frente-a-manga-ritmo-lectura/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/blog/reading-time-vs-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/tiempo-de-lectura-o-paginas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/blog/export-goodreads-library/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/exportar-biblioteca-goodreads/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/export-goodreads-library/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Blog posts ES -->
+  <url>
+    <loc>https://lecturameterapp.github.io/es/blog/a-que-velocidad-leo-de-verdad/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/a-que-velocidad-leo-de-verdad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/blog/fantasia-frente-a-manga-ritmo-lectura/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/fantasia-frente-a-manga-ritmo-lectura/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/blog/tiempo-de-lectura-o-paginas/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/tiempo-de-lectura-o-paginas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/blog/exportar-biblioteca-goodreads/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/exportar-biblioteca-goodreads/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/export-goodreads-library/" />
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
