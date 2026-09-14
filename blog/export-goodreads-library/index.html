@@ -33,6 +33,13 @@
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/exportar-biblioteca-goodreads/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/export-goodreads-library/">
     <link rel="stylesheet" href="../../styles.css?v=6.2">
+    <style>
+        .only-light,.only-dark{display:none;}
+        :root[data-theme="light"] .only-light{display:block;}
+        :root[data-theme="dark"] .only-dark{display:block;}
+        @media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .only-light{display:block;}}
+        @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .only-dark{display:block;}}
+    </style>
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 
@@ -123,26 +130,26 @@
 <section class="band band-alt">
     <div class="container" style="max-width:760px;">
         <div class="section-head">
-            <h2><span class="grad">The wizard,</span> briefly</h2>
+            <h2><span class="grad">The import</span> wizard</h2>
         </div>
         <p>When you open Lecturameter for the first time, Pagi asks what you want to do. One of the options is "I'm coming from another app". Pick that and you land on the import wizard.</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin:1.5rem 0;">
-            <figure style="margin:0;text-align:center;">
+            <figure class="only-light" style="margin:0;text-align:center;">
                 <img src="../../import_welcome_en_light.jpg" alt="Lecturameter welcome screen with Pagi (light theme)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
                 <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Welcome screen, light theme</figcaption>
             </figure>
-            <figure style="margin:0;text-align:center;">
+            <figure class="only-dark" style="margin:0;text-align:center;">
                 <img src="../../import_welcome_en_dark.jpg" alt="Lecturameter welcome screen with Pagi (dark theme)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
                 <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Welcome screen, dark theme</figcaption>
             </figure>
         </div>
         <p>The wizard is a list of sources. You tap the one you use, hand it the file, and Lecturameter reads the schema. Same wizard also lives in Settings, Import, so you can run it later.</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin:1.5rem 0;">
-            <figure style="margin:0;text-align:center;">
+            <figure class="only-light" style="margin:0;text-align:center;">
                 <img src="../../import_wizard_en_light.jpg" alt="Bring my library wizard, step 1 of 5 (light theme)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
                 <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Import wizard, light theme</figcaption>
             </figure>
-            <figure style="margin:0;text-align:center;">
+            <figure class="only-dark" style="margin:0;text-align:center;">
                 <img src="../../import_wizard_en_dark.jpg" alt="Bring my library wizard, step 1 of 5 (dark theme)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
                 <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Import wizard, dark theme</figcaption>
             </figure>
@@ -189,7 +196,7 @@
 <section class="band band-alt">
     <div class="container" style="max-width:760px;">
         <div class="section-head">
-            <h2><span class="grad">Fable</span> / ShelfBridge (CSV via extension)</h2>
+            <h2><span class="grad">Fable / ShelfBridge</span> (CSV via extension)</h2>
         </div>
         <p>Fable itself does not have an export button. The community project <em>ShelfBridge</em> is a browser extension that reads your Fable data and produces a Fable-compatible CSV. Lecturameter accepts that file in the Fable / ShelfBridge slot of the wizard.</p>
     </div>

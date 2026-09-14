@@ -33,6 +33,13 @@
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/export-goodreads-library/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/export-goodreads-library/">
     <link rel="stylesheet" href="../../../styles.css?v=6.2">
+    <style>
+        .only-light,.only-dark{display:none;}
+        :root[data-theme="light"] .only-light{display:block;}
+        :root[data-theme="dark"] .only-dark{display:block;}
+        @media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .only-light{display:block;}}
+        @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .only-dark{display:block;}}
+    </style>
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 
@@ -123,26 +130,26 @@
 <section class="band band-alt">
     <div class="container" style="max-width:760px;">
         <div class="section-head">
-            <h2><span class="grad">El asistente,</span> en corto</h2>
+            <h2><span class="grad">El asistente</span> de importación</h2>
         </div>
         <p>Al abrir Lecturameter por primera vez, Pagi te pregunta qué quieres hacer. Una de las opciones es "Vengo de otra app". La eliges y entras en el asistente de importación.</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin:1.5rem 0;">
-            <figure style="margin:0;text-align:center;">
+            <figure class="only-light" style="margin:0;text-align:center;">
                 <img src="../../../import_welcome_es_light.jpg" alt="Pantalla de bienvenida de Lecturameter con Pagi (tema claro)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
                 <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Bienvenida, tema claro</figcaption>
             </figure>
-            <figure style="margin:0;text-align:center;">
+            <figure class="only-dark" style="margin:0;text-align:center;">
                 <img src="../../../import_welcome_es_dark.jpg" alt="Pantalla de bienvenida de Lecturameter con Pagi (tema oscuro)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
                 <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Bienvenida, tema oscuro</figcaption>
             </figure>
         </div>
         <p>El asistente es una lista de orígenes. Tocas el que usas, le pasas el fichero y Lecturameter interpreta el esquema. El mismo asistente vive también en Ajustes, Importar, así que lo puedes ejecutar más tarde.</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin:1.5rem 0;">
-            <figure style="margin:0;text-align:center;">
+            <figure class="only-light" style="margin:0;text-align:center;">
                 <img src="../../../import_wizard_es_light.jpg" alt="Asistente Traer mi biblioteca, paso 1 de 5 (tema claro)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
                 <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Asistente, tema claro</figcaption>
             </figure>
-            <figure style="margin:0;text-align:center;">
+            <figure class="only-dark" style="margin:0;text-align:center;">
                 <img src="../../../import_wizard_es_dark.jpg" alt="Asistente Traer mi biblioteca, paso 1 de 5 (tema oscuro)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
                 <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Asistente, tema oscuro</figcaption>
             </figure>
@@ -189,7 +196,7 @@
 <section class="band band-alt">
     <div class="container" style="max-width:760px;">
         <div class="section-head">
-            <h2><span class="grad">Fable</span> / ShelfBridge (CSV mediante extensión)</h2>
+            <h2><span class="grad">Fable / ShelfBridge</span> (CSV mediante extensión)</h2>
         </div>
         <p>Fable en sí no tiene botón de exportar. El proyecto de la comunidad <em>ShelfBridge</em> es una extensión de navegador que lee tus datos de Fable y genera un CSV compatible con Fable. Lecturameter acepta ese fichero en el hueco Fable / ShelfBridge del asistente.</p>
     </div>
