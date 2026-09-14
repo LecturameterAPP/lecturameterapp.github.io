@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goodreads Alternative for Android · Lecturameter</title>
-    <meta name="description" content="Looking for a Goodreads alternative? Lecturameter is an Android reading tracker with a real timer, your library, and no account. Import your Goodreads or StoryGraph CSV.">
+    <meta name="description" content="Looking for a Goodreads alternative? An Android reading tracker with a real timer, your library, and no account. Bring your library from Goodreads, StoryGraph, Bookmory, Fable and more.">
     <meta property="og:title" content="Goodreads Alternative for Android · Lecturameter">
-    <meta property="og:description" content="An Android reading tracker with a real timer, your library, and no account. Bring your Goodreads or StoryGraph library with you.">
+    <meta property="og:description" content="An Android reading tracker with a real timer, your library, and no account. Bring your library from Goodreads, StoryGraph, Bookmory, Fable and more.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/en/features/goodreads-alternative/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
@@ -17,7 +17,7 @@
     <meta property="og:locale:alternate" content="es_ES">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Goodreads Alternative for Android · Lecturameter">
-    <meta name="twitter:description" content="An Android reading tracker with a real timer, your library, and no account. Bring your Goodreads or StoryGraph library with you.">
+    <meta name="twitter:description" content="An Android reading tracker with a real timer, your library, and no account. Bring your library from Goodreads, StoryGraph, Bookmory, Fable and more.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
@@ -32,7 +32,7 @@
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/goodreads-alternative/">
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/alternativa-goodreads/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/goodreads-alternative/">
-    <link rel="stylesheet" href="../../../styles.css?v=6.0">
+    <link rel="stylesheet" href="../../../styles.css?v=6.1">
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 
@@ -54,10 +54,10 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type":"Question","name":"How do I export my Goodreads library?","acceptedAnswer":{"@type":"Answer","text":"On the Goodreads website, go to My Books, Import and Export, Export Library. You get a CSV. Import it into Lecturameter from the settings screen."}},
-        {"@type":"Question","name":"What about my reviews?","acceptedAnswer":{"@type":"Answer","text":"The CSV contains your reviews and ratings. Lecturameter imports the rating. Text reviews are kept as private notes on each book."}},
-        {"@type":"Question","name":"Does Lecturameter also import from StoryGraph?","acceptedAnswer":{"@type":"Answer","text":"Yes. And from Bookmory and Fable. The importer detects the format."}},
-        {"@type":"Question","name":"Is Lecturameter free?","acceptedAnswer":{"@type":"Answer","text":"The app is free. A one-off Pro purchase unlocks a few extras like the yearly recap card export, extra widgets and themes."}}
+        {"@type":"Question","name":"How do I import my library from Goodreads, StoryGraph or another app?","acceptedAnswer":{"@type":"Answer","text":"Goodreads: goodreads.com > My Books > Import and export > Export Library, you get a CSV. StoryGraph: app.thestorygraph.com > Manage account > Import/Export > Export STG Library, the CSV arrives by email. Bookmory: Settings > Backup > Export. Fable / ShelfBridge: use the ShelfBridge extension. Once you have the CSV or file, import it into Lecturameter from Settings > Import/Export."}},
+        {"@type":"Question","name":"What data comes across?","acceptedAnswer":{"@type":"Answer","text":"Book list, ratings, dates and shelves. Reviews and private notes if the export includes them are stored as private notes on each book."}},
+        {"@type":"Question","name":"Which apps are supported?","acceptedAnswer":{"@type":"Answer","text":"Goodreads, StoryGraph, Bookmory, Fable / ShelfBridge, and any app that exports a CSV compatible with the Goodreads or StoryGraph format (Babelio, Pagebound, Book Tracker, Bookshelf, Delibrista and similar)."}},
+        {"@type":"Question","name":"Is Lecturameter free?","acceptedAnswer":{"@type":"Answer","text":"The app is free. A one-off Pro purchase unlocks extras like additional widgets, unlimited challenges and reminders, four extra themes, a monthly 3x3 bingo and a different app icon."}}
       ]
     }
     </script>
@@ -117,7 +117,7 @@
             <div class="hero-copy" style="max-width:820px;margin:0 auto;text-align:center;">
                 <p class="hero-eyebrow reveal-up in-view">Feature</p>
                 <h1 class="reveal-up in-view d1"><span class="grad">Looking for</span> a Goodreads alternative?</h1>
-                <p class="hero-tagline reveal-up in-view d2" style="margin-left:auto;margin-right:auto;">An Android reading tracker with a real timer, your library, and no account. Bring your Goodreads or StoryGraph library with you.</p>
+                <p class="hero-tagline reveal-up in-view d2" style="margin-left:auto;margin-right:auto;">An Android reading tracker with a real timer, your library, and no account. Bring your library from Goodreads, StoryGraph, Bookmory, Fable and more.</p>
                 <div class="hero-cta reveal-up in-view d3" style="justify-content:center;">
                     <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Get Lecturameter on Google Play</a>
                 </div>
@@ -158,9 +158,12 @@
 
 <section class="band">
     <div class="container" style="max-width:820px;">
-        <div class="section-head"><h2><span class="grad">Bringing your</span> Goodreads library</h2></div>
-        <p>Goodreads lets you export your library as a CSV. Lecturameter can import it. Your book list, dates and ratings come across. You keep the shelves you want, drop the ones you do not use.</p>
-        <p>The importer handles StoryGraph, Bookmory and Fable exports as well. If your export file is standard, Lecturameter can probably read it.</p>
+        <div class="section-head"><h2><span class="grad">Bring your library</span> from anywhere</h2></div>
+        <p>Lecturameter reads exports from Goodreads, StoryGraph, Bookmory and Fable. Your book list, dates and ratings come across. You keep the shelves you want, drop the ones you do not use. If your export file is a standard CSV, Lecturameter can probably read it.</p>
+        <div class="imports-gallery" style="margin-top:2rem;text-align:center;color:var(--text-muted);font-size:14px;">
+            <!-- TODO: reemplazar por capturas reales del wizard de importación cuando Víctor las pase -->
+            <em>Screenshots of the import wizard coming soon.</em>
+        </div>
     </div>
 </section>
 
@@ -179,10 +182,10 @@
             <div class="pagi-faq" data-state="pensativo" role="button" tabindex="0" aria-label="Pensive Pagi"></div>
         </div>
         <div class="faq-list">
-            <div class="faq-item"><button class="faq-q">How do I export my Goodreads library?</button><div class="faq-a"><div class="faq-a-inner">On the Goodreads website, go to My Books, Import and Export, Export Library. You get a CSV. Import it into Lecturameter from the settings screen.</div></div></div>
-            <div class="faq-item"><button class="faq-q">What about my reviews?</button><div class="faq-a"><div class="faq-a-inner">The CSV contains your reviews and ratings. Lecturameter imports the rating. Text reviews are kept as private notes on each book.</div></div></div>
-            <div class="faq-item"><button class="faq-q">Does Lecturameter also import from StoryGraph?</button><div class="faq-a"><div class="faq-a-inner">Yes. And from Bookmory and Fable. The importer detects the format.</div></div></div>
-            <div class="faq-item"><button class="faq-q">Is Lecturameter free?</button><div class="faq-a"><div class="faq-a-inner">The app is free. A one-off Pro purchase unlocks a few extras like the yearly recap card export, extra widgets and themes.</div></div></div>
+            <div class="faq-item"><button class="faq-q">How do I import my library from Goodreads, StoryGraph or another app?</button><div class="faq-a"><div class="faq-a-inner">Goodreads: goodreads.com &gt; My Books &gt; Import and export &gt; Export Library, you get a CSV. StoryGraph: app.thestorygraph.com &gt; Manage account &gt; Import/Export &gt; Export STG Library, the CSV arrives by email. Bookmory: Settings &gt; Backup &gt; Export. Fable / ShelfBridge: use the ShelfBridge extension. Once you have the CSV or file, import it into Lecturameter from Settings &gt; Import/Export.</div></div></div>
+            <div class="faq-item"><button class="faq-q">What data comes across?</button><div class="faq-a"><div class="faq-a-inner">Book list, ratings, dates and shelves. Reviews and private notes if the export includes them are stored as private notes on each book.</div></div></div>
+            <div class="faq-item"><button class="faq-q">Which apps are supported?</button><div class="faq-a"><div class="faq-a-inner">Goodreads, StoryGraph, Bookmory, Fable / ShelfBridge, and any app that exports a CSV compatible with the Goodreads or StoryGraph format (Babelio, Pagebound, Book Tracker, Bookshelf, Delibrista and similar).</div></div></div>
+            <div class="faq-item"><button class="faq-q">Is Lecturameter free?</button><div class="faq-a"><div class="faq-a-inner">The app is free. A one-off Pro purchase unlocks extras like additional widgets, unlimited challenges and reminders, four extra themes, a monthly 3x3 bingo and a different app icon.</div></div></div>
         </div>
     </div>
 </section>
