@@ -33,6 +33,13 @@
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/alternativa-goodreads/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/goodreads-alternative/">
     <link rel="stylesheet" href="../../../styles.css?v=6.1">
+    <style>
+        .only-light,.only-dark{display:none;}
+        :root[data-theme="light"] .only-light{display:block;}
+        :root[data-theme="dark"] .only-dark{display:block;}
+        @media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .only-light{display:block;}}
+        @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .only-dark{display:block;}}
+    </style>
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 
@@ -159,10 +166,14 @@
 <section class="band">
     <div class="container" style="max-width:820px;">
         <div class="section-head"><h2><span class="grad">Bring your library</span> from anywhere</h2></div>
-        <p>Lecturameter reads exports from Goodreads, StoryGraph, Bookmory and Fable. Your book list, dates and ratings come across. You keep the shelves you want, drop the ones you do not use. If your export file is a standard CSV, Lecturameter can probably read it.</p>
-        <div class="imports-gallery" style="margin-top:2rem;text-align:center;color:var(--text-muted);font-size:14px;">
-            <!-- TODO: reemplazar por capturas reales del wizard de importación cuando Víctor las pase -->
-            <em>Screenshots of the import wizard coming soon.</em>
+        <p>Lecturameter reads exports from Goodreads, StoryGraph, Bookmory, Fable / ShelfBridge and Book Tracker. Your book list, dates and ratings come across. You keep the shelves you want, drop the ones you do not use. If your export file is a standard CSV, Lecturameter can probably read it.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin:2rem 0 0.5rem;">
+            <figure class="only-light" style="margin:0;text-align:center;">
+                <img src="../../../import_wizard_en_light.jpg" alt="Bring my library wizard, step 1 of 5" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+            </figure>
+            <figure class="only-dark" style="margin:0;text-align:center;">
+                <img src="../../../import_wizard_en_dark.jpg" alt="Bring my library wizard, step 1 of 5" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+            </figure>
         </div>
     </div>
 </section>
