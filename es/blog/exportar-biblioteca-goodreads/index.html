@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cómo exportar tu biblioteca de Goodreads y llevártela contigo · Blog Lecturameter</title>
-    <meta name="description" content="Los pasos para exportar tu biblioteca de Goodreads como CSV, qué campos incluye y qué hacer con el fichero. Solo funciona desde el ordenador.">
-    <meta property="og:title" content="Cómo exportar tu biblioteca de Goodreads y llevártela contigo">
-    <meta property="og:description" content="Los pasos para exportar tu biblioteca de Goodreads como CSV, qué campos incluye y qué hacer con el fichero.">
+    <title>Cómo traer tu biblioteca de Goodreads (y StoryGraph, Bookmory, Fable…) a Lecturameter · Blog Lecturameter</title>
+    <meta name="description" content="Lecturameter importa bibliotecas de Goodreads, StoryGraph, Bookmory, Fable/ShelfBridge y otras apps de lectura. Cómo funciona la exportación de cada una y qué se trae.">
+    <meta property="og:title" content="Cómo traer tu biblioteca de Goodreads (y StoryGraph, Bookmory, Fable…) a Lecturameter">
+    <meta property="og:description" content="Lecturameter importa bibliotecas de Goodreads, StoryGraph, Bookmory, Fable/ShelfBridge y otras apps de lectura.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://lecturameterapp.github.io/es/blog/exportar-biblioteca-goodreads/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Exportar biblioteca de Goodreads">
+    <meta property="og:image:alt" content="Traer tu biblioteca a Lecturameter">
     <meta property="og:locale" content="es_ES">
     <meta property="og:locale:alternate" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Cómo exportar tu biblioteca de Goodreads">
-    <meta name="twitter:description" content="Pasos para exportar tu biblioteca de Goodreads como CSV.">
+    <meta name="twitter:title" content="Cómo traer tu biblioteca de Goodreads (y StoryGraph, Bookmory, Fable…) a Lecturameter">
+    <meta name="twitter:description" content="Lecturameter importa desde Goodreads, StoryGraph, Bookmory, Fable/ShelfBridge y más.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
@@ -40,8 +40,8 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "headline": "Cómo exportar tu biblioteca de Goodreads y llevártela contigo",
-      "description": "Los pasos para exportar tu biblioteca de Goodreads como CSV, qué campos incluye y qué hacer con el fichero. Solo funciona desde el ordenador.",
+      "headline": "Cómo traer tu biblioteca de Goodreads (y StoryGraph, Bookmory, Fable…) a Lecturameter",
+      "description": "Lecturameter importa bibliotecas de Goodreads, StoryGraph, Bookmory, Fable/ShelfBridge y otras apps de lectura. Cómo funciona la exportación de cada una y qué se trae.",
       "datePublished": "2026-09-14",
       "author": {"@type":"Organization","name":"Lecturameter"},
       "image": "https://lecturameterapp.github.io/social_card.jpg?v=260807",
@@ -103,8 +103,8 @@
         <div class="hero" style="grid-template-columns:1fr;">
             <div class="hero-copy" style="max-width:820px;margin:0 auto;text-align:center;">
                 <p class="hero-eyebrow reveal-up in-view"><a href="../" style="color:inherit;text-decoration:none;">Blog</a> &middot; 2026-09-14</p>
-                <h1 class="reveal-up in-view d1"><span class="grad">Cómo exportar</span> tu biblioteca de Goodreads y llevártela contigo</h1>
-                <p class="hero-tagline reveal-up in-view d2" style="margin-left:auto;margin-right:auto;">Los pasos para exportar tu biblioteca de Goodreads como CSV, qué campos incluye y qué hacer con el fichero. Solo funciona desde el ordenador.</p>
+                <h1 class="reveal-up in-view d1"><span class="grad">Cómo traer</span> tu biblioteca de Goodreads (y StoryGraph, Bookmory, Fable…) a Lecturameter</h1>
+                <p class="hero-tagline reveal-up in-view d2" style="margin-left:auto;margin-right:auto;">Lecturameter lee exportaciones de Goodreads, StoryGraph, Bookmory, Fable/ShelfBridge y varias apps más. Este post repasa cómo funciona cada una.</p>
             </div>
         </div>
     </div>
@@ -113,93 +113,114 @@
 <section class="band">
     <div class="container" style="max-width:760px;">
         <div class="section-head">
-            <h2><span class="grad">Paso a</span> paso</h2>
+            <h2><span class="grad">Dónde</span> vive tu biblioteca</h2>
         </div>
-        <p>Si alguna vez has querido irte de Goodreads y llevarte tu biblioteca, la buena noticia es que Goodreads todavía te deja hacerlo. La menos buena es que la opción está escondida y solo funciona desde la web.</p>
-        <p>Te cuento cómo sacar el CSV, qué lleva dentro y qué puedes hacer con él.</p>
-        <p>La exportación solo funciona desde la web de escritorio. En móvil la opción no aparece.</p>
+        <p>Si ya llevas tus lecturas en otra parte y quieres moverlas, Lecturameter acepta exportaciones de la mayoría de las apps de tracking populares: Goodreads, StoryGraph, Bookmory, Fable (con la extensión ShelfBridge) y varias más pequeñas. En este post te cuento el paso de exportar en cada una, para que elijas la tuya y sigas los pasos.</p>
+        <p>Nada de esto requiere una cuenta de Lecturameter. El fichero se queda en tu móvil.</p>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2><span class="grad">El asistente,</span> en corto</h2>
+        </div>
+        <p>Al abrir Lecturameter por primera vez, Pagi te pregunta qué quieres hacer. Una de las opciones es "Vengo de otra app". La eliges y entras en el asistente de importación.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin:1.5rem 0;">
+            <figure style="margin:0;text-align:center;">
+                <img src="../../../import_welcome_es_light.jpg" alt="Pantalla de bienvenida de Lecturameter con Pagi (tema claro)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+                <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Bienvenida, tema claro</figcaption>
+            </figure>
+            <figure style="margin:0;text-align:center;">
+                <img src="../../../import_welcome_es_dark.jpg" alt="Pantalla de bienvenida de Lecturameter con Pagi (tema oscuro)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+                <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Bienvenida, tema oscuro</figcaption>
+            </figure>
+        </div>
+        <p>El asistente es una lista de orígenes. Tocas el que usas, le pasas el fichero y Lecturameter interpreta el esquema. El mismo asistente vive también en Ajustes, Importar, así que lo puedes ejecutar más tarde.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin:1.5rem 0;">
+            <figure style="margin:0;text-align:center;">
+                <img src="../../../import_wizard_es_light.jpg" alt="Asistente Traer mi biblioteca, paso 1 de 5 (tema claro)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+                <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Asistente, tema claro</figcaption>
+            </figure>
+            <figure style="margin:0;text-align:center;">
+                <img src="../../../import_wizard_es_dark.jpg" alt="Asistente Traer mi biblioteca, paso 1 de 5 (tema oscuro)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+                <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Asistente, tema oscuro</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2><span class="grad">Goodreads</span> (CSV)</h2>
+        </div>
+        <p>Goodreads todavía te deja exportar tu biblioteca, pero la opción está escondida y solo funciona desde la web de escritorio. En móvil no aparece.</p>
         <ol>
             <li>Ve a goodreads.com y entra con tu cuenta.</li>
             <li>Pulsa "Mis libros" en la barra superior.</li>
             <li>En el menú lateral, en la sección "Herramientas", pulsa "Importar y exportar".</li>
-            <li>En la página que se abre, busca la sección "Exportar tus libros".</li>
-            <li>Pulsa "Exportar biblioteca".</li>
-            <li>Espera un minuto. Goodreads genera el archivo en segundo plano. Cuando está listo aparece un enlace del tipo "Tu exportación de Goodreads" que descarga un CSV.</li>
+            <li>Busca la sección "Exportar tus libros" y pulsa "Exportar biblioteca".</li>
+            <li>Espera un minuto. Cuando el archivo está listo aparece un enlace del tipo "Tu exportación de Goodreads" que descarga un CSV.</li>
         </ol>
-        <p>Ya está. El fichero se llama algo parecido a goodreads_library_export.csv.</p>
+        <p>El fichero es una fila por libro con unas treinta columnas. Lo que importa: título, autor, ISBN, tu valoración, fechas de lectura, fechas de añadido, estanterías (personalizadas y exclusivas) y tu reseña. Las notas privadas vienen en la columna "Private Notes", que es fácil pasar por alto.</p>
+        <p>La valoración usa estrellas enteras, no medias. Las fechas van en formato "AAAA/MM/DD". Amigos, comentarios, likes y grupos se quedan en Goodreads. Eso no es una limitación de Lecturameter, sencillamente no están en el fichero.</p>
     </div>
 </section>
 
 <section class="band band-alt">
     <div class="container" style="max-width:760px;">
         <div class="section-head">
-            <h2><span class="grad">Qué lleva</span> el fichero</h2>
+            <h2><span class="grad">StoryGraph</span> (CSV)</h2>
         </div>
-        <p>El CSV tiene una fila por libro y unas 30 columnas. Las que importan:</p>
-        <ul>
-            <li>Book Id</li>
-            <li>Title</li>
-            <li>Author</li>
-            <li>Additional Authors</li>
-            <li>ISBN y ISBN13</li>
-            <li>My Rating (de 0 a 5)</li>
-            <li>Average Rating</li>
-            <li>Publisher</li>
-            <li>Number of Pages</li>
-            <li>Year Published</li>
-            <li>Original Publication Year</li>
-            <li>Date Read</li>
-            <li>Date Added</li>
-            <li>Bookshelves (tus estanterías personalizadas)</li>
-            <li>Exclusive Shelf (leído, leyendo, pendiente)</li>
-            <li>My Review (tu reseña en texto)</li>
-            <li>Read Count</li>
-            <li>Owned Copies</li>
-        </ul>
-        <p>Si tienes notas privadas en Goodreads vienen en la columna "Private Notes", que es fácil pasar por alto.</p>
-        <p>La valoración usa estrellas enteras, no medias. Si Goodreads te muestra tres estrellas y media, el CSV te va a decir 3.</p>
-        <p>Las fechas van en formato Goodreads, que suele ser "AAAA/MM/DD". Cualquier herramienta decente lo interpreta.</p>
+        <p>StoryGraph también exporta desde la web. Entra en <em>app.thestorygraph.com</em>, abre Settings, luego Manage Account y usa la opción Export. Obtienes un CSV con tus libros, estanterías, valoraciones, reseñas, fechas y tags. Lecturameter lo lee directamente y mapea los campos.</p>
     </div>
 </section>
 
 <section class="band">
     <div class="container" style="max-width:760px;">
         <div class="section-head">
-            <h2><span class="grad">Qué hacer</span> con el fichero</h2>
+            <h2><span class="grad">Bookmory</span> (XLSX)</h2>
         </div>
-        <p>Con el CSV en mano puedes:</p>
-        <p>Importarlo en otra app de lectura. Lecturameter lee las exportaciones de Goodreads directamente, con valoraciones, fechas y estanterías. Otras apps también lo hacen con reglas propias de qué se quedan.</p>
-        <p>Abrirlo en una hoja de cálculo. Si lo que quieres es simplemente ver tu lista de libros fuera de Goodreads, con una hoja te sobra. Google Sheets, LibreOffice Calc y Excel abren un CSV sin problema.</p>
-        <p>Guardarlo como copia de seguridad. El fichero pesa poco. Lo dejas a buen recaudo. Si algún día tu cuenta de Goodreads se te bloquea o el servicio desaparece, tu lista sigue estando ahí.</p>
-        <p>Convertirlo a otro formato. Si quieres migrar a Bookwyrm, Hardcover, StoryGraph o cualquier otra alternativa, casi todas leen CSVs de Goodreads o tienen su propio conversor.</p>
+        <p>Dentro de Bookmory abre Ajustes, luego Backup y "Exportar a Excel". Obtienes un .xlsx con hojas separadas para libros, valoraciones y sesiones de lectura. Lecturameter lee el xlsx directamente; no hace falta convertirlo.</p>
     </div>
 </section>
 
 <section class="band band-alt">
     <div class="container" style="max-width:760px;">
         <div class="section-head">
-            <h2><span class="grad">Qué no</span> exporta Goodreads</h2>
+            <h2><span class="grad">Fable</span> / ShelfBridge (CSV mediante extensión)</h2>
         </div>
-        <p>El CSV no incluye:</p>
-        <ul>
-            <li>Tus amigos</li>
-            <li>Comentarios en tus reseñas</li>
-            <li>Likes y votos</li>
-            <li>Grupos a los que perteneces</li>
-            <li>Recomendaciones</li>
-            <li>Actualizaciones de progreso sobre libros concretos</li>
-        </ul>
-        <p>Todo lo que escribiste tú y toda la información de los libros está en el fichero. La capa social se queda en Goodreads.</p>
+        <p>Fable en sí no tiene botón de exportar. El proyecto de la comunidad <em>ShelfBridge</em> es una extensión de navegador que lee tus datos de Fable y genera un CSV compatible con Fable. Lecturameter acepta ese fichero en el hueco Fable / ShelfBridge del asistente.</p>
     </div>
 </section>
 
 <section class="band">
     <div class="container" style="max-width:760px;">
         <div class="section-head">
-            <h2><span class="grad">Un aviso,</span> y después qué</h2>
+            <h2><span class="grad">Otras</span> apps</h2>
         </div>
-        <p>Si tu biblioteca tiene miles de libros, a veces la exportación devuelve un fichero muy pequeño o corrupto. Es un bug conocido de Goodreads que aparece en los foros de ayuda de vez en cuando. La solución es volver a intentarlo unas horas después, mejor en horario tranquilo. Cuando el CSV descarga bien, suele estar completo.</p>
-        <p>Si has sacado el CSV para traerte la biblioteca a Lecturameter, la importación está en Ajustes, Importar. Lecturameter lee las estanterías y te pregunta cuáles quieres traer. Valoraciones, fechas y notas privadas vienen con los libros. Nada sale del móvil. La biblioteca acaba en tu teléfono.</p>
+        <p>El asistente también tiene un hueco "Otras apps" para Babelio, Pagebound, Book Tracker, Bookshelf, Delibrista y similares. Si la app que usas puede generar un CSV o un XLSX, Lecturameter intenta detectar el esquema automáticamente.</p>
+        <p>Si la tuya no está reconocida, el plan B es sencillo: abre el fichero en una hoja de cálculo, deja las columnas de título, autor, valoración, fechas y estantería, guárdalo como CSV e impórtalo como Goodreads. El lector de Goodreads es el más permisivo del grupo.</p>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2><span class="grad">Qué viene</span> y qué no</h2>
+        </div>
+        <p>Para todos los orígenes, lo mismo cruza siempre: libros, estanterías, valoraciones, fechas y notas o reseñas personales.</p>
+        <p>Y lo mismo se queda fuera en todos los servicios: amigos, comentarios, likes, grupos y follows. Es una limitación de los propios ficheros de exportación, no de Lecturameter. No hay nada que traer porque nunca estuvo en el fichero.</p>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2><span class="grad">Después de</span> la importación</h2>
+        </div>
+        <p>Si te saltaste el asistente al arrancar, la importación también está en Ajustes, Importar. Lee las estanterías del fichero y te pregunta cuáles quieres traer. Valoraciones, fechas y notas vienen con los libros. Nada sale del móvil. La biblioteca acaba en tu teléfono.</p>
     </div>
 </section>
 
