@@ -32,7 +32,7 @@
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/a-que-velocidad-leo-de-verdad/">
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/">
-    <link rel="stylesheet" href="../../../styles.css?v=6.0">
+    <link rel="stylesheet" href="../../../styles.css?v=6.2">
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 
@@ -97,65 +97,99 @@
     </div>
 </nav>
 
-<main>
-<article class="band article-body">
+<main class="subpage-body">
+<section class="band band-hero">
+    <div class="container">
+        <div class="hero" style="grid-template-columns:1fr;">
+            <div class="hero-copy" style="max-width:820px;margin:0 auto;text-align:center;">
+                <p class="hero-eyebrow reveal-up in-view"><a href="../" style="color:inherit;text-decoration:none;">Blog</a> &middot; 2026-09-14</p>
+                <h1 class="reveal-up in-view d1"><span class="grad">¿A qué</span> velocidad leo de verdad?</h1>
+                <p class="hero-tagline reveal-up in-view d2" style="margin-left:auto;margin-right:auto;">Cuatro meses de sesiones de lectura cronometradas. Un ritmo medio real en páginas por minuto.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="band">
     <div class="container" style="max-width:760px;">
-        <p style="opacity:0.7;font-size:0.9em;"><a href="../">Blog</a> &middot; 2026-09-14</p>
-        <h1><span class="grad">¿A qué</span> velocidad leo de verdad?</h1>
-        <p class="hero-tagline">Cuatro meses de sesiones de lectura cronometradas. Un ritmo medio real en páginas por minuto.</p>
-
+        <div class="section-head">
+            <h2><span class="grad">Los datos</span> en crudo</h2>
+        </div>
         <p>Hago Lecturameter, mi propia app, claro. Entre mayo y septiembre de este año registré 64 sesiones de lectura con la app. Cada sesión guarda las páginas que leí, los minutos que tardé y el libro.</p>
-
         <p>Los datos:</p>
+        <div class="metrics-strip" style="grid-template-columns:repeat(4,1fr);">
+            <div class="metric-box"><span class="metric-val c-accent">64</span><span class="metric-label">Sesiones</span></div>
+            <div class="metric-box"><span class="metric-val c-blue">29h 41m</span><span class="metric-label">Tiempo de lectura</span></div>
+            <div class="metric-box"><span class="metric-val c-green">1.543</span><span class="metric-label">Páginas</span></div>
+            <div class="metric-box"><span class="metric-val c-orange">0,88</span><span class="metric-label">páginas / min</span></div>
+        </div>
+    </div>
+</section>
 
-        <ul style="list-style:none;padding-left:0;">
-            <li>64 sesiones</li>
-            <li>29 horas y 41 minutos de lectura real</li>
-            <li>1.543 páginas</li>
-            <li>0,88 páginas por minuto de media</li>
-        </ul>
-
+<section class="band band-alt">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2><span class="grad">Lo que</span> rompe la media</h2>
+        </div>
         <p>Quien no se cronometra tiende a pensar que la velocidad media es más o menos estable, pero no lo es. Hay muchas variables: el idioma en el que lees, el tamaño de la fuente, papel o digital, lo densa que sea la prosa, lo familiarizado que estés con el tema, incluso el día de la semana o la hora del día.</p>
-
-        <ul style="list-style:none;padding-left:0;">
-            <li>Lunes: 0,87 páginas por minuto</li>
-            <li>Martes: 0,79</li>
-            <li>Miércoles: 0,83</li>
-            <li>Jueves: 0,74</li>
-            <li>Viernes: 0,88</li>
-            <li>Sábado: 1,17</li>
-            <li>Domingo: 0,68</li>
-        </ul>
-
+        <div class="metrics-strip" style="grid-template-columns:repeat(7,1fr);">
+            <div class="metric-box"><span class="metric-val">0,87</span><span class="metric-label">Lunes</span></div>
+            <div class="metric-box"><span class="metric-val">0,79</span><span class="metric-label">Martes</span></div>
+            <div class="metric-box"><span class="metric-val">0,83</span><span class="metric-label">Miércoles</span></div>
+            <div class="metric-box"><span class="metric-val">0,74</span><span class="metric-label">Jueves</span></div>
+            <div class="metric-box"><span class="metric-val">0,88</span><span class="metric-label">Viernes</span></div>
+            <div class="metric-box"><span class="metric-val c-green">1,17</span><span class="metric-label">Sábado</span></div>
+            <div class="metric-box"><span class="metric-val c-orange">0,68</span><span class="metric-label">Domingo</span></div>
+        </div>
         <p>Las sesiones del sábado van casi al doble que las del domingo. El dato no te dice el porqué, pero cuenta la historia de "a qué velocidad leo", que en este caso es porque estaba leyendo en un parque sin distracciones.</p>
+    </div>
+</section>
 
+<section class="band">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2><span class="grad">Libro a</span> libro</h2>
+        </div>
         <p>El ritmo también cambia con el libro, como decía antes. Vamos con los datos:</p>
-
-        <p>El dragón renacido (Robert Jordan): 37 sesiones cronometradas, 647 páginas cronometradas, 1023 minutos, 0,63 páginas por minuto.</p>
-
-        <p>Frieren Tomo 1 (Yamada y Abe): 2 sesiones cronometradas, 165 páginas, 48 minutos, 3,44 páginas por minuto.</p>
-
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:1.25rem 0;">
+            <div class="metric-box">
+                <span class="metric-val c-blue">0,63</span>
+                <span class="metric-label">El dragón renacido &middot; 37 sesiones &middot; 647 págs &middot; 1023 min</span>
+            </div>
+            <div class="metric-box">
+                <span class="metric-val c-orange">3,44</span>
+                <span class="metric-label">Frieren Tomo 1 &middot; 2 sesiones &middot; 165 págs &middot; 48 min</span>
+            </div>
+        </div>
         <p>Mismo lector. Diferencia de 5x. Uno es prosa densa de fantasía. El otro es un manga. Cualquier media que mezcle esos dos es una ficción que esconde más de lo que explica, por eso cada libro y cada género tiene sus propias estadísticas, porque una estadística global puede mentir.</p>
+    </div>
+</section>
 
+<section class="band band-alt">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2><span class="grad">La</span> conclusión</h2>
+        </div>
         <p>Si quieres saber a qué velocidad lees, no leas un párrafo y multipliques. Cronometra una sesión de verdad con un libro de verdad. Hazlo unas cuantas veces. Fíjate en los números individuales y luego mira la media, así tienes la foto completa.</p>
-
         <p>Si tienes un Android, Lecturameter lo hace por ti. Si no, un cronómetro y una libreta hacen lo mismo. La herramienta importa menos que la costumbre de cronometrarte con honestidad. (y si tienes un iPhone pronto vas a poder probar Lecturameter también)</p>
-
         <p>El cronómetro de lectura, el cálculo del ritmo y los desgloses diarios y semanales son el núcleo de Lecturameter. Es gratis, es Android y no necesita cuenta. Puedes echarle un vistazo aquí.</p>
+    </div>
+</section>
 
-        <p style="margin-top:2rem;">
-            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Prueba Lecturameter en Android</a>
-        </p>
-
-        <hr style="margin:3rem 0 1.5rem;opacity:0.2;">
-        <p style="font-size:0.95em;opacity:0.85;">
-            Ver también:
+<section class="band">
+    <div class="container" style="text-align:center;">
+        <div class="section-head">
+            <h2>Pruébala <span class="grad">en Android</span></h2>
+        </div>
+        <p><a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Consíguela en Google Play</a></p>
+        <p style="margin-top:1.5rem;font-size:0.95em;opacity:0.85;">
+            Sigue leyendo:
             <a href="../fantasia-frente-a-manga-ritmo-lectura/">Fantasía frente a manga</a> &middot;
             <a href="../tiempo-de-lectura-o-paginas/">Tiempo de lectura o páginas</a> &middot;
             <a href="../../funciones/cronometro-lectura/">Cronómetro de lectura</a>
         </p>
     </div>
-</article>
+</section>
 </main>
 
 <footer class="site-footer">
@@ -167,6 +201,6 @@
     </div>
 </footer>
 
-<script src="../../../main.js?v=5.4" defer></script>
+<script src="../../../main.js?v=6.2" defer></script>
 </body>
 </html>

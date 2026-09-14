@@ -32,7 +32,7 @@
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/">
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/a-que-velocidad-leo-de-verdad/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/">
-    <link rel="stylesheet" href="../../styles.css?v=6.0">
+    <link rel="stylesheet" href="../../styles.css?v=6.2">
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 
@@ -97,65 +97,99 @@
     </div>
 </nav>
 
-<main>
-<article class="band article-body">
+<main class="subpage-body">
+<section class="band band-hero">
+    <div class="container">
+        <div class="hero" style="grid-template-columns:1fr;">
+            <div class="hero-copy" style="max-width:820px;margin:0 auto;text-align:center;">
+                <p class="hero-eyebrow reveal-up in-view"><a href="../" style="color:inherit;text-decoration:none;">Blog</a> &middot; 2026-09-14</p>
+                <h1 class="reveal-up in-view d1"><span class="grad">How fast</span> do I really read?</h1>
+                <p class="hero-tagline reveal-up in-view d2" style="margin-left:auto;margin-right:auto;">Four months of tracked reading sessions. A real average pages per minute.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="band">
     <div class="container" style="max-width:760px;">
-        <p style="opacity:0.7;font-size:0.9em;"><a href="../">Blog</a> &middot; 2026-09-14</p>
-        <h1><span class="grad">How fast</span> do I really read?</h1>
-        <p class="hero-tagline">Four months of tracked reading sessions. A real average pages per minute.</p>
-
+        <div class="section-head">
+            <h2><span class="grad">The raw</span> data</h2>
+        </div>
         <p>I run Lecturameter, my own app, of course. Between May and September of this year I tracked 64 reading sessions with the app. Every session logs the pages I read, the minutes it took me and the book.</p>
-
         <p>Here's the data:</p>
+        <div class="metrics-strip" style="grid-template-columns:repeat(4,1fr);">
+            <div class="metric-box"><span class="metric-val c-accent">64</span><span class="metric-label">Sessions</span></div>
+            <div class="metric-box"><span class="metric-val c-blue">29h 41m</span><span class="metric-label">Reading time</span></div>
+            <div class="metric-box"><span class="metric-val c-green">1,543</span><span class="metric-label">Pages</span></div>
+            <div class="metric-box"><span class="metric-val c-orange">0.88</span><span class="metric-label">pages / min</span></div>
+        </div>
+    </div>
+</section>
 
-        <ul style="list-style:none;padding-left:0;">
-            <li>64 sessions</li>
-            <li>29 hours and 41 minutes of actual reading</li>
-            <li>1,543 pages</li>
-            <li>0.88 pages per minute on average</li>
-        </ul>
-
+<section class="band band-alt">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2><span class="grad">What breaks</span> the average</h2>
+        </div>
         <p>People who don't track their readings might think that the average speed is mostly stable, but it's not. There are multiple variables: the language you're reading in, font size, physical vs digital format, how dense the prose is, how familiar you are with the subject, even the day of the week or the hour within the day.</p>
-
-        <ul style="list-style:none;padding-left:0;">
-            <li>Monday: 0.87 pages per minute</li>
-            <li>Tuesday: 0.79</li>
-            <li>Wednesday: 0.83</li>
-            <li>Thursday: 0.74</li>
-            <li>Friday: 0.88</li>
-            <li>Saturday: 1.17</li>
-            <li>Sunday: 0.68</li>
-        </ul>
-
+        <div class="metrics-strip" style="grid-template-columns:repeat(7,1fr);">
+            <div class="metric-box"><span class="metric-val">0.87</span><span class="metric-label">Monday</span></div>
+            <div class="metric-box"><span class="metric-val">0.79</span><span class="metric-label">Tuesday</span></div>
+            <div class="metric-box"><span class="metric-val">0.83</span><span class="metric-label">Wednesday</span></div>
+            <div class="metric-box"><span class="metric-val">0.74</span><span class="metric-label">Thursday</span></div>
+            <div class="metric-box"><span class="metric-val">0.88</span><span class="metric-label">Friday</span></div>
+            <div class="metric-box"><span class="metric-val c-green">1.17</span><span class="metric-label">Saturday</span></div>
+            <div class="metric-box"><span class="metric-val c-orange">0.68</span><span class="metric-label">Sunday</span></div>
+        </div>
         <p>Saturday sessions are almost twice as fast as Sunday sessions. The data does not tell you why, but it tells the story on "how fast I read", which is because I was reading in a park with no distractions.</p>
+    </div>
+</section>
 
+<section class="band">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2><span class="grad">Book by</span> book</h2>
+        </div>
         <p>The pace also changes with the book, like I said before. Let's go through the data:</p>
-
-        <p>The Dragon Reborn (Robert Jordan): 37 tracked sessions, 647 tracked pages, 1023 minutes, 0.63 pages per minute.</p>
-
-        <p>Frieren Tome 1 (Yamada and Abe): 2 tracked sessions, 165 pages, 48 minutes, 3.44 pages per minute.</p>
-
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:1.25rem 0;">
+            <div class="metric-box">
+                <span class="metric-val c-blue">0.63</span>
+                <span class="metric-label">The Dragon Reborn &middot; 37 sessions &middot; 647 pages &middot; 1023 min</span>
+            </div>
+            <div class="metric-box">
+                <span class="metric-val c-orange">3.44</span>
+                <span class="metric-label">Frieren Tome 1 &middot; 2 sessions &middot; 165 pages &middot; 48 min</span>
+            </div>
+        </div>
         <p>Same reader. 5x difference. One is dense fantasy prose. The other is a manga. Any average that mixes those two is a fiction that hides more than it explains, that's why every book and genre has its own stats, because a global stat can "lie".</p>
+    </div>
+</section>
 
+<section class="band band-alt">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2><span class="grad">The</span> takeaway</h2>
+        </div>
         <p>If you want to know how fast you read, do not read a paragraph and multiply. Time an actual session with an actual book. Do it a few times. Look at the individual numbers and then look the average, that way you'll have the bigger picture.</p>
-
         <p>If you own an Android phone, Lecturameter does this for you. If you do not, a stopwatch and a notebook do the same job. The tool matters less than the habit of timing yourself honestly. (and if you have an iPhone you'll soon be able to try Lecturameter!)</p>
-
         <p>The reading timer, the pace calculation and the daily and weekly breakdowns are the core of Lecturameter. It is free, it is Android and it does not need an account. You can take a look here.</p>
+    </div>
+</section>
 
-        <p style="margin-top:2rem;">
-            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Try Lecturameter on Android</a>
-        </p>
-
-        <hr style="margin:3rem 0 1.5rem;opacity:0.2;">
-        <p style="font-size:0.95em;opacity:0.85;">
+<section class="band">
+    <div class="container" style="text-align:center;">
+        <div class="section-head">
+            <h2>Try it <span class="grad">on Android</span></h2>
+        </div>
+        <p><a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Get on Google Play</a></p>
+        <p style="margin-top:1.5rem;font-size:0.95em;opacity:0.85;">
             See also:
             <a href="../fantasy-vs-manga-reading-pace/">Fantasy vs manga reading pace</a> &middot;
             <a href="../reading-time-vs-pages/">Reading time or pages</a> &middot;
             <a href="../../en/features/reading-timer/">Reading Timer</a>
         </p>
     </div>
-</article>
+</section>
 </main>
 
 <footer class="site-footer">
@@ -167,6 +201,6 @@
     </div>
 </footer>
 
-<script src="../../main.js?v=5.4" defer></script>
+<script src="../../main.js?v=6.2" defer></script>
 </body>
 </html>
