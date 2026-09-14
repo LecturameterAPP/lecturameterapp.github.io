@@ -32,7 +32,7 @@
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/">
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/">
-    <link rel="stylesheet" href="../styles.css?v=5.4">
+    <link rel="stylesheet" href="../styles.css?v=6.0">
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 
@@ -61,7 +61,15 @@
             Lecturameter
         </a>
         <ul class="nav-pills">
-            <li><a href="../#features">Features</a></li>
+            <li class="has-dropdown">
+                <a href="../#features">Features <span class="caret" aria-hidden="true">▾</span></a>
+                <ul class="nav-dropdown">
+                    <li><a href="../en/features/reading-timer/">Reading Timer</a></li>
+                    <li><a href="../en/features/reading-tracker/">Reading Tracker</a></li>
+                    <li><a href="../en/features/reading-statistics/">Reading Statistics</a></li>
+                    <li><a href="../en/features/goodreads-alternative/">Goodreads Alternative</a></li>
+                </ul>
+            </li>
             <li><a href="../#themes">Themes</a></li>
             <li><a href="../#pricing">Pro</a></li>
             <li><a href="../#whatsnew">Patch notes</a></li>
@@ -84,10 +92,10 @@
     </div>
 </nav>
 
-<main>
+<main class="subpage-body">
 <section class="band band-hero">
     <div class="container" style="max-width:820px;text-align:center;">
-        <h1>Notes on reading, from someone who tracks his own</h1>
+        <h1><span class="grad">Notes on reading, from</span> someone who tracks his own</h1>
         <p class="hero-tagline">This blog is written from the same data Lecturameter tracks. Every number here comes from my real reading log.</p>
     </div>
 </section>

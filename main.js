@@ -165,7 +165,7 @@
 
         function fetchPagi(name) {
             if (pagiCache[name]) return Promise.resolve(pagiCache[name]);
-            return fetch('../pagi/star-' + name + '.svg').then(function (r) { return r.text(); }).then(function (t) {
+            return fetch('/pagi/star-' + name + '.svg').then(function (r) { return r.text(); }).then(function (t) {
                 pagiCache[name] = t;
                 return t;
             });
@@ -267,7 +267,7 @@
 
         function fetchFaqPagi(name) {
             if (faqCache[name]) return Promise.resolve(faqCache[name]);
-            return fetch('../pagi/dark-' + name + '.svg').then(function (r) { return r.text(); }).then(function (t) {
+            return fetch('/pagi/dark-' + name + '.svg').then(function (r) { return r.text(); }).then(function (t) {
                 faqCache[name] = t;
                 return t;
             });
@@ -368,7 +368,7 @@
             handlers.push({
                 onIdle: function () {
                     if (heroSorprSvg) { heroContainer.innerHTML = heroSorprSvg; return; }
-                    fetch('../pagi/hero-sorprendido.svg').then(function (r) { return r.text(); }).then(function (t) {
+                    fetch('/pagi/hero-sorprendido.svg').then(function (r) { return r.text(); }).then(function (t) {
                         heroSorprSvg = t;
                         if (isIdle) heroContainer.innerHTML = t;
                     });
@@ -455,7 +455,7 @@
 
         function fetchLago(name) {
             if (lagoCache[name]) return Promise.resolve(lagoCache[name]);
-            return fetch('../pagi/lago-' + name + '.svg').then(function (r) { return r.text(); }).then(function (t) {
+            return fetch('/pagi/lago-' + name + '.svg').then(function (r) { return r.text(); }).then(function (t) {
                 lagoCache[name] = t;
                 return t;
             });

@@ -32,7 +32,7 @@
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/">
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/tiempo-de-lectura-o-paginas/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/">
-    <link rel="stylesheet" href="../../styles.css?v=5.4">
+    <link rel="stylesheet" href="../../styles.css?v=6.0">
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 
@@ -66,7 +66,15 @@
             Lecturameter
         </a>
         <ul class="nav-pills">
-            <li><a href="../../#features">Features</a></li>
+            <li class="has-dropdown">
+                <a href="../../#features">Features <span class="caret" aria-hidden="true">▾</span></a>
+                <ul class="nav-dropdown">
+                    <li><a href="../../en/features/reading-timer/">Reading Timer</a></li>
+                    <li><a href="../../en/features/reading-tracker/">Reading Tracker</a></li>
+                    <li><a href="../../en/features/reading-statistics/">Reading Statistics</a></li>
+                    <li><a href="../../en/features/goodreads-alternative/">Goodreads Alternative</a></li>
+                </ul>
+            </li>
             <li><a href="../../#themes">Themes</a></li>
             <li><a href="../../#pricing">Pro</a></li>
             <li><a href="../../#whatsnew">Patch notes</a></li>
@@ -90,10 +98,10 @@
 </nav>
 
 <main>
-<article class="band">
+<article class="band article-body">
     <div class="container" style="max-width:760px;">
         <p style="opacity:0.7;font-size:0.9em;"><a href="../">Blog</a> &middot; 2026-09-14</p>
-        <h1>Reading time or pages: which one should you track?</h1>
+        <h1><span class="grad">Reading time</span> or pages: which one should you track?</h1>
         <p class="hero-tagline">Time and pages measure different things. Pages count output. Time counts effort. When you have both you get a pace, which is the useful part.</p>
 
         <p>The two most common ways to track your reading are pages and time. Every reading app I have seen picks one and hides the other.</p>

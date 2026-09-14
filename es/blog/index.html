@@ -32,7 +32,7 @@
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/">
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/">
-    <link rel="stylesheet" href="../../styles.css?v=5.4">
+    <link rel="stylesheet" href="../../styles.css?v=6.0">
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 
@@ -61,7 +61,15 @@
             Lecturameter
         </a>
         <ul class="nav-pills">
-            <li><a href="../#funciones">Funciones</a></li>
+            <li class="has-dropdown">
+                <a href="../#funciones">Funciones <span class="caret" aria-hidden="true">▾</span></a>
+                <ul class="nav-dropdown">
+                    <li><a href="../funciones/cronometro-lectura/">Cronómetro de lectura</a></li>
+                    <li><a href="../funciones/registro-lectura/">Tracker de lectura</a></li>
+                    <li><a href="../funciones/estadisticas-lectura/">Estadísticas de lectura</a></li>
+                    <li><a href="../funciones/alternativa-goodreads/">Alternativa a Goodreads</a></li>
+                </ul>
+            </li>
             <li><a href="../#temas">Temas</a></li>
             <li><a href="../#precios">Pro</a></li>
             <li><a href="../#novedades">Notas de Parche</a></li>
@@ -84,10 +92,10 @@
     </div>
 </nav>
 
-<main>
+<main class="subpage-body">
 <section class="band band-hero">
     <div class="container" style="max-width:820px;text-align:center;">
-        <h1>Apuntes sobre leer, escritos por alguien que se cronometra</h1>
+        <h1><span class="grad">Apuntes sobre leer, escritos</span> por alguien que se cronometra</h1>
         <p class="hero-tagline">Este blog está escrito con los mismos datos que registra Lecturameter. Todos los números vienen de mi historial de lectura real.</p>
     </div>
 </section>
