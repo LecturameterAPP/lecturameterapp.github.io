@@ -39,6 +39,63 @@
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
     <link rel="stylesheet" href="../styles.css?v=6.0">
+    <style>
+/* === Sección diferencias iOS/Android === */
+.differences { background: var(--bg, #121212); }
+.differences h2 { margin-bottom: 0.5rem; }
+.differences > .container > p { margin-bottom: 1.25rem; opacity: 0.85; }
+.differences-details {
+  border: 1px solid rgba(128,128,128,0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.differences-details summary {
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+}
+.differences-details summary::-webkit-details-marker { display: none; }
+.differences-details summary::before {
+  content: '▶';
+  font-size: 0.7em;
+  transition: transform 0.25s ease;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.differences-details[open] summary::before { transform: rotate(90deg); }
+.differences-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1.25rem;
+  border-top: 1px solid rgba(128,128,128,0.15);
+}
+.differences-grid h3 {
+  font-size: 0.92rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.differences-grid ul { padding-left: 1.25rem; margin: 0; }
+.differences-grid li { margin-bottom: 0.5rem; font-size: 0.9rem; opacity: 0.9; }
+@media (max-width: 640px) {
+  .differences-grid { grid-template-columns: 1fr; }
+}
+.btn-appstore-soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  opacity: 0.45;
+  cursor: default;
+  pointer-events: none;
+}
+</style>
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 
@@ -88,7 +145,8 @@
         {"@type":"Question","name":"¿Tiene suscripción?","acceptedAnswer":{"@type":"Answer","text":"No. La app es gratuita con opción Pro de pago único. No hay suscripciones."}},
         {"@type":"Question","name":"¿Funciona sin conexión?","acceptedAnswer":{"@type":"Answer","text":"Casi todo funciona offline. Solo necesitas conexión para buscar libros nuevos y para subir backups a Google Drive."}},
         {"@type":"Question","name":"¿Hay versión para iPhone?","acceptedAnswer":{"@type":"Answer","text":"No, de momento solo Android. Si hay suficiente interés, se estudiaría. Puedes apuntarte a la lista de espera por email."}},
-        {"@type":"Question","name":"¿Puedo probarlo antes de pagar?","acceptedAnswer":{"@type":"Answer","text":"Sí. Hay una prueba gratuita de 7 días de las funciones Pro, sin poner tarjeta. Al terminar la prueba, aunque no compres Pro, te regalamos un tema Pro a tu elección."}}
+        {"@type":"Question","name":"¿Puedo probarlo antes de pagar?","acceptedAnswer":{"@type":"Answer","text":"Sí. Hay una prueba gratuita de 7 días de las funciones Pro, sin poner tarjeta. Al terminar la prueba, aunque no compres Pro, te regalamos un tema Pro a tu elección."}},
+        {"@type":"Question","name":"¿Puedo migrar mi Pro entre teléfonos y entre iOS y Android?","acceptedAnswer":{"@type":"Answer","text":"A través de un código de transferencia generable dentro de la app puedes transferir tu Pro entre móviles incluso si pasas de Android a iOS o de iOS a Android. Puedes gestionar tus móviles con Pro, y generar los códigos de transferencia, desde Ajustes."}}
       ]
     }
     </script>
@@ -147,7 +205,7 @@
     <div class="container">
         <div class="hero">
             <div class="hero-copy">
-                <p class="hero-eyebrow reveal-up in-view">Tu tracker de lectura para Android. Gratis. Sin cuenta.</p>
+                <p class="hero-eyebrow reveal-up in-view">Tu tracker de lectura para Android e iOS (próximamente). Gratis. Sin cuenta.</p>
                 <h1 class="reveal-up in-view d1">Tu lectura,<br><span class="grad">letra a letra.</span></h1>
                 <p class="hero-tagline reveal-up in-view d2">Cronometras sesiones y ves cómo lees de verdad. Sin anuncios ni suscripciones.</p>
                 <p class="hero-privacy reveal-up in-view d3">
@@ -161,6 +219,7 @@
                 </ul>
                 <div class="hero-cta reveal-up in-view d4">
                     <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Descargar en Google Play</a>
+                    <a href="#ios" class="btn btn-appstore-soon" aria-disabled="true" tabindex="-1">Pronto en App Store</a>
                 </div>
                 <div class="testimonial reveal-up in-view d5">
                     <q>Se nota que hay cariño en cada detalle.</q>
@@ -651,6 +710,41 @@
     </div>
 </section>
 
+<!-- ═══ 7.6 iOS DIFFERENCES ═══ -->
+<section class="band differences" id="ios-diferencias" aria-labelledby="differences-title">
+    <div class="container">
+        <h2 id="differences-title">Pronto en iOS</h2>
+        <p>Lecturameter aterriza en iOS con las mismas funciones que en Android: biblioteca, cronómetro, estadísticas, retos, bingo, Pagi y los cinco temas visuales. Trial de 7 días sin tarjeta y sin cuenta.</p>
+        <details class="differences-details">
+            <summary>Diferencias entre iOS y Android</summary>
+            <div class="differences-grid">
+                <div>
+                    <h3>Solo en iOS</h3>
+                    <ul>
+                        <li><strong>Quick Actions</strong> en la pantalla de inicio (mantén pulsado el icono para registrar sesión, abrir retos, etc.).</li>
+                        <li>Soporte de <strong>Apple Watch</strong> (widget de seguimiento de lectura).</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Solo en Android</h3>
+                    <ul>
+                        <li>Widgets de escritorio con varias variantes.</li>
+                        <li>Copia de seguridad automática con Google Drive.</li>
+                        <li>Control del cronómetro desde la notificación.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Compra Pro</h3>
+                    <ul>
+                        <li>Mismo precio en ambas plataformas.</li>
+                        <li>Portabilidad real: puedes trasladar tu Pro entre móviles y entre iOS y Android mediante un código de transferencia que se genera desde <strong>Ajustes</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+    </div>
+</section>
+
 <!-- ═══ 8. FAQ ═══ -->
 <section class="band band-alt" id="faq">
     <div class="container">
@@ -691,6 +785,10 @@
             <div class="faq-item">
                 <button class="faq-q">¿Puedo probarlo antes de pagar?</button>
                 <div class="faq-a"><div class="faq-a-inner">Sí. Hay una prueba gratuita de 7 días de las funciones Pro, sin poner tarjeta. Al terminar la prueba, aunque no compres Pro, te regalamos un tema Pro a tu elección.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">¿Puedo migrar mi Pro entre teléfonos y entre iOS y Android?</button>
+                <div class="faq-a"><div class="faq-a-inner">A través de un código de transferencia generable dentro de la app puedes transferir tu Pro entre móviles incluso si pasas de Android a iOS o de iOS a Android. Puedes gestionar tus móviles con Pro, y generar los códigos de transferencia, desde <strong>Ajustes</strong>.</div></div>
             </div>
         </div>
     </div>
