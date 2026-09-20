@@ -565,7 +565,7 @@ html:not([data-theme="dark"]) .theme-pill.active { color: #fff; }
 .subpage-container { max-width: 800px; margin: 0 auto; padding: 40px 20px 60px; }
 .lang-content { display: none !important; }
 .lang-content.active { display: block !important; }
-.page-hero { text-align: center; margin-bottom: 40px; }
+.page-hero { text-align: center; margin-bottom: 40px; padding-top: 28px; }
 .page-hero h1, .page-hero .page-heading { font-size: 34px; margin-bottom: 12px; color: var(--text-strong, #fff); }
 .page-hero .tagline { color: var(--text-muted, #9aa3bf); font-size: 17px; }
 .privacy-highlight { background: var(--card, #1a2340); border: 1px solid var(--line, rgba(255,255,255,0.08)); border-radius: 14px; padding: 22px 26px; margin: 26px 0; }
