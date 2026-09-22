@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="promo-dismissed">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,26 +47,45 @@
 </head>
 <body>
 
-<!-- ─── BARRA SUPERIOR ─── -->
-<header class="topbar">
-    <div class="topbar-inner">
-        <a href="index.html" class="brand"><img src="ic_launcher_round.png" alt="Lecturameter">Lecturameter</a>
-        <nav class="nav-links">
-            <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
-            <a href="index.html#caracteristicas" data-es="Características" data-en="Features">Características</a>
-            <a href="index.html#precios" data-es="Precios" data-en="Pricing">Precios</a>
-            <a href="precios-regionales.html" data-es="Precio regional" data-en="Regional pricing">Precio regional</a>
-            <a href="privacidad.html" data-es="Privacidad" data-en="Privacy">Privacidad</a>
-            <a href="tos.html" class="active" data-es="Términos" data-en="Terms">Términos</a>
-            <a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a>
-        </nav>
-        <div class="lang-bar">
-            <button class="nav-theme-btn" aria-label="Cambiar tema">☾</button>
-            <button id="btn-es" onclick="setLang('es')">ES</button>
-            <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+<!-- NAV (misma barra que la landing) -->
+<nav class="nav-bar">
+    <div class="nav-inner">
+        <a href="./" class="nav-brand" data-href-en="./" data-href-es="./es/">
+            <img src="./ic_launcher_round.png" alt="Lecturameter" width="28" height="28">
+            Lecturameter
+        </a>
+        <ul class="nav-pills">
+            <li class="has-dropdown">
+                <a href="./#features" data-href-en="./#features" data-href-es="./es/#funciones"><span data-en="Features" data-es="Funciones">Features</span> <span class="caret" aria-hidden="true">▾</span></a>
+                <ul class="nav-dropdown">
+                    <li><a href="./en/features/reading-timer/" data-href-en="./en/features/reading-timer/" data-href-es="./es/funciones/cronometro-lectura/" data-en="Reading Timer" data-es="Cronómetro de lectura">Reading Timer</a></li>
+                    <li><a href="./en/features/reading-tracker/" data-href-en="./en/features/reading-tracker/" data-href-es="./es/funciones/registro-lectura/" data-en="Reading Tracker" data-es="Tracker de lectura">Reading Tracker</a></li>
+                    <li><a href="./en/features/reading-statistics/" data-href-en="./en/features/reading-statistics/" data-href-es="./es/funciones/estadisticas-lectura/" data-en="Reading Statistics" data-es="Estadísticas de lectura">Reading Statistics</a></li>
+                    <li><a href="./en/features/goodreads-alternative/" data-href-en="./en/features/goodreads-alternative/" data-href-es="./es/funciones/alternativa-goodreads/" data-en="Goodreads Alternative" data-es="Alternativa a Goodreads">Goodreads Alternative</a></li>
+                </ul>
+            </li>
+            <li><a href="./#themes" data-href-en="./#themes" data-href-es="./es/#temas" data-en="Themes" data-es="Temas">Themes</a></li>
+            <li><a href="./#pricing" data-href-en="./#pricing" data-href-es="./es/#precios" data-en="Pro" data-es="Pro">Pro</a></li>
+            <li><a href="./#whatsnew" data-href-en="./#whatsnew" data-href-es="./es/#novedades" data-en="Patch notes" data-es="Notas de Parche">Patch notes</a></li>
+            <li><a href="./#history" data-href-en="./#history" data-href-es="./es/#historial" data-en="History" data-es="Historial">History</a></li>
+            <li><a href="./#roadmap" data-href-en="./#roadmap" data-href-es="./es/#roadmap" data-en="Roadmap" data-es="Roadmap">Roadmap</a></li>
+            <li><a href="./#ios" data-href-en="./#ios" data-href-es="./es/#ios" data-en="iOS" data-es="iOS">iOS</a></li>
+            <li><a href="./#faq" data-href-en="./#faq" data-href-es="./es/#faq" data-en="FAQ" data-es="FAQ">FAQ</a></li>
+            <li><a href="./blog/" data-href-en="./blog/" data-href-es="./es/blog/" data-en="Blog" data-es="Blog">Blog</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button class="nav-theme-btn" aria-label="Toggle theme">☾</button>
+            <button type="button" class="nav-lang-btn" data-en="ES" data-es="EN" onclick="setLang(document.documentElement.lang === 'es' ? 'en' : 'es')">ES</button>
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+                <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                <span data-en="Download" data-es="Descargar">Download</span>
+            </a>
         </div>
+        <button class="nav-hamburger" aria-label="Menu">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
     </div>
-</header>
+</nav>
 
 <div class="subpage-container">
 
@@ -226,6 +245,5 @@
 
 </div>
 
-<script src="main.js" defer></script>
 </body>
 </html>
