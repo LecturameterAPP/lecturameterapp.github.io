@@ -6,7 +6,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/" />
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,7 +15,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/" />
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -208,5 +208,23 @@
     <lastmod>2026-09-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/blog/lecturameter-1999/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/lecturameter-1999/" />
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/blog/lecturameter-1999/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/lecturameter-1999/" />
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

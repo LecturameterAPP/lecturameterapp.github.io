@@ -1648,3 +1648,10 @@ html:not([data-theme="light"]) .tag-free {
     clip: rect(0,0,0,0);
     border: 0;
 }
+
+/* ── Lecturameter 1999 ── */
+.lm99-grid { grid-template-columns: repeat(4, 1fr); margin-top: 32px; }
+.lm99-diff { margin-top: 32px; }
+.lm99-cta { text-align: center; margin-top: 28px; font-size: 1.05em; }
+@media (max-width: 960px) { .lm99-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .lm99-grid { grid-template-columns: 1fr; } }
