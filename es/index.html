@@ -141,7 +141,7 @@
       "@type": "FAQPage",
       "mainEntity": [
         {"@type":"Question","name":"¿Puedo traer mi biblioteca desde otras apps?","acceptedAnswer":{"@type":"Answer","text":"Sí. Ve a Ajustes > Importar/Exportar y sigue el asistente paso a paso. Apps soportadas: Goodreads (CSV): exporta desde goodreads.com > My Books > Import and export > Export Library. StoryGraph (CSV): exporta desde app.thestorygraph.com > Manage account > Import/Export > Export STG Library (el CSV llega por email). Bookmory (.bookmory o XLSX): Ajustes > Copia de seguridad > Exportar. Fable / ShelfBridge (CSV): exporta mediante la extensión ShelfBridge. Book Tracker (CSV): Ajustes > Exportar. CSV de Lecturameter: si exportaste desde otro dispositivo con Lecturameter. Otras apps (Babelio, Pagebound, Bookshelf, Delibrista…): cualquier CSV compatible con el formato de Goodreads/StoryGraph."}},
-        {"@type":"Question","name":"¿Mis datos son míos?","acceptedAnswer":{"@type":"Answer","text":"Totalmente. Tus datos se almacenan solo en tu móvil. No hay servidor propio ni se envía nada sin tu consentimiento. Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos."}},
+        {"@type":"Question","name":"¿Mis datos son míos?","acceptedAnswer":{"@type":"Answer","text":"Totalmente. Tus datos se almacenan solo en tu móvil. Tu biblioteca nunca sale de tu dispositivo. La app solo envía estadísticas anónimas de uso y reportes de fallos, opcionales y desactivables en Ajustes. Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos."}},
         {"@type":"Question","name":"¿Tiene suscripción?","acceptedAnswer":{"@type":"Answer","text":"No. La app es gratuita con opción Pro de pago único. No hay suscripciones."}},
         {"@type":"Question","name":"¿Funciona sin conexión?","acceptedAnswer":{"@type":"Answer","text":"Casi todo funciona offline. Solo necesitas conexión para buscar libros nuevos y para subir backups a Google Drive."}},
         {"@type":"Question","name":"¿Hay versión para iPhone?","acceptedAnswer":{"@type":"Answer","text":"No, de momento solo Android. Si hay suficiente interés, se estudiaría. Puedes apuntarte a la lista de espera por email."}},
@@ -881,6 +881,22 @@
     </div>
 </section>
 
+<!-- ═══ CATÁLOGO ═══ -->
+<section class="band" id="catalogo" aria-labelledby="catalogo-title">
+    <div class="container">
+        <h2 id="catalogo-title">De dónde sale el catálogo</h2>
+        <p>Cuando buscas un libro, Lecturameter consulta primero su propio catálogo: una base de datos de unas 37.500 obras, con sus autores y ediciones, montada solo con fuentes abiertas, sobre todo <strong>Wikidata</strong> y <strong>Open Library</strong>. Si ahí no está, la app pregunta a Google Books, Open Library y otros catálogos públicos.</p>
+        <ul>
+            <li><strong>Solo fuentes abiertas.</strong> Datos que se pueden reutilizar legalmente. Nada de volcados de webs piratas.</li>
+            <li><strong>Tu biblioteca no sale de tu móvil.</strong> El catálogo vive en un servidor propio en Cloudflare y la app solo le envía el texto que buscas o el ISBN que escaneas.</li>
+            <li><strong>Aprende de lo que falta.</strong> Si una búsqueda no encuentra nada, se guarda ese texto o ISBN, sin ningún identificador, para añadir las obras que faltan.</li>
+            <li><strong>También sin conexión.</strong> La app lleva dentro un catálogo local de unas 12.000 obras para buscar sin internet.</li>
+            <li><strong>Manga y cómics.</strong> Para estos se consultan además bases públicas especializadas, como AniList o MangaDex.</li>
+        </ul>
+        <p>Si ves un dato mal o echas en falta una obra, escríbeme a <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>. Más detalle en la <a href="../privacidad.html">política de privacidad</a>.</p>
+    </div>
+</section>
+
 <!-- ═══ 8. FAQ ═══ -->
 <section class="band band-alt" id="faq">
     <div class="container">
@@ -904,7 +920,7 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">¿Mis datos son míos?</button>
-                <div class="faq-a"><div class="faq-a-inner">Totalmente. Tus datos se almacenan solo en tu móvil. No hay servidor propio ni se envía nada sin tu consentimiento. Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Totalmente. Tus datos se almacenan solo en tu móvil. Tu biblioteca nunca sale de tu dispositivo. La app solo envía estadísticas anónimas de uso y reportes de fallos, opcionales y desactivables en Ajustes. Tienes el detalle en la <a href="../privacidad.html">política de privacidad</a>. Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">¿Tiene suscripción?</button>

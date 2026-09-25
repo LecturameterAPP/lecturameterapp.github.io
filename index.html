@@ -149,7 +149,7 @@
       "@type": "FAQPage",
       "mainEntity": [
         {"@type":"Question","name":"Can I bring my library from other apps?","acceptedAnswer":{"@type":"Answer","text":"Yes. Go to Settings > Import/Export and follow the step-by-step wizard. Supported apps: Goodreads (CSV): export from goodreads.com > My Books > Import and export > Export Library. StoryGraph (CSV): export from app.thestorygraph.com > Manage account > Import/Export > Export STG Library (CSV arrives by email). Bookmory (.bookmory or XLSX): Settings > Backup > Export. Fable / ShelfBridge (CSV): export via the ShelfBridge extension. Book Tracker (CSV): Settings > Export. Lecturameter CSV: exported from another device running Lecturameter. Other apps (Babelio, Pagebound, Bookshelf, Delibrista…): any CSV compatible with the Goodreads/StoryGraph format."}},
-        {"@type":"Question","name":"Is my data mine?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Your data is stored only on your phone. There is no server and nothing is sent without your consent. If you enable Google Drive backup, only you have access to those files."}},
+        {"@type":"Question","name":"Is my data mine?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Your data is stored only on your phone. Your library never leaves your device. The app only sends optional anonymous usage statistics and crash reports, which you can turn off in Settings. If you enable Google Drive backup, only you have access to those files."}},
         {"@type":"Question","name":"Is there a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. The app is free with an optional one-time Pro purchase."}},
         {"@type":"Question","name":"Does it work offline?","acceptedAnswer":{"@type":"Answer","text":"Almost everything works offline. You only need a connection to search for new books and to upload Google Drive backups."}},
         {"@type":"Question","name":"Is there an iPhone version?","acceptedAnswer":{"@type":"Answer","text":"Not yet, Android only for now. If there's enough interest, it would be seriously considered. You can join the waitlist by email."}},
@@ -889,6 +889,23 @@
     </div>
 </section>
 
+<!-- ═══ CATALOG ═══ -->
+<section class="band" id="catalog" aria-labelledby="catalog-title">
+    <span id="catalogo" aria-hidden="true"></span>
+    <div class="container">
+        <h2 id="catalog-title">Where the catalog comes from</h2>
+        <p>When you search for a book, Lecturameter first checks its own catalog: a database of about 37,500 works, with their authors and editions, built only from open sources, mainly <strong>Wikidata</strong> and <strong>Open Library</strong>. If a book isn't there, the app asks Google Books, Open Library and other public catalogs.</p>
+        <ul>
+            <li><strong>Open sources only.</strong> Data that can be legally reused. No dumps from pirate sites.</li>
+            <li><strong>Your library stays on your phone.</strong> The catalog runs on Lecturameter's own server on Cloudflare, and the app only sends it the text you search for or the ISBN you scan.</li>
+            <li><strong>It learns from what's missing.</strong> If a search finds nothing, that text or ISBN is kept, with no identifier, so the missing works can be added.</li>
+            <li><strong>Offline too.</strong> The app ships with a local catalog of about 12,000 works so you can search without internet.</li>
+            <li><strong>Manga and comics.</strong> For these, the app also queries specialized public databases such as AniList or MangaDex.</li>
+        </ul>
+        <p>If you spot wrong data or a missing work, write to <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>. More details in the <a href="./privacidad.html">privacy policy</a>.</p>
+    </div>
+</section>
+
 <!-- 8. FAQ -->
 <section class="band band-alt" id="faq">
     <div class="container">
@@ -912,7 +929,7 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">Is my data mine?</button>
-                <div class="faq-a"><div class="faq-a-inner">Absolutely. Your data is stored only on your phone. There is no server and nothing is sent without your consent. If you enable Google Drive backup, only you have access to those files.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Absolutely. Your data is stored only on your phone. Your library never leaves your device. The app only sends optional anonymous usage statistics and crash reports, which you can turn off in Settings. Details in the <a href="./privacidad.html">privacy policy</a>. If you enable Google Drive backup, only you have access to those files.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Is there a subscription?</button>
