@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('./en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter · Reading Tracker and Reading Timer for Android</title>
     <meta name="description" content="Track your reading time, pages, pace and progress with a private Android reading tracker. No account, no ads. Import from Goodreads and StoryGraph.">
@@ -184,6 +185,7 @@
                     <li><a href="./en/features/reading-tracker/">Reading Tracker</a></li>
                     <li><a href="./en/features/reading-statistics/">Reading Statistics</a></li>
                     <li><a href="./en/features/goodreads-alternative/">Goodreads Alternative</a></li>
+                    <li><a href="./en/features/book-catalog/">Book Catalog</a></li>
                 </ul>
             </li>
             <li><a href="#themes">Themes</a></li>
@@ -392,6 +394,7 @@
                 <a href="./en/features/reading-tracker/">Reading Tracker</a> ·
                 <a href="./en/features/reading-statistics/">Reading Statistics</a> ·
                 <a href="./en/features/goodreads-alternative/">Goodreads Alternative</a>
+                <a href="./en/features/book-catalog/">Book Catalog</a>
             </p>
         </div>
     </div>
@@ -768,23 +771,6 @@
     </div>
 </section>
 
-<!-- ═══ CATALOG ═══ -->
-<section class="band" id="catalog" aria-labelledby="catalog-title">
-    <span id="catalogo" aria-hidden="true"></span>
-    <div class="container">
-        <h2 id="catalog-title">Where the catalog comes from</h2>
-        <p>When you search for a book, Lecturameter first checks its own catalog: a database of about 37,500 works, with their authors and editions, built only from open sources, mainly <strong>Wikidata</strong> and <strong>Open Library</strong>. If a book isn't there, the app asks Google Books, Open Library and other public catalogs.</p>
-        <ul>
-            <li><strong>Open sources only.</strong> Data that can be legally reused. No dumps from pirate sites.</li>
-            <li><strong>Your library stays on your phone.</strong> The catalog runs on Lecturameter's own server on Cloudflare, and the app only sends it the text you search for or the ISBN you scan.</li>
-            <li><strong>It learns from what's missing.</strong> If a search finds nothing, that text or ISBN is kept, with no identifier, so the missing works can be added.</li>
-            <li><strong>Offline too.</strong> The app ships with a local catalog of about 12,000 works so you can search without internet.</li>
-            <li><strong>Manga and comics.</strong> For these, the app also queries specialized public databases such as MangaUpdates, AniList and Kitsu.</li>
-        </ul>
-        <p>If you spot wrong data or a missing work, write to <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>. More details in the <a href="./privacidad.html">privacy policy</a>.</p>
-    </div>
-</section>
-
 <!-- 8. FAQ -->
 <section class="band band-alt" id="faq">
     <div class="container">
@@ -927,6 +913,7 @@
             <a href="./en/features/reading-tracker/">Reading Tracker</a> &middot;
             <a href="./en/features/reading-statistics/">Reading Statistics</a> &middot;
             <a href="./en/features/goodreads-alternative/">Goodreads Alternative</a> &middot;
+            <a href="./en/features/book-catalog/">Book Catalog</a> &middot;
             <a href="./blog/">Blog</a>
         </p>
         <div class="footer-bottom">

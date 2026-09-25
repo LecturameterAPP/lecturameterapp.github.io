@@ -73,6 +73,15 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://lecturameterapp.github.io/en/features/book-catalog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/book-catalog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/catalogo-libros/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/book-catalog/" />
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://lecturameterapp.github.io/en/features/reading-statistics/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/reading-statistics/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/estadisticas-lectura/" />
@@ -107,6 +116,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/goodreads-alternative/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/goodreads-alternative/" />
     <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/funciones/catalogo-libros/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/catalogo-libros/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/book-catalog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/book-catalog/" />
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

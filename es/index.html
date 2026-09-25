@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <script>if(location.hash==='#catalogo'||location.hash==='#catalog')location.replace('./funciones/catalogo-libros/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter · Tracker de lectura y cronómetro para Android</title>
     <meta name="description" content="Registra tu tiempo de lectura, páginas, ritmo y progreso con un tracker privado para Android. Sin cuenta, sin anuncios. Importa tu biblioteca desde Goodreads o StoryGraph.">
@@ -176,6 +177,7 @@
                     <li><a href="./funciones/registro-lectura/">Tracker de lectura</a></li>
                     <li><a href="./funciones/estadisticas-lectura/">Estadísticas de lectura</a></li>
                     <li><a href="./funciones/alternativa-goodreads/">Alternativa a Goodreads</a></li>
+                    <li><a href="./funciones/catalogo-libros/">Catálogo de libros</a></li>
                 </ul>
             </li>
             <li><a href="#temas">Temas</a></li>
@@ -384,6 +386,7 @@
                 <a href="./funciones/registro-lectura/">Registro de lectura</a> ·
                 <a href="./funciones/estadisticas-lectura/">Estadísticas</a> ·
                 <a href="./funciones/alternativa-goodreads/">Alternativa a Goodreads</a>
+                <a href="./funciones/catalogo-libros/">Catálogo de libros</a>
             </p>
         </div>
     </div>
@@ -760,22 +763,6 @@
     </div>
 </section>
 
-<!-- ═══ CATÁLOGO ═══ -->
-<section class="band" id="catalogo" aria-labelledby="catalogo-title">
-    <div class="container">
-        <h2 id="catalogo-title">De dónde sale el catálogo</h2>
-        <p>Cuando buscas un libro, Lecturameter consulta primero su propio catálogo: una base de datos de unas 37.500 obras, con sus autores y ediciones, montada solo con fuentes abiertas, sobre todo <strong>Wikidata</strong> y <strong>Open Library</strong>. Si ahí no está, la app pregunta a Google Books, Open Library y otros catálogos públicos.</p>
-        <ul>
-            <li><strong>Solo fuentes abiertas.</strong> Datos que se pueden reutilizar legalmente. Nada de volcados de webs piratas.</li>
-            <li><strong>Tu biblioteca no sale de tu móvil.</strong> El catálogo vive en un servidor propio en Cloudflare y la app solo le envía el texto que buscas o el ISBN que escaneas.</li>
-            <li><strong>Aprende de lo que falta.</strong> Si una búsqueda no encuentra nada, se guarda ese texto o ISBN, sin ningún identificador, para añadir las obras que faltan.</li>
-            <li><strong>También sin conexión.</strong> La app lleva dentro un catálogo local de unas 12.000 obras para buscar sin internet.</li>
-            <li><strong>Manga y cómics.</strong> Para estos se consultan además bases públicas especializadas, como MangaUpdates, AniList y Kitsu.</li>
-        </ul>
-        <p>Si ves un dato mal o echas en falta una obra, escríbeme a <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>. Más detalle en la <a href="../privacidad.html">política de privacidad</a>.</p>
-    </div>
-</section>
-
 <!-- ═══ 8. FAQ ═══ -->
 <section class="band band-alt" id="faq">
     <div class="container">
@@ -918,6 +905,7 @@
             <a href="./funciones/registro-lectura/">Tracker</a> &middot;
             <a href="./funciones/estadisticas-lectura/">Estadísticas</a> &middot;
             <a href="./funciones/alternativa-goodreads/">Alternativa a Goodreads</a> &middot;
+            <a href="./funciones/catalogo-libros/">Catálogo de libros</a> &middot;
             <a href="./blog/">Blog</a>
         </p>
         <div class="footer-bottom">

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De dónde sale el catálogo de libros · Lecturameter</title>
+    <meta name="description" content="Cómo encuentra libros Lecturameter: catálogo propio de 37.500 obras de Wikidata y Open Library, más Google Books y otras APIs públicas. Privado, con búsqueda offline.">
+    <meta property="og:title" content="De dónde sale el catálogo de libros · Lecturameter">
+    <meta property="og:description" content="37.500 obras de fuentes abiertas. Busca online u offline. Privado por diseño.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lecturameterapp.github.io/es/funciones/catalogo-libros/">
+    <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Catálogo de libros Lecturameter para Android">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="De dónde sale el catálogo de libros · Lecturameter">
+    <meta name="twitter:description" content="37.500 obras de fuentes abiertas. Busca online u offline. Privado por diseño.">
+    <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#121212">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon-16x16.png">
+    <link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
+    <link rel="manifest" href="../../../site.webmanifest">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+
+    <link rel="canonical" href="https://lecturameterapp.github.io/es/funciones/catalogo-libros/">
+    <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/catalogo-libros/">
+    <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/book-catalog/">
+    <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/book-catalog/">
+    <link rel="stylesheet" href="../../../styles.css?v=6.1">
+    <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
+    <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Lecturameter",
+      "url": "https://lecturameterapp.github.io/es/funciones/catalogo-libros/",
+      "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
+      "description": "Catálogo de libros de Lecturameter: 37.500 obras de Wikidata y Open Library, con búsqueda offline.",
+      "applicationCategory": "BookApplication",
+      "operatingSystem": "Android",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+</head>
+<body>
+
+<!-- PROMO BAR -->
+<div id="promo-bar" class="promo-bar">
+    <span class="promo-pill">GRATIS</span>
+    <span>Lecturameter es gratis para siempre · Sin anuncios</span>
+    <button class="promo-close" aria-label="Cerrar" onclick="dismissPromo()">&#xd7;</button>
+</div>
+
+<nav class="nav-bar">
+    <div class="nav-inner">
+        <a href="../../../es/" class="nav-brand">
+            <img src="../../../ic_launcher_round.png" alt="Lecturameter" width="28" height="28">
+            Lecturameter
+        </a>
+        <ul class="nav-pills">
+            <li class="has-dropdown">
+                <a href="../../../es/#funciones">Funciones <span class="caret" aria-hidden="true">&#x25be;</span></a>
+                <ul class="nav-dropdown">
+                    <li><a href="../cronometro-lectura/">Cronómetro de lectura</a></li>
+                    <li><a href="../registro-lectura/">Tracker de lectura</a></li>
+                    <li><a href="../estadisticas-lectura/">Estadísticas de lectura</a></li>
+                    <li><a href="../alternativa-goodreads/">Alternativa a Goodreads</a></li>
+                    <li><a href="../catalogo-libros/">Catálogo de libros</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../es/#temas">Temas</a></li>
+            <li><a href="../../../es/#precios">Pro</a></li>
+            <li><a href="../../../es/#novedades">Notas de Parche</a></li>
+            <li><a href="../../../es/#historial">Historial</a></li>
+            <li><a href="../../../es/#roadmap">Roadmap</a></li>
+            <li><a href="../../../es/#faq">FAQ</a></li>
+            <li><a href="../../lecturameter-1999/">1999</a></li>
+            <li><a href="../../../es/blog/">Blog</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button class="nav-theme-btn" aria-label="Cambiar tema">&#x263e;</button>
+            <a href="../../../en/features/book-catalog/" class="nav-lang-btn">EN</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M5 3l14 9-14 9V3z"/></svg>
+                Descargar
+            </a>
+        </div>
+        <button class="nav-hamburger" aria-label="Menu">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+    </div>
+</nav>
+
+<main class="subpage-body">
+<section class="band band-hero">
+    <div class="container">
+        <div class="hero" style="grid-template-columns:1fr;">
+            <div class="hero-copy" style="max-width:820px;margin:0 auto;text-align:center;">
+                <p class="hero-eyebrow reveal-up in-view">Función</p>
+                <h1 class="reveal-up in-view d1">De dónde sale el <span class="grad">catálogo de libros</span></h1>
+                <p class="hero-tagline reveal-up in-view d2" style="margin-left:auto;margin-right:auto;">37.500 obras de fuentes abiertas. Busca online u offline. Privado por diseño.</p>
+                <div class="hero-cta reveal-up in-view d3" style="justify-content:center;">
+                    <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Descargar en Google Play</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:820px;">
+        <p>Cuando buscas un libro, Lecturameter consulta primero su propio catálogo: una base de datos de unas 37.500 obras, con sus autores y ediciones, montada solo con fuentes abiertas, sobre todo <strong>Wikidata</strong> y <strong>Open Library</strong>. Si ahí no está, la app pregunta a Google Books, Open Library y otros catálogos públicos.</p>
+        <ul>
+            <li><strong>Solo fuentes abiertas.</strong> Datos que se pueden reutilizar legalmente. Nada de volcados de webs piratas.</li>
+            <li><strong>Tu biblioteca no sale de tu móvil.</strong> El catálogo vive en un servidor propio en Cloudflare y la app solo le envía el texto que buscas o el ISBN que escaneas.</li>
+            <li><strong>Aprende de lo que falta.</strong> Si una búsqueda no encuentra nada, se guarda ese texto o ISBN, sin ningún identificador, para añadir las obras que faltan.</li>
+            <li><strong>También sin conexión.</strong> La app lleva dentro un catálogo local de unas 12.000 obras para buscar sin internet.</li>
+            <li><strong>Manga y cómics.</strong> Para estos se consultan además bases públicas especializadas, como MangaUpdates, AniList y Kitsu.</li>
+        </ul>
+        <p>Si ves un dato mal o echas en falta una obra, escríbeme a <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>. Más detalle en la <a href="../../../privacidad.html">política de privacidad</a>.</p>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container" style="text-align:center;">
+        <div class="section-head"><h2><span class="grad">Pruébalo</span> en Android</h2></div>
+        <p><a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Descargar en Google Play</a></p>
+        <p style="margin-top:1.5rem;font-size:0.95em;opacity:0.85;">
+            Ver también:
+            <a href="../cronometro-lectura/">Cronómetro</a> &middot;
+            <a href="../registro-lectura/">Tracker</a> &middot;
+            <a href="../estadisticas-lectura/">Estadísticas</a> &middot;
+            <a href="../alternativa-goodreads/">Alternativa a Goodreads</a> &middot;
+            <a href="../catalogo-libros/">Catálogo de libros</a> &middot;
+            <a href="../../../es/blog/">Blog</a>
+        </p>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <span>&copy; 2026 Lecturameter &middot; Proyecto independiente</span>
+            <a href="../../../es/">Inicio</a>
+        </div>
+    </div>
+</footer>
+
+<script src="../../../main.js?v=5.4" defer></script>
+</body>
+</html>
