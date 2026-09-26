@@ -2,13 +2,27 @@
   "notesVersion": 5,
   "es": {
     "new": [
-      "Traducciones completadas: la app ya aparece entera en tu idioma."
+      "Lecturameter ya está disponible en iPhone",
+      "Vista Sagas: tus libros, cómics, manga y audiolibros agrupados por saga, con la saga que se rellena sola al añadir",
+      "Resumen mensual con tarjeta para compartir y \"Tu libro de cada mes\" en el Wrapped",
+      "Mis cards: todas las tarjetas que has compartido, en un sitio",
+      "Widgets de retos y de bingo",
+      "Añade varios libros de golpe desde la búsqueda",
+      "Filtros avanzados en la Biblioteca",
+      "Créditos por edición: narradores, traductores e ilustradores"
     ],
     "fixes": []
   },
   "en": {
     "new": [
-      "Translations completed: the app now shows fully in your language."
+      "Lecturameter is now available on iPhone",
+      "Series view: your books, comics, manga and audiobooks grouped by series, filled in automatically when you add them",
+      "Monthly recap with a shareable card, plus \"Your book of each month\" in Wrapped",
+      "My cards: every card you've shared, in one place",
+      "Challenge and bingo widgets",
+      "Add several books at once from search",
+      "Advanced filters in the Library",
+      "Credits per edition: narrators, translators and illustrators"
     ],
     "fixes": []
   }
