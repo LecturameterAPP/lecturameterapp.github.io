@@ -149,18 +149,18 @@ html.promo-dismissed .promo-bar { transform: translateY(-100%); pointer-events: 
     left: 0;
     right: 0;
     z-index: 100;
-    background: rgba(13, 20, 36, 0.88);
+    background: #0d1424;
     border-bottom: 1px solid var(--line);
     transition: background 0.3s, top 0.25s;
 }
 html.promo-dismissed .nav-bar { top: 0; }
 [data-theme="light"] .nav-bar,
 :root:not([data-theme="dark"]) .nav-bar {
-    background: rgba(245, 241, 232, 0.88);
+    background: #F5F1E8;
 }
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) .nav-bar {
-        background: rgba(13, 20, 36, 0.88);
+        background: #0d1424;
     }
 }
 .nav-inner {
@@ -334,6 +334,9 @@ html.startupbar-active.promo-dismissed body { padding-top: 84px; }
     justify-content: center;
     padding: 12px 0;
 }
+.hero-visual::after {
+    display: none;
+}
 .phone-wrap { position: relative; width: min(270px, 80%); }
 .phone {
     width: 100%;
@@ -463,11 +466,7 @@ html.startupbar-active.promo-dismissed body { padding-top: 84px; }
     overflow: hidden;
 }
 .band-accent::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06) 50%, transparent);
-    pointer-events: none;
+    display: none;
 }
 .band-accent .accent-quote {
     font-size: clamp(18px, 2.5vw, 24px);
@@ -1512,9 +1511,7 @@ html:not([data-theme="light"]) .tag-free {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: rgba(0,0,0,0.55);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.72);
     border: 1px solid rgba(255,255,255,0.15);
     color: #fff;
     cursor: pointer;
@@ -1669,7 +1666,6 @@ html:not([data-theme="light"]) .tag-free {
 @media (max-width: 480px) { .lm99-grid { grid-template-columns: 1fr; } }
 
 /* ─── DETAILS (iOS differences, 1999) ─── */
-/* === iOS/Android differences section === */
 .differences { background: var(--bg); }
 .differences h2 { margin-bottom: 0.5rem; }
 .differences > .container > p { margin-bottom: 1.25rem; opacity: 0.85; }
@@ -1724,3 +1720,8 @@ html:not([data-theme="light"]) .tag-free {
   cursor: default;
   pointer-events: none;
 }
+
+/* ─── WIDGETS 3.7 ─── */
+.widgets-37 { grid-template-columns: 1fr 1fr; max-width: 800px; margin: 32px auto 0; }
+.widgets-37 .grid-card-media { height: 320px; padding: 16px; background: var(--bg-soft); display: flex; align-items: center; justify-content: center; }
+.widgets-37 .grid-card-media img { max-height: 100%; width: auto; max-width: 100%; object-fit: contain; }

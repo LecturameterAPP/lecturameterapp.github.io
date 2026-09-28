@@ -40,6 +40,7 @@
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
     <link rel="stylesheet" href="./styles.css?v=6.4">
+
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 
@@ -109,7 +110,7 @@
 <!-- PROMO BAR -->
 <div id="promo-bar" class="promo-bar">
     <span class="promo-pill">FREE</span>
-    <span>Lecturameter is free forever · No ads</span>
+    <span>Lecturameter is free forever</span>
     <button class="promo-close" aria-label="Close" onclick="dismissPromo()">×</button>
 </div>
 
@@ -132,6 +133,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Themes</a></li>
+            <li><a href="#monthly">Monthly recap</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">Patch notes</a></li>
             <li><a href="#history">History</a></li>
@@ -389,7 +391,7 @@
             <div class="widget-stack">
                 <div class="grid-card grid-card-hz">
                     <div class="grid-card-media">
-                        <img src="./capturas%20para%20v3/widget%20libro%20en%20claro.png" alt="Book widget" loading="lazy" width="1440" height="452" data-lbx="./capturas%20para%20v3/widget%20libro%20en%20claro.png" data-src-dark="./capturas%20para%20v3/widget_libro_en.png">
+                        <img src="./capturas%20para%20v3/widget_libro_claro_en.png" alt="Book widget" loading="lazy" width="1384" height="406" data-lbx="./capturas%20para%20v3/widget_libro_claro_en.png">
                     </div>
                     <div class="grid-card-body">
                         <h3>Book widget <span class="tag-free">Free</span></h3>
@@ -402,7 +404,7 @@
                 </div>
                 <div class="grid-card grid-card-hz">
                     <div class="grid-card-media">
-                        <img src="./capturas%20para%20v3/widget%20pro%20claro%20en.png" alt="Monthly comparison widget" loading="lazy" width="1440" height="968" data-lbx="./capturas%20para%20v3/widget%20pro%20claro%20en.png" data-src-dark="./capturas%20para%20v3/widget_pro_en.png">
+                        <img src="./capturas%20para%20v3/widget_pro_claro_en.png" alt="Monthly comparison widget" loading="lazy" width="1384" height="870" data-lbx="./capturas%20para%20v3/widget_pro_claro_en.png">
                     </div>
                     <div class="grid-card-body">
                         <h3>Monthly comparison <span class="pro-tag">Pro</span></h3>
@@ -414,8 +416,54 @@
     </div>
 </section>
 
+<!-- 3.5 MONTHLY RECAP + PRO WIDGETS (3.7) -->
+<section class="band band-alt" id="monthly">
+    <div class="container">
+        <div class="section-head">
+            <h2>Your month, summed up</h2>
+            <p>New in 3.7: a monthly recap you can share, and two new Pro widgets for your home screen.</p>
+        </div>
+        <div class="showcase reveal-up">
+            <div class="shot">
+                <div class="phone">
+                    <img src="./capturas%20para%20v3/screen_monthly_claro_en.jpg" alt="Monthly recap" loading="lazy" width="1080" height="2174" data-lbx="./capturas%20para%20v3/screen_monthly_claro_en.jpg">
+                </div>
+            </div>
+            <div class="info">
+                <h3>Monthly recap</h3>
+                <p>When a month ends, Lecturameter sums it up: pages, time, books finished, your pace day by day and your book of the month.</p>
+                <ul>
+                    <li>Pages per day: tap or drag over the chart to see any day</li>
+                    <li>Your book of the month</li>
+                    <li>Shareable card, kept in My cards with everything else you share</li>
+                    <li>"Your book of each month" also shows up in the yearly Wrapped</li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-cards widgets-37">
+            <div class="grid-card">
+                <div class="grid-card-media">
+                    <img src="./capturas%20para%20v3/widget_retos_claro_en.png" alt="Challenges widget" loading="lazy" width="1096" height="408" data-lbx="./capturas%20para%20v3/widget_retos_claro_en.png">
+                </div>
+                <div class="grid-card-body">
+                    <h3>Challenges widget <span class="pro-tag">Pro</span></h3>
+                    <p>Your active challenges and their progress on the home screen. Pick which ones to show from the Challenges screen.</p>
+                </div>
+            </div>
+            <div class="grid-card">
+                <div class="grid-card-media">
+                    <img src="./capturas%20para%20v3/widget_bingo_claro_en.png" alt="Bingo widget" loading="lazy" width="1096" height="1797" data-lbx="./capturas%20para%20v3/widget_bingo_claro_en.png">
+                </div>
+                <div class="grid-card-body">
+                    <h3>Bingo widget <span class="pro-tag">Pro</span></h3>
+                    <p>This month's bingo card, always in view, with the squares you've completed and the lines you've made.</p>
+                </div>
+            </div>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
-<section class="band band-alt" id="themes">
+<section class="band" id="themes">
     <div class="container">
         <div class="section-head">
             <h2>Meet Pagi and pick your style</h2>
@@ -495,7 +543,7 @@
 </section>
 
 <!-- 5. FREE vs PRO -->
-<section class="band" id="pricing">
+<section class="band band-alt" id="pricing">
     <div class="container">
         <div class="section-head">
             <h2>Free forever. Pro if you want more.</h2>
@@ -574,7 +622,7 @@
 </section>
 
 <!-- 6. PATCH NOTES -->
-<section class="band band-alt" id="whatsnew">
+<section class="band" id="whatsnew">
     <div class="container">
         <div class="section-head">
             <h2>Patch notes v3.6</h2>
@@ -614,7 +662,7 @@
 </section>
 
 <!-- 7. ROADMAP -->
-<section class="band" id="roadmap">
+<section class="band band-alt" id="roadmap">
     <div class="container">
         <div class="section-head">
             <h2>What's coming in Lecturameter 3.7</h2>
@@ -666,7 +714,7 @@
 </section>
 
 <!-- 7.5 iOS WAITLIST -->
-<section class="band ios-band" id="ios">
+<section class="band band-alt ios-band" id="ios">
     <div class="container">
         <div class="section-head">
             <h2>Coming to iOS</h2>
@@ -691,7 +739,7 @@
 </section>
 
 <!-- 7.6 iOS DIFFERENCES -->
-<section class="band differences" id="ios-differences" aria-labelledby="differences-title">
+<section class="band band-alt differences" id="ios-differences" aria-labelledby="differences-title">
     <div class="container">
         <h2 id="differences-title">Coming to iOS</h2>
         <p>Lecturameter is coming to iOS with the same features as Android: library, reading timer, statistics, challenges, bingo, Pagi and all five visual themes. 7-day trial, no card, no account.</p>
@@ -737,7 +785,7 @@
 </section>
 
 <!-- 8. FAQ -->
-<section class="band band-alt" id="faq">
+<section class="band" id="faq">
     <div class="container">
         <div class="section-head faq-head">
             <h2>Frequently asked questions</h2>
@@ -790,7 +838,7 @@
 </section>
 
 <!-- VERSION HISTORY -->
-<section class="band" id="history">
+<section class="band band-alt" id="history">
     <div class="container">
         <div class="section-head">
             <h2>Version history</h2>
