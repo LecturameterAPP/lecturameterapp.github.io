@@ -274,10 +274,7 @@ html.startupbar-active.promo-dismissed body { padding-top: 84px; }
 }
 .hero h1 .grad,
 .grad {
-    background: linear-gradient(90deg, var(--accent-text), var(--accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--accent-text);
 }
 .hero-tagline {
     font-size: 17px;
@@ -1670,3 +1667,60 @@ html:not([data-theme="light"]) .tag-free {
 .lm99-cta { text-align: center; margin-top: 28px; font-size: 1.05em; }
 @media (max-width: 960px) { .lm99-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .lm99-grid { grid-template-columns: 1fr; } }
+
+/* ─── DETAILS (iOS differences, 1999) ─── */
+/* === iOS/Android differences section === */
+.differences { background: var(--bg); }
+.differences h2 { margin-bottom: 0.5rem; }
+.differences > .container > p { margin-bottom: 1.25rem; opacity: 0.85; }
+.differences-details {
+  border: 1px solid rgba(128,128,128,0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.differences-details summary {
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+}
+.differences-details summary::-webkit-details-marker { display: none; }
+.differences-details summary::before {
+  content: '▶';
+  font-size: 0.7em;
+  transition: transform 0.25s ease;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.differences-details[open] summary::before { transform: rotate(90deg); }
+.differences-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1.25rem;
+  border-top: 1px solid rgba(128,128,128,0.15);
+}
+.differences-grid h3 {
+  font-size: 0.92rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.differences-grid ul { padding-left: 1.25rem; margin: 0; }
+.differences-grid li { margin-bottom: 0.5rem; font-size: 0.9rem; opacity: 0.9; }
+@media (max-width: 640px) {
+  .differences-grid { grid-template-columns: 1fr; }
+}
+.btn-appstore-soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  opacity: 0.45;
+  cursor: default;
+  pointer-events: none;
+}
