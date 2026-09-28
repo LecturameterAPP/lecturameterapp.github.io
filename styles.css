@@ -1721,6 +1721,11 @@ html:not([data-theme="light"]) .tag-free {
   pointer-events: none;
 }
 
+/* Monthly comparison widget: taller image ratio — remove height cap, let card grow */
+.grid-card-hz .grid-card-media img.widget-pro-img { max-height: none; }
+.grid-card-hz:has(.widget-pro-img) { flex: 0 0 auto; overflow: visible; }
+.grid-card-hz:has(.widget-pro-img) .grid-card-media { overflow: visible; height: auto; }
+
 /* ─── WIDGETS 3.7 ─── */
 .widget-stack.widget-row { grid-column: 1 / -1; flex-direction: row; }
 .widget-stack.widget-row .grid-card { flex: 1 1 0; }
