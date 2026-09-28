@@ -98,11 +98,7 @@ a:hover { text-decoration: underline; }
 .band { padding: 64px 0; }
 .band-alt { background: var(--bg-soft); }
 .band-hero {
-    background:
-        radial-gradient(1400px 700px at 78% -8%, var(--accent-glow), transparent 55%),
-        radial-gradient(1000px 600px at -6% 24%, var(--accent-soft), transparent 50%),
-        radial-gradient(600px 400px at 50% 100%, var(--accent-soft), transparent 60%),
-        var(--bg);
+    background: var(--bg);
     padding: 56px 0 64px;
 }
 
@@ -154,8 +150,6 @@ html.promo-dismissed .promo-bar { transform: translateY(-100%); pointer-events: 
     right: 0;
     z-index: 100;
     background: rgba(13, 20, 36, 0.88);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--line);
     transition: background 0.3s, top 0.25s;
 }
@@ -342,19 +336,6 @@ html.startupbar-active.promo-dismissed body { padding-top: 84px; }
     display: flex;
     justify-content: center;
     padding: 12px 0;
-}
-.hero-visual::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 320px;
-    height: 80px;
-    background: radial-gradient(ellipse, var(--accent-glow), transparent 65%);
-    filter: blur(28px);
-    z-index: 1;
-    pointer-events: none;
 }
 .phone-wrap { position: relative; width: min(270px, 80%); }
 .phone {
@@ -551,7 +532,7 @@ html:not([data-theme="dark"]) .theme-pill.active { color: #fff; }
 .ios-captcha-row .ios-captcha-input:focus { outline: none; border-color: #41755A; }
 
 /* ─── SUB-PAGES (privacy / contact / precios-regionales) ─── */
-.topbar { background: var(--bg-soft, #131b30); border-bottom: 1px solid var(--line, rgba(255,255,255,0.08)); padding: 12px 20px; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); }
+.topbar { background: var(--bg-soft, #131b30); border-bottom: 1px solid var(--line, rgba(255,255,255,0.08)); padding: 12px 20px; position: sticky; top: 0; z-index: 100; }
 .topbar-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text-strong, #fff); text-decoration: none; font-size: 16px; }
 .brand img { width: 32px; height: 32px; border-radius: 8px; }
