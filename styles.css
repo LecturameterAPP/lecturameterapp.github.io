@@ -1722,6 +1722,7 @@ html:not([data-theme="light"]) .tag-free {
 }
 
 /* ─── WIDGETS 3.7 ─── */
-.widgets-37 { grid-template-columns: 1fr 1fr; max-width: 800px; margin: 32px auto 0; }
-.widgets-37 .grid-card-media { height: 320px; padding: 16px; background: var(--bg-soft); display: flex; align-items: center; justify-content: center; }
-.widgets-37 .grid-card-media img { max-height: 100%; width: auto; max-width: 100%; object-fit: contain; }
+.widget-stack.widget-row { grid-column: 1 / -1; flex-direction: row; }
+.widget-stack.widget-row .grid-card { flex: 1 1 0; }
+.widget-stack.widget-row .grid-card-hz .grid-card-media img { width: 100%; max-height: 300px; }
+@media (max-width: 960px) { .widget-stack.widget-row { flex-direction: column; } }
