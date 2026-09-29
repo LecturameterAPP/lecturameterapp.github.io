@@ -10,8 +10,7 @@
       "Añade varios libros de golpe desde la búsqueda",
       "Vista previa al importar un CSV de Goodreads o StoryGraph: qué libros son nuevos, cuáles ya tienes y cuáles conviene revisar",
       "Filtros avanzados en la Biblioteca",
-      "Créditos por edición: narradores, traductores e ilustradores",
-      "Aviso si dejas el cronómetro en pausa: un pitido o una vibración, también con el móvil en silencio"
+      "Créditos por edición: narradores, traductores e ilustradores"
     ],
     "fixes": []
   },
@@ -25,8 +24,7 @@
       "Add several books at once from search",
       "Preview when importing a Goodreads or StoryGraph CSV: which books are new, which you already have and which need a look",
       "Advanced filters in the Library",
-      "Credits per edition: narrators, translators and illustrators",
-      "Reminder when you leave the timer paused: a beep or a vibration, even with your phone on silent"
+      "Credits per edition: narrators, translators and illustrators"
     ],
     "fixes": []
   }
