@@ -8,8 +8,10 @@
       "Mis cards: todas las tarjetas que has compartido, en un sitio",
       "Widgets de retos y de bingo",
       "Añade varios libros de golpe desde la búsqueda",
+      "Vista previa al importar un CSV de Goodreads o StoryGraph: qué libros son nuevos, cuáles ya tienes y cuáles conviene revisar",
       "Filtros avanzados en la Biblioteca",
-      "Créditos por edición: narradores, traductores e ilustradores"
+      "Créditos por edición: narradores, traductores e ilustradores",
+      "Aviso si dejas el cronómetro en pausa: un pitido o una vibración, también con el móvil en silencio"
     ],
     "fixes": []
   },
@@ -21,8 +23,10 @@
       "My cards: every card you've shared, in one place",
       "Challenge and bingo widgets",
       "Add several books at once from search",
+      "Preview when importing a Goodreads or StoryGraph CSV: which books are new, which you already have and which need a look",
       "Advanced filters in the Library",
-      "Credits per edition: narrators, translators and illustrators"
+      "Credits per edition: narrators, translators and illustrators",
+      "Reminder when you leave the timer paused: a beep or a vibration, even with your phone on silent"
     ],
     "fixes": []
   }
