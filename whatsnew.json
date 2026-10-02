@@ -1,31 +1,51 @@
 {
-  "notesVersion": 5,
+  "notesVersion": 6,
   "es": {
     "new": [
       "Lecturameter ya está disponible en iPhone",
-      "Vista Sagas: tus libros, cómics, manga y audiolibros agrupados por saga, con la saga que se rellena sola al añadir",
+      "Cómics, manga y audiolibros como libros de primera: añádelos a mano en un solo formulario o varios de golpe, y comparte la tarjeta de tus audiolibros",
+      "Trae tu biblioteca desde otra app (Goodreads, StoryGraph, Bookmory, Fable) con vista previa",
+      "Vista Sagas: tus libros agrupados por saga, con la saga que se rellena sola al añadir",
       "Resumen mensual con tarjeta para compartir y \"Tu libro de cada mes\" en el Wrapped",
+      "Evolución lectora en Estadísticas",
       "Mis cards: todas las tarjetas que has compartido, en un sitio",
       "Widgets de retos y de bingo",
       "Añade varios libros de golpe desde la búsqueda",
-      "Vista previa al importar un CSV de Goodreads o StoryGraph: qué libros son nuevos, cuáles ya tienes y cuáles conviene revisar",
       "Filtros avanzados en la Biblioteca",
-      "Créditos por edición: narradores, traductores e ilustradores"
+      "Créditos por edición: narradores, traductores e ilustradores",
+      "Pro vale en hasta 3 dispositivos, Android e iOS"
     ],
-    "fixes": []
+    "fixes": [
+      "Al borrar varios libros hay un solo Deshacer",
+      "Los textos nombran el tipo: libro, cómic, manga o audiolibro",
+      "La fila de estrellas ya no puntúa al desplazar la pantalla",
+      "Las notas largas se ven enteras",
+      "Fechas y errores de copia de seguridad en el idioma de la app",
+      "Restaurar desde Drive ya no coge el archivo equivocado"
+    ]
   },
   "en": {
     "new": [
       "Lecturameter is now available on iPhone",
-      "Series view: your books, comics, manga and audiobooks grouped by series, filled in automatically when you add them",
+      "Comics, manga and audiobooks as first-class items: add them in one manual form or several at once, and share your audiobook card",
+      "Bring your library from another app (Goodreads, StoryGraph, Bookmory, Fable) with a preview",
+      "Series view: your books grouped by series, filled in automatically when you add them",
       "Monthly recap with a shareable card, plus \"Your book of each month\" in Wrapped",
+      "Reading evolution in Statistics",
       "My cards: every card you've shared, in one place",
       "Challenge and bingo widgets",
       "Add several books at once from search",
-      "Preview when importing a Goodreads or StoryGraph CSV: which books are new, which you already have and which need a look",
       "Advanced filters in the Library",
-      "Credits per edition: narrators, translators and illustrators"
+      "Credits per edition: narrators, translators and illustrators",
+      "Pro works on up to 3 devices, Android and iOS"
     ],
-    "fixes": []
+    "fixes": [
+      "Deleting several books gives a single Undo",
+      "Texts now name the type: book, comic, manga or audiobook",
+      "The star row no longer rates while you scroll",
+      "Long notes are shown in full",
+      "Dates and backup errors in the app language",
+      "Restoring from Drive no longer picks the wrong file"
+    ]
   }
 }
