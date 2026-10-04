@@ -1,5 +1,5 @@
 {
-  "notesVersion": 6,
+  "notesVersion": 7,
   "es": {
     "new": [
       "Lecturameter llega a iPhone en beta: pruébala con TestFlight en testflight.apple.com/join/WAkrkgPq (si aún no te aparece, espera un rato)",
@@ -21,7 +21,8 @@
       "La fila de estrellas ya no puntúa al desplazar la pantalla",
       "Las notas largas se ven enteras",
       "Fechas y errores de copia de seguridad en el idioma de la app",
-      "Restaurar desde Drive ya no coge el archivo equivocado"
+      "Restaurar desde Drive ya no coge el archivo equivocado",
+      "Se evita un cierre inesperado al tocar un enlace de autor en algunas situaciones"
     ]
   },
   "en": {
@@ -45,7 +46,8 @@
       "The star row no longer rates while you scroll",
       "Long notes are shown in full",
       "Dates and backup errors in the app language",
-      "Restoring from Drive no longer picks the wrong file"
+      "Restoring from Drive no longer picks the wrong file",
+      "Prevented a crash when tapping an author link in some situations"
     ]
   }
 }
