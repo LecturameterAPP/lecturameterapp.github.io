@@ -1,0 +1,31 @@
+{
+  "notesVersion": 9,
+  "es": {
+    "new": [
+      "Las copias de seguridad guardan también tus etiquetas y recordatorios",
+      "Guarda una sesión de lectura solo con el tiempo, sin poner páginas",
+      "Ayuda (?) de Pagi en cada campo de un libro",
+      "¿Quieres probar la beta de iPhone? Manda el email que usas en Apple a lecturameter.app@gmail.com"
+    ],
+    "fixes": [
+      "Evitados cierres inesperados al abrir la app, en el escáner, al comprar Pro, en algunos widgets y en el cronómetro",
+      "Avisos de Importar y Exportar más claros",
+      "Arreglado un número confuso en la búsqueda de cómics y manga",
+      "Textos que salían en otro idioma ya aparecen traducidos"
+    ]
+  },
+  "en": {
+    "new": [
+      "Backups now also save your tags and reminders",
+      "Save a reading session with just the time, no pages needed",
+      "Pagi's (?) help on every field of a book",
+      "Want to try the iPhone beta? Send the email you use with Apple to lecturameter.app@gmail.com"
+    ],
+    "fixes": [
+      "Prevented unexpected closes when opening the app, in the scanner, when buying Pro, in some widgets and in the timer",
+      "Clearer Import and Export messages",
+      "Fixed a confusing number in comic and manga search",
+      "Texts that appeared in another language are now translated"
+    ]
+  }
+}
