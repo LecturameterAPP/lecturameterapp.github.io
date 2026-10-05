@@ -1,5 +1,5 @@
 {
-  "notesVersion": 7,
+  "notesVersion": 8,
   "es": {
     "new": [
       "Lecturameter llega a iPhone en beta: pruébala con TestFlight en testflight.apple.com/join/WAkrkgPq (si aún no te aparece, espera un rato)",
@@ -13,7 +13,8 @@
       "Añade varios libros de golpe desde la búsqueda",
       "Filtros avanzados en la Biblioteca",
       "Créditos por edición: narradores, traductores e ilustradores",
-      "Pro vale en hasta 3 dispositivos, Android e iOS"
+      "Pro vale en hasta 3 dispositivos, Android e iOS",
+      "Las copias de seguridad ahora guardan también tus etiquetas y recordatorios"
     ],
     "fixes": [
       "Al borrar varios libros hay un solo Deshacer",
@@ -22,7 +23,11 @@
       "Las notas largas se ven enteras",
       "Fechas y errores de copia de seguridad en el idioma de la app",
       "Restaurar desde Drive ya no coge el archivo equivocado",
-      "Se evita un cierre inesperado al tocar un enlace de autor en algunas situaciones"
+      "Se evita un cierre inesperado al tocar un enlace de autor en algunas situaciones",
+      "Avisos de Importar y Exportar más claros",
+      "Se evita un cierre inesperado del cronómetro en segundo plano",
+      "Se evitan cierres inesperados al comprar Pro y en algunos widgets",
+      "Arreglado un número confuso en los resultados de búsqueda de cómics y manga"
     ]
   },
   "en": {
@@ -38,7 +43,8 @@
       "Add several books at once from search",
       "Advanced filters in the Library",
       "Credits per edition: narrators, translators and illustrators",
-      "Pro works on up to 3 devices, Android and iOS"
+      "Pro works on up to 3 devices, Android and iOS",
+      "Backups now also save your tags and reminders"
     ],
     "fixes": [
       "Deleting several books gives a single Undo",
@@ -47,7 +53,11 @@
       "Long notes are shown in full",
       "Dates and backup errors in the app language",
       "Restoring from Drive no longer picks the wrong file",
-      "Prevented a crash when tapping an author link in some situations"
+      "Prevented a crash when tapping an author link in some situations",
+      "Clearer Import and Export messages",
+      "Prevented an unexpected close of the timer in the background",
+      "Prevented unexpected closes when buying Pro and in some widgets",
+      "Fixed a confusing number in comic and manga search results"
     ]
   }
 }
