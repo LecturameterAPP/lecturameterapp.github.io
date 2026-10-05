@@ -14,7 +14,8 @@
       "Filtros avanzados en la Biblioteca",
       "Créditos por edición: narradores, traductores e ilustradores",
       "Pro vale en hasta 3 dispositivos, Android e iOS",
-      "Las copias de seguridad ahora guardan también tus etiquetas y recordatorios"
+      "Las copias de seguridad ahora guardan también tus etiquetas y recordatorios",
+      "Ya puedes guardar una sesión de lectura sin poner páginas, solo con el tiempo (útil si lees en digital)"
     ],
     "fixes": [
       "Al borrar varios libros hay un solo Deshacer",
@@ -44,7 +45,8 @@
       "Advanced filters in the Library",
       "Credits per edition: narrators, translators and illustrators",
       "Pro works on up to 3 devices, Android and iOS",
-      "Backups now also save your tags and reminders"
+      "Backups now also save your tags and reminders",
+      "You can now save a reading session without pages, just the time (handy if you read digitally)"
     ],
     "fixes": [
       "Deleting several books gives a single Undo",
