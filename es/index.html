@@ -89,10 +89,10 @@
         {"@type":"Question","name":"¿Mis datos son míos?","acceptedAnswer":{"@type":"Answer","text":"Totalmente. Tus datos se almacenan solo en tu móvil. Tu biblioteca nunca sale de tu dispositivo. La app envía estadísticas anónimas de uso y reportes de fallos, que puedes desactivar en Ajustes. Además, si una búsqueda no encuentra nada, se guarda ese texto o ISBN, sin ningún identificador, para añadir las obras que faltan. Si activas el backup en Google Drive, solo tú tienes acceso a esos archivos."}},
         {"@type":"Question","name":"¿Tiene suscripción?","acceptedAnswer":{"@type":"Answer","text":"No. La app es gratuita con opción Pro de pago único. No hay suscripciones."}},
         {"@type":"Question","name":"¿Funciona sin conexión?","acceptedAnswer":{"@type":"Answer","text":"Casi todo funciona offline. Solo necesitas conexión para buscar libros nuevos y para subir backups a Google Drive."}},
-        {"@type":"Question","name":"¿Hay versión para iPhone?","acceptedAnswer":{"@type":"Answer","text":"No, de momento solo Android. Si hay suficiente interés, se estudiaría. Puedes apuntarte a la lista de espera por email."}},
-        {"@type":"Question","name":"¿Puedo probarlo antes de pagar?","acceptedAnswer":{"@type":"Answer","text":"Sí. Hay una prueba gratuita de 7 días de las funciones Pro, sin poner tarjeta. Al terminar la prueba, aunque no compres Pro, te regalamos un tema Pro a tu elección."}},
-        {"@type":"Question","name":"¿Qué pasa si tengo Pro y cambio de móvil?","acceptedAnswer":{"@type":"Answer","text":"Depende de cómo lo activaste. Si lo compraste en Google Play (compra normal o código promocional de Play) y cambias a otro Android con tu misma cuenta Google, basta con instalar Lecturameter y pulsar Restaurar compra en Ajustes. Si lo compraste en la App Store (compra normal o código promocional de App Store) y cambias a otro iPhone o iPad con el mismo Apple ID, igual: instalas y pulsas Restaurar compra. Para pasar de Android a iPhone o al revés, sea cual sea el origen (compra Play, App Store, promo, o código lm-...), usa el código de emparejamiento: en el móvil actual, en Ajustes de Lecturameter, Emparejar dispositivo, obtienes un código temporal, lo escribes en el nuevo y queda activado ahí también. Si el antiguo lo vendes o lo pierdes, puedes revocarlo desde la misma pantalla. Disponible cuando se lance Lecturameter para iOS."}},
-        {"@type":"Question","name":"¿Puedo migrar mi Pro entre teléfonos y entre iOS y Android?","acceptedAnswer":{"@type":"Answer","text":"Sí. A través de un código de transferencia generable dentro de la app puedes transferir tu Pro entre móviles, incluso si pasas de Android a iOS o de iOS a Android. Puedes gestionar tus móviles con Pro, y generar los códigos de transferencia, desde Ajustes. Disponible cuando se lance Lecturameter para iOS."}}
+        {"@type":"Question","name":"¿Hay versión para iPhone?","acceptedAnswer":{"@type":"Answer","text":"Sí, en beta pública: puedes probarla ya con TestFlight. Si aún no te deja instalarla, espera un rato y vuelve a probar."}},
+        {"@type":"Question","name":"¿Puedo probarlo antes de pagar?","acceptedAnswer":{"@type":"Answer","text":"Sí. Hay una prueba gratuita de 7 días de las funciones Pro, sin poner tarjeta. En iPhone es una compra integrada gratuita de la App Store, ligada a tu Apple ID. En Android, al terminar la prueba, aunque no compres Pro, te regalamos un tema Pro a tu elección."}},
+        {"@type":"Question","name":"¿Qué pasa si tengo Pro y cambio de móvil?","acceptedAnswer":{"@type":"Answer","text":"Depende de dónde lo compraste. Si lo compraste en Google Play y cambias a otro Android con tu misma cuenta Google, instala Lecturameter y pulsa Restaurar compra en Ajustes. Si lo compraste en la App Store y cambias a otro iPhone con el mismo Apple ID, igual: instalas y pulsas Restaurar compra. Para pasar de Android a iPhone o al revés usa el código de transferencia: en el móvil actual, en Ajustes de Lecturameter, Emparejar dispositivo, obtienes un código temporal, lo escribes en el nuevo y queda activado ahí también. Los códigos lm-... solo se canjean en Android. Si el antiguo lo vendes o lo pierdes, puedes revocarlo desde la misma pantalla."}},
+        {"@type":"Question","name":"¿Puedo migrar mi Pro entre teléfonos y entre iOS y Android?","acceptedAnswer":{"@type":"Answer","text":"Sí, entre Android y iPhone, en cualquier sentido. Se hace con un código de transferencia que generas dentro de la app, en Ajustes. Entre dos móviles de la misma plataforma no hace falta: usa Restaurar compra con tu cuenta de Google o tu Apple ID."}}
       ]
     }
     </script>
@@ -706,31 +706,46 @@
 <!-- ═══ 7.6 iOS DIFFERENCES ═══ -->
 <section class="band band-alt differences" id="ios-diferencias" aria-labelledby="differences-title">
     <div class="container">
-        <h2 id="differences-title">Pronto en iOS</h2>
-        <p>Lecturameter aterriza en iOS con las mismas funciones que en Android: biblioteca, cronómetro, estadísticas, retos, bingo, Pagi y los cinco temas visuales. Trial de 7 días sin tarjeta y sin cuenta.</p>
+        <h2 id="differences-title">Lecturameter en iPhone y Android</h2>
+        <p>La versión de iPhone tiene las mismas funciones principales que la de Android: biblioteca, cronómetro, estadísticas, retos, bingo, Pagi y los temas visuales. Sigue en beta pública con TestFlight, pendiente de revisión de Apple. Estas son las diferencias.</p>
         <details class="differences-details">
-            <summary>Diferencias entre iOS y Android</summary>
+            <summary>Diferencias entre iPhone y Android</summary>
             <div class="differences-grid">
                 <div>
-                    <h3>Solo en iOS</h3>
+                    <h3>Solo en iPhone</h3>
                     <ul>
-                        <li><strong>Quick Actions</strong> en la pantalla de inicio (mantén pulsado el icono para registrar sesión, abrir retos, etc.).</li>
-                        <li>Soporte de <strong>Apple Watch</strong> (widget de seguimiento de lectura).</li>
+                        <li>Cronómetro en la pantalla de bloqueo y en la Dynamic Island, con pausa y parar.</li>
+                        <li>Controles de iOS 18: Leyendo ahora, Escanear ISBN, Añadir libro e Iniciar cronómetro.</li>
+                        <li>Copia de seguridad en iCloud Drive.</li>
                     </ul>
                 </div>
                 <div>
                     <h3>Solo en Android</h3>
                     <ul>
-                        <li>Widgets de escritorio con varias variantes.</li>
-                        <li>Copia de seguridad automática con Google Drive.</li>
                         <li>Control del cronómetro desde la notificación.</li>
+                        <li>No Molestar automático en la sesión inmersiva.</li>
+                        <li>Selector de idioma completo.</li>
+                        <li>Configuración y anclado de widgets.</li>
+                        <li>Pantalla horizontal y tablets.</li>
+                        <li>Canje de códigos <code>lm-…</code>.</li>
+                        <li>Tema Pro de regalo al terminar la prueba.</li>
+                        <li>Donaciones externas.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>En las dos</h3>
+                    <ul>
+                        <li>Widgets de Libro, Estadísticas, Retos y Bingo.</li>
+                        <li>Copia de seguridad en Google Drive.</li>
+                        <li>Sincronización con e-reader (KOSync).</li>
                     </ul>
                 </div>
                 <div>
                     <h3>Compra Pro</h3>
                     <ul>
-                        <li>Mismo precio en ambas plataformas.</li>
-                        <li>Portabilidad real: puedes trasladar tu Pro entre móviles y entre iOS y Android mediante un código de transferencia que se genera desde <strong>Ajustes</strong>.</li>
+                        <li>En iPhone, Pro es una compra integrada de la App Store. En Android, de Google Play.</li>
+                        <li>La prueba de 7 días en iPhone es una compra integrada gratuita de la App Store, ligada a tu Apple ID.</li>
+                        <li>Para pasar el Pro entre Android y iPhone usas un código de transferencia, que se genera desde <strong>Ajustes</strong>. No funciona entre dos móviles de la misma plataforma: ahí se usa Restaurar compra.</li>
                     </ul>
                 </div>
             </div>
@@ -788,15 +803,15 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">¿Puedo probarlo antes de pagar?</button>
-                <div class="faq-a"><div class="faq-a-inner">Sí. Hay una prueba gratuita de 7 días de las funciones Pro, sin poner tarjeta. Al terminar la prueba, aunque no compres Pro, te regalamos un tema Pro a tu elección.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Sí. Hay una prueba gratuita de 7 días de las funciones Pro, sin poner tarjeta. En iPhone es una compra integrada gratuita de la App Store, ligada a tu Apple ID. En Android, al terminar la prueba, aunque no compres Pro, te regalamos un tema Pro a tu elección.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">¿Qué pasa si tengo Pro y cambio de móvil?</button>
-                <div class="faq-a"><div class="faq-a-inner">Depende de cómo lo activaste. Si lo compraste en <strong>Google Play</strong> (compra normal o código promocional de Play) y cambias a otro Android con tu misma cuenta Google, basta con instalar Lecturameter y pulsar <strong>Restaurar compra</strong> en Ajustes. Si lo compraste en la <strong>App Store</strong> (compra normal o código promocional de App Store) y cambias a otro iPhone o iPad con el mismo Apple ID, igual: instalas y pulsas <strong>Restaurar compra</strong>. Para pasar de Android a iPhone o al revés, sea cual sea el origen (compra Play, App Store, promo, o código <code>lm-…</code>), usa el <strong>código de emparejamiento</strong>: en el móvil actual, en Ajustes de Lecturameter, <strong>Emparejar dispositivo</strong>, obtienes un código temporal, lo escribes en el nuevo y queda activado ahí también. Si el antiguo lo vendes o lo pierdes, puedes revocarlo desde la misma pantalla. Más detalles en <a href="../activar-pro.html">Cómo activar Pro</a>. <em>Disponible cuando se lance Lecturameter para iOS.</em></div></div>
+                <div class="faq-a"><div class="faq-a-inner">Depende de dónde lo compraste. Si lo compraste en <strong>Google Play</strong> y cambias a otro Android con tu misma cuenta Google, instala Lecturameter y pulsa <strong>Restaurar compra</strong> en Ajustes. Si lo compraste en la <strong>App Store</strong> y cambias a otro iPhone con el mismo Apple ID, igual: instalas y pulsas <strong>Restaurar compra</strong>. Para pasar de Android a iPhone o al revés usa el <strong>código de transferencia</strong>: en el móvil actual, en Ajustes de Lecturameter, <strong>Emparejar dispositivo</strong>, obtienes un código temporal, lo escribes en el nuevo y queda activado ahí también. Los códigos <code>lm-…</code> solo se canjean en Android. Si el antiguo lo vendes o lo pierdes, puedes revocarlo desde la misma pantalla. Más detalles en <a href="../activar-pro.html">Cómo activar Pro</a>.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">¿Puedo migrar mi Pro entre teléfonos y entre iOS y Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">Sí. A través de un código de transferencia generable dentro de la app puedes transferir tu Pro entre móviles, incluso si pasas de Android a iOS o de iOS a Android. Puedes gestionar tus móviles con Pro, y generar los códigos de transferencia, desde <strong>Ajustes</strong>. <em>Disponible cuando se lance Lecturameter para iOS.</em></div></div>
+                <div class="faq-a"><div class="faq-a-inner">Sí, entre Android y iPhone, en cualquier sentido. Se hace con un código de transferencia que generas dentro de la app, en <strong>Ajustes</strong>. Entre dos móviles de la misma plataforma no hace falta: usa Restaurar compra con tu cuenta de Google o tu Apple ID.</div></div>
             </div>
         </div>
     </div>
