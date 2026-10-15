@@ -1,65 +1,47 @@
 {
-  "notesVersion": 8,
+  "notesVersion": 10,
   "es": {
     "new": [
-      "Lecturameter llega a iPhone en beta: pruébala con TestFlight en testflight.apple.com/join/WAkrkgPq (si aún no te aparece, espera un rato)",
-      "Cómics, manga y audiolibros como libros de primera: añádelos a mano en un solo formulario o varios de golpe, y comparte la tarjeta de tus audiolibros",
-      "Trae tu biblioteca desde otra app (Goodreads, StoryGraph, Bookmory, Fable) con vista previa",
-      "Vista Sagas: tus libros agrupados por saga, con la saga que se rellena sola al añadir",
-      "Resumen mensual con tarjeta para compartir y \"Tu libro de cada mes\" en el Wrapped",
-      "Evolución lectora en Estadísticas",
-      "Mis cards: todas las tarjetas que has compartido, en un sitio",
-      "Widgets de retos y de bingo",
-      "Añade varios libros de golpe desde la búsqueda",
-      "Filtros avanzados en la Biblioteca",
-      "Créditos por edición: narradores, traductores e ilustradores",
-      "Pro vale en hasta 3 dispositivos, Android e iOS",
-      "Las copias de seguridad ahora guardan también tus etiquetas y recordatorios",
-      "Ya puedes guardar una sesión de lectura sin poner páginas, solo con el tiempo (útil si lees en digital)"
+      "Progreso en % en libros, cómics, manga y audiolibros (en audiolibro, también en tiempo)",
+      "Cambia el formato de un libro, cómic, manga o audiolibro sin perder sesiones, notas ni estadísticas",
+      "Varias notas y citas al guardar una sesión",
+      "Si sales sin guardar una sesión, queda como borrador y la recuperas la próxima vez que vayas a guardar una",
+      "Estadísticas: dónut por formato y filtro por formato",
+      "Retos de audiolibro y Bingo con audiolibros",
+      "Pagi: 7 trajes de temporada animados, 9 skins nuevas (Bardo, Ladrón de la noche, Conde vampiro, Capitán submarino, Tinta, Origami, Lector nocturno, Caballero andante y Astronauta retro), un gesto propio al tocarlo con cada una y una skin secreta escondida en la app: toca en la pantalla principal para encontrarla",
+      "Iconos de la app para Pro: elige el tuyo, con versiones de Halloween, Navidad y Año Nuevo y cambio automático por temporada (apagado por defecto)",
+      "Sincroniza tu progreso con tu e-reader por KOSync (KOReader) con un asistente paso a paso",
+      "La app ya está en árabe, hebreo, persa y urdu, de derecha a izquierda, y puedes elegirlos como idioma del libro al añadirlo a mano",
+      "Sonidos nuevos en el crono Pro y mejor selección de géneros"
     ],
     "fixes": [
-      "Al borrar varios libros hay un solo Deshacer",
-      "Los textos nombran el tipo: libro, cómic, manga o audiolibro",
-      "La fila de estrellas ya no puntúa al desplazar la pantalla",
-      "Las notas largas se ven enteras",
-      "Fechas y errores de copia de seguridad en el idioma de la app",
-      "Restaurar desde Drive ya no coge el archivo equivocado",
-      "Se evita un cierre inesperado al tocar un enlace de autor en algunas situaciones",
-      "Avisos de Importar y Exportar más claros",
-      "Se evita un cierre inesperado del cronómetro en segundo plano",
-      "Se evitan cierres inesperados al comprar Pro y en algunos widgets",
-      "Arreglado un número confuso en los resultados de búsqueda de cómics y manga"
+      "El Bingo ya sale traducido en todos los idiomas",
+      "Textos que salían en inglés o en español ahora salen en tu idioma",
+      "Las copias guardadas en el móvil ya no se quedan vacías si algo falla al guardarlas",
+      "Cambiar el estado de un libro ya no borra las fechas de lecturas anteriores",
+      "Algunos colores de las estadísticas cambian para distinguirlos mejor"
     ]
   },
   "en": {
     "new": [
-      "Lecturameter comes to iPhone in beta: try it with TestFlight at testflight.apple.com/join/WAkrkgPq (if it doesn't show up yet, check back in a while)",
-      "Comics, manga and audiobooks as first-class items: add them in one manual form or several at once, and share your audiobook card",
-      "Bring your library from another app (Goodreads, StoryGraph, Bookmory, Fable) with a preview",
-      "Series view: your books grouped by series, filled in automatically when you add them",
-      "Monthly recap with a shareable card, plus \"Your book of each month\" in Wrapped",
-      "Reading evolution in Statistics",
-      "My cards: every card you've shared, in one place",
-      "Challenge and bingo widgets",
-      "Add several books at once from search",
-      "Advanced filters in the Library",
-      "Credits per edition: narrators, translators and illustrators",
-      "Pro works on up to 3 devices, Android and iOS",
-      "Backups now also save your tags and reminders",
-      "You can now save a reading session without pages, just the time (handy if you read digitally)"
+      "Reading progress in % for books, comics, manga and audiobooks (audiobooks also in time)",
+      "Change the format of a book, comic, manga or audiobook without losing sessions, notes or stats",
+      "Several notes and quotes when you save a session",
+      "If you leave a session without saving, it is kept as a draft and you can recover it the next time you save one",
+      "Stats: donut by format and a format filter",
+      "Audiobook challenges and Bingo with audiobooks",
+      "Pagi: 7 animated seasonal outfits, 9 new skins (Bard, Night Thief, Vampire Count, Submarine Captain, Ink, Origami, Night Reader, Knight-errant and Retro Astronaut), its own tap animation with each one and a secret skin hidden in the app: tap around the main screen to find it",
+      "App icons for Pro: pick yours, with Halloween, Christmas and New Year versions and automatic seasonal icons (off by default)",
+      "Sync your progress with your e-reader through KOSync (KOReader) with a step by step wizard",
+      "The app is now in Arabic, Hebrew, Persian and Urdu, right to left, and you can pick them as the book language when adding one by hand",
+      "New Pro timer sounds and better genre selection"
     ],
     "fixes": [
-      "Deleting several books gives a single Undo",
-      "Texts now name the type: book, comic, manga or audiobook",
-      "The star row no longer rates while you scroll",
-      "Long notes are shown in full",
-      "Dates and backup errors in the app language",
-      "Restoring from Drive no longer picks the wrong file",
-      "Prevented a crash when tapping an author link in some situations",
-      "Clearer Import and Export messages",
-      "Prevented an unexpected close of the timer in the background",
-      "Prevented unexpected closes when buying Pro and in some widgets",
-      "Fixed a confusing number in comic and manga search results"
+      "Bingo is now translated in every language",
+      "Texts that showed up in English or Spanish now appear in your language",
+      "Backups saved on your phone no longer end up empty if saving fails",
+      "Changing a book's status no longer erases the dates of earlier reads",
+      "Some stats colors changed so they are easier to tell apart"
     ]
   }
 }
