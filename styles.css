@@ -1665,6 +1665,14 @@ html:not([data-theme="light"]) .tag-free {
 .lm99-cta { text-align: center; margin-top: 28px; font-size: 1.05em; }
 @media (max-width: 960px) { .lm99-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .lm99-grid { grid-template-columns: 1fr; } }
+.lm99-head { margin-top: 64px; scroll-margin-top: 80px; }
+.lm99-grid-5 { grid-template-columns: repeat(5, 1fr); }
+.lm99-block { margin-top: 48px; }
+.lm99-test { max-width: 640px; margin: 0 auto 28px; }
+.subpage-body .lm99-head p { margin: 8px auto 0; }
+.lm99-test ol.pricing-list li::before { content: counter(list-item) "."; color: var(--accent-text); }
+@media (max-width: 960px) { .lm99-grid-5 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 480px) { .lm99-grid-5 { grid-template-columns: 1fr 1fr; } }
 
 /* ─── DETAILS (iOS differences, 1999) ─── */
 .differences { background: var(--bg); }
