@@ -1,0 +1,46 @@
+{
+  "site_url": "https://lecturameterapp.github.io/",
+  "default_locale": "en",
+  "pages": {
+    "index": { "template": "index.html", "dir": "" },
+    "lm1999": { "template": "lecturameter-1999.html", "dir": "lecturameter-1999/" }
+  },
+  "locales": [
+    {
+      "code": "en",
+      "hreflang": "en",
+      "path": "/",
+      "dir": "ltr",
+      "nativeName": "English",
+      "og_locale": "en_US",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "es",
+      "hreflang": "es",
+      "path": "/es/",
+      "dir": "ltr",
+      "nativeName": "Español",
+      "og_locale": "es_ES",
+      "img": "es",
+      "shots99": "",
+      "blog": "es/blog/",
+      "features": {
+        "timer": "es/funciones/cronometro-lectura/",
+        "tracker": "es/funciones/registro-lectura/",
+        "stats": "es/funciones/estadisticas-lectura/",
+        "goodreads": "es/funciones/alternativa-goodreads/",
+        "catalog": "es/funciones/catalogo-libros/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="{{code}}" dir="{{dir}}">
+<head>
+    <meta charset="UTF-8">
+{{head_redirect}}    <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('{{link_feat_catalog}}');</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{head.index.title}}</title>
+    <meta name="description" content="{{head.index.description}}">
+    <meta property="og:title" content="{{head.index.title}}">
+    <meta property="og:description" content="{{head.index.description}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{page_url}}">
+    <meta property="og:image" content="{{site_url}}social_card.jpg?v=260807">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{{head.index.title}}">
+    <meta property="og:locale" content="{{og_locale}}">
+{{og_locale_alternates}}    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{head.index.title}}">
+    <meta name="twitter:description" content="{{head.index.description}}">
+    <meta name="twitter:image" content="{{site_url}}social_card.jpg?v=260807">
+    <meta name="twitter:image:alt" content="{{head.index.title}}">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#121212">
+    <meta name="author" content="Victor (Lecturameter)">
+    <meta name="twitter:site" content="@LecturameterAPP">
+    <meta name="twitter:creator" content="@LecturameterAPP">
+    <meta name="google-site-verification" content="U3dhVUGRPhecYYG37d5iETCGwpUsppjOMglMtRaNhZM">
+    <meta name="google-site-verification" content="bx3bz0E1rYVwW5llpQsDSBNxAL3WZkC7VDnWJeYc7Lg">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{{root}}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{root}}favicon-16x16.png">
+    <link rel="apple-touch-icon" href="{{root}}apple-touch-icon.png">
+    <link rel="manifest" href="{{root}}site.webmanifest">
+    <link rel="shortcut icon" href="{{root}}favicon.ico">
+
+    <link rel="canonical" href="{{page_url}}">
+{{hreflang_links}}    <link rel="stylesheet" href="{{root}}styles.css?v=6.7">
+
+    <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
+    <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Lecturameter",
+      "url": "{{page_url}}",
+      "image": "{{site_url}}ic_launcher_round.png",
+      "description": "{{json:head.index.ld_description}}",
+      "featureList": "{{json:head.index.ld_featurelist}}",
+      "applicationCategory": "BookApplication",
+      "operatingSystem": "Android",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "9",
+        "reviewCount": "7",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "screenshot": [
+        "{{site_url}}capturas%20para%20v3/captura_libros_real_claro_{{img}}.jpg",
+        "{{site_url}}capturas%20para%20v3/screen_challenges_claro_{{img}}.jpg",
+        "{{site_url}}capturas%20para%20v3/heatmap_mayo_claro_{{img}}.jpg",
+        "{{site_url}}capturas%20para%20v3/screen_calendar_may_claro_{{img}}.jpg",
+        "{{site_url}}capturas%20para%20v3/tema_aurora_{{img}}.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Victor (Lecturameter)",
+        "email": "lecturameter.app@gmail.com",
+        "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
+      },
+      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Lecturameter",
+      "url": "{{page_url}}"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"{{json:head.index.faq1_q}}","acceptedAnswer":{"@type":"Answer","text":"{{json:head.index.faq1_a}}"}},
+        {"@type":"Question","name":"{{json:head.index.faq2_q}}","acceptedAnswer":{"@type":"Answer","text":"{{json:head.index.faq2_a}}"}},
+        {"@type":"Question","name":"{{json:head.index.faq3_q}}","acceptedAnswer":{"@type":"Answer","text":"{{json:head.index.faq3_a}}"}},
+        {"@type":"Question","name":"{{json:head.index.faq4_q}}","acceptedAnswer":{"@type":"Answer","text":"{{json:head.index.faq4_a}}"}},
+        {"@type":"Question","name":"{{json:head.index.faq5_q}}","acceptedAnswer":{"@type":"Answer","text":"{{json:head.index.faq5_a}}"}},
+        {"@type":"Question","name":"{{json:head.index.faq6_q}}","acceptedAnswer":{"@type":"Answer","text":"{{json:head.index.faq6_a}}"}},
+        {"@type":"Question","name":"{{json:head.index.faq7_q}}","acceptedAnswer":{"@type":"Answer","text":"{{json:head.index.faq7_a}}"}},
+        {"@type":"Question","name":"{{json:head.index.faq8_q}}","acceptedAnswer":{"@type":"Answer","text":"{{json:head.index.faq8_a}}"}}
+      ]
+    }
+    </script>
+</head>
+<body>
+
+<!-- PROMO BAR -->
+<div id="promo-bar" class="promo-bar">
+    <span class="promo-pill">{{common.promo.free}}</span>
+    <span>{{common.promo.lecturameter_is_free_forever}}</span>
+    <button class="promo-close" aria-label="{{common.promo.close.aria-label}}" onclick="dismissPromo()">×</button>
+</div>
+
+<!-- NAV -->
+<nav class="nav-bar">
+    <div class="nav-inner">
+        <a href="{{home}}" class="nav-brand">
+            <img src="{{root}}ic_launcher_round.png" alt="{{common.nav.lecturameter.alt}}" width="28" height="28">
+            {{common.nav.lecturameter}}
+        </a>
+        <ul class="nav-pills">
+            <li class="has-dropdown">
+                <a href="#{{anchor.features}}" class="active">{{common.nav.features}} <span class="caret" aria-hidden="true">▾</span></a>
+                <ul class="nav-dropdown">
+                    <li><a href="{{link_feat_timer}}">{{common.nav.reading_timer}}</a></li>
+                    <li><a href="{{link_feat_tracker}}">{{common.nav.reading_tracker}}</a></li>
+                    <li><a href="{{link_feat_stats}}">{{common.nav.reading_statistics}}</a></li>
+                    <li><a href="{{link_feat_goodreads}}">{{common.nav.goodreads_alternative}}</a></li>
+                    <li><a href="{{link_feat_catalog}}">{{common.nav.book_catalog}}</a></li>
+                </ul>
+            </li>
+            <li><a href="#{{anchor.themes}}">{{common.nav.themes}}</a></li>
+            <li><a href="#{{anchor.pricing}}">{{common.nav.pro}}</a></li>
+            <li><a href="#{{anchor.whatsnew}}">{{common.nav.patch_notes}}</a></li>
+            <li><a href="#{{anchor.history}}">{{common.nav.history}}</a></li>
+            <li><a href="#roadmap">{{common.nav.roadmap}}</a></li>
+            <li><a href="#ios">{{common.nav.ios}}</a></li>
+            <li><a href="{{link_1999}}">1999</a></li>
+            <li><a href="#faq">{{common.nav.faq}}</a></li>
+            <li><a href="{{link_blog}}">{{common.nav.blog}}</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button class="nav-theme-btn" aria-label="{{common.nav.toggle_theme.aria-label}}">☾</button>
+            <a href="{{alt_href}}" class="nav-lang-btn">{{alt_code_upper}}</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+                <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                {{common.nav.download}}
+            </a>
+        </div>
+        <button class="nav-hamburger" aria-label="{{common.nav.menu.aria-label}}">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+    </div>
+</nav>
+
+<!-- 1. HERO -->
+<section class="band band-hero" id="{{anchor.home}}">
+    <div class="container">
+        <div class="hero">
+            <div class="hero-copy">
+                <p class="hero-eyebrow reveal-up in-view">{{home.home.your_reading_tracker_for_android}}</p>
+                <h1 class="reveal-up in-view d1">{{home.home.your_reading}}<br><span class="grad">{{home.home.letter_by_letter}}</span></h1>
+                <p class="hero-tagline reveal-up in-view d2">{{home.home.you_time_your_sessions_and}}</p>
+                <p class="hero-privacy reveal-up in-view d3">
+                    <svg viewBox="0 0 16 16"><path d="M8 1a4 4 0 0 0-4 4v2H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-1V5a4 4 0 0 0-4-4zm-2 4a2 2 0 1 1 4 0v2H6V5z"/></svg>
+                    {{home.home.no_account_your_data_stays}}
+                </p>
+                <ul class="hero-checks">
+                    <li>{{home.home.no_ads}}</li>
+                    <li>{{home.home.no_subscription}}</li>
+                    <li>{{home.home.offline}}</li>
+                </ul>
+                <div class="hero-cta reveal-up in-view d4">
+                    <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">{{home.home.get_on_google_play}}</a>
+                    <a href="https://testflight.apple.com/join/WAkrkgPq" target="_blank" rel="noopener" class="btn">{{home.home.try_on_iphone}}</a>
+                </div>
+                <div class="testimonial reveal-up in-view d5">
+                    <q>{{home.home.this_app_is_really_nice}}</q>
+                    <cite>{{home.home.overall_sentiment_from_play_store}}</cite>
+                </div>
+            </div>
+            <div class="hero-visual reveal-up in-view d2">
+                <div class="pagi-hero" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-260 -20 540 480">
+                        <style>
+                            @keyframes pg-float    { 0%,100%{transform:translateY(-8px) rotate(-.7deg)}50%{transform:translateY(8px) rotate(.7deg)} }
+                            @keyframes pg-arm-r    { 0%,100%{transform:translate(6px,-8px)}50%{transform:translate(-6px,8px)} }
+                            @keyframes pg-blink    { 0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.08)} }
+                            @keyframes stick-pulse { 0%,100%{opacity:.7}50%{opacity:1} }
+                            .pagi-hero .pg-body  { animation: pg-float 4.2s ease-in-out infinite; transform-box: fill-box; transform-origin: 100px 248px; }
+                            .pagi-hero .pg-arm-r { animation: pg-arm-r 3.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+                            .pagi-hero .pg-blink { animation: pg-blink 6.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+                            .pagi-hero .pg-stick { animation: stick-pulse 2.5s ease-in-out infinite; }
+                        </style>
+                        <g class="pg-body">
+                            <ellipse cx="224" cy="238" rx="20" ry="14" fill="currentColor" class="pg-arm-r"/>
+                            <ellipse cx="-24" cy="180" rx="20" ry="14" fill="currentColor" transform="rotate(-22,-24,180)"/>
+                            <line x1="-24" y1="180" x2="-231" y2="312" stroke="currentColor" stroke-width="14" stroke-linecap="round" opacity="0.25"/>
+                            <line x1="-24" y1="180" x2="-231" y2="312" stroke="#F8F5F0" stroke-width="7" stroke-linecap="round" class="pg-stick"/>
+                            <circle cx="-231" cy="312" r="12" fill="currentColor" opacity="0.9"/>
+                            <path d="M 0 26 Q 0 0 26 0 L 174 0 Q 200 0 200 26 L 200 440 L 100 396 L 0 440 Z" fill="currentColor"/>
+                            <circle cx="100" cy="27" r="13" fill="#1D1822" opacity="0.28"/>
+                            <rect x="32" y="296" width="136" height="19" rx="9.5" fill="#000" opacity="0.15"/>
+                            <rect x="32" y="296" width="88" height="19" rx="9.5" fill="#fff" opacity="0.6"/>
+                            <rect x="44" y="340" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"/>
+                            <rect x="44" y="362" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"/>
+                            <rect x="44" y="384" width="112" height="7" rx="3.5" fill="#1D1822" opacity="0.18"/>
+                            <g class="pg-blink">
+                                <ellipse cx="88" cy="152" rx="56" ry="62" fill="#fff"/>
+                                <g class="pg-pupil">
+                                    <circle cx="72" cy="156" r="31" fill="#1D1822"/>
+                                    <circle cx="84" cy="143" r="10.5" fill="#fff"/>
+                                    <circle cx="59" cy="170" r="5" fill="#fff" opacity="0.75"/>
+                                </g>
+                            </g>
+                            <path d="M 42 74 Q 88 46 134 76" fill="none" stroke="#1D1822" stroke-width="9" stroke-linecap="round"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="phone-wrap">
+                    <div class="float-chip c1"><span class="big">3h 30m</span>{{home.home.total_time}}</div>
+                    <div class="float-chip c2"><span class="big">136</span>{{home.home.pages_read}}</div>
+                    <div class="float-chip c3"><span class="big">{{home.home.17_0}}</span>{{home.home.pages_day}}</div>
+                    <div class="phone">
+                        <img src="{{root}}capturas%20para%20v3/captura_libros_real_claro_{{img}}.jpg" alt="{{home.home.lecturameter_library.alt}}" fetchpriority="high" width="720" height="1464">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 2. METRICS -->
+<section class="band" id="{{anchor.metrics}}">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{home.metrics.this_is_what_lecturameter_tracks}}</h2>
+            <p>{{home.metrics.six_metrics_the_app_calculates}}</p>
+        </div>
+        <div class="metrics-strip">
+            <div class="metric-box"><span class="metric-val c-orange">{{home.metrics.reading_days}}</span><span class="metric-label">{{home.metrics.how_many_days_you_ve}}</span></div>
+            <div class="metric-box"><span class="metric-val c-blue">{{home.metrics.total_time}}</span><span class="metric-label">{{home.metrics.hours_and_minutes_accumulated}}</span></div>
+            <div class="metric-box"><span class="metric-val c-purple">{{home.metrics.pages_read}}</span><span class="metric-label">{{home.metrics.how_much_you_ve_read}}</span></div>
+            <div class="metric-box"><span class="metric-val c-gold">{{home.metrics.read}}</span><span class="metric-label">{{home.metrics.how_far_into_each_book}}</span></div>
+            <div class="metric-box"><span class="metric-val c-green">{{home.metrics.pages_day}}</span><span class="metric-label">{{home.metrics.your_real_reading_pace}}</span></div>
+            <div class="metric-box"><span class="metric-val c-cyan">{{home.metrics.pages_min}}</span><span class="metric-label">{{home.metrics.your_speed_with_the_timer}}</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ACCENT BAND -->
+<div class="band-accent">
+    <div class="container">
+        <p class="accent-quote">{{home.metrics.the_timer_works_beautifully_even}}</p>
+    </div>
+</div>
+
+<!-- 3. THREE PILLARS -->
+<section class="band band-alt" id="{{anchor.features}}">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{home.features.real_screenshots_this_is_the}}</h2>
+            <p>{{home.features.three_pillars_library_timer_and}}</p>
+        </div>
+
+        <!-- Pillar 1: Library -->
+        <div class="showcase reveal-up">
+            <div class="shot">
+                <div class="phone">
+                    <img src="{{root}}capturas%20para%20v3/captura_libros_real_claro_{{img}}.jpg" alt="{{home.features.library_with_shelves.alt}}" loading="lazy" width="720" height="1464" data-lbx="{{root}}capturas%20para%20v3/captura_libros_real_claro_{{img}}.jpg">
+                </div>
+            </div>
+            <div class="info">
+                <h3>{{home.features.your_books_in_your_private}}</h3>
+                <p>{{home.features.five_shelves_to_organize_your}}</p>
+                <ul>
+                    <li>{{home.features.search_by_title_author_or}}</li>
+                    <li>{{home.features.isbn_scanner}}</li>
+                    <li>{{home.features.full_detail_cover_genres_editions}}</li>
+                    <li>{{home.features.lecturameter_remembers_the_page_yo}}</li>
+                </ul>
+                <div class="import-callout">
+                    {{home.features.automatic_csv_import_coming_from}}
+                </div>
+            </div>
+        </div>
+
+        <!-- Pillar 2: Timer -->
+        <div class="showcase flip reveal-up">
+            <div class="shot timer-shot" data-mode="normal">
+                <div class="phone timer-phone">
+                    <button class="sound-btn muted" type="button" aria-label="{{home.features.turn_sound_on.aria-label}}"></button>
+                    <video autoplay muted loop playsinline data-lang="{{code}}"></video>
+                </div>
+                <div class="mode-toggle" role="tablist" aria-label="{{home.features.timer_mode.aria-label}}">
+                    <button type="button" data-mode="normal" class="active">{{home.features.normal}}</button>
+                    <button type="button" data-mode="immersive">{{home.features.immersive}}</button>
+                </div>
+            </div>
+            <div class="info">
+                <h3>{{home.features.pick_which_book_you_want}}</h3>
+                <p>{{home.features.when_you_end_the_session}}</p>
+                <ul>
+                    <li>{{home.features.normal_mode_timer_and_collapsible}}</li>
+                    <li>{{home.features.immersive_mode_full_screen_cover}}</li>
+                    <li>{{home.features.optional_ambient_sounds_rain_fores}}</li>
+                    <li>{{home.features.control_from_the_notification_with}}</li>
+                    <li>{{home.features.both_timers_are_reachable_from}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pillar 3: Stats -->
+        <div class="showcase reveal-up">
+            <div class="shot">
+                <div class="phone">
+                    <img src="{{root}}capturas%20para%20v3/heatmap_mayo_claro_{{img}}.jpg" alt="{{home.features.monthly_heatmap.alt}}" loading="lazy" width="1080" height="2173" data-lbx="{{root}}capturas%20para%20v3/heatmap_mayo_claro_{{img}}.jpg">
+                </div>
+            </div>
+            <div class="info">
+                <h3>{{home.features.how_you_read_in_detail}}</h3>
+                <p>{{home.features.which_month_did_you_read}}</p>
+                <ul>
+                    <li>{{home.features.heatmap_by_hours_and_by}}</li>
+                    <li>{{home.features.month_by_month_comparison_with}}</li>
+                    <li>{{home.features.yearly_wrapped_with_genres_streaks}}</li>
+                    <li>{{home.features.complete_history_of_every_session}}</li>
+                </ul>
+            </div>
+        </div>
+        <div style="margin-top:2.5rem; text-align:center; padding:1.25rem 1rem; border-top:1px solid rgba(128,128,128,0.18);">
+            <p style="margin:0; font-size:0.98em; opacity:0.9;">{{home.features.read_more_about_each_feature}}
+                <a href="{{link_feat_timer}}">{{home.features.reading_timer}}</a> ·
+                <a href="{{link_feat_tracker}}">{{home.features.reading_tracker}}</a> ·
+                <a href="{{link_feat_stats}}">{{home.features.reading_statistics}}</a> ·
+                <a href="{{link_feat_goodreads}}">{{home.features.goodreads_alternative}}</a>
+                <a href="{{link_feat_catalog}}">{{home.features.book_catalog}}</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 3. SHOWCASE -->
+<section class="band" id="{{anchor.showcase}}">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{home.showcase.know_yourself_as_a_reader}}</h2>
+            <p>{{home.showcase.challenges_bingos_widgets_and_more}}</p>
+        </div>
+        <div class="grid-cards grid-cards-6">
+            <div class="grid-card">
+                <div class="grid-card-media">
+                    <img src="{{root}}capturas%20para%20v3/screen_challenges_claro_{{img}}.jpg" alt="{{home.showcase.reading_challenges.alt}}" loading="lazy" width="1080" height="2126" data-lbx="{{root}}capturas%20para%20v3/screen_challenges_claro_{{img}}.jpg">
+                </div>
+                <div class="grid-card-body">
+                    <h3>{{home.showcase.reading_challenges}}</h3>
+                    <p>{{home.showcase.set_goals_by_pages_streaks}}</p>
+                </div>
+            </div>
+            <div class="grid-card">
+                <div class="grid-card-media">
+                    <img src="{{root}}capturas%20para%20v3/screen_daily_claro_{{img}}.jpg" alt="{{home.showcase.daily_challenge.alt}}" loading="lazy" width="1080" height="2173" data-lbx="{{root}}capturas%20para%20v3/screen_daily_claro_{{img}}.jpg">
+                </div>
+                <div class="grid-card-body">
+                    <h3>{{home.showcase.daily_challenge}}</h3>
+                    <p>{{home.showcase.a_new_goal_every_day}}</p>
+                </div>
+            </div>
+            <div class="grid-card">
+                <div class="grid-card-media">
+                    <img src="{{root}}capturas%20para%20v3/screen_calendar_may_claro_{{img}}.jpg" alt="{{home.showcase.reading_bingo.alt}}" loading="lazy" width="1080" height="2126" data-lbx="{{root}}capturas%20para%20v3/screen_calendar_may_claro_{{img}}.jpg">
+                </div>
+                <div class="grid-card-body">
+                    <h3>{{home.showcase.reading_bingo}}</h3>
+                    <p>{{home.showcase.two_new_bingos_every_month}}</p>
+                </div>
+            </div>
+            <div class="grid-card">
+                <div class="grid-card-media">
+                    <img src="{{root}}capturas%20para%20v3/screen_weekly_claro_{{img}}.jpg" alt="{{home.showcase.weekly_summary.alt}}" loading="lazy" width="1080" height="2173" data-lbx="{{root}}capturas%20para%20v3/screen_weekly_claro_{{img}}.jpg">
+                </div>
+                <div class="grid-card-body">
+                    <h3>{{home.showcase.weekly_summary}}</h3>
+                    <p>{{home.showcase.every_monday_a_snapshot_of}}</p>
+                </div>
+            </div>
+            <div class="grid-card" id="monthly">
+                <div class="grid-card-media">
+                    <img src="{{root}}capturas%20para%20v3/screen_monthly_claro_{{img}}.jpg" alt="{{home.showcase.monthly_recap.alt}}" loading="lazy" width="1080" height="2174" data-lbx="{{root}}capturas%20para%20v3/screen_monthly_claro_{{img}}.jpg">
+                </div>
+                <div class="grid-card-body">
+                    <h3>{{home.showcase.monthly_recap}}</h3>
+                    <p>{{home.showcase.when_a_month_ends_lecturameter}}</p>
+                </div>
+            </div>
+            <div class="grid-card">
+                <div class="grid-card-media">
+                    <img src="{{root}}capturas%20para%20v3/widget_bingo_claro_{{img}}.png" alt="{{home.showcase.bingo_widget.alt}}" loading="lazy" width="1096" height="1797" data-lbx="{{root}}capturas%20para%20v3/widget_bingo_claro_{{img}}.png">
+                </div>
+                <div class="grid-card-body">
+                    <h3>{{home.showcase.bingo_widget}} <span class="pro-tag">{{home.showcase.pro}}</span></h3>
+                    <p>{{home.showcase.this_month_s_bingo_card}}</p>
+                </div>
+            </div>
+            <div class="widget-stack" style="grid-column: 1/-1">
+                <div class="grid-card grid-card-hz">
+                    <div class="grid-card-media">
+                        <img src="{{root}}capturas%20para%20v3/widget_libro_claro_{{img}}.png" alt="{{home.showcase.book_widget.alt}}" loading="lazy" width="1384" height="406" data-lbx="{{root}}capturas%20para%20v3/widget_libro_claro_{{img}}.png">
+                    </div>
+                    <div class="grid-card-body">
+                        <h3>{{home.showcase.book_widget}} <span class="tag-free">{{home.showcase.free}}</span></h3>
+                        <p>{{home.showcase.see_the_book_you_re}}</p>
+                        <div class="testimonial" style="margin-top:12px">
+                            <q>{{home.showcase.seriously_bro_the_app_feels}}</q>
+                            <cite>{{home.showcase.user_feedback_sent_by_email}}</cite>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-card grid-card-hz">
+                    <div class="grid-card-media">
+                        <img src="{{root}}capturas%20para%20v3/widget_pro_claro_{{img}}.png" alt="{{home.showcase.monthly_comparison_widget.alt}}" loading="lazy" width="1384" height="870" data-lbx="{{root}}capturas%20para%20v3/widget_pro_claro_{{img}}.png" class="widget-pro-img">
+                    </div>
+                    <div class="grid-card-body">
+                        <h3>{{home.showcase.monthly_comparison}} <span class="pro-tag">{{home.showcase.pro}}</span></h3>
+                        <p>{{home.showcase.a_quick_look_at_your}}</p>
+                    </div>
+                </div>
+                <div class="grid-card grid-card-hz">
+                    <div class="grid-card-media">
+                        <img src="{{root}}capturas%20para%20v3/widget_retos_claro_{{img}}.png" alt="{{home.showcase.challenges_widget.alt}}" loading="lazy" width="1096" height="408" data-lbx="{{root}}capturas%20para%20v3/widget_retos_claro_{{img}}.png">
+                    </div>
+                    <div class="grid-card-body">
+                        <h3>{{home.showcase.challenges_widget}} <span class="pro-tag">{{home.showcase.pro}}</span></h3>
+                        <p>{{home.showcase.your_active_challenges_and_their}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. PAGI + THEMES -->
+<section class="band" id="{{anchor.themes}}">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{home.themes.meet_pagi_and_pick_your}}</h2>
+            <p>{{home.themes.pagi_is_lecturameter_s_mascot}}</p>
+        </div>
+
+        <div style="display:flex;justify-content:center;margin-bottom:32px;">
+            <svg class="pagi-mascot" data-expr="neutral" viewBox="-36 -8 272 468" width="100" overflow="visible" role="img" aria-label="{{home.themes.pagi_lecturameter_s_mascot.aria-label}}">
+                <defs>
+                    <linearGradient id="pagi-grad-ocaso" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%"   stop-color="#4A6FC8"/>
+                        <stop offset="30%"  stop-color="#6B4FC1"/>
+                        <stop offset="52%"  stop-color="#985FA3"/>
+                        <stop offset="75%"  stop-color="#D88B38"/>
+                        <stop offset="100%" stop-color="#F08E3A"/>
+                    </linearGradient>
+                </defs>
+                <g class="body-g">
+                    <path class="pagi-body" d="M 0 26 Q 0 0 26 0 L 174 0 Q 200 0 200 26 L 200 440 L 100 396 L 0 440 Z" fill="var(--pagi-color)"/>
+                    <circle cx="100" cy="27" r="13" fill="#1D1822" opacity="0.28"/>
+                    <rect x="32" y="296" width="136" height="19" rx="9.5" fill="rgba(0,0,0,0.15)"/>
+                    <rect class="pagi-bar" x="32" y="296" width="88" height="19" rx="9.5" fill="rgba(255,255,255,0.6)"/>
+                    <rect x="44" y="340" width="112" height="7" rx="3.5" fill="rgba(0,0,0,0.18)"/>
+                    <rect x="44" y="362" width="112" height="7" rx="3.5" fill="rgba(0,0,0,0.18)"/>
+                    <rect x="44" y="384" width="112" height="7" rx="3.5" fill="rgba(0,0,0,0.18)"/>
+                    <ellipse class="arm-l" cx="-24" cy="238" rx="20" ry="14" fill="var(--pagi-color)"/>
+                    <ellipse class="arm-r" cx="224" cy="238" rx="20" ry="14" fill="var(--pagi-color)"/>
+                    <g class="eye-g">
+                        <ellipse class="pagi-sclera" cx="88" cy="152" rx="56" ry="62" fill="white"/>
+                        <g class="pupil-g">
+                            <circle class="pagi-pupil" cx="86" cy="152" r="31" fill="#1D1822"/>
+                            <circle class="pagi-hl1" cx="98" cy="139" r="10.5" fill="white"/>
+                            <circle class="pagi-hl2" cx="73" cy="167" r="5" fill="white" opacity="0.75"/>
+                        </g>
+                    </g>
+                    <path class="pagi-brow" d="M 42 74 Q 88 46 134 76" fill="none" stroke="#1D1822" stroke-width="9" stroke-linecap="round"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="theme-pills" role="group" aria-label="{{home.themes.change_pagi_color.aria-label}}">
+            <button type="button" class="theme-pill active" data-color="#41755A" aria-pressed="true">{{home.themes.light}}</button>
+            <button type="button" class="theme-pill" data-color="#4B3DE8" aria-pressed="false">{{home.themes.dark}}</button>
+            <button type="button" class="theme-pill" data-color="#C08CE8" aria-pressed="false">{{home.themes.aurora}}</button>
+            <button type="button" class="theme-pill" data-color="#C9CDD2" aria-pressed="false">{{home.themes.oled}}</button>
+            <button type="button" class="theme-pill" data-color="#E0A93F" aria-pressed="false">{{home.themes.leather}}</button>
+            <button type="button" class="theme-pill" data-color="#6B4FC1" data-gradient="url(#pagi-grad-ocaso)" aria-pressed="false">{{home.themes.dusk}}</button>
+        </div>
+
+        <div class="themes-gallery">
+            <figure class="theme-card">
+                <img src="{{root}}capturas%20para%20v3/tema_claro_{{img}}.jpg" alt="{{home.themes.light_theme.alt}}" loading="lazy" width="360" height="713" data-lbx="{{root}}capturas%20para%20v3/tema_claro_{{img}}.jpg">
+                <figcaption><span class="theme-swatch" style="background:#41755A"></span>{{home.themes.light_2}} <span class="tag-free">{{home.themes.free}}</span></figcaption>
+            </figure>
+            <figure class="theme-card">
+                <img src="{{root}}capturas%20para%20v3/tema_oscuro_{{img}}.jpg" alt="{{home.themes.dark_theme.alt}}" loading="lazy" width="360" height="713" data-lbx="{{root}}capturas%20para%20v3/tema_oscuro_{{img}}.jpg">
+                <figcaption><span class="theme-swatch" style="background:#4B3DE8"></span>{{home.themes.dark_2}} <span class="tag-free">{{home.themes.free}}</span></figcaption>
+            </figure>
+            <figure class="theme-card">
+                <img src="{{root}}capturas%20para%20v3/tema_aurora_{{img}}.jpg" alt="{{home.themes.aurora_theme.alt}}" loading="lazy" width="360" height="713" data-lbx="{{root}}capturas%20para%20v3/tema_aurora_{{img}}.jpg">
+                <figcaption><span class="theme-swatch" style="background:#C08CE8"></span>{{home.themes.aurora_2}} <span class="pro-tag">{{home.themes.pro}}</span></figcaption>
+            </figure>
+            <figure class="theme-card">
+                <img src="{{root}}capturas%20para%20v3/tema_oled_{{img}}.jpg" alt="{{home.themes.oled_theme.alt}}" loading="lazy" width="360" height="713" data-lbx="{{root}}capturas%20para%20v3/tema_oled_{{img}}.jpg">
+                <figcaption><span class="theme-swatch" style="background:#C9CDD2"></span>{{home.themes.oled_2}} <span class="pro-tag">{{home.themes.pro}}</span></figcaption>
+            </figure>
+            <figure class="theme-card">
+                <img src="{{root}}capturas%20para%20v3/tema_cuero_{{img}}.jpg" alt="{{home.themes.leather_theme.alt}}" loading="lazy" width="360" height="713" data-lbx="{{root}}capturas%20para%20v3/tema_cuero_{{img}}.jpg">
+                <figcaption><span class="theme-swatch" style="background:#E0A93F"></span>{{home.themes.leather_2}} <span class="pro-tag">{{home.themes.pro}}</span></figcaption>
+            </figure>
+            <figure class="theme-card">
+                <img src="{{root}}capturas%20para%20v3/tema_ocaso_{{img}}.jpg" alt="{{home.themes.dusk_theme.alt}}" loading="lazy" width="360" height="715" data-lbx="{{root}}capturas%20para%20v3/tema_ocaso_{{img}}.jpg">
+                <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span>{{home.themes.dusk_2}} <span class="pro-tag">{{home.themes.pro}}</span></figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!-- 5. FREE vs PRO -->
+<section class="band band-alt" id="{{anchor.pricing}}">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{home.pricing.free_forever_pro_if_you}}</h2>
+            <p>{{home.pricing.try_pro_features_for_7}}</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <img src="{{root}}ic_launcher_round.png" alt="{{home.pricing.lecturameter.alt}}" class="pricing-icon" width="56" height="56" loading="lazy">
+                <div class="pricing-name">{{home.pricing.free}}</div>
+                <div class="price-row"><span class="price-free">{{home.pricing.0}}</span></div>
+                <p class="price-note">{{home.pricing.the_whole_app_free_forever}}</p>
+                <ul class="pricing-list">
+                    <li>{{home.pricing.full_library}}</li>
+                    <li>{{home.pricing.sessions_and_timer}}</li>
+                    <li>{{home.pricing.book_widget_on_home_screen}}</li>
+                    <li>{{home.pricing.advanced_stats_and_heatmaps}}</li>
+                    <li>{{home.pricing.yearly_wrapped_and_history_always}}</li>
+                    <li>{{home.pricing.reading_bingo}}</li>
+                    <li>{{home.pricing.reading_challenges_up_to_15}}</li>
+                    <li>{{home.pricing.local_backups_and_google_drive}}</li>
+                    <li>{{home.pricing.tag_system_up_to_3}}</li>
+                    <li>{{home.pricing.customizable_reading_reminders_up}}</li>
+                    <li>{{home.pricing.spine_and_edge_photos_for}}</li>
+                </ul>
+                <div class="pricing-foot">{{home.pricing.these_will_never_become_pro}}</div>
+            </div>
+            <div class="pricing-card pro">
+                <img src="{{root}}ic_launcher_pro.png" alt="{{home.pricing.lecturameter_pro.alt}}" class="pricing-icon" width="56" height="56" loading="lazy">
+                <div class="pricing-name">{{home.pricing.lecturameter_pro}}</div>
+                <div class="price-row">
+                    <span class="price-new">{{home.pricing.4_99}}</span>
+                </div>
+                <p class="price-note">{{home.pricing.one_time_purchase_not_a}}</p>
+                <p class="price-ios-offer">{{home.pricing.ios_launch_offer_2_99}}</p>
+                <details class="price-currency-list">
+                    <summary>{{home.pricing.approximate_price_in_your_currency}}</summary>
+                    <ul>
+                        <li>{{home.pricing.eur_2_99}}</li>
+                        <li>USD $2.99</li>
+                        <li>GBP &#163;2.99</li>
+                        <li>CAD CA$3.99</li>
+                        <li>AUD A$4.99</li>
+                        <li>CHF CHF 3.00</li>
+                        <li>MXN MX$69</li>
+                        <li>{{home.pricing.brl_r_19_90}}</li>
+                        <li>ARS US$2.99</li>
+                        <li>{{home.pricing.clp_clp_2_990}}</li>
+                        <li>{{home.pricing.cop_cop_14_900}}</li>
+                        <li>PEN S/ 12.90</li>
+                        <li>JPY &#165;500</li>
+                        <li>CNY &#165;22</li>
+                        <li>INR &#8377;299</li>
+                        <li>{{home.pricing.pln_14_99_z}}</li>
+                    </ul>
+                    <p class="price-currency-note">{{home.pricing.final_prices_set_by_the}}</p>
+                </details>
+                <p class="price-note"><a href="{{root}}precios-regionales.html">{{home.pricing.see_regional_prices}}</a></p>
+                <p class="price-note"><a href="{{root}}activar-pro.html">{{home.pricing.see_how_to_activate_pro}}</a></p>
+                <p class="price-note">{{home.pricing.same_price_on_android_and}}</p>
+                <p class="price-trial">{{home.pricing.try_pro_free_for_7}}</p>
+                <p class="price-trial">{{home.pricing.no_card_required_for_the}}</p>
+                <ul class="pricing-list">
+                    <li>{{home.pricing.leather_aurora_oled_and_dusk}}</li>
+                    <li>{{home.pricing.immersive_timer}}</li>
+                    <li>{{home.pricing.golden_alternative_icon}}</li>
+                    <li>{{home.pricing.monthly_comparison_widget}}</li>
+                    <li>{{home.pricing.more_than_15_active_challenges}}</li>
+                    <li>{{home.pricing.unlimited_editions}}</li>
+                    <li>{{home.pricing.unlimited_reading_reminders}}</li>
+                    <li>{{home.pricing.extra_monthly_3x3_bingo_harder}}</li>
+                </ul>
+                <div class="pricing-foot">{{home.pricing.everything_else_stays_free_pro}}</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 6. PATCH NOTES -->
+<section class="band" id="{{anchor.whatsnew}}">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{home.whatsnew.patch_notes_v3_6}}</h2>
+            <p>{{home.whatsnew.the_latest_additions_to_lecturamet}}</p>
+        </div>
+        <div class="whatsnew-grid">
+            <div class="whatsnew-col">
+                <h3>{{home.whatsnew.new}}</h3>
+                <ul>
+                    <li>{{home.whatsnew.settings_reorganized_into_sections}}</li>
+                    <li>{{home.whatsnew.tags_system_up_to_3}}</li>
+                    <li>{{home.whatsnew.revamped_book_cards_and_detail}}</li>
+                    <li>{{home.whatsnew.5_star_ratings_with_half}}</li>
+                    <li>{{home.whatsnew.notes_split_into_quotes_notes}}</li>
+                    <li>{{home.whatsnew.share_books_challenges_bingos_heat}}</li>
+                    <li>{{home.whatsnew.customizable_reading_reminders}}</li>
+                    <li>{{home.whatsnew.dusk_theme_for_pro}}</li>
+                    <li>{{home.whatsnew.support_for_40_languages}}</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>{{home.whatsnew.fixes}}</h3>
+                <ul>
+                    <li>{{home.whatsnew.better_layout_in_landscape_and}}</li>
+                    <li>{{home.whatsnew.faster_and_more_reliable_book}}</li>
+                    <li>{{home.whatsnew.pro_widget_with_monthly_comparison}}</li>
+                    <li>{{home.whatsnew.destructive_actions_with_undo}}</li>
+                    <li>{{home.whatsnew.reset_tips_from_settings_help}}</li>
+                    <li>{{home.whatsnew.pagi_no_longer_covers_titles}}</li>
+                </ul>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;">
+            <a href="#roadmap" class="btn">{{home.whatsnew.and_for_the_next_version}}</a>
+        </p>
+    </div>
+</section>
+
+<!-- 7. ROADMAP -->
+<section class="band band-alt" id="roadmap">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{home.roadmap.what_s_coming_in_lecturameter}}</h2>
+            <p>{{home.roadmap.no_fixed_dates_everything_ships}}</p>
+        </div>
+        <div class="roadmap-list">
+            <div class="roadmap-item glow">
+                <span class="roadmap-tag planned">3.8</span>
+                <h3>{{home.roadmap.reading_progress_in}}</h3>
+                <p>{{home.roadmap.track_your_sessions_as_a}}</p>
+            </div>
+            <div class="roadmap-item">
+                <span class="roadmap-tag planned">3.8</span>
+                <h3>{{home.roadmap.switch_a_book_s_format}}</h3>
+                <p>{{home.roadmap.added_a_novel_by_mistake}}</p>
+            </div>
+            <div class="roadmap-item">
+                <span class="roadmap-tag planned">3.8</span>
+                <h3>{{home.roadmap.stats_donut_by_format}}</h3>
+                <p>{{home.roadmap.see_how_your_reading_breaks}}</p>
+            </div>
+            <div class="roadmap-item">
+                <span class="roadmap-tag planned">3.8</span>
+                <h3>{{home.roadmap.multiple_notes_and_quotes_per}}</h3>
+                <p>{{home.roadmap.right_now_you_can_save}}</p>
+            </div>
+            <div class="roadmap-item">
+                <span class="roadmap-tag planned">3.8</span>
+                <h3>{{home.roadmap.seasonal_pagi_outfits}}</h3>
+                <p>{{home.roadmap.pagi_gets_a_wardrobe_seven}}</p>
+            </div>
+            <div class="roadmap-item">
+                <span class="roadmap-tag planned">3.8</span>
+                <h3>{{home.roadmap.e_reader_sync_kosync}}</h3>
+                <p>{{home.roadmap.sync_your_reading_progress_with}}</p>
+            </div>
+            <div class="roadmap-item">
+                <span class="roadmap-tag planned">3.8</span>
+                <h3>{{home.roadmap.audiobook_challenges_and_bingo}}</h3>
+                <p>{{home.roadmap.two_new_challenges_for_audiobook}}</p>
+            </div>
+            <div class="roadmap-item">
+                <span class="roadmap-tag planned">3.8</span>
+                <h3>{{home.roadmap.better_genre_support}}</h3>
+                <p>{{home.roadmap.the_app_will_get_smarter}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 7.5 iOS WAITLIST -->
+<section class="band band-alt ios-band" id="ios">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{home.ios.try_it_on_iphone}}</h2>
+            <p class="section-sub">{{home.ios.lecturameter_for_iphone_is_now}}</p>
+        </div>
+        <div class="ios-hero">
+            <div class="pagi-lago" data-state="neutro" role="button" tabindex="0" aria-label="{{home.ios.pagi_lago.aria-label}}"></div>
+            <div class="ios-waitlist">
+                <a class="btn" href="https://testflight.apple.com/join/WAkrkgPq" target="_blank" rel="noopener">{{home.ios.try_the_testflight_beta}}</a>
+                <p class="ios-note">{{home.ios.if_it_won_t_install}} <a href="{{home.ios.mailto_lecturameter_app_gmail_com.href}}">{{home.ios.lecturameter_app_gmail_com}}</a>.</p>
+                <p class="ios-status" role="status" aria-live="polite"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 7.6 iOS DIFFERENCES -->
+<section class="band band-alt differences" id="{{anchor.ios_differences}}" aria-labelledby="differences-title">
+    <div class="container">
+        <h2 id="differences-title">{{home.ios_differences.lecturameter_on_iphone_and_android}}</h2>
+        <p>{{home.ios_differences.the_iphone_version_has_the}}</p>
+        <details class="differences-details">
+            <summary>{{home.ios_differences.iphone_vs_android_differences}}</summary>
+            <div class="differences-grid">
+                <div>
+                    <h3>{{home.ios_differences.iphone_only}}</h3>
+                    <ul>
+                        <li>{{home.ios_differences.timer_on_the_lock_screen}}</li>
+                        <li>{{home.ios_differences.ios_18_controls_reading_now}}</li>
+                        <li>{{home.ios_differences.icloud_drive_backup}}</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>{{home.ios_differences.android_only}}</h3>
+                    <ul>
+                        <li>{{home.ios_differences.timer_control_from_the_notificatio}}</li>
+                        <li>{{home.ios_differences.automatic_do_not_disturb_in}}</li>
+                        <li>{{home.ios_differences.full_language_selector}}</li>
+                        <li>{{home.ios_differences.widget_configuration_and_pinning}}</li>
+                        <li>{{home.ios_differences.landscape_mode_and_tablets}}</li>
+                        <li>{{home.ios_differences.redeeming}} <code>lm-…</code>{{home.ios_differences.codes}}</li>
+                        <li>{{home.ios_differences.free_pro_theme_at_the}}</li>
+                        <li>{{home.ios_differences.external_donations}}</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>{{home.ios_differences.on_both}}</h3>
+                    <ul>
+                        <li>{{home.ios_differences.book_statistics_challenges_and_bin}}</li>
+                        <li>{{home.ios_differences.google_drive_backup}}</li>
+                        <li>{{home.ios_differences.e_reader_sync_kosync}}</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>{{home.ios_differences.pro_purchase}}</h3>
+                    <ul>
+                        <li>{{home.ios_differences.on_iphone_pro_is_an}}</li>
+                        <li>{{home.ios_differences.the_7_day_trial_on}}</li>
+                        <li>{{home.ios_differences.to_move_pro_between_android}}</li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+
+        <details class="differences-details ios-first-demo" style="margin-top:16px;">
+            <summary>{{home.ios_differences.first_demo_of_lecturameter_on}}</summary>
+            <div style="padding:1.25rem; border-top:1px solid rgba(128,128,128,0.15);">
+                <p style="text-align:center; max-width:640px; margin:0 auto 20px; color:var(--muted);">{{home.ios_differences.this_was_recorded_on_september}}</p>
+                <video controls preload="metadata" playsinline style="display:block; max-width:360px; width:100%; margin:0 auto; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.2);">
+                    <source src="{{root}}videos/ios-first-demo.mp4" type="video/mp4">
+                    {{home.ios_differences.your_browser_does_not_support}}
+                </video>
+            </div>
+        </details>
+    </div>
+</section>
+
+<!-- 8. FAQ -->
+<section class="band" id="faq">
+    <div class="container">
+        <div class="section-head faq-head">
+            <h2>{{home.faq.frequently_asked_questions}}</h2>
+            <div class="pagi-faq" data-state="pensativo" role="button" tabindex="0" aria-label="{{home.faq.pensive_pagi.aria-label}}"></div>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.can_i_bring_my_library}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_go_to_settings_import}}
+                    <ul>
+                        <li>{{home.faq.goodreads_csv_goodreads_com_my}}</li>
+                        <li>{{home.faq.storygraph_csv_app_thestorygraph_c}}</li>
+                        <li>{{home.faq.bookmory_bookmory_or_xlsx_settings}}</li>
+                        <li>{{home.faq.fable_shelfbridge_csv_export_via}}</li>
+                        <li>{{home.faq.book_tracker_csv_settings_export}}</li>
+                        <li>{{home.faq.lecturameter_csv_if_you_exported}}</li>
+                        <li>{{home.faq.other_apps_babelio_pagebound_books}}</li>
+                    </ul></div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.is_my_data_mine}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.absolutely_your_data_is_stored}} <a href="{{root}}privacidad.html">{{home.faq.privacy_policy}}</a>{{home.faq.if_you_enable_google_drive}}</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.is_there_a_subscription}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.no_the_app_is_free}}</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.does_it_work_offline}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.almost_everything_works_offline_yo}}</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.is_there_an_iphone_version}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_in_public_beta_you}} <a href="https://testflight.apple.com/join/WAkrkgPq" target="_blank" rel="noopener">{{home.faq.testflight}}</a>{{home.faq.if_it_won_t_install}}</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.can_i_try_before_buying}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_there_s_a_free}}</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.what_happens_to_my_pro}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.it_depends_on_where_you}} <code>lm-…</code> {{home.faq.codes_can_only_be_redeemed}} <a href="{{root}}activar-pro.html">{{home.faq.how_to_activate_pro}}</a>.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.can_i_move_my_pro}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_between_android_and_iphone}}</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VERSION HISTORY -->
+<section class="band band-alt" id="{{anchor.history}}">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{home.history.version_history}}</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-q">{{home.history.v3_6_tags_ratings_40}}</button>
+                <div class="faq-a"><div class="faq-a-inner">
+                    {{home.history.new}}
+                    <ul>
+                        <li>{{home.history.settings_reorganized_into_sections}}</li>
+                        <li>{{home.history.tags_system_up_to_3}}</li>
+                        <li>{{home.history.revamped_book_cards_and_detail}}</li>
+                        <li>{{home.history.5_star_ratings_with_half}}</li>
+                        <li>{{home.history.notes_split_into_quotes_notes}}</li>
+                        <li>{{home.history.share_books_challenges_bingos_heat}}</li>
+                        <li>{{home.history.customizable_reading_reminders}}</li>
+                        <li>{{home.history.dusk_theme_for_pro}}</li>
+                        <li>{{home.history.support_for_40_languages}}</li>
+                    </ul>
+                    {{home.history.fixes}}
+                    <ul>
+                        <li>{{home.history.better_layout_in_landscape_and}}</li>
+                        <li>{{home.history.faster_and_more_reliable_book}}</li>
+                        <li>{{home.history.pro_widget_with_monthly_comparison}}</li>
+                        <li>{{home.history.destructive_actions_with_undo}}</li>
+                        <li>{{home.history.reset_tips_from_settings_help}}</li>
+                        <li>{{home.history.pagi_no_longer_covers_titles}}</li>
+                    </ul>
+                </div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.history.v3_5_immersive_session_sound}}</button>
+                <div class="faq-a"><div class="faq-a-inner">
+                    {{home.history.new}}
+                    <ul>
+                        <li>{{home.history.the_immersive_session_s_sound}}</li>
+                        <li>{{home.history.sound_groups_highlight_your_theme}}</li>
+                    </ul>
+                    {{home.history.fixes}}
+                    <ul>
+                        <li>{{home.history.landscape_no_longer_gets_stuck}}</li>
+                        <li>{{home.history.more_breathing_room_between_the}}</li>
+                    </ul>
+                </div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 9. FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-cta">
+            <h3>{{common.footer.start_tracking_your_reading_for}}</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">{{common.footer.get_on_google_play}}</a>
+        </div>
+
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>{{common.footer.product}}</h4>
+                <a href="#{{anchor.features}}">{{common.footer.features}}</a>
+                <a href="#{{anchor.pricing}}">{{common.footer.pricing}}</a>
+                <a href="{{root}}precios-regionales.html">{{common.footer.regional_prices}}</a>
+                <a href="#{{anchor.whatsnew}}">{{common.footer.patch_notes}}</a>
+                <a href="#{{anchor.history}}">{{common.footer.version_history}}</a>
+                <a href="#roadmap">{{common.footer.roadmap}}</a>
+                <a href="{{link_1999}}">{{common.footer.lecturameter_1999}}</a>
+                <a href="#faq">{{common.footer.faq}}</a>
+            </div>
+            <div class="footer-col">
+                <h4>{{common.footer.contact}}</h4>
+                <a href="mailto:lecturameter.app@gmail.com">{{common.footer.lecturameter_app_gmail_com}}</a>
+                <a href="{{root}}privacidad.html">{{common.footer.privacy_policy}}</a>
+                <a href="{{root}}tos.html">{{common.footer.terms_of_service}}</a>
+                <div class="donate-row">
+                    <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
+                        <img src="{{root}}kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
+                    </a>
+                    <a href="https://paypal.me/Lecturameter" target="_blank" rel="noopener" class="donate-btn paypal" aria-label="{{common.footer.paypal.aria-label}}">
+                        <img src="{{root}}paypal_logo.svg?v=1" alt="{{common.footer.paypal.alt}}" width="124" height="33">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>{{common.footer.social}}</h4>
+                <div class="footer-social">
+                    <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" aria-label="{{common.footer.google_play.aria-label}}">
+                        <svg viewBox="0 0 24 24"><path d="M1 2.571C1 1.804 1.459 1.2 2.144.988L12.233 12 2.144 23.012C1.46 22.8 1 22.196 1 21.429V2.571z" fill="#4285F4"/><path d="M2.144 23.012L14.396 12l3.167 3.096L5.07 22.47a2.325 2.325 0 01-2.926.542z" fill="#EA4335"/><path d="M22.14 10.693l-4.578 2.636L14.396 12l3.166-3.096 4.578 2.636c.86.495.86 1.658 0 2.153z" fill="#FBBC04"/><path d="M2.144.988A2.325 2.325 0 015.07 1.53l12.492 7.374L14.396 12 2.144.988z" fill="#34A853"/></svg>
+                    </a>
+                    <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" aria-label="{{common.footer.x_twitter.aria-label}}">
+                        <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                    </a>
+                    <a href="https://www.reddit.com/user/LM_Reader_Dev/" target="_blank" rel="noopener" aria-label="{{common.footer.reddit.aria-label}}">
+                        <svg viewBox="0 0 24 24"><path fill="#FF4500" d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/lecturameter.app/" target="_blank" rel="noopener" aria-label="{{common.footer.instagram.aria-label}}">
+                        <svg viewBox="0 0 24 24"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="5.5" fill="url(#ig)"/><path fill="#fff" d="M12 3.8c2.67 0 2.987.01 4.04.058 2.71.124 3.98 1.407 4.102 4.102.048 1.053.058 1.37.058 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.692-1.39 3.977-4.102 4.1-1.053.05-1.37.06-4.04.06-2.67 0-2.987-.01-4.04-.06-2.717-.123-3.977-1.412-4.102-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.127-2.694 1.39-3.978 4.102-4.102 1.053-.047 1.37-.058 4.04-.058zM12 2c-2.716 0-3.056.012-4.123.06-3.6.164-5.613 2.174-5.777 5.777C2.012 8.944 2 9.284 2 12s.012 3.057.06 4.123c.164 3.6 2.174 5.614 5.777 5.777 1.067.049 1.407.06 4.123.06s3.057-.011 4.123-.06c3.6-.163 5.615-2.174 5.777-5.777.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122c-.163-3.604-2.174-5.614-5.777-5.778C15.056 2.012 14.716 2 12 2zm0 4.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27zm0 8.468a3.333 3.333 0 1 1 0-6.666 3.333 3.333 0 0 1 0 6.666zm5.338-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>
+                    </a>
+                    <a href="https://linktr.ee/lecturameter" target="_blank" rel="noopener" aria-label="{{common.footer.linktree.aria-label}}">
+                        <svg viewBox="0 0 24 24" fill="#43E660"><path d="M13.736 5.853l4.005-4.117 2.325 2.38-4.2 4.005h5.908v3.305h-5.937l4.229 4.108-2.325 2.334-5.74-5.769-5.741 5.769-2.325-2.325 4.229-4.108H2.226V8.121h5.909l-4.2-4.004 2.324-2.381 4.005 4.117V0h3.472zm-3.472 10.306h3.472V24h-3.472z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer-signature">{{common.footer.made_between_books_on_many}}</p>
+        <p class="footer-signature" style="margin-top:1.5rem;font-size:0.9em;opacity:0.85;">
+            {{common.footer.features_2}}
+            <a href="{{link_feat_timer}}">{{common.footer.reading_timer}}</a> &middot;
+            <a href="{{link_feat_tracker}}">{{common.footer.reading_tracker}}</a> &middot;
+            <a href="{{link_feat_stats}}">{{common.footer.reading_statistics}}</a> &middot;
+            <a href="{{link_feat_goodreads}}">{{common.footer.goodreads_alternative}}</a> &middot;
+            <a href="{{link_feat_catalog}}">{{common.footer.book_catalog}}</a> &middot;
+            <a href="{{link_blog}}">{{common.footer.blog}}</a>
+        </p>
+        <div class="footer-bottom">
+            <span>{{common.footer.2026_lecturameter_independent_proj}}</span>
+            <a href="{{alt_href}}">{{common.footer.version_en_castellano}}</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lbx-overlay" id="lightbox">
+    <button class="lbx-close" aria-label="{{common.lbx.close.aria-label}}">&#x2715;</button>
+    <button class="lbx-nav lbx-prev" aria-label="{{common.lbx.previous.aria-label}}">&#x2039;</button>
+    <button class="lbx-nav lbx-next" aria-label="{{common.lbx.next.aria-label}}">&#x203A;</button>
+    <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+</div>
+
+<script src="{{root}}main.js?v=5.4"></script>
+</body>
+</html>

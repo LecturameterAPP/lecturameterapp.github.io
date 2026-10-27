@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <script>if(location.hash==='#catalogo'||location.hash==='#catalog')location.replace('./funciones/catalogo-libros/');</script>
+    <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('./funciones/catalogo-libros/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter · Lectura, retos y estadísticas</title>
     <meta name="description" content="Registra tu tiempo de lectura, páginas, ritmo y progreso con un tracker privado para Android. Sin cuenta, sin anuncios. Importa tu biblioteca desde Goodreads o StoryGraph.">
@@ -22,12 +22,12 @@
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta name="twitter:image:alt" content="Lecturameter · Lectura, retos y estadísticas">
     <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="U3dhVUGRPhecYYG37d5iETCGwpUsppjOMglMtRaNhZM">
-    <meta name="google-site-verification" content="bx3bz0E1rYVwW5llpQsDSBNxAL3WZkC7VDnWJeYc7Lg">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
     <meta name="twitter:site" content="@LecturameterAPP">
     <meta name="twitter:creator" content="@LecturameterAPP">
+    <meta name="google-site-verification" content="U3dhVUGRPhecYYG37d5iETCGwpUsppjOMglMtRaNhZM">
+    <meta name="google-site-verification" content="bx3bz0E1rYVwW5llpQsDSBNxAL3WZkC7VDnWJeYc7Lg">
 
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -36,8 +36,8 @@
     <link rel="shortcut icon" href="../favicon.ico">
 
     <link rel="canonical" href="https://lecturameterapp.github.io/es/">
-    <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/">
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/">
+    <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
     <link rel="stylesheet" href="../styles.css?v=6.7">
 
@@ -83,6 +83,14 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Lecturameter",
+      "url": "https://lecturameterapp.github.io/es/"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
         {"@type":"Question","name":"¿Puedo traer mi biblioteca desde otras apps?","acceptedAnswer":{"@type":"Answer","text":"Sí. Ve a Ajustes > Importar/Exportar y sigue el asistente paso a paso. Apps soportadas: Goodreads (CSV): exporta desde goodreads.com > My Books > Import and export > Export Library. StoryGraph (CSV): exporta desde app.thestorygraph.com > Manage account > Import/Export > Export STG Library (el CSV llega por email). Bookmory (.bookmory o XLSX): Ajustes > Copia de seguridad > Exportar. Fable / ShelfBridge (CSV): exporta mediante la extensión ShelfBridge. Book Tracker (CSV): Ajustes > Exportar. CSV de Lecturameter: si exportaste desde otro dispositivo con Lecturameter. Otras apps (Babelio, Pagebound, Bookshelf, Delibrista…): cualquier CSV compatible con el formato de Goodreads/StoryGraph."}},
@@ -106,10 +114,10 @@
     <button class="promo-close" aria-label="Cerrar" onclick="dismissPromo()">×</button>
 </div>
 
-<!-- ═══ NAV ═══ -->
+<!-- NAV -->
 <nav class="nav-bar">
     <div class="nav-inner">
-        <a href="../" class="nav-brand">
+        <a href="./" class="nav-brand">
             <img src="../ic_launcher_round.png" alt="Lecturameter" width="28" height="28">
             Lecturameter
         </a>
@@ -148,7 +156,7 @@
     </div>
 </nav>
 
-<!-- ═══ 1. HERO ═══ -->
+<!-- 1. HERO -->
 <section class="band band-hero" id="inicio">
     <div class="container">
         <div class="hero">
@@ -225,7 +233,7 @@
     </div>
 </section>
 
-<!-- ═══ 2. MÉTRICAS ═══ -->
+<!-- 2. METRICS -->
 <section class="band" id="metricas">
     <div class="container">
         <div class="section-head">
@@ -243,14 +251,14 @@
     </div>
 </section>
 
-<!-- ═══ ACCENT BAND ═══ -->
+<!-- ACCENT BAND -->
 <div class="band-accent">
     <div class="container">
         <p class="accent-quote">El cronómetro va de maravilla incluso con la pantalla apagada.</p>
     </div>
 </div>
 
-<!-- ═══ 3. TRES PILARES ═══ -->
+<!-- 3. THREE PILLARS -->
 <section class="band band-alt" id="funciones">
     <div class="container">
         <div class="section-head">
@@ -258,7 +266,7 @@
             <p>Tres pilares: biblioteca, cronómetro y estadísticas.</p>
         </div>
 
-        <!-- Pilar 1: Biblioteca -->
+        <!-- Pillar 1: Library -->
         <div class="showcase reveal-up">
             <div class="shot">
                 <div class="phone">
@@ -280,7 +288,7 @@
             </div>
         </div>
 
-        <!-- Pilar 2: Cronómetro -->
+        <!-- Pillar 2: Timer -->
         <div class="showcase flip reveal-up">
             <div class="shot timer-shot" data-mode="normal">
                 <div class="phone timer-phone">
@@ -305,7 +313,7 @@
             </div>
         </div>
 
-        <!-- Pilar 3: Estadísticas -->
+        <!-- Pillar 3: Stats -->
         <div class="showcase reveal-up">
             <div class="shot">
                 <div class="phone">
@@ -335,7 +343,7 @@
     </div>
 </section>
 
-<!-- ═══ 3. ESCAPARATE ═══ -->
+<!-- 3. SHOWCASE -->
 <section class="band" id="escaparate">
     <div class="container">
         <div class="section-head">
@@ -434,7 +442,7 @@
     </div>
 </section>
 
-<!-- ═══ 4. PAGI + TEMAS ═══ -->
+<!-- 4. PAGI + THEMES -->
 <section class="band" id="temas">
     <div class="container">
         <div class="section-head">
@@ -514,7 +522,7 @@
     </div>
 </section>
 
-<!-- ═══ 5. FREE vs PRO ═══ -->
+<!-- 5. FREE vs PRO -->
 <section class="band band-alt" id="precios">
     <div class="container">
         <div class="section-head">
@@ -593,7 +601,7 @@
     </div>
 </section>
 
-<!-- ═══ 6. NOTAS DE PARCHE ═══ -->
+<!-- 6. PATCH NOTES -->
 <section class="band" id="novedades">
     <div class="container">
         <div class="section-head">
@@ -633,7 +641,7 @@
     </div>
 </section>
 
-<!-- ═══ 7. ROADMAP ═══ -->
+<!-- 7. ROADMAP -->
 <section class="band band-alt" id="roadmap">
     <div class="container">
         <div class="section-head">
@@ -685,7 +693,7 @@
     </div>
 </section>
 
-<!-- ═══ 7.5 iOS WAITLIST ═══ -->
+<!-- 7.5 iOS WAITLIST -->
 <section class="band band-alt ios-band" id="ios">
     <div class="container">
         <div class="section-head">
@@ -703,7 +711,7 @@
     </div>
 </section>
 
-<!-- ═══ 7.6 iOS DIFFERENCES ═══ -->
+<!-- 7.6 iOS DIFFERENCES -->
 <section class="band band-alt differences" id="ios-diferencias" aria-labelledby="differences-title">
     <div class="container">
         <h2 id="differences-title">Lecturameter en iPhone y Android</h2>
@@ -764,7 +772,7 @@
     </div>
 </section>
 
-<!-- ═══ 8. FAQ ═══ -->
+<!-- 8. FAQ -->
 <section class="band" id="faq">
     <div class="container">
         <div class="section-head faq-head">
@@ -817,7 +825,7 @@
     </div>
 </section>
 
-<!-- ═══ HISTORIAL DE VERSIONES ═══ -->
+<!-- VERSION HISTORY -->
 <section class="band band-alt" id="historial">
     <div class="container">
         <div class="section-head">
@@ -869,7 +877,7 @@
     </div>
 </section>
 
-<!-- ═══ 9. FOOTER ═══ -->
+<!-- 9. FOOTER -->
 <footer class="site-footer">
     <div class="container">
         <div class="footer-cta">
@@ -937,7 +945,7 @@
         </p>
         <div class="footer-bottom">
             <span>&copy; 2026 Lecturameter &middot; Proyecto independiente</span>
-            <a href="../en/">English version</a>
+            <a href="../">English version</a>
         </div>
     </div>
 </footer>
