@@ -70,3 +70,37 @@ Si falta una captura en la version actual el build usa la de la version anterior
 3. Repasar `release.3_9.*` en cada idioma contra las notas reales de Play de la 3.9: el texto actual
    es un BORRADOR sacado solo de `promo_39_*_v2.json`. Sin 3.10 en `release_order`, el roadmap se oculta.
 4. `python tools/i18n/build.py`, mirar los WARNING, revisar la web en local y commitear la salida.
+
+## Flujo de traduccion a 49 idiomas (fase 1)
+
+Los 47 idiomas nuevos ya estan dados de alta en `i18n/locales.json`, pero un idioma solo se genera
+(y sale en el selector, hreflang y sitemap) si existe `i18n/<codigo>.json`.
+
+1. `python tools/i18n/extract.py` -> `tools/i18n/work/source.json` (`{clave: {en, es, note}}`; listas como
+   `clave#0`, tarjetas como `clave#0.title`). Excluye URLs, numeros, nombres propios y claves de config
+   (esas las copia `apply.py` del ingles). Incluye las claves `legal.*` y `legal.disclaimer*`.
+2. `python tools/i18n/glossary.py` -> `work/glossary/<codigo>.json` (terminos EN -> texto de la app en ese
+   idioma, sacado de los strings de `C:/Refrac/lm-tronco`). La carpeta `work/` no se commitea.
+3. El workflow de traduccion escribe `tools/i18n/work/out/<codigo>.json`: plano `clave -> texto`, mismas
+   claves que `source.json`, conservando etiquetas HTML, `href`, marcadores (`{{x}}`, `%s`, `{0}`), URLs y numeros.
+4. `python tools/i18n/apply.py --all` (o `apply.py <codigo>`) valida y escribe `i18n/<codigo>.json`. Si hay claves
+   malas lista cada una y no escribe. Aviso (no error): valor identico al EN en claves de mas de 4 palabras.
+5. `python tools/i18n/build.py` y commitear la salida (`<codigo>/`, `sitemap.xml`, y los HTML de es/en/raiz,
+   que ganan el idioma en el selector).
+
+### Paginas legales traducidas
+
+`/<codigo>/privacy/`, `/privacy-1999/` y `/terms/` salen de `src/templates/legal-*.html` solo para los
+idiomas nuevos (es/en usan los originales `privacidad.html`, `privacidad-1999.html`, `tos.html`, que no se
+tocan y aceptan `?lang=`). Llevan `noindex, follow`, aviso `legal.disclaimer` y no van al sitemap. Las plantillas
+y sus claves EN/ES se derivaron con `make_legal.py` (solo repetirlo si cambia el texto legal original).
+Los enlaces del pie (`link_privacy`, `link_privacy99`, `link_terms`) apuntan al original en es/en y a la
+traduccion en el resto.
+
+### Capturas por idioma
+
+`python tools/i18n/make_shots.py` convierte a WebP 720 px (solo idiomas nuevos) desde `C:/Refrac`:
+- 3.8: `capturas/3.8/<codigo>/{portada,retos,estadisticas}.webp` (mapeo en `screenshots.3.8.localized`; el resto
+  de huecos usa la imagen EN de siempre).
+- 1999: `capturas-1999/<codigo>/`, `capturas-1999/temas/<codigo>/`, `capturas-1999/salvapantallas/<codigo>/`
+  (marcador `{{shot99:...}}`, con respaldo a las EN si falta).
