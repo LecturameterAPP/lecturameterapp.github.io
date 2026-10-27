@@ -11,9 +11,10 @@ import os
 import posixpath
 import re
 import sys
+import urllib.parse
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-MARK = re.compile(r'\{\{(json:)?([A-Za-z0-9_.@\-]+)\}\}')
+MARK = re.compile(r'\{\{(json:|shot:|shot_abs:)?([A-Za-z0-9_.@\-]+)\}\}')
 
 
 class BuildError(Exception):
@@ -146,6 +147,35 @@ def lang_picker(loc, page, locales, strings, indent):
     return ('\n' + indent).join(lines)
 
 
+WARNINGS = []
+
+
+def make_shot_resolver(cfg, loc, errors, where):
+    """{{shot:nombre.ext}}: busca la captura en la carpeta de la version actual y, si falta,
+    en la de la version anterior (con aviso). Config: screenshots.<version>.{dir,suffix}."""
+    cur = cfg['current_release']
+    order = cfg['release_order']
+    chain = [v for v in reversed(order[:order.index(cur) + 1]) if v in cfg.get('screenshots', {})]
+
+    def resolve(name):
+        base, ext = os.path.splitext(name)
+        first = None
+        for ver in chain:
+            sc = cfg['screenshots'][ver]
+            rel_path = sc['dir'].format(code=loc['code'], img=loc['img']) + base + sc['suffix'].format(
+                code=loc['code'], img=loc['img']) + ext
+            if os.path.exists(os.path.join(ROOT, *rel_path.split('/'))):
+                if first is not None:
+                    WARNINGS.append('captura %s: no existe en %s/%s (%s); se usa la de %s' % (
+                        name, chain[0], loc['code'], first, ver))
+                return rel_path
+            if first is None:
+                first = rel_path
+        errors.append('%s: no existe la captura %s en ninguna version (%s)' % (where, name, first))
+        return first or name
+    return resolve
+
+
 def vkey(version):
     return version.replace('.', '_')
 
@@ -225,7 +255,11 @@ def render(text, variables, strings, where, errors, depth=0):
     live = bool(variables.get('ios_live'))
 
     def sub(m):
-        as_json, key = m.group(1), m.group(2)
+        prefix, key = m.group(1), m.group(2)
+        as_json = prefix == 'json:'
+        if prefix in ('shot:', 'shot_abs:'):
+            path = urllib.parse.quote(variables['__shot'](key))
+            return (variables['root'] if prefix == 'shot:' else variables['site_url']) + path
         if key in variables:
             val = variables[key]
         elif key in strings:
@@ -257,6 +291,7 @@ def main():
             where = '%s/%s' % (loc['code'], page['template'])
             variables = build_vars(cfg, loc, pname, page, locales)
             variables.update(release_vars(cfg, strings, where, errors))
+            variables['__shot'] = make_shot_resolver(cfg, loc, errors, where)
             variables['ios_live'] = '1' if cfg.get('ios_live') else ''
             variables['ios_url'] = cfg['app_store_url'] if cfg.get('ios_live') else cfg['testflight_url']
             variables['lm_i18n_json'] = js_payload(strings, bool(cfg.get('ios_live')))
@@ -282,6 +317,8 @@ def main():
             f.write(out)
         print('ok     ' if prev == out else 'updated', os.path.relpath(path, ROOT).replace(os.sep, '/'))
     update_sitemap(cfg, changed)
+    for w in sorted(set(WARNINGS)):
+        print('WARNING:', w, file=sys.stderr)
 
 
 CRLF = '\r\n'

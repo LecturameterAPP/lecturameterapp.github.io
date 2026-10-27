@@ -10,6 +10,16 @@
   "ios_live": false,
   "app_store_url": "",
   "testflight_url": "https://testflight.apple.com/join/WAkrkgPq",
+  "screenshots": {
+    "3.8": {
+      "dir": "capturas para v3/",
+      "suffix": "_{img}"
+    },
+    "3.9": {
+      "dir": "capturas/3.9/{code}/",
+      "suffix": ""
+    }
+  },
   "pages": {
     "index": {
       "template": "index.html",

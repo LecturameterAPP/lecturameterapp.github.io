@@ -115,11 +115,11 @@
 
         // Swap screenshots for current theme. Two strategies:
         //  - imgs with data-src-dark: switch src/data-lbx between stored light and dark variants.
-        //  - otherwise: replace _claro_ <-> _oscuro_ token in path.
+        //  - otherwise: replace the _claro <-> _oscuro token in the file name (any screenshots folder).
         // Theme gallery is always skipped (each figure shows a specific theme).
         function swapCapturesForTheme() {
             var dark = getIsDark();
-            document.querySelectorAll('img[src*="capturas%20para%20v3/"], img[src*="capturas para v3/"]').forEach(function (img) {
+            document.querySelectorAll('img[src*="_claro"], img[src*="_oscuro"]').forEach(function (img) {
                 if (img.closest('.themes-gallery')) return;
                 var explicitDark = img.getAttribute('data-src-dark');
                 if (explicitDark) {
@@ -129,11 +129,11 @@
                     if (img.hasAttribute('data-lbx')) img.setAttribute('data-lbx', target);
                     return;
                 }
-                var from = dark ? '_claro_' : '_oscuro_';
-                var to   = dark ? '_oscuro_' : '_claro_';
+                var re = dark ? /_claro(?=[_.])/g : /_oscuro(?=[_.])/g;
+                var to = dark ? '_oscuro' : '_claro';
                 ['src', 'data-lbx'].forEach(function (attr) {
                     var v = img.getAttribute(attr);
-                    if (v && v.indexOf(from) !== -1) img.setAttribute(attr, v.split(from).join(to));
+                    if (v) img.setAttribute(attr, v.replace(re, to));
                 });
             });
         }
