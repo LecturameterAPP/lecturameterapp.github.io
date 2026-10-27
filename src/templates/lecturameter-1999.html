@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="{{root}}favicon.ico">
 
     <link rel="canonical" href="{{page_url}}">
-{{hreflang_links}}    <link rel="stylesheet" href="{{root}}styles.css?v=6.8">
+{{hreflang_links}}    <link rel="stylesheet" href="{{root}}styles.css?v=6.9">
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 </head>
@@ -68,7 +68,7 @@
         </ul>
         <div class="nav-controls">
             <button class="nav-theme-btn" aria-label="{{common.nav.toggle_theme.aria-label}}">&#x263E;</button>
-            <a href="{{alt_href}}" class="nav-lang-btn">{{alt_code_upper}}</a>
+            {{lang_picker}}
             <a href="#{{anchor.closed_test}}" class="nav-cta desktop-only">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M5 3l14 9-14 9V3z"/></svg>
                 {{common.nav.download}}
@@ -443,6 +443,6 @@
 </div>
 
 <script id="lm-i18n" type="application/json">{{lm_i18n_json}}</script>
-<script src="{{root}}main.js?v=6.3" defer></script>
+<script src="{{root}}main.js?v=6.4" defer></script>
 </body>
 </html>

@@ -357,7 +357,6 @@
  "common.footer.book_catalog": "Book Catalog",
  "common.footer.blog": "Blog",
  "common.footer.2026_lecturameter_independent_proj": "&copy; 2026 Lecturameter &middot; Independent project",
- "common.footer.version_en_castellano": "Version en castellano",
  "common.lbx.close.aria-label": "Close",
  "common.lbx.previous.aria-label": "Previous",
  "common.lbx.next.aria-label": "Next",
@@ -556,5 +555,7 @@
   "I prefer Android.",
   "I refuse to jump the fence.",
   "Do NOT put me in a box."
- ]
+ ],
+ "common.lang.search": "Search language…",
+ "common.lang.label": "Language"
 }

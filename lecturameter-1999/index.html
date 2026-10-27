@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
+    <script>(function(){try{var L={"en":"/lecturameter-1999/","es":"/es/lecturameter-1999/"};var s=null;try{s=localStorage.getItem('lm_lang')}catch(e){}var t=null;if(s){if(L[s])t=s}else{var ls=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||''];for(var i=0;i<ls.length;i++){var l=String(ls[i]).toLowerCase().replace('_','-');var c;if(l==='pt-br')c='pt-br';else if(l.indexOf('pt')===0)c='pt';else if(l.indexOf('zh')===0)c='zh-cn';else if(l==='nb'||l==='nn'||l.indexOf('nb-')===0||l.indexOf('nn-')===0)c='no';else if(l==='iw'||l.indexOf('iw-')===0)c='he';else if(l==='in'||l.indexOf('in-')===0)c='id';else c=l.split('-')[0];if(L[c]){t=c;break}}}if(t&&t!=='en')location.replace(L[t]+location.hash)}catch(e){}})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter 1999 - Lecturameter</title>
     <meta name="description" content="Lecturameter as if you had installed it from a CD-ROM in 1999. An alternative client with windows, menus, tables and an LCD timer that opens your real backups. Free.">
@@ -31,7 +32,7 @@
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/lecturameter-1999/">
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/lecturameter-1999/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/lecturameter-1999/">
-    <link rel="stylesheet" href="../styles.css?v=6.8">
+    <link rel="stylesheet" href="../styles.css?v=6.9">
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
 </head>
@@ -72,7 +73,19 @@
         </ul>
         <div class="nav-controls">
             <button class="nav-theme-btn" aria-label="Toggle theme">&#x263E;</button>
-            <a href="../es/lecturameter-1999/" class="nav-lang-btn">ES</a>
+            <div class="lang-picker">
+                <button type="button" class="nav-lang-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-panel" aria-label="Language">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
+                    <span class="long">English</span><span class="short">EN</span> <span aria-hidden="true">▾</span>
+                </button>
+                <div class="lang-panel" id="lang-panel" hidden>
+                    <input type="search" class="lang-search" placeholder="Search language…" aria-label="Search language…" autocomplete="off">
+                    <div class="lang-grid">
+                        <a href="./" lang="en" hreflang="en" data-code="en" data-search="english en" class="current" aria-current="true">English</a>
+                        <a href="../es/lecturameter-1999/" lang="es" hreflang="es" data-code="es" data-search="español es">Español</a>
+                    </div>
+                </div>
+            </div>
             <a href="#closed-test" class="nav-cta desktop-only">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M5 3l14 9-14 9V3z"/></svg>
                 Download
@@ -447,6 +460,6 @@
 </div>
 
 <script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi applauds you!", "Shine, little star!", "Shhh, I'm reading.", "Pagi is watching…"], "pagi_angry": ["Ouch! That hurt!", "Enough clicks!", "Grr, leave me alone.", "Not funny anymore."], "lago_happy": ["iOS coming soon!", "More readers to meet!", "Get your AirPods ready!", "See you on the App Store."], "lago_angry": ["You are not taking me there…", "I prefer Android.", "I refuse to jump the fence.", "Do NOT put me in a box."]}</script>
-<script src="../main.js?v=6.3" defer></script>
+<script src="../main.js?v=6.4" defer></script>
 </body>
 </html>

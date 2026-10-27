@@ -357,7 +357,6 @@
  "common.footer.book_catalog": "Catálogo de libros",
  "common.footer.blog": "Blog",
  "common.footer.2026_lecturameter_independent_proj": "&copy; 2026 Lecturameter &middot; Proyecto independiente",
- "common.footer.version_en_castellano": "English version",
  "common.lbx.close.aria-label": "Cerrar",
  "common.lbx.previous.aria-label": "Anterior",
  "common.lbx.next.aria-label": "Siguiente",
@@ -556,5 +555,7 @@
   "Prefiero Android.",
   "No pienso saltar la manzana.",
   "Ni se te ocurra meterme ahí."
- ]
+ ],
+ "common.lang.search": "Buscar idioma…",
+ "common.lang.label": "Idioma"
 }

@@ -39,7 +39,7 @@
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/">
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.8">
+    <link rel="stylesheet" href="../styles.css?v=6.9">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
@@ -144,7 +144,19 @@
         </ul>
         <div class="nav-controls">
             <button class="nav-theme-btn" aria-label="Cambiar tema">☾</button>
-            <a href="../" class="nav-lang-btn">EN</a>
+            <div class="lang-picker">
+                <button type="button" class="nav-lang-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-panel" aria-label="Idioma">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
+                    <span class="long">Español</span><span class="short">ES</span> <span aria-hidden="true">▾</span>
+                </button>
+                <div class="lang-panel" id="lang-panel" hidden>
+                    <input type="search" class="lang-search" placeholder="Buscar idioma…" aria-label="Buscar idioma…" autocomplete="off">
+                    <div class="lang-grid">
+                        <a href="../" lang="en" hreflang="en" data-code="en" data-search="english en">English</a>
+                        <a href="./" lang="es" hreflang="es" data-code="es" data-search="español es" class="current" aria-current="true">Español</a>
+                    </div>
+                </div>
+            </div>
             <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
                 <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
                 Descargar
@@ -945,7 +957,6 @@
         </p>
         <div class="footer-bottom">
             <span>&copy; 2026 Lecturameter &middot; Proyecto independiente</span>
-            <a href="../">English version</a>
         </div>
     </div>
 </footer>
@@ -959,6 +970,6 @@
 </div>
 
 <script id="lm-i18n" type="application/json">{"pagi_happy": ["¡Pagi te aplaude!", "¡Brilla, estrellita!", "Shhh, estoy leyendo.", "Pagi te observa…"], "pagi_angry": ["¡Ay! ¡Eso ha dolido!", "¡Basta ya de clicks!", "Grr, déjame en paz.", "Ya no tiene gracia."], "lago_happy": ["¡iOS pronto!", "¡Voy a conocer más lectores!", "¡Preparad los AirPods!", "Nos vemos en el App Store."], "lago_angry": ["¿A que no me llevas?", "Prefiero Android.", "No pienso saltar la manzana.", "Ni se te ocurra meterme ahí."]}</script>
-<script src="../main.js?v=5.5"></script>
+<script src="../main.js?v=5.6"></script>
 </body>
 </html>

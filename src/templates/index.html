@@ -35,7 +35,7 @@
     <link rel="shortcut icon" href="{{root}}favicon.ico">
 
     <link rel="canonical" href="{{page_url}}">
-{{hreflang_links}}    <link rel="stylesheet" href="{{root}}styles.css?v=6.8">
+{{hreflang_links}}    <link rel="stylesheet" href="{{root}}styles.css?v=6.9">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
@@ -140,7 +140,7 @@
         </ul>
         <div class="nav-controls">
             <button class="nav-theme-btn" aria-label="{{common.nav.toggle_theme.aria-label}}">☾</button>
-            <a href="{{alt_href}}" class="nav-lang-btn">{{alt_code_upper}}</a>
+            {{lang_picker}}
             <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
                 <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
                 {{common.nav.download}}
@@ -941,7 +941,6 @@
         </p>
         <div class="footer-bottom">
             <span>{{common.footer.2026_lecturameter_independent_proj}}</span>
-            <a href="{{alt_href}}">{{common.footer.version_en_castellano}}</a>
         </div>
     </div>
 </footer>
@@ -955,6 +954,6 @@
 </div>
 
 <script id="lm-i18n" type="application/json">{{lm_i18n_json}}</script>
-<script src="{{root}}main.js?v=5.5"></script>
+<script src="{{root}}main.js?v=5.6"></script>
 </body>
 </html>

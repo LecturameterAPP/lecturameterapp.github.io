@@ -4,6 +4,65 @@
     var I18N = {};
     try { I18N = JSON.parse(document.getElementById('lm-i18n').textContent) || {}; } catch (e) {}
 
+    // ─── SELECTOR DE IDIOMA ───
+    (function () {
+        var picker = document.querySelector('.lang-picker');
+        if (!picker) return;
+        var btn = picker.querySelector('.lang-btn');
+        var panel = picker.querySelector('.lang-panel');
+        var search = picker.querySelector('.lang-search');
+        var links = Array.prototype.slice.call(picker.querySelectorAll('.lang-grid a'));
+        function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+        function visible() { return links.filter(function (a) { return !a.hidden; }); }
+        function open() {
+            panel.hidden = false;
+            btn.setAttribute('aria-expanded', 'true');
+            search.value = '';
+            filter('');
+            search.focus();
+        }
+        function close(returnFocus) {
+            panel.hidden = true;
+            btn.setAttribute('aria-expanded', 'false');
+            if (returnFocus) btn.focus();
+        }
+        function filter(q) {
+            q = norm(q.trim());
+            links.forEach(function (a) { a.hidden = q !== '' && norm(a.getAttribute('data-search')).indexOf(q) < 0; });
+        }
+        btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            if (panel.hidden) open(); else close(false);
+        });
+        search.addEventListener('input', function () { filter(search.value); });
+        panel.addEventListener('click', function (e) { e.stopPropagation(); });
+        document.addEventListener('click', function () { if (!panel.hidden) close(false); });
+        document.addEventListener('keydown', function (e) {
+            if (panel.hidden) return;
+            if (e.key === 'Escape') { close(true); return; }
+            if (e.key === 'Tab' && !panel.contains(document.activeElement)) { close(false); return; }
+            var keys = ['ArrowDown', 'ArrowUp', 'ArrowLeft', 'ArrowRight'];
+            if (keys.indexOf(e.key) < 0) return;
+            var list = visible();
+            if (!list.length) return;
+            var i = list.indexOf(document.activeElement);
+            var fwd = e.key === 'ArrowDown' || e.key === 'ArrowRight';
+            if (document.documentElement.dir === 'rtl' && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) fwd = !fwd;
+            if (document.activeElement === search) {
+                if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') return; // edición de texto
+                i = -1;
+            }
+            e.preventDefault();
+            var n = i < 0 ? (fwd ? 0 : list.length - 1) : (i + (fwd ? 1 : -1) + list.length) % list.length;
+            list[n].focus();
+        });
+        links.forEach(function (a) {
+            a.addEventListener('click', function () {
+                try { localStorage.setItem('lm_lang', a.getAttribute('data-code')); } catch (err) {}
+            });
+        });
+    })();
+
     // ─── SCROLL-SPY ───
     var pills = document.querySelectorAll('.nav-pills a[href^="#"]');
     var sections = [];
