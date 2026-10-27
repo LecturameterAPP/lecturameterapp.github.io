@@ -132,7 +132,9 @@
             <li><a href="#{{anchor.pricing}}">{{common.nav.pro}}</a></li>
             <li><a href="#{{anchor.whatsnew}}">{{common.nav.patch_notes}}</a></li>
             <li><a href="#{{anchor.history}}">{{common.nav.history}}</a></li>
+            {{#if has_roadmap}}
             <li><a href="#roadmap">{{common.nav.roadmap}}</a></li>
+{{/if}}
             <li><a href="#ios">{{common.nav.ios}}</a></li>
             <li><a href="{{link_1999}}">1999</a></li>
             <li><a href="#faq">{{common.nav.faq}}</a></li>
@@ -171,7 +173,7 @@
                 </ul>
                 <div class="hero-cta reveal-up in-view d4">
                     <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">{{home.home.get_on_google_play}}</a>
-                    <a href="https://testflight.apple.com/join/WAkrkgPq" target="_blank" rel="noopener" class="btn">{{home.home.try_on_iphone}}</a>
+                    <a href="{{ios_url}}" target="_blank" rel="noopener" class="btn">{{home.home.try_on_iphone}}</a>
                 </div>
                 <div class="testimonial reveal-up in-view d5">
                     <q>{{home.home.this_app_is_really_nice}}</q>
@@ -601,94 +603,48 @@
 <section class="band" id="{{anchor.whatsnew}}">
     <div class="container">
         <div class="section-head">
-            <h2>{{home.whatsnew.patch_notes_v3_6}}</h2>
+            <h2>{{home.whatsnew.title}}</h2>
             <p>{{home.whatsnew.the_latest_additions_to_lecturamet}}</p>
         </div>
         <div class="whatsnew-grid">
             <div class="whatsnew-col">
                 <h3>{{home.whatsnew.new}}</h3>
                 <ul>
-                    <li>{{home.whatsnew.settings_reorganized_into_sections}}</li>
-                    <li>{{home.whatsnew.tags_system_up_to_3}}</li>
-                    <li>{{home.whatsnew.revamped_book_cards_and_detail}}</li>
-                    <li>{{home.whatsnew.5_star_ratings_with_half}}</li>
-                    <li>{{home.whatsnew.notes_split_into_quotes_notes}}</li>
-                    <li>{{home.whatsnew.share_books_challenges_bingos_heat}}</li>
-                    <li>{{home.whatsnew.customizable_reading_reminders}}</li>
-                    <li>{{home.whatsnew.dusk_theme_for_pro}}</li>
-                    <li>{{home.whatsnew.support_for_40_languages}}</li>
+{{notes_new_items}}
                 </ul>
             </div>
+{{#if has_notes_fixes}}
             <div class="whatsnew-col">
                 <h3>{{home.whatsnew.fixes}}</h3>
                 <ul>
-                    <li>{{home.whatsnew.better_layout_in_landscape_and}}</li>
-                    <li>{{home.whatsnew.faster_and_more_reliable_book}}</li>
-                    <li>{{home.whatsnew.pro_widget_with_monthly_comparison}}</li>
-                    <li>{{home.whatsnew.destructive_actions_with_undo}}</li>
-                    <li>{{home.whatsnew.reset_tips_from_settings_help}}</li>
-                    <li>{{home.whatsnew.pagi_no_longer_covers_titles}}</li>
+{{notes_fix_items}}
                 </ul>
             </div>
+{{/if}}
         </div>
+{{#if has_roadmap}}
         <p style="text-align:center; margin-top:2rem;">
             <a href="#roadmap" class="btn">{{home.whatsnew.and_for_the_next_version}}</a>
         </p>
+{{/if}}
     </div>
 </section>
 
+{{#if has_roadmap}}
 <!-- 7. ROADMAP -->
 <section class="band band-alt" id="roadmap">
     <div class="container">
         <div class="section-head">
-            <h2>{{home.roadmap.what_s_coming_in_lecturameter}}</h2>
-            <p>{{home.roadmap.no_fixed_dates_everything_ships}}</p>
+            <h2>{{roadmap_heading}}</h2>
+            <p>{{roadmap_sub}}</p>
         </div>
         <div class="roadmap-list">
-            <div class="roadmap-item glow">
-                <span class="roadmap-tag planned">3.8</span>
-                <h3>{{home.roadmap.reading_progress_in}}</h3>
-                <p>{{home.roadmap.track_your_sessions_as_a}}</p>
-            </div>
-            <div class="roadmap-item">
-                <span class="roadmap-tag planned">3.8</span>
-                <h3>{{home.roadmap.switch_a_book_s_format}}</h3>
-                <p>{{home.roadmap.added_a_novel_by_mistake}}</p>
-            </div>
-            <div class="roadmap-item">
-                <span class="roadmap-tag planned">3.8</span>
-                <h3>{{home.roadmap.stats_donut_by_format}}</h3>
-                <p>{{home.roadmap.see_how_your_reading_breaks}}</p>
-            </div>
-            <div class="roadmap-item">
-                <span class="roadmap-tag planned">3.8</span>
-                <h3>{{home.roadmap.multiple_notes_and_quotes_per}}</h3>
-                <p>{{home.roadmap.right_now_you_can_save}}</p>
-            </div>
-            <div class="roadmap-item">
-                <span class="roadmap-tag planned">3.8</span>
-                <h3>{{home.roadmap.seasonal_pagi_outfits}}</h3>
-                <p>{{home.roadmap.pagi_gets_a_wardrobe_seven}}</p>
-            </div>
-            <div class="roadmap-item">
-                <span class="roadmap-tag planned">3.8</span>
-                <h3>{{home.roadmap.e_reader_sync_kosync}}</h3>
-                <p>{{home.roadmap.sync_your_reading_progress_with}}</p>
-            </div>
-            <div class="roadmap-item">
-                <span class="roadmap-tag planned">3.8</span>
-                <h3>{{home.roadmap.audiobook_challenges_and_bingo}}</h3>
-                <p>{{home.roadmap.two_new_challenges_for_audiobook}}</p>
-            </div>
-            <div class="roadmap-item">
-                <span class="roadmap-tag planned">3.8</span>
-                <h3>{{home.roadmap.better_genre_support}}</h3>
-                <p>{{home.roadmap.the_app_will_get_smarter}}</p>
-            </div>
+{{roadmap_items}}
         </div>
     </div>
 </section>
 
+{{/if}}
 <!-- 7.5 iOS WAITLIST -->
 <section class="band band-alt ios-band" id="ios">
     <div class="container">
@@ -699,7 +655,7 @@
         <div class="ios-hero">
             <div class="pagi-lago" data-state="neutro" role="button" tabindex="0" aria-label="{{home.ios.pagi_lago.aria-label}}"></div>
             <div class="ios-waitlist">
-                <a class="btn" href="https://testflight.apple.com/join/WAkrkgPq" target="_blank" rel="noopener">{{home.ios.try_the_testflight_beta}}</a>
+                <a class="btn" href="{{ios_url}}" target="_blank" rel="noopener">{{home.ios.try_the_testflight_beta}}</a>
                 <p class="ios-note">{{home.ios.if_it_won_t_install}} <a href="{{home.ios.mailto_lecturameter_app_gmail_com.href}}">{{home.ios.lecturameter_app_gmail_com}}</a>.</p>
                 <p class="ios-status" role="status" aria-live="polite"></p>
             </div>
@@ -803,7 +759,7 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">{{home.faq.is_there_an_iphone_version}}</button>
-                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_in_public_beta_you}} <a href="https://testflight.apple.com/join/WAkrkgPq" target="_blank" rel="noopener">{{home.faq.testflight}}</a>{{home.faq.if_it_won_t_install}}</div></div>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_in_public_beta_you}} <a href="{{ios_url}}" target="_blank" rel="noopener">{{home.faq.testflight}}</a>{{home.faq.if_it_won_t_install}}</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">{{home.faq.can_i_try_before_buying}}</button>
@@ -828,6 +784,7 @@
             <h2>{{home.history.version_history}}</h2>
         </div>
         <div class="faq-list">
+{{history_items}}
             <div class="faq-item">
                 <button class="faq-q">{{home.history.v3_6_tags_ratings_40}}</button>
                 <div class="faq-a"><div class="faq-a-inner">
@@ -889,7 +846,9 @@
                 <a href="{{root}}precios-regionales.html">{{common.footer.regional_prices}}</a>
                 <a href="#{{anchor.whatsnew}}">{{common.footer.patch_notes}}</a>
                 <a href="#{{anchor.history}}">{{common.footer.version_history}}</a>
+{{#if has_roadmap}}
                 <a href="#roadmap">{{common.footer.roadmap}}</a>
+{{/if}}
                 <a href="{{link_1999}}">{{common.footer.lecturameter_1999}}</a>
                 <a href="#faq">{{common.footer.faq}}</a>
             </div>

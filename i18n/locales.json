@@ -1,9 +1,24 @@
 {
   "site_url": "https://lecturameterapp.github.io/",
   "default_locale": "en",
+  "current_release": "3.8",
+  "release_order": [
+    "3.7",
+    "3.8",
+    "3.9"
+  ],
+  "ios_live": false,
+  "app_store_url": "",
+  "testflight_url": "https://testflight.apple.com/join/WAkrkgPq",
   "pages": {
-    "index": { "template": "index.html", "dir": "" },
-    "lm1999": { "template": "lecturameter-1999.html", "dir": "lecturameter-1999/" }
+    "index": {
+      "template": "index.html",
+      "dir": ""
+    },
+    "lm1999": {
+      "template": "lecturameter-1999.html",
+      "dir": "lecturameter-1999/"
+    }
   },
   "locales": [
     {

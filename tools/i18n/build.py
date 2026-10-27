@@ -79,9 +79,16 @@ def build_vars(cfg, loc, pname, page, others):
     return v
 
 
-def js_payload(strings):
+def pick(strings, key, live):
+    """Texto de una clave; si iOS esta publicada y existe la variante 'clave@live', usa esa."""
+    if live and key + '@live' in strings:
+        return strings[key + '@live']
+    return strings[key]
+
+
+def js_payload(strings, live=False):
     """Claves js.* -> objeto JSON que lee main.js (script#lm-i18n). Seguro dentro de <script>."""
-    data = {k[3:]: v for k, v in strings.items() if k.startswith('js.')}
+    data = {k[3:]: pick(strings, k, live) for k in strings if k.startswith('js.') and not k.endswith('@live')}
     raw = json.dumps(data, ensure_ascii=False)
     return raw.replace('<', '\\u003c').replace('>', '\\u003e').replace('&', '\\u0026')
 
@@ -139,16 +146,90 @@ def lang_picker(loc, page, locales, strings, indent):
     return ('\n' + indent).join(lines)
 
 
+def vkey(version):
+    return version.replace('.', '_')
+
+
+def release_vars(cfg, strings, where, errors):
+    """Contenido que depende de la version: notas, historial y roadmap (segun current_release)."""
+    cur = cfg['current_release']
+    order = cfg['release_order']
+    if cur not in order:
+        raise BuildError('current_release %s no esta en release_order' % cur)
+    live = bool(cfg.get('ios_live'))
+    v = {'release_version': cur}
+    notes = strings.get('release.%s.new' % vkey(cur))
+    if not notes:
+        errors.append('%s: faltan las notas release.%s.new' % (where, vkey(cur)))
+        return v
+    fixes = strings.get('release.%s.fixes' % vkey(cur), [])
+    li = '                    <li>%s</li>'
+    v['notes_new_items'] = '\n'.join(li % x for x in notes)
+    v['notes_fix_items'] = '\n'.join(li % x for x in fixes)
+    v['has_notes_fixes'] = '1' if fixes else ''
+    # historial: versiones <= actual con notas, de la mas nueva a la mas antigua
+    items = []
+    for ver in reversed(order[:order.index(cur) + 1]):
+        new = strings.get('release.%s.new' % vkey(ver))
+        if not new:
+            continue
+        fx = strings.get('release.%s.fixes' % vkey(ver), [])
+        li6 = '                        <li>%s</li>'
+        block = ['            <div class="faq-item">',
+                 '                <button class="faq-q">v%s &middot; %s</button>' % (ver, strings['release.%s.headline' % vkey(ver)]),
+                 '                <div class="faq-a"><div class="faq-a-inner">',
+                 '                    ' + strings['home.history.new'], '                    <ul>']
+        block += [li6 % x for x in new] + ['                    </ul>']
+        if fx:
+            block += ['                    ' + strings['home.history.fixes'], '                    <ul>']
+            block += [li6 % x for x in fx] + ['                    </ul>']
+        block += ['                </div></div>', '            </div>']
+        items.append('\n'.join(block))
+    v['history_items'] = '\n'.join(items)
+    # roadmap: la version siguiente, solo si hay contenido para ella
+    nxt = order[order.index(cur) + 1] if order.index(cur) + 1 < len(order) else None
+    cards = strings.get('roadmap.%s.cards' % vkey(nxt)) if nxt else None
+    v['has_roadmap'] = '1' if cards else ''
+    if cards:
+        v['roadmap_heading'] = strings['roadmap.%s.heading' % vkey(nxt)]
+        v['roadmap_sub'] = strings['roadmap.%s.sub' % vkey(nxt)]
+        out = []
+        for i, c in enumerate(cards):
+            out += ['            <div class="roadmap-item%s">' % (' glow' if i == 0 else ''),
+                    '                <span class="roadmap-tag planned">%s</span>' % nxt,
+                    '                <h3>%s</h3>' % c['title'],
+                    '                <p>%s</p>' % c['text'],
+                    '            </div>']
+        v['roadmap_items'] = '\n'.join(out)
+    else:
+        v['roadmap_heading'] = v['roadmap_sub'] = v['roadmap_items'] = ''
+    return v
+
+
+IF_RE = re.compile(r'^[ \t]*\{\{#(if|unless) (\w+)\}\}\n(.*?)^[ \t]*\{\{/(?:if|unless)\}\}\n', re.S | re.M)
+
+
+def resolve_ifs(text, variables):
+    """Bloques {{#if var}}...{{/if}} y {{#unless var}}...{{/unless}}, cada marcador en su propia linea."""
+    def sub(m):
+        truthy = bool(variables.get(m.group(2)))
+        return m.group(3) if (truthy if m.group(1) == 'if' else not truthy) else ''
+    return IF_RE.sub(sub, text)
+
+
 def render(text, variables, strings, where, errors, depth=0):
     if depth > 6:
         raise BuildError('plantillas anidadas en bucle en ' + where)
+    if depth == 0:
+        text = resolve_ifs(text, variables)
+    live = bool(variables.get('ios_live'))
 
     def sub(m):
         as_json, key = m.group(1), m.group(2)
         if key in variables:
             val = variables[key]
         elif key in strings:
-            val = strings[key]
+            val = pick(strings, key, live)
         else:
             errors.append('%s: clave inexistente {{%s}}' % (where, key))
             return m.group(0)
@@ -165,14 +246,20 @@ def main():
     locales = cfg['locales']
     errors = []
     written = []
+    if cfg.get('ios_live') and not cfg.get('app_store_url'):
+        raise BuildError('ios_live es true pero app_store_url esta vacio en i18n/locales.json')
     for loc in locales:
         strings = load_json(os.path.join(ROOT, 'i18n', loc['code'] + '.json'))
         for pname, page in cfg['pages'].items():
             tpl_path = os.path.join(ROOT, 'src', 'templates', page['template'])
             with open(tpl_path, encoding='utf-8', newline='') as f:
                 tpl = f.read()
+            where = '%s/%s' % (loc['code'], page['template'])
             variables = build_vars(cfg, loc, pname, page, locales)
-            variables['lm_i18n_json'] = js_payload(strings)
+            variables.update(release_vars(cfg, strings, where, errors))
+            variables['ios_live'] = '1' if cfg.get('ios_live') else ''
+            variables['ios_url'] = cfg['app_store_url'] if cfg.get('ios_live') else cfg['testflight_url']
+            variables['lm_i18n_json'] = js_payload(strings, bool(cfg.get('ios_live')))
             variables['lang_picker'] = lang_picker(loc, page, locales, strings, ' ' * 12)
             where = '%s/%s' % (loc['code'], page['template'])
             out = render(tpl, variables, strings, where, errors)
