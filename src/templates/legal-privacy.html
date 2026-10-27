@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="{{code}}" dir="{{dir}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{legal.privacy.title}}</title>
+    <meta name="description" content="{{legal.privacy.meta_description}}">
+    <meta property="og:title" content="{{legal.privacy.title}}">
+    <meta property="og:description" content="{{legal.privacy.meta_description}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{page_url}}">
+    <meta property="og:image" content="{{site_url}}social_card.jpg">
+    <meta property="og:locale" content="{{og_locale}}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{legal.privacy.title}}">
+    <meta name="twitter:description" content="{{legal.privacy.meta_description}}">
+    <meta name="twitter:image" content="{{site_url}}social_card.jpg">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#121212">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{{root}}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{root}}favicon-16x16.png">
+    <link rel="apple-touch-icon" href="{{root}}apple-touch-icon.png">
+    <link rel="manifest" href="{{root}}site.webmanifest">
+    <link rel="shortcut icon" href="{{root}}favicon.ico">
+
+    <link rel="canonical" href="{{page_url}}">
+    <link rel="stylesheet" href="{{root}}styles.css?v=6.10">
+</head>
+<body>
+
+<nav class="nav-bar">
+    <div class="nav-inner">
+        <a href="{{home}}" class="nav-brand">
+            <img src="{{root}}ic_launcher_round.png" alt="{{common.nav.lecturameter.alt}}" width="28" height="28">
+            {{common.nav.lecturameter}}
+        </a>
+        <ul class="nav-pills">
+            <li class="has-dropdown">
+                <a href="{{home}}#{{anchor.features}}">{{common.nav.features}} <span class="caret" aria-hidden="true">&#x25BE;</span></a>
+                <ul class="nav-dropdown">
+                    <li><a href="{{link_feat_timer}}">{{common.nav.reading_timer_2}}</a></li>
+                    <li><a href="{{link_feat_tracker}}">{{common.nav.reading_tracker}}</a></li>
+                    <li><a href="{{link_feat_stats}}">{{common.nav.reading_statistics_2}}</a></li>
+                    <li><a href="{{link_feat_goodreads}}">{{common.nav.goodreads_alternative}}</a></li>
+                    <li><a href="{{link_feat_catalog}}">{{common.nav.book_catalog}}</a></li>
+                </ul>
+            </li>
+            <li><a href="{{home}}#{{anchor.themes}}">{{common.nav.themes}}</a></li>
+            <li><a href="{{home}}#{{anchor.pricing}}">{{common.nav.pro}}</a></li>
+            <li><a href="{{home}}#{{anchor.whatsnew}}">{{common.nav.patch_notes}}</a></li>
+            <li><a href="{{home}}#{{anchor.history}}">{{common.nav.history}}</a></li>
+{{#if has_roadmap}}
+            <li><a href="{{home}}#roadmap">{{common.nav.roadmap}}</a></li>
+{{/if}}
+            <li><a href="{{link_1999}}">1999</a></li>
+            <li><a href="{{home}}#faq">{{common.nav.faq}}</a></li>
+            <li><a href="{{link_blog}}">{{common.nav.blog}}</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button class="nav-theme-btn" aria-label="{{common.nav.toggle_theme.aria-label}}">&#x263E;</button>
+            {{lang_picker}}
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+                <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                {{common.nav.download}}
+            </a>
+        </div>
+        <button class="nav-hamburger" aria-label="{{common.nav.menu.aria-label}}">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+    </div>
+</nav>
+
+<div class="subpage-container">
+    <div class="legal-disclaimer" role="note">
+        <span>{{legal.disclaimer}}</span> <a href="{{legal_original_url}}">{{legal.disclaimer.link}}</a>
+    </div>
+
+    <div class="legal-content">
+            <div class="page-hero">
+                <h1 class="page-heading">{{legal.privacy.h2_000}}</h1>
+                <p class="tagline">{{legal.privacy.tagline_001}}</p>
+                <p style="font-size:13px; color:var(--muted); margin-top:6px;">{{legal.privacy.p_002}}</p>
+            </div>
+
+            <div class="privacy-highlight">
+                <div class="icon">🔒</div>
+                <div class="title">{{legal.privacy.dtitle_003}}</div>
+                <div class="desc">{{legal.privacy.ddesc_004}}</div>
+            </div>
+
+            <div class="section" id="privacy">
+                <h2>{{legal.privacy.h2_005}}</h2>
+                <div class="privacy-text">
+                    <p>{{legal.privacy.p_006}}</p>
+                    <p style="margin-top:8px;">{{legal.privacy.p_007}}</p>
+
+                    <p style="margin-top:14px;">{{legal.privacy.p_008}}</p>
+                    <p>{{legal.privacy.p_009}}</p>
+                    <ul style="padding-left:18px; margin:6px 0;">
+                        <li>{{legal.privacy.li_010}}</li>
+                        <li>{{legal.privacy.li_011}}</li>
+                    </ul>
+                    <p style="margin-top:6px;">{{legal.privacy.p_012}}</p>
+
+                    <p style="margin-top:14px;">{{legal.privacy.p_013}}</p>
+                    <ul style="padding-left:18px; margin:6px 0;">
+                        <li>{{legal.privacy.li_014}}</li>
+                        <li>{{legal.privacy.li_015}}</li>
+                        <li>{{legal.privacy.li_016}}</li>
+                        <li>{{legal.privacy.li_017}}</li>
+                        <li>{{legal.privacy.li_018}}</li>
+                    </ul>
+
+                    <p style="margin-top:14px;">{{legal.privacy.p_019}}</p>
+                    <p>{{legal.privacy.p_020}}</p>
+                    <p style="margin-top:8px;">{{legal.privacy.p_021}}</p>
+                    <p style="margin-top:8px;">{{legal.privacy.p_022}}</p>
+
+                    <p style="margin-top:14px;">{{legal.privacy.p_023}}</p>
+                    <p>{{legal.privacy.p_024}}</p>
+                    <p style="margin-top:10px;">{{legal.privacy.p_025}}</p>
+                    <p style="margin-top:10px;">{{legal.privacy.p_026}}</p>
+
+                    <p style="margin-top:14px;">{{legal.privacy.p_027}}</p>
+                    <p>{{legal.privacy.p_028}}</p>
+
+                    <p style="margin-top:14px;">{{legal.privacy.p_029}}</p>
+                    <p>{{legal.privacy.p_030}}</p>
+
+                    <p style="margin-top:14px;">{{legal.privacy.p_031}}</p>
+                    <p>{{legal.privacy.p_032}}</p>
+
+                    <p style="margin-top:14px;">{{legal.privacy.p_033}}</p>
+                    <p>{{legal.privacy.p_034}}</p>
+                    <p style="margin-top:8px;">{{legal.privacy.p_035}}</p>
+
+                    <p style="margin-top:14px;">{{legal.privacy.p_036}}</p>
+                    <p>{{legal.privacy.p_037}}</p>
+                    <ul style="padding-left:18px; margin:6px 0;">
+                        <li>{{legal.privacy.li_038}}</li>
+                        <li>{{legal.privacy.li_039}}</li>
+                        <li>{{legal.privacy.li_040}}</li>
+                        <li>{{legal.privacy.li_041}}</li>
+                        <li>{{legal.privacy.li_042}}</li>
+                        <li>{{legal.privacy.li_043}}</li>
+                    </ul>
+                    <p style="margin-top:10px;">{{legal.privacy.p_044}}</p>
+                    <ul style="padding-left:18px; margin:6px 0;">
+                        <li>{{legal.privacy.li_045}}</li>
+                        <li>{{legal.privacy.li_046}}</li>
+                        <li>{{legal.privacy.li_047}}</li>
+                        <li>{{legal.privacy.li_048}}</li>
+                        <li>{{legal.privacy.li_049}}</li>
+                    </ul>
+
+                    <p style="margin-top:14px;">{{legal.privacy.p_050}}</p>
+                    <p>{{legal.privacy.p_051}}</p>
+                    <p style="margin-top:8px;">{{legal.privacy.p_052}}</p>
+
+                    <p style="margin-top:14px;">{{legal.privacy.p_053}}</p>
+                    <p>{{legal.privacy.p_054}}</p>
+
+                    <p style="margin-top:14px;">{{legal.privacy.p_055}}</p>
+                    <p>{{legal.privacy.p_056}}</p>
+                </div>
+            </div>
+
+            <div class="section" style="margin-top:18px;">
+                <h3>{{legal.privacy.h3_057}}</h3>
+                <ul style="padding-left:18px; font-size:13.5px; color:var(--muted);">
+                    <li>{{legal.privacy.li_058}}</li>
+                    <li>{{legal.privacy.li_059}}</li>
+                </ul>
+            </div>
+        
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <span>{{common.footer.2026_lecturameter_independent_proj_2}}</span>
+            <a href="{{home}}">{{common.footer.home}}</a>
+            <a href="{{link_privacy}}">{{common.footer.privacy_policy}}</a>
+            <a href="{{link_terms}}">{{common.footer.terms_of_service}}</a>
+            <a href="{{root}}contact.html">{{common.footer.contact}}</a>
+        </div>
+    </div>
+</footer>
+
+<script id="lm-i18n" type="application/json">{{lm_i18n_json}}</script>
+<script src="{{root}}main.js?v=6.5" defer></script>
+</body>
+</html>

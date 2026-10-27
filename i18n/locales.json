@@ -13,7 +13,15 @@
   "screenshots": {
     "3.8": {
       "dir": "capturas para v3/",
-      "suffix": "_{img}"
+      "suffix": "_{img}",
+      "localized": {
+        "dir": "capturas/3.8/{code}/",
+        "files": {
+          "captura_libros_real_claro.jpg": "portada.webp",
+          "screen_challenges_claro.jpg": "retos.webp",
+          "heatmap_mayo_claro.jpg": "estadisticas.webp"
+        }
+      }
     },
     "3.9": {
       "dir": "capturas/3.9/{code}/",
@@ -47,7 +55,8 @@
         "stats": "en/features/reading-statistics/",
         "goodreads": "en/features/goodreads-alternative/",
         "catalog": "en/features/book-catalog/"
-      }
+      },
+      "legal_original": true
     },
     {
       "code": "es",
@@ -65,7 +74,871 @@
         "stats": "es/funciones/estadisticas-lectura/",
         "goodreads": "es/funciones/alternativa-goodreads/",
         "catalog": "es/funciones/catalogo-libros/"
+      },
+      "legal_original": true
+    },
+    {
+      "code": "ar",
+      "hreflang": "ar",
+      "path": "/ar/",
+      "dir": "rtl",
+      "nativeName": "العربية",
+      "og_locale": "ar_AR",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "bg",
+      "hreflang": "bg",
+      "path": "/bg/",
+      "dir": "ltr",
+      "nativeName": "Български",
+      "og_locale": "bg_BG",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "bn",
+      "hreflang": "bn",
+      "path": "/bn/",
+      "dir": "ltr",
+      "nativeName": "বাংলা",
+      "og_locale": "bn_IN",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "ca",
+      "hreflang": "ca",
+      "path": "/ca/",
+      "dir": "ltr",
+      "nativeName": "Català",
+      "og_locale": "ca_ES",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "cs",
+      "hreflang": "cs",
+      "path": "/cs/",
+      "dir": "ltr",
+      "nativeName": "Čeština",
+      "og_locale": "cs_CZ",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "da",
+      "hreflang": "da",
+      "path": "/da/",
+      "dir": "ltr",
+      "nativeName": "Dansk",
+      "og_locale": "da_DK",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "de",
+      "hreflang": "de",
+      "path": "/de/",
+      "dir": "ltr",
+      "nativeName": "Deutsch",
+      "og_locale": "de_DE",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "el",
+      "hreflang": "el",
+      "path": "/el/",
+      "dir": "ltr",
+      "nativeName": "Ελληνικά",
+      "og_locale": "el_GR",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "et",
+      "hreflang": "et",
+      "path": "/et/",
+      "dir": "ltr",
+      "nativeName": "Eesti",
+      "og_locale": "et_EE",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "fa",
+      "hreflang": "fa",
+      "path": "/fa/",
+      "dir": "rtl",
+      "nativeName": "فارسی",
+      "og_locale": "fa_IR",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "fi",
+      "hreflang": "fi",
+      "path": "/fi/",
+      "dir": "ltr",
+      "nativeName": "Suomi",
+      "og_locale": "fi_FI",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "fr",
+      "hreflang": "fr",
+      "path": "/fr/",
+      "dir": "ltr",
+      "nativeName": "Français",
+      "og_locale": "fr_FR",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "gu",
+      "hreflang": "gu",
+      "path": "/gu/",
+      "dir": "ltr",
+      "nativeName": "ગુજરાતી",
+      "og_locale": "gu_IN",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "he",
+      "hreflang": "he",
+      "path": "/he/",
+      "dir": "rtl",
+      "nativeName": "עברית",
+      "og_locale": "he_IL",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "hi",
+      "hreflang": "hi",
+      "path": "/hi/",
+      "dir": "ltr",
+      "nativeName": "हिन्दी",
+      "og_locale": "hi_IN",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "hr",
+      "hreflang": "hr",
+      "path": "/hr/",
+      "dir": "ltr",
+      "nativeName": "Hrvatski",
+      "og_locale": "hr_HR",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "hu",
+      "hreflang": "hu",
+      "path": "/hu/",
+      "dir": "ltr",
+      "nativeName": "Magyar",
+      "og_locale": "hu_HU",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "id",
+      "hreflang": "id",
+      "path": "/id/",
+      "dir": "ltr",
+      "nativeName": "Bahasa Indonesia",
+      "og_locale": "id_ID",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "is",
+      "hreflang": "is",
+      "path": "/is/",
+      "dir": "ltr",
+      "nativeName": "Íslenska",
+      "og_locale": "is_IS",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "it",
+      "hreflang": "it",
+      "path": "/it/",
+      "dir": "ltr",
+      "nativeName": "Italiano",
+      "og_locale": "it_IT",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "ja",
+      "hreflang": "ja",
+      "path": "/ja/",
+      "dir": "ltr",
+      "nativeName": "日本語",
+      "og_locale": "ja_JP",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "kn",
+      "hreflang": "kn",
+      "path": "/kn/",
+      "dir": "ltr",
+      "nativeName": "ಕನ್ನಡ",
+      "og_locale": "kn_IN",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "ko",
+      "hreflang": "ko",
+      "path": "/ko/",
+      "dir": "ltr",
+      "nativeName": "한국어",
+      "og_locale": "ko_KR",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "lt",
+      "hreflang": "lt",
+      "path": "/lt/",
+      "dir": "ltr",
+      "nativeName": "Lietuvių",
+      "og_locale": "lt_LT",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "lv",
+      "hreflang": "lv",
+      "path": "/lv/",
+      "dir": "ltr",
+      "nativeName": "Latviešu",
+      "og_locale": "lv_LV",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "ml",
+      "hreflang": "ml",
+      "path": "/ml/",
+      "dir": "ltr",
+      "nativeName": "മലയാളം",
+      "og_locale": "ml_IN",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "mr",
+      "hreflang": "mr",
+      "path": "/mr/",
+      "dir": "ltr",
+      "nativeName": "मराठी",
+      "og_locale": "mr_IN",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "nl",
+      "hreflang": "nl",
+      "path": "/nl/",
+      "dir": "ltr",
+      "nativeName": "Nederlands",
+      "og_locale": "nl_NL",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "no",
+      "hreflang": "no",
+      "path": "/no/",
+      "dir": "ltr",
+      "nativeName": "Norsk",
+      "og_locale": "nb_NO",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "pa",
+      "hreflang": "pa",
+      "path": "/pa/",
+      "dir": "ltr",
+      "nativeName": "ਪੰਜਾਬੀ",
+      "og_locale": "pa_IN",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "pl",
+      "hreflang": "pl",
+      "path": "/pl/",
+      "dir": "ltr",
+      "nativeName": "Polski",
+      "og_locale": "pl_PL",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "pt",
+      "hreflang": "pt-PT",
+      "path": "/pt/",
+      "dir": "ltr",
+      "nativeName": "Português (Portugal)",
+      "og_locale": "pt_PT",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "pt-br",
+      "hreflang": "pt-BR",
+      "path": "/pt-br/",
+      "dir": "ltr",
+      "nativeName": "Português (Brasil)",
+      "og_locale": "pt_BR",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "ro",
+      "hreflang": "ro",
+      "path": "/ro/",
+      "dir": "ltr",
+      "nativeName": "Română",
+      "og_locale": "ro_RO",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "ru",
+      "hreflang": "ru",
+      "path": "/ru/",
+      "dir": "ltr",
+      "nativeName": "Русский",
+      "og_locale": "ru_RU",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "sk",
+      "hreflang": "sk",
+      "path": "/sk/",
+      "dir": "ltr",
+      "nativeName": "Slovenčina",
+      "og_locale": "sk_SK",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "sl",
+      "hreflang": "sl",
+      "path": "/sl/",
+      "dir": "ltr",
+      "nativeName": "Slovenščina",
+      "og_locale": "sl_SI",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "sv",
+      "hreflang": "sv",
+      "path": "/sv/",
+      "dir": "ltr",
+      "nativeName": "Svenska",
+      "og_locale": "sv_SE",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "sw",
+      "hreflang": "sw",
+      "path": "/sw/",
+      "dir": "ltr",
+      "nativeName": "Kiswahili",
+      "og_locale": "sw_KE",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "ta",
+      "hreflang": "ta",
+      "path": "/ta/",
+      "dir": "ltr",
+      "nativeName": "தமிழ்",
+      "og_locale": "ta_IN",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "te",
+      "hreflang": "te",
+      "path": "/te/",
+      "dir": "ltr",
+      "nativeName": "తెలుగు",
+      "og_locale": "te_IN",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "tr",
+      "hreflang": "tr",
+      "path": "/tr/",
+      "dir": "ltr",
+      "nativeName": "Türkçe",
+      "og_locale": "tr_TR",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "uk",
+      "hreflang": "uk",
+      "path": "/uk/",
+      "dir": "ltr",
+      "nativeName": "Українська",
+      "og_locale": "uk_UA",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "ur",
+      "hreflang": "ur",
+      "path": "/ur/",
+      "dir": "rtl",
+      "nativeName": "اردو",
+      "og_locale": "ur_PK",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "vi",
+      "hreflang": "vi",
+      "path": "/vi/",
+      "dir": "ltr",
+      "nativeName": "Tiếng Việt",
+      "og_locale": "vi_VN",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "zh-cn",
+      "hreflang": "zh-CN",
+      "path": "/zh-cn/",
+      "dir": "ltr",
+      "nativeName": "简体中文",
+      "og_locale": "zh_CN",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
+      }
+    },
+    {
+      "code": "zu",
+      "hreflang": "zu",
+      "path": "/zu/",
+      "dir": "ltr",
+      "nativeName": "isiZulu",
+      "og_locale": "zu_ZA",
+      "img": "en",
+      "shots99": "en/",
+      "blog": "blog/",
+      "features": {
+        "timer": "en/features/reading-timer/",
+        "tracker": "en/features/reading-tracker/",
+        "stats": "en/features/reading-statistics/",
+        "goodreads": "en/features/goodreads-alternative/",
+        "catalog": "en/features/book-catalog/"
       }
     }
-  ]
+  ],
+  "legal_pages": {
+    "privacy": {
+      "template": "legal-privacy.html",
+      "dir": "privacy/",
+      "original": "privacidad.html"
+    },
+    "privacy99": {
+      "template": "legal-privacy-1999.html",
+      "dir": "privacy-1999/",
+      "original": "privacidad-1999.html"
+    },
+    "terms": {
+      "template": "legal-terms.html",
+      "dir": "terms/",
+      "original": "tos.html"
+    }
+  }
 }

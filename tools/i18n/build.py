@@ -14,7 +14,7 @@ import sys
 import urllib.parse
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-MARK = re.compile(r'\{\{(json:|shot:|shot_abs:)?([A-Za-z0-9_.@\-]+)\}\}')
+MARK = re.compile(r'\{\{(json:|shot:|shot_abs:|shot99:|shot99_abs:)?([A-Za-z0-9_.@/\-]+)\}\}')
 
 
 class BuildError(Exception):
@@ -62,6 +62,14 @@ def build_vars(cfg, loc, pname, page, others):
     }
     for k, p in loc['features'].items():
         v['link_feat_' + k] = rel(here, p)
+    # enlaces legales: es/en -> originales (/privacidad.html...); resto -> traducciones /<code>/privacy/...
+    for lk, lp in cfg.get('legal_pages', {}).items():
+        if loc.get('legal_original'):
+            v['link_' + lk] = rel(here, lp['original'])
+        else:
+            v['link_' + lk] = rel(here, loc['path'].lstrip('/') + lp['dir'])
+    if page.get('original'):
+        v['legal_original_url'] = rel(here, page['original']) + '?lang=en'
     # redireccion por idioma: solo en las paginas del idioma por defecto (raiz)
     if loc['path'] == '/':
         v['head_redirect'] = redirect_script(cfg, page, others)
@@ -122,9 +130,12 @@ def lang_picker(loc, page, locales, strings, indent):
     for o in locales:
         target = page_dir(o, page)
         cur = o is loc
+        href = rel(here, target)
+        if page.get('original') and o.get('legal_original'):
+            href = rel(here, page['original']) + '?lang=' + o['code']
         opts.append(
             '<a href="%s" lang="%s" hreflang="%s" data-code="%s" data-search="%s"%s>%s</a>' % (
-                rel(here, target), esc(o['code']), esc(o['hreflang']), esc(o['code']),
+                href, esc(o['code']), esc(o['hreflang']), esc(o['code']),
                 esc((o['nativeName'] + ' ' + o['code']).lower()),
                 ' class="current" aria-current="true"' if cur else '', esc(o['nativeName'])))
     lines = [
@@ -150,6 +161,19 @@ def lang_picker(loc, page, locales, strings, indent):
 WARNINGS = []
 
 
+def resolve_shot99(loc, name):
+    """{{shot99:[subdir/]fichero}}: captura del 1999. Si el idioma tiene su version en WebP
+    (capturas-1999/[subdir/]<code>/<fichero>.webp) se usa; si no, la de siempre (shots99 / img)."""
+    sub, _, fname = name.rpartition('/')
+    base = os.path.splitext(fname)[0]
+    own = 'capturas-1999/' + (sub + '/' if sub else '') + loc['code'] + '/' + base + '.webp'
+    if not loc.get('legal_original') and os.path.exists(os.path.join(ROOT, *own.split('/'))):
+        return own
+    if sub:
+        return 'capturas-1999/%s/%s/%s' % (sub, loc['img'], fname)
+    return 'capturas-1999/' + loc['shots99'] + fname
+
+
 def make_shot_resolver(cfg, loc, errors, where):
     """{{shot:nombre.ext}}: busca la captura en la carpeta de la version actual y, si falta,
     en la de la version anterior (con aviso). Config: screenshots.<version>.{dir,suffix}."""
@@ -162,6 +186,12 @@ def make_shot_resolver(cfg, loc, errors, where):
         first = None
         for ver in chain:
             sc = cfg['screenshots'][ver]
+            # captura propia del idioma (solo idiomas que la tengan): screenshots.<v>.localized
+            loz = sc.get('localized')
+            if loz and name in loz['files']:
+                lp = loz['dir'].format(code=loc['code'], img=loc['img']) + loz['files'][name]
+                if os.path.exists(os.path.join(ROOT, *lp.split('/'))):
+                    return lp
             rel_path = sc['dir'].format(code=loc['code'], img=loc['img']) + base + sc['suffix'].format(
                 code=loc['code'], img=loc['img']) + ext
             if os.path.exists(os.path.join(ROOT, *rel_path.split('/'))):
@@ -257,6 +287,9 @@ def render(text, variables, strings, where, errors, depth=0):
     def sub(m):
         prefix, key = m.group(1), m.group(2)
         as_json = prefix == 'json:'
+        if prefix in ('shot99:', 'shot99_abs:'):
+            path = urllib.parse.quote(resolve_shot99(variables['__loc'], key))
+            return (variables['root'] if prefix == 'shot99:' else variables['site_url']) + path
         if prefix in ('shot:', 'shot_abs:'):
             path = urllib.parse.quote(variables['__shot'](key))
             return (variables['root'] if prefix == 'shot:' else variables['site_url']) + path
@@ -277,6 +310,8 @@ def render(text, variables, strings, where, errors, depth=0):
 
 def main():
     cfg = load_json(os.path.join(ROOT, 'i18n', 'locales.json'))
+    # un idioma solo existe si tiene i18n/<code>.json (los demas estan dados de alta pero pendientes)
+    cfg['locales'] = [l for l in cfg['locales'] if os.path.exists(os.path.join(ROOT, 'i18n', l['code'] + '.json'))]
     locales = cfg['locales']
     errors = []
     written = []
@@ -284,13 +319,17 @@ def main():
         raise BuildError('ios_live es true pero app_store_url esta vacio en i18n/locales.json')
     for loc in locales:
         strings = load_json(os.path.join(ROOT, 'i18n', loc['code'] + '.json'))
-        for pname, page in cfg['pages'].items():
+        todo = list(cfg['pages'].items())
+        if not loc.get('legal_original'):
+            todo += [('legal_' + k, dict(v, legal=True)) for k, v in cfg.get('legal_pages', {}).items()]
+        for pname, page in todo:
             tpl_path = os.path.join(ROOT, 'src', 'templates', page['template'])
             with open(tpl_path, encoding='utf-8', newline='') as f:
                 tpl = f.read()
             where = '%s/%s' % (loc['code'], page['template'])
             variables = build_vars(cfg, loc, pname, page, locales)
             variables.update(release_vars(cfg, strings, where, errors))
+            variables['__loc'] = loc
             variables['__shot'] = make_shot_resolver(cfg, loc, errors, where)
             variables['ios_live'] = '1' if cfg.get('ios_live') else ''
             variables['ios_url'] = cfg['app_store_url'] if cfg.get('ios_live') else cfg['testflight_url']
