@@ -532,5 +532,29 @@
  "head.lm99.description": "Lecturameter as if you had installed it from a CD-ROM in 1999. An alternative client with windows, menus, tables and an LCD timer that opens your real backups. Free.",
  "head.lm99.og_title": "Lecturameter 1999",
  "head.lm99.og_description": "Lecturameter as if you had installed it from a CD-ROM in 1999. An alternative client with windows, menus and an LCD timer.",
- "head.lm99.tw_description": "Lecturameter as if you had installed it from a CD-ROM in 1999."
+ "head.lm99.tw_description": "Lecturameter as if you had installed it from a CD-ROM in 1999.",
+ "js.pagi_happy": [
+  "Pagi applauds you!",
+  "Shine, little star!",
+  "Shhh, I'm reading.",
+  "Pagi is watching…"
+ ],
+ "js.pagi_angry": [
+  "Ouch! That hurt!",
+  "Enough clicks!",
+  "Grr, leave me alone.",
+  "Not funny anymore."
+ ],
+ "js.lago_happy": [
+  "iOS coming soon!",
+  "More readers to meet!",
+  "Get your AirPods ready!",
+  "See you on the App Store."
+ ],
+ "js.lago_angry": [
+  "You are not taking me there…",
+  "I prefer Android.",
+  "I refuse to jump the fence.",
+  "Do NOT put me in a box."
+ ]
 }

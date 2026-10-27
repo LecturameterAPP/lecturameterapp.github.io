@@ -1,5 +1,9 @@
 /* ═══ LECTURAMETER WEB 3.0 ═══ */
 (function () {
+    // Textos de la página (los inyecta el build desde i18n/<idioma>.json, claves js.*)
+    var I18N = {};
+    try { I18N = JSON.parse(document.getElementById('lm-i18n').textContent) || {}; } catch (e) {}
+
     // ─── SCROLL-SPY ───
     var pills = document.querySelectorAll('.nav-pills a[href^="#"]');
     var sections = [];
@@ -187,20 +191,15 @@
         var pagiCard = pagiStar.closest('.roadmap-item');
         var pagiCardP = pagiCard && pagiCard.querySelector('p');
         var pagiCardPOriginal = pagiCardP ? pagiCardP.innerHTML : null;
-        var lang = (document.documentElement.lang || 'es').slice(0, 2);
-        var HAPPY = lang === 'en'
-            ? ['Pagi applauds you!', 'Shine, little star!', 'Shhh, I\'m reading.', 'Pagi is watching…']
-            : ['¡Pagi te aplaude!', '¡Brilla, estrellita!', 'Shhh, estoy leyendo.', 'Pagi te observa…'];
-        var ANGRY = lang === 'en'
-            ? ['Ouch! That hurt!', 'Enough clicks!', 'Grr, leave me alone.', 'Not funny anymore.']
-            : ['¡Ay! ¡Eso ha dolido!', '¡Basta ya de clicks!', 'Grr, déjame en paz.', 'Ya no tiene gracia.'];
+        var HAPPY = I18N.pagi_happy || [];
+        var ANGRY = I18N.pagi_angry || [];
         function pickRandom(arr, prev) {
             var pool = arr.filter(function (x) { return x !== prev; });
             return pool[Math.floor(Math.random() * pool.length)];
         }
         var lastPhrase = null;
         function setCardPhrase(arr) {
-            if (!pagiCardP) return;
+            if (!pagiCardP || !arr.length) return;
             var phrase = pickRandom(arr, lastPhrase);
             lastPhrase = phrase;
             pagiCardP.textContent = phrase;
@@ -445,13 +444,8 @@
         var lagoCache = {};
         var lagoState = null;
         var lagoTimer = null;
-        var lagoLang = (document.documentElement.lang || 'es').slice(0, 2);
-        var LAGO_HAPPY = lagoLang === 'en'
-            ? ['iOS coming soon!', 'More readers to meet!', 'Get your AirPods ready!', 'See you on the App Store.']
-            : ['¡iOS pronto!', '¡Voy a conocer más lectores!', '¡Preparad los AirPods!', 'Nos vemos en el App Store.'];
-        var LAGO_ANGRY = lagoLang === 'en'
-            ? ['You are not taking me there…', 'I prefer Android.', 'I refuse to jump the fence.', 'Do NOT put me in a box.']
-            : ['¿A que no me llevas?', 'Prefiero Android.', 'No pienso saltar la manzana.', 'Ni se te ocurra meterme ahí.'];
+        var LAGO_HAPPY = I18N.lago_happy || [];
+        var LAGO_ANGRY = I18N.lago_angry || [];
 
         function fetchLago(name) {
             if (lagoCache[name]) return Promise.resolve(lagoCache[name]);
@@ -471,7 +465,7 @@
         var lagoStatus = document.querySelector('#ios .ios-status');
         var lagoLastPhrase = null;
         function flashLagoPhrase(arr, cls) {
-            if (!lagoStatus) return;
+            if (!lagoStatus || !arr.length) return;
             var p = pickLagoPhrase(arr, lagoLastPhrase);
             lagoLastPhrase = p;
             lagoStatus.textContent = p;
@@ -745,8 +739,8 @@
         document.addEventListener('keydown', function (e) {
             if (!overlay.classList.contains('open')) return;
             if (e.key === 'Escape') closeLbx();
-            else if (e.key === 'ArrowLeft') nav(-1);
-            else if (e.key === 'ArrowRight') nav(1);
+            else if (e.key === 'ArrowLeft') nav(document.documentElement.dir === 'rtl' ? 1 : -1);
+            else if (e.key === 'ArrowRight') nav(document.documentElement.dir === 'rtl' ? -1 : 1);
         });
     }
 })();

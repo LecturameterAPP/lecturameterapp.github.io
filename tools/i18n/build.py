@@ -80,6 +80,13 @@ def build_vars(cfg, loc, pname, page, others):
     return v
 
 
+def js_payload(strings):
+    """Claves js.* -> objeto JSON que lee main.js (script#lm-i18n). Seguro dentro de <script>."""
+    data = {k[3:]: v for k, v in strings.items() if k.startswith('js.')}
+    raw = json.dumps(data, ensure_ascii=False)
+    return raw.replace('<', '\u003c').replace('>', '\u003e').replace('&', '\u0026')
+
+
 def render(text, variables, strings, where, errors, depth=0):
     if depth > 6:
         raise BuildError('plantillas anidadas en bucle en ' + where)
@@ -113,6 +120,7 @@ def main():
             with open(tpl_path, encoding='utf-8', newline='') as f:
                 tpl = f.read()
             variables = build_vars(cfg, loc, pname, page, locales)
+            variables['lm_i18n_json'] = js_payload(strings)
             where = '%s/%s' % (loc['code'], page['template'])
             out = render(tpl, variables, strings, where, errors)
             out_rel = page_dir(loc, page) + 'index.html'

@@ -532,5 +532,29 @@
  "head.lm99.description": "Lecturameter como si lo hubieras instalado desde un CD-ROM en 1999. Un cliente alternativo con ventanas, menús, tablas y un cronómetro LCD, que abre tus copias de seguridad reales. Gratis.",
  "head.lm99.og_title": "Lecturameter 1999",
  "head.lm99.og_description": "Lecturameter como si lo hubieras instalado desde un CD-ROM en 1999. Un cliente alternativo con ventanas, menús y un cronómetro LCD.",
- "head.lm99.tw_description": "Lecturameter como si lo hubieras instalado desde un CD-ROM en 1999."
+ "head.lm99.tw_description": "Lecturameter como si lo hubieras instalado desde un CD-ROM en 1999.",
+ "js.pagi_happy": [
+  "¡Pagi te aplaude!",
+  "¡Brilla, estrellita!",
+  "Shhh, estoy leyendo.",
+  "Pagi te observa…"
+ ],
+ "js.pagi_angry": [
+  "¡Ay! ¡Eso ha dolido!",
+  "¡Basta ya de clicks!",
+  "Grr, déjame en paz.",
+  "Ya no tiene gracia."
+ ],
+ "js.lago_happy": [
+  "¡iOS pronto!",
+  "¡Voy a conocer más lectores!",
+  "¡Preparad los AirPods!",
+  "Nos vemos en el App Store."
+ ],
+ "js.lago_angry": [
+  "¿A que no me llevas?",
+  "Prefiero Android.",
+  "No pienso saltar la manzana.",
+  "Ni se te ocurra meterme ahí."
+ ]
 }
