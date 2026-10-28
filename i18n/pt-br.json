@@ -587,7 +587,7 @@
   "<strong>Lecturameter Quest: A Biblioteca Esquecida.</strong> Escolha 3 livros, decida seu caminho no mapa e derrote o chefe. 5 níveis e um ranking de pontos.",
   "<strong>Também:</strong> cartão do evento, o Pagi como seu avatar, alertas de evento.",
   "<strong>Android e iPhone:</strong> o mesmo evento nos dois.",
-  "<strong>Home renovada:</strong> os ícones da barra lateral foram agrupados em 3 menus flutuantes: Metas (Eventos, Desafios, Bingos), Minha leitura (Estatísticas, Meus cartões, Wrapped) e Ferramentas (Lembretes, Tags, Scanner de ISBN). Reordene com um toque longo. Contadores por grupo, a barra se recolhe ao rolar e, no Ocaso, os ícones alternam entre laranja e azul.",
+  "<strong>Interface renovada na Home:</strong> os ícones da barra lateral foram agrupados em 3 menus flutuantes: Metas (Eventos, Desafios, Bingos), Minha leitura (Estatísticas, Meus cartões, Wrapped) e Ferramentas (Lembretes, Tags, Scanner de ISBN). Reordene com um toque longo. Contadores por grupo, a barra se recolhe ao rolar e, no Crepúsculo, os ícones alternam entre laranja e azul.",
   "<strong>Cartões de livro renovados:</strong> sem lixeira nem estrelas soltas (agora um chip ★ 4.5), ícones Material no lugar de emojis e tags na parte de baixo. Em Abandonado você vê a página em que parou (\"Você parou na página X de Y\"); em Concluídos, a data em que terminou.",
   "<strong>Novas dicas, sem tutorial:</strong> o tutorial acabou e tudo é explicado com dicas, além de um aviso de bateria na primeira vez que você usa o cronômetro. Melhorias na orientação horizontal para tablets e iPhone Duo.",
   "<strong>Livros sem número de páginas</strong> (por exemplo, vindos do KOReader): o app pede o total de páginas.",
@@ -602,20 +602,12 @@
  "roadmap.3_9.sub": "Desafios de leitura para toda a comunidade, um jogo que se joga com <b>seus próprios livros</b> e uma Home renovada. Sem datas fixas: tudo sai quando estiver pronto.",
  "roadmap.3_9.cards": [
   {
-   "title": "Desafio global: A Grande Leitura",
-   "text": "14 dias lendo juntos. Contam os minutos do cronômetro, com uma meta compartilhada e um ranking ao vivo."
+   "title": "Eventos",
+   "text": "Desafio global, A Grande Leitura: 14 dias lendo juntos. Contam os minutos do cronômetro, com uma meta compartilhada e um ranking ao vivo. Lecturameter Quest, A Biblioteca Esquecida: Escolha 3 livros, decida seu caminho no mapa e derrote o chefe. 5 níveis e um ranking de pontos. Também: cartão do evento, o Pagi como seu avatar, alertas de evento."
   },
   {
-   "title": "Lecturameter Quest: A Biblioteca Esquecida",
-   "text": "Escolha 3 livros, decida seu caminho no mapa e derrote o chefe. 5 níveis e um ranking de pontos."
-  },
-  {
-   "title": "Também",
-   "text": "Cartão do evento · Pagi como seu avatar · Alertas de evento"
-  },
-  {
-   "title": "Home renovada",
-   "text": "Os ícones da barra lateral foram agrupados em 3 menus flutuantes: Metas (Eventos, Desafios, Bingos), Minha leitura (Estatísticas, Meus cartões, Wrapped) e Ferramentas (Lembretes, Tags, Scanner de ISBN). Reordene com um toque longo. Contadores por grupo, a barra se recolhe ao rolar e, no Ocaso, os ícones alternam entre laranja e azul."
+   "title": "Interface renovada na Home",
+   "text": "Os ícones da barra lateral foram agrupados em 3 menus flutuantes: Metas (Eventos, Desafios, Bingos), Minha leitura (Estatísticas, Meus cartões, Wrapped) e Ferramentas (Lembretes, Tags, Scanner de ISBN). Reordene com um toque longo. Contadores por grupo, a barra se recolhe ao rolar e, no Crepúsculo, os ícones alternam entre laranja e azul."
   },
   {
    "title": "Cartões de livro",
@@ -626,8 +618,28 @@
    "text": "Novas dicas e o tutorial acabou: tudo é explicado com dicas, além de um aviso de bateria na primeira vez que você usa o cronômetro. Melhorias na orientação horizontal para tablets e iPhone Duo."
   },
   {
-   "title": "E mais",
-   "text": "Livros sem número de páginas (por exemplo, vindos do KOReader): o app pede o total de páginas · 12 novos modelos de bingo 4x4 e 12 novos 3x3, tema de terror em novembro e de romance em fevereiro · KOSync: o tempo de leitura vem do KOSync, então você não depende do cronômetro do app · Sorteio em Quero ler: a Pagi decide por você · Melhorias no Wrapped (abre em 26 de dezembro) · Chinês tradicional"
+   "title": "Livros sem número de páginas",
+   "text": "Livros sem número de páginas (por exemplo, vindos do KOReader): o app pede o total de páginas."
+  },
+  {
+   "title": "Modelos e temas de bingo",
+   "text": "12 novos modelos de bingo 4x4 e 12 novos 3x3, tema de terror em novembro e de romance em fevereiro."
+  },
+  {
+   "title": "KOSync",
+   "text": "O tempo de leitura vem do KOSync, então você não depende do cronômetro do app."
+  },
+  {
+   "title": "Seletor aleatório",
+   "text": "Sorteio em Quero ler: a Pagi decide por você."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Melhorias no Wrapped (abre em 26 de dezembro)."
+  },
+  {
+   "title": "Chinês tradicional",
+   "text": "O Lecturameter agora fala chinês tradicional."
   }
  ],
  "home.whatsnew.title": "Notas da atualização v{{release_version}}",

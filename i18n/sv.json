@@ -587,7 +587,7 @@
   "<strong>Lecturameter Quest: Det glömda biblioteket.</strong> Välj 3 böcker, välj din väg på kartan och besegra bossen. 5 nivåer och en poängtopplista.",
   "<strong>Dessutom:</strong> evenemangskort, Pagi som din avatar, evenemangsaviseringar.",
   "<strong>Android och iPhone:</strong> samma evenemang på båda.",
-  "<strong>Förnyad startsida:</strong> ikonerna i listen är grupperade i 3 flytande menyer: Mål (Evenemang, Utmaningar, Bingo), Min läsning (Statistik, Mina kort, Wrapped) och Verktyg (Påminnelser, Taggar, ISBN-skanner). Ändra ordningen med ett långt tryck. Räknare per grupp, listen fälls ihop när du scrollar och i Skymning växlar ikonerna mellan orange och blått.",
+  "<strong>Förnyat gränssnitt på startsidan:</strong> ikonerna i listen är grupperade i 3 flytande menyer: Mål (Evenemang, Utmaningar, Bingo), Min läsning (Statistik, Mina kort, Wrapped) och Verktyg (Påminnelser, Taggar, ISBN-skanner). Ändra ordningen med ett långt tryck. Räknare per grupp, listen fälls ihop när du scrollar och i Skymning växlar ikonerna mellan orange och blått.",
   "<strong>Förnyade bokkort:</strong> ingen papperskorg och inga lösa stjärnor (nu en ★ 4.5-chip), Material-ikoner i stället för emojis och taggar längst ned. Under Avbrutna ser du sidan där du slutade (\"Du slutade på sida X av Y\"); under Avslutade, datumet då du blev klar.",
   "<strong>Nya tips, ingen handledning:</strong> handledningen är borta och allt förklaras med tips, plus en batteriavisering första gången du använder tidtagarur. Förbättringar i liggande läge för surfplattor och iPhone Duo.",
   "<strong>Böcker utan sidantal</strong> (t.ex. från KOReader): appen frågar efter det totala antalet sidor.",
@@ -602,19 +602,11 @@
  "roadmap.3_9.sub": "Läsutmaningar för hela communityn, ett spel som spelas med <b>dina egna böcker</b> och en förnyad startsida. Inga fasta datum: allt släpps när det är klart.",
  "roadmap.3_9.cards": [
   {
-   "title": "Global utmaning: Den stora läsningen",
-   "text": "14 dagar av gemensam läsning. Tidtagarminuterna räknas, med ett gemensamt mål och en live-topplista."
+   "title": "Evenemang",
+   "text": "Global utmaning, Den stora läsningen: 14 dagar av gemensam läsning. Tidtagarminuterna räknas, med ett gemensamt mål och en live-topplista. Lecturameter Quest, Det glömda biblioteket: Välj 3 böcker, välj din väg på kartan och besegra bossen. 5 nivåer och en poängtopplista. Dessutom: evenemangskort, Pagi som din avatar, evenemangsaviseringar."
   },
   {
-   "title": "Lecturameter Quest: Det glömda biblioteket",
-   "text": "Välj 3 böcker, välj din väg på kartan och besegra bossen. 5 nivåer och en poängtopplista."
-  },
-  {
-   "title": "Dessutom",
-   "text": "Evenemangskort · Pagi som din avatar · Evenemangsaviseringar"
-  },
-  {
-   "title": "Förnyad startsida",
+   "title": "Förnyat gränssnitt på startsidan",
    "text": "Ikonerna i listen grupperade i 3 flytande menyer: Mål (Evenemang, Utmaningar, Bingo), Min läsning (Statistik, Mina kort, Wrapped) och Verktyg (Påminnelser, Taggar, ISBN-skanner). Ändra ordningen med ett långt tryck. Räknare per grupp, listen fälls ihop när du scrollar och i Skymning växlar ikonerna mellan orange och blått."
   },
   {
@@ -626,8 +618,28 @@
    "text": "Nya tips och handledningen är borta: allt förklaras med tips, plus en batteriavisering första gången du använder tidtagarur. Förbättringar i liggande läge för surfplattor och iPhone Duo."
   },
   {
-   "title": "Och mer",
-   "text": "Böcker utan sidantal (t.ex. från KOReader): appen frågar efter totalt antal sidor · 12 nya 4x4- och 12 nya 3x3-bingomallar, skräcktema i november och romantik i februari · KOSync: lästiden kommer från KOSync, så du är inte beroende av appens tidtagarur · Slumpväljare i Vill läsa: Pagi bestämmer åt dig · Förbättringar av Wrapped (öppnar den 26 december) · Traditionell kinesiska"
+   "title": "Böcker utan sidantal",
+   "text": "Böcker utan sidantal (t.ex. från KOReader): appen frågar efter totalt antal sidor."
+  },
+  {
+   "title": "Bingomallar och teman",
+   "text": "12 nya 4x4- och 12 nya 3x3-bingomallar, skräcktema i november och romantik i februari."
+  },
+  {
+   "title": "KOSync",
+   "text": "Lästiden kommer från KOSync, så du är inte beroende av appens tidtagarur."
+  },
+  {
+   "title": "Slumpmässigt val",
+   "text": "Slumpväljare i Vill läsa: Pagi bestämmer åt dig."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Förbättringar av Wrapped (öppnar den 26 december)."
+  },
+  {
+   "title": "Traditionell kinesiska",
+   "text": "Lecturameter pratar nu traditionell kinesiska."
   }
  ],
  "home.whatsnew.title": "Uppdateringsnoteringar v{{release_version}}",

@@ -587,7 +587,7 @@
   "<strong>Lecturameter Quest: Perpustakaan yang Terlupakan.</strong> Pilih 3 buku, tentukan jalurmu di peta, dan kalahkan bosnya. 5 level dan papan peringkat poin.",
   "<strong>Juga:</strong> Kartu event, Pagi sebagai avatarmu, notifikasi event.",
   "<strong>Android dan iPhone:</strong> event yang sama di keduanya.",
-  "<strong>Beranda baru:</strong> ikon di rail dikelompokkan ke dalam 3 menu melayang: Target (Event, Tantangan, Bingo), Bacaanku (Statistik, Kartuku, Wrapped), dan Alat (Pengingat, Tag, Pemindai ISBN). Atur ulang urutannya dengan tekan lama. Ada penghitung per grup, rail menyembunyikan diri saat kamu menggulir, dan di Senja ikonnya berganti-ganti oranye dan biru.",
+  "<strong>Tampilan baru di beranda:</strong> ikon di rail dikelompokkan ke dalam 3 menu melayang: Target (Event, Tantangan, Bingo), Bacaanku (Statistik, Kartuku, Wrapped), dan Alat (Pengingat, Tag, Pemindai ISBN). Atur ulang urutannya dengan tekan lama. Ada penghitung per grup, rail menyembunyikan diri saat kamu menggulir, dan di Senja ikonnya berganti-ganti oranye dan biru.",
   "<strong>Kartu buku baru:</strong> tanpa tempat sampah atau bintang lepas (kini chip ★ 4.5), ikon Material menggantikan emoji, dan tag di bagian bawah. Di Ditinggalkan kamu melihat halaman terakhir yang kamu baca (\"Kamu berhenti di halaman X dari Y\"); di Selesai, tanggal kamu menamatkannya.",
   "<strong>Tip baru, tanpa tutorial:</strong> tutorial dihapus dan semuanya dijelaskan lewat tip, plus pemberitahuan baterai saat pertama kali memakai pengatur waktu. Peningkatan mode lanskap untuk tablet dan iPhone Duo.",
   "<strong>Buku tanpa jumlah halaman</strong> (misalnya dari KOReader): aplikasi akan menanyakan total halamannya.",
@@ -602,19 +602,11 @@
  "roadmap.3_9.sub": "Tantangan membaca untuk seluruh komunitas, permainan dengan <b>buku-bukumu sendiri</b>, dan Beranda baru. Tanpa tanggal pasti: semuanya rilis kalau sudah siap.",
  "roadmap.3_9.cards": [
   {
-   "title": "Tantangan global: Membaca Akbar",
-   "text": "14 hari membaca bersama. Menit dari pengatur waktu dihitung, dengan target bersama dan papan peringkat langsung."
+   "title": "Event",
+   "text": "Tantangan global, Membaca Akbar: 14 hari membaca bersama. Menit dari pengatur waktu dihitung, dengan target bersama dan papan peringkat langsung. Lecturameter Quest, Perpustakaan yang Terlupakan: Pilih 3 buku, tentukan jalurmu di peta, dan kalahkan bosnya. 5 level dan papan peringkat poin. Juga: Kartu event, Pagi sebagai avatarmu, notifikasi event."
   },
   {
-   "title": "Lecturameter Quest: Perpustakaan yang Terlupakan",
-   "text": "Pilih 3 buku, tentukan jalurmu di peta, dan kalahkan bosnya. 5 level dan papan peringkat poin."
-  },
-  {
-   "title": "Juga",
-   "text": "Kartu event · Pagi sebagai avatarmu · Notifikasi event"
-  },
-  {
-   "title": "Beranda baru",
+   "title": "Tampilan baru di beranda",
    "text": "Ikon rail dikelompokkan ke dalam 3 menu melayang: Target (Event, Tantangan, Bingo), Bacaanku (Statistik, Kartuku, Wrapped), dan Alat (Pengingat, Tag, Pemindai ISBN). Atur ulang urutannya dengan tekan lama. Ada penghitung per grup, rail menyembunyikan diri saat kamu menggulir, dan di Senja ikonnya berganti-ganti oranye dan biru."
   },
   {
@@ -626,8 +618,28 @@
    "text": "Tip baru dan tutorial dihapus: semuanya dijelaskan lewat tip, plus pemberitahuan baterai saat pertama kali memakai pengatur waktu. Peningkatan mode lanskap untuk tablet dan iPhone Duo."
   },
   {
-   "title": "Dan lainnya",
-   "text": "Buku tanpa jumlah halaman (misalnya dari KOReader): aplikasi menanyakan total halamannya · 12 templat bingo 4x4 baru dan 12 templat 3x3 baru, tema horor di bulan November dan romansa di bulan Februari · KOSync: waktu membaca berasal dari KOSync, jadi kamu tidak bergantung pada pengatur waktu aplikasi · Pemilih acak di Ingin dibaca: Pagi yang memutuskan untukmu · Peningkatan Wrapped (dibuka pada 26 Desember) · Mandarin Tradisional"
+   "title": "Buku tanpa jumlah halaman",
+   "text": "Buku tanpa jumlah halaman (misalnya dari KOReader): aplikasi menanyakan total halamannya."
+  },
+  {
+   "title": "Templat dan tema bingo",
+   "text": "12 templat bingo 4x4 baru dan 12 templat 3x3 baru, tema horor di bulan November dan romansa di bulan Februari."
+  },
+  {
+   "title": "KOSync",
+   "text": "Waktu membaca berasal dari KOSync, jadi kamu tidak bergantung pada pengatur waktu aplikasi."
+  },
+  {
+   "title": "Pemilih acak",
+   "text": "Pemilih acak di Ingin dibaca: Pagi yang memutuskan untukmu."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Peningkatan Wrapped (dibuka pada 26 Desember)."
+  },
+  {
+   "title": "Mandarin Tradisional",
+   "text": "Lecturameter kini berbahasa Mandarin Tradisional."
   }
  ],
  "home.whatsnew.title": "Catatan pembaruan v{{release_version}}",

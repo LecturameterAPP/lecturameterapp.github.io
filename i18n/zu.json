@@ -587,7 +587,7 @@
   "<strong>I-Lecturameter Quest: Ilabhulali Elikhohliwe.</strong> Khetha izincwadi ezi-3, khetha indlela yakho emepheni bese uhlula umkhulu. Amazinga ayi-5 nebhodi labaholayo lamaphoyinti.",
   "<strong>Futhi:</strong> Ikhadi lomcimbi, uPagi njengesithombe sakho, izaziso zomcimbi.",
   "<strong>I-Android ne-iPhone:</strong> umcimbi ofanayo kuzo zombili.",
-  "<strong>Ikhaya elisha:</strong> izithonjana zebha zihlanganiswe ngamamenyu ayi-3 antantayo: Izinhloso (Imicimbi, Izinselelo, Bingo), Ukufunda kwami (Izibalo, Amakhadi ami, Wrapped) kanye Namathuluzi (Izikhumbuzo, Amathegi, isikena se-ISBN). Zihlele kabusha ngokucindezela isikhathi eside. Amakhawunta eqembu ngalinye, ibha iyagoqeka uma uskrola, futhi ku-Ukuhwelela izithonjana ziguquguquka phakathi kwewolintshi nokuluhlaza okwesibhakabhaka.",
+  "<strong>Isihlanganisi esisha ekhaya:</strong> izithonjana zebha zihlanganiswe ngamamenyu ayi-3 antantayo: Izinhloso (Imicimbi, Izinselelo, Bingo), Ukufunda kwami (Izibalo, Amakhadi ami, Wrapped) kanye Namathuluzi (Izikhumbuzo, Amathegi, isikena se-ISBN). Zihlele kabusha ngokucindezela isikhathi eside. Amakhawunta eqembu ngalinye, ibha iyagoqeka uma uskrola, futhi ku-Ukuhwelela izithonjana ziguquguquka phakathi kwewolintshi nokuluhlaza okwesibhakabhaka.",
   "<strong>Amakhadi ezincwadi amasha:</strong> alikho ibhini noma izinkanyezi ezihlukene (manje isiqeshana se-★ 4.5), izithonjana ze-Material esikhundleni sama-emoji namathegi ngezansi. Ku-Ishiyiwe ubona ikhasi lapho uyeke khona (\"Uyeke ekhasini X kwamakhasi Y\"); ku-Kuqediwe, usuku ozuqedele ngalo.",
   "<strong>Amathiphu amasha, akukho sifundo:</strong> isifundo sesisusiwe futhi konke kuchazwa ngamathiphu, kanye nesaziso sebhethri ngesikhathi sokuqala usebenzisa isitophuwashi. Ukuthuthukiswa kokubukeka okuvundlile kumathebulethi ne-iPhone Duo.",
   "<strong>Izincwadi ezingenanombolo yamakhasi</strong> (isb. ezivela ku-KOReader): uhlelo lokusebenza lukubuza inani lamakhasi.",
@@ -602,19 +602,11 @@
  "roadmap.3_9.sub": "Izinselelo zokufunda zomphakathi wonke, umdlalo odlalwa nge-<b>zincwadi zakho</b> kanye neKhaya elisha. Ayikho izinsuku ezimisiwe: konke kuphuma uma sekulungile.",
  "roadmap.3_9.cards": [
   {
-   "title": "Inselelo yomhlaba wonke: Ukufunda Okukhulu",
-   "text": "Izinsuku eziyi-14 sifunda ndawonye. Imizuzu yesitophuwashi iyabalwa, ngenhloso eyabiwe nebhodi labaholayo elibukhoma."
+   "title": "Imicimbi",
+   "text": "Inselelo yomhlaba wonke, Ukufunda Okukhulu: Izinsuku eziyi-14 sifunda ndawonye. Imizuzu yesitophuwashi iyabalwa, ngenhloso eyabiwe nebhodi labaholayo elibukhoma. I-Lecturameter Quest, Ilabhulali Elikhohliwe: Khetha izincwadi ezi-3, khetha indlela yakho emepheni bese uhlula umkhulu. Amazinga ayi-5 nebhodi labaholayo lamaphoyinti. Futhi: Ikhadi lomcimbi, uPagi njengesithombe sakho, izaziso zomcimbi."
   },
   {
-   "title": "I-Lecturameter Quest: Ilabhulali Elikhohliwe",
-   "text": "Khetha izincwadi ezi-3, khetha indlela yakho emepheni bese uhlula umkhulu. Amazinga ayi-5 nebhodi labaholayo lamaphoyinti."
-  },
-  {
-   "title": "Futhi",
-   "text": "Ikhadi lomcimbi · UPagi njengesithombe sakho · Izaziso zomcimbi"
-  },
-  {
-   "title": "Ikhaya elisha",
+   "title": "Isihlanganisi esisha ekhaya",
    "text": "Izithonjana zebha zihlanganiswe ngamamenyu ayi-3 antantayo: Izinhloso (Imicimbi, Izinselelo, Bingo), Ukufunda kwami (Izibalo, Amakhadi ami, Wrapped) kanye Namathuluzi (Izikhumbuzo, Amathegi, isikena se-ISBN). Zihlele kabusha ngokucindezela isikhathi eside. Amakhawunta eqembu ngalinye, ibha iyagoqeka uma uskrola, futhi ku-Ukuhwelela izithonjana ziguquguquka phakathi kwewolintshi nokuluhlaza okwesibhakabhaka."
   },
   {
@@ -626,8 +618,28 @@
    "text": "Amathiphu amasha futhi isifundo sesisusiwe: konke kuchazwa ngamathiphu, kanye nesaziso sebhethri ngesikhathi sokuqala usebenzisa isitophuwashi. Ukuthuthukiswa kokubukeka okuvundlile kumathebulethi ne-iPhone Duo."
   },
   {
-   "title": "Futhi",
-   "text": "Izincwadi ezingenanombolo yamakhasi (isb. ezivela ku-KOReader): uhlelo lokusebenza lukubuza inani lamakhasi · amathempulethi amasha ayi-12 e-4x4 nawayi-12 e-3x3 e-Bingo, indikimba yokwesaba ngoNovemba nothando ngoFebhuwari · KOSync: isikhathi sokufunda sivela ku-KOSync, ngakho awunciki esitophuwashini sohlelo lokusebenza · Isikhethi esingahleliwe ku-Ngifuna ukufunda: uPagi unquma ngawe · Ukuthuthukiswa kwe-Wrapped (kuvuleka ngo-26 Disemba) · isiShayina Sendabuko"
+   "title": "Amabhuku angenayo inani lamakhasi",
+   "text": "Izincwadi ezingenanombolo yamakhasi (isb. ezivela ku-KOReader): uhlelo lokusebenza lukubuza inani lamakhasi."
+  },
+  {
+   "title": "Amathempulethi namatimu e-Bingo",
+   "text": "amathempulethi amasha ayi-12 e-4x4 nawayi-12 e-3x3 e-Bingo, indikimba yokwesaba ngoNovemba nothando ngoFebhuwari."
+  },
+  {
+   "title": "KOSync",
+   "text": "Isikhathi sokufunda sivela ku-KOSync, ngakho awunciki esitophuwashini sohlelo lokusebenza."
+  },
+  {
+   "title": "Ukukhetha okungahleliwe",
+   "text": "Isikhethi esingahleliwe ku-Ngifuna ukufunda: uPagi unquma ngawe."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Ukuthuthukiswa kwe-Wrapped (kuvuleka ngo-26 Disemba)."
+  },
+  {
+   "title": "isiShayina Sendabuko",
+   "text": "Lecturameter manje isebenzisa isiShayina Sendabuko."
   }
  ],
  "home.whatsnew.title": "Amanothi wesibuyekezo v{{release_version}}",

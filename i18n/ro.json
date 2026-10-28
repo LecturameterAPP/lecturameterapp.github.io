@@ -587,7 +587,7 @@
   "<strong>Lecturameter Quest: Biblioteca Uitată.</strong> Alege 3 cărți, alege-ți drumul pe hartă și învinge șeful. 5 niveluri și un clasament de puncte.",
   "<strong>De asemenea:</strong> cardul evenimentului, Pagi ca avatar, alerte de eveniment.",
   "<strong>Android și iPhone:</strong> același eveniment pe ambele.",
-  "<strong>Acasă reînnoit:</strong> Pictogramele din bară sunt grupate în 3 meniuri plutitoare: Obiective (Evenimente, Provocări, Bingo), Lectura mea (Statistici, Cardurile mele, Wrapped) și Instrumente (Mementouri, Taguri, Scaner ISBN). Le reordonezi cu apăsare lungă. Contoare pe grup, bara se strânge când derulezi, iar în Amurg pictogramele alternează portocaliu și albastru.",
+  "<strong>Interfață reînnoită în Acasă:</strong> Pictogramele din bară sunt grupate în 3 meniuri plutitoare: Obiective (Evenimente, Provocări, Bingo), Lectura mea (Statistici, Cardurile mele, Wrapped) și Instrumente (Mementouri, Taguri, Scaner ISBN). Le reordonezi cu apăsare lungă. Contoare pe grup, bara se strânge când derulezi, iar în Amurg pictogramele alternează portocaliu și albastru.",
   "<strong>Carduri de carte reînnoite:</strong> Fără coș de gunoi și fără stele rătăcite (acum un chip ★ 4.5), pictograme Material în loc de emoji și taguri în partea de jos. La Abandonate vezi pagina la care ai rămas («Te-ai oprit la pagina X din Y»); la Finalizate, data la care ai terminat-o.",
   "<strong>Sfaturi noi, fără tutorial:</strong> Tutorialul a dispărut și totul se explică prin sfaturi, plus o notificare despre baterie prima dată când folosești cronometrul. Îmbunătățiri pentru modul landscape pe tablete și iPhone Duo.",
   "<strong>Cărți fără număr de pagini</strong> (de ex. din KOReader): aplicația îți cere numărul total de pagini.",
@@ -602,19 +602,11 @@
  "roadmap.3_9.sub": "Provocări de lectură pentru toată comunitatea, un joc cu <b>propriile tale cărți</b> și un Acasă reînnoit. Fără date fixe: totul apare când e gata.",
  "roadmap.3_9.cards": [
   {
-   "title": "Provocare globală: Marea Lectură",
-   "text": "14 zile de citit împreună. Contează minutele de cronometru, cu un obiectiv comun și un clasament live."
+   "title": "Evenimente",
+   "text": "Provocare globală, Marea Lectură: 14 zile de citit împreună. Contează minutele de cronometru, cu un obiectiv comun și un clasament live. Lecturameter Quest, Biblioteca Uitată: Alege 3 cărți, alege-ți drumul pe hartă și învinge șeful. 5 niveluri și un clasament de puncte. De asemenea: cardul evenimentului, Pagi ca avatar, alerte de eveniment."
   },
   {
-   "title": "Lecturameter Quest: Biblioteca Uitată",
-   "text": "Alege 3 cărți, alege-ți drumul pe hartă și învinge șeful. 5 niveluri și un clasament de puncte."
-  },
-  {
-   "title": "De asemenea",
-   "text": "Cardul evenimentului · Pagi ca avatar · Alerte de eveniment"
-  },
-  {
-   "title": "Acasă reînnoit",
+   "title": "Interfață reînnoită în Acasă",
    "text": "Pictogramele din bară sunt grupate în 3 meniuri plutitoare: Obiective (Evenimente, Provocări, Bingo), Lectura mea (Statistici, Cardurile mele, Wrapped) și Instrumente (Mementouri, Taguri, Scaner ISBN). Le reordonezi cu apăsare lungă. Contoare pe grup, bara se strânge când derulezi, iar în Amurg pictogramele alternează portocaliu și albastru."
   },
   {
@@ -626,8 +618,28 @@
    "text": "Tutorialul a dispărut și totul se explică prin sfaturi, plus o notificare despre baterie prima dată când folosești cronometrul. Îmbunătățiri pentru modul landscape pe tablete și iPhone Duo."
   },
   {
-   "title": "Și altele",
-   "text": "Cărți fără număr de pagini (de ex. din KOReader): aplicația îți cere numărul total de pagini · Bingo: 12 șabloane noi 4x4 și 12 șabloane noi 3x3, temă horror în noiembrie și romance în februarie · KOSync: îmbunătățiri ca să nu depinzi de cronometrul aplicației: KOSync trimite timpul de lectură · Selector aleatoriu în Vreau să citesc: Pagi decide pentru tine · Wrapped: îmbunătățiri (se deschide pe 26 decembrie) · Chineză tradițională"
+   "title": "Cărți fără număr de pagini",
+   "text": "Cărți fără număr de pagini (de ex. din KOReader): aplicația îți cere numărul total de pagini."
+  },
+  {
+   "title": "Șabloane și teme de bingo",
+   "text": "12 șabloane noi 4x4 și 12 șabloane noi 3x3, temă horror în noiembrie și romance în februarie."
+  },
+  {
+   "title": "KOSync",
+   "text": "Îmbunătățiri ca să nu depinzi de cronometrul aplicației: KOSync trimite timpul de lectură."
+  },
+  {
+   "title": "Selector aleatoriu",
+   "text": "Selector aleatoriu în Vreau să citesc: Pagi decide pentru tine."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Îmbunătățiri (se deschide pe 26 decembrie)."
+  },
+  {
+   "title": "Chineză tradițională",
+   "text": "Lecturameter vorbește acum chineză tradițională."
   }
  ],
  "home.whatsnew.title": "Note de actualizare v{{release_version}}",

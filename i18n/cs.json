@@ -587,7 +587,7 @@
   "<strong>Lecturameter Quest: Zapomenutá knihovna.</strong> Vyber 3 knihy, zvol si cestu na mapě a poraz bosse. 5 úrovní a žebříček bodů.",
   "<strong>A dále:</strong> karta události, Pagi jako tvůj avatar, upozornění na události.",
   "<strong>Android a iPhone:</strong> stejná událost na obou.",
-  "<strong>Obnovená domovská obrazovka:</strong> ikony v liště jsou seskupené do 3 plovoucích menu: Cíle (Události, Výzvy, Bingo), Moje čtení (Statistiky, Moje karty, Wrapped) a Nástroje (Upozornění, Tagy, Skener ISBN). Pořadí změníš dlouhým stisknutím. Počítadla u každé skupiny, lišta se při posouvání sbalí a v Soumraku se ikony střídají v oranžové a modré.",
+  "<strong>Obnovené rozhraní na domovské obrazovce:</strong> ikony v liště jsou seskupené do 3 plovoucích menu: Cíle (Události, Výzvy, Bingo), Moje čtení (Statistiky, Moje karty, Wrapped) a Nástroje (Upozornění, Tagy, Skener ISBN). Pořadí změníš dlouhým stisknutím. Počítadla u každé skupiny, lišta se při posouvání sbalí a v Soumraku se ikony střídají v oranžové a modré.",
   "<strong>Obnovené karty knih:</strong> žádný koš ani volné hvězdičky (nově čip ★ 4.5), ikony Material místo emoji a tagy dole. V Opuštěno uvidíš stránku, kde čtení skončilo („Zastaveno na straně X z Y“); v Dokončeno datum dočtení.",
   "<strong>Nové tipy, žádný tutoriál:</strong> tutoriál zmizel a všechno se vysvětluje tipy, plus upozornění na baterii při prvním použití časovače. Lepší zobrazení na šířku pro tablety a iPhone Duo.",
   "<strong>Knihy bez počtu stránek</strong> (např. z KOReaderu): aplikace se zeptá na celkový počet stránek.",
@@ -602,19 +602,11 @@
  "roadmap.3_9.sub": "Čtenářské výzvy pro celou komunitu, hra, kterou hraješ se <b>svými vlastními knihami</b>, a obnovená domovská obrazovka. Žádná pevná data: všechno vyjde, až to bude hotové.",
  "roadmap.3_9.cards": [
   {
-   "title": "Globální výzva: Velké čtení",
-   "text": "14 dní společného čtení. Počítají se minuty z časovače, se společným cílem a živým žebříčkem."
+   "title": "Události",
+   "text": "Globální výzva, Velké čtení: 14 dní společného čtení. Počítají se minuty z časovače, se společným cílem a živým žebříčkem. Lecturameter Quest, Zapomenutá knihovna: Vyber 3 knihy, zvol si cestu na mapě a poraz bosse. 5 úrovní a žebříček bodů. A dále: karta události, Pagi jako tvůj avatar, upozornění na události."
   },
   {
-   "title": "Lecturameter Quest: Zapomenutá knihovna",
-   "text": "Vyber 3 knihy, zvol si cestu na mapě a poraz bosse. 5 úrovní a žebříček bodů."
-  },
-  {
-   "title": "A dále",
-   "text": "Karta události · Pagi jako tvůj avatar · Upozornění na události"
-  },
-  {
-   "title": "Obnovená domovská obrazovka",
+   "title": "Obnovené rozhraní na domovské obrazovce",
    "text": "Ikony v liště seskupené do 3 plovoucích menu: Cíle (Události, Výzvy, Bingo), Moje čtení (Statistiky, Moje karty, Wrapped) a Nástroje (Upozornění, Tagy, Skener ISBN). Pořadí změníš dlouhým stisknutím. Počítadla u každé skupiny, lišta se při posouvání sbalí a v Soumraku se ikony střídají v oranžové a modré."
   },
   {
@@ -626,8 +618,28 @@
    "text": "Nové tipy a tutoriál zmizel: všechno se vysvětluje tipy, plus upozornění na baterii při prvním použití časovače. Lepší zobrazení na šířku pro tablety a iPhone Duo."
   },
   {
-   "title": "A dále",
-   "text": "Knihy bez počtu stránek (např. z KOReaderu): aplikace se zeptá na celkový počet stránek · 12 nových šablon bingo 4x4 a 12 nových 3x3, hororové téma v listopadu a romantické v únoru · KOSync: čas čtení přichází z KOSync, takže nejsi závislý na časovači aplikace · Náhodný výběr v Chci číst: Pagi rozhodne za tebe · Vylepšení Wrapped (otevře se 26. prosince) · Tradiční čínština"
+   "title": "Knihy bez počtu stránek",
+   "text": "Knihy bez počtu stránek (např. z KOReaderu): aplikace se zeptá na celkový počet stránek."
+  },
+  {
+   "title": "Šablony a témata bingo",
+   "text": "12 nových šablon bingo 4x4 a 12 nových 3x3, hororové téma v listopadu a romantické v únoru."
+  },
+  {
+   "title": "KOSync",
+   "text": "Čas čtení přichází z KOSync, takže nejsi závislý na časovači aplikace."
+  },
+  {
+   "title": "Náhodný výběr",
+   "text": "Náhodný výběr v Chci číst: Pagi rozhodne za tebe."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Vylepšení Wrapped (otevře se 26. prosince)."
+  },
+  {
+   "title": "Tradiční čínština",
+   "text": "Lecturameter nově umí jazyk: tradiční čínština."
   }
  ],
  "home.whatsnew.title": "Poznámky k opravě v{{release_version}}",

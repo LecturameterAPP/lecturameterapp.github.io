@@ -587,7 +587,7 @@
   "<strong>Lecturameter Quest: Thư Viện Bị Lãng Quên.</strong> Chọn 3 cuốn sách, chọn đường đi trên bản đồ và đánh bại trùm cuối. 5 màn chơi và bảng xếp hạng điểm.",
   "<strong>Ngoài ra:</strong> Thẻ sự kiện, Pagi làm ảnh đại diện của bạn, thông báo sự kiện.",
   "<strong>Android và iPhone:</strong> cùng một sự kiện trên cả hai.",
-  "<strong>Trang chủ mới:</strong> các biểu tượng ở thanh bên được gộp thành 3 menu nổi: Mục tiêu (Sự kiện, Thử thách, Bingo), Việc đọc của tôi (Thống kê, Thẻ của tôi, Wrapped) và Công cụ (Nhắc nhở, Thẻ, Trình quét ISBN). Nhấn giữ để sắp xếp lại. Mỗi nhóm có bộ đếm, thanh bên thu gọn khi cuộn, và trong Ocaso các biểu tượng xen kẽ màu cam và xanh.",
+  "<strong>Giao diện mới ở Trang chủ:</strong> các biểu tượng ở thanh bên được gộp thành 3 menu nổi: Mục tiêu (Sự kiện, Thử thách, Bingo), Việc đọc của tôi (Thống kê, Thẻ của tôi, Wrapped) và Công cụ (Nhắc nhở, Thẻ, Trình quét ISBN). Nhấn giữ để sắp xếp lại. Mỗi nhóm có bộ đếm, thanh bên thu gọn khi cuộn, và trong Hoàng hôn các biểu tượng xen kẽ màu cam và xanh.",
   "<strong>Thẻ sách mới:</strong> không còn thùng rác hay các ngôi sao rời (giờ là chip ★ 4.5), biểu tượng Material thay cho emoji và nhãn ở phía dưới. Ở Đã bỏ dở bạn thấy trang mình dừng lại (\"Bạn dừng ở trang X trên Y\"); ở Đã hoàn thành là ngày bạn đọc xong.",
   "<strong>Mẹo mới, không còn hướng dẫn:</strong> phần hướng dẫn đã bỏ, mọi thứ được giải thích bằng mẹo, kèm thông báo về pin lần đầu dùng đồng hồ bấm giờ. Cải thiện chế độ ngang cho máy tính bảng và iPhone Duo.",
   "<strong>Sách không có số trang</strong> (ví dụ từ KOReader): ứng dụng sẽ hỏi bạn tổng số trang.",
@@ -602,20 +602,12 @@
  "roadmap.3_9.sub": "Thử thách đọc sách cho cả cộng đồng, một trò chơi chơi bằng <b>chính những cuốn sách của bạn</b> và Trang chủ mới. Không có ngày cố định: mọi thứ ra mắt khi sẵn sàng.",
  "roadmap.3_9.cards": [
   {
-   "title": "Thử thách toàn cầu: Cuộc Đọc Lớn",
-   "text": "14 ngày cùng nhau đọc. Số phút trên đồng hồ bấm giờ được tính, với mục tiêu chung và bảng xếp hạng trực tiếp."
+   "title": "Sự kiện",
+   "text": "Thử thách toàn cầu, Cuộc Đọc Lớn: 14 ngày cùng nhau đọc. Số phút trên đồng hồ bấm giờ được tính, với mục tiêu chung và bảng xếp hạng trực tiếp. Lecturameter Quest, Thư Viện Bị Lãng Quên: Chọn 3 cuốn sách, chọn đường đi trên bản đồ và đánh bại trùm cuối. 5 màn chơi và bảng xếp hạng điểm. Ngoài ra: Thẻ sự kiện, Pagi làm ảnh đại diện của bạn, thông báo sự kiện."
   },
   {
-   "title": "Lecturameter Quest: Thư Viện Bị Lãng Quên",
-   "text": "Chọn 3 cuốn sách, chọn đường đi trên bản đồ và đánh bại trùm cuối. 5 màn chơi và bảng xếp hạng điểm."
-  },
-  {
-   "title": "Ngoài ra",
-   "text": "Thẻ sự kiện · Pagi làm ảnh đại diện · Thông báo sự kiện"
-  },
-  {
-   "title": "Trang chủ mới",
-   "text": "Các biểu tượng ở thanh bên được gộp thành 3 menu nổi: Mục tiêu (Sự kiện, Thử thách, Bingo), Việc đọc của tôi (Thống kê, Thẻ của tôi, Wrapped) và Công cụ (Nhắc nhở, Thẻ, Trình quét ISBN). Nhấn giữ để sắp xếp lại. Mỗi nhóm có bộ đếm, thanh bên thu gọn khi cuộn, và trong Ocaso các biểu tượng xen kẽ màu cam và xanh."
+   "title": "Giao diện mới ở Trang chủ",
+   "text": "Các biểu tượng ở thanh bên được gộp thành 3 menu nổi: Mục tiêu (Sự kiện, Thử thách, Bingo), Việc đọc của tôi (Thống kê, Thẻ của tôi, Wrapped) và Công cụ (Nhắc nhở, Thẻ, Trình quét ISBN). Nhấn giữ để sắp xếp lại. Mỗi nhóm có bộ đếm, thanh bên thu gọn khi cuộn, và trong Hoàng hôn các biểu tượng xen kẽ màu cam và xanh."
   },
   {
    "title": "Thẻ sách",
@@ -626,8 +618,28 @@
    "text": "Mẹo mới và không còn hướng dẫn: mọi thứ được giải thích bằng mẹo, kèm thông báo về pin lần đầu dùng đồng hồ bấm giờ. Cải thiện chế độ ngang cho máy tính bảng và iPhone Duo."
   },
   {
-   "title": "Và nhiều hơn nữa",
-   "text": "Sách không có số trang (ví dụ từ KOReader): ứng dụng hỏi tổng số trang · 12 mẫu Bingo 4x4 mới và 12 mẫu 3x3 mới, chủ đề kinh dị vào tháng Mười Một và lãng mạn vào tháng Hai · KOSync: thời gian đọc lấy từ KOSync, nên bạn không phụ thuộc vào đồng hồ bấm giờ của ứng dụng · Chọn ngẫu nhiên trong Muốn đọc: Pagi quyết định giúp bạn · Cải thiện Wrapped (mở vào ngày 26 tháng Mười Hai) · Tiếng Trung phồn thể"
+   "title": "Sách không có số trang",
+   "text": "Sách không có số trang (ví dụ từ KOReader): ứng dụng hỏi tổng số trang."
+  },
+  {
+   "title": "Mẫu và chủ đề Bingo",
+   "text": "12 mẫu Bingo 4x4 mới và 12 mẫu 3x3 mới, chủ đề kinh dị vào tháng Mười Một và lãng mạn vào tháng Hai."
+  },
+  {
+   "title": "KOSync",
+   "text": "Thời gian đọc lấy từ KOSync, nên bạn không phụ thuộc vào đồng hồ bấm giờ của ứng dụng."
+  },
+  {
+   "title": "Chọn ngẫu nhiên",
+   "text": "Chọn ngẫu nhiên trong Muốn đọc: Pagi quyết định giúp bạn."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Cải thiện Wrapped (mở vào ngày 26 tháng Mười Hai)."
+  },
+  {
+   "title": "Tiếng Trung phồn thể",
+   "text": "Lecturameter giờ đã hỗ trợ tiếng Trung phồn thể."
   }
  ],
  "home.whatsnew.title": "Ghi chú cập nhật v{{release_version}}",

@@ -587,7 +587,7 @@
   "<strong>Lecturameter Quest: Det glemte biblioteket.</strong> Velg 3 bøker, velg veien din på kartet og slå sjefen. 5 nivåer og en poengtopp­liste.",
   "<strong>I tillegg:</strong> Arrangementskort, Pagi som avatar, varsler om arrangementet.",
   "<strong>Android og iPhone:</strong> det samme arrangementet på begge.",
-  "<strong>Nytt Hjem:</strong> ikonene i sidefeltet er gruppert i 3 flytende menyer: Mål (Arrangementer, Utfordringer, Bingo), Min lesing (Statistikk, Mine kort, Wrapped) og Verktøy (Påminnelser, Tagger, ISBN-skanner). Endre rekkefølgen med et langt trykk. Tellere per gruppe, feltet skjules når du ruller, og i Skumring veksler ikonene mellom oransje og blå.",
+  "<strong>Fornyet brukergrensesnitt på Hjem:</strong> ikonene i sidefeltet er gruppert i 3 flytende menyer: Mål (Arrangementer, Utfordringer, Bingo), Min lesing (Statistikk, Mine kort, Wrapped) og Verktøy (Påminnelser, Tagger, ISBN-skanner). Endre rekkefølgen med et langt trykk. Tellere per gruppe, feltet skjules når du ruller, og i Skumring veksler ikonene mellom oransje og blå.",
   "<strong>Nye bokkort:</strong> ingen søppelkasse eller løse stjerner (nå en ★ 4.5-brikke), Material-ikoner i stedet for emojier og tagger nederst. Under Forlatt ser du siden der du sluttet («Du sluttet på side X av Y»); under Fullført datoen du ble ferdig.",
   "<strong>Nye tips, ingen veiledning:</strong> veiledningen er borte og alt forklares med tips, pluss et batterivarsel første gang du bruker tidtakeren. Forbedringer for liggende format på nettbrett og iPhone Duo.",
   "<strong>Bøker uten sideantall</strong> (f.eks. fra KOReader): appen spør deg om totalt antall sider.",
@@ -602,19 +602,11 @@
  "roadmap.3_9.sub": "Leseutfordringer for hele fellesskapet, et spill med <b>dine egne bøker</b> og et nytt Hjem. Ingen faste datoer: alt kommer når det er klart.",
  "roadmap.3_9.cards": [
   {
-   "title": "Global utfordring: Den store lesingen",
-   "text": "14 dager med felles lesing. Minuttene på tidtakeren teller, med et felles mål og en live toppliste."
+   "title": "Arrangementer",
+   "text": "Global utfordring, Den store lesingen: 14 dager med felles lesing. Minuttene på tidtakeren teller, med et felles mål og en live toppliste. Lecturameter Quest, Det glemte biblioteket: Velg 3 bøker, velg veien din på kartet og slå sjefen. 5 nivåer og en poengtoppliste. I tillegg: Arrangementskort, Pagi som avatar, varsler om arrangementet."
   },
   {
-   "title": "Lecturameter Quest: Det glemte biblioteket",
-   "text": "Velg 3 bøker, velg veien din på kartet og slå sjefen. 5 nivåer og en poengtoppliste."
-  },
-  {
-   "title": "I tillegg",
-   "text": "Arrangementskort · Pagi som avatar · Varsler om arrangementet"
-  },
-  {
-   "title": "Nytt Hjem",
+   "title": "Fornyet brukergrensesnitt på Hjem",
    "text": "Ikonene i sidefeltet er gruppert i 3 flytende menyer: Mål (Arrangementer, Utfordringer, Bingo), Min lesing (Statistikk, Mine kort, Wrapped) og Verktøy (Påminnelser, Tagger, ISBN-skanner). Endre rekkefølgen med et langt trykk. Tellere per gruppe, feltet skjules når du ruller, og i Skumring veksler ikonene mellom oransje og blå."
   },
   {
@@ -626,8 +618,28 @@
    "text": "Nye tips og veiledningen er borte: alt forklares med tips, pluss et batterivarsel første gang du bruker tidtakeren. Forbedringer for liggende format på nettbrett og iPhone Duo."
   },
   {
-   "title": "I tillegg",
-   "text": "Bøker uten sideantall (f.eks. fra KOReader): appen spør etter totalt antall sider · 12 nye 4x4-maler og 12 nye 3x3-maler for bingo, skrekktema i november og romantikk i februar · KOSync: lesetiden kommer fra KOSync, så du er ikke avhengig av tidtakeren i appen · Tilfeldig valg i Vil lese: Pagi bestemmer for deg · Forbedringer i Wrapped (åpner 26. desember) · Tradisjonell kinesisk"
+   "title": "Bøker uten sidetall",
+   "text": "Bøker uten sideantall (f.eks. fra KOReader): appen spør etter totalt antall sider."
+  },
+  {
+   "title": "Bingomaler og -temaer",
+   "text": "12 nye 4x4-maler og 12 nye 3x3-maler for bingo, skrekktema i november og romantikk i februar."
+  },
+  {
+   "title": "KOSync",
+   "text": "Lesetiden kommer fra KOSync, så du er ikke avhengig av tidtakeren i appen."
+  },
+  {
+   "title": "Tilfeldig valg",
+   "text": "Tilfeldig valg i Vil lese: Pagi bestemmer for deg."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Forbedringer i Wrapped (åpner 26. desember)."
+  },
+  {
+   "title": "Tradisjonell kinesisk",
+   "text": "Lecturameter snakker nå tradisjonell kinesisk."
   }
  ],
  "home.whatsnew.title": "Oppdateringsnotater v{{release_version}}",

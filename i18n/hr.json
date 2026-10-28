@@ -587,7 +587,7 @@
   "<strong>Lecturameter Quest: Zaboravljena knjižnica.</strong> Odaberi 3 knjige, izaberi svoj put na karti i pobijedi šefa. 5 razina i ljestvica bodova.",
   "<strong>Također:</strong> kartica događaja, Pagi kao tvoj avatar, obavijesti o događaju.",
   "<strong>Android i iPhone:</strong> isti događaj na oba.",
-  "<strong>Obnovljeni početni zaslon:</strong> Ikone na traci grupirane su u 3 plutajuća izbornika: Ciljevi (Događaji, Izazovi, Bingo), Moje čitanje (Statistika, Moje kartice, Wrapped) i Alati (Podsjetnici, Tagovi, ISBN skener). Redoslijed mijenjaš dugim pritiskom. Brojači po grupi, traka se skriva dok listaš, a u Sumraku ikone se izmjenjuju u narančastoj i plavoj.",
+  "<strong>Obnovljeno sučelje početnog zaslona:</strong> Ikone na traci grupirane su u 3 plutajuća izbornika: Ciljevi (Događaji, Izazovi, Bingo), Moje čitanje (Statistika, Moje kartice, Wrapped) i Alati (Podsjetnici, Tagovi, ISBN skener). Redoslijed mijenjaš dugim pritiskom. Brojači po grupi, traka se skriva dok listaš, a u Sumraku ikone se izmjenjuju u narančastoj i plavoj.",
   "<strong>Obnovljene kartice knjiga:</strong> Bez kante za smeće i usamljenih zvjezdica (sada čip ★ 4.5), Material ikone umjesto emotikona i tagovi pri dnu. U Napušteno vidiš stranicu na kojoj si stao/la («Stao/la si na stranici X od Y»); u Završeno datum kad si je dovršio/la.",
   "<strong>Novi savjeti, bez tutoriala:</strong> Tutorial je nestao, a sve se objašnjava savjetima, uz obavijest o bateriji pri prvom korištenju štoperice. Poboljšanja položenog prikaza za tablete i iPhone Duo.",
   "<strong>Knjige bez broja stranica</strong> (npr. iz KOReadera): aplikacija traži ukupan broj stranica.",
@@ -602,19 +602,11 @@
  "roadmap.3_9.sub": "Izazovi čitanja za cijelu zajednicu, igra s <b>tvojim vlastitim knjigama</b> i obnovljeni početni zaslon. Bez fiksnih datuma: sve izlazi kad bude spremno.",
  "roadmap.3_9.cards": [
   {
-   "title": "Globalni izazov: Veliko čitanje",
-   "text": "14 dana zajedničkog čitanja. Broje se minute štoperice, uz zajednički cilj i ljestvicu uživo."
+   "title": "Događaji",
+   "text": "Globalni izazov, Veliko čitanje: 14 dana zajedničkog čitanja. Broje se minute štoperice, uz zajednički cilj i ljestvicu uživo. Lecturameter Quest, Zaboravljena knjižnica: Odaberi 3 knjige, izaberi svoj put na karti i pobijedi šefa. 5 razina i ljestvica bodova. Također: kartica događaja, Pagi kao tvoj avatar, obavijesti o događaju."
   },
   {
-   "title": "Lecturameter Quest: Zaboravljena knjižnica",
-   "text": "Odaberi 3 knjige, izaberi svoj put na karti i pobijedi šefa. 5 razina i ljestvica bodova."
-  },
-  {
-   "title": "Također",
-   "text": "Kartica događaja · Pagi kao tvoj avatar · Obavijesti o događaju"
-  },
-  {
-   "title": "Obnovljeni početni zaslon",
+   "title": "Obnovljeno sučelje početnog zaslona",
    "text": "Ikone na traci grupirane su u 3 plutajuća izbornika: Ciljevi (Događaji, Izazovi, Bingo), Moje čitanje (Statistika, Moje kartice, Wrapped) i Alati (Podsjetnici, Tagovi, ISBN skener). Redoslijed mijenjaš dugim pritiskom. Brojači po grupi, traka se skriva dok listaš, a u Sumraku ikone se izmjenjuju u narančastoj i plavoj."
   },
   {
@@ -626,8 +618,28 @@
    "text": "Tutorial je nestao, a sve se objašnjava savjetima, uz obavijest o bateriji pri prvom korištenju štoperice. Poboljšanja položenog prikaza za tablete i iPhone Duo."
   },
   {
-   "title": "I još toga",
-   "text": "Knjige bez broja stranica (npr. iz KOReadera): aplikacija traži ukupan broj stranica · Bingo: 12 novih predložaka 4x4 i 12 novih 3x3, tema horora u studenom i romantike u veljači · KOSync: poboljšanja kako ne bi ovisio/la o štoperici aplikacije: KOSync šalje vrijeme čitanja · Nasumični odabir u Želim čitati: Pagi odlučuje umjesto tebe · Wrapped: poboljšanja (otvara se 26. prosinca) · Tradicionalni kineski"
+   "title": "Knjige bez broja stranica",
+   "text": "Knjige bez broja stranica (npr. iz KOReadera): aplikacija traži ukupan broj stranica."
+  },
+  {
+   "title": "Predlošci i teme za Bingo",
+   "text": "12 novih predložaka 4x4 i 12 novih 3x3, tema horora u studenom i romantike u veljači."
+  },
+  {
+   "title": "KOSync",
+   "text": "Poboljšanja kako ne bi ovisio/la o štoperici aplikacije: KOSync šalje vrijeme čitanja."
+  },
+  {
+   "title": "Nasumični odabir",
+   "text": "Nasumični odabir u Želim čitati: Pagi odlučuje umjesto tebe."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Poboljšanja (otvara se 26. prosinca)."
+  },
+  {
+   "title": "Tradicionalni kineski",
+   "text": "Novi jezik: tradicionalni kineski."
   }
  ],
  "home.whatsnew.title": "Napomene uz ažuriranje v{{release_version}}",

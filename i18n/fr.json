@@ -587,7 +587,7 @@
   "<strong>Lecturameter Quest : La Bibliothèque oubliée.</strong> Choisis 3 livres, trace ton chemin sur la carte et bats le boss. 5 niveaux et un classement par points.",
   "<strong>Et aussi :</strong> carte d'événement, Pagi comme avatar, alertes d'événement.",
   "<strong>Android et iPhone :</strong> le même événement sur les deux.",
-  "<strong>Accueil renouvelé :</strong> les icônes de la barre sont regroupées en 3 menus flottants : Objectifs (Événements, Défis, Bingos), Ma lecture (Statistiques, Mes cartes, Wrapped) et Outils (Rappels, Tags, Scanner ISBN). Réorganise-les par un appui long. Compteurs par groupe, la barre se replie quand tu fais défiler, et dans Crépuscule les icônes alternent orange et bleu.",
+  "<strong>Interface renouvelée de l'accueil :</strong> les icônes de la barre sont regroupées en 3 menus flottants : Objectifs (Événements, Défis, Bingos), Ma lecture (Statistiques, Mes cartes, Wrapped) et Outils (Rappels, Tags, Scanner ISBN). Réorganise-les par un appui long. Compteurs par groupe, la barre se replie quand tu fais défiler, et dans Crépuscule les icônes alternent orange et bleu.",
   "<strong>Fiches de livre renouvelées :</strong> plus de corbeille ni d'étoiles isolées (désormais une pastille ★ 4.5), des icônes Material à la place des emojis et les tags en bas. Dans Abandonné, tu vois la page où tu t'es arrêté (« Tu t'es arrêté à la page X sur Y ») ; dans Terminés, la date de fin.",
   "<strong>Nouvelles astuces, plus de tutoriel :</strong> le tutoriel disparaît et tout s'explique avec des astuces, plus un avis sur la batterie à la première utilisation du chronomètre. Améliorations du mode paysage pour les tablettes et l'iPhone Duo.",
   "<strong>Livres sans nombre de pages</strong> (par ex. depuis KOReader) : l'app te demande le total de pages.",
@@ -602,19 +602,11 @@
  "roadmap.3_9.sub": "Des défis de lecture pour toute la communauté, un jeu qui se joue avec <b>tes propres livres</b> et un accueil renouvelé. Pas de dates fixes : tout sort quand c'est prêt.",
  "roadmap.3_9.cards": [
   {
-   "title": "Défi mondial : La Grande Lecture",
-   "text": "14 jours à lire ensemble. Les minutes du chronomètre comptent, avec un objectif commun et un classement en direct."
+   "title": "Événements",
+   "text": "Défi mondial, La Grande Lecture : 14 jours à lire ensemble. Les minutes du chronomètre comptent, avec un objectif commun et un classement en direct. Lecturameter Quest, La Bibliothèque oubliée : Choisis 3 livres, trace ton chemin sur la carte et bats le boss. 5 niveaux et un classement par points. Et aussi : carte d'événement, Pagi comme avatar, alertes d'événement."
   },
   {
-   "title": "Lecturameter Quest : La Bibliothèque oubliée",
-   "text": "Choisis 3 livres, trace ton chemin sur la carte et bats le boss. 5 niveaux et un classement par points."
-  },
-  {
-   "title": "Et aussi",
-   "text": "Carte d'événement · Pagi comme avatar · Alertes d'événement"
-  },
-  {
-   "title": "Accueil renouvelé",
+   "title": "Interface renouvelée de l'accueil",
    "text": "Icônes de la barre regroupées en 3 menus flottants : Objectifs (Événements, Défis, Bingos), Ma lecture (Statistiques, Mes cartes, Wrapped) et Outils (Rappels, Tags, Scanner ISBN). Réorganise-les par un appui long. Compteurs par groupe, la barre se replie quand tu fais défiler, et dans Crépuscule les icônes alternent orange et bleu."
   },
   {
@@ -626,8 +618,28 @@
    "text": "Nouvelles astuces et plus de tutoriel : tout s'explique avec des astuces, plus un avis sur la batterie à la première utilisation du chronomètre. Améliorations du mode paysage pour les tablettes et l'iPhone Duo."
   },
   {
-   "title": "Et aussi",
-   "text": "Livres sans nombre de pages (par ex. depuis KOReader) : l'app demande le total de pages · 12 nouveaux modèles de bingo 4x4 et 12 en 3x3, thème horreur en novembre et romance en février · KOSync : le temps de lecture vient de KOSync, tu ne dépends plus du chronomètre de l'app · Tirage au sort dans À lire : Pagi choisit pour toi · Améliorations de Wrapped (ouverture le 26 décembre) · Chinois traditionnel"
+   "title": "Livres sans nombre de pages",
+   "text": "Livres sans nombre de pages (par ex. depuis KOReader) : l'app demande le total de pages."
+  },
+  {
+   "title": "Modèles et thèmes de bingo",
+   "text": "12 nouveaux modèles de bingo 4x4 et 12 en 3x3, thème horreur en novembre et romance en février."
+  },
+  {
+   "title": "KOSync",
+   "text": "Le temps de lecture vient de KOSync, tu ne dépends plus du chronomètre de l'app."
+  },
+  {
+   "title": "Sélecteur aléatoire",
+   "text": "Tirage au sort dans À lire : Pagi choisit pour toi."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Améliorations de Wrapped (ouverture le 26 décembre)."
+  },
+  {
+   "title": "Chinois traditionnel",
+   "text": "Lecturameter parle désormais chinois traditionnel."
   }
  ],
  "home.whatsnew.title": "Notes de mise à jour v{{release_version}}",

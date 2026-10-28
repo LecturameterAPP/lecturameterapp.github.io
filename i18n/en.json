@@ -587,7 +587,7 @@
   "<strong>Lecturameter Quest: The Forgotten Library.</strong> Pick 3 books, choose your path on the map and beat the boss. 5 levels and a points leaderboard.",
   "<strong>Also:</strong> Event card, Pagi as your avatar, event alerts.",
   "<strong>Android and iPhone:</strong> the same event on both.",
-  "<strong>Renewed Home:</strong> the rail icons are grouped into 3 floating menus: Goals (Events, Challenges, Bingos), My reading (Statistics, My cards, Wrapped) and Tools (Reminders, Tags, ISBN scanner). Reorder them with a long press. Counters per group, the rail folds away as you scroll, and in Ocaso the icons alternate orange and blue.",
+  "<strong>Renewed UI in home:</strong> the rail icons are grouped into 3 floating menus: Goals (Events, Challenges, Bingos), My reading (Statistics, My cards, Wrapped) and Tools (Reminders, Tags, ISBN scanner). Reorder them with a long press. Counters per group, the rail folds away as you scroll, and in Dusk the icons alternate orange and blue.",
   "<strong>Renewed book cards:</strong> no trash can or loose stars (now a ★ 4.5 chip), Material icons instead of emojis and tags at the bottom. In Abandoned you see the page where you left off (\"You stopped at page X of Y\"); in Finished, the date you finished it.",
   "<strong>New tips, no tutorial:</strong> the tutorial is gone and everything is explained with tips, plus a battery notice the first time you use the timer. Landscape improvements for tablets and iPhone Duo.",
   "<strong>Books without a page count</strong> (e.g. from KOReader): the app asks you for the total pages.",
@@ -602,20 +602,12 @@
  "roadmap.3_9.sub": "Reading challenges for the whole community, a game played with <b>your own books</b> and a renewed Home. No fixed dates: everything ships when it's ready.",
  "roadmap.3_9.cards": [
   {
-   "title": "Global challenge: The Great Read",
-   "text": "14 days reading together. Timer minutes count, with a shared goal and a live leaderboard."
+   "title": "Events",
+   "text": "Global challenge, The Great Read: 14 days reading together. Timer minutes count, with a shared goal and a live leaderboard. Lecturameter Quest, The Forgotten Library: Pick 3 books, choose your path on the map and beat the boss. 5 levels and a points leaderboard. Also: Event card, Pagi as your avatar, event alerts."
   },
   {
-   "title": "Lecturameter Quest: The Forgotten Library",
-   "text": "Pick 3 books, choose your path on the map and beat the boss. 5 levels and a points leaderboard."
-  },
-  {
-   "title": "Also",
-   "text": "Event card · Pagi as your avatar · Event alerts"
-  },
-  {
-   "title": "Renewed Home",
-   "text": "Rail icons grouped into 3 floating menus: Goals (Events, Challenges, Bingos), My reading (Statistics, My cards, Wrapped) and Tools (Reminders, Tags, ISBN scanner). Reorder them with a long press. Counters per group, the rail folds away as you scroll, and in Ocaso the icons alternate orange and blue."
+   "title": "Renewed UI in home",
+   "text": "Rail icons grouped into 3 floating menus: Goals (Events, Challenges, Bingos), My reading (Statistics, My cards, Wrapped) and Tools (Reminders, Tags, ISBN scanner). Reorder them with a long press. Counters per group, the rail folds away as you scroll, and in Dusk the icons alternate orange and blue."
   },
   {
    "title": "Book cards",
@@ -626,8 +618,28 @@
    "text": "New tips and the tutorial is gone: everything is explained with tips, plus a battery notice the first time you use the timer. Landscape improvements for tablets and iPhone Duo."
   },
   {
-   "title": "And more",
-   "text": "Books without a page count (e.g. from KOReader): the app asks for the total pages · 12 new 4x4 and 12 new 3x3 bingo templates, horror theme in November and romance in February · KOSync: the reading time comes from KOSync, so you don't depend on the app's timer · Random picker in Want to read: Pagi decides for you · Wrapped improvements (opens on December 26) · Traditional Chinese"
+   "title": "Books without a page count",
+   "text": "Books without a page count (e.g. from KOReader): the app asks for the total pages."
+  },
+  {
+   "title": "Bingo templates and themes",
+   "text": "12 new 4x4 and 12 new 3x3 bingo templates, horror theme in November and romance in February."
+  },
+  {
+   "title": "KOSync",
+   "text": "The reading time comes from KOSync, so you don't depend on the app's timer."
+  },
+  {
+   "title": "Random picker",
+   "text": "Random picker in Want to read: Pagi decides for you."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Wrapped improvements (opens on December 26)."
+  },
+  {
+   "title": "Traditional Chinese",
+   "text": "Lecturameter now speaks Traditional Chinese."
   }
  ],
  "home.whatsnew.title": "Patch notes v{{release_version}}",

@@ -587,7 +587,7 @@
   "<strong>Lecturameter Quest: Unohdettu kirjasto.</strong> Valitse 3 kirjaa, valitse reittisi kartalla ja kukista pääpahis. 5 tasoa ja pistetaulukko.",
   "<strong>Lisäksi:</strong> tapahtumakortti, Pagi avatarinasi, tapahtumailmoitukset.",
   "<strong>Android ja iPhone:</strong> sama tapahtuma molemmilla.",
-  "<strong>Uusittu Etusivu:</strong> palkin kuvakkeet on ryhmitelty 3 kelluvaan valikkoon: Tavoitteet (Tapahtumat, Haasteet, Bingot), Oma lukeminen (Tilastot, Omat kortit, Wrapped) ja Työkalut (Muistutukset, Tagit, ISBN-skanneri). Järjestä uudelleen pitkällä painalluksella. Laskurit ryhmittäin, palkki kutistuu vierittäessä, ja Iltahämärässä kuvakkeet vuorottelevat oranssina ja sinisenä.",
+  "<strong>Uudistettu käyttöliittymä etusivulla:</strong> palkin kuvakkeet on ryhmitelty 3 kelluvaan valikkoon: Tavoitteet (Tapahtumat, Haasteet, Bingot), Oma lukeminen (Tilastot, Omat kortit, Wrapped) ja Työkalut (Muistutukset, Tagit, ISBN-skanneri). Järjestä uudelleen pitkällä painalluksella. Laskurit ryhmittäin, palkki kutistuu vierittäessä, ja Iltahämärässä kuvakkeet vuorottelevat oranssina ja sinisenä.",
   "<strong>Uudistetut kirjakortit:</strong> ei roskakoria eikä irrallisia tähtiä (nyt ★ 4.5 -merkki), Material-kuvakkeet emojien tilalla ja tagit alhaalla. Keskeytetyissä näet sivun, johon jäit (\"Jäit sivulle X / Y\"); valmiissa päivän, jolloin sait kirjan luettua.",
   "<strong>Uudet vinkit, ei opastusta:</strong> opastus on poistettu ja kaikki selitetään vinkeillä, sekä akkuilmoitus ajastinta ensimmäisen kerran käytettäessä. Parannuksia vaaka-asentoon tableteilla ja iPhone Duolla.",
   "<strong>Kirjat ilman sivumäärää</strong> (esim. KOReaderista): sovellus kysyy sivujen kokonaismäärän.",
@@ -602,19 +602,11 @@
  "roadmap.3_9.sub": "Lukuhaasteita koko yhteisölle, peli, jota pelataan <b>omilla kirjoillasi</b>, ja uusittu Etusivu. Ei kiinteitä päivämääriä: kaikki julkaistaan, kun se on valmis.",
  "roadmap.3_9.cards": [
   {
-   "title": "Yhteinen haaste: Suuri lukuhaaste",
-   "text": "14 päivää lukemista yhdessä. Ajastimen minuutit lasketaan, yhteinen tavoite ja reaaliaikainen tulostaulu."
+   "title": "Tapahtumat",
+   "text": "Yhteinen haaste, Suuri lukuhaaste: 14 päivää lukemista yhdessä. Ajastimen minuutit lasketaan, yhteinen tavoite ja reaaliaikainen tulostaulu. Lecturameter Quest, Unohdettu kirjasto: Valitse 3 kirjaa, valitse reittisi kartalla ja kukista pääpahis. 5 tasoa ja pistetaulukko. Lisäksi: tapahtumakortti, Pagi avatarinasi, tapahtumailmoitukset."
   },
   {
-   "title": "Lecturameter Quest: Unohdettu kirjasto",
-   "text": "Valitse 3 kirjaa, valitse reittisi kartalla ja kukista pääpahis. 5 tasoa ja pistetaulukko."
-  },
-  {
-   "title": "Lisäksi",
-   "text": "Tapahtumakortti · Pagi avatarinasi · Tapahtumailmoitukset"
-  },
-  {
-   "title": "Uusittu Etusivu",
+   "title": "Uudistettu käyttöliittymä etusivulla",
    "text": "Palkin kuvakkeet ryhmitelty 3 kelluvaan valikkoon: Tavoitteet (Tapahtumat, Haasteet, Bingot), Oma lukeminen (Tilastot, Omat kortit, Wrapped) ja Työkalut (Muistutukset, Tagit, ISBN-skanneri). Järjestä uudelleen pitkällä painalluksella. Laskurit ryhmittäin, palkki kutistuu vierittäessä, ja Iltahämärässä kuvakkeet vuorottelevat oranssina ja sinisenä."
   },
   {
@@ -626,8 +618,28 @@
    "text": "Uudet vinkit ja opastus poistuu: kaikki selitetään vinkeillä, sekä akkuilmoitus ajastinta ensimmäisen kerran käytettäessä. Parannuksia vaaka-asentoon tableteilla ja iPhone Duolla."
   },
   {
-   "title": "Lisäksi",
-   "text": "Kirjat ilman sivumäärää (esim. KOReaderista): sovellus kysyy sivujen kokonaismäärän · 12 uutta 4x4- ja 12 uutta 3x3-bingopohjaa, kauhuteema marraskuussa ja romantiikkateema helmikuussa · KOSync: lukuaika tulee KOSyncistä, joten et ole riippuvainen sovelluksen ajastimesta · Satunnaisvalinta kohdassa Haluan lukea: Pagi päättää puolestasi · Wrapped-parannuksia (avautuu 26. joulukuuta) · Perinteinen kiina"
+   "title": "Kirjat ilman sivumäärää",
+   "text": "Kirjat ilman sivumäärää (esim. KOReaderista): sovellus kysyy sivujen kokonaismäärän."
+  },
+  {
+   "title": "Bingopohjat ja -teemat",
+   "text": "12 uutta 4x4- ja 12 uutta 3x3-bingopohjaa, kauhuteema marraskuussa ja romantiikkateema helmikuussa."
+  },
+  {
+   "title": "KOSync",
+   "text": "Lukuaika tulee KOSyncistä, joten et ole riippuvainen sovelluksen ajastimesta."
+  },
+  {
+   "title": "Satunnaisvalinta",
+   "text": "Satunnaisvalinta kohdassa Haluan lukea: Pagi päättää puolestasi."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Wrapped-parannuksia (avautuu 26. joulukuuta)."
+  },
+  {
+   "title": "Perinteinen kiina",
+   "text": "Uusi kieli: perinteinen kiina."
   }
  ],
  "home.whatsnew.title": "Päivitysmuistiinpanot v{{release_version}}",

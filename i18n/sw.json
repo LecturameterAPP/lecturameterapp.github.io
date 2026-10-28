@@ -587,7 +587,7 @@
   "<strong>Lecturameter Quest: Maktaba Iliyosahaulika.</strong> Chagua vitabu 3, chagua njia yako kwenye ramani na umshinde bosi. Viwango 5 na ubao wa viongozi wa pointi.",
   "<strong>Pia:</strong> Kadi ya tukio, Pagi kama avatar yako, arifa za matukio.",
   "<strong>Android na iPhone:</strong> tukio lilelile kwenye zote mbili.",
-  "<strong>Skrini ya Mwanzo mpya:</strong> aikoni za pembeni zimepangwa katika menyu 3 zinazoelea: Malengo (Matukio, Changamoto, Bingo), Usomaji wangu (Takwimu, Kadi zangu, Wrapped) na Zana (Vikumbusho, Lebo, Kichanganuzi cha ISBN). Zipange upya kwa kubonyeza kwa muda mrefu. Kaunta kwa kila kundi, upau wa pembeni hujikunja unaposogeza, na katika Ocaso aikoni hupishana rangi ya machungwa na bluu.",
+  "<strong>Kiolesura kipya katika Skrini ya Mwanzo:</strong> aikoni za pembeni zimepangwa katika menyu 3 zinazoelea: Malengo (Matukio, Changamoto, Bingo), Usomaji wangu (Takwimu, Kadi zangu, Wrapped) na Zana (Vikumbusho, Lebo, Kichanganuzi cha ISBN). Zipange upya kwa kubonyeza kwa muda mrefu. Kaunta kwa kila kundi, upau wa pembeni hujikunja unaposogeza, na katika Machweo aikoni hupishana rangi ya machungwa na bluu.",
   "<strong>Kadi mpya za vitabu:</strong> hakuna tena pipa la taka wala nyota zilizotawanyika (sasa ni chipu ya ★ 4.5), aikoni za Material badala ya emoji na lebo chini. Katika Imeachwa unaona ukurasa uliosimama (\"Ulisimama ukurasa wa X kati ya Y\"); katika Imekamilika, tarehe uliyomaliza.",
   "<strong>Vidokezo vipya, bila mafunzo:</strong> mafunzo yameondolewa na kila kitu kinaelezwa kwa vidokezo, pamoja na onyo la betri unapotumia kipima muda mara ya kwanza. Maboresho ya mkao mlalo kwa kompyuta kibao na iPhone Duo.",
   "<strong>Vitabu visivyo na idadi ya kurasa</strong> (mfano kutoka KOReader): programu inakuuliza jumla ya kurasa.",
@@ -602,20 +602,12 @@
  "roadmap.3_9.sub": "Changamoto za kusoma kwa jumuiya nzima, mchezo unaochezwa kwa <b>vitabu vyako mwenyewe</b> na Skrini ya Mwanzo mpya. Hakuna tarehe zilizowekwa: kila kitu kitatolewa kikiwa tayari.",
  "roadmap.3_9.cards": [
   {
-   "title": "Changamoto ya kimataifa: Usomaji Mkuu",
-   "text": "Siku 14 za kusoma pamoja. Dakika za kipima muda zinahesabiwa, kwa lengo la pamoja na ubao wa viongozi wa moja kwa moja."
+   "title": "Matukio",
+   "text": "Changamoto ya kimataifa, Usomaji Mkuu: Siku 14 za kusoma pamoja. Dakika za kipima muda zinahesabiwa, kwa lengo la pamoja na ubao wa viongozi wa moja kwa moja. Lecturameter Quest, Maktaba Iliyosahaulika: Chagua vitabu 3, chagua njia yako kwenye ramani na umshinde bosi. Viwango 5 na ubao wa viongozi wa pointi. Pia: Kadi ya tukio, Pagi kama avatar yako, arifa za matukio."
   },
   {
-   "title": "Lecturameter Quest: Maktaba Iliyosahaulika",
-   "text": "Chagua vitabu 3, chagua njia yako kwenye ramani na umshinde bosi. Viwango 5 na ubao wa viongozi wa pointi."
-  },
-  {
-   "title": "Pia",
-   "text": "Kadi ya tukio · Pagi kama avatar yako · Arifa za matukio"
-  },
-  {
-   "title": "Skrini ya Mwanzo mpya",
-   "text": "Aikoni za pembeni zimepangwa katika menyu 3 zinazoelea: Malengo (Matukio, Changamoto, Bingo), Usomaji wangu (Takwimu, Kadi zangu, Wrapped) na Zana (Vikumbusho, Lebo, Kichanganuzi cha ISBN). Zipange upya kwa kubonyeza kwa muda mrefu. Kaunta kwa kila kundi, upau wa pembeni hujikunja unaposogeza, na katika Ocaso aikoni hupishana rangi ya machungwa na bluu."
+   "title": "Kiolesura kipya katika Skrini ya Mwanzo",
+   "text": "Aikoni za pembeni zimepangwa katika menyu 3 zinazoelea: Malengo (Matukio, Changamoto, Bingo), Usomaji wangu (Takwimu, Kadi zangu, Wrapped) na Zana (Vikumbusho, Lebo, Kichanganuzi cha ISBN). Zipange upya kwa kubonyeza kwa muda mrefu. Kaunta kwa kila kundi, upau wa pembeni hujikunja unaposogeza, na katika Machweo aikoni hupishana rangi ya machungwa na bluu."
   },
   {
    "title": "Kadi za vitabu",
@@ -626,8 +618,28 @@
    "text": "Vidokezo vipya na mafunzo yameondolewa: kila kitu kinaelezwa kwa vidokezo, pamoja na onyo la betri unapotumia kipima muda mara ya kwanza. Maboresho ya mkao mlalo kwa kompyuta kibao na iPhone Duo."
   },
   {
-   "title": "Na zaidi",
-   "text": "Vitabu visivyo na idadi ya kurasa (mfano kutoka KOReader): programu inauliza jumla ya kurasa · violezo vipya 12 vya Bingo 4x4 na 12 vya 3x3, mandhari ya kutisha Novemba na ya mapenzi Februari · KOSync: muda wa kusoma unatoka KOSync, kwa hiyo hutegemei kipima muda cha programu · Chaguo la nasibu katika Nataka kusoma: Pagi anakuamulia · Maboresho ya Wrapped (hufunguliwa tarehe 26 Desemba) · Kichina cha Jadi"
+   "title": "Vitabu visivyo na idadi ya kurasa",
+   "text": "Vitabu visivyo na idadi ya kurasa (mfano kutoka KOReader): programu inauliza jumla ya kurasa."
+  },
+  {
+   "title": "Violezo na mandhari ya Bingo",
+   "text": "violezo vipya 12 vya Bingo 4x4 na 12 vya 3x3, mandhari ya kutisha Novemba na ya mapenzi Februari."
+  },
+  {
+   "title": "KOSync",
+   "text": "Muda wa kusoma unatoka KOSync, kwa hiyo hutegemei kipima muda cha programu."
+  },
+  {
+   "title": "Chaguo la nasibu",
+   "text": "Chaguo la nasibu katika Nataka kusoma: Pagi anakuamulia."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Maboresho ya Wrapped (hufunguliwa tarehe 26 Desemba)."
+  },
+  {
+   "title": "Kichina cha Jadi",
+   "text": "Lecturameter sasa inazungumza kichina cha Jadi."
   }
  ],
  "home.whatsnew.title": "Maelezo ya sasisho v{{release_version}}",

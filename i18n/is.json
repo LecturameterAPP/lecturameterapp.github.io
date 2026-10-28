@@ -587,7 +587,7 @@
   "<strong>Lecturameter Quest: Gleymda bókasafnið.</strong> Veldu 3 bækur, veldu leið þína á kortinu og sigraðu lokaóvininn. 5 borð og stigatafla.",
   "<strong>Einnig:</strong> Viðburðaspjald, Pagi sem prófílmynd, viðburðatilkynningar.",
   "<strong>Android og iPhone:</strong> sami viðburður á báðum.",
-  "<strong>Nýr heimaskjár:</strong> Táknin á hliðarstikunni eru flokkuð í 3 fljótandi valmyndir: Markmið (Viðburðir, Áskoranir, Bingo), Lesturinn minn (Tölfræði, Spjöldin mín, Wrapped) og Verkfæri (Áminningar, Merki, ISBN-skanni). Þú raðar þeim upp á nýtt með löngu ýti. Teljarar fyrir hvern flokk, stikan fellur saman þegar þú skrunar og í Rökkri skiptast táknin á að vera appelsínugul og blá.",
+  "<strong>Endurnýtt viðmót á heimaskjá:</strong> Táknin á hliðarstikunni eru flokkuð í 3 fljótandi valmyndir: Markmið (Viðburðir, Áskoranir, Bingo), Lesturinn minn (Tölfræði, Spjöldin mín, Wrapped) og Verkfæri (Áminningar, Merki, ISBN-skanni). Þú raðar þeim upp á nýtt með löngu ýti. Teljarar fyrir hvern flokk, stikan fellur saman þegar þú skrunar og í Rökkri skiptast táknin á að vera appelsínugul og blá.",
   "<strong>Ný bókaspjöld:</strong> Engin ruslatunna og engar lausar stjörnur (nú ★ 4,5 merki), Material-tákn í stað emoji og merki neðst. Í Hætt við sérðu blaðsíðuna þar sem þú hættir („Hætt á blaðsíðu X af Y“); í Lokið dagsetninguna sem þú kláraðir bókina.",
   "<strong>Ný ráð, engin kennsla:</strong> Kennslan er horfin og allt er útskýrt með ráðum, auk rafhlöðutilkynningar í fyrsta skipti sem þú notar tímamælinn. Úrbætur í láréttri stöðu fyrir spjaldtölvur og iPhone Duo.",
   "<strong>Bækur án blaðsíðufjölda</strong> (t.d. frá KOReader): appið biður þig um heildarfjölda blaðsíðna.",
@@ -602,19 +602,11 @@
  "roadmap.3_9.sub": "Lestraráskoranir fyrir allt samfélagið, leikur með <b>þínum eigin bókum</b> og nýr heimaskjár. Engar fastar dagsetningar: allt kemur þegar það er tilbúið.",
  "roadmap.3_9.cards": [
   {
-   "title": "Alþjóðleg áskorun: Stóri lesturinn",
-   "text": "14 dagar af lestri saman. Mínútur tímamælisins telja, með sameiginlegu markmiði og stigatöflu í beinni."
+   "title": "Viðburðir",
+   "text": "Alþjóðleg áskorun, Stóri lesturinn: 14 dagar af lestri saman. Mínútur tímamælisins telja, með sameiginlegu markmiði og stigatöflu í beinni. Lecturameter Quest, Gleymda bókasafnið: Veldu 3 bækur, veldu leið þína á kortinu og sigraðu lokaóvininn. 5 borð og stigatafla. Einnig: Viðburðaspjald, Pagi sem prófílmynd, viðburðatilkynningar."
   },
   {
-   "title": "Lecturameter Quest: Gleymda bókasafnið",
-   "text": "Veldu 3 bækur, veldu leið þína á kortinu og sigraðu lokaóvininn. 5 borð og stigatafla."
-  },
-  {
-   "title": "Einnig",
-   "text": "Viðburðaspjald · Pagi sem prófílmynd · Viðburðatilkynningar"
-  },
-  {
-   "title": "Nýr heimaskjár",
+   "title": "Endurnýtt viðmót á heimaskjá",
    "text": "Táknin á hliðarstikunni eru flokkuð í 3 fljótandi valmyndir: Markmið (Viðburðir, Áskoranir, Bingo), Lesturinn minn (Tölfræði, Spjöldin mín, Wrapped) og Verkfæri (Áminningar, Merki, ISBN-skanni). Þú raðar þeim upp á nýtt með löngu ýti. Teljarar fyrir hvern flokk, stikan fellur saman þegar þú skrunar og í Rökkri skiptast táknin á að vera appelsínugul og blá."
   },
   {
@@ -626,8 +618,28 @@
    "text": "Kennslan er horfin og allt er útskýrt með ráðum, auk rafhlöðutilkynningar í fyrsta skipti sem þú notar tímamælinn. Úrbætur í láréttri stöðu fyrir spjaldtölvur og iPhone Duo."
   },
   {
-   "title": "Og fleira",
-   "text": "Bækur án blaðsíðufjölda (t.d. frá KOReader): appið biður þig um heildarfjölda blaðsíðna · Bingo: 12 ný 4x4 sniðmát og 12 ný 3x3 sniðmát, hryllingsþema í nóvember og rómantík í febrúar · KOSync: úrbætur svo þú þurfir ekki að treysta á tímamæli appsins: KOSync sendir lestrartímann · Handahófsval í Vil lesa: Pagi ákveður fyrir þig · Wrapped: úrbætur (opnar 26. desember) · Hefðbundin kínverska"
+   "title": "Bækur án blaðsíðufjölda",
+   "text": "Bækur án blaðsíðufjölda (t.d. frá KOReader): appið biður þig um heildarfjölda blaðsíðna."
+  },
+  {
+   "title": "Bingósnið og þemu",
+   "text": "12 ný 4x4 sniðmát og 12 ný 3x3 sniðmát, hryllingsþema í nóvember og rómantík í febrúar."
+  },
+  {
+   "title": "KOSync",
+   "text": "Úrbætur svo þú þurfir ekki að treysta á tímamæli appsins: KOSync sendir lestrartímann."
+  },
+  {
+   "title": "Tilviljunarval",
+   "text": "Handahófsval í Vil lesa: Pagi ákveður fyrir þig."
+  },
+  {
+   "title": "Wrapped",
+   "text": "Úrbætur (opnar 26. desember)."
+  },
+  {
+   "title": "Hefðbundin kínverska",
+   "text": "Nýtt tungumál: hefðbundin kínverska."
   }
  ],
  "home.whatsnew.title": "Uppfærsluminningar v{{release_version}}",
