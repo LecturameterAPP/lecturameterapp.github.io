@@ -581,16 +581,25 @@
   "Cambiar el estado de un libro ya no borra las fechas de lecturas anteriores.",
   "El resumen mensual cuenta también los libros terminados sin sesiones."
  ],
- "release.3_9.headline": "Eventos: La gran lectura y Lecturameter Quest",
+ "release.3_9.headline": "Eventos, Inicio renovado y nuevas tarjetas de libro",
  "release.3_9.new": [
   "<strong>Reto global:</strong> La gran lectura. 14 días leyendo a la vez. Cuentan los minutos del crono, con meta común y ranking en vivo.",
   "<strong>Lecturameter Quest: La biblioteca olvidada.</strong> Elige 3 libros, traza tu camino por el mapa y vence al jefe. 5 niveles y ranking por puntos.",
   "<strong>Y además:</strong> Card del evento, tu Pagi como avatar, avisos del evento.",
-  "<strong>Android e iPhone:</strong> el mismo evento en los dos."
+  "<strong>Android e iPhone:</strong> el mismo evento en los dos.",
+  "<strong>Inicio renovado:</strong> los iconos del rail se agrupan en 3 menús flotantes: Metas (Eventos, Retos, Bingos), Mis lecturas (Estadísticas, Mis tarjetas, Wrapped) y Herramientas (Recordatorios, Etiquetas, Escáner ISBN). Los reordenas con pulsación larga. Contadores por grupo, el rail se pliega al hacer scroll y en Ocaso los iconos alternan naranja y azul.",
+  "<strong>Tarjetas de libro renovadas:</strong> sin papelera ni estrellas sueltas (ahora un chip ★ 4,5), iconos Material en vez de emojis y etiquetas abajo. En Abandonados ves la página en que lo dejaste («Lo dejaste en la página X de Y»); en Leídos, la fecha en que lo terminaste.",
+  "<strong>Tips nuevos y sin tutorial:</strong> el tutorial desaparece y todo se explica con tips, más un aviso de batería la primera vez que usas el cronómetro. Mejoras en horizontal para tablets y iPhone Duo.",
+  "<strong>Libros sin número de páginas</strong> (p. ej. de KOReader): la app te pide las páginas totales.",
+  "<strong>Bingo:</strong> 12 plantillas nuevas de 4x4 y 12 de 3x3, tema terror en noviembre y romance en febrero.",
+  "<strong>KOSync:</strong> mejoras para que no dependas del cronómetro de la app: KOSync envía el tiempo de lectura.",
+  "<strong>Selector aleatorio en «Quiero leer»:</strong> Pagi decide por ti.",
+  "<strong>Wrapped:</strong> mejoras (se abre el 26 de diciembre).",
+  "<strong>Chino tradicional.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Lo que viene en Lecturameter 3.9",
- "roadmap.3_9.sub": "Retos de lectura para toda la comunidad y un juego con <b>tus propios libros</b>. Sin fechas fijas: todo sale cuando esté listo.",
+ "roadmap.3_9.sub": "Retos de lectura para toda la comunidad, un juego con <b>tus propios libros</b> y un Inicio renovado. Sin fechas fijas: todo sale cuando esté listo.",
  "roadmap.3_9.cards": [
   {
    "title": "Reto global: La gran lectura",
@@ -603,6 +612,22 @@
   {
    "title": "Y además",
    "text": "Card del evento · Tu Pagi como avatar · Avisos del evento"
+  },
+  {
+   "title": "Inicio renovado",
+   "text": "Los iconos del rail se agrupan en 3 menús flotantes: Metas (Eventos, Retos, Bingos), Mis lecturas (Estadísticas, Mis tarjetas, Wrapped) y Herramientas (Recordatorios, Etiquetas, Escáner ISBN). Los reordenas con pulsación larga. Contadores por grupo, el rail se pliega al hacer scroll y en Ocaso los iconos alternan naranja y azul."
+  },
+  {
+   "title": "Tarjetas de libro",
+   "text": "Sin papelera ni estrellas sueltas (ahora un chip ★ 4,5), iconos Material en vez de emojis y etiquetas abajo. En Abandonados: la página en que lo dejaste («Lo dejaste en la página X de Y»). En Leídos: la fecha en que lo terminaste."
+  },
+  {
+   "title": "Tips y horizontal",
+   "text": "Tips nuevos y el tutorial desaparece: todo se explica con tips, más un aviso de batería la primera vez que usas el cronómetro. Mejoras en horizontal para tablets y iPhone Duo."
+  },
+  {
+   "title": "Y también",
+   "text": "Libros sin número de páginas (p. ej. de KOReader): la app te pide las páginas totales · 12 plantillas nuevas de bingo 4x4 y 12 de 3x3, tema terror en noviembre y romance en febrero · KOSync: el tiempo de lectura lo envía KOSync, sin depender del cronómetro de la app · Selector aleatorio en «Quiero leer»: Pagi decide por ti · Mejoras en Wrapped (se abre el 26 de diciembre) · Chino tradicional"
   }
  ],
  "home.whatsnew.title": "Notas de Parche v{{release_version}}",
