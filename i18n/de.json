@@ -581,16 +581,25 @@
   "Das Ändern des Buchstatus löscht nicht mehr die Daten früherer Lesedurchgänge.",
   "Der Monatsrückblick zählt auch beendete Bücher ohne Sitzungen."
  ],
- "release.3_9.headline": "Events: Das große Lesen und Lecturameter Quest",
+ "release.3_9.headline": "Events, ein neuer Startbildschirm und neue Buchkarten",
  "release.3_9.new": [
   "<strong>Globale Challenge:</strong> Das große Lesen. 14 Tage gemeinsam lesen. Timer-Minuten zählen, mit einem gemeinsamen Ziel und einer Live-Rangliste.",
   "<strong>Lecturameter Quest: Die vergessene Bibliothek.</strong> Wähle 3 Bücher, such dir deinen Weg auf der Karte und besiege den Boss. 5 Level und eine Punkte-Rangliste.",
   "<strong>Außerdem:</strong> Event-Karte, Pagi als dein Avatar, Event-Benachrichtigungen.",
-  "<strong>Android und iPhone:</strong> dasselbe Event auf beiden."
+  "<strong>Android und iPhone:</strong> dasselbe Event auf beiden.",
+  "<strong>Neuer Startbildschirm:</strong> Die Icons der Leiste sind in 3 schwebenden Menüs gruppiert: Ziele (Events, Challenges, Bingos), Meine Lektüre (Statistiken, Meine Karten, Wrapped) und Werkzeuge (Erinnerungen, Tags, ISBN-Scanner). Mit langem Drücken ordnest du sie neu an. Zähler pro Gruppe, die Leiste klappt beim Scrollen ein, und in Dämmerung wechseln die Icons zwischen Orange und Blau.",
+  "<strong>Neue Buchkarten:</strong> Kein Papierkorb und keine losen Sterne (jetzt ein Chip ★ 4,5), Material-Icons statt Emojis und Tags unten. Bei Abgebrochen siehst du die Seite, bei der du aufgehört hast („Abgebrochen bei Seite X von Y“); bei Beendet das Datum, an dem du fertig wurdest.",
+  "<strong>Neue Tipps, kein Tutorial:</strong> Das Tutorial entfällt, alles wird mit Tipps erklärt, dazu ein Akku-Hinweis beim ersten Mal mit dem Timer. Verbesserungen im Querformat für Tablets und iPhone Duo.",
+  "<strong>Bücher ohne Seitenzahl</strong> (z. B. von KOReader): Die App fragt dich nach der Gesamtseitenzahl.",
+  "<strong>Bingo:</strong> 12 neue 4x4-Vorlagen und 12 neue 3x3-Vorlagen, Horror-Thema im November und Romantik im Februar.",
+  "<strong>KOSync:</strong> Verbesserungen, damit du nicht vom Timer der App abhängst: KOSync sendet die Lesezeit.",
+  "<strong>Zufallsauswahl in der Merkliste:</strong> Pagi entscheidet für dich.",
+  "<strong>Wrapped:</strong> Verbesserungen (öffnet am 26. Dezember).",
+  "<strong>Traditionelles Chinesisch.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Was in Lecturameter 3.9 kommt",
- "roadmap.3_9.sub": "Lese-Challenges für die ganze Community und ein Spiel mit <b>deinen eigenen Büchern</b>. Keine festen Termine: Alles kommt, wenn es fertig ist.",
+ "roadmap.3_9.sub": "Lese-Challenges für die ganze Community, ein Spiel mit <b>deinen eigenen Büchern</b> und ein neuer Startbildschirm. Keine festen Termine: Alles kommt, wenn es fertig ist.",
  "roadmap.3_9.cards": [
   {
    "title": "Globale Challenge: Das große Lesen",
@@ -603,6 +612,22 @@
   {
    "title": "Außerdem",
    "text": "Event-Karte · Pagi als dein Avatar · Event-Benachrichtigungen"
+  },
+  {
+   "title": "Neuer Startbildschirm",
+   "text": "Die Icons der Leiste sind in 3 schwebenden Menüs gruppiert: Ziele (Events, Challenges, Bingos), Meine Lektüre (Statistiken, Meine Karten, Wrapped) und Werkzeuge (Erinnerungen, Tags, ISBN-Scanner). Mit langem Drücken ordnest du sie neu an. Zähler pro Gruppe, die Leiste klappt beim Scrollen ein, und in Dämmerung wechseln die Icons zwischen Orange und Blau."
+  },
+  {
+   "title": "Buchkarten",
+   "text": "Kein Papierkorb und keine losen Sterne (jetzt ein Chip ★ 4,5), Material-Icons statt Emojis und Tags unten. Bei Abgebrochen siehst du die Seite, bei der du aufgehört hast („Abgebrochen bei Seite X von Y“); bei Beendet das Datum, an dem du fertig wurdest."
+  },
+  {
+   "title": "Tipps und Querformat",
+   "text": "Das Tutorial entfällt, alles wird mit Tipps erklärt, dazu ein Akku-Hinweis beim ersten Mal mit dem Timer. Verbesserungen im Querformat für Tablets und iPhone Duo."
+  },
+  {
+   "title": "Und mehr",
+   "text": "Bücher ohne Seitenzahl (z. B. von KOReader): Die App fragt dich nach der Gesamtseitenzahl · Bingo: 12 neue 4x4-Vorlagen und 12 neue 3x3-Vorlagen, Horror-Thema im November und Romantik im Februar · KOSync: Verbesserungen, damit du nicht vom Timer der App abhängst: KOSync sendet die Lesezeit · Zufallsauswahl in der Merkliste: Pagi entscheidet für dich · Wrapped: Verbesserungen (öffnet am 26. Dezember) · Traditionelles Chinesisch"
   }
  ],
  "home.whatsnew.title": "Patch-Hinweise v{{release_version}}",

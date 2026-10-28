@@ -581,16 +581,25 @@
   "Bir kitabın durumunu değiştirmek artık önceki okumaların tarihlerini silmiyor.",
   "Aylık özet, oturumu olmayan bitmiş kitapları da sayıyor."
  ],
- "release.3_9.headline": "Etkinlikler: Büyük Okuma ve Lecturameter Quest",
+ "release.3_9.headline": "Etkinlikler, yenilenen Ana Sayfa ve yeni kitap kartları",
  "release.3_9.new": [
   "<strong>Küresel meydan okuma:</strong> Büyük Okuma. 14 gün birlikte okuma. Zamanlayıcı dakikaları sayılır; ortak bir hedef ve canlı bir skor tablosu var.",
   "<strong>Lecturameter Quest: Unutulmuş Kitaplık.</strong> 3 kitap seç, haritada yolunu belirle ve patronu yen. 5 seviye ve bir puan tablosu.",
   "<strong>Ayrıca:</strong> Etkinlik kartı, avatarın olarak Pagi, etkinlik uyarıları.",
-  "<strong>Android ve iPhone:</strong> iki platformda da aynı etkinlik."
+  "<strong>Android ve iPhone:</strong> iki platformda da aynı etkinlik.",
+  "<strong>Yenilenen Ana Sayfa:</strong> çubuktaki simgeler 3 yüzen menüde toplandı: Hedefler (Etkinlikler, Meydan okumalar, Bingo), Okumam (İstatistikler, Kartlarım, Wrapped) ve Araçlar (Hatırlatıcılar, Etiketler, ISBN tarayıcı). Uzun basarak sıralarını değiştir. Her grup için sayaçlar var, kaydırdıkça çubuk gizlenir ve Alacakaranlık temasında simgeler turuncu ile mavi arasında dönüşümlü olur.",
+  "<strong>Yenilenen kitap kartları:</strong> çöp kutusu ve ortada duran yıldızlar yok (artık ★ 4.5 çipi), emoji yerine Material simgeleri ve altta etiketler. Bırakılanlar'da kaldığın sayfayı görürsün (\"Y sayfadan X. sayfada bıraktın\"); Tamamlananlar'da bitirdiğin tarihi.",
+  "<strong>Yeni ipuçları, eğitim yok:</strong> eğitim kaldırıldı ve her şey ipuçlarıyla anlatılıyor; ayrıca zamanlayıcıyı ilk kullandığında bir pil uyarısı çıkıyor. Tabletler ve iPhone Duo için yatay mod iyileştirmeleri.",
+  "<strong>Sayfa sayısı olmayan kitaplar</strong> (örn. KOReader'dan): uygulama senden toplam sayfa sayısını ister.",
+  "<strong>Bingo:</strong> 12 yeni 4x4 şablon ve 12 yeni 3x3 şablon, Kasım'da korku, Şubat'ta romantik teması.",
+  "<strong>KOSync:</strong> uygulamanın zamanlayıcısına bağlı kalmaman için iyileştirmeler: KOSync okuma süresini gönderir.",
+  "<strong>Okunacak'ta rastgele seçici:</strong> Pagi senin yerine karar verir.",
+  "<strong>Wrapped:</strong> iyileştirmeler (26 Aralık'ta açılır).",
+  "<strong>Geleneksel Çince.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Lecturameter 3.9'da neler geliyor",
- "roadmap.3_9.sub": "Tüm topluluk için okuma meydan okumaları ve <b>kendi kitaplarınla</b> oynanan bir oyun. Sabit tarih yok: her şey hazır olunca çıkar.",
+ "roadmap.3_9.sub": "Tüm topluluk için okuma meydan okumaları, <b>kendi kitaplarınla</b> oynanan bir oyun ve yenilenen bir Ana Sayfa. Sabit tarih yok: her şey hazır olunca çıkar.",
  "roadmap.3_9.cards": [
   {
    "title": "Küresel meydan okuma: Büyük Okuma",
@@ -603,6 +612,22 @@
   {
    "title": "Ayrıca",
    "text": "Etkinlik kartı · Avatarın olarak Pagi · Etkinlik uyarıları"
+  },
+  {
+   "title": "Yenilenen Ana Sayfa",
+   "text": "Çubuk simgeleri 3 yüzen menüde toplandı: Hedefler (Etkinlikler, Meydan okumalar, Bingo), Okumam (İstatistikler, Kartlarım, Wrapped) ve Araçlar (Hatırlatıcılar, Etiketler, ISBN tarayıcı). Uzun basarak sıralarını değiştir. Her grup için sayaçlar var, kaydırdıkça çubuk gizlenir ve Alacakaranlık temasında simgeler turuncu ile mavi arasında dönüşümlü olur."
+  },
+  {
+   "title": "Kitap kartları",
+   "text": "Çöp kutusu ve ortada duran yıldızlar yok (artık ★ 4.5 çipi), emoji yerine Material simgeleri ve altta etiketler. Bırakılanlar'da: kaldığın sayfa (\"Y sayfadan X. sayfada bıraktın\"). Tamamlananlar'da: bitirdiğin tarih."
+  },
+  {
+   "title": "İpuçları ve yatay mod",
+   "text": "Yeni ipuçları ve eğitim kaldırıldı: her şey ipuçlarıyla anlatılıyor; ayrıca zamanlayıcıyı ilk kullandığında bir pil uyarısı çıkıyor. Tabletler ve iPhone Duo için yatay mod iyileştirmeleri."
+  },
+  {
+   "title": "Ve daha fazlası",
+   "text": "Sayfa sayısı olmayan kitaplar (örn. KOReader'dan): uygulama toplam sayfa sayısını ister · 12 yeni 4x4 ve 12 yeni 3x3 bingo şablonu, Kasım'da korku, Şubat'ta romantik teması · KOSync: okuma süresi KOSync'ten gelir, böylece uygulamanın zamanlayıcısına bağlı kalmazsın · Okunacak'ta rastgele seçici: Pagi senin yerine karar verir · Wrapped iyileştirmeleri (26 Aralık'ta açılır) · Geleneksel Çince"
   }
  ],
  "home.whatsnew.title": "Güncelleme notları v{{release_version}}",

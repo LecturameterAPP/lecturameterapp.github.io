@@ -581,16 +581,25 @@
   "Sprememba stanja knjige ne izbriše več datumov prejšnjih branj.",
   "Mesečni povzetek šteje tudi dokončane knjige brez sej."
  ],
- "release.3_9.headline": "Dogodki: Veliko branje in Lecturameter Quest",
+ "release.3_9.headline": "Dogodki, prenovljen domači zaslon in nove kartice knjig",
  "release.3_9.new": [
   "<strong>Globalni izziv:</strong> Veliko branje. 14 dni skupnega branja. Štejejo minute časovnika, s skupnim ciljem in lestvico v živo.",
   "<strong>Lecturameter Quest: Pozabljena knjižnica.</strong> Izberi 3 knjige, izberi svojo pot na zemljevidu in premagaj šefa. 5 stopenj in lestvica točk.",
   "<strong>Še:</strong> kartica dogodka, Pagi kot tvoj avatar, opozorila o dogodkih.",
-  "<strong>Android in iPhone:</strong> isti dogodek na obeh."
+  "<strong>Android in iPhone:</strong> isti dogodek na obeh.",
+  "<strong>Prenovljen domači zaslon:</strong> Ikone v vrstici so združene v 3 plavajoče menije: Cilji (Dogodki, Izzivi, Bingo), Moje branje (Statistika, Moje kartice, Wrapped) in Orodja (Opomniki, Oznake, Bralnik ISBN). Vrstni red spremeniš z dolgim pritiskom. Števci za vsako skupino, vrstica se ob pomikanju zloži, v Somraku pa se ikone izmenjujejo med oranžno in modro.",
+  "<strong>Prenovljene kartice knjig:</strong> Brez koša in ločenih zvezdic (zdaj čip ★ 4,5), ikone Material namesto emojijev in oznake spodaj. Pri Opuščeno vidiš stran, kjer si nehal z branjem («Ustavljeno na strani X od Y»); pri Prebrano datum zaključka.",
+  "<strong>Novi nasveti, brez vodiča:</strong> Vodiča ni več, vse pa razložijo nasveti, poleg tega obvestilo o bateriji ob prvi uporabi časovnika. Izboljšave v ležečem načinu za tablice in iPhone Duo.",
+  "<strong>Knjige brez števila strani</strong> (npr. iz KOReader): aplikacija te vpraša za skupno število strani.",
+  "<strong>Bingo:</strong> 12 novih predlog 4x4 in 12 novih predlog 3x3, tema grozljivk novembra in romantike februarja.",
+  "<strong>KOSync:</strong> izboljšave, da ti ni treba računati na časovnik aplikacije: KOSync pošlje čas branja.",
+  "<strong>Naključni izbor v «Želim prebrati»:</strong> Pagi odloči namesto tebe.",
+  "<strong>Wrapped:</strong> izboljšave (odpre se 26. decembra).",
+  "<strong>Tradicionalna kitajščina.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Kaj prihaja v Lecturameter 3.9",
- "roadmap.3_9.sub": "Bralni izzivi za celotno skupnost in igra z <b>tvojimi lastnimi knjigami</b>. Brez fiksnih datumov: vse izide, ko je pripravljeno.",
+ "roadmap.3_9.sub": "Bralni izzivi za celotno skupnost, igra z <b>tvojimi lastnimi knjigami</b> in prenovljen domači zaslon. Brez fiksnih datumov: vse izide, ko je pripravljeno.",
  "roadmap.3_9.cards": [
   {
    "title": "Globalni izziv: Veliko branje",
@@ -603,6 +612,22 @@
   {
    "title": "Še",
    "text": "Kartica dogodka · Pagi kot tvoj avatar · Opozorila o dogodkih"
+  },
+  {
+   "title": "Prenovljen domači zaslon",
+   "text": "Ikone v vrstici so združene v 3 plavajoče menije: Cilji (Dogodki, Izzivi, Bingo), Moje branje (Statistika, Moje kartice, Wrapped) in Orodja (Opomniki, Oznake, Bralnik ISBN). Vrstni red spremeniš z dolgim pritiskom. Števci za vsako skupino, vrstica se ob pomikanju zloži, v Somraku pa se ikone izmenjujejo med oranžno in modro."
+  },
+  {
+   "title": "Kartice knjig",
+   "text": "Brez koša in ločenih zvezdic (zdaj čip ★ 4,5), ikone Material namesto emojijev in oznake spodaj. Pri Opuščeno vidiš stran, kjer si nehal z branjem («Ustavljeno na strani X od Y»); pri Prebrano datum zaključka."
+  },
+  {
+   "title": "Nasveti in ležeči način",
+   "text": "Vodiča ni več, vse pa razložijo nasveti, poleg tega obvestilo o bateriji ob prvi uporabi časovnika. Izboljšave v ležečem načinu za tablice in iPhone Duo."
+  },
+  {
+   "title": "In še",
+   "text": "Knjige brez števila strani (npr. iz KOReader): aplikacija te vpraša za skupno število strani · Bingo: 12 novih predlog 4x4 in 12 novih predlog 3x3, tema grozljivk novembra in romantike februarja · KOSync: izboljšave, da ti ni treba računati na časovnik aplikacije: KOSync pošlje čas branja · Naključni izbor v «Želim prebrati»: Pagi odloči namesto tebe · Wrapped: izboljšave (odpre se 26. decembra) · Tradicionalna kitajščina"
   }
  ],
  "home.whatsnew.title": "Opombe k posodobitvi v{{release_version}}",

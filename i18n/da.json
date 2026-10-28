@@ -581,16 +581,25 @@
   "Når du skifter en bogs status, slettes datoerne for tidligere gennemlæsninger ikke længere.",
   "Den månedlige opsummering tæller også færdige bøger uden sessioner."
  ],
- "release.3_9.headline": "Events: Den store læsning og Lecturameter Quest",
+ "release.3_9.headline": "Events, en fornyet startskærm og nye bogkort",
  "release.3_9.new": [
   "<strong>Global udfordring:</strong> Den store læsning. 14 dage, hvor vi læser sammen. Timerens minutter tæller, med et fælles mål og en live rangliste.",
   "<strong>Lecturameter Quest: Det glemte bibliotek.</strong> Vælg 3 bøger, find din vej på kortet, og besejr bossen. 5 niveauer og en pointrangliste.",
   "<strong>Derudover:</strong> Eventkort, Pagi som din avatar, eventnotifikationer.",
-  "<strong>Android og iPhone:</strong> det samme event på begge."
+  "<strong>Android og iPhone:</strong> det samme event på begge.",
+  "<strong>Fornyet startskærm:</strong> ikonerne i bjælken er samlet i 3 svævende menuer: Mål (Events, Udfordringer, Bingo), Min læsning (Statistik, Mine kort, Wrapped) og Værktøjer (Påmindelser, Tags, ISBN-scanner). Omarranger dem med et langt tryk. Tællere pr. gruppe, bjælken skjules, når du scroller, og i Skumring skifter ikonerne mellem orange og blå.",
+  "<strong>Fornyede bogkort:</strong> ingen skraldespand eller løse stjerner (nu en ★ 4.5-chip), Material-ikoner i stedet for emojis og tags nederst. Under Opgivet ser du den side, hvor du stoppede (\"Du stoppede på side X af Y\"), og under Læst den dato, du blev færdig.",
+  "<strong>Nye tips, ingen tutorial:</strong> tutorialen er væk, og alt forklares med tips, plus en batteribesked første gang du bruger timeren. Forbedringer i liggende format til tablets og iPhone Duo.",
+  "<strong>Bøger uden sideantal</strong> (f.eks. fra KOReader): appen spørger dig om det samlede sideantal.",
+  "<strong>Bingo:</strong> 12 nye 4x4-skabeloner og 12 nye 3x3-skabeloner, gysertema i november og romantik i februar.",
+  "<strong>KOSync:</strong> forbedringer, så du ikke er afhængig af appens timer: KOSync sender læsetiden.",
+  "<strong>Tilfældig vælger i Vil læse:</strong> Pagi bestemmer for dig.",
+  "<strong>Wrapped:</strong> forbedringer (åbner den 26. december).",
+  "<strong>Traditionelt kinesisk.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Det kommer i Lecturameter 3.9",
- "roadmap.3_9.sub": "Læseudfordringer for hele fællesskabet og et spil med <b>dine egne bøger</b>. Ingen faste datoer: alt udkommer, når det er klar.",
+ "roadmap.3_9.sub": "Læseudfordringer for hele fællesskabet, et spil med <b>dine egne bøger</b> og en fornyet startskærm. Ingen faste datoer: alt udkommer, når det er klar.",
  "roadmap.3_9.cards": [
   {
    "title": "Global udfordring: Den store læsning",
@@ -603,6 +612,22 @@
   {
    "title": "Derudover",
    "text": "Eventkort · Pagi som din avatar · Eventnotifikationer"
+  },
+  {
+   "title": "Fornyet startskærm",
+   "text": "Ikoner i bjælken samlet i 3 svævende menuer: Mål (Events, Udfordringer, Bingo), Min læsning (Statistik, Mine kort, Wrapped) og Værktøjer (Påmindelser, Tags, ISBN-scanner). Omarranger dem med et langt tryk. Tællere pr. gruppe, bjælken skjules, når du scroller, og i Skumring skifter ikonerne mellem orange og blå."
+  },
+  {
+   "title": "Bogkort",
+   "text": "Ingen skraldespand eller løse stjerner (nu en ★ 4.5-chip), Material-ikoner i stedet for emojis og tags nederst. Under Opgivet: den side, hvor du stoppede (\"Du stoppede på side X af Y\"). Under Læst: den dato, du blev færdig."
+  },
+  {
+   "title": "Tips og liggende format",
+   "text": "Nye tips, og tutorialen er væk: alt forklares med tips, plus en batteribesked første gang du bruger timeren. Forbedringer i liggende format til tablets og iPhone Duo."
+  },
+  {
+   "title": "Og mere",
+   "text": "Bøger uden sideantal (f.eks. fra KOReader): appen spørger efter det samlede sideantal · 12 nye 4x4- og 12 nye 3x3-bingoskabeloner, gysertema i november og romantik i februar · KOSync: læsetiden kommer fra KOSync, så du ikke er afhængig af appens timer · Tilfældig vælger i Vil læse: Pagi bestemmer for dig · Forbedringer i Wrapped (åbner den 26. december) · Traditionelt kinesisk"
   }
  ],
  "home.whatsnew.title": "Patch-noter v{{release_version}}",

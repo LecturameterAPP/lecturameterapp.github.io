@@ -581,16 +581,25 @@
   "Als je de status van een boek wijzigt, worden de data van eerdere leesbeurten niet meer gewist.",
   "Het maandoverzicht telt ook uitgelezen boeken zonder sessies mee."
  ],
- "release.3_9.headline": "Evenementen: De Grote Lees en Lecturameter Quest",
+ "release.3_9.headline": "Evenementen, een vernieuwd Home en nieuwe boekkaarten",
  "release.3_9.new": [
   "<strong>Wereldwijde uitdaging:</strong> De Grote Lees. 14 dagen samen lezen. De minuten van de timer tellen mee, met een gezamenlijk doel en een live ranglijst.",
   "<strong>Lecturameter Quest: De Vergeten Bibliotheek.</strong> Kies 3 boeken, bepaal je pad op de kaart en versla de eindbaas. 5 levels en een puntenranglijst.",
   "<strong>Ook:</strong> evenementenkaart, Pagi als je avatar, evenementmeldingen.",
-  "<strong>Android en iPhone:</strong> hetzelfde evenement op beide."
+  "<strong>Android en iPhone:</strong> hetzelfde evenement op beide.",
+  "<strong>Vernieuwd Home:</strong> De iconen in de zijbalk zijn gegroepeerd in 3 zwevende menu's: Doelen (Evenementen, Uitdagingen, Bingo's), Mijn lezen (Statistieken, Mijn kaarten, Wrapped) en Hulpmiddelen (Herinneringen, Tags, ISBN-scanner). Wijzig de volgorde met een lange druk. Tellers per groep, de balk klapt in als je scrollt en in Schemering wisselen de iconen af tussen oranje en blauw.",
+  "<strong>Vernieuwde boekkaarten:</strong> Geen prullenbak of losse sterren meer (nu een ★ 4.5-chip), Material-iconen in plaats van emoji's en tags onderaan. Bij Gestopt zie je de pagina waar je bent gebleven (\"Je stopte op pagina X van Y\"); bij Voltooid de datum waarop je het uitlas.",
+  "<strong>Nieuwe tips, geen tutorial:</strong> De tutorial is weg en alles wordt uitgelegd met tips, plus een batterijmelding de eerste keer dat je de timer gebruikt. Verbeteringen voor de liggende stand op tablets en iPhone Duo.",
+  "<strong>Boeken zonder paginatelling</strong> (bijv. uit KOReader): de app vraagt je om het totale aantal pagina's.",
+  "<strong>Bingo:</strong> 12 nieuwe 4x4-sjablonen en 12 nieuwe 3x3-sjablonen, horrorthema in november en romantiek in februari.",
+  "<strong>KOSync:</strong> verbeteringen zodat je niet afhankelijk bent van de timer van de app: KOSync stuurt de leestijd.",
+  "<strong>Willekeurige keuze in Wil ik lezen:</strong> Pagi beslist voor je.",
+  "<strong>Wrapped:</strong> verbeteringen (opent op 26 december).",
+  "<strong>Traditioneel Chinees.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Wat er aankomt in Lecturameter 3.9",
- "roadmap.3_9.sub": "Leesuitdagingen voor de hele community en een spel dat je speelt met <b>je eigen boeken</b>. Geen vaste data: alles verschijnt zodra het klaar is.",
+ "roadmap.3_9.sub": "Leesuitdagingen voor de hele community, een spel met <b>je eigen boeken</b> en een vernieuwd Home. Geen vaste data: alles verschijnt zodra het klaar is.",
  "roadmap.3_9.cards": [
   {
    "title": "Wereldwijde uitdaging: De Grote Lees",
@@ -603,6 +612,22 @@
   {
    "title": "Ook",
    "text": "Evenementenkaart · Pagi als je avatar · Evenementmeldingen"
+  },
+  {
+   "title": "Vernieuwd Home",
+   "text": "De iconen in de zijbalk zijn gegroepeerd in 3 zwevende menu's: Doelen (Evenementen, Uitdagingen, Bingo's), Mijn lezen (Statistieken, Mijn kaarten, Wrapped) en Hulpmiddelen (Herinneringen, Tags, ISBN-scanner). Wijzig de volgorde met een lange druk. Tellers per groep, de balk klapt in als je scrollt en in Schemering wisselen de iconen af tussen oranje en blauw."
+  },
+  {
+   "title": "Boekkaarten",
+   "text": "Geen prullenbak of losse sterren meer (nu een ★ 4.5-chip), Material-iconen in plaats van emoji's en tags onderaan. Bij Gestopt zie je de pagina waar je bent gebleven (\"Je stopte op pagina X van Y\"); bij Voltooid de datum waarop je het uitlas."
+  },
+  {
+   "title": "Tips en liggende stand",
+   "text": "De tutorial is weg en alles wordt uitgelegd met tips, plus een batterijmelding de eerste keer dat je de timer gebruikt. Verbeteringen voor de liggende stand op tablets en iPhone Duo."
+  },
+  {
+   "title": "En meer",
+   "text": "Boeken zonder paginatelling (bijv. uit KOReader): de app vraagt je om het totale aantal pagina's · Bingo: 12 nieuwe 4x4-sjablonen en 12 nieuwe 3x3-sjablonen, horrorthema in november en romantiek in februari · KOSync: verbeteringen zodat je niet afhankelijk bent van de timer van de app: KOSync stuurt de leestijd · Willekeurige keuze in Wil ik lezen: Pagi beslist voor je · Wrapped: verbeteringen (opent op 26 december) · Traditioneel Chinees"
   }
  ],
  "home.whatsnew.title": "Patch-notities v{{release_version}}",

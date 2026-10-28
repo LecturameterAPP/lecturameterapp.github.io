@@ -581,16 +581,25 @@
   "Egy könyv állapotának módosítása már nem törli a korábbi olvasások dátumait.",
   "A havi összefoglaló a munkamenet nélküli befejezett könyveket is számolja."
  ],
- "release.3_9.headline": "Események: A Nagy Olvasás és a Lecturameter Quest",
+ "release.3_9.headline": "Események, megújult Kezdőlap és új könyvkártyák",
  "release.3_9.new": [
   "<strong>Globális kihívás:</strong> A Nagy Olvasás. 14 nap közös olvasás. Az időzítő percei számítanak, közös céllal és élő ranglistával.",
   "<strong>Lecturameter Quest: Az Elfeledett Könyvtár.</strong> Válassz 3 könyvet, válaszd ki az utadat a térképen, és győzd le a főellenséget. 5 szint és pontranglista.",
   "<strong>Továbbá:</strong> Eseménykártya, Pagi mint avatarod, eseményértesítések.",
-  "<strong>Android és iPhone:</strong> ugyanaz az esemény mindkettőn."
+  "<strong>Android és iPhone:</strong> ugyanaz az esemény mindkettőn.",
+  "<strong>Megújult Kezdőlap:</strong> a sáv ikonjai 3 lebegő menübe vannak csoportosítva: Célok (Események, Kihívások, Bingók), Olvasásom (Statisztika, Kártyáim, Wrapped) és Eszközök (Emlékeztetők, Címkék, ISBN-szkenner). Hosszú nyomással átrendezheted őket. Számlálók csoportonként, a sáv görgetéskor összecsukódik, Alkonyat témában pedig az ikonok narancssárga és kék színben váltakoznak.",
+  "<strong>Megújult könyvkártyák:</strong> nincs szemetes és nincsenek különálló csillagok (helyette ★ 4.5 címke), Material ikonok az emojik helyett, a címkék pedig alul vannak. Az Elhagyott könyveknél látod, hol hagytad abba (\"Az X. oldalon hagytad abba, összesen Y\"); a Befejezettnél a befejezés dátumát.",
+  "<strong>Új tippek, nincs oktatóanyag:</strong> az oktatóanyag megszűnt, mindent tippek magyaráznak el, plusz akkumulátor-értesítés az időzítő első használatakor. Fekvő módú fejlesztések táblagépeken és iPhone Duón.",
+  "<strong>Oldalszám nélküli könyvek</strong> (pl. KOReaderből): az alkalmazás elkéri az összes oldalszámot.",
+  "<strong>Bingo:</strong> 12 új 4x4-es és 12 új 3x3-as sablon, horror téma novemberben és romantikus februárban.",
+  "<strong>KOSync:</strong> fejlesztések, hogy ne az alkalmazás időzítőjétől függj: a KOSync küldi az olvasási időt.",
+  "<strong>Véletlenszerű választó az Elolvasandó listában:</strong> Pagi helyetted dönt.",
+  "<strong>Wrapped:</strong> fejlesztések (december 26-án nyílik meg).",
+  "<strong>Hagyományos kínai.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Mi jön a Lecturameter 3.9-ben",
- "roadmap.3_9.sub": "Olvasási kihívások az egész közösségnek és egy játék, amelyet <b>a saját könyveiddel</b> játszol. Nincsenek fix dátumok: minden akkor jön ki, amikor kész.",
+ "roadmap.3_9.sub": "Olvasási kihívások az egész közösségnek, egy játék, amelyet <b>a saját könyveiddel</b> játszol, és egy megújult Kezdőlap. Nincsenek fix dátumok: minden akkor jön ki, amikor kész.",
  "roadmap.3_9.cards": [
   {
    "title": "Globális kihívás: A Nagy Olvasás",
@@ -603,6 +612,22 @@
   {
    "title": "Továbbá",
    "text": "Eseménykártya · Pagi mint avatarod · Eseményértesítések"
+  },
+  {
+   "title": "Megújult Kezdőlap",
+   "text": "A sáv ikonjai 3 lebegő menübe csoportosítva: Célok (Események, Kihívások, Bingók), Olvasásom (Statisztika, Kártyáim, Wrapped) és Eszközök (Emlékeztetők, Címkék, ISBN-szkenner). Hosszú nyomással átrendezheted őket. Számlálók csoportonként, a sáv görgetéskor összecsukódik, Alkonyat témában pedig az ikonok narancssárga és kék színben váltakoznak."
+  },
+  {
+   "title": "Könyvkártyák",
+   "text": "Nincs szemetes és nincsenek különálló csillagok (helyette ★ 4.5 címke), Material ikonok az emojik helyett, a címkék pedig alul. Elhagyott: az oldal, ahol abbahagytad (\"Az X. oldalon hagytad abba, összesen Y\"). Befejezve: a befejezés dátuma."
+  },
+  {
+   "title": "Tippek és fekvő nézet",
+   "text": "Új tippek, az oktatóanyag megszűnt: mindent tippek magyaráznak el, plusz akkumulátor-értesítés az időzítő első használatakor. Fekvő módú fejlesztések táblagépeken és iPhone Duón."
+  },
+  {
+   "title": "Továbbá",
+   "text": "Oldalszám nélküli könyvek (pl. KOReaderből): az alkalmazás elkéri az összes oldalszámot · 12 új 4x4-es és 12 új 3x3-as bingósablon, horror téma novemberben és romantikus februárban · KOSync: az olvasási időt a KOSync adja, így nem függsz az alkalmazás időzítőjétől · Véletlenszerű választó az Elolvasandó listában: Pagi helyetted dönt · Wrapped-fejlesztések (december 26-án nyílik meg) · Hagyományos kínai"
   }
  ],
  "home.whatsnew.title": "Patch megjegyzések v{{release_version}}",

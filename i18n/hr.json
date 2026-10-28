@@ -581,16 +581,25 @@
   "Promjena statusa knjige više ne briše datume ranijih čitanja.",
   "Mjesečni pregled broji i završene knjige bez sesija."
  ],
- "release.3_9.headline": "Događaji: Veliko čitanje i Lecturameter Quest",
+ "release.3_9.headline": "Događaji, obnovljeni početni zaslon i nove kartice knjiga",
  "release.3_9.new": [
   "<strong>Globalni izazov:</strong> Veliko čitanje. 14 dana zajedničkog čitanja. Broje se minute štoperice, uz zajednički cilj i ljestvicu uživo.",
   "<strong>Lecturameter Quest: Zaboravljena knjižnica.</strong> Odaberi 3 knjige, izaberi svoj put na karti i pobijedi šefa. 5 razina i ljestvica bodova.",
   "<strong>Također:</strong> kartica događaja, Pagi kao tvoj avatar, obavijesti o događaju.",
-  "<strong>Android i iPhone:</strong> isti događaj na oba."
+  "<strong>Android i iPhone:</strong> isti događaj na oba.",
+  "<strong>Obnovljeni početni zaslon:</strong> Ikone na traci grupirane su u 3 plutajuća izbornika: Ciljevi (Događaji, Izazovi, Bingo), Moje čitanje (Statistika, Moje kartice, Wrapped) i Alati (Podsjetnici, Tagovi, ISBN skener). Redoslijed mijenjaš dugim pritiskom. Brojači po grupi, traka se skriva dok listaš, a u Sumraku ikone se izmjenjuju u narančastoj i plavoj.",
+  "<strong>Obnovljene kartice knjiga:</strong> Bez kante za smeće i usamljenih zvjezdica (sada čip ★ 4.5), Material ikone umjesto emotikona i tagovi pri dnu. U Napušteno vidiš stranicu na kojoj si stao/la («Stao/la si na stranici X od Y»); u Završeno datum kad si je dovršio/la.",
+  "<strong>Novi savjeti, bez tutoriala:</strong> Tutorial je nestao, a sve se objašnjava savjetima, uz obavijest o bateriji pri prvom korištenju štoperice. Poboljšanja položenog prikaza za tablete i iPhone Duo.",
+  "<strong>Knjige bez broja stranica</strong> (npr. iz KOReadera): aplikacija traži ukupan broj stranica.",
+  "<strong>Bingo:</strong> 12 novih predložaka 4x4 i 12 novih 3x3, tema horora u studenom i romantike u veljači.",
+  "<strong>KOSync:</strong> poboljšanja kako ne bi ovisio/la o štoperici aplikacije: KOSync šalje vrijeme čitanja.",
+  "<strong>Nasumični odabir u Želim čitati:</strong> Pagi odlučuje umjesto tebe.",
+  "<strong>Wrapped:</strong> poboljšanja (otvara se 26. prosinca).",
+  "<strong>Tradicionalni kineski.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Što stiže u Lecturameteru 3.9",
- "roadmap.3_9.sub": "Izazovi čitanja za cijelu zajednicu i igra s <b>tvojim vlastitim knjigama</b>. Bez fiksnih datuma: sve izlazi kad bude spremno.",
+ "roadmap.3_9.sub": "Izazovi čitanja za cijelu zajednicu, igra s <b>tvojim vlastitim knjigama</b> i obnovljeni početni zaslon. Bez fiksnih datuma: sve izlazi kad bude spremno.",
  "roadmap.3_9.cards": [
   {
    "title": "Globalni izazov: Veliko čitanje",
@@ -603,6 +612,22 @@
   {
    "title": "Također",
    "text": "Kartica događaja · Pagi kao tvoj avatar · Obavijesti o događaju"
+  },
+  {
+   "title": "Obnovljeni početni zaslon",
+   "text": "Ikone na traci grupirane su u 3 plutajuća izbornika: Ciljevi (Događaji, Izazovi, Bingo), Moje čitanje (Statistika, Moje kartice, Wrapped) i Alati (Podsjetnici, Tagovi, ISBN skener). Redoslijed mijenjaš dugim pritiskom. Brojači po grupi, traka se skriva dok listaš, a u Sumraku ikone se izmjenjuju u narančastoj i plavoj."
+  },
+  {
+   "title": "Kartice knjiga",
+   "text": "Bez kante za smeće i usamljenih zvjezdica (sada čip ★ 4.5), Material ikone umjesto emotikona i tagovi pri dnu. U Napušteno vidiš stranicu na kojoj si stao/la («Stao/la si na stranici X od Y»); u Završeno datum kad si je dovršio/la."
+  },
+  {
+   "title": "Savjeti i položeni prikaz",
+   "text": "Tutorial je nestao, a sve se objašnjava savjetima, uz obavijest o bateriji pri prvom korištenju štoperice. Poboljšanja položenog prikaza za tablete i iPhone Duo."
+  },
+  {
+   "title": "I još toga",
+   "text": "Knjige bez broja stranica (npr. iz KOReadera): aplikacija traži ukupan broj stranica · Bingo: 12 novih predložaka 4x4 i 12 novih 3x3, tema horora u studenom i romantike u veljači · KOSync: poboljšanja kako ne bi ovisio/la o štoperici aplikacije: KOSync šalje vrijeme čitanja · Nasumični odabir u Želim čitati: Pagi odlučuje umjesto tebe · Wrapped: poboljšanja (otvara se 26. prosinca) · Tradicionalni kineski"
   }
  ],
  "home.whatsnew.title": "Napomene uz ažuriranje v{{release_version}}",

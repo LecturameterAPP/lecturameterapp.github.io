@@ -581,16 +581,25 @@
   "Zmiana statusu książki nie usuwa już dat wcześniejszych czytań.",
   "Miesięczne podsumowanie liczy też ukończone książki bez sesji."
  ],
- "release.3_9.headline": "Wydarzenia: Wielkie Czytanie i Lecturameter Quest",
+ "release.3_9.headline": "Wydarzenia, odnowiony ekran główny i nowe karty książek",
  "release.3_9.new": [
   "<strong>Wyzwanie globalne:</strong> Wielkie Czytanie. 14 dni wspólnego czytania. Liczą się minuty ze stopera, jest wspólny cel i ranking na żywo.",
   "<strong>Lecturameter Quest: Zapomniana Biblioteka.</strong> Wybierz 3 książki, wybierz drogę na mapie i pokonaj bossa. 5 poziomów i ranking punktów.",
   "<strong>Do tego:</strong> karta wydarzenia, Pagi jako Twój awatar, alerty o wydarzeniach.",
-  "<strong>Android i iPhone:</strong> to samo wydarzenie na obu."
+  "<strong>Android i iPhone:</strong> to samo wydarzenie na obu.",
+  "<strong>Odnowiony ekran główny:</strong> Ikony paska są pogrupowane w 3 pływające menu: Cele (Wydarzenia, Wyzwania, Bingo), Moje czytanie (Statystyki, Moje karty, Wrapped) i Narzędzia (Przypomnienia, Tagi, Skaner ISBN). Zmienisz ich kolejność długim naciśnięciem. Liczniki dla każdej grupy, pasek zwija się podczas przewijania, a w Zmierzchu ikony na przemian są pomarańczowe i niebieskie.",
+  "<strong>Odnowione karty książek:</strong> Bez kosza i luźnych gwiazdek (teraz chip ★ 4,5), ikony Material zamiast emoji i tagi na dole. W Porzuconych zobaczysz stronę, na której przerwano czytanie („Przerwano na stronie X z Y”); w Przeczytanych — datę ukończenia.",
+  "<strong>Nowe podpowiedzi, bez samouczka:</strong> Samouczek znika, a wszystko wyjaśniają podpowiedzi, do tego komunikat o baterii przy pierwszym użyciu stopera. Ulepszenia w poziomie dla tabletów i iPhone Duo.",
+  "<strong>Książki bez liczby stron</strong> (np. z KOReader): aplikacja poprosi o łączną liczbę stron.",
+  "<strong>Bingo:</strong> 12 nowych szablonów 4x4 i 12 nowych szablonów 3x3, motyw grozy w listopadzie i romans w lutym.",
+  "<strong>KOSync:</strong> ulepszenia, żeby nie zależeć od stopera aplikacji: KOSync wysyła czas czytania.",
+  "<strong>Losowanie w „Chcę przeczytać”:</strong> Pagi decyduje za Ciebie.",
+  "<strong>Wrapped:</strong> ulepszenia (otwiera się 26 grudnia).",
+  "<strong>Chiński tradycyjny.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Co nadchodzi w Lecturameter 3.9",
- "roadmap.3_9.sub": "Wyzwania czytelnicze dla całej społeczności i gra rozgrywana na <b>Twoich własnych książkach</b>. Bez stałych dat: wszystko wychodzi, gdy będzie gotowe.",
+ "roadmap.3_9.sub": "Wyzwania czytelnicze dla całej społeczności, gra na <b>Twoich własnych książkach</b> i odnowiony ekran główny. Bez stałych dat: wszystko wychodzi, gdy będzie gotowe.",
  "roadmap.3_9.cards": [
   {
    "title": "Wyzwanie globalne: Wielkie Czytanie",
@@ -603,6 +612,22 @@
   {
    "title": "Do tego",
    "text": "Karta wydarzenia · Pagi jako Twój awatar · Alerty o wydarzeniach"
+  },
+  {
+   "title": "Odnowiony ekran główny",
+   "text": "Ikony paska są pogrupowane w 3 pływające menu: Cele (Wydarzenia, Wyzwania, Bingo), Moje czytanie (Statystyki, Moje karty, Wrapped) i Narzędzia (Przypomnienia, Tagi, Skaner ISBN). Zmienisz ich kolejność długim naciśnięciem. Liczniki dla każdej grupy, pasek zwija się podczas przewijania, a w Zmierzchu ikony na przemian są pomarańczowe i niebieskie."
+  },
+  {
+   "title": "Karty książek",
+   "text": "Bez kosza i luźnych gwiazdek (teraz chip ★ 4,5), ikony Material zamiast emoji i tagi na dole. W Porzuconych zobaczysz stronę, na której przerwano czytanie („Przerwano na stronie X z Y”); w Przeczytanych — datę ukończenia."
+  },
+  {
+   "title": "Podpowiedzi i widok poziomy",
+   "text": "Samouczek znika, a wszystko wyjaśniają podpowiedzi, do tego komunikat o baterii przy pierwszym użyciu stopera. Ulepszenia w poziomie dla tabletów i iPhone Duo."
+  },
+  {
+   "title": "I jeszcze",
+   "text": "Książki bez liczby stron (np. z KOReader): aplikacja poprosi o łączną liczbę stron · Bingo: 12 nowych szablonów 4x4 i 12 nowych szablonów 3x3, motyw grozy w listopadzie i romans w lutym · KOSync: ulepszenia, żeby nie zależeć od stopera aplikacji: KOSync wysyła czas czytania · Losowanie w „Chcę przeczytać”: Pagi decyduje za Ciebie · Wrapped: ulepszenia (otwiera się 26 grudnia) · Chiński tradycyjny"
   }
  ],
  "home.whatsnew.title": "Notatki do aktualizacji v{{release_version}}",

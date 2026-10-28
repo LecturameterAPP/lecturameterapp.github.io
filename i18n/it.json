@@ -581,16 +581,25 @@
   "Cambiare lo stato di un libro non cancella più le date delle letture precedenti.",
   "Il riepilogo mensile conta anche i libri terminati senza sessioni."
  ],
- "release.3_9.headline": "Eventi: La grande lettura e Lecturameter Quest",
+ "release.3_9.headline": "Eventi, una Home rinnovata e nuove schede dei libri",
  "release.3_9.new": [
   "<strong>Sfida globale:</strong> La grande lettura. 14 giorni a leggere insieme. Contano i minuti del cronometro, con un obiettivo comune e una classifica in tempo reale.",
   "<strong>Lecturameter Quest: La biblioteca dimenticata.</strong> Scegli 3 libri, traccia il tuo percorso sulla mappa e sconfiggi il boss. 5 livelli e una classifica a punti.",
   "<strong>E inoltre:</strong> scheda dell'evento, Pagi come tuo avatar, avvisi dell'evento.",
-  "<strong>Android e iPhone:</strong> lo stesso evento su entrambi."
+  "<strong>Android e iPhone:</strong> lo stesso evento su entrambi.",
+  "<strong>Home rinnovata:</strong> le icone della barra sono raggruppate in 3 menu flottanti: Obiettivi (Eventi, Sfide, Bingo), La mia lettura (Statistiche, Le mie schede, Wrapped) e Strumenti (Promemoria, Tag, Scanner ISBN). Riordinali con una pressione prolungata. Contatori per gruppo, la barra si nasconde mentre scorri e in Crepuscolo le icone alternano arancione e blu.",
+  "<strong>Schede dei libri rinnovate:</strong> niente cestino né stelle sparse (ora un chip ★ 4.5), icone Material al posto delle emoji e tag in fondo. In Abbandonato vedi la pagina a cui ti sei fermato («Ti sei fermato a pagina X di Y»); in Terminati, la data in cui l'hai finito.",
+  "<strong>Nuovi suggerimenti, niente tutorial:</strong> il tutorial non c'è più e tutto si spiega con suggerimenti, più un avviso sulla batteria la prima volta che usi il cronometro. Miglioramenti in orizzontale per tablet e iPhone Duo.",
+  "<strong>Libri senza numero di pagine</strong> (ad es. da KOReader): l'app ti chiede il totale delle pagine.",
+  "<strong>Bingo:</strong> 12 nuovi modelli 4x4 e 12 nuovi modelli 3x3, tema horror a novembre e romance a febbraio.",
+  "<strong>KOSync:</strong> miglioramenti per non dipendere dal cronometro dell'app: KOSync invia il tempo di lettura.",
+  "<strong>Selettore casuale in Voglio leggere:</strong> decide Pagi per te.",
+  "<strong>Wrapped:</strong> miglioramenti (si apre il 26 dicembre).",
+  "<strong>Cinese tradizionale.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Cosa arriva in Lecturameter 3.9",
- "roadmap.3_9.sub": "Sfide di lettura per tutta la community e un gioco con <b>i tuoi libri</b>. Nessuna data fissa: tutto esce quando è pronto.",
+ "roadmap.3_9.sub": "Sfide di lettura per tutta la community, un gioco con <b>i tuoi libri</b> e una Home rinnovata. Nessuna data fissa: tutto esce quando è pronto.",
  "roadmap.3_9.cards": [
   {
    "title": "Sfida globale: La grande lettura",
@@ -603,6 +612,22 @@
   {
    "title": "E inoltre",
    "text": "Scheda dell'evento · Pagi come tuo avatar · Avvisi dell'evento"
+  },
+  {
+   "title": "Home rinnovata",
+   "text": "Icone della barra raggruppate in 3 menu flottanti: Obiettivi (Eventi, Sfide, Bingo), La mia lettura (Statistiche, Le mie schede, Wrapped) e Strumenti (Promemoria, Tag, Scanner ISBN). Riordinali con una pressione prolungata. Contatori per gruppo, la barra si nasconde mentre scorri e in Crepuscolo le icone alternano arancione e blu."
+  },
+  {
+   "title": "Schede dei libri",
+   "text": "Niente cestino né stelle sparse (ora un chip ★ 4.5), icone Material al posto delle emoji e tag in fondo. In Abbandonato: la pagina a cui ti sei fermato («Ti sei fermato a pagina X di Y»). In Terminati: la data in cui l'hai finito."
+  },
+  {
+   "title": "Suggerimenti e modalità orizzontale",
+   "text": "Nuovi suggerimenti e il tutorial non c'è più: tutto si spiega con suggerimenti, più un avviso sulla batteria la prima volta che usi il cronometro. Miglioramenti in orizzontale per tablet e iPhone Duo."
+  },
+  {
+   "title": "E inoltre",
+   "text": "Libri senza numero di pagine (ad es. da KOReader): l'app chiede il totale delle pagine · 12 nuovi modelli Bingo 4x4 e 12 3x3, tema horror a novembre e romance a febbraio · KOSync: il tempo di lettura arriva da KOSync, così non dipendi dal cronometro dell'app · Selettore casuale in Voglio leggere: decide Pagi per te · Miglioramenti a Wrapped (si apre il 26 dicembre) · Cinese tradizionale"
   }
  ],
  "home.whatsnew.title": "Note di aggiornamento v{{release_version}}",

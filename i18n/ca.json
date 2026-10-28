@@ -581,16 +581,25 @@
   "Canviar l'estat d'un llibre ja no esborra les dates de lectures anteriors.",
   "El resum mensual també compta els llibres acabats sense sessions."
  ],
- "release.3_9.headline": "Esdeveniments: La gran lectura i Lecturameter Quest",
+ "release.3_9.headline": "Esdeveniments, un Inici renovat i noves targetes de llibre",
  "release.3_9.new": [
   "<strong>Repte global:</strong> La gran lectura. 14 dies llegint alhora. Compten els minuts del cronòmetre, amb una meta comuna i una classificació en directe.",
   "<strong>Lecturameter Quest: La biblioteca oblidada.</strong> Tria 3 llibres, traça el teu camí pel mapa i venç el cap final. 5 nivells i una classificació per punts.",
   "<strong>I a més:</strong> targeta de l'esdeveniment, el Pagi com a avatar, avisos de l'esdeveniment.",
-  "<strong>Android i iPhone:</strong> el mateix esdeveniment a tots dos."
+  "<strong>Android i iPhone:</strong> el mateix esdeveniment a tots dos.",
+  "<strong>Inici renovat:</strong> Les icones del carril s'agrupen en 3 menús flotants: Metes (Esdeveniments, Reptes, Bingos), La meva lectura (Estadístiques, Les meves targetes, Wrapped) i Eines (Recordatoris, Etiquetes, Escàner d'ISBN). Reordena'ls amb una pulsació llarga. Comptadors per grup, el carril s'amaga en fer scroll i a Ocàs les icones alternen taronja i blau.",
+  "<strong>Targetes de llibre renovades:</strong> Sense paperera ni estrelles soltes (ara un xip ★ 4.5), icones Material en lloc d'emojis i etiquetes a la part inferior. A Abandonats veus la pàgina on ho vas deixar («Et vas aturar a la pàgina X de Y»); a Acabats, la data en què el vas acabar.",
+  "<strong>Nous consells, sense tutorial:</strong> El tutorial ja no hi és i tot s'explica amb consells, a més d'un avís de bateria la primera vegada que uses el cronòmetre. Millores del mode horitzontal per a tauletes i iPhone Duo.",
+  "<strong>Llibres sense nombre de pàgines</strong> (p. ex. de KOReader): l'app et demana el total de pàgines.",
+  "<strong>Bingo:</strong> 12 plantilles noves de 4x4 i 12 de 3x3, tema de terror al novembre i de romanç al febrer.",
+  "<strong>KOSync:</strong> millores perquè no depenguis del cronòmetre de l'app: KOSync envia el temps de lectura.",
+  "<strong>Selector aleatori a Vull llegir:</strong> el Pagi decideix per tu.",
+  "<strong>Wrapped:</strong> millores (s'obre el 26 de desembre).",
+  "<strong>Xinès tradicional.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "El que arriba a Lecturameter 3.9",
- "roadmap.3_9.sub": "Reptes de lectura per a tota la comunitat i un joc amb <b>els teus propis llibres</b>. Sense dates fixes: tot surt quan està llest.",
+ "roadmap.3_9.sub": "Reptes de lectura per a tota la comunitat, un joc amb <b>els teus propis llibres</b> i un Inici renovat. Sense dates fixes: tot surt quan està llest.",
  "roadmap.3_9.cards": [
   {
    "title": "Repte global: La gran lectura",
@@ -603,6 +612,22 @@
   {
    "title": "I a més",
    "text": "Targeta de l'esdeveniment · El Pagi com a avatar · Avisos de l'esdeveniment"
+  },
+  {
+   "title": "Inici renovat",
+   "text": "Les icones del carril s'agrupen en 3 menús flotants: Metes (Esdeveniments, Reptes, Bingos), La meva lectura (Estadístiques, Les meves targetes, Wrapped) i Eines (Recordatoris, Etiquetes, Escàner d'ISBN). Reordena'ls amb una pulsació llarga. Comptadors per grup, el carril s'amaga en fer scroll i a Ocàs les icones alternen taronja i blau."
+  },
+  {
+   "title": "Targetes de llibre",
+   "text": "Sense paperera ni estrelles soltes (ara un xip ★ 4.5), icones Material en lloc d'emojis i etiquetes a la part inferior. A Abandonats veus la pàgina on ho vas deixar («Et vas aturar a la pàgina X de Y»); a Acabats, la data en què el vas acabar."
+  },
+  {
+   "title": "Consells i mode horitzontal",
+   "text": "El tutorial ja no hi és i tot s'explica amb consells, a més d'un avís de bateria la primera vegada que uses el cronòmetre. Millores del mode horitzontal per a tauletes i iPhone Duo."
+  },
+  {
+   "title": "I a més",
+   "text": "Llibres sense nombre de pàgines (p. ex. de KOReader): l'app et demana el total de pàgines · Bingo: 12 plantilles noves de 4x4 i 12 de 3x3, tema de terror al novembre i de romanç al febrer · KOSync: millores perquè no depenguis del cronòmetre de l'app: KOSync envia el temps de lectura · Selector aleatori a Vull llegir: el Pagi decideix per tu · Wrapped: millores (s'obre el 26 de desembre) · Xinès tradicional"
   }
  ],
  "home.whatsnew.title": "Notes del pedaç v{{release_version}}",

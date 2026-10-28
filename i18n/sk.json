@@ -581,16 +581,25 @@
   "Zmena stavu knihy už nevymaže dátumy predchádzajúcich čítaní.",
   "Mesačný súhrn počíta aj dokončené knihy bez sedení."
  ],
- "release.3_9.headline": "Udalosti: Veľké čítanie a Lecturameter Quest",
+ "release.3_9.headline": "Udalosti, obnovená domovská obrazovka a nové karty kníh",
  "release.3_9.new": [
   "<strong>Globálna výzva:</strong> Veľké čítanie. 14 dní čítania spolu. Počítajú sa minúty z časovača, so spoločným cieľom a živým rebríčkom.",
   "<strong>Lecturameter Quest: Zabudnutá knižnica.</strong> Vyber si 3 knihy, zvoľ si cestu na mape a poraz bossa. 5 úrovní a rebríček bodov.",
   "<strong>Tiež:</strong> karta udalosti, Pagi ako tvoj avatar, upozornenia na udalosti.",
-  "<strong>Android a iPhone:</strong> tá istá udalosť na oboch."
+  "<strong>Android a iPhone:</strong> tá istá udalosť na oboch.",
+  "<strong>Obnovená domovská obrazovka:</strong> ikony v paneli sú zoskupené do 3 plávajúcich ponúk: Ciele (Udalosti, Výzvy, Bingo), Moje čítanie (Štatistiky, Moje karty, Wrapped) a Nástroje (Pripomienky, Tagy, Skener ISBN). Poradie zmeníš dlhým stlačením. Počítadlá pri každej skupine, panel sa pri posúvaní skryje a v Súmraku sa ikony striedajú v oranžovej a modrej.",
+  "<strong>Obnovené karty kníh:</strong> bez koša a osamelých hviezdičiek (teraz čip ★ 4.5), ikony Material namiesto emoji a tagy dole. V Opustených vidíš stranu, kde si skončil („Skončil si na strane X z Y“); v Prečítaných dátum dočítania.",
+  "<strong>Nové tipy, žiadny návod:</strong> návod zmizol a všetko sa vysvetľuje tipmi, plus upozornenie na batériu pri prvom použití časovača. Vylepšenia režimu na šírku pre tablety a iPhone Duo.",
+  "<strong>Knihy bez počtu strán</strong> (napr. z KOReader): aplikácia sa ťa opýta na celkový počet strán.",
+  "<strong>Bingo:</strong> 12 nových šablón 4x4 a 12 nových šablón 3x3, horor v novembri a romantika vo februári.",
+  "<strong>KOSync:</strong> vylepšenia, aby si nebol závislý od časovača aplikácie: KOSync posiela čas čítania.",
+  "<strong>Náhodný výber v Chcem čítať:</strong> Pagi rozhodne za teba.",
+  "<strong>Wrapped:</strong> vylepšenia (otvára sa 26. decembra).",
+  "<strong>Tradičná čínština.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Čo prichádza v Lecturameter 3.9",
- "roadmap.3_9.sub": "Čitateľské výzvy pre celú komunitu a hra hraná s <b>tvojimi vlastnými knihami</b>. Bez pevných dátumov: všetko vyjde, keď bude hotové.",
+ "roadmap.3_9.sub": "Čitateľské výzvy pre celú komunitu, hra s <b>tvojimi vlastnými knihami</b> a obnovená domovská obrazovka. Bez pevných dátumov: všetko vyjde, keď bude hotové.",
  "roadmap.3_9.cards": [
   {
    "title": "Globálna výzva: Veľké čítanie",
@@ -603,6 +612,22 @@
   {
    "title": "Tiež",
    "text": "Karta udalosti · Pagi ako tvoj avatar · Upozornenia na udalosti"
+  },
+  {
+   "title": "Obnovená domovská obrazovka",
+   "text": "Ikony v paneli zoskupené do 3 plávajúcich ponúk: Ciele (Udalosti, Výzvy, Bingo), Moje čítanie (Štatistiky, Moje karty, Wrapped) a Nástroje (Pripomienky, Tagy, Skener ISBN). Poradie zmeníš dlhým stlačením. Počítadlá pri každej skupine, panel sa pri posúvaní skryje a v Súmraku sa ikony striedajú v oranžovej a modrej."
+  },
+  {
+   "title": "Karty kníh",
+   "text": "Bez koša a osamelých hviezdičiek (teraz čip ★ 4.5), ikony Material namiesto emoji a tagy dole. V Opustených: strana, kde si skončil („Skončil si na strane X z Y“). V Prečítaných: dátum dočítania."
+  },
+  {
+   "title": "Tipy a režim na šírku",
+   "text": "Nové tipy a návod zmizol: všetko sa vysvetľuje tipmi, plus upozornenie na batériu pri prvom použití časovača. Vylepšenia režimu na šírku pre tablety a iPhone Duo."
+  },
+  {
+   "title": "A ešte",
+   "text": "Knihy bez počtu strán (napr. z KOReader): aplikácia sa opýta na celkový počet strán · 12 nových bingo šablón 4x4 a 12 nových 3x3, horor v novembri a romantika vo februári · KOSync: čas čítania pochádza z KOSync, takže nie si závislý od časovača aplikácie · Náhodný výber v Chcem čítať: Pagi rozhodne za teba · Vylepšenia Wrapped (otvára sa 26. decembra) · Tradičná čínština"
   }
  ],
  "home.whatsnew.title": "Poznámky k oprave v{{release_version}}",

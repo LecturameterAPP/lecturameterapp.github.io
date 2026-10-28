@@ -581,16 +581,25 @@
   "Raamatu staatuse muutmine ei kustuta enam varasemate lugemiskordade kuupäevi.",
   "Kuukokkuvõte arvestab ka lõpetatud raamatuid, millel pole seansse."
  ],
- "release.3_9.headline": "Sündmused: Suur lugemine ja Lecturameter Quest",
+ "release.3_9.headline": "Sündmused, uuenenud avaleht ja uued raamatukaardid",
  "release.3_9.new": [
   "<strong>Ülemaailmne väljakutse:</strong> Suur lugemine. 14 päeva koos lugemist. Arvesse lähevad taimeri minutid, ühise eesmärgi ja reaalajas edetabeliga.",
   "<strong>Lecturameter Quest: Unustatud raamatukogu.</strong> Vali 3 raamatut, vali kaardil oma tee ja alista boss. 5 taset ja punktide edetabel.",
   "<strong>Lisaks:</strong> sündmuse kaart, Pagi sinu avatarina, sündmuse teavitused.",
-  "<strong>Android ja iPhone:</strong> sama sündmus mõlemas."
+  "<strong>Android ja iPhone:</strong> sama sündmus mõlemas.",
+  "<strong>Uuenenud avaleht:</strong> külgriba ikoonid on koondatud 3 hõljuvasse menüüsse: Eesmärgid (Sündmused, Väljakutsed, Bingod), Minu lugemine (Statistika, Minu kaardid, Wrapped) ja Tööriistad (Meeldetuletused, Sildid, ISBN-skanner). Järjekorda saab muuta pikalt vajutades. Iga grupp näitab loendurit, külgriba kerimisel peitub ja Ocasos vahelduvad ikoonid oranži ja sinise vahel.",
+  "<strong>Uuenenud raamatukaardid:</strong> prügikasti ja eraldi tähti enam pole (nüüd ★ 4.5 kiip), emotikonide asemel Material-ikoonid ja sildid all. Loobutud raamatul näed lehekülge, kus pooleli jäid (\"Jäid pooleli leheküljel X / Y\"); lõpetatud raamatul lõpetamise kuupäeva.",
+  "<strong>Uued näpunäited, ilma õpetuseta:</strong> õpetus on kadunud ja kõike selgitavad näpunäited, lisaks akuteade taimeri esmakordsel kasutamisel. Parem horisontaalvaade tahvelarvutitele ja iPhone Duole.",
+  "<strong>Raamatud ilma lehekülgede arvuta</strong> (nt KOReaderist): rakendus küsib sinult lehekülgede koguarvu.",
+  "<strong>Bingo:</strong> 12 uut 4x4 malli ja 12 uut 3x3 malli, õudusteema novembris ja romantika veebruaris.",
+  "<strong>KOSync:</strong> täiustused, et sa ei sõltuks rakenduse taimerist: KOSync saadab lugemisaja.",
+  "<strong>Juhuslik valik jaotises Soovin lugeda:</strong> Pagi otsustab sinu eest.",
+  "<strong>Wrapped:</strong> täiustused (avaneb 26. detsembril).",
+  "<strong>Traditsiooniline hiina keel.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Mis tuleb Lecturameter 3.9-s",
- "roadmap.3_9.sub": "Lugemisväljakutsed kogu kogukonnale ja mäng, mida mängitakse <b>sinu enda raamatutega</b>. Kindlaid kuupäevi pole: kõik ilmub siis, kui on valmis.",
+ "roadmap.3_9.sub": "Lugemisväljakutsed kogu kogukonnale, mäng, mida mängitakse <b>sinu enda raamatutega</b>, ja uuenenud avaleht. Kindlaid kuupäevi pole: kõik ilmub siis, kui on valmis.",
  "roadmap.3_9.cards": [
   {
    "title": "Ülemaailmne väljakutse: Suur lugemine",
@@ -603,6 +612,22 @@
   {
    "title": "Lisaks",
    "text": "Sündmuse kaart · Pagi sinu avatarina · Sündmuse teavitused"
+  },
+  {
+   "title": "Uuenenud avaleht",
+   "text": "Külgriba ikoonid on koondatud 3 hõljuvasse menüüsse: Eesmärgid (Sündmused, Väljakutsed, Bingod), Minu lugemine (Statistika, Minu kaardid, Wrapped) ja Tööriistad (Meeldetuletused, Sildid, ISBN-skanner). Järjekorda saab muuta pikalt vajutades. Iga grupp näitab loendurit, külgriba kerimisel peitub ja Ocasos vahelduvad ikoonid oranži ja sinise vahel."
+  },
+  {
+   "title": "Raamatukaardid",
+   "text": "Prügikasti ja eraldi tähti enam pole (nüüd ★ 4.5 kiip), emotikonide asemel Material-ikoonid ja sildid all. Loobutud: lehekülg, kus pooleli jäid (\"Jäid pooleli leheküljel X / Y\"). Lõpetatud: lõpetamise kuupäev."
+  },
+  {
+   "title": "Näpunäited ja horisontaalvaade",
+   "text": "Uued näpunäited ja õpetust enam pole: kõike selgitavad näpunäited, lisaks akuteade taimeri esmakordsel kasutamisel. Parem horisontaalvaade tahvelarvutitele ja iPhone Duole."
+  },
+  {
+   "title": "Ja veel",
+   "text": "Raamatud ilma lehekülgede arvuta (nt KOReaderist): rakendus küsib koguarvu · 12 uut 4x4 ja 12 uut 3x3 bingo malli, õudusteema novembris ja romantika veebruaris · KOSync: lugemisaeg tuleb KOSyncist, nii et sa ei sõltu rakenduse taimerist · Juhuslik valik jaotises Soovin lugeda: Pagi otsustab sinu eest · Wrappedi täiustused (avaneb 26. detsembril) · Traditsiooniline hiina keel"
   }
  ],
  "home.whatsnew.title": "Paranduste märkmed v{{release_version}}",

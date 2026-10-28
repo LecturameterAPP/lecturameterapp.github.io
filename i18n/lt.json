@@ -581,16 +581,25 @@
   "Pakeitus knygos būseną nebeištrinamos ankstesnių skaitymų datos.",
   "Mėnesio apžvalgoje skaičiuojamos ir baigtos knygos be sesijų."
  ],
- "release.3_9.headline": "Renginiai: Didysis skaitymas ir Lecturameter Quest",
+ "release.3_9.headline": "Renginiai, atnaujintas pradžios ekranas ir naujos knygų kortelės",
  "release.3_9.new": [
   "<strong>Globalus iššūkis:</strong> Didysis skaitymas. 14 dienų skaitome kartu. Skaičiuojamos laikmačio minutės, su bendru tikslu ir gyva lyderių lentele.",
   "<strong>Lecturameter Quest: Užmiršta biblioteka.</strong> Pasirink 3 knygas, išsirink kelią žemėlapyje ir nugalėk bosą. 5 lygiai ir taškų lyderių lentelė.",
   "<strong>Taip pat:</strong> renginio kortelė, Pagi kaip tavo avataras, renginio pranešimai.",
-  "<strong>Android ir iPhone:</strong> tas pats renginys abiejose."
+  "<strong>Android ir iPhone:</strong> tas pats renginys abiejose.",
+  "<strong>Atnaujintas pradžios ekranas:</strong> juostos piktogramos sugrupuotos į 3 slankiuosius meniu: Tikslai (Renginiai, Iššūkiai, Bingo), Mano skaitymas (Statistika, Mano kortelės, Wrapped) ir Įrankiai (Priminimai, Žymos, ISBN skaitytuvas). Pakeisk tvarką ilgai paspausdamas. Skaitikliai kiekvienai grupei, juosta paslepiama slenkant, o Prieblandoje piktogramos kaitaliojasi oranžinė ir mėlyna.",
+  "<strong>Atnaujintos knygų kortelės:</strong> nebėra šiukšliadėžės ir pavienių žvaigždučių (dabar ★ 4.5 etiketė), vietoj jaustukų naudojamos Material piktogramos, o žymos rodomos apačioje. Apleistose matai puslapį, kuriame sustojai („Sustojai ties X puslapiu iš Y“), o Baigtose – baigimo datą.",
+  "<strong>Nauji patarimai, jokio vadovėlio:</strong> pamoka pašalinta, viskas paaiškinama patarimais, o pirmą kartą naudojant laikmatį parodomas pranešimas apie bateriją. Patobulintas gulsčias vaizdas planšetėms ir „iPhone Duo“.",
+  "<strong>Knygos be puslapių skaičiaus</strong> (pvz., iš KOReader): programėlė paprašo nurodyti bendrą puslapių skaičių.",
+  "<strong>Bingo:</strong> 12 naujų 4x4 šablonų ir 12 naujų 3x3 šablonų, siaubo tema lapkritį ir romantika vasarį.",
+  "<strong>KOSync:</strong> patobulinimai, kad nebereikėtų priklausyti nuo programėlės laikmačio: KOSync siunčia skaitymo laiką.",
+  "<strong>Atsitiktinis pasirinkimas skiltyje Noriu skaityti:</strong> Pagi nusprendžia už tave.",
+  "<strong>Wrapped:</strong> patobulinimai (atsidaro gruodžio 26 d.).",
+  "<strong>Tradicinė kinų kalba.</strong>"
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Kas laukia Lecturameter 3.9",
- "roadmap.3_9.sub": "Skaitymo iššūkiai visai bendruomenei ir žaidimas su <b>tavo paties knygomis</b>. Be tikslių datų: viskas išeis, kai bus paruošta.",
+ "roadmap.3_9.sub": "Skaitymo iššūkiai visai bendruomenei, žaidimas su <b>tavo paties knygomis</b> ir atnaujintas pradžios ekranas. Be tikslių datų: viskas išeis, kai bus paruošta.",
  "roadmap.3_9.cards": [
   {
    "title": "Globalus iššūkis: Didysis skaitymas",
@@ -603,6 +612,22 @@
   {
    "title": "Taip pat",
    "text": "Renginio kortelė · Pagi kaip tavo avataras · Renginio pranešimai"
+  },
+  {
+   "title": "Atnaujintas pradžios ekranas",
+   "text": "Juostos piktogramos sugrupuotos į 3 slankiuosius meniu: Tikslai (Renginiai, Iššūkiai, Bingo), Mano skaitymas (Statistika, Mano kortelės, Wrapped) ir Įrankiai (Priminimai, Žymos, ISBN skaitytuvas). Pakeisk tvarką ilgai paspausdamas. Skaitikliai kiekvienai grupei, juosta paslepiama slenkant, o Prieblandoje piktogramos kaitaliojasi oranžinė ir mėlyna."
+  },
+  {
+   "title": "Knygų kortelės",
+   "text": "Nebėra šiukšliadėžės ir pavienių žvaigždučių (dabar ★ 4.5 etiketė), vietoj jaustukų naudojamos Material piktogramos, o žymos rodomos apačioje. Apleistose: puslapis, kuriame sustojai („Sustojai ties X puslapiu iš Y“). Baigtose: baigimo data."
+  },
+  {
+   "title": "Patarimai ir gulsčias vaizdas",
+   "text": "Nauji patarimai, o pamoka pašalinta: viskas paaiškinama patarimais, o pirmą kartą naudojant laikmatį parodomas pranešimas apie bateriją. Patobulintas gulsčias vaizdas planšetėms ir „iPhone Duo“."
+  },
+  {
+   "title": "Ir dar",
+   "text": "Knygos be puslapių skaičiaus (pvz., iš KOReader): programėlė paprašo bendro puslapių skaičiaus · 12 naujų 4x4 ir 12 naujų 3x3 bingo šablonų, siaubo tema lapkritį ir romantika vasarį · KOSync: skaitymo laikas ateina iš KOSync, todėl nebepriklausai nuo programėlės laikmačio · Atsitiktinis pasirinkimas skiltyje Noriu skaityti: Pagi nusprendžia už tave · Wrapped patobulinimai (atsidaro gruodžio 26 d.) · Tradicinė kinų kalba"
   }
  ],
  "home.whatsnew.title": "Pataisymų pastabos v{{release_version}}",

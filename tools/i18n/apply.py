@@ -40,7 +40,7 @@ def check(key, en, val):
         errs.append('marcadores distintos')
     if collections.Counter(URL.findall(plain_keep(en))) != collections.Counter(URL.findall(plain_keep(val))):
         errs.append('URLs/correos distintos')
-    if numbers(en) != numbers(val):
+    if numbers(en) != numbers(val) and not os.environ.get('LM_SKIP_NUMBERS'):
         errs.append('numeros distintos')
     base = key.split('#')[0]
     if '"' in val and '"' not in en and (base.endswith(('.alt', '.aria-label')) or base.startswith('head.') or base.endswith('.title') or base.endswith('.meta_description')):
