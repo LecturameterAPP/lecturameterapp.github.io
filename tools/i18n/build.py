@@ -308,6 +308,23 @@ def render(text, variables, strings, where, errors, depth=0):
     return MARK.sub(sub, text)
 
 
+def fix_legal_links(out, root):
+    """Los textos legales traducidos traen hrefs relativos a la raiz del sitio (copiados del original);
+    en /<code>/<pagina>/ hay que anteponer la ruta a la raiz. Solo toca el cuerpo .legal-content."""
+    i = out.find('class="legal-content"')
+    j = out.find('<footer', i)
+    if i < 0 or j < 0:
+        return out
+    def sub(m):
+        u = m.group(2)
+        if re.match(r'(?i)^([a-z][a-z0-9+.-]*:|#|/|\.\./|//)', u):
+            return m.group(0)
+        if u.startswith('./'):
+            u = u[2:]
+        return m.group(1) + root + u + m.group(3)
+    return out[:i] + re.sub(r'(<a\s[^>]*?href=")([^"]*)(")', sub, out[i:j]) + out[j:]
+
+
 def main():
     cfg = load_json(os.path.join(ROOT, 'i18n', 'locales.json'))
     # un idioma solo existe si tiene i18n/<code>.json (los demas estan dados de alta pero pendientes)
@@ -337,6 +354,8 @@ def main():
             variables['lang_picker'] = lang_picker(loc, page, locales, strings, ' ' * 12)
             where = '%s/%s' % (loc['code'], page['template'])
             out = render(tpl, variables, strings, where, errors)
+            if page.get('legal'):
+                out = fix_legal_links(out, variables['root'])
             out_rel = page_dir(loc, page) + 'index.html'
             written.append((os.path.join(ROOT, *out_rel.split('/')), out))
     if errors:
