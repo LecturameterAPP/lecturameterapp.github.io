@@ -122,16 +122,19 @@ GLOBE = ('<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r=
          '<path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>')
 
 
-def lang_picker(loc, page, locales, strings, indent):
-    """Selector de idioma: cada opcion es un <a href> real a la misma pagina en ese idioma."""
-    here = page_dir(loc, page).rstrip('/')
+def lang_picker(loc, page, locales, strings, indent, targets=None):
+    """Selector de idioma: cada opcion es un <a href> real a la misma pagina en ese idioma.
+    `targets` (opcional, usado por build_blog.py): {codigo: ruta} -> solo esos idiomas, con esa ruta."""
+    here = (targets[loc['code']] if targets is not None else page_dir(loc, page)).rstrip('/')
     esc = html.escape
     opts = []
     for o in locales:
-        target = page_dir(o, page)
+        if targets is not None and o['code'] not in targets:
+            continue
+        target = targets[o['code']] if targets is not None else page_dir(o, page)
         cur = o is loc
         href = rel(here, target)
-        if page.get('original') and o.get('legal_original'):
+        if targets is None and page.get('original') and o.get('legal_original'):
             href = rel(here, page['original']) + '?lang=' + o['code']
         opts.append(
             '<a href="%s" lang="%s" hreflang="%s" data-code="%s" data-search="%s"%s>%s</a>' % (
@@ -329,6 +332,10 @@ def main():
     cfg = load_json(os.path.join(ROOT, 'i18n', 'locales.json'))
     # un idioma solo existe si tiene i18n/<code>.json (los demas estan dados de alta pero pendientes)
     cfg['locales'] = [l for l in cfg['locales'] if os.path.exists(os.path.join(ROOT, 'i18n', l['code'] + '.json'))]
+    # blog: enlazar a /<code>/blog/ solo si existe i18n/blog/<code>.json (el resto sigue al blog ingles)
+    for l in cfg['locales']:
+        if l['code'] not in ('en', 'es') and os.path.exists(os.path.join(ROOT, 'i18n', 'blog', l['code'] + '.json')):
+            l['blog'] = l['path'].lstrip('/') + 'blog/'
     locales = cfg['locales']
     errors = []
     written = []

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="hr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kako prenijeti svoju biblioteku iz Goodreadsa (i StoryGrapha, Bookmoryja, Fablea…) u Lecturameter &middot; Lecturameter blog</title>
+    <meta name="description" content="Lecturameter uvozi biblioteke iz Goodreadsa, StoryGrapha, Bookmoryja, Fable/ShelfBridgea i drugih aplikacija za čitanje. Evo kako funkcionira svaki izvoz i što se prenosi.">
+    <meta property="og:title" content="Kako prenijeti svoju biblioteku iz Goodreadsa (i StoryGrapha, Bookmoryja, Fablea…) u Lecturameter">
+    <meta property="og:description" content="Lecturameter uvozi biblioteke iz Goodreadsa, StoryGrapha, Bookmoryja, Fable/ShelfBridgea i drugih aplikacija za čitanje. Evo kako funkcionira svaki izvoz.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://lecturameterapp.github.io/hr/blog/export-goodreads-library/">
+    <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Kako prenijeti svoju biblioteku iz Goodreadsa (i StoryGrapha, Bookmoryja, Fablea…) u Lecturameter">
+    <meta property="og:locale" content="hr_HR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ar_AR">
+    <meta property="og:locale:alternate" content="bg_BG">
+    <meta property="og:locale:alternate" content="bn_IN">
+    <meta property="og:locale:alternate" content="ca_ES">
+    <meta property="og:locale:alternate" content="cs_CZ">
+    <meta property="og:locale:alternate" content="da_DK">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="el_GR">
+    <meta property="og:locale:alternate" content="et_EE">
+    <meta property="og:locale:alternate" content="fa_IR">
+    <meta property="og:locale:alternate" content="fi_FI">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="gu_IN">
+    <meta property="og:locale:alternate" content="he_IL">
+    <meta property="og:locale:alternate" content="hi_IN">
+    <meta property="og:locale:alternate" content="hu_HU">
+    <meta property="og:locale:alternate" content="id_ID">
+    <meta property="og:locale:alternate" content="is_IS">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="kn_IN">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="lt_LT">
+    <meta property="og:locale:alternate" content="lv_LV">
+    <meta property="og:locale:alternate" content="ml_IN">
+    <meta property="og:locale:alternate" content="mr_IN">
+    <meta property="og:locale:alternate" content="nl_NL">
+    <meta property="og:locale:alternate" content="nb_NO">
+    <meta property="og:locale:alternate" content="pa_IN">
+    <meta property="og:locale:alternate" content="pl_PL">
+    <meta property="og:locale:alternate" content="pt_PT">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="ro_RO">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:locale:alternate" content="sk_SK">
+    <meta property="og:locale:alternate" content="sl_SI">
+    <meta property="og:locale:alternate" content="sv_SE">
+    <meta property="og:locale:alternate" content="sw_KE">
+    <meta property="og:locale:alternate" content="ta_IN">
+    <meta property="og:locale:alternate" content="te_IN">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="uk_UA">
+    <meta property="og:locale:alternate" content="ur_PK">
+    <meta property="og:locale:alternate" content="vi_VN">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="zu_ZA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kako prenijeti svoju biblioteku iz Goodreadsa (i StoryGrapha, Bookmoryja, Fablea…) u Lecturameter">
+    <meta name="twitter:description" content="Lecturameter uvozi biblioteke iz Goodreadsa, StoryGrapha, Bookmoryja, Fable/ShelfBridgea i drugih aplikacija za čitanje. Evo kako funkcionira svaki izvoz.">
+    <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#121212">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon-16x16.png">
+    <link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
+    <link rel="manifest" href="../../../site.webmanifest">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+
+    <link rel="canonical" href="https://lecturameterapp.github.io/hr/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/exportar-biblioteca-goodreads/">
+    <link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/export-goodreads-library/">
+    <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/export-goodreads-library/">
+    <link rel="stylesheet" href="../../../styles.css?v=6.10">
+    <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
+    <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
+    <style>
+        .only-light,.only-dark{display:none;}
+        :root[data-theme="light"] .only-light{display:block;}
+        :root[data-theme="dark"] .only-dark{display:block;}
+        @media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .only-light{display:block;}}
+        @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .only-dark{display:block;}}
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Kako prenijeti svoju biblioteku iz Goodreadsa (i StoryGrapha, Bookmoryja, Fablea…) u Lecturameter",
+      "description": "Lecturameter uvozi biblioteke iz Goodreadsa, StoryGrapha, Bookmoryja, Fable/ShelfBridgea i drugih aplikacija za čitanje. Evo kako funkcionira svaki izvoz i što se prenosi.",
+      "inLanguage": "hr",
+      "datePublished": "2026-09-14",
+      "author": {"@type":"Organization","name":"Lecturameter"},
+      "image": "https://lecturameterapp.github.io/social_card.jpg?v=260807",
+      "mainEntityOfPage": "https://lecturameterapp.github.io/hr/blog/export-goodreads-library/",
+      "publisher": {"@type":"Organization","name":"Lecturameter","logo":{"@type":"ImageObject","url":"https://lecturameterapp.github.io/ic_launcher_pro.png"}}
+    }
+    </script>
+</head>
+<body>
+
+<!-- PROMO BAR -->
+<div id="promo-bar" class="promo-bar">
+    <span class="promo-pill">BESPLATNO</span>
+    <span>Lecturameter je zauvijek besplatan &#xB7; Bez oglasa</span>
+    <button class="promo-close" aria-label="Zatvori" onclick="dismissPromo()">&#xD7;</button>
+</div>
+
+<nav class="nav-bar">
+    <div class="nav-inner">
+        <a href="../../" class="nav-brand">
+            <img src="../../../ic_launcher_round.png" alt="Lecturameter" width="28" height="28">
+            Lecturameter
+        </a>
+        <ul class="nav-pills">
+            <li class="has-dropdown">
+                <a href="../../#features">Značajke <span class="caret" aria-hidden="true">&#x25BE;</span></a>
+                <ul class="nav-dropdown">
+                    <li><a href="../../../en/features/reading-timer/">Štoperica za čitanje</a></li>
+                    <li><a href="../../../en/features/reading-tracker/">Praćenje čitanja</a></li>
+                    <li><a href="../../../en/features/reading-statistics/">Statistika čitanja</a></li>
+                    <li><a href="../../../en/features/goodreads-alternative/">Alternativa za Goodreads</a></li>
+                    <li><a href="../../../en/features/book-catalog/">Katalog knjiga</a></li>
+                </ul>
+            </li>
+            <li><a href="../../#themes">Teme</a></li>
+            <li><a href="../../#pricing">Pro</a></li>
+            <li><a href="../../#whatsnew">Napomene uz ažuriranje</a></li>
+            <li><a href="../../#history">Povijest</a></li>
+            <li><a href="../../#roadmap">Plan razvoja</a></li>
+            <li><a href="../../lecturameter-1999/">1999</a></li>
+            <li><a href="../../#faq">FAQ</a></li>
+            <li><a href="../">Blog</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button class="nav-theme-btn" aria-label="Promijeni temu">&#x263E;</button>
+            <div class="lang-picker">
+                <button type="button" class="nav-lang-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-panel" aria-label="Jezik">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
+                    <span class="long">Hrvatski</span><span class="short">HR</span> <span aria-hidden="true">▾</span>
+                </button>
+                <div class="lang-panel" id="lang-panel" hidden>
+                    <input type="search" class="lang-search" placeholder="Traži jezik…" aria-label="Traži jezik…" autocomplete="off">
+                    <div class="lang-grid">
+                        <a href="../../../blog/export-goodreads-library/" lang="en" hreflang="en" data-code="en" data-search="english en">English</a>
+                        <a href="../../../es/blog/exportar-biblioteca-goodreads/" lang="es" hreflang="es" data-code="es" data-search="español es">Español</a>
+                        <a href="../../../ar/blog/export-goodreads-library/" lang="ar" hreflang="ar" data-code="ar" data-search="العربية ar">العربية</a>
+                        <a href="../../../bg/blog/export-goodreads-library/" lang="bg" hreflang="bg" data-code="bg" data-search="български bg">Български</a>
+                        <a href="../../../bn/blog/export-goodreads-library/" lang="bn" hreflang="bn" data-code="bn" data-search="বাংলা bn">বাংলা</a>
+                        <a href="../../../ca/blog/export-goodreads-library/" lang="ca" hreflang="ca" data-code="ca" data-search="català ca">Català</a>
+                        <a href="../../../cs/blog/export-goodreads-library/" lang="cs" hreflang="cs" data-code="cs" data-search="čeština cs">Čeština</a>
+                        <a href="../../../da/blog/export-goodreads-library/" lang="da" hreflang="da" data-code="da" data-search="dansk da">Dansk</a>
+                        <a href="../../../de/blog/export-goodreads-library/" lang="de" hreflang="de" data-code="de" data-search="deutsch de">Deutsch</a>
+                        <a href="../../../el/blog/export-goodreads-library/" lang="el" hreflang="el" data-code="el" data-search="ελληνικά el">Ελληνικά</a>
+                        <a href="../../../et/blog/export-goodreads-library/" lang="et" hreflang="et" data-code="et" data-search="eesti et">Eesti</a>
+                        <a href="../../../fa/blog/export-goodreads-library/" lang="fa" hreflang="fa" data-code="fa" data-search="فارسی fa">فارسی</a>
+                        <a href="../../../fi/blog/export-goodreads-library/" lang="fi" hreflang="fi" data-code="fi" data-search="suomi fi">Suomi</a>
+                        <a href="../../../fr/blog/export-goodreads-library/" lang="fr" hreflang="fr" data-code="fr" data-search="français fr">Français</a>
+                        <a href="../../../gu/blog/export-goodreads-library/" lang="gu" hreflang="gu" data-code="gu" data-search="ગુજરાતી gu">ગુજરાતી</a>
+                        <a href="../../../he/blog/export-goodreads-library/" lang="he" hreflang="he" data-code="he" data-search="עברית he">עברית</a>
+                        <a href="../../../hi/blog/export-goodreads-library/" lang="hi" hreflang="hi" data-code="hi" data-search="हिन्दी hi">हिन्दी</a>
+                        <a href="./" lang="hr" hreflang="hr" data-code="hr" data-search="hrvatski hr" class="current" aria-current="true">Hrvatski</a>
+                        <a href="../../../hu/blog/export-goodreads-library/" lang="hu" hreflang="hu" data-code="hu" data-search="magyar hu">Magyar</a>
+                        <a href="../../../id/blog/export-goodreads-library/" lang="id" hreflang="id" data-code="id" data-search="bahasa indonesia id">Bahasa Indonesia</a>
+                        <a href="../../../is/blog/export-goodreads-library/" lang="is" hreflang="is" data-code="is" data-search="íslenska is">Íslenska</a>
+                        <a href="../../../it/blog/export-goodreads-library/" lang="it" hreflang="it" data-code="it" data-search="italiano it">Italiano</a>
+                        <a href="../../../ja/blog/export-goodreads-library/" lang="ja" hreflang="ja" data-code="ja" data-search="日本語 ja">日本語</a>
+                        <a href="../../../kn/blog/export-goodreads-library/" lang="kn" hreflang="kn" data-code="kn" data-search="ಕನ್ನಡ kn">ಕನ್ನಡ</a>
+                        <a href="../../../ko/blog/export-goodreads-library/" lang="ko" hreflang="ko" data-code="ko" data-search="한국어 ko">한국어</a>
+                        <a href="../../../lt/blog/export-goodreads-library/" lang="lt" hreflang="lt" data-code="lt" data-search="lietuvių lt">Lietuvių</a>
+                        <a href="../../../lv/blog/export-goodreads-library/" lang="lv" hreflang="lv" data-code="lv" data-search="latviešu lv">Latviešu</a>
+                        <a href="../../../ml/blog/export-goodreads-library/" lang="ml" hreflang="ml" data-code="ml" data-search="മലയാളം ml">മലയാളം</a>
+                        <a href="../../../mr/blog/export-goodreads-library/" lang="mr" hreflang="mr" data-code="mr" data-search="मराठी mr">मराठी</a>
+                        <a href="../../../nl/blog/export-goodreads-library/" lang="nl" hreflang="nl" data-code="nl" data-search="nederlands nl">Nederlands</a>
+                        <a href="../../../no/blog/export-goodreads-library/" lang="no" hreflang="no" data-code="no" data-search="norsk no">Norsk</a>
+                        <a href="../../../pa/blog/export-goodreads-library/" lang="pa" hreflang="pa" data-code="pa" data-search="ਪੰਜਾਬੀ pa">ਪੰਜਾਬੀ</a>
+                        <a href="../../../pl/blog/export-goodreads-library/" lang="pl" hreflang="pl" data-code="pl" data-search="polski pl">Polski</a>
+                        <a href="../../../pt/blog/export-goodreads-library/" lang="pt" hreflang="pt-PT" data-code="pt" data-search="português (portugal) pt">Português (Portugal)</a>
+                        <a href="../../../pt-br/blog/export-goodreads-library/" lang="pt-br" hreflang="pt-BR" data-code="pt-br" data-search="português (brasil) pt-br">Português (Brasil)</a>
+                        <a href="../../../ro/blog/export-goodreads-library/" lang="ro" hreflang="ro" data-code="ro" data-search="română ro">Română</a>
+                        <a href="../../../ru/blog/export-goodreads-library/" lang="ru" hreflang="ru" data-code="ru" data-search="русский ru">Русский</a>
+                        <a href="../../../sk/blog/export-goodreads-library/" lang="sk" hreflang="sk" data-code="sk" data-search="slovenčina sk">Slovenčina</a>
+                        <a href="../../../sl/blog/export-goodreads-library/" lang="sl" hreflang="sl" data-code="sl" data-search="slovenščina sl">Slovenščina</a>
+                        <a href="../../../sv/blog/export-goodreads-library/" lang="sv" hreflang="sv" data-code="sv" data-search="svenska sv">Svenska</a>
+                        <a href="../../../sw/blog/export-goodreads-library/" lang="sw" hreflang="sw" data-code="sw" data-search="kiswahili sw">Kiswahili</a>
+                        <a href="../../../ta/blog/export-goodreads-library/" lang="ta" hreflang="ta" data-code="ta" data-search="தமிழ் ta">தமிழ்</a>
+                        <a href="../../../te/blog/export-goodreads-library/" lang="te" hreflang="te" data-code="te" data-search="తెలుగు te">తెలుగు</a>
+                        <a href="../../../tr/blog/export-goodreads-library/" lang="tr" hreflang="tr" data-code="tr" data-search="türkçe tr">Türkçe</a>
+                        <a href="../../../uk/blog/export-goodreads-library/" lang="uk" hreflang="uk" data-code="uk" data-search="українська uk">Українська</a>
+                        <a href="../../../ur/blog/export-goodreads-library/" lang="ur" hreflang="ur" data-code="ur" data-search="اردو ur">اردو</a>
+                        <a href="../../../vi/blog/export-goodreads-library/" lang="vi" hreflang="vi" data-code="vi" data-search="tiếng việt vi">Tiếng Việt</a>
+                        <a href="../../../zh-cn/blog/export-goodreads-library/" lang="zh-cn" hreflang="zh-CN" data-code="zh-cn" data-search="简体中文 zh-cn">简体中文</a>
+                        <a href="../../../zu/blog/export-goodreads-library/" lang="zu" hreflang="zu" data-code="zu" data-search="isizulu zu">isiZulu</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+                <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                Preuzmi
+            </a>
+        </div>
+        <button class="nav-hamburger" aria-label="Izbornik">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+    </div>
+</nav>
+
+<main class="subpage-body">
+<section class="band band-hero">
+    <div class="container">
+        <div class="hero" style="grid-template-columns:1fr;">
+            <div class="hero-copy" style="max-width:820px;margin:0 auto;text-align:center;">
+                <p class="hero-eyebrow reveal-up in-view"><a href="../" style="color:inherit;text-decoration:none;">Blog</a> &middot; 2026-09-14</p>
+                <h1 class="reveal-up in-view d1">Kako prenijeti svoju biblioteku iz Goodreadsa (i StoryGrapha, Bookmoryja, Fablea…) u Lecturameter</h1>
+                <p class="hero-tagline reveal-up in-view d2" style="margin-left:auto;margin-right:auto;">Lecturameter čita izvoze iz Goodreadsa, StoryGrapha, Bookmoryja, Fable/ShelfBridgea i nekoliko drugih aplikacija za čitanje. Ovaj članak prolazi kroz svaku od njih.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>Gdje živi vaša biblioteka</h2>
+        </div>
+        <p>Ako već negdje drugdje pratite svoje čitanje i želite ga prenijeti, Lecturameter prihvaća izvoze iz većine popularnih aplikacija za praćenje: Goodreads, StoryGraph, Bookmory, Fable (preko proširenja ShelfBridge) i šačice manjih. Ovaj članak obuhvaća korak izvoza za svaki izvor, pa možete odabrati onaj koji koristite i slijediti korake.</p>
+        <p>Ništa od ovoga ne treba Lecturameter račun. Datoteka živi na vašem telefonu.</p>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>Čarobnjak za uvoz</h2>
+        </div>
+        <p>Kad prvi put otvorite Lecturameter, Pagi pita što želite učiniti. Jedna od opcija je »Dolazim iz druge aplikacije«. Odaberite je i dolazite do čarobnjaka za uvoz.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin:1.5rem 0;">
+            <figure class="only-light" style="margin:0;text-align:center;">
+                <img src="../../../import_welcome_en_light.jpg" alt="Zaslon dobrodošlice Lecturametera s Pagijem (svijetla tema)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+                <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Zaslon dobrodošlice, svijetla tema</figcaption>
+            </figure>
+            <figure class="only-dark" style="margin:0;text-align:center;">
+                <img src="../../../import_welcome_en_dark.jpg" alt="Zaslon dobrodošlice Lecturametera s Pagijem (tamna tema)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+                <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Zaslon dobrodošlice, tamna tema</figcaption>
+            </figure>
+        </div>
+        <p>Čarobnjak je popis izvora. Dodirnete onaj koji koristite, date mu datoteku i Lecturameter pročita shemu. Isti čarobnjak nalazi se i u Postavkama, Uvezi, pa ga možete pokrenuti kasnije.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin:1.5rem 0;">
+            <figure class="only-light" style="margin:0;text-align:center;">
+                <img src="../../../import_wizard_en_light.jpg" alt="Čarobnjak za prijenos moje biblioteke, korak 1 od 5 (svijetla tema)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+                <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Čarobnjak za uvoz, svijetla tema</figcaption>
+            </figure>
+            <figure class="only-dark" style="margin:0;text-align:center;">
+                <img src="../../../import_wizard_en_dark.jpg" alt="Čarobnjak za prijenos moje biblioteke, korak 1 od 5 (tamna tema)" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+                <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">Čarobnjak za uvoz, tamna tema</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>Goodreads (CSV)</h2>
+        </div>
+        <p>Goodreads vam još uvijek dopušta izvoz biblioteke, ali je opcija skrivena i radi samo s računalne stranice. Na mobitelu je nema.</p>
+        <ol>
+            <li>Idite na goodreads.com i prijavite se.</li>
+            <li>Kliknite »My Books« u gornjoj navigaciji.</li>
+            <li>Na lijevoj bočnoj traci, pod »Tools«, kliknite »Import and export«.</li>
+            <li>Potražite odjeljak »Export your books« i kliknite »Export Library«.</li>
+            <li>Pričekajte minutu. Kad je datoteka spremna, vidite poveznicu poput »Your export from Goodreads« koja preuzima CSV.</li>
+        </ol>
+        <p>Datoteka ima jedan redak po knjizi s oko trideset stupaca. Važno je: naslov, autor, ISBN, vaša ocjena, datumi čitanja, datumi dodavanja, police (prilagođene i ekskluzivne) i tekst vaše recenzije. Privatne bilješke dolaze u stupcu »Private Notes«, koji je lako previdjeti.</p>
+        <p>Ocjena koristi cijele zvjezdice, a ne polovice. Datumi su u formatu »YYYY/MM/DD«. Prijatelji, komentari, lajkovi i grupe ostaju na Goodreadsu. To nije ograničenje Lecturametera, jednostavno ih nema u datoteci.</p>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>StoryGraph (CSV)</h2>
+        </div>
+        <p>StoryGraph također izvozi s weba. Idite na <em>app.thestorygraph.com</em>, otvorite Settings, zatim Manage Account i upotrijebite opciju Export. Dobivate CSV sa svojim knjigama, policama, ocjenama, tekstom recenzija, datumima i oznakama. Lecturameter ga čita izravno i preslikava polja.</p>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>Bookmory (XLSX)</h2>
+        </div>
+        <p>U Bookmoryju otvorite Settings, zatim Backup, zatim »Export to Excel«. Dobivate .xlsx s odvojenim listovima za knjige, ocjene i sesije čitanja. Lecturameter čita xlsx izravno; ne trebate ga pretvarati.</p>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>Fable / ShelfBridge (CSV putem proširenja)</h2>
+        </div>
+        <p>Sam Fable nema gumb za izvoz. Projekt zajednice <em>ShelfBridge</em> proširenje je za preglednik koje čita vaše podatke iz Fablea i stvara CSV kompatibilan s Fableom. Lecturameter prihvaća tu datoteku u mjestu Fable / ShelfBridge u čarobnjaku.</p>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>Book Tracker (CSV)</h2>
+        </div>
+        <p>Otvorite Book Tracker, idite na <strong>Settings &gt; Export</strong> i odaberite CSV. Dobivate datoteku sa svojim knjigama, ocjenama, datumima i policama. Ubacite je u mjesto Book Tracker u čarobnjaku i Lecturameter je čita.</p>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>Druge aplikacije</h2>
+        </div>
+        <p>Čarobnjak ima i mjesto »Druge aplikacije« za Babelio, Pagebound, Bookshelf, Delibrista i slične. Ako aplikacija koju koristite može stvoriti CSV ili XLSX, Lecturameter pokušava automatski prepoznati shemu.</p>
+        <p>Ako vaša nije prepoznata, rješenje je jednostavno: otvorite datoteku u proračunskoj tablici, zadržite stupce za naslov, autora, ocjenu, datume i policu, spremite kao CSV i uvezite kao Goodreads. Čitač za Goodreads najtolerantniji je od svih.</p>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>Što se prenosi, a što ne</h2>
+        </div>
+        <p>Iz svih izvora putuju iste stvari: knjige, police, ocjene, datumi i osobne bilješke ili recenzije.</p>
+        <p>Iste stvari ostaju i na svakoj usluzi: prijatelji, komentari, lajkovi, grupe i pratitelji. To je ograničenje samih datoteka izvoza, a ne Lecturametera. Nema se što prenijeti jer nikad nisu bili u datoteci.</p>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>Nakon uvoza</h2>
+        </div>
+        <p>Ako ste preskočili čarobnjak pri prvom pokretanju, uvoz se nalazi i u Postavkama, Uvezi. Čita police u vašoj datoteci i pita koje želite prenijeti. Ocjene, datumi i bilješke dolaze s knjigama. Ništa ne ide na poslužitelj. Vaša biblioteka završava na vašem telefonu.</p>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container" style="text-align:center;">
+        <div class="section-head">
+            <h2>Isprobajte na Androidu</h2>
+        </div>
+        <p><a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Preuzmi na Google Play</a></p>
+        <p style="margin-top:1.5rem;font-size:0.95em;opacity:0.85;">
+            Pogledajte i:
+            <a href="../how-fast-do-i-really-read/">Koliko zapravo brzo čitam?</a> &middot;
+            <a href="../reading-time-vs-pages/">Vrijeme čitanja ili stranice</a> &middot;
+            <a href="../../../en/features/goodreads-alternative/">Alternativa za Goodreads</a>
+            <a href="../../../en/features/book-catalog/">Katalog knjiga</a>
+        </p>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <span>&#xA9; 2026 Lecturameter &#xB7; Nezavisni projekt</span>
+            <a href="../../">Početna</a>
+        </div>
+    </div>
+</footer>
+
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi ti plješće!", "Sjaj, zvjezdice!", "Pssst, čitam.", "Pagi te gleda…"], "pagi_angry": ["Joj! To je boljelo!", "Dosta klikanja!", "Grr, pusti me na miru.", "Više nije smiješno."], "lago_happy": ["iOS uskoro!", "Upoznat ću još čitatelja!", "Spremite AirPodse!", "Vidimo se u App Storeu."], "lago_angry": ["Nećeš me valjda tamo odvesti…", "Ja više volim Android.", "Ne pada mi na pamet preskočiti ogradu.", "NE stavljaj me u kutiju."]}</script>
+<script src="../../../main.js?v=6.5" defer></script>
+</body>
+</html>

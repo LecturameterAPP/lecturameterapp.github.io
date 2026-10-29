@@ -27,8 +27,55 @@
     <link rel="canonical" href="https://lecturameterapp.github.io/privacidad.html">
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/privacidad.html?lang=es">
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/privacidad.html?lang=en">
+    <link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/privacy/">
+    <link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/privacy/">
+    <link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/privacy/">
+    <link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/privacy/">
+    <link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/privacy/">
+    <link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/privacy/">
+    <link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/privacy/">
+    <link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/privacy/">
+    <link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/privacy/">
+    <link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/privacy/">
+    <link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/privacy/">
+    <link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/privacy/">
+    <link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/privacy/">
+    <link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/privacy/">
+    <link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/privacy/">
+    <link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/privacy/">
+    <link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/privacy/">
+    <link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/privacy/">
+    <link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/privacy/">
+    <link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/privacy/">
+    <link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/privacy/">
+    <link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/privacy/">
+    <link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/privacy/">
+    <link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/privacy/">
+    <link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/privacy/">
+    <link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/privacy/">
+    <link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/privacy/">
+    <link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/privacy/">
+    <link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/privacy/">
+    <link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/privacy/">
+    <link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/privacy/">
+    <link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/privacy/">
+    <link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/privacy/">
+    <link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/privacy/">
+    <link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/privacy/">
+    <link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/privacy/">
+    <link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/privacy/">
+    <link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/privacy/">
+    <link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/privacy/">
+    <link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/privacy/">
+    <link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/privacy/">
+    <link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/privacy/">
+    <link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/privacy/">
+    <link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/privacy/">
+    <link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/privacy/">
+    <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/privacy/">
+    <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/privacy/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/privacidad.html">
-    <link rel="stylesheet" href="styles.css?v=6.7">
+    <link rel="stylesheet" href="styles.css?v=6.8">
 <script src="main.js?v=5.4" defer></script>
 
     <script type="application/ld+json">
@@ -44,6 +91,27 @@
       }
     }
     </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var sel = document.getElementById('legalLangSelect');
+    if (!sel) return;
+    function sync() {
+        var es = document.documentElement.lang === 'es';
+        sel.value = es ? 'es' : 'en';
+        sel.setAttribute('aria-label', es ? 'Idioma' : 'Language');
+        sel.title = es ? 'Idioma' : 'Language';
+    }
+    var orig = window.setLang;
+    window.setLang = function (l) { orig(l); sync(); };
+    sel.addEventListener('change', function () {
+        var v = sel.value;
+        if (v === 'en' || v === 'es') { window.setLang(v); }
+        else { window.location.href = '/' + v + '/' + sel.getAttribute('data-seg') + '/'; }
+    });
+    window.addEventListener('pageshow', sync);
+    sync();
+});
+</script>
 </head>
 <body>
 
@@ -78,6 +146,7 @@
         <div class="nav-controls">
             <button class="nav-theme-btn" aria-label="Toggle theme">☾</button>
             <button type="button" class="nav-lang-btn" data-en="ES" data-es="EN" onclick="setLang(document.documentElement.lang === 'es' ? 'en' : 'es')">ES</button>
+            <select class="nav-lang-select" id="legalLangSelect" aria-label="Language" title="Language" data-seg="privacy"><option value="en">English</option><option value="es">Español</option><option value="ar" lang="ar">العربية</option><option value="bg" lang="bg">Български</option><option value="bn" lang="bn">বাংলা</option><option value="ca" lang="ca">Català</option><option value="cs" lang="cs">Čeština</option><option value="da" lang="da">Dansk</option><option value="de" lang="de">Deutsch</option><option value="el" lang="el">Ελληνικά</option><option value="et" lang="et">Eesti</option><option value="fa" lang="fa">فارسی</option><option value="fi" lang="fi">Suomi</option><option value="fr" lang="fr">Français</option><option value="gu" lang="gu">ગુજરાતી</option><option value="he" lang="he">עברית</option><option value="hi" lang="hi">हिन्दी</option><option value="hr" lang="hr">Hrvatski</option><option value="hu" lang="hu">Magyar</option><option value="id" lang="id">Bahasa Indonesia</option><option value="is" lang="is">Íslenska</option><option value="it" lang="it">Italiano</option><option value="ja" lang="ja">日本語</option><option value="kn" lang="kn">ಕನ್ನಡ</option><option value="ko" lang="ko">한국어</option><option value="lt" lang="lt">Lietuvių</option><option value="lv" lang="lv">Latviešu</option><option value="ml" lang="ml">മലയാളം</option><option value="mr" lang="mr">मराठी</option><option value="nl" lang="nl">Nederlands</option><option value="no" lang="no">Norsk</option><option value="pa" lang="pa">ਪੰਜਾਬੀ</option><option value="pl" lang="pl">Polski</option><option value="pt" lang="pt-PT">Português (Portugal)</option><option value="pt-br" lang="pt-BR">Português (Brasil)</option><option value="ro" lang="ro">Română</option><option value="ru" lang="ru">Русский</option><option value="sk" lang="sk">Slovenčina</option><option value="sl" lang="sl">Slovenščina</option><option value="sv" lang="sv">Svenska</option><option value="sw" lang="sw">Kiswahili</option><option value="ta" lang="ta">தமிழ்</option><option value="te" lang="te">తెలుగు</option><option value="tr" lang="tr">Türkçe</option><option value="uk" lang="uk">Українська</option><option value="ur" lang="ur">اردو</option><option value="vi" lang="vi">Tiếng Việt</option><option value="zh-cn" lang="zh-CN">简体中文</option><option value="zu" lang="zu">isiZulu</option></select>
             <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
                 <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
                 <span data-en="Download" data-es="Descargar">Download</span>
