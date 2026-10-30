@@ -97,6 +97,24 @@
         });
     }
 
+    // ─── NAV FIT ───
+    // La barra no cabe igual en todos los idiomas: si desborda, los botones de tienda se quedan
+    // en icono (nav-compact) y, si aun asi no cabe, pasa al menu hamburguesa (nav-collapsed).
+    var navInner = document.querySelector('.nav-inner');
+    if (navInner) {
+        var navEl = navInner.closest('nav') || navInner;
+        var overflows = function () { return navInner.scrollWidth > navInner.clientWidth + 1; };
+        var fitNav = function () {
+            navEl.classList.remove('nav-compact', 'nav-collapsed');
+            if (overflows()) navEl.classList.add('nav-compact');
+            if (overflows()) navEl.classList.add('nav-collapsed');
+        };
+        fitNav();
+        window.addEventListener('resize', fitNav);
+        window.addEventListener('load', fitNav);
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitNav);
+    }
+
     // ─── THEME TOGGLE ───
     var themeBtn = document.querySelector('.nav-theme-btn');
     if (themeBtn) {

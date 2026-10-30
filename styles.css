@@ -164,7 +164,7 @@ html.promo-dismissed .nav-bar { top: 0; }
     }
 }
 .nav-inner {
-    max-width: 1100px;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 8px 20px;
     display: flex;
@@ -216,6 +216,25 @@ html.promo-dismissed .nav-bar { top: 0; }
 }
 .nav-cta:hover { filter: brightness(1.1); text-decoration: none; }
 .nav-cta svg { width: 14px; height: 14px; fill: currentColor; }
+/* main.js (NAV FIT) pone estas clases cuando la barra no cabe en el idioma y anchura actuales */
+.nav-compact .nav-cta { font-size: 0; gap: 0; padding: 8px; }
+.nav-compact .nav-cta svg { width: 16px; height: 16px; }
+.nav-collapsed .nav-pills { display: none; }
+.nav-collapsed .nav-pills.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    padding: 8px;
+    gap: 2px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+.nav-collapsed .nav-pills.open a { padding: 10px 16px; }
+.nav-collapsed .nav-hamburger { display: block; }
 .nav-controls { display: flex; align-items: center; gap: 8px; }
 .nav-theme-btn, .nav-lang-btn {
     background: none;
