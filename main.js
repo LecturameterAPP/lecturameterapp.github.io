@@ -648,43 +648,6 @@
         setStatus(lang === 'en' ? 'Opening your email app… if nothing happens, write directly to lecturameter.app@gmail.com.' : 'Abriendo tu cliente de email… si no pasa nada, escríbenos directamente a lecturameter.app@gmail.com.', true);
     };
 
-    // ─── iOS WAITLIST (mailto MVP + captcha) ───
-    (function () {
-        var q = document.querySelector('.ios-captcha-question');
-        if (q) {
-            var a = 1 + Math.floor(Math.random() * 8);
-            var b = 1 + Math.floor(Math.random() * 8);
-            q.textContent = a + ' + ' + b + ' = ?';
-            q.dataset.expected = String(a + b);
-        }
-    })();
-    window.submitIosWaitlist = function (e, lang) {
-        e.preventDefault();
-        var form = e.target;
-        var email = (form.email.value || '').trim();
-        var name = (form.name.value || '').trim();
-        var status = form.querySelector('.ios-status');
-        var capQ = form.querySelector('.ios-captcha-question');
-        var capI = form.querySelector('.ios-captcha-input');
-        function fail(msg) { if (status) { status.textContent = msg; status.className = 'ios-status err'; } return false; }
-        if (!email || email.indexOf('@') < 1) return fail(lang === 'en' ? 'Please enter a valid email.' : 'Introduce un email válido.');
-        if (capQ && capI) {
-            var expected = parseInt(capQ.dataset.expected || '-1', 10);
-            var given = parseInt((capI.value || '').trim(), 10);
-            if (isNaN(given) || given !== expected) return fail(lang === 'en' ? 'Captcha wrong, try again.' : 'Captcha incorrecto, prueba otra vez.');
-        }
-        var subject = 'iOS waitlist';
-        var body = 'Email: ' + email + '\n' + (name ? 'Name: ' + name + '\n' : '') + '\n(Sent from lecturameterapp.github.io)';
-        window.location.href = 'mailto:lecturameter.app@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-        if (status) {
-            status.textContent = lang === 'en'
-                ? 'Opening your email app… if nothing happens, write directly to lecturameter.app@gmail.com.'
-                : 'Abriendo tu cliente de email… si no pasa nada, escríbenos directamente a lecturameter.app@gmail.com.';
-            status.className = 'ios-status ok';
-        }
-        return false;
-    };
-
     // ─── PAGI STAR EYE TRACKING (only while in neutral state) ───
     (function () {
         if (!window.matchMedia('(pointer: fine)').matches) return;

@@ -656,7 +656,9 @@
             <div class="pagi-lago" data-state="neutro" role="button" tabindex="0" aria-label="{{home.ios.pagi_lago.aria-label}}"></div>
             <div class="ios-waitlist">
                 <a class="btn" href="{{ios_url}}" target="_blank" rel="noopener">{{home.ios.try_the_testflight_beta}}</a>
+{{#unless ios_live}}
                 <p class="ios-note">{{home.ios.if_it_won_t_install}} <a href="{{home.ios.mailto_lecturameter_app_gmail_com.href}}">{{home.ios.lecturameter_app_gmail_com}}</a>.</p>
+{{/unless}}
                 <p class="ios-status" role="status" aria-live="polite"></p>
             </div>
         </div>

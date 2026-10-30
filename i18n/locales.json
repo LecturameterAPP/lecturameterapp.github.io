@@ -7,8 +7,8 @@
     "3.8",
     "3.9"
   ],
-  "ios_live": false,
-  "app_store_url": "",
+  "ios_live": true,
+  "app_store_url": "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711",
   "testflight_url": "https://testflight.apple.com/join/WAkrkgPq",
   "screenshots": {
     "3.8": {
