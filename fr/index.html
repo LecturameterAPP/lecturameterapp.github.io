@@ -193,8 +193,8 @@
         {"@type":"Question","name":"Est-ce que ça marche hors ligne ?","acceptedAnswer":{"@type":"Answer","text":"Presque tout marche hors ligne. Tu n'as besoin d'une connexion que pour chercher de nouveaux livres et envoyer tes sauvegardes sur Google Drive."}},
         {"@type":"Question","name":"Y a-t-il une version iPhone ?","acceptedAnswer":{"@type":"Answer","text":"Oui : tu peux la télécharger dès maintenant sur l'App Store."}},
         {"@type":"Question","name":"Puis-je essayer avant d'acheter ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Il y a un essai gratuit de 7 jours des fonctionnalités Pro, sans carte. Sur iPhone, c'est un achat intégré gratuit de l'App Store, lié à ton identifiant Apple. Sur Android, à la fin de l'essai, même si tu n'achètes pas Pro, tu reçois un thème Pro gratuit de ton choix."}},
-        {"@type":"Question","name":"Que devient mon Pro si je change de téléphone ?","acceptedAnswer":{"@type":"Answer","text":"Ça dépend d'où tu l'as acheté. Si tu l'as acheté sur Google Play et que tu passes à un autre Android avec le même compte Google, installe Lecturameter et appuie sur Restaurer l'achat dans les Paramètres. Si tu l'as acheté sur l'App Store et que tu passes à un autre iPhone avec le même identifiant Apple, pareil : installe et appuie sur Restaurer l'achat. Pour passer d'Android à iPhone dans un sens comme dans l'autre, utilise un code de transfert : sur ton téléphone actuel, dans les Paramètres de Lecturameter, Associer un appareil, obtiens un code temporaire, saisis-le sur le nouvel appareil et Pro s'y active aussi. Les codes lm-... ne peuvent être utilisés que sur Android. Si tu vends ou perds l'ancien appareil, tu peux le révoquer depuis le même écran."}},
-        {"@type":"Question","name":"Puis-je transférer mon Pro entre téléphones et entre iOS et Android ?","acceptedAnswer":{"@type":"Answer","text":"Oui, entre Android et iPhone, dans les deux sens. Ça se fait avec un code de transfert généré dans l'appli, dans les Paramètres. Entre deux téléphones de la même plateforme, pas besoin : utilise Restaurer l'achat avec ton compte Google ou ton identifiant Apple."}}
+        {"@type":"Question","name":"Que devient mon Pro si je change de téléphone ?","acceptedAnswer":{"@type":"Answer","text":"Ça dépend d'où tu l'as acheté. Si tu l'as acheté sur Google Play et que tu passes à un autre Android avec le même compte Google, installe Lecturameter et appuie sur Restaurer l'achat dans les Paramètres. Si tu l'as acheté sur l'App Store et que tu passes à un autre iPhone avec le même identifiant Apple, pareil : installe et appuie sur Restaurer l'achat. Pour le moment, Pro ne passe pas d'Android à iPhone ni l'inverse : chaque achat reste sur sa plateforme. lm-... ne peuvent être utilisés que sur Android."}},
+        {"@type":"Question","name":"Puis-je transférer mon Pro entre téléphones et entre iOS et Android ?","acceptedAnswer":{"@type":"Answer","text":"Entre Android et iPhone, pas pour le moment : chaque achat reste sur sa plateforme. On regarde si c'est possible d'une manière ou d'une autre. Entre deux téléphones de la même plateforme, oui : utilise Restaurer l'achat avec ton compte Google ou ton identifiant Apple."}}
       ]
     }
     </script>
@@ -231,7 +231,7 @@
             <li><a href="#whatsnew">Notes de mise à jour</a></li>
             <li><a href="#history">Historique</a></li>
             <li><a href="#roadmap">Feuille de route</a></li>
-            <li><a href="#ios">iOS</a></li>
+            <li><a href="#ios-differences">iOS</a></li>
             <li><a href="./lecturameter-1999/">1999</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="./blog/">Blog</a></li>
@@ -298,8 +298,12 @@
                     </div>
                 </div>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="Disponible sur Google Play">
                 <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                Télécharger
+            </a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="Télécharger dans l'App Store">
+                <svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                 Télécharger
             </a>
         </div>
@@ -862,23 +866,6 @@
     </div>
 </section>
 
-<!-- 7.5 iOS WAITLIST -->
-<section class="band band-alt ios-band" id="ios">
-    <div class="container">
-        <div class="section-head">
-            <h2>Essaie-la sur iPhone</h2>
-            <p class="section-sub">Lecturameter pour iPhone est maintenant disponible sur l'App Store.</p>
-        </div>
-        <div class="ios-hero">
-            <div class="pagi-lago" data-state="neutro" role="button" tabindex="0" aria-label="Pagi Lac"></div>
-            <div class="ios-waitlist">
-                <a class="btn" href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">Télécharger dans l'App Store</a>
-                <p class="ios-status" role="status" aria-live="polite"></p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- 7.6 iOS DIFFERENCES -->
 <section class="band band-alt differences" id="ios-differences" aria-labelledby="differences-title">
     <div class="container">
@@ -903,7 +890,8 @@
                         <li>Configuration et épinglage des widgets.</li>
                         <li>Tablettes (la version iPhone ne fonctionne pas sur iPad).</li>
                         <li>Utilisation des codes <code>lm-…</code>.</li>
-                        <li>Dons externes.</li>
+                        <li>Un thème et une icône Pro offerts à la fin de l'essai.</li>
+                        <li>Pourboires et dons.</li>
                     </ul>
                 </div>
                 <div>
@@ -912,7 +900,6 @@
                         <li>Widgets Livre, Statistiques, Défis et Bingo.</li>
                         <li>Sélecteur de langue complet.</li>
                         <li>Mode paysage sur les téléphones.</li>
-                        <li>Un thème et une icône Pro offerts à la fin de l'essai.</li>
                         <li>Sauvegarde sur Google Drive.</li>
                         <li>Synchronisation avec liseuse (KOSync).</li>
                     </ul>
@@ -922,20 +909,9 @@
                     <ul>
                         <li>Sur iPhone, Pro est un achat intégré de l'App Store. Sur Android, c'est un achat Google Play.</li>
                         <li>L'essai de 7 jours sur iPhone est un achat intégré gratuit de l'App Store, lié à ton identifiant Apple.</li>
-                        <li>Pour transférer Pro entre Android et iPhone, tu utilises un code de transfert, généré depuis les <strong>Paramètres</strong>. Ça ne marche pas entre deux téléphones de la même plateforme : là, utilise Restaurer l'achat.</li>
+                        <li>Pour le moment, Pro ne passe pas d'Android à iPhone ni l'inverse : chaque achat reste sur sa plateforme.</li>
                     </ul>
                 </div>
-            </div>
-        </details>
-
-        <details class="differences-details ios-first-demo" style="margin-top:16px;">
-            <summary>Première démo de Lecturameter sur iPhone</summary>
-            <div style="padding:1.25rem; border-top:1px solid rgba(128,128,128,0.15);">
-                <p style="text-align:center; max-width:640px; margin:0 auto 20px; color:var(--muted);">Enregistré le 20 septembre 2026, pendant la bêta iOS.</p>
-                <video controls preload="metadata" playsinline style="display:block; max-width:360px; width:100%; margin:0 auto; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.2);">
-                    <source src="../videos/ios-first-demo.mp4" type="video/mp4">
-                    Ton navigateur ne prend pas en charge la lecture vidéo.
-                </video>
             </div>
         </details>
     </div>
@@ -984,11 +960,11 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">Que devient mon Pro si je change de téléphone ?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ça dépend d'où tu l'as acheté. Si tu l'as acheté sur <strong>Google Play</strong> et que tu passes à un autre Android avec le même compte Google, installe Lecturameter et appuie sur <strong>Restaurer l'achat</strong> dans les Paramètres. Si tu l'as acheté sur l'<strong>App Store</strong> et que tu passes à un autre iPhone avec le même identifiant Apple, pareil : installe et appuie sur <strong>Restaurer l'achat</strong>. Pour passer d'Android à iPhone dans un sens comme dans l'autre, utilise un <strong>code de transfert</strong> : sur ton téléphone actuel, dans les Paramètres de Lecturameter, <strong>Associer un appareil</strong>, obtiens un code temporaire, saisis-le sur le nouvel appareil et Pro s'y active aussi. <code>lm-…</code> ne peuvent être utilisés que sur Android. Si tu vends ou perds l'ancien appareil, tu peux le révoquer depuis le même écran. Plus de détails dans <a href="../activar-pro.html">Comment activer Pro</a>.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Ça dépend d'où tu l'as acheté. Si tu l'as acheté sur <strong>Google Play</strong> et que tu passes à un autre Android avec le même compte Google, installe Lecturameter et appuie sur <strong>Restaurer l'achat</strong> dans les Paramètres. Si tu l'as acheté sur l'<strong>App Store</strong> et que tu passes à un autre iPhone avec le même identifiant Apple, pareil : installe et appuie sur <strong>Restaurer l'achat</strong>. Pour le moment, Pro ne passe pas d'Android à iPhone ni l'inverse : chaque achat reste sur sa plateforme. <code>lm-…</code> ne peuvent être utilisés que sur Android. Plus de détails dans <a href="../activar-pro.html">Comment activer Pro</a>.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Puis-je transférer mon Pro entre téléphones et entre iOS et Android ?</button>
-                <div class="faq-a"><div class="faq-a-inner">Oui, entre Android et iPhone, dans les deux sens. Ça se fait avec un code de transfert généré dans l'appli, dans les <strong>Paramètres</strong>. Entre deux téléphones de la même plateforme, pas besoin : utilise Restaurer l'achat avec ton compte Google ou ton identifiant Apple.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Entre Android et iPhone, pas pour le moment : chaque achat reste sur sa plateforme. On regarde si c'est possible d'une manière ou d'une autre. Entre deux téléphones de la même plateforme, oui : utilise <strong>Restaurer l'achat</strong> avec ton compte Google ou ton identifiant Apple.</div></div>
             </div>
         </div>
     </div>
@@ -1120,6 +1096,7 @@
         <div class="footer-cta">
             <h3>Commence à suivre tes lectures pour de vrai.</h3>
             <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Disponible sur Google Play</a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="btn">Télécharger dans l'App Store</a>
         </div>
 
         <div class="footer-grid">
@@ -1153,6 +1130,9 @@
                 <div class="footer-social">
                     <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" aria-label="Google Play">
                         <svg viewBox="0 0 24 24"><path d="M1 2.571C1 1.804 1.459 1.2 2.144.988L12.233 12 2.144 23.012C1.46 22.8 1 22.196 1 21.429V2.571z" fill="#4285F4"/><path d="M2.144 23.012L14.396 12l3.167 3.096L5.07 22.47a2.325 2.325 0 01-2.926.542z" fill="#EA4335"/><path d="M22.14 10.693l-4.578 2.636L14.396 12l3.166-3.096 4.578 2.636c.86.495.86 1.658 0 2.153z" fill="#FBBC04"/><path d="M2.144.988A2.325 2.325 0 015.07 1.53l12.492 7.374L14.396 12 2.144.988z" fill="#34A853"/></svg>
+                    </a>
+                    <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" aria-label="App Store">
+                        <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                     </a>
                     <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" aria-label="X / Twitter">
                         <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
@@ -1194,7 +1174,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi t'applaudit !", "Brille, petite étoile !", "Chut, je lis.", "Pagi te surveille…"], "pagi_angry": ["Aïe ! Ça fait mal !", "Assez de clics !", "Grr, laisse-moi tranquille.", "Ce n'est plus drôle."], "lago_happy": ["Plus de lecteurs à rencontrer !", "Prépare tes AirPods !", "On se retrouve sur l'App Store."], "lago_angry": ["Tu ne m'emmènes pas là-bas…", "Je préfère Android.", "Je refuse de changer de camp.", "Ne me mets PAS dans une boîte."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi t'applaudit !", "Brille, petite étoile !", "Chut, je lis.", "Pagi te surveille…"], "pagi_angry": ["Aïe ! Ça fait mal !", "Assez de clics !", "Grr, laisse-moi tranquille.", "Ce n'est plus drôle."]}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

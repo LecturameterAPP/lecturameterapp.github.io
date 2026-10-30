@@ -135,7 +135,7 @@
             {{#if has_roadmap}}
             <li><a href="#roadmap">{{common.nav.roadmap}}</a></li>
 {{/if}}
-            <li><a href="#ios">{{common.nav.ios}}</a></li>
+            <li><a href="#{{anchor.ios_differences}}">{{common.nav.ios}}</a></li>
             <li><a href="{{link_1999}}">1999</a></li>
             <li><a href="#faq">{{common.nav.faq}}</a></li>
             <li><a href="{{link_blog}}">{{common.nav.blog}}</a></li>
@@ -143,8 +143,12 @@
         <div class="nav-controls">
             <button class="nav-theme-btn" aria-label="{{common.nav.toggle_theme.aria-label}}">☾</button>
             {{lang_picker}}
-            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="{{common.nav.download_google_play.aria-label}}">
                 <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                {{common.nav.download}}
+            </a>
+            <a href="{{ios_url}}" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="{{common.nav.download_app_store.aria-label}}">
+                <svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                 {{common.nav.download}}
             </a>
         </div>
@@ -645,26 +649,6 @@
 </section>
 
 {{/if}}
-<!-- 7.5 iOS WAITLIST -->
-<section class="band band-alt ios-band" id="ios">
-    <div class="container">
-        <div class="section-head">
-            <h2>{{home.ios.try_it_on_iphone}}</h2>
-            <p class="section-sub">{{home.ios.lecturameter_for_iphone_is_now}}</p>
-        </div>
-        <div class="ios-hero">
-            <div class="pagi-lago" data-state="neutro" role="button" tabindex="0" aria-label="{{home.ios.pagi_lago.aria-label}}"></div>
-            <div class="ios-waitlist">
-                <a class="btn" href="{{ios_url}}" target="_blank" rel="noopener">{{home.ios.try_the_testflight_beta}}</a>
-{{#unless ios_live}}
-                <p class="ios-note">{{home.ios.if_it_won_t_install}} <a href="{{home.ios.mailto_lecturameter_app_gmail_com.href}}">{{home.ios.lecturameter_app_gmail_com}}</a>.</p>
-{{/unless}}
-                <p class="ios-status" role="status" aria-live="polite"></p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- 7.6 iOS DIFFERENCES -->
 <section class="band band-alt differences" id="{{anchor.ios_differences}}" aria-labelledby="differences-title">
     <div class="container">
@@ -689,6 +673,7 @@
                         <li>{{home.ios_differences.widget_configuration_and_pinning}}</li>
                         <li>{{home.ios_differences.landscape_mode_and_tablets}}</li>
                         <li>{{home.ios_differences.redeeming}} <code>lm-…</code>{{home.ios_differences.codes}}</li>
+                        <li>{{home.ios_differences.free_pro_theme_at_the}}</li>
                         <li>{{home.ios_differences.external_donations}}</li>
                     </ul>
                 </div>
@@ -698,7 +683,6 @@
                         <li>{{home.ios_differences.book_statistics_challenges_and_bin}}</li>
                         <li>{{home.ios_differences.full_language_selector}}</li>
                         <li>{{home.ios_differences.landscape_mode_on_phones}}</li>
-                        <li>{{home.ios_differences.free_pro_theme_at_the}}</li>
                         <li>{{home.ios_differences.google_drive_backup}}</li>
                         <li>{{home.ios_differences.e_reader_sync_kosync}}</li>
                     </ul>
@@ -711,17 +695,6 @@
                         <li>{{home.ios_differences.to_move_pro_between_android}}</li>
                     </ul>
                 </div>
-            </div>
-        </details>
-
-        <details class="differences-details ios-first-demo" style="margin-top:16px;">
-            <summary>{{home.ios_differences.first_demo_of_lecturameter_on}}</summary>
-            <div style="padding:1.25rem; border-top:1px solid rgba(128,128,128,0.15);">
-                <p style="text-align:center; max-width:640px; margin:0 auto 20px; color:var(--muted);">{{home.ios_differences.this_was_recorded_on_september}}</p>
-                <video controls preload="metadata" playsinline style="display:block; max-width:360px; width:100%; margin:0 auto; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.2);">
-                    <source src="{{root}}videos/ios-first-demo.mp4" type="video/mp4">
-                    {{home.ios_differences.your_browser_does_not_support}}
-                </video>
             </div>
         </details>
     </div>
@@ -839,6 +812,7 @@
         <div class="footer-cta">
             <h3>{{common.footer.start_tracking_your_reading_for}}</h3>
             <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">{{common.footer.get_on_google_play}}</a>
+            <a href="{{ios_url}}" target="_blank" rel="noopener" class="btn">{{home.home.try_on_iphone}}</a>
         </div>
 
         <div class="footer-grid">
@@ -874,6 +848,9 @@
                 <div class="footer-social">
                     <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" aria-label="{{common.footer.google_play.aria-label}}">
                         <svg viewBox="0 0 24 24"><path d="M1 2.571C1 1.804 1.459 1.2 2.144.988L12.233 12 2.144 23.012C1.46 22.8 1 22.196 1 21.429V2.571z" fill="#4285F4"/><path d="M2.144 23.012L14.396 12l3.167 3.096L5.07 22.47a2.325 2.325 0 01-2.926.542z" fill="#EA4335"/><path d="M22.14 10.693l-4.578 2.636L14.396 12l3.166-3.096 4.578 2.636c.86.495.86 1.658 0 2.153z" fill="#FBBC04"/><path d="M2.144.988A2.325 2.325 0 015.07 1.53l12.492 7.374L14.396 12 2.144.988z" fill="#34A853"/></svg>
+                    </a>
+                    <a href="{{ios_url}}" target="_blank" rel="noopener" aria-label="{{common.footer.app_store.aria-label}}">
+                        <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                     </a>
                     <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" aria-label="{{common.footer.x_twitter.aria-label}}">
                         <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>

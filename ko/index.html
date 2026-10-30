@@ -193,8 +193,8 @@
         {"@type":"Question","name":"오프라인에서도 되나요?","acceptedAnswer":{"@type":"Answer","text":"거의 모든 기능이 오프라인에서 작동해요. 새 책을 검색하거나 Google Drive에 백업을 올릴 때만 인터넷이 필요해요."}},
         {"@type":"Question","name":"iPhone 버전이 있나요?","acceptedAnswer":{"@type":"Answer","text":"네, 지금 App Store에서 다운로드할 수 있어요."}},
         {"@type":"Question","name":"구매 전에 사용해 볼 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"네. 카드 등록 없이 Pro 기능을 7일간 무료로 체험할 수 있어요. iPhone에서는 Apple ID에 연결된 App Store 무료 인앱 구매예요. Android에서는 체험이 끝나면 Pro를 사지 않아도 원하는 Pro 테마 하나를 무료로 드려요."}},
-        {"@type":"Question","name":"휴대폰을 바꾸면 Pro는 어떻게 되나요?","acceptedAnswer":{"@type":"Answer","text":"어디서 구매했는지에 따라 달라요. Google Play에서 구매하고 같은 Google 계정으로 다른 Android로 바꾼다면, Lecturameter를 설치하고 설정에서 구매 복원을 누르세요. App Store에서 구매하고 같은 Apple ID로 다른 iPhone으로 바꾼다면 마찬가지로 설치하고 구매 복원을 누르면 돼요. Android와 iPhone 사이를 어느 방향으로든 옮기려면 이전 코드를 사용하세요. 지금 휴대폰의 Lecturameter 설정에서 기기 연결을 눌러 임시 코드를 받고, 새 기기에 입력하면 거기서도 활성화돼요. lm-... 코드는 Android에서만 사용할 수 있어요. 예전 기기를 팔거나 잃어버렸다면 같은 화면에서 연결을 해제할 수 있어요."}},
-        {"@type":"Question","name":"휴대폰 간, iOS와 Android 간에 Pro를 옮길 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"네, Android와 iPhone 사이에서 어느 방향으로든 가능해요. 앱 안의 설정에서 만드는 이전 코드로 옮겨요. 같은 플랫폼의 두 휴대폰 사이에서는 필요 없어요. Google 계정이나 Apple ID로 구매 복원을 사용하세요."}}
+        {"@type":"Question","name":"휴대폰을 바꾸면 Pro는 어떻게 되나요?","acceptedAnswer":{"@type":"Answer","text":"어디서 구매했는지에 따라 달라요. Google Play에서 구매하고 같은 Google 계정으로 다른 Android로 바꾼다면, Lecturameter를 설치하고 설정에서 구매 복원을 누르세요. App Store에서 구매하고 같은 Apple ID로 다른 iPhone으로 바꾼다면 마찬가지로 설치하고 구매 복원을 누르면 돼요. 당분간 Pro는 Android와 iPhone 사이를 옮겨 가지 않아요. 구매는 각자의 플랫폼에 그대로 남아요. lm-... 코드는 Android에서만 사용할 수 있어요."}},
+        {"@type":"Question","name":"휴대폰 간, iOS와 Android 간에 Pro를 옮길 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"Android와 iPhone 사이에서는 아직 안 돼요. 구매는 각자의 플랫폼에 그대로 남아요. 어떻게든 할 수 있는지 살펴보고 있어요. 같은 플랫폼의 두 휴대폰 사이에서는 돼요. Google 계정이나 Apple ID로 구매 복원을 사용하세요."}}
       ]
     }
     </script>
@@ -231,7 +231,7 @@
             <li><a href="#whatsnew">패치 노트</a></li>
             <li><a href="#history">기록</a></li>
             <li><a href="#roadmap">로드맵</a></li>
-            <li><a href="#ios">iOS</a></li>
+            <li><a href="#ios-differences">iOS</a></li>
             <li><a href="./lecturameter-1999/">1999</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="./blog/">블로그</a></li>
@@ -298,8 +298,12 @@
                     </div>
                 </div>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="Google Play에서 받기">
                 <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                다운로드
+            </a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="App Store에서 다운로드">
+                <svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                 다운로드
             </a>
         </div>
@@ -862,23 +866,6 @@
     </div>
 </section>
 
-<!-- 7.5 iOS WAITLIST -->
-<section class="band band-alt ios-band" id="ios">
-    <div class="container">
-        <div class="section-head">
-            <h2>iPhone에서 사용해 보세요</h2>
-            <p class="section-sub">이제 App Store에서 iPhone용 Lecturameter를 받을 수 있어요.</p>
-        </div>
-        <div class="ios-hero">
-            <div class="pagi-lago" data-state="neutro" role="button" tabindex="0" aria-label="호수 Pagi"></div>
-            <div class="ios-waitlist">
-                <a class="btn" href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store에서 다운로드</a>
-                <p class="ios-status" role="status" aria-live="polite"></p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- 7.6 iOS DIFFERENCES -->
 <section class="band band-alt differences" id="ios-differences" aria-labelledby="differences-title">
     <div class="container">
@@ -903,7 +890,8 @@
                         <li>위젯 설정과 고정.</li>
                         <li>태블릿 (iPhone 버전은 iPad에서 실행되지 않아요).</li>
                         <li>코드 사용 <code>lm-…</code>.</li>
-                        <li>외부 후원.</li>
+                        <li>체험이 끝나면 Pro 테마와 아이콘을 선물로 드려요.</li>
+                        <li>팁과 후원.</li>
                     </ul>
                 </div>
                 <div>
@@ -912,7 +900,6 @@
                         <li>책, 통계, 챌린지, Bingo 위젯.</li>
                         <li>전체 언어 선택.</li>
                         <li>휴대폰 가로 모드.</li>
-                        <li>체험이 끝나면 Pro 테마와 아이콘을 선물로 드려요.</li>
                         <li>Google Drive 백업.</li>
                         <li>전자책 리더 동기화(KOSync).</li>
                     </ul>
@@ -922,20 +909,9 @@
                     <ul>
                         <li>iPhone에서는 Pro가 App Store 인앱 구매이고, Android에서는 Google Play 구매예요.</li>
                         <li>iPhone의 7일 체험은 Apple ID에 연결된 App Store 무료 인앱 구매예요.</li>
-                        <li>Android와 iPhone 간에 Pro를 옮기려면 <strong>설정</strong>에서 만드는 이전 코드를 사용하세요. 같은 플랫폼의 두 휴대폰 사이에서는 작동하지 않아요. 그럴 때는 구매 복원을 사용하세요.</li>
+                        <li>당분간 Pro는 Android와 iPhone 사이를 옮겨 가지 않아요. 구매는 각자의 플랫폼에 그대로 남아요.</li>
                     </ul>
                 </div>
-            </div>
-        </details>
-
-        <details class="differences-details ios-first-demo" style="margin-top:16px;">
-            <summary>iPhone용 Lecturameter 첫 데모</summary>
-            <div style="padding:1.25rem; border-top:1px solid rgba(128,128,128,0.15);">
-                <p style="text-align:center; max-width:640px; margin:0 auto 20px; color:var(--muted);">2026년 9월 20일, iOS 베타 기간에 녹화했어요.</p>
-                <video controls preload="metadata" playsinline style="display:block; max-width:360px; width:100%; margin:0 auto; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.2);">
-                    <source src="../videos/ios-first-demo.mp4" type="video/mp4">
-                    브라우저가 동영상 재생을 지원하지 않아요.
-                </video>
             </div>
         </details>
     </div>
@@ -984,11 +960,11 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">휴대폰을 바꾸면 Pro는 어떻게 되나요?</button>
-                <div class="faq-a"><div class="faq-a-inner">어디서 구매했는지에 따라 달라요. <strong>Google Play</strong>에서 구매하고 같은 Google 계정으로 다른 Android로 바꾼다면, Lecturameter를 설치하고 설정에서 <strong>구매 복원</strong>을 누르세요. <strong>App Store</strong>에서 구매하고 같은 Apple ID로 다른 iPhone으로 바꾼다면 마찬가지로 설치하고 <strong>구매 복원</strong>을 누르면 돼요. Android와 iPhone 사이를 어느 방향으로든 옮기려면 <strong>이전 코드</strong>를 사용하세요. 지금 휴대폰의 Lecturameter 설정에서 <strong>기기 연결</strong>을 눌러 임시 코드를 받고, 새 기기에 입력하면 거기서도 활성화돼요. <code>lm-…</code> 코드는 Android에서만 사용할 수 있어요. 예전 기기를 팔거나 잃어버렸다면 같은 화면에서 연결을 해제할 수 있어요. 자세한 내용: <a href="../activar-pro.html">Pro 활성화 방법</a>.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">어디서 구매했는지에 따라 달라요. <strong>Google Play</strong>에서 구매하고 같은 Google 계정으로 다른 Android로 바꾼다면, Lecturameter를 설치하고 설정에서 <strong>구매 복원</strong>을 누르세요. <strong>App Store</strong>에서 구매하고 같은 Apple ID로 다른 iPhone으로 바꾼다면 마찬가지로 설치하고 <strong>구매 복원</strong>을 누르면 돼요. 당분간 Pro는 Android와 iPhone 사이를 옮겨 가지 않아요. 구매는 각자의 플랫폼에 그대로 남아요. <code>lm-…</code> 코드는 Android에서만 사용할 수 있어요. 자세한 내용: <a href="../activar-pro.html">Pro 활성화 방법</a>.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">휴대폰 간, iOS와 Android 간에 Pro를 옮길 수 있나요?</button>
-                <div class="faq-a"><div class="faq-a-inner">네, Android와 iPhone 사이에서 어느 방향으로든 가능해요. 앱 안의 <strong>설정</strong>에서 만드는 이전 코드로 옮겨요. 같은 플랫폼의 두 휴대폰 사이에서는 필요 없어요. Google 계정이나 Apple ID로 구매 복원을 사용하세요.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Android와 iPhone 사이에서는 아직 안 돼요. 구매는 각자의 플랫폼에 그대로 남아요. 어떻게든 할 수 있는지 살펴보고 있어요. 같은 플랫폼의 두 휴대폰 사이에서는 돼요. Google 계정이나 Apple ID로 <strong>구매 복원</strong>을 사용하세요.</div></div>
             </div>
         </div>
     </div>
@@ -1120,6 +1096,7 @@
         <div class="footer-cta">
             <h3>이제 제대로 독서를 기록해 보세요.</h3>
             <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Google Play에서 받기</a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="btn">App Store에서 다운로드</a>
         </div>
 
         <div class="footer-grid">
@@ -1153,6 +1130,9 @@
                 <div class="footer-social">
                     <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" aria-label="Google Play">
                         <svg viewBox="0 0 24 24"><path d="M1 2.571C1 1.804 1.459 1.2 2.144.988L12.233 12 2.144 23.012C1.46 22.8 1 22.196 1 21.429V2.571z" fill="#4285F4"/><path d="M2.144 23.012L14.396 12l3.167 3.096L5.07 22.47a2.325 2.325 0 01-2.926.542z" fill="#EA4335"/><path d="M22.14 10.693l-4.578 2.636L14.396 12l3.166-3.096 4.578 2.636c.86.495.86 1.658 0 2.153z" fill="#FBBC04"/><path d="M2.144.988A2.325 2.325 0 015.07 1.53l12.492 7.374L14.396 12 2.144.988z" fill="#34A853"/></svg>
+                    </a>
+                    <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" aria-label="App Store">
+                        <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                     </a>
                     <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" aria-label="X / Twitter">
                         <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
@@ -1194,7 +1174,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi가 박수 쳐 줄게요!", "반짝반짝, 작은 별!", "쉿, 책 읽는 중이에요.", "Pagi가 지켜보고 있어요…"], "pagi_angry": ["아야! 아프잖아요!", "그만 좀 눌러요!", "으르릉, 날 좀 내버려 둬요.", "이제 하나도 안 웃겨요."], "lago_happy": ["더 많은 독자를 만날 거예요!", "AirPods 준비하세요!", "App Store에서 만나요."], "lago_angry": ["나 거기 안 데려갈 거죠…", "난 Android가 더 좋아요.", "담 넘어가긴 싫어요.", "절대 상자에 넣지 마요."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi가 박수 쳐 줄게요!", "반짝반짝, 작은 별!", "쉿, 책 읽는 중이에요.", "Pagi가 지켜보고 있어요…"], "pagi_angry": ["아야! 아프잖아요!", "그만 좀 눌러요!", "으르릉, 날 좀 내버려 둬요.", "이제 하나도 안 웃겨요."]}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

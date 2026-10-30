@@ -193,8 +193,8 @@
         {"@type":"Question","name":"オフラインでも使える？","acceptedAnswer":{"@type":"Answer","text":"ほぼすべてオフラインで使えます。ネット接続が必要なのは、新しい本を検索するときとGoogle Driveにバックアップをアップロードするときだけです。"}},
         {"@type":"Question","name":"iPhone版はある？","acceptedAnswer":{"@type":"Answer","text":"はい：App Storeから今すぐダウンロードできます。"}},
         {"@type":"Question","name":"買う前に試せる？","acceptedAnswer":{"@type":"Answer","text":"はい。Pro機能を7日間無料で試せて、カードは不要です。iPhoneではApp Storeの無料アプリ内課金で、Apple IDに紐づきます。Androidでは、お試し終了後、Proを買わなくても好きなProテーマを一つプレゼントします。"}},
-        {"@type":"Question","name":"スマホを替えたらProはどうなる？","acceptedAnswer":{"@type":"Answer","text":"どこで購入したかによります。Google Playで購入して、同じGoogleアカウントの別のAndroidに替える場合は、Lecturameterをインストールして設定の「購入を復元」をタップ。App Storeで購入して、同じApple IDの別のiPhoneに替える場合も同じで、インストールして「購入を復元」をタップするだけ。AndroidとiPhoneの間で移る場合は、どちら向きでも引き継ぎコードを使います。今のスマホでLecturameterの設定から「端末をペアリング」を開き、一時的なコードを取得して新しい端末で入力すれば、そちらでも有効になります。lm-...のコードはAndroidでのみ引き換えできます。古い端末を売ったりなくしたりした場合は、同じ画面から解除できます。"}},
-        {"@type":"Question","name":"Proをスマホ間やiOSとAndroidの間で移せる？","acceptedAnswer":{"@type":"Answer","text":"はい、AndroidとiPhoneの間ならどちら向きでもできます。アプリ内の設定で作成する引き継ぎコードを使います。同じプラットフォームのスマホ同士なら不要で、GoogleアカウントやApple IDで「購入を復元」を使ってください。"}}
+        {"@type":"Question","name":"スマホを替えたらProはどうなる？","acceptedAnswer":{"@type":"Answer","text":"どこで購入したかによります。Google Playで購入して、同じGoogleアカウントの別のAndroidに替える場合は、Lecturameterをインストールして設定の購入を復元をタップ。App Storeで購入して、同じApple IDの別のiPhoneに替える場合も同じで、インストールして購入を復元をタップするだけ。今のところ、ProはAndroidとiPhoneの間では引き継げません。購入はそれぞれのプラットフォームに残ります。 lm-... のコードはAndroidでのみ引き換えできます。"}},
+        {"@type":"Question","name":"Proをスマホ間やiOSとAndroidの間で移せる？","acceptedAnswer":{"@type":"Answer","text":"AndroidとiPhoneの間は、今のところできません。購入はそれぞれのプラットフォームに残ります。何か方法がないか検討しています。同じプラットフォームのスマホ同士ならできます。GoogleアカウントやApple IDで購入を復元を使ってください。"}}
       ]
     }
     </script>
@@ -231,7 +231,7 @@
             <li><a href="#whatsnew">パッチノート</a></li>
             <li><a href="#history">履歴</a></li>
             <li><a href="#roadmap">ロードマップ</a></li>
-            <li><a href="#ios">iOS</a></li>
+            <li><a href="#ios-differences">iOS</a></li>
             <li><a href="./lecturameter-1999/">1999</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="./blog/">ブログ</a></li>
@@ -298,8 +298,12 @@
                     </div>
                 </div>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="Google Playで入手">
                 <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                ダウンロード
+            </a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="App Storeからダウンロード">
+                <svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                 ダウンロード
             </a>
         </div>
@@ -862,23 +866,6 @@
     </div>
 </section>
 
-<!-- 7.5 iOS WAITLIST -->
-<section class="band band-alt ios-band" id="ios">
-    <div class="container">
-        <div class="section-head">
-            <h2>iPhoneで試そう</h2>
-            <p class="section-sub">iPhone版LecturameterがApp Storeで配信中です。</p>
-        </div>
-        <div class="ios-hero">
-            <div class="pagi-lago" data-state="neutro" role="button" tabindex="0" aria-label="湖のPagi"></div>
-            <div class="ios-waitlist">
-                <a class="btn" href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Storeからダウンロード</a>
-                <p class="ios-status" role="status" aria-live="polite"></p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- 7.6 iOS DIFFERENCES -->
 <section class="band band-alt differences" id="ios-differences" aria-labelledby="differences-title">
     <div class="container">
@@ -903,7 +890,8 @@
                         <li>ウィジェットの設定と固定。</li>
                         <li>タブレット（iPhone版はiPadでは動作しません）。</li>
                         <li>引き換え： <code>lm-…</code>のコード。</li>
-                        <li>外部からの寄付。</li>
+                        <li>お試し終了時にProのテーマとアイコンをプレゼント。</li>
+                        <li>チップと寄付。</li>
                     </ul>
                 </div>
                 <div>
@@ -912,7 +900,6 @@
                         <li>本、統計、チャレンジ、Bingoのウィジェット。</li>
                         <li>すべての言語を選べる言語選択。</li>
                         <li>スマートフォンでの横画面。</li>
-                        <li>お試し終了時にProのテーマとアイコンをプレゼント。</li>
                         <li>Google Driveへのバックアップ。</li>
                         <li>電子書籍リーダーとの同期（KOSync）。</li>
                     </ul>
@@ -922,20 +909,9 @@
                     <ul>
                         <li>iPhoneではProはApp Storeのアプリ内課金、AndroidではGoogle Playでの購入です。</li>
                         <li>iPhoneの7日間お試しは、App Storeの無料アプリ内課金で、Apple IDに紐づきます。</li>
-                        <li>AndroidとiPhoneの間でProを移すには、<strong>設定</strong>から作成する引き継ぎコードを使います。同じプラットフォームのスマホ同士では使えません。その場合は「購入を復元」を使ってください。</li>
+                        <li>今のところ、ProはAndroidとiPhoneの間では引き継げません。購入はそれぞれのプラットフォームに残ります。</li>
                     </ul>
                 </div>
-            </div>
-        </details>
-
-        <details class="differences-details ios-first-demo" style="margin-top:16px;">
-            <summary>iPhone版Lecturameterの最初のデモ</summary>
-            <div style="padding:1.25rem; border-top:1px solid rgba(128,128,128,0.15);">
-                <p style="text-align:center; max-width:640px; margin:0 auto 20px; color:var(--muted);">2026年9月20日、iOSベータ期間中に録画したものです。</p>
-                <video controls preload="metadata" playsinline style="display:block; max-width:360px; width:100%; margin:0 auto; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.2);">
-                    <source src="../videos/ios-first-demo.mp4" type="video/mp4">
-                    お使いのブラウザは動画の再生に対応していません。
-                </video>
             </div>
         </details>
     </div>
@@ -984,11 +960,11 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">スマホを替えたらProはどうなる？</button>
-                <div class="faq-a"><div class="faq-a-inner">どこで購入したかによります。<strong>Google Play</strong>で購入して、同じGoogleアカウントの別のAndroidに替える場合は、Lecturameterをインストールして設定の<strong>購入を復元</strong>をタップ。<strong>App Store</strong>で購入して、同じApple IDの別のiPhoneに替える場合も同じで、インストールして<strong>購入を復元</strong>をタップするだけ。AndroidとiPhoneの間で移る場合は、どちら向きでも<strong>引き継ぎコード</strong>を使います。今のスマホでLecturameterの設定から<strong>端末をペアリング</strong>を開き、一時的なコードを取得して新しい端末で入力すれば、そちらでも有効になります。 <code>lm-…</code> のコードはAndroidでのみ引き換えできます。古い端末を売ったりなくしたりした場合は、同じ画面から解除できます。詳しくは <a href="../activar-pro.html">Proの有効化方法</a>.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">どこで購入したかによります。<strong>Google Play</strong>で購入して、同じGoogleアカウントの別のAndroidに替える場合は、Lecturameterをインストールして設定の<strong>購入を復元</strong>をタップ。<strong>App Store</strong>で購入して、同じApple IDの別のiPhoneに替える場合も同じで、インストールして<strong>購入を復元</strong>をタップするだけ。今のところ、ProはAndroidとiPhoneの間では引き継げません。購入はそれぞれのプラットフォームに残ります。 <code>lm-…</code> のコードはAndroidでのみ引き換えできます。詳しくは <a href="../activar-pro.html">Proの有効化方法</a>.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Proをスマホ間やiOSとAndroidの間で移せる？</button>
-                <div class="faq-a"><div class="faq-a-inner">はい、AndroidとiPhoneの間ならどちら向きでもできます。アプリ内の<strong>設定</strong>で作成する引き継ぎコードを使います。同じプラットフォームのスマホ同士なら不要で、GoogleアカウントやApple IDで「購入を復元」を使ってください。</div></div>
+                <div class="faq-a"><div class="faq-a-inner">AndroidとiPhoneの間は、今のところできません。購入はそれぞれのプラットフォームに残ります。何か方法がないか検討しています。同じプラットフォームのスマホ同士ならできます。GoogleアカウントやApple IDで<strong>購入を復元</strong>を使ってください。</div></div>
             </div>
         </div>
     </div>
@@ -1120,6 +1096,7 @@
         <div class="footer-cta">
             <h3>読書を本気で記録しはじめよう。</h3>
             <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Google Playで入手</a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="btn">App Storeからダウンロード</a>
         </div>
 
         <div class="footer-grid">
@@ -1153,6 +1130,9 @@
                 <div class="footer-social">
                     <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" aria-label="Google Play">
                         <svg viewBox="0 0 24 24"><path d="M1 2.571C1 1.804 1.459 1.2 2.144.988L12.233 12 2.144 23.012C1.46 22.8 1 22.196 1 21.429V2.571z" fill="#4285F4"/><path d="M2.144 23.012L14.396 12l3.167 3.096L5.07 22.47a2.325 2.325 0 01-2.926.542z" fill="#EA4335"/><path d="M22.14 10.693l-4.578 2.636L14.396 12l3.166-3.096 4.578 2.636c.86.495.86 1.658 0 2.153z" fill="#FBBC04"/><path d="M2.144.988A2.325 2.325 0 015.07 1.53l12.492 7.374L14.396 12 2.144.988z" fill="#34A853"/></svg>
+                    </a>
+                    <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" aria-label="App Store">
+                        <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                     </a>
                     <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" aria-label="X / Twitter">
                         <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
@@ -1194,7 +1174,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagiが拍手してるよ！", "輝け、小さな星！", "しーっ、読書中だよ。", "Pagiが見てるよ…"], "pagi_angry": ["いたっ！痛いよ！", "クリックしすぎ！", "うー、ほっといて。", "もう笑えないよ。"], "lago_happy": ["もっとたくさんの読書家に会える！", "AirPodsの準備はいい？", "App Storeで会おうね。"], "lago_angry": ["そっちには連れていかせないよ…", "Androidのほうが好き。", "乗り換えなんてお断り。", "箱に入れないで！"]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagiが拍手してるよ！", "輝け、小さな星！", "しーっ、読書中だよ。", "Pagiが見てるよ…"], "pagi_angry": ["いたっ！痛いよ！", "クリックしすぎ！", "うー、ほっといて。", "もう笑えないよ。"]}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

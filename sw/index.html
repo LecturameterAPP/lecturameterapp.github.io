@@ -193,8 +193,8 @@
         {"@type":"Question","name":"Inafanya kazi nje ya mtandao?","acceptedAnswer":{"@type":"Answer","text":"Karibu kila kitu hufanya kazi nje ya mtandao. Unahitaji muunganisho tu kutafuta vitabu vipya na kupakia nakala rudufu za Google Drive."}},
         {"@type":"Question","name":"Je, kuna toleo la iPhone?","acceptedAnswer":{"@type":"Answer","text":"Ndiyo: unaweza kulipakua sasa kutoka App Store."}},
         {"@type":"Question","name":"Naweza kujaribu kabla ya kununua?","acceptedAnswer":{"@type":"Answer","text":"Ndiyo. Kuna jaribio la bure la siku 7 la vipengele vya Pro, bila kadi. Kwenye iPhone ni ununuzi wa bure ndani ya programu wa App Store, unaohusishwa na Apple ID yako. Kwenye Android, jaribio likiisha, hata usiponunua Pro, unapata mandhari moja ya Pro bure unayochagua."}},
-        {"@type":"Question","name":"Nini kinatokea kwa Pro yangu nikibadilisha simu?","acceptedAnswer":{"@type":"Answer","text":"Inategemea ulikoinunua. Ukiinunua kwenye Google Play na kuhamia Android nyingine yenye akaunti ileile ya Google, sakinisha Lecturameter na ubonyeze Rejesha ununuzi kwenye Mipangilio. Ukiinunua kwenye App Store na kuhamia iPhone nyingine yenye Apple ID ileile, ni vilevile: sakinisha na ubonyeze Rejesha ununuzi. Ili kuhamia kati ya Android na iPhone upande wowote, tumia msimbo wa uhamisho: kwenye simu yako ya sasa, kwenye Mipangilio ya Lecturameter, Oanisha kifaa, pata msimbo wa muda, uweke kwenye kifaa kipya na itawashwa huko pia. Misimbo ya lm-... inaweza kukombolewa kwenye Android pekee. Ukiuza au kupoteza kifaa cha zamani, unaweza kukifuta idhini kutoka skrini ileile."}},
-        {"@type":"Question","name":"Naweza kuhamisha Pro yangu kati ya simu na kati ya iOS na Android?","acceptedAnswer":{"@type":"Answer","text":"Ndiyo, kati ya Android na iPhone, upande wowote. Unafanya hivyo kwa msimbo wa uhamisho unaozalishwa ndani ya programu, kwenye Mipangilio. Kati ya simu mbili za jukwaa moja huhitaji: tumia Rejesha ununuzi kwa akaunti yako ya Google au Apple ID."}}
+        {"@type":"Question","name":"Nini kinatokea kwa Pro yangu nikibadilisha simu?","acceptedAnswer":{"@type":"Answer","text":"Inategemea ulikoinunua. Ukiinunua kwenye Google Play na kuhamia Android nyingine yenye akaunti ileile ya Google, sakinisha Lecturameter na ubonyeze Rejesha ununuzi kwenye Mipangilio. Ukiinunua kwenye App Store na kuhamia iPhone nyingine yenye Apple ID ileile, ni vilevile: sakinisha na ubonyeze Rejesha ununuzi. Kwa sasa Pro haihamii kati ya Android na iPhone: kila ununuzi unabaki kwenye jukwaa lake. lm-... misimbo inaweza kukombolewa kwenye Android pekee."}},
+        {"@type":"Question","name":"Naweza kuhamisha Pro yangu kati ya simu na kati ya iOS na Android?","acceptedAnswer":{"@type":"Answer","text":"Kati ya Android na iPhone, kwa sasa hapana: kila ununuzi unabaki kwenye jukwaa lake. Tunaangalia kama inawezekana kwa namna fulani. Kati ya simu mbili za jukwaa moja ndiyo: tumia Rejesha ununuzi kwa akaunti yako ya Google au Apple ID."}}
       ]
     }
     </script>
@@ -231,7 +231,7 @@
             <li><a href="#whatsnew">Maelezo ya sasisho</a></li>
             <li><a href="#history">Historia</a></li>
             <li><a href="#roadmap">Ramani ya njia</a></li>
-            <li><a href="#ios">iOS</a></li>
+            <li><a href="#ios-differences">iOS</a></li>
             <li><a href="./lecturameter-1999/">1999</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="./blog/">Blogu</a></li>
@@ -298,8 +298,12 @@
                     </div>
                 </div>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="Pakua kwenye Google Play">
                 <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                Pakua
+            </a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="Pakua kwenye App Store">
+                <svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                 Pakua
             </a>
         </div>
@@ -862,23 +866,6 @@
     </div>
 </section>
 
-<!-- 7.5 iOS WAITLIST -->
-<section class="band band-alt ios-band" id="ios">
-    <div class="container">
-        <div class="section-head">
-            <h2>Jaribu kwenye iPhone</h2>
-            <p class="section-sub">Lecturameter ya iPhone sasa inapatikana kwenye App Store.</p>
-        </div>
-        <div class="ios-hero">
-            <div class="pagi-lago" data-state="neutro" role="button" tabindex="0" aria-label="Pagi Lago"></div>
-            <div class="ios-waitlist">
-                <a class="btn" href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">Pakua kwenye App Store</a>
-                <p class="ios-status" role="status" aria-live="polite"></p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- 7.6 iOS DIFFERENCES -->
 <section class="band band-alt differences" id="ios-differences" aria-labelledby="differences-title">
     <div class="container">
@@ -903,7 +890,8 @@
                         <li>Kusanidi na kubandika wijeti.</li>
                         <li>Kompyuta kibao (toleo la iPhone halifanyi kazi kwenye iPad).</li>
                         <li>Kukomboa misimbo <code>lm-…</code>.</li>
-                        <li>Michango ya nje.</li>
+                        <li>Mandhari na aikoni ya Pro kama zawadi mwishoni mwa kipindi cha majaribio.</li>
+                        <li>Bakshishi na michango.</li>
                     </ul>
                 </div>
                 <div>
@@ -912,7 +900,6 @@
                         <li>Wijeti za Kitabu, Takwimu, Changamoto na Bingo.</li>
                         <li>Kichaguzi kamili cha lugha.</li>
                         <li>Hali ya mlalo kwenye simu.</li>
-                        <li>Mandhari na aikoni ya Pro kama zawadi mwishoni mwa kipindi cha majaribio.</li>
                         <li>Nakala rudufu ya Google Drive.</li>
                         <li>Usawazishaji na kisomaji cha kielektroniki (KOSync).</li>
                     </ul>
@@ -922,20 +909,9 @@
                     <ul>
                         <li>Kwenye iPhone, Pro ni ununuzi ndani ya programu wa App Store. Kwenye Android, ni ununuzi wa Google Play.</li>
                         <li>Jaribio la siku 7 kwenye iPhone ni ununuzi wa bure ndani ya programu wa App Store, unaohusishwa na Apple ID yako.</li>
-                        <li>Ili kuhamisha Pro kati ya Android na iPhone unatumia msimbo wa uhamisho, unaozalishwa kutoka <strong>Mipangilio</strong>. Haufanyi kazi kati ya simu mbili za jukwaa moja: tumia Rejesha ununuzi hapo.</li>
+                        <li>Kwa sasa Pro haihamii kati ya Android na iPhone: kila ununuzi unabaki kwenye jukwaa lake.</li>
                     </ul>
                 </div>
-            </div>
-        </details>
-
-        <details class="differences-details ios-first-demo" style="margin-top:16px;">
-            <summary>Onyesho la kwanza la Lecturameter kwenye iPhone</summary>
-            <div style="padding:1.25rem; border-top:1px solid rgba(128,128,128,0.15);">
-                <p style="text-align:center; max-width:640px; margin:0 auto 20px; color:var(--muted);">Hili lilirekodiwa tarehe 20 Septemba 2026, wakati wa beta ya iOS.</p>
-                <video controls preload="metadata" playsinline style="display:block; max-width:360px; width:100%; margin:0 auto; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.2);">
-                    <source src="../videos/ios-first-demo.mp4" type="video/mp4">
-                    Kivinjari chako hakiauni uchezaji wa video.
-                </video>
             </div>
         </details>
     </div>
@@ -984,11 +960,11 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">Nini kinatokea kwa Pro yangu nikibadilisha simu?</button>
-                <div class="faq-a"><div class="faq-a-inner">Inategemea ulikoinunua. Ukiinunua kwenye <strong>Google Play</strong> na kuhamia Android nyingine yenye akaunti ileile ya Google, sakinisha Lecturameter na ubonyeze <strong>Rejesha ununuzi</strong> kwenye Mipangilio. Ukiinunua kwenye <strong>App Store</strong> na kuhamia iPhone nyingine yenye Apple ID ileile, ni vilevile: sakinisha na ubonyeze <strong>Rejesha ununuzi</strong>. Ili kuhamia kati ya Android na iPhone upande wowote, tumia <strong>msimbo wa uhamisho</strong>: kwenye simu yako ya sasa, kwenye Mipangilio ya Lecturameter, <strong>Oanisha kifaa</strong>, pata msimbo wa muda, uweke kwenye kifaa kipya na itawashwa huko pia. <code>lm-…</code> misimbo inaweza kukombolewa kwenye Android pekee. Ukiuza au kupoteza kifaa cha zamani, unaweza kukifuta idhini kutoka skrini ileile. Maelezo zaidi katika <a href="../activar-pro.html">Jinsi ya kuwezesha Pro</a>.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Inategemea ulikoinunua. Ukiinunua kwenye <strong>Google Play</strong> na kuhamia Android nyingine yenye akaunti ileile ya Google, sakinisha Lecturameter na ubonyeze <strong>Rejesha ununuzi</strong> kwenye Mipangilio. Ukiinunua kwenye <strong>App Store</strong> na kuhamia iPhone nyingine yenye Apple ID ileile, ni vilevile: sakinisha na ubonyeze <strong>Rejesha ununuzi</strong>. Kwa sasa Pro haihamii kati ya Android na iPhone: kila ununuzi unabaki kwenye jukwaa lake. <code>lm-…</code> misimbo inaweza kukombolewa kwenye Android pekee. Maelezo zaidi katika <a href="../activar-pro.html">Jinsi ya kuwezesha Pro</a>.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Naweza kuhamisha Pro yangu kati ya simu na kati ya iOS na Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ndiyo, kati ya Android na iPhone, upande wowote. Unafanya hivyo kwa msimbo wa uhamisho unaozalishwa ndani ya programu, kwenye <strong>Mipangilio</strong>. Kati ya simu mbili za jukwaa moja huhitaji: tumia Rejesha ununuzi kwa akaunti yako ya Google au Apple ID.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Kati ya Android na iPhone, kwa sasa hapana: kila ununuzi unabaki kwenye jukwaa lake. Tunaangalia kama inawezekana kwa namna fulani. Kati ya simu mbili za jukwaa moja ndiyo: tumia <strong>Rejesha ununuzi</strong> kwa akaunti yako ya Google au Apple ID.</div></div>
             </div>
         </div>
     </div>
@@ -1120,6 +1096,7 @@
         <div class="footer-cta">
             <h3>Anza kufuatilia usomaji wako kwa dhati.</h3>
             <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Pakua kwenye Google Play</a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="btn">Pakua kwenye App Store</a>
         </div>
 
         <div class="footer-grid">
@@ -1153,6 +1130,9 @@
                 <div class="footer-social">
                     <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" aria-label="Google Play">
                         <svg viewBox="0 0 24 24"><path d="M1 2.571C1 1.804 1.459 1.2 2.144.988L12.233 12 2.144 23.012C1.46 22.8 1 22.196 1 21.429V2.571z" fill="#4285F4"/><path d="M2.144 23.012L14.396 12l3.167 3.096L5.07 22.47a2.325 2.325 0 01-2.926.542z" fill="#EA4335"/><path d="M22.14 10.693l-4.578 2.636L14.396 12l3.166-3.096 4.578 2.636c.86.495.86 1.658 0 2.153z" fill="#FBBC04"/><path d="M2.144.988A2.325 2.325 0 015.07 1.53l12.492 7.374L14.396 12 2.144.988z" fill="#34A853"/></svg>
+                    </a>
+                    <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" aria-label="App Store">
+                        <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                     </a>
                     <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" aria-label="X / Twitter">
                         <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
@@ -1194,7 +1174,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi anakupigia makofi!", "Ng'ara, nyota ndogo!", "Shhh, ninasoma.", "Pagi anakuangalia…"], "pagi_angry": ["Ai! Ilinuma!", "Inatosha kubofya!", "Grr, niache.", "Haichekeshi tena."], "lago_happy": ["Wasomaji zaidi wa kukutana nao!", "Tayarisha AirPods zako!", "Tuonane kwenye App Store."], "lago_angry": ["Hunipeleki huko…", "Napendelea Android.", "Ninakataa kuruka uzio.", "USINIWEKE kwenye boksi."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi anakupigia makofi!", "Ng'ara, nyota ndogo!", "Shhh, ninasoma.", "Pagi anakuangalia…"], "pagi_angry": ["Ai! Ilinuma!", "Inatosha kubofya!", "Grr, niache.", "Haichekeshi tena."]}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

@@ -193,8 +193,8 @@
         {"@type":"Question","name":"זה עובד בלי חיבור לאינטרנט?","acceptedAnswer":{"@type":"Answer","text":"כמעט הכול עובד ללא חיבור. צריך חיבור רק כדי לחפש ספרים חדשים ולהעלות גיבויים ל-Google Drive."}},
         {"@type":"Question","name":"יש גרסה ל-iPhone?","acceptedAnswer":{"@type":"Answer","text":"כן: אפשר להוריד אותה כבר עכשיו מ-App Store."}},
         {"@type":"Question","name":"אפשר לנסות לפני שקונים?","acceptedAnswer":{"@type":"Answer","text":"כן. יש תקופת ניסיון חינמית של 7 ימים לתכונות ה-Pro, בלי כרטיס אשראי. ב-iPhone זו רכישה חינמית בתוך האפליקציה דרך App Store, המקושרת ל-Apple ID שלך. ב-Android, בסוף תקופת הניסיון, גם אם לא תקנה Pro, תקבל במתנה ערכת נושא Pro לבחירתך."}},
-        {"@type":"Question","name":"מה קורה ל-Pro שלי אם אני מחליף טלפון?","acceptedAnswer":{"@type":"Answer","text":"זה תלוי איפה קנית. אם קנית ב-Google Play ואתה עובר ל-Android אחר עם אותו חשבון Google, התקן את Lecturameter והקש על שחזור רכישה בהגדרות. אם קנית ב-App Store ואתה עובר ל-iPhone אחר עם אותו Apple ID, אותו דבר: מתקינים ומקישים על שחזור רכישה. כדי לעבור בין Android ל-iPhone, לכל כיוון, השתמש בקוד העברה: בטלפון הנוכחי, בהגדרות של Lecturameter, צמד מכשיר, מקבלים קוד זמני, מקלידים אותו במכשיר החדש וה-Pro מופעל גם שם. קודים של lm-... ניתן לממש רק ב-Android. אם מכרת או איבדת את המכשיר הישן, אפשר לבטל אותו מאותו מסך."}},
-        {"@type":"Question","name":"אפשר להעביר את ה-Pro שלי בין טלפונים ובין iOS ל-Android?","acceptedAnswer":{"@type":"Answer","text":"כן, בין Android ל-iPhone, לכל כיוון. עושים את זה עם קוד העברה שנוצר בתוך האפליקציה, בהגדרות. בין שני טלפונים באותה פלטפורמה אין בזה צורך: השתמש בשחזור רכישה עם חשבון Google או ה-Apple ID שלך."}}
+        {"@type":"Question","name":"מה קורה ל-Pro שלי אם אני מחליף טלפון?","acceptedAnswer":{"@type":"Answer","text":"זה תלוי איפה קנית. אם קנית ב-Google Play ואתה עובר ל-Android אחר עם אותו חשבון Google, התקן את Lecturameter והקש על שחזור רכישה בהגדרות. אם קנית ב-App Store ואתה עובר ל-iPhone אחר עם אותו Apple ID, אותו דבר: מתקינים ומקישים על שחזור רכישה. בינתיים Pro לא עובר בין Android ל-iPhone: כל רכישה נשארת בפלטפורמה שלה. קודים של lm-... ניתן לממש רק ב-Android."}},
+        {"@type":"Question","name":"אפשר להעביר את ה-Pro שלי בין טלפונים ובין iOS ל-Android?","acceptedAnswer":{"@type":"Answer","text":"בין Android ל-iPhone בינתיים לא: כל רכישה נשארת בפלטפורמה שלה. אנחנו בודקים אם אפשר לעשות את זה בדרך כלשהי. בין שני טלפונים באותה פלטפורמה כן: השתמש בשחזור רכישה עם חשבון Google או ה-Apple ID שלך."}}
       ]
     }
     </script>
@@ -231,7 +231,7 @@
             <li><a href="#whatsnew">הערות גרסה</a></li>
             <li><a href="#history">היסטוריה</a></li>
             <li><a href="#roadmap">מפת דרכים</a></li>
-            <li><a href="#ios">iOS</a></li>
+            <li><a href="#ios-differences">iOS</a></li>
             <li><a href="./lecturameter-1999/">1999</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="./blog/">בלוג</a></li>
@@ -298,8 +298,12 @@
                     </div>
                 </div>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="הורד מ-Google Play">
                 <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                הורד
+            </a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="הורד מ-App Store">
+                <svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                 הורד
             </a>
         </div>
@@ -862,23 +866,6 @@
     </div>
 </section>
 
-<!-- 7.5 iOS WAITLIST -->
-<section class="band band-alt ios-band" id="ios">
-    <div class="container">
-        <div class="section-head">
-            <h2>נסה אותה ב-iPhone</h2>
-            <p class="section-sub">Lecturameter ל-iPhone זמינה עכשיו ב-App Store.</p>
-        </div>
-        <div class="ios-hero">
-            <div class="pagi-lago" data-state="neutro" role="button" tabindex="0" aria-label="Pagi אגם"></div>
-            <div class="ios-waitlist">
-                <a class="btn" href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">הורד מ-App Store</a>
-                <p class="ios-status" role="status" aria-live="polite"></p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- 7.6 iOS DIFFERENCES -->
 <section class="band band-alt differences" id="ios-differences" aria-labelledby="differences-title">
     <div class="container">
@@ -903,7 +890,8 @@
                         <li>הגדרה והצמדה של ווידג׳טים.</li>
                         <li>טאבלטים (גרסת האייפון לא פועלת באייפד).</li>
                         <li>מימוש קודים של <code>lm-…</code>.</li>
-                        <li>תרומות חיצוניות.</li>
+                        <li>ערכת נושא Pro וסמל במתנה בסוף תקופת הניסיון.</li>
+                        <li>טיפים ותרומות.</li>
                     </ul>
                 </div>
                 <div>
@@ -912,7 +900,6 @@
                         <li>ווידג׳טים של ספר, סטטיסטיקות, אתגרים ובינגו.</li>
                         <li>בורר שפות מלא.</li>
                         <li>מצב לרוחב בטלפונים.</li>
-                        <li>ערכת נושא Pro וסמל במתנה בסוף תקופת הניסיון.</li>
                         <li>גיבוי ב-Google Drive.</li>
                         <li>סנכרון עם קורא ספרים אלקטרוני (KOSync).</li>
                     </ul>
@@ -922,20 +909,9 @@
                     <ul>
                         <li>ב-iPhone, Pro היא רכישה בתוך האפליקציה דרך App Store. ב-Android, זו רכישה דרך Google Play.</li>
                         <li>תקופת הניסיון של 7 ימים ב-iPhone היא רכישה חינמית בתוך האפליקציה דרך App Store, המקושרת ל-Apple ID שלך.</li>
-                        <li>כדי להעביר את ה-Pro בין Android ל-iPhone משתמשים בקוד העברה, שנוצר מתוך <strong>הגדרות</strong>. זה לא עובד בין שני טלפונים באותה פלטפורמה: שם משתמשים בשחזור רכישה.</li>
+                        <li>בינתיים Pro לא עובר בין Android ל-iPhone: כל רכישה נשארת בפלטפורמה שלה.</li>
                     </ul>
                 </div>
-            </div>
-        </details>
-
-        <details class="differences-details ios-first-demo" style="margin-top:16px;">
-            <summary>ההדגמה הראשונה של Lecturameter ב-iPhone</summary>
-            <div style="padding:1.25rem; border-top:1px solid rgba(128,128,128,0.15);">
-                <p style="text-align:center; max-width:640px; margin:0 auto 20px; color:var(--muted);">צולם ב-20 בספטמבר 2026, במהלך הבטא של iOS.</p>
-                <video controls preload="metadata" playsinline style="display:block; max-width:360px; width:100%; margin:0 auto; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.2);">
-                    <source src="../videos/ios-first-demo.mp4" type="video/mp4">
-                    הדפדפן שלך לא תומך בהפעלת וידאו.
-                </video>
             </div>
         </details>
     </div>
@@ -984,11 +960,11 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">מה קורה ל-Pro שלי אם אני מחליף טלפון?</button>
-                <div class="faq-a"><div class="faq-a-inner">זה תלוי איפה קנית. אם קנית ב-<strong>Google Play</strong> ואתה עובר ל-Android אחר עם אותו חשבון Google, התקן את Lecturameter והקש על <strong>שחזור רכישה</strong> בהגדרות. אם קנית ב-<strong>App Store</strong> ואתה עובר ל-iPhone אחר עם אותו Apple ID, אותו דבר: מתקינים ומקישים על <strong>שחזור רכישה</strong>. כדי לעבור בין Android ל-iPhone, לכל כיוון, השתמש ב<strong>קוד העברה</strong>: בטלפון הנוכחי, בהגדרות של Lecturameter, <strong>צמד מכשיר</strong>, מקבלים קוד זמני, מקלידים אותו במכשיר החדש וה-Pro מופעל גם שם. קודים של <code>lm-…</code> ניתן לממש רק ב-Android. אם מכרת או איבדת את המכשיר הישן, אפשר לבטל אותו מאותו מסך. פרטים נוספים ב <a href="../activar-pro.html">איך מפעילים Pro</a>.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">זה תלוי איפה קנית. אם קנית ב-<strong>Google Play</strong> ואתה עובר ל-Android אחר עם אותו חשבון Google, התקן את Lecturameter והקש על <strong>שחזור רכישה</strong> בהגדרות. אם קנית ב-<strong>App Store</strong> ואתה עובר ל-iPhone אחר עם אותו Apple ID, אותו דבר: מתקינים ומקישים על <strong>שחזור רכישה</strong>. בינתיים Pro לא עובר בין Android ל-iPhone: כל רכישה נשארת בפלטפורמה שלה. קודים של <code>lm-…</code> ניתן לממש רק ב-Android. פרטים נוספים ב <a href="../activar-pro.html">איך מפעילים Pro</a>.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">אפשר להעביר את ה-Pro שלי בין טלפונים ובין iOS ל-Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">כן, בין Android ל-iPhone, לכל כיוון. עושים את זה עם קוד העברה שנוצר בתוך האפליקציה, ב<strong>הגדרות</strong>. בין שני טלפונים באותה פלטפורמה אין בזה צורך: השתמש בשחזור רכישה עם חשבון Google או ה-Apple ID שלך.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">בין Android ל-iPhone בינתיים לא: כל רכישה נשארת בפלטפורמה שלה. אנחנו בודקים אם אפשר לעשות את זה בדרך כלשהי. בין שני טלפונים באותה פלטפורמה כן: השתמש ב<strong>שחזור רכישה</strong> עם חשבון Google או ה-Apple ID שלך.</div></div>
             </div>
         </div>
     </div>
@@ -1120,6 +1096,7 @@
         <div class="footer-cta">
             <h3>התחל לעקוב אחרי הקריאה שלך באמת.</h3>
             <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">הורד מ-Google Play</a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="btn">הורד מ-App Store</a>
         </div>
 
         <div class="footer-grid">
@@ -1153,6 +1130,9 @@
                 <div class="footer-social">
                     <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" aria-label="Google Play">
                         <svg viewBox="0 0 24 24"><path d="M1 2.571C1 1.804 1.459 1.2 2.144.988L12.233 12 2.144 23.012C1.46 22.8 1 22.196 1 21.429V2.571z" fill="#4285F4"/><path d="M2.144 23.012L14.396 12l3.167 3.096L5.07 22.47a2.325 2.325 0 01-2.926.542z" fill="#EA4335"/><path d="M22.14 10.693l-4.578 2.636L14.396 12l3.166-3.096 4.578 2.636c.86.495.86 1.658 0 2.153z" fill="#FBBC04"/><path d="M2.144.988A2.325 2.325 0 015.07 1.53l12.492 7.374L14.396 12 2.144.988z" fill="#34A853"/></svg>
+                    </a>
+                    <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" aria-label="App Store">
+                        <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                     </a>
                     <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" aria-label="X / Twitter">
                         <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
@@ -1194,7 +1174,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi מוחא לך כפיים!", "תזרח, כוכב קטן!", "ששש, אני קורא.", "Pagi מסתכל עליך…"], "pagi_angry": ["איי! זה כאב!", "מספיק עם הקליקים!", "גרר, עזוב אותי.", "זה כבר לא מצחיק."], "lago_happy": ["עוד קוראים להכיר!", "תכינו את ה-AirPods!", "נתראה ב-App Store."], "lago_angry": ["אתה לא לוקח אותי לשם…", "אני מעדיף Android.", "אני מסרב לקפוץ מעל הגדר.", "אל תכניס אותי לקופסה!"]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi מוחא לך כפיים!", "תזרח, כוכב קטן!", "ששש, אני קורא.", "Pagi מסתכל עליך…"], "pagi_angry": ["איי! זה כאב!", "מספיק עם הקליקים!", "גרר, עזוב אותי.", "זה כבר לא מצחיק."]}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

@@ -193,8 +193,8 @@
         {"@type":"Question","name":"可以离线使用吗？","acceptedAnswer":{"@type":"Answer","text":"几乎所有功能都可以离线使用。只有搜索新书和上传 Google Drive 备份时才需要联网。"}},
         {"@type":"Question","name":"有 iPhone 版吗？","acceptedAnswer":{"@type":"Answer","text":"有：你现在就可以从 App Store 下载。"}},
         {"@type":"Question","name":"可以先试用再购买吗？","acceptedAnswer":{"@type":"Answer","text":"可以。Pro 功能提供 7 天免费试用，无需绑卡。在 iPhone 上，这是一项免费的 App Store 应用内购买，与你的 Apple ID 绑定。在 Android 上，试用结束后，即使你不购买 Pro，也可以免费获得一个你选择的 Pro 主题。"}},
-        {"@type":"Question","name":"换手机后我的 Pro 会怎样？","acceptedAnswer":{"@type":"Answer","text":"这取决于你在哪里购买的。如果你是在 Google Play 购买的，换到另一部使用同一个 Google 账号的 Android 手机，只需安装 Lecturameter，然后在设置中点按恢复购买。如果你是在 App Store 购买的，换到另一部使用同一个 Apple ID 的 iPhone，做法相同：安装后点按恢复购买。若要在 Android 和 iPhone 之间互相转移（任一方向），请使用转移码：在当前手机的 Lecturameter 设置中选择配对设备，获取一个临时码，在新设备上输入，Pro 就会在新设备上同样生效。lm-... 兑换码只能在 Android 上兑换。如果你卖掉或丢失了旧设备，可以在同一界面中将其撤销。"}},
-        {"@type":"Question","name":"我可以在不同手机之间、以及 iOS 和 Android 之间转移 Pro 吗？","acceptedAnswer":{"@type":"Answer","text":"可以，Android 和 iPhone 之间可以双向转移。你可以使用应用内设置里生成的转移码来完成。同一平台的两部手机之间则不需要：请使用你的 Google 账号或 Apple ID 恢复购买。"}}
+        {"@type":"Question","name":"换手机后我的 Pro 会怎样？","acceptedAnswer":{"@type":"Answer","text":"这取决于你在哪里购买的。如果你是在 Google Play 购买的，换到另一部使用同一个 Google 账号的 Android 手机，只需安装 Lecturameter，然后在设置中点按恢复购买。如果你是在 App Store 购买的，换到另一部使用同一个 Apple ID 的 iPhone，做法相同：安装后点按恢复购买。目前 Pro 无法在 Android 和 iPhone 之间转移：每次购买都留在各自的平台上。 lm-... 兑换码只能在 Android 上兑换。"}},
+        {"@type":"Question","name":"我可以在不同手机之间、以及 iOS 和 Android 之间转移 Pro 吗？","acceptedAnswer":{"@type":"Answer","text":"Android 和 iPhone 之间暂时不行：每次购买都留在各自的平台上。我们正在研究能否想办法实现。同一平台的两部手机之间可以：请使用你的 Google 账号或 Apple ID 恢复购买。"}}
       ]
     }
     </script>
@@ -231,7 +231,7 @@
             <li><a href="#whatsnew">更新说明</a></li>
             <li><a href="#history">历史记录</a></li>
             <li><a href="#roadmap">路线图</a></li>
-            <li><a href="#ios">iOS</a></li>
+            <li><a href="#ios-differences">iOS</a></li>
             <li><a href="./lecturameter-1999/">1999</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="./blog/">博客</a></li>
@@ -298,8 +298,12 @@
                     </div>
                 </div>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="在 Google Play 下载">
                 <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                下载
+            </a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="在 App Store 下载">
+                <svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                 下载
             </a>
         </div>
@@ -862,23 +866,6 @@
     </div>
 </section>
 
-<!-- 7.5 iOS WAITLIST -->
-<section class="band band-alt ios-band" id="ios">
-    <div class="container">
-        <div class="section-head">
-            <h2>在 iPhone 上试用</h2>
-            <p class="section-sub">iPhone 版 Lecturameter 现已在 App Store 上架。</p>
-        </div>
-        <div class="ios-hero">
-            <div class="pagi-lago" data-state="neutro" role="button" tabindex="0" aria-label="湖边的 Pagi"></div>
-            <div class="ios-waitlist">
-                <a class="btn" href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">在 App Store 下载</a>
-                <p class="ios-status" role="status" aria-live="polite"></p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- 7.6 iOS DIFFERENCES -->
 <section class="band band-alt differences" id="ios-differences" aria-labelledby="differences-title">
     <div class="container">
@@ -903,7 +890,8 @@
                         <li>小部件配置和固定。</li>
                         <li>平板电脑（iPhone 版不能在 iPad 上运行）。</li>
                         <li>兑换 <code>lm-…</code>码。</li>
-                        <li>外部捐赠。</li>
+                        <li>试用结束时赠送一个 Pro 主题和图标。</li>
+                        <li>小费和捐赠。</li>
                     </ul>
                 </div>
                 <div>
@@ -912,7 +900,6 @@
                         <li>图书、统计、挑战和 Bingo 小部件。</li>
                         <li>完整的语言选择器。</li>
                         <li>手机横屏模式。</li>
-                        <li>试用结束时赠送一个 Pro 主题和图标。</li>
                         <li>Google Drive 备份。</li>
                         <li>电子阅读器同步（KOSync）。</li>
                     </ul>
@@ -922,20 +909,9 @@
                     <ul>
                         <li>在 iPhone 上，Pro 是 App Store 的应用内购买。在 Android 上，则是 Google Play 购买。</li>
                         <li>iPhone 上的 7 天试用是免费的 App Store 应用内购买，与你的 Apple ID 绑定。</li>
-                        <li>要在 Android 和 iPhone 之间转移 Pro，需要使用转移码，可在<strong>设置</strong>中生成。同一平台的两部手机之间不适用：请在那里使用“恢复购买”。</li>
+                        <li>目前 Pro 无法在 Android 和 iPhone 之间转移：每次购买都留在各自的平台上。</li>
                     </ul>
                 </div>
-            </div>
-        </details>
-
-        <details class="differences-details ios-first-demo" style="margin-top:16px;">
-            <summary>iPhone 版 Lecturameter 的首次演示</summary>
-            <div style="padding:1.25rem; border-top:1px solid rgba(128,128,128,0.15);">
-                <p style="text-align:center; max-width:640px; margin:0 auto 20px; color:var(--muted);">录制于 2026 年九月 20 日，iOS 测试期间。</p>
-                <video controls preload="metadata" playsinline style="display:block; max-width:360px; width:100%; margin:0 auto; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.2);">
-                    <source src="../videos/ios-first-demo.mp4" type="video/mp4">
-                    你的浏览器不支持视频播放。
-                </video>
             </div>
         </details>
     </div>
@@ -984,11 +960,11 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">换手机后我的 Pro 会怎样？</button>
-                <div class="faq-a"><div class="faq-a-inner">这取决于你在哪里购买的。如果你是在 <strong>Google Play</strong> 购买的，换到另一部使用同一个 Google 账号的 Android 手机，只需安装 Lecturameter，然后在设置中点按<strong>恢复购买</strong>。如果你是在 <strong>App Store</strong> 购买的，换到另一部使用同一个 Apple ID 的 iPhone，做法相同：安装后点按<strong>恢复购买</strong>。若要在 Android 和 iPhone 之间互相转移（任一方向），请使用<strong>转移码</strong>：在当前手机的 Lecturameter 设置中选择<strong>配对设备</strong>，获取一个临时码，在新设备上输入，Pro 就会在新设备上同样生效。 <code>lm-…</code> 兑换码只能在 Android 上兑换。如果你卖掉或丢失了旧设备，可以在同一界面中将其撤销。更多详情请见 <a href="../activar-pro.html">如何激活 Pro</a>.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">这取决于你在哪里购买的。如果你是在 <strong>Google Play</strong> 购买的，换到另一部使用同一个 Google 账号的 Android 手机，只需安装 Lecturameter，然后在设置中点按<strong>恢复购买</strong>。如果你是在 <strong>App Store</strong> 购买的，换到另一部使用同一个 Apple ID 的 iPhone，做法相同：安装后点按<strong>恢复购买</strong>。目前 Pro 无法在 Android 和 iPhone 之间转移：每次购买都留在各自的平台上。 <code>lm-…</code> 兑换码只能在 Android 上兑换。更多详情请见 <a href="../activar-pro.html">如何激活 Pro</a>.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">我可以在不同手机之间、以及 iOS 和 Android 之间转移 Pro 吗？</button>
-                <div class="faq-a"><div class="faq-a-inner">可以，Android 和 iPhone 之间可以双向转移。你可以使用应用内<strong>设置</strong>里生成的转移码来完成。同一平台的两部手机之间则不需要：请使用你的 Google 账号或 Apple ID 恢复购买。</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Android 和 iPhone 之间暂时不行：每次购买都留在各自的平台上。我们正在研究能否想办法实现。同一平台的两部手机之间可以：请使用你的 Google 账号或 Apple ID <strong>恢复购买</strong>。</div></div>
             </div>
         </div>
     </div>
@@ -1120,6 +1096,7 @@
         <div class="footer-cta">
             <h3>认真开始记录你的阅读吧。</h3>
             <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">在 Google Play 下载</a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="btn">在 App Store 下载</a>
         </div>
 
         <div class="footer-grid">
@@ -1153,6 +1130,9 @@
                 <div class="footer-social">
                     <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" aria-label="Google Play">
                         <svg viewBox="0 0 24 24"><path d="M1 2.571C1 1.804 1.459 1.2 2.144.988L12.233 12 2.144 23.012C1.46 22.8 1 22.196 1 21.429V2.571z" fill="#4285F4"/><path d="M2.144 23.012L14.396 12l3.167 3.096L5.07 22.47a2.325 2.325 0 01-2.926.542z" fill="#EA4335"/><path d="M22.14 10.693l-4.578 2.636L14.396 12l3.166-3.096 4.578 2.636c.86.495.86 1.658 0 2.153z" fill="#FBBC04"/><path d="M2.144.988A2.325 2.325 0 015.07 1.53l12.492 7.374L14.396 12 2.144.988z" fill="#34A853"/></svg>
+                    </a>
+                    <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" aria-label="App Store">
+                        <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                     </a>
                     <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" aria-label="X / Twitter">
                         <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
@@ -1194,7 +1174,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi 为你鼓掌！", "闪耀吧，小星星！", "嘘，我在看书。", "Pagi 在看着你哦…"], "pagi_angry": ["哎哟！好疼！", "别点了！", "哼，别烦我。", "一点都不好笑了。"], "lago_happy": ["会遇到更多读者！", "把你的 AirPods 准备好！", "App Store 见。"], "lago_angry": ["你可别想把我带到那边…", "我更喜欢 Android。", "我才不要跳到围栏另一边。", "别把我装进盒子里！"]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi 为你鼓掌！", "闪耀吧，小星星！", "嘘，我在看书。", "Pagi 在看着你哦…"], "pagi_angry": ["哎哟！好疼！", "别点了！", "哼，别烦我。", "一点都不好笑了。"]}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

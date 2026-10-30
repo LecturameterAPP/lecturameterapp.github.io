@@ -439,11 +439,6 @@
             onIdle: function () { if (window.__lmStarSetState) window.__lmStarSetState('sorprendido'); },
             onActive: function () { if (window.__lmStarSetState) window.__lmStarSetState('neutral'); }
         });
-        // Lago → confuso on idle
-        handlers.push({
-            onIdle: function () { if (window.__lmLagoSetState) window.__lmLagoSetState('confuso'); },
-            onActive: function () { if (window.__lmLagoSetState) window.__lmLagoSetState('neutro'); }
-        });
         reset();
     })();
 
@@ -497,104 +492,6 @@
         }, { passive: true });
     })();
 
-    // ─── PAGI LAGO (iOS section) ───
-    var pagiLago = document.querySelector('.pagi-lago');
-    if (pagiLago) {
-        var lagoCache = {};
-        var lagoState = null;
-        var lagoTimer = null;
-        var LAGO_HAPPY = I18N.lago_happy || [];
-        var LAGO_ANGRY = I18N.lago_angry || [];
-
-        function fetchLago(name) {
-            if (lagoCache[name]) return Promise.resolve(lagoCache[name]);
-            return fetch('/pagi/lago-' + name + '.svg').then(function (r) { return r.text(); }).then(function (t) {
-                lagoCache[name] = t;
-                return t;
-            });
-        }
-        function setLago(name) {
-            lagoState = name;
-            fetchLago(name).then(function (svg) { if (lagoState === name) pagiLago.innerHTML = svg; });
-        }
-        function pickLagoPhrase(arr, prev) {
-            var pool = arr.filter(function (x) { return x !== prev; });
-            return pool[Math.floor(Math.random() * pool.length)];
-        }
-        var lagoStatus = document.querySelector('#ios .ios-status');
-        var lagoLastPhrase = null;
-        function flashLagoPhrase(arr, cls) {
-            if (!lagoStatus || !arr.length) return;
-            var p = pickLagoPhrase(arr, lagoLastPhrase);
-            lagoLastPhrase = p;
-            lagoStatus.textContent = p;
-            lagoStatus.className = 'ios-status ' + cls;
-            clearTimeout(flashLagoPhrase._t);
-            flashLagoPhrase._t = setTimeout(function () {
-                if (lagoStatus.textContent === p) { lagoStatus.textContent = ''; lagoStatus.className = 'ios-status'; }
-            }, 3200);
-        }
-
-        setLago('neutro');
-
-        var pendingLagoClick = null;
-        var LAGO_DBL_MS = 350;
-        pagiLago.addEventListener('click', function () {
-            if (pendingLagoClick) {
-                clearTimeout(pendingLagoClick);
-                pendingLagoClick = null;
-                if (lagoTimer) clearTimeout(lagoTimer);
-                setLago('enfadado');
-                flashLagoPhrase(LAGO_ANGRY, 'err');
-                lagoTimer = setTimeout(function () { setLago('neutro'); }, 3500);
-                return;
-            }
-            pendingLagoClick = setTimeout(function () {
-                pendingLagoClick = null;
-                if (lagoTimer) clearTimeout(lagoTimer);
-                setLago('feliz');
-                flashLagoPhrase(LAGO_HAPPY, 'ok');
-                lagoTimer = setTimeout(function () { setLago('neutro'); }, 3000);
-            }, LAGO_DBL_MS);
-        });
-        pagiLago.addEventListener('keydown', function (e) {
-            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pagiLago.click(); }
-        });
-
-        // Expose safe setter for shared idle handler
-        window.__lmLagoSetState = function (target) {
-            if (target === 'confuso' && lagoState === 'neutro') { if (lagoTimer) clearTimeout(lagoTimer); setLago('confuso'); }
-            else if (target === 'neutro' && lagoState === 'confuso') { if (lagoTimer) clearTimeout(lagoTimer); setLago('neutro'); }
-        };
-
-        // Eye tracking on lago (only in neutro state, only pointer:fine)
-        if (window.matchMedia('(pointer: fine)').matches) {
-            var LAGO_MAX_X = 18, LAGO_MAX_Y = 20;
-            var lagoRaf = false, lagoLX = 0, lagoLY = 0;
-            function updateLagoPupil() {
-                lagoRaf = false;
-                var pupil = pagiLago.querySelector('.pg-pupil-lago');
-                if (!pupil) return;
-                var svg = pupil.ownerSVGElement;
-                if (!svg) return;
-                var r = svg.getBoundingClientRect();
-                if (!r.width) return;
-                var cx = r.left + r.width * 0.5;
-                var cy = r.top + r.height * 0.5;
-                var dx = lagoLX - cx, dy = lagoLY - cy;
-                var dist = Math.hypot(dx, dy) || 1;
-                var norm = Math.min(1, dist / 400);
-                var tx = (dx / dist) * LAGO_MAX_X * norm;
-                var ty = (dy / dist) * LAGO_MAX_Y * norm;
-                pupil.setAttribute('transform', 'translate(' + tx.toFixed(1) + ' ' + ty.toFixed(1) + ')');
-            }
-            window.addEventListener('mousemove', function (e) {
-                lagoLX = e.clientX; lagoLY = e.clientY;
-                if (!lagoRaf) { lagoRaf = true; requestAnimationFrame(updateLagoPupil); }
-            }, { passive: true });
-        }
-    }
-
     // ─── SUBPAGE LANGUAGE TOGGLE (setLang — global for privacy/contact/precios) ───
     window.setLang = function (lang) {
         if (lang !== 'es' && lang !== 'en') lang = 'es';
@@ -608,6 +505,10 @@
         document.querySelectorAll('[data-es][data-en]').forEach(function (el) {
             var txt = el.getAttribute('data-' + lang);
             if (txt != null) el.textContent = txt;
+        });
+        document.querySelectorAll('[data-aria-es][data-aria-en]').forEach(function (el) {
+            var lbl = el.getAttribute('data-aria-' + lang);
+            if (lbl != null) el.setAttribute('aria-label', lbl);
         });
         document.querySelectorAll('[data-href-es][data-href-en]').forEach(function (el) {
             var href = el.getAttribute('data-href-' + lang);

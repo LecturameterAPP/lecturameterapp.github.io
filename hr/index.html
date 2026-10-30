@@ -193,8 +193,8 @@
         {"@type":"Question","name":"Radi li izvan mreže?","acceptedAnswer":{"@type":"Answer","text":"Gotovo sve radi izvan mreže. Veza ti treba samo za traženje novih knjiga i za slanje sigurnosnih kopija na Google Drive."}},
         {"@type":"Question","name":"Postoji li verzija za iPhone?","acceptedAnswer":{"@type":"Answer","text":"Da: možeš je odmah preuzeti iz App Storea."}},
         {"@type":"Question","name":"Mogu li isprobati prije kupnje?","acceptedAnswer":{"@type":"Answer","text":"Da. Postoji besplatno probno razdoblje od 7 dana Pro značajki, bez kartice. Na iPhoneu je to besplatna kupnja unutar aplikacije preko App Storea, vezana uz tvoj Apple ID. Na Androidu, na kraju probnog razdoblja, čak i ako ne kupiš Pro, dobivaš besplatnu Pro temu po izboru."}},
-        {"@type":"Question","name":"Što se događa s mojim Pro ako promijenim mobitel?","acceptedAnswer":{"@type":"Answer","text":"Ovisi o tome gdje si ga kupio. Ako si ga kupio na Google Playu i prelaziš na drugi Android s istim Google računom, instaliraj Lecturameter i dodirni Vrati kupnju u Postavkama. Ako si ga kupio u App Storeu i prelaziš na drugi iPhone s istim Apple ID-om, isto: instaliraj i dodirni Vrati kupnju. Za prijelaz između Androida i iPhonea, u bilo kojem smjeru, koristi kod za prijenos: na trenutnom mobitelu, u Postavkama Lecturametera, odaberi Upari uređaj, dobit ćeš privremeni kod, upiši ga na novom uređaju i Pro se aktivira i ondje. Kodovi lm-... mogu se iskoristiti samo na Androidu. Ako stari uređaj prodaš ili izgubiš, možeš ga opozvati na istom zaslonu."}},
-        {"@type":"Question","name":"Mogu li prenijeti Pro između mobitela te između iOS-a i Androida?","acceptedAnswer":{"@type":"Answer","text":"Da, između Androida i iPhonea, u bilo kojem smjeru. To radiš kodom za prijenos koji generiraš u aplikaciji, u Postavkama. Između dva mobitela na istoj platformi ne treba ti: koristi Vrati kupnju sa svojim Google računom ili Apple ID-om."}}
+        {"@type":"Question","name":"Što se događa s mojim Pro ako promijenim mobitel?","acceptedAnswer":{"@type":"Answer","text":"Ovisi o tome gdje si ga kupio. Ako si ga kupio na Google Playu i prelaziš na drugi Android s istim Google računom, instaliraj Lecturameter i dodirni Vrati kupnju u Postavkama. Ako si ga kupio u App Storeu i prelaziš na drugi iPhone s istim Apple ID-om, isto: instaliraj i dodirni Vrati kupnju. Pro se zasad ne prenosi između Androida i iPhonea: svaka kupnja ostaje na svojoj platformi. lm-... kodovi se mogu iskoristiti samo na Androidu."}},
+        {"@type":"Question","name":"Mogu li prenijeti Pro između mobitela te između iOS-a i Androida?","acceptedAnswer":{"@type":"Answer","text":"Između Androida i iPhonea zasad ne: svaka kupnja ostaje na svojoj platformi. Provjeravamo može li se to nekako izvesti. Između dva mobitela na istoj platformi može: koristi Vrati kupnju sa svojim Google računom ili Apple ID-om."}}
       ]
     }
     </script>
@@ -231,7 +231,7 @@
             <li><a href="#whatsnew">Napomene uz ažuriranje</a></li>
             <li><a href="#history">Povijest</a></li>
             <li><a href="#roadmap">Plan razvoja</a></li>
-            <li><a href="#ios">iOS</a></li>
+            <li><a href="#ios-differences">iOS</a></li>
             <li><a href="./lecturameter-1999/">1999</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="./blog/">Blog</a></li>
@@ -298,8 +298,12 @@
                     </div>
                 </div>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="Preuzmi na Google Play">
                 <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                Preuzmi
+            </a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="Preuzmi u App Storeu">
+                <svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                 Preuzmi
             </a>
         </div>
@@ -862,23 +866,6 @@
     </div>
 </section>
 
-<!-- 7.5 iOS WAITLIST -->
-<section class="band band-alt ios-band" id="ios">
-    <div class="container">
-        <div class="section-head">
-            <h2>Isprobaj na iPhoneu</h2>
-            <p class="section-sub">Lecturameter za iPhone sada je dostupan u App Storeu.</p>
-        </div>
-        <div class="ios-hero">
-            <div class="pagi-lago" data-state="neutro" role="button" tabindex="0" aria-label="Pagi Lago"></div>
-            <div class="ios-waitlist">
-                <a class="btn" href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">Preuzmi u App Storeu</a>
-                <p class="ios-status" role="status" aria-live="polite"></p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- 7.6 iOS DIFFERENCES -->
 <section class="band band-alt differences" id="ios-differences" aria-labelledby="differences-title">
     <div class="container">
@@ -903,7 +890,8 @@
                         <li>Postavljanje i prikvačivanje widgeta.</li>
                         <li>Tableti (iPhone verzija ne radi na iPadu).</li>
                         <li>Iskorištavanje <code>lm-…</code> kodova.</li>
-                        <li>Vanjske donacije.</li>
+                        <li>Pro tema i ikona na dar na kraju probnog razdoblja.</li>
+                        <li>Napojnice i donacije.</li>
                     </ul>
                 </div>
                 <div>
@@ -912,7 +900,6 @@
                         <li>Widgeti Knjiga, Statistika, Izazovi i Bingo.</li>
                         <li>Potpuni odabir jezika.</li>
                         <li>Pejzažni način na telefonima.</li>
-                        <li>Pro tema i ikona na dar na kraju probnog razdoblja.</li>
                         <li>Sigurnosna kopija na Google Driveu.</li>
                         <li>Sinkronizacija s e-čitačem (KOSync).</li>
                     </ul>
@@ -922,20 +909,9 @@
                     <ul>
                         <li>Na iPhoneu je Pro kupnja unutar aplikacije preko App Storea. Na Androidu je to kupnja preko Google Playa.</li>
                         <li>Probno razdoblje od 7 dana na iPhoneu besplatna je kupnja unutar aplikacije preko App Storea, vezana uz tvoj Apple ID.</li>
-                        <li>Za prijenos Pro verzije između Androida i iPhonea koristiš kod za prijenos, koji generiraš u <strong>Postavkama</strong>. Ne radi između dva mobitela na istoj platformi: tamo koristi Vrati kupnju.</li>
+                        <li>Pro se zasad ne prenosi između Androida i iPhonea: svaka kupnja ostaje na svojoj platformi.</li>
                     </ul>
                 </div>
-            </div>
-        </details>
-
-        <details class="differences-details ios-first-demo" style="margin-top:16px;">
-            <summary>Prvi demo Lecturametera na iPhoneu</summary>
-            <div style="padding:1.25rem; border-top:1px solid rgba(128,128,128,0.15);">
-                <p style="text-align:center; max-width:640px; margin:0 auto 20px; color:var(--muted);">Snimljeno 20. rujna 2026., tijekom iOS bete.</p>
-                <video controls preload="metadata" playsinline style="display:block; max-width:360px; width:100%; margin:0 auto; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.2);">
-                    <source src="../videos/ios-first-demo.mp4" type="video/mp4">
-                    Tvoj preglednik ne podržava reprodukciju videa.
-                </video>
             </div>
         </details>
     </div>
@@ -984,11 +960,11 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">Što se događa s mojim Pro ako promijenim mobitel?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ovisi o tome gdje si ga kupio. Ako si ga kupio na <strong>Google Playu</strong> i prelaziš na drugi Android s istim Google računom, instaliraj Lecturameter i dodirni <strong>Vrati kupnju</strong> u Postavkama. Ako si ga kupio u <strong>App Storeu</strong> i prelaziš na drugi iPhone s istim Apple ID-om, isto: instaliraj i dodirni <strong>Vrati kupnju</strong>. Za prijelaz između Androida i iPhonea, u bilo kojem smjeru, koristi <strong>kod za prijenos</strong>: na trenutnom mobitelu, u Postavkama Lecturametera, odaberi <strong>Upari uređaj</strong>, dobit ćeš privremeni kod, upiši ga na novom uređaju i Pro se aktivira i ondje. <code>lm-…</code> kodovi se mogu iskoristiti samo na Androidu. Ako stari uređaj prodaš ili izgubiš, možeš ga opozvati na istom zaslonu. Više detalja u <a href="../activar-pro.html">Kako aktivirati Pro</a>.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Ovisi o tome gdje si ga kupio. Ako si ga kupio na <strong>Google Playu</strong> i prelaziš na drugi Android s istim Google računom, instaliraj Lecturameter i dodirni <strong>Vrati kupnju</strong> u Postavkama. Ako si ga kupio u <strong>App Storeu</strong> i prelaziš na drugi iPhone s istim Apple ID-om, isto: instaliraj i dodirni <strong>Vrati kupnju</strong>. Pro se zasad ne prenosi između Androida i iPhonea: svaka kupnja ostaje na svojoj platformi. <code>lm-…</code> kodovi se mogu iskoristiti samo na Androidu. Više detalja u <a href="../activar-pro.html">Kako aktivirati Pro</a>.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Mogu li prenijeti Pro između mobitela te između iOS-a i Androida?</button>
-                <div class="faq-a"><div class="faq-a-inner">Da, između Androida i iPhonea, u bilo kojem smjeru. To radiš kodom za prijenos koji generiraš u aplikaciji, u <strong>Postavkama</strong>. Između dva mobitela na istoj platformi ne treba ti: koristi Vrati kupnju sa svojim Google računom ili Apple ID-om.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Između Androida i iPhonea zasad ne: svaka kupnja ostaje na svojoj platformi. Provjeravamo može li se to nekako izvesti. Između dva mobitela na istoj platformi može: koristi <strong>Vrati kupnju</strong> sa svojim Google računom ili Apple ID-om.</div></div>
             </div>
         </div>
     </div>
@@ -1120,6 +1096,7 @@
         <div class="footer-cta">
             <h3>Počni stvarno pratiti svoje čitanje.</h3>
             <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Preuzmi na Google Play</a>
+            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="btn">Preuzmi u App Storeu</a>
         </div>
 
         <div class="footer-grid">
@@ -1153,6 +1130,9 @@
                 <div class="footer-social">
                     <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" aria-label="Google Play">
                         <svg viewBox="0 0 24 24"><path d="M1 2.571C1 1.804 1.459 1.2 2.144.988L12.233 12 2.144 23.012C1.46 22.8 1 22.196 1 21.429V2.571z" fill="#4285F4"/><path d="M2.144 23.012L14.396 12l3.167 3.096L5.07 22.47a2.325 2.325 0 01-2.926.542z" fill="#EA4335"/><path d="M22.14 10.693l-4.578 2.636L14.396 12l3.166-3.096 4.578 2.636c.86.495.86 1.658 0 2.153z" fill="#FBBC04"/><path d="M2.144.988A2.325 2.325 0 015.07 1.53l12.492 7.374L14.396 12 2.144.988z" fill="#34A853"/></svg>
+                    </a>
+                    <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" aria-label="App Store">
+                        <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                     </a>
                     <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" aria-label="X / Twitter">
                         <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
@@ -1194,7 +1174,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi ti plješće!", "Sjaj, zvjezdice!", "Pssst, čitam.", "Pagi te gleda…"], "pagi_angry": ["Joj! To je boljelo!", "Dosta klikanja!", "Grr, pusti me na miru.", "Više nije smiješno."], "lago_happy": ["Upoznat ću još čitatelja!", "Spremite AirPodse!", "Vidimo se u App Storeu."], "lago_angry": ["Nećeš me valjda tamo odvesti…", "Ja više volim Android.", "Ne pada mi na pamet preskočiti ogradu.", "NE stavljaj me u kutiju."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi ti plješće!", "Sjaj, zvjezdice!", "Pssst, čitam.", "Pagi te gleda…"], "pagi_angry": ["Joj! To je boljelo!", "Dosta klikanja!", "Grr, pusti me na miru.", "Više nije smiješno."]}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>
