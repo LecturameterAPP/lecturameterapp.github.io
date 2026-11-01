@@ -26,14 +26,15 @@ import build as B  # noqa: E402
 ROOT = B.ROOT
 BLOG_DIR = os.path.join(ROOT, 'i18n', 'blog')
 SLUGS = ['lecturameter-1999', 'how-fast-do-i-really-read', 'fantasy-vs-manga-reading-pace',
-         'reading-time-vs-pages', 'export-goodreads-library']
+         'reading-time-vs-pages', 'export-goodreads-library', 'how-events-were-born']
 ALIAS = {'how-fast-do-i-really-read': 'hfr', 'fantasy-vs-manga-reading-pace': 'fvm', 'reading-time-vs-pages': 'rtp',
-         'export-goodreads-library': 'egl', 'lecturameter-1999': 'l99'}
+         'export-goodreads-library': 'egl', 'lecturameter-1999': 'l99', 'how-events-were-born': 'evt'}
 SLUG_ES = {'how-fast-do-i-really-read': 'a-que-velocidad-leo-de-verdad',
            'export-goodreads-library': 'exportar-biblioteca-goodreads',
            'fantasy-vs-manga-reading-pace': 'fantasia-frente-a-manga-ritmo-lectura',
            'reading-time-vs-pages': 'tiempo-de-lectura-o-paginas',
-           'lecturameter-1999': 'lecturameter-1999'}
+           'lecturameter-1999': 'lecturameter-1999',
+           'how-events-were-born': 'como-nacen-los-eventos'}
 HAND_MADE = ('en', 'es')
 MK_START = '<!-- blog-i18n:start -->'
 MK_END = '<!-- blog-i18n:end -->'
