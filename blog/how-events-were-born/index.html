@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How were Events born? Where does Lecturameter Quest come from? &middot; Lecturameter Blog</title>
+    <meta name="description" content="Events came out of a chat about easter eggs and a minigame I had to cut, Book Quest. What an Event is, what data it sends, rewards, versions and when the first one starts.">
+    <meta property="og:title" content="How were Events born? Where does Lecturameter Quest come from?">
+    <meta property="og:description" content="Events came out of a chat about easter eggs and a cut minigame called Book Quest. Here is what an Event is and how it works.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://lecturameterapp.github.io/blog/how-events-were-born/">
+    <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="How Events were born">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How were Events born? Where does Lecturameter Quest come from?">
+    <meta name="twitter:description" content="Events came out of a chat about easter eggs and a cut minigame called Book Quest. Here is what an Event is and how it works.">
+    <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#121212">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="shortcut icon" href="../../favicon.ico">
+
+    <link rel="canonical" href="https://lecturameterapp.github.io/blog/how-events-were-born/">
+    <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/how-events-were-born/">
+    <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/como-nacen-los-eventos/">
+    <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/how-events-were-born/">
+    <link rel="stylesheet" href="../../styles.css?v=6.7">
+    <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
+    <script async src="https://startupbar.co/widget/loader.js" data-startup-id="95bfcbaf-c0bf-4c7b-bd09-b012c0b19d1e"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "How were Events born? Where does Lecturameter Quest come from?",
+      "description": "Events came out of a chat about easter eggs and a minigame I had to cut, Book Quest. What an Event is, what data it sends, rewards, versions and when the first one starts.",
+      "datePublished": "2026-11-01",
+      "author": {"@type":"Organization","name":"Lecturameter"},
+      "image": "https://lecturameterapp.github.io/social_card.jpg?v=260807",
+      "mainEntityOfPage": "https://lecturameterapp.github.io/blog/how-events-were-born/",
+      "publisher": {"@type":"Organization","name":"Lecturameter","logo":{"@type":"ImageObject","url":"https://lecturameterapp.github.io/ic_launcher_pro.png"}}
+    }
+    </script>
+</head>
+<body>
+
+<!-- PROMO BAR -->
+<div id="promo-bar" class="promo-bar">
+    <span class="promo-pill">FREE</span>
+    <span>Lecturameter is free forever · No ads</span>
+    <button class="promo-close" aria-label="Close" onclick="dismissPromo()">×</button>
+</div>
+
+<nav class="nav-bar">
+    <div class="nav-inner">
+        <a href="../../" class="nav-brand">
+            <img src="../../ic_launcher_round.png" alt="Lecturameter" width="28" height="28">
+            Lecturameter
+        </a>
+        <ul class="nav-pills">
+            <li class="has-dropdown">
+                <a href="../../#features">Features <span class="caret" aria-hidden="true">▾</span></a>
+                <ul class="nav-dropdown">
+                    <li><a href="../../en/features/reading-timer/">Reading Timer</a></li>
+                    <li><a href="../../en/features/reading-tracker/">Reading Tracker</a></li>
+                    <li><a href="../../en/features/reading-statistics/">Reading Statistics</a></li>
+                    <li><a href="../../en/features/goodreads-alternative/">Goodreads Alternative</a></li>
+                    <li><a href="../../en/features/book-catalog/">Book Catalog</a></li>
+                </ul>
+            </li>
+            <li><a href="../../#themes">Themes</a></li>
+            <li><a href="../../#pricing">Pro</a></li>
+            <li><a href="../../#whatsnew">Patch notes</a></li>
+            <li><a href="../../#history">History</a></li>
+            <li><a href="../../#roadmap">Roadmap</a></li>
+            <li><a href="../../#faq">FAQ</a></li>
+            <li><a href="../../lecturameter-1999/">1999</a></li>
+            <li><a href="../">Blog</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button class="nav-theme-btn" aria-label="Toggle theme">☾</button>
+            <a href="../../es/blog/como-nacen-los-eventos/" class="nav-lang-btn">ES</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M5 3l14 9-14 9V3z"/></svg>
+                Download
+            </a>
+        </div>
+        <button class="nav-hamburger" aria-label="Menu">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+    </div>
+</nav>
+
+<main class="subpage-body">
+<section class="band band-hero">
+    <div class="container">
+        <div class="hero" style="grid-template-columns:1fr;">
+            <div class="hero-copy" style="max-width:820px;margin:0 auto;text-align:center;">
+                <p class="hero-eyebrow reveal-up in-view"><a href="../" style="color:inherit;text-decoration:none;">Blog</a> &middot; 2026-11-01</p>
+                <h1 class="reveal-up in-view d1">How were Events born? Where does Lecturameter Quest come from?</h1>
+                <p class="hero-tagline reveal-up in-view d2" style="margin-left:auto;margin-right:auto;">Events came out of a chat about easter eggs and a minigame I had to cut. Here is what an Event is, what it sends and when the first one starts.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>Where Events come from</h2>
+        </div>
+        <p>The truth is that Events come from a conversation about easter eggs with a Reddit user (the Pagi glitch skin was born from that same chat).</p>
+        <p>In very early versions of Lecturameter there was a small easter egg: if you tapped the app name several times, a minigame inspired by Slay the Spire opened, where you played with the books in your library as if they were cards. I was really excited about it, because I love easter eggs, and Slay the Spire 2 had just come out and I was VERY hooked.</p>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>Book Quest, and why I cut it</h2>
+        </div>
+        <p>As much as I loved Book Quest, which is what the game was called, it was hard to maintain:</p>
+        <ul>
+            <li>Every card, when played, showed a quote from the book on screen, one of the three each book was supposed to have. It is impossible to have three quotes for every book the app can find, and then translate them into the more than 50 languages it has now.</li>
+            <li>The game system was too big for a minigame inside an app that has nothing to do with it. You practically had to study to understand it.</li>
+        </ul>
+        <p>There were more reasons why Book Quest was not viable, but those were the main ones. So I removed it, despite how fond of it I was.</p>
+        <p>But back to the present. After the conversation about easter eggs, remembering Book Quest with nostalgia, I started thinking about a way to bring it back. Maybe there was a way to fix its problems...</p>
+        <p>Thinking about how a game like that could fit into an app like Lecturameter, it clicked with another idea I had been mulling over for a while: can you build a community without breaking the promise of the app, which is to be mostly local and account-free? If I could work out how to make Pro without accounts, there had to be a way to bring a community together without accounts and revive Book Quest.</p>
+        <p>And that is how Events were born.</p>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>How Events work</h2>
+        </div>
+        <p><strong>What is an Event?</strong> The name gives you an idea: an Event is a temporary happening inside Lecturameter.</p>
+        <p><strong>Is taking part mandatory?</strong> No. Events are completely optional and can be ignored. If they do not interest you, you can turn off Event notifications in Settings &gt; Notifications and nothing will reach you.</p>
+        <p><strong>How do they work?</strong> Each Event has its own rules, which you will find inside it. Some will be competitive and some will not. In each Event you can pick an alias and a Pagi avatar to take part with. This resets with every Event.</p>
+        <p><strong>Do I need an account? What data is sent?</strong> No account needed. You join with an alias: we do not ask for your name or your email. The app only sends your alias, your avatar and whatever counts for that Event (for example, the pages read while it lasts). Your library stays on your phone.</p>
+        <p><strong>Which version do I need? Can I take part on iOS and Android?</strong> The minimum version will be 3.9, and you will be able to play on both systems without any trouble. There is a single ranking for Android and iOS.</p>
+        <p><strong>Will there be rewards?</strong> For now, the only reward is a card with your final place in the Event, which saves itself to My cards. In the future, the idea is to reward competitive Events with Pro codes, exclusive Pagi skins, and exclusive themes and icons. All of this depends on Google and Apple rules allowing it, so for now I cannot promise anything.</p>
+        <p><strong>How will I know an Event is about to start?</strong> Some time before it starts there will be a push notification, a notice on the Events icon (the calendar with a clock) and Pagi will let you know too. I will also announce it on Reddit, Twitter, Instagram and Discord. You will be able to sign up beforehand to get another notification when it kicks off; Pagi will remind you again and I will make the opening announcements.</p>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>The first Event</h2>
+        </div>
+        <p><strong>When will the first Event be?</strong> If all goes well, around 14 days after the 3.9 launch, on Android and iOS at the same time.</p>
+        <p>As always, I promise nothing. 3.8 is being a very stable version and building 3.9 on a good base gives me a lot of peace of mind. Internally Events have been tested a lot, but the experience of one person is nothing compared to that of more than 200 users.</p>
+        <p><strong>What will the first Event be?</strong> The first one will be &ldquo;La Gran Lectura&rdquo; (The Great Read), a competitive Event where whoever reads the most wins. Lecturameter Quest will come some time later.</p>
+        <p><strong>Can there be more than one Event at once?</strong> Technically yes, but since this is an experimental feature I want to go step by step.</p>
+        <p>For more information, you can read the 3.9 plan: <a href="https://www.reddit.com/r/Lecturameter/comments/1xigo74/roadmap_v39_events_are_coming_a_new_way_to/" target="_blank" rel="noopener">Roadmap v3.9: Events are coming</a>.</p>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container" style="max-width:760px;">
+        <div class="section-head">
+            <h2>Try it on Android</h2>
+        </div>
+        <p><a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">Get on Google Play</a></p>
+        <p style="margin-top:1.5rem;font-size:0.95em;opacity:0.85;">
+            See also:
+            <a href="../how-fast-do-i-really-read/">How fast do I really read?</a> &middot;
+            <a href="../reading-time-vs-pages/">Reading time or pages</a>
+        </p>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <span>&copy; 2026 Lecturameter &middot; Independent project</span>
+            <a href="../../">Home</a>
+        </div>
+    </div>
+</footer>
+
+<script src="../../main.js?v=6.2" defer></script>
+</body>
+</html>

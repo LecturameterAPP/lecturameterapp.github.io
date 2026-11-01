@@ -5723,6 +5723,24 @@
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/blog/how-events-were-born/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/how-events-were-born/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/como-nacen-los-eventos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/how-events-were-born/" />
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/blog/como-nacen-los-eventos/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/como-nacen-los-eventos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/how-events-were-born/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/how-events-were-born/" />
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <!-- blog-i18n:start (build_blog.py) -->
   <url>
     <loc>https://lecturameterapp.github.io/ar/blog/</loc>
