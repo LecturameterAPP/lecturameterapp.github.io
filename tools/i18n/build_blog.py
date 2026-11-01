@@ -136,6 +136,7 @@ def render_page(cfg, loc, avail, tpl_name, slug, strings_common, strings_blog, e
     v['__shot'] = B.make_shot_resolver(cfg, loc, errors, where)
     v['ios_live'] = '1' if cfg.get('ios_live') else ''
     v['ios_url'] = cfg['app_store_url'] if cfg.get('ios_live') else cfg['testflight_url']
+    v['testflight_1999_url'] = cfg['testflight_1999_url']
     v['lm_i18n_json'] = B.js_payload(strings_common, bool(cfg.get('ios_live')))
     targets = {o['code']: target(o, slug) for o in avail}
     v['lang_picker'] = B.lang_picker(loc, page, avail, strings_common, ' ' * 12, targets=targets)
