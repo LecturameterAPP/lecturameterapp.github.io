@@ -543,6 +543,11 @@
         // Default EN; ES only if explicitly requested via URL or saved preference.
         var lang = urlLang || saved || 'en';
         window.setLang(lang);
+        // #eventos: el ancla de la politica existe en ES (eventos) y en EN (events); salta al del idioma activo.
+        if (location.hash === '#eventos') {
+            var evAnchor = document.getElementById(lang === 'es' ? 'eventos' : 'events');
+            if (evAnchor) evAnchor.scrollIntoView();
+        }
     })();
 
     // ─── CONTACT FORM sendFeedback (mailto — global for contact.html) ───

@@ -83,7 +83,7 @@
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Política de privacidad – Lecturameter",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-01",
       "author": {
         "@type": "Person",
         "name": "Víctor (Lecturameter)",
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="page-hero">
             <h1>🔒 Política de privacidad</h1>
             <p class="tagline">Tus datos de lectura son tuyos. Punto.</p>
-            <p style="font-size:13px; color:var(--muted); margin-top:6px;">Por Víctor (Lecturameter) · Actualizada el 31 de octubre de 2026</p>
+            <p style="font-size:13px; color:var(--muted); margin-top:6px;">Por Víctor (Lecturameter) · Actualizada el 1 de noviembre de 2026</p>
         </div>
 
         <!-- PRIVACIDAD DESTACADA -->
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="section" id="privacidad">
             <h2>Política completa</h2>
             <div class="privacy-text">
-                <p><span class="highlight">Última actualización:</span> 31 de octubre de 2026</p>
+                <p><span class="highlight">Última actualización:</span> 1 de noviembre de 2026</p>
                 <p style="margin-top:8px;">Esta página es el espejo de la política de privacidad que verás dentro de la app. Te explica, en lenguaje sencillo, qué datos guarda Lecturameter y qué sale de tu dispositivo.</p>
 
                 <p style="margin-top:14px; color:#ddd;"><span class="highlight">1. Dónde viven tus datos</span></p>
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <ul style="padding-left:18px; margin:6px 0;">
                     <li>No usamos SDKs de analíticas de terceros ni herramientas de rastreo publicitario.</li>
                     <li>No mostramos publicidad.</li>
-                    <li>No hace falta crear ninguna cuenta para usar la app.</li>
+                    <li>No hace falta crear ninguna cuenta para usar la app. Si participas en un evento, se crea una identidad seudónima solo para eventos (sección 9).</li>
                     <li>No vendemos tus datos ni los usamos con fines publicitarios o de perfilado.</li>
                     <li>Sí recopilamos estadísticas seudónimas de uso propias y reportes de fallos técnicos, ambos opcionales y descritos en la sección 3. Puedes desactivarlos en Ajustes &gt; Ayuda y acerca de &gt; Privacidad.</li>
                 </ul>
@@ -232,7 +232,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p style="margin-top:8px;"><span class="highlight">Base legal:</span> tu consentimiento. Es una función opcional que activas tú al vincular el e-reader, y puedes retirar el consentimiento cuando quieras desvinculándolo o borrando tus datos del servidor.</p>
                 <p style="margin-top:8px;"><span class="highlight">Cómo borrarlo:</span> al desconectar el e-reader, marca «Borrar también mis datos del servidor». Se eliminan de inmediato del servidor el usuario, todo su progreso, su historial de actividad y sus estadísticas de lectura. Si desconectas sin marcarlo, el usuario y el progreso se quedan en el servidor y el historial de lectura se borra igualmente a los 30 días. Si ya no tienes la app o el e-reader, escribe a <span style="color:#BB86FC;">lecturameter.app@gmail.com</span> con tu usuario de sincronización y borramos del servidor el usuario, todo su progreso, su historial de actividad y sus estadísticas de lectura en un plazo máximo de 30 días. Al desvincular, la opción de borrar también tus datos del servidor sale marcada por defecto y lo borra todo al momento, historial incluido. Tras borrar, pueden quedar copias de seguridad técnicas de la base de datos hasta 30 días; nadie las consulta y se eliminan solas.</p>
 
-                <p style="margin-top:14px; color:#ddd;"><span class="highlight">9. Permisos de la app</span></p>
+                <p style="margin-top:14px; color:#ddd;" id="eventos"><span class="highlight">9. Eventos (opcional)</span></p>
+                <p>Los eventos, como el reto global de lectura, son opcionales: puedes usar toda la app sin unirte a ninguno, sin correo ni contraseña. Unirte crea una identidad seudónima que se usa solo en los eventos. Aunque nunca te unas, al abrirse la app pide a nuestro servidor de eventos la lista de eventos y envía solo tu plataforma (Android o iOS) y la versión de la app.</p>
+                <p style="margin-top:8px;"><span class="highlight">Qué enviamos al unirte:</span> un identificador seudónimo (la app genera un secreto aleatorio en tu móvil y nuestro servidor guarda solo su huella), el alias que eliges, el Pagi que escoges como avatar, la plataforma y la versión de la app. De cada sesión que registras con el cronómetro durante el evento: los minutos, las páginas, la hora de inicio y un identificador único de la sesión para no contarla dos veces (las sesiones añadidas a mano no se envían). Si juegas a Lecturameter Quest en un evento: el resultado de cada partida (victoria o derrota, fase, nivel, vida restante, los tipos de libro que usaste pero no sus títulos, turnos, tiempo activo y hora de fin). Solo si tú lo decides: una denuncia sobre un alias (el alias y tu motivo) y la encuesta del evento (respuestas cerradas y un texto libre opcional; no escribas datos personales en él).</p>
+                <p style="margin-top:8px;"><span class="highlight">Qué no enviamos nunca:</span> títulos, ISBN, portadas, tu biblioteca, notas, citas ni qué estás leyendo, ni tu nombre, correo, ubicación o contactos. No guardamos tu dirección IP en la base de datos de eventos; solo se usa en el momento para limitar las peticiones, y Cloudflare, que transporta la conexión, la ve.</p>
+                <p style="margin-top:8px;"><span class="highlight">Qué ven los demás:</span> tu alias, tu Pagi y tus minutos o puntos aparecen en la clasificación pública del evento, que puede leer cualquiera. No uses tu nombre real. No hay mensajes ni contacto entre participantes.</p>
+                <p style="margin-top:8px;"><span class="highlight">Notificaciones:</span> usamos Firebase Cloud Messaging (Google), solo el componente de mensajería y sin Firebase Analytics. La app se apunta a temas: uno por tu idioma y otro por cada evento al que te unes. Nuestro servidor no guarda tokens ni una lista de tus dispositivos; Google reparte los mensajes y trata el identificador técnico de la instalación que hace falta para ello. Vienen activadas en la app (interruptor «Eventos»), necesitan el permiso del sistema para mostrarse y puedes desactivarlas cuando quieras. Para apagarlas: Ajustes → Notificaciones → Eventos. Si tienes activadas las notificaciones de eventos, la app se apunta al tema de tu idioma aunque nunca te unas a un evento; por ese tema solo llegan el aviso de que un evento va a empezar y el de que ya ha empezado, y no te identifica. El resto de avisos (quedan dos días, resultados) los reciben solo quienes se unen; si no te unes, no te llega nada más. Los avisos de «Novedades de la app» (versiones nuevas, avisos importantes y otras comunicaciones de Lecturameter) usan el mismo servicio: la app se apunta a un tema por tu idioma (app_&lt;idioma&gt;), que no te identifica ni lleva datos de lectura. Viene activado y puedes apagarlo en Ajustes → Notificaciones → Novedades de la app.</p>
+                <p style="margin-top:8px;"><span class="highlight">Para qué y base jurídica:</span> para que puedas participar, calcular la clasificación y el total colectivo, evitar trampas evidentes, moderar alias inadecuados, darte la recompensa y recoger tu opinión. Base: tu consentimiento al pulsar «Unirme» después de ver qué se envía; nuestro interés legítimo en moderar y evitar trampas; y, para las notificaciones, tu permiso en el sistema. Puedes retirar el consentimiento en cualquier momento abandonando el evento o borrando tus datos. No mostramos publicidad, no vendemos datos ni te perfilamos.</p>
+                <p style="margin-top:8px;"><span class="highlight">Cuánto tiempo lo guardamos:</span> mientras el evento está en marcha y hasta 90 días después de que termine, salvo que lo borres antes. Pasado ese plazo borramos tu alias, tu Pagi, tus minutos, tus partidas de Quest y tus sesiones, y conservamos solo totales sin nombres (minutos totales, páginas y número de participantes). Las respuestas de la encuesta se archivan desvinculadas de ti y ya no se pueden asociar a tu persona. Las recompensas concedidas se conservan con un identificador interno que ya no apunta a ti. Si cambias de alias, el anterior queda reservado para ti dentro de ese evento hasta 60 días después de que termine. El registro interno de moderación (la acción realizada, el identificador interno del participante y el motivo) también se borra a los 90 días. Tras borrar, pueden quedar copias de seguridad técnicas de la base de datos hasta 30 días; nadie las consulta y se eliminan solas.</p>
+                <p style="margin-top:8px;"><span class="highlight">Abandonar y borrar:</span> en el menú del reto, «Abandonar el evento» borra del servidor todos tus datos de ese evento (alias, minutos, partidas de Quest, encuesta, recompensas, denuncias, reserva de alias y tu entrada en los resultados finales), y «Borrar todos mis datos de eventos» lo hace en todos los eventos y elimina tu identidad de este dispositivo. Tu biblioteca y tus sesiones en el móvil no se tocan. Tu código de recuperación te permite recuperar tu alias en otro dispositivo; sin él no podemos localizar tus datos, porque solo conocemos la huella. Si pierdes el código, tus datos de eventos se borran solos 90 días después de que termine cada evento. También puedes escribir a <span style="color:#BB86FC;">lecturameter.app@gmail.com</span> con tu código de recuperación. Tienes derecho de acceso, rectificación, supresión, limitación, oposición y portabilidad, y puedes reclamar ante tu autoridad de protección de datos (en España, la AEPD).</p>
+                <p style="margin-top:8px;"><span class="highlight">Quién trata los datos:</span> Lecturameter, con un servidor alojado en Cloudflare (encargado del tratamiento). Cuando alguien denuncia un alias, un aviso llega a un canal privado de nuestro equipo en Discord, proveedor de ese aviso, con exactamente: el evento, el alias denunciado, el número de denuncias acumuladas, si es un evento de prueba, el motivo, la hora y un enlace a nuestro panel de administración; nunca datos de quien denuncia. Las notificaciones las reparte Google (Firebase Cloud Messaging).</p>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">10. Permisos de la app</span></p>
                 <p><span class="highlight">Android:</span></p>
                 <ul style="padding-left:18px; margin:6px 0;">
                     <li><span class="highlight">Internet:</span> para buscar libros, hacer backup en Drive, enviar feedback, canjear códigos, iniciar la prueba gratuita, y enviar estadísticas seudónimas y reportes de fallos (si están activados).</li>
@@ -251,14 +262,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Acceso a tu cuenta de Google, solo si activas la copia en Google Drive; puedes revocarlo cuando quieras desde tu cuenta de Google.</li>
                 </ul>
 
-                <p style="margin-top:14px; color:#ddd;"><span class="highlight">10. Terceros</span></p>
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">11. Terceros</span></p>
                 <p><span class="highlight">En Android:</span> Google Play Billing procesa los pagos de Pro; la app nunca ve tus datos de pago. Google Drive guarda tus copias opcionales en tu propia cuenta de Google, y la app solo ve los archivos que ella creó. El escáner de códigos de barras (Google ML Kit) y el escáner de documentos (servicios de Google Play) procesan las imágenes en tu dispositivo; Google puede recibir de estos componentes métricas de uso y rendimiento e identificadores por instalación, según su propia política de privacidad. Los catálogos públicos de libros reciben tus búsquedas a través de nuestro servidor, como se explica arriba. Cloudflare aloja los servidores de Lecturameter. No vendemos tus datos ni los compartimos con fines publicitarios.</p>
                 <p style="margin-top:8px;"><span class="highlight">En iOS:</span> La App Store procesa los pagos de Pro; la app nunca ve tus datos de pago. Google Drive puede guardar tus copias opcionales en tu propia cuenta de Google, y la app solo ve los archivos que ella creó. Los catálogos públicos de libros reciben tus búsquedas a través de nuestro servidor, como se explica arriba. Cloudflare aloja los servidores de Lecturameter. No vendemos tus datos ni los compartimos con fines publicitarios.</p>
+                <p style="margin-top:8px;"><span class="highlight">Eventos:</span> Lecturameter, con un servidor alojado en Cloudflare (encargado del tratamiento). Cuando alguien denuncia un alias, un aviso llega a un canal privado de nuestro equipo en Discord, proveedor de ese aviso, con exactamente: el evento, el alias denunciado, el número de denuncias acumuladas, si es un evento de prueba, el motivo, la hora y un enlace a nuestro panel de administración; nunca datos de quien denuncia. Las notificaciones las reparte Google (Firebase Cloud Messaging).</p>
 
-                <p style="margin-top:14px; color:#ddd;"><span class="highlight">11. Contacto</span></p>
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">12. Contacto</span></p>
                 <p>Si tienes cualquier duda sobre privacidad, escribe a <span style="color:#BB86FC;">lecturameter.app@gmail.com</span>.</p>
 
-                <p style="margin-top:14px; color:#ddd;"><span class="highlight">12. Cambios en esta política</span></p>
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">13. Cambios en esta política</span></p>
                 <p>Si esta política cambia, actualizaremos esta misma página con la nueva fecha en la parte superior.</p>
             </div>
         </div>
@@ -278,7 +290,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="page-hero">
             <h2 class="page-heading">🔒 Privacy policy</h2>
             <p class="tagline">Your reading data is yours. Period.</p>
-            <p style="font-size:13px; color:var(--muted); margin-top:6px;">By Víctor (Lecturameter) · Updated October 31, 2026</p>
+            <p style="font-size:13px; color:var(--muted); margin-top:6px;">By Víctor (Lecturameter) · Updated November 1, 2026</p>
         </div>
 
         <div class="privacy-highlight">
@@ -294,7 +306,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="section" id="privacy">
             <h2>Full policy</h2>
             <div class="privacy-text">
-                <p><span class="highlight">Last updated:</span> October 31, 2026</p>
+                <p><span class="highlight">Last updated:</span> November 1, 2026</p>
                 <p style="margin-top:8px;">This page mirrors the privacy policy you see inside the app. It explains, in plain language, what data Lecturameter keeps and what leaves your device.</p>
 
                 <p style="margin-top:14px; color:#ddd;"><span class="highlight">1. Where your data lives</span></p>
@@ -309,7 +321,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <ul style="padding-left:18px; margin:6px 0;">
                     <li>We use no third-party analytics SDKs and no advertising or cross-app tracking tools.</li>
                     <li>We show no ads.</li>
-                    <li>You don't need to create any account to use the app.</li>
+                    <li>You don't need to create any account to use the app. If you take part in an event, a pseudonymous identity is created for events only (section 9).</li>
                     <li>We never sell your data or use it for advertising or profiling.</li>
                     <li>We do collect our own optional pseudonymous usage statistics and crash reports, both described in section 3. You can turn them off in Settings &gt; Help and about &gt; Privacy.</li>
                 </ul>
@@ -339,7 +351,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p style="margin-top:8px;"><span class="highlight">Legal basis:</span> your consent. This is an optional feature that you turn on yourself by linking your e-reader, and you can withdraw your consent at any time by unlinking it or deleting your data from the server.</p>
                 <p style="margin-top:8px;"><span class="highlight">How to delete it:</span> when you disconnect the e-reader, check "Also delete my data from the server". The user, all its progress, its activity history and its reading statistics are removed from the server immediately. If you disconnect without checking it, the user and the progress stay on the server, and the reading history is deleted anyway after 30 days. If you no longer have the app or the e-reader, write to <span style="color:#BB86FC;">lecturameter.app@gmail.com</span> with your sync username and we will delete the user, all its progress, its activity history and its reading statistics from the server within 30 days at most. When you unlink, the option to also delete your data from the server comes checked by default and removes everything immediately, history included. After deleting, technical backup copies of the database may remain for up to 30 days; nobody consults them and they are removed automatically.</p>
 
-                <p style="margin-top:14px; color:#ddd;"><span class="highlight">9. App permissions</span></p>
+                <p style="margin-top:14px; color:#ddd;" id="events"><span class="highlight">9. Events (optional)</span></p>
+                <p>Events, such as the global reading challenge, are optional: you can use the whole app without joining any, with no email or password. Joining creates a pseudonymous identity used only for events. Even if you never join, when the app opens it asks our events server for the list of events and sends only your platform (Android or iOS) and the app version.</p>
+                <p style="margin-top:8px;"><span class="highlight">What we send when you join:</span> a pseudonymous identifier (the app generates a random secret on your phone and our server keeps only its fingerprint), the alias you choose, the Pagi you pick as avatar, the platform and the app version. For each session you record with the timer during the event: the minutes, the pages, the start time and a unique session id so it is not counted twice (sessions added by hand are not sent). If you play Lecturameter Quest in an event: the result of each game (win or defeat, stage, level, life left, the types of books you used but not their titles, turns, active time and end time). Only if you choose to: a report about an alias (the alias and your reason) and the event survey (closed answers and optional free text; do not write personal data in it).</p>
+                <p style="margin-top:8px;"><span class="highlight">What we never send:</span> titles, ISBNs, covers, your library, notes, quotes or what you are reading, nor your name, email, location or contacts. We do not store your IP address in the events database; it is used only at that moment to limit requests, and Cloudflare, which carries the connection, sees it.</p>
+                <p style="margin-top:8px;"><span class="highlight">What others see:</span> your alias, your Pagi and your minutes or points appear on the event's public leaderboard, which anyone can read. Do not use your real name. There are no messages or contact between participants.</p>
+                <p style="margin-top:8px;"><span class="highlight">Notifications:</span> we use Firebase Cloud Messaging (Google), only the messaging component and without Firebase Analytics. The app subscribes to topics: one for your language and one for each event you join. Our server stores no tokens and no list of your devices; Google delivers the messages and processes the technical identifier of the installation needed for that. They are on by default in the app (the “Events” switch), they need the system permission to be shown, and you can turn them off at any time. To turn them off: Settings → Notifications → Events. If event notifications are turned on, the app subscribes to your language topic even if you never join an event; that topic only carries the notice that an event is about to start and the one that it has started, and it does not identify you. All other notices (two days left, results) go only to people who join; if you do not join, nothing else reaches you. The “App news” notices (new versions, important notices and other communications from Lecturameter) use the same service: the app subscribes to one topic for your language (app_&lt;language&gt;), which does not identify you or carry any reading data. It is on by default and you can turn it off in Settings → Notifications → App news.</p>
+                <p style="margin-top:8px;"><span class="highlight">Why and legal basis:</span> to let you take part, compute the leaderboard and the shared total, prevent obvious cheating, moderate inappropriate aliases, give you the reward and gather your opinion. Basis: your consent when you tap Join after seeing what is sent; our legitimate interest in moderation and preventing cheating; and, for notifications, your permission on the system. You can withdraw consent at any time by leaving the event or deleting your data. We do not show ads, sell data or profile you.</p>
+                <p style="margin-top:8px;"><span class="highlight">How long we keep it:</span> while the event runs and up to 90 days after it ends, unless you delete it earlier. After that we delete your alias, Pagi, minutes, Quest games and sessions and keep only totals without names (total minutes, pages and number of participants). Survey answers are archived unlinked from you and can no longer be tied to you. Rewards granted are kept with an internal identifier that no longer points to you. If you change alias, the old one stays reserved for you in that event until 60 days after it ends. The internal moderation log (the action taken, the participant's internal identifier and the reason) is also deleted after 90 days. After deleting, technical backup copies of the database may remain for up to 30 days; nobody consults them and they are removed automatically.</p>
+                <p style="margin-top:8px;"><span class="highlight">Leaving and deleting:</span> in the challenge menu, “Leave the event” deletes all your data of that event from the server (alias, minutes, Quest games, survey, rewards, reports, alias reservation and your entry in the final results), and “Delete all my event data” does it in every event and removes your identity from this device. Your library and your sessions on the phone are not touched. Your recovery code lets you recover your alias on another device; without it we cannot locate your data, because we only know the fingerprint. If you lose the code, your event data is deleted automatically 90 days after each event ends. You can also write to <span style="color:#BB86FC;">lecturameter.app@gmail.com</span> with your recovery code. You have the rights of access, rectification, erasure, restriction, objection and portability, and you can complain to your data protection authority (in Spain, the AEPD).</p>
+                <p style="margin-top:8px;"><span class="highlight">Who processes the data:</span> Lecturameter, with a server hosted on Cloudflare (processor). When someone reports an alias, a notice reaches a private channel of our team on Discord, the provider of that notice, with exactly: the event, the reported alias, the number of reports so far, whether it is a test event, the reason, the time and a link to our admin panel; never any data about the person reporting. Notifications are delivered by Google (Firebase Cloud Messaging).</p>
+
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">10. App permissions</span></p>
                 <p><span class="highlight">Android:</span></p>
                 <ul style="padding-left:18px; margin:6px 0;">
                     <li><span class="highlight">Internet:</span> to search for books, back up to Drive, send feedback, redeem codes, start the free trial, and send pseudonymous statistics and crash reports (when enabled).</li>
@@ -358,14 +381,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Google account access, only if you turn on Google Drive backup; you can revoke it at any time from your Google account.</li>
                 </ul>
 
-                <p style="margin-top:14px; color:#ddd;"><span class="highlight">10. Third parties</span></p>
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">11. Third parties</span></p>
                 <p><span class="highlight">On Android:</span> Google Play Billing processes the payments for Pro; the app never sees your payment data. Google Drive stores your optional backups in your own Google account, and the app only sees the files it created. The barcode scanner (Google ML Kit) and the document scanner (Google Play services) process images on your device; Google may receive usage and performance metrics and per-installation identifiers from these components, under Google's own privacy policy. Public book catalogs receive your searches through our server, as described above. Cloudflare hosts Lecturameter's servers. We do not sell your data or share it for advertising.</p>
                 <p style="margin-top:8px;"><span class="highlight">On iOS:</span> The App Store processes the payments for Pro; the app never sees your payment data. Google Drive can store your optional backups in your own Google account, and the app only sees the files it created. Public book catalogs receive your searches through our server, as described above. Cloudflare hosts Lecturameter's servers. We do not sell your data or share it for advertising.</p>
+                <p style="margin-top:8px;"><span class="highlight">Events:</span> Lecturameter, with a server hosted on Cloudflare (processor). When someone reports an alias, a notice reaches a private channel of our team on Discord, the provider of that notice, with exactly: the event, the reported alias, the number of reports so far, whether it is a test event, the reason, the time and a link to our admin panel; never any data about the person reporting. Notifications are delivered by Google (Firebase Cloud Messaging).</p>
 
-                <p style="margin-top:14px; color:#ddd;"><span class="highlight">11. Contact</span></p>
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">12. Contact</span></p>
                 <p>If you have any privacy questions, write to <span style="color:#BB86FC;">lecturameter.app@gmail.com</span>.</p>
 
-                <p style="margin-top:14px; color:#ddd;"><span class="highlight">12. Changes to this policy</span></p>
+                <p style="margin-top:14px; color:#ddd;"><span class="highlight">13. Changes to this policy</span></p>
                 <p>If this policy changes, we will update this same page with the new date at the top.</p>
             </div>
         </div>
