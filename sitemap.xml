@@ -2864,113 +2864,8 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Blog indexes -->
-  <url>
-    <loc>https://lecturameterapp.github.io/blog/</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lecturameterapp.github.io/es/blog/</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
 
-  <!-- Blog posts EN -->
-  <url>
-    <loc>https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/a-que-velocidad-leo-de-verdad/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/" />
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/fantasia-frente-a-manga-ritmo-lectura/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/" />
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://lecturameterapp.github.io/blog/reading-time-vs-pages/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/tiempo-de-lectura-o-paginas/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/" />
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://lecturameterapp.github.io/blog/export-goodreads-library/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/export-goodreads-library/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/exportar-biblioteca-goodreads/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/export-goodreads-library/" />
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
 
-  <!-- Blog posts ES -->
-  <url>
-    <loc>https://lecturameterapp.github.io/es/blog/a-que-velocidad-leo-de-verdad/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/a-que-velocidad-leo-de-verdad/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/" />
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://lecturameterapp.github.io/es/blog/fantasia-frente-a-manga-ritmo-lectura/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/fantasia-frente-a-manga-ritmo-lectura/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/" />
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://lecturameterapp.github.io/es/blog/tiempo-de-lectura-o-paginas/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/tiempo-de-lectura-o-paginas/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/" />
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://lecturameterapp.github.io/es/blog/exportar-biblioteca-goodreads/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/exportar-biblioteca-goodreads/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/export-goodreads-library/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/export-goodreads-library/" />
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://lecturameterapp.github.io/blog/lecturameter-1999/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/lecturameter-1999/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/lecturameter-1999/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/lecturameter-1999/" />
-    <lastmod>2026-09-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lecturameterapp.github.io/es/blog/lecturameter-1999/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/lecturameter-1999/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/lecturameter-1999/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/lecturameter-1999/" />
-    <lastmod>2026-09-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
 
   <!-- Lecturameter 1999 pages -->
   <url>
@@ -6173,6 +6068,118 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://lecturameterapp.github.io/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/blog/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/blog/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/blog/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/blog/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/blog/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/blog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/blog/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/blog/" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/blog/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/blog/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/blog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/blog/" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/blog/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/blog/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/blog/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/blog/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/blog/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/blog/" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/blog/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/blog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/blog/" />
+    <xhtml:link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/blog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/blog/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/blog/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/blog/" />
+    <xhtml:link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/blog/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/blog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/blog/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/blog/" />
+    <xhtml:link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/blog/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/blog/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/blog/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/blog/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/blog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/blog/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/blog/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/blog/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/blog/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/blog/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/blog/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/blog/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/blog/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/blog/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/blog/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/blog/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/blog/" />
+    <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/" />
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/blog/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/blog/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/blog/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/blog/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/blog/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/blog/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/blog/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/blog/" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/blog/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/blog/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/blog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/blog/" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/blog/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/blog/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/blog/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/blog/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/blog/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/blog/" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/blog/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/blog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/blog/" />
+    <xhtml:link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/blog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/blog/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/blog/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/blog/" />
+    <xhtml:link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/blog/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/blog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/blog/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/blog/" />
+    <xhtml:link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/blog/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/blog/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/blog/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/blog/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/blog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/blog/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/blog/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/blog/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/blog/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/blog/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/blog/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/blog/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/blog/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/blog/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/blog/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/blog/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/blog/" />
+    <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/" />
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://lecturameterapp.github.io/et/blog/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/" />
@@ -8801,6 +8808,118 @@
     <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/lecturameter-1999/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/lecturameter-1999/" />
     <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/blog/lecturameter-1999/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/lecturameter-1999/" />
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/blog/lecturameter-1999/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/lecturameter-1999/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/lecturameter-1999/" />
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -11437,6 +11556,118 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/a-que-velocidad-leo-de-verdad/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/" />
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/blog/a-que-velocidad-leo-de-verdad/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/a-que-velocidad-leo-de-verdad/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/how-fast-do-i-really-read/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/" />
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://lecturameterapp.github.io/et/blog/how-fast-do-i-really-read/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/how-fast-do-i-really-read/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/a-que-velocidad-leo-de-verdad/" />
@@ -14065,6 +14296,118 @@
     <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/fantasy-vs-manga-reading-pace/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/" />
     <lastmod>2026-10-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/fantasia-frente-a-manga-ritmo-lectura/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/" />
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/blog/fantasia-frente-a-manga-ritmo-lectura/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/fantasia-frente-a-manga-ritmo-lectura/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/fantasy-vs-manga-reading-pace/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/fantasy-vs-manga-reading-pace/" />
+    <lastmod>2026-11-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -16701,6 +17044,118 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://lecturameterapp.github.io/blog/reading-time-vs-pages/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/tiempo-de-lectura-o-paginas/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/" />
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/blog/tiempo-de-lectura-o-paginas/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/tiempo-de-lectura-o-paginas/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/reading-time-vs-pages/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/" />
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://lecturameterapp.github.io/et/blog/reading-time-vs-pages/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/reading-time-vs-pages/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/tiempo-de-lectura-o-paginas/" />
@@ -19329,6 +19784,118 @@
     <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/export-goodreads-library/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/export-goodreads-library/" />
     <lastmod>2026-10-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/blog/export-goodreads-library/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/exportar-biblioteca-goodreads/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/export-goodreads-library/" />
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/blog/exportar-biblioteca-goodreads/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/blog/exportar-biblioteca-goodreads/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://lecturameterapp.github.io/ar/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://lecturameterapp.github.io/bg/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://lecturameterapp.github.io/bn/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lecturameterapp.github.io/ca/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lecturameterapp.github.io/cs/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://lecturameterapp.github.io/da/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lecturameterapp.github.io/de/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://lecturameterapp.github.io/el/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://lecturameterapp.github.io/et/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://lecturameterapp.github.io/fa/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://lecturameterapp.github.io/fi/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lecturameterapp.github.io/fr/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="gu" href="https://lecturameterapp.github.io/gu/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://lecturameterapp.github.io/he/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://lecturameterapp.github.io/hi/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://lecturameterapp.github.io/hr/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://lecturameterapp.github.io/hu/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://lecturameterapp.github.io/id/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://lecturameterapp.github.io/is/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lecturameterapp.github.io/it/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lecturameterapp.github.io/ja/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="kn" href="https://lecturameterapp.github.io/kn/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://lecturameterapp.github.io/ko/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://lecturameterapp.github.io/lt/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lecturameterapp.github.io/lv/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ml" href="https://lecturameterapp.github.io/ml/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://lecturameterapp.github.io/mr/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://lecturameterapp.github.io/nl/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://lecturameterapp.github.io/no/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="pa" href="https://lecturameterapp.github.io/pa/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://lecturameterapp.github.io/pl/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://lecturameterapp.github.io/pt/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lecturameterapp.github.io/pt-br/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://lecturameterapp.github.io/ro/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lecturameterapp.github.io/ru/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://lecturameterapp.github.io/sk/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://lecturameterapp.github.io/sl/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://lecturameterapp.github.io/sv/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://lecturameterapp.github.io/sw/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://lecturameterapp.github.io/ta/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://lecturameterapp.github.io/te/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://lecturameterapp.github.io/tr/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lecturameterapp.github.io/uk/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://lecturameterapp.github.io/ur/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://lecturameterapp.github.io/vi/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/blog/export-goodreads-library/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/blog/export-goodreads-library/" />
+    <lastmod>2026-11-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

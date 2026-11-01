@@ -2,13 +2,13 @@
 """Generador del blog traducido: src/templates/blog-*.html + i18n/blog/<code>.json -> /<code>/blog/...
 
 Uso:
-    python tools/i18n/build_blog.py                 # todos los idiomas con i18n/blog/<code>.json (menos en/es)
+    python tools/i18n/build_blog.py                 # todos los idiomas con i18n/blog/<code>.json
     python tools/i18n/build_blog.py --code de       # solo uno
     python tools/i18n/build_blog.py --code de --src i18n/blog/_pilot_de.json --out /tmp/blogtest
                                                     # prueba: otro JSON, otro directorio, sin tocar sitemap ni en/es
 
 Solo libreria estandar. Reutiliza build.py (variables, selector de idioma, render).
-`en` y `es` NO se generan (sus articulos son los originales hechos a mano, `es/` con slugs en espanol);
+`en` y `es` se generan igual que el resto (`es/` con slugs en espanol, ver SLUG_ES);
 `i18n/blog/en.json` es la fuente de claves. Ver tools/i18n/blog/README_traduccion.md.
 """
 import argparse
@@ -34,7 +34,7 @@ SLUG_ES = {'how-fast-do-i-really-read': 'a-que-velocidad-leo-de-verdad',
            'fantasy-vs-manga-reading-pace': 'fantasia-frente-a-manga-ritmo-lectura',
            'reading-time-vs-pages': 'tiempo-de-lectura-o-paginas',
            'lecturameter-1999': 'lecturameter-1999'}
-HAND_MADE = ('en', 'es')
+HAND_MADE = ()  # en y es se generan como el resto (antes eran a mano)
 MK_START = '<!-- blog-i18n:start -->'
 MK_END = '<!-- blog-i18n:end -->'
 CRLF, LF = '\r\n', '\n'
@@ -112,6 +112,9 @@ def render_page(cfg, loc, avail, tpl_name, slug, strings_common, strings_blog, e
     for lk, lp in cfg.get('legal_pages', {}).items():
         v['link_' + lk] = B.rel(here, lp['original'] if loc.get('legal_original') else prefix + lp['dir'])
     v['link_blog'] = B.rel(here, target(loc, None))
+    for s_, a_ in ALIAS.items():
+        v['post_' + a_] = B.rel(here, target(loc, s_))
+    v['shot_lang'] = 'es' if loc['code'] == 'es' else 'en'
     v['page_url'] = cfg['site_url'] + base
     v['code'] = loc['code']
     v['head_redirect'] = ''
@@ -137,7 +140,22 @@ def render_page(cfg, loc, avail, tpl_name, slug, strings_common, strings_blog, e
     v['lang_picker'] = B.lang_picker(loc, page, avail, strings_common, ' ' * 12, targets=targets)
     with open(os.path.join(ROOT, 'src', 'templates', tpl_name), encoding='utf-8', newline='') as f:
         tpl = f.read().replace(CRLF, LF)
-    return B.render(tpl, v, strings, where, errors)
+    out = B.render(tpl, v, strings, where, errors)
+    if loc['code'] == 'es':
+        out = localize_numbers_es(out)
+    return out
+
+
+def localize_numbers_es(text):
+    """Cifras de las cajas de metricas en formato espanol (1,543 -> 1.543; 0.88 -> 0,88)."""
+    def fix(m):
+        val = m.group(2)
+        if re.fullmatch(r'\d{1,3}(,\d{3})+', val):
+            val = val.replace(',', '.')
+        else:
+            val = re.sub(r'(\d)\.(\d)', r'\1,\2', val)
+        return m.group(1) + val + m.group(3)
+    return re.sub(r'(<span class="metric-val[^"]*">)([^<]*)(</span>)', fix, text)
 
 
 # ---------------------------------------------------------------- en/es: hreflang
@@ -197,11 +215,19 @@ def update_sitemap(cfg, gen_locs, avail, changed_files):
     en_blocks = {}
     for m in block_re.finditer(text):
         en_blocks[re.search(r'<loc>(.*?)</loc>', m.group(0)).group(1)] = m.group(0)
+    # entradas del blog en/es escritas antes a mano: pasan al bloque generado (conservan lastmod/changefreq/priority)
+    for slug in [None] + SLUGS:
+        for o in gen_locs:
+            u = site + target(o, slug)
+            if u in en_blocks and u not in old:
+                old[u] = en_blocks[u]
+                text = text.replace(en_blocks[u], '')
+    text = re.sub(r'\n  <!-- Blog (?:indexes|posts EN|posts ES) -->\n', '\n', text)
     out = ''
     if gen_locs:
         for slug in [None] + SLUGS:
             en_loc = [o for o in avail if o['code'] == 'en'][0]
-            ref = en_blocks.get(site + target(en_loc, slug), '')
+            ref = en_blocks.get(site + target(en_loc, slug), '') or old.get(site + target(en_loc, slug), '')
             alts = ''.join('    <xhtml:link rel="alternate" hreflang="%s" href="%s" />\n' % (
                 o['hreflang'], site + target(o, slug)) for o in avail)
             alts += '    <xhtml:link rel="alternate" hreflang="x-default" href="%s" />\n' % (site + target(en_loc, slug))

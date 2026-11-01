@@ -140,22 +140,22 @@
         <p>{{blog.egl.p_03}}</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin:1.5rem 0;">
             <figure class="only-light" style="margin:0;text-align:center;">
-                <img src="{{root}}import_welcome_en_light.jpg" alt="{{blog.egl.alt_01}}" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+                <img src="{{root}}import_welcome_{{shot_lang}}_light.jpg" alt="{{blog.egl.alt_01}}" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
                 <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">{{blog.egl.figcaption_01}}</figcaption>
             </figure>
             <figure class="only-dark" style="margin:0;text-align:center;">
-                <img src="{{root}}import_welcome_en_dark.jpg" alt="{{blog.egl.alt_02}}" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+                <img src="{{root}}import_welcome_{{shot_lang}}_dark.jpg" alt="{{blog.egl.alt_02}}" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
                 <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">{{blog.egl.figcaption_02}}</figcaption>
             </figure>
         </div>
         <p>{{blog.egl.p_04}}</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin:1.5rem 0;">
             <figure class="only-light" style="margin:0;text-align:center;">
-                <img src="{{root}}import_wizard_en_light.jpg" alt="{{blog.egl.alt_03}}" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+                <img src="{{root}}import_wizard_{{shot_lang}}_light.jpg" alt="{{blog.egl.alt_03}}" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
                 <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">{{blog.egl.figcaption_03}}</figcaption>
             </figure>
             <figure class="only-dark" style="margin:0;text-align:center;">
-                <img src="{{root}}import_wizard_en_dark.jpg" alt="{{blog.egl.alt_04}}" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
+                <img src="{{root}}import_wizard_{{shot_lang}}_dark.jpg" alt="{{blog.egl.alt_04}}" loading="lazy" style="max-width:280px;width:100%;height:auto;border-radius:14px;">
                 <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.5rem;">{{blog.egl.figcaption_04}}</figcaption>
             </figure>
         </div>
@@ -253,8 +253,8 @@
         <p><a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="btn">{{common.footer.get_on_google_play}}</a> <a href="{{ios_url}}" target="_blank" rel="noopener" class="btn" style="margin-inline-start:10px;">{{home.home.try_on_iphone}}</a></p>
         <p style="margin-top:1.5rem;font-size:0.95em;opacity:0.85;">
             {{blog.common.see_also}}
-            <a href="{{link_blog}}how-fast-do-i-really-read/">{{blog.hfr.short_title}}</a> &middot;
-            <a href="{{link_blog}}reading-time-vs-pages/">{{blog.rtp.short_title}}</a> &middot;
+            <a href="{{post_hfr}}">{{blog.hfr.short_title}}</a> &middot;
+            <a href="{{post_rtp}}">{{blog.rtp.short_title}}</a> &middot;
             <a href="{{link_feat_goodreads}}">{{common.nav.goodreads_alternative}}</a>
             <a href="{{link_feat_catalog}}">{{common.nav.book_catalog}}</a>
         </p>

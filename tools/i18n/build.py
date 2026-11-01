@@ -269,7 +269,7 @@ def release_vars(cfg, strings, where, errors):
     return v
 
 
-IF_RE = re.compile(r'^[ \t]*\{\{#(if|unless) (\w+)\}\}\n(.*?)^[ \t]*\{\{/(?:if|unless)\}\}\n', re.S | re.M)
+IF_RE = re.compile(r'^[ \t]*\{\{#(if|unless) (\w+)\}\}\r?\n(.*?)^[ \t]*\{\{/(?:if|unless)\}\}\r?\n', re.S | re.M)
 
 
 def resolve_ifs(text, variables):
