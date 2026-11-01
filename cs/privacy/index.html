@@ -141,7 +141,7 @@
             <div class="page-hero">
                 <h1 class="page-heading">🔒 Zásady ochrany osobních údajů</h1>
                 <p class="tagline">Tvoje čtenářská data patří tobě. Tečka.</p>
-                <p style="font-size:13px; color:var(--muted); margin-top:6px;">Autor: Víctor (Lecturameter) · Aktualizováno 31. října 2026</p>
+                <p style="font-size:13px; color:var(--muted); margin-top:6px;">Autor: Víctor (Lecturameter) · Aktualizováno 1. listopadu 2026</p>
             </div>
 
             <div class="privacy-highlight">
@@ -153,7 +153,7 @@
             <div class="section" id="privacy">
                 <h2>Úplné znění zásad</h2>
                 <div class="privacy-text">
-                    <p><span class="highlight">Poslední aktualizace:</span> 31. října 2026</p>
+                    <p><span class="highlight">Poslední aktualizace:</span> 1. listopadu 2026</p>
                     <p style="margin-top:8px;">Tato stránka odpovídá zásadám ochrany osobních údajů, které vidíš v aplikaci. Srozumitelně vysvětluje, jaká data Lecturameter uchovává a co opouští tvoje zařízení.</p>
 
                     <p style="margin-top:14px;"><span class="highlight">1. Kde jsou tvoje data</span></p>
@@ -168,7 +168,7 @@
                     <ul style="padding-left:18px; margin:6px 0;">
                         <li>Nepoužíváme žádné analytické SDK třetích stran ani žádné nástroje pro reklamu nebo sledování napříč aplikacemi.</li>
                         <li>Nezobrazujeme žádné reklamy.</li>
-                        <li>K používání aplikace si nemusíš zakládat žádný účet.</li>
+                        <li>K používání aplikace si nemusíš zakládat žádný účet. Pokud se zúčastníš události, vytvoří se pseudonymní identita pouze pro události (oddíl 9).</li>
                         <li>Tvoje data nikdy neprodáváme ani je nepoužíváme k reklamě nebo profilování.</li>
                         <li>Shromažďujeme vlastní volitelné pseudonymní statistiky používání a hlášení o pádech, obojí popsané v oddílu 3. Můžeš je vypnout v Nastavení &gt; Nápověda a o aplikaci &gt; Soukromí.</li>
                     </ul>
@@ -198,7 +198,18 @@
                     <p style="margin-top:8px;"><span class="highlight">Právní základ:</span> tvůj souhlas. Je to volitelná funkce, kterou si sám zapneš propojením čtečky, a souhlas můžeš kdykoli odvolat jejím odpojením nebo smazáním svých dat ze serveru.</p>
                     <p style="margin-top:8px;"><span class="highlight">Jak je smazat:</span> při odpojování čtečky zaškrtni "Smazat i moje data ze serveru". Uživatel, celý jeho postup, historie jeho aktivity a jeho statistiky čtení se ze serveru odstraní okamžitě. Pokud čtečku odpojíš bez zaškrtnutí, uživatel a postup na serveru zůstanou a historie čtení se každopádně smaže po 30 dnech. Pokud už aplikaci ani čtečku nemáš, napiš na <span style="color:#BB86FC;">lecturameter.app@gmail.com</span> se svým synchronizačním uživatelským jménem a uživatele, celý jeho postup, historii jeho aktivity i jeho statistiky čtení ze serveru smažeme nejpozději do 30 dní. Při odpojení je volba smazat také tvá data ze serveru ve výchozím stavu zaškrtnutá a okamžitě smaže všechno, včetně historie. Po smazání mohou až 30 dní zůstat technické záložní kopie databáze; nikdo do nich nenahlíží a samy se odstraní.</p>
 
-                    <p style="margin-top:14px;"><span class="highlight">9. Oprávnění aplikace</span></p>
+                    <p style="margin-top:14px;" id="eventos"><span class="highlight">9. Události (volitelné)</span></p>
+                    <p>Události, jako je globální čtenářská výzva, jsou volitelné: celou aplikaci můžeš používat, aniž by ses k nějaké připojil, bez e-mailu a hesla. Připojení vytvoří pseudonymní identitu, která se používá jen pro události. I když se nikdy nepřipojíš, aplikace si při otevření vyžádá od našeho serveru událostí seznam událostí a odešle jen tvou platformu (Android nebo iOS) a verzi aplikace.</p>
+                    <p style="margin-top:8px;"><span class="highlight">Co odesíláme, když se připojíš:</span> pseudonymní identifikátor (aplikace vygeneruje v telefonu náhodné tajemství a náš server uchovává jen jeho otisk), přezdívku, kterou si zvolíš, Pagi, kterého vybereš jako avatar, platformu a verzi aplikace. Z každé relace, kterou zaznamenáš stopkami během události: minuty, stránky, čas zahájení a jedinečný identifikátor relace, aby se nepočítala dvakrát (ručně přidané relace se neodesílají). Pokud v události hraješ Lecturameter Quest: výsledek každé hry (výhra nebo prohra, etapa, úroveň, zbývající život, typy použitých knih, ale ne jejich názvy, tahy, aktivní čas a čas ukončení). Jen pokud se tak sám rozhodneš: nahlášení přezdívky (přezdívka a tvůj důvod) a anketu události (uzavřené odpovědi a volitelný volný text; nepiš do něj osobní údaje).</p>
+                    <p style="margin-top:8px;"><span class="highlight">Co nikdy neodesíláme:</span> názvy, ISBN, obálky, tvou knihovnu, poznámky, citáty ani co čteš, ani tvé jméno, e-mail, polohu či kontakty. Tvou IP adresu neukládáme do databáze událostí; používá se jen v daný okamžik k omezení počtu požadavků a vidí ji Cloudflare, který připojení přenáší.</p>
+                    <p style="margin-top:8px;"><span class="highlight">Co vidí ostatní:</span> tvá přezdívka, tvůj Pagi a tvé minuty nebo body se zobrazují ve veřejném žebříčku události, který může číst kdokoli. Nepoužívej své skutečné jméno. Mezi účastníky nejsou žádné zprávy ani kontakt.</p>
+                    <p style="margin-top:8px;"><span class="highlight">Oznámení:</span> používáme Firebase Cloud Messaging (Google), jen komponentu pro zprávy a bez Firebase Analytics. Aplikace odebírá témata: jedno pro tvůj jazyk a jedno pro každou událost, ke které se připojíš. Náš server neukládá tokeny ani seznam tvých zařízení; Google zprávy doručuje a k tomu zpracovává technický identifikátor instalace. V aplikaci jsou ve výchozím stavu zapnutá (přepínač „Události“), k zobrazení potřebují oprávnění systému a můžeš je kdykoli vypnout. Vypneš je v Nastavení → Oznámení → Události. Pokud jsou oznámení o událostech zapnutá, aplikace se přihlásí k tématu tvého jazyka, i když se nikdy do události nezapojíš; tímto tématem přicházejí jen oznámení, že událost brzy začne, a že už začala, a téma tě neidentifikuje. Ostatní oznámení (zbývají dva dny, výsledky) dostanou jen ti, kdo se zapojí; pokud se nezapojíš, nepřijde nic dalšího. Oznámení „Novinky v aplikaci“ (nové verze, důležitá sdělení a další zprávy od Lecturameter) využívají stejnou službu: aplikace se přihlásí k jednomu tématu pro tvůj jazyk (app_&lt;jazyk&gt;), které tě neidentifikuje a nenese žádná čtenářská data. Je ve výchozím stavu zapnuté a vypneš ho v Nastavení → Oznámení → Novinky v aplikaci.</p>
+                    <p style="margin-top:8px;"><span class="highlight">Proč a právní základ:</span> abys mohl se účastnit, k výpočtu žebříčku a společného součtu, k zamezení zjevného podvádění, k moderaci nevhodných přezdívek, k udělení odměny a ke sběru tvého názoru. Základ: tvůj souhlas, když klepneš na Připojit se poté, co uvidíš, co se odesílá; náš oprávněný zájem na moderaci a předcházení podvádění; a u oznámení tvé oprávnění v systému. Souhlas můžeš kdykoli odvolat opuštěním události nebo smazáním dat. Nezobrazujeme reklamy, neprodáváme data a neprofilujeme tě.</p>
+                    <p style="margin-top:8px;"><span class="highlight">Jak dlouho to uchováváme:</span> po dobu konání události a až 90 dní po jejím skončení, pokud to nesmažeš dříve. Poté smažeme tvou přezdívku, Pagi, minuty, hry Questu a relace a ponecháme jen součty bez jmen (celkové minuty, stránky a počet účastníků). Odpovědi z ankety se archivují odpojené od tebe a už k tobě nelze přiřadit. Udělené odměny se uchovávají s vnitřním identifikátorem, který už na tebe neukazuje. Pokud změníš přezdívku, předchozí zůstane v dané události rezervovaná pro tebe do 60 dnů po jejím skončení. Interní záznam moderace (provedená akce, interní identifikátor účastníka a důvod) se také maže po 90 dnech. Po smazání mohou až 30 dní zůstat technické záložní kopie databáze; nikdo do nich nenahlíží a samy se odstraní.</p>
+                    <p style="margin-top:8px;"><span class="highlight">Opuštění a smazání:</span> v nabídce výzvy „Opustit událost“ smaže ze serveru všechna tvá data z dané události (přezdívku, minuty, hry Questu, anketu, odměny, nahlášení, rezervaci přezdívky a tvůj záznam ve finálních výsledcích) a „Smazat všechna moje data z událostí“ to udělá ve všech událostech a odstraní tvou identitu z tohoto zařízení. Tvá knihovna a relace v telefonu se nemění. Obnovovací kód ti umožní obnovit přezdívku na jiném zařízení; bez něj tvá data nenajdeme, protože známe jen otisk. Když kód ztratíš, tvá data z událostí se sama smažou 90 dní po skončení každé události. Můžeš také napsat na <span style="color:#BB86FC;">lecturameter.app@gmail.com</span> s obnovovacím kódem. Máš právo na přístup, opravu, výmaz, omezení, námitku a přenositelnost a můžeš si stěžovat u úřadu pro ochranu osobních údajů své země (ve Španělsku AEPD).</p>
+                    <p style="margin-top:8px;"><span class="highlight">Kdo údaje zpracovává:</span> Lecturameter, se serverem hostovaným u Cloudflare (zpracovatel). Když někdo nahlásí přezdívku, přijde upozornění do soukromého kanálu našeho týmu na Discordu, poskytovatele tohoto upozornění, a obsahuje přesně: událost, nahlášenou přezdívku, počet dosavadních nahlášení, zda jde o testovací událost, důvod, čas a odkaz na náš administrační panel; nikdy údaje o tom, kdo nahlašuje. Oznámení doručuje Google (Firebase Cloud Messaging).</p>
+
+                    <p style="margin-top:14px;"><span class="highlight">10. Oprávnění aplikace</span></p>
                     <p><span class="highlight">Android:</span></p>
                     <ul style="padding-left:18px; margin:6px 0;">
                         <li><span class="highlight">Internet:</span> k hledání knih, zálohování na Disk, posílání zpětné vazby, uplatňování kódů, zahájení bezplatné zkušební verze a odesílání pseudonymních statistik a hlášení o pádech (pokud jsou zapnuté).</li>
@@ -217,14 +228,15 @@
                         <li>Přístup k účtu Google, jen pokud zapneš zálohování na Google Drive; kdykoli ho můžeš odebrat ve svém účtu Google.</li>
                     </ul>
 
-                    <p style="margin-top:14px;"><span class="highlight">10. Třetí strany</span></p>
+                    <p style="margin-top:14px;"><span class="highlight">11. Třetí strany</span></p>
                     <p><span class="highlight">Na Androidu:</span> platby za Pro zpracovává Google Play Billing; aplikace tvoje platební údaje nikdy nevidí. Google Drive ukládá tvoje volitelné zálohy do tvého vlastního účtu Google a aplikace vidí jen soubory, které vytvořila. Skener čárových kódů (Google ML Kit) a skener dokumentů (služby Google Play) zpracovávají obrázky ve tvém zařízení; Google může z těchto komponent dostávat metriky používání a výkonu a identifikátory jednotlivých instalací, a to podle vlastních zásad ochrany osobních údajů společnosti Google. Veřejné katalogy knih dostávají tvoje hledání přes náš server, jak je popsáno výše. Servery Lecturameter hostuje Cloudflare. Tvoje data neprodáváme ani je nesdílíme k reklamním účelům.</p>
                     <p style="margin-top:8px;"><span class="highlight">Na iOS:</span> platby za Pro zpracovává App Store; aplikace tvoje platební údaje nikdy nevidí. Google Drive může ukládat tvoje volitelné zálohy do tvého vlastního účtu Google a aplikace vidí jen soubory, které vytvořila. Veřejné katalogy knih dostávají tvoje hledání přes náš server, jak je popsáno výše. Servery Lecturameter hostuje Cloudflare. Tvoje data neprodáváme ani je nesdílíme k reklamním účelům.</p>
+                    <p style="margin-top:8px;"><span class="highlight">Události:</span> Lecturameter, se serverem hostovaným u Cloudflare (zpracovatel). Když někdo nahlásí přezdívku, přijde upozornění do soukromého kanálu našeho týmu na Discordu, poskytovatele tohoto upozornění, a obsahuje přesně: událost, nahlášenou přezdívku, počet dosavadních nahlášení, zda jde o testovací událost, důvod, čas a odkaz na náš administrační panel; nikdy údaje o tom, kdo nahlašuje. Oznámení doručuje Google (Firebase Cloud Messaging).</p>
 
-                    <p style="margin-top:14px;"><span class="highlight">11. Kontakt</span></p>
+                    <p style="margin-top:14px;"><span class="highlight">12. Kontakt</span></p>
                     <p>Pokud máš jakékoli dotazy ohledně soukromí, napiš na <span style="color:#BB86FC;">lecturameter.app@gmail.com</span>.</p>
 
-                    <p style="margin-top:14px;"><span class="highlight">12. Změny těchto zásad</span></p>
+                    <p style="margin-top:14px;"><span class="highlight">13. Změny těchto zásad</span></p>
                     <p>Pokud se tyto zásady změní, aktualizujeme tuto stránku a nahoře uvedeme nové datum.</p>
                 </div>
             </div>
