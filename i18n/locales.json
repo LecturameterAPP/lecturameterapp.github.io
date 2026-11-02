@@ -1,7 +1,7 @@
 {
   "site_url": "https://lecturameterapp.github.io/",
   "default_locale": "en",
-  "current_release": "3.8",
+  "current_release": "3.9",
   "release_order": [
     "3.7",
     "3.8",
