@@ -1,0 +1,40 @@
+/* Politica de privacidad: aspecto (indice, tarjetas, movil, modo claro/oscuro). No cambia el texto legal.
+   Se activa solo si privacy-ui.js agrupa las secciones (clase .pp-on en .privacy-text). */
+.privacy-text.pp-on { background: none; }
+.pp-toc { background: var(--card, #1a2340); border: 1px solid var(--line, #2a3557); border-radius: 14px; margin: 0 0 22px; }
+.pp-toc > summary { cursor: pointer; list-style: none; padding: 14px 18px; font-weight: 700; color: var(--text-strong, #fff); display: flex; align-items: center; gap: 10px; }
+.pp-toc > summary::-webkit-details-marker { display: none; }
+.pp-toc > summary::after { content: "\25BE"; margin-inline-start: auto; color: var(--text-muted, #9aa3bf); transition: transform .2s; }
+.pp-toc[open] > summary::after { transform: rotate(180deg); }
+.pp-toc ol { list-style: none; margin: 0; padding: 0 18px 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 2px 22px; counter-reset: none; }
+.pp-toc li { margin: 0; }
+.pp-toc a { display: block; padding: 8px 10px; border-radius: 8px; color: var(--text, #e2e6f3); text-decoration: none; font-size: 14.5px; line-height: 1.35; }
+.pp-toc a:hover, .pp-toc a:focus-visible { background: var(--accent-soft, rgba(75,61,232,.14)); color: var(--accent-text, #9AA5FF); outline: none; }
+.pp-card { background: var(--card, #1a2340); border: 1px solid var(--line, #2a3557); border-radius: 14px; padding: 6px 24px 18px; margin: 0 0 16px; scroll-margin-top: 84px; box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+.pp-card--intro { background: transparent; border-style: dashed; padding-top: 12px; }
+.pp-card > p:first-child { margin-top: 12px !important; }
+.pp-card .pp-h { margin: 14px 0 6px !important; padding-bottom: 10px; border-bottom: 1px solid var(--line, #2a3557); color: var(--text-strong, #fff) !important; font-size: 18px; line-height: 1.35; scroll-margin-top: 84px; }
+.pp-card .pp-h .highlight { font-weight: 800; }
+.pp-card .pp-h + p, .pp-card .pp-h + ul { margin-top: 12px; }
+.pp-card ul { padding-inline-start: 22px !important; }
+.pp-card li::marker { color: var(--accent-text, #9AA5FF); }
+.pp-card .highlight { color: var(--text-strong, #fff); }
+.pp-card:target, .pp-h:target { outline: 2px solid var(--accent, #4B3DE8); outline-offset: 2px; }
+.pp-card a { color: var(--accent-text, #9AA5FF); }
+/* Modo claro: los colores claros fijados en linea o por defecto no se leian */
+:root[data-theme="light"] .pp-card { box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+:root[data-theme="light"] .pp-card .pp-h, :root[data-theme="light"] .pp-toc > summary { color: var(--text-strong, #111) !important; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .pp-card { box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  :root:not([data-theme="dark"]) .pp-card .pp-h { color: var(--text-strong, #111) !important; }
+}
+@media (max-width: 640px) {
+  .subpage-container { padding-inline: 12px; }
+  .pp-toc ol { grid-template-columns: 1fr; }
+  .pp-toc a { padding: 11px 10px; font-size: 15px; }
+  .pp-card { padding: 4px 16px 14px; border-radius: 12px; margin-bottom: 12px; }
+  .pp-card .pp-h { font-size: 17px; }
+  .privacy-text { font-size: 16px; line-height: 1.65; }
+  .page-hero h1, .page-hero .page-heading { font-size: 28px; }
+}
+@media print { .pp-toc { display: none; } .pp-card { box-shadow: none; break-inside: auto; } }
