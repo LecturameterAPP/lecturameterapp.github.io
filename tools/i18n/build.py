@@ -358,6 +358,7 @@ def main():
             variables['ios_live'] = '1' if cfg.get('ios_live') else ''
             variables['ios_url'] = cfg['app_store_url'] if cfg.get('ios_live') else cfg['testflight_url']
             variables['testflight_1999_url'] = cfg['testflight_1999_url']
+            variables['app_store_1999_url'] = cfg.get('app_store_1999_url', '')
             variables['lm_i18n_json'] = js_payload(strings, bool(cfg.get('ios_live')))
             variables['lang_picker'] = lang_picker(loc, page, locales, strings, ' ' * 12)
             where = '%s/%s' % (loc['code'], page['template'])
