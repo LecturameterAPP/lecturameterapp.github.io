@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Mawasiliano</span>",
  "legal.terms.p_044": "Kwa maswali yoyote kuhusu Masharti haya: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> au <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Masharti ya Huduma – Lecturameter",
- "legal.terms.meta_description": "Masharti wazi, bila maandishi madogo yaliyofichika."
+ "legal.terms.meta_description": "Masharti wazi, bila maandishi madogo yaliyofichika.",
+ "common.footer.drakehold": "Kutoka kwa muumbaji yuleyule: <strong>Drakehold</strong>, hifadhi yako binafsi inayojipanga yenyewe. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Jiunge na orodha ya kusubiri →</a>"
 }

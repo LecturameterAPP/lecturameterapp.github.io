@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Contact</span>",
  "legal.terms.p_044": "For any questions about these Terms: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> or <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Terms of Service – Lecturameter",
- "legal.terms.meta_description": "Clear terms, no fine print."
+ "legal.terms.meta_description": "Clear terms, no fine print.",
+ "common.footer.drakehold": "From the same creator: <strong>Drakehold</strong>, your personal archive that organizes itself. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Join the waitlist →</a>"
 }

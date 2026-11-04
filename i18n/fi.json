@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Yhteystiedot</span>",
  "legal.terms.p_044": "Näitä ehtoja koskevat kysymykset: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> tai <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Käyttöehdot – Lecturameter",
- "legal.terms.meta_description": "Selkeät ehdot, ei pientä präntättyä."
+ "legal.terms.meta_description": "Selkeät ehdot, ei pientä präntättyä.",
+ "common.footer.drakehold": "Samalta tekijältä: <strong>Drakehold</strong>, henkilökohtainen arkistosi, joka järjestyy itsestään. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Liity jonotuslistalle →</a>"
 }

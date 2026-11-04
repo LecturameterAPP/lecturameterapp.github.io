@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Kontakt</span>",
  "legal.terms.p_044": "W razie jakichkolwiek pytań dotyczących niniejszego Regulaminu: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> lub <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Regulamin – Lecturameter",
- "legal.terms.meta_description": "Jasne zasady, bez drobnego druku."
+ "legal.terms.meta_description": "Jasne zasady, bez drobnego druku.",
+ "common.footer.drakehold": "Od tego samego twórcy: <strong>Drakehold</strong>, twoje osobiste archiwum, które porządkuje się samo. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Zapisz się na listę oczekujących →</a>"
 }

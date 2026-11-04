@@ -59,6 +59,7 @@ def build_vars(cfg, loc, pname, page, others):
         'link_1999': rel(here, loc['path'].lstrip('/') + 'lecturameter-1999/'),
         'page_url': site + pdir + ('/' if pdir else ''),
         'head_redirect': '',
+        'drakehold_url': 'https://drakehold.pages.dev/?utm_source=lecturameter' + ('&amp;lang=es' if loc['code'] == 'es' else ''),
     }
     for k, p in loc['features'].items():
         v['link_feat_' + k] = rel(here, p)

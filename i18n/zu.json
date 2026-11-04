@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Thintana nathi</span>",
  "legal.terms.p_044": "Ngemibuzo ngale Migomo: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> noma <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Imigomo Yesevisi – Lecturameter",
- "legal.terms.meta_description": "Imigomo ecacile, akukho okuncane okubhalwe kancane."
+ "legal.terms.meta_description": "Imigomo ecacile, akukho okuncane okubhalwe kancane.",
+ "common.footer.drakehold": "Evela kumdali ofanayo: <strong>Drakehold</strong>, ingobo yakho yomuntu siqu azihlela yona. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Joyina uhlu lokulinda →</a>"
 }

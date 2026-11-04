@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Kontak</span>",
  "legal.terms.p_044": "Untuk pertanyaan apa pun tentang Ketentuan ini: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> atau <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Ketentuan Layanan – Lecturameter",
- "legal.terms.meta_description": "Ketentuan yang jelas, tanpa huruf kecil tersembunyi."
+ "legal.terms.meta_description": "Ketentuan yang jelas, tanpa huruf kecil tersembunyi.",
+ "common.footer.drakehold": "Dari pembuat yang sama: <strong>Drakehold</strong>, arsip pribadimu yang tertata sendiri. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Gabung daftar tunggu →</a>"
 }

@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Liên hệ</span>",
  "legal.terms.p_044": "Với mọi câu hỏi về các Điều khoản này: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> hoặc <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Điều khoản dịch vụ – Lecturameter",
- "legal.terms.meta_description": "Điều khoản rõ ràng, không có chữ nhỏ."
+ "legal.terms.meta_description": "Điều khoản rõ ràng, không có chữ nhỏ.",
+ "common.footer.drakehold": "Từ cùng một nhà sáng tạo: <strong>Drakehold</strong>, kho lưu trữ cá nhân tự sắp xếp của bạn. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Tham gia danh sách chờ →</a>"
 }

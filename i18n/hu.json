@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Kapcsolat</span>",
  "legal.terms.p_044": "Ha bármilyen kérdésed van ezekkel a Feltételekkel kapcsolatban: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> vagy <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Felhasználási feltételek – Lecturameter",
- "legal.terms.meta_description": "Világos feltételek, apró betűs rész nélkül."
+ "legal.terms.meta_description": "Világos feltételek, apró betűs rész nélkül.",
+ "common.footer.drakehold": "Ugyanattól a készítőtől: <strong>Drakehold</strong>, a személyes archívumod, amely magától rendezi magát. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Csatlakozz a várólistához →</a>"
 }

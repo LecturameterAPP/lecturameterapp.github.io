@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Hafðu samband</span>",
  "legal.terms.p_044": "Fyrir allar spurningar um þessa skilmála: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> eða <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Þjónustuskilmálar – Lecturameter",
- "legal.terms.meta_description": "Skýrir skilmálar, ekkert smátt letur."
+ "legal.terms.meta_description": "Skýrir skilmálar, ekkert smátt letur.",
+ "common.footer.drakehold": "Frá sama höfundi: <strong>Drakehold</strong>, persónulega skjalasafnið þitt sem raðar sér sjálft. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Skráðu þig á biðlistann →</a>"
 }

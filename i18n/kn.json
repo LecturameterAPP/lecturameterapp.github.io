@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. ಸಂಪರ್ಕ</span>",
  "legal.terms.p_044": "ಈ ನಿಯಮಗಳ ಬಗ್ಗೆ ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳಿಗೆ: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> ಅಥವಾ <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "ಸೇವಾ ನಿಯಮಗಳು – Lecturameter",
- "legal.terms.meta_description": "ಸ್ಪಷ್ಟ ನಿಯಮಗಳು, ಸಣ್ಣ ಅಕ್ಷರಗಳ ಷರತ್ತುಗಳಿಲ್ಲ."
+ "legal.terms.meta_description": "ಸ್ಪಷ್ಟ ನಿಯಮಗಳು, ಸಣ್ಣ ಅಕ್ಷರಗಳ ಷರತ್ತುಗಳಿಲ್ಲ.",
+ "common.footer.drakehold": "ಅದೇ ನಿರ್ಮಾತೃವಿನಿಂದ: <strong>Drakehold</strong>, ತಾನಾಗಿಯೇ ಜೋಡಣೆಯಾಗುವ ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಆರ್ಕೈವ್. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">ಕಾಯುವ ಪಟ್ಟಿಗೆ ಸೇರಿ →</a>"
 }

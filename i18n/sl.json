@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Kontakt</span>",
  "legal.terms.p_044": "Za vsa vprašanja o teh Pogojih: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> ali <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Pogoji uporabe – Lecturameter",
- "legal.terms.meta_description": "Jasni pogoji, brez drobnega tiska."
+ "legal.terms.meta_description": "Jasni pogoji, brez drobnega tiska.",
+ "common.footer.drakehold": "Od istega ustvarjalca: <strong>Drakehold</strong>, tvoj osebni arhiv, ki se uredi sam. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Pridruži se čakalnemu seznamu →</a>"
 }

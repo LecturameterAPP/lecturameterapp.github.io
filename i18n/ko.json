@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. 연락처</span>",
  "legal.terms.p_044": "본 약관에 대한 문의: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> 또는 <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "이용약관 – Lecturameter",
- "legal.terms.meta_description": "명확한 약관, 깨알 같은 조항 없이."
+ "legal.terms.meta_description": "명확한 약관, 깨알 같은 조항 없이.",
+ "common.footer.drakehold": "같은 제작자의 앱: <strong>Drakehold</strong>, 스스로 정리되는 나만의 아카이브. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">대기자 명단에 등록하기 →</a>"
 }

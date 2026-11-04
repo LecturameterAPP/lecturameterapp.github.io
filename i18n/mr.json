@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. संपर्क</span>",
  "legal.terms.p_044": "या अटींबद्दल कोणत्याही प्रश्नांसाठी: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> किंवा <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "सेवा अटी – Lecturameter",
- "legal.terms.meta_description": "स्पष्ट अटी, बारीक अक्षरांत काहीही नाही."
+ "legal.terms.meta_description": "स्पष्ट अटी, बारीक अक्षरांत काहीही नाही.",
+ "common.footer.drakehold": "त्याच निर्मात्याकडून: <strong>Drakehold</strong>, तुमचे वैयक्तिक संग्रहालय, जे आपोआप लावले जाते. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">प्रतीक्षा यादीत सामील व्हा →</a>"
 }

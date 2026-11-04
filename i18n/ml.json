@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. ബന്ധപ്പെടുക</span>",
  "legal.terms.p_044": "ഈ നിബന്ധനകളെക്കുറിച്ചുള്ള ഏതൊരു ചോദ്യത്തിനും: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> അല്ലെങ്കിൽ <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "സേവന നിബന്ധനകൾ – Lecturameter",
- "legal.terms.meta_description": "വ്യക്തമായ നിബന്ധനകൾ, ഒളിച്ചുവച്ച വ്യവസ്ഥകളില്ല."
+ "legal.terms.meta_description": "വ്യക്തമായ നിബന്ധനകൾ, ഒളിച്ചുവച്ച വ്യവസ്ഥകളില്ല.",
+ "common.footer.drakehold": "അതേ സ്രഷ്ടാവിൽ നിന്ന്: <strong>Drakehold</strong>, സ്വയം ക്രമീകരിക്കപ്പെടുന്ന നിങ്ങളുടെ സ്വകാര്യ ആർക്കൈവ്. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">കാത്തിരിപ്പ് പട്ടികയിൽ ചേരുക →</a>"
 }

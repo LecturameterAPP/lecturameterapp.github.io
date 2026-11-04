@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Contact</span>",
  "legal.terms.p_044": "Pentru orice întrebări despre acești Termeni: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> sau <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Termeni și condiții – Lecturameter",
- "legal.terms.meta_description": "Termeni clari, fără litere mici."
+ "legal.terms.meta_description": "Termeni clari, fără litere mici.",
+ "common.footer.drakehold": "De la același creator: <strong>Drakehold</strong>, arhiva ta personală care se organizează singură. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Înscrie-te pe lista de așteptare →</a>"
 }

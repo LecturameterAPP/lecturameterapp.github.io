@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Kontakti</span>",
  "legal.terms.p_044": "Jautājumiem par šiem Noteikumiem: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> vai <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Pakalpojumu sniegšanas noteikumi – Lecturameter",
- "legal.terms.meta_description": "Skaidri noteikumi, bez sīkā drukā."
+ "legal.terms.meta_description": "Skaidri noteikumi, bez sīkā drukā.",
+ "common.footer.drakehold": "No tā paša veidotāja: <strong>Drakehold</strong>, tavs personīgais arhīvs, kas kārtojas pats. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Pievienojies gaidīšanas sarakstam →</a>"
 }

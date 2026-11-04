@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. お問い合わせ</span>",
  "legal.terms.p_044": "本規約に関するご質問は：<a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> または <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "利用規約 – Lecturameter",
- "legal.terms.meta_description": "わかりやすい規約、細かい但し書きなし。"
+ "legal.terms.meta_description": "わかりやすい規約、細かい但し書きなし。",
+ "common.footer.drakehold": "同じ作者より: <strong>Drakehold</strong>、 自動で整理される、あなただけのアーカイブ。 <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">ウェイトリストに登録する →</a>"
 }

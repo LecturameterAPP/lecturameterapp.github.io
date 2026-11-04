@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. 联系方式</span>",
  "legal.terms.p_044": "如对这些条款有任何疑问：<a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> 或 <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "服务条款 – Lecturameter",
- "legal.terms.meta_description": "条款清晰，没有隐藏的小字。"
+ "legal.terms.meta_description": "条款清晰，没有隐藏的小字。",
+ "common.footer.drakehold": "来自同一位作者： <strong>Drakehold</strong>， 会自动整理的个人档案。 <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">加入候补名单 →</a>"
 }

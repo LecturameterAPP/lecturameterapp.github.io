@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Contacte</span>",
  "legal.terms.p_044": "Per a qualsevol pregunta sobre aquestes Condicions: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> o <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Condicions del servei – Lecturameter",
- "legal.terms.meta_description": "Condicions clares, sense lletra petita."
+ "legal.terms.meta_description": "Condicions clares, sense lletra petita.",
+ "common.footer.drakehold": "Del mateix creador: <strong>Drakehold</strong>, el teu arxiu personal que s'ordena sol. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Uneix-te a la llista d'espera →</a>"
 }

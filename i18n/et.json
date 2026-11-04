@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Kontakt</span>",
  "legal.terms.p_044": "Kõigi nende tingimustega seotud küsimuste korral: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> või <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Kasutustingimused – Lecturameter",
- "legal.terms.meta_description": "Selged tingimused, ilma peenikese kirjata."
+ "legal.terms.meta_description": "Selged tingimused, ilma peenikese kirjata.",
+ "common.footer.drakehold": "Samalt loojalt: <strong>Drakehold</strong>, sinu isiklik arhiiv, mis korrastab end ise. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Liitu ootenimekirjaga →</a>"
 }

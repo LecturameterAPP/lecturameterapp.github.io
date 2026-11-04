@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Kontaktai</span>",
  "legal.terms.p_044": "Dėl bet kokių klausimų apie šias Sąlygas: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> arba <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Paslaugų teikimo sąlygos – Lecturameter",
- "legal.terms.meta_description": "Aiškios sąlygos, be smulkaus šrifto."
+ "legal.terms.meta_description": "Aiškios sąlygos, be smulkaus šrifto.",
+ "common.footer.drakehold": "Nuo to paties kūrėjo: <strong>Drakehold</strong>, tavo asmeninis archyvas, kuris tvarkosi pats. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Prisijunk prie laukiančiųjų sąrašo →</a>"
 }

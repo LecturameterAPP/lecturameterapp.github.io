@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. İletişim</span>",
  "legal.terms.p_044": "Bu Şartlarla ilgili her türlü soru için: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> veya <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Hizmet Şartları – Lecturameter",
- "legal.terms.meta_description": "Açık şartlar, gizli madde yok."
+ "legal.terms.meta_description": "Açık şartlar, gizli madde yok.",
+ "common.footer.drakehold": "Aynı geliştiriciden: <strong>Drakehold</strong>, kendi kendini düzenleyen kişisel arşivin. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Bekleme listesine katıl →</a>"
 }

@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. ਸੰਪਰਕ</span>",
  "legal.terms.p_044": "ਇਨ੍ਹਾਂ ਸ਼ਰਤਾਂ ਬਾਰੇ ਕਿਸੇ ਵੀ ਸਵਾਲ ਲਈ: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> ਜਾਂ <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "ਸੇਵਾ ਦੀਆਂ ਸ਼ਰਤਾਂ – Lecturameter",
- "legal.terms.meta_description": "ਸਾਫ਼ ਸ਼ਰਤਾਂ, ਕੋਈ ਛੋਟੇ ਅੱਖਰਾਂ ਵਾਲੀ ਚਾਲ ਨਹੀਂ।"
+ "legal.terms.meta_description": "ਸਾਫ਼ ਸ਼ਰਤਾਂ, ਕੋਈ ਛੋਟੇ ਅੱਖਰਾਂ ਵਾਲੀ ਚਾਲ ਨਹੀਂ।",
+ "common.footer.drakehold": "ਉਸੇ ਨਿਰਮਾਤਾ ਵੱਲੋਂ: <strong>Drakehold</strong>, ਤੁਹਾਡਾ ਨਿੱਜੀ ਆਰਕਾਈਵ, ਜੋ ਆਪਣੇ ਆਪ ਤਰਤੀਬ ਵਿੱਚ ਆ ਜਾਂਦਾ ਹੈ। <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">ਉਡੀਕ ਸੂਚੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ →</a>"
 }

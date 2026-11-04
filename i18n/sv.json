@@ -791,5 +791,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. Kontakt</span>",
  "legal.terms.p_044": "För frågor om dessa villkor: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> eller <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Användarvillkor – Lecturameter",
- "legal.terms.meta_description": "Tydliga villkor, inget finstilt."
+ "legal.terms.meta_description": "Tydliga villkor, inget finstilt.",
+ "common.footer.drakehold": "Från samma skapare: <strong>Drakehold</strong>, ditt personliga arkiv som ordnar sig självt. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Gå med i väntelistan →</a>"
 }
