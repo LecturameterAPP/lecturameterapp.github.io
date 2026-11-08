@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Projecte independent",
  "common.footer.home": "Inici",
  "common.footer.privacy": "Privacitat",
- "head.index.title": "Lecturameter · Lectura, reptes i estadístiques",
- "head.index.description": "Registra el teu temps de lectura, pàgines, ritme i progrés amb un registre de lectura privat per a Android i iPhone. Sense compte, sense anuncis. Importa des de Goodreads i StoryGraph.",
+ "head.index.title": "Lecturameter: Diari de Lectura · Retos i estadístiques",
+ "head.index.description": "Lecturameter: Diari de Lectura per a Android i iPhone. Cronometra la lectura, registra pàgines, ritme i estadístiques, i importa de Goodreads. Sense compte ni anuncis.",
  "head.index.ld_description": "Organitza la teva biblioteca, cronometra les sessions de lectura i consulta estadístiques detallades al teu mòbil Android o iPhone. Sense anuncis i totalment privat.",
  "head.index.ld_featurelist": "Biblioteca amb prestatges, cronòmetre amb la pantalla apagada, historial de sessions, mapa de calor, resum anual, reptes de lectura personalitzables, còpia de seguretat a Google Drive, importació CSV de Goodreads, gairebé tot sense connexió",
  "head.index.faq1_q": "Puc portar la meva biblioteca des d'altres apps?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Esdeveniments · Dos temes Pro nous",
  "release.3_9.new": [
   "<strong>Esdeveniments:</strong> reptes de lectura globals i Lecturameter Quest quan n'hi ha un d'actiu",
+  "<strong>Pausat:</strong> deixa un llibre una temporada sense embrutar les teves estadístiques",
   "<strong>Dos temes Pro nous:</strong> Quadern i Bosc",
   "Un rellotge de cronòmetre propi per a cada tema",
   "Pagi t'escull un llibre de Vull llegir",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Per a qualsevol pregunta sobre aquestes Condicions: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> o <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Condicions del servei – Lecturameter",
  "legal.terms.meta_description": "Condicions clares, sense lletra petita.",
- "common.footer.drakehold": "Del mateix creador: <strong>Drakehold</strong>, el teu arxiu personal que s'ordena sol. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Uneix-te a la llista d'espera →</a>"
+ "common.footer.drakehold": "Del mateix creador: <strong>Drakehold</strong>, el teu arxiu personal que s'ordena sol. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Uneix-te a la llista d'espera →</a>",
+ "seo.store_name": "Lecturameter: Diari de Lectura",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Esdeveniments",
+ "common.footer.events": "Esdeveniments",
+ "common.footer.cookies": "Política de cookies",
+ "common.footer.cookie_prefs": "Preferències de cookies",
+ "js.consent_title": "Cookies i emmagatzematge",
+ "js.consent_body": "Fem servir un giny de tercers (StartupBar) que desa dades al teu navegador i compta les impressions. Només es carrega si acceptes. El tema, l'idioma i l'avís tancat es desen sense preguntar, perquè els has triat tu.",
+ "js.consent_accept": "Accepta",
+ "js.consent_reject": "Rebutja",
+ "js.consent_policy": "Política de cookies",
+ "js.consent_prefs": "Preferències de cookies",
+ "home.paused.tag": "Novetat a la 3.9",
+ "home.paused.title": "Deixa un llibre una temporada sense embrutar les teves estadístiques",
+ "home.paused.sub": "Pausat és un estat propi, diferent d'Abandonat. El llibre espera on el vas deixar i els dies en pausa no compten.",
+ "home.paused.tab_pending": "Vull llegir",
+ "home.paused.tab_reading": "Llegint",
+ "home.paused.tab_paused": "Pausat",
+ "home.paused.tab_dropped": "Abandonat",
+ "home.paused.timeline_caption": "Els dies en pausa no compten",
+ "home.paused.cards": [
+  {
+   "title": "Un estat propi",
+   "text": "Pausat no és Abandonat. El teu llibre no va a la pila dels llibres que has deixat: queda en espera i torna quan vulguis."
+  },
+  {
+   "title": "Des de Llegint o Rellegint",
+   "text": "Canvia l'estat des de la pastilla de la fitxa del llibre o amb «Canviar estat» al menú ràpid. Funciona amb llibres, còmics, manga i audiollibres."
+  },
+  {
+   "title": "Els dies en pausa no compten",
+   "text": "Ni als dies per acabar ni a la teva velocitat de lectura. Les estadístiques es queden com quan llegies."
+  },
+  {
+   "title": "Una nota, si vols",
+   "text": "Quan poses el llibre en pausa i quan el represes pots apuntar-hi el motiu. És opcional. Tot queda a la secció «Pauses» de la fitxa del llibre, amb el seu historial."
+  },
+  {
+   "title": "Una pestanya pròpia",
+   "text": "A la teva biblioteca, entre Vull llegir i Abandonat, trobaràs els llibres en pausa."
+  },
+  {
+   "title": "Recordatoris, i represa automàtica",
+   "text": "Els recordatoris d'aquell llibre es pausen i tornen quan el represes. Si cronometres una sessió o te'n arriba una de KOReader, el llibre es reprèn sol, amb un avís i l'opció Desfés."
+  }
+ ],
+ "home.cards.tag": "Comparteix",
+ "home.cards.title": "Lecturameter no és una xarxa social. Les teves cards van a la que fas servir.",
+ "home.cards.sub": "Crea cards verticals de 1080×1920, a punt per a stories, i comparteix-les on ja ets. Sense compte, sense perfil i sense seguidors.",
+ "home.cards.chips": [
+  "Llibre",
+  "Llibre acabat",
+  "Estadístiques del llibre",
+  "Estadístiques",
+  "Resum setmanal",
+  "Resum mensual",
+  "Reptes",
+  "Bingo",
+  "Wrapped",
+  "Esdeveniment",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Tria què vols mostrar",
+   "text": "Un llibre, un que acabes d'acabar, les teves estadístiques, la teva setmana o mes, un repte, Bingo, Wrapped o un esdeveniment."
+  },
+  {
+   "title": "Es desa a «Les meves cards»",
+   "text": "Tot el que comparteixes queda a Les meves cards, per poder-ho tornar a fer servir quan vulguis."
+  },
+  {
+   "title": "Comparteix-la on ja ets",
+   "text": "Pel menú de compartir del mòbil, a l'app que ja fas servir. O desa-la a la galeria."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · format story",
+ "home.events.tag": "Esdeveniments",
+ "home.events.title": "Llegeix amb la comunitat. Juga amb la teva biblioteca.",
+ "home.events.sub": "Els esdeveniments apareixen a l'app quan n'hi ha un d'actiu. Avui n'hi ha de dos tipus: un repte de lectura global i un joc de cartes amb els teus propis llibres.",
+ "home.events.demo_label": "Exemple il·lustratiu",
+ "home.events.read.kicker": "Repte global · 14 dies",
+ "home.events.read.title": "La gran lectura",
+ "home.events.read.items": [
+  "Compten els minuts del cronòmetre, en llibres, còmics, manga i audiollibres.",
+  "Un objectiu compartit per tota la comunitat. Si se supera, continua comptant.",
+  "Classificació en directe amb un àlies pseudònim i el teu Pagi com a avatar.",
+  "Quan acaba, la targeta de l'esdeveniment amb la teva posició, per a tots els participants."
+ ],
+ "home.events.read.goal": "Objectiu de la comunitat",
+ "home.events.read.board": "Classificació",
+ "home.events.read.you": "tu",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "La biblioteca oblidada",
+ "home.events.quest.items": [
+  "Tria 3 llibres de la teva biblioteca: cadascun es converteix en una carta amb l'arquetip del seu gènere.",
+  "Partides de 5 a 10 minuts per creuar els prestatges i vèncer el cap final.",
+  "Classificació per punts: compten les teves 3 millors partides de cada dia.",
+  "Et falten llibres? La biblioteca et deixa volums, un per arquetip."
+ ],
+ "home.events.note": "Cal tenir 16 anys o més per participar-hi. Si ara no hi ha cap esdeveniment actiu, l'app t'ho diu.",
+ "cookies.title": "Política de cookies · Lecturameter",
+ "cookies.meta_description": "Què desa el web de Lecturameter al teu navegador, per què, i com canviar la teva elecció. Sense analítica ni publicitat pròpies.",
+ "cookies.h1": "🍪 Política de cookies",
+ "cookies.tagline": "Què es desa al teu navegador quan visites aquest web, i per què.",
+ "cookies.updated": "Actualitzat el 8 de novembre de 2026",
+ "cookies.summary_title": "En resum",
+ "cookies.summary": "Aquest web no fa servir cookies pròpies d'analítica ni de publicitat. Desa al navegador les teves preferències (tema, idioma, avís tancat) i la teva elecció sobre aquesta política. Un giny de tercers, StartupBar, només es carrega si prems «Accepta».",
+ "cookies.h2_stored": "Què es desa",
+ "cookies.p_stored": "Tot viu a l'emmagatzematge local del navegador (localStorage o sessionStorage). Aquest web no escriu cookies HTTP pròpies.",
+ "cookies.h3_essential": "Les teves preferències (no cal consentiment)",
+ "cookies.p_essential": "Les desem perquè les has demanat en fer servir el web. No identifiquen ningú i no surten mai del teu navegador.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · recorda si has triat el tema clar o fosc · fins que ho esborris.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · recorda l'idioma que has triat al selector · fins que ho esborris.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · recorda que has tancat la barra superior · fins que ho esborris.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · desa la teva elecció a l'avís de cookies, amb la seva versió i data · fins que la canviïs o l'esborris.",
+ "cookies.h3_optional": "Només si acceptes",
+ "cookies.p_optional": "Si prems «Accepta», es carreguen aquests elements de tercers. Si prems «Rebutja», no es carrega res d'això i el web funciona igual.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · un giny amb un iframe de tercers, que desa <code>startupbar:sid</code> a sessionStorage (fins que tanquis la pestanya) i envia un senyal d'impressions. Es carrega a totes les pàgines del web.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · una llibreria a la pàgina de contacte, servida per jsDelivr.",
+ "cookies.h2_never": "Què no fem",
+ "cookies.p_never": "No fem servir analítica pròpia, publicitat, elaboració de perfils ni cookies de seguiment. Tampoc venem dades. El web està allotjat a GitHub Pages, que pot registrar la teva IP en servir les pàgines segons la seva pròpia política.",
+ "cookies.h2_change": "Canvia la teva elecció",
+ "cookies.p_change": "Pots canviar-la en qualsevol moment amb «Preferències de cookies» al peu de qualsevol pàgina. També pots esborrar les dades d'aquest web des de la configuració del navegador. Si retires el consentiment, la pàgina es recarrega sense els elements de tercers.",
+ "cookies.h2_more": "Més informació",
+ "cookies.p_more": "La política de privadesa de l'app explica quines dades gestiona Lecturameter al teu mòbil. Si tens dubtes, escriu a lecturameter.app@gmail.com."
 }

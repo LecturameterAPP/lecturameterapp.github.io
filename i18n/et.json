@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Sõltumatu projekt",
  "common.footer.home": "Avaleht",
  "common.footer.privacy": "Privaatsus",
- "head.index.title": "Lecturameter · Lugemise jälgija ja raamatustatistika",
- "head.index.description": "Jälgi oma lugemisaega, lehekülgi, tempot ja edenemist privaatse Androidi ja iPhone'i lugemise jälgijaga. Kontota, reklaamideta. Impordi Goodreadsist ja StoryGraphist.",
+ "head.index.title": "Lecturameter: Lugemisjälgija · Raamatustatistika ja taimer",
+ "head.index.description": "Lecturameter: Lugemisjälgija Androidile ja iPhone'ile. Mõõda lugemisaega, jälgi lehekülgi, tempot ja statistikat ning impordi Goodreadsist. Ilma kontota, ilma reklaamita.",
  "head.index.ld_description": "Korralda oma raamatukogu, võta lugemisseanssidel aega ja vaata üksikasjalikku statistikat oma Android- või iPhone-telefonis. Reklaamideta, täiesti privaatne.",
  "head.index.ld_featurelist": "Raamatukogu riiulitega, taimer ka väljalülitatud ekraaniga, seansside ajalugu, soojuskaart, aasta Wrapped, kohandatavad lugemisväljakutsed, Google Drive'i varukoopia, Goodreadsi CSV-import, enamasti võrguühenduseta",
  "head.index.faq1_q": "Kas saan oma raamatukogu teistest rakendustest üle tuua?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Sündmused · Kaks uut Pro teemat",
  "release.3_9.new": [
   "<strong>Sündmused:</strong> ülemaailmsed lugemisväljakutsed ja Lecturameter Quest, kui mõni on aktiivne",
+  "<strong>Pausil:</strong> pane raamat mõneks ajaks kõrvale, ilma et statistika sassi läheks",
   "<strong>Kaks uut Pro teemat:</strong> Vihik ja Mets",
   "Igale teemale oma taimeri kell",
   "Pagi valib sulle raamatu loendist Soovin lugeda",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Kõigi nende tingimustega seotud küsimuste korral: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> või <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Kasutustingimused – Lecturameter",
  "legal.terms.meta_description": "Selged tingimused, ilma peenikese kirjata.",
- "common.footer.drakehold": "Samalt loojalt: <strong>Drakehold</strong>, sinu isiklik arhiiv, mis korrastab end ise. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Liitu ootenimekirjaga →</a>"
+ "common.footer.drakehold": "Samalt loojalt: <strong>Drakehold</strong>, sinu isiklik arhiiv, mis korrastab end ise. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Liitu ootenimekirjaga →</a>",
+ "seo.store_name": "Lecturameter: Lugemisjälgija",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Sündmused",
+ "common.footer.events": "Sündmused",
+ "common.footer.cookies": "Küpsiste põhimõtted",
+ "common.footer.cookie_prefs": "Küpsiste eelistused",
+ "js.consent_title": "Küpsised ja salvestus",
+ "js.consent_body": "Kasutame kolmanda osapoole vidinat (StartupBar), mis salvestab andmeid sinu brauserisse ja loeb kuvamisi. See laadib ainult siis, kui nõustud. Teema, keel ja suletud teade salvestatakse küsimata, sest valisid need ise.",
+ "js.consent_accept": "Nõustun",
+ "js.consent_reject": "Keeldun",
+ "js.consent_policy": "Küpsiste põhimõtted",
+ "js.consent_prefs": "Küpsiste eelistused",
+ "home.paused.tag": "Uus versioonis 3.9",
+ "home.paused.title": "Pane raamat mõneks ajaks kõrvale, ilma et statistika sassi läheks",
+ "home.paused.sub": "Pausil on eraldi olek, mis erineb olekust Loobutud. Raamat ootab seal, kus pooleli jätsid, ja pausil olnud päevi ei arvestata.",
+ "home.paused.tab_pending": "Soovin lugeda",
+ "home.paused.tab_reading": "Loen",
+ "home.paused.tab_paused": "Pausil",
+ "home.paused.tab_dropped": "Loobutud",
+ "home.paused.timeline_caption": "Pausil olnud päevi ei arvestata",
+ "home.paused.cards": [
+  {
+   "title": "Eraldi olek",
+   "text": "Pausil ei ole sama mis Loobutud. Sinu raamat ei lähe loobutud raamatute hunnikusse: see ootab ja naaseb, millal tahad."
+  },
+  {
+   "title": "Olekust Loen või Loen uuesti",
+   "text": "Muuda olekut raamatu lehe sildilt või kiirmenüü valikuga „Muuda olekut“. Töötab raamatute, koomiksite, manga ja audioraamatute puhul."
+  },
+  {
+   "title": "Pausil olnud päevi ei arvestata",
+   "text": "Ei lõpetamiseni jäänud päevades ega sinu lugemiskiiruses. Statistika jääb selliseks, nagu see oli, kui lugesid."
+  },
+  {
+   "title": "Märge, kui soovid",
+   "text": "Kui paned pausile ja kui jätkad, võid kirja panna, miks. See on valikuline. Kõik jääb raamatu lehe jaotisse „Pausid“ koos ajalooga."
+  },
+  {
+   "title": "Oma vahekaart",
+   "text": "Sinu raamatukogus, vahekaartide Soovin lugeda ja Loobutud vahel, leiad pausil olevad raamatud."
+  },
+  {
+   "title": "Meeldetuletused ja iseenesest jätkamine",
+   "text": "Selle raamatu meeldetuletused peatatakse ja need naasevad, kui raamatuga jätkad. Kui mõõdad seansi või KOReaderist saabub üks, jätkub raamat ise, teatega ja valikuga Võta tagasi."
+  }
+ ],
+ "home.cards.tag": "Jaga",
+ "home.cards.title": "Lecturameter ei ole sotsiaalvõrgustik. Sinu kaardid lähevad sinna, mida kasutad.",
+ "home.cards.sub": "Tee vertikaalseid 1080×1920 kaarte, mis sobivad story'dele, ja jaga neid seal, kus juba oled. Ilma kontota, ilma profiilita ja ilma jälgijateta.",
+ "home.cards.chips": [
+  "Raamat",
+  "Raamat läbi loetud",
+  "Raamatu statistika",
+  "Statistika",
+  "Nädalakokkuvõte",
+  "Kuukokkuvõte",
+  "Väljakutsed",
+  "Bingo",
+  "Wrapped",
+  "Sündmus",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Vali, mida näidata",
+   "text": "Raamat, äsja lõpetatud raamat, sinu statistika, sinu nädal või kuu, väljakutse, Bingo, Wrapped või sündmus."
+  },
+  {
+   "title": "Salvestub jaotisse „Minu kaardid“",
+   "text": "Kõik, mida jagad, jääb jaotisse Minu kaardid, et saaksid seda uuesti kasutada, millal tahes."
+  },
+  {
+   "title": "Jaga seal, kus juba oled",
+   "text": "Telefoni jagamismenüü kaudu rakendusse, mida juba kasutad. Või salvesta galeriisse."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · story formaat",
+ "home.events.tag": "Sündmused",
+ "home.events.title": "Loe koos kogukonnaga. Mängi oma raamatukoguga.",
+ "home.events.sub": "Sündmused ilmuvad rakendusse, kui mõni on aktiivne. Praegu on kahte liiki: ülemaailmne lugemisväljakutse ja kaardimäng sinu enda raamatutega.",
+ "home.events.demo_label": "Illustreeriv näide",
+ "home.events.read.kicker": "Ülemaailmne väljakutse · 14 päeva",
+ "home.events.read.title": "Suur Lugemine",
+ "home.events.read.items": [
+  "Taimeri minutid lähevad arvesse, raamatutes, koomiksites, manga's ja audioraamatutes.",
+  "Ühine eesmärk kogu kogukonnale. Kui see ületatakse, loetakse edasi.",
+  "Reaalajas edetabel pseudonüümi ja sinu Pagiga avatarina.",
+  "Lõppedes saab iga osaleja sündmuse kaardi oma kohaga."
+ ],
+ "home.events.read.goal": "Kogukonna eesmärk",
+ "home.events.read.board": "Edetabel",
+ "home.events.read.you": "sina",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Unustatud raamatukogu",
+ "home.events.quest.items": [
+  "Vali oma raamatukogust 3 raamatut: igaühest saab kaart oma žanri arhetüübiga.",
+  "5–10-minutilised käigud, et ületada riiulid ja alistada lõppboss.",
+  "Punktide edetabel: arvesse lähevad sinu 3 parimat käiku päevas.",
+  "Raamatuid vähe? Raamatukogu laenab sulle köiteid, ühe arhetüübi kohta."
+ ],
+ "home.events.note": "Osalemiseks pead olema vähemalt 16-aastane. Kui praegu ei ole ühtegi sündmust aktiivne, ütleb rakendus seda.",
+ "cookies.title": "Küpsiste põhimõtted · Lecturameter",
+ "cookies.meta_description": "Mida Lecturameteri veebisait sinu brauserisse salvestab, milleks ja kuidas oma valikut muuta. Ilma oma analüütika ja reklaamita.",
+ "cookies.h1": "🍪 Küpsiste põhimõtted",
+ "cookies.tagline": "Mida sinu brauserisse salvestatakse, kui seda veebisaiti külastad, ja miks.",
+ "cookies.updated": "Uuendatud 8. novembril 2026",
+ "cookies.summary_title": "Lühidalt",
+ "cookies.summary": "See veebisait ei kasuta oma analüütika- ega reklaamiküpsiseid. See salvestab sinu brauserisse sinu eelistused (teema, keel, suletud teade) ja sinu valiku nende põhimõtete kohta. Kolmanda osapoole vidin StartupBar laadib ainult siis, kui vajutad „Nõustun“.",
+ "cookies.h2_stored": "Mida salvestatakse",
+ "cookies.p_stored": "Kõik asub brauseri kohalikus salvestuses (localStorage või sessionStorage). See veebisait ei kirjuta oma HTTP-küpsiseid.",
+ "cookies.h3_essential": "Sinu eelistused (nõusolekut pole vaja)",
+ "cookies.p_essential": "Salvestame need, sest sa küsisid neid saiti kasutades. Need ei tuvasta kedagi ega lahku kunagi sinu brauserist.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · jätab meelde, kas valisid hele- või tumeda teema · kuni selle kustutad.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · jätab meelde keele, mille valijas valisid · kuni selle kustutad.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · jätab meelde, et sulgesid ülariba · kuni selle kustutad.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · salvestab sinu valiku küpsiseteates koos selle versiooni ja kuupäevaga · kuni selle muudad või kustutad.",
+ "cookies.h3_optional": "Ainult kui nõustud",
+ "cookies.p_optional": "Kui vajutad „Nõustun“, laaditakse need kolmanda osapoole osad. Kui vajutad „Keeldun“, ei laadita midagi sellest ja veebisait töötab sama moodi.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · kolmanda osapoole iframe'iga vidin, mis salvestab sessionStorage'i <code>startupbar:sid</code> (kuni sulged vahekaardi) ja saadab kuvamissignaali. Seda laadib iga veebisaidi leht.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · teek kontaktilehel, mida teenindab jsDelivr.",
+ "cookies.h2_never": "Mida me ei tee",
+ "cookies.p_never": "Me ei kasuta oma analüütikat, reklaami, profileerimist ega jälgimisküpsiseid. Me ei müü ka andmeid. Veebisait asub GitHub Pagesis, mis võib lehti serveerides oma põhimõtete järgi sinu IP-aadressi logida.",
+ "cookies.h2_change": "Muuda oma valikut",
+ "cookies.p_change": "Saad seda igal ajal muuta valikuga „Küpsiste eelistused“ iga lehe jaluses. Saad ka veebisaidi andmed brauseri seadetes kustutada. Kui nõusoleku tagasi võtad, laaditakse leht uuesti ilma kolmanda osapoole osadeta.",
+ "cookies.h2_more": "Lisateave",
+ "cookies.p_more": "Rakenduse privaatsuspoliitika selgitab, milliseid andmeid Lecturameter sinu telefonis töötleb. Küsimuste korral kirjuta aadressil lecturameter.app@gmail.com."
 }
