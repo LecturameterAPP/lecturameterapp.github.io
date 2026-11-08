@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; 個人プロジェクト",
  "common.footer.home": "ホーム",
  "common.footer.privacy": "プライバシー",
- "head.index.title": "Lecturameter · 読書トラッカーと読書統計",
- "head.index.description": "AndroidとiPhoneに対応したプライベートな読書トラッカーで、読書時間、ページ数、ペース、進捗を記録。アカウント不要、広告なし。GoodreadsやStoryGraphからインポートできます。",
+ "head.index.title": "Lecturameter: 読書記録 · 統計とタイマー",
+ "head.index.description": "Lecturameter: 読書記録アプリ（Android・iPhone対応）。読書時間を計測し、ページ数・ペース・統計を記録。Goodreadsからのインポートも。アカウント不要、広告なし。",
  "head.index.ld_description": "AndroidまたはiPhoneでライブラリを整理し、読書セッションを計測して、詳しい統計を確認。広告なしで、完全にプライベート。",
  "head.index.ld_featurelist": "本棚のあるライブラリ、画面オフでも動くタイマー、セッション履歴、ヒートマップ、年間Wrapped、カスタマイズできる読書チャレンジ、Google Driveへのバックアップ、GoodreadsのCSVインポート、ほぼオフラインで動作",
  "head.index.faq1_q": "ほかのアプリからライブラリを持ってこられる？",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "イベント · 新しいProテーマが2つ",
  "release.3_9.new": [
   "<strong>イベント:</strong> 世界規模の読書チャレンジと、開催中のLecturameter Quest",
+  "<strong>一時停止中:</strong> 統計を崩さずに、本をしばらく脇に置けます",
   "<strong>新しいProテーマが2つ:</strong> ノートと森",
   "テーマごとに専用のタイマー時計",
   "Pagiが「読みたい」から本を1冊選びます",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "本規約に関するご質問は：<a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> または <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "利用規約 – Lecturameter",
  "legal.terms.meta_description": "わかりやすい規約、細かい但し書きなし。",
- "common.footer.drakehold": "同じ作者より: <strong>Drakehold</strong>、 自動で整理される、あなただけのアーカイブ。 <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">ウェイトリストに登録する →</a>"
+ "common.footer.drakehold": "同じ作者より: <strong>Drakehold</strong>、 自動で整理される、あなただけのアーカイブ。 <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">ウェイトリストに登録する →</a>",
+ "seo.store_name": "Lecturameter: 読書記録",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "イベント",
+ "common.footer.events": "イベント",
+ "common.footer.cookies": "Cookieポリシー",
+ "common.footer.cookie_prefs": "Cookieの設定",
+ "js.consent_title": "Cookieとストレージ",
+ "js.consent_body": "サードパーティのウィジェット（StartupBar）を利用しています。ブラウザにデータを保存し、表示回数をカウントします。同意した場合にのみ読み込まれます。テーマ、言語、閉じたお知らせは、あなたが選んだものなので確認なしで保存されます。",
+ "js.consent_accept": "同意する",
+ "js.consent_reject": "拒否する",
+ "js.consent_policy": "Cookieポリシー",
+ "js.consent_prefs": "Cookieの設定",
+ "home.paused.tag": "3.9の新機能",
+ "home.paused.title": "統計を崩さずに、本をしばらく脇に置けます",
+ "home.paused.sub": "「一時停止中」は「中断」とは別のステータスです。本は置いたところで待っていて、一時停止していた日数はカウントされません。",
+ "home.paused.tab_pending": "読みたい",
+ "home.paused.tab_reading": "読書中",
+ "home.paused.tab_paused": "一時停止中",
+ "home.paused.tab_dropped": "中断",
+ "home.paused.timeline_caption": "一時停止していた日数はカウントされません",
+ "home.paused.cards": [
+  {
+   "title": "専用のステータス",
+   "text": "「一時停止中」は「中断」ではありません。本は諦めた本の山には入らず、保留のまま、好きなときに戻ってきます。"
+  },
+  {
+   "title": "「読書中」または「再読中」から",
+   "text": "本のページのバッジ、またはクイックメニューの「ステータスを変更」から変更できます。本、コミック、漫画、オーディオブックで使えます。"
+  },
+  {
+   "title": "一時停止中の日数はカウントされません",
+   "text": "読了までの日数にも、読む速さにも含まれません。統計は読んでいたときのままです。"
+  },
+  {
+   "title": "必要ならメモも",
+   "text": "一時停止するときと再開するときに、理由を書き留められます。入力は任意です。すべて本のページの「一時停止」セクションに履歴つきで残ります。"
+  },
+  {
+   "title": "専用のタブ",
+   "text": "ライブラリの「読みたい」と「中断」のあいだに、一時停止中の本が並びます。"
+  },
+  {
+   "title": "リマインダーと、自動で再開",
+   "text": "その本のリマインダーは一時停止され、再開すると元に戻ります。セッションを計測したり、KOReaderからセッションが届いたりすると、本は自動で再開され、お知らせと「元に戻す」が表示されます。"
+  }
+ ],
+ "home.cards.tag": "共有",
+ "home.cards.title": "Lecturameterはソーシャルネットワークではありません。カードは、あなたが使っているSNSへ。",
+ "home.cards.sub": "ストーリーにそのまま使える縦型1080×1920のカードを作って、いつもの場所で共有。アカウントもプロフィールもフォロワーも不要です。",
+ "home.cards.chips": [
+  "本",
+  "読了した本",
+  "本の統計",
+  "統計",
+  "週間まとめ",
+  "月間まとめ",
+  "チャレンジ",
+  "Bingo",
+  "Wrapped",
+  "イベント",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "見せたいものを選ぶ",
+   "text": "本、読み終えたばかりの本、統計、今週や今月、チャレンジ、Bingo、Wrapped、イベント。"
+  },
+  {
+   "title": "「マイカード」に保存されます",
+   "text": "共有したものはすべてマイカードに残るので、いつでも使い直せます。"
+  },
+  {
+   "title": "いつもの場所で共有",
+   "text": "スマホの共有メニューから、普段使っているアプリへ。ギャラリーへの保存もできます。"
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · ストーリー形式",
+ "home.events.tag": "イベント",
+ "home.events.title": "みんなで読む。自分のライブラリで遊ぶ。",
+ "home.events.sub": "イベントは開催中のときにアプリに表示されます。いまは二種類あります。世界規模の読書チャレンジと、手持ちの本で遊ぶカードゲームです。",
+ "home.events.demo_label": "イメージ例",
+ "home.events.read.kicker": "グローバルチャレンジ · 14日間",
+ "home.events.read.title": "みんなで大読書",
+ "home.events.read.items": [
+  "タイマーの分数がカウントされます。本、コミック、漫画、オーディオブックが対象です。",
+  "コミュニティ全体の共通目標。達成してもカウントは続きます。",
+  "ニックネーム表示のライブランキング。アバターはあなたのPagi。",
+  "終了すると、参加者全員に順位入りのイベントカードが届きます。"
+ ],
+ "home.events.read.goal": "コミュニティの目標",
+ "home.events.read.board": "ランキング",
+ "home.events.read.you": "あなた",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "忘れられた図書館",
+ "home.events.quest.items": [
+  "ライブラリから3冊を選びます。それぞれがジャンルのアーキタイプを持つカードになります。",
+  "5〜10分のランで本棚を抜け、最後のボスを倒そう。",
+  "ポイントランキング: 毎日のベスト3ランが対象です。",
+  "本が足りない？ 図書館がアーキタイプごとに一冊ずつ貸してくれます。"
+ ],
+ "home.events.note": "参加は16歳以上です。開催中のイベントがないときは、アプリでお知らせします。",
+ "cookies.title": "Cookieポリシー · Lecturameter",
+ "cookies.meta_description": "Lecturameterのウェブサイトがブラウザに保存するもの、その目的、選択の変更方法。独自の解析や広告はありません。",
+ "cookies.h1": "🍪 Cookieポリシー",
+ "cookies.tagline": "このウェブサイトを訪れたときにブラウザに保存されるものと、その理由。",
+ "cookies.updated": "更新日: 2026年11月8日",
+ "cookies.summary_title": "要点",
+ "cookies.summary": "このウェブサイトは、独自の解析用・広告用Cookieを使いません。設定（テーマ、言語、閉じたお知らせ）と、このポリシーに対する選択をブラウザに保存します。サードパーティのウィジェットStartupBarは、「同意する」を押した場合にのみ読み込まれます。",
+ "cookies.h2_stored": "保存されるもの",
+ "cookies.p_stored": "すべてブラウザのローカルストレージ（localStorageまたはsessionStorage）に保存されます。このウェブサイトは独自のHTTP Cookieを書き込みません。",
+ "cookies.h3_essential": "設定（同意は不要）",
+ "cookies.p_essential": "ウェブサイトを使うことであなたが求めたものなので保存します。個人を特定せず、ブラウザの外に出ることもありません。",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · ライトテーマかダークテーマかを記憶 · 削除するまで。",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · セレクターで選んだ言語を記憶 · 削除するまで。",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · 上部バーを閉じたことを記憶 · 削除するまで。",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · Cookieのお知らせでの選択を、バージョンと日付とともに保存 · 変更または削除するまで。",
+ "cookies.h3_optional": "同意した場合のみ",
+ "cookies.p_optional": "「同意する」を押すと、次のサードパーティ要素が読み込まれます。「拒否する」を押すと、どれも読み込まれず、ウェブサイトは同じように動作します。",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · サードパーティのiframeを使うウィジェット。sessionStorageに<code>startupbar:sid</code>を保存し（タブを閉じるまで）、表示回数のシグナルを送ります。ウェブサイトのすべてのページで読み込まれます。",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · お問い合わせページのライブラリ。jsDelivrから配信されます。",
+ "cookies.h2_never": "行わないこと",
+ "cookies.p_never": "独自の解析、広告、プロファイリング、トラッキングCookieは使いません。データの販売もしません。ウェブサイトはGitHub Pagesでホストされており、ページ配信時に同社のポリシーに従ってIPが記録されることがあります。",
+ "cookies.h2_change": "選択を変更する",
+ "cookies.p_change": "いつでも、どのページでもフッターの「Cookieの設定」から変更できます。ブラウザの設定からこのウェブサイトのデータを削除することもできます。同意を取り消すと、ページはサードパーティ要素なしで再読み込みされます。",
+ "cookies.h2_more": "詳しい情報",
+ "cookies.p_more": "アプリのプライバシーポリシーでは、Lecturameterがスマホ上で扱うデータを説明しています。ご質問は次のアドレスまで: lecturameter.app@gmail.com."
 }

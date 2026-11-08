@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Nepriklausomas projektas",
  "common.footer.home": "Pradžia",
  "common.footer.privacy": "Privatumas",
- "head.index.title": "Lecturameter · Skaitymo sekimas ir knygų statistika",
- "head.index.description": "Sek savo skaitymo laiką, puslapius, tempą ir pažangą su privačia Android ir iPhone skaitymo sekimo programėle. Be paskyros, be reklamų. Importuok iš Goodreads ir StoryGraph.",
+ "head.index.title": "Lecturameter: Skaitymo sekimas · Knygų statistika ir laikmatis",
+ "head.index.description": "Lecturameter: Skaitymo sekimas, skirtas Android ir iPhone. Matuok skaitymo laiką, sek puslapius, tempą ir statistiką, importuok iš Goodreads. Be paskyros, be reklamų.",
  "head.index.ld_description": "Tvarkyk savo biblioteką, matuok skaitymo sesijas ir žiūrėk išsamią statistiką savo Android ar iPhone telefone. Be reklamų, visiškai privatu.",
  "head.index.ld_featurelist": "Biblioteka su lentynomis, laikmatis išjungus ekraną, sesijų istorija, šilumos žemėlapis, metų Wrapped, pritaikomi skaitymo iššūkiai, atsarginė kopija Google Drive, Goodreads CSV importas, daugiausia veikia neprisijungus",
  "head.index.faq1_q": "Ar galiu perkelti savo biblioteką iš kitų programėlių?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Renginiai · Dvi naujos Pro temos",
  "release.3_9.new": [
   "<strong>Renginiai:</strong> pasauliniai skaitymo iššūkiai ir Lecturameter Quest, kai yra aktyvus",
+  "<strong>Pristabdyta:</strong> pasidėk knygą šalia kuriam laikui nesugadindamas statistikos",
   "<strong>Dvi naujos Pro temos:</strong> Sąsiuvinis ir Giraitė",
   "Savas laikmačio laikrodis kiekvienai temai",
   "Pagi parenka knygą iš sąrašo Noriu skaityti",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Dėl bet kokių klausimų apie šias Sąlygas: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> arba <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Paslaugų teikimo sąlygos – Lecturameter",
  "legal.terms.meta_description": "Aiškios sąlygos, be smulkaus šrifto.",
- "common.footer.drakehold": "Nuo to paties kūrėjo: <strong>Drakehold</strong>, tavo asmeninis archyvas, kuris tvarkosi pats. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Prisijunk prie laukiančiųjų sąrašo →</a>"
+ "common.footer.drakehold": "Nuo to paties kūrėjo: <strong>Drakehold</strong>, tavo asmeninis archyvas, kuris tvarkosi pats. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Prisijunk prie laukiančiųjų sąrašo →</a>",
+ "seo.store_name": "Lecturameter: Skaitymo sekimas",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Renginiai",
+ "common.footer.events": "Renginiai",
+ "common.footer.cookies": "Slapukų politika",
+ "common.footer.cookie_prefs": "Slapukų nuostatos",
+ "js.consent_title": "Slapukai ir saugykla",
+ "js.consent_body": "Naudojame trečiosios šalies valdiklį (StartupBar), kuris saugo duomenis tavo naršyklėje ir skaičiuoja rodymus. Jis įkeliamas tik jei sutinki. Tavo tema, kalba ir uždarytas pranešimas išsaugomi neklausiant, nes juos pasirinkai pats.",
+ "js.consent_accept": "Sutinku",
+ "js.consent_reject": "Atmetu",
+ "js.consent_policy": "Slapukų politika",
+ "js.consent_prefs": "Slapukų nuostatos",
+ "home.paused.tag": "Naujiena 3.9",
+ "home.paused.title": "Pasidėk knygą šalia kuriam laikui nesugadindamas statistikos",
+ "home.paused.sub": "Pristabdyta yra atskira būsena, kitokia nei Apleista. Knyga laukia ten, kur ją palikai, o pristabdytos dienos neskaičiuojamos.",
+ "home.paused.tab_pending": "Noriu skaityti",
+ "home.paused.tab_reading": "Skaitoma",
+ "home.paused.tab_paused": "Pristabdyta",
+ "home.paused.tab_dropped": "Apleista",
+ "home.paused.timeline_caption": "Pristabdytos dienos neskaičiuojamos",
+ "home.paused.cards": [
+  {
+   "title": "Atskira būsena",
+   "text": "Pristabdyta nėra Apleista. Tavo knyga nepatenka į numestų knygų krūvą: ji laukia ir sugrįžta, kai tik nori."
+  },
+  {
+   "title": "Iš Skaitoma arba Skaitau pakartotinai",
+   "text": "Pakeisk būseną ženkliuku knygos puslapyje arba per „Keisti būseną“ greitajame meniu. Veikia su knygomis, komiksais, manga ir audioknygomis."
+  },
+  {
+   "title": "Pristabdytos dienos neskaičiuojamos",
+   "text": "Nei į dienas iki pabaigos, nei į tavo skaitymo greitį. Statistika lieka tokia, kokia buvo, kai skaitei."
+  },
+  {
+   "title": "Pastaba, jei nori",
+   "text": "Pristabdydamas ir tęsdamas gali užsirašyti, kodėl. Tai nebūtina. Viskas lieka knygos puslapio skiltyje „Pauzės“ su istorija."
+  },
+  {
+   "title": "Atskiras skirtukas",
+   "text": "Savo bibliotekoje, tarp Noriu skaityti ir Apleista, rasi pristabdytas knygas."
+  },
+  {
+   "title": "Priminimai ir savaiminis tęsimas",
+   "text": "Tos knygos priminimai pristabdomi ir sugrįžta, kai ją tęsi. Jei išmatuoji seansą laikmačiu arba ateina vienas iš KOReader, knyga tęsiama pati, su pranešimu ir parinktimi Anuliuoti."
+  }
+ ],
+ "home.cards.tag": "Bendrinti",
+ "home.cards.title": "Lecturameter nėra socialinis tinklas. Tavo kortelės keliauja į tą, kurį naudoji.",
+ "home.cards.sub": "Kurk vertikalias 1080×1920 korteles, paruoštas istorijoms, ir bendrink ten, kur jau esi. Be paskyros, be profilio, be sekėjų.",
+ "home.cards.chips": [
+  "Knyga",
+  "Perskaityta knyga",
+  "Knygos statistika",
+  "Statistika",
+  "Savaitės apžvalga",
+  "Mėnesio apžvalga",
+  "Iššūkiai",
+  "Bingo",
+  "Wrapped",
+  "Įvykis",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Pasirink, ką rodyti",
+   "text": "Knygą, ką tik perskaitytą knygą, savo statistiką, savaitę ar mėnesį, iššūkį, Bingo, Wrapped arba įvykį."
+  },
+  {
+   "title": "Išsaugoma skiltyje „Mano kortelės“",
+   "text": "Viskas, ką bendrini, lieka skiltyje Mano kortelės, todėl gali naudoti iš naujo, kada nori."
+  },
+  {
+   "title": "Bendrink ten, kur jau esi",
+   "text": "Per telefono bendrinimo meniu į programėlę, kurią jau naudoji. Arba išsaugok galerijoje."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · istorijos formatas",
+ "home.events.tag": "Renginiai",
+ "home.events.title": "Skaityk su bendruomene. Žaisk su savo biblioteka.",
+ "home.events.sub": "Renginiai programėlėje atsiranda, kai kuris nors yra aktyvus. Šiuo metu yra dviejų rūšių: pasaulinis skaitymo iššūkis ir kortų žaidimas su tavo paties knygomis.",
+ "home.events.demo_label": "Iliustracinis pavyzdys",
+ "home.events.read.kicker": "Pasaulinis iššūkis · 14 dienų",
+ "home.events.read.title": "Didysis skaitymas",
+ "home.events.read.items": [
+  "Skaičiuojamos laikmačio minutės, knygose, komiksuose, manga ir audioknygose.",
+  "Bendras visos bendruomenės tikslas. Jei jis viršijamas, skaičiuojama toliau.",
+  "Tiesioginė lyderių lentelė su slapyvardžiu ir tavo Pagi kaip avataru.",
+  "Pasibaigus kiekvienas dalyvis gauna renginio kortelę su savo vieta."
+ ],
+ "home.events.read.goal": "Bendruomenės tikslas",
+ "home.events.read.board": "Lyderių lentelė",
+ "home.events.read.you": "tu",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Pamirštoji biblioteka",
+ "home.events.quest.items": [
+  "Išsirink 3 knygas iš savo bibliotekos: kiekviena tampa kortele su savo žanro archetipu.",
+  "5–10 minučių ėjimai, kad perkirstum lentynas ir nugalėtum galutinį bosą.",
+  "Taškų lentelė: skaičiuojami tavo 3 geriausi kiekvienos dienos ėjimai.",
+  "Trūksta knygų? Biblioteka paskolina tomų, po vieną kiekvienam archetipui."
+ ],
+ "home.events.note": "Dalyvauti gali tik sulaukę 16 metų ar vyresni. Jei šiuo metu nėra aktyvaus renginio, programėlė tau apie tai pasako.",
+ "cookies.title": "Slapukų politika · Lecturameter",
+ "cookies.meta_description": "Ką Lecturameter svetainė saugo tavo naršyklėje, kam ir kaip pakeisti pasirinkimą. Be savos analitikos ar reklamos.",
+ "cookies.h1": "🍪 Slapukų politika",
+ "cookies.tagline": "Kas saugoma tavo naršyklėje, kai lankaisi šioje svetainėje, ir kodėl.",
+ "cookies.updated": "Atnaujinta 2026 m. lapkričio 8 d.",
+ "cookies.summary_title": "Trumpai",
+ "cookies.summary": "Ši svetainė nenaudoja savų analitikos ar reklamos slapukų. Tavo naršyklėje ji saugo tavo nuostatas (temą, kalbą, uždarytą pranešimą) ir pasirinkimą dėl šios politikos. Trečiosios šalies valdiklis StartupBar įkeliamas tik paspaudus „Sutinku“.",
+ "cookies.h2_stored": "Kas saugoma",
+ "cookies.p_stored": "Viskas yra naršyklės vietinėje saugykloje (localStorage arba sessionStorage). Ši svetainė nerašo savų HTTP slapukų.",
+ "cookies.h3_essential": "Tavo nuostatos (sutikimo nereikia)",
+ "cookies.p_essential": "Jas saugome, nes jų paprašei naudodamasis svetaine. Jos nieko neatpažįsta ir niekada nepalieka tavo naršyklės.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · prisimena, ar pasirinkai šviesią, ar tamsią temą · kol ištrinsi.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · prisimena kalbą, kurią pasirinkai parinkiklyje · kol ištrinsi.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · prisimena, kad uždarei viršutinę juostą · kol ištrinsi.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · išsaugo tavo pasirinkimą slapukų pranešime su jo versija ir data · kol pakeisi ar ištrinsi.",
+ "cookies.h3_optional": "Tik jei sutinki",
+ "cookies.p_optional": "Paspaudus „Sutinku“, įkeliami šie trečiųjų šalių elementai. Paspaudus „Atmetu“, nieko iš to neįkeliama, o svetainė veikia taip pat.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · valdiklis su trečiosios šalies iframe, kuris saugo <code>startupbar:sid</code> sessionStorage (kol uždarysi skirtuką) ir siunčia rodymų signalą. Jį įkelia kiekvienas svetainės puslapis.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · biblioteka kontaktų puslapyje, tiekiama per jsDelivr.",
+ "cookies.h2_never": "Ko nedarome",
+ "cookies.p_never": "Nenaudojame savos analitikos, reklamos, profiliavimo ar sekimo slapukų. Duomenų taip pat neparduodame. Svetainė talpinama GitHub Pages, kuris, teikdamas puslapius, pagal savo politiką gali registruoti tavo IP.",
+ "cookies.h2_change": "Pakeisk pasirinkimą",
+ "cookies.p_change": "Gali jį pakeisti bet kada per „Slapukų nuostatos“ bet kurio puslapio poraštėje. Taip pat gali ištrinti šios svetainės duomenis naršyklės nustatymuose. Jei atšauksi sutikimą, puslapis persikraus be trečiųjų šalių elementų.",
+ "cookies.h2_more": "Daugiau informacijos",
+ "cookies.p_more": "Programėlės privatumo politika paaiškina, kokius duomenis Lecturameter tvarko tavo telefone. Jei turi klausimų, rašyk: lecturameter.app@gmail.com."
 }

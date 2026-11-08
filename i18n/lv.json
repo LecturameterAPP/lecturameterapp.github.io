@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Neatkarīgs projekts",
  "common.footer.home": "Sākums",
  "common.footer.privacy": "Privātums",
- "head.index.title": "Lecturameter · Lasīšanas uzskaite un grāmatu statistika",
- "head.index.description": "Uzskaiti lasīšanas laiku, lappuses, tempu un progresu ar privātu lasīšanas uzskaites lietotni Android un iPhone. Bez konta, bez reklāmām. Importē no Goodreads un StoryGraph.",
+ "head.index.title": "Lecturameter: Lasīšanas izsekotājs · Statistika un taimeris",
+ "head.index.description": "Lecturameter: Lasīšanas izsekotājs Android un iPhone. Mēri lasīšanas laiku, seko lappusēm, tempam un statistikai, importē no Goodreads. Bez konta, bez reklāmām.",
  "head.index.ld_description": "Kārto savu bibliotēku, mēri lasīšanas sesijas un skaties detalizētu statistiku savā Android vai iPhone telefonā. Bez reklāmām, pilnīgi privāti.",
  "head.index.ld_featurelist": "Bibliotēka ar plauktiem, taimeris ar izslēgtu ekrānu, sesiju vēsture, siltuma karte, gada Wrapped, pielāgojami lasīšanas izaicinājumi, dublēšana Google Drive, Goodreads CSV imports, lielākoties bezsaistē",
  "head.index.faq1_q": "Vai varu pārnest savu bibliotēku no citām lietotnēm?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Pasākumi · Divi jauni Pro motīvi",
  "release.3_9.new": [
   "<strong>Pasākumi:</strong> globāli lasīšanas izaicinājumi un Lecturameter Quest, kad ir aktīvs",
+  "<strong>Pauzēts:</strong> noliec grāmatu malā uz laiku, nesabojājot savu statistiku",
   "<strong>Divi jauni Pro motīvi:</strong> Burtnīca un Mežs",
   "Savs taimera pulkstenis katram motīvam",
   "Pagi izvēlas grāmatu no saraksta Vēlos izlasīt",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Jautājumiem par šiem Noteikumiem: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> vai <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Pakalpojumu sniegšanas noteikumi – Lecturameter",
  "legal.terms.meta_description": "Skaidri noteikumi, bez sīkā drukā.",
- "common.footer.drakehold": "No tā paša veidotāja: <strong>Drakehold</strong>, tavs personīgais arhīvs, kas kārtojas pats. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Pievienojies gaidīšanas sarakstam →</a>"
+ "common.footer.drakehold": "No tā paša veidotāja: <strong>Drakehold</strong>, tavs personīgais arhīvs, kas kārtojas pats. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Pievienojies gaidīšanas sarakstam →</a>",
+ "seo.store_name": "Lecturameter: Lasīšanas izsekotājs",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Pasākumi",
+ "common.footer.events": "Pasākumi",
+ "common.footer.cookies": "Sīkdatņu politika",
+ "common.footer.cookie_prefs": "Sīkdatņu preferences",
+ "js.consent_title": "Sīkdatnes un glabātuve",
+ "js.consent_body": "Mēs izmantojam trešās puses logrīku (StartupBar), kas saglabā datus tavā pārlūkā un skaita parādījumus. Tas ielādējas tikai tad, ja piekrīti. Tava tēma, valoda un aizvērtais paziņojums tiek saglabāti, nejautājot, jo tos izvēlējies tu pats.",
+ "js.consent_accept": "Piekrītu",
+ "js.consent_reject": "Noraidu",
+ "js.consent_policy": "Sīkdatņu politika",
+ "js.consent_prefs": "Sīkdatņu preferences",
+ "home.paused.tag": "Jaunums 3.9",
+ "home.paused.title": "Noliec grāmatu malā uz laiku, nesabojājot savu statistiku",
+ "home.paused.sub": "Pauzēts ir atsevišķs statuss, atšķirīgs no Pamesta. Grāmata gaida tur, kur to atstāji, un pauzes dienas netiek skaitītas.",
+ "home.paused.tab_pending": "Vēlos izlasīt",
+ "home.paused.tab_reading": "Lasīšana",
+ "home.paused.tab_paused": "Pauzēts",
+ "home.paused.tab_dropped": "Pamesta",
+ "home.paused.timeline_caption": "Pauzes dienas netiek skaitītas",
+ "home.paused.cards": [
+  {
+   "title": "Atsevišķs statuss",
+   "text": "Pauzēts nav Pamesta. Tava grāmata nenonāk to grāmatu kaudzē, ko esi pametis: tā gaida un atgriežas, kad vien vēlies."
+  },
+  {
+   "title": "No Lasīšana vai Pārlasīšana",
+   "text": "Maini statusu ar zīmi grāmatas lapā vai ar „Mainīt statusu“ ātrajā izvēlnē. Darbojas grāmatām, komiksiem, mangai un audiogrāmatām."
+  },
+  {
+   "title": "Pauzes dienas netiek skaitītas",
+   "text": "Ne dienās līdz pabeigšanai, ne tavā lasīšanas ātrumā. Statistika paliek tāda, kāda tā bija, kad lasīji."
+  },
+  {
+   "title": "Piezīme, ja vēlies",
+   "text": "Kad pauzē un kad atsāc, vari pierakstīt iemeslu. Tas nav obligāti. Viss paliek grāmatas lapas sadaļā „Pauzes“ ar savu vēsturi."
+  },
+  {
+   "title": "Sava cilne",
+   "text": "Savā bibliotēkā, starp Vēlos izlasīt un Pamesta, atradīsi pauzētās grāmatas."
+  },
+  {
+   "title": "Atgādinājumi un atsākšana pašai no sevis",
+   "text": "Šīs grāmatas atgādinājumi tiek pauzēti un atgriežas, kad atsāc grāmatu. Ja nomēri sesiju ar taimeri vai kāda atnāk no KOReader, grāmata atsākas pati, ar paziņojumu un opciju Atsaukt."
+  }
+ ],
+ "home.cards.tag": "Kopīgot",
+ "home.cards.title": "Lecturameter nav sociālais tīkls. Tavas kartes dodas uz to, ko izmanto.",
+ "home.cards.sub": "Veido vertikālas 1080×1920 kartes, gatavas stāstiem, un kopīgo tur, kur jau esi. Bez konta, bez profila un bez sekotājiem.",
+ "home.cards.chips": [
+  "Grāmata",
+  "Pabeigta grāmata",
+  "Grāmatas statistika",
+  "Statistika",
+  "Nedēļas kopsavilkums",
+  "Mēneša kopsavilkums",
+  "Izaicinājumi",
+  "Bingo",
+  "Wrapped",
+  "Notikums",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Izvēlies, ko rādīt",
+   "text": "Grāmatu, tikko pabeigtu grāmatu, savu statistiku, savu nedēļu vai mēnesi, izaicinājumu, Bingo, Wrapped vai notikumu."
+  },
+  {
+   "title": "Saglabājas sadaļā „Manas kartītes“",
+   "text": "Viss, ko kopīgo, paliek sadaļā Manas kartītes, lai vari to izmantot atkal, kad vien vēlies."
+  },
+  {
+   "title": "Kopīgo tur, kur jau esi",
+   "text": "Caur tālruņa kopīgošanas izvēlni uz lietotni, ko jau izmanto. Vai saglabā galerijā."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · stāsta formāts",
+ "home.events.tag": "Pasākumi",
+ "home.events.title": "Lasi kopā ar kopienu. Spēlē ar savu bibliotēku.",
+ "home.events.sub": "Pasākumi lietotnē parādās, kad kāds ir aktīvs. Šobrīd ir divu veidu: pasaules lasīšanas izaicinājums un kāršu spēle ar savām grāmatām.",
+ "home.events.demo_label": "Ilustratīvs piemērs",
+ "home.events.read.kicker": "Pasaules izaicinājums · 14 dienas",
+ "home.events.read.title": "Lielā lasīšana",
+ "home.events.read.items": [
+  "Tiek skaitītas taimera minūtes, grāmatām, komiksiem, mangai un audiogrāmatām.",
+  "Kopīgs mērķis visai kopienai. Ja tas tiek pārsniegts, skaitīšana turpinās.",
+  "Tiešraides rangs ar segvārdu un tavu Pagi kā avatāru.",
+  "Kad tas beidzas, katrs dalībnieks saņem pasākuma kartīti ar savu vietu."
+ ],
+ "home.events.read.goal": "Kopienas mērķis",
+ "home.events.read.board": "Rangs",
+ "home.events.read.you": "tu",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Aizmirstā bibliotēka",
+ "home.events.quest.items": [
+  "Izvēlies 3 grāmatas no savas bibliotēkas: katra kļūst par kartīti ar sava žanra arhetipu.",
+  "5 līdz 10 minūšu gājieni, lai šķērsotu plauktus un uzvarētu galīgo bosu.",
+  "Punktu rangs: tiek skaitīti tavi 3 labākie gājieni katrā dienā.",
+  "Trūkst grāmatu? Bibliotēka aizdod sējumus, pa vienam katram arhetipam."
+ ],
+ "home.events.note": "Lai piedalītos, jābūt 16 gadus vecam vai vecākam. Ja pašlaik nav aktīva pasākuma, lietotne tev to pasaka.",
+ "cookies.title": "Sīkdatņu politika · Lecturameter",
+ "cookies.meta_description": "Ko Lecturameter vietne saglabā tavā pārlūkā, kāpēc un kā mainīt savu izvēli. Bez pašu analītikas vai reklāmas.",
+ "cookies.h1": "🍪 Sīkdatņu politika",
+ "cookies.tagline": "Kas tiek saglabāts tavā pārlūkā, kad apmeklē šo vietni, un kāpēc.",
+ "cookies.updated": "Atjaunināts 2026. gada 8. novembrī",
+ "cookies.summary_title": "Īsumā",
+ "cookies.summary": "Šī vietne neizmanto savas analītikas vai reklāmas sīkdatnes. Tavā pārlūkā tā saglabā tavas preferences (tēmu, valodu, aizvērto paziņojumu) un tavu izvēli par šo politiku. Trešās puses logrīks StartupBar ielādējas tikai tad, ja nospied „Piekrītu“.",
+ "cookies.h2_stored": "Kas tiek saglabāts",
+ "cookies.p_stored": "Viss atrodas pārlūka lokālajā glabātuvē (localStorage vai sessionStorage). Šī vietne neraksta savas HTTP sīkdatnes.",
+ "cookies.h3_essential": "Tavas preferences (piekrišana nav vajadzīga)",
+ "cookies.p_essential": "Mēs tās saglabājam, jo tu tās pieprasīji, izmantojot vietni. Tās nevienu neidentificē un nekad neatstāj tavu pārlūku.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · atceras, vai izvēlējies gaišo vai tumšo tēmu · līdz to notīrīsi.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · atceras valodu, ko izvēlējies atlasītājā · līdz to notīrīsi.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · atceras, ka aizvēri augšējo joslu · līdz to notīrīsi.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · saglabā tavu izvēli sīkdatņu paziņojumā ar tā versiju un datumu · līdz to mainīsi vai notīrīsi.",
+ "cookies.h3_optional": "Tikai ja piekrīti",
+ "cookies.p_optional": "Ja nospied „Piekrītu“, tiek ielādēti šie trešo pušu elementi. Ja nospied „Noraidu“, nekas no tā netiek ielādēts, un vietne darbojas tāpat.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · logrīks ar trešās puses iframe, kas saglabā <code>startupbar:sid</code> sessionStorage (līdz aizver cilni) un sūta parādījumu signālu. To ielādē katra vietnes lapa.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · bibliotēka kontaktu lapā, ko piegādā jsDelivr.",
+ "cookies.h2_never": "Ko mēs nedarām",
+ "cookies.p_never": "Mēs neizmantojam savu analītiku, reklāmu, profilēšanu vai izsekošanas sīkdatnes. Datus arī nepārdodam. Vietne tiek mitināta GitHub Pages, kas, apkalpojot lapas, pēc savas politikas var reģistrēt tavu IP.",
+ "cookies.h2_change": "Maini savu izvēli",
+ "cookies.p_change": "To var mainīt jebkurā laikā ar „Sīkdatņu preferences“ jebkuras lapas kājenē. Vietnes datus vari dzēst arī pārlūka iestatījumos. Ja atsauksi piekrišanu, lapa pārlādēsies bez trešo pušu elementiem.",
+ "cookies.h2_more": "Plašāka informācija",
+ "cookies.p_more": "Lietotnes privātuma politika paskaidro, kādus datus Lecturameter apstrādā tavā tālrunī. Ja ir jautājumi, raksti: lecturameter.app@gmail.com."
 }

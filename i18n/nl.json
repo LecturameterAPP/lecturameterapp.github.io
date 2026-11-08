@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Onafhankelijk project",
  "common.footer.home": "Home",
  "common.footer.privacy": "Privacy",
- "head.index.title": "Lecturameter · Leestracker en boekstatistieken",
- "head.index.description": "Houd je leestijd, pagina's, tempo en voortgang bij met een privé-leestracker voor Android en iPhone. Geen account, geen advertenties. Importeer vanuit Goodreads en StoryGraph.",
+ "head.index.title": "Lecturameter: Leesdagboek · Boekstatistieken en timer",
+ "head.index.description": "Lecturameter: Leesdagboek voor Android en iPhone. Meet je leestijd, volg pagina's, tempo en statistieken en importeer uit Goodreads. Geen account, geen advertenties.",
  "head.index.ld_description": "Organiseer je bibliotheek, time je leessessies en bekijk gedetailleerde statistieken op je Android- of iPhone-telefoon. Geen advertenties, volledig privé.",
  "head.index.ld_featurelist": "Bibliotheek met planken, timer met scherm uit, sessiegeschiedenis, heatmap, jaarlijkse Wrapped, aanpasbare leesuitdagingen, back-up naar Google Drive, CSV-import uit Goodreads, grotendeels offline",
  "head.index.faq1_q": "Kan ik mijn bibliotheek uit andere apps meenemen?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Evenementen · Twee nieuwe Pro-thema's",
  "release.3_9.new": [
   "<strong>Evenementen:</strong> wereldwijde leesuitdagingen en Lecturameter Quest als er een actief is",
+  "<strong>Gepauzeerd:</strong> leg een boek een tijdje opzij zonder je statistieken te verpesten",
   "<strong>Twee nieuwe Pro-thema's:</strong> Schrift en Bos",
   "Een eigen timerklok voor elk thema",
   "Pagi kiest een boek uit Wil ik lezen",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Voor vragen over deze Voorwaarden: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> of <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Gebruiksvoorwaarden – Lecturameter",
  "legal.terms.meta_description": "Duidelijke voorwaarden, geen kleine lettertjes.",
- "common.footer.drakehold": "Van dezelfde maker: <strong>Drakehold</strong>, je persoonlijke archief dat zichzelf ordent. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Schrijf je in op de wachtlijst →</a>"
+ "common.footer.drakehold": "Van dezelfde maker: <strong>Drakehold</strong>, je persoonlijke archief dat zichzelf ordent. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Schrijf je in op de wachtlijst →</a>",
+ "seo.store_name": "Lecturameter: Leesdagboek",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Evenementen",
+ "common.footer.events": "Evenementen",
+ "common.footer.cookies": "Cookiebeleid",
+ "common.footer.cookie_prefs": "Cookievoorkeuren",
+ "js.consent_title": "Cookies en opslag",
+ "js.consent_body": "We gebruiken een widget van een derde partij (StartupBar) die gegevens in je browser opslaat en weergaven telt. Hij laadt alleen als je accepteert. Je thema, taal en gesloten melding worden zonder te vragen bewaard, omdat jij ze hebt gekozen.",
+ "js.consent_accept": "Accepteren",
+ "js.consent_reject": "Weigeren",
+ "js.consent_policy": "Cookiebeleid",
+ "js.consent_prefs": "Cookievoorkeuren",
+ "home.paused.tag": "Nieuw in 3.9",
+ "home.paused.title": "Leg een boek een tijdje opzij zonder je statistieken te verpesten",
+ "home.paused.sub": "Gepauzeerd is een aparte status, anders dan Gestopt. Het boek wacht waar je het liet liggen en de dagen op pauze tellen niet mee.",
+ "home.paused.tab_pending": "Wil ik lezen",
+ "home.paused.tab_reading": "Aan het lezen",
+ "home.paused.tab_paused": "Gepauzeerd",
+ "home.paused.tab_dropped": "Gestopt",
+ "home.paused.timeline_caption": "Dagen op pauze tellen niet mee",
+ "home.paused.cards": [
+  {
+   "title": "Een aparte status",
+   "text": "Gepauzeerd is niet Gestopt. Je boek belandt niet op de stapel boeken die je hebt opgegeven: het wacht en komt terug wanneer jij wilt."
+  },
+  {
+   "title": "Vanuit Aan het lezen of Herlezen",
+   "text": "Wijzig de status via het label op de boekpagina of met „Status wijzigen” in het snelmenu. Werkt voor boeken, strips, manga en luisterboeken."
+  },
+  {
+   "title": "Dagen op pauze tellen niet mee",
+   "text": "Niet bij de dagen tot je klaar bent en niet in je leessnelheid. Je statistieken blijven zoals ze waren toen je las."
+  },
+  {
+   "title": "Een notitie, als je wilt",
+   "text": "Als je pauzeert en als je hervat, kun je opschrijven waarom. Dat is optioneel. Alles blijft in het onderdeel „Pauzes” van de boekpagina, met de geschiedenis."
+  },
+  {
+   "title": "Een eigen tabblad",
+   "text": "In je bibliotheek vind je tussen Wil ik lezen en Gestopt je gepauzeerde boeken."
+  },
+  {
+   "title": "Herinneringen, en vanzelf hervatten",
+   "text": "De herinneringen van dat boek worden gepauzeerd en komen terug als je het hervat. Als je een sessie met de timer meet of er komt er een binnen vanuit KOReader, wordt het boek vanzelf hervat, met een melding en de optie Ongedaan maken."
+  }
+ ],
+ "home.cards.tag": "Delen",
+ "home.cards.title": "Lecturameter is geen sociaal netwerk. Je kaarten gaan naar het netwerk dat jij gebruikt.",
+ "home.cards.sub": "Maak verticale kaarten van 1080×1920, klaar voor stories, en deel ze waar je al bent. Geen account, geen profiel en geen volgers.",
+ "home.cards.chips": [
+  "Boek",
+  "Boek uit",
+  "Boekstatistieken",
+  "Statistieken",
+  "Weekoverzicht",
+  "Maandoverzicht",
+  "Uitdagingen",
+  "Bingo",
+  "Wrapped",
+  "Evenement",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Kies wat je wilt laten zien",
+   "text": "Een boek, een boek dat je net uit hebt, je statistieken, je week of maand, een uitdaging, Bingo, Wrapped of een evenement."
+  },
+  {
+   "title": "Wordt bewaard in „Mijn kaarten”",
+   "text": "Alles wat je deelt blijft in Mijn kaarten, zodat je het kunt hergebruiken wanneer je wilt."
+  },
+  {
+   "title": "Deel het waar je al bent",
+   "text": "Via het deelmenu van je telefoon, naar de app die je al gebruikt. Of bewaar het in je galerij."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · storyformaat",
+ "home.events.tag": "Evenementen",
+ "home.events.title": "Lees met de community. Speel met je bibliotheek.",
+ "home.events.sub": "Evenementen verschijnen in de app als er een actief is. Er zijn nu twee soorten: een wereldwijde leesuitdaging en een kaartspel met je eigen boeken.",
+ "home.events.demo_label": "Voorbeeld ter illustratie",
+ "home.events.read.kicker": "Wereldwijde uitdaging · 14 dagen",
+ "home.events.read.title": "De Grote Lees",
+ "home.events.read.items": [
+  "De minuten van de timer tellen mee, bij boeken, strips, manga en luisterboeken.",
+  "Een gedeeld doel voor de hele community. Als het wordt overtroffen, blijft het meetellen.",
+  "Live ranglijst met een schuilnaam en je Pagi als avatar.",
+  "Als het afgelopen is, krijgt elke deelnemer de evenementkaart met zijn positie."
+ ],
+ "home.events.read.goal": "Doel van de community",
+ "home.events.read.board": "Ranglijst",
+ "home.events.read.you": "jij",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "De vergeten bibliotheek",
+ "home.events.quest.items": [
+  "Kies 3 boeken uit je bibliotheek: elk wordt een kaart met het archetype van zijn genre.",
+  "Runs van 5 tot 10 minuten om langs de planken te komen en de eindbaas te verslaan.",
+  "Puntenranglijst: je 3 beste runs van elke dag tellen mee.",
+  "Te weinig boeken? De bibliotheek leent je delen, één per archetype."
+ ],
+ "home.events.note": "Je moet 16 jaar of ouder zijn om mee te doen. Als er nu geen evenement actief is, laat de app dat weten.",
+ "cookies.title": "Cookiebeleid · Lecturameter",
+ "cookies.meta_description": "Wat de Lecturameter-website in je browser opslaat, waarvoor en hoe je je keuze wijzigt. Geen eigen analyse of advertenties.",
+ "cookies.h1": "🍪 Cookiebeleid",
+ "cookies.tagline": "Wat er in je browser wordt opgeslagen als je deze website bezoekt, en waarom.",
+ "cookies.updated": "Bijgewerkt op 8 november 2026",
+ "cookies.summary_title": "Kort gezegd",
+ "cookies.summary": "Deze website gebruikt geen eigen analyse- of advertentiecookies. Ze slaat je voorkeuren (thema, taal, gesloten melding) en je keuze over dit beleid op in je browser. Een widget van een derde partij, StartupBar, laadt alleen als je op „Accepteren” drukt.",
+ "cookies.h2_stored": "Wat er wordt opgeslagen",
+ "cookies.p_stored": "Alles staat in de lokale opslag van je browser (localStorage of sessionStorage). Deze website schrijft geen eigen HTTP-cookies.",
+ "cookies.h3_essential": "Je voorkeuren (geen toestemming nodig)",
+ "cookies.p_essential": "We slaan ze op omdat je erom hebt gevraagd door de website te gebruiken. Ze identificeren niemand en verlaten je browser nooit.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · onthoudt of je het lichte of donkere thema koos · tot je het wist.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · onthoudt de taal die je in de keuzelijst koos · tot je het wist.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · onthoudt dat je de balk bovenaan sloot · tot je het wist.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · bewaart je keuze in de cookiemelding, met versie en datum · tot je het wijzigt of wist.",
+ "cookies.h3_optional": "Alleen als je accepteert",
+ "cookies.p_optional": "Als je op „Accepteren” drukt, laden deze onderdelen van derden. Als je op „Weigeren” drukt, laadt niets hiervan en werkt de website hetzelfde.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · een widget met een iframe van een derde partij, die <code>startupbar:sid</code> in sessionStorage opslaat (tot je het tabblad sluit) en een weergavesignaal verstuurt. Elke pagina van de website laadt hem.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · een bibliotheek op de contactpagina, geleverd door jsDelivr.",
+ "cookies.h2_never": "Wat we niet doen",
+ "cookies.p_never": "We gebruiken geen eigen analyse, advertenties, profilering of trackingcookies. We verkopen ook geen gegevens. De website wordt gehost op GitHub Pages, dat bij het aanbieden van pagina's volgens eigen beleid je IP kan vastleggen.",
+ "cookies.h2_change": "Wijzig je keuze",
+ "cookies.p_change": "Je kunt die op elk moment wijzigen via „Cookievoorkeuren” in de voettekst van elke pagina. Je kunt de gegevens van deze website ook wissen in je browserinstellingen. Als je je toestemming intrekt, laadt de pagina opnieuw zonder de onderdelen van derden.",
+ "cookies.h2_more": "Meer informatie",
+ "cookies.p_more": "Het privacybeleid van de app legt uit welke gegevens Lecturameter op je telefoon verwerkt. Heb je vragen, schrijf dan naar lecturameter.app@gmail.com."
 }

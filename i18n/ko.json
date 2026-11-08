@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; 독립 프로젝트",
  "common.footer.home": "홈",
  "common.footer.privacy": "개인정보",
- "head.index.title": "Lecturameter · 독서 기록 앱 & 독서 통계",
- "head.index.description": "독서 시간, 페이지, 속도, 진행률을 Android와 iPhone용 개인 독서 기록 앱으로 기록하세요. 계정도 광고도 없어요. Goodreads와 StoryGraph에서 가져올 수 있어요.",
+ "head.index.title": "Lecturameter: 독서 기록 · 통계와 타이머",
+ "head.index.description": "Lecturameter: 독서 기록, Android와 iPhone용. 독서 시간을 재고, 페이지·속도·통계를 기록하고, Goodreads에서 가져오세요. 계정도 광고도 없어요.",
  "head.index.ld_description": "Android 또는 iPhone에서 서재를 정리하고, 독서 세션 시간을 재고, 자세한 통계를 확인하세요. 광고 없이 완전히 비공개로.",
  "head.index.ld_featurelist": "책장으로 정리하는 서재, 화면이 꺼져도 작동하는 타이머, 세션 기록, 히트맵, 연간 Wrapped, 맞춤 독서 챌린지, Google Drive 백업, Goodreads CSV 가져오기, 대부분 오프라인 작동",
  "head.index.faq1_q": "다른 앱에서 서재를 가져올 수 있나요?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "이벤트 · 새로운 Pro 테마 2개",
  "release.3_9.new": [
   "<strong>이벤트:</strong> 전 세계 독서 챌린지와 진행 중일 때 Lecturameter Quest",
+  "<strong>일시중지:</strong> 통계를 망치지 않고 책을 잠시 옆에 두세요",
   "<strong>새로운 Pro 테마 2개:</strong> 공책과 숲",
   "테마마다 전용 타이머 시계",
   "Pagi가 읽고 싶음에서 책 한 권을 골라 줍니다",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "본 약관에 대한 문의: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> 또는 <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "이용약관 – Lecturameter",
  "legal.terms.meta_description": "명확한 약관, 깨알 같은 조항 없이.",
- "common.footer.drakehold": "같은 제작자의 앱: <strong>Drakehold</strong>, 스스로 정리되는 나만의 아카이브. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">대기자 명단에 등록하기 →</a>"
+ "common.footer.drakehold": "같은 제작자의 앱: <strong>Drakehold</strong>, 스스로 정리되는 나만의 아카이브. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">대기자 명단에 등록하기 →</a>",
+ "seo.store_name": "Lecturameter: 독서 기록",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "이벤트",
+ "common.footer.events": "이벤트",
+ "common.footer.cookies": "쿠키 정책",
+ "common.footer.cookie_prefs": "쿠키 환경설정",
+ "js.consent_title": "쿠키와 저장소",
+ "js.consent_body": "타사 위젯(StartupBar)을 사용합니다. 브라우저에 데이터를 저장하고 노출 횟수를 집계해요. 동의하는 경우에만 불러옵니다. 테마, 언어, 닫은 알림은 직접 고르신 것이므로 묻지 않고 저장돼요.",
+ "js.consent_accept": "동의",
+ "js.consent_reject": "거부",
+ "js.consent_policy": "쿠키 정책",
+ "js.consent_prefs": "쿠키 환경설정",
+ "home.paused.tag": "3.9 신기능",
+ "home.paused.title": "통계를 망치지 않고 책을 잠시 옆에 두세요",
+ "home.paused.sub": "일시중지는 중단과는 다른 별도의 상태예요. 책은 둔 자리에서 기다리고, 일시중지한 날은 계산되지 않아요.",
+ "home.paused.tab_pending": "읽고 싶음",
+ "home.paused.tab_reading": "읽는 중",
+ "home.paused.tab_paused": "일시중지",
+ "home.paused.tab_dropped": "중단",
+ "home.paused.timeline_caption": "일시중지한 날은 계산되지 않아요",
+ "home.paused.cards": [
+  {
+   "title": "별도의 상태",
+   "text": "일시중지는 중단이 아니에요. 책은 포기한 책 더미로 가지 않고, 보류된 채 원할 때 돌아와요."
+  },
+  {
+   "title": "읽는 중 또는 재독 중에서",
+   "text": "책 페이지의 배지나 빠른 메뉴의 '상태 변경'으로 상태를 바꾸세요. 책, 코믹스, 만화, 오디오북 모두 가능해요."
+  },
+  {
+   "title": "일시중지한 날은 계산되지 않아요",
+   "text": "완독까지 남은 일수에도, 독서 속도에도 포함되지 않아요. 통계는 읽던 때 그대로 유지돼요."
+  },
+  {
+   "title": "원하면 메모도",
+   "text": "일시중지할 때와 다시 시작할 때 이유를 적어 둘 수 있어요. 선택 사항이에요. 모든 내용은 책 페이지의 '일시중지 기록' 섹션에 이력과 함께 남아요."
+  },
+  {
+   "title": "전용 탭",
+   "text": "서재에서 '읽고 싶음'과 '중단' 사이에 일시중지한 책이 모여 있어요."
+  },
+  {
+   "title": "알림, 그리고 자동 재개",
+   "text": "그 책의 알림은 멈췄다가 책을 다시 시작하면 돌아와요. 세션을 타이머로 재거나 KOReader에서 세션이 들어오면 책이 저절로 재개되고, 알림과 '실행 취소' 옵션이 나와요."
+  }
+ ],
+ "home.cards.tag": "공유",
+ "home.cards.title": "Lecturameter는 소셜 네트워크가 아니에요. 카드는 쓰고 있는 앱으로 가요.",
+ "home.cards.sub": "스토리에 바로 쓸 수 있는 세로 1080×1920 카드를 만들어, 이미 쓰는 곳에 공유하세요. 계정도 프로필도 팔로워도 필요 없어요.",
+ "home.cards.chips": [
+  "책",
+  "완독한 책",
+  "책 통계",
+  "통계",
+  "주간 요약",
+  "월간 요약",
+  "챌린지",
+  "Bingo",
+  "Wrapped",
+  "이벤트",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "보여 줄 것을 고르세요",
+   "text": "책 한 권, 방금 완독한 책, 내 통계, 이번 주나 이번 달, 챌린지, Bingo, Wrapped 또는 이벤트."
+  },
+  {
+   "title": "'내 카드'에 저장돼요",
+   "text": "공유한 것은 모두 내 카드에 남아서 언제든 다시 쓸 수 있어요."
+  },
+  {
+   "title": "이미 쓰는 곳에 공유하세요",
+   "text": "휴대폰 공유 메뉴를 통해 평소 쓰는 앱으로 보내거나, 갤러리에 저장하세요."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · 스토리 형식",
+ "home.events.tag": "이벤트",
+ "home.events.title": "커뮤니티와 함께 읽고, 내 서재로 즐기세요.",
+ "home.events.sub": "이벤트는 진행 중일 때 앱에 나타나요. 지금은 두 종류가 있어요. 전 세계 독서 챌린지와, 내 책으로 하는 카드 게임이에요.",
+ "home.events.demo_label": "예시",
+ "home.events.read.kicker": "글로벌 챌린지 · 14일",
+ "home.events.read.title": "대독서",
+ "home.events.read.items": [
+  "타이머로 잰 시간(분)이 집계돼요. 책, 코믹스, 만화, 오디오북 모두 포함이에요.",
+  "커뮤니티 전체의 공동 목표예요. 넘어서도 계속 집계돼요.",
+  "별칭으로 보는 실시간 순위표, 아바타는 내 Pagi.",
+  "끝나면 모든 참가자에게 내 순위가 담긴 이벤트 카드가 주어져요."
+ ],
+ "home.events.read.goal": "커뮤니티 목표",
+ "home.events.read.board": "순위표",
+ "home.events.read.you": "나",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "잊힌 도서관",
+ "home.events.quest.items": [
+  "서재에서 책 3권을 고르세요. 각각 장르의 원형이 담긴 카드가 돼요.",
+  "5~10분짜리 한 판으로 책장을 건너 마지막 보스를 물리치세요.",
+  "점수 순위표: 매일 가장 좋은 3판이 반영돼요.",
+  "책이 부족한가요? 도서관이 원형마다 한 권씩 빌려줘요."
+ ],
+ "home.events.note": "참여하려면 만 16세 이상이어야 해요. 지금 진행 중인 이벤트가 없으면 앱이 알려 줘요.",
+ "cookies.title": "쿠키 정책 · Lecturameter",
+ "cookies.meta_description": "Lecturameter 웹사이트가 브라우저에 무엇을 저장하는지, 왜 저장하는지, 선택을 바꾸는 방법. 자체 분석이나 광고는 없어요.",
+ "cookies.h1": "🍪 쿠키 정책",
+ "cookies.tagline": "이 웹사이트를 방문할 때 브라우저에 무엇이 저장되는지, 그리고 이유.",
+ "cookies.updated": "업데이트: 2026년 11월 8일",
+ "cookies.summary_title": "요약",
+ "cookies.summary": "이 웹사이트는 자체 분석용·광고용 쿠키를 쓰지 않아요. 환경설정(테마, 언어, 닫은 알림)과 이 정책에 대한 선택을 브라우저에 저장해요. 타사 위젯 StartupBar는 '동의'를 눌렀을 때만 불러와요.",
+ "cookies.h2_stored": "저장되는 것",
+ "cookies.p_stored": "모든 것은 브라우저의 로컬 저장소(localStorage 또는 sessionStorage)에 있어요. 이 웹사이트는 자체 HTTP 쿠키를 쓰지 않아요.",
+ "cookies.h3_essential": "환경설정 (동의 불필요)",
+ "cookies.p_essential": "웹사이트를 쓰면서 직접 요청한 것이라 저장해요. 누구도 식별하지 않고 브라우저 밖으로 나가지 않아요.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · 밝은 테마인지 어두운 테마인지 기억 · 지울 때까지.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · 선택기에서 고른 언어를 기억 · 지울 때까지.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · 상단 바를 닫았다는 것을 기억 · 지울 때까지.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · 쿠키 알림에서의 선택을 버전·날짜와 함께 저장 · 바꾸거나 지울 때까지.",
+ "cookies.h3_optional": "동의한 경우에만",
+ "cookies.p_optional": "'동의'를 누르면 다음 타사 항목을 불러와요. '거부'를 누르면 아무것도 불러오지 않고 웹사이트는 똑같이 작동해요.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · 타사 iframe을 쓰는 위젯으로, sessionStorage에 <code>startupbar:sid</code>를 저장하고(탭을 닫을 때까지) 노출 신호를 보내요. 웹사이트의 모든 페이지에서 불러와요.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · 문의 페이지의 라이브러리로, jsDelivr에서 제공해요.",
+ "cookies.h2_never": "하지 않는 것",
+ "cookies.p_never": "자체 분석, 광고, 프로파일링, 추적 쿠키를 쓰지 않아요. 데이터를 팔지도 않아요. 웹사이트는 GitHub Pages에서 호스팅되며, 페이지를 제공할 때 GitHub의 정책에 따라 IP가 기록될 수 있어요.",
+ "cookies.h2_change": "선택 바꾸기",
+ "cookies.p_change": "어느 페이지든 푸터의 '쿠키 환경설정'에서 언제든 바꿀 수 있어요. 브라우저 설정에서 이 웹사이트의 데이터를 지울 수도 있어요. 동의를 철회하면 페이지가 타사 항목 없이 다시 불러와져요.",
+ "cookies.h2_more": "더 알아보기",
+ "cookies.p_more": "앱의 개인정보 처리방침에서 Lecturameter가 휴대폰에서 어떤 데이터를 다루는지 설명해요. 궁금한 점은 이 주소로 보내 주세요: lecturameter.app@gmail.com."
 }

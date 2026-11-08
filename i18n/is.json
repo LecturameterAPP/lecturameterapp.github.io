@@ -801,7 +801,7 @@
  "common.footer.cookies": "Vafrakökustefna",
  "common.footer.cookie_prefs": "Stillingar vafrakaka",
  "js.consent_title": "Vafrakökur og geymsla",
- "js.consent_body": "Við notum viðbót frá þriðja aðila (StartupBar) sem vistar gögn í vafranum þínum og telur birtingar. Hún hleðst aðeins ef þú samþykkir. Þema, tungumál og lokuð tilkynning vistast án þess að spyrja, því þú valdir þau sjálf/ur.",
+ "js.consent_body": "Við notum viðbót frá þriðja aðila (StartupBar) sem vistar gögn í vafranum þínum og telur birtingar. Hún hleðst aðeins ef þú samþykkir. Þema, tungumál og lokuð tilkynning vistast án þess að spyrja, því þú valdir þau.",
  "js.consent_accept": "Samþykkja",
  "js.consent_reject": "Hafna",
  "js.consent_policy": "Vafrakökustefna",
