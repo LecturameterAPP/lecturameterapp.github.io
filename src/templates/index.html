@@ -35,31 +35,26 @@
     <link rel="shortcut icon" href="{{root}}favicon.ico">
 
     <link rel="canonical" href="{{page_url}}">
-{{hreflang_links}}    <link rel="stylesheet" href="{{root}}styles.css?v=6.9">
+{{hreflang_links}}    <link rel="stylesheet" href="{{root}}styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="{{link_cookies}}"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "{{json:seo.store_name}}",
       "url": "{{page_url}}",
       "image": "{{site_url}}ic_launcher_round.png",
       "description": "{{json:head.index.ld_description}}",
       "featureList": "{{json:head.index.ld_featurelist}}",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "{{hreflang}}",
+      "installUrl": "{{play_url}}",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "{{shot_abs:captura_libros_real_claro.jpg}}",
         "{{shot_abs:screen_challenges_claro.jpg}}",
@@ -73,7 +68,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["{{play_url}}", "{{ios_url}}"]
     }
     </script>
     <script type="application/ld+json">
@@ -129,6 +124,7 @@
                 </ul>
             </li>
             <li><a href="#{{anchor.themes}}">{{common.nav.themes}}</a></li>
+            <li><a href="#{{anchor.events}}">{{common.nav.events}}</a></li>
             <li><a href="#{{anchor.pricing}}">{{common.nav.pro}}</a></li>
             <li><a href="#{{anchor.whatsnew}}">{{common.nav.patch_notes}}</a></li>
             <li><a href="#{{anchor.history}}">{{common.nav.history}}</a></li>
@@ -441,6 +437,114 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="{{anchor.paused}}" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">{{home.paused.tag}}</span>
+            <h2 id="paused-title">{{home.paused.title}}</h2>
+            <p>{{home.paused.sub}}</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>{{home.paused.tab_pending}}</span>
+                <span>{{home.paused.tab_reading}}</span>
+                <span class="is-paused">{{home.paused.tab_paused}}</span>
+                <span>{{home.paused.tab_dropped}}</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>{{home.paused.tab_reading}}</span>
+                <span><i class="dot pause"></i>{{home.paused.tab_paused}} &middot; {{home.paused.timeline_caption}}</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+{{paused_cards_html}}
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="{{anchor.cards}}" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">{{home.cards.tag}}</span>
+            <h2 id="cards-title">{{home.cards.title}}</h2>
+            <p>{{home.cards.sub}}</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">{{home.cards.size_label}}</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+{{cards_chips_html}}
+                </ul>
+                <ol class="share-steps">
+{{cards_steps_html}}
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="{{anchor.events}}" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">{{home.events.tag}}</span>
+            <h2 id="events-title">{{home.events.title}}</h2>
+            <p>{{home.events.sub}}</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">{{home.events.read.kicker}}</p>
+                <h3>{{home.events.read.title}}</h3>
+                <ul class="event-list">
+{{events_read_items_html}}
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">{{home.events.demo_label}}</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>{{home.events.read.goal}}</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">{{home.events.read.board}}</p>
+                    <ol class="board">
+                        <li class="row r1"><b>1</b><i class="av a1"></i><span>lector_a</span><em>412</em></li>
+                        <li class="row r2"><b>2</b><i class="av a2"></i><span>lectora_b</span><em>398</em></li>
+                        <li class="row r3 me"><b>3</b><i class="av a3"></i><span>{{home.events.read.you}}</span><em>371</em></li>
+                        <li class="row r4"><b>4</b><i class="av a4"></i><span>lector_c</span><em>366</em></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">{{home.events.quest.kicker}}</p>
+                <h3>{{home.events.quest.title}}</h3>
+                <ul class="event-list">
+{{events_quest_items_html}}
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">{{home.events.demo_label}}</p>
+                    <div class="fan">
+                        <div class="qcard q1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard q2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard q3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">{{home.events.note}}</p>
     </div>
 </section>
 
@@ -820,6 +924,7 @@
             <div class="footer-col">
                 <h4>{{common.footer.product}}</h4>
                 <a href="#{{anchor.features}}">{{common.footer.features}}</a>
+                <a href="#{{anchor.events}}">{{common.footer.events}}</a>
                 <a href="#{{anchor.pricing}}">{{common.footer.pricing}}</a>
                 <a href="{{root}}precios-regionales.html">{{common.footer.regional_prices}}</a>
                 <a href="#{{anchor.whatsnew}}">{{common.footer.patch_notes}}</a>
@@ -835,6 +940,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">{{common.footer.lecturameter_app_gmail_com}}</a>
                 <a href="{{link_privacy}}">{{common.footer.privacy_policy}}</a>
                 <a href="{{link_terms}}">{{common.footer.terms_of_service}}</a>
+                <a href="{{link_cookies}}">{{common.footer.cookies}}</a>
+                <a href="#" data-lm-cookie-prefs>{{common.footer.cookie_prefs}}</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="{{root}}kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">

@@ -27,9 +27,31 @@
     <link rel="shortcut icon" href="{{root}}favicon.ico">
 
     <link rel="canonical" href="{{page_url}}">
-{{hreflang_links}}    <link rel="stylesheet" href="{{root}}styles.css?v=6.9">
+{{hreflang_links}}    <link rel="stylesheet" href="{{root}}styles.css?v=7.0">
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="{{link_cookies}}"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Lecturameter 99",
+      "alternateName": "Lecturameter 99: Reading Log",
+      "url": "{{page_url}}",
+      "image": "{{site_url}}capturas-1999/{{shots99}}lm99_biblioteca.png",
+      "description": "{{json:head.lm99.description}}",
+      "applicationCategory": "BookApplication",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "{{hreflang}}",
+      "installUrl": "{{play_1999_url}}",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "author": {
+        "@type": "Person",
+        "name": "Victor (Lecturameter)",
+        "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
+      },
+      "sameAs": ["{{play_1999_url}}", "{{app_store_1999_url}}"]
+    }
+    </script>
 </head>
 <body>
 
@@ -440,6 +462,8 @@
             <span>{{common.footer.2026_lecturameter_independent_proj_2}}</span>
             <a href="{{home}}">{{common.footer.home}}</a>
             <a href="{{link_privacy99}}">{{common.footer.privacy}}</a>
+            <a href="{{link_cookies}}">{{common.footer.cookies}}</a>
+            <a href="#" data-lm-cookie-prefs>{{common.footer.cookie_prefs}}</a>
         </div>
     </div>
 </footer>
