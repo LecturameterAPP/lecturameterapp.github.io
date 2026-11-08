@@ -86,6 +86,12 @@ def build_vars(cfg, loc, pname, page, others):
     v['play_1999_url'] = cfg['play_1999_url']
     if page.get('original'):
         v['legal_original_url'] = rel(here, page['original']) + '?lang=en'
+    elif pname == 'cookies':
+        # aviso de traduccion orientativa: solo en los idiomas que no son es/en; enlaza a la version inglesa
+        v['legal_original'] = '1' if loc.get('legal_original') else ''
+        dflt = [o for o in others if o['code'] == cfg['default_locale']]
+        if dflt:
+            v['legal_original_url'] = rel(here, page_dir(dflt[0], page))
     # redireccion por idioma: solo en las paginas del idioma por defecto (raiz)
     if loc['path'] == '/':
         v['head_redirect'] = redirect_script(cfg, page, others)

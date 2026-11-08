@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Bağımsız proje",
  "common.footer.home": "Ana sayfa",
  "common.footer.privacy": "Gizlilik",
- "head.index.title": "Lecturameter · Okuma Takipçisi ve Kitap İstatistikleri",
- "head.index.description": "Okuma sürenizi, sayfalarınızı, temponuzu ve ilerlemenizi özel bir Android ve iPhone okuma takipçisiyle takip edin. Hesap yok, reklam yok. Goodreads ve StoryGraph'ten içe aktarın.",
+ "head.index.title": "Lecturameter: Okuma Günlüğü · Kitap istatistikleri ve zamanlayıcı",
+ "head.index.description": "Lecturameter: Okuma Günlüğü, Android ve iPhone için. Okuma süreni ölç, sayfaları, temponu ve istatistiklerini takip et, Goodreads'ten içe aktar. Hesapsız, reklamsız.",
  "head.index.ld_description": "Kitaplığınızı düzenleyin, okuma oturumlarınızı süreyle ölçün ve Android veya iPhone telefonunuzda ayrıntılı istatistikleri görün. Reklam yok, tamamen özel.",
  "head.index.ld_featurelist": "Raflı kitaplık, ekran kapalıyken çalışan zamanlayıcı, oturum geçmişi, ısı haritası, yıllık Wrapped, özelleştirilebilir okuma meydan okumaları, Google Drive yedeklemesi, Goodreads CSV içe aktarma, büyük ölçüde çevrimdışı",
  "head.index.faq1_q": "Kitaplığımı başka uygulamalardan getirebilir miyim?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Etkinlikler · İki yeni Pro tema",
  "release.3_9.new": [
   "<strong>Etkinlikler:</strong> küresel okuma görevleri ve etkin olduğunda Lecturameter Quest",
+  "<strong>Duraklatıldı:</strong> bir kitabı istatistiklerini bozmadan bir süre kenara koy",
   "<strong>İki yeni Pro tema:</strong> Defter ve Orman",
   "Her tema için kendine ait bir zamanlayıcı saati",
   "Pagi, Okunacak listesinden sana bir kitap seçer",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Bu Şartlarla ilgili her türlü soru için: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> veya <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Hizmet Şartları – Lecturameter",
  "legal.terms.meta_description": "Açık şartlar, gizli madde yok.",
- "common.footer.drakehold": "Aynı geliştiriciden: <strong>Drakehold</strong>, kendi kendini düzenleyen kişisel arşivin. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Bekleme listesine katıl →</a>"
+ "common.footer.drakehold": "Aynı geliştiriciden: <strong>Drakehold</strong>, kendi kendini düzenleyen kişisel arşivin. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Bekleme listesine katıl →</a>",
+ "seo.store_name": "Lecturameter: Okuma Günlüğü",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Etkinlikler",
+ "common.footer.events": "Etkinlikler",
+ "common.footer.cookies": "Çerez politikası",
+ "common.footer.cookie_prefs": "Çerez tercihleri",
+ "js.consent_title": "Çerezler ve depolama",
+ "js.consent_body": "Tarayıcında veri saklayan ve gösterimleri sayan üçüncü taraf bir bileşen (StartupBar) kullanıyoruz. Yalnızca kabul edersen yüklenir. Temanı, dilini ve kapattığın bildirimi sormadan kaydederiz, çünkü onları sen seçtin.",
+ "js.consent_accept": "Kabul et",
+ "js.consent_reject": "Reddet",
+ "js.consent_policy": "Çerez politikası",
+ "js.consent_prefs": "Çerez tercihleri",
+ "home.paused.tag": "3.9'da yeni",
+ "home.paused.title": "Bir kitabı istatistiklerini bozmadan bir süre kenara koy",
+ "home.paused.sub": "Duraklatıldı, Bırakıldı'dan farklı, ayrı bir durumdur. Kitap kaldığın yerde bekler ve duraklatılan günler sayılmaz.",
+ "home.paused.tab_pending": "Okunacak",
+ "home.paused.tab_reading": "Okunuyor",
+ "home.paused.tab_paused": "Duraklatıldı",
+ "home.paused.tab_dropped": "Bırakıldı",
+ "home.paused.timeline_caption": "Duraklatılan günler sayılmaz",
+ "home.paused.cards": [
+  {
+   "title": "Ayrı bir durum",
+   "text": "Duraklatıldı, Bırakıldı demek değildir. Kitabın vazgeçtiklerinin yığınına gitmez: beklemede kalır ve istediğin zaman geri gelir."
+  },
+  {
+   "title": "Okunuyor veya Yeniden okunuyor durumundan",
+   "text": "Durumu kitap sayfasındaki rozetten ya da hızlı menüdeki “Durumu değiştir” ile değiştir. Kitaplar, çizgi romanlar, mangalar ve sesli kitaplar için çalışır."
+  },
+  {
+   "title": "Duraklatılan günler sayılmaz",
+   "text": "Ne bitirmek için gereken günlere ne de okuma hızına dahil edilir. İstatistiklerin okuduğun zamanki gibi kalır."
+  },
+  {
+   "title": "İstersen bir not",
+   "text": "Duraklatırken ve devam ederken nedenini not edebilirsin. İsteğe bağlıdır. Her şey kitap sayfasındaki “Duraklamalar” bölümünde geçmişiyle birlikte durur."
+  },
+  {
+   "title": "Kendi sekmesi",
+   "text": "Kitaplığında, Okunacak ile Bırakıldı arasında duraklattığın kitapları bulursun."
+  },
+  {
+   "title": "Hatırlatıcılar ve kendiliğinden devam",
+   "text": "O kitabın hatırlatıcıları duraklatılır ve kitaba devam ettiğinde geri gelir. Bir oturumu zamanlarsan ya da KOReader'dan bir oturum gelirse kitap kendiliğinden devam eder; bir bildirim ve Geri al seçeneği çıkar."
+  }
+ ],
+ "home.cards.tag": "Paylaş",
+ "home.cards.title": "Lecturameter bir sosyal ağ değil. Kartların kullandığın ağa gider.",
+ "home.cards.sub": "Hikâyelere hazır 1080×1920 dikey kartlar yap ve zaten bulunduğun yerde paylaş. Hesap yok, profil yok, takipçi yok.",
+ "home.cards.chips": [
+  "Kitap",
+  "Biten kitap",
+  "Kitap istatistikleri",
+  "İstatistikler",
+  "Haftalık özet",
+  "Aylık özet",
+  "Meydan okumalar",
+  "Bingo",
+  "Wrapped",
+  "Etkinlik",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Neyi göstereceğini seç",
+   "text": "Bir kitap, yeni bitirdiğin bir kitap, istatistiklerin, haftan ya da ayın, bir meydan okuma, Bingo, Wrapped veya bir etkinlik."
+  },
+  {
+   "title": "“Kartlarım”a kaydedilir",
+   "text": "Paylaştığın her şey Kartlarım'da kalır, böylece istediğin zaman yeniden kullanabilirsin."
+  },
+  {
+   "title": "Zaten bulunduğun yerde paylaş",
+   "text": "Telefonunun paylaşım menüsünden, zaten kullandığın uygulamaya. Ya da galerine kaydet."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · hikâye formatı",
+ "home.events.tag": "Etkinlikler",
+ "home.events.title": "Toplulukla oku. Kitaplığınla oyna.",
+ "home.events.sub": "Etkinlikler, biri aktifken uygulamada görünür. Bugün iki tür var: küresel bir okuma meydan okuması ve kendi kitaplarınla oynanan bir kart oyunu.",
+ "home.events.demo_label": "Örnek gösterim",
+ "home.events.read.kicker": "Küresel meydan okuma · 14 gün",
+ "home.events.read.title": "Büyük Okuma",
+ "home.events.read.items": [
+  "Zamanlayıcının dakikaları sayılır; kitaplarda, çizgi romanlarda, mangalarda ve sesli kitaplarda.",
+  "Tüm topluluk için ortak bir hedef. Aşılırsa saymaya devam eder.",
+  "Takma adla canlı sıralama ve avatar olarak senin Pagi'n.",
+  "Bittiğinde, her katılımcı için senin sıranın yazılı olduğu etkinlik kartı."
+ ],
+ "home.events.read.goal": "Topluluk hedefi",
+ "home.events.read.board": "Sıralama",
+ "home.events.read.you": "sen",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Unutulmuş Kütüphane",
+ "home.events.quest.items": [
+  "Kitaplığından 3 kitap seç: her biri türünün arketipini taşıyan bir karta dönüşür.",
+  "Rafları geçip son patronu yenmek için 5 ila 10 dakikalık turlar.",
+  "Puan sıralaması: her günün en iyi 3 turun sayılır.",
+  "Kitabın mı az? Kütüphane sana ciltler ödünç verir, her arketip için bir tane."
+ ],
+ "home.events.note": "Katılmak için 16 yaşında veya daha büyük olmalısın. Şu anda aktif bir etkinlik yoksa uygulama bunu söyler.",
+ "cookies.title": "Çerez politikası · Lecturameter",
+ "cookies.meta_description": "Lecturameter web sitesinin tarayıcında neyi sakladığı, neden sakladığı ve seçimini nasıl değiştireceğin. Kendi analitiğimiz ya da reklamımız yok.",
+ "cookies.h1": "🍪 Çerez politikası",
+ "cookies.tagline": "Bu web sitesini ziyaret ettiğinde tarayıcında neyin saklandığı ve nedeni.",
+ "cookies.updated": "Güncelleme: 8 Kasım 2026",
+ "cookies.summary_title": "Kısaca",
+ "cookies.summary": "Bu web sitesi kendi analitik ya da reklam çerezlerini kullanmaz. Tarayıcında tercihlerini (tema, dil, kapatılan bildirim) ve bu politika hakkındaki seçimini saklar. Üçüncü taraf bileşen StartupBar yalnızca “Kabul et”e basarsan yüklenir.",
+ "cookies.h2_stored": "Neler saklanır",
+ "cookies.p_stored": "Her şey tarayıcının yerel depolamasındadır (localStorage veya sessionStorage). Bu web sitesi kendi HTTP çerezlerini yazmaz.",
+ "cookies.h3_essential": "Tercihlerin (onay gerekmez)",
+ "cookies.p_essential": "Web sitesini kullanarak kendin istediğin için saklıyoruz. Kimseyi tanımlamazlar ve tarayıcından asla çıkmazlar.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · açık mı koyu mu tema seçtiğini hatırlar · sen silene kadar.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · seçicide seçtiğin dili hatırlar · sen silene kadar.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · üst çubuğu kapattığını hatırlar · sen silene kadar.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · çerez bildirimindeki seçimini sürümü ve tarihiyle saklar · sen değiştirene ya da silene kadar.",
+ "cookies.h3_optional": "Yalnızca kabul edersen",
+ "cookies.p_optional": "“Kabul et”e basarsan bu üçüncü taraf öğeler yüklenir. “Reddet”e basarsan bunların hiçbiri yüklenmez ve web sitesi aynı şekilde çalışır.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · üçüncü taraf iframe'li bir bileşen; sessionStorage'a <code>startupbar:sid</code> yazar (sekmeyi kapatana kadar) ve gösterim sinyali gönderir. Web sitesinin her sayfası onu yükler.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · iletişim sayfasındaki bir kitaplık, jsDelivr tarafından sunulur.",
+ "cookies.h2_never": "Yapmadıklarımız",
+ "cookies.p_never": "Kendi analitiğimizi, reklamı, profillemeyi ya da izleme çerezlerini kullanmıyoruz. Veri de satmıyoruz. Web sitesi GitHub Pages'te barındırılır; sayfaları sunarken kendi politikasına göre IP'ni kaydedebilir.",
+ "cookies.h2_change": "Seçimini değiştir",
+ "cookies.p_change": "İstediğin zaman, herhangi bir sayfanın altındaki “Çerez tercihleri” ile değiştirebilirsin. Bu web sitesinin verilerini tarayıcı ayarlarından da silebilirsin. Onayını geri çekersen sayfa üçüncü taraf öğeler olmadan yeniden yüklenir.",
+ "cookies.h2_more": "Daha fazla bilgi",
+ "cookies.p_more": "Uygulamanın gizlilik politikası, Lecturameter'ın telefonunda hangi verileri işlediğini açıklar. Sorun olursa şuraya yaz: lecturameter.app@gmail.com."
 }

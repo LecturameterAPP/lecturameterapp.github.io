@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Dự án độc lập",
  "common.footer.home": "Trang chủ",
  "common.footer.privacy": "Bảo mật",
- "head.index.title": "Lecturameter · Theo dõi đọc sách & thống kê sách",
- "head.index.description": "Theo dõi thời gian đọc, số trang, nhịp đọc và tiến độ của bạn với ứng dụng theo dõi đọc sách riêng tư cho Android và iPhone. Không tài khoản, không quảng cáo. Nhập từ Goodreads và StoryGraph.",
+ "head.index.title": "Lecturameter: Nhật ký đọc sách · Thống kê và đồng hồ",
+ "head.index.description": "Lecturameter: Nhật ký đọc sách cho Android và iPhone. Bấm giờ khi đọc, theo dõi số trang, tốc độ và thống kê, nhập từ Goodreads. Không cần tài khoản, không quảng cáo.",
  "head.index.ld_description": "Sắp xếp thư viện, bấm giờ các phiên đọc và xem thống kê chi tiết trên điện thoại Android hoặc iPhone. Không quảng cáo, hoàn toàn riêng tư.",
  "head.index.ld_featurelist": "Thư viện với các kệ sách, đồng hồ bấm giờ khi tắt màn hình, lịch sử phiên đọc, bản đồ nhiệt, Wrapped hằng năm, thử thách đọc sách tùy chỉnh, sao lưu Google Drive, nhập CSV Goodreads, hầu hết dùng được ngoại tuyến",
  "head.index.faq1_q": "Tôi có thể mang thư viện từ các ứng dụng khác sang không?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Sự kiện · Hai giao diện Pro mới",
  "release.3_9.new": [
   "<strong>Sự kiện:</strong> thử thách đọc toàn cầu và Lecturameter Quest khi có sự kiện đang diễn ra",
+  "<strong>Tạm dừng:</strong> cất một cuốn sách sang bên một thời gian mà không làm hỏng thống kê của bạn",
   "<strong>Hai giao diện Pro mới:</strong> Vở và Rừng",
   "Đồng hồ bấm giờ riêng cho từng giao diện",
   "Pagi chọn giúp bạn một cuốn từ Muốn đọc",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Với mọi câu hỏi về các Điều khoản này: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> hoặc <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Điều khoản dịch vụ – Lecturameter",
  "legal.terms.meta_description": "Điều khoản rõ ràng, không có chữ nhỏ.",
- "common.footer.drakehold": "Từ cùng một nhà sáng tạo: <strong>Drakehold</strong>, kho lưu trữ cá nhân tự sắp xếp của bạn. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Tham gia danh sách chờ →</a>"
+ "common.footer.drakehold": "Từ cùng một nhà sáng tạo: <strong>Drakehold</strong>, kho lưu trữ cá nhân tự sắp xếp của bạn. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Tham gia danh sách chờ →</a>",
+ "seo.store_name": "Lecturameter: Nhật ký đọc sách",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Sự kiện",
+ "common.footer.events": "Sự kiện",
+ "common.footer.cookies": "Chính sách cookie",
+ "common.footer.cookie_prefs": "Tùy chọn cookie",
+ "js.consent_title": "Cookie và bộ nhớ",
+ "js.consent_body": "Chúng tôi dùng một tiện ích của bên thứ ba (StartupBar) lưu dữ liệu trong trình duyệt của bạn và đếm lượt hiển thị. Nó chỉ tải nếu bạn chấp nhận. Giao diện, ngôn ngữ và thông báo đã đóng được lưu mà không hỏi, vì chính bạn đã chọn chúng.",
+ "js.consent_accept": "Chấp nhận",
+ "js.consent_reject": "Từ chối",
+ "js.consent_policy": "Chính sách cookie",
+ "js.consent_prefs": "Tùy chọn cookie",
+ "home.paused.tag": "Mới trong 3.9",
+ "home.paused.title": "Cất một cuốn sách sang bên một thời gian mà không làm hỏng thống kê của bạn",
+ "home.paused.sub": "Tạm dừng là một trạng thái riêng, khác với Đã bỏ dở. Cuốn sách chờ ở chỗ bạn để lại, và những ngày tạm dừng không được tính.",
+ "home.paused.tab_pending": "Muốn đọc",
+ "home.paused.tab_reading": "Đang đọc",
+ "home.paused.tab_paused": "Tạm dừng",
+ "home.paused.tab_dropped": "Đã bỏ dở",
+ "home.paused.timeline_caption": "Những ngày tạm dừng không được tính",
+ "home.paused.cards": [
+  {
+   "title": "Một trạng thái riêng",
+   "text": "Tạm dừng không phải là Đã bỏ dở. Sách của bạn không vào chồng sách đã bỏ: nó chờ sẵn và quay lại bất cứ khi nào bạn muốn."
+  },
+  {
+   "title": "Từ Đang đọc hoặc Đọc lại",
+   "text": "Đổi trạng thái từ nhãn trên trang sách hoặc bằng “Đổi trạng thái” trong menu nhanh. Dùng được cho sách, truyện tranh, manga và sách nói."
+  },
+  {
+   "title": "Những ngày tạm dừng không được tính",
+   "text": "Không tính vào số ngày để đọc xong, cũng không tính vào tốc độ đọc của bạn. Thống kê vẫn như lúc bạn đang đọc."
+  },
+  {
+   "title": "Một ghi chú, nếu bạn muốn",
+   "text": "Khi tạm dừng và khi tiếp tục, bạn có thể ghi lại lý do. Việc này là tùy chọn. Mọi thứ nằm trong mục “Các lần tạm dừng” của trang sách, kèm lịch sử."
+  },
+  {
+   "title": "Một tab riêng",
+   "text": "Trong thư viện của bạn, giữa Muốn đọc và Đã bỏ dở, bạn sẽ thấy những cuốn sách đang tạm dừng."
+  },
+  {
+   "title": "Nhắc nhở, và tự tiếp tục",
+   "text": "Nhắc nhở của cuốn sách đó sẽ tạm dừng và quay lại khi bạn tiếp tục. Nếu bạn bấm giờ một phiên hoặc có một phiên gửi từ KOReader, sách sẽ tự tiếp tục, kèm thông báo và tùy chọn Hoàn tác."
+  }
+ ],
+ "home.cards.tag": "Chia sẻ",
+ "home.cards.title": "Lecturameter không phải mạng xã hội. Thẻ của bạn đi đến mạng bạn đang dùng.",
+ "home.cards.sub": "Tạo thẻ dọc 1080×1920, sẵn sàng cho story, và chia sẻ ngay nơi bạn đang ở. Không tài khoản, không hồ sơ, không người theo dõi.",
+ "home.cards.chips": [
+  "Sách",
+  "Sách đã đọc xong",
+  "Thống kê sách",
+  "Thống kê",
+  "Tóm tắt tuần",
+  "Tóm tắt tháng",
+  "Thử thách",
+  "Bingo",
+  "Wrapped",
+  "Sự kiện",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Chọn thứ muốn hiển thị",
+   "text": "Một cuốn sách, một cuốn bạn vừa đọc xong, thống kê của bạn, tuần hoặc tháng của bạn, một thử thách, Bingo, Wrapped hoặc một sự kiện."
+  },
+  {
+   "title": "Được lưu trong “Thẻ của tôi”",
+   "text": "Mọi thứ bạn chia sẻ đều nằm trong Thẻ của tôi, để bạn dùng lại bất cứ khi nào muốn."
+  },
+  {
+   "title": "Chia sẻ ngay nơi bạn đang ở",
+   "text": "Qua menu chia sẻ của điện thoại, vào ứng dụng bạn vẫn dùng. Hoặc lưu vào thư viện ảnh."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · định dạng story",
+ "home.events.tag": "Sự kiện",
+ "home.events.title": "Đọc cùng cộng đồng. Chơi cùng thư viện của bạn.",
+ "home.events.sub": "Sự kiện xuất hiện trong ứng dụng khi có một sự kiện đang diễn ra. Hiện có hai loại: một thử thách đọc toàn cầu và một trò chơi thẻ bài với chính những cuốn sách của bạn.",
+ "home.events.demo_label": "Ví dụ minh họa",
+ "home.events.read.kicker": "Thử thách toàn cầu · 14 ngày",
+ "home.events.read.title": "Đại Đọc",
+ "home.events.read.items": [
+  "Số phút bấm giờ được tính, với sách, truyện tranh, manga và sách nói.",
+  "Một mục tiêu chung cho cả cộng đồng. Nếu vượt qua, vẫn tiếp tục tính.",
+  "Bảng xếp hạng trực tiếp với bí danh và Pagi của bạn làm ảnh đại diện.",
+  "Khi kết thúc, mỗi người tham gia nhận thẻ sự kiện ghi vị trí của bạn."
+ ],
+ "home.events.read.goal": "Mục tiêu cộng đồng",
+ "home.events.read.board": "Bảng xếp hạng",
+ "home.events.read.you": "bạn",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Thư viện bị lãng quên",
+ "home.events.quest.items": [
+  "Chọn 3 cuốn từ thư viện của bạn: mỗi cuốn trở thành một thẻ mang nguyên mẫu của thể loại đó.",
+  "Các lượt chơi 5 đến 10 phút để băng qua các kệ sách và đánh bại trùm cuối.",
+  "Bảng xếp hạng điểm: 3 lượt chơi tốt nhất mỗi ngày của bạn được tính.",
+  "Ít sách? Thư viện cho bạn mượn các tập, mỗi nguyên mẫu một tập."
+ ],
+ "home.events.note": "Bạn cần từ 16 tuổi trở lên để tham gia. Nếu hiện không có sự kiện nào, ứng dụng sẽ cho bạn biết.",
+ "cookies.title": "Chính sách cookie · Lecturameter",
+ "cookies.meta_description": "Trang web Lecturameter lưu gì trong trình duyệt của bạn, để làm gì và cách đổi lựa chọn. Không có phân tích hay quảng cáo riêng.",
+ "cookies.h1": "🍪 Chính sách cookie",
+ "cookies.tagline": "Điều gì được lưu trong trình duyệt khi bạn truy cập trang web này, và vì sao.",
+ "cookies.updated": "Cập nhật ngày 8 tháng 11 năm 2026",
+ "cookies.summary_title": "Tóm lại",
+ "cookies.summary": "Trang web này không dùng cookie phân tích hay quảng cáo riêng. Nó lưu trong trình duyệt các tùy chọn của bạn (giao diện, ngôn ngữ, thông báo đã đóng) và lựa chọn của bạn về chính sách này. Tiện ích bên thứ ba StartupBar chỉ tải nếu bạn nhấn “Chấp nhận”.",
+ "cookies.h2_stored": "Điều gì được lưu",
+ "cookies.p_stored": "Mọi thứ nằm trong bộ nhớ cục bộ của trình duyệt (localStorage hoặc sessionStorage). Trang web này không ghi cookie HTTP riêng.",
+ "cookies.h3_essential": "Tùy chọn của bạn (không cần đồng ý)",
+ "cookies.p_essential": "Chúng tôi lưu vì bạn đã yêu cầu khi dùng trang web. Chúng không nhận dạng ai và không bao giờ rời khỏi trình duyệt của bạn.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · nhớ bạn chọn giao diện sáng hay tối · cho đến khi bạn xóa.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · nhớ ngôn ngữ bạn chọn trong bộ chọn · cho đến khi bạn xóa.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · nhớ bạn đã đóng thanh phía trên · cho đến khi bạn xóa.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · lưu lựa chọn của bạn trong thông báo cookie, kèm phiên bản và ngày · cho đến khi bạn đổi hoặc xóa.",
+ "cookies.h3_optional": "Chỉ khi bạn chấp nhận",
+ "cookies.p_optional": "Nếu bạn nhấn “Chấp nhận”, các mục của bên thứ ba này sẽ tải. Nếu nhấn “Từ chối”, không mục nào được tải và trang web vẫn hoạt động như cũ.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · tiện ích có iframe của bên thứ ba, lưu <code>startupbar:sid</code> trong sessionStorage (đến khi bạn đóng tab) và gửi tín hiệu hiển thị. Mọi trang của trang web đều tải nó.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · một thư viện trên trang liên hệ, do jsDelivr cung cấp.",
+ "cookies.h2_never": "Điều chúng tôi không làm",
+ "cookies.p_never": "Chúng tôi không dùng phân tích riêng, quảng cáo, lập hồ sơ hay cookie theo dõi. Chúng tôi cũng không bán dữ liệu. Trang web được lưu trữ trên GitHub Pages, nơi có thể ghi lại IP của bạn khi phục vụ trang theo chính sách riêng.",
+ "cookies.h2_change": "Đổi lựa chọn của bạn",
+ "cookies.p_change": "Bạn có thể đổi bất cứ lúc nào bằng “Tùy chọn cookie” ở chân bất kỳ trang nào. Bạn cũng có thể xóa dữ liệu của trang web này trong cài đặt trình duyệt. Nếu bạn rút lại sự đồng ý, trang sẽ tải lại mà không có các mục của bên thứ ba.",
+ "cookies.h2_more": "Thông tin thêm",
+ "cookies.p_more": "Chính sách quyền riêng tư của ứng dụng giải thích Lecturameter xử lý dữ liệu nào trên điện thoại của bạn. Nếu có câu hỏi, hãy viết tới lecturameter.app@gmail.com."
 }

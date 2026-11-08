@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · পড়ার ট্র্যাকার আর বইয়ের পরিসংখ্যান</title>
-    <meta name="description" content="একটি ব্যক্তিগত Android ও iPhone পড়ার ট্র্যাকার দিয়ে আপনার পড়ার সময়, পৃষ্ঠা, গতি আর অগ্রগতি ট্র্যাক করুন। কোনো অ্যাকাউন্ট নেই, কোনো বিজ্ঞাপন নেই। Goodreads আর StoryGraph থেকে ইমপোর্ট করুন।">
-    <meta property="og:title" content="Lecturameter · পড়ার ট্র্যাকার আর বইয়ের পরিসংখ্যান">
-    <meta property="og:description" content="একটি ব্যক্তিগত Android ও iPhone পড়ার ট্র্যাকার দিয়ে আপনার পড়ার সময়, পৃষ্ঠা, গতি আর অগ্রগতি ট্র্যাক করুন। কোনো অ্যাকাউন্ট নেই, কোনো বিজ্ঞাপন নেই। Goodreads আর StoryGraph থেকে ইমপোর্ট করুন।">
+    <title>Lecturameter: পড়ার ডায়েরি · বইয়ের পরিসংখ্যান ও টাইমার</title>
+    <meta name="description" content="Lecturameter: পড়ার ডায়েরি, Android ও iPhone-এর জন্য। পড়ার সময় মাপুন, পৃষ্ঠা, গতি ও পরিসংখ্যান দেখুন, Goodreads থেকে আমদানি করুন। অ্যাকাউন্ট নেই, বিজ্ঞাপন নেই।">
+    <meta property="og:title" content="Lecturameter: পড়ার ডায়েরি · বইয়ের পরিসংখ্যান ও টাইমার">
+    <meta property="og:description" content="Lecturameter: পড়ার ডায়েরি, Android ও iPhone-এর জন্য। পড়ার সময় মাপুন, পৃষ্ঠা, গতি ও পরিসংখ্যান দেখুন, Goodreads থেকে আমদানি করুন। অ্যাকাউন্ট নেই, বিজ্ঞাপন নেই।">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/bn/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · পড়ার ট্র্যাকার আর বইয়ের পরিসংখ্যান">
+    <meta property="og:image:alt" content="Lecturameter: পড়ার ডায়েরি · বইয়ের পরিসংখ্যান ও টাইমার">
     <meta property="og:locale" content="bn_IN">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · পড়ার ট্র্যাকার আর বইয়ের পরিসংখ্যান">
-    <meta name="twitter:description" content="একটি ব্যক্তিগত Android ও iPhone পড়ার ট্র্যাকার দিয়ে আপনার পড়ার সময়, পৃষ্ঠা, গতি আর অগ্রগতি ট্র্যাক করুন। কোনো অ্যাকাউন্ট নেই, কোনো বিজ্ঞাপন নেই। Goodreads আর StoryGraph থেকে ইমপোর্ট করুন।">
+    <meta name="twitter:title" content="Lecturameter: পড়ার ডায়েরি · বইয়ের পরিসংখ্যান ও টাইমার">
+    <meta name="twitter:description" content="Lecturameter: পড়ার ডায়েরি, Android ও iPhone-এর জন্য। পড়ার সময় মাপুন, পৃষ্ঠা, গতি ও পরিসংখ্যান দেখুন, Goodreads থেকে আমদানি করুন। অ্যাকাউন্ট নেই, বিজ্ঞাপন নেই।">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · পড়ার ট্র্যাকার আর বইয়ের পরিসংখ্যান">
+    <meta name="twitter:image:alt" content="Lecturameter: পড়ার ডায়েরি · বইয়ের পরিসংখ্যান ও টাইমার">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: পড়ার ডায়েরি",
       "url": "https://lecturameterapp.github.io/bn/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "আপনার Android বা iPhone ফোনে লাইব্রেরি সাজান, পড়ার সেশনের সময় মাপুন আর বিস্তারিত পরিসংখ্যান দেখুন। কোনো বিজ্ঞাপন নেই, পুরোপুরি ব্যক্তিগত।",
       "featureList": "তাকসহ লাইব্রেরি, স্ক্রিন বন্ধ থাকলেও টাইমার, সেশনের ইতিহাস, হিট ম্যাপ, বার্ষিক Wrapped, কাস্টমাইজযোগ্য পড়ার চ্যালেঞ্জ, Google Drive ব্যাকআপ, Goodreads CSV ইমপোর্ট, প্রায় পুরোটাই অফলাইন",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "bn",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/bn/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/bn/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">থিম</a></li>
+            <li><a href="#events">ইভেন্ট</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">প্যাচ নোট</a></li>
             <li><a href="#history">ইতিহাস</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">3.9-এ নতুন</span>
+            <h2 id="paused-title">পরিসংখ্যান নষ্ট না করে একটি বই কিছুদিনের জন্য সরিয়ে রাখুন</h2>
+            <p>“বিরতিতে” একটি আলাদা অবস্থা, “ছেড়ে দেওয়া” থেকে ভিন্ন। বইটি আপনি যেখানে রেখেছিলেন সেখানেই অপেক্ষা করে, আর বিরতির দিনগুলো গণনা হয় না।</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>পড়তে চাই</span>
+                <span>পড়ছি</span>
+                <span class="is-paused">বিরতিতে</span>
+                <span>ছেড়ে দেওয়া</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>পড়ছি</span>
+                <span><i class="dot pause"></i>বিরতিতে &middot; বিরতির দিনগুলো গণনা হয় না</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>একটি আলাদা অবস্থা</h3><p>“বিরতিতে” মানে “ছেড়ে দেওয়া” নয়। আপনার বই ছেড়ে দেওয়া বইয়ের স্তূপে যায় না: সেটি অপেক্ষায় থাকে এবং যখন খুশি ফিরে আসে।</p></div>
+            <div class="paused-card reveal-up"><h3>“পড়ছি” বা “পুনরায় পড়ছি” থেকে</h3><p>বইয়ের পাতার ট্যাগ থেকে অথবা দ্রুত মেনুর “অবস্থা পরিবর্তন করুন” দিয়ে অবস্থা বদলান। বই, কমিক, মাঙ্গা ও অডিওবুকের জন্য কাজ করে।</p></div>
+            <div class="paused-card reveal-up"><h3>বিরতির দিনগুলো গণনা হয় না</h3><p>শেষ করার দিনে নয়, পড়ার গতিতেও নয়। আপনার পরিসংখ্যান থাকে আপনি যখন পড়ছিলেন তখনকার মতোই।</p></div>
+            <div class="paused-card reveal-up"><h3>চাইলে একটি নোট</h3><p>বিরতি দেওয়ার সময় এবং আবার শুরু করার সময় কারণটি লিখে রাখতে পারেন। এটি ঐচ্ছিক। সবকিছু বইয়ের পাতার “বিরতি” বিভাগে ইতিহাসসহ থাকে।</p></div>
+            <div class="paused-card reveal-up"><h3>নিজস্ব একটি ট্যাব</h3><p>আপনার লাইব্রেরিতে, “পড়তে চাই” ও “ছেড়ে দেওয়া”-র মাঝখানে বিরতিতে থাকা বইগুলো পাবেন।</p></div>
+            <div class="paused-card reveal-up"><h3>অনুস্মারক, আর নিজে থেকে আবার শুরু</h3><p>ওই বইয়ের অনুস্মারকগুলো থেমে থাকে এবং বইটি আবার শুরু করলে ফিরে আসে। আপনি সেশন টাইম করলে বা KOReader থেকে কোনো সেশন এলে বইটি নিজে থেকেই আবার শুরু হয়, একটি বিজ্ঞপ্তি ও “পূর্বাবস্থায়” বিকল্পসহ।</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">শেয়ার</span>
+            <h2 id="cards-title">Lecturameter কোনো সোশ্যাল নেটওয়ার্ক নয়। আপনার কার্ড যায় আপনি যেটা ব্যবহার করেন সেখানে।</h2>
+            <p>স্টোরির জন্য তৈরি 1080×1920 উল্লম্ব কার্ড বানান এবং যেখানে আছেন সেখানেই শেয়ার করুন। অ্যাকাউন্ট নেই, প্রোফাইল নেই, ফলোয়ার নেই।</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · স্টোরি ফরম্যাট</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>বই</li>
+                <li>শেষ করা বই</li>
+                <li>বইয়ের পরিসংখ্যান</li>
+                <li>পরিসংখ্যান</li>
+                <li>সাপ্তাহিক সারসংক্ষেপ</li>
+                <li>মাসিক সারসংক্ষেপ</li>
+                <li>চ্যালেঞ্জ</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>ইভেন্ট</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>কী দেখাবেন বেছে নিন</h3><p>একটি বই, সদ্য শেষ করা বই, আপনার পরিসংখ্যান, সপ্তাহ বা মাস, একটি চ্যালেঞ্জ, Bingo, Wrapped বা একটি ইভেন্ট।</p></li>
+            <li class="share-step reveal-up"><h3>“আমার কার্ড”-এ সংরক্ষিত হয়</h3><p>আপনি যা শেয়ার করেন সব আমার কার্ডে থাকে, তাই যখন খুশি আবার ব্যবহার করতে পারেন।</p></li>
+            <li class="share-step reveal-up"><h3>যেখানে আছেন সেখানেই শেয়ার করুন</h3><p>ফোনের শেয়ার মেনু দিয়ে, আপনি যে অ্যাপ ইতিমধ্যে ব্যবহার করেন সেখানে। অথবা গ্যালারিতে সেভ করুন।</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">ইভেন্ট</span>
+            <h2 id="events-title">কমিউনিটির সঙ্গে পড়ুন। নিজের লাইব্রেরি নিয়ে খেলুন।</h2>
+            <p>কোনো ইভেন্ট চালু থাকলে অ্যাপে দেখা যায়। আজ দুই ধরনের আছে: বিশ্বব্যাপী পড়ার চ্যালেঞ্জ এবং আপনার নিজের বই নিয়ে কার্ড গেম।</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">বিশ্বব্যাপী চ্যালেঞ্জ · ১৪ দিন</p>
+                <h3>মহা পড়া</h3>
+                <ul class="event-list">
+                <li>টাইমারের মিনিট গণনা হয়, বই, কমিক, মাঙ্গা ও অডিওবুকে।</li>
+                <li>পুরো কমিউনিটির একটি অভিন্ন লক্ষ্য। ছাড়িয়ে গেলেও গণনা চলতে থাকে।</li>
+                <li>ছদ্মনামসহ লাইভ লিডারবোর্ড, আর অবতার হিসেবে আপনার Pagi।</li>
+                <li>শেষ হলে, প্রত্যেক অংশগ্রহণকারীর জন্য আপনার অবস্থানসহ ইভেন্ট কার্ড।</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">উদাহরণ</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>কমিউনিটির লক্ষ্য</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">লিডারবোর্ড</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>আপনি</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>ভুলে যাওয়া লাইব্রেরি</h3>
+                <ul class="event-list">
+                <li>আপনার লাইব্রেরি থেকে ৩টি বই বেছে নিন: প্রতিটি হয়ে যায় তার ঘরানার আদর্শরূপের একটি কার্ড।</li>
+                <li>তাক পেরিয়ে শেষ বসকে হারাতে ৫ থেকে ১০ মিনিটের রান।</li>
+                <li>পয়েন্টের লিডারবোর্ড: প্রতিদিন আপনার সেরা ৩টি রান গণনা হয়।</li>
+                <li>বই কম? লাইব্রেরি আপনাকে বই ধার দেয়, প্রতি আদর্শরূপে একটি।</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">উদাহরণ</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">অংশ নিতে আপনার বয়স ১৬ বা তার বেশি হতে হবে। এখন কোনো ইভেন্ট চালু না থাকলে অ্যাপ তা জানিয়ে দেয়।</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>নতুন</h3>
                 <ul>
                     <li><strong>ইভেন্ট:</strong> বিশ্বব্যাপী পড়ার চ্যালেঞ্জ এবং সক্রিয় থাকলে Lecturameter Quest</li>
+                    <li><strong>বিরতিতে:</strong> পরিসংখ্যান নষ্ট না করে একটি বই কিছুদিনের জন্য সরিয়ে রাখুন</li>
                     <li><strong>দুটি নতুন Pro থিম:</strong> খাতা ও বনভূমি</li>
                     <li>প্রতিটি থিমের নিজস্ব টাইমার ঘড়ি</li>
                     <li>Pagi পড়তে চাই থেকে একটি বই বেছে দেয়</li>
@@ -902,6 +1030,7 @@
                     <strong>নতুন</strong>
                     <ul>
                         <li><strong>ইভেন্ট:</strong> বিশ্বব্যাপী পড়ার চ্যালেঞ্জ এবং সক্রিয় থাকলে Lecturameter Quest</li>
+                        <li><strong>বিরতিতে:</strong> পরিসংখ্যান নষ্ট না করে একটি বই কিছুদিনের জন্য সরিয়ে রাখুন</li>
                         <li><strong>দুটি নতুন Pro থিম:</strong> খাতা ও বনভূমি</li>
                         <li>প্রতিটি থিমের নিজস্ব টাইমার ঘড়ি</li>
                         <li>Pagi পড়তে চাই থেকে একটি বই বেছে দেয়</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>পণ্য</h4>
                 <a href="#features">ফিচার</a>
+                <a href="#events">ইভেন্ট</a>
                 <a href="#pricing">দাম</a>
                 <a href="../precios-regionales.html">অঞ্চলভিত্তিক দাম</a>
                 <a href="#whatsnew">প্যাচ নোট</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">গোপনীয়তা নীতি</a>
                 <a href="./terms/">পরিষেবার শর্তাবলি</a>
+                <a href="./cookies/">কুকি নীতি</a>
+                <a href="#" data-lm-cookie-prefs>কুকি পছন্দ</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi আপনাকে হাততালি দিচ্ছে!", "জ্বলজ্বল করো, ছোট্ট তারা!", "শশশ, আমি পড়ছি।", "Pagi আপনাকে দেখছে…"], "pagi_angry": ["উফ! ব্যথা লাগল!", "অনেক ক্লিক হয়েছে!", "গ্‌র্‌র্, আমাকে একা থাকতে দিন।", "আর মজা লাগছে না।"]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi আপনাকে হাততালি দিচ্ছে!", "জ্বলজ্বল করো, ছোট্ট তারা!", "শশশ, আমি পড়ছি।", "Pagi আপনাকে দেখছে…"], "pagi_angry": ["উফ! ব্যথা লাগল!", "অনেক ক্লিক হয়েছে!", "গ্‌র্‌র্, আমাকে একা থাকতে দিন।", "আর মজা লাগছে না।"], "consent_title": "কুকি ও সংরক্ষণ", "consent_body": "আমরা একটি তৃতীয় পক্ষের উইজেট (StartupBar) ব্যবহার করি, যা আপনার ব্রাউজারে তথ্য রাখে এবং ইম্প্রেশন গণনা করে। আপনি সম্মত হলেই এটি লোড হয়। আপনার থিম, ভাষা ও বন্ধ করা বিজ্ঞপ্তি জিজ্ঞাসা ছাড়াই সংরক্ষিত হয়, কারণ সেগুলো আপনি নিজেই বেছেছেন।", "consent_accept": "সম্মত", "consent_reject": "প্রত্যাখ্যান", "consent_policy": "কুকি নীতি", "consent_prefs": "কুকি পছন্দ"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

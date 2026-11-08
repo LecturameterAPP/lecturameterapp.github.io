@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · Lasīšanas uzskaite un grāmatu statistika</title>
-    <meta name="description" content="Uzskaiti lasīšanas laiku, lappuses, tempu un progresu ar privātu lasīšanas uzskaites lietotni Android un iPhone. Bez konta, bez reklāmām. Importē no Goodreads un StoryGraph.">
-    <meta property="og:title" content="Lecturameter · Lasīšanas uzskaite un grāmatu statistika">
-    <meta property="og:description" content="Uzskaiti lasīšanas laiku, lappuses, tempu un progresu ar privātu lasīšanas uzskaites lietotni Android un iPhone. Bez konta, bez reklāmām. Importē no Goodreads un StoryGraph.">
+    <title>Lecturameter: Lasīšanas izsekotājs · Statistika un taimeris</title>
+    <meta name="description" content="Lecturameter: Lasīšanas izsekotājs Android un iPhone. Mēri lasīšanas laiku, seko lappusēm, tempam un statistikai, importē no Goodreads. Bez konta, bez reklāmām.">
+    <meta property="og:title" content="Lecturameter: Lasīšanas izsekotājs · Statistika un taimeris">
+    <meta property="og:description" content="Lecturameter: Lasīšanas izsekotājs Android un iPhone. Mēri lasīšanas laiku, seko lappusēm, tempam un statistikai, importē no Goodreads. Bez konta, bez reklāmām.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/lv/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · Lasīšanas uzskaite un grāmatu statistika">
+    <meta property="og:image:alt" content="Lecturameter: Lasīšanas izsekotājs · Statistika un taimeris">
     <meta property="og:locale" content="lv_LV">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · Lasīšanas uzskaite un grāmatu statistika">
-    <meta name="twitter:description" content="Uzskaiti lasīšanas laiku, lappuses, tempu un progresu ar privātu lasīšanas uzskaites lietotni Android un iPhone. Bez konta, bez reklāmām. Importē no Goodreads un StoryGraph.">
+    <meta name="twitter:title" content="Lecturameter: Lasīšanas izsekotājs · Statistika un taimeris">
+    <meta name="twitter:description" content="Lecturameter: Lasīšanas izsekotājs Android un iPhone. Mēri lasīšanas laiku, seko lappusēm, tempam un statistikai, importē no Goodreads. Bez konta, bez reklāmām.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · Lasīšanas uzskaite un grāmatu statistika">
+    <meta name="twitter:image:alt" content="Lecturameter: Lasīšanas izsekotājs · Statistika un taimeris">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: Lasīšanas izsekotājs",
       "url": "https://lecturameterapp.github.io/lv/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "Kārto savu bibliotēku, mēri lasīšanas sesijas un skaties detalizētu statistiku savā Android vai iPhone telefonā. Bez reklāmām, pilnīgi privāti.",
       "featureList": "Bibliotēka ar plauktiem, taimeris ar izslēgtu ekrānu, sesiju vēsture, siltuma karte, gada Wrapped, pielāgojami lasīšanas izaicinājumi, dublēšana Google Drive, Goodreads CSV imports, lielākoties bezsaistē",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "lv",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/lv/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/lv/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Tēmas</a></li>
+            <li><a href="#events">Pasākumi</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">Ielāpa piezīmes</a></li>
             <li><a href="#history">Vēsture</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Jaunums 3.9</span>
+            <h2 id="paused-title">Noliec grāmatu malā uz laiku, nesabojājot savu statistiku</h2>
+            <p>Pauzēts ir atsevišķs statuss, atšķirīgs no Pamesta. Grāmata gaida tur, kur to atstāji, un pauzes dienas netiek skaitītas.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>Vēlos izlasīt</span>
+                <span>Lasīšana</span>
+                <span class="is-paused">Pauzēts</span>
+                <span>Pamesta</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>Lasīšana</span>
+                <span><i class="dot pause"></i>Pauzēts &middot; Pauzes dienas netiek skaitītas</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>Atsevišķs statuss</h3><p>Pauzēts nav Pamesta. Tava grāmata nenonāk to grāmatu kaudzē, ko esi pametis: tā gaida un atgriežas, kad vien vēlies.</p></div>
+            <div class="paused-card reveal-up"><h3>No Lasīšana vai Pārlasīšana</h3><p>Maini statusu ar zīmi grāmatas lapā vai ar „Mainīt statusu“ ātrajā izvēlnē. Darbojas grāmatām, komiksiem, mangai un audiogrāmatām.</p></div>
+            <div class="paused-card reveal-up"><h3>Pauzes dienas netiek skaitītas</h3><p>Ne dienās līdz pabeigšanai, ne tavā lasīšanas ātrumā. Statistika paliek tāda, kāda tā bija, kad lasīji.</p></div>
+            <div class="paused-card reveal-up"><h3>Piezīme, ja vēlies</h3><p>Kad pauzē un kad atsāc, vari pierakstīt iemeslu. Tas nav obligāti. Viss paliek grāmatas lapas sadaļā „Pauzes“ ar savu vēsturi.</p></div>
+            <div class="paused-card reveal-up"><h3>Sava cilne</h3><p>Savā bibliotēkā, starp Vēlos izlasīt un Pamesta, atradīsi pauzētās grāmatas.</p></div>
+            <div class="paused-card reveal-up"><h3>Atgādinājumi un atsākšana pašai no sevis</h3><p>Šīs grāmatas atgādinājumi tiek pauzēti un atgriežas, kad atsāc grāmatu. Ja nomēri sesiju ar taimeri vai kāda atnāk no KOReader, grāmata atsākas pati, ar paziņojumu un opciju Atsaukt.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Kopīgot</span>
+            <h2 id="cards-title">Lecturameter nav sociālais tīkls. Tavas kartes dodas uz to, ko izmanto.</h2>
+            <p>Veido vertikālas 1080×1920 kartes, gatavas stāstiem, un kopīgo tur, kur jau esi. Bez konta, bez profila un bez sekotājiem.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · stāsta formāts</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>Grāmata</li>
+                <li>Pabeigta grāmata</li>
+                <li>Grāmatas statistika</li>
+                <li>Statistika</li>
+                <li>Nedēļas kopsavilkums</li>
+                <li>Mēneša kopsavilkums</li>
+                <li>Izaicinājumi</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>Notikums</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>Izvēlies, ko rādīt</h3><p>Grāmatu, tikko pabeigtu grāmatu, savu statistiku, savu nedēļu vai mēnesi, izaicinājumu, Bingo, Wrapped vai notikumu.</p></li>
+            <li class="share-step reveal-up"><h3>Saglabājas sadaļā „Manas kartītes“</h3><p>Viss, ko kopīgo, paliek sadaļā Manas kartītes, lai vari to izmantot atkal, kad vien vēlies.</p></li>
+            <li class="share-step reveal-up"><h3>Kopīgo tur, kur jau esi</h3><p>Caur tālruņa kopīgošanas izvēlni uz lietotni, ko jau izmanto. Vai saglabā galerijā.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Pasākumi</span>
+            <h2 id="events-title">Lasi kopā ar kopienu. Spēlē ar savu bibliotēku.</h2>
+            <p>Pasākumi lietotnē parādās, kad kāds ir aktīvs. Šobrīd ir divu veidu: pasaules lasīšanas izaicinājums un kāršu spēle ar savām grāmatām.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">Pasaules izaicinājums · 14 dienas</p>
+                <h3>Lielā lasīšana</h3>
+                <ul class="event-list">
+                <li>Tiek skaitītas taimera minūtes, grāmatām, komiksiem, mangai un audiogrāmatām.</li>
+                <li>Kopīgs mērķis visai kopienai. Ja tas tiek pārsniegts, skaitīšana turpinās.</li>
+                <li>Tiešraides rangs ar segvārdu un tavu Pagi kā avatāru.</li>
+                <li>Kad tas beidzas, katrs dalībnieks saņem pasākuma kartīti ar savu vietu.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">Ilustratīvs piemērs</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>Kopienas mērķis</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">Rangs</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>tu</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>Aizmirstā bibliotēka</h3>
+                <ul class="event-list">
+                <li>Izvēlies 3 grāmatas no savas bibliotēkas: katra kļūst par kartīti ar sava žanra arhetipu.</li>
+                <li>5 līdz 10 minūšu gājieni, lai šķērsotu plauktus un uzvarētu galīgo bosu.</li>
+                <li>Punktu rangs: tiek skaitīti tavi 3 labākie gājieni katrā dienā.</li>
+                <li>Trūkst grāmatu? Bibliotēka aizdod sējumus, pa vienam katram arhetipam.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">Ilustratīvs piemērs</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">Lai piedalītos, jābūt 16 gadus vecam vai vecākam. Ja pašlaik nav aktīva pasākuma, lietotne tev to pasaka.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>Jaunums</h3>
                 <ul>
                     <li><strong>Pasākumi:</strong> globāli lasīšanas izaicinājumi un Lecturameter Quest, kad ir aktīvs</li>
+                    <li><strong>Pauzēts:</strong> noliec grāmatu malā uz laiku, nesabojājot savu statistiku</li>
                     <li><strong>Divi jauni Pro motīvi:</strong> Burtnīca un Mežs</li>
                     <li>Savs taimera pulkstenis katram motīvam</li>
                     <li>Pagi izvēlas grāmatu no saraksta Vēlos izlasīt</li>
@@ -902,6 +1030,7 @@
                     <strong>Jaunums</strong>
                     <ul>
                         <li><strong>Pasākumi:</strong> globāli lasīšanas izaicinājumi un Lecturameter Quest, kad ir aktīvs</li>
+                        <li><strong>Pauzēts:</strong> noliec grāmatu malā uz laiku, nesabojājot savu statistiku</li>
                         <li><strong>Divi jauni Pro motīvi:</strong> Burtnīca un Mežs</li>
                         <li>Savs taimera pulkstenis katram motīvam</li>
                         <li>Pagi izvēlas grāmatu no saraksta Vēlos izlasīt</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>Produkts</h4>
                 <a href="#features">Funkcijas</a>
+                <a href="#events">Pasākumi</a>
                 <a href="#pricing">Cenas</a>
                 <a href="../precios-regionales.html">Reģionālās cenas</a>
                 <a href="#whatsnew">Ielāpa piezīmes</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">Privātuma politika</a>
                 <a href="./terms/">Pakalpojuma noteikumi</a>
+                <a href="./cookies/">Sīkdatņu politika</a>
+                <a href="#" data-lm-cookie-prefs>Sīkdatņu preferences</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi tev aplaudē!", "Spīdi, zvaigznīte!", "Šš, es lasu.", "Pagi vēro…"], "pagi_angry": ["Au! Tas sāpēja!", "Pietiek klikšķu!", "Grr, liec mani mierā.", "Vairs nav smieklīgi."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi tev aplaudē!", "Spīdi, zvaigznīte!", "Šš, es lasu.", "Pagi vēro…"], "pagi_angry": ["Au! Tas sāpēja!", "Pietiek klikšķu!", "Grr, liec mani mierā.", "Vairs nav smieklīgi."], "consent_title": "Sīkdatnes un glabātuve", "consent_body": "Mēs izmantojam trešās puses logrīku (StartupBar), kas saglabā datus tavā pārlūkā un skaita parādījumus. Tas ielādējas tikai tad, ja piekrīti. Tava tēma, valoda un aizvērtais paziņojums tiek saglabāti, nejautājot, jo tos izvēlējies tu pats.", "consent_accept": "Piekrītu", "consent_reject": "Noraidu", "consent_policy": "Sīkdatņu politika", "consent_prefs": "Sīkdatņu preferences"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

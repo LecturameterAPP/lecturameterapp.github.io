@@ -44,7 +44,6 @@
     "cookies": {
       "template": "cookies.html",
       "dir": "cookies/",
-      "only_locales": ["en", "es"],
       "priority": "0.3",
       "changefreq": "yearly"
     }

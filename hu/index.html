@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · Olvasásnapló és könyvstatisztika</title>
-    <meta name="description" content="Kövesd az olvasási idődet, oldalaidat, tempódat és haladásodat egy privát androidos és iPhone-os olvasásnaplóval. Fiók és reklámok nélkül. Importálás Goodreadsről és StoryGraphről.">
-    <meta property="og:title" content="Lecturameter · Olvasásnapló és könyvstatisztika">
-    <meta property="og:description" content="Kövesd az olvasási idődet, oldalaidat, tempódat és haladásodat egy privát androidos és iPhone-os olvasásnaplóval. Fiók és reklámok nélkül. Importálás Goodreadsről és StoryGraphről.">
+    <title>Lecturameter: Olvasási napló · Statisztika és időzítő</title>
+    <meta name="description" content="Lecturameter: Olvasási napló Androidra és iPhone-ra. Mérd az olvasást, kövesd az oldalakat, a tempót és a statisztikát, importálj a Goodreadsből. Fiók és reklám nélkül.">
+    <meta property="og:title" content="Lecturameter: Olvasási napló · Statisztika és időzítő">
+    <meta property="og:description" content="Lecturameter: Olvasási napló Androidra és iPhone-ra. Mérd az olvasást, kövesd az oldalakat, a tempót és a statisztikát, importálj a Goodreadsből. Fiók és reklám nélkül.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/hu/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · Olvasásnapló és könyvstatisztika">
+    <meta property="og:image:alt" content="Lecturameter: Olvasási napló · Statisztika és időzítő">
     <meta property="og:locale" content="hu_HU">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · Olvasásnapló és könyvstatisztika">
-    <meta name="twitter:description" content="Kövesd az olvasási idődet, oldalaidat, tempódat és haladásodat egy privát androidos és iPhone-os olvasásnaplóval. Fiók és reklámok nélkül. Importálás Goodreadsről és StoryGraphről.">
+    <meta name="twitter:title" content="Lecturameter: Olvasási napló · Statisztika és időzítő">
+    <meta name="twitter:description" content="Lecturameter: Olvasási napló Androidra és iPhone-ra. Mérd az olvasást, kövesd az oldalakat, a tempót és a statisztikát, importálj a Goodreadsből. Fiók és reklám nélkül.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · Olvasásnapló és könyvstatisztika">
+    <meta name="twitter:image:alt" content="Lecturameter: Olvasási napló · Statisztika és időzítő">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: Olvasási napló",
       "url": "https://lecturameterapp.github.io/hu/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "Rendezd a könyvtáradat, mérd az olvasási munkameneteidet, és nézz részletes statisztikát androidos vagy iPhone-os telefonodon. Reklámok nélkül, teljesen privát.",
       "featureList": "Könyvtár polcokkal, időzítő kikapcsolt képernyővel, munkamenet-előzmények, hőtérkép, éves Wrapped, testreszabható olvasási kihívások, Google Drive-os biztonsági mentés, Goodreads CSV importálás, nagyrészt offline",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "hu",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/hu/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/hu/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Témák</a></li>
+            <li><a href="#events">Események</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">Patch megjegyzések</a></li>
             <li><a href="#history">Előzmények</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Újdonság a 3.9-ben</span>
+            <h2 id="paused-title">Tegyél félre egy könyvet egy időre anélkül, hogy tönkremenne a statisztikád</h2>
+            <p>A Szüneteltetve külön állapot, más, mint az Elhagyott. A könyv ott vár, ahol abbahagytad, a szüneteltetett napok pedig nem számítanak.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>Elolvasandó</span>
+                <span>Olvasás</span>
+                <span class="is-paused">Szüneteltetve</span>
+                <span>Elhagyott</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>Olvasás</span>
+                <span><i class="dot pause"></i>Szüneteltetve &middot; A szüneteltetett napok nem számítanak</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>Külön állapot</h3><p>A Szüneteltetve nem Elhagyott. A könyved nem kerül a feladott könyvek közé: vár, és bármikor visszatér, amikor akarod.</p></div>
+            <div class="paused-card reveal-up"><h3>Az Olvasásból vagy Újraolvasásból</h3><p>Az állapotot a könyv oldalán lévő jelvényről vagy a gyorsmenü „Állapot módosítása” pontjával változtathatod. Könyvekre, képregényekre, mangára és hangoskönyvekre is működik.</p></div>
+            <div class="paused-card reveal-up"><h3>A szüneteltetett napok nem számítanak</h3><p>Sem a befejezésig hátralévő napokba, sem az olvasási sebességedbe. A statisztikád olyan marad, amilyen olvasás közben volt.</p></div>
+            <div class="paused-card reveal-up"><h3>Egy jegyzet, ha szeretnéd</h3><p>Szüneteltetéskor és folytatáskor leírhatod az okot. Nem kötelező. Minden a könyv oldalának „Szünetek” szakaszában marad, az előzményeivel együtt.</p></div>
+            <div class="paused-card reveal-up"><h3>Saját fül</h3><p>A könyvtáradban, az Elolvasandó és az Elhagyott között találod a szüneteltetett könyveidet.</p></div>
+            <div class="paused-card reveal-up"><h3>Emlékeztetők és önálló folytatás</h3><p>A könyv emlékeztetői szünetelnek, és visszatérnek, amikor folytatod. Ha időzítesz egy munkamenetet, vagy érkezik egy a KOReaderből, a könyv magától folytatódik, értesítéssel és Visszavonás lehetőséggel.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Megosztás</span>
+            <h2 id="cards-title">A Lecturameter nem közösségi hálózat. A kártyáid arra mennek, amelyiket használod.</h2>
+            <p>Készíts álló, 1080×1920-as kártyákat, sztorikhoz készen, és oszd meg ott, ahol már vagy. Fiók, profil és követők nélkül.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · sztori formátum</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>Könyv</li>
+                <li>Befejezett könyv</li>
+                <li>Könyv statisztikái</li>
+                <li>Statisztika</li>
+                <li>Heti összegzés</li>
+                <li>Havi összegzés</li>
+                <li>Kihívások</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>Esemény</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>Válaszd ki, mit mutatsz</h3><p>Egy könyvet, egy most befejezettet, a statisztikádat, a heted vagy a hónapod, egy kihívást, Bingót, Wrappedet vagy egy eseményt.</p></li>
+            <li class="share-step reveal-up"><h3>Elmentve a „Kártyáim” között</h3><p>Minden, amit megosztasz, a Kártyáim között marad, hogy bármikor újra felhasználhasd.</p></li>
+            <li class="share-step reveal-up"><h3>Oszd meg ott, ahol már vagy</h3><p>A telefonod megosztás menüjén át abba az alkalmazásba, amelyet már használsz. Vagy mentsd a galériába.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Események</span>
+            <h2 id="events-title">Olvass a közösséggel. Játssz a könyvtáraddal.</h2>
+            <p>Az események akkor jelennek meg az alkalmazásban, ha éppen van aktív. Ma kétféle van: egy globális olvasási kihívás és egy kártyajáték a saját könyveiddel.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">Globális kihívás · 14 nap</p>
+                <h3>A Nagy Olvasás</h3>
+                <ul class="event-list">
+                <li>Az időzítő percei számítanak, könyvekben, képregényekben, mangában és hangoskönyvekben.</li>
+                <li>Közös cél az egész közösségnek. Ha túlteljesítik, tovább számít.</li>
+                <li>Élő ranglista álnévvel és a Pagi-del avatarként.</li>
+                <li>A végén az esemény kártyája a helyezéseddel, minden résztvevőnek.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">Szemléltető példa</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>Közösségi cél</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">Ranglista</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>te</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>Az elfeledett könyvtár</h3>
+                <ul class="event-list">
+                <li>Válassz 3 könyvet a könyvtáradból: mindegyikből egy kártya lesz a műfaja archetípusával.</li>
+                <li>5–10 perces körök, hogy átkelj a polcokon és legyőzd a végső főnököt.</li>
+                <li>Pontranglista: minden nap a 3 legjobb köröd számít.</li>
+                <li>Kevés a könyved? A könyvtár köteteket kölcsönöz neked, archetípusonként egyet.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">Szemléltető példa</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">A részvételhez legalább 16 évesnek kell lenned. Ha éppen nincs aktív esemény, az alkalmazás szól.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>Újdonságok</h3>
                 <ul>
                     <li><strong>Események:</strong> globális olvasási kihívások és Lecturameter Quest, amikor van aktív</li>
+                    <li><strong>Szüneteltetve:</strong> tegyél félre egy könyvet egy időre anélkül, hogy tönkremenne a statisztikád</li>
                     <li><strong>Két új Pro téma:</strong> Füzet és Erdő</li>
                     <li>Saját időzítő óra minden témához</li>
                     <li>A Pagi választ egy könyvet az Elolvasandó listáról</li>
@@ -902,6 +1030,7 @@
                     <strong>Újdonságok</strong>
                     <ul>
                         <li><strong>Események:</strong> globális olvasási kihívások és Lecturameter Quest, amikor van aktív</li>
+                        <li><strong>Szüneteltetve:</strong> tegyél félre egy könyvet egy időre anélkül, hogy tönkremenne a statisztikád</li>
                         <li><strong>Két új Pro téma:</strong> Füzet és Erdő</li>
                         <li>Saját időzítő óra minden témához</li>
                         <li>A Pagi választ egy könyvet az Elolvasandó listáról</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>Termék</h4>
                 <a href="#features">Funkciók</a>
+                <a href="#events">Események</a>
                 <a href="#pricing">Árak</a>
                 <a href="../precios-regionales.html">Regionális árak</a>
                 <a href="#whatsnew">Patch megjegyzések</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">Adatvédelmi irányelvek</a>
                 <a href="./terms/">Felhasználási feltételek</a>
+                <a href="./cookies/">Sütiszabályzat</a>
+                <a href="#" data-lm-cookie-prefs>Süti-beállítások</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi megtapsol!", "Ragyogj, kiscsillag!", "Pszt, olvasok.", "Pagi figyel…"], "pagi_angry": ["Jaj! Ez fájt!", "Elég a kattintgatásból!", "Grr, hagyj békén.", "Ez már nem vicces."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi megtapsol!", "Ragyogj, kiscsillag!", "Pszt, olvasok.", "Pagi figyel…"], "pagi_angry": ["Jaj! Ez fájt!", "Elég a kattintgatásból!", "Grr, hagyj békén.", "Ez már nem vicces."], "consent_title": "Sütik és tárolás", "consent_body": "Egy harmadik fél widgetjét (StartupBar) használjuk, amely adatokat tárol a böngésződben, és megjelenéseket számol. Csak akkor töltődik be, ha elfogadod. A témád, a nyelved és a bezárt értesítés kérdés nélkül mentődik, mert te választottad őket.", "consent_accept": "Elfogadom", "consent_reject": "Elutasítom", "consent_policy": "Sütiszabályzat", "consent_prefs": "Süti-beállítások"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

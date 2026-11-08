@@ -19,9 +19,10 @@
  },
  "bg": {
   "ficha": null,
-  "nombre": null,
+  "nombre": "Lecturameter: Тракер за четене",
   "subtitulo": null,
-  "estado_ficha": null
+  "estado_ficha": null,
+  "origen": "traduccion_reading_tracker"
  },
  "bn": {
   "ficha": "bn-BD",
@@ -61,15 +62,17 @@
  },
  "et": {
   "ficha": null,
-  "nombre": null,
+  "nombre": "Lecturameter: Lugemisjälgija",
   "subtitulo": null,
-  "estado_ficha": null
+  "estado_ficha": null,
+  "origen": "traduccion_reading_tracker"
  },
  "fa": {
   "ficha": null,
-  "nombre": null,
+  "nombre": "Lecturameter: ردیاب مطالعه",
   "subtitulo": null,
-  "estado_ficha": null
+  "estado_ficha": null,
+  "origen": "traduccion_reading_tracker"
  },
  "fi": {
   "ficha": "fi",
@@ -121,9 +124,10 @@
  },
  "is": {
   "ficha": null,
-  "nombre": null,
+  "nombre": "Lecturameter: Lestrarskráning",
   "subtitulo": null,
-  "estado_ficha": null
+  "estado_ficha": null,
+  "origen": "traduccion_reading_tracker"
  },
  "it": {
   "ficha": "it",
@@ -151,15 +155,17 @@
  },
  "lt": {
   "ficha": null,
-  "nombre": null,
+  "nombre": "Lecturameter: Skaitymo sekimas",
   "subtitulo": null,
-  "estado_ficha": null
+  "estado_ficha": null,
+  "origen": "traduccion_reading_tracker"
  },
  "lv": {
   "ficha": null,
-  "nombre": null,
+  "nombre": "Lecturameter: Lasīšanas izsekotājs",
   "subtitulo": null,
-  "estado_ficha": null
+  "estado_ficha": null,
+  "origen": "traduccion_reading_tracker"
  },
  "ml": {
   "ficha": "ml-IN",
@@ -241,9 +247,10 @@
  },
  "sw": {
   "ficha": null,
-  "nombre": null,
+  "nombre": "Lecturameter: Kifuatilia Usomaji",
   "subtitulo": null,
-  "estado_ficha": null
+  "estado_ficha": null,
+  "origen": "traduccion_reading_tracker"
  },
  "ta": {
   "ficha": "ta-IN",
@@ -289,8 +296,9 @@
  },
  "zu": {
   "ficha": null,
-  "nombre": null,
+  "nombre": "Lecturameter: Isilandeli Sokufunda",
   "subtitulo": null,
-  "estado_ficha": null
+  "estado_ficha": null,
+  "origen": "traduccion_reading_tracker"
  }
 }

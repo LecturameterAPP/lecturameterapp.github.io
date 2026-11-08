@@ -77,6 +77,11 @@
 </nav>
 
 <div class="subpage-container">
+{{#unless legal_original}}
+    <div class="legal-disclaimer" role="note">
+        <span>{{legal.disclaimer}}</span> <a href="{{legal_original_url}}">{{legal.disclaimer.link}}</a>
+    </div>
+{{/unless}}
     <div class="legal-content">
             <div class="page-hero">
                 <h1 class="page-heading">{{cookies.h1}}</h1>

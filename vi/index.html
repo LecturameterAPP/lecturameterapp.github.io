@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · Theo dõi đọc sách & thống kê sách</title>
-    <meta name="description" content="Theo dõi thời gian đọc, số trang, nhịp đọc và tiến độ của bạn với ứng dụng theo dõi đọc sách riêng tư cho Android và iPhone. Không tài khoản, không quảng cáo. Nhập từ Goodreads và StoryGraph.">
-    <meta property="og:title" content="Lecturameter · Theo dõi đọc sách & thống kê sách">
-    <meta property="og:description" content="Theo dõi thời gian đọc, số trang, nhịp đọc và tiến độ của bạn với ứng dụng theo dõi đọc sách riêng tư cho Android và iPhone. Không tài khoản, không quảng cáo. Nhập từ Goodreads và StoryGraph.">
+    <title>Lecturameter: Nhật ký đọc sách · Thống kê và đồng hồ</title>
+    <meta name="description" content="Lecturameter: Nhật ký đọc sách cho Android và iPhone. Bấm giờ khi đọc, theo dõi số trang, tốc độ và thống kê, nhập từ Goodreads. Không cần tài khoản, không quảng cáo.">
+    <meta property="og:title" content="Lecturameter: Nhật ký đọc sách · Thống kê và đồng hồ">
+    <meta property="og:description" content="Lecturameter: Nhật ký đọc sách cho Android và iPhone. Bấm giờ khi đọc, theo dõi số trang, tốc độ và thống kê, nhập từ Goodreads. Không cần tài khoản, không quảng cáo.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/vi/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · Theo dõi đọc sách & thống kê sách">
+    <meta property="og:image:alt" content="Lecturameter: Nhật ký đọc sách · Thống kê và đồng hồ">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · Theo dõi đọc sách & thống kê sách">
-    <meta name="twitter:description" content="Theo dõi thời gian đọc, số trang, nhịp đọc và tiến độ của bạn với ứng dụng theo dõi đọc sách riêng tư cho Android và iPhone. Không tài khoản, không quảng cáo. Nhập từ Goodreads và StoryGraph.">
+    <meta name="twitter:title" content="Lecturameter: Nhật ký đọc sách · Thống kê và đồng hồ">
+    <meta name="twitter:description" content="Lecturameter: Nhật ký đọc sách cho Android và iPhone. Bấm giờ khi đọc, theo dõi số trang, tốc độ và thống kê, nhập từ Goodreads. Không cần tài khoản, không quảng cáo.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · Theo dõi đọc sách & thống kê sách">
+    <meta name="twitter:image:alt" content="Lecturameter: Nhật ký đọc sách · Thống kê và đồng hồ">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: Nhật ký đọc sách",
       "url": "https://lecturameterapp.github.io/vi/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "Sắp xếp thư viện, bấm giờ các phiên đọc và xem thống kê chi tiết trên điện thoại Android hoặc iPhone. Không quảng cáo, hoàn toàn riêng tư.",
       "featureList": "Thư viện với các kệ sách, đồng hồ bấm giờ khi tắt màn hình, lịch sử phiên đọc, bản đồ nhiệt, Wrapped hằng năm, thử thách đọc sách tùy chỉnh, sao lưu Google Drive, nhập CSV Goodreads, hầu hết dùng được ngoại tuyến",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "vi",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/vi/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/vi/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Chủ đề</a></li>
+            <li><a href="#events">Sự kiện</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">Ghi chú cập nhật</a></li>
             <li><a href="#history">Lịch sử</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Mới trong 3.9</span>
+            <h2 id="paused-title">Cất một cuốn sách sang bên một thời gian mà không làm hỏng thống kê của bạn</h2>
+            <p>Tạm dừng là một trạng thái riêng, khác với Đã bỏ dở. Cuốn sách chờ ở chỗ bạn để lại, và những ngày tạm dừng không được tính.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>Muốn đọc</span>
+                <span>Đang đọc</span>
+                <span class="is-paused">Tạm dừng</span>
+                <span>Đã bỏ dở</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>Đang đọc</span>
+                <span><i class="dot pause"></i>Tạm dừng &middot; Những ngày tạm dừng không được tính</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>Một trạng thái riêng</h3><p>Tạm dừng không phải là Đã bỏ dở. Sách của bạn không vào chồng sách đã bỏ: nó chờ sẵn và quay lại bất cứ khi nào bạn muốn.</p></div>
+            <div class="paused-card reveal-up"><h3>Từ Đang đọc hoặc Đọc lại</h3><p>Đổi trạng thái từ nhãn trên trang sách hoặc bằng “Đổi trạng thái” trong menu nhanh. Dùng được cho sách, truyện tranh, manga và sách nói.</p></div>
+            <div class="paused-card reveal-up"><h3>Những ngày tạm dừng không được tính</h3><p>Không tính vào số ngày để đọc xong, cũng không tính vào tốc độ đọc của bạn. Thống kê vẫn như lúc bạn đang đọc.</p></div>
+            <div class="paused-card reveal-up"><h3>Một ghi chú, nếu bạn muốn</h3><p>Khi tạm dừng và khi tiếp tục, bạn có thể ghi lại lý do. Việc này là tùy chọn. Mọi thứ nằm trong mục “Các lần tạm dừng” của trang sách, kèm lịch sử.</p></div>
+            <div class="paused-card reveal-up"><h3>Một tab riêng</h3><p>Trong thư viện của bạn, giữa Muốn đọc và Đã bỏ dở, bạn sẽ thấy những cuốn sách đang tạm dừng.</p></div>
+            <div class="paused-card reveal-up"><h3>Nhắc nhở, và tự tiếp tục</h3><p>Nhắc nhở của cuốn sách đó sẽ tạm dừng và quay lại khi bạn tiếp tục. Nếu bạn bấm giờ một phiên hoặc có một phiên gửi từ KOReader, sách sẽ tự tiếp tục, kèm thông báo và tùy chọn Hoàn tác.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Chia sẻ</span>
+            <h2 id="cards-title">Lecturameter không phải mạng xã hội. Thẻ của bạn đi đến mạng bạn đang dùng.</h2>
+            <p>Tạo thẻ dọc 1080×1920, sẵn sàng cho story, và chia sẻ ngay nơi bạn đang ở. Không tài khoản, không hồ sơ, không người theo dõi.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · định dạng story</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>Sách</li>
+                <li>Sách đã đọc xong</li>
+                <li>Thống kê sách</li>
+                <li>Thống kê</li>
+                <li>Tóm tắt tuần</li>
+                <li>Tóm tắt tháng</li>
+                <li>Thử thách</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>Sự kiện</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>Chọn thứ muốn hiển thị</h3><p>Một cuốn sách, một cuốn bạn vừa đọc xong, thống kê của bạn, tuần hoặc tháng của bạn, một thử thách, Bingo, Wrapped hoặc một sự kiện.</p></li>
+            <li class="share-step reveal-up"><h3>Được lưu trong “Thẻ của tôi”</h3><p>Mọi thứ bạn chia sẻ đều nằm trong Thẻ của tôi, để bạn dùng lại bất cứ khi nào muốn.</p></li>
+            <li class="share-step reveal-up"><h3>Chia sẻ ngay nơi bạn đang ở</h3><p>Qua menu chia sẻ của điện thoại, vào ứng dụng bạn vẫn dùng. Hoặc lưu vào thư viện ảnh.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Sự kiện</span>
+            <h2 id="events-title">Đọc cùng cộng đồng. Chơi cùng thư viện của bạn.</h2>
+            <p>Sự kiện xuất hiện trong ứng dụng khi có một sự kiện đang diễn ra. Hiện có hai loại: một thử thách đọc toàn cầu và một trò chơi thẻ bài với chính những cuốn sách của bạn.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">Thử thách toàn cầu · 14 ngày</p>
+                <h3>Đại Đọc</h3>
+                <ul class="event-list">
+                <li>Số phút bấm giờ được tính, với sách, truyện tranh, manga và sách nói.</li>
+                <li>Một mục tiêu chung cho cả cộng đồng. Nếu vượt qua, vẫn tiếp tục tính.</li>
+                <li>Bảng xếp hạng trực tiếp với bí danh và Pagi của bạn làm ảnh đại diện.</li>
+                <li>Khi kết thúc, mỗi người tham gia nhận thẻ sự kiện ghi vị trí của bạn.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">Ví dụ minh họa</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>Mục tiêu cộng đồng</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">Bảng xếp hạng</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>bạn</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>Thư viện bị lãng quên</h3>
+                <ul class="event-list">
+                <li>Chọn 3 cuốn từ thư viện của bạn: mỗi cuốn trở thành một thẻ mang nguyên mẫu của thể loại đó.</li>
+                <li>Các lượt chơi 5 đến 10 phút để băng qua các kệ sách và đánh bại trùm cuối.</li>
+                <li>Bảng xếp hạng điểm: 3 lượt chơi tốt nhất mỗi ngày của bạn được tính.</li>
+                <li>Ít sách? Thư viện cho bạn mượn các tập, mỗi nguyên mẫu một tập.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">Ví dụ minh họa</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">Bạn cần từ 16 tuổi trở lên để tham gia. Nếu hiện không có sự kiện nào, ứng dụng sẽ cho bạn biết.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>Mới</h3>
                 <ul>
                     <li><strong>Sự kiện:</strong> thử thách đọc toàn cầu và Lecturameter Quest khi có sự kiện đang diễn ra</li>
+                    <li><strong>Tạm dừng:</strong> cất một cuốn sách sang bên một thời gian mà không làm hỏng thống kê của bạn</li>
                     <li><strong>Hai giao diện Pro mới:</strong> Vở và Rừng</li>
                     <li>Đồng hồ bấm giờ riêng cho từng giao diện</li>
                     <li>Pagi chọn giúp bạn một cuốn từ Muốn đọc</li>
@@ -902,6 +1030,7 @@
                     <strong>Mới</strong>
                     <ul>
                         <li><strong>Sự kiện:</strong> thử thách đọc toàn cầu và Lecturameter Quest khi có sự kiện đang diễn ra</li>
+                        <li><strong>Tạm dừng:</strong> cất một cuốn sách sang bên một thời gian mà không làm hỏng thống kê của bạn</li>
                         <li><strong>Hai giao diện Pro mới:</strong> Vở và Rừng</li>
                         <li>Đồng hồ bấm giờ riêng cho từng giao diện</li>
                         <li>Pagi chọn giúp bạn một cuốn từ Muốn đọc</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>Sản phẩm</h4>
                 <a href="#features">Tính năng</a>
+                <a href="#events">Sự kiện</a>
                 <a href="#pricing">Giá</a>
                 <a href="../precios-regionales.html">Giá theo khu vực</a>
                 <a href="#whatsnew">Ghi chú cập nhật</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">Chính sách bảo mật</a>
                 <a href="./terms/">Điều khoản dịch vụ</a>
+                <a href="./cookies/">Chính sách cookie</a>
+                <a href="#" data-lm-cookie-prefs>Tùy chọn cookie</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi vỗ tay cho bạn!", "Tỏa sáng nhé, ngôi sao nhỏ!", "Suỵt, mình đang đọc sách.", "Pagi đang dõi theo bạn…"], "pagi_angry": ["Úi! Đau quá!", "Đủ nhấp chuột rồi đấy!", "Grr, để mình yên.", "Không còn vui nữa đâu."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi vỗ tay cho bạn!", "Tỏa sáng nhé, ngôi sao nhỏ!", "Suỵt, mình đang đọc sách.", "Pagi đang dõi theo bạn…"], "pagi_angry": ["Úi! Đau quá!", "Đủ nhấp chuột rồi đấy!", "Grr, để mình yên.", "Không còn vui nữa đâu."], "consent_title": "Cookie và bộ nhớ", "consent_body": "Chúng tôi dùng một tiện ích của bên thứ ba (StartupBar) lưu dữ liệu trong trình duyệt của bạn và đếm lượt hiển thị. Nó chỉ tải nếu bạn chấp nhận. Giao diện, ngôn ngữ và thông báo đã đóng được lưu mà không hỏi, vì chính bạn đã chọn chúng.", "consent_accept": "Chấp nhận", "consent_reject": "Từ chối", "consent_policy": "Chính sách cookie", "consent_prefs": "Tùy chọn cookie"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

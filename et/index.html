@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · Lugemise jälgija ja raamatustatistika</title>
-    <meta name="description" content="Jälgi oma lugemisaega, lehekülgi, tempot ja edenemist privaatse Androidi ja iPhone'i lugemise jälgijaga. Kontota, reklaamideta. Impordi Goodreadsist ja StoryGraphist.">
-    <meta property="og:title" content="Lecturameter · Lugemise jälgija ja raamatustatistika">
-    <meta property="og:description" content="Jälgi oma lugemisaega, lehekülgi, tempot ja edenemist privaatse Androidi ja iPhone'i lugemise jälgijaga. Kontota, reklaamideta. Impordi Goodreadsist ja StoryGraphist.">
+    <title>Lecturameter: Lugemisjälgija · Raamatustatistika ja taimer</title>
+    <meta name="description" content="Lecturameter: Lugemisjälgija Androidile ja iPhone'ile. Mõõda lugemisaega, jälgi lehekülgi, tempot ja statistikat ning impordi Goodreadsist. Ilma kontota, ilma reklaamita.">
+    <meta property="og:title" content="Lecturameter: Lugemisjälgija · Raamatustatistika ja taimer">
+    <meta property="og:description" content="Lecturameter: Lugemisjälgija Androidile ja iPhone'ile. Mõõda lugemisaega, jälgi lehekülgi, tempot ja statistikat ning impordi Goodreadsist. Ilma kontota, ilma reklaamita.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/et/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · Lugemise jälgija ja raamatustatistika">
+    <meta property="og:image:alt" content="Lecturameter: Lugemisjälgija · Raamatustatistika ja taimer">
     <meta property="og:locale" content="et_EE">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · Lugemise jälgija ja raamatustatistika">
-    <meta name="twitter:description" content="Jälgi oma lugemisaega, lehekülgi, tempot ja edenemist privaatse Androidi ja iPhone'i lugemise jälgijaga. Kontota, reklaamideta. Impordi Goodreadsist ja StoryGraphist.">
+    <meta name="twitter:title" content="Lecturameter: Lugemisjälgija · Raamatustatistika ja taimer">
+    <meta name="twitter:description" content="Lecturameter: Lugemisjälgija Androidile ja iPhone'ile. Mõõda lugemisaega, jälgi lehekülgi, tempot ja statistikat ning impordi Goodreadsist. Ilma kontota, ilma reklaamita.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · Lugemise jälgija ja raamatustatistika">
+    <meta name="twitter:image:alt" content="Lecturameter: Lugemisjälgija · Raamatustatistika ja taimer">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: Lugemisjälgija",
       "url": "https://lecturameterapp.github.io/et/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "Korralda oma raamatukogu, võta lugemisseanssidel aega ja vaata üksikasjalikku statistikat oma Android- või iPhone-telefonis. Reklaamideta, täiesti privaatne.",
       "featureList": "Raamatukogu riiulitega, taimer ka väljalülitatud ekraaniga, seansside ajalugu, soojuskaart, aasta Wrapped, kohandatavad lugemisväljakutsed, Google Drive'i varukoopia, Goodreadsi CSV-import, enamasti võrguühenduseta",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "et",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/et/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/et/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Teemad</a></li>
+            <li><a href="#events">Sündmused</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">Paranduste märkmed</a></li>
             <li><a href="#history">Ajalugu</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Uus versioonis 3.9</span>
+            <h2 id="paused-title">Pane raamat mõneks ajaks kõrvale, ilma et statistika sassi läheks</h2>
+            <p>Pausil on eraldi olek, mis erineb olekust Loobutud. Raamat ootab seal, kus pooleli jätsid, ja pausil olnud päevi ei arvestata.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>Soovin lugeda</span>
+                <span>Loen</span>
+                <span class="is-paused">Pausil</span>
+                <span>Loobutud</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>Loen</span>
+                <span><i class="dot pause"></i>Pausil &middot; Pausil olnud päevi ei arvestata</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>Eraldi olek</h3><p>Pausil ei ole sama mis Loobutud. Sinu raamat ei lähe loobutud raamatute hunnikusse: see ootab ja naaseb, millal tahad.</p></div>
+            <div class="paused-card reveal-up"><h3>Olekust Loen või Loen uuesti</h3><p>Muuda olekut raamatu lehe sildilt või kiirmenüü valikuga „Muuda olekut“. Töötab raamatute, koomiksite, manga ja audioraamatute puhul.</p></div>
+            <div class="paused-card reveal-up"><h3>Pausil olnud päevi ei arvestata</h3><p>Ei lõpetamiseni jäänud päevades ega sinu lugemiskiiruses. Statistika jääb selliseks, nagu see oli, kui lugesid.</p></div>
+            <div class="paused-card reveal-up"><h3>Märge, kui soovid</h3><p>Kui paned pausile ja kui jätkad, võid kirja panna, miks. See on valikuline. Kõik jääb raamatu lehe jaotisse „Pausid“ koos ajalooga.</p></div>
+            <div class="paused-card reveal-up"><h3>Oma vahekaart</h3><p>Sinu raamatukogus, vahekaartide Soovin lugeda ja Loobutud vahel, leiad pausil olevad raamatud.</p></div>
+            <div class="paused-card reveal-up"><h3>Meeldetuletused ja iseenesest jätkamine</h3><p>Selle raamatu meeldetuletused peatatakse ja need naasevad, kui raamatuga jätkad. Kui mõõdad seansi või KOReaderist saabub üks, jätkub raamat ise, teatega ja valikuga Võta tagasi.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Jaga</span>
+            <h2 id="cards-title">Lecturameter ei ole sotsiaalvõrgustik. Sinu kaardid lähevad sinna, mida kasutad.</h2>
+            <p>Tee vertikaalseid 1080×1920 kaarte, mis sobivad story'dele, ja jaga neid seal, kus juba oled. Ilma kontota, ilma profiilita ja ilma jälgijateta.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · story formaat</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>Raamat</li>
+                <li>Raamat läbi loetud</li>
+                <li>Raamatu statistika</li>
+                <li>Statistika</li>
+                <li>Nädalakokkuvõte</li>
+                <li>Kuukokkuvõte</li>
+                <li>Väljakutsed</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>Sündmus</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>Vali, mida näidata</h3><p>Raamat, äsja lõpetatud raamat, sinu statistika, sinu nädal või kuu, väljakutse, Bingo, Wrapped või sündmus.</p></li>
+            <li class="share-step reveal-up"><h3>Salvestub jaotisse „Minu kaardid“</h3><p>Kõik, mida jagad, jääb jaotisse Minu kaardid, et saaksid seda uuesti kasutada, millal tahes.</p></li>
+            <li class="share-step reveal-up"><h3>Jaga seal, kus juba oled</h3><p>Telefoni jagamismenüü kaudu rakendusse, mida juba kasutad. Või salvesta galeriisse.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Sündmused</span>
+            <h2 id="events-title">Loe koos kogukonnaga. Mängi oma raamatukoguga.</h2>
+            <p>Sündmused ilmuvad rakendusse, kui mõni on aktiivne. Praegu on kahte liiki: ülemaailmne lugemisväljakutse ja kaardimäng sinu enda raamatutega.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">Ülemaailmne väljakutse · 14 päeva</p>
+                <h3>Suur Lugemine</h3>
+                <ul class="event-list">
+                <li>Taimeri minutid lähevad arvesse, raamatutes, koomiksites, manga's ja audioraamatutes.</li>
+                <li>Ühine eesmärk kogu kogukonnale. Kui see ületatakse, loetakse edasi.</li>
+                <li>Reaalajas edetabel pseudonüümi ja sinu Pagiga avatarina.</li>
+                <li>Lõppedes saab iga osaleja sündmuse kaardi oma kohaga.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">Illustreeriv näide</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>Kogukonna eesmärk</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">Edetabel</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>sina</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>Unustatud raamatukogu</h3>
+                <ul class="event-list">
+                <li>Vali oma raamatukogust 3 raamatut: igaühest saab kaart oma žanri arhetüübiga.</li>
+                <li>5–10-minutilised käigud, et ületada riiulid ja alistada lõppboss.</li>
+                <li>Punktide edetabel: arvesse lähevad sinu 3 parimat käiku päevas.</li>
+                <li>Raamatuid vähe? Raamatukogu laenab sulle köiteid, ühe arhetüübi kohta.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">Illustreeriv näide</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">Osalemiseks pead olema vähemalt 16-aastane. Kui praegu ei ole ühtegi sündmust aktiivne, ütleb rakendus seda.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>Uus</h3>
                 <ul>
                     <li><strong>Sündmused:</strong> ülemaailmsed lugemisväljakutsed ja Lecturameter Quest, kui mõni on aktiivne</li>
+                    <li><strong>Pausil:</strong> pane raamat mõneks ajaks kõrvale, ilma et statistika sassi läheks</li>
                     <li><strong>Kaks uut Pro teemat:</strong> Vihik ja Mets</li>
                     <li>Igale teemale oma taimeri kell</li>
                     <li>Pagi valib sulle raamatu loendist Soovin lugeda</li>
@@ -902,6 +1030,7 @@
                     <strong>Uus</strong>
                     <ul>
                         <li><strong>Sündmused:</strong> ülemaailmsed lugemisväljakutsed ja Lecturameter Quest, kui mõni on aktiivne</li>
+                        <li><strong>Pausil:</strong> pane raamat mõneks ajaks kõrvale, ilma et statistika sassi läheks</li>
                         <li><strong>Kaks uut Pro teemat:</strong> Vihik ja Mets</li>
                         <li>Igale teemale oma taimeri kell</li>
                         <li>Pagi valib sulle raamatu loendist Soovin lugeda</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>Toode</h4>
                 <a href="#features">Funktsioonid</a>
+                <a href="#events">Sündmused</a>
                 <a href="#pricing">Hinnad</a>
                 <a href="../precios-regionales.html">Piirkondlikud hinnad</a>
                 <a href="#whatsnew">Paranduste märkmed</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">Privaatsuspoliitika</a>
                 <a href="./terms/">Kasutustingimused</a>
+                <a href="./cookies/">Küpsiste põhimõtted</a>
+                <a href="#" data-lm-cookie-prefs>Küpsiste eelistused</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi plaksutab sulle!", "Sära, väike täheke!", "Šš, ma loen.", "Pagi jälgib…"], "pagi_angry": ["Ai! See tegi haiget!", "Aitab klõpsimisest!", "Grr, jäta mind rahule.", "Enam pole naljakas."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi plaksutab sulle!", "Sära, väike täheke!", "Šš, ma loen.", "Pagi jälgib…"], "pagi_angry": ["Ai! See tegi haiget!", "Aitab klõpsimisest!", "Grr, jäta mind rahule.", "Enam pole naljakas."], "consent_title": "Küpsised ja salvestus", "consent_body": "Kasutame kolmanda osapoole vidinat (StartupBar), mis salvestab andmeid sinu brauserisse ja loeb kuvamisi. See laadib ainult siis, kui nõustud. Teema, keel ja suletud teade salvestatakse küsimata, sest valisid need ise.", "consent_accept": "Nõustun", "consent_reject": "Keeldun", "consent_policy": "Küpsiste põhimõtted", "consent_prefs": "Küpsiste eelistused"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

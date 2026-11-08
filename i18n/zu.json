@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Iphrojekthi ezimele",
  "common.footer.home": "Ekhaya",
  "common.footer.privacy": "Ubumfihlo",
- "head.index.title": "Lecturameter · Isilandeli sokufunda nezibalo zezincwadi",
- "head.index.description": "Landelela isikhathi sakho sokufunda, amakhasi, isivinini nenqubekelaphambili ngesilandeli sokufunda se-Android ne-iPhone esiyimfihlo. Akukho akhawunti, azikho izikhangiso. Ngenisa ku-Goodreads nase-StoryGraph.",
+ "head.index.title": "Lecturameter: Isilandeli Sokufunda · Izibalo nesikhathi",
+ "head.index.description": "Lecturameter: Isilandeli Sokufunda se-Android ne-iPhone. Linganisa isikhathi sokufunda, landela amakhasi nezibalo, bese uthuthela ku-Goodreads. Akukho akhawunti nezikhangiso.",
  "head.index.ld_description": "Hlela ilabhulali yakho, linganisa isikhathi seziqeshana zokufunda ubone izibalo eziningiliziwe efonini yakho ye-Android noma i-iPhone. Azikho izikhangiso, ubumfihlo obuphelele.",
  "head.index.ld_featurelist": "Ilabhulali enamashalufu, isitophuwashi sisebenza isikrini sicimile, umlando weziqeshana, imephu yokushisa, i-Wrapped yonyaka, izinselelo zokufunda ezishintshekayo, ikhophi yesipele ye-Google Drive, ukungenisa i-CSV ye-Goodreads, kuyasebenza kakhulu ngaphandle kwenethiwekhi",
  "head.index.faq1_q": "Ngingayilethela ilabhulali yami evela kwezinye izinhlelo zokusebenza?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Imicimbi · Izingqikithi ezimbili ezintsha ze-Pro",
  "release.3_9.new": [
   "<strong>Imicimbi:</strong> izinselelo zokufunda zomhlaba wonke ne-Lecturameter Quest uma ikhona",
+  "<strong>Kumiswe okwesikhashana:</strong> beka incwadi eceleni isikhashana ngaphandle kokonakalisa izibalo zakho",
   "<strong>Izingqikithi ezimbili ezintsha ze-Pro:</strong> Incwadi kanye neIhlathi",
   "Iwashi lesitophuwashi eliyingqayizivele kuyo yonke ingqikithi",
   "Pagi ikukhethela incwadi kokuthi Ngifuna ukufunda",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Ngemibuzo ngale Migomo: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> noma <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Imigomo Yesevisi – Lecturameter",
  "legal.terms.meta_description": "Imigomo ecacile, akukho okuncane okubhalwe kancane.",
- "common.footer.drakehold": "Evela kumdali ofanayo: <strong>Drakehold</strong>, ingobo yakho yomuntu siqu azihlela yona. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Joyina uhlu lokulinda →</a>"
+ "common.footer.drakehold": "Evela kumdali ofanayo: <strong>Drakehold</strong>, ingobo yakho yomuntu siqu azihlela yona. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Joyina uhlu lokulinda →</a>",
+ "seo.store_name": "Lecturameter: Isilandeli Sokufunda",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Imicimbi",
+ "common.footer.events": "Imicimbi",
+ "common.footer.cookies": "Inqubomgomo yamakhukhi",
+ "common.footer.cookie_prefs": "Okukhethwayo kwamakhukhi",
+ "js.consent_title": "Amakhukhi nesitoreji",
+ "js.consent_body": "Sisebenzisa iwijethi yenkampani yesithathu (StartupBar) egcina idatha kusiphequluli sakho futhi ibale ukubukwa. Layisha kuphela uma wamukela. Itimu yakho, ulimi nesaziso osivalile kugcinwa singabuzwanga, ngoba ukhethe wena.",
+ "js.consent_accept": "Yamukela",
+ "js.consent_reject": "Yenqaba",
+ "js.consent_policy": "Inqubomgomo yamakhukhi",
+ "js.consent_prefs": "Okukhethwayo kwamakhukhi",
+ "home.paused.tag": "Okusha ku-3.9",
+ "home.paused.title": "Beka incwadi eceleni isikhashana ngaphandle kokonakalisa izibalo zakho",
+ "home.paused.sub": "Okumiswe okwesikhashana kuyisimo sakho, esihlukile ku-Ishiyiwe. Incwadi iyalinda lapho uyishiye khona, nezinsuku zokumiswa azibalwa.",
+ "home.paused.tab_pending": "Ngifuna ukufunda",
+ "home.paused.tab_reading": "Iyafunda",
+ "home.paused.tab_paused": "Kumiswe okwesikhashana",
+ "home.paused.tab_dropped": "Ishiyiwe",
+ "home.paused.timeline_caption": "Izinsuku zokumiswa azibalwa",
+ "home.paused.cards": [
+  {
+   "title": "Isimo sayo",
+   "text": "Okumiswe okwesikhashana akusikho Ishiyiwe. Incwadi yakho ayiyi esitaki sezincwadi osuzishiyile: iyalinda ibuye noma nini ufuna."
+  },
+  {
+   "title": "Kusuka ku-Iyafunda noma Ngifunda kabusha",
+   "text": "Shintsha isimo ngebheji ekhasini lencwadi noma nge-“Shintsha isimo” kumenyu esheshayo. Kusebenza ezincwadini, kumakhomiki, kuma-manga nasezincwadini zomsindo."
+  },
+  {
+   "title": "Izinsuku zokumiswa azibalwa",
+   "text": "Hhayi ezinsukwini zokuqeda futhi hhayi esivinini sakho sokufunda. Izibalo zakho zihlala njengoba zazinjalo lapho ufunda."
+  },
+  {
+   "title": "Inothi, uma uthanda",
+   "text": "Uma umisa nalapho uqhubeka, ungabhala isizathu. Akuphoqelekile. Konke kuhlala esigabeni se-“Ukumiswa” sekhasi lencwadi, nomlando wakho."
+  },
+  {
+   "title": "Ithebhu yayo",
+   "text": "Emtapweni wakho, phakathi kuka-Ngifuna ukufunda no-Ishiyiwe, uzothola izincwadi ozimisile."
+  },
+  {
+   "title": "Izikhumbuzo, nokuqhubeka ngokwazo",
+   "text": "Izikhumbuzo zaleyo ncwadi ziyamiswa zibuye uma uyiqhubeka. Uma unquma isikhathi senkathi noma kufika eyodwa evela ku-KOReader, incwadi iyaqhubeka yodwa, ngesaziso nokukhethwa kwe-Hlehlisa."
+  }
+ ],
+ "home.cards.tag": "Yabelana",
+ "home.cards.title": "I-Lecturameter akuyona inethiwekhi yezenhlalo. Amakhadi akho aya kuleyo oyisebenzisayo.",
+ "home.cards.sub": "Yenza amakhadi amile angu-1080×1920, alungele ama-story, uwabelane lapho usuvele ukhona. Akukho akhawunti, akukho iphrofayela, akukho abalandeli.",
+ "home.cards.chips": [
+  "Incwadi",
+  "Incwadi eqediwe",
+  "Izibalo zencwadi",
+  "Izibalo",
+  "Isifinyezo seviki",
+  "Isifinyezo senyanga",
+  "Izinselelo",
+  "Bingo",
+  "Wrapped",
+  "Isehlakalo",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Khetha ongakubonisa",
+   "text": "Incwadi, eyodwa osanda kuyiqeda, izibalo zakho, iviki noma inyanga yakho, inselelo, i-Bingo, i-Wrapped noma isehlakalo."
+  },
+  {
+   "title": "Igcinwa ku-“Amakhadi ami”",
+   "text": "Konke obelana ngakho kuhlala ku-Amakhadi ami, ukuze ukusebenzise futhi noma nini ufuna."
+  },
+  {
+   "title": "Yabelana lapho usuvele ukhona",
+   "text": "Ngemenyu yokwabelana yefoni yakho, uye kuhlelo osuvele usisebenzisa. Noma ugcine kugalari."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · ifomethi ye-story",
+ "home.events.tag": "Imicimbi",
+ "home.events.title": "Funda nomphakathi. Dlala ngomtapo wakho.",
+ "home.events.sub": "Imicimbi ivela kuhlelo uma omunye usebenza. Namuhla kunezinhlobo ezimbili: inselelo yokufunda yomhlaba wonke nomdlalo wamakhadi ngezincwadi zakho.",
+ "home.events.demo_label": "Isibonelo",
+ "home.events.read.kicker": "Inselelo yomhlaba · izinsuku ezingu-14",
+ "home.events.read.title": "Ukufunda Okukhulu",
+ "home.events.read.items": [
+  "Amaminithi esitophuwashi ayabalwa, ezincwadini, kumakhomiki, kuma-manga nasezincwadini zomsindo.",
+  "Inhloso ehlanganyelwe yawo wonke umphakathi. Uma yeqiwe, ukubala kuyaqhubeka.",
+  "Ibhodi lamaphuzu eliphilayo elinegama lokuzenzisa nePagi lakho njengesithombe.",
+  "Uma iphela, ikhadi lomcimbi elinendawo yakho, kumdlali ngamunye."
+ ],
+ "home.events.read.goal": "Inhloso yomphakathi",
+ "home.events.read.board": "Ibhodi lamaphuzu",
+ "home.events.read.you": "wena",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Umtapo Wolwazi Owakhohlwa",
+ "home.events.quest.items": [
+  "Khetha izincwadi ezi-3 emtatsheni wakho: ngasinye siba yikhadi elinohlobo lwalo lwenhlobo.",
+  "Imijikelezo yamaminithi angu-5 kuya ku-10 ukuweqa amashelufu nokunqoba inkosi yokugcina.",
+  "Ibhodi lamaphuzu: imijikelezo yakho emi-3 emihle kunazo zonke ngosuku ngalunye iyabalwa.",
+  "Zincane izincwadi? Umtapo uboleka imiqulu, owodwa ohlotsheni ngalunye."
+ ],
+ "home.events.note": "Kumele ube neminyaka engu-16 noma ngaphezulu ukuze ubambe iqhaza. Uma kungekho mcimbi osebenzayo manje, uhlelo luyakutshela.",
+ "cookies.title": "Inqubomgomo yamakhukhi · Lecturameter",
+ "cookies.meta_description": "Okugcinwa yiwebhusayithi ye-Lecturameter kusiphequluli sakho, ngani, nokuthi ushintsha kanjani ukukhetha kwakho. Akukho ukuhlaziya noma izikhangiso zethu.",
+ "cookies.h1": "🍪 Inqubomgomo yamakhukhi",
+ "cookies.tagline": "Okugcinwa kusiphequluli sakho uma uvakashela le webhusayithi, nokuthi kungani.",
+ "cookies.updated": "Kubuyekezwe ngo-Novemba 8, 2026",
+ "cookies.summary_title": "Ngamafuphi",
+ "cookies.summary": "Le webhusayithi ayisebenzisi amakhukhi ayo okuhlaziya noma ezikhangiso. Igcina kusiphequluli sakho okuthandayo (itimu, ulimi, isaziso esivaliwe) nokukhetha kwakho ngale nqubomgomo. Iwijethi yenkampani yesithathu, i-StartupBar, ilayisha kuphela uma ucindezela “Yamukela”.",
+ "cookies.h2_stored": "Okugcinwayo",
+ "cookies.p_stored": "Konke kusesitorejini sasendaweni sesiphequluli sakho (localStorage noma sessionStorage). Le webhusayithi ayibhali amakhukhi ayo e-HTTP.",
+ "cookies.h3_essential": "Okuthandayo kwakho (akudingi imvume)",
+ "cookies.p_essential": "Siyakugcina ngoba ukucele ngokusebenzisa iwebhusayithi. Akuhlonzi muntu futhi akuphumi esiphequluli sakho.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · ikhumbula ukuthi ukhethe itimu ekhanyayo noma emnyama · kuze kube uyasula.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · ikhumbula ulimi olukhethe kusikhethi · kuze kube uyasula.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · ikhumbula ukuthi uvale ibha ephezulu · kuze kube uyasula.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · igcina ukukhetha kwakho esazisweni samakhukhi, nenguqulo nedethi yaso · kuze kube uyashintsha noma uyasula.",
+ "cookies.h3_optional": "Kuphela uma wamukela",
+ "cookies.p_optional": "Uma ucindezela “Yamukela”, lezi zinto zenkampani yesithathu ziyalayisha. Uma ucindezela “Yenqaba”, akukho kulokhu okulayishwayo futhi iwebhusayithi isebenza ngendlela efanayo.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · iwijethi ene-iframe yenkampani yesithathu, egcina <code>startupbar:sid</code> ku-sessionStorage (kuze kube uvala ithebhu) futhi ithumela uphawu lokubukwa. Ikhasi ngalinye lewebhusayithi liyayilayisha.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · umtapo ekhasini lokuxhumana, otholakala ku-jsDelivr.",
+ "cookies.h2_never": "Esingakwenzi",
+ "cookies.p_never": "Asisebenzisi ukuhlaziya kwethu, izikhangiso, ukwenza amaphrofayela noma amakhukhi okulandela. Asithengisi nedatha. Iwebhusayithi ibanjwe ku-GitHub Pages, engabhala i-IP yakho uma ihambisa amakhasi ngokwenqubomgomo yayo.",
+ "cookies.h2_change": "Shintsha ukukhetha kwakho",
+ "cookies.p_change": "Ungakushintsha noma nini nge-“Okukhethwayo kwamakhukhi” ngaphansi kwanoma yikuphi ikhasi. Ungasula futhi idatha yale webhusayithi kuzilungiselelo zesiphequluli. Uma ubuyisa imvume, ikhasi lilayisha kabusha ngaphandle kwezinto zenkampani yesithathu.",
+ "cookies.h2_more": "Olunye ulwazi",
+ "cookies.p_more": "Inqubomgomo yobumfihlo yohlelo ichaza ukuthi iyiphi idatha i-Lecturameter eyiphatha efonini yakho. Uma unemibuzo, bhala ku: lecturameter.app@gmail.com."
 }

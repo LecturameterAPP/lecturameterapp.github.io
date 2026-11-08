@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · מעקב קריאה וסטטיסטיקות ספרים</title>
-    <meta name="description" content="עקוב אחרי זמן הקריאה, העמודים, הקצב וההתקדמות שלך עם מעקב קריאה פרטי ל-Android ול-iPhone. בלי חשבון, בלי פרסומות. ייבוא מ-Goodreads ומ-StoryGraph.">
-    <meta property="og:title" content="Lecturameter · מעקב קריאה וסטטיסטיקות ספרים">
-    <meta property="og:description" content="עקוב אחרי זמן הקריאה, העמודים, הקצב וההתקדמות שלך עם מעקב קריאה פרטי ל-Android ול-iPhone. בלי חשבון, בלי פרסומות. ייבוא מ-Goodreads ומ-StoryGraph.">
+    <title>Lecturameter: מעקב קריאה · סטטיסטיקות ספרים וטיימר</title>
+    <meta name="description" content="Lecturameter: מעקב קריאה ל-Android ול-iPhone. מדוד את זמן הקריאה, עקוב אחר עמודים, קצב וסטטיסטיקות, וייבא מ-Goodreads. בלי חשבון ובלי פרסומות.">
+    <meta property="og:title" content="Lecturameter: מעקב קריאה · סטטיסטיקות ספרים וטיימר">
+    <meta property="og:description" content="Lecturameter: מעקב קריאה ל-Android ול-iPhone. מדוד את זמן הקריאה, עקוב אחר עמודים, קצב וסטטיסטיקות, וייבא מ-Goodreads. בלי חשבון ובלי פרסומות.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/he/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · מעקב קריאה וסטטיסטיקות ספרים">
+    <meta property="og:image:alt" content="Lecturameter: מעקב קריאה · סטטיסטיקות ספרים וטיימר">
     <meta property="og:locale" content="he_IL">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · מעקב קריאה וסטטיסטיקות ספרים">
-    <meta name="twitter:description" content="עקוב אחרי זמן הקריאה, העמודים, הקצב וההתקדמות שלך עם מעקב קריאה פרטי ל-Android ול-iPhone. בלי חשבון, בלי פרסומות. ייבוא מ-Goodreads ומ-StoryGraph.">
+    <meta name="twitter:title" content="Lecturameter: מעקב קריאה · סטטיסטיקות ספרים וטיימר">
+    <meta name="twitter:description" content="Lecturameter: מעקב קריאה ל-Android ול-iPhone. מדוד את זמן הקריאה, עקוב אחר עמודים, קצב וסטטיסטיקות, וייבא מ-Goodreads. בלי חשבון ובלי פרסומות.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · מעקב קריאה וסטטיסטיקות ספרים">
+    <meta name="twitter:image:alt" content="Lecturameter: מעקב קריאה · סטטיסטיקות ספרים וטיימר">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: מעקב קריאה",
       "url": "https://lecturameterapp.github.io/he/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "ארגן את הספרייה שלך, מדוד סשנים של קריאה וצפה בסטטיסטיקות מפורטות בטלפון ה-Android או ה-iPhone שלך. בלי פרסומות, פרטי לגמרי.",
       "featureList": "ספרייה עם מדפים, שעון עצר גם כשהמסך כבוי, היסטוריית סשנים, מפת חום, Wrapped שנתי, אתגרי קריאה מותאמים אישית, גיבוי ב-Google Drive, ייבוא CSV מ-Goodreads, עובדת ברובה ללא חיבור",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "he",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/he/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/he/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">ערכות נושא</a></li>
+            <li><a href="#events">אירועים</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">הערות גרסה</a></li>
             <li><a href="#history">היסטוריה</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">חדש ב-3.9</span>
+            <h2 id="paused-title">הנח ספר בצד לזמן מה בלי לקלקל את הסטטיסטיקות שלך</h2>
+            <p>"מושהה" הוא מצב נפרד, שונה מ"ננטש". הספר מחכה איפה שהפסקת, וימי ההשהיה לא נספרים.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>רוצה לקרוא</span>
+                <span>קורא כעת</span>
+                <span class="is-paused">מושהה</span>
+                <span>ננטש</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>קורא כעת</span>
+                <span><i class="dot pause"></i>מושהה &middot; ימי ההשהיה לא נספרים</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>מצב נפרד</h3><p>"מושהה" אינו "ננטש". הספר שלך לא עובר לערימת הספרים שוויתרת עליהם: הוא ממתין וחוזר מתי שתרצה.</p></div>
+            <div class="paused-card reveal-up"><h3>מ"קורא כעת" או "קריאה חוזרת"</h3><p>שנה את המצב מהתג בעמוד הספר או עם "שנה מצב" בתפריט המהיר. זה עובד עבור ספרים, קומיקס, מנגה וספרי שמע.</p></div>
+            <div class="paused-card reveal-up"><h3>ימי ההשהיה לא נספרים</h3><p>לא בימים עד הסיום ולא במהירות הקריאה שלך. הסטטיסטיקות נשארות כפי שהיו כשקראת.</p></div>
+            <div class="paused-card reveal-up"><h3>הערה, אם רוצים</h3><p>כשאתה משהה וכשאתה ממשיך, אפשר לרשום למה. זה אופציונלי. הכול נשאר בקטע "השהיות" בעמוד הספר, עם ההיסטוריה שלו.</p></div>
+            <div class="paused-card reveal-up"><h3>לשונית משלו</h3><p>בספרייה שלך, בין "רוצה לקרוא" ל"ננטש", תמצא את הספרים המושהים.</p></div>
+            <div class="paused-card reveal-up"><h3>תזכורות והמשך אוטומטי</h3><p>התזכורות של אותו ספר מושהות וחוזרות כשתמשיך בו. אם תמדוד סשן או שיגיע אחד מ-KOReader, הספר ממשיך מעצמו, עם הודעה ואפשרות ביטול.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">שיתוף</span>
+            <h2 id="cards-title">Lecturameter אינה רשת חברתית. הכרטיסים שלך הולכים לרשת שבה אתה משתמש.</h2>
+            <p>צור כרטיסים אנכיים בגודל 1080×1920, מוכנים לסטוריז, ושתף אותם איפה שאתה כבר נמצא. בלי חשבון, בלי פרופיל ובלי עוקבים.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · פורמט סטורי</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>ספר</li>
+                <li>ספר שהסתיים</li>
+                <li>סטטיסטיקות הספר</li>
+                <li>סטטיסטיקות</li>
+                <li>סיכום שבועי</li>
+                <li>סיכום חודשי</li>
+                <li>אתגרים</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>אירוע</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>בחר מה להציג</h3><p>ספר, ספר שזה עתה סיימת, הסטטיסטיקות שלך, השבוע או החודש שלך, אתגר, Bingo, Wrapped או אירוע.</p></li>
+            <li class="share-step reveal-up"><h3>נשמר ב"הכרטיסים שלי"</h3><p>כל מה ששיתפת נשאר ב"הכרטיסים שלי", כך שאפשר להשתמש בו שוב מתי שתרצה.</p></li>
+            <li class="share-step reveal-up"><h3>שתף איפה שאתה כבר נמצא</h3><p>דרך תפריט השיתוף של הטלפון, אל האפליקציה שבה אתה כבר משתמש. או שמור בגלריה.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">אירועים</span>
+            <h2 id="events-title">קרא עם הקהילה. שחק עם הספרייה שלך.</h2>
+            <p>אירועים מופיעים באפליקציה כשאחד מהם פעיל. כיום יש שני סוגים: אתגר קריאה עולמי ומשחק קלפים עם הספרים שלך.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">אתגר עולמי · 14 ימים</p>
+                <h3>הקריאה הגדולה</h3>
+                <ul class="event-list">
+                <li>דקות הטיימר נספרות, בספרים, קומיקס, מנגה וספרי שמע.</li>
+                <li>יעד משותף לכל הקהילה. אם עוברים אותו, הספירה נמשכת.</li>
+                <li>טבלת דירוג חיה עם כינוי בדוי וה-Pagi שלך כאווטאר.</li>
+                <li>בסיום, כרטיס האירוע עם המקום שלך, לכל משתתף.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">דוגמה להמחשה</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>יעד הקהילה</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">טבלת דירוג</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>אתה</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>הספרייה הנשכחת</h3>
+                <ul class="event-list">
+                <li>בחר 3 ספרים מהספרייה שלך: כל אחד הופך לכרטיס עם הארכיטיפ של הז'אנר שלו.</li>
+                <li>ריצות של 5 עד 10 דקות כדי לחצות את המדפים ולנצח את הבוס האחרון.</li>
+                <li>טבלת נקודות: 3 הריצות הטובות שלך בכל יום נספרות.</li>
+                <li>חסרים ספרים? הספרייה משאילה לך כרכים, אחד לכל ארכיטיפ.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">דוגמה להמחשה</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">כדי להשתתף צריך להיות בן 16 ומעלה. אם אין כרגע אירוע פעיל, האפליקציה תגיד לך.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>חדש</h3>
                 <ul>
                     <li><strong>אירועים:</strong> אתגרי קריאה עולמיים ו-Lecturameter Quest כשיש אחד פעיל</li>
+                    <li><strong>מושהה:</strong> הנח ספר בצד לזמן מה בלי לקלקל את הסטטיסטיקות שלך</li>
                     <li><strong>שתי ערכות נושא חדשות ל-Pro:</strong> מחברת וחורשה</li>
                     <li>שעון עצר משלו לכל ערכת נושא</li>
                     <li>Pagi בוחר לך ספר מתוך רוצה לקרוא</li>
@@ -902,6 +1030,7 @@
                     <strong>חדש</strong>
                     <ul>
                         <li><strong>אירועים:</strong> אתגרי קריאה עולמיים ו-Lecturameter Quest כשיש אחד פעיל</li>
+                        <li><strong>מושהה:</strong> הנח ספר בצד לזמן מה בלי לקלקל את הסטטיסטיקות שלך</li>
                         <li><strong>שתי ערכות נושא חדשות ל-Pro:</strong> מחברת וחורשה</li>
                         <li>שעון עצר משלו לכל ערכת נושא</li>
                         <li>Pagi בוחר לך ספר מתוך רוצה לקרוא</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>מוצר</h4>
                 <a href="#features">תכונות</a>
+                <a href="#events">אירועים</a>
                 <a href="#pricing">מחירים</a>
                 <a href="../precios-regionales.html">מחירים לפי אזור</a>
                 <a href="#whatsnew">הערות גרסה</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">מדיניות פרטיות</a>
                 <a href="./terms/">תנאי שימוש</a>
+                <a href="./cookies/">מדיניות קובצי Cookie</a>
+                <a href="#" data-lm-cookie-prefs>העדפות קובצי Cookie</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi מוחא לך כפיים!", "תזרח, כוכב קטן!", "ששש, אני קורא.", "Pagi מסתכל עליך…"], "pagi_angry": ["איי! זה כאב!", "מספיק עם הקליקים!", "גרר, עזוב אותי.", "זה כבר לא מצחיק."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi מוחא לך כפיים!", "תזרח, כוכב קטן!", "ששש, אני קורא.", "Pagi מסתכל עליך…"], "pagi_angry": ["איי! זה כאב!", "מספיק עם הקליקים!", "גרר, עזוב אותי.", "זה כבר לא מצחיק."], "consent_title": "קובצי Cookie ואחסון", "consent_body": "אנחנו משתמשים בווידג'ט של צד שלישי (StartupBar) ששומר נתונים בדפדפן שלך וסופר חשיפות. הוא נטען רק אם תאשר. ערכת הנושא, השפה וההודעה שסגרת נשמרות בלי לשאול, כי אתה בחרת אותן.", "consent_accept": "אישור", "consent_reject": "דחייה", "consent_policy": "מדיניות קובצי Cookie", "consent_prefs": "העדפות קובצי Cookie"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

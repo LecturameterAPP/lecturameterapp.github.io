@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · Praćenje čitanja i statistika knjiga</title>
-    <meta name="description" content="Prati vrijeme čitanja, stranice, tempo i napredak uz privatnu aplikaciju za praćenje čitanja na Androidu i iPhoneu. Bez računa, bez oglasa. Uvoz iz Goodreadsa i StoryGrapha.">
-    <meta property="og:title" content="Lecturameter · Praćenje čitanja i statistika knjiga">
-    <meta property="og:description" content="Prati vrijeme čitanja, stranice, tempo i napredak uz privatnu aplikaciju za praćenje čitanja na Androidu i iPhoneu. Bez računa, bez oglasa. Uvoz iz Goodreadsa i StoryGrapha.">
+    <title>Lecturameter: Dnevnik čitanja · Statistika i štoperica</title>
+    <meta name="description" content="Lecturameter: Dnevnik čitanja za Android i iPhone. Mjeri vrijeme čitanja, prati stranice, tempo i statistiku te uvezi iz Goodreadsa. Bez računa i bez oglasa.">
+    <meta property="og:title" content="Lecturameter: Dnevnik čitanja · Statistika i štoperica">
+    <meta property="og:description" content="Lecturameter: Dnevnik čitanja za Android i iPhone. Mjeri vrijeme čitanja, prati stranice, tempo i statistiku te uvezi iz Goodreadsa. Bez računa i bez oglasa.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/hr/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · Praćenje čitanja i statistika knjiga">
+    <meta property="og:image:alt" content="Lecturameter: Dnevnik čitanja · Statistika i štoperica">
     <meta property="og:locale" content="hr_HR">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · Praćenje čitanja i statistika knjiga">
-    <meta name="twitter:description" content="Prati vrijeme čitanja, stranice, tempo i napredak uz privatnu aplikaciju za praćenje čitanja na Androidu i iPhoneu. Bez računa, bez oglasa. Uvoz iz Goodreadsa i StoryGrapha.">
+    <meta name="twitter:title" content="Lecturameter: Dnevnik čitanja · Statistika i štoperica">
+    <meta name="twitter:description" content="Lecturameter: Dnevnik čitanja za Android i iPhone. Mjeri vrijeme čitanja, prati stranice, tempo i statistiku te uvezi iz Goodreadsa. Bez računa i bez oglasa.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · Praćenje čitanja i statistika knjiga">
+    <meta name="twitter:image:alt" content="Lecturameter: Dnevnik čitanja · Statistika i štoperica">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: Dnevnik čitanja",
       "url": "https://lecturameterapp.github.io/hr/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "Organiziraj knjižnicu, mjeri vrijeme sesija čitanja i pregledaj detaljnu statistiku na svom Android ili iPhone mobitelu. Bez oglasa, potpuno privatno.",
       "featureList": "Knjižnica s policama, štoperica s ugašenim zaslonom, povijest sesija, toplinska karta, godišnji Wrapped, prilagodljivi izazovi čitanja, sigurnosna kopija na Google Driveu, uvoz Goodreads CSV-a, većinom izvan mreže",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "hr",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/hr/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/hr/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Teme</a></li>
+            <li><a href="#events">Događaji</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">Napomene uz ažuriranje</a></li>
             <li><a href="#history">Povijest</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Novo u 3.9</span>
+            <h2 id="paused-title">Odloži knjigu na neko vrijeme, a da ti ne pokvari statistiku</h2>
+            <p>Pauzirano je zasebno stanje, različito od Napušteno. Knjiga čeka gdje si stao, a dani pauze se ne računaju.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>Želim čitati</span>
+                <span>Čitanje</span>
+                <span class="is-paused">Pauzirano</span>
+                <span>Napušteno</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>Čitanje</span>
+                <span><i class="dot pause"></i>Pauzirano &middot; Dani pauze se ne računaju</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>Zasebno stanje</h3><p>Pauzirano nije Napušteno. Tvoja knjiga ne završava u hrpi knjiga koje si odustao čitati: čeka i vraća se kad god želiš.</p></div>
+            <div class="paused-card reveal-up"><h3>Iz Čitanja ili Ponovnog čitanja</h3><p>Promijeni status iz oznake na stranici knjige ili s „Promijeni status“ u brzom izborniku. Radi za knjige, stripove, mangu i audioknjige.</p></div>
+            <div class="paused-card reveal-up"><h3>Dani pauze se ne računaju</h3><p>Ni u danima do završetka ni u tvojoj brzini čitanja. Statistika ostaje ona iz vremena kad si čitao.</p></div>
+            <div class="paused-card reveal-up"><h3>Bilješka, ako želiš</h3><p>Kad pauziraš i kad nastaviš, možeš zapisati zašto. Nije obavezno. Sve ostaje u odjeljku „Pauze“ na stranici knjige, s poviješću.</p></div>
+            <div class="paused-card reveal-up"><h3>Zasebna kartica</h3><p>U svojoj knjižnici, između Želim čitati i Napušteno, naći ćeš pauzirane knjige.</p></div>
+            <div class="paused-card reveal-up"><h3>Podsjetnici i samostalan nastavak</h3><p>Podsjetnici te knjige se pauziraju i vraćaju kad je nastaviš. Ako izmjeriš sesiju ili stigne jedna iz KOReadera, knjiga se nastavlja sama, uz obavijest i opciju Poništi.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Podijeli</span>
+            <h2 id="cards-title">Lecturameter nije društvena mreža. Tvoje kartice idu na onu koju koristiš.</h2>
+            <p>Izradi okomite kartice 1080×1920, spremne za storyje, i podijeli ih tamo gdje već jesi. Bez računa, bez profila i bez pratitelja.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · format storyja</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>Knjiga</li>
+                <li>Završena knjiga</li>
+                <li>Statistika knjige</li>
+                <li>Statistika</li>
+                <li>Tjedni pregled</li>
+                <li>Mjesečni pregled</li>
+                <li>Izazovi</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>Događaj</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>Odaberi što ćeš prikazati</h3><p>Knjigu, upravo završenu knjigu, svoju statistiku, svoj tjedan ili mjesec, izazov, Bingo, Wrapped ili događaj.</p></li>
+            <li class="share-step reveal-up"><h3>Sprema se u „Moje kartice“</h3><p>Sve što podijeliš ostaje u Mojim karticama, pa ga možeš ponovno koristiti kad god želiš.</p></li>
+            <li class="share-step reveal-up"><h3>Podijeli je tamo gdje već jesi</h3><p>Preko izbornika za dijeljenje na telefonu, u aplikaciju koju već koristiš. Ili je spremi u galeriju.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Događaji</span>
+            <h2 id="events-title">Čitaj sa zajednicom. Igraj se sa svojom knjižnicom.</h2>
+            <p>Događaji se pojavljuju u aplikaciji kad je neki aktivan. Danas postoje dvije vrste: globalni izazov čitanja i kartaška igra s tvojim knjigama.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">Globalni izazov · 14 dana</p>
+                <h3>Veliko čitanje</h3>
+                <ul class="event-list">
+                <li>Računaju se minute štoperice, u knjigama, stripovima, mangi i audioknjigama.</li>
+                <li>Zajednički cilj za cijelu zajednicu. Ako se nadmaši, i dalje se računa.</li>
+                <li>Ljestvica uživo s pseudonimom i tvojim Pagijem kao avatarom.</li>
+                <li>Kad završi, kartica događaja s tvojim plasmanom, za svakog sudionika.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">Ilustrativni primjer</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>Cilj zajednice</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">Ljestvica</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>ti</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>Zaboravljena knjižnica</h3>
+                <ul class="event-list">
+                <li>Odaberi 3 knjige iz svoje knjižnice: svaka postaje kartica s arhetipom svog žanra.</li>
+                <li>Runde od 5 do 10 minuta da prijeđeš police i pobijediš završnog bossa.</li>
+                <li>Ljestvica bodova: računaju se tvoje 3 najbolje runde svakog dana.</li>
+                <li>Nemaš dovoljno knjiga? Knjižnica ti posuđuje svezke, po jedan za svaki arhetip.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">Ilustrativni primjer</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">Za sudjelovanje moraš imati 16 ili više godina. Ako trenutačno nema aktivnog događaja, aplikacija ti to kaže.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>Novo</h3>
                 <ul>
                     <li><strong>Događaji:</strong> globalni izazovi čitanja i Lecturameter Quest kada je neki aktivan</li>
+                    <li><strong>Pauzirano:</strong> odloži knjigu na neko vrijeme, a da ti ne pokvari statistiku</li>
                     <li><strong>Dvije nove Pro teme:</strong> Bilježnica i Šumarak</li>
                     <li>Poseban sat štoperice za svaku temu</li>
                     <li>Pagi ti bira knjigu iz Želim čitati</li>
@@ -902,6 +1030,7 @@
                     <strong>Novo</strong>
                     <ul>
                         <li><strong>Događaji:</strong> globalni izazovi čitanja i Lecturameter Quest kada je neki aktivan</li>
+                        <li><strong>Pauzirano:</strong> odloži knjigu na neko vrijeme, a da ti ne pokvari statistiku</li>
                         <li><strong>Dvije nove Pro teme:</strong> Bilježnica i Šumarak</li>
                         <li>Poseban sat štoperice za svaku temu</li>
                         <li>Pagi ti bira knjigu iz Želim čitati</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>Proizvod</h4>
                 <a href="#features">Značajke</a>
+                <a href="#events">Događaji</a>
                 <a href="#pricing">Cijene</a>
                 <a href="../precios-regionales.html">Regionalne cijene</a>
                 <a href="#whatsnew">Napomene uz ažuriranje</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">Pravila o privatnosti</a>
                 <a href="./terms/">Uvjeti korištenja</a>
+                <a href="./cookies/">Pravila o kolačićima</a>
+                <a href="#" data-lm-cookie-prefs>Postavke kolačića</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi ti plješće!", "Sjaj, zvjezdice!", "Pssst, čitam.", "Pagi te gleda…"], "pagi_angry": ["Joj! To je boljelo!", "Dosta klikanja!", "Grr, pusti me na miru.", "Više nije smiješno."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi ti plješće!", "Sjaj, zvjezdice!", "Pssst, čitam.", "Pagi te gleda…"], "pagi_angry": ["Joj! To je boljelo!", "Dosta klikanja!", "Grr, pusti me na miru.", "Više nije smiješno."], "consent_title": "Kolačići i pohrana", "consent_body": "Koristimo widget treće strane (StartupBar) koji sprema podatke u tvoj preglednik i broji prikaze. Učitava se samo ako prihvatiš. Tvoja tema, jezik i zatvorena obavijest spremaju se bez pitanja jer si ih sam odabrao.", "consent_accept": "Prihvati", "consent_reject": "Odbij", "consent_policy": "Pravila o kolačićima", "consent_prefs": "Postavke kolačića"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

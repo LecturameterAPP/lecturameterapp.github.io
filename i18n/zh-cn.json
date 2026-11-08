@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; 独立项目",
  "common.footer.home": "首页",
  "common.footer.privacy": "隐私",
- "head.index.title": "Lecturameter — 阅读记录与图书统计",
- "head.index.description": "用私密的 Android 和 iPhone 阅读记录应用追踪你的阅读时间、页数、节奏和进度。无需账号，无广告。可从 Goodreads 和 StoryGraph 导入。",
+ "head.index.title": "Lecturameter: 读书记录 · 统计与计时器",
+ "head.index.description": "Lecturameter: 读书记录，支持 Android 和 iPhone。为阅读计时，记录页数、速度和统计，还能从 Goodreads 导入。无需账号，没有广告。",
  "head.index.ld_description": "在你的 Android 或 iPhone 手机上整理书库、为阅读计时并查看详细统计。无广告，完全私密。",
  "head.index.ld_featurelist": "带书架的书库、熄屏也能运行的计时器、阅读会话历史记录、热力图、年度 Wrapped、可自定义的阅读挑战、Google Drive 备份、Goodreads CSV 导入、大部分功能可离线使用",
  "head.index.faq1_q": "我可以把其他应用里的书库带过来吗？",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "活动 · 两个新的 Pro 主题",
  "release.3_9.new": [
   "<strong>活动：</strong> 全球阅读挑战，以及进行中的 Lecturameter Quest",
+  "<strong>已暂停：</strong>把一本书先放一放，又不会弄乱你的统计",
   "<strong>两个新的 Pro 主题：</strong> 笔记本和森林",
   "每个主题都有专属的计时器时钟",
   "Pagi 从“想读”中为你挑一本书",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "如对这些条款有任何疑问：<a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> 或 <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "服务条款 – Lecturameter",
  "legal.terms.meta_description": "条款清晰，没有隐藏的小字。",
- "common.footer.drakehold": "来自同一位作者： <strong>Drakehold</strong>， 会自动整理的个人档案。 <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">加入候补名单 →</a>"
+ "common.footer.drakehold": "来自同一位作者： <strong>Drakehold</strong>， 会自动整理的个人档案。 <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">加入候补名单 →</a>",
+ "seo.store_name": "Lecturameter: 读书记录",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "活动",
+ "common.footer.events": "活动",
+ "common.footer.cookies": "Cookie 政策",
+ "common.footer.cookie_prefs": "Cookie 偏好设置",
+ "js.consent_title": "Cookie 与存储",
+ "js.consent_body": "我们使用第三方小组件（StartupBar），它会在你的浏览器中存储数据并统计展示次数。只有你接受后才会加载。你的主题、语言和已关闭的提示会直接保存，不再询问，因为这些是你自己选的。",
+ "js.consent_accept": "接受",
+ "js.consent_reject": "拒绝",
+ "js.consent_policy": "Cookie 政策",
+ "js.consent_prefs": "Cookie 偏好设置",
+ "home.paused.tag": "3.9 新功能",
+ "home.paused.title": "把一本书先放一放，又不会弄乱你的统计",
+ "home.paused.sub": "“已暂停”是独立的状态，和“已放弃”不同。书会停在你放下的地方，暂停的天数不计入。",
+ "home.paused.tab_pending": "想读",
+ "home.paused.tab_reading": "阅读中",
+ "home.paused.tab_paused": "已暂停",
+ "home.paused.tab_dropped": "已放弃",
+ "home.paused.timeline_caption": "暂停的天数不计入",
+ "home.paused.cards": [
+  {
+   "title": "独立的状态",
+   "text": "“已暂停”不是“已放弃”。你的书不会进入放弃的那一堆：它只是搁置，想读时随时回来。"
+  },
+  {
+   "title": "从“阅读中”或“重读中”",
+   "text": "在书籍页面的标签上，或通过快捷菜单里的“更改状态”来切换。适用于图书、漫画、漫画书和有声书。"
+  },
+  {
+   "title": "暂停的天数不计入",
+   "text": "既不算进读完所需的天数，也不影响你的阅读速度。统计保持你阅读时的样子。"
+  },
+  {
+   "title": "想写就写一条备注",
+   "text": "暂停和恢复时，可以记下原因。这是可选的。所有内容连同历史记录都保存在书籍页面的“暂停记录”中。"
+  },
+  {
+   "title": "专属标签页",
+   "text": "在你的书库里，“想读”和“已放弃”之间，就是你暂停的书。"
+  },
+  {
+   "title": "提醒，以及自动恢复",
+   "text": "这本书的提醒会暂停，恢复后再回来。如果你为一次阅读计时，或有一条记录从 KOReader 传来，这本书会自动恢复，并给出通知和“撤销”选项。"
+  }
+ ],
+ "home.cards.tag": "分享",
+ "home.cards.title": "Lecturameter 不是社交网络。你的卡片会发到你正在用的那个平台。",
+ "home.cards.sub": "制作适合 Story 的 1080×1920 竖版卡片，直接分享到你已经在用的地方。无需账号，没有主页，没有粉丝。",
+ "home.cards.chips": [
+  "书籍",
+  "读完的书",
+  "书籍统计",
+  "统计",
+  "周度总结",
+  "月度总结",
+  "挑战",
+  "Bingo",
+  "Wrapped",
+  "活动",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "选择要展示的内容",
+   "text": "一本书、刚读完的书、你的统计、你的一周或一个月、一项挑战、Bingo、Wrapped 或一场活动。"
+  },
+  {
+   "title": "保存在“我的卡片”",
+   "text": "你分享的所有内容都留在我的卡片里，想用时随时可以再用。"
+  },
+  {
+   "title": "分享到你已经在用的地方",
+   "text": "通过手机的分享菜单发到你常用的应用，也可以保存到相册。"
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · Story 格式",
+ "home.events.tag": "活动",
+ "home.events.title": "和社区一起读。用你的书库来玩。",
+ "home.events.sub": "有活动进行时，它会出现在应用里。目前有两种：全球阅读挑战，以及用你自己的书玩的卡牌游戏。",
+ "home.events.demo_label": "示例",
+ "home.events.read.kicker": "全球挑战 · 14 天",
+ "home.events.read.title": "大阅读",
+ "home.events.read.items": [
+  "计时器的分钟数会计入，图书、漫画、漫画书和有声书都算。",
+  "全社区共同的目标。即使超额，也会继续累计。",
+  "使用化名的实时排行榜，头像是你的 Pagi。",
+  "结束后，每位参与者都会收到带有你名次的活动卡片。"
+ ],
+ "home.events.read.goal": "社区目标",
+ "home.events.read.board": "排行榜",
+ "home.events.read.you": "你",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "被遗忘的图书馆",
+ "home.events.quest.items": [
+  "从你的书库挑选 3 本书：每本都会变成一张带有所属类型原型的卡牌。",
+  "每局 5 到 10 分钟，穿过书架，击败最终首领。",
+  "积分排行榜：每天计入你最好的 3 局。",
+  "书不够？图书馆会借给你几卷，每种原型一卷。"
+ ],
+ "home.events.note": "需年满 16 岁才能参加。如果当前没有进行中的活动，应用会告诉你。",
+ "cookies.title": "Cookie 政策 · Lecturameter",
+ "cookies.meta_description": "Lecturameter 网站会在你的浏览器中存储什么、用来做什么，以及如何更改你的选择。没有自己的分析或广告。",
+ "cookies.h1": "🍪 Cookie 政策",
+ "cookies.tagline": "你访问本网站时，浏览器里会存储什么，以及原因。",
+ "cookies.updated": "更新于 2026 年 11 月 8 日",
+ "cookies.summary_title": "简而言之",
+ "cookies.summary": "本网站不使用自己的分析或广告 Cookie。它会在你的浏览器中存储你的偏好（主题、语言、已关闭的提示）以及你对本政策的选择。第三方小组件 StartupBar 只有在你点击“接受”后才会加载。",
+ "cookies.h2_stored": "存储的内容",
+ "cookies.p_stored": "所有内容都保存在浏览器的本地存储中（localStorage 或 sessionStorage）。本网站不会写入自己的 HTTP Cookie。",
+ "cookies.h3_essential": "你的偏好（无需同意）",
+ "cookies.p_essential": "我们存储这些，是因为你在使用网站时提出了要求。它们不会识别任何人，也不会离开你的浏览器。",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · 记住你选择的是浅色还是深色主题 · 直到你清除。",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · 记住你在选择器中选的语言 · 直到你清除。",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · 记住你已关闭顶部栏 · 直到你清除。",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · 连同版本和日期，保存你在 Cookie 提示中的选择 · 直到你更改或清除。",
+ "cookies.h3_optional": "仅在你接受时",
+ "cookies.p_optional": "点击“接受”后，会加载这些第三方内容。点击“拒绝”后，这些都不会加载，网站照常运行。",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · 带第三方 iframe 的小组件，会在 sessionStorage 中存储 <code>startupbar:sid</code>（直到你关闭标签页），并发送展示信号。网站每个页面都会加载它。",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · 联系页面上的一个库，由 jsDelivr 提供。",
+ "cookies.h2_never": "我们不做的事",
+ "cookies.p_never": "我们不使用自己的分析、广告、用户画像或跟踪 Cookie，也不出售数据。网站托管在 GitHub Pages 上，它在提供页面时可能按其自身政策记录你的 IP。",
+ "cookies.h2_change": "更改你的选择",
+ "cookies.p_change": "你可以随时通过任意页面页脚的“Cookie 偏好设置”更改。也可以在浏览器设置中清除本网站的数据。若撤回同意，页面会重新加载，不再包含第三方内容。",
+ "cookies.h2_more": "更多信息",
+ "cookies.p_more": "应用的隐私政策说明了 Lecturameter 在你手机上处理哪些数据。如有疑问，请写信至：lecturameter.app@gmail.com."
 }

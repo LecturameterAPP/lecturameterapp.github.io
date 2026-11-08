@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · Lukuseuranta ja kirjatilastot</title>
-    <meta name="description" content="Seuraa lukuaikaa, sivuja, tahtia ja edistymistä yksityisellä Android- ja iPhone-lukuseurannalla. Ei tiliä, ei mainoksia. Tuo kirjat Goodreadsista ja StoryGraphista.">
-    <meta property="og:title" content="Lecturameter · Lukuseuranta ja kirjatilastot">
-    <meta property="og:description" content="Seuraa lukuaikaa, sivuja, tahtia ja edistymistä yksityisellä Android- ja iPhone-lukuseurannalla. Ei tiliä, ei mainoksia. Tuo kirjat Goodreadsista ja StoryGraphista.">
+    <title>Lecturameter: Lukupäiväkirja · Kirjatilastot ja ajastin</title>
+    <meta name="description" content="Lecturameter: Lukupäiväkirja Androidille ja iPhonelle. Ajasta lukemisesi, seuraa sivuja, tahtia ja tilastoja ja tuo tiedot Goodreadsista. Ei tiliä, ei mainoksia.">
+    <meta property="og:title" content="Lecturameter: Lukupäiväkirja · Kirjatilastot ja ajastin">
+    <meta property="og:description" content="Lecturameter: Lukupäiväkirja Androidille ja iPhonelle. Ajasta lukemisesi, seuraa sivuja, tahtia ja tilastoja ja tuo tiedot Goodreadsista. Ei tiliä, ei mainoksia.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/fi/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · Lukuseuranta ja kirjatilastot">
+    <meta property="og:image:alt" content="Lecturameter: Lukupäiväkirja · Kirjatilastot ja ajastin">
     <meta property="og:locale" content="fi_FI">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · Lukuseuranta ja kirjatilastot">
-    <meta name="twitter:description" content="Seuraa lukuaikaa, sivuja, tahtia ja edistymistä yksityisellä Android- ja iPhone-lukuseurannalla. Ei tiliä, ei mainoksia. Tuo kirjat Goodreadsista ja StoryGraphista.">
+    <meta name="twitter:title" content="Lecturameter: Lukupäiväkirja · Kirjatilastot ja ajastin">
+    <meta name="twitter:description" content="Lecturameter: Lukupäiväkirja Androidille ja iPhonelle. Ajasta lukemisesi, seuraa sivuja, tahtia ja tilastoja ja tuo tiedot Goodreadsista. Ei tiliä, ei mainoksia.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · Lukuseuranta ja kirjatilastot">
+    <meta name="twitter:image:alt" content="Lecturameter: Lukupäiväkirja · Kirjatilastot ja ajastin">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: Lukupäiväkirja",
       "url": "https://lecturameterapp.github.io/fi/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "Järjestä kirjastosi, ajasta lukuistunnot ja katso tarkat tilastot Android- tai iPhone-puhelimellasi. Ei mainoksia, täysin yksityinen.",
       "featureList": "Kirjasto hyllyineen, ajastin näytön ollessa sammutettuna, istuntohistoria, lämpökartta, vuoden Wrapped, muokattavat lukuhaasteet, Google Drive -varmuuskopio, Goodreadsin CSV-tuonti, toimii pääosin ilman yhteyttä",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "fi",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/fi/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/fi/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Teemat</a></li>
+            <li><a href="#events">Tapahtumat</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">Päivitysmuistiinpanot</a></li>
             <li><a href="#history">Historia</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Uutta versiossa 3.9</span>
+            <h2 id="paused-title">Jätä kirja syrjään joksikin aikaa sotkematta tilastojasi</h2>
+            <p>Tauolla on oma tilansa, eri kuin Hylätty. Kirja odottaa siinä, mihin sen jätit, eikä tauon päiviä lasketa.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>Haluan lukea</span>
+                <span>Lukemassa</span>
+                <span class="is-paused">Tauolla</span>
+                <span>Hylätty</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>Lukemassa</span>
+                <span><i class="dot pause"></i>Tauolla &middot; Tauon päiviä ei lasketa</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>Oma tila</h3><p>Tauolla ei ole sama kuin Hylätty. Kirjasi ei mene hylättyjen kirjojen kasaan: se odottaa ja palaa, kun haluat.</p></div>
+            <div class="paused-card reveal-up"><h3>Tilasta Lukemassa tai Uudelleenluettavana</h3><p>Vaihda tilaa kirjan sivun painikkeesta tai pikavalikon kohdasta ”Vaihda tilaa”. Toimii kirjoille, sarjakuville, mangalle ja äänikirjoille.</p></div>
+            <div class="paused-card reveal-up"><h3>Tauon päiviä ei lasketa</h3><p>Ei valmistumiseen kuluvissa päivissä eikä lukunopeudessasi. Tilastosi pysyvät sellaisina kuin ne olivat, kun luit.</p></div>
+            <div class="paused-card reveal-up"><h3>Muistiinpano, jos haluat</h3><p>Kun asetat tauolle ja kun jatkat, voit kirjoittaa syyn. Se on vapaaehtoista. Kaikki säilyy kirjan sivun Tauot-osiossa historiansa kanssa.</p></div>
+            <div class="paused-card reveal-up"><h3>Oma välilehti</h3><p>Kirjastossasi, välilehtien Haluan lukea ja Hylätty välissä, ovat tauolla olevat kirjasi.</p></div>
+            <div class="paused-card reveal-up"><h3>Muistutukset ja jatkuminen itsestään</h3><p>Kirjan muistutukset siirtyvät tauolle ja palaavat, kun jatkat kirjaa. Jos ajastat istunnon tai KOReaderista tulee sellainen, kirja jatkuu itsestään, ilmoituksen ja Kumoa-valinnan kera.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Jaa</span>
+            <h2 id="cards-title">Lecturameter ei ole sosiaalinen verkosto. Korttisi menevät siihen, jota käytät.</h2>
+            <p>Tee pystykortteja kokoa 1080×1920, valmiina storyihin, ja jaa ne siellä, missä jo olet. Ei tiliä, ei profiilia, ei seuraajia.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · story-muoto</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>Kirja</li>
+                <li>Kirja luettu</li>
+                <li>Kirjan tilastot</li>
+                <li>Tilastot</li>
+                <li>Viikkoyhteenveto</li>
+                <li>Kuukausiyhteenveto</li>
+                <li>Haasteet</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>Tapahtuma</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>Valitse, mitä näytät</h3><p>Kirja, juuri lukemasi kirja, tilastosi, viikkosi tai kuukautesi, haaste, Bingo, Wrapped tai tapahtuma.</p></li>
+            <li class="share-step reveal-up"><h3>Tallentuu kohtaan ”Korttini”</h3><p>Kaikki jakamasi pysyy Korteissani, joten voit käyttää sitä uudelleen milloin haluat.</p></li>
+            <li class="share-step reveal-up"><h3>Jaa se siellä, missä jo olet</h3><p>Puhelimen jakovalikon kautta siihen sovellukseen, jota jo käytät. Tai tallenna galleriaan.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Tapahtumat</span>
+            <h2 id="events-title">Lue yhteisön kanssa. Pelaa kirjastollasi.</h2>
+            <p>Tapahtumat näkyvät sovelluksessa, kun jokin on käynnissä. Tällä hetkellä niitä on kahta lajia: maailmanlaajuinen lukuhaaste ja korttipeli omilla kirjoillasi.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">Maailmanlaajuinen haaste · 14 päivää</p>
+                <h3>Suuri lukuhetki</h3>
+                <ul class="event-list">
+                <li>Ajastimen minuutit lasketaan, kirjoissa, sarjakuvissa, mangassa ja äänikirjoissa.</li>
+                <li>Yhteinen tavoite koko yhteisölle. Jos se ylitetään, laskenta jatkuu.</li>
+                <li>Live-tulostaulu nimimerkillä ja Pagi-hahmollasi avatarina.</li>
+                <li>Kun tapahtuma päättyy, jokainen osallistuja saa tapahtumakortin sijoituksensa kanssa.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">Havainnollistava esimerkki</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>Yhteisön tavoite</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">Tulostaulu</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>sinä</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>Unohdettu kirjasto</h3>
+                <ul class="event-list">
+                <li>Valitse kirjastostasi 3 kirjaa: jokaisesta tulee kortti lajityyppinsä arkkityypin kanssa.</li>
+                <li>5–10 minuutin kierrokset, joilla ylität hyllyt ja kukistat loppuvastuksen.</li>
+                <li>Pistetaulu: päivän 3 parasta kierrostasi lasketaan.</li>
+                <li>Onko kirjoja vähän? Kirjasto lainaa sinulle niteitä, yhden arkkityyppiä kohti.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">Havainnollistava esimerkki</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">Osallistumiseen vaaditaan vähintään 16 vuoden ikä. Jos mikään tapahtuma ei ole juuri nyt käynnissä, sovellus kertoo sen.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>Uutta</h3>
                 <ul>
                     <li><strong>Tapahtumat:</strong> maailmanlaajuisia lukuhaasteita ja Lecturameter Quest, kun jokin on käynnissä</li>
+                    <li><strong>Tauolla:</strong> jätä kirja syrjään joksikin aikaa sotkematta tilastojasi</li>
                     <li><strong>Kaksi uutta Pro-teemaa:</strong> Vihko ja Metsä</li>
                     <li>Oma ajastinkello jokaiselle teemalle</li>
                     <li>Pagi valitsee sinulle kirjan Haluan lukea -listalta</li>
@@ -902,6 +1030,7 @@
                     <strong>Uutta</strong>
                     <ul>
                         <li><strong>Tapahtumat:</strong> maailmanlaajuisia lukuhaasteita ja Lecturameter Quest, kun jokin on käynnissä</li>
+                        <li><strong>Tauolla:</strong> jätä kirja syrjään joksikin aikaa sotkematta tilastojasi</li>
                         <li><strong>Kaksi uutta Pro-teemaa:</strong> Vihko ja Metsä</li>
                         <li>Oma ajastinkello jokaiselle teemalle</li>
                         <li>Pagi valitsee sinulle kirjan Haluan lukea -listalta</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>Tuote</h4>
                 <a href="#features">Ominaisuudet</a>
+                <a href="#events">Tapahtumat</a>
                 <a href="#pricing">Hinnoittelu</a>
                 <a href="../precios-regionales.html">Alueelliset hinnat</a>
                 <a href="#whatsnew">Päivitysmuistiinpanot</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">Tietosuojakäytäntö</a>
                 <a href="./terms/">Käyttöehdot</a>
+                <a href="./cookies/">Evästekäytäntö</a>
+                <a href="#" data-lm-cookie-prefs>Evästeasetukset</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi taputtaa sinulle!", "Loista, pikku tähti!", "Shhh, minä luen.", "Pagi pitää silmällä…"], "pagi_angry": ["Auts! Tuo sattui!", "Riittää jo klikkailu!", "Grr, anna minun olla.", "Ei ole enää hauskaa."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi taputtaa sinulle!", "Loista, pikku tähti!", "Shhh, minä luen.", "Pagi pitää silmällä…"], "pagi_angry": ["Auts! Tuo sattui!", "Riittää jo klikkailu!", "Grr, anna minun olla.", "Ei ole enää hauskaa."], "consent_title": "Evästeet ja tallennus", "consent_body": "Käytämme kolmannen osapuolen widgetiä (StartupBar), joka tallentaa tietoja selaimeesi ja laskee näyttökertoja. Se latautuu vain, jos hyväksyt. Teemasi, kielesi ja suljettu ilmoitus tallennetaan kysymättä, koska valitsit ne itse.", "consent_accept": "Hyväksy", "consent_reject": "Hylkää", "consent_policy": "Evästekäytäntö", "consent_prefs": "Evästeasetukset"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · Leselogg og bokstatistikk</title>
-    <meta name="description" content="Følg lesetid, sider, tempo og fremdrift med en privat leselogg for Android og iPhone. Ingen konto, ingen reklame. Importer fra Goodreads og StoryGraph.">
-    <meta property="og:title" content="Lecturameter · Leselogg og bokstatistikk">
-    <meta property="og:description" content="Følg lesetid, sider, tempo og fremdrift med en privat leselogg for Android og iPhone. Ingen konto, ingen reklame. Importer fra Goodreads og StoryGraph.">
+    <title>Lecturameter: Lesedagbok · Bokstatistikk og tidtaker</title>
+    <meta name="description" content="Lecturameter: Lesedagbok for Android og iPhone. Ta tiden på lesingen, følg sider, tempo og statistikk, og importer fra Goodreads. Ingen konto, ingen reklame.">
+    <meta property="og:title" content="Lecturameter: Lesedagbok · Bokstatistikk og tidtaker">
+    <meta property="og:description" content="Lecturameter: Lesedagbok for Android og iPhone. Ta tiden på lesingen, følg sider, tempo og statistikk, og importer fra Goodreads. Ingen konto, ingen reklame.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/no/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · Leselogg og bokstatistikk">
+    <meta property="og:image:alt" content="Lecturameter: Lesedagbok · Bokstatistikk og tidtaker">
     <meta property="og:locale" content="nb_NO">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · Leselogg og bokstatistikk">
-    <meta name="twitter:description" content="Følg lesetid, sider, tempo og fremdrift med en privat leselogg for Android og iPhone. Ingen konto, ingen reklame. Importer fra Goodreads og StoryGraph.">
+    <meta name="twitter:title" content="Lecturameter: Lesedagbok · Bokstatistikk og tidtaker">
+    <meta name="twitter:description" content="Lecturameter: Lesedagbok for Android og iPhone. Ta tiden på lesingen, følg sider, tempo og statistikk, og importer fra Goodreads. Ingen konto, ingen reklame.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · Leselogg og bokstatistikk">
+    <meta name="twitter:image:alt" content="Lecturameter: Lesedagbok · Bokstatistikk og tidtaker">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: Lesedagbok",
       "url": "https://lecturameterapp.github.io/no/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "Organiser biblioteket ditt, ta tiden på leseøktene og se detaljert statistikk på Android- eller iPhone-telefonen din. Ingen reklame, helt privat.",
       "featureList": "Bibliotek med hyller, tidtaker med skjermen av, økthistorikk, heatmap, årlig Wrapped, tilpassbare leseutfordringer, sikkerhetskopi til Google Drive, CSV-import fra Goodreads, fungerer stort sett uten nett",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "no",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/no/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/no/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Temaer</a></li>
+            <li><a href="#events">Arrangementer</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">Oppdateringsnotater</a></li>
             <li><a href="#history">Historikk</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Nytt i 3.9</span>
+            <h2 id="paused-title">Legg en bok til side en stund uten å ødelegge statistikken din</h2>
+            <p>På pause er en egen status, forskjellig fra Forlatt. Boken venter der du slapp den, og dagene på pause teller ikke.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>Vil lese</span>
+                <span>Leser</span>
+                <span class="is-paused">På pause</span>
+                <span>Forlatt</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>Leser</span>
+                <span><i class="dot pause"></i>På pause &middot; Dager på pause teller ikke</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>En egen status</h3><p>På pause er ikke Forlatt. Boken din havner ikke i haugen med bøker du ga opp: den venter og kommer tilbake når du vil.</p></div>
+            <div class="paused-card reveal-up"><h3>Fra Leser eller Gjenlesing</h3><p>Endre status fra merket på bokens side eller med «Endre status» i hurtigmenyen. Det fungerer for bøker, tegneserier, manga og lydbøker.</p></div>
+            <div class="paused-card reveal-up"><h3>Dager på pause teller ikke</h3><p>Verken i dager til du er ferdig eller i lesehastigheten din. Statistikken forblir slik den var da du leste.</p></div>
+            <div class="paused-card reveal-up"><h3>Et notat, hvis du vil</h3><p>Når du setter på pause og når du fortsetter, kan du skrive ned hvorfor. Det er valgfritt. Alt ligger i «Pauser»-delen på bokens side, med historikk.</p></div>
+            <div class="paused-card reveal-up"><h3>En egen fane</h3><p>I biblioteket ditt, mellom Vil lese og Forlatt, finner du bøkene på pause.</p></div>
+            <div class="paused-card reveal-up"><h3>Påminnelser og automatisk gjenopptakelse</h3><p>Påminnelsene for den boken settes på pause og kommer tilbake når du fortsetter. Hvis du tar tiden på en økt, eller det kommer en fra KOReader, fortsetter boken av seg selv, med en melding og valget Angre.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Del</span>
+            <h2 id="cards-title">Lecturameter er ikke et sosialt nettverk. Kortene dine går til det du bruker.</h2>
+            <p>Lag stående kort på 1080×1920, klare for stories, og del dem der du allerede er. Ingen konto, ingen profil og ingen følgere.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · story-format</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>Bok</li>
+                <li>Ferdig bok</li>
+                <li>Bokstatistikk</li>
+                <li>Statistikk</li>
+                <li>Ukesoppsummering</li>
+                <li>Månedsoppsummering</li>
+                <li>Utfordringer</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>Hendelse</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>Velg hva du vil vise</h3><p>En bok, en du nettopp har blitt ferdig med, statistikken din, uken eller måneden din, en utfordring, Bingo, Wrapped eller et arrangement.</p></li>
+            <li class="share-step reveal-up"><h3>Lagres i «Kortene mine»</h3><p>Alt du deler blir liggende i Kortene mine, så du kan bruke det igjen når du vil.</p></li>
+            <li class="share-step reveal-up"><h3>Del det der du allerede er</h3><p>Via delingsmenyen på telefonen, inn i appen du allerede bruker. Eller lagre det i galleriet.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Arrangementer</span>
+            <h2 id="events-title">Les sammen med fellesskapet. Spill med biblioteket ditt.</h2>
+            <p>Arrangementer dukker opp i appen når ett er aktivt. I dag finnes det to typer: en global leseutfordring og et kortspill med dine egne bøker.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">Global utfordring · 14 dager</p>
+                <h3>Den store lesingen</h3>
+                <ul class="event-list">
+                <li>Minuttene fra tidtakeren teller, i bøker, tegneserier, manga og lydbøker.</li>
+                <li>Et felles mål for hele fellesskapet. Hvis det slås, teller det videre.</li>
+                <li>Live-toppliste med et pseudonymt alias og din Pagi som avatar.</li>
+                <li>Når den er over, får alle deltakere arrangementskortet med plasseringen din.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">Eksempel til illustrasjon</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>Fellesskapets mål</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">Toppliste</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>deg</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>Det glemte biblioteket</h3>
+                <ul class="event-list">
+                <li>Velg 3 bøker fra biblioteket ditt: hver blir et kort med arketypen til sjangeren sin.</li>
+                <li>Runder på 5 til 10 minutter for å krysse hyllene og slå den siste bossen.</li>
+                <li>Poengtoppliste: dine 3 beste runder hver dag teller.</li>
+                <li>Mangler du bøker? Biblioteket låner deg bind, ett per arketype.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">Eksempel til illustrasjon</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">Du må være 16 år eller eldre for å delta. Hvis ingen arrangement er aktivt akkurat nå, sier appen fra.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>Nytt</h3>
                 <ul>
                     <li><strong>Arrangementer:</strong> globale leseutfordringer og Lecturameter Quest når det er et aktivt</li>
+                    <li><strong>På pause:</strong> legg en bok til side en stund uten å ødelegge statistikken din</li>
                     <li><strong>To nye Pro-temaer:</strong> Skrivebok og Skog</li>
                     <li>En egen tidtakerklokke for hvert tema</li>
                     <li>Pagi velger en bok fra Vil lese</li>
@@ -902,6 +1030,7 @@
                     <strong>Nytt</strong>
                     <ul>
                         <li><strong>Arrangementer:</strong> globale leseutfordringer og Lecturameter Quest når det er et aktivt</li>
+                        <li><strong>På pause:</strong> legg en bok til side en stund uten å ødelegge statistikken din</li>
                         <li><strong>To nye Pro-temaer:</strong> Skrivebok og Skog</li>
                         <li>En egen tidtakerklokke for hvert tema</li>
                         <li>Pagi velger en bok fra Vil lese</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>Produkt</h4>
                 <a href="#features">Funksjoner</a>
+                <a href="#events">Arrangementer</a>
                 <a href="#pricing">Priser</a>
                 <a href="../precios-regionales.html">Regionale priser</a>
                 <a href="#whatsnew">Oppdateringsnotater</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">Personvernerklæring</a>
                 <a href="./terms/">Vilkår for bruk</a>
+                <a href="./cookies/">Retningslinjer for informasjonskapsler</a>
+                <a href="#" data-lm-cookie-prefs>Innstillinger for informasjonskapsler</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi applauderer deg!", "Skinn, lille stjerne!", "Sjt, jeg leser.", "Pagi ser på deg…"], "pagi_angry": ["Au! Det gjorde vondt!", "Nok klikking!", "Grr, la meg være i fred.", "Det er ikke morsomt lenger."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi applauderer deg!", "Skinn, lille stjerne!", "Sjt, jeg leser.", "Pagi ser på deg…"], "pagi_angry": ["Au! Det gjorde vondt!", "Nok klikking!", "Grr, la meg være i fred.", "Det er ikke morsomt lenger."], "consent_title": "Informasjonskapsler og lagring", "consent_body": "Vi bruker en widget fra tredjepart (StartupBar) som lagrer data i nettleseren din og teller visninger. Den lastes bare hvis du godtar. Tema, språk og lukket melding lagres uten å spørre, fordi du har valgt dem selv.", "consent_accept": "Godta", "consent_reject": "Avvis", "consent_policy": "Retningslinjer for informasjonskapsler", "consent_prefs": "Innstillinger for informasjonskapsler"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

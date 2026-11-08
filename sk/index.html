@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter – Sledovač čítania a štatistiky kníh</title>
-    <meta name="description" content="Sleduj čas čítania, strany, tempo a priebeh pomocou súkromného sledovača čítania pre Android a iPhone. Bez účtu, bez reklám. Import z Goodreads a StoryGraph.">
-    <meta property="og:title" content="Lecturameter – Sledovač čítania a štatistiky kníh">
-    <meta property="og:description" content="Sleduj čas čítania, strany, tempo a priebeh pomocou súkromného sledovača čítania pre Android a iPhone. Bez účtu, bez reklám. Import z Goodreads a StoryGraph.">
+    <title>Lecturameter: Denník čítania · Štatistiky a časovač</title>
+    <meta name="description" content="Lecturameter: Denník čítania pre Android a iPhone. Meraj čas čítania, sleduj strany, tempo a štatistiky a importuj z Goodreads. Bez účtu a bez reklám.">
+    <meta property="og:title" content="Lecturameter: Denník čítania · Štatistiky a časovač">
+    <meta property="og:description" content="Lecturameter: Denník čítania pre Android a iPhone. Meraj čas čítania, sleduj strany, tempo a štatistiky a importuj z Goodreads. Bez účtu a bez reklám.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/sk/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter – Sledovač čítania a štatistiky kníh">
+    <meta property="og:image:alt" content="Lecturameter: Denník čítania · Štatistiky a časovač">
     <meta property="og:locale" content="sk_SK">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter – Sledovač čítania a štatistiky kníh">
-    <meta name="twitter:description" content="Sleduj čas čítania, strany, tempo a priebeh pomocou súkromného sledovača čítania pre Android a iPhone. Bez účtu, bez reklám. Import z Goodreads a StoryGraph.">
+    <meta name="twitter:title" content="Lecturameter: Denník čítania · Štatistiky a časovač">
+    <meta name="twitter:description" content="Lecturameter: Denník čítania pre Android a iPhone. Meraj čas čítania, sleduj strany, tempo a štatistiky a importuj z Goodreads. Bez účtu a bez reklám.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter – Sledovač čítania a štatistiky kníh">
+    <meta name="twitter:image:alt" content="Lecturameter: Denník čítania · Štatistiky a časovač">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: Denník čítania",
       "url": "https://lecturameterapp.github.io/sk/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "Usporiadaj si knižnicu, meraj sedenia čítania a prezeraj si podrobné štatistiky na svojom telefóne s Androidom alebo iPhonom. Bez reklám, úplne súkromné.",
       "featureList": "Knižnica s poličkami, časovač s vypnutou obrazovkou, história sedení, teplotná mapa, ročný Wrapped, prispôsobiteľné čitateľské výzvy, záloha na Google Drive, import CSV z Goodreads, väčšinou offline",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "sk",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/sk/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/sk/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Témy</a></li>
+            <li><a href="#events">Udalosti</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">Poznámky k oprave</a></li>
             <li><a href="#history">História</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Novinka v 3.9</span>
+            <h2 id="paused-title">Odlož knihu na čas bez toho, aby ti pokazila štatistiky</h2>
+            <p>Pozastavené je samostatný stav, odlišný od Opustené. Kniha čaká tam, kde si skončil, a dni na pauze sa nepočítajú.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>Chcem čítať</span>
+                <span>Čítanie</span>
+                <span class="is-paused">Pozastavené</span>
+                <span>Opustené</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>Čítanie</span>
+                <span><i class="dot pause"></i>Pozastavené &middot; Dni na pauze sa nepočítajú</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>Samostatný stav</h3><p>Pozastavené nie je Opustené. Tvoja kniha nepôjde do kôpky tých, ktoré si vzdal: čaká a vráti sa, kedykoľvek budeš chcieť.</p></div>
+            <div class="paused-card reveal-up"><h3>Zo stavu Čítanie alebo Znovu čítam</h3><p>Zmeň stav v odznaku na stránke knihy alebo cez „Zmeniť stav“ v rýchlej ponuke. Funguje pre knihy, komiksy, mangu aj audioknihy.</p></div>
+            <div class="paused-card reveal-up"><h3>Dni na pauze sa nepočítajú</h3><p>Ani do dní do dočítania, ani do tvojej rýchlosti čítania. Štatistiky zostanú také, aké boli, keď si čítal.</p></div>
+            <div class="paused-card reveal-up"><h3>Poznámka, ak chceš</h3><p>Keď knihu pozastavíš aj keď ju obnovíš, môžeš si poznačiť prečo. Je to dobrovoľné. Všetko zostane v sekcii „Pauzy“ na stránke knihy aj s históriou.</p></div>
+            <div class="paused-card reveal-up"><h3>Vlastná karta</h3><p>V knižnici nájdeš pozastavené knihy medzi Chcem čítať a Opustené.</p></div>
+            <div class="paused-card reveal-up"><h3>Pripomienky a samo obnovenie</h3><p>Pripomienky tej knihy sa pozastavia a vrátia sa, keď ju obnovíš. Ak zmeriaš reláciu alebo nejaká príde z KOReadera, kniha sa obnoví sama, s oznámením a možnosťou Späť.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Zdieľanie</span>
+            <h2 id="cards-title">Lecturameter nie je sociálna sieť. Tvoje karty idú na tú, ktorú používaš.</h2>
+            <p>Vytváraj zvislé karty 1080×1920, pripravené na stories, a zdieľaj ich tam, kde už si. Bez účtu, bez profilu a bez sledovateľov.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · formát stories</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>Kniha</li>
+                <li>Dočítaná kniha</li>
+                <li>Štatistiky knihy</li>
+                <li>Štatistiky</li>
+                <li>Týždenný prehľad</li>
+                <li>Mesačný prehľad</li>
+                <li>Výzvy</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>Udalosť</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>Vyber, čo ukázať</h3><p>Knihu, práve dočítanú knihu, svoje štatistiky, týždeň alebo mesiac, výzvu, Bingo, Wrapped alebo udalosť.</p></li>
+            <li class="share-step reveal-up"><h3>Uloží sa do „Mojich kariet“</h3><p>Všetko, čo zdieľaš, zostane v Mojich kartách, takže to môžeš použiť znova, kedykoľvek budeš chcieť.</p></li>
+            <li class="share-step reveal-up"><h3>Zdieľaj tam, kde už si</h3><p>Cez ponuku zdieľania v telefóne do aplikácie, ktorú už používaš. Alebo ulož do galérie.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Udalosti</span>
+            <h2 id="events-title">Čítaj s komunitou. Hraj sa so svojou knižnicou.</h2>
+            <p>Udalosti sa v aplikácii objavia, keď nejaká beží. Dnes sú dva druhy: globálna čitateľská výzva a kartová hra s tvojimi vlastnými knihami.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">Globálna výzva · 14 dní</p>
+                <h3>Veľké čítanie</h3>
+                <ul class="event-list">
+                <li>Počítajú sa minúty z časovača pri knihách, komiksoch, mange aj audioknihách.</li>
+                <li>Spoločný cieľ pre celú komunitu. Ak sa prekoná, počíta sa ďalej.</li>
+                <li>Živý rebríček s pseudonymom a tvojím Pagi ako avatarom.</li>
+                <li>Po skončení karta udalosti s tvojou pozíciou pre každého účastníka.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">Ilustračný príklad</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>Cieľ komunity</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">Rebríček</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>ty</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>Zabudnutá knižnica</h3>
+                <ul class="event-list">
+                <li>Vyber si 3 knihy zo svojej knižnice: každá sa zmení na kartu s archetypom svojho žánru.</li>
+                <li>Hry na 5 až 10 minút, v ktorých prejdeš regálmi a poraziš záverečného bossa.</li>
+                <li>Rebríček bodov: počítajú sa tvoje 3 najlepšie hry každého dňa.</li>
+                <li>Málo kníh? Knižnica ti požičia zväzky, po jednom na archetyp.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">Ilustračný príklad</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">Účasť je od 16 rokov. Ak práve nebeží žiadna udalosť, aplikácia ti to oznámi.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>Novinky</h3>
                 <ul>
                     <li><strong>Udalosti:</strong> celosvetové čitateľské výzvy a Lecturameter Quest, keď je nejaký aktívny</li>
+                    <li><strong>Pozastavené:</strong> odlož knihu na čas bez toho, aby ti pokazila štatistiky</li>
                     <li><strong>Dva nové motívy Pro:</strong> Zošit a Lesík</li>
                     <li>Vlastné hodiny časovača pre každý motív</li>
                     <li>Pagi ti vyberie knihu zo zoznamu Chcem čítať</li>
@@ -902,6 +1030,7 @@
                     <strong>Novinky</strong>
                     <ul>
                         <li><strong>Udalosti:</strong> celosvetové čitateľské výzvy a Lecturameter Quest, keď je nejaký aktívny</li>
+                        <li><strong>Pozastavené:</strong> odlož knihu na čas bez toho, aby ti pokazila štatistiky</li>
                         <li><strong>Dva nové motívy Pro:</strong> Zošit a Lesík</li>
                         <li>Vlastné hodiny časovača pre každý motív</li>
                         <li>Pagi ti vyberie knihu zo zoznamu Chcem čítať</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>Produkt</h4>
                 <a href="#features">Funkcie</a>
+                <a href="#events">Udalosti</a>
                 <a href="#pricing">Cenník</a>
                 <a href="../precios-regionales.html">Regionálne ceny</a>
                 <a href="#whatsnew">Poznámky k oprave</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">Zásady ochrany osobných údajov</a>
                 <a href="./terms/">Podmienky používania</a>
+                <a href="./cookies/">Zásady cookies</a>
+                <a href="#" data-lm-cookie-prefs>Predvoľby cookies</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi ti tlieska!", "Žiar, hviezdička!", "Pšt, čítam.", "Pagi sleduje…"], "pagi_angry": ["Au! To bolelo!", "Dosť klikania!", "Grr, nechaj ma na pokoji.", "Už to nie je vtipné."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi ti tlieska!", "Žiar, hviezdička!", "Pšt, čítam.", "Pagi sleduje…"], "pagi_angry": ["Au! To bolelo!", "Dosť klikania!", "Grr, nechaj ma na pokoji.", "Už to nie je vtipné."], "consent_title": "Cookies a úložisko", "consent_body": "Používame widget tretej strany (StartupBar), ktorý ukladá údaje v tvojom prehliadači a počíta zobrazenia. Načíta sa, len ak súhlasíš. Motív, jazyk a zatvorené oznámenie sa ukladajú bez pýtania, pretože si ich vybral ty.", "consent_accept": "Prijať", "consent_reject": "Odmietnuť", "consent_policy": "Zásady cookies", "consent_prefs": "Predvoľby cookies"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter — 阅读记录与图书统计</title>
-    <meta name="description" content="用私密的 Android 和 iPhone 阅读记录应用追踪你的阅读时间、页数、节奏和进度。无需账号，无广告。可从 Goodreads 和 StoryGraph 导入。">
-    <meta property="og:title" content="Lecturameter — 阅读记录与图书统计">
-    <meta property="og:description" content="用私密的 Android 和 iPhone 阅读记录应用追踪你的阅读时间、页数、节奏和进度。无需账号，无广告。可从 Goodreads 和 StoryGraph 导入。">
+    <title>Lecturameter: 读书记录 · 统计与计时器</title>
+    <meta name="description" content="Lecturameter: 读书记录，支持 Android 和 iPhone。为阅读计时，记录页数、速度和统计，还能从 Goodreads 导入。无需账号，没有广告。">
+    <meta property="og:title" content="Lecturameter: 读书记录 · 统计与计时器">
+    <meta property="og:description" content="Lecturameter: 读书记录，支持 Android 和 iPhone。为阅读计时，记录页数、速度和统计，还能从 Goodreads 导入。无需账号，没有广告。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/zh-cn/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter — 阅读记录与图书统计">
+    <meta property="og:image:alt" content="Lecturameter: 读书记录 · 统计与计时器">
     <meta property="og:locale" content="zh_CN">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="vi_VN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter — 阅读记录与图书统计">
-    <meta name="twitter:description" content="用私密的 Android 和 iPhone 阅读记录应用追踪你的阅读时间、页数、节奏和进度。无需账号，无广告。可从 Goodreads 和 StoryGraph 导入。">
+    <meta name="twitter:title" content="Lecturameter: 读书记录 · 统计与计时器">
+    <meta name="twitter:description" content="Lecturameter: 读书记录，支持 Android 和 iPhone。为阅读计时，记录页数、速度和统计，还能从 Goodreads 导入。无需账号，没有广告。">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter — 阅读记录与图书统计">
+    <meta name="twitter:image:alt" content="Lecturameter: 读书记录 · 统计与计时器">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: 读书记录",
       "url": "https://lecturameterapp.github.io/zh-cn/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "在你的 Android 或 iPhone 手机上整理书库、为阅读计时并查看详细统计。无广告，完全私密。",
       "featureList": "带书架的书库、熄屏也能运行的计时器、阅读会话历史记录、热力图、年度 Wrapped、可自定义的阅读挑战、Google Drive 备份、Goodreads CSV 导入、大部分功能可离线使用",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "zh-CN",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/zh-cn/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/zh-cn/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">主题</a></li>
+            <li><a href="#events">活动</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">更新说明</a></li>
             <li><a href="#history">历史记录</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">3.9 新功能</span>
+            <h2 id="paused-title">把一本书先放一放，又不会弄乱你的统计</h2>
+            <p>“已暂停”是独立的状态，和“已放弃”不同。书会停在你放下的地方，暂停的天数不计入。</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>想读</span>
+                <span>阅读中</span>
+                <span class="is-paused">已暂停</span>
+                <span>已放弃</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>阅读中</span>
+                <span><i class="dot pause"></i>已暂停 &middot; 暂停的天数不计入</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>独立的状态</h3><p>“已暂停”不是“已放弃”。你的书不会进入放弃的那一堆：它只是搁置，想读时随时回来。</p></div>
+            <div class="paused-card reveal-up"><h3>从“阅读中”或“重读中”</h3><p>在书籍页面的标签上，或通过快捷菜单里的“更改状态”来切换。适用于图书、漫画、漫画书和有声书。</p></div>
+            <div class="paused-card reveal-up"><h3>暂停的天数不计入</h3><p>既不算进读完所需的天数，也不影响你的阅读速度。统计保持你阅读时的样子。</p></div>
+            <div class="paused-card reveal-up"><h3>想写就写一条备注</h3><p>暂停和恢复时，可以记下原因。这是可选的。所有内容连同历史记录都保存在书籍页面的“暂停记录”中。</p></div>
+            <div class="paused-card reveal-up"><h3>专属标签页</h3><p>在你的书库里，“想读”和“已放弃”之间，就是你暂停的书。</p></div>
+            <div class="paused-card reveal-up"><h3>提醒，以及自动恢复</h3><p>这本书的提醒会暂停，恢复后再回来。如果你为一次阅读计时，或有一条记录从 KOReader 传来，这本书会自动恢复，并给出通知和“撤销”选项。</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">分享</span>
+            <h2 id="cards-title">Lecturameter 不是社交网络。你的卡片会发到你正在用的那个平台。</h2>
+            <p>制作适合 Story 的 1080×1920 竖版卡片，直接分享到你已经在用的地方。无需账号，没有主页，没有粉丝。</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · Story 格式</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>书籍</li>
+                <li>读完的书</li>
+                <li>书籍统计</li>
+                <li>统计</li>
+                <li>周度总结</li>
+                <li>月度总结</li>
+                <li>挑战</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>活动</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>选择要展示的内容</h3><p>一本书、刚读完的书、你的统计、你的一周或一个月、一项挑战、Bingo、Wrapped 或一场活动。</p></li>
+            <li class="share-step reveal-up"><h3>保存在“我的卡片”</h3><p>你分享的所有内容都留在我的卡片里，想用时随时可以再用。</p></li>
+            <li class="share-step reveal-up"><h3>分享到你已经在用的地方</h3><p>通过手机的分享菜单发到你常用的应用，也可以保存到相册。</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">活动</span>
+            <h2 id="events-title">和社区一起读。用你的书库来玩。</h2>
+            <p>有活动进行时，它会出现在应用里。目前有两种：全球阅读挑战，以及用你自己的书玩的卡牌游戏。</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">全球挑战 · 14 天</p>
+                <h3>大阅读</h3>
+                <ul class="event-list">
+                <li>计时器的分钟数会计入，图书、漫画、漫画书和有声书都算。</li>
+                <li>全社区共同的目标。即使超额，也会继续累计。</li>
+                <li>使用化名的实时排行榜，头像是你的 Pagi。</li>
+                <li>结束后，每位参与者都会收到带有你名次的活动卡片。</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">示例</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>社区目标</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">排行榜</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>你</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>被遗忘的图书馆</h3>
+                <ul class="event-list">
+                <li>从你的书库挑选 3 本书：每本都会变成一张带有所属类型原型的卡牌。</li>
+                <li>每局 5 到 10 分钟，穿过书架，击败最终首领。</li>
+                <li>积分排行榜：每天计入你最好的 3 局。</li>
+                <li>书不够？图书馆会借给你几卷，每种原型一卷。</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">示例</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">需年满 16 岁才能参加。如果当前没有进行中的活动，应用会告诉你。</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>新增</h3>
                 <ul>
                     <li><strong>活动：</strong> 全球阅读挑战，以及进行中的 Lecturameter Quest</li>
+                    <li><strong>已暂停：</strong>把一本书先放一放，又不会弄乱你的统计</li>
                     <li><strong>两个新的 Pro 主题：</strong> 笔记本和森林</li>
                     <li>每个主题都有专属的计时器时钟</li>
                     <li>Pagi 从“想读”中为你挑一本书</li>
@@ -902,6 +1030,7 @@
                     <strong>新增</strong>
                     <ul>
                         <li><strong>活动：</strong> 全球阅读挑战，以及进行中的 Lecturameter Quest</li>
+                        <li><strong>已暂停：</strong>把一本书先放一放，又不会弄乱你的统计</li>
                         <li><strong>两个新的 Pro 主题：</strong> 笔记本和森林</li>
                         <li>每个主题都有专属的计时器时钟</li>
                         <li>Pagi 从“想读”中为你挑一本书</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>产品</h4>
                 <a href="#features">功能</a>
+                <a href="#events">活动</a>
                 <a href="#pricing">价格</a>
                 <a href="../precios-regionales.html">各地区价格</a>
                 <a href="#whatsnew">更新说明</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">隐私政策</a>
                 <a href="./terms/">服务条款</a>
+                <a href="./cookies/">Cookie 政策</a>
+                <a href="#" data-lm-cookie-prefs>Cookie 偏好设置</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi 为你鼓掌！", "闪耀吧，小星星！", "嘘，我在看书。", "Pagi 在看着你哦…"], "pagi_angry": ["哎哟！好疼！", "别点了！", "哼，别烦我。", "一点都不好笑了。"]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi 为你鼓掌！", "闪耀吧，小星星！", "嘘，我在看书。", "Pagi 在看着你哦…"], "pagi_angry": ["哎哟！好疼！", "别点了！", "哼，别烦我。", "一点都不好笑了。"], "consent_title": "Cookie 与存储", "consent_body": "我们使用第三方小组件（StartupBar），它会在你的浏览器中存储数据并统计展示次数。只有你接受后才会加载。你的主题、语言和已关闭的提示会直接保存，不再询问，因为这些是你自己选的。", "consent_accept": "接受", "consent_reject": "拒绝", "consent_policy": "Cookie 政策", "consent_prefs": "Cookie 偏好设置"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · Lectura, reptes i estadístiques</title>
-    <meta name="description" content="Registra el teu temps de lectura, pàgines, ritme i progrés amb un registre de lectura privat per a Android i iPhone. Sense compte, sense anuncis. Importa des de Goodreads i StoryGraph.">
-    <meta property="og:title" content="Lecturameter · Lectura, reptes i estadístiques">
-    <meta property="og:description" content="Registra el teu temps de lectura, pàgines, ritme i progrés amb un registre de lectura privat per a Android i iPhone. Sense compte, sense anuncis. Importa des de Goodreads i StoryGraph.">
+    <title>Lecturameter: Diari de Lectura · Retos i estadístiques</title>
+    <meta name="description" content="Lecturameter: Diari de Lectura per a Android i iPhone. Cronometra la lectura, registra pàgines, ritme i estadístiques, i importa de Goodreads. Sense compte ni anuncis.">
+    <meta property="og:title" content="Lecturameter: Diari de Lectura · Retos i estadístiques">
+    <meta property="og:description" content="Lecturameter: Diari de Lectura per a Android i iPhone. Cronometra la lectura, registra pàgines, ritme i estadístiques, i importa de Goodreads. Sense compte ni anuncis.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/ca/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · Lectura, reptes i estadístiques">
+    <meta property="og:image:alt" content="Lecturameter: Diari de Lectura · Retos i estadístiques">
     <meta property="og:locale" content="ca_ES">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · Lectura, reptes i estadístiques">
-    <meta name="twitter:description" content="Registra el teu temps de lectura, pàgines, ritme i progrés amb un registre de lectura privat per a Android i iPhone. Sense compte, sense anuncis. Importa des de Goodreads i StoryGraph.">
+    <meta name="twitter:title" content="Lecturameter: Diari de Lectura · Retos i estadístiques">
+    <meta name="twitter:description" content="Lecturameter: Diari de Lectura per a Android i iPhone. Cronometra la lectura, registra pàgines, ritme i estadístiques, i importa de Goodreads. Sense compte ni anuncis.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · Lectura, reptes i estadístiques">
+    <meta name="twitter:image:alt" content="Lecturameter: Diari de Lectura · Retos i estadístiques">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: Diari de Lectura",
       "url": "https://lecturameterapp.github.io/ca/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "Organitza la teva biblioteca, cronometra les sessions de lectura i consulta estadístiques detallades al teu mòbil Android o iPhone. Sense anuncis i totalment privat.",
       "featureList": "Biblioteca amb prestatges, cronòmetre amb la pantalla apagada, historial de sessions, mapa de calor, resum anual, reptes de lectura personalitzables, còpia de seguretat a Google Drive, importació CSV de Goodreads, gairebé tot sense connexió",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "ca",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/ca/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/ca/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Temes</a></li>
+            <li><a href="#events">Esdeveniments</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">Notes del pedaç</a></li>
             <li><a href="#history">Historial</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Novetat a la 3.9</span>
+            <h2 id="paused-title">Deixa un llibre una temporada sense embrutar les teves estadístiques</h2>
+            <p>Pausat és un estat propi, diferent d'Abandonat. El llibre espera on el vas deixar i els dies en pausa no compten.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>Vull llegir</span>
+                <span>Llegint</span>
+                <span class="is-paused">Pausat</span>
+                <span>Abandonat</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>Llegint</span>
+                <span><i class="dot pause"></i>Pausat &middot; Els dies en pausa no compten</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>Un estat propi</h3><p>Pausat no és Abandonat. El teu llibre no va a la pila dels llibres que has deixat: queda en espera i torna quan vulguis.</p></div>
+            <div class="paused-card reveal-up"><h3>Des de Llegint o Rellegint</h3><p>Canvia l'estat des de la pastilla de la fitxa del llibre o amb «Canviar estat» al menú ràpid. Funciona amb llibres, còmics, manga i audiollibres.</p></div>
+            <div class="paused-card reveal-up"><h3>Els dies en pausa no compten</h3><p>Ni als dies per acabar ni a la teva velocitat de lectura. Les estadístiques es queden com quan llegies.</p></div>
+            <div class="paused-card reveal-up"><h3>Una nota, si vols</h3><p>Quan poses el llibre en pausa i quan el represes pots apuntar-hi el motiu. És opcional. Tot queda a la secció «Pauses» de la fitxa del llibre, amb el seu historial.</p></div>
+            <div class="paused-card reveal-up"><h3>Una pestanya pròpia</h3><p>A la teva biblioteca, entre Vull llegir i Abandonat, trobaràs els llibres en pausa.</p></div>
+            <div class="paused-card reveal-up"><h3>Recordatoris, i represa automàtica</h3><p>Els recordatoris d'aquell llibre es pausen i tornen quan el represes. Si cronometres una sessió o te'n arriba una de KOReader, el llibre es reprèn sol, amb un avís i l'opció Desfés.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Comparteix</span>
+            <h2 id="cards-title">Lecturameter no és una xarxa social. Les teves cards van a la que fas servir.</h2>
+            <p>Crea cards verticals de 1080×1920, a punt per a stories, i comparteix-les on ja ets. Sense compte, sense perfil i sense seguidors.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · format story</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>Llibre</li>
+                <li>Llibre acabat</li>
+                <li>Estadístiques del llibre</li>
+                <li>Estadístiques</li>
+                <li>Resum setmanal</li>
+                <li>Resum mensual</li>
+                <li>Reptes</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>Esdeveniment</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>Tria què vols mostrar</h3><p>Un llibre, un que acabes d'acabar, les teves estadístiques, la teva setmana o mes, un repte, Bingo, Wrapped o un esdeveniment.</p></li>
+            <li class="share-step reveal-up"><h3>Es desa a «Les meves cards»</h3><p>Tot el que comparteixes queda a Les meves cards, per poder-ho tornar a fer servir quan vulguis.</p></li>
+            <li class="share-step reveal-up"><h3>Comparteix-la on ja ets</h3><p>Pel menú de compartir del mòbil, a l'app que ja fas servir. O desa-la a la galeria.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Esdeveniments</span>
+            <h2 id="events-title">Llegeix amb la comunitat. Juga amb la teva biblioteca.</h2>
+            <p>Els esdeveniments apareixen a l'app quan n'hi ha un d'actiu. Avui n'hi ha de dos tipus: un repte de lectura global i un joc de cartes amb els teus propis llibres.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">Repte global · 14 dies</p>
+                <h3>La gran lectura</h3>
+                <ul class="event-list">
+                <li>Compten els minuts del cronòmetre, en llibres, còmics, manga i audiollibres.</li>
+                <li>Un objectiu compartit per tota la comunitat. Si se supera, continua comptant.</li>
+                <li>Classificació en directe amb un àlies pseudònim i el teu Pagi com a avatar.</li>
+                <li>Quan acaba, la targeta de l'esdeveniment amb la teva posició, per a tots els participants.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">Exemple il·lustratiu</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>Objectiu de la comunitat</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">Classificació</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>tu</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>La biblioteca oblidada</h3>
+                <ul class="event-list">
+                <li>Tria 3 llibres de la teva biblioteca: cadascun es converteix en una carta amb l'arquetip del seu gènere.</li>
+                <li>Partides de 5 a 10 minuts per creuar els prestatges i vèncer el cap final.</li>
+                <li>Classificació per punts: compten les teves 3 millors partides de cada dia.</li>
+                <li>Et falten llibres? La biblioteca et deixa volums, un per arquetip.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">Exemple il·lustratiu</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">Cal tenir 16 anys o més per participar-hi. Si ara no hi ha cap esdeveniment actiu, l'app t'ho diu.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>Novetats</h3>
                 <ul>
                     <li><strong>Esdeveniments:</strong> reptes de lectura globals i Lecturameter Quest quan n'hi ha un d'actiu</li>
+                    <li><strong>Pausat:</strong> deixa un llibre una temporada sense embrutar les teves estadístiques</li>
                     <li><strong>Dos temes Pro nous:</strong> Quadern i Bosc</li>
                     <li>Un rellotge de cronòmetre propi per a cada tema</li>
                     <li>Pagi t'escull un llibre de Vull llegir</li>
@@ -902,6 +1030,7 @@
                     <strong>Novetats</strong>
                     <ul>
                         <li><strong>Esdeveniments:</strong> reptes de lectura globals i Lecturameter Quest quan n'hi ha un d'actiu</li>
+                        <li><strong>Pausat:</strong> deixa un llibre una temporada sense embrutar les teves estadístiques</li>
                         <li><strong>Dos temes Pro nous:</strong> Quadern i Bosc</li>
                         <li>Un rellotge de cronòmetre propi per a cada tema</li>
                         <li>Pagi t'escull un llibre de Vull llegir</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>Producte</h4>
                 <a href="#features">Funcions</a>
+                <a href="#events">Esdeveniments</a>
                 <a href="#pricing">Preus</a>
                 <a href="../precios-regionales.html">Preus per regió</a>
                 <a href="#whatsnew">Notes del pedaç</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">Política de privacitat</a>
                 <a href="./terms/">Condicions del servei</a>
+                <a href="./cookies/">Política de cookies</a>
+                <a href="#" data-lm-cookie-prefs>Preferències de cookies</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["El Pagi t'aplaudeix!", "Brilla, estrelleta!", "Xxt, que estic llegint.", "El Pagi t'observa…"], "pagi_angry": ["Ai! Això m'ha fet mal!", "Prou de clics!", "Grr, deixa'm en pau.", "Ja no fa gràcia."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["El Pagi t'aplaudeix!", "Brilla, estrelleta!", "Xxt, que estic llegint.", "El Pagi t'observa…"], "pagi_angry": ["Ai! Això m'ha fet mal!", "Prou de clics!", "Grr, deixa'm en pau.", "Ja no fa gràcia."], "consent_title": "Cookies i emmagatzematge", "consent_body": "Fem servir un giny de tercers (StartupBar) que desa dades al teu navegador i compta les impressions. Només es carrega si acceptes. El tema, l'idioma i l'avís tancat es desen sense preguntar, perquè els has triat tu.", "consent_accept": "Accepta", "consent_reject": "Rebutja", "consent_policy": "Política de cookies", "consent_prefs": "Preferències de cookies"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

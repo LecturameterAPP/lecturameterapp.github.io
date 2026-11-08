@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · Suivi de lecture et statistiques de livres</title>
-    <meta name="description" content="Suis ton temps de lecture, tes pages, ton rythme et ta progression avec un suivi de lecture privé pour Android et iPhone. Sans compte, sans pub. Import depuis Goodreads et StoryGraph.">
-    <meta property="og:title" content="Lecturameter · Suivi de lecture et statistiques de livres">
-    <meta property="og:description" content="Suis ton temps de lecture, tes pages, ton rythme et ta progression avec un suivi de lecture privé pour Android et iPhone. Sans compte, sans pub. Import depuis Goodreads et StoryGraph.">
+    <title>Lecturameter: suivi de lecture · Stats et chrono</title>
+    <meta name="description" content="Lecturameter: suivi de lecture pour Android et iPhone. Chronomètre ta lecture, suis pages, rythme et statistiques, et importe depuis Goodreads. Sans compte, sans pub.">
+    <meta property="og:title" content="Lecturameter: suivi de lecture · Stats et chrono">
+    <meta property="og:description" content="Lecturameter: suivi de lecture pour Android et iPhone. Chronomètre ta lecture, suis pages, rythme et statistiques, et importe depuis Goodreads. Sans compte, sans pub.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/fr/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · Suivi de lecture et statistiques de livres">
+    <meta property="og:image:alt" content="Lecturameter: suivi de lecture · Stats et chrono">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · Suivi de lecture et statistiques de livres">
-    <meta name="twitter:description" content="Suis ton temps de lecture, tes pages, ton rythme et ta progression avec un suivi de lecture privé pour Android et iPhone. Sans compte, sans pub. Import depuis Goodreads et StoryGraph.">
+    <meta name="twitter:title" content="Lecturameter: suivi de lecture · Stats et chrono">
+    <meta name="twitter:description" content="Lecturameter: suivi de lecture pour Android et iPhone. Chronomètre ta lecture, suis pages, rythme et statistiques, et importe depuis Goodreads. Sans compte, sans pub.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · Suivi de lecture et statistiques de livres">
+    <meta name="twitter:image:alt" content="Lecturameter: suivi de lecture · Stats et chrono">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: suivi de lecture",
       "url": "https://lecturameterapp.github.io/fr/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "Organise ta bibliothèque, chronomètre tes sessions de lecture et consulte des statistiques détaillées sur ton téléphone Android ou iPhone. Sans pub, entièrement privé.",
       "featureList": "Bibliothèque avec étagères, chronomètre écran éteint, historique des sessions, carte de chaleur, Wrapped annuel, défis de lecture personnalisables, sauvegarde Google Drive, import CSV Goodreads, quasiment hors ligne",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "fr",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/fr/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/fr/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Thèmes</a></li>
+            <li><a href="#events">Événements</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">Notes de mise à jour</a></li>
             <li><a href="#history">Historique</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Nouveau dans la 3.9</span>
+            <h2 id="paused-title">Mets un livre de côté un moment sans fausser tes statistiques</h2>
+            <p>« En pause » est un statut à part, différent d'« Abandonné ». Le livre attend là où tu l'as laissé et les jours de pause ne comptent pas.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>À lire</span>
+                <span>En cours de lecture</span>
+                <span class="is-paused">En pause</span>
+                <span>Abandonné</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>En cours de lecture</span>
+                <span><i class="dot pause"></i>En pause &middot; Les jours de pause ne comptent pas</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>Un statut à part</h3><p>En pause n'est pas Abandonné. Ton livre ne rejoint pas la pile de ceux que tu as lâchés : il est en attente et revient quand tu veux.</p></div>
+            <div class="paused-card reveal-up"><h3>Depuis En cours de lecture ou En relecture</h3><p>Change le statut depuis la pastille sur la page du livre ou avec « Changer le statut » dans le menu rapide. Ça marche pour les livres, BD, mangas et livres audio.</p></div>
+            <div class="paused-card reveal-up"><h3>Les jours de pause ne comptent pas</h3><p>Ni dans les jours pour finir, ni dans ta vitesse de lecture. Tes statistiques restent celles de quand tu lisais.</p></div>
+            <div class="paused-card reveal-up"><h3>Une note, si tu veux</h3><p>Quand tu mets en pause et quand tu reprends, tu peux noter pourquoi. C'est facultatif. Tout reste dans la section « Pauses » de la page du livre, avec son historique.</p></div>
+            <div class="paused-card reveal-up"><h3>Un onglet à part</h3><p>Dans ta bibliothèque, entre À lire et Abandonné, tu trouves tes livres en pause.</p></div>
+            <div class="paused-card reveal-up"><h3>Rappels, et reprise automatique</h3><p>Les rappels de ce livre sont suspendus et reviennent quand tu le reprends. Si tu chronomètres une session ou qu'une arrive de KOReader, le livre reprend tout seul, avec un avis et une option Annuler.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Partager</span>
+            <h2 id="cards-title">Lecturameter n'est pas un réseau social. Tes cartes vont sur celui que tu utilises.</h2>
+            <p>Crée des cartes verticales 1080×1920, prêtes pour les stories, et partage-les là où tu es déjà. Sans compte, sans profil et sans abonnés.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · format story</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>Livre</li>
+                <li>Livre terminé</li>
+                <li>Stats du livre</li>
+                <li>Statistiques</li>
+                <li>Bilan hebdomadaire</li>
+                <li>Bilan mensuel</li>
+                <li>Défis</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>Événement</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>Choisis ce que tu montres</h3><p>Un livre, un livre que tu viens de finir, tes statistiques, ta semaine ou ton mois, un défi, le Bingo, Wrapped ou un événement.</p></li>
+            <li class="share-step reveal-up"><h3>Enregistrée dans « Mes cartes »</h3><p>Tout ce que tu partages reste dans Mes cartes, pour pouvoir le réutiliser quand tu veux.</p></li>
+            <li class="share-step reveal-up"><h3>Partage-la là où tu es déjà</h3><p>Par le menu de partage de ton téléphone, vers l'appli que tu utilises déjà. Ou enregistre-la dans ta galerie.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Événements</span>
+            <h2 id="events-title">Lis avec la communauté. Joue avec ta bibliothèque.</h2>
+            <p>Les événements apparaissent dans l'appli quand l'un est actif. Il y en a deux sortes aujourd'hui : un défi de lecture mondial et un jeu de cartes avec tes propres livres.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">Défi mondial · 14 jours</p>
+                <h3>La Grande Lecture</h3>
+                <ul class="event-list">
+                <li>Les minutes du chrono comptent, pour les livres, BD, mangas et livres audio.</li>
+                <li>Un objectif commun pour toute la communauté. S'il est dépassé, ça continue de compter.</li>
+                <li>Classement en direct avec un alias pseudonyme et ton Pagi en avatar.</li>
+                <li>À la fin, la carte de l'événement avec ta position, pour chaque participant.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">Exemple illustratif</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>Objectif de la communauté</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">Classement</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>toi</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>La bibliothèque oubliée</h3>
+                <ul class="event-list">
+                <li>Choisis 3 livres dans ta bibliothèque : chacun devient une carte avec l'archétype de son genre.</li>
+                <li>Des parties de 5 à 10 minutes pour traverser les rayons et battre le boss final.</li>
+                <li>Classement aux points : tes 3 meilleures parties de chaque jour comptent.</li>
+                <li>Pas assez de livres ? La bibliothèque te prête des volumes, un par archétype.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">Exemple illustratif</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">Il faut avoir 16 ans ou plus pour participer. S'il n'y a aucun événement actif en ce moment, l'appli te le dit.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>Nouveau</h3>
                 <ul>
                     <li><strong>Événements :</strong> défis de lecture mondiaux et Lecturameter Quest quand il y en a un d'actif</li>
+                    <li><strong>En pause :</strong> mets un livre de côté un moment sans fausser tes statistiques</li>
                     <li><strong>Deux nouveaux thèmes Pro :</strong> Cahier et Sous-bois</li>
                     <li>Une horloge de chrono propre à chaque thème</li>
                     <li>Pagi te choisit un livre dans À lire</li>
@@ -902,6 +1030,7 @@
                     <strong>Nouveautés</strong>
                     <ul>
                         <li><strong>Événements :</strong> défis de lecture mondiaux et Lecturameter Quest quand il y en a un d'actif</li>
+                        <li><strong>En pause :</strong> mets un livre de côté un moment sans fausser tes statistiques</li>
                         <li><strong>Deux nouveaux thèmes Pro :</strong> Cahier et Sous-bois</li>
                         <li>Une horloge de chrono propre à chaque thème</li>
                         <li>Pagi te choisit un livre dans À lire</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>Produit</h4>
                 <a href="#features">Fonctionnalités</a>
+                <a href="#events">Événements</a>
                 <a href="#pricing">Tarifs</a>
                 <a href="../precios-regionales.html">Prix par région</a>
                 <a href="#whatsnew">Notes de mise à jour</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">Politique de confidentialité</a>
                 <a href="./terms/">Conditions d'utilisation</a>
+                <a href="./cookies/">Politique de cookies</a>
+                <a href="#" data-lm-cookie-prefs>Préférences de cookies</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi t'applaudit !", "Brille, petite étoile !", "Chut, je lis.", "Pagi te surveille…"], "pagi_angry": ["Aïe ! Ça fait mal !", "Assez de clics !", "Grr, laisse-moi tranquille.", "Ce n'est plus drôle."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi t'applaudit !", "Brille, petite étoile !", "Chut, je lis.", "Pagi te surveille…"], "pagi_angry": ["Aïe ! Ça fait mal !", "Assez de clics !", "Grr, laisse-moi tranquille.", "Ce n'est plus drôle."], "consent_title": "Cookies et stockage", "consent_body": "Nous utilisons un widget tiers (StartupBar) qui stocke des données dans ton navigateur et compte les affichages. Il ne se charge que si tu acceptes. Ton thème, ta langue et l'avis fermé sont enregistrés sans te demander, car c'est toi qui les as choisis.", "consent_accept": "Accepter", "consent_reject": "Refuser", "consent_policy": "Politique de cookies", "consent_prefs": "Préférences de cookies"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

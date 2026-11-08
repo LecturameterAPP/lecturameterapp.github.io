@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · مطالعہ ٹریکر اور کتابوں کے اعداد و شمار</title>
-    <meta name="description" content="ایک نجی Android اور iPhone مطالعہ ٹریکر کے ساتھ اپنے مطالعے کا وقت، صفحات، رفتار اور پیش رفت ٹریک کریں۔ کوئی اکاؤنٹ نہیں، کوئی اشتہار نہیں۔ Goodreads اور StoryGraph سے درآمد کریں۔">
-    <meta property="og:title" content="Lecturameter · مطالعہ ٹریکر اور کتابوں کے اعداد و شمار">
-    <meta property="og:description" content="ایک نجی Android اور iPhone مطالعہ ٹریکر کے ساتھ اپنے مطالعے کا وقت، صفحات، رفتار اور پیش رفت ٹریک کریں۔ کوئی اکاؤنٹ نہیں، کوئی اشتہار نہیں۔ Goodreads اور StoryGraph سے درآمد کریں۔">
+    <title>Lecturameter: مطالعہ ٹریکر · کتابوں کے اعداد و شمار اور ٹائمر</title>
+    <meta name="description" content="Lecturameter: مطالعہ ٹریکر، اینڈرائیڈ اور آئی فون کے لیے۔ پڑھنے کا وقت ناپیں، صفحات، رفتار اور اعداد و شمار دیکھیں، اور Goodreads سے درآمد کریں۔ نہ اکاؤنٹ، نہ اشتہارات۔">
+    <meta property="og:title" content="Lecturameter: مطالعہ ٹریکر · کتابوں کے اعداد و شمار اور ٹائمر">
+    <meta property="og:description" content="Lecturameter: مطالعہ ٹریکر، اینڈرائیڈ اور آئی فون کے لیے۔ پڑھنے کا وقت ناپیں، صفحات، رفتار اور اعداد و شمار دیکھیں، اور Goodreads سے درآمد کریں۔ نہ اکاؤنٹ، نہ اشتہارات۔">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/ur/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · مطالعہ ٹریکر اور کتابوں کے اعداد و شمار">
+    <meta property="og:image:alt" content="Lecturameter: مطالعہ ٹریکر · کتابوں کے اعداد و شمار اور ٹائمر">
     <meta property="og:locale" content="ur_PK">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · مطالعہ ٹریکر اور کتابوں کے اعداد و شمار">
-    <meta name="twitter:description" content="ایک نجی Android اور iPhone مطالعہ ٹریکر کے ساتھ اپنے مطالعے کا وقت، صفحات، رفتار اور پیش رفت ٹریک کریں۔ کوئی اکاؤنٹ نہیں، کوئی اشتہار نہیں۔ Goodreads اور StoryGraph سے درآمد کریں۔">
+    <meta name="twitter:title" content="Lecturameter: مطالعہ ٹریکر · کتابوں کے اعداد و شمار اور ٹائمر">
+    <meta name="twitter:description" content="Lecturameter: مطالعہ ٹریکر، اینڈرائیڈ اور آئی فون کے لیے۔ پڑھنے کا وقت ناپیں، صفحات، رفتار اور اعداد و شمار دیکھیں، اور Goodreads سے درآمد کریں۔ نہ اکاؤنٹ، نہ اشتہارات۔">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · مطالعہ ٹریکر اور کتابوں کے اعداد و شمار">
+    <meta name="twitter:image:alt" content="Lecturameter: مطالعہ ٹریکر · کتابوں کے اعداد و شمار اور ٹائمر">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: مطالعہ ٹریکر",
       "url": "https://lecturameterapp.github.io/ur/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "اپنے Android یا iPhone فون پر اپنی لائبریری ترتیب دیں، مطالعے کے سیشنز کا وقت ناپیں اور تفصیلی اعداد و شمار دیکھیں۔ کوئی اشتہار نہیں، مکمل نجی۔",
       "featureList": "شیلفوں کے ساتھ لائبریری، اسکرین بند ہونے پر بھی چلنے والی اسٹاپ واچ، سیشنز کی تاریخ، ہیٹ میپ، سالانہ Wrapped، حسبِ ضرورت مطالعے کے چیلنجز، GOOGLE DRIVE بیک اپ، Goodreads CSV درآمد، زیادہ تر بغیر انٹرنیٹ",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "ur",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/ur/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/ur/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">تھیمز</a></li>
+            <li><a href="#events">ایونٹس</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">اپ ڈیٹ نوٹس</a></li>
             <li><a href="#history">تاریخ</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">3.9 میں نیا</span>
+            <h2 id="paused-title">اپنے اعداد و شمار بگاڑے بغیر کتاب کو کچھ عرصے کے لیے ایک طرف رکھ دیں</h2>
+            <p>“موقوف” ایک الگ حالت ہے، “ترک کر دی” سے مختلف۔ کتاب وہیں انتظار کرتی ہے جہاں آپ نے چھوڑی تھی، اور موقوف دن شمار نہیں ہوتے۔</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>پڑھنا چاہتا ہوں</span>
+                <span>زیرِ مطالعہ</span>
+                <span class="is-paused">موقوف</span>
+                <span>ترک کر دی</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>زیرِ مطالعہ</span>
+                <span><i class="dot pause"></i>موقوف &middot; موقوف دن شمار نہیں ہوتے</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>اپنی الگ حالت</h3><p>“موقوف” کا مطلب “ترک کر دی” نہیں ہے۔ آپ کی کتاب چھوڑی ہوئی کتابوں کے ڈھیر میں نہیں جاتی: وہ انتظار کرتی ہے اور جب آپ چاہیں واپس آ جاتی ہے۔</p></div>
+            <div class="paused-card reveal-up"><h3>“زیرِ مطالعہ” یا “دوبارہ پڑھ رہا ہوں” سے</h3><p>کتاب کے صفحے کے بیج سے یا فوری مینو میں “حالت بدلیں” سے حالت تبدیل کریں۔ یہ کتابوں، کامک، مانگا اور آڈیو بک کے لیے کام کرتا ہے۔</p></div>
+            <div class="paused-card reveal-up"><h3>موقوف دن شمار نہیں ہوتے</h3><p>نہ ختم کرنے کے دنوں میں اور نہ آپ کی پڑھنے کی رفتار میں۔ آپ کے اعداد و شمار ویسے ہی رہتے ہیں جیسے پڑھتے وقت تھے۔</p></div>
+            <div class="paused-card reveal-up"><h3>چاہیں تو ایک نوٹ</h3><p>موقوف کرتے وقت اور دوبارہ شروع کرتے وقت آپ وجہ لکھ سکتے ہیں۔ یہ اختیاری ہے۔ سب کچھ کتاب کے صفحے کے “وقفے” حصے میں اس کی تاریخ کے ساتھ رہتا ہے۔</p></div>
+            <div class="paused-card reveal-up"><h3>اپنا الگ ٹیب</h3><p>آپ کی لائبریری میں، “پڑھنا چاہتا ہوں” اور “ترک کر دی” کے درمیان، موقوف کتابیں ملیں گی۔</p></div>
+            <div class="paused-card reveal-up"><h3>یاد دہانیاں، اور خود بخود دوبارہ شروع</h3><p>اس کتاب کی یاد دہانیاں رک جاتی ہیں اور کتاب دوبارہ شروع کرنے پر واپس آ جاتی ہیں۔ اگر آپ کوئی سیشن ٹائم کریں یا KOReader سے کوئی آ جائے تو کتاب خود بخود دوبارہ شروع ہو جاتی ہے، نوٹس اور “واپس کریں” کے آپشن کے ساتھ۔</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">شیئر کریں</span>
+            <h2 id="cards-title">Lecturameter کوئی سوشل نیٹ ورک نہیں ہے۔ آپ کے کارڈز اسی نیٹ ورک پر جاتے ہیں جسے آپ استعمال کرتے ہیں۔</h2>
+            <p>اسٹوری کے لیے تیار 1080×1920 عمودی کارڈز بنائیں اور وہیں شیئر کریں جہاں آپ پہلے سے ہیں۔ نہ اکاؤنٹ، نہ پروفائل، نہ فالوورز۔</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · اسٹوری فارمیٹ</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>کتاب</li>
+                <li>مکمل کی ہوئی کتاب</li>
+                <li>کتاب کے اعداد و شمار</li>
+                <li>اعداد و شمار</li>
+                <li>ہفتہ وار خلاصہ</li>
+                <li>ماہانہ خلاصہ</li>
+                <li>چیلنجز</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>ایونٹ</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>چنیں کہ کیا دکھانا ہے</h3><p>ایک کتاب، ابھی ختم کی ہوئی کتاب، آپ کے اعداد و شمار، آپ کا ہفتہ یا مہینہ، ایک چیلنج، Bingo، Wrapped یا ایک ایونٹ۔</p></li>
+            <li class="share-step reveal-up"><h3>“میرے کارڈز” میں محفوظ ہوتا ہے</h3><p>آپ جو کچھ شیئر کرتے ہیں وہ میرے کارڈز میں رہتا ہے، تاکہ آپ جب چاہیں دوبارہ استعمال کر سکیں۔</p></li>
+            <li class="share-step reveal-up"><h3>وہیں شیئر کریں جہاں آپ پہلے سے ہیں</h3><p>اپنے فون کے شیئر مینو کے ذریعے، اس ایپ میں جو آپ پہلے سے استعمال کرتے ہیں۔ یا گیلری میں محفوظ کریں۔</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">ایونٹس</span>
+            <h2 id="events-title">کمیونٹی کے ساتھ پڑھیں۔ اپنی لائبریری کے ساتھ کھیلیں۔</h2>
+            <p>جب کوئی ایونٹ فعال ہو تو وہ ایپ میں نظر آتا ہے۔ آج دو قسمیں ہیں: ایک عالمی مطالعے کا چیلنج اور آپ کی اپنی کتابوں کے ساتھ تاش کا کھیل۔</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">عالمی چیلنج · 14 دن</p>
+                <h3>بڑا مطالعہ</h3>
+                <ul class="event-list">
+                <li>ٹائمر کے منٹ شمار ہوتے ہیں، کتابوں، کامک، مانگا اور آڈیو بک میں۔</li>
+                <li>پوری کمیونٹی کے لیے ایک مشترکہ ہدف۔ اگر یہ عبور ہو جائے تو شمار جاری رہتا ہے۔</li>
+                <li>فرضی نام کے ساتھ لائیو درجہ بندی اور اوتار کے طور پر آپ کا Pagi۔</li>
+                <li>ختم ہونے پر، ہر شریک کے لیے آپ کی پوزیشن والا ایونٹ کارڈ۔</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">مثال</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>کمیونٹی کا ہدف</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">درجہ بندی</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>آپ</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>بھولی ہوئی لائبریری</h3>
+                <ul class="event-list">
+                <li>اپنی لائبریری سے 3 کتابیں چنیں: ہر ایک اپنی صنف کے نمونے کے ساتھ کارڈ بن جاتی ہے۔</li>
+                <li>الماریاں پار کر کے آخری باس کو ہرانے کے لیے 5 سے 10 منٹ کے رن۔</li>
+                <li>پوائنٹس کی درجہ بندی: ہر دن آپ کے بہترین 3 رن شمار ہوتے ہیں۔</li>
+                <li>کتابیں کم ہیں؟ لائبریری آپ کو جلدیں ادھار دیتی ہے، ہر نمونے کے لیے ایک۔</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">مثال</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">شرکت کے لیے آپ کی عمر 16 سال یا اس سے زیادہ ہونی چاہیے۔ اگر ابھی کوئی ایونٹ فعال نہیں تو ایپ آپ کو بتا دیتی ہے۔</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>نیا</h3>
                 <ul>
                     <li><strong>ایونٹس:</strong> عالمی مطالعہ کے چیلنجز اور فعال ہونے پر Lecturameter Quest</li>
+                    <li><strong>موقوف:</strong> اپنے اعداد و شمار بگاڑے بغیر کتاب کو کچھ عرصے کے لیے ایک طرف رکھ دیں</li>
                     <li><strong>دو نئے Pro تھیمز:</strong> کاپی اور جنگل</li>
                     <li>ہر تھیم کے لیے اپنی ٹائمر گھڑی</li>
                     <li>Pagi پڑھنا چاہتا ہوں میں سے ایک کتاب چنتا ہے</li>
@@ -902,6 +1030,7 @@
                     <strong>نیا</strong>
                     <ul>
                         <li><strong>ایونٹس:</strong> عالمی مطالعہ کے چیلنجز اور فعال ہونے پر Lecturameter Quest</li>
+                        <li><strong>موقوف:</strong> اپنے اعداد و شمار بگاڑے بغیر کتاب کو کچھ عرصے کے لیے ایک طرف رکھ دیں</li>
                         <li><strong>دو نئے Pro تھیمز:</strong> کاپی اور جنگل</li>
                         <li>ہر تھیم کے لیے اپنی ٹائمر گھڑی</li>
                         <li>Pagi پڑھنا چاہتا ہوں میں سے ایک کتاب چنتا ہے</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>پروڈکٹ</h4>
                 <a href="#features">خصوصیات</a>
+                <a href="#events">ایونٹس</a>
                 <a href="#pricing">قیمتیں</a>
                 <a href="../precios-regionales.html">علاقائی قیمتیں</a>
                 <a href="#whatsnew">اپ ڈیٹ نوٹس</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">رازداری کی پالیسی</a>
                 <a href="./terms/">شرائطِ استعمال</a>
+                <a href="./cookies/">کوکی پالیسی</a>
+                <a href="#" data-lm-cookie-prefs>کوکی ترجیحات</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi آپ کے لیے تالیاں بجاتا ہے!", "چمکو، ننھے ستارے!", "ششش، میں پڑھ رہا ہوں۔", "Pagi دیکھ رہا ہے…"], "pagi_angry": ["آؤچ! درد ہوا!", "بس کرو، اتنے کلک!", "گرر، مجھے اکیلا چھوڑ دو۔", "اب مزاحیہ نہیں رہا۔"]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi آپ کے لیے تالیاں بجاتا ہے!", "چمکو، ننھے ستارے!", "ششش، میں پڑھ رہا ہوں۔", "Pagi دیکھ رہا ہے…"], "pagi_angry": ["آؤچ! درد ہوا!", "بس کرو، اتنے کلک!", "گرر، مجھے اکیلا چھوڑ دو۔", "اب مزاحیہ نہیں رہا۔"], "consent_title": "کوکیز اور اسٹوریج", "consent_body": "ہم ایک تھرڈ پارٹی ویجیٹ (StartupBar) استعمال کرتے ہیں جو آپ کے براؤزر میں ڈیٹا محفوظ کرتا ہے اور امپریشن گنتا ہے۔ یہ صرف اسی صورت لوڈ ہوتا ہے جب آپ قبول کریں۔ آپ کی تھیم، زبان اور بند کیا گیا نوٹس بغیر پوچھے محفوظ ہو جاتے ہیں، کیونکہ انہیں آپ نے خود چنا ہے۔", "consent_accept": "قبول کریں", "consent_reject": "مسترد کریں", "consent_policy": "کوکی پالیسی", "consent_prefs": "کوکی ترجیحات"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

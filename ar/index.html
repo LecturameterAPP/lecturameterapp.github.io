@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter – متتبّع القراءة وإحصاءات الكتب</title>
-    <meta name="description" content="تتبّع وقت قراءتك وصفحاتك وإيقاعك وتقدّمك مع متتبّع قراءة خاص على Android وiPhone. بلا حساب، بلا إعلانات. استورد من Goodreads وStoryGraph.">
-    <meta property="og:title" content="Lecturameter – متتبّع القراءة وإحصاءات الكتب">
-    <meta property="og:description" content="تتبّع وقت قراءتك وصفحاتك وإيقاعك وتقدّمك مع متتبّع قراءة خاص على Android وiPhone. بلا حساب، بلا إعلانات. استورد من Goodreads وStoryGraph.">
+    <title>Lecturameter: متتبع القراءة · إحصاءات الكتب والمؤقّت</title>
+    <meta name="description" content="Lecturameter: متتبع القراءة لأندرويد وآيفون. قِس وقت قراءتك وتابع الصفحات والوتيرة والإحصاءات، واستورد من Goodreads. بلا حساب وبلا إعلانات.">
+    <meta property="og:title" content="Lecturameter: متتبع القراءة · إحصاءات الكتب والمؤقّت">
+    <meta property="og:description" content="Lecturameter: متتبع القراءة لأندرويد وآيفون. قِس وقت قراءتك وتابع الصفحات والوتيرة والإحصاءات، واستورد من Goodreads. بلا حساب وبلا إعلانات.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/ar/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter – متتبّع القراءة وإحصاءات الكتب">
+    <meta property="og:image:alt" content="Lecturameter: متتبع القراءة · إحصاءات الكتب والمؤقّت">
     <meta property="og:locale" content="ar_AR">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter – متتبّع القراءة وإحصاءات الكتب">
-    <meta name="twitter:description" content="تتبّع وقت قراءتك وصفحاتك وإيقاعك وتقدّمك مع متتبّع قراءة خاص على Android وiPhone. بلا حساب، بلا إعلانات. استورد من Goodreads وStoryGraph.">
+    <meta name="twitter:title" content="Lecturameter: متتبع القراءة · إحصاءات الكتب والمؤقّت">
+    <meta name="twitter:description" content="Lecturameter: متتبع القراءة لأندرويد وآيفون. قِس وقت قراءتك وتابع الصفحات والوتيرة والإحصاءات، واستورد من Goodreads. بلا حساب وبلا إعلانات.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter – متتبّع القراءة وإحصاءات الكتب">
+    <meta name="twitter:image:alt" content="Lecturameter: متتبع القراءة · إحصاءات الكتب والمؤقّت">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: متتبع القراءة",
       "url": "https://lecturameterapp.github.io/ar/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "نظّم مكتبتك، وقِس وقت جلسات القراءة، واطّلع على إحصاءات مفصّلة على هاتف Android أو iPhone. بلا إعلانات، وخاص تمامًا.",
       "featureList": "مكتبة برفوف، مؤقّت يعمل والشاشة مطفأة، سجل الجلسات، خريطة حرارية، Wrapped سنوي، تحديات قراءة قابلة للتخصيص، نسخ احتياطي على Google Drive، استيراد CSV من Goodreads، يعمل غالبًا بلا اتصال",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "ar",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/ar/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/ar/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">السمات</a></li>
+            <li><a href="#events">الفعاليات</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">ملاحظات التحديث</a></li>
             <li><a href="#history">السجل</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">جديد في 3.9</span>
+            <h2 id="paused-title">ضع كتابًا جانبًا لفترة دون أن تتأثر إحصاءاتك</h2>
+            <p>«متوقف مؤقتًا» حالة قائمة بذاتها، مختلفة عن «متروك». يبقى الكتاب حيث تركته، ولا تُحتسب الأيام التي قضاها متوقفًا.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>أريد قراءته</span>
+                <span>قيد القراءة</span>
+                <span class="is-paused">متوقف مؤقتًا</span>
+                <span>متروك</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>قيد القراءة</span>
+                <span><i class="dot pause"></i>متوقف مؤقتًا &middot; الأيام التي يقضيها الكتاب متوقفًا لا تُحتسب</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>حالة قائمة بذاتها</h3><p>«متوقف مؤقتًا» ليس «متروكًا». كتابك لا يذهب إلى كومة الكتب التي تخلّيت عنها: إنه في الانتظار ويعود متى شئت.</p></div>
+            <div class="paused-card reveal-up"><h3>من «قيد القراءة» أو «إعادة القراءة»</h3><p>غيّر الحالة من الشارة في صفحة الكتاب أو عبر «تغيير الحالة» في القائمة السريعة. يعمل مع الكتب والكوميكس والمانغا والكتب الصوتية.</p></div>
+            <div class="paused-card reveal-up"><h3>الأيام المتوقفة لا تُحتسب</h3><p>لا في أيام الإنهاء ولا في سرعة قراءتك. تبقى إحصاءاتك كما كانت حين كنت تقرأ.</p></div>
+            <div class="paused-card reveal-up"><h3>ملاحظة، إن أردت</h3><p>عند الإيقاف وعند الاستئناف يمكنك تدوين السبب. هذا اختياري. كل شيء يبقى في قسم «فترات التوقف» في صفحة الكتاب مع سجلّه.</p></div>
+            <div class="paused-card reveal-up"><h3>تبويب خاص به</h3><p>في مكتبتك، بين «أريد قراءته» و«متروك»، ستجد كتبك المتوقفة مؤقتًا.</p></div>
+            <div class="paused-card reveal-up"><h3>التذكيرات، والاستئناف التلقائي</h3><p>تذكيرات ذلك الكتاب تتوقف وتعود عند استئنافه. وإذا قسْتَ جلسة بالمؤقّت أو وصلت جلسة من KOReader، يُستأنف الكتاب تلقائيًا مع إشعار وخيار «تراجع».</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">مشاركة</span>
+            <h2 id="cards-title">Lecturameter ليس شبكة اجتماعية. بطاقاتك تذهب إلى الشبكة التي تستخدمها.</h2>
+            <p>أنشئ بطاقات عمودية بأبعاد 1080×1920، جاهزة للقصص، وشاركها حيث أنت أصلًا. بلا حساب وبلا ملف شخصي وبلا متابعين.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · بصيغة القصص</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>كتاب</li>
+                <li>كتاب منتهٍ</li>
+                <li>إحصاءات الكتاب</li>
+                <li>الإحصاءات</li>
+                <li>الملخص الأسبوعي</li>
+                <li>الملخص الشهري</li>
+                <li>التحديات</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>حدث</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>اختر ما تريد عرضه</h3><p>كتاب، أو كتاب أنهيته للتو، أو إحصاءاتك، أو أسبوعك أو شهرك، أو تحدٍّ، أو Bingo أو Wrapped أو حدث.</p></li>
+            <li class="share-step reveal-up"><h3>تُحفظ في «بطاقاتي»</h3><p>كل ما تشاركه يبقى في بطاقاتي، فتستطيع استخدامه مجددًا متى شئت.</p></li>
+            <li class="share-step reveal-up"><h3>شاركها حيث أنت أصلًا</h3><p>عبر قائمة المشاركة في هاتفك، إلى التطبيق الذي تستخدمه فعلًا. أو احفظها في معرض الصور.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">الفعاليات</span>
+            <h2 id="events-title">اقرأ مع المجتمع. والعب بمكتبتك.</h2>
+            <p>تظهر الفعاليات في التطبيق عندما يكون أحدها نشطًا. هناك نوعان حاليًا: تحدٍّ قرائي عالمي ولعبة بطاقات بكتبك أنت.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">تحدٍّ عالمي · 14 يومًا</p>
+                <h3>القراءة الكبرى</h3>
+                <ul class="event-list">
+                <li>تُحتسب دقائق المؤقّت، في الكتب والكوميكس والمانغا والكتب الصوتية.</li>
+                <li>هدف مشترك للمجتمع كله. وإذا تجاوزتموه يستمر الاحتساب.</li>
+                <li>لوحة صدارة مباشرة بلقب مستعار وباجي كصورة رمزية.</li>
+                <li>عند انتهائه، بطاقة الحدث بترتيبك، لكل مشارك.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">مثال توضيحي</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>هدف المجتمع</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">لوحة الصدارة</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>أنت</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>المكتبة المنسية</h3>
+                <ul class="event-list">
+                <li>اختر 3 كتب من مكتبتك: يتحول كل منها إلى بطاقة بنمط نوعه الأدبي.</li>
+                <li>جولات من 5 إلى 10 دقائق لتعبر الرفوف وتهزم الزعيم الأخير.</li>
+                <li>لوحة صدارة بالنقاط: تُحتسب أفضل 3 جولات لك في كل يوم.</li>
+                <li>تنقصك الكتب؟ تعيرك المكتبة مجلدات، واحدًا لكل نمط.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">مثال توضيحي</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">يجب أن يكون عمرك 16 عامًا أو أكثر للمشاركة. إذا لم يكن هناك حدث نشط الآن، يخبرك التطبيق بذلك.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>جديد</h3>
                 <ul>
                     <li><strong>الفعاليات:</strong> تحدّيات قراءة عالمية وLecturameter Quest عند وجود فعالية نشطة</li>
+                    <li><strong>متوقف مؤقتًا:</strong> ضع كتابًا جانبًا لفترة دون أن تتأثر إحصاءاتك</li>
                     <li><strong>سمتان جديدتان لمشتركي Pro:</strong> دفتر وغابة</li>
                     <li>ساعة مؤقّت خاصة بكل سمة</li>
                     <li>Pagi يختار لك كتابًا من أريد قراءته</li>
@@ -902,6 +1030,7 @@
                     <strong>جديد</strong>
                     <ul>
                         <li><strong>الفعاليات:</strong> تحدّيات قراءة عالمية وLecturameter Quest عند وجود فعالية نشطة</li>
+                        <li><strong>متوقف مؤقتًا:</strong> ضع كتابًا جانبًا لفترة دون أن تتأثر إحصاءاتك</li>
                         <li><strong>سمتان جديدتان لمشتركي Pro:</strong> دفتر وغابة</li>
                         <li>ساعة مؤقّت خاصة بكل سمة</li>
                         <li>Pagi يختار لك كتابًا من أريد قراءته</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>المنتج</h4>
                 <a href="#features">الميزات</a>
+                <a href="#events">الفعاليات</a>
                 <a href="#pricing">الأسعار</a>
                 <a href="../precios-regionales.html">الأسعار حسب المنطقة</a>
                 <a href="#whatsnew">ملاحظات التحديث</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">سياسة الخصوصية</a>
                 <a href="./terms/">شروط الخدمة</a>
+                <a href="./cookies/">سياسة ملفات تعريف الارتباط</a>
+                <a href="#" data-lm-cookie-prefs>تفضيلات ملفات تعريف الارتباط</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi يصفّق لك!", "تألّق يا نجمي الصغير!", "صه، أنا أقرأ.", "Pagi يراقب…"], "pagi_angry": ["آخ! هذا يؤلم!", "كفى نقرًا!", "غرر، اتركني وشأني.", "لم يعد الأمر مضحكًا."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi يصفّق لك!", "تألّق يا نجمي الصغير!", "صه، أنا أقرأ.", "Pagi يراقب…"], "pagi_angry": ["آخ! هذا يؤلم!", "كفى نقرًا!", "غرر، اتركني وشأني.", "لم يعد الأمر مضحكًا."], "consent_title": "ملفات تعريف الارتباط والتخزين", "consent_body": "نستخدم أداة من طرف ثالث (StartupBar) تخزّن بيانات في متصفحك وتحتسب مرات الظهور. لا تُحمَّل إلا إذا وافقت. أما المظهر واللغة والإشعار الذي أغلقته فتُحفظ دون سؤال، لأنك أنت من اخترتها.", "consent_accept": "أوافق", "consent_reject": "أرفض", "consent_policy": "سياسة ملفات تعريف الارتباط", "consent_prefs": "تفضيلات ملفات تعريف الارتباط"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

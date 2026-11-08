@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · 読書トラッカーと読書統計</title>
-    <meta name="description" content="AndroidとiPhoneに対応したプライベートな読書トラッカーで、読書時間、ページ数、ペース、進捗を記録。アカウント不要、広告なし。GoodreadsやStoryGraphからインポートできます。">
-    <meta property="og:title" content="Lecturameter · 読書トラッカーと読書統計">
-    <meta property="og:description" content="AndroidとiPhoneに対応したプライベートな読書トラッカーで、読書時間、ページ数、ペース、進捗を記録。アカウント不要、広告なし。GoodreadsやStoryGraphからインポートできます。">
+    <title>Lecturameter: 読書記録 · 統計とタイマー</title>
+    <meta name="description" content="Lecturameter: 読書記録アプリ（Android・iPhone対応）。読書時間を計測し、ページ数・ペース・統計を記録。Goodreadsからのインポートも。アカウント不要、広告なし。">
+    <meta property="og:title" content="Lecturameter: 読書記録 · 統計とタイマー">
+    <meta property="og:description" content="Lecturameter: 読書記録アプリ（Android・iPhone対応）。読書時間を計測し、ページ数・ペース・統計を記録。Goodreadsからのインポートも。アカウント不要、広告なし。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/ja/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · 読書トラッカーと読書統計">
+    <meta property="og:image:alt" content="Lecturameter: 読書記録 · 統計とタイマー">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · 読書トラッカーと読書統計">
-    <meta name="twitter:description" content="AndroidとiPhoneに対応したプライベートな読書トラッカーで、読書時間、ページ数、ペース、進捗を記録。アカウント不要、広告なし。GoodreadsやStoryGraphからインポートできます。">
+    <meta name="twitter:title" content="Lecturameter: 読書記録 · 統計とタイマー">
+    <meta name="twitter:description" content="Lecturameter: 読書記録アプリ（Android・iPhone対応）。読書時間を計測し、ページ数・ペース・統計を記録。Goodreadsからのインポートも。アカウント不要、広告なし。">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · 読書トラッカーと読書統計">
+    <meta name="twitter:image:alt" content="Lecturameter: 読書記録 · 統計とタイマー">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: 読書記録",
       "url": "https://lecturameterapp.github.io/ja/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "AndroidまたはiPhoneでライブラリを整理し、読書セッションを計測して、詳しい統計を確認。広告なしで、完全にプライベート。",
       "featureList": "本棚のあるライブラリ、画面オフでも動くタイマー、セッション履歴、ヒートマップ、年間Wrapped、カスタマイズできる読書チャレンジ、Google Driveへのバックアップ、GoodreadsのCSVインポート、ほぼオフラインで動作",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "ja",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/ja/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/ja/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">テーマ</a></li>
+            <li><a href="#events">イベント</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">パッチノート</a></li>
             <li><a href="#history">履歴</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">3.9の新機能</span>
+            <h2 id="paused-title">統計を崩さずに、本をしばらく脇に置けます</h2>
+            <p>「一時停止中」は「中断」とは別のステータスです。本は置いたところで待っていて、一時停止していた日数はカウントされません。</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>読みたい</span>
+                <span>読書中</span>
+                <span class="is-paused">一時停止中</span>
+                <span>中断</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>読書中</span>
+                <span><i class="dot pause"></i>一時停止中 &middot; 一時停止していた日数はカウントされません</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>専用のステータス</h3><p>「一時停止中」は「中断」ではありません。本は諦めた本の山には入らず、保留のまま、好きなときに戻ってきます。</p></div>
+            <div class="paused-card reveal-up"><h3>「読書中」または「再読中」から</h3><p>本のページのバッジ、またはクイックメニューの「ステータスを変更」から変更できます。本、コミック、漫画、オーディオブックで使えます。</p></div>
+            <div class="paused-card reveal-up"><h3>一時停止中の日数はカウントされません</h3><p>読了までの日数にも、読む速さにも含まれません。統計は読んでいたときのままです。</p></div>
+            <div class="paused-card reveal-up"><h3>必要ならメモも</h3><p>一時停止するときと再開するときに、理由を書き留められます。入力は任意です。すべて本のページの「一時停止」セクションに履歴つきで残ります。</p></div>
+            <div class="paused-card reveal-up"><h3>専用のタブ</h3><p>ライブラリの「読みたい」と「中断」のあいだに、一時停止中の本が並びます。</p></div>
+            <div class="paused-card reveal-up"><h3>リマインダーと、自動で再開</h3><p>その本のリマインダーは一時停止され、再開すると元に戻ります。セッションを計測したり、KOReaderからセッションが届いたりすると、本は自動で再開され、お知らせと「元に戻す」が表示されます。</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">共有</span>
+            <h2 id="cards-title">Lecturameterはソーシャルネットワークではありません。カードは、あなたが使っているSNSへ。</h2>
+            <p>ストーリーにそのまま使える縦型1080×1920のカードを作って、いつもの場所で共有。アカウントもプロフィールもフォロワーも不要です。</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · ストーリー形式</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>本</li>
+                <li>読了した本</li>
+                <li>本の統計</li>
+                <li>統計</li>
+                <li>週間まとめ</li>
+                <li>月間まとめ</li>
+                <li>チャレンジ</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>イベント</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>見せたいものを選ぶ</h3><p>本、読み終えたばかりの本、統計、今週や今月、チャレンジ、Bingo、Wrapped、イベント。</p></li>
+            <li class="share-step reveal-up"><h3>「マイカード」に保存されます</h3><p>共有したものはすべてマイカードに残るので、いつでも使い直せます。</p></li>
+            <li class="share-step reveal-up"><h3>いつもの場所で共有</h3><p>スマホの共有メニューから、普段使っているアプリへ。ギャラリーへの保存もできます。</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">イベント</span>
+            <h2 id="events-title">みんなで読む。自分のライブラリで遊ぶ。</h2>
+            <p>イベントは開催中のときにアプリに表示されます。いまは二種類あります。世界規模の読書チャレンジと、手持ちの本で遊ぶカードゲームです。</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">グローバルチャレンジ · 14日間</p>
+                <h3>みんなで大読書</h3>
+                <ul class="event-list">
+                <li>タイマーの分数がカウントされます。本、コミック、漫画、オーディオブックが対象です。</li>
+                <li>コミュニティ全体の共通目標。達成してもカウントは続きます。</li>
+                <li>ニックネーム表示のライブランキング。アバターはあなたのPagi。</li>
+                <li>終了すると、参加者全員に順位入りのイベントカードが届きます。</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">イメージ例</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>コミュニティの目標</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">ランキング</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>あなた</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>忘れられた図書館</h3>
+                <ul class="event-list">
+                <li>ライブラリから3冊を選びます。それぞれがジャンルのアーキタイプを持つカードになります。</li>
+                <li>5〜10分のランで本棚を抜け、最後のボスを倒そう。</li>
+                <li>ポイントランキング: 毎日のベスト3ランが対象です。</li>
+                <li>本が足りない？ 図書館がアーキタイプごとに一冊ずつ貸してくれます。</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">イメージ例</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">参加は16歳以上です。開催中のイベントがないときは、アプリでお知らせします。</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>新機能</h3>
                 <ul>
                     <li><strong>イベント:</strong> 世界規模の読書チャレンジと、開催中のLecturameter Quest</li>
+                    <li><strong>一時停止中:</strong> 統計を崩さずに、本をしばらく脇に置けます</li>
                     <li><strong>新しいProテーマが2つ:</strong> ノートと森</li>
                     <li>テーマごとに専用のタイマー時計</li>
                     <li>Pagiが「読みたい」から本を1冊選びます</li>
@@ -902,6 +1030,7 @@
                     <strong>新機能</strong>
                     <ul>
                         <li><strong>イベント:</strong> 世界規模の読書チャレンジと、開催中のLecturameter Quest</li>
+                        <li><strong>一時停止中:</strong> 統計を崩さずに、本をしばらく脇に置けます</li>
                         <li><strong>新しいProテーマが2つ:</strong> ノートと森</li>
                         <li>テーマごとに専用のタイマー時計</li>
                         <li>Pagiが「読みたい」から本を1冊選びます</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>製品</h4>
                 <a href="#features">機能</a>
+                <a href="#events">イベント</a>
                 <a href="#pricing">価格</a>
                 <a href="../precios-regionales.html">地域別の価格</a>
                 <a href="#whatsnew">パッチノート</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">プライバシーポリシー</a>
                 <a href="./terms/">利用規約</a>
+                <a href="./cookies/">Cookieポリシー</a>
+                <a href="#" data-lm-cookie-prefs>Cookieの設定</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagiが拍手してるよ！", "輝け、小さな星！", "しーっ、読書中だよ。", "Pagiが見てるよ…"], "pagi_angry": ["いたっ！痛いよ！", "クリックしすぎ！", "うー、ほっといて。", "もう笑えないよ。"]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagiが拍手してるよ！", "輝け、小さな星！", "しーっ、読書中だよ。", "Pagiが見てるよ…"], "pagi_angry": ["いたっ！痛いよ！", "クリックしすぎ！", "うー、ほっといて。", "もう笑えないよ。"], "consent_title": "Cookieとストレージ", "consent_body": "サードパーティのウィジェット（StartupBar）を利用しています。ブラウザにデータを保存し、表示回数をカウントします。同意した場合にのみ読み込まれます。テーマ、言語、閉じたお知らせは、あなたが選んだものなので確認なしで保存されます。", "consent_accept": "同意する", "consent_reject": "拒否する", "consent_policy": "Cookieポリシー", "consent_prefs": "Cookieの設定"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

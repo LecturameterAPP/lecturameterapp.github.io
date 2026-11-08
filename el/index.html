@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · Παρακολούθηση ανάγνωσης και στατιστικά βιβλίων</title>
-    <meta name="description" content="Κατέγραψε τον χρόνο ανάγνωσης, τις σελίδες, τον ρυθμό και την πρόοδό σου με μια ιδιωτική εφαρμογή παρακολούθησης ανάγνωσης για Android και iPhone. Χωρίς λογαριασμό, χωρίς διαφημίσεις. Εισαγωγή από Goodreads και StoryGraph.">
-    <meta property="og:title" content="Lecturameter · Παρακολούθηση ανάγνωσης και στατιστικά βιβλίων">
-    <meta property="og:description" content="Κατέγραψε τον χρόνο ανάγνωσης, τις σελίδες, τον ρυθμό και την πρόοδό σου με μια ιδιωτική εφαρμογή παρακολούθησης ανάγνωσης για Android και iPhone. Χωρίς λογαριασμό, χωρίς διαφημίσεις. Εισαγωγή από Goodreads και StoryGraph.">
+    <title>Lecturameter: Ανάγνωση · Στατιστικά βιβλίων και χρονόμετρο</title>
+    <meta name="description" content="Lecturameter: Ανάγνωση για Android και iPhone. Χρονομέτρησε το διάβασμα, δες σελίδες, ρυθμό, στατιστικά και εισαγωγή από Goodreads. Χωρίς λογαριασμό και διαφημίσεις.">
+    <meta property="og:title" content="Lecturameter: Ανάγνωση · Στατιστικά βιβλίων και χρονόμετρο">
+    <meta property="og:description" content="Lecturameter: Ανάγνωση για Android και iPhone. Χρονομέτρησε το διάβασμα, δες σελίδες, ρυθμό, στατιστικά και εισαγωγή από Goodreads. Χωρίς λογαριασμό και διαφημίσεις.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/el/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · Παρακολούθηση ανάγνωσης και στατιστικά βιβλίων">
+    <meta property="og:image:alt" content="Lecturameter: Ανάγνωση · Στατιστικά βιβλίων και χρονόμετρο">
     <meta property="og:locale" content="el_GR">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · Παρακολούθηση ανάγνωσης και στατιστικά βιβλίων">
-    <meta name="twitter:description" content="Κατέγραψε τον χρόνο ανάγνωσης, τις σελίδες, τον ρυθμό και την πρόοδό σου με μια ιδιωτική εφαρμογή παρακολούθησης ανάγνωσης για Android και iPhone. Χωρίς λογαριασμό, χωρίς διαφημίσεις. Εισαγωγή από Goodreads και StoryGraph.">
+    <meta name="twitter:title" content="Lecturameter: Ανάγνωση · Στατιστικά βιβλίων και χρονόμετρο">
+    <meta name="twitter:description" content="Lecturameter: Ανάγνωση για Android και iPhone. Χρονομέτρησε το διάβασμα, δες σελίδες, ρυθμό, στατιστικά και εισαγωγή από Goodreads. Χωρίς λογαριασμό και διαφημίσεις.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · Παρακολούθηση ανάγνωσης και στατιστικά βιβλίων">
+    <meta name="twitter:image:alt" content="Lecturameter: Ανάγνωση · Στατιστικά βιβλίων και χρονόμετρο">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: Ανάγνωση",
       "url": "https://lecturameterapp.github.io/el/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "Οργάνωσε τη βιβλιοθήκη σου, χρονομέτρησε τις συνεδρίες ανάγνωσης και δες αναλυτικά στατιστικά στο κινητό σου Android ή iPhone. Χωρίς διαφημίσεις, απόλυτα ιδιωτικό.",
       "featureList": "Βιβλιοθήκη με ράφια, χρονόμετρο με σβηστή οθόνη, ιστορικό συνεδριών, χάρτης θερμότητας, ετήσιο Wrapped, προσαρμόσιμες προκλήσεις ανάγνωσης, αντίγραφο ασφαλείας στο Google Drive, εισαγωγή CSV από Goodreads, σχεδόν πλήρως εκτός σύνδεσης",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "el",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/el/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/el/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Θέματα</a></li>
+            <li><a href="#events">Εκδηλώσεις</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">Σημειώσεις ενημέρωσης</a></li>
             <li><a href="#history">Ιστορικό</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Νέο στο 3.9</span>
+            <h2 id="paused-title">Άφησε ένα βιβλίο στην άκρη για λίγο χωρίς να χαλάσουν τα στατιστικά σου</h2>
+            <p>Η «Παύση» είναι ξεχωριστή κατάσταση, διαφορετική από το «Εγκαταλελειμμένο». Το βιβλίο περιμένει εκεί που το άφησες και οι μέρες σε παύση δεν μετράνε.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>Θέλω να το διαβάσω</span>
+                <span>Ανάγνωση</span>
+                <span class="is-paused">Σε παύση</span>
+                <span>Εγκαταλελειμμένο</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>Ανάγνωση</span>
+                <span><i class="dot pause"></i>Σε παύση &middot; Οι μέρες σε παύση δεν μετράνε</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>Ξεχωριστή κατάσταση</h3><p>Η παύση δεν είναι εγκατάλειψη. Το βιβλίο σου δεν πάει στη στοίβα με όσα παράτησες: περιμένει και επιστρέφει όποτε θέλεις.</p></div>
+            <div class="paused-card reveal-up"><h3>Από Ανάγνωση ή Επανάγνωση</h3><p>Άλλαξε την κατάσταση από το κουμπί στη σελίδα του βιβλίου ή με το «Αλλαγή κατάστασης» στο γρήγορο μενού. Λειτουργεί για βιβλία, κόμικ, manga και ηχητικά βιβλία.</p></div>
+            <div class="paused-card reveal-up"><h3>Οι μέρες σε παύση δεν μετράνε</h3><p>Ούτε στις μέρες μέχρι να τελειώσεις ούτε στην ταχύτητα ανάγνωσής σου. Τα στατιστικά σου μένουν όπως ήταν όταν διάβαζες.</p></div>
+            <div class="paused-card reveal-up"><h3>Μια σημείωση, αν θέλεις</h3><p>Όταν βάζεις παύση και όταν συνεχίζεις, μπορείς να σημειώσεις γιατί. Είναι προαιρετικό. Όλα μένουν στην ενότητα «Παύσεις» της σελίδας του βιβλίου, με το ιστορικό τους.</p></div>
+            <div class="paused-card reveal-up"><h3>Δική του καρτέλα</h3><p>Στη βιβλιοθήκη σου, ανάμεσα στο «Θέλω να το διαβάσω» και το «Εγκαταλελειμμένο», θα βρεις τα βιβλία σε παύση.</p></div>
+            <div class="paused-card reveal-up"><h3>Υπενθυμίσεις και αυτόματη συνέχεια</h3><p>Οι υπενθυμίσεις του βιβλίου μπαίνουν σε παύση και επιστρέφουν όταν το συνεχίσεις. Αν μετρήσεις μια συνεδρία ή έρθει μία από το KOReader, το βιβλίο συνεχίζεται μόνο του, με ειδοποίηση και επιλογή Αναίρεση.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Κοινοποίηση</span>
+            <h2 id="cards-title">Το Lecturameter δεν είναι κοινωνικό δίκτυο. Οι κάρτες σου πάνε σε αυτό που χρησιμοποιείς.</h2>
+            <p>Φτιάξε κάθετες κάρτες 1080×1920, έτοιμες για stories, και κοινοποίησέ τες εκεί που είσαι ήδη. Χωρίς λογαριασμό, χωρίς προφίλ και χωρίς ακόλουθους.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · μορφή story</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>Βιβλίο</li>
+                <li>Βιβλίο που τελείωσε</li>
+                <li>Στατιστικά βιβλίου</li>
+                <li>Στατιστικά</li>
+                <li>Εβδομαδιαία σύνοψη</li>
+                <li>Μηνιαία σύνοψη</li>
+                <li>Προκλήσεις</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>Εκδήλωση</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>Διάλεξε τι θα δείξεις</h3><p>Ένα βιβλίο, ένα που μόλις τελείωσες, τα στατιστικά σου, την εβδομάδα ή τον μήνα σου, μια πρόκληση, Bingo, Wrapped ή μια εκδήλωση.</p></li>
+            <li class="share-step reveal-up"><h3>Αποθηκεύεται στις «Κάρτες μου»</h3><p>Ό,τι κοινοποιείς μένει στις Κάρτες μου, ώστε να το ξαναχρησιμοποιείς όποτε θέλεις.</p></li>
+            <li class="share-step reveal-up"><h3>Κοινοποίησέ την εκεί που είσαι ήδη</h3><p>Από το μενού κοινοποίησης του κινητού σου, στην εφαρμογή που ήδη χρησιμοποιείς. Ή αποθήκευσέ την στη συλλογή σου.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Εκδηλώσεις</span>
+            <h2 id="events-title">Διάβασε με την κοινότητα. Παίξε με τη βιβλιοθήκη σου.</h2>
+            <p>Οι εκδηλώσεις εμφανίζονται στην εφαρμογή όταν υπάρχει κάποια ενεργή. Σήμερα υπάρχουν δύο είδη: μια παγκόσμια πρόκληση ανάγνωσης και ένα παιχνίδι με κάρτες με τα δικά σου βιβλία.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">Παγκόσμια πρόκληση · 14 ημέρες</p>
+                <h3>Η Μεγάλη Ανάγνωση</h3>
+                <ul class="event-list">
+                <li>Μετράνε τα λεπτά του χρονομέτρου, σε βιβλία, κόμικ, manga και ηχητικά βιβλία.</li>
+                <li>Ένας κοινός στόχος για όλη την κοινότητα. Αν ξεπεραστεί, συνεχίζει να μετράει.</li>
+                <li>Ζωντανή κατάταξη με ψευδώνυμο και το Pagi σου ως avatar.</li>
+                <li>Όταν τελειώσει, η κάρτα της εκδήλωσης με τη θέση σου, για κάθε συμμετέχοντα.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">Παράδειγμα προς απεικόνιση</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>Στόχος της κοινότητας</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">Κατάταξη</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>εσύ</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>Η ξεχασμένη βιβλιοθήκη</h3>
+                <ul class="event-list">
+                <li>Διάλεξε 3 βιβλία από τη βιβλιοθήκη σου: το καθένα γίνεται κάρτα με το αρχέτυπο του είδους του.</li>
+                <li>Παιχνίδια των 5 έως 10 λεπτών για να διασχίσεις τα ράφια και να νικήσεις τον τελικό αρχηγό.</li>
+                <li>Κατάταξη πόντων: μετράνε οι 3 καλύτερες διαδρομές σου κάθε μέρα.</li>
+                <li>Λίγα βιβλία; Η βιβλιοθήκη σου δανείζει τόμους, έναν ανά αρχέτυπο.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">Παράδειγμα προς απεικόνιση</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">Πρέπει να είσαι 16 ετών ή μεγαλύτερος/η για να συμμετέχεις. Αν δεν υπάρχει ενεργή εκδήλωση τώρα, η εφαρμογή σε ενημερώνει.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>Νέο</h3>
                 <ul>
                     <li><strong>Εκδηλώσεις:</strong> παγκόσμιες προκλήσεις ανάγνωσης και Lecturameter Quest όταν υπάρχει ενεργό</li>
+                    <li><strong>Σε παύση:</strong> άφησε ένα βιβλίο στην άκρη για λίγο χωρίς να χαλάσουν τα στατιστικά σου</li>
                     <li><strong>Δύο νέα θέματα Pro:</strong> Τετράδιο και Δάσος</li>
                     <li>Ένα δικό του ρολόι χρονομέτρου για κάθε θέμα</li>
                     <li>Το Pagi διαλέγει ένα βιβλίο από το Θέλω να το διαβάσω</li>
@@ -902,6 +1030,7 @@
                     <strong>Νέο</strong>
                     <ul>
                         <li><strong>Εκδηλώσεις:</strong> παγκόσμιες προκλήσεις ανάγνωσης και Lecturameter Quest όταν υπάρχει ενεργό</li>
+                        <li><strong>Σε παύση:</strong> άφησε ένα βιβλίο στην άκρη για λίγο χωρίς να χαλάσουν τα στατιστικά σου</li>
                         <li><strong>Δύο νέα θέματα Pro:</strong> Τετράδιο και Δάσος</li>
                         <li>Ένα δικό του ρολόι χρονομέτρου για κάθε θέμα</li>
                         <li>Το Pagi διαλέγει ένα βιβλίο από το Θέλω να το διαβάσω</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>Προϊόν</h4>
                 <a href="#features">Λειτουργίες</a>
+                <a href="#events">Εκδηλώσεις</a>
                 <a href="#pricing">Τιμές</a>
                 <a href="../precios-regionales.html">Τιμές ανά περιοχή</a>
                 <a href="#whatsnew">Σημειώσεις ενημέρωσης</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">Πολιτική απορρήτου</a>
                 <a href="./terms/">Όροι χρήσης</a>
+                <a href="./cookies/">Πολιτική cookies</a>
+                <a href="#" data-lm-cookie-prefs>Προτιμήσεις cookies</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Ο Pagi σε χειροκροτεί!", "Λάμψε, αστεράκι!", "Σσσ, διαβάζω.", "Ο Pagi σε παρακολουθεί…"], "pagi_angry": ["Άου! Αυτό πόνεσε!", "Φτάνουν τα κλικ!", "Γρρ, άσε με ήσυχο.", "Δεν έχει πια πλάκα."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Ο Pagi σε χειροκροτεί!", "Λάμψε, αστεράκι!", "Σσσ, διαβάζω.", "Ο Pagi σε παρακολουθεί…"], "pagi_angry": ["Άου! Αυτό πόνεσε!", "Φτάνουν τα κλικ!", "Γρρ, άσε με ήσυχο.", "Δεν έχει πια πλάκα."], "consent_title": "Cookies και αποθήκευση", "consent_body": "Χρησιμοποιούμε ένα widget τρίτου (StartupBar) που αποθηκεύει δεδομένα στον περιηγητή σου και μετράει εμφανίσεις. Φορτώνει μόνο αν αποδεχτείς. Το θέμα, η γλώσσα και η ειδοποίηση που έκλεισες αποθηκεύονται χωρίς ερώτηση, επειδή τα επέλεξες εσύ.", "consent_accept": "Αποδοχή", "consent_reject": "Απόρριψη", "consent_policy": "Πολιτική cookies", "consent_prefs": "Προτιμήσεις cookies"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>

@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturameter · Tracker de lectură și statistici despre cărți</title>
-    <meta name="description" content="Urmărește-ți timpul de lectură, paginile, ritmul și progresul cu un tracker de lectură privat pentru Android și iPhone. Fără cont, fără reclame. Import din Goodreads și StoryGraph.">
-    <meta property="og:title" content="Lecturameter · Tracker de lectură și statistici despre cărți">
-    <meta property="og:description" content="Urmărește-ți timpul de lectură, paginile, ritmul și progresul cu un tracker de lectură privat pentru Android și iPhone. Fără cont, fără reclame. Import din Goodreads și StoryGraph.">
+    <title>Lecturameter: Jurnal de citit · Statistici și cronometru</title>
+    <meta name="description" content="Lecturameter: Jurnal de citit pentru Android și iPhone. Cronometrează lectura, urmărește paginile, ritmul și statisticile și importă din Goodreads. Fără cont, fără reclame.">
+    <meta property="og:title" content="Lecturameter: Jurnal de citit · Statistici și cronometru">
+    <meta property="og:description" content="Lecturameter: Jurnal de citit pentru Android și iPhone. Cronometrează lectura, urmărește paginile, ritmul și statisticile și importă din Goodreads. Fără cont, fără reclame.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/ro/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Lecturameter · Tracker de lectură și statistici despre cărți">
+    <meta property="og:image:alt" content="Lecturameter: Jurnal de citit · Statistici și cronometru">
     <meta property="og:locale" content="ro_RO">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="es_ES">
@@ -64,10 +64,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="zu_ZA">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lecturameter · Tracker de lectură și statistici despre cărți">
-    <meta name="twitter:description" content="Urmărește-ți timpul de lectură, paginile, ritmul și progresul cu un tracker de lectură privat pentru Android și iPhone. Fără cont, fără reclame. Import din Goodreads și StoryGraph.">
+    <meta name="twitter:title" content="Lecturameter: Jurnal de citit · Statistici și cronometru">
+    <meta name="twitter:description" content="Lecturameter: Jurnal de citit pentru Android și iPhone. Cronometrează lectura, urmărește paginile, ritmul și statisticile și importă din Goodreads. Fără cont, fără reclame.">
     <meta name="twitter:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
-    <meta name="twitter:image:alt" content="Lecturameter · Tracker de lectură și statistici despre cărți">
+    <meta name="twitter:image:alt" content="Lecturameter: Jurnal de citit · Statistici și cronometru">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
     <meta name="author" content="Victor (Lecturameter)">
@@ -133,31 +133,26 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=6.9">
+    <link rel="stylesheet" href="../styles.css?v=7.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
-    <script src="/consent.js" defer></script>
+    <script src="/consent.js" defer data-policy="./cookies/"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "name": "Lecturameter",
+      "alternateName": "Lecturameter: Jurnal de citit",
       "url": "https://lecturameterapp.github.io/ro/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "Organizează-ți biblioteca, cronometrează sesiunile de lectură și vezi statistici detaliate pe telefonul tău Android sau iPhone. Fără reclame, complet privat.",
       "featureList": "Bibliotecă cu rafturi, cronometru cu ecranul stins, istoricul sesiunilor, hartă de căldură, Wrapped anual, provocări de lectură personalizabile, copie de rezervă pe Google Drive, import CSV Goodreads, în mare parte offline",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "ro",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "9",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "screenshot": [
         "https://lecturameterapp.github.io/capturas/3.8/ro/portada.webp",
         "https://lecturameterapp.github.io/capturas/3.8/ro/retos.webp",
@@ -171,7 +166,7 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711"]
     }
     </script>
     <script type="application/ld+json">
@@ -227,6 +222,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Teme</a></li>
+            <li><a href="#events">Evenimente</a></li>
             <li><a href="#pricing">Pro</a></li>
             <li><a href="#whatsnew">Note de actualizare</a></li>
             <li><a href="#history">Istoric</a></li>
@@ -598,6 +594,137 @@
     </div>
 </section>
 
+<!-- 3.1 PAUSADO -->
+<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Nou în 3.9</span>
+            <h2 id="paused-title">Pune o carte deoparte pentru o vreme fără să-ți strici statisticile</h2>
+            <p>„În pauză” este o stare aparte, diferită de „Abandonată”. Cartea așteaptă unde ai lăsat-o, iar zilele în pauză nu se numără.</p>
+        </div>
+        <div class="paused-viz reveal-up" aria-hidden="true">
+            <div class="paused-tabs">
+                <span>Vreau să citesc</span>
+                <span>Citesc</span>
+                <span class="is-paused">În pauză</span>
+                <span>Abandonate</span>
+            </div>
+            <div class="paused-timeline">
+                <span class="seg read" style="flex:3"></span>
+                <span class="seg pause" style="flex:2"></span>
+                <span class="seg read" style="flex:4"></span>
+            </div>
+            <div class="paused-legend">
+                <span><i class="dot read"></i>Citesc</span>
+                <span><i class="dot pause"></i>În pauză &middot; Zilele în pauză nu se numără</span>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><h3>O stare aparte</h3><p>„În pauză” nu înseamnă „Abandonată”. Cartea ta nu ajunge în grămada celor la care ai renunțat: stă în așteptare și revine când vrei tu.</p></div>
+            <div class="paused-card reveal-up"><h3>Din Citesc sau Recitesc</h3><p>Schimbă starea din insigna de pe pagina cărții sau cu „Schimbă starea” din meniul rapid. Merge pentru cărți, benzi desenate, manga și cărți audio.</p></div>
+            <div class="paused-card reveal-up"><h3>Zilele în pauză nu se numără</h3><p>Nici în zilele până la final, nici în viteza ta de citit. Statisticile rămân cele de când citeai.</p></div>
+            <div class="paused-card reveal-up"><h3>O notiță, dacă vrei</h3><p>Când pui în pauză și când reiei, poți nota de ce. Este opțional. Totul rămâne în secțiunea „Pauze” de pe pagina cărții, cu istoricul ei.</p></div>
+            <div class="paused-card reveal-up"><h3>O filă separată</h3><p>În biblioteca ta, între Vreau să citesc și Abandonate, găsești cărțile în pauză.</p></div>
+            <div class="paused-card reveal-up"><h3>Mementouri și reluare automată</h3><p>Mementourile cărții respective se opresc și revin când o reiei. Dacă cronometrezi o sesiune sau ajunge una din KOReader, cartea se reia singură, cu o notificare și opțiunea Anulează.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.2 COMPARTIR CARDS -->
+<section class="band" id="cards" aria-labelledby="cards-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Distribuie</span>
+            <h2 id="cards-title">Lecturameter nu este o rețea socială. Cardurile tale merg pe cea pe care o folosești.</h2>
+            <p>Creează carduri verticale de 1080×1920, gata pentru story-uri, și distribuie-le unde ești deja. Fără cont, fără profil și fără urmăritori.</p>
+        </div>
+        <div class="share-wrap">
+            <div class="share-fan reveal-up" aria-hidden="true">
+                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
+                <span class="share-size">1080×1920 · format story</span>
+            </div>
+            <div class="share-side">
+                <ul class="share-chips">
+                <li>Carte</li>
+                <li>Carte terminată</li>
+                <li>Statisticile cărții</li>
+                <li>Statistici</li>
+                <li>Rezumat săptămânal</li>
+                <li>Rezumat lunar</li>
+                <li>Provocări</li>
+                <li>Bingo</li>
+                <li>Wrapped</li>
+                <li>Eveniment</li>
+                <li>Quest</li>
+                </ul>
+                <ol class="share-steps">
+            <li class="share-step reveal-up"><h3>Alege ce vrei să arăți</h3><p>O carte, una pe care tocmai ai terminat-o, statisticile tale, săptămâna sau luna ta, o provocare, Bingo, Wrapped sau un eveniment.</p></li>
+            <li class="share-step reveal-up"><h3>Se salvează în „Cardurile mele”</h3><p>Tot ce distribui rămâne în Cardurile mele, ca să le poți folosi din nou oricând vrei.</p></li>
+            <li class="share-step reveal-up"><h3>Distribuie unde ești deja</h3><p>Prin meniul de distribuire al telefonului, în aplicația pe care o folosești deja. Sau salvează în galerie.</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 EVENTOS -->
+<section class="band band-events" id="events" aria-labelledby="events-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Evenimente</span>
+            <h2 id="events-title">Citește împreună cu comunitatea. Joacă-te cu biblioteca ta.</h2>
+            <p>Evenimentele apar în aplicație când este unul activ. Azi sunt două feluri: o provocare globală de citit și un joc de cărți cu propriile tale cărți.</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-read reveal-up">
+                <p class="event-kicker">Provocare globală · 14 zile</p>
+                <h3>Marea Citire</h3>
+                <ul class="event-list">
+                <li>Se numără minutele de la cronometru, la cărți, benzi desenate, manga și cărți audio.</li>
+                <li>Un obiectiv comun pentru toată comunitatea. Dacă e depășit, numărătoarea continuă.</li>
+                <li>Clasament live cu un alias pseudonim și Pagi al tău ca avatar.</li>
+                <li>La final, cardul evenimentului cu poziția ta, pentru fiecare participant.</li>
+                </ul>
+                <div class="event-demo" aria-hidden="true">
+                    <p class="demo-label">Exemplu ilustrativ</p>
+                    <div class="goal-meter">
+                        <div class="goal-head"><span>Obiectivul comunității</span></div>
+                        <div class="goal-track"><span class="goal-fill"></span></div>
+                    </div>
+                    <p class="board-title">Clasament</p>
+                    <ol class="board">
+                        <li class="row r1"><span class="sw"><b>1</b></span><i class="av a1"></i><span>lector_a</span><span class="sw"><em>412</em></span></li>
+                        <li class="row r2"><span class="sw"><b>2</b><b>3</b></span><i class="av a2"></i><span>lectora_b</span><span class="sw"><em>398</em></span></li>
+                        <li class="row r3 me"><span class="sw"><b>3</b><b>2</b></span><i class="av a3"></i><span>tu</span><span class="sw"><em>371</em><em>405</em></span></li>
+                        <li class="row r4"><span class="sw"><b>4</b></span><i class="av a4"></i><span>lector_c</span><span class="sw"><em>366</em></span></li>
+                    </ol>
+                </div>
+            </article>
+            <article class="event-card event-quest reveal-up d1">
+                <p class="event-kicker">Lecturameter Quest</p>
+                <h3>Biblioteca uitată</h3>
+                <ul class="event-list">
+                <li>Alege 3 cărți din biblioteca ta: fiecare devine o carte de joc cu arhetipul genului ei.</li>
+                <li>Runde de 5 până la 10 minute ca să traversezi rafturile și să învingi bossul final.</li>
+                <li>Clasament pe puncte: contează cele mai bune 3 runde ale tale din fiecare zi.</li>
+                <li>Ai puține cărți? Biblioteca îți împrumută volume, câte unul pe arhetip.</li>
+                </ul>
+                <div class="event-demo quest-fan" aria-hidden="true">
+                    <p class="demo-label">Exemplu ilustrativ</p>
+                    <div class="fan">
+                        <div class="qcard qk1"><span class="q-num">1</span><span class="q-glyph">&#9670;</span></div>
+                        <div class="qcard qk2"><span class="q-num">2</span><span class="q-glyph">&#10022;</span></div>
+                        <div class="qcard qk3"><span class="q-num">3</span><span class="q-glyph">&#10070;</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="events-note">Trebuie să ai 16 ani sau mai mult ca să participi. Dacă acum nu e niciun eveniment activ, aplicația îți spune.</p>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="themes">
     <div class="container">
@@ -770,6 +897,7 @@
                 <h3>Nou</h3>
                 <ul>
                     <li><strong>Evenimente:</strong> provocări de citit globale și Lecturameter Quest când există unul activ</li>
+                    <li><strong>În pauză:</strong> pune o carte deoparte pentru o vreme fără să-ți strici statisticile</li>
                     <li><strong>Două teme Pro noi:</strong> Caiet și Pădure</li>
                     <li>Un ceas de cronometru propriu pentru fiecare temă</li>
                     <li>Pagi alege o carte din Vreau să citesc</li>
@@ -902,6 +1030,7 @@
                     <strong>Nou</strong>
                     <ul>
                         <li><strong>Evenimente:</strong> provocări de citit globale și Lecturameter Quest când există unul activ</li>
+                        <li><strong>În pauză:</strong> pune o carte deoparte pentru o vreme fără să-ți strici statisticile</li>
                         <li><strong>Două teme Pro noi:</strong> Caiet și Pădure</li>
                         <li>Un ceas de cronometru propriu pentru fiecare temă</li>
                         <li>Pagi alege o carte din Vreau să citesc</li>
@@ -1040,6 +1169,7 @@
             <div class="footer-col">
                 <h4>Produs</h4>
                 <a href="#features">Funcții</a>
+                <a href="#events">Evenimente</a>
                 <a href="#pricing">Prețuri</a>
                 <a href="../precios-regionales.html">Prețuri regionale</a>
                 <a href="#whatsnew">Note de actualizare</a>
@@ -1052,6 +1182,8 @@
                 <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <a href="./privacy/">Politica de confidențialitate</a>
                 <a href="./terms/">Termeni și condiții</a>
+                <a href="./cookies/">Politica de cookie-uri</a>
+                <a href="#" data-lm-cookie-prefs>Preferințe cookie-uri</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1111,7 +1243,7 @@
     <img class="lbx-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
-<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi te aplaudă!", "Strălucește, steluță!", "Șșșt, citesc.", "Pagi te privește…"], "pagi_angry": ["Au! M-a durut!", "Destule click-uri!", "Grr, lasă-mă în pace.", "Nu mai e amuzant."]}</script>
+<script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi te aplaudă!", "Strălucește, steluță!", "Șșșt, citesc.", "Pagi te privește…"], "pagi_angry": ["Au! M-a durut!", "Destule click-uri!", "Grr, lasă-mă în pace.", "Nu mai e amuzant."], "consent_title": "Cookie-uri și stocare", "consent_body": "Folosim un widget de la o terță parte (StartupBar) care salvează date în browserul tău și numără afișările. Se încarcă doar dacă accepți. Tema, limba și anunțul închis se salvează fără să te întrebăm, pentru că le-ai ales tu.", "consent_accept": "Accept", "consent_reject": "Refuz", "consent_policy": "Politica de cookie-uri", "consent_prefs": "Preferințe cookie-uri"}</script>
 <script src="../main.js?v=5.7"></script>
 </body>
 </html>
