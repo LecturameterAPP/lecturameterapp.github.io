@@ -11,6 +11,7 @@
   "app_store_url": "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711",
   "play_url": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
   "play_1999_url": "https://play.google.com/store/apps/details?id=com.lecturameter.r1999",
+  "play_1999_live": false,
   "testflight_url": "https://testflight.apple.com/join/WAkrkgPq",
   "app_store_1999_url": "https://apps.apple.com/app/lecturameter-1999/id6825334284",
   "testflight_1999_url": "https://testflight.apple.com/join/ySpHndhY",

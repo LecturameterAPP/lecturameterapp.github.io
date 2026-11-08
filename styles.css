@@ -1667,6 +1667,12 @@ html:not([data-theme="light"]) .tag-free {
 .lm99-test ol.pricing-list li::before { content: counter(list-item) "."; color: var(--accent-text); }
 @media (max-width: 960px) { .lm99-grid-5 { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 480px) { .lm99-grid-5 { grid-template-columns: 1fr 1fr; } }
+.lm99-grid-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 960px) { .lm99-grid-3 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) { .lm99-grid-3 { grid-template-columns: 1fr; } }
+.lm99-formerly { max-width: 560px; margin: 14px auto 0; font-size: 0.95em; opacity: 0.8; }
+.lm99-get { justify-content: center; margin: 24px 0 8px; }
+.lm99-soon { cursor: default; }
 
 /* ─── DETAILS (iOS differences, 1999) ─── */
 .differences { background: var(--bg); }

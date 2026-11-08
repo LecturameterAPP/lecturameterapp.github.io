@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="{{root}}favicon.ico">
 
     <link rel="canonical" href="{{page_url}}">
-{{hreflang_links}}    <link rel="stylesheet" href="{{root}}styles.css?v=7.0">
+{{hreflang_links}}    <link rel="stylesheet" href="{{root}}styles.css?v=7.1">
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script src="/consent.js" defer data-policy="{{link_cookies}}"></script>
     <script type="application/ld+json">
@@ -35,21 +35,21 @@
       "@context": "https://schema.org",
       "@type": "MobileApplication",
       "name": "Lecturameter 99",
-      "alternateName": "Lecturameter 99: Reading Log",
+      "alternateName": ["Lecturameter 99: Reading Log", "Lecturameter 1999"],
       "url": "{{page_url}}",
       "image": "{{site_url}}capturas-1999/{{shots99}}lm99_biblioteca.png",
       "description": "{{json:head.lm99.description}}",
       "applicationCategory": "BookApplication",
       "operatingSystem": "Android, iOS",
       "inLanguage": "{{hreflang}}",
-      "installUrl": "{{play_1999_url}}",
+      "installUrl": "{{install_1999_url}}",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
       "author": {
         "@type": "Person",
         "name": "Victor (Lecturameter)",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": ["{{play_1999_url}}", "{{app_store_1999_url}}"]
+      "sameAs": [{{sameas_1999_json}}]
     }
     </script>
 </head>
@@ -111,6 +111,7 @@
             <div class="hero-copy" style="max-width:820px;margin:0 auto;text-align:center;">
                 <h1 class="reveal-up in-view d1">{{lm99.page.lecturameter_1999}}</h1>
                 <p class="hero-tagline reveal-up in-view d2" style="margin-left:auto;margin-right:auto;">{{lm99.page.lecturameter_as_if_you_had}}</p>
+                <p class="lm99-formerly reveal-up in-view d3">{{lm99.page.formerly}}</p>
             </div>
         </div>
     </div>
@@ -154,10 +155,10 @@
             </div>
         </div>
 
-        <div class="grid-cards lm99-grid">
+        <div class="grid-cards lm99-grid lm99-grid-3">
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:lm99_informe.png}}" alt="{{lm99.lm1999.lecturameter_1999_reading_report_i.alt}}" loading="lazy" width="1080" height="2400" data-lbx="{{shot99:lm99_informe.png}}">
+                    <img src="{{shot99:lm99_informe.png}}" alt="{{lm99.lm1999.lecturameter_1999_reading_report_i.alt}}" loading="lazy" width="720" height="1600" data-lbx="{{shot99:lm99_informe.png}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.reading_report}}</h3>
@@ -166,29 +167,20 @@
             </div>
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:lm99_historial.png}}" alt="{{lm99.lm1999.lecturameter_1999_session_history.alt}}" loading="lazy" width="1080" height="2400" data-lbx="{{shot99:lm99_historial.png}}">
+                    <img src="{{shot99:lm99_informe_calendario.png}}" alt="{{lm99.lm1999.lecturameter_99_year_calendar_in.alt}}" loading="lazy" width="720" height="1600" data-lbx="{{shot99:lm99_informe_calendario.png}}">
+                </div>
+                <div class="grid-card-body">
+                    <h3>{{lm99.lm1999.reading_calendar}}</h3>
+                    <p>{{lm99.lm1999.every_day_of_the_year}}</p>
+                </div>
+            </div>
+            <div class="grid-card">
+                <div class="grid-card-media">
+                    <img src="{{shot99:lm99_historial.png}}" alt="{{lm99.lm1999.lecturameter_1999_session_history.alt}}" loading="lazy" width="720" height="1600" data-lbx="{{shot99:lm99_historial.png}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.session_history}}</h3>
                     <p>{{lm99.lm1999.sessions_grouped_by_book_in}}</p>
-                </div>
-            </div>
-            <div class="grid-card">
-                <div class="grid-card-media">
-                    <img src="{{shot99:lm99_guardar_sesion.png}}" alt="{{lm99.lm1999.lecturameter_1999_save_session_dia.alt}}" loading="lazy" width="1080" height="2400" data-lbx="{{shot99:lm99_guardar_sesion.png}}">
-                </div>
-                <div class="grid-card-body">
-                    <h3>{{lm99.lm1999.save_session}}</h3>
-                    <p>{{lm99.lm1999.date_minutes_first_and_last}}</p>
-                </div>
-            </div>
-            <div class="grid-card">
-                <div class="grid-card-media">
-                    <img src="{{shot99:lm99_pagi_consejo.png}}" alt="{{lm99.lm1999.lecturameter_1999_pixelated_pagi_w.alt}}" loading="lazy" width="1080" height="2400" data-lbx="{{shot99:lm99_pagi_consejo.png}}">
-                </div>
-                <div class="grid-card-body">
-                    <h3>{{lm99.lm1999.pagi_99}}</h3>
-                    <p>{{lm99.lm1999.pagi_travels_to_1999_too}}</p>
                 </div>
             </div>
         </div>
@@ -200,7 +192,7 @@
         <div class="showcase reveal-up">
             <div class="shot">
                 <div class="phone lm99-phone">
-                    <img src="{{shot99:temas/lm99_dialogo_temas.webp}}" alt="{{lm99.lm1999.lecturameter_1999_view_theme_dialo.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:temas/lm99_dialogo_temas.webp}}">
+                    <img src="{{shot99:temas/lm99_dialogo_temas.webp}}" alt="{{lm99.lm1999.lecturameter_1999_view_theme_dialo.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:temas/lm99_dialogo_temas.webp}}">
                 </div>
             </div>
             <div class="info">
@@ -217,7 +209,7 @@
         <div class="grid-cards lm99-grid">
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:temas/lm99_tema_clasico98.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_classic.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:temas/lm99_tema_clasico98.webp}}">
+                    <img src="{{shot99:temas/lm99_tema_clasico98.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_classic.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:temas/lm99_tema_clasico98.webp}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.classic_98}}</h3>
@@ -226,7 +218,7 @@
             </div>
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:temas/lm99_tema_1984.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_1984.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:temas/lm99_tema_1984.webp}}">
+                    <img src="{{shot99:temas/lm99_tema_1984.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_1984.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:temas/lm99_tema_1984.webp}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>1984</h3>
@@ -235,7 +227,7 @@
             </div>
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:temas/lm99_tema_gominola.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_gumdrop.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:temas/lm99_tema_gominola.webp}}">
+                    <img src="{{shot99:temas/lm99_tema_gominola.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_gumdrop.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:temas/lm99_tema_gominola.webp}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.gumdrop}}</h3>
@@ -244,7 +236,7 @@
             </div>
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:temas/lm99_tema_memoria.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_memory.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:temas/lm99_tema_memoria.webp}}">
+                    <img src="{{shot99:temas/lm99_tema_memoria.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_memory.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:temas/lm99_tema_memoria.webp}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.memory}}</h3>
@@ -253,7 +245,7 @@
             </div>
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:temas/lm99_tema_torres.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_towers.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:temas/lm99_tema_torres.webp}}">
+                    <img src="{{shot99:temas/lm99_tema_torres.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_towers.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:temas/lm99_tema_torres.webp}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.towers}}</h3>
@@ -262,7 +254,7 @@
             </div>
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:temas/lm99_tema_nucleo.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_core.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:temas/lm99_tema_nucleo.webp}}">
+                    <img src="{{shot99:temas/lm99_tema_nucleo.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_core.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:temas/lm99_tema_nucleo.webp}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.core}}</h3>
@@ -271,7 +263,7 @@
             </div>
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:temas/lm99_tema_8bits.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_8.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:temas/lm99_tema_8bits.webp}}">
+                    <img src="{{shot99:temas/lm99_tema_8bits.webp}}" alt="{{lm99.lm1999.lecturameter_1999_with_the_8.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:temas/lm99_tema_8bits.webp}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.8_bit}}</h3>
@@ -280,7 +272,7 @@
             </div>
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:temas/lm99_tienda_temas_vista_previa.webp}}" alt="{{lm99.lm1999.lecturameter_1999_theme_store_show.alt}}" loading="lazy" width="720" height="850" data-lbx="{{shot99:temas/lm99_tienda_temas_vista_previa.webp}}">
+                    <img src="{{shot99:temas/lm99_tienda_temas_vista_previa.webp}}" alt="{{lm99.lm1999.lecturameter_1999_theme_store_show.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:temas/lm99_tienda_temas_vista_previa.webp}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.try_it_before_you_pay}}</h3>
@@ -296,7 +288,7 @@
         <div class="grid-cards lm99-grid lm99-grid-5">
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:salvapantallas/lm99_saver_libros_voladores.webp}}" alt="{{lm99.lm1999.lecturameter_1999_screensaver_flyi.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:salvapantallas/lm99_saver_libros_voladores.webp}}">
+                    <img src="{{shot99:salvapantallas/lm99_saver_libros_voladores.webp}}" alt="{{lm99.lm1999.lecturameter_1999_screensaver_flyi.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:salvapantallas/lm99_saver_libros_voladores.webp}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.flying_books}}</h3>
@@ -305,7 +297,7 @@
             </div>
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:salvapantallas/lm99_saver_campo_letras.webp}}" alt="{{lm99.lm1999.lecturameter_1999_screensaver_lett.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:salvapantallas/lm99_saver_campo_letras.webp}}">
+                    <img src="{{shot99:salvapantallas/lm99_saver_campo_letras.webp}}" alt="{{lm99.lm1999.lecturameter_1999_screensaver_lett.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:salvapantallas/lm99_saver_campo_letras.webp}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.letter_field}}</h3>
@@ -314,7 +306,7 @@
             </div>
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:salvapantallas/lm99_saver_tuberias.webp}}" alt="{{lm99.lm1999.lecturameter_1999_screensaver_page.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:salvapantallas/lm99_saver_tuberias.webp}}">
+                    <img src="{{shot99:salvapantallas/lm99_saver_tuberias.webp}}" alt="{{lm99.lm1999.lecturameter_1999_screensaver_page.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:salvapantallas/lm99_saver_tuberias.webp}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.page_pipes}}</h3>
@@ -323,7 +315,7 @@
             </div>
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:salvapantallas/lm99_saver_pagi_rebota.webp}}" alt="{{lm99.lm1999.lecturameter_1999_screensaver_boun.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:salvapantallas/lm99_saver_pagi_rebota.webp}}">
+                    <img src="{{shot99:salvapantallas/lm99_saver_pagi_rebota.webp}}" alt="{{lm99.lm1999.lecturameter_1999_screensaver_boun.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:salvapantallas/lm99_saver_pagi_rebota.webp}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.bouncing_pagi}}</h3>
@@ -332,7 +324,7 @@
             </div>
             <div class="grid-card">
                 <div class="grid-card-media">
-                    <img src="{{shot99:salvapantallas/lm99_saver_reloj.webp}}" alt="{{lm99.lm1999.lecturameter_1999_screensaver_read.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:salvapantallas/lm99_saver_reloj.webp}}">
+                    <img src="{{shot99:salvapantallas/lm99_saver_reloj.webp}}" alt="{{lm99.lm1999.lecturameter_1999_screensaver_read.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:salvapantallas/lm99_saver_reloj.webp}}">
                 </div>
                 <div class="grid-card-body">
                     <h3>{{lm99.lm1999.reading_clock}}</h3>
@@ -344,7 +336,7 @@
         <div class="showcase flip reveal-up lm99-block">
             <div class="shot">
                 <div class="phone lm99-phone">
-                    <img src="{{shot99:temas/lm99_pagi_disfraz_corona.webp}}" alt="{{lm99.lm1999.lecturameter_1999_pixel_pagi_weari.alt}}" loading="lazy" width="720" height="1453" data-lbx="{{shot99:temas/lm99_pagi_disfraz_corona.webp}}">
+                    <img src="{{shot99:temas/lm99_pagi_disfraz_corona.webp}}" alt="{{lm99.lm1999.lecturameter_1999_pixel_pagi_weari.alt}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:temas/lm99_pagi_disfraz_corona.webp}}">
                 </div>
             </div>
             <div class="info">
@@ -375,6 +367,8 @@
                 <ul class="pricing-list">
                     <li>{{lm99.lm1999.library_search_timer_and_sessions}}</li>
                     <li>{{lm99.lm1999.reading_report_and_session_history}}</li>
+                    <li>{{lm99.lm1999.manual_sessions_by_pages_percentage}}</li>
+                    <li>{{lm99.lm1999.tip_of_the_day_and_send}}</li>
                     <li>{{lm99.lm1999.lecturameter_backup_and_goodreads}}</li>
                     <li>{{lm99.lm1999.classic_98_theme_and_pagi}}</li>
                     <li>{{lm99.lm1999.no_account_and_no_ads}}</li>
@@ -391,6 +385,7 @@
                     <li>{{lm99.lm1999.the_whole_1999_4_49}}</li>
                 </ul>
                 <p class="price-note">{{lm99.lm1999.optional_tips_in_the_help}}</p>
+                <p class="price-note">{{lm99.lm1999.on_iphone_there_are_no_tips}}</p>
                 <p class="price-trial">{{lm99.lm1999.themes_and_costumes_can_be}}</p>
                 <div class="pricing-foot">{{lm99.lm1999.prices_in_spain_play_adjusts}}</div>
             </div>
@@ -432,25 +427,27 @@
         </details>
 
         <div class="section-head lm99-head" id="{{anchor.closed_test}}">
-            <h2>{{lm99.lm1999.closed_test}}</h2>
-            <p>{{lm99.lm1999.lecturameter_1999_is_in_closed}}</p>
-        </div>
-        <div class="pricing-card lm99-test">
-            <ol class="pricing-list">
-                <li>{{lm99.lm1999.join_the_group}} <a href="https://groups.google.com/g/lecturameter-1999" target="_blank" rel="noopener">{{lm99.lm1999.groups_google_com_g_lecturameter}}</a></li>
-                <li>{{lm99.lm1999.sign_up_as_a_tester}} <a href="https://play.google.com/apps/testing/com.lecturameter.r1999" target="_blank" rel="noopener">{{lm99.lm1999.play_google_com_apps_testing}}</a></li>
-                <li>{{lm99.lm1999.install_it_from}} <a href="https://play.google.com/store/apps/details?id=com.lecturameter.r1999" target="_blank" rel="noopener">{{lm99.lm1999.google_play}}</a></li>
-            </ol>
-{{#if app_store_1999_url}}
-            <p class="lm99-ios"><a href="{{app_store_1999_url}}" target="_blank" rel="noopener">{{home.home.try_on_iphone}}</a></p>
+            <h2>{{lm99.get.title}}</h2>
+{{#if play_1999_live}}
+            <p>{{lm99.get.intro_live}}</p>
 {{/if}}
-{{#unless app_store_1999_url}}
-            <p class="lm99-ios">{{lm99.lm1999.on_iphone_join_the_beta}} <a href="{{testflight_1999_url}}" target="_blank" rel="noopener">{{lm99.lm1999.testflight}}</a></p>
+{{#unless play_1999_live}}
+            <p>{{lm99.get.intro}}</p>
 {{/unless}}
-            <div class="pricing-foot">{{lm99.lm1999.staying_in_for_14_days}}</div>
+        </div>
+        <div class="hero-cta lm99-get">
+{{#if app_store_1999_url}}
+            <a href="{{app_store_1999_url}}" target="_blank" rel="noopener" class="btn">{{lm99.get.app_store}}</a>
+{{/if}}
+{{#if play_1999_live}}
+            <a href="{{play_1999_url}}" target="_blank" rel="noopener" class="btn">{{home.home.get_on_google_play}}</a>
+{{/if}}
+{{#unless play_1999_live}}
+            <span class="btn btn-outline lm99-soon" role="note">{{lm99.get.play_soon}}</span>
+{{/unless}}
         </div>
 
-        <p class="lm99-cta">{{lm99.lm1999.in_closed_testing_on_google}} <a href="{{lm99.lm1999.root_blog_lecturameter_1999.href}}">{{lm99.lm1999.read_the_blog_post}}</a> {{lm99.lm1999.to_see_where_it_comes}}</p>
+        <p class="lm99-cta"><a href="{{lm99.lm1999.root_blog_lecturameter_1999.href}}">{{lm99.lm1999.read_the_blog_post}}</a> {{lm99.lm1999.to_see_where_it_comes}}</p>
     </div>
 </section>
 </main>

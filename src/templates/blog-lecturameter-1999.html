@@ -9,7 +9,7 @@
     <meta property="og:description" content="{{blog.l99.og_description}}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{page_url}}">
-    <meta property="og:image" content="{{shot99_abs:lm99_biblioteca.png}}">
+    <meta property="og:image" content="{{site_url}}capturas-1999/{{shots99}}lm99_biblioteca.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="{{blog.l99.title}}">
@@ -17,7 +17,7 @@
 {{og_locale_alternates}}    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{blog.l99.title}}">
     <meta name="twitter:description" content="{{blog.l99.og_description}}">
-    <meta name="twitter:image" content="{{shot99_abs:lm99_biblioteca.png}}">
+    <meta name="twitter:image" content="{{site_url}}capturas-1999/{{shots99}}lm99_biblioteca.png">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
 
@@ -36,6 +36,7 @@
         .post-shots figure { margin:0; }
         .post-shots img { width:100%; height:auto; display:block; border-radius:14px; border:1px solid var(--line); }
         .post-shots figcaption { font-size:0.85em; opacity:0.75; text-align:center; margin-top:8px; }
+        .post-shots-2 { grid-template-columns:repeat(2,1fr); max-width:480px; margin-left:auto; margin-right:auto; }
         @media (max-width:640px) { .post-shots { grid-template-columns:1fr 1fr; } }
     </style>
 
@@ -47,8 +48,9 @@
       "description": "{{json:ld_description}}",
       "inLanguage": "{{code}}",
       "datePublished": "2026-09-24",
+      "dateModified": "2026-11-08",
       "author": {"@type":"Organization","name":"Lecturameter"},
-      "image": "{{shot99_abs:lm99_biblioteca.png}}",
+      "image": "{{site_url}}capturas-1999/{{shots99}}lm99_biblioteca.png",
       "mainEntityOfPage": "{{page_url}}",
       "publisher": {"@type":"Organization","name":"Lecturameter","logo":{"@type":"ImageObject","url":"{{site_url}}ic_launcher_pro.png"}}
     }
@@ -142,7 +144,7 @@
             <h2>{{blog.l99.h2_02}}</h2>
         </div>
         <p>{{blog.l99.p_06}}</p>
-        <div class="post-shots">
+        <div class="post-shots post-shots-2">
             <figure>
                 <img src="{{shot99:lm99_biblioteca.png}}" alt="{{blog.l99.alt_01}}" loading="lazy" width="1080" height="2400" data-lbx="{{shot99:lm99_biblioteca.png}}">
                 <figcaption>{{blog.l99.figcaption_01}}</figcaption>
@@ -150,10 +152,6 @@
             <figure>
                 <img src="{{shot99:lm99_cronometro.png}}" alt="{{blog.l99.alt_02}}" loading="lazy" width="1080" height="2400" data-lbx="{{shot99:lm99_cronometro.png}}">
                 <figcaption>{{blog.l99.figcaption_02}}</figcaption>
-            </figure>
-            <figure>
-                <img src="{{shot99:lm99_crono_minimizado.png}}" alt="{{blog.l99.alt_03}}" loading="lazy" width="1080" height="2400" data-lbx="{{shot99:lm99_crono_minimizado.png}}">
-                <figcaption>{{blog.l99.figcaption_03}}</figcaption>
             </figure>
         </div>
     </div>
@@ -181,15 +179,15 @@
         <p>{{blog.l99.p_13}}</p>
         <div class="post-shots">
             <figure>
-                <img src="{{shot99:lm99_guardar_sesion.png}}" alt="{{blog.l99.alt_04}}" loading="lazy" width="1080" height="2400" data-lbx="{{shot99:lm99_guardar_sesion.png}}">
-                <figcaption>{{blog.l99.figcaption_04}}</figcaption>
-            </figure>
-            <figure>
-                <img src="{{shot99:lm99_historial.png}}" alt="{{blog.l99.alt_05}}" loading="lazy" width="1080" height="2400" data-lbx="{{shot99:lm99_historial.png}}">
+                <img src="{{shot99:lm99_historial.png}}" alt="{{blog.l99.alt_05}}" loading="lazy" width="720" height="1600" data-lbx="{{shot99:lm99_historial.png}}">
                 <figcaption>{{blog.l99.figcaption_05}}</figcaption>
             </figure>
             <figure>
-                <img src="{{shot99:lm99_informe_calendario.png}}" alt="{{blog.l99.alt_06}}" loading="lazy" width="1080" height="2400" data-lbx="{{shot99:lm99_informe_calendario.png}}">
+                <img src="{{shot99:lm99_informe.png}}" alt="{{blog.l99.alt_09}}" loading="lazy" width="720" height="1600" data-lbx="{{shot99:lm99_informe.png}}">
+                <figcaption>{{blog.l99.figcaption_09}}</figcaption>
+            </figure>
+            <figure>
+                <img src="{{shot99:lm99_informe_calendario.png}}" alt="{{blog.l99.alt_06}}" loading="lazy" width="720" height="1600" data-lbx="{{shot99:lm99_informe_calendario.png}}">
                 <figcaption>{{blog.l99.figcaption_06}}</figcaption>
             </figure>
         </div>
@@ -203,18 +201,14 @@
         </div>
         <p>{{blog.l99.p_14}}</p>
         <p>{{blog.l99.p_15}}</p>
-        <div class="post-shots">
+        <div class="post-shots post-shots-2">
             <figure>
-                <img src="{{shot99:lm99_pagi_consejo.png}}" alt="{{blog.l99.alt_07}}" loading="lazy" width="1080" height="2400" data-lbx="{{shot99:lm99_pagi_consejo.png}}">
-                <figcaption>{{blog.l99.figcaption_07}}</figcaption>
+                <img src="{{shot99:temas/lm99_pagi_disfraz_corona.webp}}" alt="{{blog.l99.alt_10}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:temas/lm99_pagi_disfraz_corona.webp}}">
+                <figcaption>{{blog.l99.figcaption_10}}</figcaption>
             </figure>
             <figure>
-                <img src="{{shot99:lm99_nuevo_libro.png}}" alt="{{blog.l99.alt_08}}" loading="lazy" width="1080" height="2400" data-lbx="{{shot99:lm99_nuevo_libro.png}}">
-                <figcaption>{{blog.l99.figcaption_08}}</figcaption>
-            </figure>
-            <figure>
-                <img src="{{shot99:lm99_informe.png}}" alt="{{blog.l99.alt_09}}" loading="lazy" width="1080" height="2400" data-lbx="{{shot99:lm99_informe.png}}">
-                <figcaption>{{blog.l99.figcaption_09}}</figcaption>
+                <img src="{{shot99:temas/lm99_pagi_disfraz_gafas3d.webp}}" alt="{{blog.l99.alt_11}}" loading="lazy" width="720" height="1601" data-lbx="{{shot99:temas/lm99_pagi_disfraz_gafas3d.webp}}">
+                <figcaption>{{blog.l99.figcaption_11}}</figcaption>
             </figure>
         </div>
     </div>

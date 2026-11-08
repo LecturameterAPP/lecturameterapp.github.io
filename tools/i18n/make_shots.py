@@ -4,7 +4,9 @@
 - Lecturameter 3.8: C:/Refrac/lm-qa-1910/capt38/raw_mi11/<loc>/0N_*.png  ->  capturas/3.8/<code>/<nombre>.webp
 - Lecturameter 1999: C:/Refrac/Recursos LM/lm1999/capturas_play/<loc>/lm99_*.png ->
   capturas-1999/<code>/, capturas-1999/temas/<code>/, capturas-1999/salvapantallas/<code>/
-Solo los idiomas nuevos (no en/es). Requiere Pillow. Uso: python tools/i18n/make_shots.py
+3.8: solo los idiomas nuevos (no en/es). 1999: todos los idiomas, es y en incluidos (en usa en-rUS).
+  Ademas, para es y en, las capturas de la landing (temas y salvapantallas) desde
+  C:/Refrac/Recursos LM/lm1999/capturas_landing/{temas,salvapantallas}/<code>/*.png. Requiere Pillow. Uso: python tools/i18n/make_shots.py
 """
 import json
 import os
@@ -14,6 +16,7 @@ from PIL import Image
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 RAW38 = 'C:/Refrac/lm-qa-1910/capt38/raw_mi11'
 RAW99 = 'C:/Refrac/Recursos LM/lm1999/capturas_play'
+RAWLAND99 = 'C:/Refrac/Recursos LM/lm1999/capturas_landing'
 # pantalla de la app (raw 3.8) -> nombre en capturas/3.8/<code>/ (ver screenshots.3.8.localized en locales.json)
 MAP38 = {'01_portada.png': 'portada.webp', '05_retos.png': 'retos.webp', '04_estadisticas.png': 'estadisticas.webp'}
 # captura del 1999 -> (subcarpeta, nombre en la web)
@@ -22,12 +25,13 @@ MAP99 = {
     'lm99_cronometro.png': ('', 'lm99_cronometro.webp'),
     'lm99_informe.png': ('', 'lm99_informe.webp'),
     'lm99_historial.png': ('', 'lm99_historial.webp'),
+    'lm99_informe_calendario.png': ('', 'lm99_informe_calendario.webp'),
     'lm99_tema_a.png': ('temas', 'lm99_tema_1984.webp'),
     'lm99_tema_b.png': ('temas', 'lm99_tema_8bits.webp'),
     'lm99_salvapantallas.png': ('salvapantallas', 'lm99_saver_tuberias.webp'),
 }
 LOC38 = {'pt': 'pt-PT', 'pt-br': 'pt-BR', 'zh-cn': 'zh-CN'}
-LOC99 = {'id': 'in', 'pt-br': 'pt-rBR', 'zh-cn': 'zh-rCN'}
+LOC99 = {'en': 'en-rUS', 'id': 'in', 'pt-br': 'pt-rBR', 'zh-cn': 'zh-rCN'}
 
 
 def conv(src, dst, quality=80):
@@ -45,10 +49,8 @@ def main():
     missing = []
     for loc in cfg['locales']:
         c = loc['code']
-        if loc.get('legal_original'):
-            continue
         d38 = os.path.join(RAW38, LOC38.get(c, c))
-        for src, name in MAP38.items():
+        for src, name in ({} if loc.get('legal_original') else MAP38).items():
             p = os.path.join(d38, src)
             if os.path.exists(p):
                 total += conv(p, os.path.join(ROOT, 'capturas', '3.8', c, name))
@@ -62,6 +64,13 @@ def main():
                 total += conv(p, dst)
             else:
                 missing.append(p)
+    # capturas propias de la landing (temas, disfraces de Pagi, salvapantallas): solo es y en
+    for c in ('es', 'en'):
+        for sub in ('temas', 'salvapantallas'):
+            d = os.path.join(RAWLAND99, sub, c)
+            for f in sorted(os.listdir(d)) if os.path.isdir(d) else []:
+                if f.endswith('.png'):
+                    total += conv(os.path.join(d, f), os.path.join(ROOT, 'capturas-1999', sub, c, f[:-4] + '.webp'))
     print('total %.1f MB' % (total / 1048576))
     for m in missing:
         print('FALTA', m, file=sys.stderr)
