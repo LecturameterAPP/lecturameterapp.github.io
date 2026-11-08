@@ -663,6 +663,7 @@
  "legal.privacy.p_026": "如果 Lecturameter 目录没有找到你搜索的内容，或者你添加了目录中没有的图书，我们的服务器会保存你搜索的内容（文字最多 200 个字符，或 ISBN）、搜索类型、你所添加图书的标识符、日期以及应用 user agent 的哈希值，这样我们就能知道缺少哪些作品并将其补充进去。它不会保存你的 IP 地址，也不会保存任何能识别你或你设备的标识符，且最多保留 90 天。这有助于所有用户改进目录，因此设置中没有对应的开关。你可以在<a href=\"./en/features/book-catalog/\">网站的这一部分</a>了解该目录的来源。",
  "legal.privacy.p_027": "<span class=\"highlight\">5. 反馈和调查</span>",
  "legal.privacy.p_028": "在应用内发送反馈或回答调查完全是可选的。如果你选择这样做，你写下的文字会连同设备的技术信息（型号、操作系统版本（Android 或 iOS）和应用版本）一起发送给 Lecturameter 的开发者，以便他阅读并改进应用。如果你还选择附上应用日志或截图，这些也会一并发送；两者都是可选的，只有在你添加时才会包含。",
+ "legal.privacy.p_028_enc": "在应用内回答问卷是可选的，只有点击“发送”后才会发送。回答内容包括你最喜欢的主题、当前使用的主题、你最常用的应用板块、对当期轮换问题的单选答案，以及你选择填写的可选文字（请勿填写个人信息），同时包含应用版本、语言和平台（Android 或 iOS）。回答会像反馈一样通过电子邮件发送给开发者，并另外保存在 Lecturameter 自有的统计服务器（托管于 Cloudflare）上 6 个月，不含设备标识符和 IP 地址；期满后自动删除。",
  "legal.privacy.p_029": "<span class=\"highlight\">6. Lecturameter Pro 与兑换码兑换</span>",
  "legal.privacy.p_030": "Lecturameter Pro 的付款由 Google Play（在 Android 上）或 Apple App Store（在 iOS 上）处理：应用绝不会看到或存储你的支付信息。当你购买或恢复购买时，商店的购买标识符会发送到 Lecturameter 的许可证服务器，仅用于验证购买。如果你兑换促销码，该代码和一个设备标识符会发送到 Lecturameter 的兑换服务器，仅用于验证代码并限制可使用该代码的设备数量。",
  "legal.privacy.p_031": "<span class=\"highlight\">7. 设备标识符</span>",
@@ -788,5 +789,6 @@
  "legal.terms.p_043": "<span class=\"highlight\">14. 联系方式</span>",
  "legal.terms.p_044": "如对这些条款有任何疑问：<a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> 或 <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "服务条款 – Lecturameter",
- "legal.terms.meta_description": "条款清晰，没有隐藏的小字。"
+ "legal.terms.meta_description": "条款清晰，没有隐藏的小字。",
+ "common.footer.drakehold": "来自同一位作者： <strong>Drakehold</strong>， 会自动整理的个人档案。 <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">加入候补名单 →</a>"
 }

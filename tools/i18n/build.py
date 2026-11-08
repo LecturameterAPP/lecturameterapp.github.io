@@ -59,6 +59,7 @@ def build_vars(cfg, loc, pname, page, others):
         'link_1999': rel(here, loc['path'].lstrip('/') + 'lecturameter-1999/'),
         'page_url': site + pdir + ('/' if pdir else ''),
         'head_redirect': '',
+        'drakehold_url': 'https://drakehold.pages.dev/?utm_source=lecturameter' + ('&amp;lang=es' if loc['code'] == 'es' else ''),
     }
     for k, p in loc['features'].items():
         v['link_feat_' + k] = rel(here, p)
@@ -358,6 +359,7 @@ def main():
             variables['ios_live'] = '1' if cfg.get('ios_live') else ''
             variables['ios_url'] = cfg['app_store_url'] if cfg.get('ios_live') else cfg['testflight_url']
             variables['testflight_1999_url'] = cfg['testflight_1999_url']
+            variables['app_store_1999_url'] = cfg.get('app_store_1999_url', '')
             variables['lm_i18n_json'] = js_payload(strings, bool(cfg.get('ios_live')))
             variables['lang_picker'] = lang_picker(loc, page, locales, strings, ' ' * 12)
             where = '%s/%s' % (loc['code'], page['template'])
