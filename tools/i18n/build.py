@@ -84,6 +84,12 @@ def build_vars(cfg, loc, pname, page, others):
         v['link_cookies'] = rel(here, page_dir(ck_loc, ck))
     v['play_url'] = cfg['play_url']
     v['play_1999_url'] = cfg['play_1999_url']
+    # Google Play del 1999: con play_1999_live=false (ficha aun no publica) no se enlaza a Play ni se anuncia como disponible
+    live99 = bool(cfg.get('play_1999_live'))
+    ios99 = cfg.get('app_store_1999_url', '')
+    v['play_1999_live'] = '1' if live99 else ''
+    v['install_1999_url'] = cfg['play_1999_url'] if (live99 or not ios99) else ios99
+    v['sameas_1999_json'] = ', '.join('"%s"' % u for u in ((cfg['play_1999_url'] if live99 else ''), ios99) if u)
     if page.get('original'):
         v['legal_original_url'] = rel(here, page['original']) + '?lang=en'
     # redireccion por idioma: solo en las paginas del idioma por defecto (raiz)
@@ -182,11 +188,11 @@ WARNINGS = []
 
 def resolve_shot99(loc, name):
     """{{shot99:[subdir/]fichero}}: captura del 1999. Si el idioma tiene su version en WebP
-    (capturas-1999/[subdir/]<code>/<fichero>.webp) se usa; si no, la de siempre (shots99 / img)."""
+    (capturas-1999/[subdir/]<code>/<fichero>.webp) se usa (tambien es y en); si no, la de siempre (shots99 / img)."""
     sub, _, fname = name.rpartition('/')
     base = os.path.splitext(fname)[0]
     own = 'capturas-1999/' + (sub + '/' if sub else '') + loc['code'] + '/' + base + '.webp'
-    if not loc.get('legal_original') and os.path.exists(os.path.join(ROOT, *own.split('/'))):
+    if os.path.exists(os.path.join(ROOT, *own.split('/'))):
         return own
     if sub:
         return 'capturas-1999/%s/%s/%s' % (sub, loc['img'], fname)
