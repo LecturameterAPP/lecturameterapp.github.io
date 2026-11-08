@@ -39,7 +39,10 @@
     var base = FALLBACK[lang] || FALLBACK.en;
     function t(k) { return I18N['consent_' + k] || base[k]; }
 
-    var policyUrl = (script && script.getAttribute('data-policy')) || (lang === 'es' ? '/es/cookies/' : '/cookies/');
+    // Sin data-policy (blog, paginas escritas a mano): la politica del idioma de la ruta (/xx/ o /xx-yy/), si no la inglesa.
+    var seg = (location.pathname.split('/')[1] || '').toLowerCase();
+    var policyUrl = (script && script.getAttribute('data-policy')) ||
+        (seg !== 'en' && /^[a-z]{2}(-[a-z]{2})?$/.test(seg) ? '/' + seg + '/cookies/' : '/cookies/');
 
     function read() {
         try {
