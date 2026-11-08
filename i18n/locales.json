@@ -30,7 +30,15 @@
     },
     "3.9": {
       "dir": "capturas/3.9/{code}/",
-      "suffix": ""
+      "suffix": "",
+      "localized": {
+        "dir": "capturas/3.9/{code}/",
+        "files": {
+          "captura_libros_real_claro.jpg": "portada.webp",
+          "screen_challenges_claro.jpg": "retos.webp",
+          "heatmap_mayo_claro.jpg": "estadisticas.webp"
+        }
+      }
     }
   },
   "pages": {
