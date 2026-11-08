@@ -9,6 +9,8 @@
   ],
   "ios_live": true,
   "app_store_url": "https://apps.apple.com/app/lecturameter-diario-lector/id6814164711",
+  "play_url": "https://play.google.com/store/apps/details?id=com.lecturameter.public",
+  "play_1999_url": "https://play.google.com/store/apps/details?id=com.lecturameter.r1999",
   "testflight_url": "https://testflight.apple.com/join/WAkrkgPq",
   "app_store_1999_url": "https://apps.apple.com/app/lecturameter-1999/id6825334284",
   "testflight_1999_url": "https://testflight.apple.com/join/ySpHndhY",
@@ -38,6 +40,13 @@
     "lm1999": {
       "template": "lecturameter-1999.html",
       "dir": "lecturameter-1999/"
+    },
+    "cookies": {
+      "template": "cookies.html",
+      "dir": "cookies/",
+      "only_locales": ["en", "es"],
+      "priority": "0.3",
+      "changefreq": "yearly"
     }
   },
   "locales": [

@@ -24827,5 +24827,23 @@
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/cookies/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/cookies/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/cookies/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/cookies/" />
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lecturameterapp.github.io/es/cookies/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/cookies/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/cookies/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/cookies/" />
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
   <!-- blog-i18n:end -->
 </urlset>

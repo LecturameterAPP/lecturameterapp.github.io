@@ -1,0 +1,296 @@
+{
+ "en": {
+  "ficha": "en-US",
+  "nombre": "Lecturameter: Reading Tracker",
+  "subtitulo": "Book Tracker & Reading Stats",
+  "estado_ficha": "vigente"
+ },
+ "es": {
+  "ficha": "es-ES",
+  "nombre": "Lecturameter: Diario Lector",
+  "subtitulo": "Libros leídos y estadísticas",
+  "estado_ficha": "vigente"
+ },
+ "ar": {
+  "ficha": "ar-SA",
+  "nombre": "Lecturameter: متتبع القراءة",
+  "subtitulo": "متتبع الكتب وإحصاءات القراءة",
+  "estado_ficha": "nuevo"
+ },
+ "bg": {
+  "ficha": null,
+  "nombre": null,
+  "subtitulo": null,
+  "estado_ficha": null
+ },
+ "bn": {
+  "ficha": "bn-BD",
+  "nombre": "Lecturameter: পড়ার ডায়েরি",
+  "subtitulo": "বুক ট্র্যাকার ও পরিসংখ্যান",
+  "estado_ficha": "por_confirmar"
+ },
+ "ca": {
+  "ficha": "ca",
+  "nombre": "Lecturameter: Diari de Lectura",
+  "subtitulo": "Registre i estadístiques",
+  "estado_ficha": "nuevo"
+ },
+ "cs": {
+  "ficha": "cs",
+  "nombre": "Lecturameter: Čtenářský deník",
+  "subtitulo": "Evidence knih a statistiky",
+  "estado_ficha": "nuevo"
+ },
+ "da": {
+  "ficha": "da",
+  "nombre": "Lecturameter: Læsedagbog",
+  "subtitulo": "Bogtracker og læsestatistik",
+  "estado_ficha": "nuevo"
+ },
+ "de": {
+  "ficha": "de-DE",
+  "nombre": "Lecturameter: Lese-Tracker",
+  "subtitulo": "Buchtracker & Lesestatistik",
+  "estado_ficha": "vigente"
+ },
+ "el": {
+  "ficha": "el",
+  "nombre": "Lecturameter: Ανάγνωση",
+  "subtitulo": "Βιβλία & στατιστικά ανάγνωσης",
+  "estado_ficha": "nuevo"
+ },
+ "et": {
+  "ficha": null,
+  "nombre": null,
+  "subtitulo": null,
+  "estado_ficha": null
+ },
+ "fa": {
+  "ficha": null,
+  "nombre": null,
+  "subtitulo": null,
+  "estado_ficha": null
+ },
+ "fi": {
+  "ficha": "fi",
+  "nombre": "Lecturameter: Lukupäiväkirja",
+  "subtitulo": "Kirjaseuranta ja lukutilastot",
+  "estado_ficha": "nuevo"
+ },
+ "fr": {
+  "ficha": "fr-FR",
+  "nombre": "Lecturameter: suivi de lecture",
+  "subtitulo": "Suivi de livres et stats",
+  "estado_ficha": "vigente"
+ },
+ "gu": {
+  "ficha": "gu-IN",
+  "nombre": "Lecturameter: રીડિંગ ટ્રેકર",
+  "subtitulo": "બુક ટ્રેકર અને વાંચન આંકડા",
+  "estado_ficha": "por_confirmar"
+ },
+ "he": {
+  "ficha": "he",
+  "nombre": "Lecturameter: מעקב קריאה",
+  "subtitulo": "מעקב ספרים וסטטיסטיקות קריאה",
+  "estado_ficha": "nuevo"
+ },
+ "hi": {
+  "ficha": "hi",
+  "nombre": "Lecturameter: रीडिंग ट्रैकर",
+  "subtitulo": "बुक ट्रैकर और पढ़ने के आँकड़े",
+  "estado_ficha": "vigente"
+ },
+ "hr": {
+  "ficha": "hr",
+  "nombre": "Lecturameter: Dnevnik čitanja",
+  "subtitulo": "Praćenje knjiga i statistika",
+  "estado_ficha": "nuevo"
+ },
+ "hu": {
+  "ficha": "hu",
+  "nombre": "Lecturameter: Olvasási napló",
+  "subtitulo": "Könyvkövető és statisztika",
+  "estado_ficha": "nuevo"
+ },
+ "id": {
+  "ficha": "id",
+  "nombre": "Lecturameter: Jurnal Baca",
+  "subtitulo": "Pelacak buku & statistik baca",
+  "estado_ficha": "nuevo"
+ },
+ "is": {
+  "ficha": null,
+  "nombre": null,
+  "subtitulo": null,
+  "estado_ficha": null
+ },
+ "it": {
+  "ficha": "it",
+  "nombre": "Lecturameter: Diario Lettore",
+  "subtitulo": "Tracker libri e statistiche",
+  "estado_ficha": "vigente"
+ },
+ "ja": {
+  "ficha": "ja",
+  "nombre": "Lecturameter: 読書記録",
+  "subtitulo": "読書管理と読書統計",
+  "estado_ficha": "nuevo"
+ },
+ "kn": {
+  "ficha": "kn-IN",
+  "nombre": "Lecturameter: ಓದುವ ಡೈರಿ",
+  "subtitulo": "ಬುಕ್ ಟ್ರ್ಯಾಕರ್, ಓದಿನ ಅಂಕಿಅಂಶ",
+  "estado_ficha": "por_confirmar"
+ },
+ "ko": {
+  "ficha": "ko",
+  "nombre": "Lecturameter: 독서 기록",
+  "subtitulo": "북트래커 · 독서 통계",
+  "estado_ficha": "nuevo"
+ },
+ "lt": {
+  "ficha": null,
+  "nombre": null,
+  "subtitulo": null,
+  "estado_ficha": null
+ },
+ "lv": {
+  "ficha": null,
+  "nombre": null,
+  "subtitulo": null,
+  "estado_ficha": null
+ },
+ "ml": {
+  "ficha": "ml-IN",
+  "nombre": "Lecturameter: വായനാ ഡയറി",
+  "subtitulo": "ബുക്ക് ട്രാക്കർ, കണക്കുകൾ",
+  "estado_ficha": "por_confirmar"
+ },
+ "mr": {
+  "ficha": "mr-IN",
+  "nombre": "Lecturameter: वाचन डायरी",
+  "subtitulo": "बुक ट्रॅकर आणि वाचन आकडेवारी",
+  "estado_ficha": "por_confirmar"
+ },
+ "nl": {
+  "ficha": "nl-NL",
+  "nombre": "Lecturameter: Leesdagboek",
+  "subtitulo": "Boekentracker & leesstats",
+  "estado_ficha": "nuevo"
+ },
+ "no": {
+  "ficha": "no",
+  "nombre": "Lecturameter: Lesedagbok",
+  "subtitulo": "Boktracker og lesestatistikk",
+  "estado_ficha": "nuevo"
+ },
+ "pa": {
+  "ficha": "pa-IN",
+  "nombre": "Lecturameter: ਰੀਡਿੰਗ ਟਰੈਕਰ",
+  "subtitulo": "ਬੁੱਕ ਟਰੈਕਰ ਤੇ ਪੜ੍ਹਨ ਦੇ ਅੰਕੜੇ",
+  "estado_ficha": "por_confirmar"
+ },
+ "pl": {
+  "ficha": "pl",
+  "nombre": "Lecturameter: Dziennik lektur",
+  "subtitulo": "Śledzenie książek i statystyki",
+  "estado_ficha": "nuevo"
+ },
+ "pt": {
+  "ficha": "pt-PT",
+  "nombre": "Lecturameter: Diário Leitor",
+  "subtitulo": "Livros lidos e estatísticas",
+  "estado_ficha": "vigente"
+ },
+ "pt-br": {
+  "ficha": "pt-BR",
+  "nombre": "Lecturameter: Diário Leitor",
+  "subtitulo": "Livros lidos e estatísticas",
+  "estado_ficha": "nuevo"
+ },
+ "ro": {
+  "ficha": "ro",
+  "nombre": "Lecturameter: Jurnal de citit",
+  "subtitulo": "Tracker de cărți și statistici",
+  "estado_ficha": "nuevo"
+ },
+ "ru": {
+  "ficha": "ru",
+  "nombre": "Lecturameter: Дневник чтения",
+  "subtitulo": "Трекер книг и статистика",
+  "estado_ficha": "nuevo"
+ },
+ "sk": {
+  "ficha": "sk",
+  "nombre": "Lecturameter: Denník čítania",
+  "subtitulo": "Evidencia kníh a štatistiky",
+  "estado_ficha": "nuevo"
+ },
+ "sl": {
+  "ficha": "sl-SI",
+  "nombre": "Lecturameter: Bralni dnevnik",
+  "subtitulo": "Sledilnik knjig in statistika",
+  "estado_ficha": "por_confirmar"
+ },
+ "sv": {
+  "ficha": "sv",
+  "nombre": "Lecturameter: Läsdagbok",
+  "subtitulo": "Boktracker & lässtatistik",
+  "estado_ficha": "nuevo"
+ },
+ "sw": {
+  "ficha": null,
+  "nombre": null,
+  "subtitulo": null,
+  "estado_ficha": null
+ },
+ "ta": {
+  "ficha": "ta-IN",
+  "nombre": "Lecturameter: வாசிப்பு டைரி",
+  "subtitulo": "புத்தக டிராக்கர், புள்ளிவிவரம்",
+  "estado_ficha": "por_confirmar"
+ },
+ "te": {
+  "ficha": "te-IN",
+  "nombre": "Lecturameter: పఠన డైరీ",
+  "subtitulo": "బుక్ ట్రాకర్, పఠన గణాంకాలు",
+  "estado_ficha": "por_confirmar"
+ },
+ "tr": {
+  "ficha": "tr",
+  "nombre": "Lecturameter: Okuma Günlüğü",
+  "subtitulo": "Kitap takibi ve istatistik",
+  "estado_ficha": "nuevo"
+ },
+ "uk": {
+  "ficha": "uk",
+  "nombre": "Lecturameter: Щоденник читання",
+  "subtitulo": "Трекер книг і статистика",
+  "estado_ficha": "nuevo"
+ },
+ "ur": {
+  "ficha": "ur",
+  "nombre": "Lecturameter: مطالعہ ٹریکر",
+  "subtitulo": "کتاب ٹریکر اور اعداد و شمار",
+  "estado_ficha": "por_confirmar"
+ },
+ "vi": {
+  "ficha": "vi",
+  "nombre": "Lecturameter: Nhật ký đọc sách",
+  "subtitulo": "Theo dõi sách & thống kê đọc",
+  "estado_ficha": "nuevo"
+ },
+ "zh-cn": {
+  "ficha": "zh-Hans",
+  "nombre": "Lecturameter: 读书记录",
+  "subtitulo": "书籍管理与阅读统计",
+  "estado_ficha": "nuevo"
+ },
+ "zu": {
+  "ficha": null,
+  "nombre": null,
+  "subtitulo": null,
+  "estado_ficha": null
+ }
+}

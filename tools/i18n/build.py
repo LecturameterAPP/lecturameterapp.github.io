@@ -38,6 +38,12 @@ def rel(from_dir, target):
     return r
 
 
+def page_locales(page, locales):
+    """Idiomas en los que existe una pagina (pages.<x>.only_locales; sin el campo, todos)."""
+    codes = page.get('only_locales')
+    return [l for l in locales if not codes or l['code'] in codes]
+
+
 def page_dir(loc, page):
     return loc['path'].strip('/') and (loc['path'].strip('/') + '/' + page['dir']) or page['dir']
 
@@ -52,6 +58,7 @@ def build_vars(cfg, loc, pname, page, others):
         'img': loc['img'],
         'shots99': loc['shots99'],
         'og_locale': loc['og_locale'],
+        'hreflang': loc['hreflang'],
         'site_url': site,
         'root': rel(here, ''),
         'home': rel(here, loc['path'].lstrip('/')),
@@ -69,6 +76,14 @@ def build_vars(cfg, loc, pname, page, others):
             v['link_' + lk] = rel(here, lp['original'])
         else:
             v['link_' + lk] = rel(here, loc['path'].lstrip('/') + lp['dir'])
+    # politica de cookies: pagina propia solo en los idiomas de pages.cookies.only_locales; el resto apunta a la inglesa
+    ck = cfg['pages'].get('cookies')
+    if ck:
+        ck_codes = ck.get('only_locales')
+        ck_loc = loc if (not ck_codes or loc['code'] in ck_codes) else [o for o in others if o['code'] == cfg['default_locale']][0]
+        v['link_cookies'] = rel(here, page_dir(ck_loc, ck))
+    v['play_url'] = cfg['play_url']
+    v['play_1999_url'] = cfg['play_1999_url']
     if page.get('original'):
         v['legal_original_url'] = rel(here, page['original']) + '?lang=en'
     # redireccion por idioma: solo en las paginas del idioma por defecto (raiz)
@@ -270,6 +285,26 @@ def release_vars(cfg, strings, where, errors):
     return v
 
 
+def list_vars(strings, where, errors):
+    """Listas de i18n (secciones Pausado, Cards, Eventos) -> HTML ya montado."""
+    def get(key):
+        if key not in strings:
+            errors.append('%s: falta la clave %s' % (where, key))
+            return []
+        return strings[key]
+    v = {}
+    v['paused_cards_html'] = '\n'.join(
+        '            <div class="paused-card reveal-up"><h3>%s</h3><p>%s</p></div>' % (c['title'], c['text'])
+        for c in get('home.paused.cards'))
+    v['cards_chips_html'] = '\n'.join('                <li>%s</li>' % c for c in get('home.cards.chips'))
+    v['cards_steps_html'] = '\n'.join(
+        '            <li class="share-step reveal-up"><h3>%s</h3><p>%s</p></li>' % (c['title'], c['text'])
+        for c in get('home.cards.steps'))
+    v['events_read_items_html'] = '\n'.join('                <li>%s</li>' % c for c in get('home.events.read.items'))
+    v['events_quest_items_html'] = '\n'.join('                <li>%s</li>' % c for c in get('home.events.quest.items'))
+    return v
+
+
 IF_RE = re.compile(r'^[ \t]*\{\{#(if|unless) (\w+)\}\}\r?\n(.*?)^[ \t]*\{\{/(?:if|unless)\}\}\r?\n', re.S | re.M)
 
 
@@ -329,6 +364,27 @@ def fix_legal_links(out, root):
     return out[:i] + re.sub(r'(<a\s[^>]*?href=")([^"]*)(")', sub, out[i:j]) + out[j:]
 
 
+def parse_only(argv):
+    """--only es,en  (o --only=es,en): genera solo esos idiomas; no toca ni borra el resto."""
+    for i, a in enumerate(argv):
+        if a == '--only' and i + 1 < len(argv):
+            return [c.strip() for c in argv[i + 1].split(',') if c.strip()]
+        if a.startswith('--only='):
+            return [c.strip() for c in a[7:].split(',') if c.strip()]
+    return None
+
+
+def check_seo(strings, where, errors):
+    """seo.store_name (frase exacta de la ficha de tienda de ese idioma) debe aparecer en title y description."""
+    name = strings.get('seo.store_name')
+    if not name:
+        errors.append('%s: falta seo.store_name (frase de la ficha de tienda, ver i18n/seo_store_map.json)' % where)
+        return
+    for k in ('head.index.title', 'head.index.description'):
+        if name not in strings.get(k, ''):
+            errors.append('%s: %s no contiene la frase de tienda "%s"' % (where, k, name))
+
+
 def main():
     cfg = load_json(os.path.join(ROOT, 'i18n', 'locales.json'))
     # un idioma solo existe si tiene i18n/<code>.json (los demas estan dados de alta pero pendientes)
@@ -338,22 +394,35 @@ def main():
         if l['code'] not in ('en', 'es') and os.path.exists(os.path.join(ROOT, 'i18n', 'blog', l['code'] + '.json')):
             l['blog'] = l['path'].lstrip('/') + 'blog/'
     locales = cfg['locales']
+    only = parse_only(sys.argv[1:])
+    if only is not None:
+        unknown = [c for c in only if c not in [l['code'] for l in locales]]
+        if unknown:
+            raise BuildError('--only: idiomas desconocidos o sin i18n/<codigo>.json: ' + ', '.join(unknown))
     errors = []
     written = []
     if cfg.get('ios_live') and not cfg.get('app_store_url'):
         raise BuildError('ios_live es true pero app_store_url esta vacio en i18n/locales.json')
     for loc in locales:
+        if only is not None and loc['code'] not in only:
+            continue
         strings = load_json(os.path.join(ROOT, 'i18n', loc['code'] + '.json'))
+        check_seo(strings, loc['code'], errors)
         todo = list(cfg['pages'].items())
         if not loc.get('legal_original'):
             todo += [('legal_' + k, dict(v, legal=True)) for k, v in cfg.get('legal_pages', {}).items()]
         for pname, page in todo:
+            plocs = page_locales(page, locales)
+            if loc not in plocs:
+                continue
             tpl_path = os.path.join(ROOT, 'src', 'templates', page['template'])
             with open(tpl_path, encoding='utf-8', newline='') as f:
                 tpl = f.read()
             where = '%s/%s' % (loc['code'], page['template'])
-            variables = build_vars(cfg, loc, pname, page, locales)
+            variables = build_vars(cfg, loc, pname, page, plocs)
             variables.update(release_vars(cfg, strings, where, errors))
+            if page['template'] == 'index.html':
+                variables.update(list_vars(strings, where, errors))
             variables['__loc'] = loc
             variables['__shot'] = make_shot_resolver(cfg, loc, errors, where)
             variables['ios_live'] = '1' if cfg.get('ios_live') else ''
@@ -361,8 +430,7 @@ def main():
             variables['testflight_1999_url'] = cfg['testflight_1999_url']
             variables['app_store_1999_url'] = cfg.get('app_store_1999_url', '')
             variables['lm_i18n_json'] = js_payload(strings, bool(cfg.get('ios_live')))
-            variables['lang_picker'] = lang_picker(loc, page, locales, strings, ' ' * 12)
-            where = '%s/%s' % (loc['code'], page['template'])
+            variables['lang_picker'] = lang_picker(loc, page, plocs, strings, ' ' * 12)
             out = render(tpl, variables, strings, where, errors)
             if page.get('legal'):
                 out = fix_legal_links(out, variables['root'])
@@ -407,7 +475,7 @@ def update_sitemap(cfg, changed):
     groups = []
     for page in cfg['pages'].values():
         urls = []
-        for o in locales:
+        for o in page_locales(page, locales):
             d = page_dir(o, page)
             urls.append((site + d, os.path.join(ROOT, *(d + 'index.html').split('/'))))
         groups.append((page, urls))
@@ -431,11 +499,11 @@ def update_sitemap(cfg, changed):
             lastmod = today if fpath in changed else field('lastmod', today)
             alts = ''.join(
                 '    <xhtml:link rel="alternate" hreflang="%s" href="%s" />\n' % (x['hreflang'], site + page_dir(x, page))
-                for x in locales)
+                for x in page_locales(page, locales))
             alts += '    <xhtml:link rel="alternate" hreflang="x-default" href="%s" />\n' % (site + page_dir(default, page))
             out += ('  <url>\n    <loc>%s</loc>\n%s    <lastmod>%s</lastmod>\n    <changefreq>%s</changefreq>\n'
                     '    <priority>%s</priority>\n  </url>\n') % (
-                u, alts, lastmod, field('changefreq', 'monthly'), field('priority', '0.8'))
+                u, alts, lastmod, field('changefreq', page.get('changefreq', 'monthly')), field('priority', page.get('priority', '0.8')))
         return out
     emitted = set()
     res = []

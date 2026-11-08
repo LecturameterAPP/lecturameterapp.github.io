@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Proyecto independiente",
  "common.footer.home": "Inicio",
  "common.footer.privacy": "Privacidad",
- "head.index.title": "Lecturameter · Lectura, retos y estadísticas",
- "head.index.description": "Registra tu tiempo de lectura, páginas, ritmo y progreso con un tracker privado para Android e iPhone. Sin cuenta, sin anuncios. Importa tu biblioteca desde Goodreads o StoryGraph.",
+ "head.index.title": "Lecturameter: Diario Lector · Retos y estadísticas",
+ "head.index.description": "Lecturameter: Diario Lector para Android e iPhone. Cronometra tu lectura, registra páginas, ritmo y estadísticas, e importa de Goodreads. Sin cuenta ni anuncios.",
  "head.index.ld_description": "Organiza tu biblioteca, cronometra sesiones de lectura y consulta estadísticas detalladas en tu móvil Android o iPhone. Sin anuncios y con total privacidad.",
  "head.index.ld_featurelist": "Biblioteca por estanterías, cronómetro con pantalla apagada, historial de sesiones, mapa de calor, resumen anual, retos de lectura personalizables, backup en Google Drive, importación Goodreads CSV, mayormente offline",
  "head.index.faq1_q": "¿Puedo traer mi biblioteca desde otras apps?",
@@ -490,7 +490,7 @@
  "head.index.faq7_a": "Depende de dónde lo compraste. Si lo compraste en Google Play y cambias a otro Android con tu misma cuenta Google, instala Lecturameter y pulsa Restaurar compra en Ajustes. Si lo compraste en la App Store y cambias a otro iPhone con el mismo Apple ID, igual: instalas y pulsas Restaurar compra. De momento el Pro no pasa de Android a iPhone ni al revés: cada compra se queda en su plataforma. Los códigos lm-... solo se canjean en Android.",
  "head.index.faq8_q": "¿Puedo migrar mi Pro entre teléfonos y entre iOS y Android?",
  "head.index.faq8_a": "Entre Android e iPhone, de momento no: cada compra se queda en su plataforma. Estamos viendo si se puede hacer de alguna forma. Entre dos móviles de la misma plataforma sí: usa Restaurar compra con tu cuenta de Google o tu Apple ID.",
- "head.lm99.title": "Lecturameter 1999 - Lecturameter",
+ "head.lm99.title": "Lecturameter 99: Reading Log · Lectura al estilo 1999",
  "head.lm99.description": "Lecturameter como si lo hubieras instalado desde un CD-ROM en 1999. Un cliente alternativo con ventanas, menús, tablas y un cronómetro LCD, que abre tus copias de seguridad reales. Gratis.",
  "head.lm99.og_title": "Lecturameter 1999",
  "head.lm99.og_description": "Lecturameter como si lo hubieras instalado desde un CD-ROM en 1999. Un cliente alternativo con ventanas, menús y un cronómetro LCD.",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Eventos · Dos temas Pro nuevos",
  "release.3_9.new": [
   "<strong>Eventos:</strong> retos de lectura globales y Lecturameter Quest cuando haya uno activo",
+  "<strong>Pausado:</strong> deja un libro una temporada sin ensuciar tus estadísticas",
   "<strong>Dos temas Pro nuevos:</strong> Cuaderno y Floresta",
   "Un reloj de crono propio para cada tema",
   "Pagi te elige un libro de Quiero leer",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Para cualquier consulta sobre estos Términos: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> o <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Términos de Servicio – Lecturameter",
  "legal.terms.meta_description": "Condiciones claras, sin letra pequeña.",
- "common.footer.drakehold": "Del mismo creador: <strong>Drakehold</strong>, tu archivo personal que se ordena solo. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Únete a la lista de espera →</a>"
+ "common.footer.drakehold": "Del mismo creador: <strong>Drakehold</strong>, tu archivo personal que se ordena solo. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Únete a la lista de espera →</a>",
+ "seo.store_name": "Lecturameter: Diario Lector",
+ "anchor.paused": "pausado",
+ "anchor.cards": "tarjetas",
+ "anchor.events": "eventos",
+ "common.nav.events": "Eventos",
+ "common.footer.events": "Eventos",
+ "common.footer.cookies": "Política de cookies",
+ "common.footer.cookie_prefs": "Preferencias de cookies",
+ "js.consent_title": "Cookies y almacenamiento",
+ "js.consent_body": "Usamos un widget de terceros (StartupBar) que guarda datos en tu navegador y mide impresiones. Solo se carga si aceptas. Tu tema, tu idioma y el aviso cerrado se guardan sin pedirte nada, porque los has elegido tú.",
+ "js.consent_accept": "Aceptar",
+ "js.consent_reject": "Rechazar",
+ "js.consent_policy": "Política de cookies",
+ "js.consent_prefs": "Preferencias de cookies",
+ "home.paused.tag": "Novedad de la 3.9",
+ "home.paused.title": "Deja un libro una temporada sin ensuciar tus estadísticas",
+ "home.paused.sub": "Pausado es un estado propio, distinto de Abandonado. El libro espera donde lo dejaste y los días en pausa no cuentan.",
+ "home.paused.tab_pending": "Quiero leer",
+ "home.paused.tab_reading": "Leyendo",
+ "home.paused.tab_paused": "Pausado",
+ "home.paused.tab_dropped": "Abandonado",
+ "home.paused.timeline_caption": "Los días en pausa no cuentan",
+ "home.paused.cards": [
+  {
+   "title": "Un estado propio",
+   "text": "Pausado no es Abandonado. Tu libro no se va a la pila de los que dejaste: está en pausa y vuelve cuando tú quieras."
+  },
+  {
+   "title": "Desde Leyendo o Releyendo",
+   "text": "Cambia el estado con la píldora de la ficha del libro o con «Cambiar estado» en el menú rápido. Vale para libros, cómics, manga y audiolibros."
+  },
+  {
+   "title": "Los días en pausa no cuentan",
+   "text": "Ni en los días para terminar ni en tu velocidad. Tus estadísticas siguen siendo las de cuando leías."
+  },
+  {
+   "title": "Una nota, si quieres",
+   "text": "Al pausar y al reanudar puedes apuntar el motivo. Es opcional. Todo queda en la sección «Pausas» de la ficha, con su historial."
+  },
+  {
+   "title": "Su propia pestaña",
+   "text": "En la biblioteca, entre Quiero leer y Abandonado, tienes los libros pausados."
+  },
+  {
+   "title": "Recordatorios y reanudar solo",
+   "text": "Los recordatorios de ese libro se pausan y vuelven al reanudarlo. Si cronometras una sesión o llega una de KOReader, el libro se reanuda solo, con un aviso y la opción de deshacer."
+  }
+ ],
+ "home.cards.tag": "Compartir",
+ "home.cards.title": "Lecturameter no es una red social. Tus tarjetas van a la que uses.",
+ "home.cards.sub": "Genera tarjetas verticales de 1080×1920, listas para historias, y compártelas donde ya estás. Sin cuenta, sin perfil y sin seguidores.",
+ "home.cards.chips": [
+  "Libro",
+  "Libro terminado",
+  "Estadísticas del libro",
+  "Estadísticas",
+  "Resumen semanal",
+  "Resumen mensual",
+  "Retos",
+  "Bingo",
+  "Wrapped",
+  "Evento",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Elige qué enseñar",
+   "text": "Un libro, uno recién terminado, tus estadísticas, tu semana o tu mes, un reto, el Bingo, el Wrapped o un evento."
+  },
+  {
+   "title": "Se guarda en «Mis tarjetas»",
+   "text": "Todo lo que compartes queda en Mis tarjetas, para volver a usarlo cuando quieras."
+  },
+  {
+   "title": "Compártela donde ya estás",
+   "text": "Con el menú de compartir de tu móvil, en la app que ya usas. O guárdala en la galería."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · formato historia",
+ "home.events.tag": "Eventos",
+ "home.events.title": "Lee con la comunidad. Juega con tu biblioteca.",
+ "home.events.sub": "Los eventos aparecen en la app cuando hay uno activo. Hoy hay dos tipos: un reto global de lectura y un juego de cartas con tus propios libros.",
+ "home.events.demo_label": "Ejemplo ilustrativo",
+ "home.events.read.kicker": "Reto global · 14 días",
+ "home.events.read.title": "La gran lectura",
+ "home.events.read.items": [
+  "Cuentan los minutos del crono, en libros, cómics, manga y audiolibros.",
+  "Meta común para toda la comunidad. Si se supera, sigue contando.",
+  "Clasificación en vivo con alias seudónimo y tu Pagi de avatar.",
+  "Al terminar, la card del evento con tu puesto, para todos los participantes."
+ ],
+ "home.events.read.goal": "Meta de la comunidad",
+ "home.events.read.board": "Clasificación",
+ "home.events.read.you": "tú",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "La biblioteca olvidada",
+ "home.events.quest.items": [
+  "Elige 3 libros de tu biblioteca: cada uno se convierte en una carta con el arquetipo de su género.",
+  "Partidas de 5 a 10 minutos para cruzar los estantes y vencer al jefe final.",
+  "Clasificación por puntos: cuentan tus 3 mejores partidas de cada día.",
+  "¿Te faltan libros? La biblioteca te presta tomos, uno por arquetipo."
+ ],
+ "home.events.note": "Hace falta tener 16 años o más para participar. Si ahora no hay ningún evento activo, la app te lo dice.",
+ "cookies.title": "Política de cookies · Lecturameter",
+ "cookies.meta_description": "Qué guarda la web de Lecturameter en tu navegador, para qué y cómo cambiar tu elección. Sin analítica ni publicidad propias.",
+ "cookies.h1": "🍪 Política de cookies",
+ "cookies.tagline": "Qué se guarda en tu navegador al visitar esta web, y por qué.",
+ "cookies.updated": "Actualizada el 8 de noviembre de 2026",
+ "cookies.summary_title": "En corto",
+ "cookies.summary": "Esta web no usa cookies de analítica ni de publicidad propias. Guarda en tu navegador tus preferencias (tema, idioma, aviso cerrado) y tu elección sobre esta política. Un widget de terceros, StartupBar, solo se carga si pulsas «Aceptar».",
+ "cookies.h2_stored": "Lo que se guarda",
+ "cookies.p_stored": "Todo se guarda en el almacenamiento local de tu navegador (localStorage o sessionStorage). Esta web no escribe cookies HTTP propias.",
+ "cookies.h3_essential": "Preferencias tuyas (no necesitan consentimiento)",
+ "cookies.p_essential": "Las guardamos porque tú las has pedido al usar la web. No identifican a nadie y no salen de tu navegador.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · recuerda si elegiste tema claro u oscuro · hasta que lo borres.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · recuerda el idioma que elegiste en el selector · hasta que lo borres.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · recuerda que cerraste la barra superior · hasta que lo borres.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · guarda tu elección en el aviso de cookies, con su versión y fecha · hasta que la cambies o la borres.",
+ "cookies.h3_optional": "Solo si aceptas",
+ "cookies.p_optional": "Si pulsas «Aceptar» se cargan estos elementos de terceros. Si pulsas «Rechazar», no se carga nada de esto y la web funciona igual.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · widget con un iframe de terceros, que guarda <code>startupbar:sid</code> en sessionStorage (hasta cerrar la pestaña) y envía una señal de impresiones. Lo carga cada página de la web.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · biblioteca de la página de contacto, servida por jsDelivr.",
+ "cookies.h2_never": "Lo que no hacemos",
+ "cookies.p_never": "No usamos analítica propia, ni publicidad, ni perfiles, ni cookies de seguimiento. Tampoco vendemos datos. La web está alojada en GitHub Pages, que puede registrar tu IP al servir las páginas según su propia política.",
+ "cookies.h2_change": "Cambiar tu elección",
+ "cookies.p_change": "Puedes cambiarla cuando quieras con «Preferencias de cookies» en el pie de cualquier página. También puedes borrar los datos de esta web desde los ajustes de tu navegador. Si retiras tu consentimiento, la página se recarga sin los elementos de terceros.",
+ "cookies.h2_more": "Más información",
+ "cookies.p_more": "La política de privacidad de la app explica qué datos trata Lecturameter en el móvil. Si tienes dudas, escribe a lecturameter.app@gmail.com."
 }

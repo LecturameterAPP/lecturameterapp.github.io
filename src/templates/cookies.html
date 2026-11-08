@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="{{code}}" dir="{{dir}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{cookies.title}}</title>
+    <meta name="description" content="{{cookies.meta_description}}">
+    <meta property="og:title" content="{{cookies.title}}">
+    <meta property="og:description" content="{{cookies.meta_description}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{page_url}}">
+    <meta property="og:image" content="{{site_url}}social_card.jpg">
+    <meta property="og:locale" content="{{og_locale}}">
+{{og_locale_alternates}}    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{cookies.title}}">
+    <meta name="twitter:description" content="{{cookies.meta_description}}">
+    <meta name="twitter:image" content="{{site_url}}social_card.jpg">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#121212">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{{root}}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{root}}favicon-16x16.png">
+    <link rel="apple-touch-icon" href="{{root}}apple-touch-icon.png">
+    <link rel="manifest" href="{{root}}site.webmanifest">
+    <link rel="shortcut icon" href="{{root}}favicon.ico">
+
+    <link rel="canonical" href="{{page_url}}">
+{{hreflang_links}}    <link rel="stylesheet" href="{{root}}styles.css?v=7.0">
+    <script src="/consent.js" defer data-policy="{{link_cookies}}"></script>
+</head>
+<body>
+
+<nav class="nav-bar">
+    <div class="nav-inner">
+        <a href="{{home}}" class="nav-brand">
+            <img src="{{root}}ic_launcher_round.png" alt="{{common.nav.lecturameter.alt}}" width="28" height="28">
+            {{common.nav.lecturameter}}
+        </a>
+        <ul class="nav-pills">
+            <li class="has-dropdown">
+                <a href="{{home}}#{{anchor.features}}">{{common.nav.features}} <span class="caret" aria-hidden="true">&#x25BE;</span></a>
+                <ul class="nav-dropdown">
+                    <li><a href="{{link_feat_timer}}">{{common.nav.reading_timer_2}}</a></li>
+                    <li><a href="{{link_feat_tracker}}">{{common.nav.reading_tracker}}</a></li>
+                    <li><a href="{{link_feat_stats}}">{{common.nav.reading_statistics_2}}</a></li>
+                    <li><a href="{{link_feat_goodreads}}">{{common.nav.goodreads_alternative}}</a></li>
+                    <li><a href="{{link_feat_catalog}}">{{common.nav.book_catalog}}</a></li>
+                </ul>
+            </li>
+            <li><a href="{{home}}#{{anchor.themes}}">{{common.nav.themes}}</a></li>
+            <li><a href="{{home}}#{{anchor.pricing}}">{{common.nav.pro}}</a></li>
+            <li><a href="{{home}}#{{anchor.whatsnew}}">{{common.nav.patch_notes}}</a></li>
+            <li><a href="{{home}}#{{anchor.history}}">{{common.nav.history}}</a></li>
+{{#if has_roadmap}}
+            <li><a href="{{home}}#roadmap">{{common.nav.roadmap}}</a></li>
+{{/if}}
+            <li><a href="{{link_1999}}">1999</a></li>
+            <li><a href="{{home}}#faq">{{common.nav.faq}}</a></li>
+            <li><a href="{{link_blog}}">{{common.nav.blog}}</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button class="nav-theme-btn" aria-label="{{common.nav.toggle_theme.aria-label}}">&#x263E;</button>
+            {{lang_picker}}
+            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="{{common.nav.download_google_play.aria-label}}">
+                <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                {{common.nav.download}}
+            </a>
+            <a href="{{ios_url}}" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="{{common.nav.download_app_store.aria-label}}">
+                <svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+                {{common.nav.download}}
+            </a>
+        </div>
+        <button class="nav-hamburger" aria-label="{{common.nav.menu.aria-label}}">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+    </div>
+</nav>
+
+<div class="subpage-container">
+    <div class="legal-content">
+            <div class="page-hero">
+                <h1 class="page-heading">{{cookies.h1}}</h1>
+                <p class="tagline">{{cookies.tagline}}</p>
+                <p style="font-size:13px; color:var(--muted); margin-top:6px;">{{cookies.updated}}</p>
+            </div>
+
+            <div class="privacy-highlight">
+                <div class="title">{{cookies.summary_title}}</div>
+                <div class="desc">{{cookies.summary}}</div>
+            </div>
+
+            <div class="section" id="cookies">
+                <h2>{{cookies.h2_stored}}</h2>
+                <div class="privacy-text">
+                    <p>{{cookies.p_stored}}</p>
+                    <h3 style="margin-top:18px;">{{cookies.h3_essential}}</h3>
+                    <p>{{cookies.p_essential}}</p>
+                    <ul style="padding-inline-start:18px;">
+                        <li>{{cookies.li_theme}}</li>
+                        <li>{{cookies.li_lang}}</li>
+                        <li>{{cookies.li_promo}}</li>
+                        <li>{{cookies.li_consent}}</li>
+                    </ul>
+                    <h3 style="margin-top:18px;">{{cookies.h3_optional}}</h3>
+                    <p>{{cookies.p_optional}}</p>
+                    <ul style="padding-inline-start:18px;">
+                        <li>{{cookies.li_startupbar}}</li>
+                        <li>{{cookies.li_emailjs}}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>{{cookies.h2_never}}</h2>
+                <div class="privacy-text"><p>{{cookies.p_never}}</p></div>
+            </div>
+
+            <div class="section">
+                <h2>{{cookies.h2_change}}</h2>
+                <div class="privacy-text">
+                    <p>{{cookies.p_change}}</p>
+                    <p style="margin-top:12px;"><a href="#" data-lm-cookie-prefs class="btn btn-sm">{{common.footer.cookie_prefs}}</a></p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>{{cookies.h2_more}}</h2>
+                <div class="privacy-text"><p>{{cookies.p_more}} <a href="{{link_privacy}}">{{common.footer.privacy_policy}}</a></p></div>
+            </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <p class="footer-note">{{common.footer.drakehold}}</p>
+        <div class="footer-bottom">
+            <span>{{common.footer.2026_lecturameter_independent_proj_2}}</span>
+            <a href="{{home}}">{{common.footer.home}}</a>
+            <a href="{{link_privacy}}">{{common.footer.privacy_policy}}</a>
+            <a href="{{link_terms}}">{{common.footer.terms_of_service}}</a>
+            <a href="{{link_cookies}}">{{common.footer.cookies}}</a>
+            <a href="#" data-lm-cookie-prefs>{{common.footer.cookie_prefs}}</a>
+            <a href="{{root}}contact.html">{{common.footer.contact}}</a>
+        </div>
+    </div>
+</footer>
+
+<script id="lm-i18n" type="application/json">{{lm_i18n_json}}</script>
+<script src="{{root}}main.js?v=6.5" defer></script>
+</body>
+</html>
