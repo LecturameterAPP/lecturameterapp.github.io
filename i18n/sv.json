@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Oberoende projekt",
  "common.footer.home": "Hem",
  "common.footer.privacy": "Integritet",
- "head.index.title": "Lecturameter · Läsloggare & bokstatistik",
- "head.index.description": "Följ din lästid, dina sidor, din takt och dina framsteg med en privat läsloggare för Android och iPhone. Inget konto, inga annonser. Importera från Goodreads och StoryGraph.",
+ "head.index.title": "Lecturameter: Läsdagbok · Bokstatistik och timer",
+ "head.index.description": "Lecturameter: Läsdagbok för Android och iPhone. Ta tid på läsningen, följ sidor, tempo och statistik och importera från Goodreads. Inget konto, inga annonser.",
  "head.index.ld_description": "Organisera ditt bibliotek, ta tid på lässessioner och se detaljerad statistik på din Android- eller iPhone-telefon. Inga annonser, helt privat.",
  "head.index.ld_featurelist": "Bibliotek med hyllor, tidtagarur med skärmen släckt, sessionshistorik, heatmap, årlig Wrapped, anpassningsbara läsutmaningar, säkerhetskopiering på Google Drive, CSV-import från Goodreads, fungerar mest offline",
  "head.index.faq1_q": "Kan jag ta med mitt bibliotek från andra appar?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Evenemang · Två nya Pro-teman",
  "release.3_9.new": [
   "<strong>Evenemang:</strong> globala läsutmaningar och Lecturameter Quest när något är aktivt",
+  "<strong>Pausad:</strong> lägg en bok åt sidan ett tag utan att förstöra din statistik",
   "<strong>Två nya Pro-teman:</strong> Anteckningsbok och Skog",
   "En egen tidtagarklocka för varje tema",
   "Pagi väljer en bok åt dig från Vill läsa",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "För frågor om dessa villkor: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> eller <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Användarvillkor – Lecturameter",
  "legal.terms.meta_description": "Tydliga villkor, inget finstilt.",
- "common.footer.drakehold": "Från samma skapare: <strong>Drakehold</strong>, ditt personliga arkiv som ordnar sig självt. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Gå med i väntelistan →</a>"
+ "common.footer.drakehold": "Från samma skapare: <strong>Drakehold</strong>, ditt personliga arkiv som ordnar sig självt. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Gå med i väntelistan →</a>",
+ "seo.store_name": "Lecturameter: Läsdagbok",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Evenemang",
+ "common.footer.events": "Evenemang",
+ "common.footer.cookies": "Cookiepolicy",
+ "common.footer.cookie_prefs": "Cookieinställningar",
+ "js.consent_title": "Cookies och lagring",
+ "js.consent_body": "Vi använder en widget från tredje part (StartupBar) som sparar data i din webbläsare och räknar visningar. Den laddas bara om du godkänner. Ditt tema, ditt språk och det stängda meddelandet sparas utan att fråga, eftersom du valde dem själv.",
+ "js.consent_accept": "Godkänn",
+ "js.consent_reject": "Avvisa",
+ "js.consent_policy": "Cookiepolicy",
+ "js.consent_prefs": "Cookieinställningar",
+ "home.paused.tag": "Nytt i 3.9",
+ "home.paused.title": "Lägg en bok åt sidan ett tag utan att förstöra din statistik",
+ "home.paused.sub": "Pausad är en egen status, skild från Lämnad. Boken väntar där du lade den och dagarna på paus räknas inte.",
+ "home.paused.tab_pending": "Vill läsa",
+ "home.paused.tab_reading": "Läser",
+ "home.paused.tab_paused": "Pausad",
+ "home.paused.tab_dropped": "Lämnad",
+ "home.paused.timeline_caption": "Dagar på paus räknas inte",
+ "home.paused.cards": [
+  {
+   "title": "En egen status",
+   "text": "Pausad är inte Lämnad. Din bok hamnar inte i högen med böcker du gett upp: den väntar och kommer tillbaka när du vill."
+  },
+  {
+   "title": "Från Läser eller Läser om",
+   "text": "Ändra status med etiketten på bokens sida eller med ”Ändra status” i snabbmenyn. Det funkar för böcker, serier, manga och ljudböcker."
+  },
+  {
+   "title": "Dagar på paus räknas inte",
+   "text": "Varken i dagar till klar eller i din lässhastighet. Din statistik förblir som den var när du läste."
+  },
+  {
+   "title": "En anteckning, om du vill",
+   "text": "När du pausar och när du återupptar kan du skriva upp varför. Det är frivilligt. Allt ligger kvar i avsnittet ”Pauser” på bokens sida, med sin historik."
+  },
+  {
+   "title": "En egen flik",
+   "text": "I ditt bibliotek, mellan Vill läsa och Lämnad, hittar du dina pausade böcker."
+  },
+  {
+   "title": "Påminnelser och automatisk återupptagning",
+   "text": "Påminnelserna för den boken pausas och kommer tillbaka när du återupptar den. Om du tar tid på en session eller en kommer in från KOReader återupptas boken av sig själv, med ett meddelande och alternativet Ångra."
+  }
+ ],
+ "home.cards.tag": "Dela",
+ "home.cards.title": "Lecturameter är inte ett socialt nätverk. Dina kort går till det du använder.",
+ "home.cards.sub": "Skapa stående kort på 1080×1920, redo för stories, och dela dem där du redan är. Inget konto, ingen profil och inga följare.",
+ "home.cards.chips": [
+  "Bok",
+  "Utläst bok",
+  "Bokstatistik",
+  "Statistik",
+  "Veckosammanfattning",
+  "Månadssammanfattning",
+  "Utmaningar",
+  "Bingo",
+  "Wrapped",
+  "Evenemang",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Välj vad du vill visa",
+   "text": "En bok, en du nyss läst ut, din statistik, din vecka eller månad, en utmaning, Bingo, Wrapped eller ett evenemang."
+  },
+  {
+   "title": "Sparas i ”Mina kort”",
+   "text": "Allt du delar ligger kvar i Mina kort, så du kan använda det igen när du vill."
+  },
+  {
+   "title": "Dela där du redan är",
+   "text": "Via telefonens delningsmeny, till appen du redan använder. Eller spara i galleriet."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · storyformat",
+ "home.events.tag": "Evenemang",
+ "home.events.title": "Läs med communityn. Spela med ditt bibliotek.",
+ "home.events.sub": "Evenemang dyker upp i appen när ett är aktivt. Idag finns det två sorter: en global läsutmaning och ett kortspel med dina egna böcker.",
+ "home.events.demo_label": "Illustrativt exempel",
+ "home.events.read.kicker": "Global utmaning · 14 dagar",
+ "home.events.read.title": "Den stora läsningen",
+ "home.events.read.items": [
+  "Minuterna från timern räknas, för böcker, serier, manga och ljudböcker.",
+  "Ett gemensamt mål för hela communityn. Om det slås fortsätter räkningen.",
+  "Livetopplista med ett pseudonymt alias och din Pagi som avatar.",
+  "När det är slut får varje deltagare evenemangskortet med din placering."
+ ],
+ "home.events.read.goal": "Communityns mål",
+ "home.events.read.board": "Topplista",
+ "home.events.read.you": "du",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Det bortglömda biblioteket",
+ "home.events.quest.items": [
+  "Välj 3 böcker från ditt bibliotek: var och en blir ett kort med arketypen för sin genre.",
+  "Omgångar på 5 till 10 minuter för att ta dig förbi hyllorna och besegra slutbossen.",
+  "Poängtopplista: dina 3 bästa omgångar varje dag räknas.",
+  "Få böcker? Biblioteket lånar ut band till dig, ett per arketyp."
+ ],
+ "home.events.note": "Du måste vara 16 år eller äldre för att delta. Om inget evenemang är aktivt just nu säger appen det.",
+ "cookies.title": "Cookiepolicy · Lecturameter",
+ "cookies.meta_description": "Vad Lecturameters webbplats sparar i din webbläsare, varför, och hur du ändrar ditt val. Ingen egen analys eller reklam.",
+ "cookies.h1": "🍪 Cookiepolicy",
+ "cookies.tagline": "Vad som sparas i din webbläsare när du besöker den här webbplatsen, och varför.",
+ "cookies.updated": "Uppdaterad 8 november 2026",
+ "cookies.summary_title": "I korthet",
+ "cookies.summary": "Den här webbplatsen använder inga egna analys- eller reklamcookies. Den sparar dina inställningar (tema, språk, stängt meddelande) och ditt val om den här policyn i din webbläsare. En widget från tredje part, StartupBar, laddas bara om du trycker på ”Godkänn”.",
+ "cookies.h2_stored": "Vad som sparas",
+ "cookies.p_stored": "Allt ligger i webbläsarens lokala lagring (localStorage eller sessionStorage). Den här webbplatsen skriver inga egna HTTP-cookies.",
+ "cookies.h3_essential": "Dina inställningar (samtycke behövs inte)",
+ "cookies.p_essential": "Vi sparar dem eftersom du bad om dem genom att använda webbplatsen. De identifierar ingen och lämnar aldrig din webbläsare.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · kommer ihåg om du valde det ljusa eller mörka temat · tills du rensar det.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · kommer ihåg språket du valde i väljaren · tills du rensar det.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · kommer ihåg att du stängde fältet högst upp · tills du rensar det.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · sparar ditt val i cookiemeddelandet, med version och datum · tills du ändrar eller rensar det.",
+ "cookies.h3_optional": "Bara om du godkänner",
+ "cookies.p_optional": "Om du trycker på ”Godkänn” laddas de här delarna från tredje part. Om du trycker på ”Avvisa” laddas inget av det och webbplatsen fungerar likadant.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · en widget med en iframe från tredje part, som sparar <code>startupbar:sid</code> i sessionStorage (tills du stänger fliken) och skickar en visningssignal. Alla webbplatsens sidor laddar den.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · ett bibliotek på kontaktsidan, levererat av jsDelivr.",
+ "cookies.h2_never": "Vad vi inte gör",
+ "cookies.p_never": "Vi använder ingen egen analys, reklam, profilering eller spårningscookies. Vi säljer inte heller data. Webbplatsen ligger på GitHub Pages, som kan logga din IP-adress när sidorna levereras, enligt sin egen policy.",
+ "cookies.h2_change": "Ändra ditt val",
+ "cookies.p_change": "Du kan ändra det när som helst med ”Cookieinställningar” i sidfoten på vilken sida som helst. Du kan också rensa webbplatsens data i webbläsarens inställningar. Om du återkallar ditt samtycke laddas sidan om utan delarna från tredje part.",
+ "cookies.h2_more": "Mer information",
+ "cookies.p_more": "Appens integritetspolicy förklarar vilka data Lecturameter hanterar i din telefon. Har du frågor, skriv till lecturameter.app@gmail.com."
 }

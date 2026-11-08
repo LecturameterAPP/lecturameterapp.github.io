@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Mradi huru",
  "common.footer.home": "Mwanzo",
  "common.footer.privacy": "Faragha",
- "head.index.title": "Lecturameter – Kifuatilia usomaji na takwimu za vitabu",
- "head.index.description": "Fuatilia muda wako wa kusoma, kurasa, kasi na maendeleo kwa kifuatilia usomaji binafsi cha Android na iPhone. Bila akaunti, bila matangazo. Leta kutoka Goodreads na StoryGraph.",
+ "head.index.title": "Lecturameter: Kifuatilia Usomaji · Takwimu na kipima muda",
+ "head.index.description": "Lecturameter: Kifuatilia Usomaji kwa Android na iPhone. Pima muda wa kusoma, fuatilia kurasa, kasi na takwimu, na uingize kutoka Goodreads. Bila akaunti, bila matangazo.",
  "head.index.ld_description": "Panga maktaba yako, pima muda wa vipindi vya kusoma na uone takwimu za kina kwenye simu yako ya Android au iPhone. Bila matangazo, faragha kamili.",
  "head.index.ld_featurelist": "Maktaba yenye rafu, kipima muda skrini ikiwa imezimwa, historia ya vipindi, ramani ya joto, Wrapped ya mwaka, changamoto za kusoma zinazoweza kubadilishwa, nakala rudufu ya Google Drive, kuleta CSV ya Goodreads, karibu yote nje ya mtandao",
  "head.index.faq1_q": "Naweza kuleta maktaba yangu kutoka kwa programu nyingine?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Matukio · Mandhari mbili mpya za Pro",
  "release.3_9.new": [
   "<strong>Matukio:</strong> changamoto za kusoma za kimataifa na Lecturameter Quest inapokuwa hai",
+  "<strong>Imesitishwa:</strong> weka kitabu pembeni kwa muda bila kuharibu takwimu zako",
   "<strong>Mandhari mbili mpya za Pro:</strong> Daftari na Msitu",
   "Saa ya kipima muda ya kipekee kwa kila mandhari",
   "Pagi hukuchagulia kitabu kutoka Nataka kusoma",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Kwa maswali yoyote kuhusu Masharti haya: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> au <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Masharti ya Huduma – Lecturameter",
  "legal.terms.meta_description": "Masharti wazi, bila maandishi madogo yaliyofichika.",
- "common.footer.drakehold": "Kutoka kwa muumbaji yuleyule: <strong>Drakehold</strong>, hifadhi yako binafsi inayojipanga yenyewe. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Jiunge na orodha ya kusubiri →</a>"
+ "common.footer.drakehold": "Kutoka kwa muumbaji yuleyule: <strong>Drakehold</strong>, hifadhi yako binafsi inayojipanga yenyewe. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Jiunge na orodha ya kusubiri →</a>",
+ "seo.store_name": "Lecturameter: Kifuatilia Usomaji",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Matukio",
+ "common.footer.events": "Matukio",
+ "common.footer.cookies": "Sera ya vidakuzi",
+ "common.footer.cookie_prefs": "Mapendeleo ya vidakuzi",
+ "js.consent_title": "Vidakuzi na hifadhi",
+ "js.consent_body": "Tunatumia wijeti ya mtu wa tatu (StartupBar) inayohifadhi data kwenye kivinjari chako na kuhesabu maonyesho. Inapakiwa tu ukikubali. Mandhari, lugha na ujumbe uliofunga huhifadhiwa bila kuuliza, kwa sababu uliyachagua mwenyewe.",
+ "js.consent_accept": "Kubali",
+ "js.consent_reject": "Kataa",
+ "js.consent_policy": "Sera ya vidakuzi",
+ "js.consent_prefs": "Mapendeleo ya vidakuzi",
+ "home.paused.tag": "Mpya katika 3.9",
+ "home.paused.title": "Weka kitabu pembeni kwa muda bila kuharibu takwimu zako",
+ "home.paused.sub": "Imesitishwa ni hali yake yenyewe, tofauti na Imeachwa. Kitabu kinasubiri ulipokiacha, na siku za kusitisha hazihesabiwi.",
+ "home.paused.tab_pending": "Nataka kusoma",
+ "home.paused.tab_reading": "Inasoma",
+ "home.paused.tab_paused": "Imesitishwa",
+ "home.paused.tab_dropped": "Imeachwa",
+ "home.paused.timeline_caption": "Siku za kusitisha hazihesabiwi",
+ "home.paused.cards": [
+  {
+   "title": "Hali yake yenyewe",
+   "text": "Imesitishwa si Imeachwa. Kitabu chako hakiendi kwenye rundo la vitabu ulivyoviacha: kinasubiri na kurudi wakati wowote unapotaka."
+  },
+  {
+   "title": "Kutoka Inasoma au Kusoma tena",
+   "text": "Badilisha hali kupitia alama kwenye ukurasa wa kitabu au kwa “Badilisha hali” kwenye menyu ya haraka. Inafanya kazi kwa vitabu, katuni, manga na vitabu vya sauti."
+  },
+  {
+   "title": "Siku za kusitisha hazihesabiwi",
+   "text": "Si katika siku za kumaliza wala katika kasi yako ya kusoma. Takwimu zako zinabaki kama zilivyokuwa ulipokuwa unasoma."
+  },
+  {
+   "title": "Dokezo, ukipenda",
+   "text": "Unapositisha na unaporejea, unaweza kuandika sababu. Ni hiari. Kila kitu kinabaki katika sehemu ya “Vipindi vya kusitisha” kwenye ukurasa wa kitabu, pamoja na historia yake."
+  },
+  {
+   "title": "Kichupo chake chenyewe",
+   "text": "Kwenye maktaba yako, kati ya Nataka kusoma na Imeachwa, utapata vitabu vyako vilivyositishwa."
+  },
+  {
+   "title": "Vikumbusho, na kuendelea chenyewe",
+   "text": "Vikumbusho vya kitabu hicho husitishwa na kurudi unapokiendeleza. Ukipima kipindi kwa kipima muda au kikifika kimoja kutoka KOReader, kitabu kinaendelea chenyewe, kwa arifa na chaguo la Tendua."
+  }
+ ],
+ "home.cards.tag": "Shiriki",
+ "home.cards.title": "Lecturameter si mtandao wa kijamii. Kadi zako huenda kwenye ule unaoutumia.",
+ "home.cards.sub": "Tengeneza kadi wima za 1080×1920, tayari kwa stori, na uzishiriki mahali ulipo tayari. Bila akaunti, bila wasifu na bila wafuasi.",
+ "home.cards.chips": [
+  "Kitabu",
+  "Kitabu kilichokamilika",
+  "Takwimu za kitabu",
+  "Takwimu",
+  "Muhtasari wa wiki",
+  "Muhtasari wa mwezi",
+  "Changamoto",
+  "Bingo",
+  "Wrapped",
+  "Tukio",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Chagua cha kuonyesha",
+   "text": "Kitabu, kitabu ulichomaliza sasa hivi, takwimu zako, wiki au mwezi wako, changamoto, Bingo, Wrapped au tukio."
+  },
+  {
+   "title": "Huhifadhiwa katika “Kadi zangu”",
+   "text": "Kila unachoshiriki hubaki katika Kadi zangu, ili uweze kukitumia tena wakati wowote."
+  },
+  {
+   "title": "Shiriki mahali ulipo tayari",
+   "text": "Kupitia menyu ya kushiriki ya simu yako, kwenye programu unayoitumia tayari. Au hifadhi kwenye ghala."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · umbizo la stori",
+ "home.events.tag": "Matukio",
+ "home.events.title": "Soma na jumuiya. Cheza na maktaba yako.",
+ "home.events.sub": "Matukio huonekana kwenye programu likiwa hai. Leo yapo ya aina mbili: changamoto ya kimataifa ya kusoma na mchezo wa karata kwa vitabu vyako mwenyewe.",
+ "home.events.demo_label": "Mfano wa kielelezo",
+ "home.events.read.kicker": "Changamoto ya kimataifa · siku 14",
+ "home.events.read.title": "Usomaji Mkuu",
+ "home.events.read.items": [
+  "Dakika za kipima muda huhesabiwa, katika vitabu, katuni, manga na vitabu vya sauti.",
+  "Lengo la pamoja kwa jumuiya nzima. Likivukwa, hesabu inaendelea.",
+  "Msimamo wa moja kwa moja wenye jina bandia na Pagi wako kama picha ya wasifu.",
+  "Likiisha, kadi ya tukio yenye nafasi yako, kwa kila mshiriki."
+ ],
+ "home.events.read.goal": "Lengo la jumuiya",
+ "home.events.read.board": "Msimamo",
+ "home.events.read.you": "wewe",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Maktaba iliyosahaulika",
+ "home.events.quest.items": [
+  "Chagua vitabu 3 kutoka maktaba yako: kila kimoja huwa kadi yenye aina ya msingi ya kategoria yake.",
+  "Mizunguko ya dakika 5 hadi 10 ya kuvuka rafu na kumshinda bosi wa mwisho.",
+  "Msimamo wa pointi: mizunguko yako 3 bora ya kila siku huhesabiwa.",
+  "Vitabu havitoshi? Maktaba inakukopesha juzuu, moja kwa kila aina ya msingi."
+ ],
+ "home.events.note": "Unapaswa kuwa na umri wa miaka 16 au zaidi ili kushiriki. Ikiwa hakuna tukio hai kwa sasa, programu inakuambia.",
+ "cookies.title": "Sera ya vidakuzi · Lecturameter",
+ "cookies.meta_description": "Tovuti ya Lecturameter huhifadhi nini kwenye kivinjari chako, kwa ajili gani, na jinsi ya kubadilisha chaguo lako. Hakuna uchanganuzi wala matangazo yetu wenyewe.",
+ "cookies.h1": "🍪 Sera ya vidakuzi",
+ "cookies.tagline": "Kinachohifadhiwa kwenye kivinjari chako unapotembelea tovuti hii, na kwa nini.",
+ "cookies.updated": "Imesasishwa Novemba 8, 2026",
+ "cookies.summary_title": "Kwa ufupi",
+ "cookies.summary": "Tovuti hii haitumii vidakuzi vyake vya uchanganuzi wala matangazo. Inahifadhi kwenye kivinjari chako mapendeleo yako (mandhari, lugha, ujumbe uliofunga) na chaguo lako kuhusu sera hii. Wijeti ya mtu wa tatu, StartupBar, hupakiwa tu ukibonyeza “Kubali”.",
+ "cookies.h2_stored": "Kinachohifadhiwa",
+ "cookies.p_stored": "Kila kitu kiko kwenye hifadhi ya ndani ya kivinjari chako (localStorage au sessionStorage). Tovuti hii haiandiki vidakuzi vyake vya HTTP.",
+ "cookies.h3_essential": "Mapendeleo yako (hakuna idhini inayohitajika)",
+ "cookies.p_essential": "Tunayahifadhi kwa sababu uliyaomba kwa kutumia tovuti. Hayamtambui yeyote na hayaondoki kwenye kivinjari chako kamwe.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · hukumbuka kama ulichagua mandhari meupe au meusi · hadi uyafute.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · hukumbuka lugha uliyochagua kwenye kichagua lugha · hadi uyafute.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · hukumbuka kuwa ulifunga upau wa juu · hadi uyafute.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · huhifadhi chaguo lako kwenye taarifa ya vidakuzi, pamoja na toleo na tarehe yake · hadi ulibadilishe au ulifute.",
+ "cookies.h3_optional": "Ukikubali tu",
+ "cookies.p_optional": "Ukibonyeza “Kubali”, vipengele hivi vya mtu wa tatu hupakiwa. Ukibonyeza “Kataa”, hakuna hata kimoja kinachopakiwa na tovuti inafanya kazi vilevile.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · wijeti yenye iframe ya mtu wa tatu, inayohifadhi <code>startupbar:sid</code> kwenye sessionStorage (hadi ufunge kichupo) na kutuma ishara ya maonyesho. Kila ukurasa wa tovuti huipakia.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · maktaba kwenye ukurasa wa mawasiliano, inayotolewa na jsDelivr.",
+ "cookies.h2_never": "Tusichofanya",
+ "cookies.p_never": "Hatutumii uchanganuzi wetu wenyewe, matangazo, uchambuzi wa wasifu wala vidakuzi vya kufuatilia. Hatuuzi data pia. Tovuti inahifadhiwa kwenye GitHub Pages, ambayo inaweza kurekodi IP yako inapotoa kurasa kulingana na sera yake yenyewe.",
+ "cookies.h2_change": "Badilisha chaguo lako",
+ "cookies.p_change": "Unaweza kulibadilisha wakati wowote kupitia “Mapendeleo ya vidakuzi” chini ya ukurasa wowote. Pia unaweza kufuta data ya tovuti hii kwenye mipangilio ya kivinjari. Ukiondoa idhini yako, ukurasa unapakiwa upya bila vipengele vya mtu wa tatu.",
+ "cookies.h2_more": "Maelezo zaidi",
+ "cookies.p_more": "Sera ya faragha ya programu inaeleza data gani Lecturameter hushughulikia kwenye simu yako. Ukiwa na maswali, andika kwa lecturameter.app@gmail.com."
 }

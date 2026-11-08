@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Niezależny projekt",
  "common.footer.home": "Strona główna",
  "common.footer.privacy": "Prywatność",
- "head.index.title": "Lecturameter · Tracker czytania i statystyki książek",
- "head.index.description": "Śledź czas czytania, strony, tempo i postępy w prywatnym trackerze czytania na Androida i iPhone'a. Bez konta, bez reklam. Import z Goodreads i StoryGraph.",
+ "head.index.title": "Lecturameter: Dziennik lektur · Statystyki i stoper",
+ "head.index.description": "Lecturameter: Dziennik lektur na Androida i iPhone'a. Mierz czas czytania, śledź strony, tempo i statystyki oraz importuj z Goodreads. Bez konta i bez reklam.",
  "head.index.ld_description": "Porządkuj bibliotekę, mierz czas sesji czytania i oglądaj szczegółowe statystyki na swoim telefonie z Androidem lub iPhone'em. Bez reklam, w pełni prywatnie.",
  "head.index.ld_featurelist": "Biblioteka z półkami, stoper działający przy wyłączonym ekranie, historia sesji, mapa ciepła, roczne Wrapped, personalizowane wyzwania czytelnicze, kopia zapasowa na Google Drive, import CSV z Goodreads, w większości offline",
  "head.index.faq1_q": "Czy mogę przenieść bibliotekę z innych aplikacji?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Wydarzenia · Dwa nowe motywy Pro",
  "release.3_9.new": [
   "<strong>Wydarzenia:</strong> globalne wyzwania czytelnicze i Lecturameter Quest, gdy jakieś trwa",
+  "<strong>Wstrzymane:</strong> odłóż książkę na jakiś czas, nie psując sobie statystyk",
   "<strong>Dwa nowe motywy Pro:</strong> Zeszyt i Las",
   "Własny zegar stopera dla każdego motywu",
   "Pagi wybiera książkę z listy Chcę przeczytać",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "W razie jakichkolwiek pytań dotyczących niniejszego Regulaminu: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> lub <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Regulamin – Lecturameter",
  "legal.terms.meta_description": "Jasne zasady, bez drobnego druku.",
- "common.footer.drakehold": "Od tego samego twórcy: <strong>Drakehold</strong>, twoje osobiste archiwum, które porządkuje się samo. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Zapisz się na listę oczekujących →</a>"
+ "common.footer.drakehold": "Od tego samego twórcy: <strong>Drakehold</strong>, twoje osobiste archiwum, które porządkuje się samo. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Zapisz się na listę oczekujących →</a>",
+ "seo.store_name": "Lecturameter: Dziennik lektur",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Wydarzenia",
+ "common.footer.events": "Wydarzenia",
+ "common.footer.cookies": "Polityka plików cookie",
+ "common.footer.cookie_prefs": "Preferencje plików cookie",
+ "js.consent_title": "Pliki cookie i pamięć",
+ "js.consent_body": "Korzystamy z widżetu firmy trzeciej (StartupBar), który zapisuje dane w Twojej przeglądarce i zlicza wyświetlenia. Ładuje się tylko wtedy, gdy się zgodzisz. Motyw, język i zamknięte powiadomienie zapisują się bez pytania, bo wybrałeś je sam.",
+ "js.consent_accept": "Akceptuję",
+ "js.consent_reject": "Odrzucam",
+ "js.consent_policy": "Polityka plików cookie",
+ "js.consent_prefs": "Preferencje plików cookie",
+ "home.paused.tag": "Nowość w 3.9",
+ "home.paused.title": "Odłóż książkę na jakiś czas, nie psując sobie statystyk",
+ "home.paused.sub": "Wstrzymane to osobny status, inny niż Porzucone. Książka czeka tam, gdzie ją zostawiłeś, a dni wstrzymania się nie liczą.",
+ "home.paused.tab_pending": "Chcę przeczytać",
+ "home.paused.tab_reading": "Czytane",
+ "home.paused.tab_paused": "Wstrzymane",
+ "home.paused.tab_dropped": "Porzucone",
+ "home.paused.timeline_caption": "Dni wstrzymania się nie liczą",
+ "home.paused.cards": [
+  {
+   "title": "Osobny status",
+   "text": "Wstrzymane to nie Porzucone. Twoja książka nie trafia na stos tych, które odpuściłeś: czeka i wraca, kiedy tylko chcesz."
+  },
+  {
+   "title": "Z Czytane lub Czytam ponownie",
+   "text": "Zmień status plakietką na stronie książki albo przez „Zmień status” w szybkim menu. Działa dla książek, komiksów, mangi i audiobooków."
+  },
+  {
+   "title": "Dni wstrzymania się nie liczą",
+   "text": "Ani w dniach do ukończenia, ani w tempie czytania. Statystyki zostają takie, jakie były, gdy czytałeś."
+  },
+  {
+   "title": "Notatka, jeśli chcesz",
+   "text": "Gdy wstrzymujesz i gdy wznawiasz, możesz zapisać dlaczego. To opcjonalne. Wszystko zostaje w sekcji „Przerwy” na stronie książki, razem z historią."
+  },
+  {
+   "title": "Osobna zakładka",
+   "text": "W bibliotece, między Chcę przeczytać a Porzucone, znajdziesz wstrzymane książki."
+  },
+  {
+   "title": "Przypomnienia i samoczynne wznowienie",
+   "text": "Przypomnienia tej książki są wstrzymane i wracają, gdy ją wznowisz. Jeśli zmierzysz sesję stoperem albo przyjdzie jedna z KOReadera, książka wznowi się sama, z powiadomieniem i opcją Cofnij."
+  }
+ ],
+ "home.cards.tag": "Udostępnij",
+ "home.cards.title": "Lecturameter nie jest siecią społecznościową. Twoje karty trafiają do tej, z której korzystasz.",
+ "home.cards.sub": "Twórz pionowe karty 1080×1920, gotowe na relacje, i udostępniaj je tam, gdzie już jesteś. Bez konta, bez profilu i bez obserwujących.",
+ "home.cards.chips": [
+  "Książka",
+  "Skończona książka",
+  "Statystyki książki",
+  "Statystyki",
+  "Podsumowanie tygodnia",
+  "Podsumowanie miesiąca",
+  "Wyzwania",
+  "Bingo",
+  "Wrapped",
+  "Wydarzenie",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Wybierz, co pokazać",
+   "text": "Książkę, świeżo skończoną książkę, swoje statystyki, tydzień lub miesiąc, wyzwanie, Bingo, Wrapped albo wydarzenie."
+  },
+  {
+   "title": "Zapisuje się w „Moje karty”",
+   "text": "Wszystko, co udostępnisz, zostaje w Moich kartach, więc możesz użyć tego ponownie, kiedy zechcesz."
+  },
+  {
+   "title": "Udostępnij tam, gdzie już jesteś",
+   "text": "Przez menu udostępniania w telefonie, do aplikacji, której już używasz. Albo zapisz w galerii."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · format relacji",
+ "home.events.tag": "Wydarzenia",
+ "home.events.title": "Czytaj ze społecznością. Baw się swoją biblioteką.",
+ "home.events.sub": "Wydarzenia pojawiają się w aplikacji, gdy któreś jest aktywne. Są dwa rodzaje: globalne wyzwanie czytelnicze i gra karciana z Twoimi książkami.",
+ "home.events.demo_label": "Przykład poglądowy",
+ "home.events.read.kicker": "Globalne wyzwanie · 14 dni",
+ "home.events.read.title": "Wielkie Czytanie",
+ "home.events.read.items": [
+  "Liczą się minuty ze stopera, w książkach, komiksach, mandze i audiobookach.",
+  "Wspólny cel całej społeczności. Jeśli zostanie pobity, liczenie trwa dalej.",
+  "Ranking na żywo z pseudonimem i Twoim Pagi jako awatarem.",
+  "Po zakończeniu każdy uczestnik dostaje kartę wydarzenia z Twoim miejscem."
+ ],
+ "home.events.read.goal": "Cel społeczności",
+ "home.events.read.board": "Ranking",
+ "home.events.read.you": "ty",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Zapomniana biblioteka",
+ "home.events.quest.items": [
+  "Wybierz 3 książki ze swojej biblioteki: każda staje się kartą z archetypem swojego gatunku.",
+  "Rozgrywki po 5 do 10 minut, by przejść przez regały i pokonać końcowego bossa.",
+  "Ranking punktów: liczą się Twoje 3 najlepsze rozgrywki każdego dnia.",
+  "Brakuje książek? Biblioteka pożycza Ci tomy, po jednym na archetyp."
+ ],
+ "home.events.note": "Aby wziąć udział, musisz mieć 16 lat lub więcej. Jeśli teraz nie ma aktywnego wydarzenia, aplikacja Ci o tym powie.",
+ "cookies.title": "Polityka plików cookie · Lecturameter",
+ "cookies.meta_description": "Co strona Lecturameter zapisuje w Twojej przeglądarce, po co i jak zmienić wybór. Bez własnej analityki i reklam.",
+ "cookies.h1": "🍪 Polityka plików cookie",
+ "cookies.tagline": "Co zapisuje się w Twojej przeglądarce, gdy odwiedzasz tę stronę, i dlaczego.",
+ "cookies.updated": "Zaktualizowano 8 listopada 2026",
+ "cookies.summary_title": "W skrócie",
+ "cookies.summary": "Ta strona nie używa własnych plików cookie do analityki ani reklam. Zapisuje w przeglądarce Twoje preferencje (motyw, język, zamknięte powiadomienie) i Twój wybór dotyczący tej polityki. Widżet firmy trzeciej, StartupBar, ładuje się tylko po naciśnięciu „Akceptuję”.",
+ "cookies.h2_stored": "Co jest zapisywane",
+ "cookies.p_stored": "Wszystko znajduje się w pamięci lokalnej przeglądarki (localStorage lub sessionStorage). Ta strona nie zapisuje własnych plików cookie HTTP.",
+ "cookies.h3_essential": "Twoje preferencje (zgoda niepotrzebna)",
+ "cookies.p_essential": "Zapisujemy je, bo sam o nie poprosiłeś, korzystając ze strony. Nikogo nie identyfikują i nigdy nie opuszczają Twojej przeglądarki.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · zapamiętuje, czy wybrałeś jasny, czy ciemny motyw · dopóki go nie wyczyścisz.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · zapamiętuje język wybrany w selektorze · dopóki go nie wyczyścisz.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · zapamiętuje, że zamknąłeś górny pasek · dopóki go nie wyczyścisz.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · zapisuje Twój wybór w informacji o plikach cookie, razem z jej wersją i datą · dopóki go nie zmienisz lub nie wyczyścisz.",
+ "cookies.h3_optional": "Tylko jeśli zaakceptujesz",
+ "cookies.p_optional": "Jeśli naciśniesz „Akceptuję”, załadują się te elementy firm trzecich. Jeśli naciśniesz „Odrzucam”, nic z tego się nie ładuje, a strona działa tak samo.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · widżet z iframe firmy trzeciej, który zapisuje <code>startupbar:sid</code> w sessionStorage (do zamknięcia karty) i wysyła sygnał wyświetlenia. Ładuje go każda podstrona witryny.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · biblioteka na stronie kontaktowej, dostarczana przez jsDelivr.",
+ "cookies.h2_never": "Czego nie robimy",
+ "cookies.p_never": "Nie używamy własnej analityki, reklam, profilowania ani plików cookie śledzących. Nie sprzedajemy też danych. Strona jest hostowana na GitHub Pages, które może zapisywać Twój adres IP przy udostępnianiu stron, zgodnie z własną polityką.",
+ "cookies.h2_change": "Zmień swój wybór",
+ "cookies.p_change": "Możesz go zmienić w każdej chwili przez „Preferencje plików cookie” w stopce dowolnej strony. Możesz też wyczyścić dane tej strony w ustawieniach przeglądarki. Jeśli wycofasz zgodę, strona załaduje się ponownie bez elementów firm trzecich.",
+ "cookies.h2_more": "Więcej informacji",
+ "cookies.p_more": "Polityka prywatności aplikacji wyjaśnia, jakie dane Lecturameter przetwarza w Twoim telefonie. Jeśli masz pytania, napisz na lecturameter.app@gmail.com."
 }

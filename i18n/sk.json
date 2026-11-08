@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Nezávislý projekt",
  "common.footer.home": "Domov",
  "common.footer.privacy": "Súkromie",
- "head.index.title": "Lecturameter – Sledovač čítania a štatistiky kníh",
- "head.index.description": "Sleduj čas čítania, strany, tempo a priebeh pomocou súkromného sledovača čítania pre Android a iPhone. Bez účtu, bez reklám. Import z Goodreads a StoryGraph.",
+ "head.index.title": "Lecturameter: Denník čítania · Štatistiky a časovač",
+ "head.index.description": "Lecturameter: Denník čítania pre Android a iPhone. Meraj čas čítania, sleduj strany, tempo a štatistiky a importuj z Goodreads. Bez účtu a bez reklám.",
  "head.index.ld_description": "Usporiadaj si knižnicu, meraj sedenia čítania a prezeraj si podrobné štatistiky na svojom telefóne s Androidom alebo iPhonom. Bez reklám, úplne súkromné.",
  "head.index.ld_featurelist": "Knižnica s poličkami, časovač s vypnutou obrazovkou, história sedení, teplotná mapa, ročný Wrapped, prispôsobiteľné čitateľské výzvy, záloha na Google Drive, import CSV z Goodreads, väčšinou offline",
  "head.index.faq1_q": "Môžem si preniesť knižnicu z iných aplikácií?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Udalosti · Dva nové motívy Pro",
  "release.3_9.new": [
   "<strong>Udalosti:</strong> celosvetové čitateľské výzvy a Lecturameter Quest, keď je nejaký aktívny",
+  "<strong>Pozastavené:</strong> odlož knihu na čas bez toho, aby ti pokazila štatistiky",
   "<strong>Dva nové motívy Pro:</strong> Zošit a Lesík",
   "Vlastné hodiny časovača pre každý motív",
   "Pagi ti vyberie knihu zo zoznamu Chcem čítať",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "V prípade akýchkoľvek otázok k týmto Podmienkam: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> alebo <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Podmienky používania – Lecturameter",
  "legal.terms.meta_description": "Jasné podmienky, žiadne drobné písmo.",
- "common.footer.drakehold": "Od rovnakého tvorcu: <strong>Drakehold</strong>, tvoj osobný archív, ktorý sa usporiada sám. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Pridaj sa na čakaciu listinu →</a>"
+ "common.footer.drakehold": "Od rovnakého tvorcu: <strong>Drakehold</strong>, tvoj osobný archív, ktorý sa usporiada sám. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Pridaj sa na čakaciu listinu →</a>",
+ "seo.store_name": "Lecturameter: Denník čítania",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Udalosti",
+ "common.footer.events": "Udalosti",
+ "common.footer.cookies": "Zásady cookies",
+ "common.footer.cookie_prefs": "Predvoľby cookies",
+ "js.consent_title": "Cookies a úložisko",
+ "js.consent_body": "Používame widget tretej strany (StartupBar), ktorý ukladá údaje v tvojom prehliadači a počíta zobrazenia. Načíta sa, len ak súhlasíš. Motív, jazyk a zatvorené oznámenie sa ukladajú bez pýtania, pretože si ich vybral ty.",
+ "js.consent_accept": "Prijať",
+ "js.consent_reject": "Odmietnuť",
+ "js.consent_policy": "Zásady cookies",
+ "js.consent_prefs": "Predvoľby cookies",
+ "home.paused.tag": "Novinka v 3.9",
+ "home.paused.title": "Odlož knihu na čas bez toho, aby ti pokazila štatistiky",
+ "home.paused.sub": "Pozastavené je samostatný stav, odlišný od Opustené. Kniha čaká tam, kde si skončil, a dni na pauze sa nepočítajú.",
+ "home.paused.tab_pending": "Chcem čítať",
+ "home.paused.tab_reading": "Čítanie",
+ "home.paused.tab_paused": "Pozastavené",
+ "home.paused.tab_dropped": "Opustené",
+ "home.paused.timeline_caption": "Dni na pauze sa nepočítajú",
+ "home.paused.cards": [
+  {
+   "title": "Samostatný stav",
+   "text": "Pozastavené nie je Opustené. Tvoja kniha nepôjde do kôpky tých, ktoré si vzdal: čaká a vráti sa, kedykoľvek budeš chcieť."
+  },
+  {
+   "title": "Zo stavu Čítanie alebo Znovu čítam",
+   "text": "Zmeň stav v odznaku na stránke knihy alebo cez „Zmeniť stav“ v rýchlej ponuke. Funguje pre knihy, komiksy, mangu aj audioknihy."
+  },
+  {
+   "title": "Dni na pauze sa nepočítajú",
+   "text": "Ani do dní do dočítania, ani do tvojej rýchlosti čítania. Štatistiky zostanú také, aké boli, keď si čítal."
+  },
+  {
+   "title": "Poznámka, ak chceš",
+   "text": "Keď knihu pozastavíš aj keď ju obnovíš, môžeš si poznačiť prečo. Je to dobrovoľné. Všetko zostane v sekcii „Pauzy“ na stránke knihy aj s históriou."
+  },
+  {
+   "title": "Vlastná karta",
+   "text": "V knižnici nájdeš pozastavené knihy medzi Chcem čítať a Opustené."
+  },
+  {
+   "title": "Pripomienky a samo obnovenie",
+   "text": "Pripomienky tej knihy sa pozastavia a vrátia sa, keď ju obnovíš. Ak zmeriaš reláciu alebo nejaká príde z KOReadera, kniha sa obnoví sama, s oznámením a možnosťou Späť."
+  }
+ ],
+ "home.cards.tag": "Zdieľanie",
+ "home.cards.title": "Lecturameter nie je sociálna sieť. Tvoje karty idú na tú, ktorú používaš.",
+ "home.cards.sub": "Vytváraj zvislé karty 1080×1920, pripravené na stories, a zdieľaj ich tam, kde už si. Bez účtu, bez profilu a bez sledovateľov.",
+ "home.cards.chips": [
+  "Kniha",
+  "Dočítaná kniha",
+  "Štatistiky knihy",
+  "Štatistiky",
+  "Týždenný prehľad",
+  "Mesačný prehľad",
+  "Výzvy",
+  "Bingo",
+  "Wrapped",
+  "Udalosť",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Vyber, čo ukázať",
+   "text": "Knihu, práve dočítanú knihu, svoje štatistiky, týždeň alebo mesiac, výzvu, Bingo, Wrapped alebo udalosť."
+  },
+  {
+   "title": "Uloží sa do „Mojich kariet“",
+   "text": "Všetko, čo zdieľaš, zostane v Mojich kartách, takže to môžeš použiť znova, kedykoľvek budeš chcieť."
+  },
+  {
+   "title": "Zdieľaj tam, kde už si",
+   "text": "Cez ponuku zdieľania v telefóne do aplikácie, ktorú už používaš. Alebo ulož do galérie."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · formát stories",
+ "home.events.tag": "Udalosti",
+ "home.events.title": "Čítaj s komunitou. Hraj sa so svojou knižnicou.",
+ "home.events.sub": "Udalosti sa v aplikácii objavia, keď nejaká beží. Dnes sú dva druhy: globálna čitateľská výzva a kartová hra s tvojimi vlastnými knihami.",
+ "home.events.demo_label": "Ilustračný príklad",
+ "home.events.read.kicker": "Globálna výzva · 14 dní",
+ "home.events.read.title": "Veľké čítanie",
+ "home.events.read.items": [
+  "Počítajú sa minúty z časovača pri knihách, komiksoch, mange aj audioknihách.",
+  "Spoločný cieľ pre celú komunitu. Ak sa prekoná, počíta sa ďalej.",
+  "Živý rebríček s pseudonymom a tvojím Pagi ako avatarom.",
+  "Po skončení karta udalosti s tvojou pozíciou pre každého účastníka."
+ ],
+ "home.events.read.goal": "Cieľ komunity",
+ "home.events.read.board": "Rebríček",
+ "home.events.read.you": "ty",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Zabudnutá knižnica",
+ "home.events.quest.items": [
+  "Vyber si 3 knihy zo svojej knižnice: každá sa zmení na kartu s archetypom svojho žánru.",
+  "Hry na 5 až 10 minút, v ktorých prejdeš regálmi a poraziš záverečného bossa.",
+  "Rebríček bodov: počítajú sa tvoje 3 najlepšie hry každého dňa.",
+  "Málo kníh? Knižnica ti požičia zväzky, po jednom na archetyp."
+ ],
+ "home.events.note": "Účasť je od 16 rokov. Ak práve nebeží žiadna udalosť, aplikácia ti to oznámi.",
+ "cookies.title": "Zásady cookies · Lecturameter",
+ "cookies.meta_description": "Čo web Lecturameter ukladá v tvojom prehliadači, načo to slúži a ako zmeniť svoju voľbu. Bez vlastnej analytiky a reklamy.",
+ "cookies.h1": "🍪 Zásady cookies",
+ "cookies.tagline": "Čo sa ukladá v tvojom prehliadači, keď navštíviš tento web, a prečo.",
+ "cookies.updated": "Aktualizované 8. novembra 2026",
+ "cookies.summary_title": "V skratke",
+ "cookies.summary": "Tento web nepoužíva vlastné analytické ani reklamné cookies. V prehliadači ukladá tvoje predvoľby (motív, jazyk, zatvorené oznámenie) a tvoju voľbu k týmto zásadám. Widget tretej strany StartupBar sa načíta, len ak stlačíš „Prijať“.",
+ "cookies.h2_stored": "Čo sa ukladá",
+ "cookies.p_stored": "Všetko je v lokálnom úložisku prehliadača (localStorage alebo sessionStorage). Tento web nezapisuje vlastné HTTP cookies.",
+ "cookies.h3_essential": "Tvoje predvoľby (súhlas nie je potrebný)",
+ "cookies.p_essential": "Ukladáme ich, pretože si o ne požiadal používaním webu. Nikoho neidentifikujú a nikdy neopustia tvoj prehliadač.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · pamätá si, či si vybral svetlý, alebo tmavý motív · kým ho nevymažeš.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · pamätá si jazyk, ktorý si vybral vo výbere · kým ho nevymažeš.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · pamätá si, že si zavrel hornú lištu · kým ho nevymažeš.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · ukladá tvoju voľbu v oznámení o cookies s jeho verziou a dátumom · kým ju nezmeníš alebo nevymažeš.",
+ "cookies.h3_optional": "Len ak prijmeš",
+ "cookies.p_optional": "Ak stlačíš „Prijať“, načítajú sa tieto položky tretích strán. Ak stlačíš „Odmietnuť“, nenačíta sa nič z toho a web funguje rovnako.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · widget s iframe tretej strany, ktorý ukladá <code>startupbar:sid</code> do sessionStorage (kým nezavrieš kartu) a odosiela signál o zobrazení. Načítava ho každá stránka webu.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · knižnica na stránke kontaktu, poskytovaná cez jsDelivr.",
+ "cookies.h2_never": "Čo nerobíme",
+ "cookies.p_never": "Nepoužívame vlastnú analytiku, reklamu, profilovanie ani sledovacie cookies. Údaje ani nepredávame. Web beží na GitHub Pages, ktoré môže pri doručovaní stránok zaznamenať tvoju IP podľa vlastných zásad.",
+ "cookies.h2_change": "Zmeň svoju voľbu",
+ "cookies.p_change": "Môžeš ju kedykoľvek zmeniť cez „Predvoľby cookies“ v päte ktorejkoľvek stránky. Údaje tohto webu môžeš vymazať aj v nastaveniach prehliadača. Ak súhlas odvoláš, stránka sa znova načíta bez položiek tretích strán.",
+ "cookies.h2_more": "Ďalšie informácie",
+ "cookies.p_more": "Zásady ochrany osobných údajov aplikácie vysvetľujú, aké údaje Lecturameter spracúva v tvojom telefóne. Ak máš otázky, napíš na lecturameter.app@gmail.com."
 }

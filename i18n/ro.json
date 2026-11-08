@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Proiect independent",
  "common.footer.home": "Acasă",
  "common.footer.privacy": "Confidențialitate",
- "head.index.title": "Lecturameter · Tracker de lectură și statistici despre cărți",
- "head.index.description": "Urmărește-ți timpul de lectură, paginile, ritmul și progresul cu un tracker de lectură privat pentru Android și iPhone. Fără cont, fără reclame. Import din Goodreads și StoryGraph.",
+ "head.index.title": "Lecturameter: Jurnal de citit · Statistici și cronometru",
+ "head.index.description": "Lecturameter: Jurnal de citit pentru Android și iPhone. Cronometrează lectura, urmărește paginile, ritmul și statisticile și importă din Goodreads. Fără cont, fără reclame.",
  "head.index.ld_description": "Organizează-ți biblioteca, cronometrează sesiunile de lectură și vezi statistici detaliate pe telefonul tău Android sau iPhone. Fără reclame, complet privat.",
  "head.index.ld_featurelist": "Bibliotecă cu rafturi, cronometru cu ecranul stins, istoricul sesiunilor, hartă de căldură, Wrapped anual, provocări de lectură personalizabile, copie de rezervă pe Google Drive, import CSV Goodreads, în mare parte offline",
  "head.index.faq1_q": "Pot să-mi aduc biblioteca din alte aplicații?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Evenimente · Două teme Pro noi",
  "release.3_9.new": [
   "<strong>Evenimente:</strong> provocări de citit globale și Lecturameter Quest când există unul activ",
+  "<strong>În pauză:</strong> pune o carte deoparte pentru o vreme fără să-ți strici statisticile",
   "<strong>Două teme Pro noi:</strong> Caiet și Pădure",
   "Un ceas de cronometru propriu pentru fiecare temă",
   "Pagi alege o carte din Vreau să citesc",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Pentru orice întrebări despre acești Termeni: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> sau <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Termeni și condiții – Lecturameter",
  "legal.terms.meta_description": "Termeni clari, fără litere mici.",
- "common.footer.drakehold": "De la același creator: <strong>Drakehold</strong>, arhiva ta personală care se organizează singură. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Înscrie-te pe lista de așteptare →</a>"
+ "common.footer.drakehold": "De la același creator: <strong>Drakehold</strong>, arhiva ta personală care se organizează singură. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Înscrie-te pe lista de așteptare →</a>",
+ "seo.store_name": "Lecturameter: Jurnal de citit",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Evenimente",
+ "common.footer.events": "Evenimente",
+ "common.footer.cookies": "Politica de cookie-uri",
+ "common.footer.cookie_prefs": "Preferințe cookie-uri",
+ "js.consent_title": "Cookie-uri și stocare",
+ "js.consent_body": "Folosim un widget de la o terță parte (StartupBar) care salvează date în browserul tău și numără afișările. Se încarcă doar dacă accepți. Tema, limba și anunțul închis se salvează fără să te întrebăm, pentru că le-ai ales tu.",
+ "js.consent_accept": "Accept",
+ "js.consent_reject": "Refuz",
+ "js.consent_policy": "Politica de cookie-uri",
+ "js.consent_prefs": "Preferințe cookie-uri",
+ "home.paused.tag": "Nou în 3.9",
+ "home.paused.title": "Pune o carte deoparte pentru o vreme fără să-ți strici statisticile",
+ "home.paused.sub": "„În pauză” este o stare aparte, diferită de „Abandonată”. Cartea așteaptă unde ai lăsat-o, iar zilele în pauză nu se numără.",
+ "home.paused.tab_pending": "Vreau să citesc",
+ "home.paused.tab_reading": "Citesc",
+ "home.paused.tab_paused": "În pauză",
+ "home.paused.tab_dropped": "Abandonate",
+ "home.paused.timeline_caption": "Zilele în pauză nu se numără",
+ "home.paused.cards": [
+  {
+   "title": "O stare aparte",
+   "text": "„În pauză” nu înseamnă „Abandonată”. Cartea ta nu ajunge în grămada celor la care ai renunțat: stă în așteptare și revine când vrei tu."
+  },
+  {
+   "title": "Din Citesc sau Recitesc",
+   "text": "Schimbă starea din insigna de pe pagina cărții sau cu „Schimbă starea” din meniul rapid. Merge pentru cărți, benzi desenate, manga și cărți audio."
+  },
+  {
+   "title": "Zilele în pauză nu se numără",
+   "text": "Nici în zilele până la final, nici în viteza ta de citit. Statisticile rămân cele de când citeai."
+  },
+  {
+   "title": "O notiță, dacă vrei",
+   "text": "Când pui în pauză și când reiei, poți nota de ce. Este opțional. Totul rămâne în secțiunea „Pauze” de pe pagina cărții, cu istoricul ei."
+  },
+  {
+   "title": "O filă separată",
+   "text": "În biblioteca ta, între Vreau să citesc și Abandonate, găsești cărțile în pauză."
+  },
+  {
+   "title": "Mementouri și reluare automată",
+   "text": "Mementourile cărții respective se opresc și revin când o reiei. Dacă cronometrezi o sesiune sau ajunge una din KOReader, cartea se reia singură, cu o notificare și opțiunea Anulează."
+  }
+ ],
+ "home.cards.tag": "Distribuie",
+ "home.cards.title": "Lecturameter nu este o rețea socială. Cardurile tale merg pe cea pe care o folosești.",
+ "home.cards.sub": "Creează carduri verticale de 1080×1920, gata pentru story-uri, și distribuie-le unde ești deja. Fără cont, fără profil și fără urmăritori.",
+ "home.cards.chips": [
+  "Carte",
+  "Carte terminată",
+  "Statisticile cărții",
+  "Statistici",
+  "Rezumat săptămânal",
+  "Rezumat lunar",
+  "Provocări",
+  "Bingo",
+  "Wrapped",
+  "Eveniment",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Alege ce vrei să arăți",
+   "text": "O carte, una pe care tocmai ai terminat-o, statisticile tale, săptămâna sau luna ta, o provocare, Bingo, Wrapped sau un eveniment."
+  },
+  {
+   "title": "Se salvează în „Cardurile mele”",
+   "text": "Tot ce distribui rămâne în Cardurile mele, ca să le poți folosi din nou oricând vrei."
+  },
+  {
+   "title": "Distribuie unde ești deja",
+   "text": "Prin meniul de distribuire al telefonului, în aplicația pe care o folosești deja. Sau salvează în galerie."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · format story",
+ "home.events.tag": "Evenimente",
+ "home.events.title": "Citește împreună cu comunitatea. Joacă-te cu biblioteca ta.",
+ "home.events.sub": "Evenimentele apar în aplicație când este unul activ. Azi sunt două feluri: o provocare globală de citit și un joc de cărți cu propriile tale cărți.",
+ "home.events.demo_label": "Exemplu ilustrativ",
+ "home.events.read.kicker": "Provocare globală · 14 zile",
+ "home.events.read.title": "Marea Citire",
+ "home.events.read.items": [
+  "Se numără minutele de la cronometru, la cărți, benzi desenate, manga și cărți audio.",
+  "Un obiectiv comun pentru toată comunitatea. Dacă e depășit, numărătoarea continuă.",
+  "Clasament live cu un alias pseudonim și Pagi al tău ca avatar.",
+  "La final, cardul evenimentului cu poziția ta, pentru fiecare participant."
+ ],
+ "home.events.read.goal": "Obiectivul comunității",
+ "home.events.read.board": "Clasament",
+ "home.events.read.you": "tu",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Biblioteca uitată",
+ "home.events.quest.items": [
+  "Alege 3 cărți din biblioteca ta: fiecare devine o carte de joc cu arhetipul genului ei.",
+  "Runde de 5 până la 10 minute ca să traversezi rafturile și să învingi bossul final.",
+  "Clasament pe puncte: contează cele mai bune 3 runde ale tale din fiecare zi.",
+  "Ai puține cărți? Biblioteca îți împrumută volume, câte unul pe arhetip."
+ ],
+ "home.events.note": "Trebuie să ai 16 ani sau mai mult ca să participi. Dacă acum nu e niciun eveniment activ, aplicația îți spune.",
+ "cookies.title": "Politica de cookie-uri · Lecturameter",
+ "cookies.meta_description": "Ce salvează site-ul Lecturameter în browserul tău, pentru ce și cum îți schimbi alegerea. Fără analiză sau publicitate proprii.",
+ "cookies.h1": "🍪 Politica de cookie-uri",
+ "cookies.tagline": "Ce se salvează în browserul tău când vizitezi acest site, și de ce.",
+ "cookies.updated": "Actualizat pe 8 noiembrie 2026",
+ "cookies.summary_title": "Pe scurt",
+ "cookies.summary": "Acest site nu folosește cookie-uri proprii de analiză sau publicitate. Salvează în browserul tău preferințele tale (temă, limbă, anunț închis) și alegerea ta despre această politică. Un widget de la o terță parte, StartupBar, se încarcă doar dacă apeși „Accept”.",
+ "cookies.h2_stored": "Ce se salvează",
+ "cookies.p_stored": "Totul se află în stocarea locală a browserului (localStorage sau sessionStorage). Acest site nu scrie cookie-uri HTTP proprii.",
+ "cookies.h3_essential": "Preferințele tale (nu e nevoie de consimțământ)",
+ "cookies.p_essential": "Le salvăm pentru că le-ai cerut folosind site-ul. Nu identifică pe nimeni și nu părăsesc niciodată browserul tău.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · ține minte dacă ai ales tema deschisă sau închisă · până o ștergi.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · ține minte limba aleasă în selector · până o ștergi.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · ține minte că ai închis bara de sus · până o ștergi.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · salvează alegerea ta din avizul despre cookie-uri, cu versiunea și data lui · până o schimbi sau o ștergi.",
+ "cookies.h3_optional": "Doar dacă accepți",
+ "cookies.p_optional": "Dacă apeși „Accept”, se încarcă aceste elemente ale terților. Dacă apeși „Refuz”, nu se încarcă nimic din ele, iar site-ul funcționează la fel.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · un widget cu iframe de la o terță parte, care salvează <code>startupbar:sid</code> în sessionStorage (până închizi fila) și trimite un semnal de afișare. Îl încarcă fiecare pagină a site-ului.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · o bibliotecă pe pagina de contact, servită de jsDelivr.",
+ "cookies.h2_never": "Ce nu facem",
+ "cookies.p_never": "Nu folosim analiză proprie, publicitate, profilare sau cookie-uri de urmărire. Nu vindem nici date. Site-ul este găzduit pe GitHub Pages, care îți poate înregistra IP-ul când servește paginile, conform propriei politici.",
+ "cookies.h2_change": "Schimbă-ți alegerea",
+ "cookies.p_change": "O poți schimba oricând din „Preferințe cookie-uri”, în subsolul oricărei pagini. Poți șterge și datele acestui site din setările browserului. Dacă îți retragi consimțământul, pagina se reîncarcă fără elementele terților.",
+ "cookies.h2_more": "Mai multe informații",
+ "cookies.p_more": "Politica de confidențialitate a aplicației explică ce date prelucrează Lecturameter pe telefonul tău. Dacă ai întrebări, scrie la lecturameter.app@gmail.com."
 }

@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Neodvisen projekt",
  "common.footer.home": "Domov",
  "common.footer.privacy": "Zasebnost",
- "head.index.title": "Lecturameter – Sledilnik branja in statistika knjig",
- "head.index.description": "Spremljaj čas branja, strani, tempo in napredek z zasebnim sledilnikom branja za Android in iPhone. Brez računa, brez oglasov. Uvozi iz Goodreads in StoryGraph.",
+ "head.index.title": "Lecturameter: Bralni dnevnik · Statistika in časovnik",
+ "head.index.description": "Lecturameter: Bralni dnevnik za Android in iPhone. Merite čas branja, spremljajte strani, tempo in statistiko ter uvozite iz Goodreads. Brez računa, brez oglasov.",
  "head.index.ld_description": "Uredi svojo knjižnico, meri čas bralnih sej in oglej si podrobno statistiko v telefonu Android ali iPhone. Brez oglasov, popolnoma zasebno.",
  "head.index.ld_featurelist": "Knjižnica s policami, časovnik z ugasnjenim zaslonom, zgodovina sej, toplotni zemljevid, letni Wrapped, prilagodljivi bralni izzivi, varnostna kopija v Google Drive, uvoz CSV iz Goodreads, večinoma brez povezave",
  "head.index.faq1_q": "Ali lahko prenesem knjižnico iz drugih aplikacij?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Dogodki · Dve novi temi Pro",
  "release.3_9.new": [
   "<strong>Dogodki:</strong> svetovni bralni izzivi in Lecturameter Quest, kadar je kakšen aktiven",
+  "<strong>Premor:</strong> knjigo za nekaj časa odložite, ne da bi si pokvarili statistiko",
   "<strong>Dve novi temi Pro:</strong> Zvezek in Gozd",
   "Lastna ura časovnika za vsako temo",
   "Pagi ti izbere knjigo s seznama Želim prebrati",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Za vsa vprašanja o teh Pogojih: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> ali <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Pogoji uporabe – Lecturameter",
  "legal.terms.meta_description": "Jasni pogoji, brez drobnega tiska.",
- "common.footer.drakehold": "Od istega ustvarjalca: <strong>Drakehold</strong>, tvoj osebni arhiv, ki se uredi sam. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Pridruži se čakalnemu seznamu →</a>"
+ "common.footer.drakehold": "Od istega ustvarjalca: <strong>Drakehold</strong>, tvoj osebni arhiv, ki se uredi sam. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Pridruži se čakalnemu seznamu →</a>",
+ "seo.store_name": "Lecturameter: Bralni dnevnik",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Dogodki",
+ "common.footer.events": "Dogodki",
+ "common.footer.cookies": "Pravilnik o piškotkih",
+ "common.footer.cookie_prefs": "Nastavitve piškotkov",
+ "js.consent_title": "Piškotki in shranjevanje",
+ "js.consent_body": "Uporabljamo pripomoček tretje osebe (StartupBar), ki v vašem brskalniku shranjuje podatke in šteje prikaze. Naloži se le, če sprejmete. Tema, jezik in zaprto obvestilo se shranijo brez vprašanja, ker ste jih izbrali sami.",
+ "js.consent_accept": "Sprejmi",
+ "js.consent_reject": "Zavrni",
+ "js.consent_policy": "Pravilnik o piškotkih",
+ "js.consent_prefs": "Nastavitve piškotkov",
+ "home.paused.tag": "Novo v 3.9",
+ "home.paused.title": "Knjigo za nekaj časa odložite, ne da bi si pokvarili statistiko",
+ "home.paused.sub": "Premor je samostojno stanje, drugačno od Opuščeno. Knjiga čaka tam, kjer ste jo pustili, dnevi v premoru pa se ne štejejo.",
+ "home.paused.tab_pending": "Želim prebrati",
+ "home.paused.tab_reading": "Berem",
+ "home.paused.tab_paused": "Premor",
+ "home.paused.tab_dropped": "Opuščeno",
+ "home.paused.timeline_caption": "Dnevi v premoru se ne štejejo",
+ "home.paused.cards": [
+  {
+   "title": "Samostojno stanje",
+   "text": "Premor ni Opuščeno. Vaša knjiga ne konča na kupu opuščenih: čaka in se vrne, kadar želite."
+  },
+  {
+   "title": "Iz stanja Berem ali Ponovno berem",
+   "text": "Stanje spremenite z značko na strani knjige ali z »Spremeni stanje« v hitrem meniju. Deluje za knjige, stripe, mange in zvočne knjige."
+  },
+  {
+   "title": "Dnevi v premoru se ne štejejo",
+   "text": "Ne v dneh do konca in ne v vaši hitrosti branja. Statistika ostane taka, kot je bila, ko ste brali."
+  },
+  {
+   "title": "Zapisek, če želite",
+   "text": "Ko knjigo date v premor in ko jo nadaljujete, lahko zapišete razlog. To ni obvezno. Vse ostane v razdelku »Premori« na strani knjige, skupaj z zgodovino."
+  },
+  {
+   "title": "Poseben zavihek",
+   "text": "V knjižnici boste med Želim prebrati in Opuščeno našli knjige v premoru."
+  },
+  {
+   "title": "Opomniki in samodejno nadaljevanje",
+   "text": "Opomniki te knjige se ustavijo in vrnejo, ko jo nadaljujete. Če izmerite sejo ali pride ena iz KOReaderja, se knjiga nadaljuje sama, z obvestilom in možnostjo Razveljavi."
+  }
+ ],
+ "home.cards.tag": "Deli",
+ "home.cards.title": "Lecturameter ni družabno omrežje. Vaše kartice gredo v tisto, ki ga uporabljate.",
+ "home.cards.sub": "Ustvarjajte pokončne kartice 1080×1920, pripravljene za zgodbe, in jih delite tam, kjer že ste. Brez računa, brez profila in brez sledilcev.",
+ "home.cards.chips": [
+  "Knjiga",
+  "Prebrana knjiga",
+  "Statistika knjige",
+  "Statistika",
+  "Tedenski povzetek",
+  "Mesečni povzetek",
+  "Izzivi",
+  "Bingo",
+  "Wrapped",
+  "Dogodek",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Izberite, kaj pokazati",
+   "text": "Knjigo, pravkar prebrano knjigo, svojo statistiko, teden ali mesec, izziv, Bingo, Wrapped ali dogodek."
+  },
+  {
+   "title": "Shrani se v »Moje kartice«",
+   "text": "Vse, kar delite, ostane v Mojih karticah, tako da lahko uporabite znova, kadar želite."
+  },
+  {
+   "title": "Delite tam, kjer že ste",
+   "text": "Prek menija za deljenje v telefonu v aplikacijo, ki jo že uporabljate. Ali shranite v galerijo."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · format zgodbe",
+ "home.events.tag": "Dogodki",
+ "home.events.title": "Berite s skupnostjo. Igrajte se s svojo knjižnico.",
+ "home.events.sub": "Dogodki se v aplikaciji pojavijo, ko je kakšen aktiven. Danes sta dve vrsti: svetovni bralni izziv in kartična igra z vašimi lastnimi knjigami.",
+ "home.events.demo_label": "Ponazoritveni primer",
+ "home.events.read.kicker": "Svetovni izziv · 14 dni",
+ "home.events.read.title": "Veliko branje",
+ "home.events.read.items": [
+  "Štejejo minute s časovnika, pri knjigah, stripih, mangi in zvočnih knjigah.",
+  "Skupen cilj za celotno skupnost. Če ga presežete, štetje teče naprej.",
+  "Lestvica v živo s psevdonimom in vašim Pagijem kot avatarjem.",
+  "Ob koncu vsak udeleženec dobi kartico dogodka z vašim mestom."
+ ],
+ "home.events.read.goal": "Cilj skupnosti",
+ "home.events.read.board": "Lestvica",
+ "home.events.read.you": "vi",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Pozabljena knjižnica",
+ "home.events.quest.items": [
+  "Izberite 3 knjige iz svoje knjižnice: vsaka postane kartica z arhetipom svojega žanra.",
+  "Igre po 5 do 10 minut, v katerih prečkate police in premagate končnega šefa.",
+  "Lestvica točk: štejejo vaše 3 najboljše igre vsakega dne.",
+  "Imate premalo knjig? Knjižnica vam posodi zvezke, po enega na arhetip."
+ ],
+ "home.events.note": "Za sodelovanje morate imeti 16 let ali več. Če trenutno ni aktivnega dogodka, vam aplikacija to pove.",
+ "cookies.title": "Pravilnik o piškotkih · Lecturameter",
+ "cookies.meta_description": "Kaj spletno mesto Lecturameter shranjuje v vašem brskalniku, čemu in kako spremenite svojo izbiro. Brez lastne analitike ali oglaševanja.",
+ "cookies.h1": "🍪 Pravilnik o piškotkih",
+ "cookies.tagline": "Kaj se shrani v vašem brskalniku, ko obiščete to spletno mesto, in zakaj.",
+ "cookies.updated": "Posodobljeno 8. novembra 2026",
+ "cookies.summary_title": "Na kratko",
+ "cookies.summary": "To spletno mesto ne uporablja lastnih analitičnih ali oglaševalskih piškotkov. V vašem brskalniku shranjuje vaše nastavitve (temo, jezik, zaprto obvestilo) in vašo izbiro glede tega pravilnika. Pripomoček tretje osebe StartupBar se naloži le, če pritisnete »Sprejmi«.",
+ "cookies.h2_stored": "Kaj se shranjuje",
+ "cookies.p_stored": "Vse je v lokalni shrambi brskalnika (localStorage ali sessionStorage). To spletno mesto ne piše lastnih piškotkov HTTP.",
+ "cookies.h3_essential": "Vaše nastavitve (soglasje ni potrebno)",
+ "cookies.p_essential": "Shranjujemo jih, ker ste jih zahtevali z uporabo spletnega mesta. Nikogar ne prepoznavajo in nikoli ne zapustijo vašega brskalnika.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · si zapomni, ali ste izbrali svetlo ali temno temo · dokler ga ne izbrišete.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · si zapomni jezik, ki ste ga izbrali v izbirniku · dokler ga ne izbrišete.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · si zapomni, da ste zaprli zgornjo vrstico · dokler ga ne izbrišete.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · shrani vašo izbiro v obvestilu o piškotkih skupaj z njegovo različico in datumom · dokler je ne spremenite ali izbrišete.",
+ "cookies.h3_optional": "Samo če sprejmete",
+ "cookies.p_optional": "Če pritisnete »Sprejmi«, se naložijo ti elementi tretjih oseb. Če pritisnete »Zavrni«, se nič od tega ne naloži in spletno mesto deluje enako.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · pripomoček z iframe tretje osebe, ki v sessionStorage shrani <code>startupbar:sid</code> (dokler ne zaprete zavihka) in pošilja signal prikaza. Naloži ga vsaka stran spletnega mesta.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · knjižnica na strani za stik, ki jo streže jsDelivr.",
+ "cookies.h2_never": "Česa ne počnemo",
+ "cookies.p_never": "Ne uporabljamo lastne analitike, oglaševanja, profiliranja ali sledilnih piškotkov. Podatkov tudi ne prodajamo. Spletno mesto gostuje na GitHub Pages, ki lahko ob strežbi strani po lastnem pravilniku zabeleži vaš IP.",
+ "cookies.h2_change": "Spremenite svojo izbiro",
+ "cookies.p_change": "Spremenite jo lahko kadar koli prek »Nastavitve piškotkov« v nogi katere koli strani. Podatke tega spletnega mesta lahko izbrišete tudi v nastavitvah brskalnika. Če umaknete soglasje, se stran znova naloži brez elementov tretjih oseb.",
+ "cookies.h2_more": "Več informacij",
+ "cookies.p_more": "Pravilnik o zasebnosti aplikacije pojasnjuje, katere podatke Lecturameter obdeluje v vašem telefonu. Če imate vprašanja, pišite na lecturameter.app@gmail.com."
 }
