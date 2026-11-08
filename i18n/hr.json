@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Nezavisni projekt",
  "common.footer.home": "Početna",
  "common.footer.privacy": "Privatnost",
- "head.index.title": "Lecturameter · Praćenje čitanja i statistika knjiga",
- "head.index.description": "Prati vrijeme čitanja, stranice, tempo i napredak uz privatnu aplikaciju za praćenje čitanja na Androidu i iPhoneu. Bez računa, bez oglasa. Uvoz iz Goodreadsa i StoryGrapha.",
+ "head.index.title": "Lecturameter: Dnevnik čitanja · Statistika i štoperica",
+ "head.index.description": "Lecturameter: Dnevnik čitanja za Android i iPhone. Mjeri vrijeme čitanja, prati stranice, tempo i statistiku te uvezi iz Goodreadsa. Bez računa i bez oglasa.",
  "head.index.ld_description": "Organiziraj knjižnicu, mjeri vrijeme sesija čitanja i pregledaj detaljnu statistiku na svom Android ili iPhone mobitelu. Bez oglasa, potpuno privatno.",
  "head.index.ld_featurelist": "Knjižnica s policama, štoperica s ugašenim zaslonom, povijest sesija, toplinska karta, godišnji Wrapped, prilagodljivi izazovi čitanja, sigurnosna kopija na Google Driveu, uvoz Goodreads CSV-a, većinom izvan mreže",
  "head.index.faq1_q": "Mogu li prenijeti svoju knjižnicu iz drugih aplikacija?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Događaji · Dvije nove Pro teme",
  "release.3_9.new": [
   "<strong>Događaji:</strong> globalni izazovi čitanja i Lecturameter Quest kada je neki aktivan",
+  "<strong>Pauzirano:</strong> odloži knjigu na neko vrijeme, a da ti ne pokvari statistiku",
   "<strong>Dvije nove Pro teme:</strong> Bilježnica i Šumarak",
   "Poseban sat štoperice za svaku temu",
   "Pagi ti bira knjigu iz Želim čitati",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Za sva pitanja o ovim Uvjetima: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> ili <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Uvjeti korištenja – Lecturameter",
  "legal.terms.meta_description": "Jasni uvjeti, bez sitnog tiska.",
- "common.footer.drakehold": "Od istog autora: <strong>Drakehold</strong>, tvoj osobni arhiv koji se sam slaže. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Pridruži se listi čekanja →</a>"
+ "common.footer.drakehold": "Od istog autora: <strong>Drakehold</strong>, tvoj osobni arhiv koji se sam slaže. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Pridruži se listi čekanja →</a>",
+ "seo.store_name": "Lecturameter: Dnevnik čitanja",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Događaji",
+ "common.footer.events": "Događaji",
+ "common.footer.cookies": "Pravila o kolačićima",
+ "common.footer.cookie_prefs": "Postavke kolačića",
+ "js.consent_title": "Kolačići i pohrana",
+ "js.consent_body": "Koristimo widget treće strane (StartupBar) koji sprema podatke u tvoj preglednik i broji prikaze. Učitava se samo ako prihvatiš. Tvoja tema, jezik i zatvorena obavijest spremaju se bez pitanja jer si ih sam odabrao.",
+ "js.consent_accept": "Prihvati",
+ "js.consent_reject": "Odbij",
+ "js.consent_policy": "Pravila o kolačićima",
+ "js.consent_prefs": "Postavke kolačića",
+ "home.paused.tag": "Novo u 3.9",
+ "home.paused.title": "Odloži knjigu na neko vrijeme, a da ti ne pokvari statistiku",
+ "home.paused.sub": "Pauzirano je zasebno stanje, različito od Napušteno. Knjiga čeka gdje si stao, a dani pauze se ne računaju.",
+ "home.paused.tab_pending": "Želim čitati",
+ "home.paused.tab_reading": "Čitanje",
+ "home.paused.tab_paused": "Pauzirano",
+ "home.paused.tab_dropped": "Napušteno",
+ "home.paused.timeline_caption": "Dani pauze se ne računaju",
+ "home.paused.cards": [
+  {
+   "title": "Zasebno stanje",
+   "text": "Pauzirano nije Napušteno. Tvoja knjiga ne završava u hrpi knjiga koje si odustao čitati: čeka i vraća se kad god želiš."
+  },
+  {
+   "title": "Iz Čitanja ili Ponovnog čitanja",
+   "text": "Promijeni status iz oznake na stranici knjige ili s „Promijeni status“ u brzom izborniku. Radi za knjige, stripove, mangu i audioknjige."
+  },
+  {
+   "title": "Dani pauze se ne računaju",
+   "text": "Ni u danima do završetka ni u tvojoj brzini čitanja. Statistika ostaje ona iz vremena kad si čitao."
+  },
+  {
+   "title": "Bilješka, ako želiš",
+   "text": "Kad pauziraš i kad nastaviš, možeš zapisati zašto. Nije obavezno. Sve ostaje u odjeljku „Pauze“ na stranici knjige, s poviješću."
+  },
+  {
+   "title": "Zasebna kartica",
+   "text": "U svojoj knjižnici, između Želim čitati i Napušteno, naći ćeš pauzirane knjige."
+  },
+  {
+   "title": "Podsjetnici i samostalan nastavak",
+   "text": "Podsjetnici te knjige se pauziraju i vraćaju kad je nastaviš. Ako izmjeriš sesiju ili stigne jedna iz KOReadera, knjiga se nastavlja sama, uz obavijest i opciju Poništi."
+  }
+ ],
+ "home.cards.tag": "Podijeli",
+ "home.cards.title": "Lecturameter nije društvena mreža. Tvoje kartice idu na onu koju koristiš.",
+ "home.cards.sub": "Izradi okomite kartice 1080×1920, spremne za storyje, i podijeli ih tamo gdje već jesi. Bez računa, bez profila i bez pratitelja.",
+ "home.cards.chips": [
+  "Knjiga",
+  "Završena knjiga",
+  "Statistika knjige",
+  "Statistika",
+  "Tjedni pregled",
+  "Mjesečni pregled",
+  "Izazovi",
+  "Bingo",
+  "Wrapped",
+  "Događaj",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Odaberi što ćeš prikazati",
+   "text": "Knjigu, upravo završenu knjigu, svoju statistiku, svoj tjedan ili mjesec, izazov, Bingo, Wrapped ili događaj."
+  },
+  {
+   "title": "Sprema se u „Moje kartice“",
+   "text": "Sve što podijeliš ostaje u Mojim karticama, pa ga možeš ponovno koristiti kad god želiš."
+  },
+  {
+   "title": "Podijeli je tamo gdje već jesi",
+   "text": "Preko izbornika za dijeljenje na telefonu, u aplikaciju koju već koristiš. Ili je spremi u galeriju."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · format storyja",
+ "home.events.tag": "Događaji",
+ "home.events.title": "Čitaj sa zajednicom. Igraj se sa svojom knjižnicom.",
+ "home.events.sub": "Događaji se pojavljuju u aplikaciji kad je neki aktivan. Danas postoje dvije vrste: globalni izazov čitanja i kartaška igra s tvojim knjigama.",
+ "home.events.demo_label": "Ilustrativni primjer",
+ "home.events.read.kicker": "Globalni izazov · 14 dana",
+ "home.events.read.title": "Veliko čitanje",
+ "home.events.read.items": [
+  "Računaju se minute štoperice, u knjigama, stripovima, mangi i audioknjigama.",
+  "Zajednički cilj za cijelu zajednicu. Ako se nadmaši, i dalje se računa.",
+  "Ljestvica uživo s pseudonimom i tvojim Pagijem kao avatarom.",
+  "Kad završi, kartica događaja s tvojim plasmanom, za svakog sudionika."
+ ],
+ "home.events.read.goal": "Cilj zajednice",
+ "home.events.read.board": "Ljestvica",
+ "home.events.read.you": "ti",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Zaboravljena knjižnica",
+ "home.events.quest.items": [
+  "Odaberi 3 knjige iz svoje knjižnice: svaka postaje kartica s arhetipom svog žanra.",
+  "Runde od 5 do 10 minuta da prijeđeš police i pobijediš završnog bossa.",
+  "Ljestvica bodova: računaju se tvoje 3 najbolje runde svakog dana.",
+  "Nemaš dovoljno knjiga? Knjižnica ti posuđuje svezke, po jedan za svaki arhetip."
+ ],
+ "home.events.note": "Za sudjelovanje moraš imati 16 ili više godina. Ako trenutačno nema aktivnog događaja, aplikacija ti to kaže.",
+ "cookies.title": "Pravila o kolačićima · Lecturameter",
+ "cookies.meta_description": "Što web-mjesto Lecturametera sprema u tvoj preglednik, zašto i kako promijeniti svoj odabir. Bez vlastite analitike i oglašavanja.",
+ "cookies.h1": "🍪 Pravila o kolačićima",
+ "cookies.tagline": "Što se sprema u tvoj preglednik kad posjetiš ovo web-mjesto i zašto.",
+ "cookies.updated": "Ažurirano 8. studenoga 2026.",
+ "cookies.summary_title": "Ukratko",
+ "cookies.summary": "Ovo web-mjesto ne koristi vlastite analitičke ni oglasne kolačiće. U tvoj preglednik sprema tvoje postavke (tema, jezik, zatvorena obavijest) i tvoj odabir o ovim pravilima. Widget treće strane, StartupBar, učitava se samo ako pritisneš „Prihvati“.",
+ "cookies.h2_stored": "Što se sprema",
+ "cookies.p_stored": "Sve je u lokalnoj pohrani preglednika (localStorage ili sessionStorage). Ovo web-mjesto ne zapisuje vlastite HTTP kolačiće.",
+ "cookies.h3_essential": "Tvoje postavke (privola nije potrebna)",
+ "cookies.p_essential": "Spremamo ih jer si ih zatražio korištenjem web-mjesta. Ne identificiraju nikoga i nikad ne napuštaju tvoj preglednik.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · pamti jesi li odabrao svijetlu ili tamnu temu · dok ga ne obrišeš.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · pamti jezik koji si odabrao u izborniku · dok ga ne obrišeš.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · pamti da si zatvorio gornju traku · dok ga ne obrišeš.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · sprema tvoj odabir u obavijesti o kolačićima, s njezinom verzijom i datumom · dok ga ne promijeniš ili obrišeš.",
+ "cookies.h3_optional": "Samo ako prihvatiš",
+ "cookies.p_optional": "Ako pritisneš „Prihvati“, učitavaju se ovi elementi trećih strana. Ako pritisneš „Odbij“, ništa od toga se ne učitava, a web-mjesto radi jednako.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · widget s iframeom treće strane koji sprema <code>startupbar:sid</code> u sessionStorage (dok ne zatvoriš karticu) i šalje signal prikaza. Učitava se na svakoj stranici web-mjesta.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · biblioteka na stranici za kontakt, koju poslužuje jsDelivr.",
+ "cookies.h2_never": "Što ne radimo",
+ "cookies.p_never": "Ne koristimo vlastitu analitiku, oglašavanje, profiliranje ni kolačiće za praćenje. Podatke ni ne prodajemo. Web-mjesto je na GitHub Pagesu, koji može zabilježiti tvoj IP pri posluživanju stranica prema vlastitim pravilima.",
+ "cookies.h2_change": "Promijeni odabir",
+ "cookies.p_change": "Možeš ga promijeniti bilo kad preko „Postavke kolačića“ u podnožju bilo koje stranice. Podatke ovog web-mjesta možeš obrisati i u postavkama preglednika. Ako povučeš privolu, stranica se ponovno učitava bez elemenata trećih strana.",
+ "cookies.h2_more": "Više informacija",
+ "cookies.p_more": "Pravila privatnosti aplikacije objašnjavaju koje podatke Lecturameter obrađuje na tvom telefonu. Ako imaš pitanja, piši na lecturameter.app@gmail.com."
 }

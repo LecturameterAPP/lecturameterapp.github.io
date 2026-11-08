@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Sjálfstætt verkefni",
  "common.footer.home": "Forsíða",
  "common.footer.privacy": "Persónuvernd",
- "head.index.title": "Lecturameter — Lestrardagbók og bókatölfræði",
- "head.index.description": "Fylgstu með lestrartíma, blaðsíðum, hraða og framvindu með einkalestrardagbók fyrir Android og iPhone. Enginn reikningur, engar auglýsingar. Flyttu inn frá Goodreads og StoryGraph.",
+ "head.index.title": "Lecturameter: Lestrarskráning · Bókatölfræði og tímamælir",
+ "head.index.description": "Lecturameter: Lestrarskráning fyrir Android og iPhone. Mældu lestrartímann, fylgstu með blaðsíðum, hraða og tölfræði og fluttu inn úr Goodreads. Enginn aðgangur, engar auglýsingar.",
  "head.index.ld_description": "Skipuleggðu bókasafnið, tímamældu lestrarlotur og skoðaðu ítarlega tölfræði í Android- eða iPhone-símanum þínum. Engar auglýsingar, algjörlega einkamál.",
  "head.index.ld_featurelist": "Bókasafn með hillum, tímamælir með slökkt á skjá, lotusaga, hitakort, árlegt Wrapped, sérsniðnar lestraráskoranir, öryggisafrit á Google Drive, innflutningur á CSV frá Goodreads, virkar að mestu án nettengingar",
  "head.index.faq1_q": "Get ég komið með bókasafnið mitt úr öðrum forritum?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Viðburðir · Tvö ný Pro þemu",
  "release.3_9.new": [
   "<strong>Viðburðir:</strong> alþjóðlegar lestraráskoranir og Lecturameter Quest þegar eitt er virkt",
+  "<strong>Í hléi:</strong> leggðu bók til hliðar um stund án þess að skemma tölfræðina þína",
   "<strong>Tvö ný Pro þemu:</strong> Stílabók og Skógur",
   "Sérstök tímamælisklukka fyrir hvert þema",
   "Pagi velur bók fyrir þig af listanum Vil lesa",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Fyrir allar spurningar um þessa skilmála: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> eða <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Þjónustuskilmálar – Lecturameter",
  "legal.terms.meta_description": "Skýrir skilmálar, ekkert smátt letur.",
- "common.footer.drakehold": "Frá sama höfundi: <strong>Drakehold</strong>, persónulega skjalasafnið þitt sem raðar sér sjálft. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Skráðu þig á biðlistann →</a>"
+ "common.footer.drakehold": "Frá sama höfundi: <strong>Drakehold</strong>, persónulega skjalasafnið þitt sem raðar sér sjálft. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Skráðu þig á biðlistann →</a>",
+ "seo.store_name": "Lecturameter: Lestrarskráning",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Viðburðir",
+ "common.footer.events": "Viðburðir",
+ "common.footer.cookies": "Vafrakökustefna",
+ "common.footer.cookie_prefs": "Stillingar vafrakaka",
+ "js.consent_title": "Vafrakökur og geymsla",
+ "js.consent_body": "Við notum viðbót frá þriðja aðila (StartupBar) sem vistar gögn í vafranum þínum og telur birtingar. Hún hleðst aðeins ef þú samþykkir. Þema, tungumál og lokuð tilkynning vistast án þess að spyrja, því þú valdir þau sjálf/ur.",
+ "js.consent_accept": "Samþykkja",
+ "js.consent_reject": "Hafna",
+ "js.consent_policy": "Vafrakökustefna",
+ "js.consent_prefs": "Stillingar vafrakaka",
+ "home.paused.tag": "Nýtt í 3.9",
+ "home.paused.title": "Leggðu bók til hliðar um stund án þess að skemma tölfræðina þína",
+ "home.paused.sub": "Í hléi er sérstök staða, ólík stöðunni Hætt við. Bókin bíður þar sem þú skildir við hana og dagarnir í hléi telja ekki.",
+ "home.paused.tab_pending": "Vil lesa",
+ "home.paused.tab_reading": "Les",
+ "home.paused.tab_paused": "Í hléi",
+ "home.paused.tab_dropped": "Hætt við",
+ "home.paused.timeline_caption": "Dagar í hléi telja ekki",
+ "home.paused.cards": [
+  {
+   "title": "Sérstök staða",
+   "text": "Í hléi er ekki það sama og Hætt við. Bókin þín fer ekki í bunkann yfir bækur sem þú gafst upp á: hún bíður og snýr aftur þegar þú vilt."
+  },
+  {
+   "title": "Úr Les eða Endurlestur",
+   "text": "Breyttu stöðunni með merkinu á síðu bókarinnar eða með „Breyta stöðu“ í flýtivalmyndinni. Virkar fyrir bækur, myndasögur, manga og hljóðbækur."
+  },
+  {
+   "title": "Dagar í hléi telja ekki",
+   "text": "Hvorki í dögum til að klára né í lestrarhraðanum þínum. Tölfræðin helst eins og hún var þegar þú last."
+  },
+  {
+   "title": "Athugasemd, ef þú vilt",
+   "text": "Þegar þú setur í hlé og þegar þú heldur áfram geturðu skrifað hvers vegna. Það er valfrjálst. Allt er geymt í hlutanum „Hlé“ á síðu bókarinnar, með sögu."
+  },
+  {
+   "title": "Sérstakur flipi",
+   "text": "Í bókasafninu þínu, milli Vil lesa og Hætt við, finnurðu bækurnar sem eru í hléi."
+  },
+  {
+   "title": "Áminningar og sjálfvirk áframhaldandi lestur",
+   "text": "Áminningar þeirrar bókar fara í hlé og snúa aftur þegar þú heldur áfram með hana. Ef þú tímamælir lotu eða ein berst frá KOReader heldur bókin sjálf áfram, með tilkynningu og möguleika á að afturkalla."
+  }
+ ],
+ "home.cards.tag": "Deila",
+ "home.cards.title": "Lecturameter er ekki samfélagsmiðill. Spjöldin þín fara á þann miðil sem þú notar.",
+ "home.cards.sub": "Gerðu lóðrétt spjöld, 1080×1920, tilbúin í sögur, og deildu þeim þar sem þú ert nú þegar. Enginn aðgangur, enginn prófíll og engir fylgjendur.",
+ "home.cards.chips": [
+  "Bók",
+  "Bók lokið",
+  "Bókatölfræði",
+  "Tölfræði",
+  "Vikuyfirlit",
+  "Mánaðaryfirlit",
+  "Áskoranir",
+  "Bingo",
+  "Wrapped",
+  "Viðburður",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Veldu hvað þú vilt sýna",
+   "text": "Bók, bók sem þú varst að klára, tölfræðina þína, vikuna eða mánuðinn, áskorun, Bingo, Wrapped eða viðburð."
+  },
+  {
+   "title": "Vistast í „Spjöldin mín“",
+   "text": "Allt sem þú deilir helst í Spjöldin mín, svo þú getir notað það aftur hvenær sem þú vilt."
+  },
+  {
+   "title": "Deildu því þar sem þú ert nú þegar",
+   "text": "Í gegnum deilingarvalmynd símans, yfir í forritið sem þú notar nú þegar. Eða vistaðu það í myndasafnið."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · sagnasnið",
+ "home.events.tag": "Viðburðir",
+ "home.events.title": "Lestu með samfélaginu. Leiktu þér með bókasafnið þitt.",
+ "home.events.sub": "Viðburðir birtast í forritinu þegar einn er virkur. Í dag eru þeir tvenns konar: alþjóðleg lestraráskorun og spilaleikur með þínum eigin bókum.",
+ "home.events.demo_label": "Dæmi til skýringar",
+ "home.events.read.kicker": "Alþjóðleg áskorun · 14 dagar",
+ "home.events.read.title": "Stóri lesturinn",
+ "home.events.read.items": [
+  "Mínútur tímamælisins telja, í bókum, myndasögum, manga og hljóðbókum.",
+  "Sameiginlegt markmið alls samfélagsins. Ef því er náð heldur talningin áfram.",
+  "Stigatafla í beinni með gælunafni og Pagi þinn sem auðkennismynd.",
+  "Þegar henni lýkur fær hver þátttakandi viðburðarspjald með sæti sínu."
+ ],
+ "home.events.read.goal": "Markmið samfélagsins",
+ "home.events.read.board": "Stigatafla",
+ "home.events.read.you": "þú",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Gleymda bókasafnið",
+ "home.events.quest.items": [
+  "Veldu 3 bækur úr bókasafninu þínu: hver verður að spjaldi með frumgerð sinnar bókmenntagreinar.",
+  "Umferðir sem taka 5 til 10 mínútur til að fara yfir hillurnar og sigra lokaóvininn.",
+  "Stigatafla: 3 bestu umferðir þínar hvern dag telja.",
+  "Áttu fáar bækur? Bókasafnið lánar þér bindi, eitt fyrir hverja frumgerð."
+ ],
+ "home.events.note": "Þú þarft að vera 16 ára eða eldri til að taka þátt. Ef enginn viðburður er virkur núna segir forritið þér það.",
+ "cookies.title": "Vafrakökustefna · Lecturameter",
+ "cookies.meta_description": "Hvað vefsvæði Lecturameter vistar í vafranum þínum, til hvers og hvernig þú breytir vali þínu. Engin eigin greining eða auglýsingar.",
+ "cookies.h1": "🍪 Vafrakökustefna",
+ "cookies.tagline": "Hvað er vistað í vafranum þínum þegar þú heimsækir þetta vefsvæði, og hvers vegna.",
+ "cookies.updated": "Uppfært 8. nóvember 2026",
+ "cookies.summary_title": "Í stuttu máli",
+ "cookies.summary": "Þetta vefsvæði notar engar eigin greiningar- eða auglýsingakökur. Það vistar stillingar þínar (þema, tungumál, lokaða tilkynningu) og val þitt um þessa stefnu í vafranum. Viðbót frá þriðja aðila, StartupBar, hleðst aðeins ef þú ýtir á „Samþykkja“.",
+ "cookies.h2_stored": "Hvað er vistað",
+ "cookies.p_stored": "Allt er í staðbundinni geymslu vafrans (localStorage eða sessionStorage). Þetta vefsvæði skrifar engar eigin HTTP-vafrakökur.",
+ "cookies.h3_essential": "Stillingar þínar (þarfnast ekki samþykkis)",
+ "cookies.p_essential": "Við vistum þær því þú baðst um þær með því að nota vefsvæðið. Þær auðkenna engan og yfirgefa aldrei vafrann þinn.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · man hvort þú valdir ljóst eða dökkt þema · þar til þú hreinsar það.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · man tungumálið sem þú valdir í valmyndinni · þar til þú hreinsar það.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · man að þú lokaðir efri stikunni · þar til þú hreinsar það.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · vistar val þitt í kökutilkynningunni, með útgáfu hennar og dagsetningu · þar til þú breytir því eða hreinsar það.",
+ "cookies.h3_optional": "Aðeins ef þú samþykkir",
+ "cookies.p_optional": "Ef þú ýtir á „Samþykkja“ hlaðast þessir þættir frá þriðja aðila. Ef þú ýtir á „Hafna“ hleðst ekkert af þessu og vefsvæðið virkar eins.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · viðbót með iframe frá þriðja aðila, sem vistar <code>startupbar:sid</code> í sessionStorage (þar til þú lokar flipanum) og sendir birtingarmerki. Hver síða vefsvæðisins hleður henni.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · safn á samskiptasíðunni, afgreitt af jsDelivr.",
+ "cookies.h2_never": "Hvað við gerum ekki",
+ "cookies.p_never": "Við notum enga eigin greiningu, auglýsingar, persónusnið né eltingarkökur. Við seljum heldur ekki gögn. Vefsvæðið er hýst á GitHub Pages, sem getur skráð IP-töluna þína þegar síður eru afgreiddar samkvæmt eigin stefnu.",
+ "cookies.h2_change": "Breyttu vali þínu",
+ "cookies.p_change": "Þú getur breytt því hvenær sem er með „Stillingar vafrakaka“ neðst á hverri síðu. Þú getur líka hreinsað gögn vefsvæðisins í stillingum vafrans. Ef þú dregur samþykki til baka hleðst síðan aftur án þátta frá þriðja aðila.",
+ "cookies.h2_more": "Frekari upplýsingar",
+ "cookies.p_more": "Persónuverndarstefna forritsins útskýrir hvaða gögn Lecturameter meðhöndlar í símanum þínum. Ef þú hefur spurningar skaltu skrifa á lecturameter.app@gmail.com."
 }

@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Itsenäinen projekti",
  "common.footer.home": "Etusivu",
  "common.footer.privacy": "Tietosuoja",
- "head.index.title": "Lecturameter · Lukuseuranta ja kirjatilastot",
- "head.index.description": "Seuraa lukuaikaa, sivuja, tahtia ja edistymistä yksityisellä Android- ja iPhone-lukuseurannalla. Ei tiliä, ei mainoksia. Tuo kirjat Goodreadsista ja StoryGraphista.",
+ "head.index.title": "Lecturameter: Lukupäiväkirja · Kirjatilastot ja ajastin",
+ "head.index.description": "Lecturameter: Lukupäiväkirja Androidille ja iPhonelle. Ajasta lukemisesi, seuraa sivuja, tahtia ja tilastoja ja tuo tiedot Goodreadsista. Ei tiliä, ei mainoksia.",
  "head.index.ld_description": "Järjestä kirjastosi, ajasta lukuistunnot ja katso tarkat tilastot Android- tai iPhone-puhelimellasi. Ei mainoksia, täysin yksityinen.",
  "head.index.ld_featurelist": "Kirjasto hyllyineen, ajastin näytön ollessa sammutettuna, istuntohistoria, lämpökartta, vuoden Wrapped, muokattavat lukuhaasteet, Google Drive -varmuuskopio, Goodreadsin CSV-tuonti, toimii pääosin ilman yhteyttä",
  "head.index.faq1_q": "Voinko tuoda kirjastoni muista sovelluksista?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Tapahtumat · Kaksi uutta Pro-teemaa",
  "release.3_9.new": [
   "<strong>Tapahtumat:</strong> maailmanlaajuisia lukuhaasteita ja Lecturameter Quest, kun jokin on käynnissä",
+  "<strong>Tauolla:</strong> jätä kirja syrjään joksikin aikaa sotkematta tilastojasi",
   "<strong>Kaksi uutta Pro-teemaa:</strong> Vihko ja Metsä",
   "Oma ajastinkello jokaiselle teemalle",
   "Pagi valitsee sinulle kirjan Haluan lukea -listalta",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Näitä ehtoja koskevat kysymykset: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> tai <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Käyttöehdot – Lecturameter",
  "legal.terms.meta_description": "Selkeät ehdot, ei pientä präntättyä.",
- "common.footer.drakehold": "Samalta tekijältä: <strong>Drakehold</strong>, henkilökohtainen arkistosi, joka järjestyy itsestään. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Liity jonotuslistalle →</a>"
+ "common.footer.drakehold": "Samalta tekijältä: <strong>Drakehold</strong>, henkilökohtainen arkistosi, joka järjestyy itsestään. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Liity jonotuslistalle →</a>",
+ "seo.store_name": "Lecturameter: Lukupäiväkirja",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Tapahtumat",
+ "common.footer.events": "Tapahtumat",
+ "common.footer.cookies": "Evästekäytäntö",
+ "common.footer.cookie_prefs": "Evästeasetukset",
+ "js.consent_title": "Evästeet ja tallennus",
+ "js.consent_body": "Käytämme kolmannen osapuolen widgetiä (StartupBar), joka tallentaa tietoja selaimeesi ja laskee näyttökertoja. Se latautuu vain, jos hyväksyt. Teemasi, kielesi ja suljettu ilmoitus tallennetaan kysymättä, koska valitsit ne itse.",
+ "js.consent_accept": "Hyväksy",
+ "js.consent_reject": "Hylkää",
+ "js.consent_policy": "Evästekäytäntö",
+ "js.consent_prefs": "Evästeasetukset",
+ "home.paused.tag": "Uutta versiossa 3.9",
+ "home.paused.title": "Jätä kirja syrjään joksikin aikaa sotkematta tilastojasi",
+ "home.paused.sub": "Tauolla on oma tilansa, eri kuin Hylätty. Kirja odottaa siinä, mihin sen jätit, eikä tauon päiviä lasketa.",
+ "home.paused.tab_pending": "Haluan lukea",
+ "home.paused.tab_reading": "Lukemassa",
+ "home.paused.tab_paused": "Tauolla",
+ "home.paused.tab_dropped": "Hylätty",
+ "home.paused.timeline_caption": "Tauon päiviä ei lasketa",
+ "home.paused.cards": [
+  {
+   "title": "Oma tila",
+   "text": "Tauolla ei ole sama kuin Hylätty. Kirjasi ei mene hylättyjen kirjojen kasaan: se odottaa ja palaa, kun haluat."
+  },
+  {
+   "title": "Tilasta Lukemassa tai Uudelleenluettavana",
+   "text": "Vaihda tilaa kirjan sivun painikkeesta tai pikavalikon kohdasta ”Vaihda tilaa”. Toimii kirjoille, sarjakuville, mangalle ja äänikirjoille."
+  },
+  {
+   "title": "Tauon päiviä ei lasketa",
+   "text": "Ei valmistumiseen kuluvissa päivissä eikä lukunopeudessasi. Tilastosi pysyvät sellaisina kuin ne olivat, kun luit."
+  },
+  {
+   "title": "Muistiinpano, jos haluat",
+   "text": "Kun asetat tauolle ja kun jatkat, voit kirjoittaa syyn. Se on vapaaehtoista. Kaikki säilyy kirjan sivun Tauot-osiossa historiansa kanssa."
+  },
+  {
+   "title": "Oma välilehti",
+   "text": "Kirjastossasi, välilehtien Haluan lukea ja Hylätty välissä, ovat tauolla olevat kirjasi."
+  },
+  {
+   "title": "Muistutukset ja jatkuminen itsestään",
+   "text": "Kirjan muistutukset siirtyvät tauolle ja palaavat, kun jatkat kirjaa. Jos ajastat istunnon tai KOReaderista tulee sellainen, kirja jatkuu itsestään, ilmoituksen ja Kumoa-valinnan kera."
+  }
+ ],
+ "home.cards.tag": "Jaa",
+ "home.cards.title": "Lecturameter ei ole sosiaalinen verkosto. Korttisi menevät siihen, jota käytät.",
+ "home.cards.sub": "Tee pystykortteja kokoa 1080×1920, valmiina storyihin, ja jaa ne siellä, missä jo olet. Ei tiliä, ei profiilia, ei seuraajia.",
+ "home.cards.chips": [
+  "Kirja",
+  "Kirja luettu",
+  "Kirjan tilastot",
+  "Tilastot",
+  "Viikkoyhteenveto",
+  "Kuukausiyhteenveto",
+  "Haasteet",
+  "Bingo",
+  "Wrapped",
+  "Tapahtuma",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Valitse, mitä näytät",
+   "text": "Kirja, juuri lukemasi kirja, tilastosi, viikkosi tai kuukautesi, haaste, Bingo, Wrapped tai tapahtuma."
+  },
+  {
+   "title": "Tallentuu kohtaan ”Korttini”",
+   "text": "Kaikki jakamasi pysyy Korteissani, joten voit käyttää sitä uudelleen milloin haluat."
+  },
+  {
+   "title": "Jaa se siellä, missä jo olet",
+   "text": "Puhelimen jakovalikon kautta siihen sovellukseen, jota jo käytät. Tai tallenna galleriaan."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · story-muoto",
+ "home.events.tag": "Tapahtumat",
+ "home.events.title": "Lue yhteisön kanssa. Pelaa kirjastollasi.",
+ "home.events.sub": "Tapahtumat näkyvät sovelluksessa, kun jokin on käynnissä. Tällä hetkellä niitä on kahta lajia: maailmanlaajuinen lukuhaaste ja korttipeli omilla kirjoillasi.",
+ "home.events.demo_label": "Havainnollistava esimerkki",
+ "home.events.read.kicker": "Maailmanlaajuinen haaste · 14 päivää",
+ "home.events.read.title": "Suuri lukuhetki",
+ "home.events.read.items": [
+  "Ajastimen minuutit lasketaan, kirjoissa, sarjakuvissa, mangassa ja äänikirjoissa.",
+  "Yhteinen tavoite koko yhteisölle. Jos se ylitetään, laskenta jatkuu.",
+  "Live-tulostaulu nimimerkillä ja Pagi-hahmollasi avatarina.",
+  "Kun tapahtuma päättyy, jokainen osallistuja saa tapahtumakortin sijoituksensa kanssa."
+ ],
+ "home.events.read.goal": "Yhteisön tavoite",
+ "home.events.read.board": "Tulostaulu",
+ "home.events.read.you": "sinä",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Unohdettu kirjasto",
+ "home.events.quest.items": [
+  "Valitse kirjastostasi 3 kirjaa: jokaisesta tulee kortti lajityyppinsä arkkityypin kanssa.",
+  "5–10 minuutin kierrokset, joilla ylität hyllyt ja kukistat loppuvastuksen.",
+  "Pistetaulu: päivän 3 parasta kierrostasi lasketaan.",
+  "Onko kirjoja vähän? Kirjasto lainaa sinulle niteitä, yhden arkkityyppiä kohti."
+ ],
+ "home.events.note": "Osallistumiseen vaaditaan vähintään 16 vuoden ikä. Jos mikään tapahtuma ei ole juuri nyt käynnissä, sovellus kertoo sen.",
+ "cookies.title": "Evästekäytäntö · Lecturameter",
+ "cookies.meta_description": "Mitä Lecturameterin verkkosivusto tallentaa selaimeesi, mihin tarkoitukseen ja miten muutat valintaasi. Ei omaa analytiikkaa tai mainontaa.",
+ "cookies.h1": "🍪 Evästekäytäntö",
+ "cookies.tagline": "Mitä selaimeesi tallennetaan, kun vierailet tällä verkkosivustolla, ja miksi.",
+ "cookies.updated": "Päivitetty 8. marraskuuta 2026",
+ "cookies.summary_title": "Lyhyesti",
+ "cookies.summary": "Tämä verkkosivusto ei käytä omia analytiikka- tai mainosevästeitä. Se tallentaa selaimeesi asetuksesi (teema, kieli, suljettu ilmoitus) ja valintasi tästä käytännöstä. Kolmannen osapuolen widget StartupBar latautuu vain, jos painat ”Hyväksy”.",
+ "cookies.h2_stored": "Mitä tallennetaan",
+ "cookies.p_stored": "Kaikki on selaimesi paikallisessa tallennustilassa (localStorage tai sessionStorage). Tämä verkkosivusto ei kirjoita omia HTTP-evästeitä.",
+ "cookies.h3_essential": "Asetuksesi (suostumusta ei tarvita)",
+ "cookies.p_essential": "Tallennamme ne, koska pyysit niitä käyttämällä verkkosivustoa. Ne eivät tunnista ketään eivätkä koskaan poistu selaimestasi.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · muistaa, valitsitko vaalean vai tumman teeman · kunnes tyhjennät sen.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · muistaa valitsimeen valitsemasi kielen · kunnes tyhjennät sen.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · muistaa, että suljit yläpalkin · kunnes tyhjennät sen.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · tallentaa valintasi evästeilmoituksessa versionsa ja päivämääränsä kanssa · kunnes muutat tai tyhjennät sen.",
+ "cookies.h3_optional": "Vain jos hyväksyt",
+ "cookies.p_optional": "Jos painat ”Hyväksy”, nämä kolmannen osapuolen osat latautuvat. Jos painat ”Hylkää”, mitään niistä ei ladata ja verkkosivusto toimii samoin.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · widget, jossa on kolmannen osapuolen iframe, joka tallentaa <code>startupbar:sid</code> sessionStorageen (kunnes suljet välilehden) ja lähettää näyttökertasignaalin. Se latautuu verkkosivuston jokaisella sivulla.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · kirjasto yhteydenottosivulla, jota jakelee jsDelivr.",
+ "cookies.h2_never": "Mitä emme tee",
+ "cookies.p_never": "Emme käytä omaa analytiikkaa, mainontaa, profilointia emmekä seurantaevästeitä. Emme myöskään myy tietoja. Verkkosivusto on GitHub Pagesissa, joka voi omien käytäntöjensä mukaan kirjata IP-osoitteesi sivuja tarjotessaan.",
+ "cookies.h2_change": "Muuta valintaasi",
+ "cookies.p_change": "Voit muuttaa sitä milloin tahansa kohdasta ”Evästeasetukset” minkä tahansa sivun alareunassa. Voit myös tyhjentää verkkosivuston tiedot selaimen asetuksista. Jos peruutat suostumuksesi, sivu latautuu uudelleen ilman kolmannen osapuolen osia.",
+ "cookies.h2_more": "Lisätietoja",
+ "cookies.p_more": "Sovelluksen tietosuojakäytäntö kertoo, mitä tietoja Lecturameter käsittelee puhelimessasi. Jos sinulla on kysyttävää, kirjoita osoitteeseen lecturameter.app@gmail.com."
 }

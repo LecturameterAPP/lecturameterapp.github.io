@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; פרויקט עצמאי",
  "common.footer.home": "בית",
  "common.footer.privacy": "פרטיות",
- "head.index.title": "Lecturameter · מעקב קריאה וסטטיסטיקות ספרים",
- "head.index.description": "עקוב אחרי זמן הקריאה, העמודים, הקצב וההתקדמות שלך עם מעקב קריאה פרטי ל-Android ול-iPhone. בלי חשבון, בלי פרסומות. ייבוא מ-Goodreads ומ-StoryGraph.",
+ "head.index.title": "Lecturameter: מעקב קריאה · סטטיסטיקות ספרים וטיימר",
+ "head.index.description": "Lecturameter: מעקב קריאה ל-Android ול-iPhone. מדוד את זמן הקריאה, עקוב אחר עמודים, קצב וסטטיסטיקות, וייבא מ-Goodreads. בלי חשבון ובלי פרסומות.",
  "head.index.ld_description": "ארגן את הספרייה שלך, מדוד סשנים של קריאה וצפה בסטטיסטיקות מפורטות בטלפון ה-Android או ה-iPhone שלך. בלי פרסומות, פרטי לגמרי.",
  "head.index.ld_featurelist": "ספרייה עם מדפים, שעון עצר גם כשהמסך כבוי, היסטוריית סשנים, מפת חום, Wrapped שנתי, אתגרי קריאה מותאמים אישית, גיבוי ב-Google Drive, ייבוא CSV מ-Goodreads, עובדת ברובה ללא חיבור",
  "head.index.faq1_q": "אפשר להביא את הספרייה שלי מאפליקציות אחרות?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "אירועים · שתי ערכות נושא חדשות ל-Pro",
  "release.3_9.new": [
   "<strong>אירועים:</strong> אתגרי קריאה עולמיים ו-Lecturameter Quest כשיש אחד פעיל",
+  "<strong>מושהה:</strong> הנח ספר בצד לזמן מה בלי לקלקל את הסטטיסטיקות שלך",
   "<strong>שתי ערכות נושא חדשות ל-Pro:</strong> מחברת וחורשה",
   "שעון עצר משלו לכל ערכת נושא",
   "Pagi בוחר לך ספר מתוך רוצה לקרוא",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "לכל שאלה לגבי תנאים אלה: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> או <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "תנאי שימוש – Lecturameter",
  "legal.terms.meta_description": "תנאים ברורים, בלי אותיות קטנות.",
- "common.footer.drakehold": "מאותו יוצר: <strong>Drakehold</strong>, הארכיון האישי שלך שמסדר את עצמו. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">הצטרפו לרשימת ההמתנה ←</a>"
+ "common.footer.drakehold": "מאותו יוצר: <strong>Drakehold</strong>, הארכיון האישי שלך שמסדר את עצמו. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">הצטרפו לרשימת ההמתנה ←</a>",
+ "seo.store_name": "Lecturameter: מעקב קריאה",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "אירועים",
+ "common.footer.events": "אירועים",
+ "common.footer.cookies": "מדיניות קובצי Cookie",
+ "common.footer.cookie_prefs": "העדפות קובצי Cookie",
+ "js.consent_title": "קובצי Cookie ואחסון",
+ "js.consent_body": "אנחנו משתמשים בווידג'ט של צד שלישי (StartupBar) ששומר נתונים בדפדפן שלך וסופר חשיפות. הוא נטען רק אם תאשר. ערכת הנושא, השפה וההודעה שסגרת נשמרות בלי לשאול, כי אתה בחרת אותן.",
+ "js.consent_accept": "אישור",
+ "js.consent_reject": "דחייה",
+ "js.consent_policy": "מדיניות קובצי Cookie",
+ "js.consent_prefs": "העדפות קובצי Cookie",
+ "home.paused.tag": "חדש ב-3.9",
+ "home.paused.title": "הנח ספר בצד לזמן מה בלי לקלקל את הסטטיסטיקות שלך",
+ "home.paused.sub": "\"מושהה\" הוא מצב נפרד, שונה מ\"ננטש\". הספר מחכה איפה שהפסקת, וימי ההשהיה לא נספרים.",
+ "home.paused.tab_pending": "רוצה לקרוא",
+ "home.paused.tab_reading": "קורא כעת",
+ "home.paused.tab_paused": "מושהה",
+ "home.paused.tab_dropped": "ננטש",
+ "home.paused.timeline_caption": "ימי ההשהיה לא נספרים",
+ "home.paused.cards": [
+  {
+   "title": "מצב נפרד",
+   "text": "\"מושהה\" אינו \"ננטש\". הספר שלך לא עובר לערימת הספרים שוויתרת עליהם: הוא ממתין וחוזר מתי שתרצה."
+  },
+  {
+   "title": "מ\"קורא כעת\" או \"קריאה חוזרת\"",
+   "text": "שנה את המצב מהתג בעמוד הספר או עם \"שנה מצב\" בתפריט המהיר. זה עובד עבור ספרים, קומיקס, מנגה וספרי שמע."
+  },
+  {
+   "title": "ימי ההשהיה לא נספרים",
+   "text": "לא בימים עד הסיום ולא במהירות הקריאה שלך. הסטטיסטיקות נשארות כפי שהיו כשקראת."
+  },
+  {
+   "title": "הערה, אם רוצים",
+   "text": "כשאתה משהה וכשאתה ממשיך, אפשר לרשום למה. זה אופציונלי. הכול נשאר בקטע \"השהיות\" בעמוד הספר, עם ההיסטוריה שלו."
+  },
+  {
+   "title": "לשונית משלו",
+   "text": "בספרייה שלך, בין \"רוצה לקרוא\" ל\"ננטש\", תמצא את הספרים המושהים."
+  },
+  {
+   "title": "תזכורות והמשך אוטומטי",
+   "text": "התזכורות של אותו ספר מושהות וחוזרות כשתמשיך בו. אם תמדוד סשן או שיגיע אחד מ-KOReader, הספר ממשיך מעצמו, עם הודעה ואפשרות ביטול."
+  }
+ ],
+ "home.cards.tag": "שיתוף",
+ "home.cards.title": "Lecturameter אינה רשת חברתית. הכרטיסים שלך הולכים לרשת שבה אתה משתמש.",
+ "home.cards.sub": "צור כרטיסים אנכיים בגודל 1080×1920, מוכנים לסטוריז, ושתף אותם איפה שאתה כבר נמצא. בלי חשבון, בלי פרופיל ובלי עוקבים.",
+ "home.cards.chips": [
+  "ספר",
+  "ספר שהסתיים",
+  "סטטיסטיקות הספר",
+  "סטטיסטיקות",
+  "סיכום שבועי",
+  "סיכום חודשי",
+  "אתגרים",
+  "Bingo",
+  "Wrapped",
+  "אירוע",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "בחר מה להציג",
+   "text": "ספר, ספר שזה עתה סיימת, הסטטיסטיקות שלך, השבוע או החודש שלך, אתגר, Bingo, Wrapped או אירוע."
+  },
+  {
+   "title": "נשמר ב\"הכרטיסים שלי\"",
+   "text": "כל מה ששיתפת נשאר ב\"הכרטיסים שלי\", כך שאפשר להשתמש בו שוב מתי שתרצה."
+  },
+  {
+   "title": "שתף איפה שאתה כבר נמצא",
+   "text": "דרך תפריט השיתוף של הטלפון, אל האפליקציה שבה אתה כבר משתמש. או שמור בגלריה."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · פורמט סטורי",
+ "home.events.tag": "אירועים",
+ "home.events.title": "קרא עם הקהילה. שחק עם הספרייה שלך.",
+ "home.events.sub": "אירועים מופיעים באפליקציה כשאחד מהם פעיל. כיום יש שני סוגים: אתגר קריאה עולמי ומשחק קלפים עם הספרים שלך.",
+ "home.events.demo_label": "דוגמה להמחשה",
+ "home.events.read.kicker": "אתגר עולמי · 14 ימים",
+ "home.events.read.title": "הקריאה הגדולה",
+ "home.events.read.items": [
+  "דקות הטיימר נספרות, בספרים, קומיקס, מנגה וספרי שמע.",
+  "יעד משותף לכל הקהילה. אם עוברים אותו, הספירה נמשכת.",
+  "טבלת דירוג חיה עם כינוי בדוי וה-Pagi שלך כאווטאר.",
+  "בסיום, כרטיס האירוע עם המקום שלך, לכל משתתף."
+ ],
+ "home.events.read.goal": "יעד הקהילה",
+ "home.events.read.board": "טבלת דירוג",
+ "home.events.read.you": "אתה",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "הספרייה הנשכחת",
+ "home.events.quest.items": [
+  "בחר 3 ספרים מהספרייה שלך: כל אחד הופך לכרטיס עם הארכיטיפ של הז'אנר שלו.",
+  "ריצות של 5 עד 10 דקות כדי לחצות את המדפים ולנצח את הבוס האחרון.",
+  "טבלת נקודות: 3 הריצות הטובות שלך בכל יום נספרות.",
+  "חסרים ספרים? הספרייה משאילה לך כרכים, אחד לכל ארכיטיפ."
+ ],
+ "home.events.note": "כדי להשתתף צריך להיות בן 16 ומעלה. אם אין כרגע אירוע פעיל, האפליקציה תגיד לך.",
+ "cookies.title": "מדיניות קובצי Cookie · Lecturameter",
+ "cookies.meta_description": "מה אתר Lecturameter שומר בדפדפן שלך, למה, ואיך משנים את הבחירה. בלי ניתוח או פרסום משלנו.",
+ "cookies.h1": "🍪 מדיניות קובצי Cookie",
+ "cookies.tagline": "מה נשמר בדפדפן שלך כשאתה מבקר באתר הזה, ולמה.",
+ "cookies.updated": "עודכן ב-8 בנובמבר 2026",
+ "cookies.summary_title": "בקצרה",
+ "cookies.summary": "האתר הזה לא משתמש בקובצי Cookie משלו לניתוח או לפרסום. הוא שומר בדפדפן שלך את ההעדפות שלך (ערכת נושא, שפה, הודעה שנסגרה) ואת הבחירה שלך לגבי המדיניות הזו. ווידג'ט של צד שלישי, StartupBar, נטען רק אם תלחץ \"אישור\".",
+ "cookies.h2_stored": "מה נשמר",
+ "cookies.p_stored": "הכול נמצא באחסון המקומי של הדפדפן (localStorage או sessionStorage). האתר הזה לא כותב קובצי HTTP Cookie משלו.",
+ "cookies.h3_essential": "ההעדפות שלך (לא נדרשת הסכמה)",
+ "cookies.p_essential": "אנחנו שומרים אותן כי ביקשת אותן בעצם השימוש באתר. הן לא מזהות אף אחד ולעולם לא עוזבות את הדפדפן שלך.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · זוכר אם בחרת ערכת נושא בהירה או כהה · עד שתנקה אותו.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · זוכר את השפה שבחרת בבורר · עד שתנקה אותו.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · זוכר שסגרת את הסרגל העליון · עד שתנקה אותו.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · שומר את הבחירה שלך בהודעת ה-Cookie, עם הגרסה והתאריך שלה · עד שתשנה או תנקה אותו.",
+ "cookies.h3_optional": "רק אם תאשר",
+ "cookies.p_optional": "אם תלחץ \"אישור\", הרכיבים האלה של צד שלישי נטענים. אם תלחץ \"דחייה\", שום דבר מזה לא נטען והאתר פועל אותו דבר.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · ווידג'ט עם iframe של צד שלישי, ששומר <code>startupbar:sid</code> ב-sessionStorage (עד שתסגור את הלשונית) ושולח אות חשיפה. כל עמוד באתר טוען אותו.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · ספרייה בעמוד יצירת הקשר, המסופקת על ידי jsDelivr.",
+ "cookies.h2_never": "מה אנחנו לא עושים",
+ "cookies.p_never": "אנחנו לא משתמשים בניתוח משלנו, בפרסום, בפרופיילינג או בקובצי מעקב. אנחנו גם לא מוכרים נתונים. האתר מתארח ב-GitHub Pages, שעשוי לתעד את ה-IP שלך בעת הגשת העמודים לפי המדיניות שלו.",
+ "cookies.h2_change": "שנה את הבחירה",
+ "cookies.p_change": "אפשר לשנות אותה בכל עת דרך \"העדפות קובצי Cookie\" בתחתית כל עמוד. אפשר גם למחוק את נתוני האתר בהגדרות הדפדפן. אם תבטל את ההסכמה, העמוד ייטען מחדש בלי הרכיבים של צד שלישי.",
+ "cookies.h2_more": "מידע נוסף",
+ "cookies.p_more": "מדיניות הפרטיות של האפליקציה מסבירה אילו נתונים Lecturameter מטפלת בהם בטלפון שלך. לשאלות כתוב אל lecturameter.app@gmail.com."
 }

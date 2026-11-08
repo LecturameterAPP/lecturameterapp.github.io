@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Független projekt",
  "common.footer.home": "Kezdőlap",
  "common.footer.privacy": "Adatvédelem",
- "head.index.title": "Lecturameter · Olvasásnapló és könyvstatisztika",
- "head.index.description": "Kövesd az olvasási idődet, oldalaidat, tempódat és haladásodat egy privát androidos és iPhone-os olvasásnaplóval. Fiók és reklámok nélkül. Importálás Goodreadsről és StoryGraphről.",
+ "head.index.title": "Lecturameter: Olvasási napló · Statisztika és időzítő",
+ "head.index.description": "Lecturameter: Olvasási napló Androidra és iPhone-ra. Mérd az olvasást, kövesd az oldalakat, a tempót és a statisztikát, importálj a Goodreadsből. Fiók és reklám nélkül.",
  "head.index.ld_description": "Rendezd a könyvtáradat, mérd az olvasási munkameneteidet, és nézz részletes statisztikát androidos vagy iPhone-os telefonodon. Reklámok nélkül, teljesen privát.",
  "head.index.ld_featurelist": "Könyvtár polcokkal, időzítő kikapcsolt képernyővel, munkamenet-előzmények, hőtérkép, éves Wrapped, testreszabható olvasási kihívások, Google Drive-os biztonsági mentés, Goodreads CSV importálás, nagyrészt offline",
  "head.index.faq1_q": "Áthozhatom a könyvtáramat más appokból?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Események · Két új Pro téma",
  "release.3_9.new": [
   "<strong>Események:</strong> globális olvasási kihívások és Lecturameter Quest, amikor van aktív",
+  "<strong>Szüneteltetve:</strong> tegyél félre egy könyvet egy időre anélkül, hogy tönkremenne a statisztikád",
   "<strong>Két új Pro téma:</strong> Füzet és Erdő",
   "Saját időzítő óra minden témához",
   "A Pagi választ egy könyvet az Elolvasandó listáról",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Ha bármilyen kérdésed van ezekkel a Feltételekkel kapcsolatban: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> vagy <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Felhasználási feltételek – Lecturameter",
  "legal.terms.meta_description": "Világos feltételek, apró betűs rész nélkül.",
- "common.footer.drakehold": "Ugyanattól a készítőtől: <strong>Drakehold</strong>, a személyes archívumod, amely magától rendezi magát. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Csatlakozz a várólistához →</a>"
+ "common.footer.drakehold": "Ugyanattól a készítőtől: <strong>Drakehold</strong>, a személyes archívumod, amely magától rendezi magát. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Csatlakozz a várólistához →</a>",
+ "seo.store_name": "Lecturameter: Olvasási napló",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Események",
+ "common.footer.events": "Események",
+ "common.footer.cookies": "Sütiszabályzat",
+ "common.footer.cookie_prefs": "Süti-beállítások",
+ "js.consent_title": "Sütik és tárolás",
+ "js.consent_body": "Egy harmadik fél widgetjét (StartupBar) használjuk, amely adatokat tárol a böngésződben, és megjelenéseket számol. Csak akkor töltődik be, ha elfogadod. A témád, a nyelved és a bezárt értesítés kérdés nélkül mentődik, mert te választottad őket.",
+ "js.consent_accept": "Elfogadom",
+ "js.consent_reject": "Elutasítom",
+ "js.consent_policy": "Sütiszabályzat",
+ "js.consent_prefs": "Süti-beállítások",
+ "home.paused.tag": "Újdonság a 3.9-ben",
+ "home.paused.title": "Tegyél félre egy könyvet egy időre anélkül, hogy tönkremenne a statisztikád",
+ "home.paused.sub": "A Szüneteltetve külön állapot, más, mint az Elhagyott. A könyv ott vár, ahol abbahagytad, a szüneteltetett napok pedig nem számítanak.",
+ "home.paused.tab_pending": "Elolvasandó",
+ "home.paused.tab_reading": "Olvasás",
+ "home.paused.tab_paused": "Szüneteltetve",
+ "home.paused.tab_dropped": "Elhagyott",
+ "home.paused.timeline_caption": "A szüneteltetett napok nem számítanak",
+ "home.paused.cards": [
+  {
+   "title": "Külön állapot",
+   "text": "A Szüneteltetve nem Elhagyott. A könyved nem kerül a feladott könyvek közé: vár, és bármikor visszatér, amikor akarod."
+  },
+  {
+   "title": "Az Olvasásból vagy Újraolvasásból",
+   "text": "Az állapotot a könyv oldalán lévő jelvényről vagy a gyorsmenü „Állapot módosítása” pontjával változtathatod. Könyvekre, képregényekre, mangára és hangoskönyvekre is működik."
+  },
+  {
+   "title": "A szüneteltetett napok nem számítanak",
+   "text": "Sem a befejezésig hátralévő napokba, sem az olvasási sebességedbe. A statisztikád olyan marad, amilyen olvasás közben volt."
+  },
+  {
+   "title": "Egy jegyzet, ha szeretnéd",
+   "text": "Szüneteltetéskor és folytatáskor leírhatod az okot. Nem kötelező. Minden a könyv oldalának „Szünetek” szakaszában marad, az előzményeivel együtt."
+  },
+  {
+   "title": "Saját fül",
+   "text": "A könyvtáradban, az Elolvasandó és az Elhagyott között találod a szüneteltetett könyveidet."
+  },
+  {
+   "title": "Emlékeztetők és önálló folytatás",
+   "text": "A könyv emlékeztetői szünetelnek, és visszatérnek, amikor folytatod. Ha időzítesz egy munkamenetet, vagy érkezik egy a KOReaderből, a könyv magától folytatódik, értesítéssel és Visszavonás lehetőséggel."
+  }
+ ],
+ "home.cards.tag": "Megosztás",
+ "home.cards.title": "A Lecturameter nem közösségi hálózat. A kártyáid arra mennek, amelyiket használod.",
+ "home.cards.sub": "Készíts álló, 1080×1920-as kártyákat, sztorikhoz készen, és oszd meg ott, ahol már vagy. Fiók, profil és követők nélkül.",
+ "home.cards.chips": [
+  "Könyv",
+  "Befejezett könyv",
+  "Könyv statisztikái",
+  "Statisztika",
+  "Heti összegzés",
+  "Havi összegzés",
+  "Kihívások",
+  "Bingo",
+  "Wrapped",
+  "Esemény",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Válaszd ki, mit mutatsz",
+   "text": "Egy könyvet, egy most befejezettet, a statisztikádat, a heted vagy a hónapod, egy kihívást, Bingót, Wrappedet vagy egy eseményt."
+  },
+  {
+   "title": "Elmentve a „Kártyáim” között",
+   "text": "Minden, amit megosztasz, a Kártyáim között marad, hogy bármikor újra felhasználhasd."
+  },
+  {
+   "title": "Oszd meg ott, ahol már vagy",
+   "text": "A telefonod megosztás menüjén át abba az alkalmazásba, amelyet már használsz. Vagy mentsd a galériába."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · sztori formátum",
+ "home.events.tag": "Események",
+ "home.events.title": "Olvass a közösséggel. Játssz a könyvtáraddal.",
+ "home.events.sub": "Az események akkor jelennek meg az alkalmazásban, ha éppen van aktív. Ma kétféle van: egy globális olvasási kihívás és egy kártyajáték a saját könyveiddel.",
+ "home.events.demo_label": "Szemléltető példa",
+ "home.events.read.kicker": "Globális kihívás · 14 nap",
+ "home.events.read.title": "A Nagy Olvasás",
+ "home.events.read.items": [
+  "Az időzítő percei számítanak, könyvekben, képregényekben, mangában és hangoskönyvekben.",
+  "Közös cél az egész közösségnek. Ha túlteljesítik, tovább számít.",
+  "Élő ranglista álnévvel és a Pagi-del avatarként.",
+  "A végén az esemény kártyája a helyezéseddel, minden résztvevőnek."
+ ],
+ "home.events.read.goal": "Közösségi cél",
+ "home.events.read.board": "Ranglista",
+ "home.events.read.you": "te",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Az elfeledett könyvtár",
+ "home.events.quest.items": [
+  "Válassz 3 könyvet a könyvtáradból: mindegyikből egy kártya lesz a műfaja archetípusával.",
+  "5–10 perces körök, hogy átkelj a polcokon és legyőzd a végső főnököt.",
+  "Pontranglista: minden nap a 3 legjobb köröd számít.",
+  "Kevés a könyved? A könyvtár köteteket kölcsönöz neked, archetípusonként egyet."
+ ],
+ "home.events.note": "A részvételhez legalább 16 évesnek kell lenned. Ha éppen nincs aktív esemény, az alkalmazás szól.",
+ "cookies.title": "Sütiszabályzat · Lecturameter",
+ "cookies.meta_description": "Mit tárol a Lecturameter weboldala a böngésződben, mire, és hogyan módosíthatod a döntésedet. Saját analitika és reklám nélkül.",
+ "cookies.h1": "🍪 Sütiszabályzat",
+ "cookies.tagline": "Mit tárol a böngésződ, amikor meglátogatod ezt a weboldalt, és miért.",
+ "cookies.updated": "Frissítve: 2026. november 8.",
+ "cookies.summary_title": "Röviden",
+ "cookies.summary": "Ez a weboldal nem használ saját analitikai vagy reklámsütiket. A böngésződben tárolja a beállításaidat (téma, nyelv, bezárt értesítés) és a szabályzattal kapcsolatos döntésedet. Egy harmadik fél widgetje, a StartupBar, csak akkor töltődik be, ha az „Elfogadom” gombot nyomod.",
+ "cookies.h2_stored": "Mit tárolunk",
+ "cookies.p_stored": "Minden a böngésződ helyi tárolójában van (localStorage vagy sessionStorage). Ez a weboldal nem ír saját HTTP-sütiket.",
+ "cookies.h3_essential": "A beállításaid (nem kell hozzájárulás)",
+ "cookies.p_essential": "Azért tároljuk őket, mert a weboldal használatával te kérted. Senkit nem azonosítanak, és soha nem hagyják el a böngésződet.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · megjegyzi, hogy a világos vagy a sötét témát választottad · amíg nem törlöd.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · megjegyzi a választóban kiválasztott nyelvet · amíg nem törlöd.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · megjegyzi, hogy bezártad a felső sávot · amíg nem törlöd.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · eltárolja a döntésedet a sütiértesítésben, annak verziójával és dátumával · amíg nem módosítod vagy törlöd.",
+ "cookies.h3_optional": "Csak ha elfogadod",
+ "cookies.p_optional": "Ha az „Elfogadom” gombot nyomod, ezek a harmadik felek elemei betöltődnek. Ha az „Elutasítom” gombot nyomod, ezekből semmi nem töltődik be, és a weboldal ugyanúgy működik.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · harmadik fél iframe-jével rendelkező widget, amely a <code>startupbar:sid</code> értéket a sessionStorage-ban tárolja (a lap bezárásáig), és megjelenési jelzést küld. A weboldal minden oldala betölti.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · könyvtár a kapcsolat oldalon, a jsDelivr szolgálja ki.",
+ "cookies.h2_never": "Amit nem csinálunk",
+ "cookies.p_never": "Nem használunk saját analitikát, reklámot, profilalkotást vagy követősütiket. Adatot sem adunk el. A weboldal a GitHub Pagesen fut, amely az oldalak kiszolgálásakor a saját szabályzata szerint naplózhatja az IP-címedet.",
+ "cookies.h2_change": "Módosítsd a döntésedet",
+ "cookies.p_change": "Bármikor megváltoztathatod bármelyik oldal láblécében a „Süti-beállítások” pontnál. A weboldal adatait a böngésző beállításaiban is törölheted. Ha visszavonod a hozzájárulásodat, az oldal a harmadik felek elemei nélkül töltődik újra.",
+ "cookies.h2_more": "További információ",
+ "cookies.p_more": "Az alkalmazás adatvédelmi tájékoztatója elmagyarázza, milyen adatokat kezel a Lecturameter a telefonodon. Ha kérdésed van, írj ide: lecturameter.app@gmail.com."
 }

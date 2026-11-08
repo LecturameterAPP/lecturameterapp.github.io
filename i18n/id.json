@@ -470,8 +470,8 @@
  "common.footer.2026_lecturameter_independent_proj_2": "&#xA9; 2026 Lecturameter &#xB7; Proyek independen",
  "common.footer.home": "Beranda",
  "common.footer.privacy": "Privasi",
- "head.index.title": "Lecturameter · Pelacak Bacaan & Statistik Buku",
- "head.index.description": "Catat waktu membaca, halaman, ritme, dan kemajuanmu dengan pelacak bacaan pribadi untuk Android dan iPhone. Tanpa akun, tanpa iklan. Impor dari Goodreads dan StoryGraph.",
+ "head.index.title": "Lecturameter: Jurnal Baca · Statistik buku & timer",
+ "head.index.description": "Lecturameter: Jurnal Baca untuk Android dan iPhone. Catat waktu baca, pantau halaman, kecepatan, dan statistik, lalu impor dari Goodreads. Tanpa akun, tanpa iklan.",
  "head.index.ld_description": "Atur perpustakaanmu, catat waktu sesi membaca, dan lihat statistik detail di ponsel Android atau iPhone-mu. Tanpa iklan, sepenuhnya pribadi.",
  "head.index.ld_featurelist": "Perpustakaan dengan rak, pengatur waktu saat layar mati, riwayat sesi, peta panas, Wrapped tahunan, tantangan membaca yang bisa diatur, cadangan Google Drive, impor CSV Goodreads, sebagian besar offline",
  "head.index.faq1_q": "Bisakah aku membawa perpustakaanku dari aplikasi lain?",
@@ -568,6 +568,7 @@
  "release.3_9.headline": "Acara · Dua tema Pro baru",
  "release.3_9.new": [
   "<strong>Acara:</strong> tantangan membaca global dan Lecturameter Quest saat ada yang aktif",
+  "<strong>Dijeda:</strong> simpan buku sementara tanpa mengacaukan statistikmu",
   "<strong>Dua tema Pro baru:</strong> Buku Tulis dan Hutan",
   "Jam pengatur waktu tersendiri untuk setiap tema",
   "Pagi memilihkan buku dari Ingin dibaca",
@@ -790,5 +791,133 @@
  "legal.terms.p_044": "Untuk pertanyaan apa pun tentang Ketentuan ini: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> atau <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Ketentuan Layanan – Lecturameter",
  "legal.terms.meta_description": "Ketentuan yang jelas, tanpa huruf kecil tersembunyi.",
- "common.footer.drakehold": "Dari pembuat yang sama: <strong>Drakehold</strong>, arsip pribadimu yang tertata sendiri. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Gabung daftar tunggu →</a>"
+ "common.footer.drakehold": "Dari pembuat yang sama: <strong>Drakehold</strong>, arsip pribadimu yang tertata sendiri. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Gabung daftar tunggu →</a>",
+ "seo.store_name": "Lecturameter: Jurnal Baca",
+ "anchor.paused": "paused",
+ "anchor.cards": "cards",
+ "anchor.events": "events",
+ "common.nav.events": "Acara",
+ "common.footer.events": "Acara",
+ "common.footer.cookies": "Kebijakan cookie",
+ "common.footer.cookie_prefs": "Preferensi cookie",
+ "js.consent_title": "Cookie dan penyimpanan",
+ "js.consent_body": "Kami memakai widget pihak ketiga (StartupBar) yang menyimpan data di browsermu dan menghitung tayangan. Widget ini hanya dimuat jika kamu menerima. Tema, bahasa, dan pemberitahuan yang kamu tutup disimpan tanpa bertanya, karena kamu sendiri yang memilihnya.",
+ "js.consent_accept": "Terima",
+ "js.consent_reject": "Tolak",
+ "js.consent_policy": "Kebijakan cookie",
+ "js.consent_prefs": "Preferensi cookie",
+ "home.paused.tag": "Baru di 3.9",
+ "home.paused.title": "Simpan buku sementara tanpa mengacaukan statistikmu",
+ "home.paused.sub": "Dijeda adalah status tersendiri, berbeda dari Ditinggalkan. Buku menunggu di tempat kamu berhenti, dan hari-hari saat dijeda tidak dihitung.",
+ "home.paused.tab_pending": "Ingin dibaca",
+ "home.paused.tab_reading": "Sedang dibaca",
+ "home.paused.tab_paused": "Dijeda",
+ "home.paused.tab_dropped": "Ditinggalkan",
+ "home.paused.timeline_caption": "Hari-hari saat dijeda tidak dihitung",
+ "home.paused.cards": [
+  {
+   "title": "Status tersendiri",
+   "text": "Dijeda bukan Ditinggalkan. Bukumu tidak masuk ke tumpukan buku yang kamu tinggalkan: ia menunggu dan kembali kapan pun kamu mau."
+  },
+  {
+   "title": "Dari Sedang dibaca atau Membaca ulang",
+   "text": "Ubah status lewat label di halaman buku atau dengan “Ubah status” di menu cepat. Berlaku untuk buku, komik, manga, dan buku audio."
+  },
+  {
+   "title": "Hari-hari saat dijeda tidak dihitung",
+   "text": "Tidak masuk dalam hari untuk menyelesaikan dan tidak masuk dalam kecepatan bacamu. Statistikmu tetap seperti saat kamu membaca."
+  },
+  {
+   "title": "Catatan, kalau mau",
+   "text": "Saat menjeda dan saat melanjutkan, kamu bisa menulis alasannya. Ini opsional. Semuanya tersimpan di bagian “Jeda” pada halaman buku, lengkap dengan riwayatnya."
+  },
+  {
+   "title": "Tab tersendiri",
+   "text": "Di perpustakaanmu, di antara Ingin dibaca dan Ditinggalkan, ada buku-buku yang kamu jeda."
+  },
+  {
+   "title": "Pengingat, dan lanjut sendiri",
+   "text": "Pengingat buku itu ikut dijeda dan kembali saat kamu melanjutkannya. Jika kamu mencatat sesi dengan timer atau ada sesi masuk dari KOReader, buku lanjut dengan sendirinya, disertai pemberitahuan dan opsi Urungkan."
+  }
+ ],
+ "home.cards.tag": "Bagikan",
+ "home.cards.title": "Lecturameter bukan jejaring sosial. Kartumu pergi ke jejaring yang kamu pakai.",
+ "home.cards.sub": "Buat kartu vertikal 1080×1920, siap untuk story, dan bagikan di tempat kamu sudah berada. Tanpa akun, tanpa profil, dan tanpa pengikut.",
+ "home.cards.chips": [
+  "Buku",
+  "Buku selesai",
+  "Statistik buku",
+  "Statistik",
+  "Ringkasan mingguan",
+  "Ringkasan bulanan",
+  "Tantangan",
+  "Bingo",
+  "Wrapped",
+  "Acara",
+  "Quest"
+ ],
+ "home.cards.steps": [
+  {
+   "title": "Pilih apa yang mau ditampilkan",
+   "text": "Sebuah buku, buku yang baru selesai, statistikmu, minggu atau bulanmu, sebuah tantangan, Bingo, Wrapped, atau sebuah acara."
+  },
+  {
+   "title": "Tersimpan di “Kartu saya”",
+   "text": "Semua yang kamu bagikan tetap ada di Kartu saya, jadi bisa dipakai lagi kapan pun kamu mau."
+  },
+  {
+   "title": "Bagikan di tempat kamu sudah berada",
+   "text": "Lewat menu bagikan di ponselmu, ke aplikasi yang sudah kamu pakai. Atau simpan ke galeri."
+  }
+ ],
+ "home.cards.size_label": "1080×1920 · format story",
+ "home.events.tag": "Acara",
+ "home.events.title": "Baca bersama komunitas. Bermain dengan perpustakaanmu.",
+ "home.events.sub": "Acara muncul di aplikasi saat ada yang aktif. Saat ini ada dua jenis: tantangan membaca global dan permainan kartu dengan bukumu sendiri.",
+ "home.events.demo_label": "Contoh ilustrasi",
+ "home.events.read.kicker": "Tantangan global · 14 hari",
+ "home.events.read.title": "Baca Besar",
+ "home.events.read.items": [
+  "Menit dari timer dihitung, untuk buku, komik, manga, dan buku audio.",
+  "Target bersama untuk seluruh komunitas. Jika terlampaui, tetap dihitung.",
+  "Papan peringkat langsung dengan alias samaran dan Pagi-mu sebagai avatar.",
+  "Setelah selesai, kartu acara dengan posisimu, untuk setiap peserta."
+ ],
+ "home.events.read.goal": "Target komunitas",
+ "home.events.read.board": "Papan peringkat",
+ "home.events.read.you": "kamu",
+ "home.events.quest.kicker": "Lecturameter Quest",
+ "home.events.quest.title": "Perpustakaan yang Terlupakan",
+ "home.events.quest.items": [
+  "Pilih 3 buku dari perpustakaanmu: masing-masing menjadi kartu dengan arketipe genrenya.",
+  "Putaran 5 sampai 10 menit untuk melintasi rak dan mengalahkan bos terakhir.",
+  "Papan peringkat poin: 3 putaran terbaikmu setiap hari dihitung.",
+  "Bukumu kurang? Perpustakaan meminjamkan jilid untukmu, satu per arketipe."
+ ],
+ "home.events.note": "Kamu harus berusia 16 tahun atau lebih untuk ikut. Jika sedang tidak ada acara aktif, aplikasi akan memberi tahu.",
+ "cookies.title": "Kebijakan cookie · Lecturameter",
+ "cookies.meta_description": "Apa yang disimpan situs web Lecturameter di browsermu, untuk apa, dan cara mengubah pilihanmu. Tanpa analitik atau iklan sendiri.",
+ "cookies.h1": "🍪 Kebijakan cookie",
+ "cookies.tagline": "Apa yang disimpan di browsermu saat mengunjungi situs web ini, dan mengapa.",
+ "cookies.updated": "Diperbarui 8 November 2026",
+ "cookies.summary_title": "Singkatnya",
+ "cookies.summary": "Situs web ini tidak memakai cookie analitik atau iklan sendiri. Situs ini menyimpan preferensimu (tema, bahasa, pemberitahuan yang ditutup) dan pilihanmu soal kebijakan ini di browser. Widget pihak ketiga, StartupBar, hanya dimuat jika kamu menekan “Terima”.",
+ "cookies.h2_stored": "Apa yang disimpan",
+ "cookies.p_stored": "Semuanya ada di penyimpanan lokal browsermu (localStorage atau sessionStorage). Situs web ini tidak menulis cookie HTTP sendiri.",
+ "cookies.h3_essential": "Preferensimu (tanpa perlu persetujuan)",
+ "cookies.p_essential": "Kami menyimpannya karena kamu memintanya lewat penggunaan situs web. Preferensi ini tidak mengidentifikasi siapa pun dan tidak pernah keluar dari browsermu.",
+ "cookies.li_theme": "<code>lm-theme</code> · localStorage · mengingat apakah kamu memilih tema terang atau gelap · sampai kamu menghapusnya.",
+ "cookies.li_lang": "<code>lm_lang</code> · localStorage · mengingat bahasa yang kamu pilih di pemilih bahasa · sampai kamu menghapusnya.",
+ "cookies.li_promo": "<code>promo-dismissed</code> · localStorage · mengingat bahwa kamu menutup bilah atas · sampai kamu menghapusnya.",
+ "cookies.li_consent": "<code>lm_consent</code> · localStorage · menyimpan pilihanmu pada pemberitahuan cookie, lengkap dengan versi dan tanggalnya · sampai kamu mengubah atau menghapusnya.",
+ "cookies.h3_optional": "Hanya jika kamu menerima",
+ "cookies.p_optional": "Jika kamu menekan “Terima”, elemen pihak ketiga ini dimuat. Jika kamu menekan “Tolak”, tidak ada yang dimuat dan situs web tetap berfungsi sama.",
+ "cookies.li_startupbar": "<strong>StartupBar</strong> (startupbar.co) · widget dengan iframe pihak ketiga, yang menyimpan <code>startupbar:sid</code> di sessionStorage (sampai kamu menutup tab) dan mengirim sinyal tayangan. Setiap halaman situs web memuatnya.",
+ "cookies.li_emailjs": "<strong>EmailJS</strong> (cdn.jsdelivr.net) · pustaka di halaman kontak, disajikan oleh jsDelivr.",
+ "cookies.h2_never": "Yang tidak kami lakukan",
+ "cookies.p_never": "Kami tidak memakai analitik sendiri, iklan, pembuatan profil, atau cookie pelacak. Kami juga tidak menjual data. Situs web ini dihosting di GitHub Pages, yang dapat mencatat IP-mu saat menyajikan halaman sesuai kebijakannya sendiri.",
+ "cookies.h2_change": "Ubah pilihanmu",
+ "cookies.p_change": "Kamu bisa mengubahnya kapan saja lewat “Preferensi cookie” di footer halaman mana pun. Kamu juga bisa menghapus data situs web ini dari pengaturan browser. Jika kamu menarik persetujuan, halaman dimuat ulang tanpa elemen pihak ketiga.",
+ "cookies.h2_more": "Informasi lebih lanjut",
+ "cookies.p_more": "Kebijakan privasi aplikasi menjelaskan data apa yang diolah Lecturameter di ponselmu. Jika ada pertanyaan, tulis ke lecturameter.app@gmail.com."
 }
