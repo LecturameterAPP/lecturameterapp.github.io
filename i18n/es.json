@@ -792,6 +792,6 @@
  "legal.terms.p_044": "Para cualquier consulta sobre estos Términos: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> o <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Términos de Servicio – Lecturameter",
  "legal.terms.meta_description": "Condiciones claras, sin letra pequeña.",
- "common.footer.drakehold": "Del mismo creador: <strong>Drakehold</strong>, tu archivo personal que se ordena solo. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Únete a la lista de espera →</a>",
+ "common.footer.drakehold": "Del mismo creador: <strong>Drakehold</strong>, tu archivo personal que se ordena solo. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Únete a la lista de espera →</a> Y también <a href=\"https://augur-web.appaugur.workers.dev/?utm_source=lecturameter\" target=\"_blank\" rel=\"noopener\">Augur</a>, diario de decisiones: predice, sella y revisa.",
  "legal.privacy.p_052_web": "<span class=\"highlight\">Contador de visitas de la web:</span> esta web (no la app) tiene un contador propio y anónimo, sin cookies y sin terceros. Registra la página que visitas, los clics en los enlaces a las tiendas, el país, el idioma de la página, el tipo de dispositivo (móvil o escritorio) y la web desde la que llegas. No guarda tu dirección IP ni nada que te identifique: solo un código anónimo que se recalcula cada día y no permite reconocerte de un día para otro. Si tu navegador envía «No rastrear», no se envía nada."
 }
