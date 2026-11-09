@@ -792,5 +792,6 @@
  "legal.terms.p_044": "För frågor om dessa villkor: <a href=\"contact.html\" style=\"color:var(--accent);\">contact.html</a> eller <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>",
  "legal.terms.title": "Användarvillkor – Lecturameter",
  "legal.terms.meta_description": "Tydliga villkor, inget finstilt.",
- "common.footer.drakehold": "Från samma skapare: <strong>Drakehold</strong>, ditt personliga arkiv som ordnar sig självt. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Gå med i väntelistan →</a>"
+ "common.footer.drakehold": "Från samma skapare: <strong>Drakehold</strong>, ditt personliga arkiv som ordnar sig självt. <a href=\"{{drakehold_url}}\" target=\"_blank\" rel=\"noopener\">Gå med i väntelistan →</a>",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Website visit counter:</span> this website (not the app) has its own anonymous counter, with no cookies and no third parties. It records the page you visit, your clicks on links to the stores, the country, the page language, the type of device (mobile or desktop) and the site you came from. It does not store your IP address or anything that identifies you: only an anonymous code that is recalculated every day and cannot be used to recognise you from one day to the next. If your browser sends \"Do Not Track\", nothing is sent."
 }
