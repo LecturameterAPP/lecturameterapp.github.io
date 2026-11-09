@@ -914,5 +914,5 @@
  "lm99.get.intro_live": "Lecturameter 99는 무료이며 iPhone과 Android에서 쓸 수 있어요.",
  "lm99.get.app_store": "App Store에서 다운로드",
  "lm99.get.play_soon": "Google Play 곧 출시",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Website visit counter:</span> this website (not the app) has its own anonymous counter, with no cookies and no third parties. It records the page you visit, your clicks on links to the stores, the country, the page language, the type of device (mobile or desktop) and the site you came from. It does not store your IP address or anything that identifies you: only an anonymous code that is recalculated every day and cannot be used to recognise you from one day to the next. If your browser sends \"Do Not Track\", nothing is sent."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">웹사이트 방문 카운터:</span> 이 웹사이트(앱이 아님)에는 쿠키도 제3자도 없는 자체 익명 카운터가 있습니다. 방문한 페이지, 스토어 링크 클릭, 국가, 페이지 언어, 기기 유형(휴대폰 또는 컴퓨터), 유입된 사이트를 기록합니다. IP 주소나 사용자를 식별할 수 있는 정보는 저장하지 않습니다. 매일 새로 계산되는 익명 코드만 사용하며, 이 코드로는 하루가 지난 뒤 사용자를 알아볼 수 없습니다. 브라우저가 \"Do Not Track\"을 보내면 아무것도 전송되지 않습니다."
 }

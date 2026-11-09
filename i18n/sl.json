@@ -914,5 +914,5 @@
  "lm99.get.intro_live": "Lecturameter 99 je brezplačen in na voljo za iPhone ter Android.",
  "lm99.get.app_store": "Prenesi iz App Store",
  "lm99.get.play_soon": "Kmalu v Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Website visit counter:</span> this website (not the app) has its own anonymous counter, with no cookies and no third parties. It records the page you visit, your clicks on links to the stores, the country, the page language, the type of device (mobile or desktop) and the site you came from. It does not store your IP address or anything that identifies you: only an anonymous code that is recalculated every day and cannot be used to recognise you from one day to the next. If your browser sends \"Do Not Track\", nothing is sent."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Števec obiskov spletnega mesta:</span> to spletno mesto (ne aplikacija) ima svoj anonimni števec, brez piškotkov in brez tretjih oseb. Beleži stran, ki jo obiščeš, tvoje klike na povezave do trgovin, državo, jezik strani, vrsto naprave (telefon ali računalnik) in spletno mesto, od koder prihajaš. Ne shranjuje tvojega naslova IP ali česar koli, kar bi te identificiralo: samo anonimno kodo, ki se vsak dan znova izračuna in ne omogoča, da bi te prepoznali iz enega dne v drugega. Če tvoj brskalnik pošilja »Do Not Track«, se ne pošlje nič."
 }
