@@ -913,5 +913,6 @@
  "lm99.get.intro": "Lecturameter 99 免费。iPhone 版已在 App Store 上架，Google Play 版即将推出。",
  "lm99.get.intro_live": "Lecturameter 99 免费，支持 iPhone 和 Android。",
  "lm99.get.app_store": "在 App Store 下载",
- "lm99.get.play_soon": "即将登陆 Google Play"
+ "lm99.get.play_soon": "即将登陆 Google Play",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Website visit counter:</span> this website (not the app) has its own anonymous counter, with no cookies and no third parties. It records the page you visit, your clicks on links to the stores, the country, the page language, the type of device (mobile or desktop) and the site you came from. It does not store your IP address or anything that identifies you: only an anonymous code that is recalculated every day and cannot be used to recognise you from one day to the next. If your browser sends \"Do Not Track\", nothing is sent."
 }

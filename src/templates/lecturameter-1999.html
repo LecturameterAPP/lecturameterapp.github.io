@@ -437,7 +437,7 @@
         </div>
         <div class="hero-cta lm99-get">
 {{#if app_store_1999_url}}
-            <a href="{{app_store_1999_url}}" target="_blank" rel="noopener" class="btn">{{lm99.get.app_store}}</a>
+            <a data-track="lm99-appstore" href="{{app_store_1999_url}}" target="_blank" rel="noopener" class="btn">{{lm99.get.app_store}}</a>
 {{/if}}
 {{#if play_1999_live}}
             <a href="{{play_1999_url}}" target="_blank" rel="noopener" class="btn">{{home.home.get_on_google_play}}</a>
@@ -474,5 +474,6 @@
 
 <script id="lm-i18n" type="application/json">{{lm_i18n_json}}</script>
 <script src="{{root}}main.js?v=6.5" defer></script>
+<script src="{{root}}hit.js?v=1" defer></script>
 </body>
 </html>
