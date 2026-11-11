@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Neki ljudi mogu vidjeti drukčiju cijenu jer provodimo eksperimente s cijenama.",
  "home.pricing.try_pro_free_for_7": "Isprobaj Pro besplatno 7 dana, u aplikaciji",
  "home.pricing.no_card_required_for_the": "Za probno razdoblje ne treba kartica",
- "home.pricing.leather_aurora_oled_and_dusk": "Teme Koža, Aurora, OLED i Sumrak",
+ "home.pricing.leather_aurora_oled_and_dusk": "Teme Koža, Aurora, OLED, Sumrak, Bilježnica i Šumarak",
  "home.pricing.immersive_timer": "Uronjena štoperica",
  "home.pricing.golden_alternative_icon": "Zlatna alternativna ikona",
  "home.pricing.monthly_comparison_widget": "Widget za mjesečnu usporedbu",
@@ -547,21 +547,41 @@
   "Promjena statusa knjige više ne briše datume ranijih čitanja.",
   "Mjesečni pregled broji i završene knjige bez sesija."
  ],
- "release.3_9.headline": "Događaji · Dvije nove Pro teme",
+ "release.3_9.headline": "Događaji · Brzi izbornik · Dvije nove Pro teme",
  "release.3_9.new": [
   "<strong>Događaji:</strong> globalni izazovi čitanja i Lecturameter Quest kada je neki aktivan",
+  "<strong>Brzi izbornik:</strong> prelazite iz odjeljka u odjeljak pomoću tri točkice (···), bez povratka na Početnu",
   "<strong>Pauzirano:</strong> odloži knjigu na neko vrijeme, a da ti ne pokvari statistiku",
   "<strong>Dvije nove Pro teme:</strong> Bilježnica i Šumarak",
+  "Pro teme mogu se kupiti i pojedinačno ili u paketima od 3, uz pretpregled, a Pro zaslon je nov",
+  "<strong>Nelinearno čitanje</strong> za antologije i zbirke pjesama: stranice koje se preklapaju ne broje se dvaput, a traka napretka podijeljena je na dionice",
+  "Počnite čitati s widgeta knjige, bez otvaranja aplikacije",
+  "Tjedni i mjesečni sažeci s novim dizajnom i više statistika",
+  "Neobavezna e-pošta u „Pošalji povratne informacije”, samo da vam mogu odgovoriti",
   "Poseban sat štoperice za svaku temu",
   "Pagi ti bira knjigu iz Želim čitati",
   "KOSync sa stvarnim vremenom čitanja iz KOReadera",
   "Obavijesti po kategoriji i obavijesti o novostima u aplikaciji",
+  "Početna s trakom grupiranom u Ciljeve, Moja čitanja i Alate",
+  "Promijenite stanje knjige iz njezinih prečaca i poništite ako pogriješite",
+  "Material ikone umjesto emojija i čitljivije statistike u svim temama",
+  "Obavijest kad dodate knjigu iz pretraživanja",
+  "Datumi ciklusa čitanja u jednom retku, lakši za uređivanje",
   "Bingo s 24 predloška po veličini",
+  "Na iPhoneu, Live Activity mjerača vremena u bojama vaše teme",
+  "Katalog uči iz pretraživanja i ISBN skeniranja bez rezultata i dodaje knjige koje nedostaju (od 15. studenoga)",
   "Tradicionalni kineski",
-  "Serija u CSV-u",
-  "Čitljivija Statistika"
+  "Serija u CSV-u"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Naslovi u Bingu, Wrappedu i drugim zaslonima sada su na istoj visini kao u ostalim izbornicima",
+  "Ikone Bingoa i Wrappeda ponovno imaju svoje boje",
+  "Brojači knjiga po stanju na Početnoj bolje se vide u temama Tamna, OLED, Sumrak, Aurora i Koža",
+  "Samo jedno upozorenje za knjige s nepotpunim podacima: žuti trokut nestaje, a crveni ostaje",
+  "Ponovno učitavanje naslovnice i žanra kaže vam kada je sve već bilo u redu i crveno upozorava kada nešto nije pronađeno",
+  "Sigurnosne kopije vrlo velikih knjižnica na Google Driveu više ne ne uspijevaju zbog nedostatka memorije",
+  "Nekoliko ispravaka na iPhoneu"
+ ],
  "roadmap.3_9.heading": "Što stiže u Lecturameteru 3.9",
  "roadmap.3_9.sub": "Izazovi čitanja za cijelu zajednicu, igra s <b>tvojim vlastitim knjigama</b> i obnovljeni početni zaslon. Bez fiksnih datuma: sve izlazi kad bude spremno.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Iz Čitanja ili Ponovnog čitanja",
-   "text": "Promijeni status iz oznake na stranici knjige ili s „Promijeni status“ u brzom izborniku. Radi za knjige, stripove, mangu i audioknjige."
+   "text": "Promijenite stanje pomoću pločice na stranici knjige ili pomoću „Promijeni stanje” u prečacima (dugo pritisnite karticu knjige). Radi za knjige, stripove, mange i audioknjige."
   },
   {
    "title": "Dani pauze se ne računaju",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Podijeli",
  "home.cards.title": "Lecturameter nije društvena mreža. Tvoje kartice idu na onu koju koristiš.",
- "home.cards.sub": "Izradi okomite kartice 1080×1920, spremne za storyje, i podijeli ih tamo gdje već jesi. Bez računa, bez profila i bez pratitelja.",
+ "home.cards.sub": "Izradi okomite kartice 1080×1920, spremne za storyje, i podijeli ih tamo gdje već jesi. Bez računa, bez profila i bez pratitelja. U verziji 3.9 tjedni i mjesečni sažeci dobivaju novi dizajn i više statistika.",
  "home.cards.chips": [
   "Knjiga",
   "Završena knjiga",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 je besplatan i dostupan za iPhone i za Android.",
  "lm99.get.app_store": "Preuzmi iz App Storea",
  "lm99.get.play_soon": "Uskoro na Google Playu",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Brojač posjeta web-mjesta:</span> ovo web-mjesto (ne aplikacija) ima vlastiti anonimni brojač, bez kolačića i bez trećih strana. Bilježi stranicu koju posjećuješ, tvoje klikove na poveznice prema trgovinama, državu, jezik stranice, vrstu uređaja (mobitel ili računalo) i web-mjesto s kojeg dolaziš. Ne sprema tvoju IP adresu niti išta što te identificira: samo anoniman kod koji se svaki dan iznova izračunava i ne omogućuje da te prepoznaju iz jednog dana u drugi. Ako tvoj preglednik šalje „Do Not Track“, ne šalje se ništa."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Brojač posjeta web-mjesta:</span> ovo web-mjesto (ne aplikacija) ima vlastiti anonimni brojač, bez kolačića i bez trećih strana. Bilježi stranicu koju posjećuješ, tvoje klikove na poveznice prema trgovinama, državu, jezik stranice, vrstu uređaja (mobitel ili računalo) i web-mjesto s kojeg dolaziš. Ne sprema tvoju IP adresu niti išta što te identificira: samo anoniman kod koji se svaki dan iznova izračunava i ne omogućuje da te prepoznaju iz jednog dana u drugi. Ako tvoj preglednik šalje „Do Not Track“, ne šalje se ništa.",
+ "home.quickmenu.title": "Prelazite iz odjeljka u odjeljak bez povratka na Početnu",
+ "home.quickmenu.sub": "Nekad je za prelazak s Bingoa na Postavke trebalo prvo proći kroz Početnu. Sada dodirnete tri točkice (···) u gornjem desnom kutu i odmah ste tamo.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Na gotovo svakom zaslonu",
+   "text": "Ikona s tri vodoravne točkice (···) nalazi se u gornjem desnom kutu. Ako je zaslon imao gumb za dijeljenje, on se pomiče lijevo od nje."
+  },
+  {
+   "title": "Iste grupe kao na Početnoj",
+   "text": "Ciljevi, Moja čitanja i Alati, uz Početnu, Postavke i Podaci i sigurnosne kopije. Odjeljak u kojem se nalazite istaknut je: dodirnite ga i vratit ćete se na njegov početak."
+  },
+  {
+   "title": "I na stranici knjige",
+   "text": "Otvorite izbornik s tri okomite točkice na stranici knjige i odaberite „Brzi izbornik”. Čarobnjaci korak po korak ga nemaju, kako ne biste izgubili ono što ispunjavate."
+  }
+ ],
+ "home.quickmenu.tag": "Novo u 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Brzi izbornik",
+ "home.quickmenu.groups": [
+  {
+   "title": "Ciljevi",
+   "text": "Događaji · Izazovi · Bingo"
+  },
+  {
+   "title": "Moja čitanja",
+   "text": "Statistika · Moje kartice · Wrapped"
+  },
+  {
+   "title": "Alati",
+   "text": "Podsjetnici · Upravljanje tagovima · Skeniraj ISBN"
+  },
+  {
+   "title": "Opći prečaci",
+   "text": "Početna · Postavke · Podaci i sigurnosne kopije"
+  }
+ ]
 }

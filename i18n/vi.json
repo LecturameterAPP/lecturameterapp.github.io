@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Một số người có thể thấy mức giá khác vì chúng tôi đang thử nghiệm giá.",
  "home.pricing.try_pro_free_for_7": "Dùng thử Pro miễn phí 7 ngày, ngay trong ứng dụng",
  "home.pricing.no_card_required_for_the": "Không cần thẻ để dùng thử",
- "home.pricing.leather_aurora_oled_and_dusk": "Các chủ đề Da, Aurora, OLED và Hoàng hôn",
+ "home.pricing.leather_aurora_oled_and_dusk": "Giao diện Da, Aurora, OLED, Hoàng hôn, Vở và Rừng",
  "home.pricing.immersive_timer": "Đồng hồ bấm giờ đắm chìm",
  "home.pricing.golden_alternative_icon": "Biểu tượng thay thế màu vàng",
  "home.pricing.monthly_comparison_widget": "Widget so sánh theo tháng",
@@ -547,21 +547,41 @@
   "Đổi trạng thái của một cuốn sách không còn xóa ngày của các lần đọc trước.",
   "Bản tổng kết hằng tháng cũng tính cả những cuốn đã đọc xong nhưng không có phiên nào."
  ],
- "release.3_9.headline": "Sự kiện · Hai giao diện Pro mới",
+ "release.3_9.headline": "Sự kiện · Menu nhanh · Hai giao diện Pro mới",
  "release.3_9.new": [
   "<strong>Sự kiện:</strong> thử thách đọc toàn cầu và Lecturameter Quest khi có sự kiện đang diễn ra",
+  "<strong>Menu nhanh:</strong> chuyển từ mục này sang mục khác bằng ba chấm (···), không cần quay về Trang chủ",
   "<strong>Tạm dừng:</strong> cất một cuốn sách sang bên một thời gian mà không làm hỏng thống kê của bạn",
   "<strong>Hai giao diện Pro mới:</strong> Vở và Rừng",
+  "Giao diện Pro còn có thể mua lẻ hoặc theo gói 3, có xem trước, và màn hình Pro được làm mới",
+  "<strong>Đọc không tuần tự</strong> cho tuyển tập và thi tập: các trang chồng nhau không bị tính hai lần và thanh tiến độ được chia thành từng đoạn",
+  "Bắt đầu đọc từ widget của sách, không cần mở ứng dụng",
+  "Bản tóm tắt theo tuần và theo tháng với thiết kế mới và nhiều số liệu hơn",
+  "Email tùy chọn trong “Gửi phản hồi”, chỉ để mình có thể trả lời bạn",
   "Đồng hồ bấm giờ riêng cho từng giao diện",
   "Pagi chọn giúp bạn một cuốn từ Muốn đọc",
   "KOSync với thời gian đọc thực của KOReader",
   "Thông báo theo danh mục và thông báo tin mới của ứng dụng",
+  "Trang chủ với thanh bên được nhóm thành Mục tiêu, Việc đọc của tôi và Công cụ",
+  "Đổi trạng thái sách từ thao tác nhanh và hoàn tác nếu bạn nhầm",
+  "Biểu tượng Material thay cho emoji và số liệu dễ đọc hơn ở mọi giao diện",
+  "Có thông báo khi thêm sách từ tìm kiếm",
+  "Ngày của các chu kỳ đọc trên một hàng, dễ chỉnh sửa hơn",
   "Bingo với 24 mẫu theo kích thước",
+  "Trên iPhone, Live Activity của đồng hồ bấm giờ theo màu giao diện của bạn",
+  "Danh mục học từ các lượt tìm kiếm và quét ISBN không có kết quả và bổ sung những sách còn thiếu (từ ngày 15 tháng 11)",
   "Tiếng Trung phồn thể",
-  "Bộ truyện trong CSV",
-  "Thống kê dễ đọc hơn"
+  "Bộ truyện trong CSV"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Tiêu đề ở Bingo, Wrapped và các màn hình khác giờ nằm cùng độ cao như ở các menu còn lại",
+  "Biểu tượng Bingo và Wrapped có lại màu sắc",
+  "Bộ đếm sách theo trạng thái ở Trang chủ dễ nhìn hơn trong các giao diện Tối, OLED, Hoàng hôn, Aurora và Da",
+  "Chỉ còn một cảnh báo cho sách thiếu dữ liệu: tam giác vàng biến mất, tam giác đỏ được giữ lại",
+  "Tải lại bìa và thể loại sẽ cho bạn biết khi mọi thứ vốn đã ổn, và cảnh báo màu đỏ khi không tìm thấy gì đó",
+  "Sao lưu Google Drive của các thư viện rất lớn không còn thất bại do thiếu bộ nhớ",
+  "Nhiều bản sửa lỗi trên iPhone"
+ ],
  "roadmap.3_9.heading": "Điều sắp đến trong Lecturameter 3.9",
  "roadmap.3_9.sub": "Thử thách đọc sách cho cả cộng đồng, một trò chơi chơi bằng <b>chính những cuốn sách của bạn</b> và Trang chủ mới. Không có ngày cố định: mọi thứ ra mắt khi sẵn sàng.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Từ Đang đọc hoặc Đọc lại",
-   "text": "Đổi trạng thái từ nhãn trên trang sách hoặc bằng “Đổi trạng thái” trong menu nhanh. Dùng được cho sách, truyện tranh, manga và sách nói."
+   "text": "Đổi trạng thái bằng nút hình viên thuốc trong trang sách hoặc bằng “Đổi trạng thái” trong thao tác nhanh (nhấn giữ thẻ sách). Áp dụng cho sách, truyện tranh, manga và sách nói."
   },
   {
    "title": "Những ngày tạm dừng không được tính",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Chia sẻ",
  "home.cards.title": "Lecturameter không phải mạng xã hội. Thẻ của bạn đi đến mạng bạn đang dùng.",
- "home.cards.sub": "Tạo thẻ dọc 1080×1920, sẵn sàng cho story, và chia sẻ ngay nơi bạn đang ở. Không tài khoản, không hồ sơ, không người theo dõi.",
+ "home.cards.sub": "Tạo thẻ dọc 1080×1920, sẵn sàng cho story, và chia sẻ ngay nơi bạn đang ở. Không tài khoản, không hồ sơ, không người theo dõi. Ở bản 3.9, bản tóm tắt theo tuần và theo tháng có thiết kế mới và nhiều số liệu hơn.",
  "home.cards.chips": [
   "Sách",
   "Sách đã đọc xong",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 miễn phí và có cho iPhone lẫn Android.",
  "lm99.get.app_store": "Tải trên App Store",
  "lm99.get.play_soon": "Sắp có trên Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Bộ đếm lượt truy cập trang web:</span> trang web này (không phải ứng dụng) có bộ đếm ẩn danh riêng, không dùng cookie và không có bên thứ ba. Bộ đếm ghi lại trang bạn truy cập, lượt nhấp của bạn vào các liên kết đến cửa hàng ứng dụng, quốc gia, ngôn ngữ của trang, loại thiết bị (điện thoại hoặc máy tính) và trang web bạn đến từ đó. Bộ đếm không lưu địa chỉ IP của bạn hay bất cứ thứ gì xác định được bạn: chỉ có một mã ẩn danh được tính lại mỗi ngày và không thể dùng để nhận ra bạn từ ngày này sang ngày khác. Nếu trình duyệt của bạn gửi tín hiệu \"Do Not Track\", sẽ không có gì được gửi đi."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Bộ đếm lượt truy cập trang web:</span> trang web này (không phải ứng dụng) có bộ đếm ẩn danh riêng, không dùng cookie và không có bên thứ ba. Bộ đếm ghi lại trang bạn truy cập, lượt nhấp của bạn vào các liên kết đến cửa hàng ứng dụng, quốc gia, ngôn ngữ của trang, loại thiết bị (điện thoại hoặc máy tính) và trang web bạn đến từ đó. Bộ đếm không lưu địa chỉ IP của bạn hay bất cứ thứ gì xác định được bạn: chỉ có một mã ẩn danh được tính lại mỗi ngày và không thể dùng để nhận ra bạn từ ngày này sang ngày khác. Nếu trình duyệt của bạn gửi tín hiệu \"Do Not Track\", sẽ không có gì được gửi đi.",
+ "home.quickmenu.title": "Chuyển giữa các mục mà không cần quay về Trang chủ",
+ "home.quickmenu.sub": "Trước đây, muốn đi từ Bingo sang Cài đặt, bạn phải ghé Trang chủ trước. Giờ chỉ cần chạm vào ba chấm (···) ở góc trên bên phải là đến thẳng nơi cần tới.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Trên hầu hết mọi màn hình",
+   "text": "Biểu tượng ba chấm ngang (···) nằm ở góc trên bên phải. Nếu màn hình có nút chia sẻ, nút đó sẽ dời sang bên trái."
+  },
+  {
+   "title": "Các nhóm giống như Trang chủ",
+   "text": "Mục tiêu, Việc đọc của tôi và Công cụ, cùng với Trang chủ, Cài đặt và Dữ liệu và bản sao lưu. Mục bạn đang ở được làm nổi bật: chạm vào đó để quay về đầu mục."
+  },
+  {
+   "title": "Cả trong trang sách",
+   "text": "Mở menu ba chấm dọc trong trang sách và chọn “Menu nhanh”. Các trình hướng dẫn từng bước không có menu này, để bạn không mất những gì đang điền."
+  }
+ ],
+ "home.quickmenu.tag": "Mới trong 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Menu nhanh",
+ "home.quickmenu.groups": [
+  {
+   "title": "Mục tiêu",
+   "text": "Sự kiện · Thử thách · Bingo"
+  },
+  {
+   "title": "Việc đọc của tôi",
+   "text": "Thống kê · Thẻ của tôi · Wrapped"
+  },
+  {
+   "title": "Công cụ",
+   "text": "Nhắc nhở · Quản lý thẻ · Quét mã ISBN"
+  },
+  {
+   "title": "Lối tắt chung",
+   "text": "Trang chủ · Cài đặt · Dữ liệu và bản sao lưu"
+  }
+ ]
 }

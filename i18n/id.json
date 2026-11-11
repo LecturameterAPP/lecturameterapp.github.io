@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Sebagian orang mungkin melihat harga yang berbeda karena kami sedang melakukan eksperimen harga.",
  "home.pricing.try_pro_free_for_7": "Coba Pro gratis 7 hari, di dalam aplikasi",
  "home.pricing.no_card_required_for_the": "Uji coba tanpa perlu kartu",
- "home.pricing.leather_aurora_oled_and_dusk": "Tema Kulit, Aurora, OLED, dan Senja",
+ "home.pricing.leather_aurora_oled_and_dusk": "Tema Kulit, Aurora, OLED, Senja, Buku Tulis, dan Hutan",
  "home.pricing.immersive_timer": "Pengatur waktu imersif",
  "home.pricing.golden_alternative_icon": "Ikon alternatif emas",
  "home.pricing.monthly_comparison_widget": "Widget perbandingan bulanan",
@@ -547,21 +547,41 @@
   "Mengubah status buku tidak lagi menghapus tanggal bacaan sebelumnya.",
   "Rekap bulanan juga menghitung buku selesai tanpa sesi."
  ],
- "release.3_9.headline": "Acara · Dua tema Pro baru",
+ "release.3_9.headline": "Acara · Menu cepat · Dua tema Pro baru",
  "release.3_9.new": [
   "<strong>Acara:</strong> tantangan membaca global dan Lecturameter Quest saat ada yang aktif",
+  "<strong>Menu cepat:</strong> pindah antarbagian dengan tiga titik (···), tanpa kembali ke Beranda",
   "<strong>Dijeda:</strong> simpan buku sementara tanpa mengacaukan statistikmu",
   "<strong>Dua tema Pro baru:</strong> Buku Tulis dan Hutan",
+  "Tema Pro juga bisa dibeli satuan atau paket isi 3, dengan pratinjau, dan layar Pro kini baru",
+  "<strong>Membaca nonlinear</strong> untuk antologi dan kumpulan puisi: halaman yang tumpang tindih tidak dihitung dua kali dan bilah progres dibagi menjadi segmen",
+  "Mulai membaca dari widget buku, tanpa membuka aplikasi",
+  "Ringkasan mingguan dan bulanan dengan desain baru dan lebih banyak statistik",
+  "Email opsional di “Kirim masukan”, hanya agar saya bisa membalasmu",
   "Jam pengatur waktu tersendiri untuk setiap tema",
   "Pagi memilihkan buku dari Ingin dibaca",
   "KOSync dengan waktu baca asli dari KOReader",
   "Notifikasi per kategori dan kabar terbaru aplikasi",
+  "Beranda dengan rail yang dikelompokkan menjadi Target, Bacaan saya, dan Alat",
+  "Ubah status buku dari aksi cepatnya, dan batalkan jika salah",
+  "Ikon Material menggantikan emoji dan statistik yang lebih mudah dibaca di semua tema",
+  "Pemberitahuan saat menambahkan buku dari pencarian",
+  "Tanggal siklus membaca dalam satu baris, lebih mudah diedit",
   "Bingo dengan 24 templat menurut ukuran",
+  "Di iPhone, Live Activity timer dengan warna tema kamu",
+  "Katalog belajar dari pencarian dan pemindaian ISBN yang tidak menemukan apa pun dan menambahkan buku yang belum ada (mulai 15 November)",
   "Mandarin Tradisional",
-  "Seri di CSV",
-  "Statistik lebih mudah dibaca"
+  "Seri di CSV"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Judul di Bingo, Wrapped, dan layar lain kini sejajar dengan menu lainnya",
+  "Ikon Bingo dan Wrapped mendapatkan kembali warnanya",
+  "Penghitung buku per status di Beranda lebih mudah terlihat di tema Gelap, OLED, Senja, Aurora, dan Kulit",
+  "Satu peringatan saja untuk buku dengan data tidak lengkap: segitiga kuning dihapus dan yang merah tetap ada",
+  "Memuat ulang sampul dan genre memberi tahu jika semuanya sudah beres, dan memperingatkan dengan warna merah jika ada yang tidak ditemukan",
+  "Pencadangan Google Drive untuk pustaka yang sangat besar tidak lagi gagal karena kehabisan memori",
+  "Beberapa perbaikan di iPhone"
+ ],
  "roadmap.3_9.heading": "Yang akan hadir di Lecturameter 3.9",
  "roadmap.3_9.sub": "Tantangan membaca untuk seluruh komunitas, permainan dengan <b>buku-bukumu sendiri</b>, dan Beranda baru. Tanpa tanggal pasti: semuanya rilis kalau sudah siap.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Dari Sedang dibaca atau Membaca ulang",
-   "text": "Ubah status lewat label di halaman buku atau dengan “Ubah status” di menu cepat. Berlaku untuk buku, komik, manga, dan buku audio."
+   "text": "Ubah status dari pil di halaman buku atau dengan “Ubah status” di aksi cepat (tekan lama kartu buku). Berlaku untuk buku, komik, manga, dan buku audio."
   },
   {
    "title": "Hari-hari saat dijeda tidak dihitung",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Bagikan",
  "home.cards.title": "Lecturameter bukan jejaring sosial. Kartumu pergi ke jejaring yang kamu pakai.",
- "home.cards.sub": "Buat kartu vertikal 1080×1920, siap untuk story, dan bagikan di tempat kamu sudah berada. Tanpa akun, tanpa profil, dan tanpa pengikut.",
+ "home.cards.sub": "Buat kartu vertikal 1080×1920, siap untuk story, dan bagikan di tempat kamu sudah berada. Tanpa akun, tanpa profil, dan tanpa pengikut. Di 3.9, ringkasan mingguan dan bulanan mendapat desain baru dengan lebih banyak statistik.",
  "home.cards.chips": [
   "Buku",
   "Buku selesai",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 gratis dan tersedia untuk iPhone dan Android.",
  "lm99.get.app_store": "Unduh di App Store",
  "lm99.get.play_soon": "Segera hadir di Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Penghitung kunjungan situs web:</span> situs web ini (bukan aplikasinya) memiliki penghitung anonim sendiri, tanpa cookie dan tanpa pihak ketiga. Penghitung ini mencatat halaman yang kamu kunjungi, klik kamu pada tautan ke toko aplikasi, negara, bahasa halaman, jenis perangkat (ponsel atau komputer) dan situs asalmu. Penghitung ini tidak menyimpan alamat IP kamu atau apa pun yang mengidentifikasi kamu: hanya kode anonim yang dihitung ulang setiap hari dan tidak bisa dipakai untuk mengenali kamu dari satu hari ke hari berikutnya. Jika peramban kamu mengirim \"Do Not Track\", tidak ada yang dikirim."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Penghitung kunjungan situs web:</span> situs web ini (bukan aplikasinya) memiliki penghitung anonim sendiri, tanpa cookie dan tanpa pihak ketiga. Penghitung ini mencatat halaman yang kamu kunjungi, klik kamu pada tautan ke toko aplikasi, negara, bahasa halaman, jenis perangkat (ponsel atau komputer) dan situs asalmu. Penghitung ini tidak menyimpan alamat IP kamu atau apa pun yang mengidentifikasi kamu: hanya kode anonim yang dihitung ulang setiap hari dan tidak bisa dipakai untuk mengenali kamu dari satu hari ke hari berikutnya. Jika peramban kamu mengirim \"Do Not Track\", tidak ada yang dikirim.",
+ "home.quickmenu.title": "Pindah antarbagian tanpa kembali ke Beranda",
+ "home.quickmenu.sub": "Dulu, untuk pindah dari Bingo ke Pengaturan, kamu harus mampir ke Beranda dulu. Sekarang cukup ketuk tiga titik (···) di pojok kanan atas dan langsung sampai.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Di hampir semua layar",
+   "text": "Ikon tiga titik horizontal (···) ada di pojok kanan atas. Jika layar punya tombol bagikan, tombol itu bergeser ke kirinya."
+  },
+  {
+   "title": "Grup yang sama seperti Beranda",
+   "text": "Target, Bacaan saya, dan Alat, plus Beranda, Pengaturan, dan Data dan cadangan. Bagian tempatmu berada ditandai: ketuk untuk kembali ke awalnya."
+  },
+  {
+   "title": "Di halaman buku juga",
+   "text": "Buka menu tiga titik vertikal di halaman buku dan pilih “Menu cepat”. Wizard langkah demi langkah tidak memilikinya, supaya isian kamu tidak hilang."
+  }
+ ],
+ "home.quickmenu.tag": "Baru di 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Menu cepat",
+ "home.quickmenu.groups": [
+  {
+   "title": "Target",
+   "text": "Acara · Tantangan · Bingo"
+  },
+  {
+   "title": "Bacaan saya",
+   "text": "Statistik · Kartu saya · Wrapped"
+  },
+  {
+   "title": "Alat",
+   "text": "Pengingat · Kelola tag · Pindai ISBN"
+  },
+  {
+   "title": "Pintasan umum",
+   "text": "Beranda · Pengaturan · Data dan cadangan"
+  }
+ ]
 }

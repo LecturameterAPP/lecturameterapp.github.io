@@ -622,7 +622,7 @@
         </div>
         <div class="paused-grid">
             <div class="paused-card reveal-up"><h3>A status of its own</h3><p>Paused is not Dropped. Your book doesn't go to the pile of books you gave up on: it's on hold and comes back whenever you want.</p></div>
-            <div class="paused-card reveal-up"><h3>From Reading or Rereading</h3><p>Change the status from the pill on the book's page or with “Change status” in the quick menu. It works for books, comics, manga and audiobooks.</p></div>
+            <div class="paused-card reveal-up"><h3>From Reading or Rereading</h3><p>Change the status from the pill on the book's page or with “Change status” in the quick actions (long-press the book's card). It works for books, comics, manga and audiobooks.</p></div>
             <div class="paused-card reveal-up"><h3>Paused days don't count</h3><p>Not in days to finish and not in your reading speed. Your stats stay the ones from when you were reading.</p></div>
             <div class="paused-card reveal-up"><h3>A note, if you want</h3><p>When you pause and when you resume you can jot down why. It's optional. Everything stays in the “Pauses” section of the book page, with its history.</p></div>
             <div class="paused-card reveal-up"><h3>A tab of its own</h3><p>In your library, between Want to read and Dropped, you'll find your paused books.</p></div>
@@ -631,13 +631,41 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="cards" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">New in 3.9</span>
+            <h2 id="quickmenu-title">Jump between sections without going back to Home</h2>
+            <p>Going from Bingo to Settings used to mean a stop at Home first. Now you tap the three dots (···) in the top-right corner and go straight there.</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">Quick menu</p>
+                <div class="qm-groups">
+                    <div class="qm-group is-current"><p class="qm-group-title">Goals</p><p>Events · Challenges · Bingo</p></div>
+                    <div class="qm-group"><p class="qm-group-title">My reading</p><p>Stats · My cards · Wrapped</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Tools</p><p>Reminders · Tag management · Scan ISBN</p></div>
+                    <div class="qm-group"><p class="qm-group-title">General shortcuts</p><p>Home · Settings · Data and backups</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card qm-card reveal-up"><h3>On almost every screen</h3><p>The horizontal three-dot icon (···) sits in the top-right corner. If the screen had a share button, it moves to its left.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>The same groups as Home</h3><p>Goals, My reading and Tools, plus Home, Settings and Data and backups. The section you're in is highlighted: tap it to go back to its start.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>In the book page too</h3><p>Open the vertical three-dot menu on a book's page and pick “Quick menu”. Step-by-step wizards don't have it, so you don't lose what you're filling in.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="cards" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">Share</span>
             <h2 id="cards-title">Lecturameter is not a social network. Your cards go to the one you use.</h2>
-            <p>Make vertical 1080×1920 cards, ready for stories, and share them where you already are. No account, no profile and no followers.</p>
+            <p>Make vertical 1080×1920 cards, ready for stories, and share them where you already are. No account, no profile and no followers. In 3.9 the weekly and monthly summaries get a new design with more stats.</p>
         </div>
         <div class="share-wrap">
             <div class="share-fan reveal-up" aria-hidden="true">
@@ -670,7 +698,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="events" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">
@@ -871,7 +899,7 @@
                 <p class="price-trial">Try Pro free for 7 days, inside the app</p>
                 <p class="price-trial">No card required for the trial</p>
                 <ul class="pricing-list">
-                    <li>Leather, Aurora, OLED and Dusk themes</li>
+                    <li>Leather, Aurora, OLED, Dusk, Notebook and Woodland themes</li>
                     <li>Immersive timer</li>
                     <li>Golden alternative icon</li>
                     <li>Monthly comparison widget</li>
@@ -898,16 +926,40 @@
                 <h3>New</h3>
                 <ul>
                     <li><strong>Events:</strong> global reading challenges and Lecturameter Quest when one is active</li>
+                    <li><strong>Quick menu:</strong> jump from one section to another with the three dots (···), without going back to Home</li>
                     <li><strong>Paused:</strong> set a book aside for a while without messing up your stats</li>
                     <li><strong>Two new Pro themes:</strong> Notebook and Woodland</li>
+                    <li>Pro themes can also be bought one by one or in packs of 3, with a preview, and the Pro screen is new</li>
+                    <li><strong>Non-linear reading</strong> for anthologies and poetry collections: overlapping pages don't count twice and the progress bar is split into segments</li>
+                    <li>Start reading from the book widget, without opening the app</li>
+                    <li>Weekly and monthly summaries with a new design and more stats</li>
+                    <li>Optional email in “Send feedback”, only so I can reply to you</li>
                     <li>A timer clock of its own for each theme</li>
                     <li>Pagi picks a book from Want to read</li>
                     <li>KOSync with KOReader's real reading time</li>
                     <li>Notifications by category and app news alerts</li>
+                    <li>Home with the rail grouped into Goals, My reading and Tools</li>
+                    <li>Change a book's status from its quick actions, and undo it if you slip</li>
+                    <li>Material icons instead of emojis and more readable stats in every theme</li>
+                    <li>A notice when you add a book from search</li>
+                    <li>Reading cycle dates on a single row, easier to edit</li>
                     <li>Bingo with 24 templates by size</li>
+                    <li>On iPhone, the timer's Live Activity in your theme's colors</li>
+                    <li>The catalog learns from searches and ISBN scans that find nothing and adds the missing books (from November 15)</li>
                     <li>Traditional Chinese</li>
                     <li>Series in the CSV</li>
-                    <li>More readable Stats</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>Fixes</h3>
+                <ul>
+                    <li>Titles in Bingo, Wrapped and other screens now sit at the same height as in the other menus</li>
+                    <li>The Bingo and Wrapped icons get their colors back</li>
+                    <li>The book counters per status on Home are easier to see in Dark, OLED, Dusk, Aurora and Leather</li>
+                    <li>One single warning for books with missing data: the yellow triangle is gone and the red one stays</li>
+                    <li>Reloading cover and genre tells you when everything was already fine, and warns in red when something isn't found</li>
+                    <li>Google Drive backups of very large libraries no longer fail for lack of memory</li>
+                    <li>Several fixes on iPhone</li>
                 </ul>
             </div>
         </div>
@@ -1026,21 +1078,43 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">v3.9 &middot; Events · Two new Pro themes</button>
+                <button class="faq-q">v3.9 &middot; Events · Quick menu · Two new Pro themes</button>
                 <div class="faq-a"><div class="faq-a-inner">
                     <strong>New</strong>
                     <ul>
                         <li><strong>Events:</strong> global reading challenges and Lecturameter Quest when one is active</li>
+                        <li><strong>Quick menu:</strong> jump from one section to another with the three dots (···), without going back to Home</li>
                         <li><strong>Paused:</strong> set a book aside for a while without messing up your stats</li>
                         <li><strong>Two new Pro themes:</strong> Notebook and Woodland</li>
+                        <li>Pro themes can also be bought one by one or in packs of 3, with a preview, and the Pro screen is new</li>
+                        <li><strong>Non-linear reading</strong> for anthologies and poetry collections: overlapping pages don't count twice and the progress bar is split into segments</li>
+                        <li>Start reading from the book widget, without opening the app</li>
+                        <li>Weekly and monthly summaries with a new design and more stats</li>
+                        <li>Optional email in “Send feedback”, only so I can reply to you</li>
                         <li>A timer clock of its own for each theme</li>
                         <li>Pagi picks a book from Want to read</li>
                         <li>KOSync with KOReader's real reading time</li>
                         <li>Notifications by category and app news alerts</li>
+                        <li>Home with the rail grouped into Goals, My reading and Tools</li>
+                        <li>Change a book's status from its quick actions, and undo it if you slip</li>
+                        <li>Material icons instead of emojis and more readable stats in every theme</li>
+                        <li>A notice when you add a book from search</li>
+                        <li>Reading cycle dates on a single row, easier to edit</li>
                         <li>Bingo with 24 templates by size</li>
+                        <li>On iPhone, the timer's Live Activity in your theme's colors</li>
+                        <li>The catalog learns from searches and ISBN scans that find nothing and adds the missing books (from November 15)</li>
                         <li>Traditional Chinese</li>
                         <li>Series in the CSV</li>
-                        <li>More readable Stats</li>
+                    </ul>
+                    <strong>Fixes</strong>
+                    <ul>
+                        <li>Titles in Bingo, Wrapped and other screens now sit at the same height as in the other menus</li>
+                        <li>The Bingo and Wrapped icons get their colors back</li>
+                        <li>The book counters per status on Home are easier to see in Dark, OLED, Dusk, Aurora and Leather</li>
+                        <li>One single warning for books with missing data: the yellow triangle is gone and the red one stays</li>
+                        <li>Reloading cover and genre tells you when everything was already fine, and warns in red when something isn't found</li>
+                        <li>Google Drive backups of very large libraries no longer fail for lack of memory</li>
+                        <li>Several fixes on iPhone</li>
                     </ul>
                 </div></div>
             </div>

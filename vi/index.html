@@ -621,7 +621,7 @@
         </div>
         <div class="paused-grid">
             <div class="paused-card reveal-up"><h3>Một trạng thái riêng</h3><p>Tạm dừng không phải là Đã bỏ dở. Sách của bạn không vào chồng sách đã bỏ: nó chờ sẵn và quay lại bất cứ khi nào bạn muốn.</p></div>
-            <div class="paused-card reveal-up"><h3>Từ Đang đọc hoặc Đọc lại</h3><p>Đổi trạng thái từ nhãn trên trang sách hoặc bằng “Đổi trạng thái” trong menu nhanh. Dùng được cho sách, truyện tranh, manga và sách nói.</p></div>
+            <div class="paused-card reveal-up"><h3>Từ Đang đọc hoặc Đọc lại</h3><p>Đổi trạng thái bằng nút hình viên thuốc trong trang sách hoặc bằng “Đổi trạng thái” trong thao tác nhanh (nhấn giữ thẻ sách). Áp dụng cho sách, truyện tranh, manga và sách nói.</p></div>
             <div class="paused-card reveal-up"><h3>Những ngày tạm dừng không được tính</h3><p>Không tính vào số ngày để đọc xong, cũng không tính vào tốc độ đọc của bạn. Thống kê vẫn như lúc bạn đang đọc.</p></div>
             <div class="paused-card reveal-up"><h3>Một ghi chú, nếu bạn muốn</h3><p>Khi tạm dừng và khi tiếp tục, bạn có thể ghi lại lý do. Việc này là tùy chọn. Mọi thứ nằm trong mục “Các lần tạm dừng” của trang sách, kèm lịch sử.</p></div>
             <div class="paused-card reveal-up"><h3>Một tab riêng</h3><p>Trong thư viện của bạn, giữa Muốn đọc và Đã bỏ dở, bạn sẽ thấy những cuốn sách đang tạm dừng.</p></div>
@@ -630,13 +630,41 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="cards" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Mới trong 3.9</span>
+            <h2 id="quickmenu-title">Chuyển giữa các mục mà không cần quay về Trang chủ</h2>
+            <p>Trước đây, muốn đi từ Bingo sang Cài đặt, bạn phải ghé Trang chủ trước. Giờ chỉ cần chạm vào ba chấm (···) ở góc trên bên phải là đến thẳng nơi cần tới.</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">Menu nhanh</p>
+                <div class="qm-groups">
+                    <div class="qm-group is-current"><p class="qm-group-title">Mục tiêu</p><p>Sự kiện · Thử thách · Bingo</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Việc đọc của tôi</p><p>Thống kê · Thẻ của tôi · Wrapped</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Công cụ</p><p>Nhắc nhở · Quản lý thẻ · Quét mã ISBN</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Lối tắt chung</p><p>Trang chủ · Cài đặt · Dữ liệu và bản sao lưu</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card qm-card reveal-up"><h3>Trên hầu hết mọi màn hình</h3><p>Biểu tượng ba chấm ngang (···) nằm ở góc trên bên phải. Nếu màn hình có nút chia sẻ, nút đó sẽ dời sang bên trái.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Các nhóm giống như Trang chủ</h3><p>Mục tiêu, Việc đọc của tôi và Công cụ, cùng với Trang chủ, Cài đặt và Dữ liệu và bản sao lưu. Mục bạn đang ở được làm nổi bật: chạm vào đó để quay về đầu mục.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Cả trong trang sách</h3><p>Mở menu ba chấm dọc trong trang sách và chọn “Menu nhanh”. Các trình hướng dẫn từng bước không có menu này, để bạn không mất những gì đang điền.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="cards" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">Chia sẻ</span>
             <h2 id="cards-title">Lecturameter không phải mạng xã hội. Thẻ của bạn đi đến mạng bạn đang dùng.</h2>
-            <p>Tạo thẻ dọc 1080×1920, sẵn sàng cho story, và chia sẻ ngay nơi bạn đang ở. Không tài khoản, không hồ sơ, không người theo dõi.</p>
+            <p>Tạo thẻ dọc 1080×1920, sẵn sàng cho story, và chia sẻ ngay nơi bạn đang ở. Không tài khoản, không hồ sơ, không người theo dõi. Ở bản 3.9, bản tóm tắt theo tuần và theo tháng có thiết kế mới và nhiều số liệu hơn.</p>
         </div>
         <div class="share-wrap">
             <div class="share-fan reveal-up" aria-hidden="true">
@@ -669,7 +697,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="events" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">
@@ -870,7 +898,7 @@
                 <p class="price-trial">Dùng thử Pro miễn phí 7 ngày, ngay trong ứng dụng</p>
                 <p class="price-trial">Không cần thẻ để dùng thử</p>
                 <ul class="pricing-list">
-                    <li>Các chủ đề Da, Aurora, OLED và Hoàng hôn</li>
+                    <li>Giao diện Da, Aurora, OLED, Hoàng hôn, Vở và Rừng</li>
                     <li>Đồng hồ bấm giờ đắm chìm</li>
                     <li>Biểu tượng thay thế màu vàng</li>
                     <li>Widget so sánh theo tháng</li>
@@ -897,16 +925,40 @@
                 <h3>Mới</h3>
                 <ul>
                     <li><strong>Sự kiện:</strong> thử thách đọc toàn cầu và Lecturameter Quest khi có sự kiện đang diễn ra</li>
+                    <li><strong>Menu nhanh:</strong> chuyển từ mục này sang mục khác bằng ba chấm (···), không cần quay về Trang chủ</li>
                     <li><strong>Tạm dừng:</strong> cất một cuốn sách sang bên một thời gian mà không làm hỏng thống kê của bạn</li>
                     <li><strong>Hai giao diện Pro mới:</strong> Vở và Rừng</li>
+                    <li>Giao diện Pro còn có thể mua lẻ hoặc theo gói 3, có xem trước, và màn hình Pro được làm mới</li>
+                    <li><strong>Đọc không tuần tự</strong> cho tuyển tập và thi tập: các trang chồng nhau không bị tính hai lần và thanh tiến độ được chia thành từng đoạn</li>
+                    <li>Bắt đầu đọc từ widget của sách, không cần mở ứng dụng</li>
+                    <li>Bản tóm tắt theo tuần và theo tháng với thiết kế mới và nhiều số liệu hơn</li>
+                    <li>Email tùy chọn trong “Gửi phản hồi”, chỉ để mình có thể trả lời bạn</li>
                     <li>Đồng hồ bấm giờ riêng cho từng giao diện</li>
                     <li>Pagi chọn giúp bạn một cuốn từ Muốn đọc</li>
                     <li>KOSync với thời gian đọc thực của KOReader</li>
                     <li>Thông báo theo danh mục và thông báo tin mới của ứng dụng</li>
+                    <li>Trang chủ với thanh bên được nhóm thành Mục tiêu, Việc đọc của tôi và Công cụ</li>
+                    <li>Đổi trạng thái sách từ thao tác nhanh và hoàn tác nếu bạn nhầm</li>
+                    <li>Biểu tượng Material thay cho emoji và số liệu dễ đọc hơn ở mọi giao diện</li>
+                    <li>Có thông báo khi thêm sách từ tìm kiếm</li>
+                    <li>Ngày của các chu kỳ đọc trên một hàng, dễ chỉnh sửa hơn</li>
                     <li>Bingo với 24 mẫu theo kích thước</li>
+                    <li>Trên iPhone, Live Activity của đồng hồ bấm giờ theo màu giao diện của bạn</li>
+                    <li>Danh mục học từ các lượt tìm kiếm và quét ISBN không có kết quả và bổ sung những sách còn thiếu (từ ngày 15 tháng 11)</li>
                     <li>Tiếng Trung phồn thể</li>
                     <li>Bộ truyện trong CSV</li>
-                    <li>Thống kê dễ đọc hơn</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>Sửa lỗi</h3>
+                <ul>
+                    <li>Tiêu đề ở Bingo, Wrapped và các màn hình khác giờ nằm cùng độ cao như ở các menu còn lại</li>
+                    <li>Biểu tượng Bingo và Wrapped có lại màu sắc</li>
+                    <li>Bộ đếm sách theo trạng thái ở Trang chủ dễ nhìn hơn trong các giao diện Tối, OLED, Hoàng hôn, Aurora và Da</li>
+                    <li>Chỉ còn một cảnh báo cho sách thiếu dữ liệu: tam giác vàng biến mất, tam giác đỏ được giữ lại</li>
+                    <li>Tải lại bìa và thể loại sẽ cho bạn biết khi mọi thứ vốn đã ổn, và cảnh báo màu đỏ khi không tìm thấy gì đó</li>
+                    <li>Sao lưu Google Drive của các thư viện rất lớn không còn thất bại do thiếu bộ nhớ</li>
+                    <li>Nhiều bản sửa lỗi trên iPhone</li>
                 </ul>
             </div>
         </div>
@@ -1025,21 +1077,43 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">v3.9 &middot; Sự kiện · Hai giao diện Pro mới</button>
+                <button class="faq-q">v3.9 &middot; Sự kiện · Menu nhanh · Hai giao diện Pro mới</button>
                 <div class="faq-a"><div class="faq-a-inner">
                     <strong>Mới</strong>
                     <ul>
                         <li><strong>Sự kiện:</strong> thử thách đọc toàn cầu và Lecturameter Quest khi có sự kiện đang diễn ra</li>
+                        <li><strong>Menu nhanh:</strong> chuyển từ mục này sang mục khác bằng ba chấm (···), không cần quay về Trang chủ</li>
                         <li><strong>Tạm dừng:</strong> cất một cuốn sách sang bên một thời gian mà không làm hỏng thống kê của bạn</li>
                         <li><strong>Hai giao diện Pro mới:</strong> Vở và Rừng</li>
+                        <li>Giao diện Pro còn có thể mua lẻ hoặc theo gói 3, có xem trước, và màn hình Pro được làm mới</li>
+                        <li><strong>Đọc không tuần tự</strong> cho tuyển tập và thi tập: các trang chồng nhau không bị tính hai lần và thanh tiến độ được chia thành từng đoạn</li>
+                        <li>Bắt đầu đọc từ widget của sách, không cần mở ứng dụng</li>
+                        <li>Bản tóm tắt theo tuần và theo tháng với thiết kế mới và nhiều số liệu hơn</li>
+                        <li>Email tùy chọn trong “Gửi phản hồi”, chỉ để mình có thể trả lời bạn</li>
                         <li>Đồng hồ bấm giờ riêng cho từng giao diện</li>
                         <li>Pagi chọn giúp bạn một cuốn từ Muốn đọc</li>
                         <li>KOSync với thời gian đọc thực của KOReader</li>
                         <li>Thông báo theo danh mục và thông báo tin mới của ứng dụng</li>
+                        <li>Trang chủ với thanh bên được nhóm thành Mục tiêu, Việc đọc của tôi và Công cụ</li>
+                        <li>Đổi trạng thái sách từ thao tác nhanh và hoàn tác nếu bạn nhầm</li>
+                        <li>Biểu tượng Material thay cho emoji và số liệu dễ đọc hơn ở mọi giao diện</li>
+                        <li>Có thông báo khi thêm sách từ tìm kiếm</li>
+                        <li>Ngày của các chu kỳ đọc trên một hàng, dễ chỉnh sửa hơn</li>
                         <li>Bingo với 24 mẫu theo kích thước</li>
+                        <li>Trên iPhone, Live Activity của đồng hồ bấm giờ theo màu giao diện của bạn</li>
+                        <li>Danh mục học từ các lượt tìm kiếm và quét ISBN không có kết quả và bổ sung những sách còn thiếu (từ ngày 15 tháng 11)</li>
                         <li>Tiếng Trung phồn thể</li>
                         <li>Bộ truyện trong CSV</li>
-                        <li>Thống kê dễ đọc hơn</li>
+                    </ul>
+                    <strong>Sửa lỗi</strong>
+                    <ul>
+                        <li>Tiêu đề ở Bingo, Wrapped và các màn hình khác giờ nằm cùng độ cao như ở các menu còn lại</li>
+                        <li>Biểu tượng Bingo và Wrapped có lại màu sắc</li>
+                        <li>Bộ đếm sách theo trạng thái ở Trang chủ dễ nhìn hơn trong các giao diện Tối, OLED, Hoàng hôn, Aurora và Da</li>
+                        <li>Chỉ còn một cảnh báo cho sách thiếu dữ liệu: tam giác vàng biến mất, tam giác đỏ được giữ lại</li>
+                        <li>Tải lại bìa và thể loại sẽ cho bạn biết khi mọi thứ vốn đã ổn, và cảnh báo màu đỏ khi không tìm thấy gì đó</li>
+                        <li>Sao lưu Google Drive của các thư viện rất lớn không còn thất bại do thiếu bộ nhớ</li>
+                        <li>Nhiều bản sửa lỗi trên iPhone</li>
                     </ul>
                 </div></div>
             </div>

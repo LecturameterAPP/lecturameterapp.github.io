@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Noen kan se en annen pris, fordi vi kjører prisforsøk.",
  "home.pricing.try_pro_free_for_7": "Prøv Pro gratis i 7 dager, inne i appen",
  "home.pricing.no_card_required_for_the": "Du trenger ikke kort for prøveperioden",
- "home.pricing.leather_aurora_oled_and_dusk": "Temaene Lær, Aurora, OLED og Skumring",
+ "home.pricing.leather_aurora_oled_and_dusk": "Temaene Lær, Aurora, OLED, Skumring, Skrivebok og Skog",
  "home.pricing.immersive_timer": "Fordypningstidtaker",
  "home.pricing.golden_alternative_icon": "Gyllent alternativt ikon",
  "home.pricing.monthly_comparison_widget": "Widget for månedssammenligning",
@@ -547,21 +547,41 @@
   "Å endre statusen til en bok sletter ikke lenger datoene for tidligere lesinger.",
   "Månedsoppsummeringen teller også fullførte bøker uten økter."
  ],
- "release.3_9.headline": "Arrangementer · To nye Pro-temaer",
+ "release.3_9.headline": "Arrangementer · Hurtigmeny · To nye Pro-temaer",
  "release.3_9.new": [
   "<strong>Arrangementer:</strong> globale leseutfordringer og Lecturameter Quest når det er et aktivt",
+  "<strong>Hurtigmeny:</strong> hopp fra én seksjon til en annen med de tre prikkene (···), uten å gå tilbake til Hjem",
   "<strong>På pause:</strong> legg en bok til side en stund uten å ødelegge statistikken din",
   "<strong>To nye Pro-temaer:</strong> Skrivebok og Skog",
+  "Pro-temaer kan også kjøpes enkeltvis eller i pakker på 3, med forhåndsvisning, og Pro-skjermen er ny",
+  "<strong>Ikke-lineær lesing</strong> for antologier og diktsamlinger: overlappende sider telles ikke to ganger, og fremdriftslinjen er delt i segmenter",
+  "Begynn å lese fra bokwidgeten, uten å åpne appen",
+  "Ukes- og månedssammendrag med nytt design og flere statistikker",
+  "Valgfri e-post i «Send tilbakemelding», bare slik at jeg kan svare deg",
   "En egen tidtakerklokke for hvert tema",
   "Pagi velger en bok fra Vil lese",
   "KOSync med KOReaders faktiske lesetid",
   "Varsler etter kategori og beskjeder om nyheter i appen",
+  "Hjem med listen gruppert i Mål, Mine lesninger og Verktøy",
+  "Endre statusen til en bok fra hurtighandlingene, og angre hvis du tar feil",
+  "Material-ikoner i stedet for emojier og mer lesbar statistikk i alle temaer",
+  "Et varsel når du legger til en bok fra søk",
+  "Datoer for lesesykluser på én rad, enklere å redigere",
   "Bingo med 24 maler etter størrelse",
+  "På iPhone, tidtakerens Live Activity i temaets farger",
+  "Katalogen lærer av søk og ISBN-skanninger som ikke finner noe, og legger til bøkene som mangler (fra 15. november)",
   "Tradisjonell kinesisk",
-  "Serie i CSV",
-  "Mer lesbar statistikk"
+  "Serie i CSV"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Titlene i Bingo, Wrapped og andre skjermer ligger nå i samme høyde som i de andre menyene",
+  "Ikonene for Bingo og Wrapped har fått fargene tilbake",
+  "Bokteljerne per status på Hjem er lettere å se i Mørk, OLED, Skumring, Aurora og Lær",
+  "Ett enkelt varsel for bøker med manglende data: den gule trekanten er borte og den røde blir",
+  "Å laste inn omslag og sjanger på nytt forteller deg når alt allerede var i orden, og varsler i rødt når noe ikke finnes",
+  "Google Drive-sikkerhetskopier av svært store biblioteker feiler ikke lenger på grunn av minnemangel",
+  "Flere rettelser på iPhone"
+ ],
  "roadmap.3_9.heading": "Dette kommer i Lecturameter 3.9",
  "roadmap.3_9.sub": "Leseutfordringer for hele fellesskapet, et spill med <b>dine egne bøker</b> og et nytt Hjem. Ingen faste datoer: alt kommer når det er klart.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Fra Leser eller Gjenlesing",
-   "text": "Endre status fra merket på bokens side eller med «Endre status» i hurtigmenyen. Det fungerer for bøker, tegneserier, manga og lydbøker."
+   "text": "Endre status fra pillen på bokens side eller med «Endre status» i hurtighandlingene (trykk og hold på bokens kort). Det fungerer for bøker, tegneserier, manga og lydbøker."
   },
   {
    "title": "Dager på pause teller ikke",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Del",
  "home.cards.title": "Lecturameter er ikke et sosialt nettverk. Kortene dine går til det du bruker.",
- "home.cards.sub": "Lag stående kort på 1080×1920, klare for stories, og del dem der du allerede er. Ingen konto, ingen profil og ingen følgere.",
+ "home.cards.sub": "Lag stående kort på 1080×1920, klare for stories, og del dem der du allerede er. Ingen konto, ingen profil og ingen følgere. I 3.9 får ukes- og månedssammendragene nytt design og flere statistikker.",
  "home.cards.chips": [
   "Bok",
   "Ferdig bok",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 er gratis og tilgjengelig for iPhone og for Android.",
  "lm99.get.app_store": "Last ned i App Store",
  "lm99.get.play_soon": "Snart på Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Besøksteller på nettstedet:</span> dette nettstedet (ikke appen) har sin egen anonyme teller, uten informasjonskapsler og uten tredjeparter. Den registrerer siden du besøker, klikkene dine på lenker til butikkene, land, språket på siden, type enhet (mobil eller datamaskin) og nettstedet du kom fra. Den lagrer ikke IP-adressen din eller noe som identifiserer deg: bare en anonym kode som beregnes på nytt hver dag og ikke kan brukes til å gjenkjenne deg fra en dag til den neste. Hvis nettleseren din sender «Do Not Track», sendes ingenting."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Besøksteller på nettstedet:</span> dette nettstedet (ikke appen) har sin egen anonyme teller, uten informasjonskapsler og uten tredjeparter. Den registrerer siden du besøker, klikkene dine på lenker til butikkene, land, språket på siden, type enhet (mobil eller datamaskin) og nettstedet du kom fra. Den lagrer ikke IP-adressen din eller noe som identifiserer deg: bare en anonym kode som beregnes på nytt hver dag og ikke kan brukes til å gjenkjenne deg fra en dag til den neste. Hvis nettleseren din sender «Do Not Track», sendes ingenting.",
+ "home.quickmenu.title": "Hopp mellom seksjoner uten å gå tilbake til Hjem",
+ "home.quickmenu.sub": "Å gå fra Bingo til Innstillinger betydde tidligere et stopp på Hjem først. Nå trykker du på de tre prikkene (···) øverst til høyre og går rett dit.",
+ "home.quickmenu.cards": [
+  {
+   "title": "På nesten alle skjermer",
+   "text": "Det horisontale ikonet med tre prikker (···) ligger øverst til høyre. Hvis skjermen hadde en delingsknapp, flyttes den til venstre for det."
+  },
+  {
+   "title": "De samme gruppene som Hjem",
+   "text": "Mål, Mine lesninger og Verktøy, pluss Hjem, Innstillinger og Data og sikkerhetskopier. Seksjonen du er i, er uthevet: trykk på den for å gå tilbake til starten av den."
+  },
+  {
+   "title": "Også på bokens side",
+   "text": "Åpne menyen med tre vertikale prikker på bokens side og velg «Hurtigmeny». Trinnvise veivisere har den ikke, slik at du ikke mister det du fyller ut."
+  }
+ ],
+ "home.quickmenu.tag": "Nytt i 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Hurtigmeny",
+ "home.quickmenu.groups": [
+  {
+   "title": "Mål",
+   "text": "Arrangementer · Utfordringer · Bingo"
+  },
+  {
+   "title": "Mine lesninger",
+   "text": "Statistikk · Kortene mine · Wrapped"
+  },
+  {
+   "title": "Verktøy",
+   "text": "Påminnelser · Taggadministrasjon · Skann ISBN"
+  },
+  {
+   "title": "Generelle snarveier",
+   "text": "Hjem · Innstillinger · Data og sikkerhetskopier"
+  }
+ ]
 }

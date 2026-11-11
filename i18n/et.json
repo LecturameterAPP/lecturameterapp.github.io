@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Mõned inimesed võivad näha teistsugust hinda, sest teeme hinnakatseid.",
  "home.pricing.try_pro_free_for_7": "Proovi Pro-d 7 päeva tasuta, otse rakenduses",
  "home.pricing.no_card_required_for_the": "Prooviaja jaoks pole kaarti vaja",
- "home.pricing.leather_aurora_oled_and_dusk": "Teemad Nahk, Aurora, OLED ja Videvik",
+ "home.pricing.leather_aurora_oled_and_dusk": "Teemad Nahk, Aurora, OLED, Hämarik, Vihik ja Mets",
  "home.pricing.immersive_timer": "Süvenenud taimer",
  "home.pricing.golden_alternative_icon": "Kuldne alternatiivne ikoon",
  "home.pricing.monthly_comparison_widget": "Kuude võrdluse vidin",
@@ -547,21 +547,41 @@
   "Raamatu staatuse muutmine ei kustuta enam varasemate lugemiskordade kuupäevi.",
   "Kuukokkuvõte arvestab ka lõpetatud raamatuid, millel pole seansse."
  ],
- "release.3_9.headline": "Sündmused · Kaks uut Pro teemat",
+ "release.3_9.headline": "Sündmused · Kiirmenüü · Kaks uut Pro teemat",
  "release.3_9.new": [
   "<strong>Sündmused:</strong> ülemaailmsed lugemisväljakutsed ja Lecturameter Quest, kui mõni on aktiivne",
+  "<strong>Kiirmenüü:</strong> liigu ühest jaotisest teise kolme punktiga (···), Avalehele tagasi minemata",
   "<strong>Pausil:</strong> pane raamat mõneks ajaks kõrvale, ilma et statistika sassi läheks",
   "<strong>Kaks uut Pro teemat:</strong> Vihik ja Mets",
+  "Pro teemasid saab osta ka ükshaaval või 3 kaupa pakkidena, eelvaatega, ja Pro ekraan on uus",
+  "<strong>Mittelineaarne lugemine</strong> antoloogiate ja luulekogude jaoks: kattuvad leheküljed ei lähe kaks korda arvesse ja edenemisriba on jaotatud lõikudeks",
+  "Alusta lugemist raamatu vidinast, rakendust avamata",
+  "Nädala- ja kuukokkuvõtted uue kujunduse ja rohkema statistikaga",
+  "Valikuline e-post valikus „Saada tagasisidet“, ainult selleks, et saaksin sulle vastata",
   "Igale teemale oma taimeri kell",
   "Pagi valib sulle raamatu loendist Soovin lugeda",
   "KOSync KOReaderi tegeliku lugemisajaga",
   "Teavitused kategooriate kaupa ja teated rakenduse uudiste kohta",
+  "Avaleht, kus külgriba on rühmitatud: Eesmärgid, Minu lugemised ja Tööriistad",
+  "Muuda raamatu olekut selle kiirtoimingutest ja võta tagasi, kui eksid",
+  "Material ikoonid emotikonide asemel ja loetavam statistika igas teemas",
+  "Teavitus, kui lisad raamatu otsingust",
+  "Lugemistsüklite kuupäevad ühel real, mida on lihtsam muuta",
   "Bingo 24 mustriga suuruse järgi",
+  "iPhone'is taimeri Live Activity sinu teema värvides",
+  "Kataloog õpib tulemuseta otsingutest ja ISBN-skannimistest ning lisab puuduvad raamatud (alates 15. novembrist)",
   "Traditsiooniline hiina keel",
-  "Sari CSV-s",
-  "Loetavam statistika"
+  "Sari CSV-s"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Pealkirjad Bingos, Wrappedis ja teistel ekraanidel asuvad nüüd samal kõrgusel kui teistes menüüdes",
+  "Bingo ja Wrapped ikoonid said oma värvid tagasi",
+  "Raamatute loendurid oleku järgi Avalehel on paremini näha teemades Tume, OLED, Hämarik, Aurora ja Nahk",
+  "Üks hoiatus puuduvate andmetega raamatute jaoks: kollane kolmnurk kaob ja punane jääb",
+  "Katte ja žanri uuesti laadimine annab teada, kui kõik oli juba korras, ning hoiatab punaselt, kui midagi ei leita",
+  "Väga suurte raamatukogude Google Drive'i varukoopiad ei ebaõnnestu enam mälupuuduse tõttu",
+  "Mitu parandust iPhone'is"
+ ],
  "roadmap.3_9.heading": "Mis tuleb Lecturameter 3.9-s",
  "roadmap.3_9.sub": "Lugemisväljakutsed kogu kogukonnale, mäng, mida mängitakse <b>sinu enda raamatutega</b>, ja uuenenud avaleht. Kindlaid kuupäevi pole: kõik ilmub siis, kui on valmis.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Olekust Loen või Loen uuesti",
-   "text": "Muuda olekut raamatu lehe sildilt või kiirmenüü valikuga „Muuda olekut“. Töötab raamatute, koomiksite, manga ja audioraamatute puhul."
+   "text": "Muuda olekut raamatu lehel oleva pillikese kaudu või valikuga „Muuda olekut“ kiirtoimingutes (vajuta raamatu kaarti pikalt). See sobib raamatutele, koomiksitele, mangale ja audioraamatutele."
   },
   {
    "title": "Pausil olnud päevi ei arvestata",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Jaga",
  "home.cards.title": "Lecturameter ei ole sotsiaalvõrgustik. Sinu kaardid lähevad sinna, mida kasutad.",
- "home.cards.sub": "Tee vertikaalseid 1080×1920 kaarte, mis sobivad story'dele, ja jaga neid seal, kus juba oled. Ilma kontota, ilma profiilita ja ilma jälgijateta.",
+ "home.cards.sub": "Tee vertikaalseid 1080×1920 kaarte, mis sobivad story'dele, ja jaga neid seal, kus juba oled. Ilma kontota, ilma profiilita ja ilma jälgijateta. Versioonis 3.9 saavad nädala- ja kuukokkuvõtted uue kujunduse ja rohkem statistikat.",
  "home.cards.chips": [
   "Raamat",
   "Raamat läbi loetud",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 on tasuta ja saadaval iPhone'ile ning Androidile.",
  "lm99.get.app_store": "Laadi alla App Storest",
  "lm99.get.play_soon": "Varsti Google Plays",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Veebilehe külastusloendur:</span> sellel veebilehel (mitte rakendusel) on oma anonüümne loendur, ilma küpsisteta ja ilma kolmandate osapoolteta. See registreerib külastatud lehe, sinu klõpsud poodide linkidel, riigi, lehe keele, seadme tüübi (mobiil või arvuti) ja saidi, kust tulid. See ei salvesta sinu IP-aadressi ega midagi, mis sind tuvastaks: ainult anonüümse koodi, mis arvutatakse iga päev uuesti ja mille põhjal ei saa sind ühelt päevalt teisele ära tunda. Kui sinu brauser saadab signaali „Do Not Track“, ei saadeta midagi."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Veebilehe külastusloendur:</span> sellel veebilehel (mitte rakendusel) on oma anonüümne loendur, ilma küpsisteta ja ilma kolmandate osapoolteta. See registreerib külastatud lehe, sinu klõpsud poodide linkidel, riigi, lehe keele, seadme tüübi (mobiil või arvuti) ja saidi, kust tulid. See ei salvesta sinu IP-aadressi ega midagi, mis sind tuvastaks: ainult anonüümse koodi, mis arvutatakse iga päev uuesti ja mille põhjal ei saa sind ühelt päevalt teisele ära tunda. Kui sinu brauser saadab signaali „Do Not Track“, ei saadeta midagi.",
+ "home.quickmenu.title": "Liigu jaotiste vahel tagasi Avalehele minemata",
+ "home.quickmenu.sub": "Bingost Seadetesse jõudmiseks tuli enne läbi Avalehe käia. Nüüd puudutad üleval paremal kolme punkti (···) ja oled kohe kohal.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Peaaegu igal ekraanil",
+   "text": "Horisontaalne kolme punkti ikoon (···) asub üleval paremas nurgas. Kui ekraanil oli jagamisnupp, liigub see sellest vasakule."
+  },
+  {
+   "title": "Samad rühmad mis Avalehel",
+   "text": "Eesmärgid, Minu lugemised ja Tööriistad, lisaks Avaleht, Seaded ning Andmed ja varukoopiad. Jaotis, kus oled, on esile tõstetud: puuduta seda, et naasta selle algusesse."
+  },
+  {
+   "title": "Ka raamatu lehel",
+   "text": "Ava raamatu lehel vertikaalne kolme punkti menüü ja vali „Kiirmenüü“. Samm-sammulistel viisardidel seda pole, et sa ei kaotaks täidetavat."
+  }
+ ],
+ "home.quickmenu.tag": "Uus versioonis 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Kiirmenüü",
+ "home.quickmenu.groups": [
+  {
+   "title": "Eesmärgid",
+   "text": "Sündmused · Väljakutsed · Bingo"
+  },
+  {
+   "title": "Minu lugemised",
+   "text": "Statistika · Minu kaardid · Wrapped"
+  },
+  {
+   "title": "Tööriistad",
+   "text": "Meeldetuletused · Siltide haldus · Skanni ISBN"
+  },
+  {
+   "title": "Üldised otseteed",
+   "text": "Avaleht · Seaded · Andmed ja varukoopiad"
+  }
+ ]
 }

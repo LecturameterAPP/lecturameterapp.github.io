@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Kai kurie žmonės gali matyti kitokią kainą, nes atliekame kainų eksperimentus.",
  "home.pricing.try_pro_free_for_7": "Išbandyk Pro nemokamai 7 dienas programėlėje",
  "home.pricing.no_card_required_for_the": "Bandomajam laikotarpiui kortelės nereikia",
- "home.pricing.leather_aurora_oled_and_dusk": "Temos „Oda“, „Aurora“, „OLED“ ir „Prieblanda“",
+ "home.pricing.leather_aurora_oled_and_dusk": "Temos Oda, Aurora, OLED, Prieblanda, Sąsiuvinis ir Giraitė",
  "home.pricing.immersive_timer": "Įtraukiantis laikmatis",
  "home.pricing.golden_alternative_icon": "Auksinė alternatyvi piktograma",
  "home.pricing.monthly_comparison_widget": "Mėnesių palyginimo valdiklis",
@@ -547,21 +547,41 @@
   "Pakeitus knygos būseną nebeištrinamos ankstesnių skaitymų datos.",
   "Mėnesio apžvalgoje skaičiuojamos ir baigtos knygos be sesijų."
  ],
- "release.3_9.headline": "Renginiai · Dvi naujos Pro temos",
+ "release.3_9.headline": "Renginiai · Greitasis meniu · Dvi naujos Pro temos",
  "release.3_9.new": [
   "<strong>Renginiai:</strong> pasauliniai skaitymo iššūkiai ir Lecturameter Quest, kai yra aktyvus",
+  "<strong>Greitasis meniu:</strong> šokinėkite tarp skyrių trimis taškais (···), negrįždami į Pradžią",
   "<strong>Pristabdyta:</strong> pasidėk knygą šalia kuriam laikui nesugadindamas statistikos",
   "<strong>Dvi naujos Pro temos:</strong> Sąsiuvinis ir Giraitė",
+  "Pro temas taip pat galima pirkti po vieną arba po 3 rinkiniais, su peržiūra, o Pro ekranas naujas",
+  "<strong>Netiesinis skaitymas</strong> antologijoms ir poezijos rinkiniams: persidengiantys puslapiai neskaičiuojami dukart, o eigos juosta suskirstyta į atkarpas",
+  "Pradėkite skaityti iš knygos valdiklio, neatidarę programėlės",
+  "Savaitės ir mėnesio suvestinės su nauju dizainu ir daugiau statistikos",
+  "Neprivalomas el. paštas skiltyje „Siųsti atsiliepimą“, tik kad galėčiau jums atsakyti",
   "Savas laikmačio laikrodis kiekvienai temai",
   "Pagi parenka knygą iš sąrašo Noriu skaityti",
   "KOSync su tikru KOReader skaitymo laiku",
   "Pranešimai pagal kategoriją ir pranešimai apie programėlės naujienas",
+  "Pradžia su juosta, sugrupuota į Tikslus, Mano skaitymus ir Įrankius",
+  "Pakeiskite knygos būseną iš jos greitųjų veiksmų ir atšaukite, jei suklystumėte",
+  "Material piktogramos vietoj jaustukų ir geriau įskaitoma statistika visose temose",
+  "Pranešimas pridėjus knygą iš paieškos",
+  "Skaitymo ciklų datos vienoje eilutėje, lengviau redaguoti",
   "Bingo su 24 šablonais pagal dydį",
+  "„iPhone“ telefone laikmačio Live Activity jūsų temos spalvomis",
+  "Katalogas mokosi iš paieškų ir ISBN nuskaitymų, kurie nieko neranda, ir prideda trūkstamas knygas (nuo lapkričio 15 d.)",
   "Tradicinė kinų kalba",
-  "Serija CSV faile",
-  "Skaitomesnė statistika"
+  "Serija CSV faile"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Bingo, Wrapped ir kitų ekranų antraštės dabar yra tame pačiame aukštyje kaip kituose meniu",
+  "Bingo ir Wrapped piktogramos atgauna spalvas",
+  "Knygų skaitikliai pagal būseną Pradžioje geriau matomi temose Tamsi, OLED, Prieblanda, Aurora ir Oda",
+  "Vienas įspėjimas knygoms su trūkstamais duomenimis: geltonas trikampis dingo, lieka raudonas",
+  "Perkrovus viršelį ir žanrą pasakoma, kai viskas jau buvo gerai, o raudonai įspėjama, jei kažko nerandama",
+  "Labai didelių bibliotekų „Google Drive“ atsarginės kopijos nebesibaigia nesėkme dėl atminties trūkumo",
+  "Keli pataisymai „iPhone“ telefone"
+ ],
  "roadmap.3_9.heading": "Kas laukia Lecturameter 3.9",
  "roadmap.3_9.sub": "Skaitymo iššūkiai visai bendruomenei, žaidimas su <b>tavo paties knygomis</b> ir atnaujintas pradžios ekranas. Be tikslių datų: viskas išeis, kai bus paruošta.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Iš Skaitoma arba Skaitau pakartotinai",
-   "text": "Pakeisk būseną ženkliuku knygos puslapyje arba per „Keisti būseną“ greitajame meniu. Veikia su knygomis, komiksais, manga ir audioknygomis."
+   "text": "Pakeiskite būseną piliule knygos puslapyje arba per „Keisti būseną“ greituosiuose veiksmuose (ilgai palaikykite knygos kortelę). Tinka knygoms, komiksams, mangoms ir garsoknygėms."
   },
   {
    "title": "Pristabdytos dienos neskaičiuojamos",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Bendrinti",
  "home.cards.title": "Lecturameter nėra socialinis tinklas. Tavo kortelės keliauja į tą, kurį naudoji.",
- "home.cards.sub": "Kurk vertikalias 1080×1920 korteles, paruoštas istorijoms, ir bendrink ten, kur jau esi. Be paskyros, be profilio, be sekėjų.",
+ "home.cards.sub": "Kurk vertikalias 1080×1920 korteles, paruoštas istorijoms, ir bendrink ten, kur jau esi. Be paskyros, be profilio, be sekėjų. 3.9 versijoje savaitės ir mėnesio suvestinės gauna naują dizainą ir daugiau statistikos.",
  "home.cards.chips": [
   "Knyga",
   "Perskaityta knyga",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 yra nemokama ir prieinama iPhone bei Android.",
  "lm99.get.app_store": "Atsisiųsti iš App Store",
  "lm99.get.play_soon": "Netrukus Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Svetainės apsilankymų skaitiklis:</span> ši svetainė (ne programėlė) turi savo anoniminį skaitiklį, be slapukų ir be trečiųjų šalių. Jis registruoja puslapį, kurį aplankai, tavo paspaudimus ant nuorodų į parduotuves, šalį, puslapio kalbą, įrenginio tipą (telefonas ar kompiuteris) ir svetainę, iš kurios atėjai. Jis nesaugo tavo IP adreso ar nieko, kas tave identifikuotų: tik anoniminį kodą, kuris perskaičiuojamas kiekvieną dieną ir pagal kurį negalima atpažinti tavęs iš vienos dienos į kitą. Jei tavo naršyklė siunčia „Do Not Track“, niekas nesiunčiama."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Svetainės apsilankymų skaitiklis:</span> ši svetainė (ne programėlė) turi savo anoniminį skaitiklį, be slapukų ir be trečiųjų šalių. Jis registruoja puslapį, kurį aplankai, tavo paspaudimus ant nuorodų į parduotuves, šalį, puslapio kalbą, įrenginio tipą (telefonas ar kompiuteris) ir svetainę, iš kurios atėjai. Jis nesaugo tavo IP adreso ar nieko, kas tave identifikuotų: tik anoniminį kodą, kuris perskaičiuojamas kiekvieną dieną ir pagal kurį negalima atpažinti tavęs iš vienos dienos į kitą. Jei tavo naršyklė siunčia „Do Not Track“, niekas nesiunčiama.",
+ "home.quickmenu.title": "Šokinėkite tarp skyrių negrįždami į Pradžią",
+ "home.quickmenu.sub": "Anksčiau norint iš Bingo patekti į Nustatymus reikėjo užsukti į Pradžią. Dabar paliečiate tris taškus (···) viršutiniame dešiniajame kampe ir einate tiesiai.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Beveik kiekviename ekrane",
+   "text": "Horizontalių trijų taškų piktograma (···) yra viršutiniame dešiniajame kampe. Jei ekrane buvo bendrinimo mygtukas, jis pasislenka į jos kairę."
+  },
+  {
+   "title": "Tos pačios grupės kaip Pradžioje",
+   "text": "Tikslai, Mano skaitymai ir Įrankiai, taip pat Pradžia, Nustatymai ir Duomenys ir kopijos. Skyrius, kuriame esate, paryškintas: palieskite jį, kad grįžtumėte į jo pradžią."
+  },
+  {
+   "title": "Ir knygos puslapyje",
+   "text": "Atidarykite vertikalių trijų taškų meniu knygos puslapyje ir pasirinkite „Greitasis meniu“. Žingsnis po žingsnio vedlių jis neturi, kad nepamestumėte pildomų duomenų."
+  }
+ ],
+ "home.quickmenu.tag": "Naujiena 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Greitasis meniu",
+ "home.quickmenu.groups": [
+  {
+   "title": "Tikslai",
+   "text": "Renginiai · Iššūkiai · Bingo"
+  },
+  {
+   "title": "Mano skaitymai",
+   "text": "Statistika · Mano kortelės · „Wrapped“"
+  },
+  {
+   "title": "Įrankiai",
+   "text": "Priminimai · Žymų tvarkymas · Nuskaityti ISBN"
+  },
+  {
+   "title": "Bendrosios nuorodos",
+   "text": "Pradžia · Nustatymai · Duomenys ir kopijos"
+  }
+ ]
 }

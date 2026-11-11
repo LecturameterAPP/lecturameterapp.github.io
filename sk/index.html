@@ -621,7 +621,7 @@
         </div>
         <div class="paused-grid">
             <div class="paused-card reveal-up"><h3>Samostatný stav</h3><p>Pozastavené nie je Opustené. Tvoja kniha nepôjde do kôpky tých, ktoré si vzdal: čaká a vráti sa, kedykoľvek budeš chcieť.</p></div>
-            <div class="paused-card reveal-up"><h3>Zo stavu Čítanie alebo Znovu čítam</h3><p>Zmeň stav v odznaku na stránke knihy alebo cez „Zmeniť stav“ v rýchlej ponuke. Funguje pre knihy, komiksy, mangu aj audioknihy.</p></div>
+            <div class="paused-card reveal-up"><h3>Zo stavu Čítanie alebo Znovu čítam</h3><p>Zmeňte stav cez štítok na stránke knihy alebo cez „Zmeniť stav“ v rýchlych akciách (podržte kartu knihy). Funguje pre knihy, komiksy, mangu a audioknihy.</p></div>
             <div class="paused-card reveal-up"><h3>Dni na pauze sa nepočítajú</h3><p>Ani do dní do dočítania, ani do tvojej rýchlosti čítania. Štatistiky zostanú také, aké boli, keď si čítal.</p></div>
             <div class="paused-card reveal-up"><h3>Poznámka, ak chceš</h3><p>Keď knihu pozastavíš aj keď ju obnovíš, môžeš si poznačiť prečo. Je to dobrovoľné. Všetko zostane v sekcii „Pauzy“ na stránke knihy aj s históriou.</p></div>
             <div class="paused-card reveal-up"><h3>Vlastná karta</h3><p>V knižnici nájdeš pozastavené knihy medzi Chcem čítať a Opustené.</p></div>
@@ -630,13 +630,41 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="cards" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Novinka v 3.9</span>
+            <h2 id="quickmenu-title">Prechádzajte medzi sekciami bez návratu na Domov</h2>
+            <p>Na to, aby ste sa z Bingo dostali do Nastavení, bolo predtým treba najprv prejsť cez Domov. Teraz ťuknete na tri bodky (···) v pravom hornom rohu a ste tam hneď.</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">Rýchle menu</p>
+                <div class="qm-groups">
+                    <div class="qm-group is-current"><p class="qm-group-title">Ciele</p><p>Udalosti · Výzvy · Bingo</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Moje čítanie</p><p>Štatistiky · Moje karty · Wrapped</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Nástroje</p><p>Pripomienky · Správa tagov · Naskenovať ISBN</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Všeobecné skratky</p><p>Domov · Nastavenia · Údaje a zálohy</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card qm-card reveal-up"><h3>Na takmer každej obrazovke</h3><p>Ikona troch vodorovných bodiek (···) je v pravom hornom rohu. Ak mala obrazovka tlačidlo zdieľania, posunie sa vľavo od nej.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Rovnaké skupiny ako na Domov</h3><p>Ciele, Moje čítanie a Nástroje, plus Domov, Nastavenia a Údaje a zálohy. Sekcia, v ktorej sa nachádzate, je zvýraznená: ťuknite na ňu a vrátite sa na jej začiatok.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Aj na stránke knihy</h3><p>Otvorte ponuku troch zvislých bodiek na stránke knihy a vyberte „Rýchle menu“. Sprievodcovia krok za krokom ju nemajú, aby ste nestratili, čo vypĺňate.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="cards" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">Zdieľanie</span>
             <h2 id="cards-title">Lecturameter nie je sociálna sieť. Tvoje karty idú na tú, ktorú používaš.</h2>
-            <p>Vytváraj zvislé karty 1080×1920, pripravené na stories, a zdieľaj ich tam, kde už si. Bez účtu, bez profilu a bez sledovateľov.</p>
+            <p>Vytváraj zvislé karty 1080×1920, pripravené na stories, a zdieľaj ich tam, kde už si. Bez účtu, bez profilu a bez sledovateľov. Vo verzii 3.9 dostanú týždenné a mesačné prehľady nový dizajn a viac štatistík.</p>
         </div>
         <div class="share-wrap">
             <div class="share-fan reveal-up" aria-hidden="true">
@@ -669,7 +697,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="events" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">
@@ -870,7 +898,7 @@
                 <p class="price-trial">Vyskúšaj Pro zadarmo na 7 dní, priamo v aplikácii</p>
                 <p class="price-trial">Na skúšobnú dobu nie je potrebná karta</p>
                 <ul class="pricing-list">
-                    <li>Témy Koža, Aurora, OLED a Súmrak</li>
+                    <li>Témy Koža, Aurora, OLED, Súmrak, Zošit a Lesík</li>
                     <li>Pohlcujúci časovač</li>
                     <li>Zlatá alternatívna ikona</li>
                     <li>Widget mesačného porovnania</li>
@@ -897,16 +925,40 @@
                 <h3>Novinky</h3>
                 <ul>
                     <li><strong>Udalosti:</strong> celosvetové čitateľské výzvy a Lecturameter Quest, keď je nejaký aktívny</li>
+                    <li><strong>Rýchle menu:</strong> prechádzajte z jednej sekcie do druhej cez tri bodky (···), bez návratu na Domov</li>
                     <li><strong>Pozastavené:</strong> odlož knihu na čas bez toho, aby ti pokazila štatistiky</li>
                     <li><strong>Dva nové motívy Pro:</strong> Zošit a Lesík</li>
+                    <li>Témy Pro si môžete kúpiť aj jednotlivo alebo v balíkoch po 3, s ukážkou, a obrazovka Pro je nová</li>
+                    <li><strong>Nelineárne čítanie</strong> pre antológie a básnické zbierky: prekrývajúce sa strany sa nepočítajú dvakrát a ukazovateľ pokroku je rozdelený na úseky</li>
+                    <li>Začnite čítať z widgetu knihy bez otvorenia aplikácie</li>
+                    <li>Týždenné a mesačné prehľady s novým dizajnom a viac štatistikami</li>
+                    <li>Voliteľný e-mail v „Odoslať spätnú väzbu“, len aby som vám mohol odpovedať</li>
                     <li>Vlastné hodiny časovača pre každý motív</li>
                     <li>Pagi ti vyberie knihu zo zoznamu Chcem čítať</li>
                     <li>KOSync so skutočným časom čítania z KOReaderu</li>
                     <li>Oznámenia podľa kategórií a upozornenia na novinky v aplikácii</li>
+                    <li>Domov s lištou zoskupenou na Ciele, Moje čítanie a Nástroje</li>
+                    <li>Zmeňte stav knihy z jej rýchlych akcií a vráťte ho späť, ak sa pomýlite</li>
+                    <li>Ikony Material namiesto emoji a čitateľnejšie štatistiky v každej téme</li>
+                    <li>Upozornenie pri pridaní knihy z vyhľadávania</li>
+                    <li>Dátumy cyklov čítania v jednom riadku, ľahšie sa upravujú</li>
                     <li>Bingo s 24 šablónami podľa veľkosti</li>
+                    <li>Na iPhone Live Activity stopiek vo farbách vašej témy</li>
+                    <li>Katalóg sa učí z vyhľadávaní a skenov ISBN bez výsledku a dopĺňa chýbajúce knihy (od 15. novembra)</li>
                     <li>Tradičná čínština</li>
                     <li>Séria v CSV</li>
-                    <li>Čitateľnejšie Štatistiky</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>Opravy</h3>
+                <ul>
+                    <li>Nadpisy v Bingo, Wrapped a na ďalších obrazovkách sú teraz vo rovnakej výške ako v ostatných ponukách</li>
+                    <li>Ikony Bingo a Wrapped dostali späť svoje farby</li>
+                    <li>Počítadlá kníh podľa stavu na Domov sú lepšie viditeľné v témach Tmavá, OLED, Súmrak, Aurora a Koža</li>
+                    <li>Jedno upozornenie pre knihy s chýbajúcimi údajmi: žltý trojuholník zmizol a ostal červený</li>
+                    <li>Opätovné načítanie obálky a žánru povie, keď už bolo všetko v poriadku, a červene upozorní, keď niečo nenájde</li>
+                    <li>Zálohy veľmi veľkých knižníc na Google Drive už nezlyhávajú pre nedostatok pamäte</li>
+                    <li>Viaceré opravy na iPhone</li>
                 </ul>
             </div>
         </div>
@@ -1025,21 +1077,43 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">v3.9 &middot; Udalosti · Dva nové motívy Pro</button>
+                <button class="faq-q">v3.9 &middot; Udalosti · Rýchle menu · Dve nové témy Pro</button>
                 <div class="faq-a"><div class="faq-a-inner">
                     <strong>Novinky</strong>
                     <ul>
                         <li><strong>Udalosti:</strong> celosvetové čitateľské výzvy a Lecturameter Quest, keď je nejaký aktívny</li>
+                        <li><strong>Rýchle menu:</strong> prechádzajte z jednej sekcie do druhej cez tri bodky (···), bez návratu na Domov</li>
                         <li><strong>Pozastavené:</strong> odlož knihu na čas bez toho, aby ti pokazila štatistiky</li>
                         <li><strong>Dva nové motívy Pro:</strong> Zošit a Lesík</li>
+                        <li>Témy Pro si môžete kúpiť aj jednotlivo alebo v balíkoch po 3, s ukážkou, a obrazovka Pro je nová</li>
+                        <li><strong>Nelineárne čítanie</strong> pre antológie a básnické zbierky: prekrývajúce sa strany sa nepočítajú dvakrát a ukazovateľ pokroku je rozdelený na úseky</li>
+                        <li>Začnite čítať z widgetu knihy bez otvorenia aplikácie</li>
+                        <li>Týždenné a mesačné prehľady s novým dizajnom a viac štatistikami</li>
+                        <li>Voliteľný e-mail v „Odoslať spätnú väzbu“, len aby som vám mohol odpovedať</li>
                         <li>Vlastné hodiny časovača pre každý motív</li>
                         <li>Pagi ti vyberie knihu zo zoznamu Chcem čítať</li>
                         <li>KOSync so skutočným časom čítania z KOReaderu</li>
                         <li>Oznámenia podľa kategórií a upozornenia na novinky v aplikácii</li>
+                        <li>Domov s lištou zoskupenou na Ciele, Moje čítanie a Nástroje</li>
+                        <li>Zmeňte stav knihy z jej rýchlych akcií a vráťte ho späť, ak sa pomýlite</li>
+                        <li>Ikony Material namiesto emoji a čitateľnejšie štatistiky v každej téme</li>
+                        <li>Upozornenie pri pridaní knihy z vyhľadávania</li>
+                        <li>Dátumy cyklov čítania v jednom riadku, ľahšie sa upravujú</li>
                         <li>Bingo s 24 šablónami podľa veľkosti</li>
+                        <li>Na iPhone Live Activity stopiek vo farbách vašej témy</li>
+                        <li>Katalóg sa učí z vyhľadávaní a skenov ISBN bez výsledku a dopĺňa chýbajúce knihy (od 15. novembra)</li>
                         <li>Tradičná čínština</li>
                         <li>Séria v CSV</li>
-                        <li>Čitateľnejšie Štatistiky</li>
+                    </ul>
+                    <strong>Opravy</strong>
+                    <ul>
+                        <li>Nadpisy v Bingo, Wrapped a na ďalších obrazovkách sú teraz vo rovnakej výške ako v ostatných ponukách</li>
+                        <li>Ikony Bingo a Wrapped dostali späť svoje farby</li>
+                        <li>Počítadlá kníh podľa stavu na Domov sú lepšie viditeľné v témach Tmavá, OLED, Súmrak, Aurora a Koža</li>
+                        <li>Jedno upozornenie pre knihy s chýbajúcimi údajmi: žltý trojuholník zmizol a ostal červený</li>
+                        <li>Opätovné načítanie obálky a žánru povie, keď už bolo všetko v poriadku, a červene upozorní, keď niečo nenájde</li>
+                        <li>Zálohy veľmi veľkých knižníc na Google Drive už nezlyhávajú pre nedostatok pamäte</li>
+                        <li>Viaceré opravy na iPhone</li>
                     </ul>
                 </div></div>
             </div>

@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Sumir gætu séð annað verð vegna þess að við erum með verðtilraunir í gangi.",
  "home.pricing.try_pro_free_for_7": "Prófaðu Pro ókeypis í 7 daga, inni í forritinu",
  "home.pricing.no_card_required_for_the": "Ekkert kort þarf fyrir prufutímann",
- "home.pricing.leather_aurora_oled_and_dusk": "Þemun Leður, Aurora, OLED og Rökkur",
+ "home.pricing.leather_aurora_oled_and_dusk": "Þemun Leður, Aurora, OLED, Rökkur, Stílabók og Skógur",
  "home.pricing.immersive_timer": "Tímamælir í kafi",
  "home.pricing.golden_alternative_icon": "Gyllt aukatákn",
  "home.pricing.monthly_comparison_widget": "Græja fyrir mánaðarsamanburð",
@@ -547,21 +547,41 @@
   "Breyting á stöðu bókar eyðir ekki lengur dagsetningum fyrri lestra.",
   "Mánaðaryfirlitið telur líka kláraðar bækur án lota."
  ],
- "release.3_9.headline": "Viðburðir · Tvö ný Pro þemu",
+ "release.3_9.headline": "Viðburðir · Flýtivalmynd · Tvö ný Pro-þemu",
  "release.3_9.new": [
   "<strong>Viðburðir:</strong> alþjóðlegar lestraráskoranir og Lecturameter Quest þegar eitt er virkt",
+  "<strong>Flýtivalmynd:</strong> farðu milli hluta með punktunum þremur (···), án þess að fara aftur á Heim",
   "<strong>Í hléi:</strong> leggðu bók til hliðar um stund án þess að skemma tölfræðina þína",
   "<strong>Tvö ný Pro þemu:</strong> Stílabók og Skógur",
+  "Pro-þemu er líka hægt að kaupa eitt og eitt eða í pökkum með 3, með forskoðun, og Pro-skjárinn er nýr",
+  "<strong>Ólínulegur lestur</strong> fyrir safnrit og ljóðasöfn: síður sem skarast teljast ekki tvisvar og framvindustikan skiptist í hluta",
+  "Byrjaðu að lesa úr græju bókarinnar, án þess að opna appið",
+  "Vikuleg og mánaðarleg yfirlit með nýju útliti og meiri tölfræði",
+  "Valfrjálst netfang í „Senda ábendingu“, aðeins svo ég geti svarað þér",
   "Sérstök tímamælisklukka fyrir hvert þema",
   "Pagi velur bók fyrir þig af listanum Vil lesa",
   "KOSync með raunverulegum lestrartíma úr KOReader",
   "Tilkynningar eftir flokkum og tilkynningar um nýjungar í appinu",
+  "Heim með stikunni flokkaðri í Markmið, Lesturinn minn og Verkfæri",
+  "Breyttu stöðu bókar úr skjótaðgerðum hennar og afturkallaðu ef þér verður á",
+  "Material-tákn í stað emoji og læsilegri tölfræði í öllum þemum",
+  "Tilkynning þegar bók er bætt við úr leit",
+  "Dagsetningar lestrarlota í einni línu, auðveldari í breytingu",
   "Bingó með 24 sniðmátum eftir stærð",
+  "Á iPhone, Live Activity tímamælisins í litum þemans þíns",
+  "Skráin lærir af leitum og ISBN-skönnunum sem finna ekkert og bætir við bókunum sem vantar (frá 15. nóvember)",
   "Hefðbundin kínverska",
-  "Sería í CSV",
-  "Læsilegri tölfræði"
+  "Sería í CSV"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Titlar í Bingó, Wrapped og öðrum skjám eru nú í sömu hæð og í öðrum valmyndum",
+  "Tákn Bingó og Wrapped fá litina sína aftur",
+  "Bókateljararnir eftir stöðu á Heim sjást betur í Dökku, OLED, Rökkri, Aurora og Leðri",
+  "Ein viðvörun fyrir bækur með vantandi gögn: guli þríhyrningurinn er horfinn og sá rauði er áfram",
+  "Endurhleðsla á kápu og flokki segir þér þegar allt var þegar í lagi og varar við í rauðu þegar eitthvað finnst ekki",
+  "Afrit á Google Drive af mjög stórum bókasöfnum mistakast ekki lengur vegna minnisskorts",
+  "Ýmsar lagfæringar á iPhone"
+ ],
  "roadmap.3_9.heading": "Það sem kemur í Lecturameter 3.9",
  "roadmap.3_9.sub": "Lestraráskoranir fyrir allt samfélagið, leikur með <b>þínum eigin bókum</b> og nýr heimaskjár. Engar fastar dagsetningar: allt kemur þegar það er tilbúið.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Úr Les eða Endurlestur",
-   "text": "Breyttu stöðunni með merkinu á síðu bókarinnar eða með „Breyta stöðu“ í flýtivalmyndinni. Virkar fyrir bækur, myndasögur, manga og hljóðbækur."
+   "text": "Breyttu stöðunni með hnappinum á síðu bókarinnar eða með „Breyta stöðu“ í skjótaðgerðum (haltu inni á spjaldi bókarinnar). Þetta virkar fyrir bækur, myndasögur, manga og hljóðbækur."
   },
   {
    "title": "Dagar í hléi telja ekki",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Deila",
  "home.cards.title": "Lecturameter er ekki samfélagsmiðill. Spjöldin þín fara á þann miðil sem þú notar.",
- "home.cards.sub": "Gerðu lóðrétt spjöld, 1080×1920, tilbúin í sögur, og deildu þeim þar sem þú ert nú þegar. Enginn aðgangur, enginn prófíll og engir fylgjendur.",
+ "home.cards.sub": "Gerðu lóðrétt spjöld, 1080×1920, tilbúin í sögur, og deildu þeim þar sem þú ert nú þegar. Enginn aðgangur, enginn prófíll og engir fylgjendur. Í 3.9 fá vikuleg og mánaðarleg yfirlit nýtt útlit og meiri tölfræði.",
  "home.cards.chips": [
   "Bók",
   "Bók lokið",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 er ókeypis og fáanlegt fyrir iPhone og fyrir Android.",
  "lm99.get.app_store": "Sækja í App Store",
  "lm99.get.play_soon": "Væntanlegt í Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Heimsóknateljari vefsíðunnar:</span> þessi vefsíða (ekki appið) er með sinn eigin nafnlausa teljara, án vefkaka og án þriðju aðila. Hann skráir síðuna sem þú heimsækir, smelli þína á tengla í verslanirnar, landið, tungumál síðunnar, gerð tækis (sími eða tölva) og vefinn sem þú komst frá. Hann geymir hvorki IP-tölu þína né neitt sem auðkennir þig: aðeins nafnlausan kóða sem er endurreiknaður á hverjum degi og er ekki hægt að nota til að þekkja þig frá einum degi til annars. Ef vafrinn þinn sendir „Do Not Track“ er engu sent."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Heimsóknateljari vefsíðunnar:</span> þessi vefsíða (ekki appið) er með sinn eigin nafnlausa teljara, án vefkaka og án þriðju aðila. Hann skráir síðuna sem þú heimsækir, smelli þína á tengla í verslanirnar, landið, tungumál síðunnar, gerð tækis (sími eða tölva) og vefinn sem þú komst frá. Hann geymir hvorki IP-tölu þína né neitt sem auðkennir þig: aðeins nafnlausan kóða sem er endurreiknaður á hverjum degi og er ekki hægt að nota til að þekkja þig frá einum degi til annars. Ef vafrinn þinn sendir „Do Not Track“ er engu sent.",
+ "home.quickmenu.title": "Farðu milli hluta án þess að fara aftur á Heim",
+ "home.quickmenu.sub": "Áður þurfti að fara fyrst á Heim til að komast úr Bingó í Stillingar. Nú ýtirðu á punktana þrjá (···) efst í hægra horninu og ferð beint þangað.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Á nánast öllum skjám",
+   "text": "Táknið með þremur láréttum punktum (···) er efst í hægra horninu. Ef skjárinn var með deilingarhnapp færist hann til vinstri við það."
+  },
+  {
+   "title": "Sömu hópar og á Heim",
+   "text": "Markmið, Lesturinn minn og Verkfæri, auk Heim, Stillingar og Gögn og afrit. Hlutinn sem þú ert í er auðkenndur: ýttu á hann til að fara aftur á upphaf hans."
+  },
+  {
+   "title": "Líka á bókarsíðunni",
+   "text": "Opnaðu valmyndina með þremur lóðréttum punktum á síðu bókarinnar og veldu „Flýtivalmynd“. Leiðsagnir í skrefum hafa hana ekki, svo þú glatir ekki því sem þú ert að fylla út."
+  }
+ ],
+ "home.quickmenu.tag": "Nýtt í 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingó",
+ "home.quickmenu.menu_title": "Flýtivalmynd",
+ "home.quickmenu.groups": [
+  {
+   "title": "Markmið",
+   "text": "Viðburðir · Áskoranir · Bingó"
+  },
+  {
+   "title": "Lesturinn minn",
+   "text": "Tölfræði · Spjöldin mín · Wrapped"
+  },
+  {
+   "title": "Verkfæri",
+   "text": "Áminningar · Umsjón með merkjum · Skanna ISBN"
+  },
+  {
+   "title": "Almennar flýtileiðir",
+   "text": "Heim · Stillingar · Gögn og afrit"
+  }
+ ]
 }

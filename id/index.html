@@ -621,7 +621,7 @@
         </div>
         <div class="paused-grid">
             <div class="paused-card reveal-up"><h3>Status tersendiri</h3><p>Dijeda bukan Ditinggalkan. Bukumu tidak masuk ke tumpukan buku yang kamu tinggalkan: ia menunggu dan kembali kapan pun kamu mau.</p></div>
-            <div class="paused-card reveal-up"><h3>Dari Sedang dibaca atau Membaca ulang</h3><p>Ubah status lewat label di halaman buku atau dengan “Ubah status” di menu cepat. Berlaku untuk buku, komik, manga, dan buku audio.</p></div>
+            <div class="paused-card reveal-up"><h3>Dari Sedang dibaca atau Membaca ulang</h3><p>Ubah status dari pil di halaman buku atau dengan “Ubah status” di aksi cepat (tekan lama kartu buku). Berlaku untuk buku, komik, manga, dan buku audio.</p></div>
             <div class="paused-card reveal-up"><h3>Hari-hari saat dijeda tidak dihitung</h3><p>Tidak masuk dalam hari untuk menyelesaikan dan tidak masuk dalam kecepatan bacamu. Statistikmu tetap seperti saat kamu membaca.</p></div>
             <div class="paused-card reveal-up"><h3>Catatan, kalau mau</h3><p>Saat menjeda dan saat melanjutkan, kamu bisa menulis alasannya. Ini opsional. Semuanya tersimpan di bagian “Jeda” pada halaman buku, lengkap dengan riwayatnya.</p></div>
             <div class="paused-card reveal-up"><h3>Tab tersendiri</h3><p>Di perpustakaanmu, di antara Ingin dibaca dan Ditinggalkan, ada buku-buku yang kamu jeda.</p></div>
@@ -630,13 +630,41 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="cards" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Baru di 3.9</span>
+            <h2 id="quickmenu-title">Pindah antarbagian tanpa kembali ke Beranda</h2>
+            <p>Dulu, untuk pindah dari Bingo ke Pengaturan, kamu harus mampir ke Beranda dulu. Sekarang cukup ketuk tiga titik (···) di pojok kanan atas dan langsung sampai.</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">Menu cepat</p>
+                <div class="qm-groups">
+                    <div class="qm-group is-current"><p class="qm-group-title">Target</p><p>Acara · Tantangan · Bingo</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Bacaan saya</p><p>Statistik · Kartu saya · Wrapped</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Alat</p><p>Pengingat · Kelola tag · Pindai ISBN</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Pintasan umum</p><p>Beranda · Pengaturan · Data dan cadangan</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card qm-card reveal-up"><h3>Di hampir semua layar</h3><p>Ikon tiga titik horizontal (···) ada di pojok kanan atas. Jika layar punya tombol bagikan, tombol itu bergeser ke kirinya.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Grup yang sama seperti Beranda</h3><p>Target, Bacaan saya, dan Alat, plus Beranda, Pengaturan, dan Data dan cadangan. Bagian tempatmu berada ditandai: ketuk untuk kembali ke awalnya.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Di halaman buku juga</h3><p>Buka menu tiga titik vertikal di halaman buku dan pilih “Menu cepat”. Wizard langkah demi langkah tidak memilikinya, supaya isian kamu tidak hilang.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="cards" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">Bagikan</span>
             <h2 id="cards-title">Lecturameter bukan jejaring sosial. Kartumu pergi ke jejaring yang kamu pakai.</h2>
-            <p>Buat kartu vertikal 1080×1920, siap untuk story, dan bagikan di tempat kamu sudah berada. Tanpa akun, tanpa profil, dan tanpa pengikut.</p>
+            <p>Buat kartu vertikal 1080×1920, siap untuk story, dan bagikan di tempat kamu sudah berada. Tanpa akun, tanpa profil, dan tanpa pengikut. Di 3.9, ringkasan mingguan dan bulanan mendapat desain baru dengan lebih banyak statistik.</p>
         </div>
         <div class="share-wrap">
             <div class="share-fan reveal-up" aria-hidden="true">
@@ -669,7 +697,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="events" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">
@@ -870,7 +898,7 @@
                 <p class="price-trial">Coba Pro gratis 7 hari, di dalam aplikasi</p>
                 <p class="price-trial">Uji coba tanpa perlu kartu</p>
                 <ul class="pricing-list">
-                    <li>Tema Kulit, Aurora, OLED, dan Senja</li>
+                    <li>Tema Kulit, Aurora, OLED, Senja, Buku Tulis, dan Hutan</li>
                     <li>Pengatur waktu imersif</li>
                     <li>Ikon alternatif emas</li>
                     <li>Widget perbandingan bulanan</li>
@@ -897,16 +925,40 @@
                 <h3>Baru</h3>
                 <ul>
                     <li><strong>Acara:</strong> tantangan membaca global dan Lecturameter Quest saat ada yang aktif</li>
+                    <li><strong>Menu cepat:</strong> pindah antarbagian dengan tiga titik (···), tanpa kembali ke Beranda</li>
                     <li><strong>Dijeda:</strong> simpan buku sementara tanpa mengacaukan statistikmu</li>
                     <li><strong>Dua tema Pro baru:</strong> Buku Tulis dan Hutan</li>
+                    <li>Tema Pro juga bisa dibeli satuan atau paket isi 3, dengan pratinjau, dan layar Pro kini baru</li>
+                    <li><strong>Membaca nonlinear</strong> untuk antologi dan kumpulan puisi: halaman yang tumpang tindih tidak dihitung dua kali dan bilah progres dibagi menjadi segmen</li>
+                    <li>Mulai membaca dari widget buku, tanpa membuka aplikasi</li>
+                    <li>Ringkasan mingguan dan bulanan dengan desain baru dan lebih banyak statistik</li>
+                    <li>Email opsional di “Kirim masukan”, hanya agar saya bisa membalasmu</li>
                     <li>Jam pengatur waktu tersendiri untuk setiap tema</li>
                     <li>Pagi memilihkan buku dari Ingin dibaca</li>
                     <li>KOSync dengan waktu baca asli dari KOReader</li>
                     <li>Notifikasi per kategori dan kabar terbaru aplikasi</li>
+                    <li>Beranda dengan rail yang dikelompokkan menjadi Target, Bacaan saya, dan Alat</li>
+                    <li>Ubah status buku dari aksi cepatnya, dan batalkan jika salah</li>
+                    <li>Ikon Material menggantikan emoji dan statistik yang lebih mudah dibaca di semua tema</li>
+                    <li>Pemberitahuan saat menambahkan buku dari pencarian</li>
+                    <li>Tanggal siklus membaca dalam satu baris, lebih mudah diedit</li>
                     <li>Bingo dengan 24 templat menurut ukuran</li>
+                    <li>Di iPhone, Live Activity timer dengan warna tema kamu</li>
+                    <li>Katalog belajar dari pencarian dan pemindaian ISBN yang tidak menemukan apa pun dan menambahkan buku yang belum ada (mulai 15 November)</li>
                     <li>Mandarin Tradisional</li>
                     <li>Seri di CSV</li>
-                    <li>Statistik lebih mudah dibaca</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>Perbaikan</h3>
+                <ul>
+                    <li>Judul di Bingo, Wrapped, dan layar lain kini sejajar dengan menu lainnya</li>
+                    <li>Ikon Bingo dan Wrapped mendapatkan kembali warnanya</li>
+                    <li>Penghitung buku per status di Beranda lebih mudah terlihat di tema Gelap, OLED, Senja, Aurora, dan Kulit</li>
+                    <li>Satu peringatan saja untuk buku dengan data tidak lengkap: segitiga kuning dihapus dan yang merah tetap ada</li>
+                    <li>Memuat ulang sampul dan genre memberi tahu jika semuanya sudah beres, dan memperingatkan dengan warna merah jika ada yang tidak ditemukan</li>
+                    <li>Pencadangan Google Drive untuk pustaka yang sangat besar tidak lagi gagal karena kehabisan memori</li>
+                    <li>Beberapa perbaikan di iPhone</li>
                 </ul>
             </div>
         </div>
@@ -1025,21 +1077,43 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">v3.9 &middot; Acara · Dua tema Pro baru</button>
+                <button class="faq-q">v3.9 &middot; Acara · Menu cepat · Dua tema Pro baru</button>
                 <div class="faq-a"><div class="faq-a-inner">
                     <strong>Baru</strong>
                     <ul>
                         <li><strong>Acara:</strong> tantangan membaca global dan Lecturameter Quest saat ada yang aktif</li>
+                        <li><strong>Menu cepat:</strong> pindah antarbagian dengan tiga titik (···), tanpa kembali ke Beranda</li>
                         <li><strong>Dijeda:</strong> simpan buku sementara tanpa mengacaukan statistikmu</li>
                         <li><strong>Dua tema Pro baru:</strong> Buku Tulis dan Hutan</li>
+                        <li>Tema Pro juga bisa dibeli satuan atau paket isi 3, dengan pratinjau, dan layar Pro kini baru</li>
+                        <li><strong>Membaca nonlinear</strong> untuk antologi dan kumpulan puisi: halaman yang tumpang tindih tidak dihitung dua kali dan bilah progres dibagi menjadi segmen</li>
+                        <li>Mulai membaca dari widget buku, tanpa membuka aplikasi</li>
+                        <li>Ringkasan mingguan dan bulanan dengan desain baru dan lebih banyak statistik</li>
+                        <li>Email opsional di “Kirim masukan”, hanya agar saya bisa membalasmu</li>
                         <li>Jam pengatur waktu tersendiri untuk setiap tema</li>
                         <li>Pagi memilihkan buku dari Ingin dibaca</li>
                         <li>KOSync dengan waktu baca asli dari KOReader</li>
                         <li>Notifikasi per kategori dan kabar terbaru aplikasi</li>
+                        <li>Beranda dengan rail yang dikelompokkan menjadi Target, Bacaan saya, dan Alat</li>
+                        <li>Ubah status buku dari aksi cepatnya, dan batalkan jika salah</li>
+                        <li>Ikon Material menggantikan emoji dan statistik yang lebih mudah dibaca di semua tema</li>
+                        <li>Pemberitahuan saat menambahkan buku dari pencarian</li>
+                        <li>Tanggal siklus membaca dalam satu baris, lebih mudah diedit</li>
                         <li>Bingo dengan 24 templat menurut ukuran</li>
+                        <li>Di iPhone, Live Activity timer dengan warna tema kamu</li>
+                        <li>Katalog belajar dari pencarian dan pemindaian ISBN yang tidak menemukan apa pun dan menambahkan buku yang belum ada (mulai 15 November)</li>
                         <li>Mandarin Tradisional</li>
                         <li>Seri di CSV</li>
-                        <li>Statistik lebih mudah dibaca</li>
+                    </ul>
+                    <strong>Perbaikan</strong>
+                    <ul>
+                        <li>Judul di Bingo, Wrapped, dan layar lain kini sejajar dengan menu lainnya</li>
+                        <li>Ikon Bingo dan Wrapped mendapatkan kembali warnanya</li>
+                        <li>Penghitung buku per status di Beranda lebih mudah terlihat di tema Gelap, OLED, Senja, Aurora, dan Kulit</li>
+                        <li>Satu peringatan saja untuk buku dengan data tidak lengkap: segitiga kuning dihapus dan yang merah tetap ada</li>
+                        <li>Memuat ulang sampul dan genre memberi tahu jika semuanya sudah beres, dan memperingatkan dengan warna merah jika ada yang tidak ditemukan</li>
+                        <li>Pencadangan Google Drive untuk pustaka yang sangat besar tidak lagi gagal karena kehabisan memori</li>
+                        <li>Beberapa perbaikan di iPhone</li>
                     </ul>
                 </div></div>
             </div>

@@ -621,7 +621,7 @@
         </div>
         <div class="paused-grid">
             <div class="paused-card reveal-up"><h3>Um estado próprio</h3><p>Em pausa não é Abandonado. O teu livro não vai para a pilha dos que largaste: fica em espera e volta quando quiseres.</p></div>
-            <div class="paused-card reveal-up"><h3>De A ler ou Relido</h3><p>Altera o estado no selo da página do livro ou com «Alterar estado» no menu rápido. Funciona com livros, banda desenhada, mangá e audiolivros.</p></div>
+            <div class="paused-card reveal-up"><h3>De A ler ou Relido</h3><p>Altera o estado com a etiqueta na página do livro ou com «Alterar estado» nas ações rápidas (mantém premido o cartão do livro). Funciona para livros, banda desenhada, manga e audiolivros.</p></div>
             <div class="paused-card reveal-up"><h3>Os dias em pausa não contam</h3><p>Nem nos dias para acabar nem na tua velocidade de leitura. As estatísticas ficam as de quando lias.</p></div>
             <div class="paused-card reveal-up"><h3>Uma nota, se quiseres</h3><p>Ao pausar e ao retomar podes apontar o motivo. É opcional. Tudo fica na secção «Pausas» da página do livro, com o respetivo histórico.</p></div>
             <div class="paused-card reveal-up"><h3>Um separador próprio</h3><p>Na tua biblioteca, entre Quero ler e Abandonado, encontras os livros em pausa.</p></div>
@@ -630,13 +630,41 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="cards" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Novidade da 3.9</span>
+            <h2 id="quickmenu-title">Salta entre secções sem voltar ao Início</h2>
+            <p>Para ir do Bingo às Definições era preciso passar primeiro pelo Início. Agora tocas nos três pontos (···) no canto superior direito e vais diretamente.</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">Menu rápido</p>
+                <div class="qm-groups">
+                    <div class="qm-group is-current"><p class="qm-group-title">Metas</p><p>Eventos · Desafios · Bingo</p></div>
+                    <div class="qm-group"><p class="qm-group-title">As minhas leituras</p><p>Estatísticas · Os meus cards · Wrapped</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Ferramentas</p><p>Lembretes · Gestão de tags · Digitalizar ISBN</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Acessos gerais</p><p>Início · Definições · Dados e cópias</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card qm-card reveal-up"><h3>Em quase todos os ecrãs</h3><p>O ícone de três pontos horizontais (···) fica no canto superior direito. Se o ecrã tinha botão de partilha, este passa para a sua esquerda.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Os mesmos grupos do Início</h3><p>Metas, As minhas leituras e Ferramentas, mais Início, Definições e Dados e cópias. A secção em que estás aparece destacada: toca nela para voltar ao seu início.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Também na página do livro</h3><p>Abre o menu de três pontos verticais na página do livro e escolhe «Menu rápido». Os assistentes passo a passo não o têm, para não perderes o que estás a preencher.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="cards" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">Partilhar</span>
             <h2 id="cards-title">O Lecturameter não é uma rede social. Os teus cards vão para a que usas.</h2>
-            <p>Cria cards verticais de 1080×1920, prontos para stories, e partilha-os onde já estás. Sem conta, sem perfil e sem seguidores.</p>
+            <p>Cria cards verticais de 1080×1920, prontos para stories, e partilha-os onde já estás. Sem conta, sem perfil e sem seguidores. Na 3.9, os resumos semanais e mensais ganham um novo design e mais estatísticas.</p>
         </div>
         <div class="share-wrap">
             <div class="share-fan reveal-up" aria-hidden="true">
@@ -669,7 +697,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="events" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">
@@ -870,7 +898,7 @@
                 <p class="price-trial">Experimenta o Pro grátis durante 7 dias, dentro da aplicação</p>
                 <p class="price-trial">Não é preciso cartão para a experiência</p>
                 <ul class="pricing-list">
-                    <li>Temas Couro, Aurora, OLED e Crepúsculo</li>
+                    <li>Temas Couro, Aurora, OLED, Entardecer, Caderno e Floresta</li>
                     <li>Cronómetro imersivo</li>
                     <li>Ícone alternativo dourado</li>
                     <li>Widget de comparação mensal</li>
@@ -897,16 +925,40 @@
                 <h3>Novo</h3>
                 <ul>
                     <li><strong>Eventos:</strong> desafios de leitura globais e Lecturameter Quest quando houver um ativo</li>
+                    <li><strong>Menu rápido:</strong> salta de uma secção para outra com os três pontos (···), sem voltar ao Início</li>
                     <li><strong>Em pausa:</strong> põe um livro de parte durante uns tempos sem estragar as tuas estatísticas</li>
                     <li><strong>Dois novos temas Pro:</strong> Caderno e Floresta</li>
+                    <li>Os temas Pro também podem ser comprados um a um ou em packs de 3, com pré-visualização, e o ecrã Pro é novo</li>
+                    <li><strong>Leitura não linear</strong> para antologias e livros de poesia: as páginas sobrepostas não contam duas vezes e a barra de progresso divide-se em segmentos</li>
+                    <li>Começa a ler a partir do widget do livro, sem abrir a app</li>
+                    <li>Resumos semanais e mensais com novo design e mais estatísticas</li>
+                    <li>E-mail opcional em «Enviar comentários», só para eu te poder responder</li>
                     <li>Um relógio de cronómetro próprio para cada tema</li>
                     <li>O Pagi escolhe-te um livro de Quero ler</li>
                     <li>KOSync com o tempo real de leitura do KOReader</li>
                     <li>Notificações por categoria e avisos de novidades da app</li>
+                    <li>Início com a barra agrupada em Metas, As minhas leituras e Ferramentas</li>
+                    <li>Altera o estado de um livro nas suas ações rápidas e desfaz se te enganares</li>
+                    <li>Ícones Material em vez de emojis e estatísticas mais legíveis em todos os temas</li>
+                    <li>Um aviso ao adicionar um livro a partir da pesquisa</li>
+                    <li>Datas dos ciclos de leitura numa única linha, mais fáceis de editar</li>
                     <li>Bingo com 24 modelos por tamanho</li>
+                    <li>No iPhone, a Live Activity do cronómetro com as cores do teu tema</li>
+                    <li>O catálogo aprende com as pesquisas e leituras de ISBN sem resultados e adiciona os livros em falta (a partir de 15 de novembro)</li>
                     <li>Chinês tradicional</li>
                     <li>Série no CSV</li>
-                    <li>Estatísticas mais legíveis</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>Correções</h3>
+                <ul>
+                    <li>Os títulos no Bingo, no Wrapped e noutros ecrãs ficam à mesma altura que nos restantes menus</li>
+                    <li>Os ícones do Bingo e do Wrapped recuperam as suas cores</li>
+                    <li>Os contadores de livros por estado no Início veem-se melhor nos temas Escuro, OLED, Entardecer, Aurora e Couro</li>
+                    <li>Um único aviso para livros com dados em falta: o triângulo amarelo desaparece e fica o vermelho</li>
+                    <li>Recarregar capa e género diz-te quando já estava tudo bem e avisa a vermelho quando não encontra algo</li>
+                    <li>As cópias no Google Drive de bibliotecas muito grandes já não falham por falta de memória</li>
+                    <li>Várias correções no iPhone</li>
                 </ul>
             </div>
         </div>
@@ -1025,21 +1077,43 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">v3.9 &middot; Eventos · Dois novos temas Pro</button>
+                <button class="faq-q">v3.9 &middot; Eventos · Menu rápido · Dois novos temas Pro</button>
                 <div class="faq-a"><div class="faq-a-inner">
                     <strong>Novo</strong>
                     <ul>
                         <li><strong>Eventos:</strong> desafios de leitura globais e Lecturameter Quest quando houver um ativo</li>
+                        <li><strong>Menu rápido:</strong> salta de uma secção para outra com os três pontos (···), sem voltar ao Início</li>
                         <li><strong>Em pausa:</strong> põe um livro de parte durante uns tempos sem estragar as tuas estatísticas</li>
                         <li><strong>Dois novos temas Pro:</strong> Caderno e Floresta</li>
+                        <li>Os temas Pro também podem ser comprados um a um ou em packs de 3, com pré-visualização, e o ecrã Pro é novo</li>
+                        <li><strong>Leitura não linear</strong> para antologias e livros de poesia: as páginas sobrepostas não contam duas vezes e a barra de progresso divide-se em segmentos</li>
+                        <li>Começa a ler a partir do widget do livro, sem abrir a app</li>
+                        <li>Resumos semanais e mensais com novo design e mais estatísticas</li>
+                        <li>E-mail opcional em «Enviar comentários», só para eu te poder responder</li>
                         <li>Um relógio de cronómetro próprio para cada tema</li>
                         <li>O Pagi escolhe-te um livro de Quero ler</li>
                         <li>KOSync com o tempo real de leitura do KOReader</li>
                         <li>Notificações por categoria e avisos de novidades da app</li>
+                        <li>Início com a barra agrupada em Metas, As minhas leituras e Ferramentas</li>
+                        <li>Altera o estado de um livro nas suas ações rápidas e desfaz se te enganares</li>
+                        <li>Ícones Material em vez de emojis e estatísticas mais legíveis em todos os temas</li>
+                        <li>Um aviso ao adicionar um livro a partir da pesquisa</li>
+                        <li>Datas dos ciclos de leitura numa única linha, mais fáceis de editar</li>
                         <li>Bingo com 24 modelos por tamanho</li>
+                        <li>No iPhone, a Live Activity do cronómetro com as cores do teu tema</li>
+                        <li>O catálogo aprende com as pesquisas e leituras de ISBN sem resultados e adiciona os livros em falta (a partir de 15 de novembro)</li>
                         <li>Chinês tradicional</li>
                         <li>Série no CSV</li>
-                        <li>Estatísticas mais legíveis</li>
+                    </ul>
+                    <strong>Correções</strong>
+                    <ul>
+                        <li>Os títulos no Bingo, no Wrapped e noutros ecrãs ficam à mesma altura que nos restantes menus</li>
+                        <li>Os ícones do Bingo e do Wrapped recuperam as suas cores</li>
+                        <li>Os contadores de livros por estado no Início veem-se melhor nos temas Escuro, OLED, Entardecer, Aurora e Couro</li>
+                        <li>Um único aviso para livros com dados em falta: o triângulo amarelo desaparece e fica o vermelho</li>
+                        <li>Recarregar capa e género diz-te quando já estava tudo bem e avisa a vermelho quando não encontra algo</li>
+                        <li>As cópias no Google Drive de bibliotecas muito grandes já não falham por falta de memória</li>
+                        <li>Várias correções no iPhone</li>
                     </ul>
                 </div></div>
             </div>

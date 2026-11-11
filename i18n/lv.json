@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Dažiem cilvēkiem var būt redzama cita cena, jo mēs veicam cenu eksperimentus.",
  "home.pricing.try_pro_free_for_7": "Izmēģini Pro bez maksas 7 dienas, tieši lietotnē",
  "home.pricing.no_card_required_for_the": "Izmēģinājumam karte nav vajadzīga",
- "home.pricing.leather_aurora_oled_and_dusk": "Tēmas Āda, Aurora, OLED un Krēsla",
+ "home.pricing.leather_aurora_oled_and_dusk": "Motīvi Āda, Aurora, OLED, Krēsla, Burtnīca un Mežs",
  "home.pricing.immersive_timer": "Iegremdējošais taimeris",
  "home.pricing.golden_alternative_icon": "Zelta alternatīvā ikona",
  "home.pricing.monthly_comparison_widget": "Mēnešu salīdzinājuma logrīks",
@@ -547,21 +547,41 @@
   "Grāmatas statusa maiņa vairs neizdzēš iepriekšējo lasījumu datumus.",
   "Mēneša kopsavilkums ņem vērā arī pabeigtās grāmatas bez sesijām."
  ],
- "release.3_9.headline": "Pasākumi · Divi jauni Pro motīvi",
+ "release.3_9.headline": "Pasākumi · Ātrā izvēlne · Divi jauni Pro motīvi",
  "release.3_9.new": [
   "<strong>Pasākumi:</strong> globāli lasīšanas izaicinājumi un Lecturameter Quest, kad ir aktīvs",
+  "<strong>Ātrā izvēlne:</strong> pārlēc no vienas sadaļas uz otru ar trim punktiem (···), neatgriežoties sākumā",
   "<strong>Pauzēts:</strong> noliec grāmatu malā uz laiku, nesabojājot savu statistiku",
   "<strong>Divi jauni Pro motīvi:</strong> Burtnīca un Mežs",
+  "Pro motīvus var iegādāties arī atsevišķi vai trīs komplektos, ar priekšskatījumu, un Pro ekrāns ir jauns",
+  "<strong>Nelineāra lasīšana</strong> antoloģijām un dzejoļu krājumiem: pārklājošās lapas netiek skaitītas divreiz, un progresa josla ir sadalīta posmos",
+  "Sāc lasīt no grāmatas logrīka, neatverot lietotni",
+  "Nedēļas un mēneša kopsavilkumi ar jaunu dizainu un vairāk statistikas",
+  "Neobligāts e-pasts sadaļā „Sūtīt atsauksmi”, tikai lai varētu tev atbildēt",
   "Savs taimera pulkstenis katram motīvam",
   "Pagi izvēlas grāmatu no saraksta Vēlos izlasīt",
   "KOSync ar KOReader īsto lasīšanas laiku",
   "Paziņojumi pa kategorijām un ziņas par lietotnes jaunumiem",
+  "Sākums ar sānjoslu, sagrupētu pa Mērķi, Mana lasīšana un Rīki",
+  "Maini grāmatas statusu no tās ātrajām darbībām un atsauc to, ja pārklikšķinies",
+  "Material ikonas emocijzīmju vietā un salasāmāka statistika visos motīvos",
+  "Paziņojums, kad pievieno grāmatu no meklēšanas",
+  "Lasīšanas ciklu datumi vienā rindā, vieglāk rediģējami",
   "Bingo ar 24 veidnēm pēc izmēra",
+  "iPhone ierīcē taimera Live Activity tava motīva krāsās",
+  "Katalogs mācās no meklējumiem un ISBN skenējumiem, kas neko neatrod, un pievieno trūkstošās grāmatas (no 15. novembra)",
   "Tradicionālā ķīniešu valoda",
-  "Sērija CSV failā",
-  "Lasāmāka statistika"
+  "Sērija CSV failā"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Virsraksti sadaļās Bingo, Wrapped un citos ekrānos tagad atrodas tādā pašā augstumā kā pārējās izvēlnēs",
+  "Bingo un Wrapped ikonas atguva savas krāsas",
+  "Grāmatu skaitītāji pa statusiem sadaļā Sākums ir labāk redzami motīvos Tumšais, OLED, Krēsla, Aurora un Āda",
+  "Viens vienīgs brīdinājums grāmatām ar trūkstošiem datiem: dzeltenais trijstūris pazūd, un paliek sarkanais",
+  "Pārlādējot vāku un žanru, tiek paziņots, ka viss jau bija kārtībā, un sarkanā krāsā brīdina, ja kaut kas netiek atrasts",
+  "Google Drive kopijas ļoti lielām bibliotēkām vairs neizgāžas atmiņas trūkuma dēļ",
+  "Vairāki labojumi iPhone ierīcē"
+ ],
  "roadmap.3_9.heading": "Kas gaidāms Lecturameter 3.9",
  "roadmap.3_9.sub": "Lasīšanas izaicinājumi visai kopienai, spēle ar <b>tavām pašu grāmatām</b> un atjaunots sākumekrāns. Bez fiksētiem datumiem: viss iznāk, kad ir gatavs.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "No Lasīšana vai Pārlasīšana",
-   "text": "Maini statusu ar zīmi grāmatas lapā vai ar „Mainīt statusu“ ātrajā izvēlnē. Darbojas grāmatām, komiksiem, mangai un audiogrāmatām."
+   "text": "Maini statusu ar tableti grāmatas lapā vai ar „Mainīt statusu” ātrajās darbībās (turi nospiestu grāmatas kartīti). Darbojas grāmatām, komiksiem, mangai un audiogrāmatām."
   },
   {
    "title": "Pauzes dienas netiek skaitītas",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Kopīgot",
  "home.cards.title": "Lecturameter nav sociālais tīkls. Tavas kartes dodas uz to, ko izmanto.",
- "home.cards.sub": "Veido vertikālas 1080×1920 kartes, gatavas stāstiem, un kopīgo tur, kur jau esi. Bez konta, bez profila un bez sekotājiem.",
+ "home.cards.sub": "Veido vertikālas 1080×1920 kartes, gatavas stāstiem, un kopīgo tur, kur jau esi. Bez konta, bez profila un bez sekotājiem. Versijā 3.9 nedēļas un mēneša kopsavilkumiem ir jauns dizains un vairāk statistikas.",
  "home.cards.chips": [
   "Grāmata",
   "Pabeigta grāmata",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 ir bez maksas un pieejama iPhone un Android.",
  "lm99.get.app_store": "Lejupielādēt no App Store",
  "lm99.get.play_soon": "Drīz Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Tīmekļa vietnes apmeklējumu skaitītājs:</span> šai tīmekļa vietnei (nevis lietotnei) ir savs anonīms skaitītājs bez sīkdatnēm un bez trešajām personām. Tas reģistrē lapu, kuru apmeklē, tavus klikšķus uz saitēm uz veikaliem, valsti, lapas valodu, ierīces veidu (mobilais tālrunis vai dators) un vietni, no kuras atnāci. Tas nesaglabā tavu IP adresi vai kaut ko, kas tevi identificētu: tikai anonīmu kodu, ko pārrēķina katru dienu un pēc kura nevar tevi atpazīt no vienas dienas uz otru. Ja tavs pārlūks sūta „Do Not Track“, netiek nosūtīts nekas."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Tīmekļa vietnes apmeklējumu skaitītājs:</span> šai tīmekļa vietnei (nevis lietotnei) ir savs anonīms skaitītājs bez sīkdatnēm un bez trešajām personām. Tas reģistrē lapu, kuru apmeklē, tavus klikšķus uz saitēm uz veikaliem, valsti, lapas valodu, ierīces veidu (mobilais tālrunis vai dators) un vietni, no kuras atnāci. Tas nesaglabā tavu IP adresi vai kaut ko, kas tevi identificētu: tikai anonīmu kodu, ko pārrēķina katru dienu un pēc kura nevar tevi atpazīt no vienas dienas uz otru. Ja tavs pārlūks sūta „Do Not Track“, netiek nosūtīts nekas.",
+ "home.quickmenu.title": "Pārlēc starp sadaļām, neatgriežoties sākumā",
+ "home.quickmenu.sub": "Lai no Bingo nokļūtu Iestatījumos, agrāk vajadzēja iegriezties sadaļā Sākums. Tagad pieskaries trim punktiem (···) augšējā labajā stūrī un nonāc turp tieši.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Gandrīz katrā ekrānā",
+   "text": "Horizontālā trīs punktu ikona (···) atrodas augšējā labajā stūrī. Ja ekrānā bija kopīgošanas poga, tā pārvietojas pa kreisi no tās."
+  },
+  {
+   "title": "Tās pašas grupas, kas sadaļā Sākums",
+   "text": "Mērķi, Mana lasīšana un Rīki, kā arī Sākums, Iestatījumi un Dati un kopijas. Sadaļa, kurā atrodies, ir iezīmēta: pieskaries tai, lai atgrieztos tās sākumā."
+  },
+  {
+   "title": "Arī grāmatas lapā",
+   "text": "Atver vertikālo trīs punktu izvēlni grāmatas lapā un izvēlies „Ātrā izvēlne”. Soli pa solim vedņos tās nav, lai nepazaudētu to, ko aizpildi."
+  }
+ ],
+ "home.quickmenu.tag": "Jaunums 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Ātrā izvēlne",
+ "home.quickmenu.groups": [
+  {
+   "title": "Mērķi",
+   "text": "Pasākumi · Izaicinājumi · Bingo"
+  },
+  {
+   "title": "Mana lasīšana",
+   "text": "Statistika · Manas kartītes · Wrapped"
+  },
+  {
+   "title": "Rīki",
+   "text": "Atgādinājumi · Birku pārvaldība · Skenēt ISBN"
+  },
+  {
+   "title": "Vispārīgas saīsnes",
+   "text": "Sākums · Iestatījumi · Dati un kopijas"
+  }
+ ]
 }

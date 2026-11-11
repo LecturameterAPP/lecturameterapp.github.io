@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Algunas personas pueden ver un precio distinto porque estamos haciendo experimentos con el precio.",
  "home.pricing.try_pro_free_for_7": "Prueba Pro gratis 7 días, dentro de la app",
  "home.pricing.no_card_required_for_the": "Sin tarjeta: la prueba no pide datos de pago",
- "home.pricing.leather_aurora_oled_and_dusk": "Temas Cuero, Aurora, OLED y Ocaso",
+ "home.pricing.leather_aurora_oled_and_dusk": "Temas Cuero, Aurora, OLED, Ocaso, Cuaderno y Floresta",
  "home.pricing.immersive_timer": "Cronómetro inmersivo",
  "home.pricing.golden_alternative_icon": "Icono dorado alternativo",
  "home.pricing.monthly_comparison_widget": "Widget de comparativa mensual",
@@ -547,21 +547,41 @@
   "Cambiar el estado de un libro ya no borra las fechas de lecturas anteriores.",
   "El resumen mensual cuenta también los libros terminados sin sesiones."
  ],
- "release.3_9.headline": "Eventos · Dos temas Pro nuevos",
+ "release.3_9.headline": "Eventos · Menú rápido · Dos temas Pro nuevos",
  "release.3_9.new": [
   "<strong>Eventos:</strong> retos de lectura globales y Lecturameter Quest cuando haya uno activo",
+  "<strong>Menú rápido:</strong> salta de una sección a otra desde los tres puntos (···), sin volver a Inicio",
   "<strong>Pausado:</strong> deja un libro una temporada sin ensuciar tus estadísticas",
   "<strong>Dos temas Pro nuevos:</strong> Cuaderno y Floresta",
+  "Los temas Pro también se compran sueltos o en lotes de 3, con vista previa, y la pantalla de Pro es nueva",
+  "<strong>Lectura no lineal</strong> para antologías y poemarios: las páginas que se solapan no cuentan dos veces y la barra de progreso va por tramos",
+  "Empieza a leer desde el widget del libro, sin abrir la app",
+  "Resúmenes semanal y mensual con nuevo diseño y más datos",
+  "Email opcional en «Enviar comentarios», solo para poder contestarte",
   "Un reloj de crono propio para cada tema",
   "Pagi te elige un libro de Quiero leer",
   "KOSync con el tiempo real de KOReader",
   "Notificaciones por categoría y avisos de novedades de la app",
+  "Inicio con el rail agrupado en Metas, Mis lecturas y Herramientas",
+  "Cambia el estado de un libro desde sus acciones rápidas y deshazlo si te equivocas",
+  "Iconos Material en vez de emojis y estadísticas más legibles en todos los temas",
+  "Aviso al añadir un libro desde la búsqueda",
+  "Fechas de los ciclos de lectura en una sola fila, más fáciles de editar",
   "Bingo con 24 plantillas por tamaño",
+  "En iPhone, la Live Activity del crono con los colores de tu tema",
+  "El catálogo aprende de las búsquedas y escaneos de ISBN sin resultado y añade los libros que faltan (desde el 15 de noviembre)",
   "Chino tradicional",
-  "Saga en el CSV",
-  "Estadísticas más legibles"
+  "Saga en el CSV"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Los títulos de Bingo, Wrapped y otras pantallas quedan a la misma altura que en el resto de menús",
+  "Los iconos de Bingo y Wrapped recuperan sus colores",
+  "Los contadores de libros por estado del Inicio se ven mejor en Oscuro, OLED, Ocaso, Aurora y Cuero",
+  "Un solo aviso para libros con datos incompletos: desaparece el triángulo amarillo y queda el rojo",
+  "Recargar portada y género te dice si ya estaba todo bien, y avisa en rojo si no encuentra algo",
+  "Las copias en Google Drive de bibliotecas muy grandes ya no fallan por falta de memoria",
+  "Varias correcciones en iPhone"
+ ],
  "roadmap.3_9.heading": "Lo que viene en Lecturameter 3.9",
  "roadmap.3_9.sub": "Retos de lectura para toda la comunidad, un juego con <b>tus propios libros</b> y un Inicio renovado. Sin fechas fijas: todo sale cuando esté listo.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Desde Leyendo o Releyendo",
-   "text": "Cambia el estado con la píldora de la ficha del libro o con «Cambiar estado» en el menú rápido. Vale para libros, cómics, manga y audiolibros."
+   "text": "Cambia el estado con la píldora de la ficha del libro o con «Cambiar estado» en las acciones rápidas (mantén pulsada la tarjeta del libro). Vale para libros, cómics, manga y audiolibros."
   },
   {
    "title": "Los días en pausa no cuentan",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Compartir",
  "home.cards.title": "Lecturameter no es una red social. Tus tarjetas van a la que uses.",
- "home.cards.sub": "Genera tarjetas verticales de 1080×1920, listas para historias, y compártelas donde ya estás. Sin cuenta, sin perfil y sin seguidores.",
+ "home.cards.sub": "Genera tarjetas verticales de 1080×1920, listas para historias, y compártelas donde ya estás. Sin cuenta, sin perfil y sin seguidores. En la 3.9, los resúmenes semanal y mensual estrenan diseño y enseñan más datos.",
  "home.cards.chips": [
   "Libro",
   "Libro terminado",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 es gratis y está disponible para iPhone y para Android.",
  "lm99.get.app_store": "Descargar en la App Store",
  "lm99.get.play_soon": "Próximamente en Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Contador de visitas de la web:</span> esta web (no la app) tiene un contador propio y anónimo, sin cookies y sin terceros. Registra la página que visitas, los clics en los enlaces a las tiendas, el país, el idioma de la página, el tipo de dispositivo (móvil o escritorio) y la web desde la que llegas. No guarda tu dirección IP ni nada que te identifique: solo un código anónimo que se recalcula cada día y no permite reconocerte de un día para otro. Si tu navegador envía «No rastrear», no se envía nada."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Contador de visitas de la web:</span> esta web (no la app) tiene un contador propio y anónimo, sin cookies y sin terceros. Registra la página que visitas, los clics en los enlaces a las tiendas, el país, el idioma de la página, el tipo de dispositivo (móvil o escritorio) y la web desde la que llegas. No guarda tu dirección IP ni nada que te identifique: solo un código anónimo que se recalcula cada día y no permite reconocerte de un día para otro. Si tu navegador envía «No rastrear», no se envía nada.",
+ "home.quickmenu.title": "Salta de una sección a otra sin volver a Inicio",
+ "home.quickmenu.sub": "Antes, para ir del Bingo a Ajustes tenías que pasar por Inicio. Ahora tocas los tres puntos (···) de arriba a la derecha y vas directo.",
+ "home.quickmenu.cards": [
+  {
+   "title": "En casi todas las pantallas",
+   "text": "El icono de tres puntos horizontales (···) está arriba a la derecha. Si la pantalla tenía botón de compartir, se queda a su izquierda."
+  },
+  {
+   "title": "Los mismos grupos que el Inicio",
+   "text": "Metas, Mis lecturas y Herramientas, más Home, Ajustes y Datos y copias. La sección en la que estás sale marcada: tócala y vuelves a su principio."
+  },
+  {
+   "title": "También en la ficha del libro",
+   "text": "Abre el menú de tres puntos verticales de la ficha y elige «Menú rápido». Los asistentes por pasos no lo llevan, para no perder lo que estás rellenando."
+  }
+ ],
+ "home.quickmenu.tag": "Novedad de la 3.9",
+ "anchor.quickmenu": "menu-rapido",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Menú rápido",
+ "home.quickmenu.groups": [
+  {
+   "title": "Metas",
+   "text": "Eventos · Retos · Bingo"
+  },
+  {
+   "title": "Mis lecturas",
+   "text": "Estadísticas · Mis tarjetas · Wrapped"
+  },
+  {
+   "title": "Herramientas",
+   "text": "Recordatorios · Gestión de tags · Escanear ISBN"
+  },
+  {
+   "title": "Accesos generales",
+   "text": "Home · Ajustes · Datos y copias"
+  }
+ ]
 }

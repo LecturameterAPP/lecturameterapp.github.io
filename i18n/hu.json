@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Néhány felhasználó eltérő árat láthat, mert árkísérleteket végzünk.",
  "home.pricing.try_pro_free_for_7": "Próbáld ki a Pro-t 7 napig ingyen, az appon belül",
  "home.pricing.no_card_required_for_the": "A próbaidőhöz nem kell kártya",
- "home.pricing.leather_aurora_oled_and_dusk": "Bőr, Aurora, OLED és Alkonyat témák",
+ "home.pricing.leather_aurora_oled_and_dusk": "Bőr, Aurora, OLED, Alkonyat, Füzet és Erdő témák",
  "home.pricing.immersive_timer": "Elmerülő időzítő",
  "home.pricing.golden_alternative_icon": "Arany alternatív ikon",
  "home.pricing.monthly_comparison_widget": "Havi összehasonlítás widget",
@@ -547,21 +547,41 @@
   "Egy könyv állapotának módosítása már nem törli a korábbi olvasások dátumait.",
   "A havi összefoglaló a munkamenet nélküli befejezett könyveket is számolja."
  ],
- "release.3_9.headline": "Események · Két új Pro téma",
+ "release.3_9.headline": "Események · Gyorsmenü · Két új Pro téma",
  "release.3_9.new": [
   "<strong>Események:</strong> globális olvasási kihívások és Lecturameter Quest, amikor van aktív",
+  "<strong>Gyorsmenü:</strong> ugorj szekciók között a három ponttal (···), a Kezdőlapra való visszalépés nélkül",
   "<strong>Szüneteltetve:</strong> tegyél félre egy könyvet egy időre anélkül, hogy tönkremenne a statisztikád",
   "<strong>Két új Pro téma:</strong> Füzet és Erdő",
+  "A Pro témák külön-külön vagy 3 darabos csomagban is megvásárolhatók, előnézettel, és a Pro képernyő új",
+  "<strong>Nem lineáris olvasás</strong> antológiákhoz és verseskötetekhez: az átfedő oldalak nem számítanak kétszer, és a haladássáv szakaszokra oszlik",
+  "Kezdj olvasni a könyv widgetjéből, az alkalmazás megnyitása nélkül",
+  "Heti és havi összesítők új dizájnnal és több statisztikával",
+  "Opcionális e-mail a „Visszajelzés küldése” funkcióban, csak hogy válaszolhassak neked",
   "Saját időzítő óra minden témához",
   "A Pagi választ egy könyvet az Elolvasandó listáról",
   "KOSync a KOReader valós olvasási idejével",
   "Értesítések kategóriánként és hírek az alkalmazás újdonságairól",
+  "Kezdőlap a Célok, Olvasmányaim és Eszközök szerint csoportosított sávval",
+  "Módosítsd egy könyv állapotát a gyorsműveleteiből, és vond vissza, ha elrontod",
+  "Material ikonok az emojik helyett, és olvashatóbb statisztikák minden témában",
+  "Értesítés, amikor keresésből adsz hozzá könyvet",
+  "Az olvasási ciklusok dátumai egy sorban, könnyebben szerkeszthetők",
   "Bingó 24 sablonnal méret szerint",
+  "iPhone-on az időzítő Live Activity-je a témád színeiben",
+  "A katalógus tanul az eredmény nélküli keresésekből és ISBN-beolvasásokból, és pótolja a hiányzó könyveket (november 15-től)",
   "Hagyományos kínai",
-  "Sorozat a CSV-ben",
-  "Olvashatóbb Statisztika"
+  "Sorozat a CSV-ben"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "A Bingó, a Wrapped és más képernyők címei most ugyanolyan magasan vannak, mint a többi menüben",
+  "A Bingó és a Wrapped ikonjai visszakapták a színeiket",
+  "A Kezdőlapon az állapot szerinti könyvszámlálók jobban látszanak a Sötét, OLED, Alkonyat, Aurora és Bőr témában",
+  "Egyetlen figyelmeztetés a hiányos adatú könyvekhez: a sárga háromszög eltűnik, a piros marad",
+  "A borító és a műfaj újratöltése megmondja, ha minden eleve rendben volt, és pirossal figyelmeztet, ha valamit nem talál",
+  "A nagyon nagy könyvtárak Google Drive-os mentései már nem hiúsulnak meg memóriahiány miatt",
+  "Több javítás iPhone-on"
+ ],
  "roadmap.3_9.heading": "Mi jön a Lecturameter 3.9-ben",
  "roadmap.3_9.sub": "Olvasási kihívások az egész közösségnek, egy játék, amelyet <b>a saját könyveiddel</b> játszol, és egy megújult Kezdőlap. Nincsenek fix dátumok: minden akkor jön ki, amikor kész.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Az Olvasásból vagy Újraolvasásból",
-   "text": "Az állapotot a könyv oldalán lévő jelvényről vagy a gyorsmenü „Állapot módosítása” pontjával változtathatod. Könyvekre, képregényekre, mangára és hangoskönyvekre is működik."
+   "text": "Az állapotot a könyv oldalán lévő címkével vagy a gyorsműveletek közül az „Állapot módosítása” lehetőséggel változtathatod (nyomd hosszan a könyv kártyáját). Könyvekhez, képregényekhez, mangákhoz és hangoskönyvekhez is működik."
   },
   {
    "title": "A szüneteltetett napok nem számítanak",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Megosztás",
  "home.cards.title": "A Lecturameter nem közösségi hálózat. A kártyáid arra mennek, amelyiket használod.",
- "home.cards.sub": "Készíts álló, 1080×1920-as kártyákat, sztorikhoz készen, és oszd meg ott, ahol már vagy. Fiók, profil és követők nélkül.",
+ "home.cards.sub": "Készíts álló, 1080×1920-as kártyákat, sztorikhoz készen, és oszd meg ott, ahol már vagy. Fiók, profil és követők nélkül. A 3.9-es verzióban a heti és havi összesítők új dizájnt és több statisztikát kapnak.",
  "home.cards.chips": [
   "Könyv",
   "Befejezett könyv",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "A Lecturameter 99 ingyenes, és iPhone-ra meg Androidra is elérhető.",
  "lm99.get.app_store": "Letöltés az App Store-ból",
  "lm99.get.play_soon": "Hamarosan a Google Playen",
- "legal.privacy.p_052_web": "<span class=\"highlight\">A weboldal látogatásszámlálója:</span> ennek a weboldalnak (nem az appnak) saját, névtelen számlálója van, sütik és harmadik felek nélkül. Rögzíti a meglátogatott oldalt, az áruházakra mutató linkekre kattintásaidat, az országot, az oldal nyelvét, az eszköz típusát (mobil vagy számítógép) és azt az oldalt, ahonnan érkeztél. Nem tárolja az IP-címedet, sem semmit, ami azonosítana: csak egy névtelen kódot, amelyet minden nap újraszámolnak, és amellyel nem lehet felismerni téged egyik napról a másikra. Ha a böngésződ „Do Not Track” jelzést küld, semmi sem kerül elküldésre."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">A weboldal látogatásszámlálója:</span> ennek a weboldalnak (nem az appnak) saját, névtelen számlálója van, sütik és harmadik felek nélkül. Rögzíti a meglátogatott oldalt, az áruházakra mutató linkekre kattintásaidat, az országot, az oldal nyelvét, az eszköz típusát (mobil vagy számítógép) és azt az oldalt, ahonnan érkeztél. Nem tárolja az IP-címedet, sem semmit, ami azonosítana: csak egy névtelen kódot, amelyet minden nap újraszámolnak, és amellyel nem lehet felismerni téged egyik napról a másikra. Ha a böngésződ „Do Not Track” jelzést küld, semmi sem kerül elküldésre.",
+ "home.quickmenu.title": "Ugorj szekciók között anélkül, hogy visszalépnél a Kezdőlapra",
+ "home.quickmenu.sub": "Korábban a Bingóból a Beállításokba menet először a Kezdőlapra kellett lépni. Most csak koppints a három pontra (···) a jobb felső sarokban, és már ott is vagy.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Szinte minden képernyőn",
+   "text": "A vízszintes három pontos ikon (···) a jobb felső sarokban található. Ha a képernyőn volt megosztás gomb, az attól balra kerül."
+  },
+  {
+   "title": "Ugyanazok a csoportok, mint a Kezdőlapon",
+   "text": "Célok, Olvasmányaim és Eszközök, valamint Kezdőlap, Beállítások és Adatok és biztonsági mentések. Az a szekció, ahol éppen vagy, ki van emelve: koppints rá, és visszatérsz az elejére."
+  },
+  {
+   "title": "A könyv oldalán is",
+   "text": "Nyisd meg a könyv oldalán a függőleges három pontos menüt, és válaszd a „Gyorsmenü” lehetőséget. A lépésenkénti varázslókban nincs ilyen, hogy ne veszítsd el, amit éppen kitöltesz."
+  }
+ ],
+ "home.quickmenu.tag": "Újdonság a 3.9-ben",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingó",
+ "home.quickmenu.menu_title": "Gyorsmenü",
+ "home.quickmenu.groups": [
+  {
+   "title": "Célok",
+   "text": "Események · Kihívások · Bingó"
+  },
+  {
+   "title": "Olvasmányaim",
+   "text": "Statisztika · Kártyáim · Wrapped"
+  },
+  {
+   "title": "Eszközök",
+   "text": "Emlékeztetők · Címkék kezelése · ISBN beolvasása"
+  },
+  {
+   "title": "Általános gyorsgombok",
+   "text": "Kezdőlap · Beállítások · Adatok és biztonsági mentések"
+  }
+ ]
 }

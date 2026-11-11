@@ -1,31 +1,75 @@
 {
-  "notesVersion": 9,
+  "notesVersion": 10,
   "es": {
     "new": [
-      "Las copias de seguridad guardan también tus etiquetas y recordatorios",
-      "Guarda una sesión de lectura solo con el tiempo, sin poner páginas",
-      "Ayuda (?) de Pagi en cada campo de un libro",
-      "¿Quieres probar la beta de iPhone? Manda el email que usas en Apple a lecturameter.app@gmail.com"
+      "Eventos: retos de lectura globales y Lecturameter Quest cuando haya uno activo",
+      "Menú rápido: salta de una sección a otra desde los tres puntos (···), sin volver a Inicio",
+      "Pausado: deja un libro una temporada sin ensuciar tus estadísticas",
+      "Dos temas Pro nuevos: Cuaderno y Floresta",
+      "Los temas Pro también se compran sueltos o en lotes de 3, con vista previa, y la pantalla de Pro es nueva",
+      "Lectura no lineal para antologías y poemarios: las páginas que se solapan no cuentan dos veces y la barra de progreso va por tramos",
+      "Empieza a leer desde el widget del libro, sin abrir la app",
+      "Resúmenes semanal y mensual con nuevo diseño y más datos",
+      "Email opcional en «Enviar comentarios», solo para poder contestarte",
+      "Un reloj de crono propio para cada tema",
+      "Pagi te elige un libro de Quiero leer",
+      "KOSync con el tiempo real de KOReader",
+      "Notificaciones por categoría y avisos de novedades de la app",
+      "Inicio con el rail agrupado en Metas, Mis lecturas y Herramientas",
+      "Cambia el estado de un libro desde sus acciones rápidas y deshazlo si te equivocas",
+      "Iconos Material en vez de emojis y estadísticas más legibles en todos los temas",
+      "Aviso al añadir un libro desde la búsqueda",
+      "Fechas de los ciclos de lectura en una sola fila, más fáciles de editar",
+      "Bingo con 24 plantillas por tamaño",
+      "En iPhone, la Live Activity del crono con los colores de tu tema",
+      "El catálogo aprende de las búsquedas y escaneos de ISBN sin resultado y añade los libros que faltan (desde el 15 de noviembre)",
+      "Chino tradicional",
+      "Saga en el CSV"
     ],
     "fixes": [
-      "Evitados cierres inesperados al abrir la app, en el escáner, al comprar Pro, en algunos widgets y en el cronómetro",
-      "Avisos de Importar y Exportar más claros",
-      "Arreglado un número confuso en la búsqueda de cómics y manga",
-      "Textos que salían en otro idioma ya aparecen traducidos"
+      "Los títulos de Bingo, Wrapped y otras pantallas quedan a la misma altura que en el resto de menús",
+      "Los iconos de Bingo y Wrapped recuperan sus colores",
+      "Los contadores de libros por estado del Inicio se ven mejor en Oscuro, OLED, Ocaso, Aurora y Cuero",
+      "Un solo aviso para libros con datos incompletos: desaparece el triángulo amarillo y queda el rojo",
+      "Recargar portada y género te dice si ya estaba todo bien, y avisa en rojo si no encuentra algo",
+      "Las copias en Google Drive de bibliotecas muy grandes ya no fallan por falta de memoria",
+      "Varias correcciones en iPhone"
     ]
   },
   "en": {
     "new": [
-      "Backups now also save your tags and reminders",
-      "Save a reading session with just the time, no pages needed",
-      "Pagi's (?) help on every field of a book",
-      "Want to try the iPhone beta? Send the email you use with Apple to lecturameter.app@gmail.com"
+      "Events: global reading challenges and Lecturameter Quest when one is active",
+      "Quick menu: jump from one section to another with the three dots (···), without going back to Home",
+      "Paused: set a book aside for a while without messing up your stats",
+      "Two new Pro themes: Notebook and Woodland",
+      "Pro themes can also be bought one by one or in packs of 3, with a preview, and the Pro screen is new",
+      "Non-linear reading for anthologies and poetry collections: overlapping pages don't count twice and the progress bar is split into segments",
+      "Start reading from the book widget, without opening the app",
+      "Weekly and monthly summaries with a new design and more stats",
+      "Optional email in “Send feedback”, only so I can reply to you",
+      "A timer clock of its own for each theme",
+      "Pagi picks a book from Want to read",
+      "KOSync with KOReader's real reading time",
+      "Notifications by category and app news alerts",
+      "Home with the rail grouped into Goals, My reading and Tools",
+      "Change a book's status from its quick actions, and undo it if you slip",
+      "Material icons instead of emojis and more readable stats in every theme",
+      "A notice when you add a book from search",
+      "Reading cycle dates on a single row, easier to edit",
+      "Bingo with 24 templates by size",
+      "On iPhone, the timer's Live Activity in your theme's colors",
+      "The catalog learns from searches and ISBN scans that find nothing and adds the missing books (from November 15)",
+      "Traditional Chinese",
+      "Series in the CSV"
     ],
     "fixes": [
-      "Prevented unexpected closes when opening the app, in the scanner, when buying Pro, in some widgets and in the timer",
-      "Clearer Import and Export messages",
-      "Fixed a confusing number in comic and manga search",
-      "Texts that appeared in another language are now translated"
+      "Titles in Bingo, Wrapped and other screens now sit at the same height as in the other menus",
+      "The Bingo and Wrapped icons get their colors back",
+      "The book counters per status on Home are easier to see in Dark, OLED, Dusk, Aurora and Leather",
+      "One single warning for books with missing data: the yellow triangle is gone and the red one stays",
+      "Reloading cover and genre tells you when everything was already fine, and warns in red when something isn't found",
+      "Google Drive backups of very large libraries no longer fail for lack of memory",
+      "Several fixes on iPhone"
     ]
   }
 }

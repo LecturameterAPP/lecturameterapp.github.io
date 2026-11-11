@@ -621,7 +621,7 @@
         </div>
         <div class="paused-grid">
             <div class="paused-card reveal-up"><h3>Ayrı bir durum</h3><p>Duraklatıldı, Bırakıldı demek değildir. Kitabın vazgeçtiklerinin yığınına gitmez: beklemede kalır ve istediğin zaman geri gelir.</p></div>
-            <div class="paused-card reveal-up"><h3>Okunuyor veya Yeniden okunuyor durumundan</h3><p>Durumu kitap sayfasındaki rozetten ya da hızlı menüdeki “Durumu değiştir” ile değiştir. Kitaplar, çizgi romanlar, mangalar ve sesli kitaplar için çalışır.</p></div>
+            <div class="paused-card reveal-up"><h3>Okunuyor veya Yeniden okunuyor durumundan</h3><p>Durumu kitap sayfasındaki hapla ya da hızlı işlemlerdeki (kitap kartına uzun basın) “Durumu değiştir” ile değiştirin. Kitaplar, çizgi romanlar, mangalar ve sesli kitaplar için çalışır.</p></div>
             <div class="paused-card reveal-up"><h3>Duraklatılan günler sayılmaz</h3><p>Ne bitirmek için gereken günlere ne de okuma hızına dahil edilir. İstatistiklerin okuduğun zamanki gibi kalır.</p></div>
             <div class="paused-card reveal-up"><h3>İstersen bir not</h3><p>Duraklatırken ve devam ederken nedenini not edebilirsin. İsteğe bağlıdır. Her şey kitap sayfasındaki “Duraklamalar” bölümünde geçmişiyle birlikte durur.</p></div>
             <div class="paused-card reveal-up"><h3>Kendi sekmesi</h3><p>Kitaplığında, Okunacak ile Bırakıldı arasında duraklattığın kitapları bulursun.</p></div>
@@ -630,13 +630,41 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="cards" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">3.9'da yeni</span>
+            <h2 id="quickmenu-title">Ana sayfaya dönmeden bölümler arasında geçiş yapın</h2>
+            <p>Bingo'dan Ayarlar'a gitmek için eskiden önce Ana sayfa'ya uğramak gerekiyordu. Şimdi sağ üstteki üç noktaya (···) dokunup doğrudan oraya gidiyorsunuz.</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">Hızlı menü</p>
+                <div class="qm-groups">
+                    <div class="qm-group is-current"><p class="qm-group-title">Hedefler</p><p>Etkinlikler · Meydan okumalar · Bingo</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Okumalarım</p><p>İstatistikler · Kartlarım · Wrapped</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Araçlar</p><p>Hatırlatıcılar · Etiket yönetimi · ISBN tara</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Genel erişimler</p><p>Ana sayfa · Ayarlar · Veriler ve yedekler</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card qm-card reveal-up"><h3>Neredeyse her ekranda</h3><p>Yatay üç nokta simgesi (···) sağ üst köşede durur. Ekranda paylaş düğmesi varsa, onun soluna kayar.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Ana sayfa ile aynı gruplar</h3><p>Hedefler, Okumalarım ve Araçlar; ayrıca Ana sayfa, Ayarlar ve Veriler ve yedekler. Bulunduğunuz bölüm vurgulanır: dokunursanız başına dönersiniz.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Kitap sayfasında da</h3><p>Kitap sayfasındaki dikey üç nokta menüsünü açıp “Hızlı menü”yü seçin. Adım adım sihirbazlarda yoktur, böylece doldurduğunuz bilgiler kaybolmaz.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="cards" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">Paylaş</span>
             <h2 id="cards-title">Lecturameter bir sosyal ağ değil. Kartların kullandığın ağa gider.</h2>
-            <p>Hikâyelere hazır 1080×1920 dikey kartlar yap ve zaten bulunduğun yerde paylaş. Hesap yok, profil yok, takipçi yok.</p>
+            <p>Hikâyelere hazır 1080×1920 dikey kartlar yap ve zaten bulunduğun yerde paylaş. Hesap yok, profil yok, takipçi yok. 3.9'da haftalık ve aylık özetler yeni bir tasarım ve daha fazla istatistikle geliyor.</p>
         </div>
         <div class="share-wrap">
             <div class="share-fan reveal-up" aria-hidden="true">
@@ -669,7 +697,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="events" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">
@@ -870,7 +898,7 @@
                 <p class="price-trial">Pro'yu uygulama içinden 7 gün ücretsiz dene</p>
                 <p class="price-trial">Deneme için kart gerekmez</p>
                 <ul class="pricing-list">
-                    <li>Deri, Aurora, OLED ve Alacakaranlık temaları</li>
+                    <li>Deri, Aurora, OLED, Alacakaranlık, Defter ve Orman temaları</li>
                     <li>Sürükleyici zamanlayıcı</li>
                     <li>Altın renkli alternatif simge</li>
                     <li>Aylık karşılaştırma widget'ı</li>
@@ -897,16 +925,40 @@
                 <h3>Yeni</h3>
                 <ul>
                     <li><strong>Etkinlikler:</strong> küresel okuma görevleri ve etkin olduğunda Lecturameter Quest</li>
+                    <li><strong>Hızlı menü:</strong> Ana sayfa'ya dönmeden üç noktayla (···) bir bölümden diğerine geçin</li>
                     <li><strong>Duraklatıldı:</strong> bir kitabı istatistiklerini bozmadan bir süre kenara koy</li>
                     <li><strong>İki yeni Pro tema:</strong> Defter ve Orman</li>
+                    <li>Pro temalar ön izlemeyle tek tek ya da 3'lü paketler halinde de satın alınabiliyor, Pro ekranı da yeni</li>
+                    <li>Antolojiler ve şiir kitapları için <strong>doğrusal olmayan okuma</strong>: çakışan sayfalar iki kez sayılmaz, ilerleme çubuğu bölümlere ayrılır</li>
+                    <li>Uygulamayı açmadan kitap widget'ından okumaya başlayın</li>
+                    <li>Yeni tasarımlı ve daha fazla istatistikli haftalık ve aylık özetler</li>
+                    <li>“Geri bildirim gönder”de isteğe bağlı e-posta, yalnızca size yanıt verebilmem için</li>
                     <li>Her tema için kendine ait bir zamanlayıcı saati</li>
                     <li>Pagi, Okunacak listesinden sana bir kitap seçer</li>
                     <li>KOSync ile KOReader'ın gerçek okuma süresi</li>
                     <li>Kategoriye göre bildirimler ve uygulama haberleri uyarıları</li>
+                    <li>Rayı Hedefler, Okumalarım ve Araçlar olarak gruplanmış Ana sayfa</li>
+                    <li>Bir kitabın durumunu hızlı işlemlerinden değiştirin, yanlışlık olursa geri alın</li>
+                    <li>Emoji yerine Material simgeleri ve tüm temalarda daha okunaklı istatistikler</li>
+                    <li>Aramadan kitap eklerken bir bildirim</li>
+                    <li>Okuma döngüsü tarihleri tek satırda, düzenlemesi daha kolay</li>
                     <li>Boyuta göre 24 şablonlu Bingo</li>
+                    <li>iPhone'da, zamanlayıcının Live Activity'si temanızın renklerinde</li>
+                    <li>Katalog, sonuç bulamayan aramalardan ve ISBN taramalarından öğrenir ve eksik kitapları ekler (15 Kasım'dan itibaren)</li>
                     <li>Geleneksel Çince</li>
                     <li>CSV'de seri</li>
-                    <li>Daha okunaklı İstatistikler</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>Düzeltmeler</h3>
+                <ul>
+                    <li>Bingo, Wrapped ve diğer ekranlardaki başlıklar artık diğer menülerle aynı yükseklikte</li>
+                    <li>Bingo ve Wrapped simgeleri renklerine kavuştu</li>
+                    <li>Ana sayfa'daki duruma göre kitap sayaçları Koyu, OLED, Alacakaranlık, Aurora ve Deri temalarında daha net görünüyor</li>
+                    <li>Eksik verili kitaplar için tek bir uyarı: sarı üçgen kalktı, kırmızı kaldı</li>
+                    <li>Kapağı ve türü yeniden yüklemek her şeyin zaten yolunda olduğunu söyler, bir şey bulunamazsa kırmızıyla uyarır</li>
+                    <li>Çok büyük kütüphanelerin Google Drive yedekleri artık bellek yetersizliğinden başarısız olmuyor</li>
+                    <li>iPhone'da çeşitli düzeltmeler</li>
                 </ul>
             </div>
         </div>
@@ -1025,21 +1077,43 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">v3.9 &middot; Etkinlikler · İki yeni Pro tema</button>
+                <button class="faq-q">v3.9 &middot; Etkinlikler · Hızlı menü · İki yeni Pro tema</button>
                 <div class="faq-a"><div class="faq-a-inner">
                     <strong>Yeni</strong>
                     <ul>
                         <li><strong>Etkinlikler:</strong> küresel okuma görevleri ve etkin olduğunda Lecturameter Quest</li>
+                        <li><strong>Hızlı menü:</strong> Ana sayfa'ya dönmeden üç noktayla (···) bir bölümden diğerine geçin</li>
                         <li><strong>Duraklatıldı:</strong> bir kitabı istatistiklerini bozmadan bir süre kenara koy</li>
                         <li><strong>İki yeni Pro tema:</strong> Defter ve Orman</li>
+                        <li>Pro temalar ön izlemeyle tek tek ya da 3'lü paketler halinde de satın alınabiliyor, Pro ekranı da yeni</li>
+                        <li>Antolojiler ve şiir kitapları için <strong>doğrusal olmayan okuma</strong>: çakışan sayfalar iki kez sayılmaz, ilerleme çubuğu bölümlere ayrılır</li>
+                        <li>Uygulamayı açmadan kitap widget'ından okumaya başlayın</li>
+                        <li>Yeni tasarımlı ve daha fazla istatistikli haftalık ve aylık özetler</li>
+                        <li>“Geri bildirim gönder”de isteğe bağlı e-posta, yalnızca size yanıt verebilmem için</li>
                         <li>Her tema için kendine ait bir zamanlayıcı saati</li>
                         <li>Pagi, Okunacak listesinden sana bir kitap seçer</li>
                         <li>KOSync ile KOReader'ın gerçek okuma süresi</li>
                         <li>Kategoriye göre bildirimler ve uygulama haberleri uyarıları</li>
+                        <li>Rayı Hedefler, Okumalarım ve Araçlar olarak gruplanmış Ana sayfa</li>
+                        <li>Bir kitabın durumunu hızlı işlemlerinden değiştirin, yanlışlık olursa geri alın</li>
+                        <li>Emoji yerine Material simgeleri ve tüm temalarda daha okunaklı istatistikler</li>
+                        <li>Aramadan kitap eklerken bir bildirim</li>
+                        <li>Okuma döngüsü tarihleri tek satırda, düzenlemesi daha kolay</li>
                         <li>Boyuta göre 24 şablonlu Bingo</li>
+                        <li>iPhone'da, zamanlayıcının Live Activity'si temanızın renklerinde</li>
+                        <li>Katalog, sonuç bulamayan aramalardan ve ISBN taramalarından öğrenir ve eksik kitapları ekler (15 Kasım'dan itibaren)</li>
                         <li>Geleneksel Çince</li>
                         <li>CSV'de seri</li>
-                        <li>Daha okunaklı İstatistikler</li>
+                    </ul>
+                    <strong>Düzeltmeler</strong>
+                    <ul>
+                        <li>Bingo, Wrapped ve diğer ekranlardaki başlıklar artık diğer menülerle aynı yükseklikte</li>
+                        <li>Bingo ve Wrapped simgeleri renklerine kavuştu</li>
+                        <li>Ana sayfa'daki duruma göre kitap sayaçları Koyu, OLED, Alacakaranlık, Aurora ve Deri temalarında daha net görünüyor</li>
+                        <li>Eksik verili kitaplar için tek bir uyarı: sarı üçgen kalktı, kırmızı kaldı</li>
+                        <li>Kapağı ve türü yeniden yüklemek her şeyin zaten yolunda olduğunu söyler, bir şey bulunamazsa kırmızıyla uyarır</li>
+                        <li>Çok büyük kütüphanelerin Google Drive yedekleri artık bellek yetersizliğinden başarısız olmuyor</li>
+                        <li>iPhone'da çeşitli düzeltmeler</li>
                     </ul>
                 </div></div>
             </div>

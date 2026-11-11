@@ -621,7 +621,7 @@
         </div>
         <div class="paused-grid">
             <div class="paused-card reveal-up"><h3>Oma tila</h3><p>Tauolla ei ole sama kuin Hylätty. Kirjasi ei mene hylättyjen kirjojen kasaan: se odottaa ja palaa, kun haluat.</p></div>
-            <div class="paused-card reveal-up"><h3>Tilasta Lukemassa tai Uudelleenluettavana</h3><p>Vaihda tilaa kirjan sivun painikkeesta tai pikavalikon kohdasta ”Vaihda tilaa”. Toimii kirjoille, sarjakuville, mangalle ja äänikirjoille.</p></div>
+            <div class="paused-card reveal-up"><h3>Tilasta Lukemassa tai Uudelleenluettavana</h3><p>Vaihda tilaa kirjan sivun tilapainikkeesta tai pikatoiminnoista ”Vaihda tilaa” (paina kirjan korttia pitkään). Toimii kirjoille, sarjakuville, mangalle ja äänikirjoille.</p></div>
             <div class="paused-card reveal-up"><h3>Tauon päiviä ei lasketa</h3><p>Ei valmistumiseen kuluvissa päivissä eikä lukunopeudessasi. Tilastosi pysyvät sellaisina kuin ne olivat, kun luit.</p></div>
             <div class="paused-card reveal-up"><h3>Muistiinpano, jos haluat</h3><p>Kun asetat tauolle ja kun jatkat, voit kirjoittaa syyn. Se on vapaaehtoista. Kaikki säilyy kirjan sivun Tauot-osiossa historiansa kanssa.</p></div>
             <div class="paused-card reveal-up"><h3>Oma välilehti</h3><p>Kirjastossasi, välilehtien Haluan lukea ja Hylätty välissä, ovat tauolla olevat kirjasi.</p></div>
@@ -630,13 +630,41 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="cards" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Uutta versiossa 3.9</span>
+            <h2 id="quickmenu-title">Siirry osiosta toiseen palaamatta Kotiin</h2>
+            <p>Bingosta Asetuksiin pääsi ennen vain Kodin kautta. Nyt napautat oikean yläkulman kolmea pistettä (···) ja menet suoraan perille.</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">Pikavalikko</p>
+                <div class="qm-groups">
+                    <div class="qm-group is-current"><p class="qm-group-title">Tavoitteet</p><p>Tapahtumat · Haasteet · Bingo</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Lukemiseni</p><p>Tilastot · Korttini · Wrapped</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Työkalut</p><p>Muistutukset · Tagien hallinta · Skannaa ISBN</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Yleiset pikavalinnat</p><p>Koti · Asetukset · Tiedot ja varmuuskopiot</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card qm-card reveal-up"><h3>Lähes jokaisella näytöllä</h3><p>Vaakasuuntainen kolmen pisteen kuvake (···) on oikeassa yläkulmassa. Jos näytöllä oli jakopainike, se siirtyy sen vasemmalle puolelle.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Samat ryhmät kuin Kodissa</h3><p>Tavoitteet, Lukemiseni ja Työkalut sekä Koti, Asetukset ja Tiedot ja varmuuskopiot. Osio, jossa olet, on korostettu: napauta sitä palataksesi sen alkuun.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Myös kirjan sivulla</h3><p>Avaa kirjan sivun pystysuuntainen kolmen pisteen valikko ja valitse ”Pikavalikko”. Vaiheittaisissa ohjatuissa toiminnoissa sitä ei ole, jotta et menetä täyttämiäsi tietoja.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="cards" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">Jaa</span>
             <h2 id="cards-title">Lecturameter ei ole sosiaalinen verkosto. Korttisi menevät siihen, jota käytät.</h2>
-            <p>Tee pystykortteja kokoa 1080×1920, valmiina storyihin, ja jaa ne siellä, missä jo olet. Ei tiliä, ei profiilia, ei seuraajia.</p>
+            <p>Tee pystykortteja kokoa 1080×1920, valmiina storyihin, ja jaa ne siellä, missä jo olet. Ei tiliä, ei profiilia, ei seuraajia. Versiossa 3.9 viikko- ja kuukausiyhteenvedot saavat uuden ilmeen ja enemmän tilastoja.</p>
         </div>
         <div class="share-wrap">
             <div class="share-fan reveal-up" aria-hidden="true">
@@ -669,7 +697,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="events" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">
@@ -870,7 +898,7 @@
                 <p class="price-trial">Kokeile Prota ilmaiseksi 7 päivää sovelluksessa</p>
                 <p class="price-trial">Kokeiluun ei tarvita korttia</p>
                 <ul class="pricing-list">
-                    <li>Nahka-, Aurora-, OLED- ja Iltahämärä-teemat</li>
+                    <li>Teemat Nahka, Aurora, OLED, Hämärä, Vihko ja Metsä</li>
                     <li>Uppoutuva ajastin</li>
                     <li>Kultainen vaihtoehtoinen kuvake</li>
                     <li>Kuukausivertailuwidget</li>
@@ -897,16 +925,40 @@
                 <h3>Uutta</h3>
                 <ul>
                     <li><strong>Tapahtumat:</strong> maailmanlaajuisia lukuhaasteita ja Lecturameter Quest, kun jokin on käynnissä</li>
+                    <li><strong>Pikavalikko:</strong> siirry osiosta toiseen kolmella pisteellä (···) palaamatta Kotiin</li>
                     <li><strong>Tauolla:</strong> jätä kirja syrjään joksikin aikaa sotkematta tilastojasi</li>
                     <li><strong>Kaksi uutta Pro-teemaa:</strong> Vihko ja Metsä</li>
+                    <li>Pro-teemoja voi ostaa myös yksitellen tai kolmen paketteina esikatselun kanssa, ja Pro-näyttö on uusi</li>
+                    <li><strong>Epälineaarinen lukeminen</strong> antologioille ja runokokoelmille: päällekkäiset sivut eivät lasketa kahdesti ja edistymispalkki on jaettu jaksoihin</li>
+                    <li>Aloita lukeminen kirjan widgetistä avaamatta sovellusta</li>
+                    <li>Viikko- ja kuukausiyhteenvedot uudella ilmeellä ja enemmän tilastoja</li>
+                    <li>Valinnainen sähköposti kohdassa ”Lähetä palautetta”, vain jotta voin vastata sinulle</li>
                     <li>Oma ajastinkello jokaiselle teemalle</li>
                     <li>Pagi valitsee sinulle kirjan Haluan lukea -listalta</li>
                     <li>KOSync KOReaderin todellisella lukuajalla</li>
                     <li>Ilmoitukset luokittain ja ilmoitukset sovelluksen uutisista</li>
+                    <li>Koti, jossa sivupalkki on ryhmitelty: Tavoitteet, Lukemiseni ja Työkalut</li>
+                    <li>Vaihda kirjan tilaa sen pikatoiminnoista ja peru, jos erehdyt</li>
+                    <li>Material-kuvakkeet emojien tilalla ja luettavammat tilastot kaikissa teemoissa</li>
+                    <li>Ilmoitus, kun lisäät kirjan hausta</li>
+                    <li>Lukukierrosten päivämäärät yhdellä rivillä, helpompi muokata</li>
                     <li>Bingo 24 pohjalla koon mukaan</li>
+                    <li>iPhonella ajastimen Live Activity teemasi väreissä</li>
+                    <li>Luettelo oppii tuloksettomista hauista ja ISBN-skannauksista ja lisää puuttuvat kirjat (15. marraskuusta alkaen)</li>
                     <li>Perinteinen kiina</li>
                     <li><strong>Sarja CSV:</strong> ssä</li>
-                    <li>Luettavammat Tilastot</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>Korjaukset</h3>
+                <ul>
+                    <li>Otsikot Bingossa, Wrappedissa ja muilla näytöillä ovat nyt samalla korkeudella kuin muissa valikoissa</li>
+                    <li>Bingon ja Wrappedin kuvakkeet saivat värinsä takaisin</li>
+                    <li>Kirjojen tilakohtaiset laskurit Kodissa näkyvät paremmin teemoissa Tumma, OLED, Hämärä, Aurora ja Nahka</li>
+                    <li>Vain yksi varoitus kirjoille, joilta puuttuu tietoja: keltainen kolmio poistuu ja punainen jää</li>
+                    <li>Kannen ja lajityypin uudelleenlataus kertoo, jos kaikki oli jo kunnossa, ja varoittaa punaisella, jos jotain ei löydy</li>
+                    <li>Hyvin suurten kirjastojen Google Drive -varmuuskopiot eivät enää epäonnistu muistin puutteen vuoksi</li>
+                    <li>Useita korjauksia iPhonelle</li>
                 </ul>
             </div>
         </div>
@@ -1025,21 +1077,43 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">v3.9 &middot; Tapahtumat · Kaksi uutta Pro-teemaa</button>
+                <button class="faq-q">v3.9 &middot; Tapahtumat · Pikavalikko · Kaksi uutta Pro-teemaa</button>
                 <div class="faq-a"><div class="faq-a-inner">
                     <strong>Uutta</strong>
                     <ul>
                         <li><strong>Tapahtumat:</strong> maailmanlaajuisia lukuhaasteita ja Lecturameter Quest, kun jokin on käynnissä</li>
+                        <li><strong>Pikavalikko:</strong> siirry osiosta toiseen kolmella pisteellä (···) palaamatta Kotiin</li>
                         <li><strong>Tauolla:</strong> jätä kirja syrjään joksikin aikaa sotkematta tilastojasi</li>
                         <li><strong>Kaksi uutta Pro-teemaa:</strong> Vihko ja Metsä</li>
+                        <li>Pro-teemoja voi ostaa myös yksitellen tai kolmen paketteina esikatselun kanssa, ja Pro-näyttö on uusi</li>
+                        <li><strong>Epälineaarinen lukeminen</strong> antologioille ja runokokoelmille: päällekkäiset sivut eivät lasketa kahdesti ja edistymispalkki on jaettu jaksoihin</li>
+                        <li>Aloita lukeminen kirjan widgetistä avaamatta sovellusta</li>
+                        <li>Viikko- ja kuukausiyhteenvedot uudella ilmeellä ja enemmän tilastoja</li>
+                        <li>Valinnainen sähköposti kohdassa ”Lähetä palautetta”, vain jotta voin vastata sinulle</li>
                         <li>Oma ajastinkello jokaiselle teemalle</li>
                         <li>Pagi valitsee sinulle kirjan Haluan lukea -listalta</li>
                         <li>KOSync KOReaderin todellisella lukuajalla</li>
                         <li>Ilmoitukset luokittain ja ilmoitukset sovelluksen uutisista</li>
+                        <li>Koti, jossa sivupalkki on ryhmitelty: Tavoitteet, Lukemiseni ja Työkalut</li>
+                        <li>Vaihda kirjan tilaa sen pikatoiminnoista ja peru, jos erehdyt</li>
+                        <li>Material-kuvakkeet emojien tilalla ja luettavammat tilastot kaikissa teemoissa</li>
+                        <li>Ilmoitus, kun lisäät kirjan hausta</li>
+                        <li>Lukukierrosten päivämäärät yhdellä rivillä, helpompi muokata</li>
                         <li>Bingo 24 pohjalla koon mukaan</li>
+                        <li>iPhonella ajastimen Live Activity teemasi väreissä</li>
+                        <li>Luettelo oppii tuloksettomista hauista ja ISBN-skannauksista ja lisää puuttuvat kirjat (15. marraskuusta alkaen)</li>
                         <li>Perinteinen kiina</li>
                         <li><strong>Sarja CSV:</strong> ssä</li>
-                        <li>Luettavammat Tilastot</li>
+                    </ul>
+                    <strong>Korjaukset</strong>
+                    <ul>
+                        <li>Otsikot Bingossa, Wrappedissa ja muilla näytöillä ovat nyt samalla korkeudella kuin muissa valikoissa</li>
+                        <li>Bingon ja Wrappedin kuvakkeet saivat värinsä takaisin</li>
+                        <li>Kirjojen tilakohtaiset laskurit Kodissa näkyvät paremmin teemoissa Tumma, OLED, Hämärä, Aurora ja Nahka</li>
+                        <li>Vain yksi varoitus kirjoille, joilta puuttuu tietoja: keltainen kolmio poistuu ja punainen jää</li>
+                        <li>Kannen ja lajityypin uudelleenlataus kertoo, jos kaikki oli jo kunnossa, ja varoittaa punaisella, jos jotain ei löydy</li>
+                        <li>Hyvin suurten kirjastojen Google Drive -varmuuskopiot eivät enää epäonnistu muistin puutteen vuoksi</li>
+                        <li>Useita korjauksia iPhonelle</li>
                     </ul>
                 </div></div>
             </div>

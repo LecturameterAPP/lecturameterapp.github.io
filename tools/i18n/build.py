@@ -308,6 +308,13 @@ def list_vars(strings, where, errors):
     v['paused_cards_html'] = '\n'.join(
         '            <div class="paused-card reveal-up"><h3>%s</h3><p>%s</p></div>' % (c['title'], c['text'])
         for c in get('home.paused.cards'))
+    v['quickmenu_cards_html'] = '\n'.join(
+        '            <div class="paused-card qm-card reveal-up"><h3>%s</h3><p>%s</p></div>' % (c['title'], c['text'])
+        for c in get('home.quickmenu.cards'))
+    v['quickmenu_groups_html'] = '\n'.join(
+        '                    <div class="qm-group%s"><p class="qm-group-title">%s</p><p>%s</p></div>'
+        % (' is-current' if i == 0 else '', c['title'], c['text'])
+        for i, c in enumerate(get('home.quickmenu.groups')))
     v['cards_chips_html'] = '\n'.join('                <li>%s</li>' % c for c in get('home.cards.chips'))
     v['cards_steps_html'] = '\n'.join(
         '            <li class="share-step reveal-up"><h3>%s</h3><p>%s</p></li>' % (c['title'], c['text'])

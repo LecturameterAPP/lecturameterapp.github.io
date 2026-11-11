@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Some people may see a different price because we're running pricing experiments.",
  "home.pricing.try_pro_free_for_7": "Try Pro free for 7 days, inside the app",
  "home.pricing.no_card_required_for_the": "No card required for the trial",
- "home.pricing.leather_aurora_oled_and_dusk": "Leather, Aurora, OLED and Dusk themes",
+ "home.pricing.leather_aurora_oled_and_dusk": "Leather, Aurora, OLED, Dusk, Notebook and Woodland themes",
  "home.pricing.immersive_timer": "Immersive timer",
  "home.pricing.golden_alternative_icon": "Golden alternative icon",
  "home.pricing.monthly_comparison_widget": "Monthly comparison widget",
@@ -547,21 +547,41 @@
   "Changing a book's status no longer erases the dates of earlier reads.",
   "The monthly recap also counts finished books with no sessions."
  ],
- "release.3_9.headline": "Events · Two new Pro themes",
+ "release.3_9.headline": "Events · Quick menu · Two new Pro themes",
  "release.3_9.new": [
   "<strong>Events:</strong> global reading challenges and Lecturameter Quest when one is active",
+  "<strong>Quick menu:</strong> jump from one section to another with the three dots (···), without going back to Home",
   "<strong>Paused:</strong> set a book aside for a while without messing up your stats",
   "<strong>Two new Pro themes:</strong> Notebook and Woodland",
+  "Pro themes can also be bought one by one or in packs of 3, with a preview, and the Pro screen is new",
+  "<strong>Non-linear reading</strong> for anthologies and poetry collections: overlapping pages don't count twice and the progress bar is split into segments",
+  "Start reading from the book widget, without opening the app",
+  "Weekly and monthly summaries with a new design and more stats",
+  "Optional email in “Send feedback”, only so I can reply to you",
   "A timer clock of its own for each theme",
   "Pagi picks a book from Want to read",
   "KOSync with KOReader's real reading time",
   "Notifications by category and app news alerts",
+  "Home with the rail grouped into Goals, My reading and Tools",
+  "Change a book's status from its quick actions, and undo it if you slip",
+  "Material icons instead of emojis and more readable stats in every theme",
+  "A notice when you add a book from search",
+  "Reading cycle dates on a single row, easier to edit",
   "Bingo with 24 templates by size",
+  "On iPhone, the timer's Live Activity in your theme's colors",
+  "The catalog learns from searches and ISBN scans that find nothing and adds the missing books (from November 15)",
   "Traditional Chinese",
-  "Series in the CSV",
-  "More readable Stats"
+  "Series in the CSV"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Titles in Bingo, Wrapped and other screens now sit at the same height as in the other menus",
+  "The Bingo and Wrapped icons get their colors back",
+  "The book counters per status on Home are easier to see in Dark, OLED, Dusk, Aurora and Leather",
+  "One single warning for books with missing data: the yellow triangle is gone and the red one stays",
+  "Reloading cover and genre tells you when everything was already fine, and warns in red when something isn't found",
+  "Google Drive backups of very large libraries no longer fail for lack of memory",
+  "Several fixes on iPhone"
+ ],
  "roadmap.3_9.heading": "What's coming in Lecturameter 3.9",
  "roadmap.3_9.sub": "Reading challenges for the whole community, a game played with <b>your own books</b> and a renewed Home. No fixed dates: everything ships when it's ready.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "From Reading or Rereading",
-   "text": "Change the status from the pill on the book's page or with “Change status” in the quick menu. It works for books, comics, manga and audiobooks."
+   "text": "Change the status from the pill on the book's page or with “Change status” in the quick actions (long-press the book's card). It works for books, comics, manga and audiobooks."
   },
   {
    "title": "Paused days don't count",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Share",
  "home.cards.title": "Lecturameter is not a social network. Your cards go to the one you use.",
- "home.cards.sub": "Make vertical 1080×1920 cards, ready for stories, and share them where you already are. No account, no profile and no followers.",
+ "home.cards.sub": "Make vertical 1080×1920 cards, ready for stories, and share them where you already are. No account, no profile and no followers. In 3.9 the weekly and monthly summaries get a new design with more stats.",
  "home.cards.chips": [
   "Book",
   "Book finished",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 is free and available for iPhone and for Android.",
  "lm99.get.app_store": "Download on the App Store",
  "lm99.get.play_soon": "Coming soon to Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Website visit counter:</span> this website (not the app) has its own anonymous counter, with no cookies and no third parties. It records the page you visit, your clicks on links to the stores, the country, the page language, the type of device (mobile or desktop) and the site you came from. It does not store your IP address or anything that identifies you: only an anonymous code that is recalculated every day and cannot be used to recognise you from one day to the next. If your browser sends \"Do Not Track\", nothing is sent."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Website visit counter:</span> this website (not the app) has its own anonymous counter, with no cookies and no third parties. It records the page you visit, your clicks on links to the stores, the country, the page language, the type of device (mobile or desktop) and the site you came from. It does not store your IP address or anything that identifies you: only an anonymous code that is recalculated every day and cannot be used to recognise you from one day to the next. If your browser sends \"Do Not Track\", nothing is sent.",
+ "home.quickmenu.title": "Jump between sections without going back to Home",
+ "home.quickmenu.sub": "Going from Bingo to Settings used to mean a stop at Home first. Now you tap the three dots (···) in the top-right corner and go straight there.",
+ "home.quickmenu.cards": [
+  {
+   "title": "On almost every screen",
+   "text": "The horizontal three-dot icon (···) sits in the top-right corner. If the screen had a share button, it moves to its left."
+  },
+  {
+   "title": "The same groups as Home",
+   "text": "Goals, My reading and Tools, plus Home, Settings and Data and backups. The section you're in is highlighted: tap it to go back to its start."
+  },
+  {
+   "title": "In the book page too",
+   "text": "Open the vertical three-dot menu on a book's page and pick “Quick menu”. Step-by-step wizards don't have it, so you don't lose what you're filling in."
+  }
+ ],
+ "home.quickmenu.tag": "New in 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Quick menu",
+ "home.quickmenu.groups": [
+  {
+   "title": "Goals",
+   "text": "Events · Challenges · Bingo"
+  },
+  {
+   "title": "My reading",
+   "text": "Stats · My cards · Wrapped"
+  },
+  {
+   "title": "Tools",
+   "text": "Reminders · Tag management · Scan ISBN"
+  },
+  {
+   "title": "General shortcuts",
+   "text": "Home · Settings · Data and backups"
+  }
+ ]
 }

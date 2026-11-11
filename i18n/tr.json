@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Fiyat denemeleri yaptığımız için bazı kişiler farklı bir fiyat görebilir.",
  "home.pricing.try_pro_free_for_7": "Pro'yu uygulama içinden 7 gün ücretsiz dene",
  "home.pricing.no_card_required_for_the": "Deneme için kart gerekmez",
- "home.pricing.leather_aurora_oled_and_dusk": "Deri, Aurora, OLED ve Alacakaranlık temaları",
+ "home.pricing.leather_aurora_oled_and_dusk": "Deri, Aurora, OLED, Alacakaranlık, Defter ve Orman temaları",
  "home.pricing.immersive_timer": "Sürükleyici zamanlayıcı",
  "home.pricing.golden_alternative_icon": "Altın renkli alternatif simge",
  "home.pricing.monthly_comparison_widget": "Aylık karşılaştırma widget'ı",
@@ -547,21 +547,41 @@
   "Bir kitabın durumunu değiştirmek artık önceki okumaların tarihlerini silmiyor.",
   "Aylık özet, oturumu olmayan bitmiş kitapları da sayıyor."
  ],
- "release.3_9.headline": "Etkinlikler · İki yeni Pro tema",
+ "release.3_9.headline": "Etkinlikler · Hızlı menü · İki yeni Pro tema",
  "release.3_9.new": [
   "<strong>Etkinlikler:</strong> küresel okuma görevleri ve etkin olduğunda Lecturameter Quest",
+  "<strong>Hızlı menü:</strong> Ana sayfa'ya dönmeden üç noktayla (···) bir bölümden diğerine geçin",
   "<strong>Duraklatıldı:</strong> bir kitabı istatistiklerini bozmadan bir süre kenara koy",
   "<strong>İki yeni Pro tema:</strong> Defter ve Orman",
+  "Pro temalar ön izlemeyle tek tek ya da 3'lü paketler halinde de satın alınabiliyor, Pro ekranı da yeni",
+  "Antolojiler ve şiir kitapları için <strong>doğrusal olmayan okuma</strong>: çakışan sayfalar iki kez sayılmaz, ilerleme çubuğu bölümlere ayrılır",
+  "Uygulamayı açmadan kitap widget'ından okumaya başlayın",
+  "Yeni tasarımlı ve daha fazla istatistikli haftalık ve aylık özetler",
+  "“Geri bildirim gönder”de isteğe bağlı e-posta, yalnızca size yanıt verebilmem için",
   "Her tema için kendine ait bir zamanlayıcı saati",
   "Pagi, Okunacak listesinden sana bir kitap seçer",
   "KOSync ile KOReader'ın gerçek okuma süresi",
   "Kategoriye göre bildirimler ve uygulama haberleri uyarıları",
+  "Rayı Hedefler, Okumalarım ve Araçlar olarak gruplanmış Ana sayfa",
+  "Bir kitabın durumunu hızlı işlemlerinden değiştirin, yanlışlık olursa geri alın",
+  "Emoji yerine Material simgeleri ve tüm temalarda daha okunaklı istatistikler",
+  "Aramadan kitap eklerken bir bildirim",
+  "Okuma döngüsü tarihleri tek satırda, düzenlemesi daha kolay",
   "Boyuta göre 24 şablonlu Bingo",
+  "iPhone'da, zamanlayıcının Live Activity'si temanızın renklerinde",
+  "Katalog, sonuç bulamayan aramalardan ve ISBN taramalarından öğrenir ve eksik kitapları ekler (15 Kasım'dan itibaren)",
   "Geleneksel Çince",
-  "CSV'de seri",
-  "Daha okunaklı İstatistikler"
+  "CSV'de seri"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Bingo, Wrapped ve diğer ekranlardaki başlıklar artık diğer menülerle aynı yükseklikte",
+  "Bingo ve Wrapped simgeleri renklerine kavuştu",
+  "Ana sayfa'daki duruma göre kitap sayaçları Koyu, OLED, Alacakaranlık, Aurora ve Deri temalarında daha net görünüyor",
+  "Eksik verili kitaplar için tek bir uyarı: sarı üçgen kalktı, kırmızı kaldı",
+  "Kapağı ve türü yeniden yüklemek her şeyin zaten yolunda olduğunu söyler, bir şey bulunamazsa kırmızıyla uyarır",
+  "Çok büyük kütüphanelerin Google Drive yedekleri artık bellek yetersizliğinden başarısız olmuyor",
+  "iPhone'da çeşitli düzeltmeler"
+ ],
  "roadmap.3_9.heading": "Lecturameter 3.9'da neler geliyor",
  "roadmap.3_9.sub": "Tüm topluluk için okuma meydan okumaları, <b>kendi kitaplarınla</b> oynanan bir oyun ve yenilenen bir Ana Sayfa. Sabit tarih yok: her şey hazır olunca çıkar.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Okunuyor veya Yeniden okunuyor durumundan",
-   "text": "Durumu kitap sayfasındaki rozetten ya da hızlı menüdeki “Durumu değiştir” ile değiştir. Kitaplar, çizgi romanlar, mangalar ve sesli kitaplar için çalışır."
+   "text": "Durumu kitap sayfasındaki hapla ya da hızlı işlemlerdeki (kitap kartına uzun basın) “Durumu değiştir” ile değiştirin. Kitaplar, çizgi romanlar, mangalar ve sesli kitaplar için çalışır."
   },
   {
    "title": "Duraklatılan günler sayılmaz",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Paylaş",
  "home.cards.title": "Lecturameter bir sosyal ağ değil. Kartların kullandığın ağa gider.",
- "home.cards.sub": "Hikâyelere hazır 1080×1920 dikey kartlar yap ve zaten bulunduğun yerde paylaş. Hesap yok, profil yok, takipçi yok.",
+ "home.cards.sub": "Hikâyelere hazır 1080×1920 dikey kartlar yap ve zaten bulunduğun yerde paylaş. Hesap yok, profil yok, takipçi yok. 3.9'da haftalık ve aylık özetler yeni bir tasarım ve daha fazla istatistikle geliyor.",
  "home.cards.chips": [
   "Kitap",
   "Biten kitap",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 ücretsizdir ve iPhone ile Android için mevcuttur.",
  "lm99.get.app_store": "App Store'dan indir",
  "lm99.get.play_soon": "Yakında Google Play'de",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Web sitesi ziyaret sayacı:</span> bu web sitesinin (uygulamanın değil) çerezsiz ve üçüncü taraflarsız, kendine ait anonim bir sayacı vardır. Ziyaret ettiğin sayfayı, mağaza bağlantılarına tıklamalarını, ülkeyi, sayfa dilini, cihaz türünü (telefon veya bilgisayar) ve geldiğin siteyi kaydeder. IP adresini ya da seni tanımlayan hiçbir şeyi saklamaz: yalnızca her gün yeniden hesaplanan ve seni bir günden diğerine tanımak için kullanılamayan anonim bir kod saklar. Tarayıcın «Do Not Track» (İzlenmek İstemiyorum) gönderirse hiçbir şey gönderilmez."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Web sitesi ziyaret sayacı:</span> bu web sitesinin (uygulamanın değil) çerezsiz ve üçüncü taraflarsız, kendine ait anonim bir sayacı vardır. Ziyaret ettiğin sayfayı, mağaza bağlantılarına tıklamalarını, ülkeyi, sayfa dilini, cihaz türünü (telefon veya bilgisayar) ve geldiğin siteyi kaydeder. IP adresini ya da seni tanımlayan hiçbir şeyi saklamaz: yalnızca her gün yeniden hesaplanan ve seni bir günden diğerine tanımak için kullanılamayan anonim bir kod saklar. Tarayıcın «Do Not Track» (İzlenmek İstemiyorum) gönderirse hiçbir şey gönderilmez.",
+ "home.quickmenu.title": "Ana sayfaya dönmeden bölümler arasında geçiş yapın",
+ "home.quickmenu.sub": "Bingo'dan Ayarlar'a gitmek için eskiden önce Ana sayfa'ya uğramak gerekiyordu. Şimdi sağ üstteki üç noktaya (···) dokunup doğrudan oraya gidiyorsunuz.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Neredeyse her ekranda",
+   "text": "Yatay üç nokta simgesi (···) sağ üst köşede durur. Ekranda paylaş düğmesi varsa, onun soluna kayar."
+  },
+  {
+   "title": "Ana sayfa ile aynı gruplar",
+   "text": "Hedefler, Okumalarım ve Araçlar; ayrıca Ana sayfa, Ayarlar ve Veriler ve yedekler. Bulunduğunuz bölüm vurgulanır: dokunursanız başına dönersiniz."
+  },
+  {
+   "title": "Kitap sayfasında da",
+   "text": "Kitap sayfasındaki dikey üç nokta menüsünü açıp “Hızlı menü”yü seçin. Adım adım sihirbazlarda yoktur, böylece doldurduğunuz bilgiler kaybolmaz."
+  }
+ ],
+ "home.quickmenu.tag": "3.9'da yeni",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Hızlı menü",
+ "home.quickmenu.groups": [
+  {
+   "title": "Hedefler",
+   "text": "Etkinlikler · Meydan okumalar · Bingo"
+  },
+  {
+   "title": "Okumalarım",
+   "text": "İstatistikler · Kartlarım · Wrapped"
+  },
+  {
+   "title": "Araçlar",
+   "text": "Hatırlatıcılar · Etiket yönetimi · ISBN tara"
+  },
+  {
+   "title": "Genel erişimler",
+   "text": "Ana sayfa · Ayarlar · Veriler ve yedekler"
+  }
+ ]
 }

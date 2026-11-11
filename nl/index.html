@@ -621,7 +621,7 @@
         </div>
         <div class="paused-grid">
             <div class="paused-card reveal-up"><h3>Een aparte status</h3><p>Gepauzeerd is niet Gestopt. Je boek belandt niet op de stapel boeken die je hebt opgegeven: het wacht en komt terug wanneer jij wilt.</p></div>
-            <div class="paused-card reveal-up"><h3>Vanuit Aan het lezen of Herlezen</h3><p>Wijzig de status via het label op de boekpagina of met „Status wijzigen” in het snelmenu. Werkt voor boeken, strips, manga en luisterboeken.</p></div>
+            <div class="paused-card reveal-up"><h3>Vanuit Aan het lezen of Herlezen</h3><p>Wijzig de status via de pil op de boekpagina of met “Status wijzigen” in de snelle acties (houd de kaart van het boek lang ingedrukt). Het werkt voor boeken, strips, manga en luisterboeken.</p></div>
             <div class="paused-card reveal-up"><h3>Dagen op pauze tellen niet mee</h3><p>Niet bij de dagen tot je klaar bent en niet in je leessnelheid. Je statistieken blijven zoals ze waren toen je las.</p></div>
             <div class="paused-card reveal-up"><h3>Een notitie, als je wilt</h3><p>Als je pauzeert en als je hervat, kun je opschrijven waarom. Dat is optioneel. Alles blijft in het onderdeel „Pauzes” van de boekpagina, met de geschiedenis.</p></div>
             <div class="paused-card reveal-up"><h3>Een eigen tabblad</h3><p>In je bibliotheek vind je tussen Wil ik lezen en Gestopt je gepauzeerde boeken.</p></div>
@@ -630,13 +630,41 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="cards" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Nieuw in 3.9</span>
+            <h2 id="quickmenu-title">Spring van de ene sectie naar de andere zonder terug te gaan naar Home</h2>
+            <p>Van Bingo naar Instellingen gaan betekende vroeger eerst langs Home. Nu tik je op de drie puntjes (···) rechtsboven en ga je er rechtstreeks heen.</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">Snelmenu</p>
+                <div class="qm-groups">
+                    <div class="qm-group is-current"><p class="qm-group-title">Doelen</p><p>Evenementen · Uitdagingen · Bingo</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Mijn lectuur</p><p>Statistieken · Mijn kaarten · Wrapped</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Hulpmiddelen</p><p>Herinneringen · Tagbeheer · ISBN scannen</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Algemene snelkoppelingen</p><p>Home · Instellingen · Gegevens en back-ups</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card qm-card reveal-up"><h3>Op bijna elk scherm</h3><p>Het horizontale pictogram met drie puntjes (···) staat rechtsboven. Als het scherm een deelknop had, verschuift die naar links ervan.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Dezelfde groepen als Home</h3><p>Doelen, Mijn lectuur en Hulpmiddelen, plus Home, Instellingen en Gegevens en back-ups. De sectie waarin je zit is gemarkeerd: tik erop om terug te gaan naar het begin ervan.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Ook op de boekpagina</h3><p>Open het verticale menu met drie puntjes op de pagina van een boek en kies “Snelmenu”. Stapsgewijze wizards hebben het niet, zodat je niet kwijtraakt wat je invult.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="cards" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">Delen</span>
             <h2 id="cards-title">Lecturameter is geen sociaal netwerk. Je kaarten gaan naar het netwerk dat jij gebruikt.</h2>
-            <p>Maak verticale kaarten van 1080×1920, klaar voor stories, en deel ze waar je al bent. Geen account, geen profiel en geen volgers.</p>
+            <p>Maak verticale kaarten van 1080×1920, klaar voor stories, en deel ze waar je al bent. Geen account, geen profiel en geen volgers. In 3.9 krijgen de wekelijkse en maandelijkse overzichten een nieuw ontwerp met meer statistieken.</p>
         </div>
         <div class="share-wrap">
             <div class="share-fan reveal-up" aria-hidden="true">
@@ -669,7 +697,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="events" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">
@@ -870,7 +898,7 @@
                 <p class="price-trial">Probeer Pro 7 dagen gratis, in de app</p>
                 <p class="price-trial">Geen creditcard nodig voor de proefperiode</p>
                 <ul class="pricing-list">
-                    <li>Thema's Leer, Aurora, OLED en Schemering</li>
+                    <li>Thema's Leer, Aurora, OLED, Schemer, Schrift en Bos</li>
                     <li>Immersieve timer</li>
                     <li>Alternatief gouden icoon</li>
                     <li>Widget voor maandvergelijking</li>
@@ -897,16 +925,40 @@
                 <h3>Nieuw</h3>
                 <ul>
                     <li><strong>Evenementen:</strong> wereldwijde leesuitdagingen en Lecturameter Quest als er een actief is</li>
+                    <li><strong>Snelmenu:</strong> spring van de ene sectie naar de andere met de drie puntjes (···), zonder terug te gaan naar Home</li>
                     <li><strong>Gepauzeerd:</strong> leg een boek een tijdje opzij zonder je statistieken te verpesten</li>
                     <li><strong>Twee nieuwe Pro-thema's:</strong> Schrift en Bos</li>
+                    <li>Pro-thema's kun je ook los kopen of in pakketten van 3, met voorbeeld, en het Pro-scherm is nieuw</li>
+                    <li><strong>Niet-lineair lezen</strong> voor bloemlezingen en dichtbundels: overlappende pagina's tellen niet dubbel en de voortgangsbalk is in segmenten verdeeld</li>
+                    <li>Begin met lezen vanuit de boekwidget, zonder de app te openen</li>
+                    <li>Wekelijkse en maandelijkse overzichten met een nieuw ontwerp en meer statistieken</li>
+                    <li>Optioneel e-mailadres bij “Feedback sturen”, alleen zodat ik je kan antwoorden</li>
                     <li>Een eigen timerklok voor elk thema</li>
                     <li>Pagi kiest een boek uit Wil ik lezen</li>
                     <li>KOSync met de echte leestijd van KOReader</li>
                     <li>Meldingen per categorie en berichten over nieuws in de app</li>
+                    <li>Home met de balk gegroepeerd in Doelen, Mijn lectuur en Hulpmiddelen</li>
+                    <li>Wijzig de status van een boek via de snelle acties en maak het ongedaan als je je vergist</li>
+                    <li>Material-pictogrammen in plaats van emoji's en beter leesbare statistieken in elk thema</li>
+                    <li>Een melding wanneer je een boek toevoegt vanuit zoeken</li>
+                    <li>Datums van leescycli op één rij, makkelijker te bewerken</li>
                     <li>Bingo met 24 sjablonen per formaat</li>
+                    <li>Op iPhone de Live Activity van de timer in de kleuren van je thema</li>
+                    <li>De catalogus leert van zoekopdrachten en ISBN-scans zonder resultaat en voegt de ontbrekende boeken toe (vanaf 15 november)</li>
                     <li>Traditioneel Chinees</li>
                     <li>Serie in de CSV</li>
-                    <li>Beter leesbare Statistieken</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>Oplossingen</h3>
+                <ul>
+                    <li>Titels in Bingo, Wrapped en andere schermen staan nu op dezelfde hoogte als in de andere menu's</li>
+                    <li>De pictogrammen van Bingo en Wrapped hebben hun kleuren terug</li>
+                    <li>De boekentellers per status op Home zijn beter te zien in Donker, OLED, Schemer, Aurora en Leer</li>
+                    <li>Eén enkele waarschuwing voor boeken met ontbrekende gegevens: de gele driehoek is weg en de rode blijft</li>
+                    <li>Omslag en genre opnieuw laden meldt wanneer alles al in orde was en waarschuwt in het rood als iets niet wordt gevonden</li>
+                    <li>Google Drive-back-ups van zeer grote bibliotheken mislukken niet langer door geheugentekort</li>
+                    <li>Verschillende oplossingen op iPhone</li>
                 </ul>
             </div>
         </div>
@@ -1025,21 +1077,43 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">v3.9 &middot; Evenementen · Twee nieuwe Pro-thema's</button>
+                <button class="faq-q">v3.9 &middot; Evenementen · Snelmenu · Twee nieuwe Pro-thema's</button>
                 <div class="faq-a"><div class="faq-a-inner">
                     <strong>Nieuw</strong>
                     <ul>
                         <li><strong>Evenementen:</strong> wereldwijde leesuitdagingen en Lecturameter Quest als er een actief is</li>
+                        <li><strong>Snelmenu:</strong> spring van de ene sectie naar de andere met de drie puntjes (···), zonder terug te gaan naar Home</li>
                         <li><strong>Gepauzeerd:</strong> leg een boek een tijdje opzij zonder je statistieken te verpesten</li>
                         <li><strong>Twee nieuwe Pro-thema's:</strong> Schrift en Bos</li>
+                        <li>Pro-thema's kun je ook los kopen of in pakketten van 3, met voorbeeld, en het Pro-scherm is nieuw</li>
+                        <li><strong>Niet-lineair lezen</strong> voor bloemlezingen en dichtbundels: overlappende pagina's tellen niet dubbel en de voortgangsbalk is in segmenten verdeeld</li>
+                        <li>Begin met lezen vanuit de boekwidget, zonder de app te openen</li>
+                        <li>Wekelijkse en maandelijkse overzichten met een nieuw ontwerp en meer statistieken</li>
+                        <li>Optioneel e-mailadres bij “Feedback sturen”, alleen zodat ik je kan antwoorden</li>
                         <li>Een eigen timerklok voor elk thema</li>
                         <li>Pagi kiest een boek uit Wil ik lezen</li>
                         <li>KOSync met de echte leestijd van KOReader</li>
                         <li>Meldingen per categorie en berichten over nieuws in de app</li>
+                        <li>Home met de balk gegroepeerd in Doelen, Mijn lectuur en Hulpmiddelen</li>
+                        <li>Wijzig de status van een boek via de snelle acties en maak het ongedaan als je je vergist</li>
+                        <li>Material-pictogrammen in plaats van emoji's en beter leesbare statistieken in elk thema</li>
+                        <li>Een melding wanneer je een boek toevoegt vanuit zoeken</li>
+                        <li>Datums van leescycli op één rij, makkelijker te bewerken</li>
                         <li>Bingo met 24 sjablonen per formaat</li>
+                        <li>Op iPhone de Live Activity van de timer in de kleuren van je thema</li>
+                        <li>De catalogus leert van zoekopdrachten en ISBN-scans zonder resultaat en voegt de ontbrekende boeken toe (vanaf 15 november)</li>
                         <li>Traditioneel Chinees</li>
                         <li>Serie in de CSV</li>
-                        <li>Beter leesbare Statistieken</li>
+                    </ul>
+                    <strong>Oplossingen</strong>
+                    <ul>
+                        <li>Titels in Bingo, Wrapped en andere schermen staan nu op dezelfde hoogte als in de andere menu's</li>
+                        <li>De pictogrammen van Bingo en Wrapped hebben hun kleuren terug</li>
+                        <li>De boekentellers per status op Home zijn beter te zien in Donker, OLED, Schemer, Aurora en Leer</li>
+                        <li>Eén enkele waarschuwing voor boeken met ontbrekende gegevens: de gele driehoek is weg en de rode blijft</li>
+                        <li>Omslag en genre opnieuw laden meldt wanneer alles al in orde was en waarschuwt in het rood als iets niet wordt gevonden</li>
+                        <li>Google Drive-back-ups van zeer grote bibliotheken mislukken niet langer door geheugentekort</li>
+                        <li>Verschillende oplossingen op iPhone</li>
                     </ul>
                 </div></div>
             </div>

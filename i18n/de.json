@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Einige Personen sehen möglicherweise einen anderen Preis, weil wir Preisexperimente durchführen.",
  "home.pricing.try_pro_free_for_7": "Teste Pro 7 Tage kostenlos, direkt in der App",
  "home.pricing.no_card_required_for_the": "Für die Testphase ist keine Karte nötig",
- "home.pricing.leather_aurora_oled_and_dusk": "Themen Leder, Aurora, OLED und Dämmerung",
+ "home.pricing.leather_aurora_oled_and_dusk": "Themes Leder, Aurora, OLED, Dämmerung, Notizbuch und Wald",
  "home.pricing.immersive_timer": "Immersiver Timer",
  "home.pricing.golden_alternative_icon": "Alternatives goldenes Symbol",
  "home.pricing.monthly_comparison_widget": "Widget Monatsvergleich",
@@ -547,21 +547,41 @@
   "Das Ändern des Buchstatus löscht nicht mehr die Daten früherer Lesedurchgänge.",
   "Der Monatsrückblick zählt auch beendete Bücher ohne Sitzungen."
  ],
- "release.3_9.headline": "Events · Zwei neue Pro-Themes",
+ "release.3_9.headline": "Events · Schnellmenü · Zwei neue Pro-Themes",
  "release.3_9.new": [
   "<strong>Events:</strong> weltweite Leseaufgaben und Lecturameter Quest, wenn eines aktiv ist",
+  "<strong>Schnellmenü:</strong> Wechsle mit den drei Punkten (···) von einem Bereich zum anderen, ohne zurück zum Start zu gehen",
   "<strong>Pausiert:</strong> leg ein Buch eine Weile beiseite, ohne deine Statistiken zu verfälschen",
   "<strong>Zwei neue Pro-Themes:</strong> Notizbuch und Wald",
+  "Pro-Themes lassen sich auch einzeln oder in 3er-Paketen kaufen, mit Vorschau, und der Pro-Bildschirm ist neu",
+  "<strong>Nichtlineares Lesen</strong> für Anthologien und Gedichtbände: Sich überschneidende Seiten zählen nicht doppelt und der Fortschrittsbalken ist in Abschnitte unterteilt",
+  "Lesen direkt über das Buch-Widget starten, ohne die App zu öffnen",
+  "Wochen- und Monatsübersichten mit neuem Design und mehr Statistiken",
+  "Optionale E-Mail bei „Feedback senden“, nur damit ich dir antworten kann",
   "Eine eigene Timer-Uhr für jedes Theme",
   "Pagi wählt ein Buch aus deiner Merkliste",
   "KOSync mit der echten Lesezeit aus KOReader",
   "Benachrichtigungen nach Kategorie und Hinweise auf Neuigkeiten der App",
+  "Start mit der Leiste, gruppiert in Ziele, Meine Lektüre und Werkzeuge",
+  "Ändere den Status eines Buchs über seine Schnellaktionen und mach es rückgängig, falls du dich vertippst",
+  "Material-Symbole statt Emojis und besser lesbare Statistiken in jedem Theme",
+  "Ein Hinweis, wenn du ein Buch aus der Suche hinzufügst",
+  "Daten der Lesezyklen in einer einzigen Zeile, leichter zu bearbeiten",
   "Bingo mit 24 Vorlagen je nach Größe",
+  "Auf dem iPhone die Live Activity des Timers in den Farben deines Themes",
+  "Der Katalog lernt aus Suchen und ISBN-Scans ohne Treffer und ergänzt die fehlenden Bücher (ab dem 15. November)",
   "Traditionelles Chinesisch",
-  "Serie im CSV",
-  "Besser lesbare Statistiken"
+  "Serie im CSV"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Die Titel in Bingo, Wrapped und anderen Bildschirmen sitzen jetzt auf derselben Höhe wie in den anderen Menüs",
+  "Die Symbole von Bingo und Wrapped haben ihre Farben zurück",
+  "Die Bücherzähler pro Status im Start sind in Dunkel, OLED, Dämmerung, Aurora und Leder besser zu sehen",
+  "Nur noch eine Warnung für Bücher mit fehlenden Daten: Das gelbe Dreieck verschwindet, das rote bleibt",
+  "Beim Neuladen von Cover und Genre erfährst du, wenn schon alles in Ordnung war, und wirst in Rot gewarnt, wenn etwas nicht gefunden wird",
+  "Google-Drive-Backups sehr großer Bibliotheken schlagen nicht mehr wegen Speichermangel fehl",
+  "Mehrere Fehlerbehebungen auf dem iPhone"
+ ],
  "roadmap.3_9.heading": "Was in Lecturameter 3.9 kommt",
  "roadmap.3_9.sub": "Lese-Challenges für die ganze Community, ein Spiel mit <b>deinen eigenen Büchern</b> und ein neuer Startbildschirm. Keine festen Termine: Alles kommt, wenn es fertig ist.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Von Lesen oder Erneutes Lesen",
-   "text": "Ändere den Status über das Label auf der Buchseite oder mit „Status ändern“ im Schnellmenü. Das funktioniert für Bücher, Comics, Manga und Hörbücher."
+   "text": "Ändere den Status über die Pille auf der Buchseite oder mit „Status ändern“ in den Schnellaktionen (Buchkarte lange drücken). Das funktioniert für Bücher, Comics, Manga und Hörbücher."
   },
   {
    "title": "Pausierte Tage zählen nicht",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Teilen",
  "home.cards.title": "Lecturameter ist kein soziales Netzwerk. Deine Karten gehen dorthin, wo du ohnehin bist.",
- "home.cards.sub": "Erstelle Karten im Hochformat 1080×1920, bereit für Stories, und teile sie dort, wo du schon bist. Kein Konto, kein Profil, keine Follower.",
+ "home.cards.sub": "Erstelle Karten im Hochformat 1080×1920, bereit für Stories, und teile sie dort, wo du schon bist. Kein Konto, kein Profil, keine Follower. In 3.9 bekommen die Wochen- und Monatsübersichten ein neues Design mit mehr Statistiken.",
  "home.cards.chips": [
   "Buch",
   "Buch beendet",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 ist kostenlos und für iPhone und Android erhältlich.",
  "lm99.get.app_store": "Laden im App Store",
  "lm99.get.play_soon": "Bald bei Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Besuchszähler der Website:</span> Diese Website (nicht die App) hat einen eigenen anonymen Zähler, ohne Cookies und ohne Dritte. Er erfasst die Seite, die du besuchst, deine Klicks auf Links zu den Stores, das Land, die Sprache der Seite, die Art des Geräts (Handy oder Computer) und die Website, von der du kommst. Er speichert weder deine IP-Adresse noch irgendetwas, das dich identifiziert: nur einen anonymen Code, der jeden Tag neu berechnet wird und es nicht erlaubt, dich von einem Tag zum nächsten wiederzuerkennen. Wenn dein Browser „Do Not Track“ sendet, wird nichts gesendet."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Besuchszähler der Website:</span> Diese Website (nicht die App) hat einen eigenen anonymen Zähler, ohne Cookies und ohne Dritte. Er erfasst die Seite, die du besuchst, deine Klicks auf Links zu den Stores, das Land, die Sprache der Seite, die Art des Geräts (Handy oder Computer) und die Website, von der du kommst. Er speichert weder deine IP-Adresse noch irgendetwas, das dich identifiziert: nur einen anonymen Code, der jeden Tag neu berechnet wird und es nicht erlaubt, dich von einem Tag zum nächsten wiederzuerkennen. Wenn dein Browser „Do Not Track“ sendet, wird nichts gesendet.",
+ "home.quickmenu.title": "Zwischen Bereichen wechseln, ohne zurück zum Start zu gehen",
+ "home.quickmenu.sub": "Um von Bingo zu den Einstellungen zu kommen, musste man früher erst zum Start. Jetzt tippst du oben rechts auf die drei Punkte (···) und bist direkt da.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Auf fast jedem Bildschirm",
+   "text": "Das waagerechte Drei-Punkte-Symbol (···) sitzt oben rechts. Hatte der Bildschirm eine Teilen-Schaltfläche, rückt sie nach links."
+  },
+  {
+   "title": "Dieselben Gruppen wie im Start",
+   "text": "Ziele, Meine Lektüre und Werkzeuge, dazu Start, Einstellungen und Daten und Backups. Der Bereich, in dem du dich befindest, ist hervorgehoben: Tippe darauf, um zu seinem Anfang zurückzukehren."
+  },
+  {
+   "title": "Auch auf der Buchseite",
+   "text": "Öffne auf der Buchseite das senkrechte Drei-Punkte-Menü und wähle „Schnellmenü“. Assistenten mit mehreren Schritten haben es nicht, damit nichts von dem verloren geht, was du gerade ausfüllst."
+  }
+ ],
+ "home.quickmenu.tag": "Neu in 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Schnellmenü",
+ "home.quickmenu.groups": [
+  {
+   "title": "Ziele",
+   "text": "Events · Herausforderungen · Bingo"
+  },
+  {
+   "title": "Meine Lektüre",
+   "text": "Statistiken · Meine Karten · Wrapped"
+  },
+  {
+   "title": "Werkzeuge",
+   "text": "Erinnerungen · Tag-Verwaltung · ISBN scannen"
+  },
+  {
+   "title": "Allgemeine Zugriffe",
+   "text": "Start · Einstellungen · Daten und Backups"
+  }
+ ]
 }

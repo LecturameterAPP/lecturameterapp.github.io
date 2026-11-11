@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Baadhi ya watu wanaweza kuona bei tofauti kwa sababu tunafanya majaribio ya bei.",
  "home.pricing.try_pro_free_for_7": "Jaribu Pro bure kwa siku 7, ndani ya programu",
  "home.pricing.no_card_required_for_the": "Hakuna kadi inayohitajika kwa jaribio",
- "home.pricing.leather_aurora_oled_and_dusk": "Mandhari za Ngozi, Aurora, OLED na Machweo",
+ "home.pricing.leather_aurora_oled_and_dusk": "Mandhari Ngozi, Aurora, OLED, Jioni, Daftari na Msitu",
  "home.pricing.immersive_timer": "Kipima muda cha kuzama",
  "home.pricing.golden_alternative_icon": "Ikoni mbadala ya dhahabu",
  "home.pricing.monthly_comparison_widget": "Wijeti ya ulinganisho wa kila mwezi",
@@ -547,21 +547,41 @@
   "Kubadilisha hali ya kitabu hakufuti tena tarehe za usomaji wa awali.",
   "Muhtasari wa kila mwezi pia unahesabu vitabu vilivyokamilika visivyo na vipindi."
  ],
- "release.3_9.headline": "Matukio · Mandhari mbili mpya za Pro",
+ "release.3_9.headline": "Matukio · Menyu ya haraka · Mandhari mbili mpya za Pro",
  "release.3_9.new": [
   "<strong>Matukio:</strong> changamoto za kusoma za kimataifa na Lecturameter Quest inapokuwa hai",
+  "<strong>Menyu ya haraka:</strong> ruka kutoka sehemu moja hadi nyingine kwa nukta tatu (···), bila kurudi Mwanzo",
   "<strong>Imesitishwa:</strong> weka kitabu pembeni kwa muda bila kuharibu takwimu zako",
   "<strong>Mandhari mbili mpya za Pro:</strong> Daftari na Msitu",
+  "Mandhari za Pro pia zinaweza kununuliwa moja moja au kwa pakiti za 3, na onyesho la awali, na skrini ya Pro ni mpya",
+  "<strong>Usomaji usio wa mstari</strong> kwa antholojia na makusanyo ya mashairi: kurasa zinazopishana hazihesabiwi mara mbili na upau wa maendeleo umegawanywa katika vipande",
+  "Anza kusoma kutoka wijeti ya kitabu, bila kufungua programu",
+  "Muhtasari wa kila wiki na kila mwezi wenye muundo mpya na takwimu zaidi",
+  "Barua pepe ya hiari katika “Tuma maoni”, ili tu niweze kukujibu",
   "Saa ya kipima muda ya kipekee kwa kila mandhari",
   "Pagi hukuchagulia kitabu kutoka Nataka kusoma",
   "KOSync yenye muda halisi wa kusoma wa KOReader",
   "Arifa kwa kila kategoria na taarifa za habari mpya za programu",
+  "Mwanzo na reli iliyopangwa katika Malengo, Usomaji wangu na Zana",
+  "Badilisha hali ya kitabu kutoka kwenye vitendo vyake vya haraka, na tengua ukikosea",
+  "Aikoni za Material badala ya emoji na takwimu zinazosomeka zaidi katika kila mandhari",
+  "Arifa unapoongeza kitabu kutoka kwenye utafutaji",
+  "Tarehe za mizunguko ya usomaji kwenye safu moja, rahisi kuhariri",
   "Bingo yenye violezo 24 kulingana na ukubwa",
+  "Kwenye iPhone, Live Activity ya kipima muda katika rangi za mandhari yako",
+  "Katalogi hujifunza kutokana na utafutaji na uskani wa ISBN usiopata kitu na huongeza vitabu vinavyokosekana (kuanzia Novemba 15)",
   "Kichina cha Jadi",
-  "Mfululizo katika CSV",
-  "Takwimu zinazosomeka vizuri zaidi"
+  "Mfululizo katika CSV"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Vichwa katika Bingo, Wrapped na skrini nyingine sasa viko kwenye urefu uleule kama menyu nyingine",
+  "Aikoni za Bingo na Wrapped zimerudi na rangi zake",
+  "Vihesabu vya vitabu kwa hali kwenye Mwanzo vinaonekana vizuri zaidi katika Giza, OLED, Jioni, Aurora na Ngozi",
+  "Onyo moja tu kwa vitabu vyenye data pungufu: pembetatu ya njano imeondoka na nyekundu inabaki",
+  "Kupakia upya jalada na aina hukuambia kila kitu kilipokuwa sawa tayari, na kuonya kwa nyekundu kitu kisipopatikana",
+  "Nakala za Google Drive za maktaba kubwa sana hazishindwi tena kwa ukosefu wa kumbukumbu",
+  "Marekebisho kadhaa kwenye iPhone"
+ ],
  "roadmap.3_9.heading": "Nini kinakuja katika Lecturameter 3.9",
  "roadmap.3_9.sub": "Changamoto za kusoma kwa jumuiya nzima, mchezo unaochezwa kwa <b>vitabu vyako mwenyewe</b> na Skrini ya Mwanzo mpya. Hakuna tarehe zilizowekwa: kila kitu kitatolewa kikiwa tayari.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Kutoka Inasoma au Kusoma tena",
-   "text": "Badilisha hali kupitia alama kwenye ukurasa wa kitabu au kwa “Badilisha hali” kwenye menyu ya haraka. Inafanya kazi kwa vitabu, katuni, manga na vitabu vya sauti."
+   "text": "Badilisha hali kwa kidonge kwenye ukurasa wa kitabu au kwa “Badilisha hali” kwenye vitendo vya haraka (bonyeza kwa muda kadi ya kitabu). Inafanya kazi kwa vitabu, katuni, manga na vitabu vya sauti."
   },
   {
    "title": "Siku za kusitisha hazihesabiwi",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Shiriki",
  "home.cards.title": "Lecturameter si mtandao wa kijamii. Kadi zako huenda kwenye ule unaoutumia.",
- "home.cards.sub": "Tengeneza kadi wima za 1080×1920, tayari kwa stori, na uzishiriki mahali ulipo tayari. Bila akaunti, bila wasifu na bila wafuasi.",
+ "home.cards.sub": "Tengeneza kadi wima za 1080×1920, tayari kwa stori, na uzishiriki mahali ulipo tayari. Bila akaunti, bila wasifu na bila wafuasi. Katika 3.9 muhtasari wa kila wiki na kila mwezi unapata muundo mpya na takwimu zaidi.",
  "home.cards.chips": [
   "Kitabu",
   "Kitabu kilichokamilika",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 ni ya bure na inapatikana kwa iPhone na kwa Android.",
  "lm99.get.app_store": "Pakua kutoka App Store",
  "lm99.get.play_soon": "Hivi karibuni kwenye Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Kaunta ya ziara za tovuti:</span> tovuti hii (si programu) ina kaunta yake isiyojulikana, bila vidakuzi na bila wahusika wengine. Inarekodi ukurasa unaotembelea, mibofyo yako kwenye viungo vya maduka ya programu, nchi, lugha ya ukurasa, aina ya kifaa (simu au kompyuta) na tovuti uliyotoka. Haihifadhi anwani yako ya IP wala chochote kinachokutambulisha: ni msimbo usiojulikana tu unaokokotolewa upya kila siku na hauwezi kutumika kukutambua kutoka siku moja hadi nyingine. Kivinjari chako kikituma \"Do Not Track\", hakuna kinachotumwa."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Kaunta ya ziara za tovuti:</span> tovuti hii (si programu) ina kaunta yake isiyojulikana, bila vidakuzi na bila wahusika wengine. Inarekodi ukurasa unaotembelea, mibofyo yako kwenye viungo vya maduka ya programu, nchi, lugha ya ukurasa, aina ya kifaa (simu au kompyuta) na tovuti uliyotoka. Haihifadhi anwani yako ya IP wala chochote kinachokutambulisha: ni msimbo usiojulikana tu unaokokotolewa upya kila siku na hauwezi kutumika kukutambua kutoka siku moja hadi nyingine. Kivinjari chako kikituma \"Do Not Track\", hakuna kinachotumwa.",
+ "home.quickmenu.title": "Ruka kati ya sehemu bila kurudi Mwanzo",
+ "home.quickmenu.sub": "Kutoka Bingo hadi Mipangilio ilikuwa lazima upitie Mwanzo kwanza. Sasa unagusa nukta tatu (···) juu kulia na kwenda moja kwa moja.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Karibu kila skrini",
+   "text": "Aikoni ya nukta tatu za mlalo (···) iko juu kulia. Ikiwa skrini ilikuwa na kitufe cha kushiriki, huhamia kushoto kwake."
+  },
+  {
+   "title": "Makundi yale yale ya Mwanzo",
+   "text": "Malengo, Usomaji wangu na Zana, pamoja na Mwanzo, Mipangilio na Data na nakala. Sehemu uliyopo imeangaziwa: iguse ili kurudi mwanzo wake."
+  },
+  {
+   "title": "Pia kwenye ukurasa wa kitabu",
+   "text": "Fungua menyu ya nukta tatu za wima kwenye ukurasa wa kitabu na uchague “Menyu ya haraka”. Wizadi za hatua kwa hatua hazina, ili usipoteze unachojaza."
+  }
+ ],
+ "home.quickmenu.tag": "Mpya katika 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Menyu ya haraka",
+ "home.quickmenu.groups": [
+  {
+   "title": "Malengo",
+   "text": "Matukio · Changamoto · Bingo"
+  },
+  {
+   "title": "Usomaji wangu",
+   "text": "Takwimu · Kadi zangu · Wrapped"
+  },
+  {
+   "title": "Zana",
+   "text": "Vikumbusho · Usimamizi wa lebo · Changanua ISBN"
+  },
+  {
+   "title": "Njia za mkato za jumla",
+   "text": "Mwanzo · Mipangilio · Data na nakala"
+  }
+ ]
 }

@@ -621,7 +621,7 @@
         </div>
         <div class="paused-grid">
             <div class="paused-card reveal-up"><h3>Un estat propi</h3><p>Pausat no és Abandonat. El teu llibre no va a la pila dels llibres que has deixat: queda en espera i torna quan vulguis.</p></div>
-            <div class="paused-card reveal-up"><h3>Des de Llegint o Rellegint</h3><p>Canvia l'estat des de la pastilla de la fitxa del llibre o amb «Canviar estat» al menú ràpid. Funciona amb llibres, còmics, manga i audiollibres.</p></div>
+            <div class="paused-card reveal-up"><h3>Des de Llegint o Rellegint</h3><p>Canvia l'estat amb la píndola de la fitxa del llibre o amb «Canvia l'estat» a les accions ràpides (mantén premuda la targeta del llibre). Serveix per a llibres, còmics, manga i audiollibres.</p></div>
             <div class="paused-card reveal-up"><h3>Els dies en pausa no compten</h3><p>Ni als dies per acabar ni a la teva velocitat de lectura. Les estadístiques es queden com quan llegies.</p></div>
             <div class="paused-card reveal-up"><h3>Una nota, si vols</h3><p>Quan poses el llibre en pausa i quan el represes pots apuntar-hi el motiu. És opcional. Tot queda a la secció «Pauses» de la fitxa del llibre, amb el seu historial.</p></div>
             <div class="paused-card reveal-up"><h3>Una pestanya pròpia</h3><p>A la teva biblioteca, entre Vull llegir i Abandonat, trobaràs els llibres en pausa.</p></div>
@@ -630,13 +630,41 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="cards" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Novetat a la 3.9</span>
+            <h2 id="quickmenu-title">Salta d'una secció a una altra sense tornar a Inici</h2>
+            <p>Abans, per anar del Bingo a Ajustaments calia passar per Inici. Ara toques els tres punts (···) de dalt a la dreta i hi vas directe.</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">Menú ràpid</p>
+                <div class="qm-groups">
+                    <div class="qm-group is-current"><p class="qm-group-title">Metes</p><p>Esdeveniments · Reptes · Bingo</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Les meves lectures</p><p>Estadístiques · Les meves cards · Wrapped</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Eines</p><p>Recordatoris · Gestió de tags · Escanejar ISBN</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Accessos generals</p><p>Inici · Ajustaments · Dades i còpies</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card qm-card reveal-up"><h3>En gairebé totes les pantalles</h3><p>La icona de tres punts horitzontals (···) és a dalt a la dreta. Si la pantalla tenia botó de compartir, es queda a la seva esquerra.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Els mateixos grups que Inici</h3><p>Metes, Les meves lectures i Eines, més Inici, Ajustaments i Dades i còpies. La secció on ets surt marcada: toca-la i tornes al seu principi.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>També a la fitxa del llibre</h3><p>Obre el menú de tres punts verticals de la fitxa i tria «Menú ràpid». Els assistents per passos no el porten, per no perdre el que estàs omplint.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="cards" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">Comparteix</span>
             <h2 id="cards-title">Lecturameter no és una xarxa social. Les teves cards van a la que fas servir.</h2>
-            <p>Crea cards verticals de 1080×1920, a punt per a stories, i comparteix-les on ja ets. Sense compte, sense perfil i sense seguidors.</p>
+            <p>Crea cards verticals de 1080×1920, a punt per a stories, i comparteix-les on ja ets. Sense compte, sense perfil i sense seguidors. A la 3.9, els resums setmanal i mensual estrenen disseny i mostren més dades.</p>
         </div>
         <div class="share-wrap">
             <div class="share-fan reveal-up" aria-hidden="true">
@@ -669,7 +697,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="events" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">
@@ -870,7 +898,7 @@
                 <p class="price-trial">Prova Pro gratis 7 dies, dins de l'app</p>
                 <p class="price-trial">La prova no demana targeta</p>
                 <ul class="pricing-list">
-                    <li>Temes Cuir, Aurora, OLED i Ocàs</li>
+                    <li>Temes Cuir, Aurora, OLED, Crepuscle, Quadern i Bosc</li>
                     <li>Cronòmetre immersiu</li>
                     <li>Icona daurada alternativa</li>
                     <li>Giny de comparativa mensual</li>
@@ -897,16 +925,40 @@
                 <h3>Novetats</h3>
                 <ul>
                     <li><strong>Esdeveniments:</strong> reptes de lectura globals i Lecturameter Quest quan n'hi ha un d'actiu</li>
+                    <li><strong>Menú ràpid:</strong> salta d'una secció a una altra des dels tres punts (···), sense tornar a Inici</li>
                     <li><strong>Pausat:</strong> deixa un llibre una temporada sense embrutar les teves estadístiques</li>
                     <li><strong>Dos temes Pro nous:</strong> Quadern i Bosc</li>
+                    <li>Els temes Pro també es compren per separat o en lots de 3, amb vista prèvia, i la pantalla de Pro és nova</li>
+                    <li><strong>Lectura no lineal</strong> per a antologies i poemaris: les pàgines que se solapen no compten dues vegades i la barra de progrés va per trams</li>
+                    <li>Comença a llegir des del widget del llibre, sense obrir l'app</li>
+                    <li>Resums setmanal i mensual amb nou disseny i més dades</li>
+                    <li>Correu opcional a «Envia comentaris», només per poder respondre't</li>
                     <li>Un rellotge de cronòmetre propi per a cada tema</li>
                     <li>Pagi t'escull un llibre de Vull llegir</li>
                     <li>KOSync amb el temps real de KOReader</li>
                     <li>Notificacions per categoria i avisos de novetats de l'app</li>
+                    <li>Inici amb el rail agrupat en Metes, Les meves lectures i Eines</li>
+                    <li>Canvia l'estat d'un llibre des de les seves accions ràpides i desfés-ho si t'equivoques</li>
+                    <li>Icones Material en lloc d'emojis i estadístiques més llegibles en tots els temes</li>
+                    <li>Avís en afegir un llibre des de la cerca</li>
+                    <li>Dates dels cicles de lectura en una sola fila, més fàcils d'editar</li>
                     <li>Bingo amb 24 plantilles per mida</li>
+                    <li>A l'iPhone, la Live Activity del cronòmetre amb els colors del teu tema</li>
+                    <li>El catàleg aprèn de les cerques i els escanejos d'ISBN sense resultat i afegeix els llibres que falten (a partir del 15 de novembre)</li>
                     <li>Xinès tradicional</li>
                     <li>Sèrie al CSV</li>
-                    <li>Estadístiques més llegibles</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>Correccions</h3>
+                <ul>
+                    <li>Els títols de Bingo, Wrapped i altres pantalles queden a la mateixa alçada que la resta de menús</li>
+                    <li>Les icones de Bingo i Wrapped recuperen els seus colors</li>
+                    <li>Els comptadors de llibres per estat d'Inici es veuen millor en Fosc, OLED, Crepuscle, Aurora i Cuir</li>
+                    <li>Un sol avís per a llibres amb dades incompletes: desapareix el triangle groc i queda el vermell</li>
+                    <li>Tornar a carregar coberta i gènere et diu si ja estava tot bé, i avisa en vermell si no troba alguna cosa</li>
+                    <li>Les còpies a Google Drive de biblioteques molt grans ja no fallen per manca de memòria</li>
+                    <li>Diverses correccions a l'iPhone</li>
                 </ul>
             </div>
         </div>
@@ -1025,21 +1077,43 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">v3.9 &middot; Esdeveniments · Dos temes Pro nous</button>
+                <button class="faq-q">v3.9 &middot; Esdeveniments · Menú ràpid · Dos temes Pro nous</button>
                 <div class="faq-a"><div class="faq-a-inner">
                     <strong>Novetats</strong>
                     <ul>
                         <li><strong>Esdeveniments:</strong> reptes de lectura globals i Lecturameter Quest quan n'hi ha un d'actiu</li>
+                        <li><strong>Menú ràpid:</strong> salta d'una secció a una altra des dels tres punts (···), sense tornar a Inici</li>
                         <li><strong>Pausat:</strong> deixa un llibre una temporada sense embrutar les teves estadístiques</li>
                         <li><strong>Dos temes Pro nous:</strong> Quadern i Bosc</li>
+                        <li>Els temes Pro també es compren per separat o en lots de 3, amb vista prèvia, i la pantalla de Pro és nova</li>
+                        <li><strong>Lectura no lineal</strong> per a antologies i poemaris: les pàgines que se solapen no compten dues vegades i la barra de progrés va per trams</li>
+                        <li>Comença a llegir des del widget del llibre, sense obrir l'app</li>
+                        <li>Resums setmanal i mensual amb nou disseny i més dades</li>
+                        <li>Correu opcional a «Envia comentaris», només per poder respondre't</li>
                         <li>Un rellotge de cronòmetre propi per a cada tema</li>
                         <li>Pagi t'escull un llibre de Vull llegir</li>
                         <li>KOSync amb el temps real de KOReader</li>
                         <li>Notificacions per categoria i avisos de novetats de l'app</li>
+                        <li>Inici amb el rail agrupat en Metes, Les meves lectures i Eines</li>
+                        <li>Canvia l'estat d'un llibre des de les seves accions ràpides i desfés-ho si t'equivoques</li>
+                        <li>Icones Material en lloc d'emojis i estadístiques més llegibles en tots els temes</li>
+                        <li>Avís en afegir un llibre des de la cerca</li>
+                        <li>Dates dels cicles de lectura en una sola fila, més fàcils d'editar</li>
                         <li>Bingo amb 24 plantilles per mida</li>
+                        <li>A l'iPhone, la Live Activity del cronòmetre amb els colors del teu tema</li>
+                        <li>El catàleg aprèn de les cerques i els escanejos d'ISBN sense resultat i afegeix els llibres que falten (a partir del 15 de novembre)</li>
                         <li>Xinès tradicional</li>
                         <li>Sèrie al CSV</li>
-                        <li>Estadístiques més llegibles</li>
+                    </ul>
+                    <strong>Correccions</strong>
+                    <ul>
+                        <li>Els títols de Bingo, Wrapped i altres pantalles queden a la mateixa alçada que la resta de menús</li>
+                        <li>Les icones de Bingo i Wrapped recuperen els seus colors</li>
+                        <li>Els comptadors de llibres per estat d'Inici es veuen millor en Fosc, OLED, Crepuscle, Aurora i Cuir</li>
+                        <li>Un sol avís per a llibres amb dades incompletes: desapareix el triangle groc i queda el vermell</li>
+                        <li>Tornar a carregar coberta i gènere et diu si ja estava tot bé, i avisa en vermell si no troba alguna cosa</li>
+                        <li>Les còpies a Google Drive de biblioteques molt grans ja no fallen per manca de memòria</li>
+                        <li>Diverses correccions a l'iPhone</li>
                     </ul>
                 </div></div>
             </div>

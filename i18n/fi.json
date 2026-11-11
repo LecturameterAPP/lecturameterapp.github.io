@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Jotkut voivat nähdä eri hinnan, koska teemme hintakokeiluja.",
  "home.pricing.try_pro_free_for_7": "Kokeile Prota ilmaiseksi 7 päivää sovelluksessa",
  "home.pricing.no_card_required_for_the": "Kokeiluun ei tarvita korttia",
- "home.pricing.leather_aurora_oled_and_dusk": "Nahka-, Aurora-, OLED- ja Iltahämärä-teemat",
+ "home.pricing.leather_aurora_oled_and_dusk": "Teemat Nahka, Aurora, OLED, Hämärä, Vihko ja Metsä",
  "home.pricing.immersive_timer": "Uppoutuva ajastin",
  "home.pricing.golden_alternative_icon": "Kultainen vaihtoehtoinen kuvake",
  "home.pricing.monthly_comparison_widget": "Kuukausivertailuwidget",
@@ -547,21 +547,41 @@
   "Kirjan tilan muuttaminen ei enää poista aiempien lukukertojen päivämääriä.",
   "Kuukausiyhteenveto laskee mukaan myös luetut kirjat, joissa ei ole istuntoja."
  ],
- "release.3_9.headline": "Tapahtumat · Kaksi uutta Pro-teemaa",
+ "release.3_9.headline": "Tapahtumat · Pikavalikko · Kaksi uutta Pro-teemaa",
  "release.3_9.new": [
   "<strong>Tapahtumat:</strong> maailmanlaajuisia lukuhaasteita ja Lecturameter Quest, kun jokin on käynnissä",
+  "<strong>Pikavalikko:</strong> siirry osiosta toiseen kolmella pisteellä (···) palaamatta Kotiin",
   "<strong>Tauolla:</strong> jätä kirja syrjään joksikin aikaa sotkematta tilastojasi",
   "<strong>Kaksi uutta Pro-teemaa:</strong> Vihko ja Metsä",
+  "Pro-teemoja voi ostaa myös yksitellen tai kolmen paketteina esikatselun kanssa, ja Pro-näyttö on uusi",
+  "<strong>Epälineaarinen lukeminen</strong> antologioille ja runokokoelmille: päällekkäiset sivut eivät lasketa kahdesti ja edistymispalkki on jaettu jaksoihin",
+  "Aloita lukeminen kirjan widgetistä avaamatta sovellusta",
+  "Viikko- ja kuukausiyhteenvedot uudella ilmeellä ja enemmän tilastoja",
+  "Valinnainen sähköposti kohdassa ”Lähetä palautetta”, vain jotta voin vastata sinulle",
   "Oma ajastinkello jokaiselle teemalle",
   "Pagi valitsee sinulle kirjan Haluan lukea -listalta",
   "KOSync KOReaderin todellisella lukuajalla",
   "Ilmoitukset luokittain ja ilmoitukset sovelluksen uutisista",
+  "Koti, jossa sivupalkki on ryhmitelty: Tavoitteet, Lukemiseni ja Työkalut",
+  "Vaihda kirjan tilaa sen pikatoiminnoista ja peru, jos erehdyt",
+  "Material-kuvakkeet emojien tilalla ja luettavammat tilastot kaikissa teemoissa",
+  "Ilmoitus, kun lisäät kirjan hausta",
+  "Lukukierrosten päivämäärät yhdellä rivillä, helpompi muokata",
   "Bingo 24 pohjalla koon mukaan",
+  "iPhonella ajastimen Live Activity teemasi väreissä",
+  "Luettelo oppii tuloksettomista hauista ja ISBN-skannauksista ja lisää puuttuvat kirjat (15. marraskuusta alkaen)",
   "Perinteinen kiina",
-  "<strong>Sarja CSV:</strong> ssä",
-  "Luettavammat Tilastot"
+  "<strong>Sarja CSV:</strong> ssä"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Otsikot Bingossa, Wrappedissa ja muilla näytöillä ovat nyt samalla korkeudella kuin muissa valikoissa",
+  "Bingon ja Wrappedin kuvakkeet saivat värinsä takaisin",
+  "Kirjojen tilakohtaiset laskurit Kodissa näkyvät paremmin teemoissa Tumma, OLED, Hämärä, Aurora ja Nahka",
+  "Vain yksi varoitus kirjoille, joilta puuttuu tietoja: keltainen kolmio poistuu ja punainen jää",
+  "Kannen ja lajityypin uudelleenlataus kertoo, jos kaikki oli jo kunnossa, ja varoittaa punaisella, jos jotain ei löydy",
+  "Hyvin suurten kirjastojen Google Drive -varmuuskopiot eivät enää epäonnistu muistin puutteen vuoksi",
+  "Useita korjauksia iPhonelle"
+ ],
  "roadmap.3_9.heading": "Mitä Lecturameter 3.9 tuo tullessaan",
  "roadmap.3_9.sub": "Lukuhaasteita koko yhteisölle, peli, jota pelataan <b>omilla kirjoillasi</b>, ja uusittu Etusivu. Ei kiinteitä päivämääriä: kaikki julkaistaan, kun se on valmis.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Tilasta Lukemassa tai Uudelleenluettavana",
-   "text": "Vaihda tilaa kirjan sivun painikkeesta tai pikavalikon kohdasta ”Vaihda tilaa”. Toimii kirjoille, sarjakuville, mangalle ja äänikirjoille."
+   "text": "Vaihda tilaa kirjan sivun tilapainikkeesta tai pikatoiminnoista ”Vaihda tilaa” (paina kirjan korttia pitkään). Toimii kirjoille, sarjakuville, mangalle ja äänikirjoille."
   },
   {
    "title": "Tauon päiviä ei lasketa",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Jaa",
  "home.cards.title": "Lecturameter ei ole sosiaalinen verkosto. Korttisi menevät siihen, jota käytät.",
- "home.cards.sub": "Tee pystykortteja kokoa 1080×1920, valmiina storyihin, ja jaa ne siellä, missä jo olet. Ei tiliä, ei profiilia, ei seuraajia.",
+ "home.cards.sub": "Tee pystykortteja kokoa 1080×1920, valmiina storyihin, ja jaa ne siellä, missä jo olet. Ei tiliä, ei profiilia, ei seuraajia. Versiossa 3.9 viikko- ja kuukausiyhteenvedot saavat uuden ilmeen ja enemmän tilastoja.",
  "home.cards.chips": [
   "Kirja",
   "Kirja luettu",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 on ilmainen ja saatavilla iPhonelle ja Androidille.",
  "lm99.get.app_store": "Lataa App Storesta",
  "lm99.get.play_soon": "Pian Google Playssa",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Verkkosivuston kävijälaskuri:</span> tällä verkkosivustolla (ei sovelluksella) on oma anonyymi laskuri, ilman evästeitä ja ilman kolmansia osapuolia. Se kirjaa käymäsi sivun, klikkauksesi kauppoihin johtaviin linkkeihin, maan, sivun kielen, laitetyypin (mobiili tai tietokone) ja sivuston, jolta tulit. Se ei tallenna IP-osoitettasi eikä mitään sellaista, mikä tunnistaisi sinut: vain anonyymin koodin, joka lasketaan uudelleen joka päivä eikä sen avulla voi tunnistaa sinua päivästä toiseen. Jos selaimesi lähettää «Do Not Track» -signaalin, mitään ei lähetetä."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Verkkosivuston kävijälaskuri:</span> tällä verkkosivustolla (ei sovelluksella) on oma anonyymi laskuri, ilman evästeitä ja ilman kolmansia osapuolia. Se kirjaa käymäsi sivun, klikkauksesi kauppoihin johtaviin linkkeihin, maan, sivun kielen, laitetyypin (mobiili tai tietokone) ja sivuston, jolta tulit. Se ei tallenna IP-osoitettasi eikä mitään sellaista, mikä tunnistaisi sinut: vain anonyymin koodin, joka lasketaan uudelleen joka päivä eikä sen avulla voi tunnistaa sinua päivästä toiseen. Jos selaimesi lähettää «Do Not Track» -signaalin, mitään ei lähetetä.",
+ "home.quickmenu.title": "Siirry osiosta toiseen palaamatta Kotiin",
+ "home.quickmenu.sub": "Bingosta Asetuksiin pääsi ennen vain Kodin kautta. Nyt napautat oikean yläkulman kolmea pistettä (···) ja menet suoraan perille.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Lähes jokaisella näytöllä",
+   "text": "Vaakasuuntainen kolmen pisteen kuvake (···) on oikeassa yläkulmassa. Jos näytöllä oli jakopainike, se siirtyy sen vasemmalle puolelle."
+  },
+  {
+   "title": "Samat ryhmät kuin Kodissa",
+   "text": "Tavoitteet, Lukemiseni ja Työkalut sekä Koti, Asetukset ja Tiedot ja varmuuskopiot. Osio, jossa olet, on korostettu: napauta sitä palataksesi sen alkuun."
+  },
+  {
+   "title": "Myös kirjan sivulla",
+   "text": "Avaa kirjan sivun pystysuuntainen kolmen pisteen valikko ja valitse ”Pikavalikko”. Vaiheittaisissa ohjatuissa toiminnoissa sitä ei ole, jotta et menetä täyttämiäsi tietoja."
+  }
+ ],
+ "home.quickmenu.tag": "Uutta versiossa 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Pikavalikko",
+ "home.quickmenu.groups": [
+  {
+   "title": "Tavoitteet",
+   "text": "Tapahtumat · Haasteet · Bingo"
+  },
+  {
+   "title": "Lukemiseni",
+   "text": "Tilastot · Korttini · Wrapped"
+  },
+  {
+   "title": "Työkalut",
+   "text": "Muistutukset · Tagien hallinta · Skannaa ISBN"
+  },
+  {
+   "title": "Yleiset pikavalinnat",
+   "text": "Koti · Asetukset · Tiedot ja varmuuskopiot"
+  }
+ ]
 }

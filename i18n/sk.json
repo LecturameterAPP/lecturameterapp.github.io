@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Niektorí ľudia môžu vidieť inú cenu, pretože robíme cenové experimenty.",
  "home.pricing.try_pro_free_for_7": "Vyskúšaj Pro zadarmo na 7 dní, priamo v aplikácii",
  "home.pricing.no_card_required_for_the": "Na skúšobnú dobu nie je potrebná karta",
- "home.pricing.leather_aurora_oled_and_dusk": "Témy Koža, Aurora, OLED a Súmrak",
+ "home.pricing.leather_aurora_oled_and_dusk": "Témy Koža, Aurora, OLED, Súmrak, Zošit a Lesík",
  "home.pricing.immersive_timer": "Pohlcujúci časovač",
  "home.pricing.golden_alternative_icon": "Zlatá alternatívna ikona",
  "home.pricing.monthly_comparison_widget": "Widget mesačného porovnania",
@@ -547,21 +547,41 @@
   "Zmena stavu knihy už nevymaže dátumy predchádzajúcich čítaní.",
   "Mesačný súhrn počíta aj dokončené knihy bez sedení."
  ],
- "release.3_9.headline": "Udalosti · Dva nové motívy Pro",
+ "release.3_9.headline": "Udalosti · Rýchle menu · Dve nové témy Pro",
  "release.3_9.new": [
   "<strong>Udalosti:</strong> celosvetové čitateľské výzvy a Lecturameter Quest, keď je nejaký aktívny",
+  "<strong>Rýchle menu:</strong> prechádzajte z jednej sekcie do druhej cez tri bodky (···), bez návratu na Domov",
   "<strong>Pozastavené:</strong> odlož knihu na čas bez toho, aby ti pokazila štatistiky",
   "<strong>Dva nové motívy Pro:</strong> Zošit a Lesík",
+  "Témy Pro si môžete kúpiť aj jednotlivo alebo v balíkoch po 3, s ukážkou, a obrazovka Pro je nová",
+  "<strong>Nelineárne čítanie</strong> pre antológie a básnické zbierky: prekrývajúce sa strany sa nepočítajú dvakrát a ukazovateľ pokroku je rozdelený na úseky",
+  "Začnite čítať z widgetu knihy bez otvorenia aplikácie",
+  "Týždenné a mesačné prehľady s novým dizajnom a viac štatistikami",
+  "Voliteľný e-mail v „Odoslať spätnú väzbu“, len aby som vám mohol odpovedať",
   "Vlastné hodiny časovača pre každý motív",
   "Pagi ti vyberie knihu zo zoznamu Chcem čítať",
   "KOSync so skutočným časom čítania z KOReaderu",
   "Oznámenia podľa kategórií a upozornenia na novinky v aplikácii",
+  "Domov s lištou zoskupenou na Ciele, Moje čítanie a Nástroje",
+  "Zmeňte stav knihy z jej rýchlych akcií a vráťte ho späť, ak sa pomýlite",
+  "Ikony Material namiesto emoji a čitateľnejšie štatistiky v každej téme",
+  "Upozornenie pri pridaní knihy z vyhľadávania",
+  "Dátumy cyklov čítania v jednom riadku, ľahšie sa upravujú",
   "Bingo s 24 šablónami podľa veľkosti",
+  "Na iPhone Live Activity stopiek vo farbách vašej témy",
+  "Katalóg sa učí z vyhľadávaní a skenov ISBN bez výsledku a dopĺňa chýbajúce knihy (od 15. novembra)",
   "Tradičná čínština",
-  "Séria v CSV",
-  "Čitateľnejšie Štatistiky"
+  "Séria v CSV"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Nadpisy v Bingo, Wrapped a na ďalších obrazovkách sú teraz vo rovnakej výške ako v ostatných ponukách",
+  "Ikony Bingo a Wrapped dostali späť svoje farby",
+  "Počítadlá kníh podľa stavu na Domov sú lepšie viditeľné v témach Tmavá, OLED, Súmrak, Aurora a Koža",
+  "Jedno upozornenie pre knihy s chýbajúcimi údajmi: žltý trojuholník zmizol a ostal červený",
+  "Opätovné načítanie obálky a žánru povie, keď už bolo všetko v poriadku, a červene upozorní, keď niečo nenájde",
+  "Zálohy veľmi veľkých knižníc na Google Drive už nezlyhávajú pre nedostatok pamäte",
+  "Viaceré opravy na iPhone"
+ ],
  "roadmap.3_9.heading": "Čo prichádza v Lecturameter 3.9",
  "roadmap.3_9.sub": "Čitateľské výzvy pre celú komunitu, hra s <b>tvojimi vlastnými knihami</b> a obnovená domovská obrazovka. Bez pevných dátumov: všetko vyjde, keď bude hotové.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Zo stavu Čítanie alebo Znovu čítam",
-   "text": "Zmeň stav v odznaku na stránke knihy alebo cez „Zmeniť stav“ v rýchlej ponuke. Funguje pre knihy, komiksy, mangu aj audioknihy."
+   "text": "Zmeňte stav cez štítok na stránke knihy alebo cez „Zmeniť stav“ v rýchlych akciách (podržte kartu knihy). Funguje pre knihy, komiksy, mangu a audioknihy."
   },
   {
    "title": "Dni na pauze sa nepočítajú",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Zdieľanie",
  "home.cards.title": "Lecturameter nie je sociálna sieť. Tvoje karty idú na tú, ktorú používaš.",
- "home.cards.sub": "Vytváraj zvislé karty 1080×1920, pripravené na stories, a zdieľaj ich tam, kde už si. Bez účtu, bez profilu a bez sledovateľov.",
+ "home.cards.sub": "Vytváraj zvislé karty 1080×1920, pripravené na stories, a zdieľaj ich tam, kde už si. Bez účtu, bez profilu a bez sledovateľov. Vo verzii 3.9 dostanú týždenné a mesačné prehľady nový dizajn a viac štatistík.",
  "home.cards.chips": [
   "Kniha",
   "Dočítaná kniha",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 je zadarmo a dostupný pre iPhone aj pre Android.",
  "lm99.get.app_store": "Stiahnuť z App Store",
  "lm99.get.play_soon": "Čoskoro na Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Počítadlo návštev webu:</span> tento web (nie aplikácia) má vlastné anonymné počítadlo, bez cookies a bez tretích strán. Zaznamenáva stránku, ktorú navštevuješ, tvoje kliknutia na odkazy do obchodov, krajinu, jazyk stránky, typ zariadenia (mobil alebo počítač) a web, z ktorého prichádzaš. Neukladá tvoju IP adresu ani nič, čo by ťa identifikovalo: iba anonymný kód, ktorý sa každý deň prepočítava a nedá sa podľa neho spoznať, že si to ty, z jedného dňa na druhý. Ak tvoj prehliadač odosiela „Do Not Track“, neodosiela sa nič."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Počítadlo návštev webu:</span> tento web (nie aplikácia) má vlastné anonymné počítadlo, bez cookies a bez tretích strán. Zaznamenáva stránku, ktorú navštevuješ, tvoje kliknutia na odkazy do obchodov, krajinu, jazyk stránky, typ zariadenia (mobil alebo počítač) a web, z ktorého prichádzaš. Neukladá tvoju IP adresu ani nič, čo by ťa identifikovalo: iba anonymný kód, ktorý sa každý deň prepočítava a nedá sa podľa neho spoznať, že si to ty, z jedného dňa na druhý. Ak tvoj prehliadač odosiela „Do Not Track“, neodosiela sa nič.",
+ "home.quickmenu.title": "Prechádzajte medzi sekciami bez návratu na Domov",
+ "home.quickmenu.sub": "Na to, aby ste sa z Bingo dostali do Nastavení, bolo predtým treba najprv prejsť cez Domov. Teraz ťuknete na tri bodky (···) v pravom hornom rohu a ste tam hneď.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Na takmer každej obrazovke",
+   "text": "Ikona troch vodorovných bodiek (···) je v pravom hornom rohu. Ak mala obrazovka tlačidlo zdieľania, posunie sa vľavo od nej."
+  },
+  {
+   "title": "Rovnaké skupiny ako na Domov",
+   "text": "Ciele, Moje čítanie a Nástroje, plus Domov, Nastavenia a Údaje a zálohy. Sekcia, v ktorej sa nachádzate, je zvýraznená: ťuknite na ňu a vrátite sa na jej začiatok."
+  },
+  {
+   "title": "Aj na stránke knihy",
+   "text": "Otvorte ponuku troch zvislých bodiek na stránke knihy a vyberte „Rýchle menu“. Sprievodcovia krok za krokom ju nemajú, aby ste nestratili, čo vypĺňate."
+  }
+ ],
+ "home.quickmenu.tag": "Novinka v 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Rýchle menu",
+ "home.quickmenu.groups": [
+  {
+   "title": "Ciele",
+   "text": "Udalosti · Výzvy · Bingo"
+  },
+  {
+   "title": "Moje čítanie",
+   "text": "Štatistiky · Moje karty · Wrapped"
+  },
+  {
+   "title": "Nástroje",
+   "text": "Pripomienky · Správa tagov · Naskenovať ISBN"
+  },
+  {
+   "title": "Všeobecné skratky",
+   "text": "Domov · Nastavenia · Údaje a zálohy"
+  }
+ ]
 }

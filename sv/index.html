@@ -621,7 +621,7 @@
         </div>
         <div class="paused-grid">
             <div class="paused-card reveal-up"><h3>En egen status</h3><p>Pausad är inte Lämnad. Din bok hamnar inte i högen med böcker du gett upp: den väntar och kommer tillbaka när du vill.</p></div>
-            <div class="paused-card reveal-up"><h3>Från Läser eller Läser om</h3><p>Ändra status med etiketten på bokens sida eller med ”Ändra status” i snabbmenyn. Det funkar för böcker, serier, manga och ljudböcker.</p></div>
+            <div class="paused-card reveal-up"><h3>Från Läser eller Läser om</h3><p>Ändra status med pillret på bokens sida eller med ”Ändra status” i snabbåtgärderna (långtryck på bokens kort). Det fungerar för böcker, serier, manga och ljudböcker.</p></div>
             <div class="paused-card reveal-up"><h3>Dagar på paus räknas inte</h3><p>Varken i dagar till klar eller i din lässhastighet. Din statistik förblir som den var när du läste.</p></div>
             <div class="paused-card reveal-up"><h3>En anteckning, om du vill</h3><p>När du pausar och när du återupptar kan du skriva upp varför. Det är frivilligt. Allt ligger kvar i avsnittet ”Pauser” på bokens sida, med sin historik.</p></div>
             <div class="paused-card reveal-up"><h3>En egen flik</h3><p>I ditt bibliotek, mellan Vill läsa och Lämnad, hittar du dina pausade böcker.</p></div>
@@ -630,13 +630,41 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="cards" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Nytt i 3.9</span>
+            <h2 id="quickmenu-title">Hoppa mellan avsnitt utan att gå tillbaka till Hem</h2>
+            <p>Förut krävdes ett stopp på Hem för att gå från Bingo till Inställningar. Nu trycker du på de tre prickarna (···) uppe till höger och går direkt dit.</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">Snabbmeny</p>
+                <div class="qm-groups">
+                    <div class="qm-group is-current"><p class="qm-group-title">Mål</p><p>Evenemang · Utmaningar · Bingo</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Mina läsningar</p><p>Statistik · Mina kort · Wrapped</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Verktyg</p><p>Påminnelser · Hantera taggar · Skanna ISBN</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Allmänna genvägar</p><p>Hem · Inställningar · Data och säkerhetskopior</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card qm-card reveal-up"><h3>På nästan alla skärmar</h3><p>Ikonen med tre horisontella prickar (···) sitter uppe till höger. Om skärmen hade en delningsknapp flyttas den till vänster om den.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Samma grupper som på Hem</h3><p>Mål, Mina läsningar och Verktyg, plus Hem, Inställningar och Data och säkerhetskopior. Avsnittet du befinner dig i är markerat: tryck på det för att gå tillbaka till början.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Även på bokens sida</h3><p>Öppna menyn med tre vertikala prickar på bokens sida och välj ”Snabbmeny”. Stegvisa guider har den inte, så att du inte tappar det du fyller i.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="cards" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">Dela</span>
             <h2 id="cards-title">Lecturameter är inte ett socialt nätverk. Dina kort går till det du använder.</h2>
-            <p>Skapa stående kort på 1080×1920, redo för stories, och dela dem där du redan är. Inget konto, ingen profil och inga följare.</p>
+            <p>Skapa stående kort på 1080×1920, redo för stories, och dela dem där du redan är. Inget konto, ingen profil och inga följare. I 3.9 får de veckovisa och månatliga sammanfattningarna en ny design med mer statistik.</p>
         </div>
         <div class="share-wrap">
             <div class="share-fan reveal-up" aria-hidden="true">
@@ -669,7 +697,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="events" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">
@@ -870,7 +898,7 @@
                 <p class="price-trial">Testa Pro gratis i 7 dagar, direkt i appen</p>
                 <p class="price-trial">Inget kort krävs för provperioden</p>
                 <ul class="pricing-list">
-                    <li>Teman Läder, Aurora, OLED och Skymning</li>
+                    <li>Teman Läder, Aurora, OLED, Skymning, Anteckningsbok och Skog</li>
                     <li>Uppslukande tidtagarur</li>
                     <li>Alternativ guldikon</li>
                     <li>Widget för månadsjämförelse</li>
@@ -897,16 +925,40 @@
                 <h3>Nytt</h3>
                 <ul>
                     <li><strong>Evenemang:</strong> globala läsutmaningar och Lecturameter Quest när något är aktivt</li>
+                    <li><strong>Snabbmeny:</strong> hoppa från ett avsnitt till ett annat med de tre prickarna (···), utan att gå tillbaka till Hem</li>
                     <li><strong>Pausad:</strong> lägg en bok åt sidan ett tag utan att förstöra din statistik</li>
                     <li><strong>Två nya Pro-teman:</strong> Anteckningsbok och Skog</li>
+                    <li>Pro-teman kan också köpas ett och ett eller i paket om 3, med förhandsvisning, och Pro-skärmen är ny</li>
+                    <li><strong>Icke-linjär läsning</strong> för antologier och diktsamlingar: överlappande sidor räknas inte två gånger och förloppsfältet delas upp i segment</li>
+                    <li>Börja läsa från bokens widget, utan att öppna appen</li>
+                    <li>Veckovisa och månatliga sammanfattningar med ny design och mer statistik</li>
+                    <li>Valfri e-post i ”Skicka feedback”, bara så att jag kan svara dig</li>
                     <li>En egen tidtagarklocka för varje tema</li>
                     <li>Pagi väljer en bok åt dig från Vill läsa</li>
                     <li>KOSync med KOReaders faktiska lästid</li>
                     <li>Aviseringar per kategori och meddelanden om nyheter i appen</li>
+                    <li>Hem med listen grupperad i Mål, Mina läsningar och Verktyg</li>
+                    <li>Ändra en boks status från dess snabbåtgärder och ångra om du råkar fel</li>
+                    <li>Material-ikoner i stället för emojis och mer läsbar statistik i alla teman</li>
+                    <li>En avisering när du lägger till en bok från sökningen</li>
+                    <li>Datum för läscykler på en enda rad, lättare att redigera</li>
                     <li>Bingo med 24 mallar efter storlek</li>
+                    <li>På iPhone, timerns Live Activity i temats färger</li>
+                    <li>Katalogen lär sig av sökningar och ISBN-skanningar utan träff och lägger till de böcker som saknas (från 15 november)</li>
                     <li>Traditionell kinesiska</li>
                     <li>Serie i CSV</li>
-                    <li>Mer läsbar statistik</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>Rättningar</h3>
+                <ul>
+                    <li>Rubriker i Bingo, Wrapped och andra skärmar sitter nu på samma höjd som i de andra menyerna</li>
+                    <li>Ikonerna för Bingo och Wrapped får tillbaka sina färger</li>
+                    <li>Bokräknarna per status på Hem syns bättre i Mörkt, OLED, Skymning, Aurora och Läder</li>
+                    <li>En enda varning för böcker med saknade uppgifter: den gula triangeln försvinner och den röda blir kvar</li>
+                    <li>Att ladda om omslag och genre talar om när allt redan var bra, och varnar i rött när något inte hittas</li>
+                    <li>Säkerhetskopior av mycket stora bibliotek på Google Drive misslyckas inte längre på grund av minnesbrist</li>
+                    <li>Flera rättningar på iPhone</li>
                 </ul>
             </div>
         </div>
@@ -1025,21 +1077,43 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">v3.9 &middot; Evenemang · Två nya Pro-teman</button>
+                <button class="faq-q">v3.9 &middot; Evenemang · Snabbmeny · Två nya Pro-teman</button>
                 <div class="faq-a"><div class="faq-a-inner">
                     <strong>Nytt</strong>
                     <ul>
                         <li><strong>Evenemang:</strong> globala läsutmaningar och Lecturameter Quest när något är aktivt</li>
+                        <li><strong>Snabbmeny:</strong> hoppa från ett avsnitt till ett annat med de tre prickarna (···), utan att gå tillbaka till Hem</li>
                         <li><strong>Pausad:</strong> lägg en bok åt sidan ett tag utan att förstöra din statistik</li>
                         <li><strong>Två nya Pro-teman:</strong> Anteckningsbok och Skog</li>
+                        <li>Pro-teman kan också köpas ett och ett eller i paket om 3, med förhandsvisning, och Pro-skärmen är ny</li>
+                        <li><strong>Icke-linjär läsning</strong> för antologier och diktsamlingar: överlappande sidor räknas inte två gånger och förloppsfältet delas upp i segment</li>
+                        <li>Börja läsa från bokens widget, utan att öppna appen</li>
+                        <li>Veckovisa och månatliga sammanfattningar med ny design och mer statistik</li>
+                        <li>Valfri e-post i ”Skicka feedback”, bara så att jag kan svara dig</li>
                         <li>En egen tidtagarklocka för varje tema</li>
                         <li>Pagi väljer en bok åt dig från Vill läsa</li>
                         <li>KOSync med KOReaders faktiska lästid</li>
                         <li>Aviseringar per kategori och meddelanden om nyheter i appen</li>
+                        <li>Hem med listen grupperad i Mål, Mina läsningar och Verktyg</li>
+                        <li>Ändra en boks status från dess snabbåtgärder och ångra om du råkar fel</li>
+                        <li>Material-ikoner i stället för emojis och mer läsbar statistik i alla teman</li>
+                        <li>En avisering när du lägger till en bok från sökningen</li>
+                        <li>Datum för läscykler på en enda rad, lättare att redigera</li>
                         <li>Bingo med 24 mallar efter storlek</li>
+                        <li>På iPhone, timerns Live Activity i temats färger</li>
+                        <li>Katalogen lär sig av sökningar och ISBN-skanningar utan träff och lägger till de böcker som saknas (från 15 november)</li>
                         <li>Traditionell kinesiska</li>
                         <li>Serie i CSV</li>
-                        <li>Mer läsbar statistik</li>
+                    </ul>
+                    <strong>Rättningar</strong>
+                    <ul>
+                        <li>Rubriker i Bingo, Wrapped och andra skärmar sitter nu på samma höjd som i de andra menyerna</li>
+                        <li>Ikonerna för Bingo och Wrapped får tillbaka sina färger</li>
+                        <li>Bokräknarna per status på Hem syns bättre i Mörkt, OLED, Skymning, Aurora och Läder</li>
+                        <li>En enda varning för böcker med saknade uppgifter: den gula triangeln försvinner och den röda blir kvar</li>
+                        <li>Att ladda om omslag och genre talar om när allt redan var bra, och varnar i rött när något inte hittas</li>
+                        <li>Säkerhetskopior av mycket stora bibliotek på Google Drive misslyckas inte längre på grund av minnesbrist</li>
+                        <li>Flera rättningar på iPhone</li>
                     </ul>
                 </div></div>
             </div>

@@ -621,7 +621,7 @@
         </div>
         <div class="paused-grid">
             <div class="paused-card reveal-up"><h3>独立的状态</h3><p>“已暂停”不是“已放弃”。你的书不会进入放弃的那一堆：它只是搁置，想读时随时回来。</p></div>
-            <div class="paused-card reveal-up"><h3>从“阅读中”或“重读中”</h3><p>在书籍页面的标签上，或通过快捷菜单里的“更改状态”来切换。适用于图书、漫画、漫画书和有声书。</p></div>
+            <div class="paused-card reveal-up"><h3>从“阅读中”或“重读中”</h3><p>可通过书籍页面上的状态标签，或快捷操作（长按书籍卡片）中的“更改状态”来更改状态。适用于图书、漫画、日漫和有声书。</p></div>
             <div class="paused-card reveal-up"><h3>暂停的天数不计入</h3><p>既不算进读完所需的天数，也不影响你的阅读速度。统计保持你阅读时的样子。</p></div>
             <div class="paused-card reveal-up"><h3>想写就写一条备注</h3><p>暂停和恢复时，可以记下原因。这是可选的。所有内容连同历史记录都保存在书籍页面的“暂停记录”中。</p></div>
             <div class="paused-card reveal-up"><h3>专属标签页</h3><p>在你的书库里，“想读”和“已放弃”之间，就是你暂停的书。</p></div>
@@ -630,13 +630,41 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="cards" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">3.9 新功能</span>
+            <h2 id="quickmenu-title">无需返回主页，即可在各板块之间跳转</h2>
+            <p>以前从宾果去设置，要先回到主页。现在只需点按右上角的三个点（···），即可直接前往。</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">宾果</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">快捷菜单</p>
+                <div class="qm-groups">
+                    <div class="qm-group is-current"><p class="qm-group-title">目标</p><p>活动 · 挑战 · 宾果</p></div>
+                    <div class="qm-group"><p class="qm-group-title">我的阅读</p><p>统计 · 我的卡片 · 年度总结</p></div>
+                    <div class="qm-group"><p class="qm-group-title">工具</p><p>提醒 · 标签管理 · 扫描 ISBN</p></div>
+                    <div class="qm-group"><p class="qm-group-title">通用入口</p><p>主页 · 设置 · 数据与备份</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card qm-card reveal-up"><h3>几乎每个屏幕都有</h3><p>横向三点图标（···）位于右上角。如果该屏幕有分享按钮，它会移到分享按钮的左侧。</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>与主页相同的分组</h3><p>目标、我的阅读和工具，以及主页、设置和数据与备份。你当前所在的板块会高亮显示：点按它即可回到该板块的起始页。</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>书籍页面中也有</h3><p>在书籍页面打开纵向三点菜单，选择“快捷菜单”。分步向导中没有该菜单，以免丢失你正在填写的内容。</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="cards" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">分享</span>
             <h2 id="cards-title">Lecturameter 不是社交网络。你的卡片会发到你正在用的那个平台。</h2>
-            <p>制作适合 Story 的 1080×1920 竖版卡片，直接分享到你已经在用的地方。无需账号，没有主页，没有粉丝。</p>
+            <p>制作适合 Story 的 1080×1920 竖版卡片，直接分享到你已经在用的地方。无需账号，没有主页，没有粉丝。 在 3.9 版本中，每周和每月总结采用了全新设计，并提供更多统计数据。</p>
         </div>
         <div class="share-wrap">
             <div class="share-fan reveal-up" aria-hidden="true">
@@ -669,7 +697,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="events" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">
@@ -870,7 +898,7 @@
                 <p class="price-trial">在应用内免费试用 Pro 7 天</p>
                 <p class="price-trial">试用无需绑卡</p>
                 <ul class="pricing-list">
-                    <li>皮革、极光、OLED 纯黑和黄昏主题</li>
+                    <li>皮革、极光、OLED、黄昏、笔记本和森林主题</li>
                     <li>沉浸式计时器</li>
                     <li>金色备选图标</li>
                     <li>月度对比小部件</li>
@@ -897,16 +925,40 @@
                 <h3>新增</h3>
                 <ul>
                     <li><strong>活动：</strong> 全球阅读挑战，以及进行中的 Lecturameter Quest</li>
+                    <li><strong>快捷菜单：</strong>通过三个点（···）在各板块之间跳转，无需返回主页</li>
                     <li><strong>已暂停：</strong>把一本书先放一放，又不会弄乱你的统计</li>
                     <li><strong>两个新的 Pro 主题：</strong> 笔记本和森林</li>
+                    <li>Pro 主题还可单独购买或3个一组购买，并支持预览，Pro 页面也焕然一新</li>
+                    <li><strong>非线性阅读</strong>，适用于选集和诗集：重叠的页面不会重复计算，进度条分段显示</li>
+                    <li>无需打开应用，直接从书籍小组件开始阅读</li>
+                    <li>每周和每月总结采用全新设计，并提供更多统计数据</li>
+                    <li>“发送反馈”中可选填邮箱，仅用于回复你</li>
                     <li>每个主题都有专属的计时器时钟</li>
                     <li>Pagi 从“想读”中为你挑一本书</li>
                     <li>KOSync 同步 KOReader 的真实阅读时间</li>
                     <li>按类别设置通知，并推送应用动态提醒</li>
+                    <li>主页的侧栏按目标、我的阅读和工具分组</li>
+                    <li>可通过快捷操作更改书籍状态，操作失误时还能撤销</li>
+                    <li>用 Material 图标取代表情符号，所有主题下的统计数据更易阅读</li>
+                    <li>从搜索中添加书籍时会有提示</li>
+                    <li>阅读周期日期排成一行，编辑更方便</li>
                     <li>按尺寸提供 24 个模板的宾果</li>
+                    <li>在 iPhone 上，计时器的 Live Activity 采用你所选主题的配色</li>
+                    <li>目录会从无结果的搜索和 ISBN 扫描中学习，并补充缺失的书籍（11月15日起）</li>
                     <li>繁体中文</li>
                     <li>CSV 中包含系列</li>
-                    <li>更易读的统计</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>修复</h3>
+                <ul>
+                    <li>宾果、年度总结及其他屏幕的标题现在与其他菜单保持同一高度</li>
+                    <li>宾果和年度总结的图标恢复了颜色</li>
+                    <li>主页上按状态显示的书籍计数在深色、OLED、黄昏、极光和皮革主题下更容易看清</li>
+                    <li>数据不完整的书籍只保留一个警告：黄色三角形消失，保留红色三角形</li>
+                    <li>重新加载封面和类型时，如果一切本来就正常会告诉你，找不到内容时则以红色提示</li>
+                    <li>超大书库的 Google Drive 备份不再因内存不足而失败</li>
+                    <li>iPhone 上的多项修复</li>
                 </ul>
             </div>
         </div>
@@ -1025,21 +1077,43 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">v3.9 &middot; 活动 · 两个新的 Pro 主题</button>
+                <button class="faq-q">v3.9 &middot; 活动 · 快捷菜单 · 两款全新 Pro 主题</button>
                 <div class="faq-a"><div class="faq-a-inner">
                     <strong>新增</strong>
                     <ul>
                         <li><strong>活动：</strong> 全球阅读挑战，以及进行中的 Lecturameter Quest</li>
+                        <li><strong>快捷菜单：</strong>通过三个点（···）在各板块之间跳转，无需返回主页</li>
                         <li><strong>已暂停：</strong>把一本书先放一放，又不会弄乱你的统计</li>
                         <li><strong>两个新的 Pro 主题：</strong> 笔记本和森林</li>
+                        <li>Pro 主题还可单独购买或3个一组购买，并支持预览，Pro 页面也焕然一新</li>
+                        <li><strong>非线性阅读</strong>，适用于选集和诗集：重叠的页面不会重复计算，进度条分段显示</li>
+                        <li>无需打开应用，直接从书籍小组件开始阅读</li>
+                        <li>每周和每月总结采用全新设计，并提供更多统计数据</li>
+                        <li>“发送反馈”中可选填邮箱，仅用于回复你</li>
                         <li>每个主题都有专属的计时器时钟</li>
                         <li>Pagi 从“想读”中为你挑一本书</li>
                         <li>KOSync 同步 KOReader 的真实阅读时间</li>
                         <li>按类别设置通知，并推送应用动态提醒</li>
+                        <li>主页的侧栏按目标、我的阅读和工具分组</li>
+                        <li>可通过快捷操作更改书籍状态，操作失误时还能撤销</li>
+                        <li>用 Material 图标取代表情符号，所有主题下的统计数据更易阅读</li>
+                        <li>从搜索中添加书籍时会有提示</li>
+                        <li>阅读周期日期排成一行，编辑更方便</li>
                         <li>按尺寸提供 24 个模板的宾果</li>
+                        <li>在 iPhone 上，计时器的 Live Activity 采用你所选主题的配色</li>
+                        <li>目录会从无结果的搜索和 ISBN 扫描中学习，并补充缺失的书籍（11月15日起）</li>
                         <li>繁体中文</li>
                         <li>CSV 中包含系列</li>
-                        <li>更易读的统计</li>
+                    </ul>
+                    <strong>修复</strong>
+                    <ul>
+                        <li>宾果、年度总结及其他屏幕的标题现在与其他菜单保持同一高度</li>
+                        <li>宾果和年度总结的图标恢复了颜色</li>
+                        <li>主页上按状态显示的书籍计数在深色、OLED、黄昏、极光和皮革主题下更容易看清</li>
+                        <li>数据不完整的书籍只保留一个警告：黄色三角形消失，保留红色三角形</li>
+                        <li>重新加载封面和类型时，如果一切本来就正常会告诉你，找不到内容时则以红色提示</li>
+                        <li>超大书库的 Google Drive 备份不再因内存不足而失败</li>
+                        <li>iPhone 上的多项修复</li>
                     </ul>
                 </div></div>
             </div>

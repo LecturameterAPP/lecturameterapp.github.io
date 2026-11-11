@@ -471,8 +471,31 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="{{anchor.cards}}" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="{{anchor.quickmenu}}" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">{{home.quickmenu.tag}}</span>
+            <h2 id="quickmenu-title">{{home.quickmenu.title}}</h2>
+            <p>{{home.quickmenu.sub}}</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">{{home.quickmenu.screen}}</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">{{home.quickmenu.menu_title}}</p>
+                <div class="qm-groups">
+{{quickmenu_groups_html}}
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+{{quickmenu_cards_html}}
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="{{anchor.cards}}" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">{{home.cards.tag}}</span>
@@ -498,7 +521,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="{{anchor.events}}" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">

@@ -621,7 +621,7 @@
         </div>
         <div class="paused-grid">
             <div class="paused-card reveal-up"><h3>専用のステータス</h3><p>「一時停止中」は「中断」ではありません。本は諦めた本の山には入らず、保留のまま、好きなときに戻ってきます。</p></div>
-            <div class="paused-card reveal-up"><h3>「読書中」または「再読中」から</h3><p>本のページのバッジ、またはクイックメニューの「ステータスを変更」から変更できます。本、コミック、漫画、オーディオブックで使えます。</p></div>
+            <div class="paused-card reveal-up"><h3>「読書中」または「再読中」から</h3><p>ステータスは、本のページのピルか、クイックアクション(本のカードを長押し)の「ステータスを変更」から変更できます。本、コミック、マンガ、オーディオブックに対応しています。</p></div>
             <div class="paused-card reveal-up"><h3>一時停止中の日数はカウントされません</h3><p>読了までの日数にも、読む速さにも含まれません。統計は読んでいたときのままです。</p></div>
             <div class="paused-card reveal-up"><h3>必要ならメモも</h3><p>一時停止するときと再開するときに、理由を書き留められます。入力は任意です。すべて本のページの「一時停止」セクションに履歴つきで残ります。</p></div>
             <div class="paused-card reveal-up"><h3>専用のタブ</h3><p>ライブラリの「読みたい」と「中断」のあいだに、一時停止中の本が並びます。</p></div>
@@ -630,13 +630,41 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="cards" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">3.9の新機能</span>
+            <h2 id="quickmenu-title">ホームに戻らずにセクション間を移動</h2>
+            <p>これまでビンゴから設定へ行くには、まずホームを経由する必要がありました。今は右上の3つのドット(···)をタップするだけで直接移動できます。</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">ビンゴ</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">クイックメニュー</p>
+                <div class="qm-groups">
+                    <div class="qm-group is-current"><p class="qm-group-title">目標</p><p>イベント · チャレンジ · ビンゴ</p></div>
+                    <div class="qm-group"><p class="qm-group-title">マイ読書</p><p>統計 · マイカード · Wrapped</p></div>
+                    <div class="qm-group"><p class="qm-group-title">ツール</p><p>リマインダー · タグ管理 · ISBNをスキャン</p></div>
+                    <div class="qm-group"><p class="qm-group-title">共通ショートカット</p><p>ホーム · 設定 · データとバックアップ</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card qm-card reveal-up"><h3>ほとんどすべての画面で</h3><p>横向きの3つのドット(···)のアイコンは右上にあります。画面に共有ボタンがある場合は、その左に移動します。</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>ホームと同じグループ</h3><p>目標、マイ読書、ツール、そしてホーム、設定、データとバックアップ。今いるセクションはハイライト表示され、タップするとその先頭に戻ります。</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>本のページでも</h3><p>本のページで縦向きの3つのドットのメニューを開き、「クイックメニュー」を選びます。ステップ式のウィザードには表示されないため、入力中の内容が失われることはありません。</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="cards" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">共有</span>
             <h2 id="cards-title">Lecturameterはソーシャルネットワークではありません。カードは、あなたが使っているSNSへ。</h2>
-            <p>ストーリーにそのまま使える縦型1080×1920のカードを作って、いつもの場所で共有。アカウントもプロフィールもフォロワーも不要です。</p>
+            <p>ストーリーにそのまま使える縦型1080×1920のカードを作って、いつもの場所で共有。アカウントもプロフィールもフォロワーも不要です。 3.9では、週間・月間サマリーが新デザインになり、統計も増えます。</p>
         </div>
         <div class="share-wrap">
             <div class="share-fan reveal-up" aria-hidden="true">
@@ -669,7 +697,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="events" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">
@@ -870,7 +898,7 @@
                 <p class="price-trial">アプリ内でProを7日間無料でお試し</p>
                 <p class="price-trial">お試しにカードは不要</p>
                 <ul class="pricing-list">
-                    <li>レザー、オーロラ、OLED、夕暮れテーマ</li>
+                    <li>レザー、オーロラ、OLED、夕暮れ、ノート、森のテーマ</li>
                     <li>没入タイマー</li>
                     <li>金色の別アイコン</li>
                     <li>月間比較ウィジェット</li>
@@ -897,16 +925,40 @@
                 <h3>新機能</h3>
                 <ul>
                     <li><strong>イベント:</strong> 世界規模の読書チャレンジと、開催中のLecturameter Quest</li>
+                    <li><strong>クイックメニュー:</strong> ホームに戻らず、3つのドット(···)でセクション間を移動</li>
                     <li><strong>一時停止中:</strong> 統計を崩さずに、本をしばらく脇に置けます</li>
                     <li><strong>新しいProテーマが2つ:</strong> ノートと森</li>
+                    <li>Proテーマは1つずつ、または3つのパックでも購入でき、プレビューも可能。Pro画面も一新</li>
+                    <li>アンソロジーや詩集向けの<strong>非線形読書</strong>:重なるページは二重にカウントされず、進捗バーは区間に分かれます</li>
+                    <li>アプリを開かずに、本のウィジェットから読書を開始</li>
+                    <li>新デザインで統計が増えた週間・月間サマリー</li>
+                    <li>「フィードバックを送信」の任意のメールアドレス。返信のためだけに使用します</li>
                     <li>テーマごとに専用のタイマー時計</li>
                     <li>Pagiが「読みたい」から本を1冊選びます</li>
                     <li>KOReaderの実際の読書時間に対応したKOSync</li>
                     <li>カテゴリ別の通知とアプリのお知らせ通知</li>
+                    <li>目標、マイ読書、ツールにグループ化されたレールのホーム</li>
+                    <li>本のクイックアクションからステータスを変更でき、間違えても元に戻せます</li>
+                    <li>絵文字に代わるMaterialアイコンと、すべてのテーマで読みやすくなった統計</li>
+                    <li>検索から本を追加したときの通知</li>
+                    <li>読書サイクルの日付を1行にまとめ、編集しやすく</li>
                     <li>サイズ別に24種類のテンプレートがあるビンゴ</li>
+                    <li>iPhoneで、タイマーのLive Activityがテーマの色に対応</li>
+                    <li>カタログは、結果のない検索やISBNスキャンから学習し、不足している本を追加します(11月15日から)</li>
                     <li>繁体字中国語</li>
                     <li>CSVにシリーズ</li>
-                    <li>読みやすくなった統計</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>修正</h3>
+                <ul>
+                    <li>ビンゴ、Wrappedなどの画面のタイトルが、他のメニューと同じ高さになりました</li>
+                    <li>ビンゴとWrappedのアイコンの色が元に戻りました</li>
+                    <li>ホームのステータス別の本のカウンターが、ダーク、OLED、夕暮れ、オーロラ、レザーで見やすくなりました</li>
+                    <li>データ不足の本の警告を1つに統一:黄色の三角形はなくなり、赤が残ります</li>
+                    <li>表紙とジャンルの再読み込みで、すべて問題なかった場合はそう通知され、見つからない場合は赤で警告されます</li>
+                    <li>非常に大きなライブラリのGoogle Driveバックアップが、メモリ不足で失敗しなくなりました</li>
+                    <li>iPhoneのいくつかの修正</li>
                 </ul>
             </div>
         </div>
@@ -1025,21 +1077,43 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">v3.9 &middot; イベント · 新しいProテーマが2つ</button>
+                <button class="faq-q">v3.9 &middot; イベント · クイックメニュー · 新しいProテーマ2種</button>
                 <div class="faq-a"><div class="faq-a-inner">
                     <strong>新機能</strong>
                     <ul>
                         <li><strong>イベント:</strong> 世界規模の読書チャレンジと、開催中のLecturameter Quest</li>
+                        <li><strong>クイックメニュー:</strong> ホームに戻らず、3つのドット(···)でセクション間を移動</li>
                         <li><strong>一時停止中:</strong> 統計を崩さずに、本をしばらく脇に置けます</li>
                         <li><strong>新しいProテーマが2つ:</strong> ノートと森</li>
+                        <li>Proテーマは1つずつ、または3つのパックでも購入でき、プレビューも可能。Pro画面も一新</li>
+                        <li>アンソロジーや詩集向けの<strong>非線形読書</strong>:重なるページは二重にカウントされず、進捗バーは区間に分かれます</li>
+                        <li>アプリを開かずに、本のウィジェットから読書を開始</li>
+                        <li>新デザインで統計が増えた週間・月間サマリー</li>
+                        <li>「フィードバックを送信」の任意のメールアドレス。返信のためだけに使用します</li>
                         <li>テーマごとに専用のタイマー時計</li>
                         <li>Pagiが「読みたい」から本を1冊選びます</li>
                         <li>KOReaderの実際の読書時間に対応したKOSync</li>
                         <li>カテゴリ別の通知とアプリのお知らせ通知</li>
+                        <li>目標、マイ読書、ツールにグループ化されたレールのホーム</li>
+                        <li>本のクイックアクションからステータスを変更でき、間違えても元に戻せます</li>
+                        <li>絵文字に代わるMaterialアイコンと、すべてのテーマで読みやすくなった統計</li>
+                        <li>検索から本を追加したときの通知</li>
+                        <li>読書サイクルの日付を1行にまとめ、編集しやすく</li>
                         <li>サイズ別に24種類のテンプレートがあるビンゴ</li>
+                        <li>iPhoneで、タイマーのLive Activityがテーマの色に対応</li>
+                        <li>カタログは、結果のない検索やISBNスキャンから学習し、不足している本を追加します(11月15日から)</li>
                         <li>繁体字中国語</li>
                         <li>CSVにシリーズ</li>
-                        <li>読みやすくなった統計</li>
+                    </ul>
+                    <strong>修正</strong>
+                    <ul>
+                        <li>ビンゴ、Wrappedなどの画面のタイトルが、他のメニューと同じ高さになりました</li>
+                        <li>ビンゴとWrappedのアイコンの色が元に戻りました</li>
+                        <li>ホームのステータス別の本のカウンターが、ダーク、OLED、夕暮れ、オーロラ、レザーで見やすくなりました</li>
+                        <li>データ不足の本の警告を1つに統一:黄色の三角形はなくなり、赤が残ります</li>
+                        <li>表紙とジャンルの再読み込みで、すべて問題なかった場合はそう通知され、見つからない場合は赤で警告されます</li>
+                        <li>非常に大きなライブラリのGoogle Driveバックアップが、メモリ不足で失敗しなくなりました</li>
+                        <li>iPhoneのいくつかの修正</li>
                     </ul>
                 </div></div>
             </div>

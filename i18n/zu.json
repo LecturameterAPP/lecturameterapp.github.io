@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Abanye abantu bangase babone intengo ehlukile ngoba senza izivivinyo zamanani.",
  "home.pricing.try_pro_free_for_7": "Zama i-Pro mahhala izinsuku eziyi-7, ngaphakathi kohlelo lokusebenza",
  "home.pricing.no_card_required_for_the": "Akudingeki ikhadi ekuzameni",
- "home.pricing.leather_aurora_oled_and_dusk": "Amathemu eSikhumba, i-Aurora, i-OLED nokuHwelela",
+ "home.pricing.leather_aurora_oled_and_dusk": "Izikhumba, i-Aurora, i-OLED, Ukuntwela, Incwadi neIhlathi",
  "home.pricing.immersive_timer": "Isitophuwashi esibhucungayo",
  "home.pricing.golden_alternative_icon": "Isithonjana segolide esihlukile",
  "home.pricing.monthly_comparison_widget": "I-widget yokuqhathanisa kwenyanga",
@@ -547,21 +547,41 @@
   "Ukushintsha isimo sencwadi akusasusi izinsuku zokufunda zangaphambilini.",
   "Isifinyezo senyanga sibala nezincwadi eziqediwe ezingenaziqeshana."
  ],
- "release.3_9.headline": "Imicimbi · Izingqikithi ezimbili ezintsha ze-Pro",
+ "release.3_9.headline": "Imicimbi · Imenyu esheshayo · Izingqikithi ezimbili ezintsha ze-Pro",
  "release.3_9.new": [
   "<strong>Imicimbi:</strong> izinselelo zokufunda zomhlaba wonke ne-Lecturameter Quest uma ikhona",
+  "<strong>Imenyu esheshayo:</strong> tshintshela esigabeni esinye uye komunye ngamachashazi amathathu (···), ngaphandle kokubuyela Ekhaya",
   "<strong>Kumiswe okwesikhashana:</strong> beka incwadi eceleni isikhashana ngaphandle kokonakalisa izibalo zakho",
   "<strong>Izingqikithi ezimbili ezintsha ze-Pro:</strong> Incwadi kanye neIhlathi",
+  "Izingqikithi ze-Pro zingathengwa nazinye nazinye noma ngamaphakethe angu-3, kunokubuka kuqala, futhi isikrini se-Pro sisha",
+  "<strong>Ukufunda okungalandelani</strong> kuma-anthology nezingqikithi zezinkondlo: amakhasi agqagqanayo awabalwa kabili futhi ibha yenqubekelaphambili yahlukaniswe izingxenye",
+  "Qala ukufunda ku-widget yencwadi, ungavuli i-app",
+  "Izifinyezo zeviki nezenyanga ngedizayini entsha nezibalo eziningi",
+  "I-imeyili ongayikhetha ku-“Thumela impendulo”, ukuze nje ngikwazi ukukuphendula",
   "Iwashi lesitophuwashi eliyingqayizivele kuyo yonke ingqikithi",
   "Pagi ikukhethela incwadi kokuthi Ngifuna ukufunda",
   "I-KOSync enesikhathi sangempela sokufunda se-KOReader",
   "Izaziso ngesigaba nezaziso zezindaba zohlelo",
+  "Ikhaya elinomugqa ohlukaniswe ngezinjongo, Ukufunda kwami namaThuluzi",
+  "Shintsha isimo sencwadi emisebenzini yayo esheshayo, uphinde ukhiphe uma uphutha",
+  "Izithonjana ze-Material esikhundleni sama-emoji nezibalo ezifundeka kangcono kuzo zonke izingqikithi",
+  "Isaziso uma ufaka incwadi usuka ekusesheni",
+  "Izinsuku zemijikelezo yokufunda emnqmeni owodwa, kulula ukuzihlela",
   "I-Bingo enamathempulethi angu-24 ngosayizi",
+  "Ku-iPhone, i-Live Activity yethaymeli ngemibala yengqikithi yakho",
+  "Ikhathalogi ifunda ekusesheni nasekuskeni kwe-ISBN okungatholi lutho futhi ifaka izincwadi ezingekho (kusukela ngoNovemba 15)",
   "IsiShayina Sendabuko",
-  "Uchungechunge ku-CSV",
-  "Izibalo ezifundeka kangcono"
+  "Uchungechunge ku-CSV"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Izihloko ze-Bingo, Wrapped nezinye izikrini manje zisekuphakameni okufanayo nakwamanye amamenyu",
+  "Izithonjana ze-Bingo ne-Wrapped zibuyele emibala yazo",
+  "Izibali zezincwadi ngesimo e-Ikhaya zibonakala kangcono kuMnyama, i-OLED, Ukuntwela, i-Aurora nesikhumba",
+  "Isixwayiso esisodwa sezincwadi ezinedatha engaphelele: unxantathu ophuzi ukhiphekile futhi obomvu uyasala",
+  "Ukulayisha kabusha ikhava nohlobo kukutshela uma konke kwakuhle kakade, futhi kuxwayisa ngokubomvu uma kunokungatholakali",
+  "Amakhophi e-Google Drive emitapo emikhulu kakhulu awasahlulekile ngenxa yokuntuleka kwenkumbulo",
+  "Ukulungiswa okuningi ku-iPhone"
+ ],
  "roadmap.3_9.heading": "Okuzayo ku-Lecturameter 3.9",
  "roadmap.3_9.sub": "Izinselelo zokufunda zomphakathi wonke, umdlalo odlalwa nge-<b>zincwadi zakho</b> kanye neKhaya elisha. Ayikho izinsuku ezimisiwe: konke kuphuma uma sekulungile.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Kusuka ku-Iyafunda noma Ngifunda kabusha",
-   "text": "Shintsha isimo ngebheji ekhasini lencwadi noma nge-“Shintsha isimo” kumenyu esheshayo. Kusebenza ezincwadini, kumakhomiki, kuma-manga nasezincwadini zomsindo."
+   "text": "Shintsha isimo usebenzisa inkinobho eyindilinga ekhasini lencwadi noma nge-“Shintsha isimo” emsebenzini osheshayo (cindezela isikhathi eside ikhadi lencwadi). Isebenza ezincwadini, kumahlaya, kuma-manga nasezincwadini zokulalelwa."
   },
   {
    "title": "Izinsuku zokumiswa azibalwa",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Yabelana",
  "home.cards.title": "I-Lecturameter akuyona inethiwekhi yezenhlalo. Amakhadi akho aya kuleyo oyisebenzisayo.",
- "home.cards.sub": "Yenza amakhadi amile angu-1080×1920, alungele ama-story, uwabelane lapho usuvele ukhona. Akukho akhawunti, akukho iphrofayela, akukho abalandeli.",
+ "home.cards.sub": "Yenza amakhadi amile angu-1080×1920, alungele ama-story, uwabelane lapho usuvele ukhona. Akukho akhawunti, akukho iphrofayela, akukho abalandeli. Ku-3.9 izifinyezo zeviki nezenyanga zithola idizayini entsha nezibalo eziningi.",
  "home.cards.chips": [
   "Incwadi",
   "Incwadi eqediwe",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "I-Lecturameter 99 mahhala futhi iyatholakala ku-iPhone nase-Android.",
  "lm99.get.app_store": "Landa ku-App Store",
  "lm99.get.play_soon": "Maduze ku-Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Isibali sezivakashi zewebhusayithi:</span> le webhusayithi (hhayi uhlelo lokusebenza) inesibali sayo esingaziwa igama, ngaphandle kwamakhukhi nangaphandle kwabantu besithathu. Iqopha ikhasi owivakashelayo, ukuchofoza kwakho ezixhumekweni zezitolo, izwe, ulimi lekhasi, uhlobo lwedivayisi (ifoni noma ikhompyutha) newebhusayithi ovela kuyo. Ayigcini ikheli lakho le-IP noma noma yini ekubonisayo: ikhodi engaziwa igama kuphela ebalwa kabusha nsuku zonke futhi engeke isetshenziselwe ukukuhlonza usuku nosuku. Uma isiphequluli sakho sithumela i-\"Do Not Track\", akukho okuthunyelwayo."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Isibali sezivakashi zewebhusayithi:</span> le webhusayithi (hhayi uhlelo lokusebenza) inesibali sayo esingaziwa igama, ngaphandle kwamakhukhi nangaphandle kwabantu besithathu. Iqopha ikhasi owivakashelayo, ukuchofoza kwakho ezixhumekweni zezitolo, izwe, ulimi lekhasi, uhlobo lwedivayisi (ifoni noma ikhompyutha) newebhusayithi ovela kuyo. Ayigcini ikheli lakho le-IP noma noma yini ekubonisayo: ikhodi engaziwa igama kuphela ebalwa kabusha nsuku zonke futhi engeke isetshenziselwe ukukuhlonza usuku nosuku. Uma isiphequluli sakho sithumela i-\"Do Not Track\", akukho okuthunyelwayo.",
+ "home.quickmenu.title": "Tshintshela phakathi kwezigaba ngaphandle kokubuyela Ekhaya",
+ "home.quickmenu.sub": "Ngaphambilini, ukusuka ku-Bingo uye ku-Izilungiselelo kwakusho ukudlulela Ekhaya kuqala. Manje uthinta amachashazi amathathu (···) ekhoneni eliphezulu kwesokudla bese uya ngqo lapho.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Cishe kuyo yonke isikrini",
+   "text": "Isithonjana samachashazi amathathu alinganayo (···) sisekhoneni eliphezulu kwesokudla. Uma isikrini sasinenkinobho yokwabelana, iya kwesokunxele sayo."
+  },
+  {
+   "title": "Amaqembu afanayo nawe-Ikhaya",
+   "text": "Izinjongo, Ukufunda kwami namaThuluzi, kanye ne-Ikhaya, Izilungiselelo ne-Idatha namakhophi. Isigaba okuso sigqanyisiwe: sithinte ukuze ubuyele ekuqaleni kwaso."
+  },
+  {
+   "title": "Nasekhasini lencwadi",
+   "text": "Vula imenyu yamachashazi amathathu ime mpo ekhasini lencwadi bese ukhetha “Imenyu esheshayo”. Abalekeleli bezinyathelo abanayo, ukuze ungalahlekelwa yilokho okukugcwalisayo."
+  }
+ ],
+ "home.quickmenu.tag": "Okusha ku-3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "I-Bingo",
+ "home.quickmenu.menu_title": "Imenyu esheshayo",
+ "home.quickmenu.groups": [
+  {
+   "title": "Izinjongo",
+   "text": "Imicimbi · Izinselelo · I-Bingo"
+  },
+  {
+   "title": "Ukufunda kwami",
+   "text": "Izibalo · Amakhadi ami · Wrapped"
+  },
+  {
+   "title": "Amathuluzi",
+   "text": "Izikhumbuzo · Ukuphatha amathegi · Skena i-ISBN"
+  },
+  {
+   "title": "Izinqamuleli ezijwayelekile",
+   "text": "Ikhaya · Izilungiselelo · Idatha namakhophi"
+  }
+ ]
 }

@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Certaines personnes peuvent voir un prix différent, car nous menons des expériences sur les prix.",
  "home.pricing.try_pro_free_for_7": "Essaie Pro gratuitement pendant 7 jours, dans l'appli",
  "home.pricing.no_card_required_for_the": "Aucune carte requise pour l'essai",
- "home.pricing.leather_aurora_oled_and_dusk": "Thèmes Cuir, Aurore, OLED et Crépuscule",
+ "home.pricing.leather_aurora_oled_and_dusk": "Thèmes Cuir, Aurore, OLED, Crépuscule, Cahier et Sous-bois",
  "home.pricing.immersive_timer": "Chronomètre immersif",
  "home.pricing.golden_alternative_icon": "Icône alternative dorée",
  "home.pricing.monthly_comparison_widget": "Widget de comparaison mensuelle",
@@ -547,21 +547,41 @@
   "Changer le statut d'un livre n'efface plus les dates des lectures précédentes.",
   "Le récapitulatif mensuel compte aussi les livres terminés sans sessions."
  ],
- "release.3_9.headline": "Événements  · Deux nouveaux thèmes Pro ",
+ "release.3_9.headline": "Événements · Menu rapide · Deux nouveaux thèmes Pro",
  "release.3_9.new": [
   "<strong>Événements :</strong> défis de lecture mondiaux et Lecturameter Quest quand il y en a un d'actif",
+  "<strong>Menu rapide :</strong> passez d’une section à l’autre avec les trois points (···), sans repasser par Accueil",
   "<strong>En pause :</strong> mets un livre de côté un moment sans fausser tes statistiques",
   "<strong>Deux nouveaux thèmes Pro :</strong> Cahier et Sous-bois",
+  "Les thèmes Pro peuvent aussi s’acheter à l’unité ou par lots de 3, avec aperçu, et l’écran Pro est nouveau",
+  "<strong>Lecture non linéaire</strong> pour les anthologies et recueils de poèmes : les pages qui se chevauchent ne comptent pas deux fois et la barre de progression est découpée en segments",
+  "Commencez à lire depuis le widget du livre, sans ouvrir l’app",
+  "Résumés hebdomadaires et mensuels avec un nouveau design et plus de statistiques",
+  "E-mail facultatif dans « Envoyer un commentaire », uniquement pour pouvoir vous répondre",
   "Une horloge de chrono propre à chaque thème",
   "Pagi te choisit un livre dans À lire",
   "KOSync avec le temps de lecture réel de KOReader",
   "Notifications par catégorie et alertes sur les nouveautés de l'app",
+  "Accueil avec le rail regroupé en Objectifs, Mes lectures et Outils",
+  "Changez le statut d’un livre depuis ses raccourcis et annulez si vous vous trompez",
+  "Icônes Material à la place des emojis et statistiques plus lisibles dans tous les thèmes",
+  "Un avis lorsque vous ajoutez un livre depuis la recherche",
+  "Dates des cycles de lecture sur une seule ligne, plus faciles à modifier",
   "Bingo avec 24 modèles selon la taille",
+  "Sur iPhone, la Live Activity du chrono aux couleurs de votre thème",
+  "Le catalogue apprend des recherches et scans d’ISBN sans résultat et ajoute les livres manquants (à partir du 15 novembre)",
   "Chinois traditionnel",
-  "Série dans le CSV",
-  "Statistiques plus lisibles"
+  "Série dans le CSV"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Les titres de Bingo, Wrapped et d’autres écrans sont désormais à la même hauteur que dans les autres menus",
+  "Les icônes de Bingo et Wrapped retrouvent leurs couleurs",
+  "Les compteurs de livres par statut dans Accueil sont plus visibles dans Sombre, OLED, Crépuscule, Aurore et Cuir",
+  "Un seul avertissement pour les livres aux données manquantes : le triangle jaune disparaît et le rouge reste",
+  "Recharger couverture et genre vous indique quand tout allait déjà bien, et avertit en rouge quand quelque chose est introuvable",
+  "Les sauvegardes Google Drive de très grandes bibliothèques n’échouent plus par manque de mémoire",
+  "Plusieurs corrections sur iPhone"
+ ],
  "roadmap.3_9.heading": "Ce qui arrive dans Lecturameter 3.9",
  "roadmap.3_9.sub": "Des défis de lecture pour toute la communauté, un jeu qui se joue avec <b>tes propres livres</b> et un accueil renouvelé. Pas de dates fixes : tout sort quand c'est prêt.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Depuis En cours de lecture ou En relecture",
-   "text": "Change le statut depuis la pastille sur la page du livre ou avec « Changer le statut » dans le menu rapide. Ça marche pour les livres, BD, mangas et livres audio."
+   "text": "Changez le statut depuis la pastille de la fiche du livre ou avec « Changer le statut » dans les raccourcis (appui long sur la carte du livre). Cela fonctionne pour les livres, BD, mangas et livres audio."
   },
   {
    "title": "Les jours de pause ne comptent pas",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Partager",
  "home.cards.title": "Lecturameter n'est pas un réseau social. Tes cartes vont sur celui que tu utilises.",
- "home.cards.sub": "Crée des cartes verticales 1080×1920, prêtes pour les stories, et partage-les là où tu es déjà. Sans compte, sans profil et sans abonnés.",
+ "home.cards.sub": "Crée des cartes verticales 1080×1920, prêtes pour les stories, et partage-les là où tu es déjà. Sans compte, sans profil et sans abonnés. Dans la 3.9, les résumés hebdomadaires et mensuels adoptent un nouveau design avec plus de statistiques.",
  "home.cards.chips": [
   "Livre",
   "Livre terminé",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 est gratuit et disponible pour iPhone et pour Android.",
  "lm99.get.app_store": "Télécharger sur l'App Store",
  "lm99.get.play_soon": "Bientôt sur Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Compteur de visites du site :</span> ce site web (pas l'application) dispose de son propre compteur anonyme, sans cookies et sans tiers. Il enregistre la page que vous visitez, vos clics sur les liens vers les boutiques, le pays, la langue de la page, le type d'appareil (mobile ou ordinateur) et le site d'où vous venez. Il ne conserve ni votre adresse IP ni rien qui vous identifie : seulement un code anonyme recalculé chaque jour, qui ne permet pas de vous reconnaître d'un jour à l'autre. Si votre navigateur envoie « Do Not Track », rien n'est envoyé."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Compteur de visites du site :</span> ce site web (pas l'application) dispose de son propre compteur anonyme, sans cookies et sans tiers. Il enregistre la page que vous visitez, vos clics sur les liens vers les boutiques, le pays, la langue de la page, le type d'appareil (mobile ou ordinateur) et le site d'où vous venez. Il ne conserve ni votre adresse IP ni rien qui vous identifie : seulement un code anonyme recalculé chaque jour, qui ne permet pas de vous reconnaître d'un jour à l'autre. Si votre navigateur envoie « Do Not Track », rien n'est envoyé.",
+ "home.quickmenu.title": "Passez d’une section à l’autre sans repasser par Accueil",
+ "home.quickmenu.sub": "Pour aller de Bingo à Paramètres, il fallait d’abord passer par Accueil. Désormais, vous touchez les trois points (···) en haut à droite et vous y allez directement.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Sur presque tous les écrans",
+   "text": "L’icône à trois points horizontaux (···) se trouve en haut à droite. Si l’écran avait un bouton de partage, il se place à sa gauche."
+  },
+  {
+   "title": "Les mêmes groupes qu’Accueil",
+   "text": "Objectifs, Mes lectures et Outils, plus Accueil, Paramètres et Données et sauvegardes. La section où vous êtes est mise en évidence : touchez-la pour revenir à son début."
+  },
+  {
+   "title": "Aussi dans la fiche du livre",
+   "text": "Ouvrez le menu à trois points verticaux de la fiche du livre et choisissez « Menu rapide ». Les assistants pas à pas ne l’ont pas, pour que vous ne perdiez pas ce que vous remplissez."
+  }
+ ],
+ "home.quickmenu.tag": "Nouveau dans la 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Menu rapide",
+ "home.quickmenu.groups": [
+  {
+   "title": "Objectifs",
+   "text": "Événements · Défis · Bingo"
+  },
+  {
+   "title": "Mes lectures",
+   "text": "Statistiques · Mes cartes · Wrapped"
+  },
+  {
+   "title": "Outils",
+   "text": "Rappels · Gestion des tags · Scanner l'ISBN"
+  },
+  {
+   "title": "Accès généraux",
+   "text": "Accueil · Paramètres · Données et sauvegardes"
+  }
+ ]
 }

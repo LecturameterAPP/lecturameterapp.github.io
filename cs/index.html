@@ -621,7 +621,7 @@
         </div>
         <div class="paused-grid">
             <div class="paused-card reveal-up"><h3>Samostatný stav</h3><p>Pozastaveno není Opuštěno. Tvá kniha nepůjde do hromádky těch, které jsi vzdal(a): čeká a vrátí se, kdykoli budeš chtít.</p></div>
-            <div class="paused-card reveal-up"><h3>Ze stavu Čtení nebo Znovu čtu</h3><p>Změň stav v odznaku na stránce knihy nebo přes „Změnit stav“ v rychlé nabídce. Funguje u knih, komiksů, mangy i audioknih.</p></div>
+            <div class="paused-card reveal-up"><h3>Ze stavu Čtení nebo Znovu čtu</h3><p>Stav změníš pilulkou na stránce knihy nebo přes „Změnit stav“ v rychlých akcích (dlouze stiskni kartu knihy). Funguje pro knihy, komiksy, mangu i audioknihy.</p></div>
             <div class="paused-card reveal-up"><h3>Dny na pauze se nepočítají</h3><p>Ani do dnů do dočtení, ani do tvé rychlosti čtení. Statistiky zůstanou takové, jaké byly, když jsi četl(a).</p></div>
             <div class="paused-card reveal-up"><h3>Poznámka, když chceš</h3><p>Když knihu pozastavíš i když ji obnovíš, můžeš si poznamenat proč. Je to dobrovolné. Vše zůstane v sekci „Pauzy“ na stránce knihy i s historií.</p></div>
             <div class="paused-card reveal-up"><h3>Vlastní záložka</h3><p>V knihovně najdeš pozastavené knihy mezi Chci číst a Opuštěno.</p></div>
@@ -630,13 +630,41 @@
     </div>
 </section>
 
-<!-- 3.2 COMPARTIR CARDS -->
-<section class="band" id="cards" aria-labelledby="cards-title">
+<!-- 3.2 MENU RAPIDO -->
+<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
+    <div class="container">
+        <div class="section-head">
+            <span class="sec-tag">Novinka ve 3.9</span>
+            <h2 id="quickmenu-title">Přeskakuj mezi sekcemi, aniž by ses vracel na Domů</h2>
+            <p>Dřív bylo cesta z Bingo do Nastavení vedla přes Domů. Teď klepneš na tři tečky (···) vpravo nahoře a jsi tam hned.</p>
+        </div>
+        <div class="qm-viz reveal-up" aria-hidden="true">
+            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
+            <div class="qm-panel">
+                <p class="qm-panel-title">Rychlé menu</p>
+                <div class="qm-groups">
+                    <div class="qm-group is-current"><p class="qm-group-title">Cíle</p><p>Události · Výzvy · Bingo</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Moje čtení</p><p>Statistiky · Moje karty · Wrapped</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Nástroje</p><p>Upozornění · Správa tagů · Naskenovat ISBN</p></div>
+                    <div class="qm-group"><p class="qm-group-title">Obecné zkratky</p><p>Domů · Nastavení · Data a zálohy</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="paused-grid">
+            <div class="paused-card qm-card reveal-up"><h3>Téměř na každé obrazovce</h3><p>Ikona tří vodorovných teček (···) je vpravo nahoře. Pokud měla obrazovka tlačítko sdílení, posune se vlevo od ní.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>Stejné skupiny jako na Domů</h3><p>Cíle, Moje čtení a Nástroje, plus Domů, Nastavení a Data a zálohy. Sekce, ve které jsi, je zvýrazněná: klepnutím se vrátíš na její začátek.</p></div>
+            <div class="paused-card qm-card reveal-up"><h3>I na stránce knihy</h3><p>Otevři nabídku se třemi svislými tečkami na stránce knihy a vyber „Rychlé menu“. Průvodci po krocích ji nemají, abys neztratil, co právě vyplňuješ.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 3.3 COMPARTIR CARDS -->
+<section class="band band-alt" id="cards" aria-labelledby="cards-title">
     <div class="container">
         <div class="section-head">
             <span class="sec-tag">Sdílení</span>
             <h2 id="cards-title">Lecturameter není sociální síť. Tvé karty půjdou na tu, kterou používáš.</h2>
-            <p>Vytvářej svislé karty 1080×1920, připravené pro stories, a sdílej je tam, kde už jsi. Bez účtu, bez profilu a bez sledujících.</p>
+            <p>Vytvářej svislé karty 1080×1920, připravené pro stories, a sdílej je tam, kde už jsi. Bez účtu, bez profilu a bez sledujících. Ve verzi 3.9 dostanou týdenní a měsíční souhrny nový design a více statistik.</p>
         </div>
         <div class="share-wrap">
             <div class="share-fan reveal-up" aria-hidden="true">
@@ -669,7 +697,7 @@
     </div>
 </section>
 
-<!-- 3.3 EVENTOS -->
+<!-- 3.4 EVENTOS -->
 <section class="band band-events" id="events" aria-labelledby="events-title">
     <div class="container">
         <div class="section-head">
@@ -870,7 +898,7 @@
                 <p class="price-trial">Vyzkoušej Pro 7 dní zdarma přímo v aplikaci</p>
                 <p class="price-trial">Na zkušební dobu nepotřebuješ kartu</p>
                 <ul class="pricing-list">
-                    <li>Motivy Kůže, Aurora, OLED a Soumrak</li>
+                    <li>Motivy Kůže, Aurora, OLED, Soumrak, Sešit a Lesík</li>
                     <li>Imerzivní časovač</li>
                     <li>Alternativní zlatá ikona</li>
                     <li>Widget měsíčního srovnání</li>
@@ -897,16 +925,40 @@
                 <h3>Nové</h3>
                 <ul>
                     <li><strong>Události:</strong> celosvětové čtenářské výzvy a Lecturameter Quest, když je nějaký aktivní</li>
+                    <li><strong>Rychlé menu:</strong> přeskakuj z jedné sekce do druhé přes tři tečky (···), aniž by ses vracel na Domů</li>
                     <li><strong>Pozastaveno:</strong> odlož knihu na čas, aniž by ti to pokazilo statistiky</li>
                     <li><strong>Dva nové motivy Pro:</strong> Sešit a Lesík</li>
+                    <li>Motivy Pro lze koupit i jednotlivě nebo v balíčcích po 3, s náhledem, a obrazovka Pro je nová</li>
+                    <li><strong>Nelineární čtení</strong> pro antologie a básnické sbírky: překrývající se stránky se nepočítají dvakrát a ukazatel postupu je rozdělen na úseky</li>
+                    <li>Začni číst z widgetu knihy, bez otevření aplikace</li>
+                    <li>Týdenní a měsíční souhrny s novým designem a více statistikami</li>
+                    <li>Nepovinný e-mail v „Odeslat zpětnou vazbu“, jen abych ti mohl odpovědět</li>
                     <li>Vlastní hodiny časovače pro každý motiv</li>
                     <li>Pagi ti vybere knihu z Chci číst</li>
                     <li>KOSync se skutečným časem čtení z KOReaderu</li>
                     <li>Oznámení podle kategorií a upozornění na novinky v aplikaci</li>
+                    <li>Domů s lištou seskupenou do Cíle, Moje čtení a Nástroje</li>
+                    <li>Změň stav knihy z jejích rychlých akcí a vrať to, když se přepleteš</li>
+                    <li>Ikony Material místo emoji a čitelnější statistiky ve všech motivech</li>
+                    <li>Upozornění při přidání knihy z vyhledávání</li>
+                    <li>Data cyklů čtení v jediném řádku, snáz se upravují</li>
                     <li>Bingo s 24 šablonami podle velikosti</li>
+                    <li>Na iPhonu Live Activity časovače v barvách tvého motivu</li>
+                    <li>Katalog se učí z hledání a skenů ISBN bez výsledku a doplňuje chybějící knihy (od 15. listopadu)</li>
                     <li>Tradiční čínština</li>
                     <li>Série v CSV</li>
-                    <li>Čitelnější Statistiky</li>
+                </ul>
+            </div>
+            <div class="whatsnew-col">
+                <h3>Opravy</h3>
+                <ul>
+                    <li>Nadpisy v Bingo, Wrapped a dalších obrazovkách jsou nyní ve stejné výšce jako v ostatních menu</li>
+                    <li>Ikony Bingo a Wrapped dostaly zpět své barvy</li>
+                    <li>Počítadla knih podle stavu na Domů jsou lépe vidět v motivech Tmavý, OLED, Soumrak, Aurora a Kůže</li>
+                    <li>Jediné upozornění pro knihy s chybějícími údaji: žlutý trojúhelník zmizel a zůstal červený</li>
+                    <li>Opětovné načtení obálky a žánru ti řekne, že už bylo vše v pořádku, a červeně upozorní, když něco nenajde</li>
+                    <li>Zálohy velmi velkých knihoven na Google Drive už nepadají kvůli nedostatku paměti</li>
+                    <li>Několik oprav na iPhonu</li>
                 </ul>
             </div>
         </div>
@@ -1025,21 +1077,43 @@
         </div>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-q">v3.9 &middot; Události · Dva nové motivy Pro</button>
+                <button class="faq-q">v3.9 &middot; Události · Rychlé menu · Dva nové motivy Pro</button>
                 <div class="faq-a"><div class="faq-a-inner">
                     <strong>Nové</strong>
                     <ul>
                         <li><strong>Události:</strong> celosvětové čtenářské výzvy a Lecturameter Quest, když je nějaký aktivní</li>
+                        <li><strong>Rychlé menu:</strong> přeskakuj z jedné sekce do druhé přes tři tečky (···), aniž by ses vracel na Domů</li>
                         <li><strong>Pozastaveno:</strong> odlož knihu na čas, aniž by ti to pokazilo statistiky</li>
                         <li><strong>Dva nové motivy Pro:</strong> Sešit a Lesík</li>
+                        <li>Motivy Pro lze koupit i jednotlivě nebo v balíčcích po 3, s náhledem, a obrazovka Pro je nová</li>
+                        <li><strong>Nelineární čtení</strong> pro antologie a básnické sbírky: překrývající se stránky se nepočítají dvakrát a ukazatel postupu je rozdělen na úseky</li>
+                        <li>Začni číst z widgetu knihy, bez otevření aplikace</li>
+                        <li>Týdenní a měsíční souhrny s novým designem a více statistikami</li>
+                        <li>Nepovinný e-mail v „Odeslat zpětnou vazbu“, jen abych ti mohl odpovědět</li>
                         <li>Vlastní hodiny časovače pro každý motiv</li>
                         <li>Pagi ti vybere knihu z Chci číst</li>
                         <li>KOSync se skutečným časem čtení z KOReaderu</li>
                         <li>Oznámení podle kategorií a upozornění na novinky v aplikaci</li>
+                        <li>Domů s lištou seskupenou do Cíle, Moje čtení a Nástroje</li>
+                        <li>Změň stav knihy z jejích rychlých akcí a vrať to, když se přepleteš</li>
+                        <li>Ikony Material místo emoji a čitelnější statistiky ve všech motivech</li>
+                        <li>Upozornění při přidání knihy z vyhledávání</li>
+                        <li>Data cyklů čtení v jediném řádku, snáz se upravují</li>
                         <li>Bingo s 24 šablonami podle velikosti</li>
+                        <li>Na iPhonu Live Activity časovače v barvách tvého motivu</li>
+                        <li>Katalog se učí z hledání a skenů ISBN bez výsledku a doplňuje chybějící knihy (od 15. listopadu)</li>
                         <li>Tradiční čínština</li>
                         <li>Série v CSV</li>
-                        <li>Čitelnější Statistiky</li>
+                    </ul>
+                    <strong>Opravy</strong>
+                    <ul>
+                        <li>Nadpisy v Bingo, Wrapped a dalších obrazovkách jsou nyní ve stejné výšce jako v ostatních menu</li>
+                        <li>Ikony Bingo a Wrapped dostaly zpět své barvy</li>
+                        <li>Počítadla knih podle stavu na Domů jsou lépe vidět v motivech Tmavý, OLED, Soumrak, Aurora a Kůže</li>
+                        <li>Jediné upozornění pro knihy s chybějícími údaji: žlutý trojúhelník zmizel a zůstal červený</li>
+                        <li>Opětovné načtení obálky a žánru ti řekne, že už bylo vše v pořádku, a červeně upozorní, když něco nenajde</li>
+                        <li>Zálohy velmi velkých knihoven na Google Drive už nepadají kvůli nedostatku paměti</li>
+                        <li>Několik oprav na iPhonu</li>
                     </ul>
                 </div></div>
             </div>

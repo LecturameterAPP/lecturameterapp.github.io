@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Sommige mensen zien mogelijk een andere prijs, omdat we prijsexperimenten uitvoeren.",
  "home.pricing.try_pro_free_for_7": "Probeer Pro 7 dagen gratis, in de app",
  "home.pricing.no_card_required_for_the": "Geen creditcard nodig voor de proefperiode",
- "home.pricing.leather_aurora_oled_and_dusk": "Thema's Leer, Aurora, OLED en Schemering",
+ "home.pricing.leather_aurora_oled_and_dusk": "Thema's Leer, Aurora, OLED, Schemer, Schrift en Bos",
  "home.pricing.immersive_timer": "Immersieve timer",
  "home.pricing.golden_alternative_icon": "Alternatief gouden icoon",
  "home.pricing.monthly_comparison_widget": "Widget voor maandvergelijking",
@@ -547,21 +547,41 @@
   "Als je de status van een boek wijzigt, worden de data van eerdere leesbeurten niet meer gewist.",
   "Het maandoverzicht telt ook uitgelezen boeken zonder sessies mee."
  ],
- "release.3_9.headline": "Evenementen · Twee nieuwe Pro-thema's",
+ "release.3_9.headline": "Evenementen · Snelmenu · Twee nieuwe Pro-thema's",
  "release.3_9.new": [
   "<strong>Evenementen:</strong> wereldwijde leesuitdagingen en Lecturameter Quest als er een actief is",
+  "<strong>Snelmenu:</strong> spring van de ene sectie naar de andere met de drie puntjes (···), zonder terug te gaan naar Home",
   "<strong>Gepauzeerd:</strong> leg een boek een tijdje opzij zonder je statistieken te verpesten",
   "<strong>Twee nieuwe Pro-thema's:</strong> Schrift en Bos",
+  "Pro-thema's kun je ook los kopen of in pakketten van 3, met voorbeeld, en het Pro-scherm is nieuw",
+  "<strong>Niet-lineair lezen</strong> voor bloemlezingen en dichtbundels: overlappende pagina's tellen niet dubbel en de voortgangsbalk is in segmenten verdeeld",
+  "Begin met lezen vanuit de boekwidget, zonder de app te openen",
+  "Wekelijkse en maandelijkse overzichten met een nieuw ontwerp en meer statistieken",
+  "Optioneel e-mailadres bij “Feedback sturen”, alleen zodat ik je kan antwoorden",
   "Een eigen timerklok voor elk thema",
   "Pagi kiest een boek uit Wil ik lezen",
   "KOSync met de echte leestijd van KOReader",
   "Meldingen per categorie en berichten over nieuws in de app",
+  "Home met de balk gegroepeerd in Doelen, Mijn lectuur en Hulpmiddelen",
+  "Wijzig de status van een boek via de snelle acties en maak het ongedaan als je je vergist",
+  "Material-pictogrammen in plaats van emoji's en beter leesbare statistieken in elk thema",
+  "Een melding wanneer je een boek toevoegt vanuit zoeken",
+  "Datums van leescycli op één rij, makkelijker te bewerken",
   "Bingo met 24 sjablonen per formaat",
+  "Op iPhone de Live Activity van de timer in de kleuren van je thema",
+  "De catalogus leert van zoekopdrachten en ISBN-scans zonder resultaat en voegt de ontbrekende boeken toe (vanaf 15 november)",
   "Traditioneel Chinees",
-  "Serie in de CSV",
-  "Beter leesbare Statistieken"
+  "Serie in de CSV"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Titels in Bingo, Wrapped en andere schermen staan nu op dezelfde hoogte als in de andere menu's",
+  "De pictogrammen van Bingo en Wrapped hebben hun kleuren terug",
+  "De boekentellers per status op Home zijn beter te zien in Donker, OLED, Schemer, Aurora en Leer",
+  "Eén enkele waarschuwing voor boeken met ontbrekende gegevens: de gele driehoek is weg en de rode blijft",
+  "Omslag en genre opnieuw laden meldt wanneer alles al in orde was en waarschuwt in het rood als iets niet wordt gevonden",
+  "Google Drive-back-ups van zeer grote bibliotheken mislukken niet langer door geheugentekort",
+  "Verschillende oplossingen op iPhone"
+ ],
  "roadmap.3_9.heading": "Wat er aankomt in Lecturameter 3.9",
  "roadmap.3_9.sub": "Leesuitdagingen voor de hele community, een spel met <b>je eigen boeken</b> en een vernieuwd Home. Geen vaste data: alles verschijnt zodra het klaar is.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Vanuit Aan het lezen of Herlezen",
-   "text": "Wijzig de status via het label op de boekpagina of met „Status wijzigen” in het snelmenu. Werkt voor boeken, strips, manga en luisterboeken."
+   "text": "Wijzig de status via de pil op de boekpagina of met “Status wijzigen” in de snelle acties (houd de kaart van het boek lang ingedrukt). Het werkt voor boeken, strips, manga en luisterboeken."
   },
   {
    "title": "Dagen op pauze tellen niet mee",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Delen",
  "home.cards.title": "Lecturameter is geen sociaal netwerk. Je kaarten gaan naar het netwerk dat jij gebruikt.",
- "home.cards.sub": "Maak verticale kaarten van 1080×1920, klaar voor stories, en deel ze waar je al bent. Geen account, geen profiel en geen volgers.",
+ "home.cards.sub": "Maak verticale kaarten van 1080×1920, klaar voor stories, en deel ze waar je al bent. Geen account, geen profiel en geen volgers. In 3.9 krijgen de wekelijkse en maandelijkse overzichten een nieuw ontwerp met meer statistieken.",
  "home.cards.chips": [
   "Boek",
   "Boek uit",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 is gratis en beschikbaar voor iPhone en voor Android.",
  "lm99.get.app_store": "Download in de App Store",
  "lm99.get.play_soon": "Binnenkort in Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Bezoekteller van de website:</span> deze website (niet de app) heeft een eigen anonieme teller, zonder cookies en zonder derden. Hij registreert de pagina die je bezoekt, je klikken op links naar de stores, het land, de taal van de pagina, het type apparaat (mobiel of computer) en de site waar je vandaan komt. Hij slaat je IP-adres niet op en ook niets wat je identificeert: alleen een anonieme code die elke dag opnieuw wordt berekend en niet kan worden gebruikt om je van de ene dag op de andere te herkennen. Als je browser „Do Not Track” verstuurt, wordt er niets verzonden."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Bezoekteller van de website:</span> deze website (niet de app) heeft een eigen anonieme teller, zonder cookies en zonder derden. Hij registreert de pagina die je bezoekt, je klikken op links naar de stores, het land, de taal van de pagina, het type apparaat (mobiel of computer) en de site waar je vandaan komt. Hij slaat je IP-adres niet op en ook niets wat je identificeert: alleen een anonieme code die elke dag opnieuw wordt berekend en niet kan worden gebruikt om je van de ene dag op de andere te herkennen. Als je browser „Do Not Track” verstuurt, wordt er niets verzonden.",
+ "home.quickmenu.title": "Spring van de ene sectie naar de andere zonder terug te gaan naar Home",
+ "home.quickmenu.sub": "Van Bingo naar Instellingen gaan betekende vroeger eerst langs Home. Nu tik je op de drie puntjes (···) rechtsboven en ga je er rechtstreeks heen.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Op bijna elk scherm",
+   "text": "Het horizontale pictogram met drie puntjes (···) staat rechtsboven. Als het scherm een deelknop had, verschuift die naar links ervan."
+  },
+  {
+   "title": "Dezelfde groepen als Home",
+   "text": "Doelen, Mijn lectuur en Hulpmiddelen, plus Home, Instellingen en Gegevens en back-ups. De sectie waarin je zit is gemarkeerd: tik erop om terug te gaan naar het begin ervan."
+  },
+  {
+   "title": "Ook op de boekpagina",
+   "text": "Open het verticale menu met drie puntjes op de pagina van een boek en kies “Snelmenu”. Stapsgewijze wizards hebben het niet, zodat je niet kwijtraakt wat je invult."
+  }
+ ],
+ "home.quickmenu.tag": "Nieuw in 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Snelmenu",
+ "home.quickmenu.groups": [
+  {
+   "title": "Doelen",
+   "text": "Evenementen · Uitdagingen · Bingo"
+  },
+  {
+   "title": "Mijn lectuur",
+   "text": "Statistieken · Mijn kaarten · Wrapped"
+  },
+  {
+   "title": "Hulpmiddelen",
+   "text": "Herinneringen · Tagbeheer · ISBN scannen"
+  },
+  {
+   "title": "Algemene snelkoppelingen",
+   "text": "Home · Instellingen · Gegevens en back-ups"
+  }
+ ]
 }

@@ -190,7 +190,7 @@
  "home.pricing.price_experiment_note": "* Unele persoane pot vedea un alt preț, deoarece facem experimente cu prețul.",
  "home.pricing.try_pro_free_for_7": "Încearcă Pro gratuit 7 zile, în aplicație",
  "home.pricing.no_card_required_for_the": "Fără card pentru perioada de probă",
- "home.pricing.leather_aurora_oled_and_dusk": "Temele Piele, Aurora, OLED și Amurg",
+ "home.pricing.leather_aurora_oled_and_dusk": "Teme Piele, Aurora, OLED, Amurg, Caiet și Pădure",
  "home.pricing.immersive_timer": "Cronometru imersiv",
  "home.pricing.golden_alternative_icon": "Pictogramă alternativă aurie",
  "home.pricing.monthly_comparison_widget": "Widget de comparație lunară",
@@ -547,21 +547,41 @@
   "Schimbarea stării unei cărți nu mai șterge datele citirilor anterioare.",
   "Rezumatul lunar numără și cărțile terminate fără sesiuni."
  ],
- "release.3_9.headline": "Evenimente · Două teme Pro noi",
+ "release.3_9.headline": "Evenimente · Meniu rapid · Două teme Pro noi",
  "release.3_9.new": [
   "<strong>Evenimente:</strong> provocări de citit globale și Lecturameter Quest când există unul activ",
+  "<strong>Meniu rapid:</strong> sari de la o secțiune la alta cu cele trei puncte (···), fără să te întorci la Acasă",
   "<strong>În pauză:</strong> pune o carte deoparte pentru o vreme fără să-ți strici statisticile",
   "<strong>Două teme Pro noi:</strong> Caiet și Pădure",
+  "Temele Pro se pot cumpăra și individual sau în pachete de 3, cu previzualizare, iar ecranul Pro este nou",
+  "<strong>Lectură neliniară</strong> pentru antologii și volume de poezii: paginile suprapuse nu se numără de două ori, iar bara de progres este împărțită în segmente",
+  "Începe să citești din widgetul cărții, fără să deschizi aplicația",
+  "Rezumate săptămânale și lunare cu design nou și mai multe statistici",
+  "E-mail opțional în „Trimite feedback”, doar ca să îți pot răspunde",
   "Un ceas de cronometru propriu pentru fiecare temă",
   "Pagi alege o carte din Vreau să citesc",
   "KOSync cu timpul real de citire din KOReader",
   "Notificări pe categorii și anunțuri despre noutățile aplicației",
+  "Acasă cu bara grupată în Obiective, Lecturile mele și Instrumente",
+  "Schimbă starea unei cărți din acțiunile ei rapide și anulează dacă greșești",
+  "Pictograme Material în loc de emoji și statistici mai ușor de citit în fiecare temă",
+  "O notificare când adaugi o carte din căutare",
+  "Datele ciclurilor de lectură pe un singur rând, mai ușor de editat",
   "Bingo cu 24 de șabloane în funcție de mărime",
+  "Pe iPhone, Live Activity a cronometrului în culorile temei tale",
+  "Catalogul învață din căutările și scanările de ISBN fără rezultat și adaugă cărțile lipsă (din 15 noiembrie)",
   "Chineză tradițională",
-  "Serie în CSV",
-  "Statistici mai ușor de citit"
+  "Serie în CSV"
  ],
- "release.3_9.fixes": [],
+ "release.3_9.fixes": [
+  "Titlurile din Bingo, Wrapped și alte ecrane sunt acum la aceeași înălțime ca în celelalte meniuri",
+  "Pictogramele Bingo și Wrapped își recapătă culorile",
+  "Contoarele de cărți pe stări de pe Acasă se văd mai bine în temele Întunecat, OLED, Amurg, Aurora și Piele",
+  "Un singur avertisment pentru cărțile cu date lipsă: triunghiul galben dispare și rămâne cel roșu",
+  "Reîncărcarea copertei și a genului îți spune când totul era deja în regulă și avertizează cu roșu când nu găsește ceva",
+  "Copiile de rezervă pe Google Drive ale bibliotecilor foarte mari nu mai eșuează din lipsă de memorie",
+  "Mai multe corecturi pe iPhone"
+ ],
  "roadmap.3_9.heading": "Ce vine în Lecturameter 3.9",
  "roadmap.3_9.sub": "Provocări de lectură pentru toată comunitatea, un joc cu <b>propriile tale cărți</b> și un Acasă reînnoit. Fără date fixe: totul apare când e gata.",
  "roadmap.3_9.cards": [
@@ -803,7 +823,7 @@
   },
   {
    "title": "Din Citesc sau Recitesc",
-   "text": "Schimbă starea din insigna de pe pagina cărții sau cu „Schimbă starea” din meniul rapid. Merge pentru cărți, benzi desenate, manga și cărți audio."
+   "text": "Schimbă starea din eticheta din pagina cărții sau cu „Schimbă starea” din acțiunile rapide (ține apăsat pe cardul cărții). Funcționează pentru cărți, benzi desenate, manga și cărți audio."
   },
   {
    "title": "Zilele în pauză nu se numără",
@@ -824,7 +844,7 @@
  ],
  "home.cards.tag": "Distribuie",
  "home.cards.title": "Lecturameter nu este o rețea socială. Cardurile tale merg pe cea pe care o folosești.",
- "home.cards.sub": "Creează carduri verticale de 1080×1920, gata pentru story-uri, și distribuie-le unde ești deja. Fără cont, fără profil și fără urmăritori.",
+ "home.cards.sub": "Creează carduri verticale de 1080×1920, gata pentru story-uri, și distribuie-le unde ești deja. Fără cont, fără profil și fără urmăritori. În 3.9, rezumatele săptămânale și lunare primesc un design nou și mai multe statistici.",
  "home.cards.chips": [
   "Carte",
   "Carte terminată",
@@ -914,5 +934,43 @@
  "lm99.get.intro_live": "Lecturameter 99 este gratuită și disponibilă pentru iPhone și pentru Android.",
  "lm99.get.app_store": "Descarcă din App Store",
  "lm99.get.play_soon": "În curând în Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Contor de vizite al site-ului:</span> acest site web (nu aplicația) are propriul contor anonim, fără cookie-uri și fără terți. Înregistrează pagina pe care o vizitezi, clicurile tale pe linkurile către magazine, țara, limba paginii, tipul de dispozitiv (telefon sau computer) și site-ul de pe care vii. Nu stochează adresa ta IP și nici nimic care să te identifice: doar un cod anonim care se recalculează în fiecare zi și nu permite recunoașterea ta de la o zi la alta. Dacă browserul tău trimite «Do Not Track», nu se trimite nimic."
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Contor de vizite al site-ului:</span> acest site web (nu aplicația) are propriul contor anonim, fără cookie-uri și fără terți. Înregistrează pagina pe care o vizitezi, clicurile tale pe linkurile către magazine, țara, limba paginii, tipul de dispozitiv (telefon sau computer) și site-ul de pe care vii. Nu stochează adresa ta IP și nici nimic care să te identifice: doar un cod anonim care se recalculează în fiecare zi și nu permite recunoașterea ta de la o zi la alta. Dacă browserul tău trimite «Do Not Track», nu se trimite nimic.",
+ "home.quickmenu.title": "Sari între secțiuni fără să te întorci la Acasă",
+ "home.quickmenu.sub": "Pentru a ajunge de la Bingo la Setări, trebuia să treci mai întâi pe la Acasă. Acum atingi cele trei puncte (···) din colțul din dreapta sus și ajungi direct.",
+ "home.quickmenu.cards": [
+  {
+   "title": "Pe aproape fiecare ecran",
+   "text": "Pictograma cu trei puncte orizontale (···) se află în colțul din dreapta sus. Dacă ecranul avea buton de partajare, acesta se mută în stânga ei."
+  },
+  {
+   "title": "Aceleași grupuri ca pe Acasă",
+   "text": "Obiective, Lecturile mele și Instrumente, plus Acasă, Setări și Date și copii de rezervă. Secțiunea în care te afli este evidențiată: atinge-o ca să revii la începutul ei."
+  },
+  {
+   "title": "Și în pagina cărții",
+   "text": "Deschide meniul cu trei puncte verticale din pagina cărții și alege „Meniu rapid”. Asistenții pas cu pas nu îl au, ca să nu pierzi ce completezi."
+  }
+ ],
+ "home.quickmenu.tag": "Nou în 3.9",
+ "anchor.quickmenu": "quick-menu",
+ "home.quickmenu.screen": "Bingo",
+ "home.quickmenu.menu_title": "Meniu rapid",
+ "home.quickmenu.groups": [
+  {
+   "title": "Obiective",
+   "text": "Evenimente · Provocări · Bingo"
+  },
+  {
+   "title": "Lecturile mele",
+   "text": "Statistici · Cardurile mele · Wrapped"
+  },
+  {
+   "title": "Instrumente",
+   "text": "Mementouri · Gestionarea tagurilor · Scanează ISBN"
+  },
+  {
+   "title": "Acces general",
+   "text": "Acasă · Setări · Date și copii de rezervă"
+  }
+ ]
 }
