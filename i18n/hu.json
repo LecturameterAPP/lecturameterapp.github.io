@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Mi jön a Lecturameter 3.9-ben",
- "roadmap.3_9.sub": "Olvasási kihívások az egész közösségnek, egy játék, amelyet <b>a saját könyveiddel</b> játszol, és egy megújult Kezdőlap. Nincsenek fix dátumok: minden akkor jön ki, amikor kész.",
+ "roadmap.3_9.sub": "Az utolsó roadmap-frissítés az indulás előtt: szinte minden kész. Még hátravan a gyorsmenü, az olvasás indítása a könyv widgetjéből, valamint a heti és havi kártyák; utána jönnek az Android és iPhone tesztek és a 3.9 a Google Playen és az App Storeban, a két eseménnyel. Nincsenek fix dátumok: minden akkor jön ki, amikor kész.",
  "roadmap.3_9.cards": [
   {
    "title": "Események",
    "text": "Globális kihívás, A Nagy Olvasás: 14 nap közös olvasás. Az időzítő percei számítanak, közös céllal és élő ranglistával. Lecturameter Quest, Az Elfeledett Könyvtár: Válassz 3 könyvet, válaszd ki az utadat a térképen, és győzd le a főellenséget. 5 szint és pontranglista. Továbbá: Eseménykártya, Pagi mint avatarod, eseményértesítések."
   },
   {
+   "title": "Gyorsmenü",
+   "text": "Korábban a Bingóból a Beállításokba menet először a Kezdőlapra kellett lépni. Most csak koppints a három pontra (···) a jobb felső sarokban, és már ott is vagy."
+  },
+  {
+   "title": "Két új Pro téma",
+   "text": "· Füzet és Erdő<br>· A Pro témák külön-külön vagy 3 darabos csomagban is megvásárolhatók, előnézettel, és a Pro képernyő új<br>· Saját időzítő óra minden témához<br>· Material ikonok az emojik helyett, és olvashatóbb statisztikák minden témában"
+  },
+  {
+   "title": "Szüneteltetve",
+   "text": "Tegyél félre egy könyvet egy időre anélkül, hogy tönkremenne a statisztikád"
+  },
+  {
+   "title": "Nem lineáris olvasás",
+   "text": "Nem lineáris olvasás antológiákhoz és verseskötetekhez: az átfedő oldalak nem számítanak kétszer, és a haladássáv szakaszokra oszlik"
+  },
+  {
+   "title": "A könyv widgetjéből",
+   "text": "Kezdj olvasni a könyv widgetjéből, az alkalmazás megnyitása nélkül"
+  },
+  {
+   "title": "Heti és havi kártyák",
+   "text": "Heti és havi összesítők új dizájnnal és több statisztikával"
+  },
+  {
    "title": "Megújult felület a Kezdőlapon",
-   "text": "A sáv ikonjai 3 lebegő menübe csoportosítva: Célok (Események, Kihívások, Bingók), Olvasásom (Statisztika, Kártyáim, Wrapped) és Eszközök (Emlékeztetők, Címkék, ISBN-szkenner). Hosszú nyomással átrendezheted őket. Számlálók csoportonként, a sáv görgetéskor összecsukódik, Alkonyat témában pedig az ikonok narancssárga és kék színben váltakoznak."
-  },
-  {
-   "title": "Könyvkártyák",
-   "text": "Nincs szemetes és nincsenek különálló csillagok (helyette ★ 4.5 címke), Material ikonok az emojik helyett, a címkék pedig alul. Elhagyott: az oldal, ahol abbahagytad (\"Az X. oldalon hagytad abba, összesen Y\"). Befejezve: a befejezés dátuma."
-  },
-  {
-   "title": "Tippek és fekvő nézet",
-   "text": "Új tippek, az oktatóanyag megszűnt: mindent tippek magyaráznak el, plusz akkumulátor-értesítés az időzítő első használatakor. Fekvő módú fejlesztések táblagépeken és iPhone Duón."
-  },
-  {
-   "title": "Könyvek oldalszám nélkül",
-   "text": "Oldalszám nélküli könyvek (pl. KOReaderből): az alkalmazás elkéri az összes oldalszámot."
-  },
-  {
-   "title": "Bingósablonok és -témák",
-   "text": "12 új 4x4-es és 12 új 3x3-as bingósablon, horror téma novemberben és romantikus februárban."
+   "text": "· Kezdőlap a Célok, Olvasmányaim és Eszközök szerint csoportosított sávval<br>· Módosítsd egy könyv állapotát a gyorsműveleteiből, és vond vissza, ha elrontod"
   },
   {
    "title": "KOSync",
-   "text": "Az olvasási időt a KOSync adja, így nem függsz az alkalmazás időzítőjétől."
+   "text": "KOSync a KOReader valós olvasási idejével"
   },
   {
    "title": "Véletlenszerű választó",
-   "text": "Véletlenszerű választó az Elolvasandó listában: Pagi helyetted dönt."
+   "text": "A Pagi választ egy könyvet az Elolvasandó listáról"
   },
   {
-   "title": "Wrapped",
-   "text": "Wrapped-fejlesztések (december 26-án nyílik meg)."
+   "title": "Eredmény nélküli keresések",
+   "text": "A katalógus tanul az eredmény nélküli keresésekből és ISBN-beolvasásokból, és pótolja a hiányzó könyveket (november 15-től)"
+  },
+  {
+   "title": "Visszajelzés és felmérés",
+   "text": "· Opcionális e-mail a „Visszajelzés küldése” funkcióban, csak hogy válaszolhassak neked<br>· A témafelmérés kap egy harmadik, opcionális kérdést a színekről<br>· Az anonim használati statisztika tartalmazza a használt témát és a megosztott kártya típusát, a tartalmát soha"
   },
   {
    "title": "Hagyományos kínai",
    "text": "Új nyelv: hagyományos kínai."
+  },
+  {
+   "title": "Továbbá",
+   "text": "· Értesítések kategóriánként és hírek az alkalmazás újdonságairól<br>· Értesítés, amikor keresésből adsz hozzá könyvet<br>· Az olvasási ciklusok dátumai egy sorban, könnyebben szerkeszthetők<br>· Bingó 24 sablonnal méret szerint<br>· iPhone-on az időzítő Live Activity-je a témád színeiben<br>· Sorozat a CSV-ben"
+  },
+  {
+   "title": "Javítások",
+   "text": "· A Bingó, a Wrapped és más képernyők címei most ugyanolyan magasan vannak, mint a többi menüben<br>· A Bingó és a Wrapped ikonjai visszakapták a színeiket<br>· A Kezdőlapon az állapot szerinti könyvszámlálók jobban látszanak a Sötét, OLED, Alkonyat, Aurora és Bőr témában<br>· Egyetlen figyelmeztetés a hiányos adatú könyvekhez: a sárga háromszög eltűnik, a piros marad<br>· A borító és a műfaj újratöltése megmondja, ha minden eleve rendben volt, és pirossal figyelmeztet, ha valamit nem talál<br>· A nagyon nagy könyvtárak Google Drive-os mentései már nem hiúsulnak meg memóriahiány miatt<br>· Több javítás iPhone-on"
   }
  ],
  "home.whatsnew.title": "Patch megjegyzések v{{release_version}}",

@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Nini kinakuja katika Lecturameter 3.9",
- "roadmap.3_9.sub": "Changamoto za kusoma kwa jumuiya nzima, mchezo unaochezwa kwa <b>vitabu vyako mwenyewe</b> na Skrini ya Mwanzo mpya. Hakuna tarehe zilizowekwa: kila kitu kitatolewa kikiwa tayari.",
+ "roadmap.3_9.sub": "Sasisho la mwisho la roadmap kabla ya uzinduzi: karibu kila kitu kimekamilika. Vilivyobaki ni Menyu ya haraka, kuanza kusoma kutoka wijeti ya kitabu na kadi za wiki na mwezi; kisha majaribio kwenye Android na iPhone na 3.9 kwenye Google Play na App Store, pamoja na matukio mawili. Hakuna tarehe zilizowekwa: kila kitu kitatolewa kikiwa tayari.",
  "roadmap.3_9.cards": [
   {
    "title": "Matukio",
    "text": "Changamoto ya kimataifa, Usomaji Mkuu: Siku 14 za kusoma pamoja. Dakika za kipima muda zinahesabiwa, kwa lengo la pamoja na ubao wa viongozi wa moja kwa moja. Lecturameter Quest, Maktaba Iliyosahaulika: Chagua vitabu 3, chagua njia yako kwenye ramani na umshinde bosi. Viwango 5 na ubao wa viongozi wa pointi. Pia: Kadi ya tukio, Pagi kama avatar yako, arifa za matukio."
   },
   {
+   "title": "Menyu ya haraka",
+   "text": "Kutoka Bingo hadi Mipangilio ilikuwa lazima upitie Mwanzo kwanza. Sasa unagusa nukta tatu (···) juu kulia na kwenda moja kwa moja."
+  },
+  {
+   "title": "Mandhari mbili mpya za Pro",
+   "text": "· Daftari na Msitu<br>· Mandhari za Pro pia zinaweza kununuliwa moja moja au kwa pakiti za 3, na onyesho la awali, na skrini ya Pro ni mpya<br>· Saa ya kipima muda ya kipekee kwa kila mandhari<br>· Aikoni za Material badala ya emoji na takwimu zinazosomeka zaidi katika kila mandhari"
+  },
+  {
+   "title": "Imesitishwa",
+   "text": "Weka kitabu pembeni kwa muda bila kuharibu takwimu zako"
+  },
+  {
+   "title": "Usomaji usio wa mstari",
+   "text": "Usomaji usio wa mstari kwa antholojia na makusanyo ya mashairi: kurasa zinazopishana hazihesabiwi mara mbili na upau wa maendeleo umegawanywa katika vipande"
+  },
+  {
+   "title": "Kutoka wijeti ya kitabu",
+   "text": "Anza kusoma kutoka wijeti ya kitabu, bila kufungua programu"
+  },
+  {
+   "title": "Kadi za wiki na mwezi",
+   "text": "Muhtasari wa kila wiki na kila mwezi wenye muundo mpya na takwimu zaidi"
+  },
+  {
    "title": "Kiolesura kipya katika Skrini ya Mwanzo",
-   "text": "Aikoni za pembeni zimepangwa katika menyu 3 zinazoelea: Malengo (Matukio, Changamoto, Bingo), Usomaji wangu (Takwimu, Kadi zangu, Wrapped) na Zana (Vikumbusho, Lebo, Kichanganuzi cha ISBN). Zipange upya kwa kubonyeza kwa muda mrefu. Kaunta kwa kila kundi, upau wa pembeni hujikunja unaposogeza, na katika Machweo aikoni hupishana rangi ya machungwa na bluu."
-  },
-  {
-   "title": "Kadi za vitabu",
-   "text": "Hakuna tena pipa la taka wala nyota zilizotawanyika (sasa ni chipu ya ★ 4.5), aikoni za Material badala ya emoji na lebo chini. Katika Imeachwa: ukurasa uliosimama (\"Ulisimama ukurasa wa X kati ya Y\"). Katika Imekamilika: tarehe uliyomaliza."
-  },
-  {
-   "title": "Vidokezo na mkao mlalo",
-   "text": "Vidokezo vipya na mafunzo yameondolewa: kila kitu kinaelezwa kwa vidokezo, pamoja na onyo la betri unapotumia kipima muda mara ya kwanza. Maboresho ya mkao mlalo kwa kompyuta kibao na iPhone Duo."
-  },
-  {
-   "title": "Vitabu visivyo na idadi ya kurasa",
-   "text": "Vitabu visivyo na idadi ya kurasa (mfano kutoka KOReader): programu inauliza jumla ya kurasa."
-  },
-  {
-   "title": "Violezo na mandhari ya Bingo",
-   "text": "violezo vipya 12 vya Bingo 4x4 na 12 vya 3x3, mandhari ya kutisha Novemba na ya mapenzi Februari."
+   "text": "· Mwanzo na reli iliyopangwa katika Malengo, Usomaji wangu na Zana<br>· Badilisha hali ya kitabu kutoka kwenye vitendo vyake vya haraka, na tengua ukikosea"
   },
   {
    "title": "KOSync",
-   "text": "Muda wa kusoma unatoka KOSync, kwa hiyo hutegemei kipima muda cha programu."
+   "text": "KOSync yenye muda halisi wa kusoma wa KOReader"
   },
   {
    "title": "Chaguo la nasibu",
-   "text": "Chaguo la nasibu katika Nataka kusoma: Pagi anakuamulia."
+   "text": "Pagi hukuchagulia kitabu kutoka Nataka kusoma"
   },
   {
-   "title": "Wrapped",
-   "text": "Maboresho ya Wrapped (hufunguliwa tarehe 26 Desemba)."
+   "title": "Utafutaji usio na matokeo",
+   "text": "Katalogi hujifunza kutokana na utafutaji na uskani wa ISBN usiopata kitu na huongeza vitabu vinavyokosekana (kuanzia Novemba 15)"
+  },
+  {
+   "title": "Maoni na utafiti",
+   "text": "· Barua pepe ya hiari katika “Tuma maoni”, ili tu niweze kukujibu<br>· Utafiti wa mandhari unapata swali la tatu la hiari kuhusu rangi<br>· Takwimu zisizotambulisha za matumizi zinajumuisha mandhari unayotumia na aina ya kadi unayoshiriki, kamwe si maudhui yake"
   },
   {
    "title": "Kichina cha Jadi",
    "text": "Lecturameter sasa inazungumza kichina cha Jadi."
+  },
+  {
+   "title": "Pia",
+   "text": "· Arifa kwa kila kategoria na taarifa za habari mpya za programu<br>· Arifa unapoongeza kitabu kutoka kwenye utafutaji<br>· Tarehe za mizunguko ya usomaji kwenye safu moja, rahisi kuhariri<br>· Bingo yenye violezo 24 kulingana na ukubwa<br>· Kwenye iPhone, Live Activity ya kipima muda katika rangi za mandhari yako<br>· Mfululizo katika CSV"
+  },
+  {
+   "title": "Marekebisho",
+   "text": "· Vichwa katika Bingo, Wrapped na skrini nyingine sasa viko kwenye urefu uleule kama menyu nyingine<br>· Aikoni za Bingo na Wrapped zimerudi na rangi zake<br>· Vihesabu vya vitabu kwa hali kwenye Mwanzo vinaonekana vizuri zaidi katika Giza, OLED, Jioni, Aurora na Ngozi<br>· Onyo moja tu kwa vitabu vyenye data pungufu: pembetatu ya njano imeondoka na nyekundu inabaki<br>· Kupakia upya jalada na aina hukuambia kila kitu kilipokuwa sawa tayari, na kuonya kwa nyekundu kitu kisipopatikana<br>· Nakala za Google Drive za maktaba kubwa sana hazishindwi tena kwa ukosefu wa kumbukumbu<br>· Marekebisho kadhaa kwenye iPhone"
   }
  ],
  "home.whatsnew.title": "Maelezo ya sasisho v{{release_version}}",

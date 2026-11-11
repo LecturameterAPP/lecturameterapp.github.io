@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Það sem kemur í Lecturameter 3.9",
- "roadmap.3_9.sub": "Lestraráskoranir fyrir allt samfélagið, leikur með <b>þínum eigin bókum</b> og nýr heimaskjár. Engar fastar dagsetningar: allt kemur þegar það er tilbúið.",
+ "roadmap.3_9.sub": "Síðasta uppfærsla vegvísisins fyrir útgáfu: nánast allt er tilbúið. Eftir eru flýtivalmyndin, að byrja að lesa úr græju bókarinnar og vikulegu og mánaðarlegu spjöldin; síðan koma prófanir á Android og iPhone og 3.9 á Google Play og App Store, með viðburðunum tveimur. Engar fastar dagsetningar: allt kemur þegar það er tilbúið.",
  "roadmap.3_9.cards": [
   {
    "title": "Viðburðir",
    "text": "Alþjóðleg áskorun, Stóri lesturinn: 14 dagar af lestri saman. Mínútur tímamælisins telja, með sameiginlegu markmiði og stigatöflu í beinni. Lecturameter Quest, Gleymda bókasafnið: Veldu 3 bækur, veldu leið þína á kortinu og sigraðu lokaóvininn. 5 borð og stigatafla. Einnig: Viðburðaspjald, Pagi sem prófílmynd, viðburðatilkynningar."
   },
   {
+   "title": "Flýtivalmynd",
+   "text": "Áður þurfti að fara fyrst á Heim til að komast úr Bingó í Stillingar. Nú ýtirðu á punktana þrjá (···) efst í hægra horninu og ferð beint þangað."
+  },
+  {
+   "title": "Tvö ný Pro þemu",
+   "text": "· Stílabók og Skógur<br>· Pro-þemu er líka hægt að kaupa eitt og eitt eða í pökkum með 3, með forskoðun, og Pro-skjárinn er nýr<br>· Sérstök tímamælisklukka fyrir hvert þema<br>· Material-tákn í stað emoji og læsilegri tölfræði í öllum þemum"
+  },
+  {
+   "title": "Í hléi",
+   "text": "Leggðu bók til hliðar um stund án þess að skemma tölfræðina þína"
+  },
+  {
+   "title": "Ólínulegur lestur",
+   "text": "Ólínulegur lestur fyrir safnrit og ljóðasöfn: síður sem skarast teljast ekki tvisvar og framvindustikan skiptist í hluta"
+  },
+  {
+   "title": "Úr græju bókarinnar",
+   "text": "Byrjaðu að lesa úr græju bókarinnar, án þess að opna appið"
+  },
+  {
+   "title": "Vikuleg og mánaðarleg spjöld",
+   "text": "Vikuleg og mánaðarleg yfirlit með nýju útliti og meiri tölfræði"
+  },
+  {
    "title": "Endurnýtt viðmót á heimaskjá",
-   "text": "Táknin á hliðarstikunni eru flokkuð í 3 fljótandi valmyndir: Markmið (Viðburðir, Áskoranir, Bingo), Lesturinn minn (Tölfræði, Spjöldin mín, Wrapped) og Verkfæri (Áminningar, Merki, ISBN-skanni). Þú raðar þeim upp á nýtt með löngu ýti. Teljarar fyrir hvern flokk, stikan fellur saman þegar þú skrunar og í Rökkri skiptast táknin á að vera appelsínugul og blá."
-  },
-  {
-   "title": "Bókaspjöld",
-   "text": "Engin ruslatunna og engar lausar stjörnur (nú ★ 4,5 merki), Material-tákn í stað emoji og merki neðst. Í Hætt við sérðu blaðsíðuna þar sem þú hættir („Hætt á blaðsíðu X af Y“); í Lokið dagsetninguna sem þú kláraðir bókina."
-  },
-  {
-   "title": "Ráð og lárétt staða",
-   "text": "Kennslan er horfin og allt er útskýrt með ráðum, auk rafhlöðutilkynningar í fyrsta skipti sem þú notar tímamælinn. Úrbætur í láréttri stöðu fyrir spjaldtölvur og iPhone Duo."
-  },
-  {
-   "title": "Bækur án blaðsíðufjölda",
-   "text": "Bækur án blaðsíðufjölda (t.d. frá KOReader): appið biður þig um heildarfjölda blaðsíðna."
-  },
-  {
-   "title": "Bingósnið og þemu",
-   "text": "12 ný 4x4 sniðmát og 12 ný 3x3 sniðmát, hryllingsþema í nóvember og rómantík í febrúar."
+   "text": "· Heim með stikunni flokkaðri í Markmið, Lesturinn minn og Verkfæri<br>· Breyttu stöðu bókar úr skjótaðgerðum hennar og afturkallaðu ef þér verður á"
   },
   {
    "title": "KOSync",
-   "text": "Úrbætur svo þú þurfir ekki að treysta á tímamæli appsins: KOSync sendir lestrartímann."
+   "text": "KOSync með raunverulegum lestrartíma úr KOReader"
   },
   {
    "title": "Tilviljunarval",
-   "text": "Handahófsval í Vil lesa: Pagi ákveður fyrir þig."
+   "text": "Pagi velur bók fyrir þig af listanum Vil lesa"
   },
   {
-   "title": "Wrapped",
-   "text": "Úrbætur (opnar 26. desember)."
+   "title": "Leitir án niðurstaðna",
+   "text": "Skráin lærir af leitum og ISBN-skönnunum sem finna ekkert og bætir við bókunum sem vantar (frá 15. nóvember)"
+  },
+  {
+   "title": "Ábendingar og könnun",
+   "text": "· Valfrjálst netfang í „Senda ábendingu“, aðeins svo ég geti svarað þér<br>· Þemakönnunin fær þriðju, valfrjálsa spurningu um liti<br>· Nafnlaus notkunartölfræði inniheldur þemað sem þú notar og gerð spjaldsins sem þú deilir, aldrei innihald þess"
   },
   {
    "title": "Hefðbundin kínverska",
    "text": "Nýtt tungumál: hefðbundin kínverska."
+  },
+  {
+   "title": "Einnig",
+   "text": "· Tilkynningar eftir flokkum og tilkynningar um nýjungar í appinu<br>· Tilkynning þegar bók er bætt við úr leit<br>· Dagsetningar lestrarlota í einni línu, auðveldari í breytingu<br>· Bingó með 24 sniðmátum eftir stærð<br>· Á iPhone, Live Activity tímamælisins í litum þemans þíns<br>· Sería í CSV"
+  },
+  {
+   "title": "Lagfæringar",
+   "text": "· Titlar í Bingó, Wrapped og öðrum skjám eru nú í sömu hæð og í öðrum valmyndum<br>· Tákn Bingó og Wrapped fá litina sína aftur<br>· Bókateljararnir eftir stöðu á Heim sjást betur í Dökku, OLED, Rökkri, Aurora og Leðri<br>· Ein viðvörun fyrir bækur með vantandi gögn: guli þríhyrningurinn er horfinn og sá rauði er áfram<br>· Endurhleðsla á kápu og flokki segir þér þegar allt var þegar í lagi og varar við í rauðu þegar eitthvað finnst ekki<br>· Afrit á Google Drive af mjög stórum bókasöfnum mistakast ekki lengur vegna minnisskorts<br>· Ýmsar lagfæringar á iPhone"
   }
  ],
  "home.whatsnew.title": "Uppfærsluminningar v{{release_version}}",

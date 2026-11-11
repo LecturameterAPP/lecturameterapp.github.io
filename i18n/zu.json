@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Okuzayo ku-Lecturameter 3.9",
- "roadmap.3_9.sub": "Izinselelo zokufunda zomphakathi wonke, umdlalo odlalwa nge-<b>zincwadi zakho</b> kanye neKhaya elisha. Ayikho izinsuku ezimisiwe: konke kuphuma uma sekulungile.",
+ "roadmap.3_9.sub": "Isibuyekezo sokugcina se-roadmap ngaphambi kokuthunyelwa: cishe konke sekwenziwe. Okusele yimenyu esheshayo, ukuqala ukufunda ku-widget yencwadi namakhadi eviki nenyanga; bese kuba izivivinyo ku-Android nase-iPhone kanye ne-3.9 ku-Google Play nase-App Store, kanye nemicimbi emibili. Ayikho izinsuku ezimisiwe: konke kuphuma uma sekulungile.",
  "roadmap.3_9.cards": [
   {
    "title": "Imicimbi",
    "text": "Inselelo yomhlaba wonke, Ukufunda Okukhulu: Izinsuku eziyi-14 sifunda ndawonye. Imizuzu yesitophuwashi iyabalwa, ngenhloso eyabiwe nebhodi labaholayo elibukhoma. I-Lecturameter Quest, Ilabhulali Elikhohliwe: Khetha izincwadi ezi-3, khetha indlela yakho emepheni bese uhlula umkhulu. Amazinga ayi-5 nebhodi labaholayo lamaphoyinti. Futhi: Ikhadi lomcimbi, uPagi njengesithombe sakho, izaziso zomcimbi."
   },
   {
+   "title": "Imenyu esheshayo",
+   "text": "Ngaphambilini, ukusuka ku-Bingo uye ku-Izilungiselelo kwakusho ukudlulela Ekhaya kuqala. Manje uthinta amachashazi amathathu (···) ekhoneni eliphezulu kwesokudla bese uya ngqo lapho."
+  },
+  {
+   "title": "Izingqikithi ezimbili ezintsha ze-Pro",
+   "text": "· Incwadi kanye neIhlathi<br>· Izingqikithi ze-Pro zingathengwa nazinye nazinye noma ngamaphakethe angu-3, kunokubuka kuqala, futhi isikrini se-Pro sisha<br>· Iwashi lesitophuwashi eliyingqayizivele kuyo yonke ingqikithi<br>· Izithonjana ze-Material esikhundleni sama-emoji nezibalo ezifundeka kangcono kuzo zonke izingqikithi"
+  },
+  {
+   "title": "Kumiswe okwesikhashana",
+   "text": "Beka incwadi eceleni isikhashana ngaphandle kokonakalisa izibalo zakho"
+  },
+  {
+   "title": "Ukufunda okungalandelani",
+   "text": "Ukufunda okungalandelani kuma-anthology nezingqikithi zezinkondlo: amakhasi agqagqanayo awabalwa kabili futhi ibha yenqubekelaphambili yahlukaniswe izingxenye"
+  },
+  {
+   "title": "Ku-widget yencwadi",
+   "text": "Qala ukufunda ku-widget yencwadi, ungavuli i-app"
+  },
+  {
+   "title": "Amakhadi eviki nenyanga",
+   "text": "Izifinyezo zeviki nezenyanga ngedizayini entsha nezibalo eziningi"
+  },
+  {
    "title": "Isihlanganisi esisha ekhaya",
-   "text": "Izithonjana zebha zihlanganiswe ngamamenyu ayi-3 antantayo: Izinhloso (Imicimbi, Izinselelo, Bingo), Ukufunda kwami (Izibalo, Amakhadi ami, Wrapped) kanye Namathuluzi (Izikhumbuzo, Amathegi, isikena se-ISBN). Zihlele kabusha ngokucindezela isikhathi eside. Amakhawunta eqembu ngalinye, ibha iyagoqeka uma uskrola, futhi ku-Ukuhwelela izithonjana ziguquguquka phakathi kwewolintshi nokuluhlaza okwesibhakabhaka."
-  },
-  {
-   "title": "Amakhadi ezincwadi",
-   "text": "Alikho ibhini noma izinkanyezi ezihlukene (manje isiqeshana se-★ 4.5), izithonjana ze-Material esikhundleni sama-emoji namathegi ngezansi. Ku-Ishiyiwe: ikhasi lapho uyeke khona (\"Uyeke ekhasini X kwamakhasi Y\"). Ku-Kuqediwe: usuku ozuqedele ngalo."
-  },
-  {
-   "title": "Amathiphu nokubukeka okuvundlile",
-   "text": "Amathiphu amasha futhi isifundo sesisusiwe: konke kuchazwa ngamathiphu, kanye nesaziso sebhethri ngesikhathi sokuqala usebenzisa isitophuwashi. Ukuthuthukiswa kokubukeka okuvundlile kumathebulethi ne-iPhone Duo."
-  },
-  {
-   "title": "Amabhuku angenayo inani lamakhasi",
-   "text": "Izincwadi ezingenanombolo yamakhasi (isb. ezivela ku-KOReader): uhlelo lokusebenza lukubuza inani lamakhasi."
-  },
-  {
-   "title": "Amathempulethi namatimu e-Bingo",
-   "text": "amathempulethi amasha ayi-12 e-4x4 nawayi-12 e-3x3 e-Bingo, indikimba yokwesaba ngoNovemba nothando ngoFebhuwari."
+   "text": "· Ikhaya elinomugqa ohlukaniswe ngezinjongo, Ukufunda kwami namaThuluzi<br>· Shintsha isimo sencwadi emisebenzini yayo esheshayo, uphinde ukhiphe uma uphutha"
   },
   {
    "title": "KOSync",
-   "text": "Isikhathi sokufunda sivela ku-KOSync, ngakho awunciki esitophuwashini sohlelo lokusebenza."
+   "text": "I-KOSync enesikhathi sangempela sokufunda se-KOReader"
   },
   {
    "title": "Ukukhetha okungahleliwe",
-   "text": "Isikhethi esingahleliwe ku-Ngifuna ukufunda: uPagi unquma ngawe."
+   "text": "Pagi ikukhethela incwadi kokuthi Ngifuna ukufunda"
   },
   {
-   "title": "Wrapped",
-   "text": "Ukuthuthukiswa kwe-Wrapped (kuvuleka ngo-26 Disemba)."
+   "title": "Ukusesha okungatholi lutho",
+   "text": "Ikhathalogi ifunda ekusesheni nasekuskeni kwe-ISBN okungatholi lutho futhi ifaka izincwadi ezingekho (kusukela ngoNovemba 15)"
+  },
+  {
+   "title": "Impendulo nocwaningo",
+   "text": "· I-imeyili ongayikhetha ku-“Thumela impendulo”, ukuze nje ngikwazi ukukuphendula<br>· Ucwaningo lwezindikimba lunezwa umbuzo wesithathu, ongakhethwa, mayelana nemibala<br>· Izibalo zokusetshenziswa ezingaziwa negama zihlanganisa indikimba oyisebenzisayo nohlobo lwekhadi olabelanayo, azikaze zibe okuqukethwe kwalo"
   },
   {
    "title": "isiShayina Sendabuko",
    "text": "Lecturameter manje isebenzisa isiShayina Sendabuko."
+  },
+  {
+   "title": "Futhi",
+   "text": "· Izaziso ngesigaba nezaziso zezindaba zohlelo<br>· Isaziso uma ufaka incwadi usuka ekusesheni<br>· Izinsuku zemijikelezo yokufunda emnqmeni owodwa, kulula ukuzihlela<br>· I-Bingo enamathempulethi angu-24 ngosayizi<br>· Ku-iPhone, i-Live Activity yethaymeli ngemibala yengqikithi yakho<br>· Uchungechunge ku-CSV"
+  },
+  {
+   "title": "Okulungisiwe",
+   "text": "· Izihloko ze-Bingo, Wrapped nezinye izikrini manje zisekuphakameni okufanayo nakwamanye amamenyu<br>· Izithonjana ze-Bingo ne-Wrapped zibuyele emibala yazo<br>· Izibali zezincwadi ngesimo e-Ikhaya zibonakala kangcono kuMnyama, i-OLED, Ukuntwela, i-Aurora nesikhumba<br>· Isixwayiso esisodwa sezincwadi ezinedatha engaphelele: unxantathu ophuzi ukhiphekile futhi obomvu uyasala<br>· Ukulayisha kabusha ikhava nohlobo kukutshela uma konke kwakuhle kakade, futhi kuxwayisa ngokubomvu uma kunokungatholakali<br>· Amakhophi e-Google Drive emitapo emikhulu kakhulu awasahlulekile ngenxa yokuntuleka kwenkumbulo<br>· Ukulungiswa okuningi ku-iPhone"
   }
  ],
  "home.whatsnew.title": "Amanothi wesibuyekezo v{{release_version}}",

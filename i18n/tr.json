@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Lecturameter 3.9'da neler geliyor",
- "roadmap.3_9.sub": "Tüm topluluk için okuma meydan okumaları, <b>kendi kitaplarınla</b> oynanan bir oyun ve yenilenen bir Ana Sayfa. Sabit tarih yok: her şey hazır olunca çıkar.",
+ "roadmap.3_9.sub": "Lansmandan önceki son roadmap güncellemesi: neredeyse her şey hazır. Hızlı menü, kitap widget'ından okumaya başlama ve haftalık ile aylık kartlar kaldı; ardından Android ve iPhone testleri ve Google Play ile App Store'da 3.9, iki etkinlikle birlikte geliyor. Sabit tarih yok: her şey hazır olunca çıkar.",
  "roadmap.3_9.cards": [
   {
    "title": "Etkinlikler",
    "text": "Küresel meydan okuma, Büyük Okuma: 14 gün birlikte okuma. Zamanlayıcı dakikaları sayılır; ortak bir hedef ve canlı bir skor tablosu var. Lecturameter Quest, Unutulmuş Kitaplık: 3 kitap seç, haritada yolunu belirle ve patronu yen. 5 seviye ve bir puan tablosu. Ayrıca: Etkinlik kartı, avatarın olarak Pagi, etkinlik uyarıları."
   },
   {
+   "title": "Hızlı menü",
+   "text": "Bingo'dan Ayarlar'a gitmek için eskiden önce Ana sayfa'ya uğramak gerekiyordu. Şimdi sağ üstteki üç noktaya (···) dokunup doğrudan oraya gidiyorsunuz."
+  },
+  {
+   "title": "İki yeni Pro tema",
+   "text": "· Defter ve Orman<br>· Pro temalar ön izlemeyle tek tek ya da 3'lü paketler halinde de satın alınabiliyor, Pro ekranı da yeni<br>· Her tema için kendine ait bir zamanlayıcı saati<br>· Emoji yerine Material simgeleri ve tüm temalarda daha okunaklı istatistikler"
+  },
+  {
+   "title": "Duraklatıldı",
+   "text": "Bir kitabı istatistiklerini bozmadan bir süre kenara koy"
+  },
+  {
+   "title": "doğrusal olmayan okuma",
+   "text": "Antolojiler ve şiir kitapları için doğrusal olmayan okuma: çakışan sayfalar iki kez sayılmaz, ilerleme çubuğu bölümlere ayrılır"
+  },
+  {
+   "title": "Kitap widget'ından",
+   "text": "Uygulamayı açmadan kitap widget'ından okumaya başlayın"
+  },
+  {
+   "title": "Haftalık ve aylık kartlar",
+   "text": "Yeni tasarımlı ve daha fazla istatistikli haftalık ve aylık özetler"
+  },
+  {
    "title": "Ana Sayfada yenilenen arayüz",
-   "text": "Çubuk simgeleri 3 yüzen menüde toplandı: Hedefler (Etkinlikler, Meydan okumalar, Bingo), Okumam (İstatistikler, Kartlarım, Wrapped) ve Araçlar (Hatırlatıcılar, Etiketler, ISBN tarayıcı). Uzun basarak sıralarını değiştir. Her grup için sayaçlar var, kaydırdıkça çubuk gizlenir ve Alacakaranlık temasında simgeler turuncu ile mavi arasında dönüşümlü olur."
-  },
-  {
-   "title": "Kitap kartları",
-   "text": "Çöp kutusu ve ortada duran yıldızlar yok (artık ★ 4.5 çipi), emoji yerine Material simgeleri ve altta etiketler. Bırakılanlar'da: kaldığın sayfa (\"Y sayfadan X. sayfada bıraktın\"). Tamamlananlar'da: bitirdiğin tarih."
-  },
-  {
-   "title": "İpuçları ve yatay mod",
-   "text": "Yeni ipuçları ve eğitim kaldırıldı: her şey ipuçlarıyla anlatılıyor; ayrıca zamanlayıcıyı ilk kullandığında bir pil uyarısı çıkıyor. Tabletler ve iPhone Duo için yatay mod iyileştirmeleri."
-  },
-  {
-   "title": "Sayfa sayısı olmayan kitaplar",
-   "text": "Sayfa sayısı olmayan kitaplar (örn. KOReader'dan): uygulama toplam sayfa sayısını ister."
-  },
-  {
-   "title": "Bingo şablonları ve temaları",
-   "text": "12 yeni 4x4 ve 12 yeni 3x3 bingo şablonu, Kasım'da korku, Şubat'ta romantik teması."
+   "text": "· Rayı Hedefler, Okumalarım ve Araçlar olarak gruplanmış Ana sayfa<br>· Bir kitabın durumunu hızlı işlemlerinden değiştirin, yanlışlık olursa geri alın"
   },
   {
    "title": "KOSync",
-   "text": "Okuma süresi KOSync'ten gelir, böylece uygulamanın zamanlayıcısına bağlı kalmazsın."
+   "text": "KOSync ile KOReader'ın gerçek okuma süresi"
   },
   {
    "title": "Rastgele seçici",
-   "text": "Okunacak'ta rastgele seçici: Pagi senin yerine karar verir."
+   "text": "Pagi, Okunacak listesinden sana bir kitap seçer"
   },
   {
-   "title": "Wrapped",
-   "text": "Wrapped iyileştirmeleri (26 Aralık'ta açılır)."
+   "title": "Sonuçsuz aramalar",
+   "text": "Katalog, sonuç bulamayan aramalardan ve ISBN taramalarından öğrenir ve eksik kitapları ekler (15 Kasım'dan itibaren)"
+  },
+  {
+   "title": "Geri bildirim ve anket",
+   "text": "· “Geri bildirim gönder”de isteğe bağlı e-posta, yalnızca size yanıt verebilmem için<br>· Tema anketine renkler hakkında üçüncü, isteğe bağlı bir soru ekleniyor<br>· Anonim kullanım istatistikleri, kullandığın temayı ve paylaştığın kartın türünü içerir, içeriğini asla"
   },
   {
    "title": "Geleneksel Çince",
    "text": "Lecturameter artık geleneksel Çince konuşuyor."
+  },
+  {
+   "title": "Ayrıca",
+   "text": "· Kategoriye göre bildirimler ve uygulama haberleri uyarıları<br>· Aramadan kitap eklerken bir bildirim<br>· Okuma döngüsü tarihleri tek satırda, düzenlemesi daha kolay<br>· Boyuta göre 24 şablonlu Bingo<br>· iPhone'da, zamanlayıcının Live Activity'si temanızın renklerinde<br>· CSV'de seri"
+  },
+  {
+   "title": "Düzeltmeler",
+   "text": "· Bingo, Wrapped ve diğer ekranlardaki başlıklar artık diğer menülerle aynı yükseklikte<br>· Bingo ve Wrapped simgeleri renklerine kavuştu<br>· Ana sayfa'daki duruma göre kitap sayaçları Koyu, OLED, Alacakaranlık, Aurora ve Deri temalarında daha net görünüyor<br>· Eksik verili kitaplar için tek bir uyarı: sarı üçgen kalktı, kırmızı kaldı<br>· Kapağı ve türü yeniden yüklemek her şeyin zaten yolunda olduğunu söyler, bir şey bulunamazsa kırmızıyla uyarır<br>· Çok büyük kütüphanelerin Google Drive yedekleri artık bellek yetersizliğinden başarısız olmuyor<br>· iPhone'da çeşitli düzeltmeler"
   }
  ],
  "home.whatsnew.title": "Güncelleme notları v{{release_version}}",

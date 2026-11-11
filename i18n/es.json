@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Lo que viene en Lecturameter 3.9",
- "roadmap.3_9.sub": "Retos de lectura para toda la comunidad, un juego con <b>tus propios libros</b> y un Inicio renovado. Sin fechas fijas: todo sale cuando esté listo.",
+ "roadmap.3_9.sub": "La última actualización del roadmap antes del lanzamiento: casi todo está hecho. Faltan el menú rápido, empezar a leer desde el widget del libro y las tarjetas de semana y mes; después tocan las pruebas en Android y iPhone y la 3.9 en Google Play y la App Store, con los dos eventos. Sin fechas fijas: todo sale cuando esté listo.",
  "roadmap.3_9.cards": [
   {
    "title": "Eventos",
    "text": "Reto global, La gran lectura: 14 días leyendo a la vez. Cuentan los minutos del crono, con meta común y ranking en vivo. Lecturameter Quest, La biblioteca olvidada: Elige 3 libros, traza tu camino por el mapa y vence al jefe. 5 niveles y ranking por puntos. Y además: Card del evento, tu Pagi como avatar, avisos del evento."
   },
   {
+   "title": "Menú rápido",
+   "text": "Antes, para ir del Bingo a Ajustes tenías que pasar por Inicio. Ahora tocas los tres puntos (···) de arriba a la derecha y vas directo."
+  },
+  {
+   "title": "Dos temas Pro nuevos",
+   "text": "· Cuaderno y Floresta<br>· Los temas Pro también se compran sueltos o en lotes de 3, con vista previa, y la pantalla de Pro es nueva<br>· Un reloj de crono propio para cada tema<br>· Iconos Material en vez de emojis y estadísticas más legibles en todos los temas"
+  },
+  {
+   "title": "Pausado",
+   "text": "Deja un libro una temporada sin ensuciar tus estadísticas"
+  },
+  {
+   "title": "Lectura no lineal",
+   "text": "Lectura no lineal para antologías y poemarios: las páginas que se solapan no cuentan dos veces y la barra de progreso va por tramos"
+  },
+  {
+   "title": "Desde el widget del libro",
+   "text": "Empieza a leer desde el widget del libro, sin abrir la app"
+  },
+  {
+   "title": "Tarjetas de semana y mes",
+   "text": "Resúmenes semanal y mensual con nuevo diseño y más datos"
+  },
+  {
    "title": "Interfaz renovada en el inicio",
-   "text": "Los iconos del rail se agrupan en 3 menús flotantes: Metas (Eventos, Retos, Bingos), Mis lecturas (Estadísticas, Mis tarjetas, Wrapped) y Herramientas (Recordatorios, Etiquetas, Escáner ISBN). Los reordenas con pulsación larga. Contadores por grupo, el rail se pliega al hacer scroll y en Ocaso los iconos alternan naranja y azul."
-  },
-  {
-   "title": "Tarjetas de libro",
-   "text": "Sin papelera ni estrellas sueltas (ahora un chip ★ 4,5), iconos Material en vez de emojis y etiquetas abajo. En Abandonados: la página en que lo dejaste («Lo dejaste en la página X de Y»). En Leídos: la fecha en que lo terminaste."
-  },
-  {
-   "title": "Tips y horizontal",
-   "text": "Tips nuevos y el tutorial desaparece: todo se explica con tips, más un aviso de batería la primera vez que usas el cronómetro. Mejoras en horizontal para tablets y iPhone Duo."
-  },
-  {
-   "title": "Libros sin número de páginas",
-   "text": "Libros sin número de páginas (p. ej. de KOReader): la app te pide las páginas totales."
-  },
-  {
-   "title": "Plantillas y temas de bingo",
-   "text": "12 plantillas nuevas de bingo 4x4 y 12 de 3x3, tema terror en noviembre y romance en febrero."
+   "text": "· Inicio con el rail agrupado en Metas, Mis lecturas y Herramientas<br>· Cambia el estado de un libro desde sus acciones rápidas y deshazlo si te equivocas"
   },
   {
    "title": "KOSync",
-   "text": "El tiempo de lectura lo envía KOSync, sin depender del cronómetro de la app."
+   "text": "KOSync con el tiempo real de KOReader"
   },
   {
    "title": "Selector aleatorio",
-   "text": "Selector aleatorio en «Quiero leer»: Pagi decide por ti."
+   "text": "Pagi te elige un libro de Quiero leer"
   },
   {
-   "title": "Wrapped",
-   "text": "Mejoras en Wrapped (se abre el 26 de diciembre)."
+   "title": "Búsquedas sin resultado",
+   "text": "El catálogo aprende de las búsquedas y escaneos de ISBN sin resultado y añade los libros que faltan (desde el 15 de noviembre)"
+  },
+  {
+   "title": "Comentarios y encuesta",
+   "text": "· Email opcional en «Enviar comentarios», solo para poder contestarte<br>· La encuesta de temas suma una tercera pregunta, opcional, sobre colores<br>· Las estadísticas anónimas de uso incluyen el tema que usas y el tipo de tarjeta que compartes, nunca su contenido"
   },
   {
    "title": "Chino tradicional",
    "text": "Lecturameter ahora habla chino tradicional."
+  },
+  {
+   "title": "Y además",
+   "text": "· Notificaciones por categoría y avisos de novedades de la app<br>· Aviso al añadir un libro desde la búsqueda<br>· Fechas de los ciclos de lectura en una sola fila, más fáciles de editar<br>· Bingo con 24 plantillas por tamaño<br>· En iPhone, la Live Activity del crono con los colores de tu tema<br>· Saga en el CSV"
+  },
+  {
+   "title": "Arreglos",
+   "text": "· Los títulos de Bingo, Wrapped y otras pantallas quedan a la misma altura que en el resto de menús<br>· Los iconos de Bingo y Wrapped recuperan sus colores<br>· Los contadores de libros por estado del Inicio se ven mejor en Oscuro, OLED, Ocaso, Aurora y Cuero<br>· Un solo aviso para libros con datos incompletos: desaparece el triángulo amarillo y queda el rojo<br>· Recargar portada y género te dice si ya estaba todo bien, y avisa en rojo si no encuentra algo<br>· Las copias en Google Drive de bibliotecas muy grandes ya no fallan por falta de memoria<br>· Varias correcciones en iPhone"
   }
  ],
  "home.whatsnew.title": "Notas de Parche v{{release_version}}",

@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Co nadchodzi w Lecturameter 3.9",
- "roadmap.3_9.sub": "Wyzwania czytelnicze dla całej społeczności, gra na <b>Twoich własnych książkach</b> i odnowiony ekran główny. Bez stałych dat: wszystko wychodzi, gdy będzie gotowe.",
+ "roadmap.3_9.sub": "Ostatnia aktualizacja roadmapy przed premierą: prawie wszystko jest gotowe. Zostało szybkie menu, rozpoczynanie czytania z widżetu książki oraz karty tygodnia i miesiąca; potem testy na Androidzie i iPhonie oraz wersja 3.9 w Google Play i App Store, z dwoma wydarzeniami. Bez stałych dat: wszystko wychodzi, gdy będzie gotowe.",
  "roadmap.3_9.cards": [
   {
    "title": "Wydarzenia",
    "text": "Wyzwanie globalne, Wielkie Czytanie: 14 dni wspólnego czytania. Liczą się minuty ze stopera, jest wspólny cel i ranking na żywo. Lecturameter Quest, Zapomniana Biblioteka: Wybierz 3 książki, wybierz drogę na mapie i pokonaj bossa. 5 poziomów i ranking punktów. Do tego: karta wydarzenia, Pagi jako Twój awatar, alerty o wydarzeniach."
   },
   {
+   "title": "Szybkie menu",
+   "text": "Żeby przejść z Bingo do Ustawień, trzeba było najpierw wejść na Start. Teraz dotykasz trzech kropek (···) w prawym górnym rogu i od razu jesteś na miejscu."
+  },
+  {
+   "title": "Dwa nowe motywy Pro",
+   "text": "· Zeszyt i Las<br>· Motywy Pro można też kupować pojedynczo lub w zestawach po 3, z podglądem, a ekran Pro jest nowy<br>· Własny zegar stopera dla każdego motywu<br>· Ikony Material zamiast emoji i czytelniejsze statystyki w każdym motywie"
+  },
+  {
+   "title": "Wstrzymane",
+   "text": "Odłóż książkę na jakiś czas, nie psując sobie statystyk"
+  },
+  {
+   "title": "Czytanie nieliniowe",
+   "text": "Czytanie nieliniowe dla antologii i tomików poezji: nakładające się strony nie liczą się dwa razy, a pasek postępu jest podzielony na odcinki"
+  },
+  {
+   "title": "Z widżetu książki",
+   "text": "Zacznij czytać z widżetu książki, bez otwierania aplikacji"
+  },
+  {
+   "title": "Karty tygodnia i miesiąca",
+   "text": "Podsumowania tygodniowe i miesięczne z nowym wyglądem i większą liczbą statystyk"
+  },
+  {
    "title": "Odnowiony interfejs ekranu głównego",
-   "text": "Ikony paska są pogrupowane w 3 pływające menu: Cele (Wydarzenia, Wyzwania, Bingo), Moje czytanie (Statystyki, Moje karty, Wrapped) i Narzędzia (Przypomnienia, Tagi, Skaner ISBN). Zmienisz ich kolejność długim naciśnięciem. Liczniki dla każdej grupy, pasek zwija się podczas przewijania, a w Zmierzchu ikony na przemian są pomarańczowe i niebieskie."
-  },
-  {
-   "title": "Karty książek",
-   "text": "Bez kosza i luźnych gwiazdek (teraz chip ★ 4,5), ikony Material zamiast emoji i tagi na dole. W Porzuconych zobaczysz stronę, na której przerwano czytanie („Przerwano na stronie X z Y”); w Przeczytanych — datę ukończenia."
-  },
-  {
-   "title": "Podpowiedzi i widok poziomy",
-   "text": "Samouczek znika, a wszystko wyjaśniają podpowiedzi, do tego komunikat o baterii przy pierwszym użyciu stopera. Ulepszenia w poziomie dla tabletów i iPhone Duo."
-  },
-  {
-   "title": "Książki bez liczby stron",
-   "text": "Książki bez liczby stron (np. z KOReader): aplikacja poprosi o łączną liczbę stron."
-  },
-  {
-   "title": "Szablony i motywy bingo",
-   "text": "12 nowych szablonów 4x4 i 12 nowych szablonów 3x3, motyw grozy w listopadzie i romans w lutym."
+   "text": "· Start z paskiem pogrupowanym na Cele, Moje lektury i Narzędzia<br>· Zmieniaj status książki z jej szybkich akcji i cofnij zmianę, jeśli się pomylisz"
   },
   {
    "title": "KOSync",
-   "text": "Ulepszenia, żeby nie zależeć od stopera aplikacji: KOSync wysyła czas czytania."
+   "text": "KOSync z rzeczywistym czasem czytania z KOReadera"
   },
   {
    "title": "Losowy wybór",
-   "text": "Losowanie w „Chcę przeczytać”: Pagi decyduje za Ciebie."
+   "text": "Pagi wybiera książkę z listy Chcę przeczytać"
   },
   {
-   "title": "Wrapped",
-   "text": "Ulepszenia (otwiera się 26 grudnia)."
+   "title": "Wyszukiwania bez wyników",
+   "text": "Katalog uczy się z wyszukiwań i skanów ISBN, które nic nie znalazły, i dodaje brakujące książki (od 15 listopada)"
+  },
+  {
+   "title": "Opinie i ankieta",
+   "text": "· Opcjonalny e-mail w „Wyślij opinię”, tylko po to, żebym mógł Ci odpowiedzieć<br>· Ankieta o motywach dostaje trzecie, opcjonalne pytanie o kolory<br>· Anonimowe statystyki użycia obejmują motyw, którego używasz, i typ karty, którą udostępniasz, nigdy jej treść"
   },
   {
    "title": "Chiński tradycyjny",
    "text": "Nowy język: chiński tradycyjny."
+  },
+  {
+   "title": "A ponadto",
+   "text": "· Powiadomienia według kategorii i informacje o nowościach w aplikacji<br>· Powiadomienie po dodaniu książki z wyszukiwarki<br>· Daty cykli czytania w jednym wierszu, łatwiejsze do edycji<br>· Bingo z 24 szablonami według rozmiaru<br>· Na iPhonie Live Activity stopera w kolorach Twojego motywu<br>· Seria w CSV"
+  },
+  {
+   "title": "Poprawki",
+   "text": "· Tytuły w Bingo, Wrapped i na innych ekranach są teraz na tej samej wysokości co w pozostałych menu<br>· Ikony Bingo i Wrapped odzyskują swoje kolory<br>· Liczniki książek według statusu na Start są lepiej widoczne w motywach Ciemny, OLED, Zmierzch, Aurora i Skóra<br>· Jedno ostrzeżenie dla książek z brakującymi danymi: żółty trójkąt znika, zostaje czerwony<br>· Ponowne wczytanie okładki i gatunku informuje, gdy wszystko już było w porządku, i ostrzega na czerwono, gdy czegoś nie znajdzie<br>· Kopie zapasowe bardzo dużych bibliotek na Google Drive nie kończą się już błędem z powodu braku pamięci<br>· Kilka poprawek na iPhonie"
   }
  ],
  "home.whatsnew.title": "Notatki do aktualizacji v{{release_version}}",

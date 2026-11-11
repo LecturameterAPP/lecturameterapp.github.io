@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Mis tuleb Lecturameter 3.9-s",
- "roadmap.3_9.sub": "Lugemisväljakutsed kogu kogukonnale, mäng, mida mängitakse <b>sinu enda raamatutega</b>, ja uuenenud avaleht. Kindlaid kuupäevi pole: kõik ilmub siis, kui on valmis.",
+ "roadmap.3_9.sub": "Viimane teekaardi uuendus enne turuletulekut: peaaegu kõik on tehtud. Veel on tulemas kiirmenüü, lugemise alustamine raamatu vidinast ning nädala- ja kuukaardid; seejärel testimine Androidis ja iPhone'is ning 3.9 Google Plays ja App Store'is, koos kahe sündmusega. Kindlaid kuupäevi pole: kõik ilmub siis, kui on valmis.",
  "roadmap.3_9.cards": [
   {
    "title": "Sündmused",
    "text": "Ülemaailmne väljakutse, Suur lugemine: 14 päeva koos lugemist. Arvesse lähevad taimeri minutid, ühise eesmärgi ja reaalajas edetabeliga. Lecturameter Quest, Unustatud raamatukogu: Vali 3 raamatut, vali kaardil oma tee ja alista boss. 5 taset ja punktide edetabel. Lisaks: sündmuse kaart, Pagi sinu avatarina, sündmuse teavitused."
   },
   {
+   "title": "Kiirmenüü",
+   "text": "Bingost Seadetesse jõudmiseks tuli enne läbi Avalehe käia. Nüüd puudutad üleval paremal kolme punkti (···) ja oled kohe kohal."
+  },
+  {
+   "title": "Kaks uut Pro teemat",
+   "text": "· Vihik ja Mets<br>· Pro teemasid saab osta ka ükshaaval või 3 kaupa pakkidena, eelvaatega, ja Pro ekraan on uus<br>· Igale teemale oma taimeri kell<br>· Material ikoonid emotikonide asemel ja loetavam statistika igas teemas"
+  },
+  {
+   "title": "Pausil",
+   "text": "Pane raamat mõneks ajaks kõrvale, ilma et statistika sassi läheks"
+  },
+  {
+   "title": "Mittelineaarne lugemine",
+   "text": "Mittelineaarne lugemine antoloogiate ja luulekogude jaoks: kattuvad leheküljed ei lähe kaks korda arvesse ja edenemisriba on jaotatud lõikudeks"
+  },
+  {
+   "title": "Raamatu vidinast",
+   "text": "Alusta lugemist raamatu vidinast, rakendust avamata"
+  },
+  {
+   "title": "Nädala- ja kuukaardid",
+   "text": "Nädala- ja kuukokkuvõtted uue kujunduse ja rohkema statistikaga"
+  },
+  {
    "title": "Uuenenud liides avalehel",
-   "text": "Külgriba ikoonid on koondatud 3 hõljuvasse menüüsse: Eesmärgid (Sündmused, Väljakutsed, Bingod), Minu lugemine (Statistika, Minu kaardid, Wrapped) ja Tööriistad (Meeldetuletused, Sildid, ISBN-skanner). Järjekorda saab muuta pikalt vajutades. Iga grupp näitab loendurit, külgriba kerimisel peitub ja Videvikus vahelduvad ikoonid oranži ja sinise vahel."
-  },
-  {
-   "title": "Raamatukaardid",
-   "text": "Prügikasti ja eraldi tähti enam pole (nüüd ★ 4.5 kiip), emotikonide asemel Material-ikoonid ja sildid all. Loobutud: lehekülg, kus pooleli jäid (\"Jäid pooleli leheküljel X / Y\"). Lõpetatud: lõpetamise kuupäev."
-  },
-  {
-   "title": "Näpunäited ja horisontaalvaade",
-   "text": "Uued näpunäited ja õpetust enam pole: kõike selgitavad näpunäited, lisaks akuteade taimeri esmakordsel kasutamisel. Parem horisontaalvaade tahvelarvutitele ja iPhone Duole."
-  },
-  {
-   "title": "Raamatud ilma lehekülgede arvuta",
-   "text": "Raamatud ilma lehekülgede arvuta (nt KOReaderist): rakendus küsib koguarvu."
-  },
-  {
-   "title": "Bingo mallid ja teemad",
-   "text": "12 uut 4x4 ja 12 uut 3x3 bingo malli, õudusteema novembris ja romantika veebruaris."
+   "text": "· Avaleht, kus külgriba on rühmitatud: Eesmärgid, Minu lugemised ja Tööriistad<br>· Muuda raamatu olekut selle kiirtoimingutest ja võta tagasi, kui eksid"
   },
   {
    "title": "KOSync",
-   "text": "Lugemisaeg tuleb KOSyncist, nii et sa ei sõltu rakenduse taimerist."
+   "text": "KOSync KOReaderi tegeliku lugemisajaga"
   },
   {
    "title": "Juhuslik valik",
-   "text": "Juhuslik valik jaotises Soovin lugeda: Pagi otsustab sinu eest."
+   "text": "Pagi valib sulle raamatu loendist Soovin lugeda"
   },
   {
-   "title": "Wrapped",
-   "text": "Wrappedi täiustused (avaneb 26. detsembril)."
+   "title": "Tulemuseta otsingud",
+   "text": "Kataloog õpib tulemuseta otsingutest ja ISBN-skannimistest ning lisab puuduvad raamatud (alates 15. novembrist)"
+  },
+  {
+   "title": "Tagasiside ja küsitlus",
+   "text": "· Valikuline e-post valikus „Saada tagasisidet“, ainult selleks, et saaksin sulle vastata<br>· Teemade küsitlusele lisandub kolmas, valikuline küsimus värvide kohta<br>· Anonüümne kasutusstatistika sisaldab teemat, mida kasutad, ja kaardi tüüpi, mida jagad, mitte kunagi selle sisu"
   },
   {
    "title": "Traditsiooniline hiina keel",
    "text": "Uus keel: traditsiooniline hiina keel."
+  },
+  {
+   "title": "Lisaks",
+   "text": "· Teavitused kategooriate kaupa ja teated rakenduse uudiste kohta<br>· Teavitus, kui lisad raamatu otsingust<br>· Lugemistsüklite kuupäevad ühel real, mida on lihtsam muuta<br>· Bingo 24 mustriga suuruse järgi<br>· iPhone'is taimeri Live Activity sinu teema värvides<br>· Sari CSV-s"
+  },
+  {
+   "title": "Parandused",
+   "text": "· Pealkirjad Bingos, Wrappedis ja teistel ekraanidel asuvad nüüd samal kõrgusel kui teistes menüüdes<br>· Bingo ja Wrapped ikoonid said oma värvid tagasi<br>· Raamatute loendurid oleku järgi Avalehel on paremini näha teemades Tume, OLED, Hämarik, Aurora ja Nahk<br>· Üks hoiatus puuduvate andmetega raamatute jaoks: kollane kolmnurk kaob ja punane jääb<br>· Katte ja žanri uuesti laadimine annab teada, kui kõik oli juba korras, ning hoiatab punaselt, kui midagi ei leita<br>· Väga suurte raamatukogude Google Drive'i varukoopiad ei ebaõnnestu enam mälupuuduse tõttu<br>· Mitu parandust iPhone'is"
   }
  ],
  "home.whatsnew.title": "Paranduste märkmed v{{release_version}}",

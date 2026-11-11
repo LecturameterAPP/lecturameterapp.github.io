@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "What's coming in Lecturameter 3.9",
- "roadmap.3_9.sub": "Reading challenges for the whole community, a game played with <b>your own books</b> and a renewed Home. No fixed dates: everything ships when it's ready.",
+ "roadmap.3_9.sub": "The last roadmap update before launch: almost everything is built. Still to come: the Quick Menu, starting to read from the book widget and the weekly and monthly cards; then testing on Android and iPhone, and 3.9 on Google Play and the App Store, with the two Events. No fixed dates: everything ships when it's ready.",
  "roadmap.3_9.cards": [
   {
    "title": "Events",
    "text": "Global challenge, The Great Read: 14 days reading together. Timer minutes count, with a shared goal and a live leaderboard. Lecturameter Quest, The Forgotten Library: Pick 3 books, choose your path on the map and beat the boss. 5 levels and a points leaderboard. Also: Event card, Pagi as your avatar, event alerts."
   },
   {
+   "title": "Quick menu",
+   "text": "Going from Bingo to Settings used to mean a stop at Home first. Now you tap the three dots (···) in the top-right corner and go straight there."
+  },
+  {
+   "title": "Two new Pro themes",
+   "text": "· Notebook and Woodland<br>· Pro themes can also be bought one by one or in packs of 3, with a preview, and the Pro screen is new<br>· A timer clock of its own for each theme<br>· Material icons instead of emojis and more readable stats in every theme"
+  },
+  {
+   "title": "Paused",
+   "text": "Set a book aside for a while without messing up your stats"
+  },
+  {
+   "title": "Non-linear reading",
+   "text": "Non-linear reading for anthologies and poetry collections: overlapping pages don't count twice and the progress bar is split into segments"
+  },
+  {
+   "title": "From the book widget",
+   "text": "Start reading from the book widget, without opening the app"
+  },
+  {
+   "title": "Weekly and monthly cards",
+   "text": "Weekly and monthly summaries with a new design and more stats"
+  },
+  {
    "title": "Renewed UI in home",
-   "text": "Rail icons grouped into 3 floating menus: Goals (Events, Challenges, Bingos), My reading (Statistics, My cards, Wrapped) and Tools (Reminders, Tags, ISBN scanner). Reorder them with a long press. Counters per group, the rail folds away as you scroll, and in Dusk the icons alternate orange and blue."
-  },
-  {
-   "title": "Book cards",
-   "text": "No trash can or loose stars (now a ★ 4.5 chip), Material icons instead of emojis and tags at the bottom. In Abandoned: the page where you left off (\"You stopped at page X of Y\"). In Finished: the date you finished it."
-  },
-  {
-   "title": "Tips and landscape",
-   "text": "New tips and the tutorial is gone: everything is explained with tips, plus a battery notice the first time you use the timer. Landscape improvements for tablets and iPhone Duo."
-  },
-  {
-   "title": "Books without a page count",
-   "text": "Books without a page count (e.g. from KOReader): the app asks for the total pages."
-  },
-  {
-   "title": "Bingo templates and themes",
-   "text": "12 new 4x4 and 12 new 3x3 bingo templates, horror theme in November and romance in February."
+   "text": "· Home with the rail grouped into Goals, My reading and Tools<br>· Change a book's status from its quick actions, and undo it if you slip"
   },
   {
    "title": "KOSync",
-   "text": "The reading time comes from KOSync, so you don't depend on the app's timer."
+   "text": "KOSync with KOReader's real reading time"
   },
   {
    "title": "Random picker",
-   "text": "Random picker in Want to read: Pagi decides for you."
+   "text": "Pagi picks a book from Want to read"
   },
   {
-   "title": "Wrapped",
-   "text": "Wrapped improvements (opens on December 26)."
+   "title": "Searches with no results",
+   "text": "The catalog learns from searches and ISBN scans that find nothing and adds the missing books (from November 15)"
+  },
+  {
+   "title": "Feedback and survey",
+   "text": "· Optional email in “Send feedback”, only so I can reply to you<br>· The themes survey gets a third, optional question about colors<br>· Anonymous usage stats include the theme you use and the type of card you share, never its content"
   },
   {
    "title": "Traditional Chinese",
    "text": "Lecturameter now speaks Traditional Chinese."
+  },
+  {
+   "title": "And also",
+   "text": "· Notifications by category and app news alerts<br>· A notice when you add a book from search<br>· Reading cycle dates on a single row, easier to edit<br>· Bingo with 24 templates by size<br>· On iPhone, the timer's Live Activity in your theme's colors<br>· Series in the CSV"
+  },
+  {
+   "title": "Fixes",
+   "text": "· Titles in Bingo, Wrapped and other screens now sit at the same height as in the other menus<br>· The Bingo and Wrapped icons get their colors back<br>· The book counters per status on Home are easier to see in Dark, OLED, Dusk, Aurora and Leather<br>· One single warning for books with missing data: the yellow triangle is gone and the red one stays<br>· Reloading cover and genre tells you when everything was already fine, and warns in red when something isn't found<br>· Google Drive backups of very large libraries no longer fail for lack of memory<br>· Several fixes on iPhone"
   }
  ],
  "home.whatsnew.title": "Patch notes v{{release_version}}",

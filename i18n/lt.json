@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Kas laukia Lecturameter 3.9",
- "roadmap.3_9.sub": "Skaitymo iššūkiai visai bendruomenei, žaidimas su <b>tavo paties knygomis</b> ir atnaujintas pradžios ekranas. Be tikslių datų: viskas išeis, kai bus paruošta.",
+ "roadmap.3_9.sub": "Paskutinis veiksmų plano atnaujinimas prieš pradžią: beveik viskas padaryta. Liko greitasis meniu, skaitymo pradžia iš knygos valdiklio ir savaitės bei mėnesio kortelės; po to bandymai Android ir iPhone, o 3.9 versija Google Play ir App Store, su dviem renginiais. Be tikslių datų: viskas išeis, kai bus paruošta.",
  "roadmap.3_9.cards": [
   {
    "title": "Renginiai",
    "text": "Globalus iššūkis, Didysis skaitymas: 14 dienų skaitome kartu. Skaičiuojamos laikmačio minutės, su bendru tikslu ir gyva lyderių lentele. Lecturameter Quest, Užmiršta biblioteka: Pasirink 3 knygas, išsirink kelią žemėlapyje ir nugalėk bosą. 5 lygiai ir taškų lyderių lentelė. Taip pat: renginio kortelė, Pagi kaip tavo avataras, renginio pranešimai."
   },
   {
+   "title": "Greitasis meniu",
+   "text": "Anksčiau norint iš Bingo patekti į Nustatymus reikėjo užsukti į Pradžią. Dabar paliečiate tris taškus (···) viršutiniame dešiniajame kampe ir einate tiesiai."
+  },
+  {
+   "title": "Dvi naujos Pro temos",
+   "text": "· Sąsiuvinis ir Giraitė<br>· Pro temas taip pat galima pirkti po vieną arba po 3 rinkiniais, su peržiūra, o Pro ekranas naujas<br>· Savas laikmačio laikrodis kiekvienai temai<br>· Material piktogramos vietoj jaustukų ir geriau įskaitoma statistika visose temose"
+  },
+  {
+   "title": "Pristabdyta",
+   "text": "Pasidėk knygą šalia kuriam laikui nesugadindamas statistikos"
+  },
+  {
+   "title": "Netiesinis skaitymas",
+   "text": "Netiesinis skaitymas antologijoms ir poezijos rinkiniams: persidengiantys puslapiai neskaičiuojami dukart, o eigos juosta suskirstyta į atkarpas"
+  },
+  {
+   "title": "Iš knygos valdiklio",
+   "text": "Pradėkite skaityti iš knygos valdiklio, neatidarę programėlės"
+  },
+  {
+   "title": "Savaitės ir mėnesio kortelės",
+   "text": "Savaitės ir mėnesio suvestinės su nauju dizainu ir daugiau statistikos"
+  },
+  {
    "title": "Atnaujinta sąsaja pradžios ekrane",
-   "text": "Juostos piktogramos sugrupuotos į 3 slankiuosius meniu: Tikslai (Renginiai, Iššūkiai, Bingo), Mano skaitymas (Statistika, Mano kortelės, Wrapped) ir Įrankiai (Priminimai, Žymos, ISBN skaitytuvas). Pakeisk tvarką ilgai paspausdamas. Skaitikliai kiekvienai grupei, juosta paslepiama slenkant, o Prieblandoje piktogramos kaitaliojasi oranžinė ir mėlyna."
-  },
-  {
-   "title": "Knygų kortelės",
-   "text": "Nebėra šiukšliadėžės ir pavienių žvaigždučių (dabar ★ 4.5 etiketė), vietoj jaustukų naudojamos Material piktogramos, o žymos rodomos apačioje. Apleistose: puslapis, kuriame sustojai („Sustojai ties X puslapiu iš Y“). Baigtose: baigimo data."
-  },
-  {
-   "title": "Patarimai ir gulsčias vaizdas",
-   "text": "Nauji patarimai, o pamoka pašalinta: viskas paaiškinama patarimais, o pirmą kartą naudojant laikmatį parodomas pranešimas apie bateriją. Patobulintas gulsčias vaizdas planšetėms ir „iPhone Duo“."
-  },
-  {
-   "title": "Knygos be puslapių skaičiaus",
-   "text": "Knygos be puslapių skaičiaus (pvz., iš KOReader): programėlė paprašo bendro puslapių skaičiaus."
-  },
-  {
-   "title": "Bingo šablonai ir temos",
-   "text": "12 naujų 4x4 ir 12 naujų 3x3 bingo šablonų, siaubo tema lapkritį ir romantika vasarį."
+   "text": "· Pradžia su juosta, sugrupuota į Tikslus, Mano skaitymus ir Įrankius<br>· Pakeiskite knygos būseną iš jos greitųjų veiksmų ir atšaukite, jei suklystumėte"
   },
   {
    "title": "KOSync",
-   "text": "Skaitymo laikas ateina iš KOSync, todėl nebepriklausai nuo programėlės laikmačio."
+   "text": "KOSync su tikru KOReader skaitymo laiku"
   },
   {
    "title": "Atsitiktinis pasirinkimas",
-   "text": "Atsitiktinis pasirinkimas skiltyje Noriu skaityti: Pagi nusprendžia už tave."
+   "text": "Pagi parenka knygą iš sąrašo Noriu skaityti"
   },
   {
-   "title": "Wrapped",
-   "text": "Wrapped patobulinimai (atsidaro gruodžio 26 d.)."
+   "title": "Paieškos be rezultatų",
+   "text": "Katalogas mokosi iš paieškų ir ISBN nuskaitymų, kurie nieko neranda, ir prideda trūkstamas knygas (nuo lapkričio 15 d.)"
+  },
+  {
+   "title": "Atsiliepimai ir apklausa",
+   "text": "· Neprivalomas el. paštas skiltyje „Siųsti atsiliepimą“, tik kad galėčiau jums atsakyti<br>· Temų apklausa gauna trečią, neprivalomą klausimą apie spalvas<br>· Anoniminė naudojimo statistika apima temą, kurią naudoji, ir kortelės tipą, kuriuo dalijiesi, bet niekada jos turinį"
   },
   {
    "title": "Tradicinė kinų kalba",
    "text": "Nauja kalba: tradicinė kinų kalba."
+  },
+  {
+   "title": "Taip pat",
+   "text": "· Pranešimai pagal kategoriją ir pranešimai apie programėlės naujienas<br>· Pranešimas pridėjus knygą iš paieškos<br>· Skaitymo ciklų datos vienoje eilutėje, lengviau redaguoti<br>· Bingo su 24 šablonais pagal dydį<br>· „iPhone“ telefone laikmačio Live Activity jūsų temos spalvomis<br>· Serija CSV faile"
+  },
+  {
+   "title": "Pataisymai",
+   "text": "· Bingo, Wrapped ir kitų ekranų antraštės dabar yra tame pačiame aukštyje kaip kituose meniu<br>· Bingo ir Wrapped piktogramos atgauna spalvas<br>· Knygų skaitikliai pagal būseną Pradžioje geriau matomi temose Tamsi, OLED, Prieblanda, Aurora ir Oda<br>· Vienas įspėjimas knygoms su trūkstamais duomenimis: geltonas trikampis dingo, lieka raudonas<br>· Perkrovus viršelį ir žanrą pasakoma, kai viskas jau buvo gerai, o raudonai įspėjama, jei kažko nerandama<br>· Labai didelių bibliotekų „Google Drive“ atsarginės kopijos nebesibaigia nesėkme dėl atminties trūkumo<br>· Keli pataisymai „iPhone“ telefone"
   }
  ],
  "home.whatsnew.title": "Pataisymų pastabos v{{release_version}}",

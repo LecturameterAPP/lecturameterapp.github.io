@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Yang akan hadir di Lecturameter 3.9",
- "roadmap.3_9.sub": "Tantangan membaca untuk seluruh komunitas, permainan dengan <b>buku-bukumu sendiri</b>, dan Beranda baru. Tanpa tanggal pasti: semuanya rilis kalau sudah siap.",
+ "roadmap.3_9.sub": "Pembaruan roadmap terakhir sebelum peluncuran: hampir semuanya sudah selesai. Yang tersisa: Menu cepat, mulai membaca dari widget buku, dan kartu mingguan dan bulanan; setelah itu pengujian di Android dan iPhone, lalu 3.9 di Google Play dan App Store, bersama dua event. Tanpa tanggal pasti: semuanya rilis kalau sudah siap.",
  "roadmap.3_9.cards": [
   {
    "title": "Event",
    "text": "Tantangan global, Membaca Akbar: 14 hari membaca bersama. Menit dari pengatur waktu dihitung, dengan target bersama dan papan peringkat langsung. Lecturameter Quest, Perpustakaan yang Terlupakan: Pilih 3 buku, tentukan jalurmu di peta, dan kalahkan bosnya. 5 level dan papan peringkat poin. Juga: Kartu event, Pagi sebagai avatarmu, notifikasi event."
   },
   {
+   "title": "Menu cepat",
+   "text": "Dulu, untuk pindah dari Bingo ke Pengaturan, kamu harus mampir ke Beranda dulu. Sekarang cukup ketuk tiga titik (···) di pojok kanan atas dan langsung sampai."
+  },
+  {
+   "title": "Dua tema Pro baru",
+   "text": "· Buku Tulis dan Hutan<br>· Tema Pro juga bisa dibeli satuan atau paket isi 3, dengan pratinjau, dan layar Pro kini baru<br>· Jam pengatur waktu tersendiri untuk setiap tema<br>· Ikon Material menggantikan emoji dan statistik yang lebih mudah dibaca di semua tema"
+  },
+  {
+   "title": "Dijeda",
+   "text": "Simpan buku sementara tanpa mengacaukan statistikmu"
+  },
+  {
+   "title": "Membaca nonlinear",
+   "text": "Membaca nonlinear untuk antologi dan kumpulan puisi: halaman yang tumpang tindih tidak dihitung dua kali dan bilah progres dibagi menjadi segmen"
+  },
+  {
+   "title": "Dari widget buku",
+   "text": "Mulai membaca dari widget buku, tanpa membuka aplikasi"
+  },
+  {
+   "title": "Kartu mingguan dan bulanan",
+   "text": "Ringkasan mingguan dan bulanan dengan desain baru dan lebih banyak statistik"
+  },
+  {
    "title": "Tampilan baru di beranda",
-   "text": "Ikon rail dikelompokkan ke dalam 3 menu melayang: Target (Event, Tantangan, Bingo), Bacaanku (Statistik, Kartuku, Wrapped), dan Alat (Pengingat, Tag, Pemindai ISBN). Atur ulang urutannya dengan tekan lama. Ada penghitung per grup, rail menyembunyikan diri saat kamu menggulir, dan di Senja ikonnya berganti-ganti oranye dan biru."
-  },
-  {
-   "title": "Kartu buku",
-   "text": "Tanpa tempat sampah atau bintang lepas (kini chip ★ 4.5), ikon Material menggantikan emoji, dan tag di bagian bawah. Di Ditinggalkan: halaman terakhir yang kamu baca (\"Kamu berhenti di halaman X dari Y\"). Di Selesai: tanggal kamu menamatkannya."
-  },
-  {
-   "title": "Tip dan mode lanskap",
-   "text": "Tip baru dan tutorial dihapus: semuanya dijelaskan lewat tip, plus pemberitahuan baterai saat pertama kali memakai pengatur waktu. Peningkatan mode lanskap untuk tablet dan iPhone Duo."
-  },
-  {
-   "title": "Buku tanpa jumlah halaman",
-   "text": "Buku tanpa jumlah halaman (misalnya dari KOReader): aplikasi menanyakan total halamannya."
-  },
-  {
-   "title": "Templat dan tema bingo",
-   "text": "12 templat bingo 4x4 baru dan 12 templat 3x3 baru, tema horor di bulan November dan romansa di bulan Februari."
+   "text": "· Beranda dengan rail yang dikelompokkan menjadi Target, Bacaan saya, dan Alat<br>· Ubah status buku dari aksi cepatnya, dan batalkan jika salah"
   },
   {
    "title": "KOSync",
-   "text": "Waktu membaca berasal dari KOSync, jadi kamu tidak bergantung pada pengatur waktu aplikasi."
+   "text": "KOSync dengan waktu baca asli dari KOReader"
   },
   {
    "title": "Pemilih acak",
-   "text": "Pemilih acak di Ingin dibaca: Pagi yang memutuskan untukmu."
+   "text": "Pagi memilihkan buku dari Ingin dibaca"
   },
   {
-   "title": "Wrapped",
-   "text": "Peningkatan Wrapped (dibuka pada 26 Desember)."
+   "title": "Pencarian tanpa hasil",
+   "text": "Katalog belajar dari pencarian dan pemindaian ISBN yang tidak menemukan apa pun dan menambahkan buku yang belum ada (mulai 15 November)"
+  },
+  {
+   "title": "Masukan dan survei",
+   "text": "· Email opsional di “Kirim masukan”, hanya agar saya bisa membalasmu<br>· Survei tema mendapat pertanyaan ketiga yang opsional tentang warna<br>· Statistik penggunaan anonim mencakup tema yang kamu pakai dan jenis kartu yang kamu bagikan, tidak pernah isinya"
   },
   {
    "title": "Mandarin Tradisional",
    "text": "Lecturameter kini berbahasa Mandarin Tradisional."
+  },
+  {
+   "title": "Dan juga",
+   "text": "· Notifikasi per kategori dan kabar terbaru aplikasi<br>· Pemberitahuan saat menambahkan buku dari pencarian<br>· Tanggal siklus membaca dalam satu baris, lebih mudah diedit<br>· Bingo dengan 24 templat menurut ukuran<br>· Di iPhone, Live Activity timer dengan warna tema kamu<br>· Seri di CSV"
+  },
+  {
+   "title": "Perbaikan",
+   "text": "· Judul di Bingo, Wrapped, dan layar lain kini sejajar dengan menu lainnya<br>· Ikon Bingo dan Wrapped mendapatkan kembali warnanya<br>· Penghitung buku per status di Beranda lebih mudah terlihat di tema Gelap, OLED, Senja, Aurora, dan Kulit<br>· Satu peringatan saja untuk buku dengan data tidak lengkap: segitiga kuning dihapus dan yang merah tetap ada<br>· Memuat ulang sampul dan genre memberi tahu jika semuanya sudah beres, dan memperingatkan dengan warna merah jika ada yang tidak ditemukan<br>· Pencadangan Google Drive untuk pustaka yang sangat besar tidak lagi gagal karena kehabisan memori<br>· Beberapa perbaikan di iPhone"
   }
  ],
  "home.whatsnew.title": "Catatan pembaruan v{{release_version}}",

@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Mitä Lecturameter 3.9 tuo tullessaan",
- "roadmap.3_9.sub": "Lukuhaasteita koko yhteisölle, peli, jota pelataan <b>omilla kirjoillasi</b>, ja uusittu Etusivu. Ei kiinteitä päivämääriä: kaikki julkaistaan, kun se on valmis.",
+ "roadmap.3_9.sub": "Viimeinen tiekartan päivitys ennen julkaisua: lähes kaikki on valmista. Jäljellä ovat pikavalikko, lukemisen aloittaminen kirjan widgetistä sekä viikko- ja kuukausikortit; sen jälkeen testaus Androidilla ja iPhonella sekä 3.9 Google Playssa ja App Storessa kahden tapahtuman kanssa. Ei kiinteitä päivämääriä: kaikki julkaistaan, kun se on valmis.",
  "roadmap.3_9.cards": [
   {
    "title": "Tapahtumat",
    "text": "Yhteinen haaste, Suuri lukuhaaste: 14 päivää lukemista yhdessä. Ajastimen minuutit lasketaan, yhteinen tavoite ja reaaliaikainen tulostaulu. Lecturameter Quest, Unohdettu kirjasto: Valitse 3 kirjaa, valitse reittisi kartalla ja kukista pääpahis. 5 tasoa ja pistetaulukko. Lisäksi: tapahtumakortti, Pagi avatarinasi, tapahtumailmoitukset."
   },
   {
+   "title": "Pikavalikko",
+   "text": "Bingosta Asetuksiin pääsi ennen vain Kodin kautta. Nyt napautat oikean yläkulman kolmea pistettä (···) ja menet suoraan perille."
+  },
+  {
+   "title": "Kaksi uutta Pro-teemaa",
+   "text": "· Vihko ja Metsä<br>· Pro-teemoja voi ostaa myös yksitellen tai kolmen paketteina esikatselun kanssa, ja Pro-näyttö on uusi<br>· Oma ajastinkello jokaiselle teemalle<br>· Material-kuvakkeet emojien tilalla ja luettavammat tilastot kaikissa teemoissa"
+  },
+  {
+   "title": "Tauolla",
+   "text": "Jätä kirja syrjään joksikin aikaa sotkematta tilastojasi"
+  },
+  {
+   "title": "Epälineaarinen lukeminen",
+   "text": "Epälineaarinen lukeminen antologioille ja runokokoelmille: päällekkäiset sivut eivät lasketa kahdesti ja edistymispalkki on jaettu jaksoihin"
+  },
+  {
+   "title": "Kirjan widgetistä",
+   "text": "Aloita lukeminen kirjan widgetistä avaamatta sovellusta"
+  },
+  {
+   "title": "Viikko- ja kuukausikortit",
+   "text": "Viikko- ja kuukausiyhteenvedot uudella ilmeellä ja enemmän tilastoja"
+  },
+  {
    "title": "Uudistettu käyttöliittymä etusivulla",
-   "text": "Palkin kuvakkeet ryhmitelty 3 kelluvaan valikkoon: Tavoitteet (Tapahtumat, Haasteet, Bingot), Oma lukeminen (Tilastot, Omat kortit, Wrapped) ja Työkalut (Muistutukset, Tagit, ISBN-skanneri). Järjestä uudelleen pitkällä painalluksella. Laskurit ryhmittäin, palkki kutistuu vierittäessä, ja Iltahämärässä kuvakkeet vuorottelevat oranssina ja sinisenä."
-  },
-  {
-   "title": "Kirjakortit",
-   "text": "Ei roskakoria eikä irrallisia tähtiä (nyt ★ 4.5 -merkki), Material-kuvakkeet emojien tilalla ja tagit alhaalla. Keskeytetyissä: sivu, johon jäit (\"Jäit sivulle X / Y\"). Valmiissa: päivä, jolloin sait kirjan luettua."
-  },
-  {
-   "title": "Vinkit ja vaaka-asento",
-   "text": "Uudet vinkit ja opastus poistuu: kaikki selitetään vinkeillä, sekä akkuilmoitus ajastinta ensimmäisen kerran käytettäessä. Parannuksia vaaka-asentoon tableteilla ja iPhone Duolla."
-  },
-  {
-   "title": "Kirjat ilman sivumäärää",
-   "text": "Kirjat ilman sivumäärää (esim. KOReaderista): sovellus kysyy sivujen kokonaismäärän."
-  },
-  {
-   "title": "Bingopohjat ja -teemat",
-   "text": "12 uutta 4x4- ja 12 uutta 3x3-bingopohjaa, kauhuteema marraskuussa ja romantiikkateema helmikuussa."
+   "text": "· Koti, jossa sivupalkki on ryhmitelty: Tavoitteet, Lukemiseni ja Työkalut<br>· Vaihda kirjan tilaa sen pikatoiminnoista ja peru, jos erehdyt"
   },
   {
    "title": "KOSync",
-   "text": "Lukuaika tulee KOSyncistä, joten et ole riippuvainen sovelluksen ajastimesta."
+   "text": "KOSync KOReaderin todellisella lukuajalla"
   },
   {
    "title": "Satunnaisvalinta",
-   "text": "Satunnaisvalinta kohdassa Haluan lukea: Pagi päättää puolestasi."
+   "text": "Pagi valitsee sinulle kirjan Haluan lukea -listalta"
   },
   {
-   "title": "Wrapped",
-   "text": "Wrapped-parannuksia (avautuu 26. joulukuuta)."
+   "title": "Tuloksettomat haut",
+   "text": "Luettelo oppii tuloksettomista hauista ja ISBN-skannauksista ja lisää puuttuvat kirjat (15. marraskuusta alkaen)"
+  },
+  {
+   "title": "Palaute ja kysely",
+   "text": "· Valinnainen sähköposti kohdassa ”Lähetä palautetta”, vain jotta voin vastata sinulle<br>· Teemakyselyyn tulee kolmas, valinnainen kysymys väreistä<br>· Anonyymit käyttötilastot sisältävät käyttämäsi teeman ja jakamasi kortin tyypin, eivät koskaan sen sisältöä"
   },
   {
    "title": "Perinteinen kiina",
    "text": "Uusi kieli: perinteinen kiina."
+  },
+  {
+   "title": "Lisäksi",
+   "text": "· Ilmoitukset luokittain ja ilmoitukset sovelluksen uutisista<br>· Ilmoitus, kun lisäät kirjan hausta<br>· Lukukierrosten päivämäärät yhdellä rivillä, helpompi muokata<br>· Bingo 24 pohjalla koon mukaan<br>· iPhonella ajastimen Live Activity teemasi väreissä<br>· <strong>Sarja CSV:</strong> ssä"
+  },
+  {
+   "title": "Korjaukset",
+   "text": "· Otsikot Bingossa, Wrappedissa ja muilla näytöillä ovat nyt samalla korkeudella kuin muissa valikoissa<br>· Bingon ja Wrappedin kuvakkeet saivat värinsä takaisin<br>· Kirjojen tilakohtaiset laskurit Kodissa näkyvät paremmin teemoissa Tumma, OLED, Hämärä, Aurora ja Nahka<br>· Vain yksi varoitus kirjoille, joilta puuttuu tietoja: keltainen kolmio poistuu ja punainen jää<br>· Kannen ja lajityypin uudelleenlataus kertoo, jos kaikki oli jo kunnossa, ja varoittaa punaisella, jos jotain ei löydy<br>· Hyvin suurten kirjastojen Google Drive -varmuuskopiot eivät enää epäonnistu muistin puutteen vuoksi<br>· Useita korjauksia iPhonelle"
   }
  ],
  "home.whatsnew.title": "Päivitysmuistiinpanot v{{release_version}}",

@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Điều sắp đến trong Lecturameter 3.9",
- "roadmap.3_9.sub": "Thử thách đọc sách cho cả cộng đồng, một trò chơi chơi bằng <b>chính những cuốn sách của bạn</b> và Trang chủ mới. Không có ngày cố định: mọi thứ ra mắt khi sẵn sàng.",
+ "roadmap.3_9.sub": "Bản cập nhật roadmap cuối cùng trước khi ra mắt: gần như mọi thứ đã xong. Còn lại là Menu nhanh, bắt đầu đọc từ widget của sách và thẻ tuần và tháng; sau đó là kiểm thử trên Android và iPhone và bản 3.9 trên Google Play và App Store, cùng hai sự kiện. Không có ngày cố định: mọi thứ ra mắt khi sẵn sàng.",
  "roadmap.3_9.cards": [
   {
    "title": "Sự kiện",
    "text": "Thử thách toàn cầu, Cuộc Đọc Lớn: 14 ngày cùng nhau đọc. Số phút trên đồng hồ bấm giờ được tính, với mục tiêu chung và bảng xếp hạng trực tiếp. Lecturameter Quest, Thư Viện Bị Lãng Quên: Chọn 3 cuốn sách, chọn đường đi trên bản đồ và đánh bại trùm cuối. 5 màn chơi và bảng xếp hạng điểm. Ngoài ra: Thẻ sự kiện, Pagi làm ảnh đại diện của bạn, thông báo sự kiện."
   },
   {
+   "title": "Menu nhanh",
+   "text": "Trước đây, muốn đi từ Bingo sang Cài đặt, bạn phải ghé Trang chủ trước. Giờ chỉ cần chạm vào ba chấm (···) ở góc trên bên phải là đến thẳng nơi cần tới."
+  },
+  {
+   "title": "Hai giao diện Pro mới",
+   "text": "· Vở và Rừng<br>· Giao diện Pro còn có thể mua lẻ hoặc theo gói 3, có xem trước, và màn hình Pro được làm mới<br>· Đồng hồ bấm giờ riêng cho từng giao diện<br>· Biểu tượng Material thay cho emoji và số liệu dễ đọc hơn ở mọi giao diện"
+  },
+  {
+   "title": "Tạm dừng",
+   "text": "Cất một cuốn sách sang bên một thời gian mà không làm hỏng thống kê của bạn"
+  },
+  {
+   "title": "Đọc không tuần tự",
+   "text": "Đọc không tuần tự cho tuyển tập và thi tập: các trang chồng nhau không bị tính hai lần và thanh tiến độ được chia thành từng đoạn"
+  },
+  {
+   "title": "Từ widget của sách",
+   "text": "Bắt đầu đọc từ widget của sách, không cần mở ứng dụng"
+  },
+  {
+   "title": "Thẻ tuần và tháng",
+   "text": "Bản tóm tắt theo tuần và theo tháng với thiết kế mới và nhiều số liệu hơn"
+  },
+  {
    "title": "Giao diện mới ở Trang chủ",
-   "text": "Các biểu tượng ở thanh bên được gộp thành 3 menu nổi: Mục tiêu (Sự kiện, Thử thách, Bingo), Việc đọc của tôi (Thống kê, Thẻ của tôi, Wrapped) và Công cụ (Nhắc nhở, Thẻ, Trình quét ISBN). Nhấn giữ để sắp xếp lại. Mỗi nhóm có bộ đếm, thanh bên thu gọn khi cuộn, và trong Hoàng hôn các biểu tượng xen kẽ màu cam và xanh."
-  },
-  {
-   "title": "Thẻ sách",
-   "text": "Không còn thùng rác hay các ngôi sao rời (giờ là chip ★ 4.5), biểu tượng Material thay cho emoji và nhãn ở phía dưới. Ở Đã bỏ dở: trang bạn dừng lại (\"Bạn dừng ở trang X trên Y\"). Ở Đã hoàn thành: ngày bạn đọc xong."
-  },
-  {
-   "title": "Mẹo và chế độ ngang",
-   "text": "Mẹo mới và không còn hướng dẫn: mọi thứ được giải thích bằng mẹo, kèm thông báo về pin lần đầu dùng đồng hồ bấm giờ. Cải thiện chế độ ngang cho máy tính bảng và iPhone Duo."
-  },
-  {
-   "title": "Sách không có số trang",
-   "text": "Sách không có số trang (ví dụ từ KOReader): ứng dụng hỏi tổng số trang."
-  },
-  {
-   "title": "Mẫu và chủ đề Bingo",
-   "text": "12 mẫu Bingo 4x4 mới và 12 mẫu 3x3 mới, chủ đề kinh dị vào tháng Mười Một và lãng mạn vào tháng Hai."
+   "text": "· Trang chủ với thanh bên được nhóm thành Mục tiêu, Việc đọc của tôi và Công cụ<br>· Đổi trạng thái sách từ thao tác nhanh và hoàn tác nếu bạn nhầm"
   },
   {
    "title": "KOSync",
-   "text": "Thời gian đọc lấy từ KOSync, nên bạn không phụ thuộc vào đồng hồ bấm giờ của ứng dụng."
+   "text": "KOSync với thời gian đọc thực của KOReader"
   },
   {
    "title": "Chọn ngẫu nhiên",
-   "text": "Chọn ngẫu nhiên trong Muốn đọc: Pagi quyết định giúp bạn."
+   "text": "Pagi chọn giúp bạn một cuốn từ Muốn đọc"
   },
   {
-   "title": "Wrapped",
-   "text": "Cải thiện Wrapped (mở vào ngày 26 tháng Mười Hai)."
+   "title": "Tìm kiếm không có kết quả",
+   "text": "Danh mục học từ các lượt tìm kiếm và quét ISBN không có kết quả và bổ sung những sách còn thiếu (từ ngày 15 tháng 11)"
+  },
+  {
+   "title": "Phản hồi và khảo sát",
+   "text": "· Email tùy chọn trong “Gửi phản hồi”, chỉ để mình có thể trả lời bạn<br>· Khảo sát về giao diện có thêm câu hỏi thứ ba, không bắt buộc, về màu sắc<br>· Thống kê sử dụng ẩn danh bao gồm giao diện bạn dùng và loại thẻ bạn chia sẻ, không bao giờ gồm nội dung của thẻ"
   },
   {
    "title": "Tiếng Trung phồn thể",
    "text": "Lecturameter giờ đã hỗ trợ tiếng Trung phồn thể."
+  },
+  {
+   "title": "Ngoài ra",
+   "text": "· Thông báo theo danh mục và thông báo tin mới của ứng dụng<br>· Có thông báo khi thêm sách từ tìm kiếm<br>· Ngày của các chu kỳ đọc trên một hàng, dễ chỉnh sửa hơn<br>· Bingo với 24 mẫu theo kích thước<br>· Trên iPhone, Live Activity của đồng hồ bấm giờ theo màu giao diện của bạn<br>· Bộ truyện trong CSV"
+  },
+  {
+   "title": "Sửa lỗi",
+   "text": "· Tiêu đề ở Bingo, Wrapped và các màn hình khác giờ nằm cùng độ cao như ở các menu còn lại<br>· Biểu tượng Bingo và Wrapped có lại màu sắc<br>· Bộ đếm sách theo trạng thái ở Trang chủ dễ nhìn hơn trong các giao diện Tối, OLED, Hoàng hôn, Aurora và Da<br>· Chỉ còn một cảnh báo cho sách thiếu dữ liệu: tam giác vàng biến mất, tam giác đỏ được giữ lại<br>· Tải lại bìa và thể loại sẽ cho bạn biết khi mọi thứ vốn đã ổn, và cảnh báo màu đỏ khi không tìm thấy gì đó<br>· Sao lưu Google Drive của các thư viện rất lớn không còn thất bại do thiếu bộ nhớ<br>· Nhiều bản sửa lỗi trên iPhone"
   }
  ],
  "home.whatsnew.title": "Ghi chú cập nhật v{{release_version}}",

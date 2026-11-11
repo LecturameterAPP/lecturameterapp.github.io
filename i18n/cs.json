@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Co přinese Lecturameter 3.9",
- "roadmap.3_9.sub": "Čtenářské výzvy pro celou komunitu, hra, kterou hraješ se <b>svými vlastními knihami</b>, a obnovená domovská obrazovka. Žádná pevná data: všechno vyjde, až to bude hotové.",
+ "roadmap.3_9.sub": "Poslední aktualizace roadmapy před spuštěním: téměř vše je hotové. Zbývá rychlé menu, zahájení čtení z widgetu knihy a týdenní a měsíční karty; poté přijdou testy na Androidu a iPhonu a verze 3.9 na Google Play a App Store, se dvěma událostmi. Žádná pevná data: všechno vyjde, až to bude hotové.",
  "roadmap.3_9.cards": [
   {
    "title": "Události",
    "text": "Globální výzva, Velké čtení: 14 dní společného čtení. Počítají se minuty z časovače, se společným cílem a živým žebříčkem. Lecturameter Quest, Zapomenutá knihovna: Vyber 3 knihy, zvol si cestu na mapě a poraz bosse. 5 úrovní a žebříček bodů. A dále: karta události, Pagi jako tvůj avatar, upozornění na události."
   },
   {
+   "title": "Rychlé menu",
+   "text": "Dřív bylo cesta z Bingo do Nastavení vedla přes Domů. Teď klepneš na tři tečky (···) vpravo nahoře a jsi tam hned."
+  },
+  {
+   "title": "Dva nové motivy Pro",
+   "text": "· Sešit a Lesík<br>· Motivy Pro lze koupit i jednotlivě nebo v balíčcích po 3, s náhledem, a obrazovka Pro je nová<br>· Vlastní hodiny časovače pro každý motiv<br>· Ikony Material místo emoji a čitelnější statistiky ve všech motivech"
+  },
+  {
+   "title": "Pozastaveno",
+   "text": "Odlož knihu na čas, aniž by ti to pokazilo statistiky"
+  },
+  {
+   "title": "Nelineární čtení",
+   "text": "Nelineární čtení pro antologie a básnické sbírky: překrývající se stránky se nepočítají dvakrát a ukazatel postupu je rozdělen na úseky"
+  },
+  {
+   "title": "Z widgetu knihy",
+   "text": "Začni číst z widgetu knihy, bez otevření aplikace"
+  },
+  {
+   "title": "Týdenní a měsíční karty",
+   "text": "Týdenní a měsíční souhrny s novým designem a více statistikami"
+  },
+  {
    "title": "Obnovené rozhraní na domovské obrazovce",
-   "text": "Ikony v liště seskupené do 3 plovoucích menu: Cíle (Události, Výzvy, Bingo), Moje čtení (Statistiky, Moje karty, Wrapped) a Nástroje (Upozornění, Tagy, Skener ISBN). Pořadí změníš dlouhým stisknutím. Počítadla u každé skupiny, lišta se při posouvání sbalí a v Soumraku se ikony střídají v oranžové a modré."
-  },
-  {
-   "title": "Karty knih",
-   "text": "Žádný koš ani volné hvězdičky (nově čip ★ 4.5), ikony Material místo emoji a tagy dole. V Opuštěno: stránka, kde čtení skončilo („Zastaveno na straně X z Y“). V Dokončeno: datum dočtení."
-  },
-  {
-   "title": "Tipy a zobrazení na šířku",
-   "text": "Nové tipy a tutoriál zmizel: všechno se vysvětluje tipy, plus upozornění na baterii při prvním použití časovače. Lepší zobrazení na šířku pro tablety a iPhone Duo."
-  },
-  {
-   "title": "Knihy bez počtu stránek",
-   "text": "Knihy bez počtu stránek (např. z KOReaderu): aplikace se zeptá na celkový počet stránek."
-  },
-  {
-   "title": "Šablony a témata bingo",
-   "text": "12 nových šablon bingo 4x4 a 12 nových 3x3, hororové téma v listopadu a romantické v únoru."
+   "text": "· Domů s lištou seskupenou do Cíle, Moje čtení a Nástroje<br>· Změň stav knihy z jejích rychlých akcí a vrať to, když se přepleteš"
   },
   {
    "title": "KOSync",
-   "text": "Čas čtení přichází z KOSync, takže nejsi závislý na časovači aplikace."
+   "text": "KOSync se skutečným časem čtení z KOReaderu"
   },
   {
    "title": "Náhodný výběr",
-   "text": "Náhodný výběr v Chci číst: Pagi rozhodne za tebe."
+   "text": "Pagi ti vybere knihu z Chci číst"
   },
   {
-   "title": "Wrapped",
-   "text": "Vylepšení Wrapped (otevře se 26. prosince)."
+   "title": "Hledání bez výsledku",
+   "text": "Katalog se učí z hledání a skenů ISBN bez výsledku a doplňuje chybějící knihy (od 15. listopadu)"
+  },
+  {
+   "title": "Zpětná vazba a anketa",
+   "text": "· Nepovinný e-mail v „Odeslat zpětnou vazbu“, jen abych ti mohl odpovědět<br>· Anketa o tématech získává třetí, nepovinnou otázku o barvách<br>· Anonymní statistiky používání zahrnují téma, které používáš, a typ karty, kterou sdílíš, nikdy však její obsah"
   },
   {
    "title": "Tradiční čínština",
    "text": "Lecturameter nově umí jazyk: tradiční čínština."
+  },
+  {
+   "title": "A dále",
+   "text": "· Oznámení podle kategorií a upozornění na novinky v aplikaci<br>· Upozornění při přidání knihy z vyhledávání<br>· Data cyklů čtení v jediném řádku, snáz se upravují<br>· Bingo s 24 šablonami podle velikosti<br>· Na iPhonu Live Activity časovače v barvách tvého motivu<br>· Série v CSV"
+  },
+  {
+   "title": "Opravy",
+   "text": "· Nadpisy v Bingo, Wrapped a dalších obrazovkách jsou nyní ve stejné výšce jako v ostatních menu<br>· Ikony Bingo a Wrapped dostaly zpět své barvy<br>· Počítadla knih podle stavu na Domů jsou lépe vidět v motivech Tmavý, OLED, Soumrak, Aurora a Kůže<br>· Jediné upozornění pro knihy s chybějícími údaji: žlutý trojúhelník zmizel a zůstal červený<br>· Opětovné načtení obálky a žánru ti řekne, že už bylo vše v pořádku, a červeně upozorní, když něco nenajde<br>· Zálohy velmi velkých knihoven na Google Drive už nepadají kvůli nedostatku paměti<br>· Několik oprav na iPhonu"
   }
  ],
  "home.whatsnew.title": "Poznámky k opravě v{{release_version}}",

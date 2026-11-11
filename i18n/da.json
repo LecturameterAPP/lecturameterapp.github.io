@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Det kommer i Lecturameter 3.9",
- "roadmap.3_9.sub": "Læseudfordringer for hele fællesskabet, et spil med <b>dine egne bøger</b> og en fornyet startskærm. Ingen faste datoer: alt udkommer, når det er klar.",
+ "roadmap.3_9.sub": "Den sidste roadmap-opdatering før lanceringen: næsten alt er klart. Tilbage mangler hurtigmenuen, at begynde at læse fra bogens widget og uge- og månedskortene; derefter kommer test på Android og iPhone og 3.9 på Google Play og App Store, med de to events. Ingen faste datoer: alt udkommer, når det er klar.",
  "roadmap.3_9.cards": [
   {
    "title": "Events",
    "text": "Global udfordring, Den store læsning: 14 dage, hvor vi læser sammen. Timerens minutter tæller, med et fælles mål og en live rangliste. Lecturameter Quest, Det glemte bibliotek: Vælg 3 bøger, find din vej på kortet, og besejr bossen. 5 niveauer og en pointrangliste. Derudover: Eventkort, Pagi som din avatar, eventnotifikationer."
   },
   {
+   "title": "Hurtigmenu",
+   "text": "Før skulle du forbi Hjem for at komme fra Bingo til Indstillinger. Nu trykker du på de tre prikker (···) øverst til højre og går direkte derhen."
+  },
+  {
+   "title": "To nye Pro-temaer",
+   "text": "· Notesbog og Skov<br>· Pro-temaer kan også købes enkeltvis eller i pakker á 3, med forhåndsvisning, og Pro-skærmen er ny<br>· Et eget timerur til hvert tema<br>· Material-ikoner i stedet for emojis og mere læsbar statistik i alle temaer"
+  },
+  {
+   "title": "Pauset",
+   "text": "Læg en bog væk et stykke tid uden at ødelægge din statistik"
+  },
+  {
+   "title": "Ikke-lineær læsning",
+   "text": "Ikke-lineær læsning til antologier og digtsamlinger: overlappende sider tæller ikke to gange, og statuslinjen er delt i afsnit"
+  },
+  {
+   "title": "Fra bogens widget",
+   "text": "Begynd at læse fra bogens widget uden at åbne appen"
+  },
+  {
+   "title": "Uge- og månedskort",
+   "text": "Ugentlige og månedlige oversigter med nyt design og flere statistikker"
+  },
+  {
    "title": "Fornyet brugerflade på startskærmen",
-   "text": "Ikoner i bjælken samlet i 3 svævende menuer: Mål (Events, Udfordringer, Bingo), Min læsning (Statistik, Mine kort, Wrapped) og Værktøjer (Påmindelser, Tags, ISBN-scanner). Omarranger dem med et langt tryk. Tællere pr. gruppe, bjælken skjules, når du scroller, og i Skumring skifter ikonerne mellem orange og blå."
-  },
-  {
-   "title": "Bogkort",
-   "text": "Ingen skraldespand eller løse stjerner (nu en ★ 4.5-chip), Material-ikoner i stedet for emojis og tags nederst. Under Opgivet: den side, hvor du stoppede (\"Du stoppede på side X af Y\"). Under Læst: den dato, du blev færdig."
-  },
-  {
-   "title": "Tips og liggende format",
-   "text": "Nye tips, og tutorialen er væk: alt forklares med tips, plus en batteribesked første gang du bruger timeren. Forbedringer i liggende format til tablets og iPhone Duo."
-  },
-  {
-   "title": "Bøger uden sidetal",
-   "text": "Bøger uden sideantal (f.eks. fra KOReader): appen spørger efter det samlede sideantal."
-  },
-  {
-   "title": "Bingoskabeloner og -temaer",
-   "text": "12 nye 4x4- og 12 nye 3x3-bingoskabeloner, gysertema i november og romantik i februar."
+   "text": "· Hjem med rail grupperet i Mål, Mine læsninger og Værktøjer<br>· Skift en bogs status fra dens genveje, og fortryd, hvis du kommer til at fejle"
   },
   {
    "title": "KOSync",
-   "text": "Læsetiden kommer fra KOSync, så du ikke er afhængig af appens timer."
+   "text": "KOSync med KOReaders faktiske læsetid"
   },
   {
    "title": "Tilfældig udvælgelse",
-   "text": "Tilfældig vælger i Vil læse: Pagi bestemmer for dig."
+   "text": "Pagi vælger en bog til dig fra Vil læse"
   },
   {
-   "title": "Wrapped",
-   "text": "Forbedringer i Wrapped (åbner den 26. december)."
+   "title": "Søgninger uden resultat",
+   "text": "Kataloget lærer af søgninger og ISBN-scanninger uden resultat og tilføjer de manglende bøger (fra 15. november)"
+  },
+  {
+   "title": "Feedback og spørgeskema",
+   "text": "· Valgfri e-mail i “Send feedback”, kun så jeg kan svare dig<br>· Spørgeskemaet om temaer får et tredje, valgfrit spørgsmål om farver<br>· Anonym brugsstatistik omfatter det tema, du bruger, og typen af kort, du deler, aldrig dets indhold"
   },
   {
    "title": "Traditionelt kinesisk",
    "text": "Lecturameter taler nu traditionelt kinesisk."
+  },
+  {
+   "title": "Derudover",
+   "text": "· Notifikationer efter kategori og beskeder om nyheder i appen<br>· En besked, når du tilføjer en bog fra søgningen<br>· Datoer for læsecyklusser på én række, lettere at redigere<br>· Bingo med 24 skabeloner efter størrelse<br>· På iPhone, timerens Live Activity i dit temas farver<br>· Serie i CSV"
+  },
+  {
+   "title": "Rettelser",
+   "text": "· Titler i Bingo, Wrapped og andre skærme sidder nu i samme højde som i de andre menuer<br>· Ikonerne for Bingo og Wrapped har fået deres farver tilbage<br>· Bogtællerne pr. status på Hjem er lettere at se i Mørk, OLED, Skumring, Aurora og Læder<br>· Én enkelt advarsel for bøger med manglende data: den gule trekant er væk, og den røde bliver<br>· Genindlæsning af omslag og genre fortæller dig, når alt allerede var i orden, og advarer med rødt, når noget ikke findes<br>· Google Drive-sikkerhedskopier af meget store biblioteker fejler ikke længere på grund af hukommelsesmangel<br>· Flere rettelser på iPhone"
   }
  ],
  "home.whatsnew.title": "Patch-noter v{{release_version}}",

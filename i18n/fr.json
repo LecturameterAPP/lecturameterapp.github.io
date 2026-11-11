@@ -582,47 +582,67 @@
  ],
  "release.3_9.fixes": [],
  "roadmap.3_9.heading": "Ce qui arrive dans Lecturameter 3.9",
- "roadmap.3_9.sub": "Des défis de lecture pour toute la communauté, un jeu qui se joue avec <b>tes propres livres</b> et un accueil renouvelé. Pas de dates fixes : tout sort quand c'est prêt.",
+ "roadmap.3_9.sub": "La dernière mise à jour du roadmap avant le lancement : presque tout est fait. Il reste le menu rapide, commencer à lire depuis le widget du livre et les cartes de la semaine et du mois ; ensuite viennent les tests sur Android et iPhone et la 3.9 sur Google Play et l'App Store, avec les deux événements. Pas de dates fixes : tout sort quand c'est prêt.",
  "roadmap.3_9.cards": [
   {
    "title": "Événements",
    "text": "Défi mondial, La Grande Lecture : 14 jours à lire ensemble. Les minutes du chronomètre comptent, avec un objectif commun et un classement en direct. Lecturameter Quest, La Bibliothèque oubliée : Choisis 3 livres, trace ton chemin sur la carte et bats le boss. 5 niveaux et un classement par points. Et aussi : carte d'événement, Pagi comme avatar, alertes d'événement."
   },
   {
+   "title": "Menu rapide",
+   "text": "Pour aller de Bingo à Paramètres, il fallait d’abord passer par Accueil. Désormais, vous touchez les trois points (···) en haut à droite et vous y allez directement."
+  },
+  {
+   "title": "Deux nouveaux thèmes Pro",
+   "text": "· Cahier et Sous-bois<br>· Les thèmes Pro peuvent aussi s’acheter à l’unité ou par lots de 3, avec aperçu, et l’écran Pro est nouveau<br>· Une horloge de chrono propre à chaque thème<br>· Icônes Material à la place des emojis et statistiques plus lisibles dans tous les thèmes"
+  },
+  {
+   "title": "En pause",
+   "text": "Mets un livre de côté un moment sans fausser tes statistiques"
+  },
+  {
+   "title": "Lecture non linéaire",
+   "text": "Lecture non linéaire pour les anthologies et recueils de poèmes : les pages qui se chevauchent ne comptent pas deux fois et la barre de progression est découpée en segments"
+  },
+  {
+   "title": "Depuis le widget du livre",
+   "text": "Commencez à lire depuis le widget du livre, sans ouvrir l’app"
+  },
+  {
+   "title": "Cartes de la semaine et du mois",
+   "text": "Résumés hebdomadaires et mensuels avec un nouveau design et plus de statistiques"
+  },
+  {
    "title": "Interface renouvelée de l'accueil",
-   "text": "Icônes de la barre regroupées en 3 menus flottants : Objectifs (Événements, Défis, Bingos), Ma lecture (Statistiques, Mes cartes, Wrapped) et Outils (Rappels, Tags, Scanner ISBN). Réorganise-les par un appui long. Compteurs par groupe, la barre se replie quand tu fais défiler, et dans Crépuscule les icônes alternent orange et bleu."
-  },
-  {
-   "title": "Fiches de livre",
-   "text": "Plus de corbeille ni d'étoiles isolées (désormais une pastille ★ 4.5), des icônes Material à la place des emojis et les tags en bas. Dans Abandonné : la page où tu t'es arrêté (« Tu t'es arrêté à la page X sur Y »). Dans Terminés : la date de fin."
-  },
-  {
-   "title": "Astuces et mode paysage",
-   "text": "Nouvelles astuces et plus de tutoriel : tout s'explique avec des astuces, plus un avis sur la batterie à la première utilisation du chronomètre. Améliorations du mode paysage pour les tablettes et l'iPhone Duo."
-  },
-  {
-   "title": "Livres sans nombre de pages",
-   "text": "Livres sans nombre de pages (par ex. depuis KOReader) : l'app demande le total de pages."
-  },
-  {
-   "title": "Modèles et thèmes de bingo",
-   "text": "12 nouveaux modèles de bingo 4x4 et 12 en 3x3, thème horreur en novembre et romance en février."
+   "text": "· Accueil avec le rail regroupé en Objectifs, Mes lectures et Outils<br>· Changez le statut d’un livre depuis ses raccourcis et annulez si vous vous trompez"
   },
   {
    "title": "KOSync",
-   "text": "Le temps de lecture vient de KOSync, tu ne dépends plus du chronomètre de l'app."
+   "text": "KOSync avec le temps de lecture réel de KOReader"
   },
   {
    "title": "Sélecteur aléatoire",
-   "text": "Tirage au sort dans À lire : Pagi choisit pour toi."
+   "text": "Pagi te choisit un livre dans À lire"
   },
   {
-   "title": "Wrapped",
-   "text": "Améliorations de Wrapped (ouverture le 26 décembre)."
+   "title": "Recherches sans résultat",
+   "text": "Le catalogue apprend des recherches et scans d’ISBN sans résultat et ajoute les livres manquants (à partir du 15 novembre)"
+  },
+  {
+   "title": "Commentaires et sondage",
+   "text": "· E-mail facultatif dans « Envoyer un commentaire », uniquement pour pouvoir vous répondre<br>· Le sondage sur les thèmes ajoute une troisième question, facultative, sur les couleurs<br>· Les statistiques d'utilisation anonymes incluent le thème que tu utilises et le type de carte que tu partages, jamais son contenu"
   },
   {
    "title": "Chinois traditionnel",
    "text": "Lecturameter parle désormais chinois traditionnel."
+  },
+  {
+   "title": "Et aussi",
+   "text": "· Notifications par catégorie et alertes sur les nouveautés de l'app<br>· Un avis lorsque vous ajoutez un livre depuis la recherche<br>· Dates des cycles de lecture sur une seule ligne, plus faciles à modifier<br>· Bingo avec 24 modèles selon la taille<br>· Sur iPhone, la Live Activity du chrono aux couleurs de votre thème<br>· Série dans le CSV"
+  },
+  {
+   "title": "Corrections",
+   "text": "· Les titres de Bingo, Wrapped et d’autres écrans sont désormais à la même hauteur que dans les autres menus<br>· Les icônes de Bingo et Wrapped retrouvent leurs couleurs<br>· Les compteurs de livres par statut dans Accueil sont plus visibles dans Sombre, OLED, Crépuscule, Aurore et Cuir<br>· Un seul avertissement pour les livres aux données manquantes : le triangle jaune disparaît et le rouge reste<br>· Recharger couverture et genre vous indique quand tout allait déjà bien, et avertit en rouge quand quelque chose est introuvable<br>· Les sauvegardes Google Drive de très grandes bibliothèques n’échouent plus par manque de mémoire<br>· Plusieurs corrections sur iPhone"
   }
  ],
  "home.whatsnew.title": "Notes de mise à jour v{{release_version}}",
