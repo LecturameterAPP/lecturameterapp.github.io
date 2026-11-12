@@ -95,6 +95,13 @@
         navPills.addEventListener('click', function (e) {
             if (e.target.tagName === 'A') navPills.classList.remove('open');
         });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && navPills.classList.contains('open')) {
+                navPills.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', 'false');
+                hamburger.focus();
+            }
+        });
     }
 
     // ─── DESPLEGABLES DE LA NAV (teclado, toque, RTL) ───
