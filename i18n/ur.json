@@ -972,5 +972,12 @@
    "title": "عمومی شارٹ کٹس",
    "text": "ہوم · ترتیبات · ڈیٹا اور بیک اپ"
   }
- ]
+ ],
+ "common.nav.universe": "کائنات",
+ "common.nav.resources": "وسائل",
+ "common.nav.platforms": "پلیٹ فارمز",
+ "common.nav.news": "خبریں",
+ "common.nav.legal": "قانونی",
+ "common.nav.all_features": "تمام خصوصیات",
+ "common.footer.legal_contact": "قانونی اور رابطہ"
 }

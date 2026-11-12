@@ -972,5 +972,12 @@
    "title": "సాధారణ షార్ట్‌కట్‌లు",
    "text": "హోమ్ · సెట్టింగ్‌లు · డేటా మరియు బ్యాకప్‌లు"
   }
- ]
+ ],
+ "common.nav.universe": "విశ్వం",
+ "common.nav.resources": "వనరులు",
+ "common.nav.platforms": "ప్లాట్‌ఫారమ్‌లు",
+ "common.nav.news": "వార్తలు",
+ "common.nav.legal": "చట్టపరమైనవి",
+ "common.nav.all_features": "అన్ని ఫీచర్లు",
+ "common.footer.legal_contact": "చట్టపరమైనవి మరియు సంప్రదింపు"
 }

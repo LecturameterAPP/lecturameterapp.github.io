@@ -972,5 +972,12 @@
    "title": "ਆਮ ਸ਼ਾਰਟਕੱਟ",
    "text": "ਹੋਮ · ਸੈਟਿੰਗਾਂ · ਡਾਟਾ ਅਤੇ ਬੈਕਅੱਪ"
   }
- ]
+ ],
+ "common.nav.universe": "ਬ੍ਰਹਿਮੰਡ",
+ "common.nav.resources": "ਸਰੋਤ",
+ "common.nav.platforms": "ਪਲੇਟਫਾਰਮ",
+ "common.nav.news": "ਖ਼ਬਰਾਂ",
+ "common.nav.legal": "ਕਾਨੂੰਨੀ",
+ "common.nav.all_features": "ਸਾਰੀਆਂ ਸੁਵਿਧਾਵਾਂ",
+ "common.footer.legal_contact": "ਕਾਨੂੰਨੀ ਅਤੇ ਸੰਪਰਕ"
 }

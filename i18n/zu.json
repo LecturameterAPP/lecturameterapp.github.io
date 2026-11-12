@@ -972,5 +972,12 @@
    "title": "Izinqamuleli ezijwayelekile",
    "text": "Ikhaya · Izilungiselelo · Idatha namakhophi"
   }
- ]
+ ],
+ "common.nav.universe": "Indawo yonke",
+ "common.nav.resources": "Izinsiza",
+ "common.nav.platforms": "Amapulatifomu",
+ "common.nav.news": "Izindaba",
+ "common.nav.legal": "Ezomthetho",
+ "common.nav.all_features": "Zonke izici",
+ "common.footer.legal_contact": "Ezomthetho nokuxhumana"
 }

@@ -972,5 +972,12 @@
    "title": "সাধারণ শর্টকাট",
    "text": "হোম · সেটিংস · ডেটা এবং ব্যাকআপ"
   }
- ]
+ ],
+ "common.nav.universe": "মহাবিশ্ব",
+ "common.nav.resources": "রিসোর্স",
+ "common.nav.platforms": "প্ল্যাটফর্ম",
+ "common.nav.news": "খবর",
+ "common.nav.legal": "আইনি",
+ "common.nav.all_features": "সব ফিচার",
+ "common.footer.legal_contact": "আইনি ও যোগাযোগ"
 }

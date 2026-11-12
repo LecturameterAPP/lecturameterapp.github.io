@@ -133,7 +133,7 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=7.0">
+    <link rel="stylesheet" href="../styles.css?v=8.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script src="/consent.js" defer data-policy="./cookies/"></script>
@@ -212,27 +212,42 @@
         </a>
         <ul class="nav-pills">
             <li class="has-dropdown">
-                <a href="#features" class="active">फ़ीचर <span class="caret" aria-hidden="true">▾</span></a>
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">फ़ीचर <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="../en/features/reading-timer/">पढ़ने का टाइमर</a></li>
                     <li><a href="../en/features/reading-tracker/">रीडिंग ट्रैकर</a></li>
                     <li><a href="../en/features/reading-statistics/">पढ़ने के आँकड़े</a></li>
                     <li><a href="../en/features/goodreads-alternative/">Goodreads का विकल्प</a></li>
                     <li><a href="../en/features/book-catalog/">किताबों का कैटलॉग</a></li>
+                    <li class="nav-dd-all"><a href="#features">सभी सुविधाएँ</a></li>
                 </ul>
             </li>
             <li><a href="#themes">थीम</a></li>
-            <li><a href="#events">इवेंट</a></li>
             <li><a href="#pricing">Pro</a></li>
-            <li><a href="#whatsnew">पैच नोट्स</a></li>
-            <li><a href="#history">इतिहास</a></li>
-            <li><a href="#ios-differences">iOS</a></li>
-            <li><a href="./lecturameter-1999/">1999</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="./blog/">ब्लॉग</a></li>
+            <li class="has-dropdown">
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">यूनिवर्स <span class="caret" aria-hidden="true">&#x25BE;</span></button>
+                <ul class="nav-dropdown">
+                    <li><a href="./">Lecturameter</a></li>
+                    <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">संसाधन <span class="caret" aria-hidden="true">&#x25BE;</span></button>
+                <ul class="nav-dropdown">
+                    <li><a href="./blog/">ब्लॉग</a></li>
+                    <li><a href="#whatsnew">समाचार</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#ios-differences">प्लेटफ़ॉर्म</a></li>
+                    <li class="nav-dd-label" role="presentation">कानूनी</li>
+                    <li class="nav-dd-sub"><a href="./privacy/">गोपनीयता नीति</a></li>
+                    <li class="nav-dd-sub"><a href="./terms/">सेवा की शर्तें</a></li>
+                    <li class="nav-dd-sub"><a href="./cookies/">कुकी नीति</a></li>
+                    <li class="nav-dd-all"><a href="../contact.html">संपर्क</a></li>
+                </ul>
+            </li>
         </ul>
         <div class="nav-controls">
-            <button class="nav-theme-btn" aria-label="थीम बदलें">☾</button>
+            <button class="nav-theme-btn" aria-label="थीम बदलें">&#x263E;</button>
             <div class="lang-picker">
                 <button type="button" class="nav-lang-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-panel" aria-label="भाषा">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
@@ -302,7 +317,7 @@
                 डाउनलोड करें
             </a>
         </div>
-        <button class="nav-hamburger" aria-label="मेन्यू">
+        <button class="nav-hamburger" aria-label="मेन्यू" aria-expanded="false">
             <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
     </div>
@@ -1243,21 +1258,36 @@
             <div class="footer-col">
                 <h4>प्रोडक्ट</h4>
                 <a href="#features">फ़ीचर</a>
+                <a href="../en/features/reading-timer/">पढ़ने का टाइमर</a>
+                <a href="../en/features/reading-tracker/">रीडिंग ट्रैकर</a>
+                <a href="../en/features/reading-statistics/">पढ़ने के आँकड़े</a>
+                <a href="../en/features/goodreads-alternative/">Goodreads का विकल्प</a>
+                <a href="../en/features/book-catalog/">किताबों का कैटलॉग</a>
+                <a href="#themes">थीम</a>
                 <a href="#events">इवेंट</a>
                 <a href="#pricing">कीमतें</a>
                 <a href="../precios-regionales.html">क्षेत्रीय कीमतें</a>
-                <a href="#whatsnew">पैच नोट्स</a>
-                <a href="#history">संस्करण इतिहास</a>
-                <a href="./lecturameter-1999/">Lecturameter 99</a>
-                <a href="#faq">FAQ</a>
             </div>
             <div class="footer-col">
-                <h4>संपर्क</h4>
-                <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
+                <h4>यूनिवर्स</h4>
+                <a href="./">Lecturameter</a>
+                <a href="./lecturameter-1999/">Lecturameter 99</a>
+            </div>
+            <div class="footer-col">
+                <h4>संसाधन</h4>
+                <a href="./blog/">ब्लॉग</a>
+                <a href="#whatsnew">समाचार</a>
+                <a href="#faq">FAQ</a>
+                <a href="#ios-differences">प्लेटफ़ॉर्म</a>
+            </div>
+            <div class="footer-col">
+                <h4>कानूनी और संपर्क</h4>
                 <a href="./privacy/">गोपनीयता नीति</a>
                 <a href="./terms/">सेवा की शर्तें</a>
                 <a href="./cookies/">कुकी नीति</a>
                 <a href="#" data-lm-cookie-prefs>कुकी वरीयताएँ</a>
+                <a href="../contact.html">संपर्क</a>
+                <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1293,15 +1323,6 @@
         </div>
 
         <p class="footer-signature">किताबों के बीच, कई देर रातों में बनाया गया।</p>
-        <p class="footer-signature" style="margin-top:1.5rem;font-size:0.9em;opacity:0.85;">
-            फ़ीचर:
-            <a href="../en/features/reading-timer/">पढ़ने का टाइमर</a> &middot;
-            <a href="../en/features/reading-tracker/">रीडिंग ट्रैकर</a> &middot;
-            <a href="../en/features/reading-statistics/">पढ़ने के आँकड़े</a> &middot;
-            <a href="../en/features/goodreads-alternative/">Goodreads का विकल्प</a> &middot;
-            <a href="../en/features/book-catalog/">किताबों का कैटलॉग</a> &middot;
-            <a href="./blog/">ब्लॉग</a>
-        </p>
         <p class="footer-note">उसी निर्माता की ओर से: <strong>Drakehold</strong>, आपका निजी आर्काइव, जो अपने आप व्यवस्थित हो जाता है। <a href="https://drakehold.pages.dev/?utm_source=lecturameter" target="_blank" rel="noopener">प्रतीक्षा सूची में शामिल हों →</a></p>
         <div class="footer-bottom">
             <span>&copy; 2026 Lecturameter &middot; स्वतंत्र प्रोजेक्ट</span>
@@ -1318,7 +1339,7 @@
 </div>
 
 <script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi आपके लिए ताली बजा रहा है!", "चमको, छोटे सितारे!", "शश्श, मैं पढ़ रहा हूँ।", "Pagi देख रहा है…"], "pagi_angry": ["उफ़! दर्द हुआ!", "बस करो, इतने क्लिक!", "ग्र्र, मुझे अकेला छोड़ दो।", "अब मज़ा नहीं आ रहा।"], "consent_title": "कुकी और स्टोरेज", "consent_body": "हम एक थर्ड-पार्टी विजेट (StartupBar) इस्तेमाल करते हैं, जो आपके ब्राउज़र में डेटा सहेजता है और इंप्रेशन गिनता है। यह तभी लोड होता है जब आप स्वीकार करें। आपकी थीम, भाषा और बंद की गई सूचना बिना पूछे सहेज ली जाती हैं, क्योंकि उन्हें आपने ही चुना है।", "consent_accept": "स्वीकार करें", "consent_reject": "अस्वीकार करें", "consent_policy": "कुकी नीति", "consent_prefs": "कुकी वरीयताएँ"}</script>
-<script src="../main.js?v=5.7"></script>
+<script src="../main.js?v=8.0"></script>
 <script src="../hit.js?v=1" defer></script>
 </body>
 </html>

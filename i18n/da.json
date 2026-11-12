@@ -972,5 +972,12 @@
    "title": "Generelle genveje",
    "text": "Hjem · Indstillinger · Data og sikkerhedskopier"
   }
- ]
+ ],
+ "common.nav.universe": "Univers",
+ "common.nav.resources": "Ressourcer",
+ "common.nav.platforms": "Platforme",
+ "common.nav.news": "Nyheder",
+ "common.nav.legal": "Juridisk",
+ "common.nav.all_features": "Alle funktioner",
+ "common.footer.legal_contact": "Juridisk og kontakt"
 }

@@ -972,5 +972,12 @@
    "title": "Accesos generales",
    "text": "Home · Ajustes · Datos y copias"
   }
- ]
+ ],
+ "common.nav.universe": "Universo",
+ "common.nav.resources": "Recursos",
+ "common.nav.platforms": "Plataformas",
+ "common.nav.news": "Novedades",
+ "common.nav.legal": "Legal",
+ "common.nav.all_features": "Todas las funciones",
+ "common.footer.legal_contact": "Legal y contacto"
 }

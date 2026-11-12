@@ -972,5 +972,12 @@
    "title": "일반 바로가기",
    "text": "홈 · 설정 · 데이터 및 백업"
   }
- ]
+ ],
+ "common.nav.universe": "유니버스",
+ "common.nav.resources": "자료",
+ "common.nav.platforms": "플랫폼",
+ "common.nav.news": "소식",
+ "common.nav.legal": "법적 고지",
+ "common.nav.all_features": "모든 기능",
+ "common.footer.legal_contact": "법적 고지 및 문의"
 }

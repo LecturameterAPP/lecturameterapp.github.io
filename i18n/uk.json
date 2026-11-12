@@ -972,5 +972,12 @@
    "title": "Загальні розділи",
    "text": "Головна · Налаштування · Дані та копії"
   }
- ]
+ ],
+ "common.nav.universe": "Всесвіт",
+ "common.nav.resources": "Ресурси",
+ "common.nav.platforms": "Платформи",
+ "common.nav.news": "Новини",
+ "common.nav.legal": "Правова інформація",
+ "common.nav.all_features": "Усі можливості",
+ "common.footer.legal_contact": "Правова інформація та контакти"
 }

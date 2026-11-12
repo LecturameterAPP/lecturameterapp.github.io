@@ -29,10 +29,18 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">{{@t:common.nav.resources}} <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a {{@href:link_blog}}{{cur_blog}}>{{@t:common.nav.blog}}</a></li>
+{{#if show_news}}
                     <li><a {{@href:link_page_news}}{{cur_news}}>{{@t:common.nav.news}}</a></li>
+{{/if}}
+{{#if show_roadmap}}
                     <li><a {{@href:link_page_roadmap}}{{cur_roadmap}}>{{@t:common.nav.roadmap}}</a></li>
+{{/if}}
+{{#if show_faq}}
                     <li><a {{@href:link_page_faq}}{{cur_faq}}>{{@t:common.nav.faq}}</a></li>
+{{/if}}
+{{#if show_platforms}}
                     <li><a {{@href:link_page_platforms}}{{cur_platforms}}>{{@t:common.nav.platforms}}</a></li>
+{{/if}}
                     <li class="nav-dd-label" role="presentation">{{@t:common.nav.legal}}</li>
                     <li class="nav-dd-sub"><a {{@href:link_privacy}}{{cur_privacy}}>{{@t:common.footer.privacy_policy}}</a></li>
                     <li class="nav-dd-sub"><a {{@href:link_terms}}{{cur_terms}}>{{@t:common.footer.terms_of_service}}</a></li>

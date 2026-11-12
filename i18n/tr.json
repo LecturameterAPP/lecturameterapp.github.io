@@ -972,5 +972,12 @@
    "title": "Genel erişimler",
    "text": "Ana sayfa · Ayarlar · Veriler ve yedekler"
   }
- ]
+ ],
+ "common.nav.universe": "Evren",
+ "common.nav.resources": "Kaynaklar",
+ "common.nav.platforms": "Platformlar",
+ "common.nav.news": "Haberler",
+ "common.nav.legal": "Yasal",
+ "common.nav.all_features": "Tüm özellikler",
+ "common.footer.legal_contact": "Yasal ve iletişim"
 }

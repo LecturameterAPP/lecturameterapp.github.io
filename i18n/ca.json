@@ -972,5 +972,12 @@
    "title": "Accessos generals",
    "text": "Inici · Ajustaments · Dades i còpies"
   }
- ]
+ ],
+ "common.nav.universe": "Univers",
+ "common.nav.resources": "Recursos",
+ "common.nav.platforms": "Plataformes",
+ "common.nav.news": "Novetats",
+ "common.nav.legal": "Legal",
+ "common.nav.all_features": "Totes les funcions",
+ "common.footer.legal_contact": "Legal i contacte"
 }

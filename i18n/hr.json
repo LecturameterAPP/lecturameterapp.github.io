@@ -972,5 +972,12 @@
    "title": "Opći prečaci",
    "text": "Početna · Postavke · Podaci i sigurnosne kopije"
   }
- ]
+ ],
+ "common.nav.universe": "Svemir",
+ "common.nav.resources": "Resursi",
+ "common.nav.platforms": "Platforme",
+ "common.nav.news": "Novosti",
+ "common.nav.legal": "Pravne informacije",
+ "common.nav.all_features": "Sve značajke",
+ "common.footer.legal_contact": "Pravne informacije i kontakt"
 }

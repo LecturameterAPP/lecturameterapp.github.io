@@ -133,7 +133,7 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=7.0">
+    <link rel="stylesheet" href="../styles.css?v=8.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script src="/consent.js" defer data-policy="./cookies/"></script>
@@ -212,27 +212,42 @@
         </a>
         <ul class="nav-pills">
             <li class="has-dropdown">
-                <a href="#features" class="active">Funkcijas <span class="caret" aria-hidden="true">▾</span></a>
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Funkcijas <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="../en/features/reading-timer/">Lasīšanas taimeris</a></li>
                     <li><a href="../en/features/reading-tracker/">Lasīšanas uzskaite</a></li>
                     <li><a href="../en/features/reading-statistics/">Lasīšanas statistika</a></li>
                     <li><a href="../en/features/goodreads-alternative/">Goodreads alternatīva</a></li>
                     <li><a href="../en/features/book-catalog/">Grāmatu katalogs</a></li>
+                    <li class="nav-dd-all"><a href="#features">Visas funkcijas</a></li>
                 </ul>
             </li>
             <li><a href="#themes">Tēmas</a></li>
-            <li><a href="#events">Pasākumi</a></li>
             <li><a href="#pricing">Pro</a></li>
-            <li><a href="#whatsnew">Ielāpa piezīmes</a></li>
-            <li><a href="#history">Vēsture</a></li>
-            <li><a href="#ios-differences">iOS</a></li>
-            <li><a href="./lecturameter-1999/">1999</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="./blog/">Blogs</a></li>
+            <li class="has-dropdown">
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Visums <span class="caret" aria-hidden="true">&#x25BE;</span></button>
+                <ul class="nav-dropdown">
+                    <li><a href="./">Lecturameter</a></li>
+                    <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Resursi <span class="caret" aria-hidden="true">&#x25BE;</span></button>
+                <ul class="nav-dropdown">
+                    <li><a href="./blog/">Blogs</a></li>
+                    <li><a href="#whatsnew">Jaunumi</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#ios-differences">Platformas</a></li>
+                    <li class="nav-dd-label" role="presentation">Juridiskā informācija</li>
+                    <li class="nav-dd-sub"><a href="./privacy/">Privātuma politika</a></li>
+                    <li class="nav-dd-sub"><a href="./terms/">Pakalpojuma noteikumi</a></li>
+                    <li class="nav-dd-sub"><a href="./cookies/">Sīkdatņu politika</a></li>
+                    <li class="nav-dd-all"><a href="../contact.html">Kontakti</a></li>
+                </ul>
+            </li>
         </ul>
         <div class="nav-controls">
-            <button class="nav-theme-btn" aria-label="Mainīt tēmu">☾</button>
+            <button class="nav-theme-btn" aria-label="Mainīt tēmu">&#x263E;</button>
             <div class="lang-picker">
                 <button type="button" class="nav-lang-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-panel" aria-label="Valoda">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
@@ -302,7 +317,7 @@
                 Lejupielādēt
             </a>
         </div>
-        <button class="nav-hamburger" aria-label="Izvēlne">
+        <button class="nav-hamburger" aria-label="Izvēlne" aria-expanded="false">
             <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
     </div>
@@ -1243,21 +1258,36 @@
             <div class="footer-col">
                 <h4>Produkts</h4>
                 <a href="#features">Funkcijas</a>
+                <a href="../en/features/reading-timer/">Lasīšanas taimeris</a>
+                <a href="../en/features/reading-tracker/">Lasīšanas uzskaite</a>
+                <a href="../en/features/reading-statistics/">Lasīšanas statistika</a>
+                <a href="../en/features/goodreads-alternative/">Goodreads alternatīva</a>
+                <a href="../en/features/book-catalog/">Grāmatu katalogs</a>
+                <a href="#themes">Tēmas</a>
                 <a href="#events">Pasākumi</a>
                 <a href="#pricing">Cenas</a>
                 <a href="../precios-regionales.html">Reģionālās cenas</a>
-                <a href="#whatsnew">Ielāpa piezīmes</a>
-                <a href="#history">Versiju vēsture</a>
-                <a href="./lecturameter-1999/">Lecturameter 99</a>
-                <a href="#faq">FAQ</a>
             </div>
             <div class="footer-col">
-                <h4>Kontakti</h4>
-                <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
+                <h4>Visums</h4>
+                <a href="./">Lecturameter</a>
+                <a href="./lecturameter-1999/">Lecturameter 99</a>
+            </div>
+            <div class="footer-col">
+                <h4>Resursi</h4>
+                <a href="./blog/">Blogs</a>
+                <a href="#whatsnew">Jaunumi</a>
+                <a href="#faq">FAQ</a>
+                <a href="#ios-differences">Platformas</a>
+            </div>
+            <div class="footer-col">
+                <h4>Juridiskā informācija un kontakti</h4>
                 <a href="./privacy/">Privātuma politika</a>
                 <a href="./terms/">Pakalpojuma noteikumi</a>
                 <a href="./cookies/">Sīkdatņu politika</a>
                 <a href="#" data-lm-cookie-prefs>Sīkdatņu preferences</a>
+                <a href="../contact.html">Kontakti</a>
+                <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1293,15 +1323,6 @@
         </div>
 
         <p class="footer-signature">Radīts starp grāmatām daudzās vēlās naktīs.</p>
-        <p class="footer-signature" style="margin-top:1.5rem;font-size:0.9em;opacity:0.85;">
-            Funkcijas:
-            <a href="../en/features/reading-timer/">Lasīšanas taimeris</a> &middot;
-            <a href="../en/features/reading-tracker/">Lasīšanas uzskaite</a> &middot;
-            <a href="../en/features/reading-statistics/">Lasīšanas statistika</a> &middot;
-            <a href="../en/features/goodreads-alternative/">Goodreads alternatīva</a> &middot;
-            <a href="../en/features/book-catalog/">Grāmatu katalogs</a> &middot;
-            <a href="./blog/">Blogs</a>
-        </p>
         <p class="footer-note">No tā paša veidotāja: <strong>Drakehold</strong>, tavs personīgais arhīvs, kas kārtojas pats. <a href="https://drakehold.pages.dev/?utm_source=lecturameter" target="_blank" rel="noopener">Pievienojies gaidīšanas sarakstam →</a></p>
         <div class="footer-bottom">
             <span>&copy; 2026 Lecturameter &middot; Neatkarīgs projekts</span>
@@ -1318,7 +1339,7 @@
 </div>
 
 <script id="lm-i18n" type="application/json">{"pagi_happy": ["Pagi tev aplaudē!", "Spīdi, zvaigznīte!", "Šš, es lasu.", "Pagi vēro…"], "pagi_angry": ["Au! Tas sāpēja!", "Pietiek klikšķu!", "Grr, liec mani mierā.", "Vairs nav smieklīgi."], "consent_title": "Sīkdatnes un glabātuve", "consent_body": "Mēs izmantojam trešās puses logrīku (StartupBar), kas saglabā datus tavā pārlūkā un skaita parādījumus. Tas ielādējas tikai tad, ja piekrīti. Tava tēma, valoda un aizvērtais paziņojums tiek saglabāti, nejautājot, jo tos izvēlējies tu pats.", "consent_accept": "Piekrītu", "consent_reject": "Noraidu", "consent_policy": "Sīkdatņu politika", "consent_prefs": "Sīkdatņu preferences"}</script>
-<script src="../main.js?v=5.7"></script>
+<script src="../main.js?v=8.0"></script>
 <script src="../hit.js?v=1" defer></script>
 </body>
 </html>

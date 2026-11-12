@@ -972,5 +972,12 @@
    "title": "Yleiset pikavalinnat",
    "text": "Koti · Asetukset · Tiedot ja varmuuskopiot"
   }
- ]
+ ],
+ "common.nav.universe": "Universumi",
+ "common.nav.resources": "Resurssit",
+ "common.nav.platforms": "Alustat",
+ "common.nav.news": "Uutiset",
+ "common.nav.legal": "Oikeudelliset",
+ "common.nav.all_features": "Kaikki ominaisuudet",
+ "common.footer.legal_contact": "Oikeudelliset tiedot ja yhteys"
 }

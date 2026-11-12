@@ -972,5 +972,12 @@
    "title": "सामान्य शॉर्टकट",
    "text": "होम · सेटिंग्स · डेटा और बैकअप"
   }
- ]
+ ],
+ "common.nav.universe": "यूनिवर्स",
+ "common.nav.resources": "संसाधन",
+ "common.nav.platforms": "प्लेटफ़ॉर्म",
+ "common.nav.news": "समाचार",
+ "common.nav.legal": "कानूनी",
+ "common.nav.all_features": "सभी सुविधाएँ",
+ "common.footer.legal_contact": "कानूनी और संपर्क"
 }

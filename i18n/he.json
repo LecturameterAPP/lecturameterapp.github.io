@@ -972,5 +972,12 @@
    "title": "קיצורים כלליים",
    "text": "בית · הגדרות · נתונים וגיבויים"
   }
- ]
+ ],
+ "common.nav.universe": "היקום",
+ "common.nav.resources": "משאבים",
+ "common.nav.platforms": "פלטפורמות",
+ "common.nav.news": "חדשות",
+ "common.nav.legal": "משפטי",
+ "common.nav.all_features": "כל התכונות",
+ "common.footer.legal_contact": "משפטי ויצירת קשר"
 }

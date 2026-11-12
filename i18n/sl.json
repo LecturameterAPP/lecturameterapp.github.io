@@ -972,5 +972,12 @@
    "title": "Splošne bližnjice",
    "text": "Domov · Nastavitve · Podatki in varnostne kopije"
   }
- ]
+ ],
+ "common.nav.universe": "Vesolje",
+ "common.nav.resources": "Viri",
+ "common.nav.platforms": "Platforme",
+ "common.nav.news": "Novice",
+ "common.nav.legal": "Pravno",
+ "common.nav.all_features": "Vse funkcije",
+ "common.footer.legal_contact": "Pravno in kontakt"
 }

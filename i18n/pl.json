@@ -972,5 +972,12 @@
    "title": "Skróty ogólne",
    "text": "Start · Ustawienia · Dane i kopie zapasowe"
   }
- ]
+ ],
+ "common.nav.universe": "Uniwersum",
+ "common.nav.resources": "Zasoby",
+ "common.nav.platforms": "Platformy",
+ "common.nav.news": "Aktualności",
+ "common.nav.legal": "Informacje prawne",
+ "common.nav.all_features": "Wszystkie funkcje",
+ "common.footer.legal_contact": "Informacje prawne i kontakt"
 }

@@ -972,5 +972,12 @@
    "title": "دسترسی‌های عمومی",
    "text": "خانه · تنظیمات · داده‌ها و پشتیبان‌ها"
   }
- ]
+ ],
+ "common.nav.universe": "جهان",
+ "common.nav.resources": "منابع",
+ "common.nav.platforms": "پلتفرم‌ها",
+ "common.nav.news": "اخبار",
+ "common.nav.legal": "حقوقی",
+ "common.nav.all_features": "همه امکانات",
+ "common.footer.legal_contact": "حقوقی و تماس"
 }

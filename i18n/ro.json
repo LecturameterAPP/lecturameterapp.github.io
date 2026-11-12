@@ -972,5 +972,12 @@
    "title": "Acces general",
    "text": "Acasă · Setări · Date și copii de rezervă"
   }
- ]
+ ],
+ "common.nav.universe": "Univers",
+ "common.nav.resources": "Resurse",
+ "common.nav.platforms": "Platforme",
+ "common.nav.news": "Noutăți",
+ "common.nav.legal": "Legal",
+ "common.nav.all_features": "Toate funcțiile",
+ "common.footer.legal_contact": "Legal și contact"
 }

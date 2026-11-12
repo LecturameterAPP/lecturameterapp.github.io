@@ -972,5 +972,12 @@
    "title": "Accès généraux",
    "text": "Accueil · Paramètres · Données et sauvegardes"
   }
- ]
+ ],
+ "common.nav.universe": "Univers",
+ "common.nav.resources": "Ressources",
+ "common.nav.platforms": "Plateformes",
+ "common.nav.news": "Actualités",
+ "common.nav.legal": "Mentions légales",
+ "common.nav.all_features": "Toutes les fonctionnalités",
+ "common.footer.legal_contact": "Mentions légales et contact"
 }

@@ -972,5 +972,12 @@
    "title": "பொதுவான குறுக்குவழிகள்",
    "text": "முகப்பு · அமைப்புகள் · தரவு மற்றும் காப்புப்பிரதிகள்"
   }
- ]
+ ],
+ "common.nav.universe": "பிரபஞ்சம்",
+ "common.nav.resources": "வளங்கள்",
+ "common.nav.platforms": "தளங்கள்",
+ "common.nav.news": "செய்திகள்",
+ "common.nav.legal": "சட்டம்",
+ "common.nav.all_features": "அனைத்து அம்சங்கள்",
+ "common.footer.legal_contact": "சட்டம் மற்றும் தொடர்பு"
 }

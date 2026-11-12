@@ -972,5 +972,12 @@
    "title": "ಸಾಮಾನ್ಯ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು",
    "text": "ಮುಖಪುಟ · ಸೆಟ್ಟಿಂಗ್‌ಗಳು · ಡೇಟಾ ಮತ್ತು ಬ್ಯಾಕಪ್‌ಗಳು"
   }
- ]
+ ],
+ "common.nav.universe": "ಬ್ರಹ್ಮಾಂಡ",
+ "common.nav.resources": "ಸಂಪನ್ಮೂಲಗಳು",
+ "common.nav.platforms": "ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ಗಳು",
+ "common.nav.news": "ಸುದ್ದಿ",
+ "common.nav.legal": "ಕಾನೂನು",
+ "common.nav.all_features": "ಎಲ್ಲಾ ವೈಶಿಷ್ಟ್ಯಗಳು",
+ "common.footer.legal_contact": "ಕಾನೂನು ಮತ್ತು ಸಂಪರ್ಕ"
 }

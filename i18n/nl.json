@@ -972,5 +972,12 @@
    "title": "Algemene snelkoppelingen",
    "text": "Home · Instellingen · Gegevens en back-ups"
   }
- ]
+ ],
+ "common.nav.universe": "Universum",
+ "common.nav.resources": "Bronnen",
+ "common.nav.platforms": "Platforms",
+ "common.nav.news": "Nieuws",
+ "common.nav.legal": "Juridisch",
+ "common.nav.all_features": "Alle functies",
+ "common.footer.legal_contact": "Juridisch en contact"
 }

@@ -1605,12 +1605,42 @@ html:not([data-theme="light"]) .tag-free {
     list-style: none;
     margin: 0;
 }
-.nav-pills .has-dropdown:hover .nav-dropdown,
+/* Abre con raton (hover real), teclado/toque (clase .open puesta por main.js) y foco dentro */
+.nav-pills .has-dropdown.open .nav-dropdown,
 .nav-pills .has-dropdown:focus-within .nav-dropdown {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
+@media (hover: hover) and (pointer: fine) {
+    .nav-pills .has-dropdown:hover .nav-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+}
+/* Boton del desplegable: mismo aspecto que un enlace de la barra */
+.nav-pills .nav-dd-btn {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: none; border: 0; font: inherit; cursor: pointer;
+    color: var(--text-muted); font-size: 13.5px; padding: 6px 14px; border-radius: 20px;
+    white-space: nowrap; transition: color 0.2s, background 0.2s;
+}
+.nav-pills .nav-dd-btn:hover,
+.nav-pills .has-dropdown.open > .nav-dd-btn { color: var(--accent-text); background: var(--accent-soft); }
+.nav-pills .nav-dd-btn:focus-visible,
+.nav-pills .nav-dropdown a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.nav-pills .has-dropdown.open .caret { transform: rotate(180deg); }
+.nav-pills .nav-dropdown .nav-dd-label { padding: 8px 12px 2px; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-muted); }
+.nav-pills .nav-dropdown .nav-dd-sub a { padding-inline-start: 22px; }
+.nav-pills .nav-dropdown .nav-dd-all { border-top: 1px solid var(--line); margin-top: 4px; padding-top: 4px; }
+.nav-pills .nav-dropdown .nav-dd-all a { font-weight: 600; }
+[dir="rtl"] .nav-pills .nav-dropdown a { text-align: right; }
+/* Menu hamburguesa abierto (incluida la barra colapsada a cualquier anchura): desplegables siempre desplegados */
+.nav-collapsed .nav-pills.open .has-dropdown { display: block; }
+.nav-collapsed .nav-pills.open .nav-dropdown {
+    position: static; opacity: 1; visibility: visible; transform: none;
+    box-shadow: none; border: none; background: transparent; padding: 0 0 0 12px; min-width: 0;
+}
+[dir="rtl"] .nav-collapsed .nav-pills.open .nav-dropdown, [dir="rtl"] .nav-pills.open .nav-dropdown { padding: 0 12px 0 0; }
+.nav-collapsed .nav-pills.open .nav-dd-btn, .nav-pills.open .nav-dd-btn { font-weight: 600; cursor: default; pointer-events: none; }
+.nav-collapsed .nav-pills.open .has-dropdown .caret { display: none; }
 .nav-pills .nav-dropdown li { display: block; }
 .nav-pills .nav-dropdown a {
     display: block;

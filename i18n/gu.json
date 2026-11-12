@@ -972,5 +972,12 @@
    "title": "સામાન્ય શોર્ટકટ",
    "text": "હોમ · સેટિંગ્સ · ડેટા અને બેકઅપ"
   }
- ]
+ ],
+ "common.nav.universe": "બ્રહ્માંડ",
+ "common.nav.resources": "સંસાધનો",
+ "common.nav.platforms": "પ્લેટફોર્મ",
+ "common.nav.news": "સમાચાર",
+ "common.nav.legal": "કાનૂની",
+ "common.nav.all_features": "બધી સુવિધાઓ",
+ "common.footer.legal_contact": "કાનૂની અને સંપર્ક"
 }

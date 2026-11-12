@@ -972,5 +972,12 @@
    "title": "Bendrosios nuorodos",
    "text": "Pradžia · Nustatymai · Duomenys ir kopijos"
   }
- ]
+ ],
+ "common.nav.universe": "Visata",
+ "common.nav.resources": "Ištekliai",
+ "common.nav.platforms": "Platformos",
+ "common.nav.news": "Naujienos",
+ "common.nav.legal": "Teisinė informacija",
+ "common.nav.all_features": "Visos funkcijos",
+ "common.footer.legal_contact": "Teisinė informacija ir kontaktai"
 }

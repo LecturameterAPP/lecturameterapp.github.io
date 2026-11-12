@@ -972,5 +972,12 @@
    "title": "Generelle snarveier",
    "text": "Hjem · Innstillinger · Data og sikkerhetskopier"
   }
- ]
+ ],
+ "common.nav.universe": "Univers",
+ "common.nav.resources": "Ressurser",
+ "common.nav.platforms": "Plattformer",
+ "common.nav.news": "Nyheter",
+ "common.nav.legal": "Juridisk",
+ "common.nav.all_features": "Alle funksjoner",
+ "common.footer.legal_contact": "Juridisk og kontakt"
 }

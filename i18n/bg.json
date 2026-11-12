@@ -972,5 +972,12 @@
    "title": "Общи преки пътища",
    "text": "Начало · Настройки · Данни и копия"
   }
- ]
+ ],
+ "common.nav.universe": "Вселена",
+ "common.nav.resources": "Ресурси",
+ "common.nav.platforms": "Платформи",
+ "common.nav.news": "Новини",
+ "common.nav.legal": "Правна информация",
+ "common.nav.all_features": "Всички функции",
+ "common.footer.legal_contact": "Правна информация и контакт"
 }

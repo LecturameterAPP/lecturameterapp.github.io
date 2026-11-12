@@ -972,5 +972,12 @@
    "title": "Accessi generali",
    "text": "Home · Impostazioni · Dati e backup"
   }
- ]
+ ],
+ "common.nav.universe": "Universo",
+ "common.nav.resources": "Risorse",
+ "common.nav.platforms": "Piattaforme",
+ "common.nav.news": "Novità",
+ "common.nav.legal": "Legale",
+ "common.nav.all_features": "Tutte le funzioni",
+ "common.footer.legal_contact": "Legale e contatti"
 }

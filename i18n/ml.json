@@ -972,5 +972,12 @@
    "title": "പൊതു കുറുക്കുവഴികൾ",
    "text": "ഹോം · ക്രമീകരണങ്ങൾ · ഡാറ്റയും ബാക്കപ്പുകളും"
   }
- ]
+ ],
+ "common.nav.universe": "പ്രപഞ്ചം",
+ "common.nav.resources": "വിഭവങ്ങൾ",
+ "common.nav.platforms": "പ്ലാറ്റ്ഫോമുകൾ",
+ "common.nav.news": "വാർത്തകൾ",
+ "common.nav.legal": "നിയമപരം",
+ "common.nav.all_features": "എല്ലാ സവിശേഷതകളും",
+ "common.footer.legal_contact": "നിയമപരവും ബന്ധപ്പെടലും"
 }

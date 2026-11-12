@@ -972,5 +972,12 @@
    "title": "Všeobecné skratky",
    "text": "Domov · Nastavenia · Údaje a zálohy"
   }
- ]
+ ],
+ "common.nav.universe": "Vesmír",
+ "common.nav.resources": "Zdroje",
+ "common.nav.platforms": "Platformy",
+ "common.nav.news": "Novinky",
+ "common.nav.legal": "Právne informácie",
+ "common.nav.all_features": "Všetky funkcie",
+ "common.footer.legal_contact": "Právne informácie a kontakt"
 }

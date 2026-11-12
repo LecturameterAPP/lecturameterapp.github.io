@@ -972,5 +972,12 @@
    "title": "Γενικές συντομεύσεις",
    "text": "Αρχική · Ρυθμίσεις · Δεδομένα και αντίγραφα"
   }
- ]
+ ],
+ "common.nav.universe": "Σύμπαν",
+ "common.nav.resources": "Πόροι",
+ "common.nav.platforms": "Πλατφόρμες",
+ "common.nav.news": "Νέα",
+ "common.nav.legal": "Νομικά",
+ "common.nav.all_features": "Όλες οι λειτουργίες",
+ "common.footer.legal_contact": "Νομικά και επικοινωνία"
 }

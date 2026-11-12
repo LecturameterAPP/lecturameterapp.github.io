@@ -972,5 +972,12 @@
    "title": "Pintasan umum",
    "text": "Beranda · Pengaturan · Data dan cadangan"
   }
- ]
+ ],
+ "common.nav.universe": "Semesta",
+ "common.nav.resources": "Sumber daya",
+ "common.nav.platforms": "Platform",
+ "common.nav.news": "Berita",
+ "common.nav.legal": "Hukum",
+ "common.nav.all_features": "Semua fitur",
+ "common.footer.legal_contact": "Hukum dan kontak"
 }

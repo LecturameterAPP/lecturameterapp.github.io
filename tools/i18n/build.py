@@ -331,13 +331,12 @@ def release_vars(cfg, strings, where, errors, loc=None):
                     '                    <p>%s</p>' % c['text'],
                     '                </div>']
         out += ['            </div>', '        </div>']
-        blocks.append('
-'.join(out))
-    v['roadmap_published_html'] = '
-'.join(blocks)
+        blocks.append(NL.join(out))
+    v['roadmap_published_html'] = NL.join(blocks)
     return v
 
 
+NL = '\n'
 NEW_PAGES = ('news', 'roadmap', 'faq', 'platforms', 'pro')
 CUR_KEYS = ('home', 'pro', 'lm99', 'blog', 'news', 'roadmap', 'faq', 'platforms', 'privacy', 'terms', 'cookies', 'contact')
 CURRENT_OF = {'news': 'news', 'roadmap': 'roadmap', 'faq': 'faq', 'platforms': 'platforms', 'pro': 'pro',
@@ -361,8 +360,17 @@ def nav_vars(cfg, loc, strings, here, is_home, current=''):
         'link_regional': rel(here, 'precios-regionales.html'),
         'link_activate': rel(here, 'activar-pro.html'),
     }
+    # Paginas nuevas (fase 2): mientras no existan en cfg['pages'], enlazan al ancla equivalente de la portada
+    # (o se ocultan con show_<pagina>, via {{#if}} en los parciales).
+    fallback = {'pro': strings['anchor.pricing'], 'news': strings['anchor.whatsnew'], 'faq': 'faq',
+                'platforms': strings['anchor.ios_differences'], 'roadmap': 'roadmap'}
     for sl in NEW_PAGES:
-        v['link_page_' + sl] = rel(here, prefix + sl + '/')
+        if sl in cfg['pages']:
+            v['link_page_' + sl] = rel(here, prefix + sl + '/')
+            v['show_' + sl] = '1'
+        else:
+            v['link_page_' + sl] = base + '#' + fallback[sl]
+            v['show_' + sl] = '1' if sl != 'roadmap' else ''
     for c in CUR_KEYS:
         v['cur_' + c] = ' aria-current="page"' if c == current else ''
     return v
@@ -372,7 +380,7 @@ def bilingual_lang_controls(locales, seg, indent):
     """Controles de idioma de las paginas bilingues escritas a mano (boton ES/EN y, si hay version traducida
     en /<code>/<seg>/, selector con los 49 idiomas). Es lo que llevaban antes."""
     lines = ['<button type="button" class="nav-lang-btn" data-en="ES" data-es="EN" '
-             'onclick="setLang(document.documentElement.lang === 'es' ? 'en' : 'es')">ES</button>']
+             'onclick="setLang(document.documentElement.lang === \'es\' ? \'en\' : \'es\')">ES</button>']
     if seg:
         opts = []
         for o in locales:
@@ -380,8 +388,7 @@ def bilingual_lang_controls(locales, seg, indent):
             opts.append('<option value="%s"%s>%s</option>' % (html.escape(o['code']), lang_attr, html.escape(o['nativeName'])))
         lines.append('<select class="nav-lang-select" id="legalLangSelect" aria-label="Language" title="Language" '
                      'data-seg="%s">%s</select>' % (seg, ''.join(opts)))
-    return ('
-' + indent).join(lines)
+    return (NL + indent).join(lines)
 
 
 def list_vars(strings, where, errors):
@@ -586,6 +593,8 @@ def main():
         pdir = page_dir(loc, page).rstrip('/')
         current = page.get('current') or CURRENT_OF.get(pname, '')
         variables.update(nav_vars(cfg, loc, strings, pdir, pname == 'index', current))
+        if not variables['show_roadmap'] and variables.get('has_roadmap'):
+            variables['show_roadmap'] = '1'
         if page.get('bilingual'):
             variables['lang_picker'] = bilingual_lang_controls(locales, page.get('lang_seg'), ' ' * 12)
         else:

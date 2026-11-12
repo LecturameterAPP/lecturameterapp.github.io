@@ -972,5 +972,12 @@
    "title": "通用入口",
    "text": "主页 · 设置 · 数据与备份"
   }
- ]
+ ],
+ "common.nav.universe": "宇宙",
+ "common.nav.resources": "资源",
+ "common.nav.platforms": "平台",
+ "common.nav.news": "动态",
+ "common.nav.legal": "法律",
+ "common.nav.all_features": "全部功能",
+ "common.footer.legal_contact": "法律与联系"
 }

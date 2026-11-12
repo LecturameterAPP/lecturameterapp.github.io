@@ -972,5 +972,12 @@
    "title": "Allgemeine Zugriffe",
    "text": "Start · Einstellungen · Daten und Backups"
   }
- ]
+ ],
+ "common.nav.universe": "Universum",
+ "common.nav.resources": "Ressourcen",
+ "common.nav.platforms": "Plattformen",
+ "common.nav.news": "Neuigkeiten",
+ "common.nav.legal": "Rechtliches",
+ "common.nav.all_features": "Alle Funktionen",
+ "common.footer.legal_contact": "Rechtliches und Kontakt"
 }

@@ -972,5 +972,12 @@
    "title": "Általános gyorsgombok",
    "text": "Kezdőlap · Beállítások · Adatok és biztonsági mentések"
   }
- ]
+ ],
+ "common.nav.universe": "Univerzum",
+ "common.nav.resources": "Források",
+ "common.nav.platforms": "Platformok",
+ "common.nav.news": "Hírek",
+ "common.nav.legal": "Jogi információk",
+ "common.nav.all_features": "Minden funkció",
+ "common.footer.legal_contact": "Jogi információk és kapcsolat"
 }

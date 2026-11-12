@@ -972,5 +972,12 @@
    "title": "Acessos gerais",
    "text": "Início · Definições · Dados e cópias"
   }
- ]
+ ],
+ "common.nav.universe": "Universo",
+ "common.nav.resources": "Recursos",
+ "common.nav.platforms": "Plataformas",
+ "common.nav.news": "Novidades",
+ "common.nav.legal": "Legal",
+ "common.nav.all_features": "Todas as funcionalidades",
+ "common.footer.legal_contact": "Legal e contacto"
 }

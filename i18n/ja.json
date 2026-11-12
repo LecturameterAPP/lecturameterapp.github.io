@@ -972,5 +972,12 @@
    "title": "共通ショートカット",
    "text": "ホーム · 設定 · データとバックアップ"
   }
- ]
+ ],
+ "common.nav.universe": "ユニバース",
+ "common.nav.resources": "リソース",
+ "common.nav.platforms": "対応プラットフォーム",
+ "common.nav.news": "お知らせ",
+ "common.nav.legal": "法的情報",
+ "common.nav.all_features": "すべての機能",
+ "common.footer.legal_contact": "法的情報とお問い合わせ"
 }

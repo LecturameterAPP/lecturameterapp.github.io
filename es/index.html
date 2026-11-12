@@ -133,7 +133,7 @@
     <link rel="alternate" hreflang="zh-CN" href="https://lecturameterapp.github.io/zh-cn/">
     <link rel="alternate" hreflang="zu" href="https://lecturameterapp.github.io/zu/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/">
-    <link rel="stylesheet" href="../styles.css?v=7.0">
+    <link rel="stylesheet" href="../styles.css?v=8.0">
 
     <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
     <script src="/consent.js" defer data-policy="./cookies/"></script>
@@ -212,27 +212,42 @@
         </a>
         <ul class="nav-pills">
             <li class="has-dropdown">
-                <a href="#funciones" class="active">Funciones <span class="caret" aria-hidden="true">▾</span></a>
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Funciones <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
-                    <li><a href="./funciones/cronometro-lectura/">Cronómetro de lectura</a></li>
+                    <li><a href="./funciones/cronometro-lectura/">Cron&#xF3;metro de lectura</a></li>
                     <li><a href="./funciones/registro-lectura/">Tracker de lectura</a></li>
-                    <li><a href="./funciones/estadisticas-lectura/">Estadísticas de lectura</a></li>
+                    <li><a href="./funciones/estadisticas-lectura/">Estad&#xED;sticas de lectura</a></li>
                     <li><a href="./funciones/alternativa-goodreads/">Alternativa a Goodreads</a></li>
                     <li><a href="./funciones/catalogo-libros/">Catálogo de libros</a></li>
+                    <li class="nav-dd-all"><a href="#funciones">Todas las funciones</a></li>
                 </ul>
             </li>
             <li><a href="#temas">Temas</a></li>
-            <li><a href="#eventos">Eventos</a></li>
             <li><a href="#precios">Pro</a></li>
-            <li><a href="#novedades">Notas de Parche</a></li>
-            <li><a href="#historial">Historial</a></li>
-            <li><a href="#ios-diferencias">iOS</a></li>
-            <li><a href="./lecturameter-1999/">1999</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="./blog/">Blog</a></li>
+            <li class="has-dropdown">
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Universo <span class="caret" aria-hidden="true">&#x25BE;</span></button>
+                <ul class="nav-dropdown">
+                    <li><a href="./">Lecturameter</a></li>
+                    <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Recursos <span class="caret" aria-hidden="true">&#x25BE;</span></button>
+                <ul class="nav-dropdown">
+                    <li><a href="./blog/">Blog</a></li>
+                    <li><a href="#novedades">Novedades</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#ios-diferencias">Plataformas</a></li>
+                    <li class="nav-dd-label" role="presentation">Legal</li>
+                    <li class="nav-dd-sub"><a href="../privacidad.html">Política de privacidad</a></li>
+                    <li class="nav-dd-sub"><a href="../tos.html">Términos de Servicio</a></li>
+                    <li class="nav-dd-sub"><a href="./cookies/">Política de cookies</a></li>
+                    <li class="nav-dd-all"><a href="../contact.html">Contacto</a></li>
+                </ul>
+            </li>
         </ul>
         <div class="nav-controls">
-            <button class="nav-theme-btn" aria-label="Cambiar tema">☾</button>
+            <button class="nav-theme-btn" aria-label="Cambiar tema">&#x263E;</button>
             <div class="lang-picker">
                 <button type="button" class="nav-lang-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-panel" aria-label="Idioma">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
@@ -302,7 +317,7 @@
                 Descargar
             </a>
         </div>
-        <button class="nav-hamburger" aria-label="Menu">
+        <button class="nav-hamburger" aria-label="Menu" aria-expanded="false">
             <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
     </div>
@@ -1243,21 +1258,36 @@
             <div class="footer-col">
                 <h4>Producto</h4>
                 <a href="#funciones">Funciones</a>
+                <a href="./funciones/cronometro-lectura/">Cronómetro</a>
+                <a href="./funciones/registro-lectura/">Tracker</a>
+                <a href="./funciones/estadisticas-lectura/">Estadísticas</a>
+                <a href="./funciones/alternativa-goodreads/">Alternativa a Goodreads</a>
+                <a href="./funciones/catalogo-libros/">Catálogo de libros</a>
+                <a href="#temas">Temas</a>
                 <a href="#eventos">Eventos</a>
                 <a href="#precios">Precios</a>
                 <a href="../precios-regionales.html">Precios regionales</a>
-                <a href="#novedades">Notas de Parche</a>
-                <a href="#historial">Historial</a>
-                <a href="./lecturameter-1999/">Lecturameter 99</a>
-                <a href="#faq">FAQ</a>
             </div>
             <div class="footer-col">
-                <h4>Contacto</h4>
-                <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
+                <h4>Universo</h4>
+                <a href="./">Lecturameter</a>
+                <a href="./lecturameter-1999/">Lecturameter 99</a>
+            </div>
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <a href="./blog/">Blog</a>
+                <a href="#novedades">Novedades</a>
+                <a href="#faq">FAQ</a>
+                <a href="#ios-diferencias">Plataformas</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal y contacto</h4>
                 <a href="../privacidad.html">Política de privacidad</a>
                 <a href="../tos.html">Términos de Servicio</a>
                 <a href="./cookies/">Política de cookies</a>
                 <a href="#" data-lm-cookie-prefs>Preferencias de cookies</a>
+                <a href="../contact.html">Contacto</a>
+                <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
                 <div class="donate-row">
                     <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
                         <img src="../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
@@ -1293,15 +1323,6 @@
         </div>
 
         <p class="footer-signature">Hecho entre libros muchas noches.</p>
-        <p class="footer-signature" style="margin-top:1.5rem;font-size:0.9em;opacity:0.85;">
-            Funciones:
-            <a href="./funciones/cronometro-lectura/">Cronómetro</a> &middot;
-            <a href="./funciones/registro-lectura/">Tracker</a> &middot;
-            <a href="./funciones/estadisticas-lectura/">Estadísticas</a> &middot;
-            <a href="./funciones/alternativa-goodreads/">Alternativa a Goodreads</a> &middot;
-            <a href="./funciones/catalogo-libros/">Catálogo de libros</a> &middot;
-            <a href="./blog/">Blog</a>
-        </p>
         <p class="footer-note">Del mismo creador: <strong>Drakehold</strong>, tu archivo personal que se ordena solo. <a href="https://drakehold.pages.dev/?utm_source=lecturameter&amp;lang=es" target="_blank" rel="noopener">Únete a la lista de espera →</a></p>
         <div class="footer-bottom">
             <span>&copy; 2026 Lecturameter &middot; Proyecto independiente</span>
@@ -1318,7 +1339,7 @@
 </div>
 
 <script id="lm-i18n" type="application/json">{"pagi_happy": ["¡Pagi te aplaude!", "¡Brilla, estrellita!", "Shhh, estoy leyendo.", "Pagi te observa…"], "pagi_angry": ["¡Ay! ¡Eso ha dolido!", "¡Basta ya de clicks!", "Grr, déjame en paz.", "Ya no tiene gracia."], "consent_title": "Cookies y almacenamiento", "consent_body": "Usamos un widget de terceros (StartupBar) que guarda datos en tu navegador y mide impresiones. Solo se carga si aceptas. Tu tema, tu idioma y el aviso cerrado se guardan sin pedirte nada, porque los has elegido tú.", "consent_accept": "Aceptar", "consent_reject": "Rechazar", "consent_policy": "Política de cookies", "consent_prefs": "Preferencias de cookies"}</script>
-<script src="../main.js?v=5.7"></script>
+<script src="../main.js?v=8.0"></script>
 <script src="../hit.js?v=1" defer></script>
 </body>
 </html>

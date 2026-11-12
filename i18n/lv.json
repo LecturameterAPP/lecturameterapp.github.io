@@ -972,5 +972,12 @@
    "title": "Vispārīgas saīsnes",
    "text": "Sākums · Iestatījumi · Dati un kopijas"
   }
- ]
+ ],
+ "common.nav.universe": "Visums",
+ "common.nav.resources": "Resursi",
+ "common.nav.platforms": "Platformas",
+ "common.nav.news": "Jaunumi",
+ "common.nav.legal": "Juridiskā informācija",
+ "common.nav.all_features": "Visas funkcijas",
+ "common.footer.legal_contact": "Juridiskā informācija un kontakti"
 }

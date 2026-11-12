@@ -113,6 +113,7 @@ def render_page(cfg, loc, avail, tpl_name, slug, strings_common, strings_blog, e
     for lk, lp in cfg.get('legal_pages', {}).items():
         v['link_' + lk] = B.rel(here, lp['original'] if loc.get('legal_original') else prefix + lp['dir'])
     v['link_blog'] = B.rel(here, target(loc, None))
+    v.update(B.nav_vars(cfg, loc, strings_common, here, False, 'blog'))
     for s_, a_ in ALIAS.items():
         v['post_' + a_] = B.rel(here, target(loc, s_))
     v['shot_lang'] = 'es' if loc['code'] == 'es' else 'en'
@@ -132,6 +133,8 @@ def render_page(cfg, loc, avail, tpl_name, slug, strings_common, strings_blog, e
         for n in ('title', 'description'):
             v['ld_' + n] = html.unescape(strings_blog['blog.%s.%s' % (a, n)])
     v.update(B.release_vars(cfg, strings_common, where, errors))
+    if not v['show_roadmap'] and v.get('has_roadmap'):
+        v['show_roadmap'] = '1'
     v['__loc'] = loc
     v['__shot'] = B.make_shot_resolver(cfg, loc, errors, where)
     v['ios_live'] = '1' if cfg.get('ios_live') else ''

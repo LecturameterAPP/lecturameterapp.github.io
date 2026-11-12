@@ -972,5 +972,12 @@
    "title": "Lối tắt chung",
    "text": "Trang chủ · Cài đặt · Dữ liệu và bản sao lưu"
   }
- ]
+ ],
+ "common.nav.universe": "Vũ trụ",
+ "common.nav.resources": "Tài nguyên",
+ "common.nav.platforms": "Nền tảng",
+ "common.nav.news": "Tin tức",
+ "common.nav.legal": "Pháp lý",
+ "common.nav.all_features": "Tất cả tính năng",
+ "common.footer.legal_contact": "Pháp lý và liên hệ"
 }

@@ -972,5 +972,12 @@
    "title": "Almennar flýtileiðir",
    "text": "Heim · Stillingar · Gögn og afrit"
   }
- ]
+ ],
+ "common.nav.universe": "Alheimur",
+ "common.nav.resources": "Úrræði",
+ "common.nav.platforms": "Kerfi",
+ "common.nav.news": "Fréttir",
+ "common.nav.legal": "Lagalegt",
+ "common.nav.all_features": "Allir eiginleikar",
+ "common.footer.legal_contact": "Lagalegt og samband"
 }

@@ -972,5 +972,12 @@
    "title": "اختصارات عامة",
    "text": "الرئيسية · الإعدادات · البيانات والنسخ"
   }
- ]
+ ],
+ "common.nav.universe": "العالم",
+ "common.nav.resources": "الموارد",
+ "common.nav.platforms": "المنصات",
+ "common.nav.news": "الأخبار",
+ "common.nav.legal": "قانوني",
+ "common.nav.all_features": "كل الميزات",
+ "common.footer.legal_contact": "القانونية والتواصل"
 }

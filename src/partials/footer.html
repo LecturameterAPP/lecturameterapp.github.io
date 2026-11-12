@@ -28,10 +28,18 @@
             <div class="footer-col">
                 <h4>{{@t:common.nav.resources}}</h4>
                 <a {{@href:link_blog}}>{{@t:common.footer.blog}}</a>
+{{#if show_news}}
                 <a {{@href:link_page_news}}>{{@t:common.nav.news}}</a>
+{{/if}}
+{{#if show_roadmap}}
                 <a {{@href:link_page_roadmap}}>{{@t:common.footer.roadmap}}</a>
+{{/if}}
+{{#if show_faq}}
                 <a {{@href:link_page_faq}}>{{@t:common.footer.faq}}</a>
+{{/if}}
+{{#if show_platforms}}
                 <a {{@href:link_page_platforms}}>{{@t:common.nav.platforms}}</a>
+{{/if}}
             </div>
             <div class="footer-col">
                 <h4>{{@t:common.footer.legal_contact}}</h4>

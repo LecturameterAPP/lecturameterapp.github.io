@@ -97,6 +97,59 @@
         });
     }
 
+    // ─── DESPLEGABLES DE LA NAV (teclado, toque, RTL) ───
+    // Boton con aria-expanded: Enter/Espacio/toque abren; Escape cierra y devuelve el foco al boton;
+    // tocar fuera o salir con Tab cierra. El hover (solo en punteros finos) lo resuelve el CSS.
+    (function () {
+        var items = document.querySelectorAll('.nav-pills .has-dropdown');
+        if (!items.length) return;
+        function setOpen(li, open) {
+            var b = li.querySelector('.nav-dd-btn');
+            li.classList.toggle('open', open);
+            if (b) b.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+        function closeAll(except) {
+            items.forEach(function (li) { if (li !== except) setOpen(li, false); });
+        }
+        items.forEach(function (li) {
+            var b = li.querySelector('.nav-dd-btn');
+            if (!b) return;
+            b.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var open = !li.classList.contains('open');
+                closeAll(li);
+                setOpen(li, open);
+            });
+            li.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && li.classList.contains('open')) {
+                    setOpen(li, false);
+                    b.focus();
+                    e.stopPropagation();
+                }
+            });
+            li.addEventListener('focusout', function (e) {
+                if (!li.contains(e.relatedTarget)) setOpen(li, false);
+            });
+        });
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest || !e.target.closest('.has-dropdown')) closeAll(null);
+        });
+        // Con el menu hamburguesa abierto los desplegables van siempre desplegados: reflejarlo en aria-expanded
+        var hb = document.querySelector('.nav-hamburger');
+        var pl = document.querySelector('.nav-pills');
+        if (hb && pl) {
+            hb.addEventListener('click', function () {
+                var openMenu = pl.classList.contains('open');
+                hb.setAttribute('aria-expanded', openMenu ? 'true' : 'false');
+                items.forEach(function (li) {
+                    var b = li.querySelector('.nav-dd-btn');
+                    if (b) b.setAttribute('aria-expanded', openMenu ? 'true' : 'false');
+                    if (!openMenu) li.classList.remove('open');
+                });
+            });
+        }
+    })();
+
     // ─── NAV FIT ───
     // La barra no cabe igual en todos los idiomas: si desborda, los botones de tienda se quedan
     // en icono (nav-compact) y, si aun asi no cabe, pasa al menu hamburguesa (nav-collapsed).

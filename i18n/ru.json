@@ -972,5 +972,12 @@
    "title": "Общие разделы",
    "text": "Главная · Настройки · Данные и копии"
   }
- ]
+ ],
+ "common.nav.universe": "Вселенная",
+ "common.nav.resources": "Ресурсы",
+ "common.nav.platforms": "Платформы",
+ "common.nav.news": "Новости",
+ "common.nav.legal": "Правовая информация",
+ "common.nav.all_features": "Все возможности",
+ "common.footer.legal_contact": "Правовая информация и контакты"
 }

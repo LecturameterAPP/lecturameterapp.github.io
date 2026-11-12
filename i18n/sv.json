@@ -972,5 +972,12 @@
    "title": "Allmänna genvägar",
    "text": "Hem · Inställningar · Data och säkerhetskopior"
   }
- ]
+ ],
+ "common.nav.universe": "Universum",
+ "common.nav.resources": "Resurser",
+ "common.nav.platforms": "Plattformar",
+ "common.nav.news": "Nyheter",
+ "common.nav.legal": "Juridiskt",
+ "common.nav.all_features": "Alla funktioner",
+ "common.footer.legal_contact": "Juridiskt och kontakt"
 }

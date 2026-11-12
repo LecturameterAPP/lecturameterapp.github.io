@@ -972,5 +972,12 @@
    "title": "Njia za mkato za jumla",
    "text": "Mwanzo · Mipangilio · Data na nakala"
   }
- ]
+ ],
+ "common.nav.universe": "Ulimwengu",
+ "common.nav.resources": "Rasilimali",
+ "common.nav.platforms": "Majukwaa",
+ "common.nav.news": "Habari",
+ "common.nav.legal": "Kisheria",
+ "common.nav.all_features": "Vipengele vyote",
+ "common.footer.legal_contact": "Kisheria na mawasiliano"
 }

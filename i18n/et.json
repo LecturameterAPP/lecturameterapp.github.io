@@ -972,5 +972,12 @@
    "title": "Üldised otseteed",
    "text": "Avaleht · Seaded · Andmed ja varukoopiad"
   }
- ]
+ ],
+ "common.nav.universe": "Universum",
+ "common.nav.resources": "Ressursid",
+ "common.nav.platforms": "Platvormid",
+ "common.nav.news": "Uudised",
+ "common.nav.legal": "Juriidiline",
+ "common.nav.all_features": "Kõik funktsioonid",
+ "common.footer.legal_contact": "Juriidiline info ja kontakt"
 }

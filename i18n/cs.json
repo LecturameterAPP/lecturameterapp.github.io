@@ -972,5 +972,12 @@
    "title": "Obecné zkratky",
    "text": "Domů · Nastavení · Data a zálohy"
   }
- ]
+ ],
+ "common.nav.universe": "Vesmír",
+ "common.nav.resources": "Zdroje",
+ "common.nav.platforms": "Platformy",
+ "common.nav.news": "Novinky",
+ "common.nav.legal": "Právní informace",
+ "common.nav.all_features": "Všechny funkce",
+ "common.footer.legal_contact": "Právní informace a kontakt"
 }

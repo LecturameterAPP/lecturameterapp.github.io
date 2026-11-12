@@ -972,5 +972,12 @@
    "title": "General shortcuts",
    "text": "Home · Settings · Data and backups"
   }
- ]
+ ],
+ "common.nav.universe": "Universe",
+ "common.nav.resources": "Resources",
+ "common.nav.platforms": "Platforms",
+ "common.nav.news": "News",
+ "common.nav.legal": "Legal",
+ "common.nav.all_features": "All features",
+ "common.footer.legal_contact": "Legal and contact"
 }
