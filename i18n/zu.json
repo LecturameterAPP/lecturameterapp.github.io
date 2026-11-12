@@ -433,7 +433,7 @@
  "lm99.lm1999.same_data_books_sessions_statuses": "Idatha efanayo: izincwadi, iziqeshana, izimo, izikolo namanothi. Ifayela lekhophi yesipele lifana ezinhlelweni zombili zokusebenza.",
  "lm99.lm1999.book_search_by_title_or": "Usesho lwezincwadi ngesihloko noma umbhali.",
  "lm99.lm1999.real_timer_it_keeps_counting": "Isitophuwashi sangempela: siqhubeka sibala ngemuva futhi nanxa uvala uhlelo lokusebenza.",
- "lm99.lm1999.no_account_no_ads_no": "Akukho akhawunti nezikhangiso. Isebenzisa i-inthanethi ukusesha izincwadi kuphela futhi, uma uyishiya ivuliwe, ezibalweni zokusetshenziswa ezingaziwa nemibiko yokuphahlazeka (ungayivala ku-Usizo, Ubumfihlo).",
+ "lm99.lm1999.no_account_no_ads_no": "Akukho akhawunti nezikhangiso. Isebenzisa i-inthanethi ukusesha izincwadi kuphela futhi, uma uyishiya ivuliwe, ezibalweni zokusetshenziswa ezingaziwa negama nemibiko yokuphahlazeka (ungayivala ku-Usizo, Ubumfihlo).",
  "lm99.lm1999.the_same_languages_as_lecturameter": "Itholakala ngezilimi ezingu-50.",
  "lm99.lm1999.only_in_the_1999_edition": "Kuphela ohlelweni lwango-1999",
  "lm99.lm1999.a_1999_desktop_interface_no": "Isixhumi sedeskithophu sango-1999. Akukho Material.",
@@ -582,7 +582,7 @@
   "Amakhophi e-Google Drive emitapo emikhulu kakhulu awasahlulekile ngenxa yokuntuleka kwenkumbulo",
   "Ukulungiswa okuningi ku-iPhone"
  ],
- "roadmap.3_9.heading": "Okuzayo ku-Lecturameter 3.9",
+ "roadmap.3_9.heading": "Okuzayo ku-Lecturameter 3.9 / iOS 1.1.0",
  "roadmap.3_9.sub": "Izinselelo zokufunda zomphakathi wonke, umdlalo odlalwa nge-<b>zincwadi zakho</b> kanye neKhaya elisha. Ayikho izinsuku ezimisiwe: konke kuphuma uma sekulungile.",
  "roadmap.3_9.cards": [
   {
@@ -626,7 +626,7 @@
    "text": "Lecturameter manje isebenzisa isiShayina Sendabuko."
   }
  ],
- "home.whatsnew.title": "Amanothi wesibuyekezo v{{release_version}}",
+ "home.whatsnew.title": "Amanothi wesibuyekezo v{{release_label}}",
  "home.home.try_on_iphone@live": "Landa ku-App Store",
  "home.home.your_reading_tracker_for_android@live": "Isilandeli sakho sokufunda se-Android ne-iOS.",
  "home.ios_differences.the_iphone_version_has_the@live": "Inguqulo ye-iPhone inezici ezifanayo eziyinhloko ne-Android: ilabhulali, isitophuwashi sokufunda, izibalo, izinselelo, i-bingo, uPagi nezindikimba ezibukekayo. Lezi yizinto ezihlukile.",
@@ -808,7 +808,7 @@
  "js.consent_reject": "Yenqaba",
  "js.consent_policy": "Inqubomgomo yamakhukhi",
  "js.consent_prefs": "Okukhethwayo kwamakhukhi",
- "home.paused.tag": "Okusha ku-3.9",
+ "home.paused.tag": "Okusha ku-3.9 / iOS 1.1.0",
  "home.paused.title": "Beka incwadi eceleni isikhashana ngaphandle kokonakalisa izibalo zakho",
  "home.paused.sub": "Okumiswe okwesikhashana kuyisimo sakho, esihlukile ku-Ishiyiwe. Incwadi iyalinda lapho uyishiye khona, nezinsuku zokumiswa azibalwa.",
  "home.paused.tab_pending": "Ngifuna ukufunda",
@@ -844,7 +844,7 @@
  ],
  "home.cards.tag": "Yabelana",
  "home.cards.title": "I-Lecturameter akuyona inethiwekhi yezenhlalo. Amakhadi akho aya kuleyo oyisebenzisayo.",
- "home.cards.sub": "Yenza amakhadi amile angu-1080×1920, alungele ama-story, uwabelane lapho usuvele ukhona. Akukho akhawunti, akukho iphrofayela, akukho abalandeli. Ku-3.9 izifinyezo zeviki nezenyanga zithola idizayini entsha nezibalo eziningi.",
+ "home.cards.sub": "Yenza amakhadi amile angu-1080×1920, alungele ama-story, uwabelane lapho usuvele ukhona. Akukho akhawunti, akukho iphrofayela, akukho abalandeli. Ku-3.9 / iOS 1.1.0 izifinyezo zeviki nezenyanga zithola idizayini entsha nezibalo eziningi.",
  "home.cards.chips": [
   "Incwadi",
   "Incwadi eqediwe",
@@ -951,7 +951,7 @@
    "text": "Vula imenyu yamachashazi amathathu ime mpo ekhasini lencwadi bese ukhetha “Imenyu esheshayo”. Abalekeleli bezinyathelo abanayo, ukuze ungalahlekelwa yilokho okukugcwalisayo."
   }
  ],
- "home.quickmenu.tag": "Okusha ku-3.9",
+ "home.quickmenu.tag": "Okusha ku-3.9 / iOS 1.1.0",
  "anchor.quickmenu": "quick-menu",
  "home.quickmenu.screen": "I-Bingo",
  "home.quickmenu.menu_title": "Imenyu esheshayo",

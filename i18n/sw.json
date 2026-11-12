@@ -433,7 +433,7 @@
  "lm99.lm1999.same_data_books_sessions_statuses": "Data ileile: vitabu, vipindi, hali, alama na madokezo. Faili ya nakala rudufu ni ileile katika programu zote mbili.",
  "lm99.lm1999.book_search_by_title_or": "Utafutaji wa vitabu kwa kichwa au mwandishi.",
  "lm99.lm1999.real_timer_it_keeps_counting": "Kipima muda halisi: huendelea kuhesabu chinichini na hata ukifunga programu.",
- "lm99.lm1999.no_account_no_ads_no": "Bila akaunti na bila matangazo. Hutumia intaneti kutafuta vitabu tu na, ukiviacha vimewashwa, kwa takwimu zisizo na jina za matumizi na ripoti za hitilafu (unaweza kuvizima kwenye Msaada, Faragha).",
+ "lm99.lm1999.no_account_no_ads_no": "Bila akaunti na bila matangazo. Hutumia intaneti kutafuta vitabu tu na, ukiviacha vimewashwa, kwa takwimu zisizotambulisha za matumizi na ripoti za hitilafu (unaweza kuvizima kwenye Msaada, Faragha).",
  "lm99.lm1999.the_same_languages_as_lecturameter": "Inapatikana kwa lugha 50.",
  "lm99.lm1999.only_in_the_1999_edition": "Katika toleo la 1999 pekee",
  "lm99.lm1999.a_1999_desktop_interface_no": "Kiolesura cha eneo-kazi cha 1999. Bila Material.",
@@ -582,7 +582,7 @@
   "Nakala za Google Drive za maktaba kubwa sana hazishindwi tena kwa ukosefu wa kumbukumbu",
   "Marekebisho kadhaa kwenye iPhone"
  ],
- "roadmap.3_9.heading": "Nini kinakuja katika Lecturameter 3.9",
+ "roadmap.3_9.heading": "Nini kinakuja katika Lecturameter 3.9 / iOS 1.1.0",
  "roadmap.3_9.sub": "Changamoto za kusoma kwa jumuiya nzima, mchezo unaochezwa kwa <b>vitabu vyako mwenyewe</b> na Skrini ya Mwanzo mpya. Hakuna tarehe zilizowekwa: kila kitu kitatolewa kikiwa tayari.",
  "roadmap.3_9.cards": [
   {
@@ -626,7 +626,7 @@
    "text": "Lecturameter sasa inazungumza kichina cha Jadi."
   }
  ],
- "home.whatsnew.title": "Maelezo ya sasisho v{{release_version}}",
+ "home.whatsnew.title": "Maelezo ya sasisho v{{release_label}}",
  "home.home.try_on_iphone@live": "Pakua kwenye App Store",
  "home.home.your_reading_tracker_for_android@live": "Kifuatilia usomaji chako cha Android na iOS.",
  "home.ios_differences.the_iphone_version_has_the@live": "Toleo la iPhone lina vipengele vikuu vilevile vya Android: maktaba, kipima muda cha kusoma, takwimu, changamoto, bingo, Pagi na mandhari za kuona. Haya ni tofauti.",
@@ -808,7 +808,7 @@
  "js.consent_reject": "Kataa",
  "js.consent_policy": "Sera ya vidakuzi",
  "js.consent_prefs": "Mapendeleo ya vidakuzi",
- "home.paused.tag": "Mpya katika 3.9",
+ "home.paused.tag": "Mpya katika 3.9 / iOS 1.1.0",
  "home.paused.title": "Weka kitabu pembeni kwa muda bila kuharibu takwimu zako",
  "home.paused.sub": "Imesitishwa ni hali yake yenyewe, tofauti na Imeachwa. Kitabu kinasubiri ulipokiacha, na siku za kusitisha hazihesabiwi.",
  "home.paused.tab_pending": "Nataka kusoma",
@@ -844,7 +844,7 @@
  ],
  "home.cards.tag": "Shiriki",
  "home.cards.title": "Lecturameter si mtandao wa kijamii. Kadi zako huenda kwenye ule unaoutumia.",
- "home.cards.sub": "Tengeneza kadi wima za 1080×1920, tayari kwa stori, na uzishiriki mahali ulipo tayari. Bila akaunti, bila wasifu na bila wafuasi. Katika 3.9 muhtasari wa kila wiki na kila mwezi unapata muundo mpya na takwimu zaidi.",
+ "home.cards.sub": "Tengeneza kadi wima za 1080×1920, tayari kwa stori, na uzishiriki mahali ulipo tayari. Bila akaunti, bila wasifu na bila wafuasi. Katika 3.9 / iOS 1.1.0 muhtasari wa kila wiki na kila mwezi unapata muundo mpya na takwimu zaidi.",
  "home.cards.chips": [
   "Kitabu",
   "Kitabu kilichokamilika",
@@ -951,7 +951,7 @@
    "text": "Fungua menyu ya nukta tatu za wima kwenye ukurasa wa kitabu na uchague “Menyu ya haraka”. Wizadi za hatua kwa hatua hazina, ili usipoteze unachojaza."
   }
  ],
- "home.quickmenu.tag": "Mpya katika 3.9",
+ "home.quickmenu.tag": "Mpya katika 3.9 / iOS 1.1.0",
  "anchor.quickmenu": "quick-menu",
  "home.quickmenu.screen": "Bingo",
  "home.quickmenu.menu_title": "Menyu ya haraka",

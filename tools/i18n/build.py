@@ -241,14 +241,23 @@ def vkey(version):
     return version.replace('.', '_')
 
 
-def release_vars(cfg, strings, where, errors):
+def release_label(cfg, ver, loc):
+    """Nombre publico de una version en texto agnostico de plataforma (p. ej. «3.9 / iOS 1.1.0»),
+    segun release_labels en locales.json. En idiomas RTL va aislado como LTR para que la barra no se invierta."""
+    label = cfg.get('release_labels', {}).get(ver, ver)
+    if label != ver and loc is not None and loc.get('dir') == 'rtl':
+        label = '<span dir="ltr">%s</span>' % label
+    return label
+
+
+def release_vars(cfg, strings, where, errors, loc=None):
     """Contenido que depende de la version: notas, historial y roadmap (segun current_release)."""
     cur = cfg['current_release']
     order = cfg['release_order']
     if cur not in order:
         raise BuildError('current_release %s no esta en release_order' % cur)
     live = bool(cfg.get('ios_live'))
-    v = {'release_version': cur}
+    v = {'release_version': cur, 'release_label': release_label(cfg, cur, loc)}
     notes = strings.get('release.%s.new' % vkey(cur))
     if not notes:
         errors.append('%s: faltan las notas release.%s.new' % (where, vkey(cur)))
@@ -267,7 +276,7 @@ def release_vars(cfg, strings, where, errors):
         fx = strings.get('release.%s.fixes' % vkey(ver), [])
         li6 = '                        <li>%s</li>'
         block = ['            <div class="faq-item">',
-                 '                <button class="faq-q">v%s &middot; %s</button>' % (ver, strings['release.%s.headline' % vkey(ver)]),
+                 '                <button class="faq-q">v%s &middot; %s</button>' % (release_label(cfg, ver, loc), strings['release.%s.headline' % vkey(ver)]),
                  '                <div class="faq-a"><div class="faq-a-inner">',
                  '                    ' + strings['home.history.new'], '                    <ul>']
         block += [li6 % x for x in new] + ['                    </ul>']
@@ -287,7 +296,7 @@ def release_vars(cfg, strings, where, errors):
         out = []
         for i, c in enumerate(cards):
             out += ['            <div class="roadmap-item%s">' % (' glow' if i == 0 else ''),
-                    '                <span class="roadmap-tag planned">%s</span>' % nxt,
+                    '                <span class="roadmap-tag planned">%s</span>' % release_label(cfg, nxt, loc),
                     '                <h3>%s</h3>' % c['title'],
                     '                <p>%s</p>' % c['text'],
                     '            </div>']
@@ -439,7 +448,7 @@ def main():
                 tpl = f.read()
             where = '%s/%s' % (loc['code'], page['template'])
             variables = build_vars(cfg, loc, pname, page, plocs)
-            variables.update(release_vars(cfg, strings, where, errors))
+            variables.update(release_vars(cfg, strings, where, errors, loc))
             if page['template'] == 'index.html':
                 variables.update(list_vars(strings, where, errors))
             variables['__loc'] = loc
