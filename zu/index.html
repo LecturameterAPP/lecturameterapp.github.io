@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Isilandeli Sokufunda · Izibalo nesikhathi</title>
     <meta name="description" content="Lecturameter: Isilandeli Sokufunda se-Android ne-iPhone. Linganisa isikhathi sokufunda, landela amakhasi nezibalo, bese uthuthela ku-Goodreads. Akukho akhawunti nezikhangiso.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Izindikimba</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Indawo yonke <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Izinsiza <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Ibhulogi</a></li>
-                    <li><a href="#whatsnew">Izindaba</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Amapulatifomu</a></li>
+                    <li><a href="./news/">Izindaba</a></li>
+                    <li><a href="./roadmap/">Uhlelo lwekusasa</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Amapulatifomu</a></li>
                     <li class="nav-dd-label" role="presentation">Ezomthetho</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Inqubomgomo yobumfihlo</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Imigomo Yesevisi</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Ukuthenga kanye kuphela, hhayi ukubhalisa.</p>
                 <p class="price-ios-offer">Isipho sokuphehlwa kwe-iOS: <strong>&#8364;2.99</strong> ngenyanga yokuqala. Ngemva kwalokho, &#8364;4.99 (intengo efanayo ne-Android). Kuseyikuthenga kanye.</p>
-                <details class="price-currency-list">
-                    <summary>Intengo elinganiselwe ngemali yakho</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Amanani okugcina amiswa yi-App Store; angahluka kancane.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Bona amanani ezifunda</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Bona ukuthi ungayisebenzisa kanjani i-Pro</a></p>
                 <p class="price-note">Intengo efanayo ku-Android nakwi-iOS ngemva kwenyanga yokuphehlwa.</p>
-                <p class="price-note price-experiment-note">* Abanye abantu bangase babone intengo ehlukile ngoba senza izivivinyo zamanani.</p>
                 <p class="price-trial">Zama i-Pro mahhala izinsuku eziyi-7, ngaphakathi kohlelo lokusebenza</p>
                 <p class="price-trial">Akudingeki ikhadi ekuzameni</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Konke okunye kuhlala kumahhala. I-Pro yengeza okwengeziwe kuphela.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">I-Pro ngokuningiliziwe namanani ezifunda</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Imenyu esheshayo:</strong> tshintshela esigabeni esinye uye komunye ngamachashazi amathathu (···), ngaphandle kokubuyela Ekhaya</li>
                     <li><strong>Kumiswe okwesikhashana:</strong> beka incwadi eceleni isikhashana ngaphandle kokonakalisa izibalo zakho</li>
                     <li><strong>Izingqikithi ezimbili ezintsha ze-Pro:</strong> Incwadi kanye neIhlathi</li>
-                    <li>Izingqikithi ze-Pro zingathengwa nazinye nazinye noma ngamaphakethe angu-3, kunokubuka kuqala, futhi isikrini se-Pro sisha</li>
-                    <li><strong>Ukufunda okungalandelani</strong> kuma-anthology nezingqikithi zezinkondlo: amakhasi agqagqanayo awabalwa kabili futhi ibha yenqubekelaphambili yahlukaniswe izingxenye</li>
-                    <li>Qala ukufunda ku-widget yencwadi, ungavuli i-app</li>
-                    <li>Izifinyezo zeviki nezenyanga ngedizayini entsha nezibalo eziningi</li>
-                    <li>I-imeyili ongayikhetha ku-“Thumela impendulo”, ukuze nje ngikwazi ukukuphendula</li>
-                    <li>Iwashi lesitophuwashi eliyingqayizivele kuyo yonke ingqikithi</li>
-                    <li>Pagi ikukhethela incwadi kokuthi Ngifuna ukufunda</li>
-                    <li>I-KOSync enesikhathi sangempela sokufunda se-KOReader</li>
-                    <li>Izaziso ngesigaba nezaziso zezindaba zohlelo</li>
-                    <li>Ikhaya elinomugqa ohlukaniswe ngezinjongo, Ukufunda kwami namaThuluzi</li>
-                    <li>Shintsha isimo sencwadi emisebenzini yayo esheshayo, uphinde ukhiphe uma uphutha</li>
-                    <li>Izithonjana ze-Material esikhundleni sama-emoji nezibalo ezifundeka kangcono kuzo zonke izingqikithi</li>
-                    <li>Isaziso uma ufaka incwadi usuka ekusesheni</li>
-                    <li>Izinsuku zemijikelezo yokufunda emnqmeni owodwa, kulula ukuzihlela</li>
-                    <li>I-Bingo enamathempulethi angu-24 ngosayizi</li>
-                    <li>Ku-iPhone, i-Live Activity yethaymeli ngemibala yengqikithi yakho</li>
-                    <li>Ikhathalogi ifunda ekusesheni nasekuskeni kwe-ISBN okungatholi lutho futhi ifaka izincwadi ezingekho (kusukela ngoNovemba 15)</li>
-                    <li>IsiShayina Sendabuko</li>
-                    <li>Uchungechunge ku-CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Okulungisiwe</h3>
-                <ul>
-                    <li>Izihloko ze-Bingo, Wrapped nezinye izikrini manje zisekuphakameni okufanayo nakwamanye amamenyu</li>
-                    <li>Izithonjana ze-Bingo ne-Wrapped zibuyele emibala yazo</li>
-                    <li>Izibali zezincwadi ngesimo e-Ikhaya zibonakala kangcono kuMnyama, i-OLED, Ukuntwela, i-Aurora nesikhumba</li>
-                    <li>Isixwayiso esisodwa sezincwadi ezinedatha engaphelele: unxantathu ophuzi ukhiphekile futhi obomvu uyasala</li>
-                    <li>Ukulayisha kabusha ikhava nohlobo kukutshela uma konke kwakuhle kakade, futhi kuxwayisa ngokubomvu uma kunokungatholakali</li>
-                    <li>Amakhophi e-Google Drive emitapo emikhulu kakhulu awasahlulekile ngenxa yokuntuleka kwenkumbulo</li>
-                    <li>Ukulungiswa okuningi ku-iPhone</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Wonke amanothi ezibuyekezo nomlando wezinguqulo</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">I-Lecturameter ku-iPhone nase-Android</h2>
         <p>Inguqulo ye-iPhone inezici ezifanayo eziyinhloko ne-Android: ilabhulali, isitophuwashi sokufunda, izibalo, izinselelo, i-bingo, uPagi nezindikimba ezibukekayo. Lezi yizinto ezihlukile.</p>
-        <details class="differences-details">
-            <summary>Umehluko phakathi kwe-iPhone ne-Android</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>I-iPhone kuphela</h3>
-                    <ul>
-                        <li>Isitophuwashi esikrinini sokukhiya nase-Dynamic Island, ngokumisa isikhashana nokuma.</li>
-                        <li>Izilawuli ze-iOS 18: Iyafunda manje, Skena i-ISBN, Engeza incwadi nokuQala isitophuwashi.</li>
-                        <li>Ikhophi yesipele ye-iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>I-Android kuphela</h3>
-                    <ul>
-                        <li>Ukulawula isitophuwashi kusuka esazisweni.</li>
-                        <li>Okungaphazamisi okuzenzakalelayo eseshinini ebhucungayo.</li>
-                        <li>Ukulungiselela nokunamathisela ama-widget.</li>
-                        <li>Amathebulethi (inguqulo ye-iPhone ayisebenzi ku-iPad).</li>
-                        <li>Ukuthola ngokusebenzisa <code>lm-…</code> amakhodi.</li>
-                        <li>Itimu ne-icon ye-Pro njengesipho ekupheleni kokuzama.</li>
-                        <li>Amathiphu neminikelo.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Kuzo zombili</h3>
-                    <ul>
-                        <li>Ama-widget eNcwadi, Izibalo, Izinselelo ne-Bingo.</li>
-                        <li>Isikhethi solimi esiphelele.</li>
-                        <li>Imodi yokuvundlile kumafoni.</li>
-                        <li>Ikhophi yesipele ye-Google Drive.</li>
-                        <li>Ukuvumelanisa nesifundi se-e (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Ukuthenga i-Pro</h3>
-                    <ul>
-                        <li>Ku-iPhone, i-Pro iyikuthenga ngaphakathi kohlelo lokusebenza ku-App Store. Ku-Android, iyikuthenga ku-Google Play.</li>
-                        <li>Ukuzama kwezinsuku eziyi-7 ku-iPhone kuyikuthenga mahhala ngaphakathi kohlelo lokusebenza ku-App Store, okuboshelwe ku-Apple ID yakho.</li>
-                        <li>Okwamanje i-Pro ayidluli phakathi kwe-Android ne-iPhone: ukuthenga ngakunye kuhlala kuphulatifomu yako.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Bona wonke amahlukaniso</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Ingabe lusebenza ngaphandle kwenethiwekhi?</button>
                 <div class="faq-a"><div class="faq-a-inner">Cishe konke kusebenza ngaphandle kwenethiwekhi. Udinga ukuxhumeka kuphela ukuze useshe izincwadi ezintsha nokulayisha amakhophi esipele ku-Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Ingabe kukhona inguqulo ye-iPhone?</button>
-                <div class="faq-a"><div class="faq-a-inner">Yebo: ungayilanda manje ku- <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Ngingazama ngaphambi kokuthenga?</button>
-                <div class="faq-a"><div class="faq-a-inner">Yebo. Kukhona ukuzama mahhala kwezinsuku eziyi-7 kwezici ze-Pro, akudingeki ikhadi. Ku-iPhone kuyikuthenga mahhala ngaphakathi kohlelo lokusebenza ku-App Store, okuboshelwe ku-Apple ID yakho. Ku-Android, ekupheleni kokuzama, ngisho noma ungayithengi i-Pro, uthola ithemu le-Pro mahhala olikhethayo.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Kwenzekani nge-Pro yami uma ngishintsha ifoni?</button>
-                <div class="faq-a"><div class="faq-a-inner">Kuncike lapho uyithengele khona. Uma uyithengele ku-<strong>Google Play</strong> bese uguqukela kwenye i-Android ngeakhawunti ye-Google efanayo, faka i-Lecturameter bese uthinta <strong>Buyisela ukuthenga</strong> ku-Izilungiselelo. Uma uyithengele ku-<strong>App Store</strong> bese uguqukela kwenye i-iPhone nge-Apple ID efanayo, kuyafana: faka bese uthinta <strong>Buyisela ukuthenga</strong>. Okwamanje i-Pro ayidluli phakathi kwe-Android ne-iPhone: ukuthenga ngakunye kuhlala kuphulatifomu yako. <code>lm-…</code> amakhodi angasetshenziswa ku-Android kuphela. Imininingwane eyengeziwe ku- <a href="../activar-pro.html">Ungayisebenzisa kanjani i-Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Ngingayithutha i-Pro yami phakathi kwamafoni naphakathi kwe-iOS ne-Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">Phakathi kwe-Android ne-iPhone, okwamanje cha: ukuthenga ngakunye kuhlala kuphulatifomu yako. Siyabheka ukuthi kungenzeka yini ngandlela thile. Phakathi kwamafoni amabili ephulatifomu efanayo yebo: sebenzisa <strong>ukubuyisela ukuthenga</strong> ngeakhawunti yakho ye-Google noma i-Apple ID.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Umlando weziqephu</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Imicimbi · Imenyu esheshayo · Izingqikithi ezimbili ezintsha ze-Pro</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Okusha</strong>
-                    <ul>
-                        <li><strong>Imicimbi:</strong> izinselelo zokufunda zomhlaba wonke ne-Lecturameter Quest uma ikhona</li>
-                        <li><strong>Imenyu esheshayo:</strong> tshintshela esigabeni esinye uye komunye ngamachashazi amathathu (···), ngaphandle kokubuyela Ekhaya</li>
-                        <li><strong>Kumiswe okwesikhashana:</strong> beka incwadi eceleni isikhashana ngaphandle kokonakalisa izibalo zakho</li>
-                        <li><strong>Izingqikithi ezimbili ezintsha ze-Pro:</strong> Incwadi kanye neIhlathi</li>
-                        <li>Izingqikithi ze-Pro zingathengwa nazinye nazinye noma ngamaphakethe angu-3, kunokubuka kuqala, futhi isikrini se-Pro sisha</li>
-                        <li><strong>Ukufunda okungalandelani</strong> kuma-anthology nezingqikithi zezinkondlo: amakhasi agqagqanayo awabalwa kabili futhi ibha yenqubekelaphambili yahlukaniswe izingxenye</li>
-                        <li>Qala ukufunda ku-widget yencwadi, ungavuli i-app</li>
-                        <li>Izifinyezo zeviki nezenyanga ngedizayini entsha nezibalo eziningi</li>
-                        <li>I-imeyili ongayikhetha ku-“Thumela impendulo”, ukuze nje ngikwazi ukukuphendula</li>
-                        <li>Iwashi lesitophuwashi eliyingqayizivele kuyo yonke ingqikithi</li>
-                        <li>Pagi ikukhethela incwadi kokuthi Ngifuna ukufunda</li>
-                        <li>I-KOSync enesikhathi sangempela sokufunda se-KOReader</li>
-                        <li>Izaziso ngesigaba nezaziso zezindaba zohlelo</li>
-                        <li>Ikhaya elinomugqa ohlukaniswe ngezinjongo, Ukufunda kwami namaThuluzi</li>
-                        <li>Shintsha isimo sencwadi emisebenzini yayo esheshayo, uphinde ukhiphe uma uphutha</li>
-                        <li>Izithonjana ze-Material esikhundleni sama-emoji nezibalo ezifundeka kangcono kuzo zonke izingqikithi</li>
-                        <li>Isaziso uma ufaka incwadi usuka ekusesheni</li>
-                        <li>Izinsuku zemijikelezo yokufunda emnqmeni owodwa, kulula ukuzihlela</li>
-                        <li>I-Bingo enamathempulethi angu-24 ngosayizi</li>
-                        <li>Ku-iPhone, i-Live Activity yethaymeli ngemibala yengqikithi yakho</li>
-                        <li>Ikhathalogi ifunda ekusesheni nasekuskeni kwe-ISBN okungatholi lutho futhi ifaka izincwadi ezingekho (kusukela ngoNovemba 15)</li>
-                        <li>IsiShayina Sendabuko</li>
-                        <li>Uchungechunge ku-CSV</li>
-                    </ul>
-                    <strong>Okulungisiwe</strong>
-                    <ul>
-                        <li>Izihloko ze-Bingo, Wrapped nezinye izikrini manje zisekuphakameni okufanayo nakwamanye amamenyu</li>
-                        <li>Izithonjana ze-Bingo ne-Wrapped zibuyele emibala yazo</li>
-                        <li>Izibali zezincwadi ngesimo e-Ikhaya zibonakala kangcono kuMnyama, i-OLED, Ukuntwela, i-Aurora nesikhumba</li>
-                        <li>Isixwayiso esisodwa sezincwadi ezinedatha engaphelele: unxantathu ophuzi ukhiphekile futhi obomvu uyasala</li>
-                        <li>Ukulayisha kabusha ikhava nohlobo kukutshela uma konke kwakuhle kakade, futhi kuxwayisa ngokubomvu uma kunokungatholakali</li>
-                        <li>Amakhophi e-Google Drive emitapo emikhulu kakhulu awasahlulekile ngenxa yokuntuleka kwenkumbulo</li>
-                        <li>Ukulungiswa okuningi ku-iPhone</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Inqubekelaphambili ngo-%, izingubo nezikhumba ze-Pagi, KOSync, izilimi ezibhalwa kusuka kwesokudla ziye kwesokunxele</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Okusha</strong>
-                    <ul>
-                        <li>Inqubekelaphambili ngo-%: rekhoda iziqeshana zakho njengephesenti ezincwadini, kuma-comics, kuma-manga nakuma-audiobook. Kuma-audiobook ungaphinda ubhale nesikhathi.</li>
-                        <li>Shintsha ifomethi yencwadi, i-comic, i-manga noma i-audiobook ngemva kokuyengeza, ngaphandle kokulahlekelwa iziqeshana, amanothi noma izibalo.</li>
-                        <li>Amanothi nemibhalo eminingana uma uqeda isiqeshana, ngayinye ngokwayo.</li>
-                        <li>Uma uphuma esiqeshaneni ungagcinanga, sigcinwa njengedrafti futhi ungasithola kabusha ngokuzayo lapho ugcina.</li>
-                        <li>Izibalo: idonathi eveza lokho okufundayo ngefomethi nesihlungi sefomethi ukubona uhlobo ngalunye ngokwalo.</li>
-                        <li>Izinselele ze-audiobook (amahora alalelwe nama-audiobook aqediwe) ne-Bingo enama-audiobook: ihora eli-1 lokulalela libalwa njengamakhasi angu-30.</li>
-                        <li>I-Pagi iqala ngezingubo ezi-7 zesizini ezinopopayi ezisebenza nanoma iyiphi itimu, izikhumba ezintsha ezi-9 (Imbongi, Isela Lasebusuku, Ikhawundi Yegazi, Induna Yomkhumbi Ongaphansi Kwamanzi, Uyinki, I-Origami, Umfundi Wasebusuku, Isikhulu Esizulayo ne-Retro Astronaut) kanye nopopayi bayo bokuthinta ngayinye. Kukhona nesikhumba esiyimfihlo esifihlwe kuhlelo: thinta ezindaweni ezahlukene esikrinini esikhulu ukuze usithole.</li>
-                        <li>I-Pagi inesigaba sayo Ezilungisweni: isizini ezenzakalelayo, izingubo zesizini ngaphandle kwesizini, nezikhumba.</li>
-                        <li>Izithonjana zohlelo lokusebenza ze-Pro: khetha eyakho Ezilungisweni, kunezinguqulo ze-Halloween, zikaKhisimusi nezoNyaka Omusha. Uma uvula ukushintsha kwesizini okuzenzakalelayo, isithonjana siguquka ezinsukwini zaso bese sibuyela kweyakho. Ivaliwe ngokuzenzakalelayo.</li>
-                        <li>Ku-Android, uma uzame i-Pro, uthola nesinye sezithonjana ze-Pro njengesipho.</li>
-                        <li>Vumelanisa inqubekelaphambili yakho ne-e-reader nge-KOSync (i-KOReader nezihambisanayo), ngosizo lwesinyathelo ngesinyathelo.</li>
-                        <li>Uhlelo manje lusesi-Arabhu, esiHebheru, esiPheresiya nesi-Urdu, olunesixhumi esibonakalayo esisuka kwesokudla siye kwesokunxele. Ungazikhetha futhi njengolimi lwencwadi uma wengeza incwadi ngesandla.</li>
-                        <li>Imisindo emisha yesibali sikhathi se-Pro, enesigaba esisha, i-Cozy.</li>
-                    </ul>
-                    <strong>Okulungisiwe</strong>
-                    <ul>
-                        <li>Ukukhethwa kohlobo okungcono kuzo zonke izinhlobo zezincwadi.</li>
-                        <li>Eminye imibala yezibalo iguqulwe ukuze iphoyinti ngalinye ledatha libonakale kangcono.</li>
-                        <li>Uma incwadi ye-e-reader ingenaso isihloko, kuboniswa igama elifundekayo esikhundleni sekhodi, futhi usizo luyakuxwayisa uma kungafiki nqubekelaphambili nomsebenzisi wakho.</li>
-                        <li>I-Bingo manje ihunyushelwe ezilimini zonke.</li>
-                        <li>Zonke izilimi ziyaphononongwa: imibhalo eyayivela ngesiNgisi noma ngesiSpanishi manje ivela ngolimi lwakho.</li>
-                        <li>Izipele ezigcinwe efonini yakho azisaphelelwa yilutho uma ukugcina kuhluleka.</li>
-                        <li>Ukushintsha isimo sencwadi akusasusi izinsuku zokufunda zangaphambilini.</li>
-                        <li>Isifinyezo senyanga sibala nezincwadi eziqediwe ezingenaziqeshana.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; I-beta ye-iPhone, amahlaya noma-manga njengezincwadi ezibalulekile, ukubuka Uchungechunge</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Okusha</strong>
-                    <ul>
-                        <li>I-Lecturameter iza ku-iPhone ku-beta, nge-TestFlight</li>
-                        <li>Amahlaya, ama-manga namabhuku omsindo njengezinto ezibalulekile: wengeze ngefomu elilodwa lokuzenzela noma amaningi ngasikhathi sinye, bese wabelana ngekhadi lakho lebhuku lomsindo</li>
-                        <li>Letha ilabhulali yakho evela kwenye iapp (Goodreads, StoryGraph, Bookmory, Fable) ngokubuka kusengaphambili</li>
-                        <li>Ukubuka Uchungechunge: izincwadi zakho zihlanganiswe ngochungechunge, kugcwaliswe ngokuzenzakalelayo uma uzengeza</li>
-                        <li>Isifinyezo senyanga nekhadi ongabelana ngalo, kanye ne-"Incwadi yakho yenyanga ngayinye" ku-Wrapped</li>
-                        <li>Ukuvela kokufunda ku-Izibalo</li>
-                        <li>Amakhadi ami: wonke amakhadi owabelane ngawo, endaweni eyodwa</li>
-                        <li>Ama-widget ezinselelo nawe-bingo</li>
-                        <li>Engeza izincwadi eziningana ngasikhathi sinye usuka ekuseshweni</li>
-                        <li>Izihlungi ezithuthukile e-Ilabhulali</li>
-                        <li>Amakhredithi ngoshicilelo ngalunye: abalandisi, abahumushi nabadwebi</li>
-                        <li>I-Pro isebenza kuze kufike kumadivayisi angu-3, i-Android ne-iOS</li>
-                        <li>Amakhophi esipele manje agcina namathegi nezikhumbuzo zakho</li>
-                        <li>Manje ungalondoloza iseshini yokufunda ngaphandle kwamakhasi, isikhathi kuphela (kuyasiza uma ufunda ngedijithali)</li>
-                    </ul>
-                    <strong>Okulungisiwe</strong>
-                    <ul>
-                        <li>Ukususa izincwadi eziningana kunikeza Ukuhlehlisa okukodwa</li>
-                        <li>Imibhalo manje ibiza uhlobo: incwadi, ikhomiki, i-manga noma incwadi ezwakalayo</li>
-                        <li>Umugqa wezinkanyezi awusakusika isikolo ngenkathi ushayela</li>
-                        <li>Amanothi amade aboniswa ngokuphelele</li>
-                        <li>Izinsuku namaphutha ekhophi yesipele ngolimi lohlelo lokusebenza</li>
-                        <li>Ukubuyisela kusuka ku-Drive akusakhethi ifayela elingalungile</li>
-                        <li>Kuvinjelwe ukuphahlazeka uma uthinta isixhumanisi sombhali kwezinye izimo</li>
-                        <li>Imilayezo icace kakhulu ku-Ngenisa nase-Thumela ngaphandle</li>
-                        <li>Kuvinjelwe ukuvaleka okungalindelekile kwesitophuwashi ngemuva</li>
-                        <li>Kuvinjelwe ukuvaleka okungalindelekile lapho kuthengwa i-Pro nakwamanye ama-widget</li>
-                        <li>Kulungisiwe inombolo edida emiphumeleni yosesho lwamahlaya nama-manga</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Amathegi, izikolo, izilimi eziyi-40, ilabhulali eguquliwe</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Okusha</strong>
-                    <ul>
-                        <li>Izilungiselelo zihlelwe ngezigaba</li>
-                        <li>Uhlelo lwe-<strong>Amathegi</strong> (kufika 3 encwadini ngayinye, sesha nge-#)</li>
-                        <li>Amakhadi nemininingwane yencwadi kuguquliwe, osayizi bamakhadi abangu-4</li>
-                        <li><strong>Izikolo zezinkanyezi ezi-5 nezingxenye zenkanyezi</strong></li>
-                        <li>Amanothi ahlukaniswe: izicaphuna, amanothi nemibono</li>
-                        <li>Yabelana ngezincwadi, izinselelo, ama-bingo, imephu yokushisa nezibalo</li>
-                        <li>Izikhumbuzo zokufunda ezishintshekayo</li>
-                        <li>Ithemu <strong>Lokuhwelela</strong> le-Pro</li>
-                        <li><strong>Ukusekelwa kwezilimi eziyi-40</strong></li>
-                    </ul>
-                    <strong>Okulungisiwe</strong>
-                    <ul>
-                        <li>Ukwakheka okungcono ekuvundlileni nasezikrinini ezinkulu</li>
-                        <li>Usesho lwezincwadi olushesha futhi olethembekile</li>
-                        <li>I-widget ye-Pro enokuqhathanisa kwenyanga</li>
-                        <li>Izinyathelo zokususa ngokuhlehlisa</li>
-                        <li>Setha kabusha amathiphu ku-Izilungiselelo &gt; Usizo</li>
-                        <li>UPagi akasasibekeli izihloko futhi akabonakali ku-Izilungiselelo</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Ibha yomsindo yeseshini ebhucungayo, ukuthuthukiswa kokuvundlile</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Okusha</strong>
-                    <ul>
-                        <li>Ibha yomsindo yeseshini ebhucungayo manje iyanda nasekuvundlileni, enezilawuli zangaphambilini/ezilandelayo nezokuphinda/ukulandelana</li>
-                        <li>Amaqoqo emisindo agqamisa umbala oyinhloko wethemu lakho kahle kakhulu</li>
-                    </ul>
-                    <strong>Okulungisiwe</strong>
-                    <ul>
-                        <li>Ukuvundlile akusanamatheli ekuqondeni mpo uma usebenzisa uhlelo lokusebenza ngolimi oluhlukile kolwefoni yakho</li>
-                        <li>Isikhala esengeziwe phakathi kwekhadi lomsindo namabhatani esitophuwashi lapho kunwetshiwe</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Bona yonke imibuzo</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Ikhathalogu yezincwadi</a>
                 <a href="#themes">Izindikimba</a>
                 <a href="#events">Imicimbi</a>
-                <a href="#pricing">Amanani</a>
+                <a href="./pro/">Amanani</a>
                 <a href="../precios-regionales.html">Amanani ezifunda</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Izinsiza</h4>
                 <a href="./blog/">Ibhulogi</a>
-                <a href="#whatsnew">Izindaba</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Amapulatifomu</a>
+                <a href="./news/">Izindaba</a>
+                <a href="./roadmap/">Uhlelo lwekusasa</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Amapulatifomu</a>
             </div>
             <div class="footer-col">
                 <h4>Ezomthetho nokuxhumana</h4>

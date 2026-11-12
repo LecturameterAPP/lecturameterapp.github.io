@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
 {{head_redirect}}    <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('{{link_feat_catalog}}');</script>
+    <script>(function(){var h=location.hash;if(h==='#{{anchor.history}}'||h==='#history'||h==='#historial')location.replace('{{link_page_news}}#{{anchor.history}}');else if(h==='#roadmap')location.replace('{{link_page_roadmap}}');else if(h==='#{{anchor.ios_differences}}'||h==='#ios-differences')location.replace('{{link_page_platforms}}')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{head.index.title}}</title>
     <meta name="description" content="{{head.index.description}}">
@@ -641,32 +642,7 @@
                 </div>
                 <p class="price-note">{{home.pricing.one_time_purchase_not_a}}</p>
                 <p class="price-ios-offer">{{home.pricing.ios_launch_offer_2_99}}</p>
-                <details class="price-currency-list">
-                    <summary>{{home.pricing.approximate_price_in_your_currency}}</summary>
-                    <ul>
-                        <li>{{home.pricing.eur_2_99}}</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>{{home.pricing.brl_r_19_90}}</li>
-                        <li>ARS US$2.99</li>
-                        <li>{{home.pricing.clp_clp_2_990}}</li>
-                        <li>{{home.pricing.cop_cop_14_900}}</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>{{home.pricing.pln_14_99_z}}</li>
-                    </ul>
-                    <p class="price-currency-note">{{home.pricing.final_prices_set_by_the}}</p>
-                </details>
-                <p class="price-note"><a href="{{root}}precios-regionales.html">{{home.pricing.see_regional_prices}}</a></p>
-                <p class="price-note"><a href="{{root}}activar-pro.html">{{home.pricing.see_how_to_activate_pro}}</a></p>
                 <p class="price-note">{{home.pricing.same_price_on_android_and}}</p>
-                <p class="price-note price-experiment-note">{{home.pricing.price_experiment_note}}</p>
                 <p class="price-trial">{{home.pricing.try_pro_free_for_7}}</p>
                 <p class="price-trial">{{home.pricing.no_card_required_for_the}}</p>
                 <ul class="pricing-list">
@@ -682,6 +658,7 @@
                 <div class="pricing-foot">{{home.pricing.everything_else_stays_free_pro}}</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="{{link_page_pro}}" class="btn">{{home.link.pro}}</a></p>
     </div>
 </section>
 
@@ -696,89 +673,25 @@
             <div class="whatsnew-col">
                 <h3>{{home.whatsnew.new}}</h3>
                 <ul>
-{{notes_new_items}}
+{{notes_new_short}}
                 </ul>
             </div>
-{{#if has_notes_fixes}}
-            <div class="whatsnew-col">
-                <h3>{{home.whatsnew.fixes}}</h3>
-                <ul>
-{{notes_fix_items}}
-                </ul>
-            </div>
-{{/if}}
         </div>
 {{#if has_roadmap}}
         <p style="text-align:center; margin-top:2rem;">
-            <a href="#roadmap" class="btn">{{home.whatsnew.and_for_the_next_version}}</a>
+            <a href="{{link_page_roadmap}}" class="btn">{{home.whatsnew.and_for_the_next_version}}</a>
         </p>
 {{/if}}
+        <p style="text-align:center; margin-top:2rem;"><a href="{{link_page_news}}" class="btn">{{home.link.news}}</a></p>
     </div>
 </section>
 
-{{#if has_roadmap}}
-<!-- 7. ROADMAP -->
-<section class="band band-alt" id="roadmap">
-    <div class="container">
-        <div class="section-head">
-            <h2>{{roadmap_heading}}</h2>
-            <p>{{roadmap_sub}}</p>
-        </div>
-        <div class="roadmap-list">
-{{roadmap_items}}
-        </div>
-    </div>
-</section>
-
-{{/if}}
 <!-- 7.6 iOS DIFFERENCES -->
 <section class="band band-alt differences" id="{{anchor.ios_differences}}" aria-labelledby="differences-title">
     <div class="container">
         <h2 id="differences-title">{{home.ios_differences.lecturameter_on_iphone_and_android}}</h2>
         <p>{{home.ios_differences.the_iphone_version_has_the}}</p>
-        <details class="differences-details">
-            <summary>{{home.ios_differences.iphone_vs_android_differences}}</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>{{home.ios_differences.iphone_only}}</h3>
-                    <ul>
-                        <li>{{home.ios_differences.timer_on_the_lock_screen}}</li>
-                        <li>{{home.ios_differences.ios_18_controls_reading_now}}</li>
-                        <li>{{home.ios_differences.icloud_drive_backup}}</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>{{home.ios_differences.android_only}}</h3>
-                    <ul>
-                        <li>{{home.ios_differences.timer_control_from_the_notificatio}}</li>
-                        <li>{{home.ios_differences.automatic_do_not_disturb_in}}</li>
-                        <li>{{home.ios_differences.widget_configuration_and_pinning}}</li>
-                        <li>{{home.ios_differences.landscape_mode_and_tablets}}</li>
-                        <li>{{home.ios_differences.redeeming}} <code>lm-…</code>{{home.ios_differences.codes}}</li>
-                        <li>{{home.ios_differences.free_pro_theme_at_the}}</li>
-                        <li>{{home.ios_differences.external_donations}}</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>{{home.ios_differences.on_both}}</h3>
-                    <ul>
-                        <li>{{home.ios_differences.book_statistics_challenges_and_bin}}</li>
-                        <li>{{home.ios_differences.full_language_selector}}</li>
-                        <li>{{home.ios_differences.landscape_mode_on_phones}}</li>
-                        <li>{{home.ios_differences.google_drive_backup}}</li>
-                        <li>{{home.ios_differences.e_reader_sync_kosync}}</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>{{home.ios_differences.pro_purchase}}</h3>
-                    <ul>
-                        <li>{{home.ios_differences.on_iphone_pro_is_an}}</li>
-                        <li>{{home.ios_differences.the_7_day_trial_on}}</li>
-                        <li>{{home.ios_differences.to_move_pro_between_android}}</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="{{link_page_platforms}}" class="btn">{{home.link.platforms}}</a></p>
     </div>
 </section>
 
@@ -815,76 +728,8 @@
                 <button class="faq-q">{{home.faq.does_it_work_offline}}</button>
                 <div class="faq-a"><div class="faq-a-inner">{{home.faq.almost_everything_works_offline_yo}}</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">{{home.faq.is_there_an_iphone_version}}</button>
-                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_in_public_beta_you}} <a href="{{ios_url}}" target="_blank" rel="noopener">{{home.faq.testflight}}</a>{{home.faq.if_it_won_t_install}}</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">{{home.faq.can_i_try_before_buying}}</button>
-                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_there_s_a_free}}</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">{{home.faq.what_happens_to_my_pro}}</button>
-                <div class="faq-a"><div class="faq-a-inner">{{home.faq.it_depends_on_where_you}} <code>lm-…</code> {{home.faq.codes_can_only_be_redeemed}} <a href="{{root}}activar-pro.html">{{home.faq.how_to_activate_pro}}</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">{{home.faq.can_i_move_my_pro}}</button>
-                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_between_android_and_iphone}}</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="{{anchor.history}}">
-    <div class="container">
-        <div class="section-head">
-            <h2>{{home.history.version_history}}</h2>
-        </div>
-        <div class="faq-list">
-{{history_items}}
-            <div class="faq-item">
-                <button class="faq-q">{{home.history.v3_6_tags_ratings_40}}</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    {{home.history.new}}
-                    <ul>
-                        <li>{{home.history.settings_reorganized_into_sections}}</li>
-                        <li>{{home.history.tags_system_up_to_3}}</li>
-                        <li>{{home.history.revamped_book_cards_and_detail}}</li>
-                        <li>{{home.history.5_star_ratings_with_half}}</li>
-                        <li>{{home.history.notes_split_into_quotes_notes}}</li>
-                        <li>{{home.history.share_books_challenges_bingos_heat}}</li>
-                        <li>{{home.history.customizable_reading_reminders}}</li>
-                        <li>{{home.history.dusk_theme_for_pro}}</li>
-                        <li>{{home.history.support_for_40_languages}}</li>
-                    </ul>
-                    {{home.history.fixes}}
-                    <ul>
-                        <li>{{home.history.better_layout_in_landscape_and}}</li>
-                        <li>{{home.history.faster_and_more_reliable_book}}</li>
-                        <li>{{home.history.pro_widget_with_monthly_comparison}}</li>
-                        <li>{{home.history.destructive_actions_with_undo}}</li>
-                        <li>{{home.history.reset_tips_from_settings_help}}</li>
-                        <li>{{home.history.pagi_no_longer_covers_titles}}</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">{{home.history.v3_5_immersive_session_sound}}</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    {{home.history.new}}
-                    <ul>
-                        <li>{{home.history.the_immersive_session_s_sound}}</li>
-                        <li>{{home.history.sound_groups_highlight_your_theme}}</li>
-                    </ul>
-                    {{home.history.fixes}}
-                    <ul>
-                        <li>{{home.history.landscape_no_longer_gets_stuck}}</li>
-                        <li>{{home.history.more_breathing_room_between_the}}</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="{{link_page_faq}}" class="btn">{{home.link.faq}}</a></p>
     </div>
 </section>
 

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Lese-Tracker · Buchstatistik & Timer</title>
     <meta name="description" content="Lecturameter: Lese-Tracker für Android und iPhone. Stoppe deine Lesezeit, erfasse Seiten, Tempo und Statistiken und importiere aus Goodreads. Kein Konto, keine Werbung.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Themen</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Universum <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Ressourcen <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blog</a></li>
-                    <li><a href="#whatsnew">Neuigkeiten</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Plattformen</a></li>
+                    <li><a href="./news/">Neuigkeiten</a></li>
+                    <li><a href="./roadmap/">Roadmap</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Plattformen</a></li>
                     <li class="nav-dd-label" role="presentation">Rechtliches</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Datenschutzrichtlinie</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Nutzungsbedingungen</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Einmalkauf, kein Abo.</p>
                 <p class="price-ios-offer">Startangebot für iOS: <strong>2,99 &#8364;</strong> im ersten Monat. Danach 4,99 &#8364; (gleicher Preis wie bei Android). Weiterhin ein Einmalkauf.</p>
-                <details class="price-currency-list">
-                    <summary>Ungefährer Preis in deiner Währung</summary>
-                    <ul>
-                        <li>EUR 2,99 &#8364;</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19,90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2.990</li>
-                        <li>COP COP 14.900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14,99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Endpreise legt der App Store fest; sie können leicht abweichen.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Regionale Preise ansehen</a></p>
-                <p class="price-note"><a href="../activar-pro.html">So aktivierst du Pro</a></p>
                 <p class="price-note">Gleicher Preis auf Android und iOS nach dem Startmonat.</p>
-                <p class="price-note price-experiment-note">* Einige Personen sehen möglicherweise einen anderen Preis, weil wir Preisexperimente durchführen.</p>
                 <p class="price-trial">Teste Pro 7 Tage kostenlos, direkt in der App</p>
                 <p class="price-trial">Für die Testphase ist keine Karte nötig</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Alles andere bleibt kostenlos. Pro bringt nur Extras.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro im Detail und regionale Preise</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Schnellmenü:</strong> Wechsle mit den drei Punkten (···) von einem Bereich zum anderen, ohne zurück zum Start zu gehen</li>
                     <li><strong>Pausiert:</strong> leg ein Buch eine Weile beiseite, ohne deine Statistiken zu verfälschen</li>
                     <li><strong>Zwei neue Pro-Themes:</strong> Notizbuch und Wald</li>
-                    <li>Pro-Themes lassen sich auch einzeln oder in 3er-Paketen kaufen, mit Vorschau, und der Pro-Bildschirm ist neu</li>
-                    <li><strong>Nichtlineares Lesen</strong> für Anthologien und Gedichtbände: Sich überschneidende Seiten zählen nicht doppelt und der Fortschrittsbalken ist in Abschnitte unterteilt</li>
-                    <li>Lesen direkt über das Buch-Widget starten, ohne die App zu öffnen</li>
-                    <li>Wochen- und Monatsübersichten mit neuem Design und mehr Statistiken</li>
-                    <li>Optionale E-Mail bei „Feedback senden“, nur damit ich dir antworten kann</li>
-                    <li>Eine eigene Timer-Uhr für jedes Theme</li>
-                    <li>Pagi wählt ein Buch aus deiner Merkliste</li>
-                    <li>KOSync mit der echten Lesezeit aus KOReader</li>
-                    <li>Benachrichtigungen nach Kategorie und Hinweise auf Neuigkeiten der App</li>
-                    <li>Start mit der Leiste, gruppiert in Ziele, Meine Lektüre und Werkzeuge</li>
-                    <li>Ändere den Status eines Buchs über seine Schnellaktionen und mach es rückgängig, falls du dich vertippst</li>
-                    <li>Material-Symbole statt Emojis und besser lesbare Statistiken in jedem Theme</li>
-                    <li>Ein Hinweis, wenn du ein Buch aus der Suche hinzufügst</li>
-                    <li>Daten der Lesezyklen in einer einzigen Zeile, leichter zu bearbeiten</li>
-                    <li>Bingo mit 24 Vorlagen je nach Größe</li>
-                    <li>Auf dem iPhone die Live Activity des Timers in den Farben deines Themes</li>
-                    <li>Der Katalog lernt aus Suchen und ISBN-Scans ohne Treffer und ergänzt die fehlenden Bücher (ab dem 15. November)</li>
-                    <li>Traditionelles Chinesisch</li>
-                    <li>Serie im CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Fehlerbehebungen</h3>
-                <ul>
-                    <li>Die Titel in Bingo, Wrapped und anderen Bildschirmen sitzen jetzt auf derselben Höhe wie in den anderen Menüs</li>
-                    <li>Die Symbole von Bingo und Wrapped haben ihre Farben zurück</li>
-                    <li>Die Bücherzähler pro Status im Start sind in Dunkel, OLED, Dämmerung, Aurora und Leder besser zu sehen</li>
-                    <li>Nur noch eine Warnung für Bücher mit fehlenden Daten: Das gelbe Dreieck verschwindet, das rote bleibt</li>
-                    <li>Beim Neuladen von Cover und Genre erfährst du, wenn schon alles in Ordnung war, und wirst in Rot gewarnt, wenn etwas nicht gefunden wird</li>
-                    <li>Google-Drive-Backups sehr großer Bibliotheken schlagen nicht mehr wegen Speichermangel fehl</li>
-                    <li>Mehrere Fehlerbehebungen auf dem iPhone</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Alle Patchnotes und der Versionsverlauf</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter auf iPhone und Android</h2>
         <p>Die iPhone-Version hat dieselben Hauptfunktionen wie Android: Bibliothek, Lese-Timer, Statistiken, Challenges, Bingo, Pagi und die Themen. Das sind die Unterschiede.</p>
-        <details class="differences-details">
-            <summary>Unterschiede zwischen iPhone und Android</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Nur auf dem iPhone</h3>
-                    <ul>
-                        <li>Timer auf dem Sperrbildschirm und in der Dynamic Island, mit Pause und Stopp.</li>
-                        <li>Steuerelemente ab iOS 18: Gerade am Lesen, ISBN scannen, Buch hinzufügen und Timer starten.</li>
-                        <li>Backup in iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Nur auf Android</h3>
-                    <ul>
-                        <li>Timer-Steuerung über die Benachrichtigung.</li>
-                        <li>Automatisches Nicht stören in der immersiven Sitzung.</li>
-                        <li>Widget-Konfiguration und Anheften.</li>
-                        <li>Tablets (die iPhone-Version läuft nicht auf dem iPad).</li>
-                        <li>Einlösen von <code>lm-…</code> Codes.</li>
-                        <li>Ein Pro-Theme und -Symbol als Geschenk zum Ende der Testphase.</li>
-                        <li>Trinkgelder und Spenden.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Auf beiden</h3>
-                    <ul>
-                        <li>Widgets für Buch, Statistiken, Challenges und Bingo.</li>
-                        <li>Vollständige Sprachauswahl.</li>
-                        <li>Querformat auf dem Handy.</li>
-                        <li>Backup in Google Drive.</li>
-                        <li>E-Reader-Synchronisierung (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Pro-Kauf</h3>
-                    <ul>
-                        <li>Auf dem iPhone ist Pro ein In-App-Kauf im App Store. Auf Android ist es ein Kauf über Google Play.</li>
-                        <li>Die 7-tägige Testphase auf dem iPhone ist ein kostenloser In-App-Kauf im App Store, verknüpft mit deiner Apple-ID.</li>
-                        <li>Pro wird vorerst nicht zwischen Android und iPhone übertragen: Jeder Kauf bleibt auf seiner Plattform.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Alle Unterschiede ansehen</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Funktioniert sie offline?</button>
                 <div class="faq-a"><div class="faq-a-inner">Fast alles funktioniert offline. Eine Verbindung brauchst du nur, um neue Bücher zu suchen und Backups in Google Drive hochzuladen.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Gibt es eine Version für das iPhone?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ja: Du kannst sie jetzt herunterladen im <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Kann ich sie vor dem Kauf testen?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ja. Es gibt eine kostenlose 7-tägige Testphase der Pro-Funktionen, ohne Karte. Auf dem iPhone ist sie ein kostenloser In-App-Kauf im App Store, verknüpft mit deiner Apple-ID. Auf Android bekommst du am Ende der Testphase, auch wenn du Pro nicht kaufst, ein Pro-Thema deiner Wahl geschenkt.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Was passiert mit meinem Pro, wenn ich das Handy wechsle?</button>
-                <div class="faq-a"><div class="faq-a-inner">Das hängt davon ab, wo du es gekauft hast. Hast du es bei <strong>Google Play</strong> gekauft und wechselst zu einem anderen Android mit demselben Google-Konto, installiere Lecturameter und tippe in den Einstellungen auf <strong>Kauf wiederherstellen</strong>. Hast du es im <strong>App Store</strong> gekauft und wechselst zu einem anderen iPhone mit derselben Apple-ID, gilt dasselbe: installieren und auf <strong>Kauf wiederherstellen</strong> tippen. Pro wird vorerst nicht zwischen Android und iPhone übertragen: Jeder Kauf bleibt auf seiner Plattform. <code>lm-…</code> Codes können nur auf Android eingelöst werden. Mehr Details unter <a href="../activar-pro.html">So aktivierst du Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Kann ich mein Pro zwischen Handys und zwischen iOS und Android übertragen?</button>
-                <div class="faq-a"><div class="faq-a-inner">Zwischen Android und iPhone vorerst nicht: Jeder Kauf bleibt auf seiner Plattform. Wir prüfen, ob sich das irgendwie umsetzen lässt. Zwischen zwei Handys derselben Plattform geht es: Nutze <strong>Kauf wiederherstellen</strong> mit deinem Google-Konto oder deiner Apple-ID.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Versionsverlauf</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Events · Schnellmenü · Zwei neue Pro-Themes</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Neu</strong>
-                    <ul>
-                        <li><strong>Events:</strong> weltweite Leseaufgaben und Lecturameter Quest, wenn eines aktiv ist</li>
-                        <li><strong>Schnellmenü:</strong> Wechsle mit den drei Punkten (···) von einem Bereich zum anderen, ohne zurück zum Start zu gehen</li>
-                        <li><strong>Pausiert:</strong> leg ein Buch eine Weile beiseite, ohne deine Statistiken zu verfälschen</li>
-                        <li><strong>Zwei neue Pro-Themes:</strong> Notizbuch und Wald</li>
-                        <li>Pro-Themes lassen sich auch einzeln oder in 3er-Paketen kaufen, mit Vorschau, und der Pro-Bildschirm ist neu</li>
-                        <li><strong>Nichtlineares Lesen</strong> für Anthologien und Gedichtbände: Sich überschneidende Seiten zählen nicht doppelt und der Fortschrittsbalken ist in Abschnitte unterteilt</li>
-                        <li>Lesen direkt über das Buch-Widget starten, ohne die App zu öffnen</li>
-                        <li>Wochen- und Monatsübersichten mit neuem Design und mehr Statistiken</li>
-                        <li>Optionale E-Mail bei „Feedback senden“, nur damit ich dir antworten kann</li>
-                        <li>Eine eigene Timer-Uhr für jedes Theme</li>
-                        <li>Pagi wählt ein Buch aus deiner Merkliste</li>
-                        <li>KOSync mit der echten Lesezeit aus KOReader</li>
-                        <li>Benachrichtigungen nach Kategorie und Hinweise auf Neuigkeiten der App</li>
-                        <li>Start mit der Leiste, gruppiert in Ziele, Meine Lektüre und Werkzeuge</li>
-                        <li>Ändere den Status eines Buchs über seine Schnellaktionen und mach es rückgängig, falls du dich vertippst</li>
-                        <li>Material-Symbole statt Emojis und besser lesbare Statistiken in jedem Theme</li>
-                        <li>Ein Hinweis, wenn du ein Buch aus der Suche hinzufügst</li>
-                        <li>Daten der Lesezyklen in einer einzigen Zeile, leichter zu bearbeiten</li>
-                        <li>Bingo mit 24 Vorlagen je nach Größe</li>
-                        <li>Auf dem iPhone die Live Activity des Timers in den Farben deines Themes</li>
-                        <li>Der Katalog lernt aus Suchen und ISBN-Scans ohne Treffer und ergänzt die fehlenden Bücher (ab dem 15. November)</li>
-                        <li>Traditionelles Chinesisch</li>
-                        <li>Serie im CSV</li>
-                    </ul>
-                    <strong>Fehlerbehebungen</strong>
-                    <ul>
-                        <li>Die Titel in Bingo, Wrapped und anderen Bildschirmen sitzen jetzt auf derselben Höhe wie in den anderen Menüs</li>
-                        <li>Die Symbole von Bingo und Wrapped haben ihre Farben zurück</li>
-                        <li>Die Bücherzähler pro Status im Start sind in Dunkel, OLED, Dämmerung, Aurora und Leder besser zu sehen</li>
-                        <li>Nur noch eine Warnung für Bücher mit fehlenden Daten: Das gelbe Dreieck verschwindet, das rote bleibt</li>
-                        <li>Beim Neuladen von Cover und Genre erfährst du, wenn schon alles in Ordnung war, und wirst in Rot gewarnt, wenn etwas nicht gefunden wird</li>
-                        <li>Google-Drive-Backups sehr großer Bibliotheken schlagen nicht mehr wegen Speichermangel fehl</li>
-                        <li>Mehrere Fehlerbehebungen auf dem iPhone</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Fortschritt in %, Pagi-Outfits und -Skins, KOSync, Sprachen von rechts nach links</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Neu</strong>
-                    <ul>
-                        <li>Fortschritt in %: Erfasse deine Sitzungen als Prozentwert bei Büchern, Comics, Manga und Hörbüchern. Bei Hörbüchern kannst du auch die Zeit notieren.</li>
-                        <li>Ändere das Format eines Buchs, Comics, Mangas oder Hörbuchs nach dem Hinzufügen, ohne Sitzungen, Notizen oder Statistiken zu verlieren.</li>
-                        <li>Mehrere Notizen und Zitate beim Beenden einer Sitzung, jeweils einzeln.</li>
-                        <li>Wenn du eine Sitzung ohne Speichern verlässt, bleibt sie als Entwurf erhalten und du kannst sie beim nächsten Speichern wiederherstellen.</li>
-                        <li>Statistiken: Donut mit dem, was du je Format gelesen hast, und ein Formatfilter, um jede Art einzeln zu sehen.</li>
-                        <li>Hörbuch-Challenges (gehörte Stunden und beendete Hörbücher) und Bingo mit Hörbüchern: 1 Stunde Hören zählt wie 30 Seiten.</li>
-                        <li>Pagi feiert Premiere mit 7 animierten Saison-Outfits, die zu jedem Theme passen, 9 neuen Skins (Barde, Nachtdieb, Vampirgraf, U-Boot-Kapitän, Tinte, Origami, Nachtleser, fahrender Ritter und Retro-Astronaut) und einer eigenen Tipp-Animation für jeden. Außerdem steckt ein geheimer Skin in der App: Tippe auf dem Startbildschirm herum, um ihn zu finden.</li>
-                        <li>Pagi hat einen eigenen Bereich in den Einstellungen: automatische Jahreszeit, Saison-Outfits außerhalb der Saison und Skins.</li>
-                        <li>App-Symbole für Pro: Wähle deins in den Einstellungen, mit Versionen für Halloween, Weihnachten und Neujahr. Wenn du den automatischen Saisonwechsel aktivierst, wechselt das Symbol an den jeweiligen Terminen und kehrt dann zu deinem zurück. Standardmäßig ist er aus.</li>
-                        <li>Auf Android bekommst du, wenn du Pro getestet hast, außerdem eines der Pro-Symbole geschenkt.</li>
-                        <li>Synchronisiere deinen Fortschritt mit deinem E-Reader über KOSync (KOReader und kompatible), mit einem Schritt-für-Schritt-Assistenten.</li>
-                        <li>Die App gibt es jetzt auf Arabisch, Hebräisch, Persisch und Urdu, mit einer Oberfläche von rechts nach links. Du kannst sie beim manuellen Hinzufügen auch als Buchsprache wählen.</li>
-                        <li>Neue Timer-Sounds für Pro, mit einer neuen Kategorie, Gemütlich.</li>
-                    </ul>
-                    <strong>Fehlerbehebungen</strong>
-                    <ul>
-                        <li>Bessere Genre-Auswahl für jede Art von Buch.</li>
-                        <li>Einige Statistikfarben wurden geändert, damit sich die Datenpunkte besser unterscheiden lassen.</li>
-                        <li>Hat ein E-Reader-Buch keinen Titel, wird statt eines Codes ein lesbarer Name angezeigt, und der Assistent warnt dich, wenn mit deinem Benutzer kein Fortschritt ankommt.</li>
-                        <li>Bingo ist jetzt in jeder Sprache übersetzt.</li>
-                        <li>Alle Sprachen überarbeitet: Texte, die auf Englisch oder Spanisch erschienen, sind jetzt in deiner Sprache.</li>
-                        <li>Auf dem Handy gespeicherte Backups sind nicht mehr leer, wenn das Speichern fehlschlägt.</li>
-                        <li>Das Ändern des Buchstatus löscht nicht mehr die Daten früherer Lesedurchgänge.</li>
-                        <li>Der Monatsrückblick zählt auch beendete Bücher ohne Sitzungen.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; iPhone-Beta, Comics und Manga als vollwertige Bücher, Serienansicht</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Neu</strong>
-                    <ul>
-                        <li>Lecturameter kommt als Beta aufs iPhone, über TestFlight</li>
-                        <li>Comics, Manga und Hörbücher als vollwertige Einträge: Füge sie über ein manuelles Formular oder mehrere auf einmal hinzu und teile deine Hörbuch-Karte</li>
-                        <li>Bring deine Bibliothek aus einer anderen App mit (Goodreads, StoryGraph, Bookmory, Fable), mit Vorschau</li>
-                        <li>Serienansicht: deine Bücher nach Serie gruppiert, automatisch ausgefüllt beim Hinzufügen</li>
-                        <li>Monatsrückblick mit teilbarer Karte, dazu „Dein Buch jedes Monats“ im Wrapped</li>
-                        <li>Leseentwicklung in Statistiken</li>
-                        <li>Meine Karten: alle Karten, die du geteilt hast, an einem Ort</li>
-                        <li>Widgets für Challenges und Bingo</li>
-                        <li>Mehrere Bücher auf einmal aus der Suche hinzufügen</li>
-                        <li>Erweiterte Filter in der Bibliothek</li>
-                        <li>Mitwirkende pro Ausgabe: Sprecher, Übersetzer und Illustratoren</li>
-                        <li>Pro funktioniert auf bis zu 3 Geräten, Android und iOS</li>
-                        <li>Backups speichern jetzt auch deine Tags und Erinnerungen</li>
-                        <li>Du kannst jetzt eine Lesesitzung ohne Seiten speichern, nur mit der Zeit (praktisch, wenn du digital liest)</li>
-                    </ul>
-                    <strong>Fehlerbehebungen</strong>
-                    <ul>
-                        <li>Beim Löschen mehrerer Bücher gibt es ein einziges Rückgängig</li>
-                        <li>Texte nennen jetzt den Typ: Buch, Comic, Manga oder Hörbuch</li>
-                        <li>Die Sternreihe bewertet nicht mehr beim Scrollen</li>
-                        <li>Lange Notizen werden vollständig angezeigt</li>
-                        <li>Datumsangaben und Backup-Fehler in der Sprache der App</li>
-                        <li>Beim Wiederherstellen aus Drive wird nicht mehr die falsche Datei gewählt</li>
-                        <li>Absturz beim Antippen eines Autorenlinks in manchen Situationen verhindert</li>
-                        <li>Klarere Meldungen beim Importieren und Exportieren</li>
-                        <li>Unerwartetes Schließen des Timers im Hintergrund verhindert</li>
-                        <li>Unerwartetes Schließen beim Kauf von Pro und in einigen Widgets verhindert</li>
-                        <li>Verwirrende Zahl in den Suchergebnissen für Comics und Manga behoben</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Tags, Bewertungen, 40 Sprachen, überarbeitete Bibliothek</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Neu</strong>
-                    <ul>
-                        <li>Einstellungen in Bereiche neu gegliedert</li>
-                        <li><strong>Tag</strong>-System (bis zu 3 pro Buch, Suche mit #)</li>
-                        <li>Überarbeitete Buchkarten und Detailansicht, 4 Kartengrößen</li>
-                        <li><strong>5-Sterne-Bewertungen mit halben Sternen</strong></li>
-                        <li>Notizen aufgeteilt in: Zitate, Notizen und Meinung</li>
-                        <li>Bücher, Challenges, Bingos, Heatmaps und Statistiken teilen</li>
-                        <li>Anpassbare Leseerinnerungen</li>
-                        <li>Thema <strong>Dämmerung</strong> für Pro</li>
-                        <li><strong>Unterstützung für 40 Sprachen</strong></li>
-                    </ul>
-                    <strong>Fehlerbehebungen</strong>
-                    <ul>
-                        <li>Besseres Layout im Querformat und auf großen Bildschirmen</li>
-                        <li>Schnellere und zuverlässigere Buchsuche</li>
-                        <li>Pro-Widget mit Monatsvergleich</li>
-                        <li>Unumkehrbare Aktionen jetzt mit Rückgängig</li>
-                        <li>Tipps zurücksetzen unter Einstellungen &gt; Hilfe</li>
-                        <li>Pagi verdeckt keine Titel mehr und erscheint nicht mehr in den Einstellungen</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Soundleiste der immersiven Sitzung, Verbesserungen im Querformat</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Neu</strong>
-                    <ul>
-                        <li>Die Soundleiste der immersiven Sitzung lässt sich jetzt auch im Querformat ausklappen, mit Zurück/Weiter und Wiederholen/Reihenfolge</li>
-                        <li>Die Soundgruppen heben die Akzentfarbe deines Themas deutlicher hervor</li>
-                    </ul>
-                    <strong>Fehlerbehebungen</strong>
-                    <ul>
-                        <li>Das Querformat bleibt nicht mehr im Hochformat hängen, wenn du die App in einer anderen Sprache als dein Handy nutzt</li>
-                        <li>Mehr Abstand zwischen der Soundkarte und den Timer-Schaltflächen im ausgeklappten Zustand</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Alle Fragen ansehen</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Buchkatalog</a>
                 <a href="#themes">Themen</a>
                 <a href="#events">Events</a>
-                <a href="#pricing">Preise</a>
+                <a href="./pro/">Preise</a>
                 <a href="../precios-regionales.html">Regionale Preise</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Ressourcen</h4>
                 <a href="./blog/">Blog</a>
-                <a href="#whatsnew">Neuigkeiten</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Plattformen</a>
+                <a href="./news/">Neuigkeiten</a>
+                <a href="./roadmap/">Roadmap</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Plattformen</a>
             </div>
             <div class="footer-col">
                 <h4>Rechtliches und Kontakt</h4>

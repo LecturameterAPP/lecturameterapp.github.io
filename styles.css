@@ -2024,3 +2024,10 @@ html.startupbar-active .nav-collapsed .nav-pills.open { max-height: calc(100dvh 
     .nav-controls { gap: 4px; }
     .nav-controls:has(.nav-lang-select) .nav-lang-btn[data-en] { display: none; }
 }
+
+/* --- MIGAS DE PAN (paginas de Recursos y Pro) --- */
+.breadcrumb { margin: 18px 0 0; font-size: 13px; color: var(--text-muted, #9aa3bf); }
+.breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0; }
+.breadcrumb li + li::before { content: "/"; margin-inline-end: 6px; opacity: 0.6; }
+.breadcrumb a { color: inherit; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }

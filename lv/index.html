@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Lasīšanas izsekotājs · Statistika un taimeris</title>
     <meta name="description" content="Lecturameter: Lasīšanas izsekotājs Android un iPhone. Mēri lasīšanas laiku, seko lappusēm, tempam un statistikai, importē no Goodreads. Bez konta, bez reklāmām.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Tēmas</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Visums <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Resursi <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blogs</a></li>
-                    <li><a href="#whatsnew">Jaunumi</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Platformas</a></li>
+                    <li><a href="./news/">Jaunumi</a></li>
+                    <li><a href="./roadmap/">Ceļvedis</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Platformas</a></li>
                     <li class="nav-dd-label" role="presentation">Juridiskā informācija</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Privātuma politika</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Pakalpojuma noteikumi</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Vienreizējs pirkums, nevis abonements.</p>
                 <p class="price-ios-offer">iOS palaišanas piedāvājums: <strong>&#8364;2.99</strong> pirmajā mēnesī. Pēc tam &#8364;4.99 (tāda pati cena kā Android). Joprojām vienreizējs pirkums.</p>
-                <details class="price-currency-list">
-                    <summary>Aptuvenā cena tavā valūtā</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Galīgās cenas nosaka App Store; tās var nedaudz atšķirties.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Skatīt cenas reģionos</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Kā aktivizēt Pro</a></p>
                 <p class="price-note">Tāda pati cena Android un iOS pēc palaišanas mēneša.</p>
-                <p class="price-note price-experiment-note">* Dažiem cilvēkiem var būt redzama cita cena, jo mēs veicam cenu eksperimentus.</p>
                 <p class="price-trial">Izmēģini Pro bez maksas 7 dienas, tieši lietotnē</p>
                 <p class="price-trial">Izmēģinājumam karte nav vajadzīga</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Viss pārējais paliek bez maksas. Pro tikai pievieno papildu iespējas.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro sīkāk un reģionālās cenas</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Ātrā izvēlne:</strong> pārlēc no vienas sadaļas uz otru ar trim punktiem (···), neatgriežoties sākumā</li>
                     <li><strong>Pauzēts:</strong> noliec grāmatu malā uz laiku, nesabojājot savu statistiku</li>
                     <li><strong>Divi jauni Pro motīvi:</strong> Burtnīca un Mežs</li>
-                    <li>Pro motīvus var iegādāties arī atsevišķi vai trīs komplektos, ar priekšskatījumu, un Pro ekrāns ir jauns</li>
-                    <li><strong>Nelineāra lasīšana</strong> antoloģijām un dzejoļu krājumiem: pārklājošās lapas netiek skaitītas divreiz, un progresa josla ir sadalīta posmos</li>
-                    <li>Sāc lasīt no grāmatas logrīka, neatverot lietotni</li>
-                    <li>Nedēļas un mēneša kopsavilkumi ar jaunu dizainu un vairāk statistikas</li>
-                    <li>Neobligāts e-pasts sadaļā „Sūtīt atsauksmi”, tikai lai varētu tev atbildēt</li>
-                    <li>Savs taimera pulkstenis katram motīvam</li>
-                    <li>Pagi izvēlas grāmatu no saraksta Vēlos izlasīt</li>
-                    <li>KOSync ar KOReader īsto lasīšanas laiku</li>
-                    <li>Paziņojumi pa kategorijām un ziņas par lietotnes jaunumiem</li>
-                    <li>Sākums ar sānjoslu, sagrupētu pa Mērķi, Mana lasīšana un Rīki</li>
-                    <li>Maini grāmatas statusu no tās ātrajām darbībām un atsauc to, ja pārklikšķinies</li>
-                    <li>Material ikonas emocijzīmju vietā un salasāmāka statistika visos motīvos</li>
-                    <li>Paziņojums, kad pievieno grāmatu no meklēšanas</li>
-                    <li>Lasīšanas ciklu datumi vienā rindā, vieglāk rediģējami</li>
-                    <li>Bingo ar 24 veidnēm pēc izmēra</li>
-                    <li>iPhone ierīcē taimera Live Activity tava motīva krāsās</li>
-                    <li>Katalogs mācās no meklējumiem un ISBN skenējumiem, kas neko neatrod, un pievieno trūkstošās grāmatas (no 15. novembra)</li>
-                    <li>Tradicionālā ķīniešu valoda</li>
-                    <li>Sērija CSV failā</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Labojumi</h3>
-                <ul>
-                    <li>Virsraksti sadaļās Bingo, Wrapped un citos ekrānos tagad atrodas tādā pašā augstumā kā pārējās izvēlnēs</li>
-                    <li>Bingo un Wrapped ikonas atguva savas krāsas</li>
-                    <li>Grāmatu skaitītāji pa statusiem sadaļā Sākums ir labāk redzami motīvos Tumšais, OLED, Krēsla, Aurora un Āda</li>
-                    <li>Viens vienīgs brīdinājums grāmatām ar trūkstošiem datiem: dzeltenais trijstūris pazūd, un paliek sarkanais</li>
-                    <li>Pārlādējot vāku un žanru, tiek paziņots, ka viss jau bija kārtībā, un sarkanā krāsā brīdina, ja kaut kas netiek atrasts</li>
-                    <li>Google Drive kopijas ļoti lielām bibliotēkām vairs neizgāžas atmiņas trūkuma dēļ</li>
-                    <li>Vairāki labojumi iPhone ierīcē</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Visas atjauninājumu piezīmes un versiju vēsture</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter iPhone un Android</h2>
         <p>iPhone versijai ir tās pašas galvenās funkcijas kā Android: bibliotēka, lasīšanas taimeris, statistika, izaicinājumi, bingo, Pagi un vizuālās tēmas. Šīs ir atšķirības.</p>
-        <details class="differences-details">
-            <summary>Atšķirības starp iPhone un Android</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Tikai iPhone</h3>
-                    <ul>
-                        <li>Taimeris bloķēšanas ekrānā un Dynamic Island, ar pauzi un apturēšanu.</li>
-                        <li>iOS 18 vadīklas: Pašlaik lasu, Skenēt ISBN, Pievienot grāmatu un Sākt taimeri.</li>
-                        <li>Dublējumkopija iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Tikai Android</h3>
-                    <ul>
-                        <li>Taimera vadība no paziņojuma.</li>
-                        <li>Automātisks režīms Netraucēt iegremdējošajā sesijā.</li>
-                        <li>Logrīku konfigurēšana un piespraušana.</li>
-                        <li>Planšetdatori (iPhone versija nedarbojas iPad ierīcē).</li>
-                        <li>Iespēja izmantot <code>lm-…</code> kodus.</li>
-                        <li>Pro tēma un ikona dāvanā izmēģinājuma beigās.</li>
-                        <li>Dzeramnauda un ziedojumi.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Abās platformās</h3>
-                    <ul>
-                        <li>Grāmatas, statistikas, izaicinājumu un bingo logrīki.</li>
-                        <li>Pilna valodas izvēle.</li>
-                        <li>Ainavas režīms tālruņos.</li>
-                        <li>Dublējumkopija Google Drive.</li>
-                        <li>Sinhronizācija ar e-lasītāju (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Pro pirkums</h3>
-                    <ul>
-                        <li>iPhone ierīcē Pro ir App Store pirkums lietotnē. Android ierīcē tas ir Google Play pirkums.</li>
-                        <li>7 dienu izmēģinājums iPhone ir bezmaksas App Store pirkums lietotnē, piesaistīts tavam Apple ID.</li>
-                        <li>Pagaidām Pro nepāriet starp Android un iPhone: katrs pirkums paliek savā platformā.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Skatīt visas atšķirības</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Vai tā darbojas bezsaistē?</button>
                 <div class="faq-a"><div class="faq-a-inner">Gandrīz viss darbojas bezsaistē. Savienojums vajadzīgs tikai, lai meklētu jaunas grāmatas un augšupielādētu dublējumkopijas Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Vai ir iPhone versija?</button>
-                <div class="faq-a"><div class="faq-a-inner">Jā: tagad vari to lejupielādēt no <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Vai varu izmēģināt pirms pirkšanas?</button>
-                <div class="faq-a"><div class="faq-a-inner">Jā. Ir bezmaksas 7 dienu Pro funkciju izmēģinājums, karte nav vajadzīga. iPhone tas ir bezmaksas App Store pirkums lietotnē, piesaistīts tavam Apple ID. Android ierīcē izmēģinājuma beigās, pat ja Pro nenopērc, tu saņem vienu Pro tēmu pēc savas izvēles bez maksas.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Kas notiek ar manu Pro, ja nomainu telefonu?</button>
-                <div class="faq-a"><div class="faq-a-inner">Tas atkarīgs no tā, kur to nopirki. Ja nopirki to <strong>Google Play</strong> un pārej uz citu Android ar to pašu Google kontu, instalē Lecturameter un iestatījumos pieskaries <strong>Atjaunot pirkumu</strong>. Ja nopirki to <strong>App Store</strong> un pārej uz citu iPhone ar to pašu Apple ID, viss tāpat: instalē un pieskaries <strong>Atjaunot pirkumu</strong>. Pagaidām Pro nepāriet starp Android un iPhone: katrs pirkums paliek savā platformā. <code>lm-…</code> kodus var izmantot tikai Android. Sīkāk: <a href="../activar-pro.html">Kā aktivizēt Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Vai varu pārnest savu Pro starp telefoniem un starp iOS un Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">Starp Android un iPhone pagaidām nē: katrs pirkums paliek savā platformā. Skatāmies, vai to var izdarīt kaut kā. Starp diviem vienas platformas telefoniem var: izmanto <strong>Atjaunot pirkumu</strong> ar savu Google kontu vai Apple ID.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Versiju vēsture</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Pasākumi · Ātrā izvēlne · Divi jauni Pro motīvi</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Jaunums</strong>
-                    <ul>
-                        <li><strong>Pasākumi:</strong> globāli lasīšanas izaicinājumi un Lecturameter Quest, kad ir aktīvs</li>
-                        <li><strong>Ātrā izvēlne:</strong> pārlēc no vienas sadaļas uz otru ar trim punktiem (···), neatgriežoties sākumā</li>
-                        <li><strong>Pauzēts:</strong> noliec grāmatu malā uz laiku, nesabojājot savu statistiku</li>
-                        <li><strong>Divi jauni Pro motīvi:</strong> Burtnīca un Mežs</li>
-                        <li>Pro motīvus var iegādāties arī atsevišķi vai trīs komplektos, ar priekšskatījumu, un Pro ekrāns ir jauns</li>
-                        <li><strong>Nelineāra lasīšana</strong> antoloģijām un dzejoļu krājumiem: pārklājošās lapas netiek skaitītas divreiz, un progresa josla ir sadalīta posmos</li>
-                        <li>Sāc lasīt no grāmatas logrīka, neatverot lietotni</li>
-                        <li>Nedēļas un mēneša kopsavilkumi ar jaunu dizainu un vairāk statistikas</li>
-                        <li>Neobligāts e-pasts sadaļā „Sūtīt atsauksmi”, tikai lai varētu tev atbildēt</li>
-                        <li>Savs taimera pulkstenis katram motīvam</li>
-                        <li>Pagi izvēlas grāmatu no saraksta Vēlos izlasīt</li>
-                        <li>KOSync ar KOReader īsto lasīšanas laiku</li>
-                        <li>Paziņojumi pa kategorijām un ziņas par lietotnes jaunumiem</li>
-                        <li>Sākums ar sānjoslu, sagrupētu pa Mērķi, Mana lasīšana un Rīki</li>
-                        <li>Maini grāmatas statusu no tās ātrajām darbībām un atsauc to, ja pārklikšķinies</li>
-                        <li>Material ikonas emocijzīmju vietā un salasāmāka statistika visos motīvos</li>
-                        <li>Paziņojums, kad pievieno grāmatu no meklēšanas</li>
-                        <li>Lasīšanas ciklu datumi vienā rindā, vieglāk rediģējami</li>
-                        <li>Bingo ar 24 veidnēm pēc izmēra</li>
-                        <li>iPhone ierīcē taimera Live Activity tava motīva krāsās</li>
-                        <li>Katalogs mācās no meklējumiem un ISBN skenējumiem, kas neko neatrod, un pievieno trūkstošās grāmatas (no 15. novembra)</li>
-                        <li>Tradicionālā ķīniešu valoda</li>
-                        <li>Sērija CSV failā</li>
-                    </ul>
-                    <strong>Labojumi</strong>
-                    <ul>
-                        <li>Virsraksti sadaļās Bingo, Wrapped un citos ekrānos tagad atrodas tādā pašā augstumā kā pārējās izvēlnēs</li>
-                        <li>Bingo un Wrapped ikonas atguva savas krāsas</li>
-                        <li>Grāmatu skaitītāji pa statusiem sadaļā Sākums ir labāk redzami motīvos Tumšais, OLED, Krēsla, Aurora un Āda</li>
-                        <li>Viens vienīgs brīdinājums grāmatām ar trūkstošiem datiem: dzeltenais trijstūris pazūd, un paliek sarkanais</li>
-                        <li>Pārlādējot vāku un žanru, tiek paziņots, ka viss jau bija kārtībā, un sarkanā krāsā brīdina, ja kaut kas netiek atrasts</li>
-                        <li>Google Drive kopijas ļoti lielām bibliotēkām vairs neizgāžas atmiņas trūkuma dēļ</li>
-                        <li>Vairāki labojumi iPhone ierīcē</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Progress %, Pagi tērpi un izskati, KOSync, valodas ar rakstību no labās uz kreiso</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Jaunums</strong>
-                    <ul>
-                        <li>Progress %: reģistrē sesijas procentos grāmatām, komiksiem, mangai un audiogrāmatām. Audiogrāmatām vari atzīmēt arī laiku.</li>
-                        <li>Maini grāmatas, komiksa, mangas vai audiogrāmatas formātu pēc pievienošanas, nezaudējot sesijas, piezīmes vai statistiku.</li>
-                        <li>Vairākas piezīmes un citāti, beidzot sesiju, katrs atsevišķi.</li>
-                        <li>Ja sesiju pamet, nesaglabājot, tā paliek kā melnraksts, un to var atgūt nākamreiz, kad saglabā sesiju.</li>
-                        <li>Statistika: gredzendiagramma ar izlasīto pa formātiem un formāta filtrs, lai redzētu katru veidu atsevišķi.</li>
-                        <li>Audiogrāmatu izaicinājumi (noklausītās stundas un pabeigtās audiogrāmatas) un Bingo ar audiogrāmatām: 1 klausīšanās stunda skaitās kā 30 lappuses.</li>
-                        <li>Pagi debitē ar 7 animētiem sezonas tērpiem, kas der jebkurai tēmai, 9 jauniem izskatiem (Bards, Nakts zaglis, Vampīru grāfs, Zemūdenes kapteinis, Tinte, Origami, Nakts lasītājs, Klejojošais bruņinieks un Retro astronauts) un katram savu pieskāriena animāciju. Lietotnē ir paslēpts arī slepens izskats: pieskaries galvenajam ekrānam, lai to atrastu.</li>
-                        <li>Pagi ir sava sadaļa iestatījumos: automātiskais gadalaiks, sezonas tērpi ārpus sezonas un izskati.</li>
-                        <li>Lietotnes ikonas Pro: izvēlies savu iestatījumos, ar Helovīna, Ziemassvētku un Jaungada versijām. Ja ieslēdz automātisko sezonas maiņu, ikona mainās attiecīgajos datumos un pēc tam atgriežas pie tavējās. Pēc noklusējuma tā ir izslēgta.</li>
-                        <li>Android ierīcēs, ja izmēģināji Pro, dāvanā saņem arī vienu no Pro ikonām.</li>
-                        <li>Sinhronizē progresu ar savu e-lasītāju, izmantojot KOSync (KOReader un saderīgos), ar soli pa solim vedni.</li>
-                        <li>Lietotne tagad ir arābu, ivrita, persiešu un urdu valodā ar saskarni no labās uz kreiso. Tās var izvēlēties arī kā grāmatas valodu, pievienojot grāmatu manuāli.</li>
-                        <li>Jaunas Pro taimera skaņas ar jaunu kategoriju Mājīgs.</li>
-                    </ul>
-                    <strong>Labojumi</strong>
-                    <ul>
-                        <li>Labāka žanra izvēle jebkura veida grāmatai.</li>
-                        <li>Dažas statistikas krāsas mainītas, lai datu punktus labāk atšķirtu.</li>
-                        <li>Ja e-lasītāja grāmatai nav nosaukuma, koda vietā tiek rādīts lasāms nosaukums, un vednis brīdina, ja tavam lietotājam nenāk neviens progress.</li>
-                        <li>Bingo tagad ir tulkots visās valodās.</li>
-                        <li>Visas valodas pārskatītas: teksti, kas parādījās angļu vai spāņu valodā, tagad ir tavā valodā.</li>
-                        <li>Tālrunī saglabātās dublējumkopijas vairs nepaliek tukšas, ja saglabāšana neizdodas.</li>
-                        <li>Grāmatas statusa maiņa vairs neizdzēš iepriekšējo lasījumu datumus.</li>
-                        <li>Mēneša kopsavilkums ņem vērā arī pabeigtās grāmatas bez sesijām.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; iPhone beta, komiksi un manga kā pilntiesīgas grāmatas, sēriju skats</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Jaunums</strong>
-                    <ul>
-                        <li>Lecturameter nāk uz iPhone beta versijā, izmantojot TestFlight</li>
-                        <li>Komiksi, manga un audiogrāmatas kā pilntiesīgi ieraksti: pievieno tos vienā manuālā formā vai vairākus uzreiz un kopīgo savu audiogrāmatas kartīti</li>
-                        <li>Pārnes savu bibliotēku no citas lietotnes (Goodreads, StoryGraph, Bookmory, Fable) ar priekšskatījumu</li>
-                        <li>Sēriju skats: tavas grāmatas sagrupētas pa sērijām, kas tiek aizpildītas automātiski, kad tās pievieno</li>
-                        <li>Mēneša kopsavilkums ar kopīgojamu kartīti, kā arī “Tava katra mēneša grāmata” sadaļā Wrapped</li>
-                        <li>Lasīšanas attīstība statistikā</li>
-                        <li>Manas kartītes: visas tavas kopīgotās kartītes vienuviet</li>
-                        <li>Izaicinājumu un bingo logrīki</li>
-                        <li>Pievieno vairākas grāmatas uzreiz no meklēšanas</li>
-                        <li>Papildu filtri bibliotēkā</li>
-                        <li>Autori pēc izdevuma: stāstītāji, tulkotāji un ilustratori</li>
-                        <li>Pro darbojas līdz 3 ierīcēm, Android un iOS</li>
-                        <li>Dublējumkopijās tagad tiek saglabātas arī tavas birkas un atgādinājumi</li>
-                        <li>Tagad lasīšanas sesiju vari saglabāt bez lappusēm, tikai ar laiku (noder, ja lasi digitāli)</li>
-                    </ul>
-                    <strong>Labojumi</strong>
-                    <ul>
-                        <li>Dzēšot vairākas grāmatas, ir tikai viena Atsaukt</li>
-                        <li>Teksti tagad nosauc veidu: grāmata, komikss, manga vai audiogrāmata</li>
-                        <li>Zvaigžņu rinda vairs neizvērtē, kamēr ritini</li>
-                        <li>Garas piezīmes tiek rādītas pilnībā</li>
-                        <li>Datumi un dublēšanas kļūdas lietotnes valodā</li>
-                        <li>Atjaunošana no Drive vairs neizvēlas nepareizo failu</li>
-                        <li>Novērsta avārija, pieskaroties autora saitei dažās situācijās</li>
-                        <li>Skaidrāki importēšanas un eksportēšanas ziņojumi</li>
-                        <li>Novērsta taimera negaidīta aizvēršanās fonā</li>
-                        <li>Novērstas negaidītas aizvēršanās, iegādājoties Pro un dažos logrīkos</li>
-                        <li>Izlabots mulsinošs skaitlis komiksu un manga meklēšanas rezultātos</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Birkas, vērtējumi, 40 valodas, atjaunota bibliotēka</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Jaunums</strong>
-                    <ul>
-                        <li>Iestatījumi pārkārtoti sadaļās</li>
-                        <li><strong>Birku</strong> sistēma (līdz 3 katrai grāmatai, meklē ar #)</li>
-                        <li>Atjaunotas grāmatu kartītes un detaļu skats, 4 kartīšu izmēri</li>
-                        <li><strong>5 zvaigžņu vērtējumi ar pusēm</strong></li>
-                        <li>Piezīmes sadalītas: citāti, piezīmes un viedoklis</li>
-                        <li>Kopīgo grāmatas, izaicinājumus, bingo, siltuma kartes un statistiku</li>
-                        <li>Pielāgojami lasīšanas atgādinājumi</li>
-                        <li>Tēma <strong>Krēsla</strong> Pro lietotājiem</li>
-                        <li><strong>Atbalsts 40 valodām</strong></li>
-                    </ul>
-                    <strong>Labojumi</strong>
-                    <ul>
-                        <li>Labāks izkārtojums ainavas režīmā un lielos ekrānos</li>
-                        <li>Ātrāka un uzticamāka grāmatu meklēšana</li>
-                        <li>Pro logrīks ar mēnešu salīdzinājumu</li>
-                        <li>Neatgriezeniskas darbības ar iespēju atsaukt</li>
-                        <li>Padomu atiestatīšana sadaļā Iestatījumi &gt; Palīdzība</li>
-                        <li>Pagi vairs neaizsedz virsrakstus un neparādās iestatījumos</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Iegremdējošās sesijas skaņas josla, ainavas režīma uzlabojumi</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Jaunums</strong>
-                    <ul>
-                        <li>Iegremdējošās sesijas skaņas josla tagad izvēršas arī ainavas režīmā, ar iepriekšējā/nākamā un atkārtošanas/secības vadīklām</li>
-                        <li>Skaņu grupas skaidrāk izceļ tavas tēmas akcenta krāsu</li>
-                    </ul>
-                    <strong>Labojumi</strong>
-                    <ul>
-                        <li>Ainavas režīms vairs neiestrēgst portreta režīmā, ja lietotni izmanto citā valodā nekā telefonu</li>
-                        <li>Vairāk vietas starp skaņas kartīti un taimera pogām, kad tā ir izvērsta</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Skatīt visus jautājumus</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Grāmatu katalogs</a>
                 <a href="#themes">Tēmas</a>
                 <a href="#events">Pasākumi</a>
-                <a href="#pricing">Cenas</a>
+                <a href="./pro/">Cenas</a>
                 <a href="../precios-regionales.html">Reģionālās cenas</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Resursi</h4>
                 <a href="./blog/">Blogs</a>
-                <a href="#whatsnew">Jaunumi</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Platformas</a>
+                <a href="./news/">Jaunumi</a>
+                <a href="./roadmap/">Ceļvedis</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Platformas</a>
             </div>
             <div class="footer-col">
                 <h4>Juridiskā informācija un kontakti</h4>

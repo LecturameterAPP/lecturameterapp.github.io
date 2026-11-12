@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: 读书记录 · 统计与计时器</title>
     <meta name="description" content="Lecturameter: 读书记录，支持 Android 和 iPhone。为阅读计时，记录页数、速度和统计，还能从 Goodreads 导入。无需账号，没有广告。">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">主题</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">宇宙 <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">资源 <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">博客</a></li>
-                    <li><a href="#whatsnew">动态</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">平台</a></li>
+                    <li><a href="./news/">动态</a></li>
+                    <li><a href="./roadmap/">路线图</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">平台</a></li>
                     <li class="nav-dd-label" role="presentation">法律</li>
                     <li class="nav-dd-sub"><a href="./privacy/">隐私政策</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">服务条款</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">一次性购买，不是订阅。</p>
                 <p class="price-ios-offer">iOS 上线优惠：首月仅需 <strong>&#8364;2.99</strong>。之后为 &#8364;4.99（与 Android 同价）。依然是一次性购买。</p>
-                <details class="price-currency-list">
-                    <summary>你所在币种的大致价格</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">最终价格由 App Store 决定，可能略有出入。</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">查看各地区价格</a></p>
-                <p class="price-note"><a href="../activar-pro.html">查看如何激活 Pro</a></p>
                 <p class="price-note">上线首月之后，Android 和 iOS 价格相同。</p>
-                <p class="price-note price-experiment-note">* 由于我们正在进行价格实验，部分用户可能会看到不同的价格。</p>
                 <p class="price-trial">在应用内免费试用 Pro 7 天</p>
                 <p class="price-trial">试用无需绑卡</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">其余一切依然免费。Pro 只是额外增加一些内容。</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro 详情与地区价格</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>快捷菜单：</strong>通过三个点（···）在各板块之间跳转，无需返回主页</li>
                     <li><strong>已暂停：</strong>把一本书先放一放，又不会弄乱你的统计</li>
                     <li><strong>两个新的 Pro 主题：</strong> 笔记本和森林</li>
-                    <li>Pro 主题还可单独购买或3个一组购买，并支持预览，Pro 页面也焕然一新</li>
-                    <li><strong>非线性阅读</strong>，适用于选集和诗集：重叠的页面不会重复计算，进度条分段显示</li>
-                    <li>无需打开应用，直接从书籍小组件开始阅读</li>
-                    <li>每周和每月总结采用全新设计，并提供更多统计数据</li>
-                    <li>“发送反馈”中可选填邮箱，仅用于回复你</li>
-                    <li>每个主题都有专属的计时器时钟</li>
-                    <li>Pagi 从“想读”中为你挑一本书</li>
-                    <li>KOSync 同步 KOReader 的真实阅读时间</li>
-                    <li>按类别设置通知，并推送应用动态提醒</li>
-                    <li>主页的侧栏按目标、我的阅读和工具分组</li>
-                    <li>可通过快捷操作更改书籍状态，操作失误时还能撤销</li>
-                    <li>用 Material 图标取代表情符号，所有主题下的统计数据更易阅读</li>
-                    <li>从搜索中添加书籍时会有提示</li>
-                    <li>阅读周期日期排成一行，编辑更方便</li>
-                    <li>按尺寸提供 24 个模板的宾果</li>
-                    <li>在 iPhone 上，计时器的 Live Activity 采用你所选主题的配色</li>
-                    <li>目录会从无结果的搜索和 ISBN 扫描中学习，并补充缺失的书籍（11月15日起）</li>
-                    <li>繁体中文</li>
-                    <li>CSV 中包含系列</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>修复</h3>
-                <ul>
-                    <li>宾果、年度总结及其他屏幕的标题现在与其他菜单保持同一高度</li>
-                    <li>宾果和年度总结的图标恢复了颜色</li>
-                    <li>主页上按状态显示的书籍计数在深色、OLED、黄昏、极光和皮革主题下更容易看清</li>
-                    <li>数据不完整的书籍只保留一个警告：黄色三角形消失，保留红色三角形</li>
-                    <li>重新加载封面和类型时，如果一切本来就正常会告诉你，找不到内容时则以红色提示</li>
-                    <li>超大书库的 Google Drive 备份不再因内存不足而失败</li>
-                    <li>iPhone 上的多项修复</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">全部更新说明与版本历史</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">iPhone 和 Android 上的 Lecturameter</h2>
         <p>iPhone 版拥有与 Android 相同的主要功能：书库、阅读计时器、统计、挑战、Bingo、Pagi 和各种视觉主题。以下是两者的差异。</p>
-        <details class="differences-details">
-            <summary>iPhone 与 Android 的差异</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>仅限 iPhone</h3>
-                    <ul>
-                        <li>锁定屏幕和灵动岛上的计时器，可暂停和停止。</li>
-                        <li>iOS 18 控制项：正在阅读、扫描 ISBN、添加书籍和开始计时。</li>
-                        <li>iCloud 云盘备份。</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>仅限 Android</h3>
-                    <ul>
-                        <li>从通知中控制计时器。</li>
-                        <li>沉浸式阅读时自动开启勿扰模式。</li>
-                        <li>小部件配置和固定。</li>
-                        <li>平板电脑（iPhone 版不能在 iPad 上运行）。</li>
-                        <li>兑换 <code>lm-…</code>码。</li>
-                        <li>试用结束时赠送一个 Pro 主题和图标。</li>
-                        <li>小费和捐赠。</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>两个平台都有</h3>
-                    <ul>
-                        <li>图书、统计、挑战和 Bingo 小部件。</li>
-                        <li>完整的语言选择器。</li>
-                        <li>手机横屏模式。</li>
-                        <li>Google Drive 备份。</li>
-                        <li>电子阅读器同步（KOSync）。</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>购买 Pro</h3>
-                    <ul>
-                        <li>在 iPhone 上，Pro 是 App Store 的应用内购买。在 Android 上，则是 Google Play 购买。</li>
-                        <li>iPhone 上的 7 天试用是免费的 App Store 应用内购买，与你的 Apple ID 绑定。</li>
-                        <li>目前 Pro 无法在 Android 和 iPhone 之间转移：每次购买都留在各自的平台上。</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">查看所有差异</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">可以离线使用吗？</button>
                 <div class="faq-a"><div class="faq-a-inner">几乎所有功能都可以离线使用。只有搜索新书和上传 Google Drive 备份时才需要联网。</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">有 iPhone 版吗？</button>
-                <div class="faq-a"><div class="faq-a-inner">有：你现在就可以从 <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">可以先试用再购买吗？</button>
-                <div class="faq-a"><div class="faq-a-inner">可以。Pro 功能提供 7 天免费试用，无需绑卡。在 iPhone 上，这是一项免费的 App Store 应用内购买，与你的 Apple ID 绑定。在 Android 上，试用结束后，即使你不购买 Pro，也可以免费获得一个你选择的 Pro 主题。</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">换手机后我的 Pro 会怎样？</button>
-                <div class="faq-a"><div class="faq-a-inner">这取决于你在哪里购买的。如果你是在 <strong>Google Play</strong> 购买的，换到另一部使用同一个 Google 账号的 Android 手机，只需安装 Lecturameter，然后在设置中点按<strong>恢复购买</strong>。如果你是在 <strong>App Store</strong> 购买的，换到另一部使用同一个 Apple ID 的 iPhone，做法相同：安装后点按<strong>恢复购买</strong>。目前 Pro 无法在 Android 和 iPhone 之间转移：每次购买都留在各自的平台上。 <code>lm-…</code> 兑换码只能在 Android 上兑换。更多详情请见 <a href="../activar-pro.html">如何激活 Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">我可以在不同手机之间、以及 iOS 和 Android 之间转移 Pro 吗？</button>
-                <div class="faq-a"><div class="faq-a-inner">Android 和 iPhone 之间暂时不行：每次购买都留在各自的平台上。我们正在研究能否想办法实现。同一平台的两部手机之间可以：请使用你的 Google 账号或 Apple ID <strong>恢复购买</strong>。</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>版本历史</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; 活动 · 快捷菜单 · 两款全新 Pro 主题</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>新增</strong>
-                    <ul>
-                        <li><strong>活动：</strong> 全球阅读挑战，以及进行中的 Lecturameter Quest</li>
-                        <li><strong>快捷菜单：</strong>通过三个点（···）在各板块之间跳转，无需返回主页</li>
-                        <li><strong>已暂停：</strong>把一本书先放一放，又不会弄乱你的统计</li>
-                        <li><strong>两个新的 Pro 主题：</strong> 笔记本和森林</li>
-                        <li>Pro 主题还可单独购买或3个一组购买，并支持预览，Pro 页面也焕然一新</li>
-                        <li><strong>非线性阅读</strong>，适用于选集和诗集：重叠的页面不会重复计算，进度条分段显示</li>
-                        <li>无需打开应用，直接从书籍小组件开始阅读</li>
-                        <li>每周和每月总结采用全新设计，并提供更多统计数据</li>
-                        <li>“发送反馈”中可选填邮箱，仅用于回复你</li>
-                        <li>每个主题都有专属的计时器时钟</li>
-                        <li>Pagi 从“想读”中为你挑一本书</li>
-                        <li>KOSync 同步 KOReader 的真实阅读时间</li>
-                        <li>按类别设置通知，并推送应用动态提醒</li>
-                        <li>主页的侧栏按目标、我的阅读和工具分组</li>
-                        <li>可通过快捷操作更改书籍状态，操作失误时还能撤销</li>
-                        <li>用 Material 图标取代表情符号，所有主题下的统计数据更易阅读</li>
-                        <li>从搜索中添加书籍时会有提示</li>
-                        <li>阅读周期日期排成一行，编辑更方便</li>
-                        <li>按尺寸提供 24 个模板的宾果</li>
-                        <li>在 iPhone 上，计时器的 Live Activity 采用你所选主题的配色</li>
-                        <li>目录会从无结果的搜索和 ISBN 扫描中学习，并补充缺失的书籍（11月15日起）</li>
-                        <li>繁体中文</li>
-                        <li>CSV 中包含系列</li>
-                    </ul>
-                    <strong>修复</strong>
-                    <ul>
-                        <li>宾果、年度总结及其他屏幕的标题现在与其他菜单保持同一高度</li>
-                        <li>宾果和年度总结的图标恢复了颜色</li>
-                        <li>主页上按状态显示的书籍计数在深色、OLED、黄昏、极光和皮革主题下更容易看清</li>
-                        <li>数据不完整的书籍只保留一个警告：黄色三角形消失，保留红色三角形</li>
-                        <li>重新加载封面和类型时，如果一切本来就正常会告诉你，找不到内容时则以红色提示</li>
-                        <li>超大书库的 Google Drive 备份不再因内存不足而失败</li>
-                        <li>iPhone 上的多项修复</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; 百分比进度、Pagi 服装与皮肤、KOSync、从右到左的语言</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>新增</strong>
-                    <ul>
-                        <li>百分比进度：在图书、漫画、日漫和有声书中以百分比记录阅读会话。有声书还可以记录时间。</li>
-                        <li>添加后可以更改图书、漫画、日漫或有声书的格式，不会丢失会话、笔记或统计。</li>
-                        <li>结束会话时可以添加多条笔记和摘录，每条各自独立。</li>
-                        <li>如果不保存就离开会话，它会保存为草稿，下次保存会话时可以恢复。</li>
-                        <li>统计：按格式显示阅读内容的环形图，以及可单独查看每种类型的格式筛选。</li>
-                        <li>有声书挑战（收听小时数和读完的有声书）以及有声书 Bingo：收听 1 小时相当于 30 页。</li>
-                        <li>Pagi 首次推出 7 套可搭配任何主题的动画季节服装、9 款新皮肤（吟游诗人、夜盗、吸血鬼伯爵、潜艇船长、墨水、折纸、夜读者、游侠骑士和复古宇航员），每款都有专属的点按动画。应用里还藏着一款秘密皮肤：在主屏幕上到处点一点就能找到。</li>
-                        <li>Pagi 在设置中有了专属板块：自动季节、非当季的季节服装和皮肤。</li>
-                        <li>Pro 应用图标：在设置中选择你的图标，有万圣节、圣诞节和新年版本。开启自动季节切换后，图标会在对应日期更换，之后再变回你选的图标。默认关闭。</li>
-                        <li>在 Android 上，如果你试用过 Pro，还会获赠一个 Pro 图标。</li>
-                        <li>通过 KOSync（KOReader 及兼容应用）将进度同步到电子阅读器，并有分步向导。</li>
-                        <li>应用现已支持阿拉伯语、希伯来语、波斯语和乌尔都语，界面从右到左显示。手动添加图书时，也可以将它们选为图书语言。</li>
-                        <li>新增 Pro 计时器声音，并新增分类 Cozy。</li>
-                    </ul>
-                    <strong>修复</strong>
-                    <ul>
-                        <li>为各类图书提供更好的类型选择。</li>
-                        <li>调整了部分统计颜色，以便更好地区分每项数据。</li>
-                        <li>如果电子阅读器中的图书没有标题，会显示易读的名称而不是代码；如果你的用户没有收到任何进度，向导会提醒你。</li>
-                        <li>Bingo 现已翻译成所有语言。</li>
-                        <li>已检查所有语言：之前显示为英语或西班牙语的文字，现在都会显示为你的语言。</li>
-                        <li>保存失败时，保存在手机上的备份不再变成空文件。</li>
-                        <li>更改图书状态不再清除之前阅读的日期。</li>
-                        <li>月度回顾也会统计没有会话的已读完图书。</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; iPhone 测试版、漫画和日漫成为一等公民、系列视图</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>新增</strong>
-                    <ul>
-                        <li>Lecturameter 通过 TestFlight 登陆 iPhone 测试版</li>
-                        <li>漫画、日漫和有声书成为一等公民：可以用一个手动表单添加，也可以一次添加多个，还能分享你的有声书卡片</li>
-                        <li>从其他应用（Goodreads、StoryGraph、Bookmory、Fable）导入你的书库，并可预览</li>
-                        <li>系列视图：按系列分组显示你的书，添加时自动填写</li>
-                        <li>带可分享卡片的月度回顾，以及 Wrapped 中的“每月之书”</li>
-                        <li>统计中的阅读演变</li>
-                        <li>我的卡片：你分享过的所有卡片集中在一处</li>
-                        <li>挑战和 Bingo 小部件</li>
-                        <li>在搜索结果中一次添加多本书</li>
-                        <li>书库中的高级筛选</li>
-                        <li>按版本记录贡献者：旁白、译者和插画师</li>
-                        <li>Pro 最多可在 3 台设备上使用，支持 Android 和 iOS</li>
-                        <li>备份现在也会保存你的标签和提醒</li>
-                        <li>现在可以只保存阅读时间、不填页数的阅读会话（适合电子阅读的人）</li>
-                    </ul>
-                    <strong>修复</strong>
-                    <ul>
-                        <li>一次删除多本书，只需撤销一次</li>
-                        <li>文案现在会指明类型：图书、漫画、日漫或有声书</li>
-                        <li>滚动时星级评分条不再误触评分</li>
-                        <li>较长的笔记现在完整显示</li>
-                        <li>日期和备份错误提示使用应用语言</li>
-                        <li>从云端硬盘恢复时不再选错文件</li>
-                        <li>避免了在某些情况下点按作者链接导致的崩溃</li>
-                        <li>导入和导出的提示信息更清晰</li>
-                        <li>避免了计时器在后台意外关闭</li>
-                        <li>避免了购买 Pro 时以及部分小部件中的意外关闭</li>
-                        <li>修复了漫画和日漫搜索结果中一个令人困惑的数字</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; 标签、评分、40 种语言、全新书库</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>新增</strong>
-                    <ul>
-                        <li>设置按分区重新整理</li>
-                        <li><strong>标签</strong>系统（每本书最多 3 个，用 # 搜索）</li>
-                        <li>全新的图书卡片和详情页，4 种卡片大小</li>
-                        <li><strong>5 星评分，支持半星</strong></li>
-                        <li>笔记拆分为：摘录、笔记和读后感</li>
-                        <li>分享图书、挑战、Bingo、热力图和统计</li>
-                        <li>可自定义的阅读提醒</li>
-                        <li>Pro 专属<strong>黄昏</strong>主题</li>
-                        <li><strong>支持 40 种语言</strong></li>
-                    </ul>
-                    <strong>修复</strong>
-                    <ul>
-                        <li>优化横屏和大屏幕上的布局</li>
-                        <li>更快、更可靠的图书搜索</li>
-                        <li>带月度对比的 Pro 小部件</li>
-                        <li>破坏性操作支持撤销</li>
-                        <li>可在设置 &gt; 帮助中重置提示</li>
-                        <li>Pagi 不再遮挡标题，也不再出现在设置中</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; 沉浸式阅读音效栏、横屏改进</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>新增</strong>
-                    <ul>
-                        <li>沉浸式阅读的音效栏现在在横屏下也能展开，并带有上一首/下一首以及循环/顺序播放控制</li>
-                        <li>声音分组更清晰地突出显示主题的强调色</li>
-                    </ul>
-                    <strong>修复</strong>
-                    <ul>
-                        <li>当应用语言与手机语言不同时，横屏不再卡在竖屏</li>
-                        <li>展开时，音效卡片与计时器按钮之间的间距更宽松</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">查看所有问题</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">图书目录</a>
                 <a href="#themes">主题</a>
                 <a href="#events">活动</a>
-                <a href="#pricing">价格</a>
+                <a href="./pro/">价格</a>
                 <a href="../precios-regionales.html">各地区价格</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>资源</h4>
                 <a href="./blog/">博客</a>
-                <a href="#whatsnew">动态</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">平台</a>
+                <a href="./news/">动态</a>
+                <a href="./roadmap/">路线图</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">平台</a>
             </div>
             <div class="footer-col">
                 <h4>法律与联系</h4>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Diari de Lectura · Retos i estadístiques</title>
     <meta name="description" content="Lecturameter: Diari de Lectura per a Android i iPhone. Cronometra la lectura, registra pàgines, ritme i estadístiques, i importa de Goodreads. Sense compte ni anuncis.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Temes</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Univers <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Recursos <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blog</a></li>
-                    <li><a href="#whatsnew">Novetats</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Plataformes</a></li>
+                    <li><a href="./news/">Novetats</a></li>
+                    <li><a href="./roadmap/">Full de ruta</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Plataformes</a></li>
                     <li class="nav-dd-label" role="presentation">Legal</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Política de privacitat</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Condicions del servei</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Una compra única, no una subscripció.</p>
                 <p class="price-ios-offer">Oferta de llançament a iOS: <strong>2,99 &#8364;</strong> durant el primer mes. Després, 4,99 &#8364; (el mateix preu que a Android). Continua sent una compra única.</p>
-                <details class="price-currency-list">
-                    <summary>Preu aproximat en la teva moneda</summary>
-                    <ul>
-                        <li>EUR 2,99 &#8364;</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19,90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2.990</li>
-                        <li>COP COP 14.900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14,99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Preus finals fixats per l'App Store; poden variar lleugerament.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Veure els preus per regió</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Com activar Pro</a></p>
                 <p class="price-note">El mateix preu a Android i iOS després del mes de llançament.</p>
-                <p class="price-note price-experiment-note">* Algunes persones poden veure un preu diferent perquè estem fent experiments amb el preu.</p>
                 <p class="price-trial">Prova Pro gratis 7 dies, dins de l'app</p>
                 <p class="price-trial">La prova no demana targeta</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Tota la resta continua sent gratuïta. Pro només hi afegeix extres.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro en detall i preus regionals</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Menú ràpid:</strong> salta d'una secció a una altra des dels tres punts (···), sense tornar a Inici</li>
                     <li><strong>Pausat:</strong> deixa un llibre una temporada sense embrutar les teves estadístiques</li>
                     <li><strong>Dos temes Pro nous:</strong> Quadern i Bosc</li>
-                    <li>Els temes Pro també es compren per separat o en lots de 3, amb vista prèvia, i la pantalla de Pro és nova</li>
-                    <li><strong>Lectura no lineal</strong> per a antologies i poemaris: les pàgines que se solapen no compten dues vegades i la barra de progrés va per trams</li>
-                    <li>Comença a llegir des del widget del llibre, sense obrir l'app</li>
-                    <li>Resums setmanal i mensual amb nou disseny i més dades</li>
-                    <li>Correu opcional a «Envia comentaris», només per poder respondre't</li>
-                    <li>Un rellotge de cronòmetre propi per a cada tema</li>
-                    <li>Pagi t'escull un llibre de Vull llegir</li>
-                    <li>KOSync amb el temps real de KOReader</li>
-                    <li>Notificacions per categoria i avisos de novetats de l'app</li>
-                    <li>Inici amb el rail agrupat en Metes, Les meves lectures i Eines</li>
-                    <li>Canvia l'estat d'un llibre des de les seves accions ràpides i desfés-ho si t'equivoques</li>
-                    <li>Icones Material en lloc d'emojis i estadístiques més llegibles en tots els temes</li>
-                    <li>Avís en afegir un llibre des de la cerca</li>
-                    <li>Dates dels cicles de lectura en una sola fila, més fàcils d'editar</li>
-                    <li>Bingo amb 24 plantilles per mida</li>
-                    <li>A l'iPhone, la Live Activity del cronòmetre amb els colors del teu tema</li>
-                    <li>El catàleg aprèn de les cerques i els escanejos d'ISBN sense resultat i afegeix els llibres que falten (a partir del 15 de novembre)</li>
-                    <li>Xinès tradicional</li>
-                    <li>Sèrie al CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Correccions</h3>
-                <ul>
-                    <li>Els títols de Bingo, Wrapped i altres pantalles queden a la mateixa alçada que la resta de menús</li>
-                    <li>Les icones de Bingo i Wrapped recuperen els seus colors</li>
-                    <li>Els comptadors de llibres per estat d'Inici es veuen millor en Fosc, OLED, Crepuscle, Aurora i Cuir</li>
-                    <li>Un sol avís per a llibres amb dades incompletes: desapareix el triangle groc i queda el vermell</li>
-                    <li>Tornar a carregar coberta i gènere et diu si ja estava tot bé, i avisa en vermell si no troba alguna cosa</li>
-                    <li>Les còpies a Google Drive de biblioteques molt grans ja no fallen per manca de memòria</li>
-                    <li>Diverses correccions a l'iPhone</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Totes les notes de la versió i l'historial</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter a l'iPhone i a Android</h2>
         <p>La versió d'iPhone té les mateixes funcions principals que la d'Android: biblioteca, cronòmetre de lectura, estadístiques, reptes, bingo, Pagi i els temes visuals. Aquestes són les diferències.</p>
-        <details class="differences-details">
-            <summary>Diferències entre iPhone i Android</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Només a l'iPhone</h3>
-                    <ul>
-                        <li>Cronòmetre a la pantalla de bloqueig i a la Dynamic Island, amb pausa i aturada.</li>
-                        <li>Controls d'iOS 18: Llegint ara, Escanejar ISBN, Afegir llibre i Iniciar cronòmetre.</li>
-                        <li>Còpia de seguretat a iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Només a Android</h3>
-                    <ul>
-                        <li>Control del cronòmetre des de la notificació.</li>
-                        <li>No molestis automàtic a la sessió immersiva.</li>
-                        <li>Configuració i fixació de ginys.</li>
-                        <li>Tauletes (la versió per a iPhone no funciona a l'iPad).</li>
-                        <li>Bescanvi de codis <code>lm-…</code>.</li>
-                        <li>Un tema i una icona Pro de regal en acabar la prova.</li>
-                        <li>Propines i donacions.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>A tots dos</h3>
-                    <ul>
-                        <li>Ginys de Llibre, Estadístiques, Reptes i Bingo.</li>
-                        <li>Selector d'idioma complet.</li>
-                        <li>Mode horitzontal als mòbils.</li>
-                        <li>Còpia de seguretat a Google Drive.</li>
-                        <li>Sincronització amb lectors electrònics (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Compra de Pro</h3>
-                    <ul>
-                        <li>A l'iPhone, Pro és una compra integrada de l'App Store. A Android, és una compra de Google Play.</li>
-                        <li>La prova de 7 dies a l'iPhone és una compra integrada gratuïta de l'App Store, vinculada al teu Apple ID.</li>
-                        <li>De moment el Pro no passa d'Android a iPhone ni al revés: cada compra es queda a la seva plataforma.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Veure totes les diferències</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Funciona sense connexió?</button>
                 <div class="faq-a"><div class="faq-a-inner">Gairebé tot funciona sense connexió. Només en necessites per cercar llibres nous i per pujar còpies de seguretat a Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Hi ha versió per a iPhone?</button>
-                <div class="faq-a"><div class="faq-a-inner">Sí: ja la pots baixar des de l' <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">La puc provar abans de pagar?</button>
-                <div class="faq-a"><div class="faq-a-inner">Sí. Hi ha una prova gratuïta de 7 dies de les funcions Pro, sense targeta. A l'iPhone és una compra integrada gratuïta de l'App Store, vinculada al teu Apple ID. A Android, en acabar la prova, encara que no compris Pro, et regalem un tema Pro a la teva elecció.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Què passa amb el meu Pro si canvio de mòbil?</button>
-                <div class="faq-a"><div class="faq-a-inner">Depèn d'on l'hagis comprat. Si el vas comprar a <strong>Google Play</strong> i canvies a un altre Android amb el mateix compte de Google, instal·la Lecturameter i toca <strong>Restaurar compra</strong> a Ajustaments. Si el vas comprar a l'<strong>App Store</strong> i canvies a un altre iPhone amb el mateix Apple ID, igual: instal·la i toca <strong>Restaurar compra</strong>. De moment el Pro no passa d'Android a iPhone ni al revés: cada compra es queda a la seva plataforma. Els codis <code>lm-…</code> només es poden bescanviar a Android. Més detalls a <a href="../activar-pro.html">Com activar Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Puc passar el meu Pro entre mòbils i entre iOS i Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">Entre Android i iPhone, de moment no: cada compra es queda a la seva plataforma. Estem mirant si es pot fer d'alguna manera. Entre dos mòbils de la mateixa plataforma sí: fes servir <strong>Restaurar compra</strong> amb el teu compte de Google o el teu Apple ID.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Historial de versions</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Esdeveniments · Menú ràpid · Dos temes Pro nous</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novetats</strong>
-                    <ul>
-                        <li><strong>Esdeveniments:</strong> reptes de lectura globals i Lecturameter Quest quan n'hi ha un d'actiu</li>
-                        <li><strong>Menú ràpid:</strong> salta d'una secció a una altra des dels tres punts (···), sense tornar a Inici</li>
-                        <li><strong>Pausat:</strong> deixa un llibre una temporada sense embrutar les teves estadístiques</li>
-                        <li><strong>Dos temes Pro nous:</strong> Quadern i Bosc</li>
-                        <li>Els temes Pro també es compren per separat o en lots de 3, amb vista prèvia, i la pantalla de Pro és nova</li>
-                        <li><strong>Lectura no lineal</strong> per a antologies i poemaris: les pàgines que se solapen no compten dues vegades i la barra de progrés va per trams</li>
-                        <li>Comença a llegir des del widget del llibre, sense obrir l'app</li>
-                        <li>Resums setmanal i mensual amb nou disseny i més dades</li>
-                        <li>Correu opcional a «Envia comentaris», només per poder respondre't</li>
-                        <li>Un rellotge de cronòmetre propi per a cada tema</li>
-                        <li>Pagi t'escull un llibre de Vull llegir</li>
-                        <li>KOSync amb el temps real de KOReader</li>
-                        <li>Notificacions per categoria i avisos de novetats de l'app</li>
-                        <li>Inici amb el rail agrupat en Metes, Les meves lectures i Eines</li>
-                        <li>Canvia l'estat d'un llibre des de les seves accions ràpides i desfés-ho si t'equivoques</li>
-                        <li>Icones Material en lloc d'emojis i estadístiques més llegibles en tots els temes</li>
-                        <li>Avís en afegir un llibre des de la cerca</li>
-                        <li>Dates dels cicles de lectura en una sola fila, més fàcils d'editar</li>
-                        <li>Bingo amb 24 plantilles per mida</li>
-                        <li>A l'iPhone, la Live Activity del cronòmetre amb els colors del teu tema</li>
-                        <li>El catàleg aprèn de les cerques i els escanejos d'ISBN sense resultat i afegeix els llibres que falten (a partir del 15 de novembre)</li>
-                        <li>Xinès tradicional</li>
-                        <li>Sèrie al CSV</li>
-                    </ul>
-                    <strong>Correccions</strong>
-                    <ul>
-                        <li>Els títols de Bingo, Wrapped i altres pantalles queden a la mateixa alçada que la resta de menús</li>
-                        <li>Les icones de Bingo i Wrapped recuperen els seus colors</li>
-                        <li>Els comptadors de llibres per estat d'Inici es veuen millor en Fosc, OLED, Crepuscle, Aurora i Cuir</li>
-                        <li>Un sol avís per a llibres amb dades incompletes: desapareix el triangle groc i queda el vermell</li>
-                        <li>Tornar a carregar coberta i gènere et diu si ja estava tot bé, i avisa en vermell si no troba alguna cosa</li>
-                        <li>Les còpies a Google Drive de biblioteques molt grans ja no fallen per manca de memòria</li>
-                        <li>Diverses correccions a l'iPhone</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Progrés en %, vestits i aspectes del Pagi, KOSync, idiomes de dreta a esquerra</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novetats</strong>
-                    <ul>
-                        <li>Progrés en %: registra les sessions en percentatge en llibres, còmics, manga i audiollibres. En els audiollibres també pots anotar el temps.</li>
-                        <li>Canvia el format d'un llibre, còmic, manga o audiollibre després d'afegir-lo, sense perdre sessions, notes ni estadístiques.</li>
-                        <li>Diverses notes i cites en acabar una sessió, cadascuna per separat.</li>
-                        <li>Si surts d'una sessió sense desar-la, es guarda com a esborrany i el pots recuperar el pròxim cop que en desis una.</li>
-                        <li>Estadístiques: gràfic de donut amb el que llegeixes per format i un filtre de format per veure cada tipus per separat.</li>
-                        <li>Reptes d'audiollibres (hores escoltades i audiollibres acabats) i Bingo amb audiollibres: 1 hora d'escolta val com 30 pàgines.</li>
-                        <li>El Pagi estrena 7 vestits de temporada animats que funcionen amb qualsevol tema, 9 aspectes nous (Bard, Lladre nocturn, Comte vampir, Capità submarinista, Tinta, Origami, Lector nocturn, Cavaller errant i Astronauta retro) i una animació pròpia en tocar-lo amb cadascun. A més, hi ha un aspecte secret amagat a l'app: toca per la pantalla principal per trobar-lo.</li>
-                        <li>El Pagi té secció pròpia als Ajustaments: temporada automàtica, vestits de temporada fora d'època i aspectes.</li>
-                        <li>Icones de l'app per a Pro: tria la teva als Ajustaments, amb versions de Halloween, Nadal i Cap d'Any. Si actives el canvi de temporada automàtic, la icona canvia en les seves dates i després torna a la teva. Ve desactivat.</li>
-                        <li>A Android, si has provat Pro, també et regalem una de les icones Pro.</li>
-                        <li>Sincronitza el teu progrés amb el lector electrònic mitjançant KOSync (KOReader i compatibles), amb un assistent pas a pas.</li>
-                        <li>L'app ja està en àrab, hebreu, persa i urdú, amb una interfície de dreta a esquerra. També els pots triar com a idioma del llibre quan n'afegeixes un a mà.</li>
-                        <li>Nous sons per al cronòmetre Pro, amb una categoria nova, Cozy.</li>
-                    </ul>
-                    <strong>Correccions</strong>
-                    <ul>
-                        <li>Millor selecció de gènere per a tota mena de llibres.</li>
-                        <li>S'han canviat alguns colors de les estadístiques per distingir millor cada dada.</li>
-                        <li>Si un llibre del lector electrònic no té títol, es mostra un nom llegible en lloc d'un codi, i l'assistent t'avisa si no arriba cap progrés amb el teu usuari.</li>
-                        <li>El Bingo ara està traduït a tots els idiomes.</li>
-                        <li>Tots els idiomes revisats: els textos que sortien en anglès o castellà ara apareixen en el teu idioma.</li>
-                        <li>Les còpies de seguretat desades al mòbil ja no queden buides si el desament falla.</li>
-                        <li>Canviar l'estat d'un llibre ja no esborra les dates de lectures anteriors.</li>
-                        <li>El resum mensual també compta els llibres acabats sense sessions.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; Beta per a iPhone, còmics i manga com a llibres de primera, vista Sagues</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novetats</strong>
-                    <ul>
-                        <li>Lecturameter arriba a l'iPhone en beta, a través de TestFlight</li>
-                        <li>Còmics, manga i audiollibres com a llibres de primera: afegeix-los a mà en un sol formulari o diversos de cop, i comparteix la targeta dels teus audiollibres</li>
-                        <li>Porta la teva biblioteca des d'una altra app (Goodreads, StoryGraph, Bookmory, Fable) amb previsualització</li>
-                        <li>Vista Sagues: els teus llibres agrupats per saga, que s'emplena sola quan els afegeixes</li>
-                        <li>Resum mensual amb targeta per compartir, i "El teu llibre de cada mes" al Wrapped</li>
-                        <li>Evolució lectora a Estadístiques</li>
-                        <li>Les meves targetes: totes les targetes que has compartit, en un sol lloc</li>
-                        <li>Ginys de reptes i de bingo</li>
-                        <li>Afegeix diversos llibres de cop des de la cerca</li>
-                        <li>Filtres avançats a la Biblioteca</li>
-                        <li>Crèdits per edició: narradors, traductors i il·lustradors</li>
-                        <li>Pro funciona en fins a 3 dispositius, Android i iOS</li>
-                        <li>Les còpies de seguretat ara també desen les teves etiquetes i recordatoris</li>
-                        <li>Ara pots desar una sessió de lectura sense pàgines, només amb el temps (útil si llegeixes en digital)</li>
-                    </ul>
-                    <strong>Correccions</strong>
-                    <ul>
-                        <li>En eliminar diversos llibres hi ha un sol Desfer</li>
-                        <li>Els textos diuen el tipus: llibre, còmic, manga o audiollibre</li>
-                        <li>La fila d'estrelles ja no puntua mentre desplaces la pantalla</li>
-                        <li>Les notes llargues es veuen senceres</li>
-                        <li>Dates i errors de còpia de seguretat en l'idioma de l'app</li>
-                        <li>Restaurar des de Drive ja no agafa el fitxer equivocat</li>
-                        <li>S'evita un tancament inesperat en tocar l'enllaç d'un autor en algunes situacions</li>
-                        <li>Avisos d'Importa i Exporta més clars</li>
-                        <li>S'evita un tancament inesperat del cronòmetre en segon pla</li>
-                        <li>S'eviten tancaments inesperats en comprar Pro i en alguns ginys</li>
-                        <li>Corregit un número confús als resultats de cerca de còmics i manga</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Etiquetes, puntuacions, 40 idiomes, biblioteca renovada</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novetats</strong>
-                    <ul>
-                        <li>Ajustaments reorganitzats en seccions</li>
-                        <li>Sistema d'<strong>etiquetes</strong> (fins a 3 per llibre, cerca amb #)</li>
-                        <li>Targetes i fitxa de llibre renovades, 4 mides de targeta</li>
-                        <li><strong>Puntuacions de 5 estrelles amb mitges estrelles</strong></li>
-                        <li>Notes separades en: cites, notes i opinió</li>
-                        <li>Comparteix llibres, reptes, bingos, mapes de calor i estadístiques</li>
-                        <li>Recordatoris de lectura personalitzables</li>
-                        <li>Tema <strong>Ocàs</strong> per a Pro</li>
-                        <li><strong>Disponible en 40 idiomes</strong></li>
-                    </ul>
-                    <strong>Correccions</strong>
-                    <ul>
-                        <li>Millor disposició en horitzontal i en pantalles grans</li>
-                        <li>Cerca de llibres més ràpida i fiable</li>
-                        <li>Giny Pro amb comparativa mensual</li>
-                        <li>Accions destructives amb opció de desfer</li>
-                        <li>Restableix els consells des d'Ajustaments &gt; Ajuda</li>
-                        <li>El Pagi ja no tapa títols ni apareix a Ajustaments</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Barra de so de la sessió immersiva, millores en horitzontal</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novetats</strong>
-                    <ul>
-                        <li>La barra de so de la sessió immersiva ara també s'amplia en horitzontal, amb controls d'anterior/següent i bucle/seqüència</li>
-                        <li>Els grups de sons ressalten millor el color d'accent del tema</li>
-                    </ul>
-                    <strong>Correccions</strong>
-                    <ul>
-                        <li>El mode horitzontal ja no es queda bloquejat en vertical quan fas servir l'app en un idioma diferent del del mòbil</li>
-                        <li>Més espai entre la targeta de so i els botons del cronòmetre quan està ampliada</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Veure totes les preguntes</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Catàleg de llibres</a>
                 <a href="#themes">Temes</a>
                 <a href="#events">Esdeveniments</a>
-                <a href="#pricing">Preus</a>
+                <a href="./pro/">Preus</a>
                 <a href="../precios-regionales.html">Preus per regió</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Recursos</h4>
                 <a href="./blog/">Blog</a>
-                <a href="#whatsnew">Novetats</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Plataformes</a>
+                <a href="./news/">Novetats</a>
+                <a href="./roadmap/">Full de ruta</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Plataformes</a>
             </div>
             <div class="footer-col">
                 <h4>Legal i contacte</h4>

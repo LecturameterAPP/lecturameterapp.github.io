@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="{{code}}" dir="{{dir}}">
+<head>
+{{> head}}
+</head>
+<body>
+
+{{> promo}}
+
+{{> nav}}
+
+<main class="subpage-body">
+<section class="band">
+    <div class="container">
+{{> breadcrumb}}
+        <div class="page-hero">
+            <h1 class="page-heading">{{common.nav.news}}</h1>
+            <p class="tagline">{{home.whatsnew.the_latest_additions_to_lecturamet}}</p>
+        </div>
+    </div>
+</section>
+
+<section class="band" id="{{anchor.whatsnew}}">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{home.whatsnew.title}}</h2>
+            <p>{{home.whatsnew.the_latest_additions_to_lecturamet}}</p>
+        </div>
+        <div class="whatsnew-grid">
+            <div class="whatsnew-col">
+                <h3>{{home.whatsnew.new}}</h3>
+                <ul>
+{{notes_new_items}}
+                </ul>
+            </div>
+{{#if has_notes_fixes}}
+            <div class="whatsnew-col">
+                <h3>{{home.whatsnew.fixes}}</h3>
+                <ul>
+{{notes_fix_items}}
+                </ul>
+            </div>
+{{/if}}
+        </div>
+    </div>
+</section>
+
+
+<section class="band band-alt" id="{{anchor.history}}">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{home.history.version_history}}</h2>
+        </div>
+        <div class="faq-list">
+{{history_items}}
+            <div class="faq-item">
+                <button class="faq-q">{{home.history.v3_6_tags_ratings_40}}</button>
+                <div class="faq-a"><div class="faq-a-inner">
+                    {{home.history.new}}
+                    <ul>
+                        <li>{{home.history.settings_reorganized_into_sections}}</li>
+                        <li>{{home.history.tags_system_up_to_3}}</li>
+                        <li>{{home.history.revamped_book_cards_and_detail}}</li>
+                        <li>{{home.history.5_star_ratings_with_half}}</li>
+                        <li>{{home.history.notes_split_into_quotes_notes}}</li>
+                        <li>{{home.history.share_books_challenges_bingos_heat}}</li>
+                        <li>{{home.history.customizable_reading_reminders}}</li>
+                        <li>{{home.history.dusk_theme_for_pro}}</li>
+                        <li>{{home.history.support_for_40_languages}}</li>
+                    </ul>
+                    {{home.history.fixes}}
+                    <ul>
+                        <li>{{home.history.better_layout_in_landscape_and}}</li>
+                        <li>{{home.history.faster_and_more_reliable_book}}</li>
+                        <li>{{home.history.pro_widget_with_monthly_comparison}}</li>
+                        <li>{{home.history.destructive_actions_with_undo}}</li>
+                        <li>{{home.history.reset_tips_from_settings_help}}</li>
+                        <li>{{home.history.pagi_no_longer_covers_titles}}</li>
+                    </ul>
+                </div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.history.v3_5_immersive_session_sound}}</button>
+                <div class="faq-a"><div class="faq-a-inner">
+                    {{home.history.new}}
+                    <ul>
+                        <li>{{home.history.the_immersive_session_s_sound}}</li>
+                        <li>{{home.history.sound_groups_highlight_your_theme}}</li>
+                    </ul>
+                    {{home.history.fixes}}
+                    <ul>
+                        <li>{{home.history.landscape_no_longer_gets_stuck}}</li>
+                        <li>{{home.history.more_breathing_room_between_the}}</li>
+                    </ul>
+                </div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="band">
+    <div class="container">
+        <p style="text-align:center; margin-top:2rem;"><a href="{{link_page_roadmap}}" class="btn">{{common.nav.roadmap}}</a></p>
+    </div>
+</section>
+</main>
+
+{{> footer}}
+
+{{> scripts}}
+</body>
+</html>

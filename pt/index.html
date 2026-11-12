@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Diário Leitor · Estatísticas e cronómetro</title>
     <meta name="description" content="Lecturameter: Diário Leitor para Android e iPhone. Cronometra a leitura, regista páginas, ritmo e estatísticas e importa do Goodreads. Sem conta e sem anúncios.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Temas</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Universo <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Recursos <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blogue</a></li>
-                    <li><a href="#whatsnew">Novidades</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Plataformas</a></li>
+                    <li><a href="./news/">Novidades</a></li>
+                    <li><a href="./roadmap/">Roadmap</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Plataformas</a></li>
                     <li class="nav-dd-label" role="presentation">Legal</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Política de privacidade</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Termos de Serviço</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Compra única, não é uma subscrição.</p>
                 <p class="price-ios-offer">Oferta de lançamento no iOS: <strong>&#8364;2.99</strong> durante o primeiro mês. Depois, &#8364;4.99 (o mesmo preço que no Android). Continua a ser uma compra única.</p>
-                <details class="price-currency-list">
-                    <summary>Preço aproximado na tua moeda</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Os preços finais são definidos pela App Store e podem variar ligeiramente.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Ver preços regionais</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Ver como ativar o Pro</a></p>
                 <p class="price-note">Mesmo preço no Android e no iOS depois do mês de lançamento.</p>
-                <p class="price-note price-experiment-note">* Algumas pessoas podem ver um preço diferente porque estamos a fazer experiências com o preço.</p>
                 <p class="price-trial">Experimenta o Pro grátis durante 7 dias, dentro da aplicação</p>
                 <p class="price-trial">Não é preciso cartão para a experiência</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Tudo o resto continua grátis. O Pro só acrescenta extras.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro em detalhe e preços regionais</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Menu rápido:</strong> salta de uma secção para outra com os três pontos (···), sem voltar ao Início</li>
                     <li><strong>Em pausa:</strong> põe um livro de parte durante uns tempos sem estragar as tuas estatísticas</li>
                     <li><strong>Dois novos temas Pro:</strong> Caderno e Floresta</li>
-                    <li>Os temas Pro também podem ser comprados um a um ou em packs de 3, com pré-visualização, e o ecrã Pro é novo</li>
-                    <li><strong>Leitura não linear</strong> para antologias e livros de poesia: as páginas sobrepostas não contam duas vezes e a barra de progresso divide-se em segmentos</li>
-                    <li>Começa a ler a partir do widget do livro, sem abrir a app</li>
-                    <li>Resumos semanais e mensais com novo design e mais estatísticas</li>
-                    <li>E-mail opcional em «Enviar comentários», só para eu te poder responder</li>
-                    <li>Um relógio de cronómetro próprio para cada tema</li>
-                    <li>O Pagi escolhe-te um livro de Quero ler</li>
-                    <li>KOSync com o tempo real de leitura do KOReader</li>
-                    <li>Notificações por categoria e avisos de novidades da app</li>
-                    <li>Início com a barra agrupada em Metas, As minhas leituras e Ferramentas</li>
-                    <li>Altera o estado de um livro nas suas ações rápidas e desfaz se te enganares</li>
-                    <li>Ícones Material em vez de emojis e estatísticas mais legíveis em todos os temas</li>
-                    <li>Um aviso ao adicionar um livro a partir da pesquisa</li>
-                    <li>Datas dos ciclos de leitura numa única linha, mais fáceis de editar</li>
-                    <li>Bingo com 24 modelos por tamanho</li>
-                    <li>No iPhone, a Live Activity do cronómetro com as cores do teu tema</li>
-                    <li>O catálogo aprende com as pesquisas e leituras de ISBN sem resultados e adiciona os livros em falta (a partir de 15 de novembro)</li>
-                    <li>Chinês tradicional</li>
-                    <li>Série no CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Correções</h3>
-                <ul>
-                    <li>Os títulos no Bingo, no Wrapped e noutros ecrãs ficam à mesma altura que nos restantes menus</li>
-                    <li>Os ícones do Bingo e do Wrapped recuperam as suas cores</li>
-                    <li>Os contadores de livros por estado no Início veem-se melhor nos temas Escuro, OLED, Entardecer, Aurora e Couro</li>
-                    <li>Um único aviso para livros com dados em falta: o triângulo amarelo desaparece e fica o vermelho</li>
-                    <li>Recarregar capa e género diz-te quando já estava tudo bem e avisa a vermelho quando não encontra algo</li>
-                    <li>As cópias no Google Drive de bibliotecas muito grandes já não falham por falta de memória</li>
-                    <li>Várias correções no iPhone</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Todas as notas de versão e o histórico</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter no iPhone e no Android</h2>
         <p>A versão para iPhone tem as mesmas funcionalidades principais que a do Android: biblioteca, cronómetro de leitura, estatísticas, desafios, bingo, Pagi e os temas visuais. Estas são as diferenças.</p>
-        <details class="differences-details">
-            <summary>Diferenças entre iPhone e Android</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Só no iPhone</h3>
-                    <ul>
-                        <li>Cronómetro no ecrã de bloqueio e na Dynamic Island, com pausa e paragem.</li>
-                        <li>Controlos do iOS 18: A ler, Digitalizar ISBN, Adicionar livro e Iniciar cronómetro.</li>
-                        <li>Cópia de segurança no iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Só no Android</h3>
-                    <ul>
-                        <li>Controlo do cronómetro a partir da notificação.</li>
-                        <li>Não incomodar automático na sessão imersiva.</li>
-                        <li>Configuração e fixação de widgets.</li>
-                        <li>Tablets (a versão para iPhone não funciona no iPad).</li>
-                        <li>Resgate de <code>lm-…</code> códigos.</li>
-                        <li>Um tema Pro e um ícone como oferta no fim do período de teste.</li>
-                        <li>Gorjetas e donativos.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Em ambos</h3>
-                    <ul>
-                        <li>Widgets de Livro, Estatísticas, Desafios e Bingo.</li>
-                        <li>Seletor de idioma completo.</li>
-                        <li>Modo horizontal nos telemóveis.</li>
-                        <li>Cópia de segurança no Google Drive.</li>
-                        <li>Sincronização com leitores de e-books (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Compra do Pro</h3>
-                    <ul>
-                        <li>No iPhone, o Pro é uma compra na aplicação através da App Store. No Android, é uma compra no Google Play.</li>
-                        <li>A experiência de 7 dias no iPhone é uma compra grátis na aplicação através da App Store, associada ao teu Apple ID.</li>
-                        <li>Por agora, o Pro não passa de Android para iPhone nem ao contrário: cada compra fica na sua plataforma.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Ver todas as diferenças</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Funciona sem ligação?</button>
                 <div class="faq-a"><div class="faq-a-inner">Quase tudo funciona sem ligação. Só precisas de ligação para pesquisar livros novos e para enviar cópias de segurança para o Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Existe uma versão para iPhone?</button>
-                <div class="faq-a"><div class="faq-a-inner">Sim: já o podes transferir a partir da <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Posso experimentar antes de comprar?</button>
-                <div class="faq-a"><div class="faq-a-inner">Sim. Há uma experiência grátis de 7 dias das funcionalidades Pro, sem cartão. No iPhone, é uma compra grátis na aplicação através da App Store, associada ao teu Apple ID. No Android, no fim da experiência, mesmo que não compres o Pro, ficas com um tema Pro à tua escolha, grátis.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">O que acontece ao meu Pro se mudar de telemóvel?</button>
-                <div class="faq-a"><div class="faq-a-inner">Depende de onde o compraste. Se o compraste no <strong>Google Play</strong> e passas para outro Android com a mesma conta Google, instala o Lecturameter e toca em <strong>Restaurar compra</strong> nas Definições. Se o compraste na <strong>App Store</strong> e passas para outro iPhone com o mesmo Apple ID, é igual: instala e toca em <strong>Restaurar compra</strong>. Por agora, o Pro não passa de Android para iPhone nem ao contrário: cada compra fica na sua plataforma. <code>lm-…</code> só se resgatam no Android. Mais detalhes em <a href="../activar-pro.html">Como ativar o Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Posso passar o meu Pro entre telemóveis e entre iOS e Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">Entre Android e iPhone, por agora não: cada compra fica na sua plataforma. Estamos a ver se se pode fazer de alguma forma. Entre dois telemóveis da mesma plataforma, sim: usa <strong>Restaurar compra</strong> com a tua conta Google ou o teu Apple ID.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Histórico de versões</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Eventos · Menu rápido · Dois novos temas Pro</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novo</strong>
-                    <ul>
-                        <li><strong>Eventos:</strong> desafios de leitura globais e Lecturameter Quest quando houver um ativo</li>
-                        <li><strong>Menu rápido:</strong> salta de uma secção para outra com os três pontos (···), sem voltar ao Início</li>
-                        <li><strong>Em pausa:</strong> põe um livro de parte durante uns tempos sem estragar as tuas estatísticas</li>
-                        <li><strong>Dois novos temas Pro:</strong> Caderno e Floresta</li>
-                        <li>Os temas Pro também podem ser comprados um a um ou em packs de 3, com pré-visualização, e o ecrã Pro é novo</li>
-                        <li><strong>Leitura não linear</strong> para antologias e livros de poesia: as páginas sobrepostas não contam duas vezes e a barra de progresso divide-se em segmentos</li>
-                        <li>Começa a ler a partir do widget do livro, sem abrir a app</li>
-                        <li>Resumos semanais e mensais com novo design e mais estatísticas</li>
-                        <li>E-mail opcional em «Enviar comentários», só para eu te poder responder</li>
-                        <li>Um relógio de cronómetro próprio para cada tema</li>
-                        <li>O Pagi escolhe-te um livro de Quero ler</li>
-                        <li>KOSync com o tempo real de leitura do KOReader</li>
-                        <li>Notificações por categoria e avisos de novidades da app</li>
-                        <li>Início com a barra agrupada em Metas, As minhas leituras e Ferramentas</li>
-                        <li>Altera o estado de um livro nas suas ações rápidas e desfaz se te enganares</li>
-                        <li>Ícones Material em vez de emojis e estatísticas mais legíveis em todos os temas</li>
-                        <li>Um aviso ao adicionar um livro a partir da pesquisa</li>
-                        <li>Datas dos ciclos de leitura numa única linha, mais fáceis de editar</li>
-                        <li>Bingo com 24 modelos por tamanho</li>
-                        <li>No iPhone, a Live Activity do cronómetro com as cores do teu tema</li>
-                        <li>O catálogo aprende com as pesquisas e leituras de ISBN sem resultados e adiciona os livros em falta (a partir de 15 de novembro)</li>
-                        <li>Chinês tradicional</li>
-                        <li>Série no CSV</li>
-                    </ul>
-                    <strong>Correções</strong>
-                    <ul>
-                        <li>Os títulos no Bingo, no Wrapped e noutros ecrãs ficam à mesma altura que nos restantes menus</li>
-                        <li>Os ícones do Bingo e do Wrapped recuperam as suas cores</li>
-                        <li>Os contadores de livros por estado no Início veem-se melhor nos temas Escuro, OLED, Entardecer, Aurora e Couro</li>
-                        <li>Um único aviso para livros com dados em falta: o triângulo amarelo desaparece e fica o vermelho</li>
-                        <li>Recarregar capa e género diz-te quando já estava tudo bem e avisa a vermelho quando não encontra algo</li>
-                        <li>As cópias no Google Drive de bibliotecas muito grandes já não falham por falta de memória</li>
-                        <li>Várias correções no iPhone</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Progresso em %, trajes e skins da Pagi, KOSync, idiomas da direita para a esquerda</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novo</strong>
-                    <ul>
-                        <li>Progresso em %: regista as tuas sessões em percentagem em livros, bandas desenhadas, mangás e audiolivros. Nos audiolivros também podes anotar o tempo.</li>
-                        <li>Muda o formato de um livro, banda desenhada, mangá ou audiolivro depois de o adicionares, sem perder sessões, notas nem estatísticas.</li>
-                        <li>Várias notas e citações ao terminares uma sessão, cada uma em separado.</li>
-                        <li>Se saíres de uma sessão sem guardar, fica como rascunho e podes recuperá-la da próxima vez que guardares uma.</li>
-                        <li>Estatísticas: gráfico circular com o que lês por formato e um filtro por formato para ver cada tipo em separado.</li>
-                        <li>Desafios de audiolivros (horas ouvidas e audiolivros terminados) e Bingo com audiolivros: 1 hora de audição conta como 30 páginas.</li>
-                        <li>A Pagi estreia 7 trajes sazonais animados que funcionam com qualquer tema, 9 skins novas (Bardo, Ladrão Noturno, Conde Vampiro, Capitão de Submarino, Tinta, Origami, Leitor Noturno, Cavaleiro Andante e Astronauta Retro) e uma animação própria ao toque para cada uma. Há ainda uma skin secreta escondida na app: toca à volta do ecrã principal para a encontrares.</li>
-                        <li>A Pagi tem uma secção própria nas Definições: estação automática, trajes sazonais fora de época e skins.</li>
-                        <li>Ícones da app para Pro: escolhe o teu nas Definições, com versões de Halloween, Natal e Ano Novo. Se ativares a mudança sazonal automática, o ícone muda nas suas datas e depois volta ao teu. Vem desativada por predefinição.</li>
-                        <li>No Android, se experimentaste o Pro, recebes também um dos ícones Pro como oferta.</li>
-                        <li>Sincroniza o teu progresso com o teu e-reader através do KOSync (KOReader e compatíveis), com um assistente passo a passo.</li>
-                        <li>A app já está em árabe, hebraico, persa e urdu, com interface da direita para a esquerda. Também os podes escolher como idioma do livro ao adicionar um manualmente.</li>
-                        <li>Novos sons do temporizador Pro, com uma nova categoria, Cozy.</li>
-                    </ul>
-                    <strong>Correções</strong>
-                    <ul>
-                        <li>Melhor seleção de géneros para todo o tipo de livros.</li>
-                        <li>Algumas cores das estatísticas foram alteradas para distinguir melhor cada dado.</li>
-                        <li>Se um livro do e-reader não tiver título, é mostrado um nome legível em vez de um código, e o assistente avisa-te se não chegar nenhum progresso com o teu utilizador.</li>
-                        <li>O Bingo já está traduzido em todos os idiomas.</li>
-                        <li>Todos os idiomas revistos: os textos que apareciam em inglês ou espanhol agora aparecem no teu idioma.</li>
-                        <li>As cópias de segurança guardadas no telemóvel já não ficam vazias se a gravação falhar.</li>
-                        <li>Mudar o estado de um livro já não apaga as datas das leituras anteriores.</li>
-                        <li>O resumo mensal também conta os livros terminados sem sessões.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; Beta para iPhone, BD e mangá como livros de primeira, vista de Séries</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novo</strong>
-                    <ul>
-                        <li>O Lecturameter chega ao iPhone em beta, através do TestFlight</li>
-                        <li>Bandas desenhadas, mangá e audiolivros como itens de primeira: adiciona-os num só formulário manual ou vários de uma vez, e partilha o teu cartão de audiolivro</li>
-                        <li>Traz a tua biblioteca de outra aplicação (Goodreads, StoryGraph, Bookmory, Fable) com pré-visualização</li>
-                        <li>Vista de Séries: os teus livros agrupados por série, preenchida automaticamente ao adicioná-los</li>
-                        <li>Resumo mensal com um cartão partilhável, e "O teu livro de cada mês" no Wrapped</li>
-                        <li>Evolução da leitura nas Estatísticas</li>
-                        <li>Os meus cartões: todos os cartões que partilhaste, num só sítio</li>
-                        <li>Widgets de desafios e de bingo</li>
-                        <li>Adiciona vários livros de uma vez a partir da pesquisa</li>
-                        <li>Filtros avançados na Biblioteca</li>
-                        <li>Créditos por edição: narradores, tradutores e ilustradores</li>
-                        <li>O Pro funciona até em 3 dispositivos, Android e iOS</li>
-                        <li>As cópias de segurança agora também guardam as tuas tags e lembretes</li>
-                        <li>Agora podes guardar uma sessão de leitura sem páginas, só com o tempo (útil se leres em formato digital)</li>
-                    </ul>
-                    <strong>Correções</strong>
-                    <ul>
-                        <li>Eliminar vários livros dá uma única opção de Anular</li>
-                        <li>Os textos agora indicam o tipo: livro, BD, mangá ou audiolivro</li>
-                        <li>A fila de estrelas já não pontua enquanto fazes scroll</li>
-                        <li>As notas longas são mostradas por inteiro</li>
-                        <li>Datas e erros de cópia de segurança no idioma da aplicação</li>
-                        <li>Restaurar a partir do Drive já não escolhe o ficheiro errado</li>
-                        <li>Evitado um erro ao tocar numa ligação de autor em algumas situações</li>
-                        <li>Mensagens de Importar e Exportar mais claras</li>
-                        <li>Evitado um fecho inesperado do cronómetro em segundo plano</li>
-                        <li>Evitados fechos inesperados ao comprar o Pro e em alguns widgets</li>
-                        <li>Corrigido um número confuso nos resultados de pesquisa de BD e mangá</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Tags, pontuações, 40 idiomas, biblioteca renovada</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novo</strong>
-                    <ul>
-                        <li>Definições reorganizadas por secções</li>
-                        <li>Sistema de <strong>tags</strong> (até 3 por livro, pesquisa com #)</li>
-                        <li>Cartões e detalhe de livro renovados, 4 tamanhos de cartão</li>
-                        <li><strong>Pontuações de 5 estrelas com meias estrelas</strong></li>
-                        <li>Notas divididas em: citações, notas e opinião</li>
-                        <li>Partilha livros, desafios, bingos, mapas de calor e estatísticas</li>
-                        <li>Lembretes de leitura personalizáveis</li>
-                        <li>Tema <strong>Crepúsculo</strong> para o Pro</li>
-                        <li><strong>Suporte para 40 idiomas</strong></li>
-                    </ul>
-                    <strong>Correções</strong>
-                    <ul>
-                        <li>Melhor disposição no modo horizontal e em ecrãs grandes</li>
-                        <li>Pesquisa de livros mais rápida e mais fiável</li>
-                        <li>Widget Pro com comparação mensal</li>
-                        <li>Ações destrutivas com opção de anular</li>
-                        <li>Repor as dicas em Definições &gt; Ajuda</li>
-                        <li>O Pagi já não tapa títulos nem aparece nas Definições</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Barra de som da sessão imersiva, melhorias no modo horizontal</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novo</strong>
-                    <ul>
-                        <li>A barra de som da sessão imersiva agora também se expande no modo horizontal, com controlos de anterior/seguinte e de repetir/sequência</li>
-                        <li>Os grupos de sons realçam melhor a cor de destaque do teu tema</li>
-                    </ul>
-                    <strong>Correções</strong>
-                    <ul>
-                        <li>O modo horizontal já não fica preso na vertical quando usas a aplicação num idioma diferente do do telemóvel</li>
-                        <li>Mais espaço entre o cartão de som e os botões do cronómetro quando está expandido</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Ver todas as perguntas</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Catálogo de livros</a>
                 <a href="#themes">Temas</a>
                 <a href="#events">Eventos</a>
-                <a href="#pricing">Preços</a>
+                <a href="./pro/">Preços</a>
                 <a href="../precios-regionales.html">Preços regionais</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Recursos</h4>
                 <a href="./blog/">Blogue</a>
-                <a href="#whatsnew">Novidades</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Plataformas</a>
+                <a href="./news/">Novidades</a>
+                <a href="./roadmap/">Roadmap</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Plataformas</a>
             </div>
             <div class="footer-col">
                 <h4>Legal e contacto</h4>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="{{code}}" dir="{{dir}}">
+<head>
+{{> head}}
+</head>
+<body>
+
+{{> promo}}
+
+{{> nav}}
+
+<main class="subpage-body">
+<section class="band">
+    <div class="container">
+{{> breadcrumb}}
+        <div class="page-hero">
+            <h1 class="page-heading">{{home.pricing.free_forever_pro_if_you}}</h1>
+        </div>
+    </div>
+</section>
+
+<section class="band" id="{{anchor.pricing}}">
+    <div class="container">
+        <div class="section-head">
+            <p>{{home.pricing.try_pro_features_for_7}}</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <img src="{{root}}ic_launcher_round.png" alt="{{home.pricing.lecturameter.alt}}" class="pricing-icon" width="56" height="56" loading="lazy">
+                <div class="pricing-name">{{home.pricing.free}}</div>
+                <div class="price-row"><span class="price-free">{{home.pricing.0}}</span></div>
+                <p class="price-note">{{home.pricing.the_whole_app_free_forever}}</p>
+                <ul class="pricing-list">
+                    <li>{{home.pricing.full_library}}</li>
+                    <li>{{home.pricing.sessions_and_timer}}</li>
+                    <li>{{home.pricing.book_widget_on_home_screen}}</li>
+                    <li>{{home.pricing.advanced_stats_and_heatmaps}}</li>
+                    <li>{{home.pricing.yearly_wrapped_and_history_always}}</li>
+                    <li>{{home.pricing.reading_bingo}}</li>
+                    <li>{{home.pricing.reading_challenges_up_to_15}}</li>
+                    <li>{{home.pricing.local_backups_and_google_drive}}</li>
+                    <li>{{home.pricing.tag_system_up_to_3}}</li>
+                    <li>{{home.pricing.customizable_reading_reminders_up}}</li>
+                    <li>{{home.pricing.spine_and_edge_photos_for}}</li>
+                </ul>
+                <div class="pricing-foot">{{home.pricing.these_will_never_become_pro}}</div>
+            </div>
+            <div class="pricing-card pro">
+                <img src="{{root}}ic_launcher_pro.png" alt="{{home.pricing.lecturameter_pro.alt}}" class="pricing-icon" width="56" height="56" loading="lazy">
+                <div class="pricing-name">{{home.pricing.lecturameter_pro}}</div>
+                <div class="price-row">
+                    <span class="price-new">{{home.pricing.4_99}}<span class="price-asterisk">*</span></span>
+                </div>
+                <p class="price-note">{{home.pricing.one_time_purchase_not_a}}</p>
+                <p class="price-ios-offer">{{home.pricing.ios_launch_offer_2_99}}</p>
+                <details class="price-currency-list">
+                    <summary>{{home.pricing.approximate_price_in_your_currency}}</summary>
+                    <ul>
+                        <li>{{home.pricing.eur_2_99}}</li>
+                        <li>USD $2.99</li>
+                        <li>GBP &#163;2.99</li>
+                        <li>CAD CA$3.99</li>
+                        <li>AUD A$4.99</li>
+                        <li>CHF CHF 3.00</li>
+                        <li>MXN MX$69</li>
+                        <li>{{home.pricing.brl_r_19_90}}</li>
+                        <li>ARS US$2.99</li>
+                        <li>{{home.pricing.clp_clp_2_990}}</li>
+                        <li>{{home.pricing.cop_cop_14_900}}</li>
+                        <li>PEN S/ 12.90</li>
+                        <li>JPY &#165;500</li>
+                        <li>CNY &#165;22</li>
+                        <li>INR &#8377;299</li>
+                        <li>{{home.pricing.pln_14_99_z}}</li>
+                    </ul>
+                    <p class="price-currency-note">{{home.pricing.final_prices_set_by_the}}</p>
+                </details>
+                <p class="price-note"><a href="{{link_regional}}">{{home.pricing.see_regional_prices}}</a></p>
+                <p class="price-note"><a href="{{link_activate}}">{{home.pricing.see_how_to_activate_pro}}</a></p>
+                <p class="price-note">{{home.pricing.same_price_on_android_and}}</p>
+                <p class="price-note price-experiment-note">{{home.pricing.price_experiment_note}}</p>
+                <p class="price-trial">{{home.pricing.try_pro_free_for_7}}</p>
+                <p class="price-trial">{{home.pricing.no_card_required_for_the}}</p>
+                <ul class="pricing-list">
+                    <li>{{home.pricing.leather_aurora_oled_and_dusk}}</li>
+                    <li>{{home.pricing.immersive_timer}}</li>
+                    <li>{{home.pricing.golden_alternative_icon}}</li>
+                    <li>{{home.pricing.monthly_comparison_widget}}</li>
+                    <li>{{home.pricing.more_than_15_active_challenges}}</li>
+                    <li>{{home.pricing.unlimited_editions}}</li>
+                    <li>{{home.pricing.unlimited_reading_reminders}}</li>
+                    <li>{{home.pricing.extra_monthly_3x3_bingo_harder}}</li>
+                </ul>
+                <div class="pricing-foot">{{home.pricing.everything_else_stays_free_pro}}</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="band band-alt">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{home.faq.frequently_asked_questions}}</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.is_there_a_subscription}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.no_the_app_is_free}}</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.can_i_try_before_buying}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_there_s_a_free}}</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.what_happens_to_my_pro}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.it_depends_on_where_you}} <code>lm-…</code> {{home.faq.codes_can_only_be_redeemed}} <a href="{{root}}activar-pro.html">{{home.faq.how_to_activate_pro}}</a>.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.can_i_move_my_pro}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_between_android_and_iphone}}</div></div>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="{{link_page_faq}}" class="btn">{{home.link.faq}}</a></p>
+    </div>
+</section>
+</main>
+
+{{> footer}}
+
+{{> scripts}}
+</body>
+</html>

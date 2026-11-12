@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Lukupäiväkirja · Kirjatilastot ja ajastin</title>
     <meta name="description" content="Lecturameter: Lukupäiväkirja Androidille ja iPhonelle. Ajasta lukemisesi, seuraa sivuja, tahtia ja tilastoja ja tuo tiedot Goodreadsista. Ei tiliä, ei mainoksia.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Teemat</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Universumi <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Resurssit <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blogi</a></li>
-                    <li><a href="#whatsnew">Uutiset</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Alustat</a></li>
+                    <li><a href="./news/">Uutiset</a></li>
+                    <li><a href="./roadmap/">Tiekartta</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Alustat</a></li>
                     <li class="nav-dd-label" role="presentation">Oikeudelliset</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Tietosuojakäytäntö</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Käyttöehdot</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Kertaostos, ei tilaus.</p>
                 <p class="price-ios-offer">iOS-julkaisutarjous: <strong>2,99 &#8364;</strong> ensimmäisen kuukauden ajan. Sen jälkeen 4,99 &#8364; (sama hinta kuin Androidilla). Edelleen kertaostos.</p>
-                <details class="price-currency-list">
-                    <summary>Likimääräinen hinta omassa valuutassasi</summary>
-                    <ul>
-                        <li>EUR 2,99 &#8364;</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19,90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2 990</li>
-                        <li>COP COP 14 900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14,99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Lopulliset hinnat määrittää App Store; ne voivat vaihdella hieman.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Katso alueelliset hinnat</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Katso, miten Pro otetaan käyttöön</a></p>
                 <p class="price-note">Sama hinta Androidilla ja iOS:llä julkaisukuukauden jälkeen.</p>
-                <p class="price-note price-experiment-note">* Jotkut voivat nähdä eri hinnan, koska teemme hintakokeiluja.</p>
                 <p class="price-trial">Kokeile Prota ilmaiseksi 7 päivää sovelluksessa</p>
                 <p class="price-trial">Kokeiluun ei tarvita korttia</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Kaikki muu pysyy ilmaisena. Pro tuo vain lisäherkkuja.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro tarkemmin ja alueelliset hinnat</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Pikavalikko:</strong> siirry osiosta toiseen kolmella pisteellä (···) palaamatta Kotiin</li>
                     <li><strong>Tauolla:</strong> jätä kirja syrjään joksikin aikaa sotkematta tilastojasi</li>
                     <li><strong>Kaksi uutta Pro-teemaa:</strong> Vihko ja Metsä</li>
-                    <li>Pro-teemoja voi ostaa myös yksitellen tai kolmen paketteina esikatselun kanssa, ja Pro-näyttö on uusi</li>
-                    <li><strong>Epälineaarinen lukeminen</strong> antologioille ja runokokoelmille: päällekkäiset sivut eivät lasketa kahdesti ja edistymispalkki on jaettu jaksoihin</li>
-                    <li>Aloita lukeminen kirjan widgetistä avaamatta sovellusta</li>
-                    <li>Viikko- ja kuukausiyhteenvedot uudella ilmeellä ja enemmän tilastoja</li>
-                    <li>Valinnainen sähköposti kohdassa ”Lähetä palautetta”, vain jotta voin vastata sinulle</li>
-                    <li>Oma ajastinkello jokaiselle teemalle</li>
-                    <li>Pagi valitsee sinulle kirjan Haluan lukea -listalta</li>
-                    <li>KOSync KOReaderin todellisella lukuajalla</li>
-                    <li>Ilmoitukset luokittain ja ilmoitukset sovelluksen uutisista</li>
-                    <li>Koti, jossa sivupalkki on ryhmitelty: Tavoitteet, Lukemiseni ja Työkalut</li>
-                    <li>Vaihda kirjan tilaa sen pikatoiminnoista ja peru, jos erehdyt</li>
-                    <li>Material-kuvakkeet emojien tilalla ja luettavammat tilastot kaikissa teemoissa</li>
-                    <li>Ilmoitus, kun lisäät kirjan hausta</li>
-                    <li>Lukukierrosten päivämäärät yhdellä rivillä, helpompi muokata</li>
-                    <li>Bingo 24 pohjalla koon mukaan</li>
-                    <li>iPhonella ajastimen Live Activity teemasi väreissä</li>
-                    <li>Luettelo oppii tuloksettomista hauista ja ISBN-skannauksista ja lisää puuttuvat kirjat (15. marraskuusta alkaen)</li>
-                    <li>Perinteinen kiina</li>
-                    <li><strong>Sarja CSV:</strong> ssä</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Korjaukset</h3>
-                <ul>
-                    <li>Otsikot Bingossa, Wrappedissa ja muilla näytöillä ovat nyt samalla korkeudella kuin muissa valikoissa</li>
-                    <li>Bingon ja Wrappedin kuvakkeet saivat värinsä takaisin</li>
-                    <li>Kirjojen tilakohtaiset laskurit Kodissa näkyvät paremmin teemoissa Tumma, OLED, Hämärä, Aurora ja Nahka</li>
-                    <li>Vain yksi varoitus kirjoille, joilta puuttuu tietoja: keltainen kolmio poistuu ja punainen jää</li>
-                    <li>Kannen ja lajityypin uudelleenlataus kertoo, jos kaikki oli jo kunnossa, ja varoittaa punaisella, jos jotain ei löydy</li>
-                    <li>Hyvin suurten kirjastojen Google Drive -varmuuskopiot eivät enää epäonnistu muistin puutteen vuoksi</li>
-                    <li>Useita korjauksia iPhonelle</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Kaikki päivitysmuistiinpanot ja versiohistoria</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter iPhonella ja Androidilla</h2>
         <p>iPhone-versiossa on samat pääominaisuudet kuin Androidissa: kirjasto, lukuajastin, tilastot, haasteet, bingo, Pagi ja visuaaliset teemat. Nämä ovat erot.</p>
-        <details class="differences-details">
-            <summary>Erot iPhonen ja Androidin välillä</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Vain iPhonella</h3>
-                    <ul>
-                        <li>Ajastin lukitusnäytöllä ja Dynamic Islandissa, tauko- ja lopetuspainikkeineen.</li>
-                        <li>iOS 18 -säätimet: Luen nyt, Skannaa ISBN, Lisää kirja ja Käynnistä ajastin.</li>
-                        <li>Varmuuskopio iCloud Driveen.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Vain Androidilla</h3>
-                    <ul>
-                        <li>Ajastimen ohjaus ilmoituksesta.</li>
-                        <li>Automaattinen Älä häiritse -tila uppoutuvassa istunnossa.</li>
-                        <li>Widgetien asetukset ja kiinnitys.</li>
-                        <li>Tabletit (iPhone-versio ei toimi iPadilla).</li>
-                        <li>Koodien <code>lm-…</code> lunastus.</li>
-                        <li>Pro-teema ja -kuvake lahjaksi kokeilun lopussa.</li>
-                        <li>Tipit ja lahjoitukset.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Molemmilla</h3>
-                    <ul>
-                        <li>Kirja-, Tilastot-, Haasteet- ja Bingo-widgetit.</li>
-                        <li>Täysi kielivalitsin.</li>
-                        <li>Vaakatila puhelimissa.</li>
-                        <li>Varmuuskopio Google Driveen.</li>
-                        <li>Synkronointi e-lukijan kanssa (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Pro-ostos</h3>
-                    <ul>
-                        <li>iPhonella Pro on App Storen sovelluksen sisäinen ostos. Androidilla se on Google Play -ostos.</li>
-                        <li>7 päivän kokeilu iPhonella on App Storen ilmainen sovelluksen sisäinen ostos, joka on sidottu Apple ID:hesi.</li>
-                        <li>Pro ei toistaiseksi siirry Androidin ja iPhonen välillä: jokainen osto pysyy omalla alustallaan.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Katso kaikki erot</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Toimiiko se ilman nettiyhteyttä?</button>
                 <div class="faq-a"><div class="faq-a-inner">Lähes kaikki toimii ilman yhteyttä. Yhteyttä tarvitaan vain uusien kirjojen hakemiseen ja varmuuskopioiden lataamiseen Google Driveen.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Onko iPhone-versiota?</button>
-                <div class="faq-a"><div class="faq-a-inner">Kyllä: voit ladata sen nyt <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Voinko kokeilla ennen ostamista?</button>
-                <div class="faq-a"><div class="faq-a-inner">Kyllä. Pro-ominaisuuksia voi kokeilla ilmaiseksi 7 päivää ilman korttia. iPhonella kokeilu on App Storen ilmainen sovelluksen sisäinen ostos, joka on sidottu Apple ID:hesi. Androidilla saat kokeilun lopussa valitsemasi Pro-teeman lahjaksi, vaikka et ostaisi Prota.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Mitä Pro-versiolleni tapahtuu, jos vaihdan puhelinta?</button>
-                <div class="faq-a"><div class="faq-a-inner">Se riippuu siitä, mistä ostit sen. Jos ostit sen <strong>Google Playsta</strong> ja vaihdat toiseen Android-puhelimeen samalla Google-tilillä, asenna Lecturameter ja napauta asetuksissa <strong>Palauta ostos</strong>. Jos ostit sen <strong>App Storesta</strong> ja vaihdat toiseen iPhoneen samalla Apple ID:llä, sama juttu: asenna ja napauta <strong>Palauta ostos</strong>. Pro ei toistaiseksi siirry Androidin ja iPhonen välillä: jokainen osto pysyy omalla alustallaan. <code>lm-…</code> -koodeja voi lunastaa vain Androidilla. Lisätietoja: <a href="../activar-pro.html">Näin otat Pron käyttöön</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Voinko siirtää Pron puhelimesta toiseen sekä iOS:n ja Androidin välillä?</button>
-                <div class="faq-a"><div class="faq-a-inner">Androidin ja iPhonen välillä ei toistaiseksi: jokainen osto pysyy omalla alustallaan. Selvitämme, onnistuuko se jotenkin. Saman alustan kahden puhelimen välillä onnistuu: käytä <strong>Palauta ostos</strong> -toimintoa Google-tililläsi tai Apple ID:lläsi.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Versiohistoria</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Tapahtumat · Pikavalikko · Kaksi uutta Pro-teemaa</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Uutta</strong>
-                    <ul>
-                        <li><strong>Tapahtumat:</strong> maailmanlaajuisia lukuhaasteita ja Lecturameter Quest, kun jokin on käynnissä</li>
-                        <li><strong>Pikavalikko:</strong> siirry osiosta toiseen kolmella pisteellä (···) palaamatta Kotiin</li>
-                        <li><strong>Tauolla:</strong> jätä kirja syrjään joksikin aikaa sotkematta tilastojasi</li>
-                        <li><strong>Kaksi uutta Pro-teemaa:</strong> Vihko ja Metsä</li>
-                        <li>Pro-teemoja voi ostaa myös yksitellen tai kolmen paketteina esikatselun kanssa, ja Pro-näyttö on uusi</li>
-                        <li><strong>Epälineaarinen lukeminen</strong> antologioille ja runokokoelmille: päällekkäiset sivut eivät lasketa kahdesti ja edistymispalkki on jaettu jaksoihin</li>
-                        <li>Aloita lukeminen kirjan widgetistä avaamatta sovellusta</li>
-                        <li>Viikko- ja kuukausiyhteenvedot uudella ilmeellä ja enemmän tilastoja</li>
-                        <li>Valinnainen sähköposti kohdassa ”Lähetä palautetta”, vain jotta voin vastata sinulle</li>
-                        <li>Oma ajastinkello jokaiselle teemalle</li>
-                        <li>Pagi valitsee sinulle kirjan Haluan lukea -listalta</li>
-                        <li>KOSync KOReaderin todellisella lukuajalla</li>
-                        <li>Ilmoitukset luokittain ja ilmoitukset sovelluksen uutisista</li>
-                        <li>Koti, jossa sivupalkki on ryhmitelty: Tavoitteet, Lukemiseni ja Työkalut</li>
-                        <li>Vaihda kirjan tilaa sen pikatoiminnoista ja peru, jos erehdyt</li>
-                        <li>Material-kuvakkeet emojien tilalla ja luettavammat tilastot kaikissa teemoissa</li>
-                        <li>Ilmoitus, kun lisäät kirjan hausta</li>
-                        <li>Lukukierrosten päivämäärät yhdellä rivillä, helpompi muokata</li>
-                        <li>Bingo 24 pohjalla koon mukaan</li>
-                        <li>iPhonella ajastimen Live Activity teemasi väreissä</li>
-                        <li>Luettelo oppii tuloksettomista hauista ja ISBN-skannauksista ja lisää puuttuvat kirjat (15. marraskuusta alkaen)</li>
-                        <li>Perinteinen kiina</li>
-                        <li><strong>Sarja CSV:</strong> ssä</li>
-                    </ul>
-                    <strong>Korjaukset</strong>
-                    <ul>
-                        <li>Otsikot Bingossa, Wrappedissa ja muilla näytöillä ovat nyt samalla korkeudella kuin muissa valikoissa</li>
-                        <li>Bingon ja Wrappedin kuvakkeet saivat värinsä takaisin</li>
-                        <li>Kirjojen tilakohtaiset laskurit Kodissa näkyvät paremmin teemoissa Tumma, OLED, Hämärä, Aurora ja Nahka</li>
-                        <li>Vain yksi varoitus kirjoille, joilta puuttuu tietoja: keltainen kolmio poistuu ja punainen jää</li>
-                        <li>Kannen ja lajityypin uudelleenlataus kertoo, jos kaikki oli jo kunnossa, ja varoittaa punaisella, jos jotain ei löydy</li>
-                        <li>Hyvin suurten kirjastojen Google Drive -varmuuskopiot eivät enää epäonnistu muistin puutteen vuoksi</li>
-                        <li>Useita korjauksia iPhonelle</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Edistyminen prosentteina, Pagin asut ja ulkoasut, KOSync, oikealta vasemmalle kirjoitettavat kielet</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Uutta</strong>
-                    <ul>
-                        <li>Edistyminen prosentteina: kirjaa istuntosi prosentteina kirjoissa, sarjakuvissa, mangassa ja äänikirjoissa. Äänikirjoissa voit merkitä myös ajan.</li>
-                        <li>Vaihda kirjan, sarjakuvan, mangan tai äänikirjan formaattia lisäämisen jälkeen menettämättä istuntoja, muistiinpanoja tai tilastoja.</li>
-                        <li>Useita muistiinpanoja ja lainauksia istunnon päättyessä, kukin erikseen.</li>
-                        <li>Jos poistut istunnosta tallentamatta, se säilyy luonnoksena ja voit palauttaa sen seuraavan tallennuksen yhteydessä.</li>
-                        <li>Tilastot: donitsikaavio siitä, mitä luet formaateittain, sekä formaattisuodatin kunkin tyypin erilliseen tarkasteluun.</li>
-                        <li>Äänikirjahaasteet (kuunnellut tunnit ja loppuun kuunnellut äänikirjat) sekä Bingo äänikirjoilla: 1 tunti kuuntelua vastaa 30 sivua.</li>
-                        <li>Pagi debytoi 7 animoidulla kausiasulla, jotka toimivat minkä tahansa teeman kanssa, 9 uudella ulkoasulla (Bardi, Yövaras, Vampyyrikreivi, Sukellusveneen kapteeni, Muste, Origami, Yölukija, Kiertävä ritari ja Retroastronautti) ja omalla napautusanimaatiolla jokaiselle. Sovellukseen on piilotettu myös salainen ulkoasu: napauttele päänäyttöä löytääksesi sen.</li>
-                        <li>Pagilla on oma osionsa asetuksissa: automaattinen vuodenaika, kausiasut kauden ulkopuolella ja ulkoasut.</li>
-                        <li>Sovelluskuvakkeet Pro-käyttäjille: valitse omasi asetuksista, mukana halloween-, joulu- ja uudenvuoden versiot. Jos otat automaattisen kausivaihdon käyttöön, kuvake vaihtuu omina päivinään ja palaa sitten omaksesi. Oletuksena se on pois päältä.</li>
-                        <li>Androidilla, jos kokeilit Prota, saat lahjaksi myös yhden Pro-kuvakkeista.</li>
-                        <li>Synkronoi edistymisesi lukulaitteesi kanssa KOSyncin kautta (KOReader ja yhteensopivat) vaiheittaisen ohjatun toiminnon avulla.</li>
-                        <li>Sovellus on nyt saatavilla arabiaksi, hepreaksi, persiaksi ja urduksi oikealta vasemmalle -käyttöliittymällä. Voit valita ne myös kirjan kieleksi lisätessäsi kirjan käsin.</li>
-                        <li>Uusia Pro-ajastimen ääniä uudessa Cozy-kategoriassa.</li>
-                    </ul>
-                    <strong>Korjaukset</strong>
-                    <ul>
-                        <li>Parempi lajityypin valinta kaikenlaisille kirjoille.</li>
-                        <li>Joitakin tilastojen värejä muutettu, jotta datapisteet erottuvat paremmin.</li>
-                        <li>Jos lukulaitteen kirjalla ei ole nimeä, koodin sijaan näytetään luettava nimi, ja ohjattu toiminto varoittaa, jos käyttäjällesi ei tule edistymistä.</li>
-                        <li>Bingo on nyt käännetty kaikille kielille.</li>
-                        <li>Kaikki kielet tarkistettu: tekstit, jotka näkyivät englanniksi tai espanjaksi, näkyvät nyt omalla kielelläsi.</li>
-                        <li>Puhelimeen tallennetut varmuuskopiot eivät enää jää tyhjiksi, jos tallennus epäonnistuu.</li>
-                        <li>Kirjan tilan muuttaminen ei enää poista aiempien lukukertojen päivämääriä.</li>
-                        <li>Kuukausiyhteenveto laskee mukaan myös luetut kirjat, joissa ei ole istuntoja.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; iPhone-beta, sarjakuvat ja manga täysivaltaisina kirjoina, Sarja-näkymä</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Uutta</strong>
-                    <ul>
-                        <li>Lecturameter saapuu iPhonelle betana TestFlightin kautta</li>
-                        <li>Sarjakuvat, manga ja äänikirjat täysivaltaisina kohteina: lisää ne yhdellä käsin täytettävällä lomakkeella tai monta kerralla, ja jaa äänikirjakorttisi</li>
-                        <li>Tuo kirjastosi toisesta sovelluksesta (Goodreads, StoryGraph, Bookmory, Fable) esikatselun kera</li>
-                        <li>Sarja-näkymä: kirjasi ryhmiteltynä sarjoittain, täyttyy automaattisesti kun lisäät niitä</li>
-                        <li>Kuukausikooste jaettavalla kortilla sekä "Kunkin kuukauden kirjasi" Wrappedissa</li>
-                        <li>Lukemisen kehitys Tilastoissa</li>
-                        <li>Omat kortit: kaikki jakamasi kortit yhdessä paikassa</li>
-                        <li>Haaste- ja bingowidgetit</li>
-                        <li>Lisää monta kirjaa kerralla hausta</li>
-                        <li>Edistyneet suodattimet kirjastossa</li>
-                        <li>Tekijätiedot painoksittain: lukijat, kääntäjät ja kuvittajat</li>
-                        <li>Pro toimii jopa 3 laitteella, Androidilla ja iOS:llä</li>
-                        <li>Varmuuskopiot tallentavat nyt myös tagisi ja muistutuksesi</li>
-                        <li>Voit nyt tallentaa lukuistunnon ilman sivuja, pelkän ajan (kätevää, jos luet digitaalisesti)</li>
-                    </ul>
-                    <strong>Korjaukset</strong>
-                    <ul>
-                        <li>Usean kirjan poistamisen voi kumota yhdellä kertaa</li>
-                        <li>Teksteissä mainitaan nyt tyyppi: kirja, sarjakuva, manga tai äänikirja</li>
-                        <li>Tähtirivi ei enää anna arviota vierittäessäsi</li>
-                        <li>Pitkät muistiinpanot näytetään kokonaan</li>
-                        <li>Päivämäärät ja varmuuskopiovirheet sovelluksen kielellä</li>
-                        <li>Drivesta palauttaminen ei enää valitse väärää tiedostoa</li>
-                        <li>Estetty kaatuminen napautettaessa kirjailijalinkkiä tietyissä tilanteissa</li>
-                        <li>Selkeämmät tuonti- ja vientiviestit</li>
-                        <li>Estetty ajastimen odottamaton sulkeutuminen taustalla</li>
-                        <li>Estetty odottamattomat sulkeutumiset Pron ostossa ja joissakin widgeteissä</li>
-                        <li>Korjattu hämmentävä luku sarjakuvien ja mangan hakutuloksissa</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Tagit, arviot, 40 kieltä, uudistettu kirjasto</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Uutta</strong>
-                    <ul>
-                        <li>Asetukset järjestetty osioihin</li>
-                        <li><strong>Tagit</strong> (jopa 3 per kirja, haku #-merkillä)</li>
-                        <li>Uudistetut kirjakortit ja kirjan tiedot, 4 korttikokoa</li>
-                        <li><strong>5 tähden arviot puolikkailla tähdillä</strong></li>
-                        <li>Muistiinpanot jaettu lainauksiin, muistiinpanoihin ja mielipiteeseen</li>
-                        <li>Jaa kirjoja, haasteita, bingoja, lämpökarttoja ja tilastoja</li>
-                        <li>Muokattavat lukumuistutukset</li>
-                        <li><strong>Iltahämärä</strong>-teema Pro-käyttäjille</li>
-                        <li><strong>Tuki 40 kielelle</strong></li>
-                    </ul>
-                    <strong>Korjaukset</strong>
-                    <ul>
-                        <li>Parempi asettelu vaakatilassa ja suurilla näytöillä</li>
-                        <li>Nopeampi ja luotettavampi kirjahaku</li>
-                        <li>Pro-widget kuukausivertailulla</li>
-                        <li>Peruuttamattomat toiminnot voi nyt kumota</li>
-                        <li>Nollaa vinkit kohdasta Asetukset &gt; Ohje</li>
-                        <li>Pagi ei enää peitä otsikoita eikä näy asetuksissa</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Uppoutuvan istunnon äänipalkki, vaakatilan parannuksia</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Uutta</strong>
-                    <ul>
-                        <li>Uppoutuvan istunnon äänipalkki laajenee nyt myös vaakatilassa, ja siinä on edellinen/seuraava- sekä toisto/jakso-säätimet</li>
-                        <li>Ääniryhmät korostavat teemasi korostusväriä selkeämmin</li>
-                    </ul>
-                    <strong>Korjaukset</strong>
-                    <ul>
-                        <li>Vaakatila ei enää jumitu pystytilaan, kun käytät sovellusta eri kielellä kuin puhelintasi</li>
-                        <li>Enemmän tilaa äänikortin ja ajastinpainikkeiden välissä laajennettuna</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Katso kaikki kysymykset</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Kirjaluettelo</a>
                 <a href="#themes">Teemat</a>
                 <a href="#events">Tapahtumat</a>
-                <a href="#pricing">Hinnoittelu</a>
+                <a href="./pro/">Hinnoittelu</a>
                 <a href="../precios-regionales.html">Alueelliset hinnat</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Resurssit</h4>
                 <a href="./blog/">Blogi</a>
-                <a href="#whatsnew">Uutiset</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Alustat</a>
+                <a href="./news/">Uutiset</a>
+                <a href="./roadmap/">Tiekartta</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Alustat</a>
             </div>
             <div class="footer-col">
                 <h4>Oikeudelliset tiedot ja yhteys</h4>

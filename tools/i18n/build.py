@@ -276,6 +276,7 @@ def release_vars(cfg, strings, where, errors, loc=None):
     fixes = strings.get('release.%s.fixes' % vkey(cur), [])
     li = '                    <li>%s</li>'
     v['notes_new_items'] = '\n'.join(li % x for x in notes)
+    v['notes_new_short'] = '\n'.join(li % x for x in notes[:4])
     v['notes_fix_items'] = '\n'.join(li % x for x in fixes)
     v['has_notes_fixes'] = '1' if fixes else ''
     # historial: versiones <= actual con notas, de la mas nueva a la mas antigua

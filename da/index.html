@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Læsedagbog · Statistik og timer</title>
     <meta name="description" content="Lecturameter: Læsedagbog til Android og iPhone. Tag tid på din læsning, følg sider, tempo og statistik, og importér fra Goodreads. Ingen konto, ingen reklamer.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Temaer</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Univers <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Ressourcer <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blog</a></li>
-                    <li><a href="#whatsnew">Nyheder</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Platforme</a></li>
+                    <li><a href="./news/">Nyheder</a></li>
+                    <li><a href="./roadmap/">Køreplan</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Platforme</a></li>
                     <li class="nav-dd-label" role="presentation">Juridisk</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Privatlivspolitik</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Servicevilkår</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Engangskøb, ikke et abonnement.</p>
                 <p class="price-ios-offer">Lanceringstilbud på iOS: <strong>&#8364;2.99</strong> den første måned. Derefter &#8364;4.99 (samme pris som på Android). Stadig et engangskøb.</p>
-                <details class="price-currency-list">
-                    <summary>Omtrentlig pris i din valuta</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Endelige priser fastsættes af App Store og kan variere en smule.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Se regionale priser</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Se, hvordan du aktiverer Pro</a></p>
                 <p class="price-note">Samme pris på Android og iOS efter lanceringsmåneden.</p>
-                <p class="price-note price-experiment-note">* Nogle personer kan se en anden pris, fordi vi kører prisforsøg.</p>
                 <p class="price-trial">Prøv Pro gratis i 7 dage, inde i appen</p>
                 <p class="price-trial">Intet kort kræves til prøveperioden</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Alt andet forbliver gratis. Pro tilføjer kun ekstra.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro i detaljer og regionale priser</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Hurtigmenu:</strong> hop fra en sektion til en anden med de tre prikker (···), uden at gå tilbage til Hjem</li>
                     <li><strong>Pauset:</strong> læg en bog væk et stykke tid uden at ødelægge din statistik</li>
                     <li><strong>To nye Pro-temaer:</strong> Notesbog og Skov</li>
-                    <li>Pro-temaer kan også købes enkeltvis eller i pakker á 3, med forhåndsvisning, og Pro-skærmen er ny</li>
-                    <li><strong>Ikke-lineær læsning</strong> til antologier og digtsamlinger: overlappende sider tæller ikke to gange, og statuslinjen er delt i afsnit</li>
-                    <li>Begynd at læse fra bogens widget uden at åbne appen</li>
-                    <li>Ugentlige og månedlige oversigter med nyt design og flere statistikker</li>
-                    <li>Valgfri e-mail i “Send feedback”, kun så jeg kan svare dig</li>
-                    <li>Et eget timerur til hvert tema</li>
-                    <li>Pagi vælger en bog til dig fra Vil læse</li>
-                    <li>KOSync med KOReaders faktiske læsetid</li>
-                    <li>Notifikationer efter kategori og beskeder om nyheder i appen</li>
-                    <li>Hjem med rail grupperet i Mål, Mine læsninger og Værktøjer</li>
-                    <li>Skift en bogs status fra dens genveje, og fortryd, hvis du kommer til at fejle</li>
-                    <li>Material-ikoner i stedet for emojis og mere læsbar statistik i alle temaer</li>
-                    <li>En besked, når du tilføjer en bog fra søgningen</li>
-                    <li>Datoer for læsecyklusser på én række, lettere at redigere</li>
-                    <li>Bingo med 24 skabeloner efter størrelse</li>
-                    <li>På iPhone, timerens Live Activity i dit temas farver</li>
-                    <li>Kataloget lærer af søgninger og ISBN-scanninger uden resultat og tilføjer de manglende bøger (fra 15. november)</li>
-                    <li>Traditionel kinesisk</li>
-                    <li>Serie i CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Rettelser</h3>
-                <ul>
-                    <li>Titler i Bingo, Wrapped og andre skærme sidder nu i samme højde som i de andre menuer</li>
-                    <li>Ikonerne for Bingo og Wrapped har fået deres farver tilbage</li>
-                    <li>Bogtællerne pr. status på Hjem er lettere at se i Mørk, OLED, Skumring, Aurora og Læder</li>
-                    <li>Én enkelt advarsel for bøger med manglende data: den gule trekant er væk, og den røde bliver</li>
-                    <li>Genindlæsning af omslag og genre fortæller dig, når alt allerede var i orden, og advarer med rødt, når noget ikke findes</li>
-                    <li>Google Drive-sikkerhedskopier af meget store biblioteker fejler ikke længere på grund af hukommelsesmangel</li>
-                    <li>Flere rettelser på iPhone</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Alle opdateringsnoter og versionshistorik</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter på iPhone og Android</h2>
         <p>iPhone-versionen har de samme hovedfunktioner som Android: bibliotek, læsetimer, statistik, udfordringer, bingo, Pagi og de visuelle temaer. Her er forskellene.</p>
-        <details class="differences-details">
-            <summary>Forskelle mellem iPhone og Android</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Kun på iPhone</h3>
-                    <ul>
-                        <li>Timer på låseskærmen og i Dynamic Island, med pause og stop.</li>
-                        <li>Styringer i iOS 18: Læser nu, Scan ISBN, Tilføj bog og Start timer.</li>
-                        <li>Sikkerhedskopi i iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Kun på Android</h3>
-                    <ul>
-                        <li>Styring af timeren fra notifikationen.</li>
-                        <li>Automatisk Forstyr ikke i den fordybede session.</li>
-                        <li>Opsætning og fastgørelse af widgets.</li>
-                        <li>Tablets (iPhone-versionen kører ikke på iPad).</li>
-                        <li>Indløsning af <code>lm-…</code> koder.</li>
-                        <li>Et Pro-tema og et ikon som gave, når prøveperioden slutter.</li>
-                        <li>Drikkepenge og donationer.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>På begge</h3>
-                    <ul>
-                        <li>Widgets til Bog, Statistik, Udfordringer og Bingo.</li>
-                        <li>Fuld sprogvælger.</li>
-                        <li>Liggende format på telefoner.</li>
-                        <li>Sikkerhedskopi i Google Drive.</li>
-                        <li>Synkronisering med e-bogslæser (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Pro-køb</h3>
-                    <ul>
-                        <li>På iPhone er Pro et køb i appen via App Store. På Android er det et køb via Google Play.</li>
-                        <li>Prøveperioden på 7 dage på iPhone er et gratis køb i appen via App Store, knyttet til dit Apple-id.</li>
-                        <li>Indtil videre flytter Pro sig ikke mellem Android og iPhone: hvert køb bliver på sin platform.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Se alle forskelle</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Virker den offline?</button>
                 <div class="faq-a"><div class="faq-a-inner">Næsten alt virker offline. Du skal kun have forbindelse for at søge efter nye bøger og uploade sikkerhedskopier til Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Findes der en iPhone-version?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ja: du kan hente den nu fra <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Kan jeg prøve, før jeg køber?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ja. Der er en gratis prøveperiode på 7 dage med Pro-funktionerne, uden kort. På iPhone er det et gratis køb i appen via App Store, knyttet til dit Apple-id. På Android får du et gratis Pro-tema efter eget valg, når prøveperioden slutter, selv hvis du ikke køber Pro.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Hvad sker der med mit Pro, hvis jeg skifter telefon?</button>
-                <div class="faq-a"><div class="faq-a-inner">Det afhænger af, hvor du købte det. Har du købt det på <strong>Google Play</strong> og skifter til en anden Android med samme Google-konto, så installer Lecturameter og tryk på <strong>Gendan køb</strong> i Indstillinger. Har du købt det i <strong>App Store</strong> og skifter til en anden iPhone med samme Apple-id, er det det samme: installer og tryk på <strong>Gendan køb</strong>. Indtil videre flytter Pro sig ikke mellem Android og iPhone: hvert køb bliver på sin platform. <code>lm-…</code> koder kan kun indløses på Android. Flere detaljer i <a href="../activar-pro.html">Sådan aktiverer du Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Kan jeg flytte mit Pro mellem telefoner og mellem iOS og Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">Mellem Android og iPhone indtil videre ikke: hvert køb bliver på sin platform. Vi undersøger, om det kan lade sig gøre på en eller anden måde. Mellem to telefoner på samme platform kan du: brug <strong>Gendan køb</strong> med din Google-konto eller dit Apple-id.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Versionshistorik</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Begivenheder · Hurtigmenu · To nye Pro-temaer</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nyt</strong>
-                    <ul>
-                        <li><strong>Begivenheder:</strong> globale læseudfordringer og Lecturameter Quest, når der er en aktiv</li>
-                        <li><strong>Hurtigmenu:</strong> hop fra en sektion til en anden med de tre prikker (···), uden at gå tilbage til Hjem</li>
-                        <li><strong>Pauset:</strong> læg en bog væk et stykke tid uden at ødelægge din statistik</li>
-                        <li><strong>To nye Pro-temaer:</strong> Notesbog og Skov</li>
-                        <li>Pro-temaer kan også købes enkeltvis eller i pakker á 3, med forhåndsvisning, og Pro-skærmen er ny</li>
-                        <li><strong>Ikke-lineær læsning</strong> til antologier og digtsamlinger: overlappende sider tæller ikke to gange, og statuslinjen er delt i afsnit</li>
-                        <li>Begynd at læse fra bogens widget uden at åbne appen</li>
-                        <li>Ugentlige og månedlige oversigter med nyt design og flere statistikker</li>
-                        <li>Valgfri e-mail i “Send feedback”, kun så jeg kan svare dig</li>
-                        <li>Et eget timerur til hvert tema</li>
-                        <li>Pagi vælger en bog til dig fra Vil læse</li>
-                        <li>KOSync med KOReaders faktiske læsetid</li>
-                        <li>Notifikationer efter kategori og beskeder om nyheder i appen</li>
-                        <li>Hjem med rail grupperet i Mål, Mine læsninger og Værktøjer</li>
-                        <li>Skift en bogs status fra dens genveje, og fortryd, hvis du kommer til at fejle</li>
-                        <li>Material-ikoner i stedet for emojis og mere læsbar statistik i alle temaer</li>
-                        <li>En besked, når du tilføjer en bog fra søgningen</li>
-                        <li>Datoer for læsecyklusser på én række, lettere at redigere</li>
-                        <li>Bingo med 24 skabeloner efter størrelse</li>
-                        <li>På iPhone, timerens Live Activity i dit temas farver</li>
-                        <li>Kataloget lærer af søgninger og ISBN-scanninger uden resultat og tilføjer de manglende bøger (fra 15. november)</li>
-                        <li>Traditionel kinesisk</li>
-                        <li>Serie i CSV</li>
-                    </ul>
-                    <strong>Rettelser</strong>
-                    <ul>
-                        <li>Titler i Bingo, Wrapped og andre skærme sidder nu i samme højde som i de andre menuer</li>
-                        <li>Ikonerne for Bingo og Wrapped har fået deres farver tilbage</li>
-                        <li>Bogtællerne pr. status på Hjem er lettere at se i Mørk, OLED, Skumring, Aurora og Læder</li>
-                        <li>Én enkelt advarsel for bøger med manglende data: den gule trekant er væk, og den røde bliver</li>
-                        <li>Genindlæsning af omslag og genre fortæller dig, når alt allerede var i orden, og advarer med rødt, når noget ikke findes</li>
-                        <li>Google Drive-sikkerhedskopier af meget store biblioteker fejler ikke længere på grund af hukommelsesmangel</li>
-                        <li>Flere rettelser på iPhone</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Fremskridt i %, Pagi-dragter og skins, KOSync, sprog der skrives fra højre mod venstre</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nyt</strong>
-                    <ul>
-                        <li>Fremskridt i %: registrer dine sessioner som en procentdel i bøger, tegneserier, manga og lydbøger. I lydbøger kan du også notere tiden.</li>
-                        <li>Skift format på en bog, tegneserie, manga eller lydbog, efter du har tilføjet den, uden at miste sessioner, noter eller statistik.</li>
-                        <li>Flere noter og citater, når du afslutter en session, hver for sig.</li>
-                        <li>Forlader du en session uden at gemme, bliver den gemt som en kladde, og du kan hente den, næste gang du gemmer en.</li>
-                        <li>Statistik: cirkeldiagram over, hvad du læser, fordelt på format, og et formatfilter, så du kan se hver type for sig.</li>
-                        <li>Udfordringer med lydbøger (lyttede timer og færdige lydbøger) og Bingo med lydbøger: 1 times lytning tæller som 30 sider.</li>
-                        <li>Pagi debuterer med 7 animerede sæsondragter, der virker med alle temaer, 9 nye skins (Barden, Natens tyv, Vampyrgreven, Ubådskaptajnen, Blæk, Origami, Natlæseren, Den vandrende ridder og Retro-astronauten) og sin egen animation ved tryk for hver af dem. Der er også et hemmeligt skin gemt i appen: tryk rundt på hovedskærmen for at finde det.</li>
-                        <li>Pagi har sin egen sektion i Indstillinger: automatisk sæson, sæsondragter uden for sæsonen og skins.</li>
-                        <li>App-ikoner til Pro: vælg dit i Indstillinger, med versioner til Halloween, jul og nytår. Hvis du slår automatisk sæsonskift til, skifter ikonet på de pågældende datoer og går derefter tilbage til dit eget. Det er slået fra som standard.</li>
-                        <li>På Android får du, hvis du har prøvet Pro, også et af Pro-ikonerne som gave.</li>
-                        <li>Synkroniser dine fremskridt med din e-bogslæser via KOSync (KOReader og kompatible), med en guide trin for trin.</li>
-                        <li>Appen findes nu på arabisk, hebraisk, persisk og urdu med en grænseflade fra højre mod venstre. Du kan også vælge dem som bogens sprog, når du tilføjer en bog manuelt.</li>
-                        <li>Nye timerlyde til Pro med en ny kategori, Hyggelig.</li>
-                    </ul>
-                    <strong>Rettelser</strong>
-                    <ul>
-                        <li>Bedre valg af genre til alle slags bøger.</li>
-                        <li>Nogle farver i statistikken er ændret, så de enkelte datapunkter er lettere at kende fra hinanden.</li>
-                        <li>Hvis en bog fra en e-bogslæser ikke har en titel, vises et læsbart navn i stedet for en kode, og guiden advarer dig, hvis der ikke kommer fremskridt med din bruger.</li>
-                        <li>Bingo er nu oversat til alle sprog.</li>
-                        <li>Alle sprog er gennemgået: tekster, der stod på engelsk eller spansk, vises nu på dit sprog.</li>
-                        <li>Sikkerhedskopier gemt på din telefon ender ikke længere tomme, hvis lagringen fejler.</li>
-                        <li>Når du skifter en bogs status, slettes datoerne for tidligere gennemlæsninger ikke længere.</li>
-                        <li>Den månedlige opsummering tæller også færdige bøger uden sessioner.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; iPhone-beta, tegneserier og manga som fuldgyldige bøger, visningen Serier</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nyt</strong>
-                    <ul>
-                        <li>Lecturameter kommer til iPhone i beta via TestFlight</li>
-                        <li>Tegneserier, manga og lydbøger som fuldgyldige titler: tilføj dem manuelt i én formular eller flere på én gang, og del kortet med dine lydbøger</li>
-                        <li>Tag dit bibliotek med fra en anden app (Goodreads, StoryGraph, Bookmory, Fable) med forhåndsvisning</li>
-                        <li>Visningen Serier: dine bøger grupperet efter serie, udfyldt automatisk, når du tilføjer dem</li>
-                        <li>Månedsoverblik med et kort, du kan dele, plus »Din bog for hver måned« i Wrapped</li>
-                        <li>Din læseudvikling i Statistik</li>
-                        <li>Mine kort: alle de kort, du har delt, samlet ét sted</li>
-                        <li>Widgets til udfordringer og bingo</li>
-                        <li>Tilføj flere bøger på én gang fra søgningen</li>
-                        <li>Avancerede filtre i Biblioteket</li>
-                        <li>Medvirkende pr. udgave: oplæsere, oversættere og illustratorer</li>
-                        <li>Pro virker på op til 3 enheder, Android og iOS</li>
-                        <li>Sikkerhedskopier gemmer nu også dine tags og påmindelser</li>
-                        <li>Nu kan du gemme en læsesession uden sider, kun med tiden (smart, hvis du læser digitalt)</li>
-                    </ul>
-                    <strong>Rettelser</strong>
-                    <ul>
-                        <li>Sletter du flere bøger, får du én samlet Fortryd</li>
-                        <li>Teksterne nævner nu typen: bog, tegneserie, manga eller lydbog</li>
-                        <li>Stjernerækken giver ikke længere bedømmelser, mens du scroller</li>
-                        <li>Lange noter vises i fuld længde</li>
-                        <li>Datoer og fejl ved sikkerhedskopiering på appens sprog</li>
-                        <li>Gendannelse fra Drive vælger ikke længere den forkerte fil</li>
-                        <li>Forhindret et nedbrud ved tryk på et forfatterlink i visse situationer</li>
-                        <li>Tydeligere beskeder ved import og eksport</li>
-                        <li>Forhindret en uventet lukning af timeren i baggrunden</li>
-                        <li>Forhindret uventede lukninger ved køb af Pro og i visse widgets</li>
-                        <li>Rettet et forvirrende tal i søgeresultaterne for tegneserier og manga</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Tags, bedømmelser, 40 sprog, fornyet bibliotek</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nyt</strong>
-                    <ul>
-                        <li>Indstillinger opdelt i sektioner</li>
-                        <li><strong>Tagsystem</strong> (op til 3 pr. bog, søg med #)</li>
-                        <li>Fornyede bogkort og bogvisning, 4 kortstørrelser</li>
-                        <li><strong>Bedømmelse med 5 stjerner og halve stjerner</strong></li>
-                        <li>Noter delt op i: citater, noter og mening</li>
-                        <li>Del bøger, udfordringer, bingoer, varmekort og statistik</li>
-                        <li>Læsepåmindelser, du kan tilpasse</li>
-                        <li>Temaet <strong>Skumring</strong> til Pro</li>
-                        <li><strong>Understøttelse af 40 sprog</strong></li>
-                    </ul>
-                    <strong>Rettelser</strong>
-                    <ul>
-                        <li>Bedre layout i liggende format og på store skærme</li>
-                        <li>Hurtigere og mere pålidelig bogsøgning</li>
-                        <li>Pro-widget med månedssammenligning</li>
-                        <li>Handlinger, der sletter, kan nu fortrydes</li>
-                        <li>Nulstil tips fra Indstillinger &gt; Hjælp</li>
-                        <li>Pagi dækker ikke længere titler og vises ikke i Indstillinger</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Lydbjælke i den fordybede session, forbedringer i liggende format</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nyt</strong>
-                    <ul>
-                        <li>Lydbjælken i den fordybede session kan nu også foldes ud i liggende format, med forrige/næste og gentag/rækkefølge</li>
-                        <li>Lydgrupperne fremhæver dit temas accentfarve tydeligere</li>
-                    </ul>
-                    <strong>Rettelser</strong>
-                    <ul>
-                        <li>Liggende format sidder ikke længere fast i stående, når du bruger appen på et andet sprog end telefonens</li>
-                        <li>Mere luft mellem lydkortet og timerknapperne, når det er foldet ud</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Se alle spørgsmål</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Bogkatalog</a>
                 <a href="#themes">Temaer</a>
                 <a href="#events">Begivenheder</a>
-                <a href="#pricing">Priser</a>
+                <a href="./pro/">Priser</a>
                 <a href="../precios-regionales.html">Regionale priser</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Ressourcer</h4>
                 <a href="./blog/">Blog</a>
-                <a href="#whatsnew">Nyheder</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Platforme</a>
+                <a href="./news/">Nyheder</a>
+                <a href="./roadmap/">Køreplan</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Platforme</a>
             </div>
             <div class="footer-col">
                 <h4>Juridisk og kontakt</h4>

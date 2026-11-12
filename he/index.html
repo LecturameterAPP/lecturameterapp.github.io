@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: מעקב קריאה · סטטיסטיקות ספרים וטיימר</title>
     <meta name="description" content="Lecturameter: מעקב קריאה ל-Android ול-iPhone. מדוד את זמן הקריאה, עקוב אחר עמודים, קצב וסטטיסטיקות, וייבא מ-Goodreads. בלי חשבון ובלי פרסומות.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">ערכות נושא</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">היקום <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">משאבים <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">בלוג</a></li>
-                    <li><a href="#whatsnew">חדשות</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">פלטפורמות</a></li>
+                    <li><a href="./news/">חדשות</a></li>
+                    <li><a href="./roadmap/">מפת דרכים</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">פלטפורמות</a></li>
                     <li class="nav-dd-label" role="presentation">משפטי</li>
                     <li class="nav-dd-sub"><a href="./privacy/">מדיניות פרטיות</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">תנאי שימוש</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">רכישה חד-פעמית, לא מנוי.</p>
                 <p class="price-ios-offer">מבצע השקה ב-iOS: <strong>&#8364;2.99</strong> בחודש הראשון. אחר כך &#8364;4.99 (אותו מחיר כמו ב-Android). עדיין רכישה חד-פעמית.</p>
-                <details class="price-currency-list">
-                    <summary>מחיר משוער במטבע שלך</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">המחירים הסופיים נקבעים על ידי App Store ועשויים להשתנות מעט.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">ראה מחירים לפי אזור</a></p>
-                <p class="price-note"><a href="../activar-pro.html">איך מפעילים Pro</a></p>
                 <p class="price-note">אותו מחיר ב-Android וב-iOS אחרי חודש ההשקה.</p>
-                <p class="price-note price-experiment-note">* ייתכן שחלק מהאנשים יראו מחיר שונה, כי אנחנו מבצעים ניסויי תמחור.</p>
                 <p class="price-trial">נסה Pro בחינם למשך 7 ימים, בתוך האפליקציה</p>
                 <p class="price-trial">לא צריך כרטיס אשראי לתקופת הניסיון</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">כל השאר נשאר בחינם. Pro רק מוסיף תוספות.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro בפירוט ומחירים אזוריים</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>תפריט מהיר:</strong> עברו ממדור למדור עם שלוש הנקודות (···), בלי לחזור לבית</li>
                     <li><strong>מושהה:</strong> הנח ספר בצד לזמן מה בלי לקלקל את הסטטיסטיקות שלך</li>
                     <li><strong>שתי ערכות נושא חדשות ל-Pro:</strong> מחברת וחורשה</li>
-                    <li>את ערכות הנושא של Pro אפשר גם לקנות בנפרד או בחבילות של 3, עם תצוגה מקדימה, ומסך Pro חדש</li>
-                    <li><strong>קריאה לא ליניארית</strong> לאנתולוגיות ולקובצי שירה: עמודים חופפים לא נספרים פעמיים ופס ההתקדמות מחולק למקטעים</li>
-                    <li>התחילו לקרוא מהווידג׳ט של הספר, בלי לפתוח את האפליקציה</li>
-                    <li>סיכומים שבועיים וחודשיים בעיצוב חדש ועם יותר נתונים</li>
-                    <li>אימייל אופציונלי ב“שליחת משוב”, רק כדי שאוכל לענות לכם</li>
-                    <li>שעון עצר משלו לכל ערכת נושא</li>
-                    <li>Pagi בוחר לך ספר מתוך רוצה לקרוא</li>
-                    <li>KOSync עם זמן הקריאה האמיתי של KOReader</li>
-                    <li>התראות לפי קטגוריה והודעות על חדשות באפליקציה</li>
-                    <li>בית עם הסרגל מקובץ ליעדים, הקריאות שלי וכלים</li>
-                    <li>שנו את סטטוס הספר מהפעולות המהירות שלו, ובטלו אם טעיתם</li>
-                    <li>סמלי Material במקום אימוג׳ים וסטטיסטיקות קריאות יותר בכל ערכות הנושא</li>
-                    <li>הודעה כשמוסיפים ספר מהחיפוש</li>
-                    <li>תאריכי מחזורי הקריאה בשורה אחת, קל יותר לעריכה</li>
-                    <li>בינגו עם 24 תבניות לפי גודל</li>
-                    <li>ב־iPhone, ה־Live Activity של הטיימר בצבעי ערכת הנושא שלכם</li>
-                    <li>הקטלוג לומד מחיפושים וסריקות ISBN שלא מצאו כלום ומוסיף את הספרים החסרים (החל מ־15 בנובמבר)</li>
-                    <li>סינית מסורתית</li>
-                    <li>סדרה בקובץ ה-CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>תיקונים</h3>
-                <ul>
-                    <li>הכותרות ב־Bingo, ב־Wrapped ובמסכים אחרים נמצאות עכשיו באותו גובה כמו בשאר התפריטים</li>
-                    <li>הסמלים של Bingo ושל Wrapped קיבלו את הצבעים שלהם בחזרה</li>
-                    <li>מוני הספרים לפי סטטוס בבית נראים טוב יותר בכהה, OLED, בין ערביים, זריחה ועור</li>
-                    <li>אזהרה אחת בלבד לספרים עם נתונים חסרים: המשולש הצהוב נעלם והאדום נשאר</li>
-                    <li>טעינה מחדש של כריכה וז׳אנר מודיעה כשהכול כבר היה תקין, ומתריעה באדום כשמשהו לא נמצא</li>
-                    <li>גיבויים ל־Google Drive של ספריות גדולות מאוד כבר לא נכשלים בגלל חוסר בזיכרון</li>
-                    <li>תיקונים רבים ב־iPhone</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">כל הערות העדכון והיסטוריית הגרסאות</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter ב-iPhone וב-Android</h2>
         <p>לגרסת ה-iPhone יש את אותן תכונות עיקריות כמו ל-Android: ספרייה, שעון עצר לקריאה, סטטיסטיקות, אתגרים, בינגו, Pagi וערכות הנושא. אלה ההבדלים.</p>
-        <details class="differences-details">
-            <summary>ההבדלים בין iPhone ל-Android</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>רק ב-iPhone</h3>
-                    <ul>
-                        <li>שעון עצר במסך הנעילה וב-Dynamic Island, עם השהיה ועצירה.</li>
-                        <li>פקדים של iOS 18: קורא כעת, סרוק ISBN, הוסף ספר והפעל שעון עצר.</li>
-                        <li>גיבוי ב-iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>רק ב-Android</h3>
-                    <ul>
-                        <li>שליטה בשעון העצר מההתראה.</li>
-                        <li>מצב 'נא לא להפריע' אוטומטי בסשן הסוחף.</li>
-                        <li>הגדרה והצמדה של ווידג׳טים.</li>
-                        <li>טאבלטים (גרסת האייפון לא פועלת באייפד).</li>
-                        <li>מימוש קודים של <code>lm-…</code>.</li>
-                        <li>ערכת נושא Pro וסמל במתנה בסוף תקופת הניסיון.</li>
-                        <li>טיפים ותרומות.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>בשתיהן</h3>
-                    <ul>
-                        <li>ווידג׳טים של ספר, סטטיסטיקות, אתגרים ובינגו.</li>
-                        <li>בורר שפות מלא.</li>
-                        <li>מצב לרוחב בטלפונים.</li>
-                        <li>גיבוי ב-Google Drive.</li>
-                        <li>סנכרון עם קורא ספרים אלקטרוני (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>רכישת Pro</h3>
-                    <ul>
-                        <li>ב-iPhone, Pro היא רכישה בתוך האפליקציה דרך App Store. ב-Android, זו רכישה דרך Google Play.</li>
-                        <li>תקופת הניסיון של 7 ימים ב-iPhone היא רכישה חינמית בתוך האפליקציה דרך App Store, המקושרת ל-Apple ID שלך.</li>
-                        <li>בינתיים Pro לא עובר בין Android ל-iPhone: כל רכישה נשארת בפלטפורמה שלה.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">לכל ההבדלים</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">זה עובד בלי חיבור לאינטרנט?</button>
                 <div class="faq-a"><div class="faq-a-inner">כמעט הכול עובד ללא חיבור. צריך חיבור רק כדי לחפש ספרים חדשים ולהעלות גיבויים ל-Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">יש גרסה ל-iPhone?</button>
-                <div class="faq-a"><div class="faq-a-inner">כן: אפשר להוריד אותה כבר עכשיו מ <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">אפשר לנסות לפני שקונים?</button>
-                <div class="faq-a"><div class="faq-a-inner">כן. יש תקופת ניסיון חינמית של 7 ימים לתכונות ה-Pro, בלי כרטיס אשראי. ב-iPhone זו רכישה חינמית בתוך האפליקציה דרך App Store, המקושרת ל-Apple ID שלך. ב-Android, בסוף תקופת הניסיון, גם אם לא תקנה Pro, תקבל במתנה ערכת נושא Pro לבחירתך.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">מה קורה ל-Pro שלי אם אני מחליף טלפון?</button>
-                <div class="faq-a"><div class="faq-a-inner">זה תלוי איפה קנית. אם קנית ב-<strong>Google Play</strong> ואתה עובר ל-Android אחר עם אותו חשבון Google, התקן את Lecturameter והקש על <strong>שחזור רכישה</strong> בהגדרות. אם קנית ב-<strong>App Store</strong> ואתה עובר ל-iPhone אחר עם אותו Apple ID, אותו דבר: מתקינים ומקישים על <strong>שחזור רכישה</strong>. בינתיים Pro לא עובר בין Android ל-iPhone: כל רכישה נשארת בפלטפורמה שלה. קודים של <code>lm-…</code> ניתן לממש רק ב-Android. פרטים נוספים ב <a href="../activar-pro.html">איך מפעילים Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">אפשר להעביר את ה-Pro שלי בין טלפונים ובין iOS ל-Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">בין Android ל-iPhone בינתיים לא: כל רכישה נשארת בפלטפורמה שלה. אנחנו בודקים אם אפשר לעשות את זה בדרך כלשהי. בין שני טלפונים באותה פלטפורמה כן: השתמש ב<strong>שחזור רכישה</strong> עם חשבון Google או ה-Apple ID שלך.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>היסטוריית גרסאות</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v<span dir="ltr">3.9 / iOS 1.1.0</span> &middot; אירועים · תפריט מהיר · שתי ערכות נושא Pro חדשות</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>חדש</strong>
-                    <ul>
-                        <li><strong>אירועים:</strong> אתגרי קריאה עולמיים ו-Lecturameter Quest כשיש אחד פעיל</li>
-                        <li><strong>תפריט מהיר:</strong> עברו ממדור למדור עם שלוש הנקודות (···), בלי לחזור לבית</li>
-                        <li><strong>מושהה:</strong> הנח ספר בצד לזמן מה בלי לקלקל את הסטטיסטיקות שלך</li>
-                        <li><strong>שתי ערכות נושא חדשות ל-Pro:</strong> מחברת וחורשה</li>
-                        <li>את ערכות הנושא של Pro אפשר גם לקנות בנפרד או בחבילות של 3, עם תצוגה מקדימה, ומסך Pro חדש</li>
-                        <li><strong>קריאה לא ליניארית</strong> לאנתולוגיות ולקובצי שירה: עמודים חופפים לא נספרים פעמיים ופס ההתקדמות מחולק למקטעים</li>
-                        <li>התחילו לקרוא מהווידג׳ט של הספר, בלי לפתוח את האפליקציה</li>
-                        <li>סיכומים שבועיים וחודשיים בעיצוב חדש ועם יותר נתונים</li>
-                        <li>אימייל אופציונלי ב“שליחת משוב”, רק כדי שאוכל לענות לכם</li>
-                        <li>שעון עצר משלו לכל ערכת נושא</li>
-                        <li>Pagi בוחר לך ספר מתוך רוצה לקרוא</li>
-                        <li>KOSync עם זמן הקריאה האמיתי של KOReader</li>
-                        <li>התראות לפי קטגוריה והודעות על חדשות באפליקציה</li>
-                        <li>בית עם הסרגל מקובץ ליעדים, הקריאות שלי וכלים</li>
-                        <li>שנו את סטטוס הספר מהפעולות המהירות שלו, ובטלו אם טעיתם</li>
-                        <li>סמלי Material במקום אימוג׳ים וסטטיסטיקות קריאות יותר בכל ערכות הנושא</li>
-                        <li>הודעה כשמוסיפים ספר מהחיפוש</li>
-                        <li>תאריכי מחזורי הקריאה בשורה אחת, קל יותר לעריכה</li>
-                        <li>בינגו עם 24 תבניות לפי גודל</li>
-                        <li>ב־iPhone, ה־Live Activity של הטיימר בצבעי ערכת הנושא שלכם</li>
-                        <li>הקטלוג לומד מחיפושים וסריקות ISBN שלא מצאו כלום ומוסיף את הספרים החסרים (החל מ־15 בנובמבר)</li>
-                        <li>סינית מסורתית</li>
-                        <li>סדרה בקובץ ה-CSV</li>
-                    </ul>
-                    <strong>תיקונים</strong>
-                    <ul>
-                        <li>הכותרות ב־Bingo, ב־Wrapped ובמסכים אחרים נמצאות עכשיו באותו גובה כמו בשאר התפריטים</li>
-                        <li>הסמלים של Bingo ושל Wrapped קיבלו את הצבעים שלהם בחזרה</li>
-                        <li>מוני הספרים לפי סטטוס בבית נראים טוב יותר בכהה, OLED, בין ערביים, זריחה ועור</li>
-                        <li>אזהרה אחת בלבד לספרים עם נתונים חסרים: המשולש הצהוב נעלם והאדום נשאר</li>
-                        <li>טעינה מחדש של כריכה וז׳אנר מודיעה כשהכול כבר היה תקין, ומתריעה באדום כשמשהו לא נמצא</li>
-                        <li>גיבויים ל־Google Drive של ספריות גדולות מאוד כבר לא נכשלים בגלל חוסר בזיכרון</li>
-                        <li>תיקונים רבים ב־iPhone</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v<span dir="ltr">3.8 / iOS 1.0</span> &middot; התקדמות באחוזים, תלבושות וסקינים של Pagi, KOSync, שפות מימין לשמאל</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>חדש</strong>
-                    <ul>
-                        <li>התקדמות באחוזים: תעדו את הסשנים שלכם באחוזים בספרים, קומיקס, מנגה וספרי שמע. בספרי שמע אפשר לציין גם את הזמן.</li>
-                        <li>שנו את הפורמט של ספר, קומיקס, מנגה או ספר שמע אחרי שהוספתם אותו, בלי לאבד סשנים, הערות או סטטיסטיקות.</li>
-                        <li>כמה הערות וציטוטים בסיום סשן, כל אחד בנפרד.</li>
-                        <li>אם יצאתם מסשן בלי לשמור, הוא נשמר כטיוטה ואפשר לשחזר אותו בפעם הבאה שתשמרו סשן.</li>
-                        <li>סטטיסטיקות: תרשים טבעת של מה שקראתם לפי פורמט ומסנן פורמט כדי לראות כל סוג בנפרד.</li>
-                        <li>אתגרי ספרי שמע (שעות האזנה וספרי שמע שהושלמו) ובינגו עם ספרי שמע: 1 שעת האזנה נחשבת ל-30 עמודים.</li>
-                        <li>Pagi עושה אות הופעה עם 7 תלבושות עונתיות מונפשות שעובדות עם כל ערכת נושא, 9 סקינים חדשים (פייטן, גנב לילה, רוזן ערפד, קברניט צוללת, דיו, אוריגמי, קורא לילה, אביר נודד ואסטרונאוט רטרו) ואנימציית נגיעה משלה לכל אחד. יש גם סקין סודי שמוסתר באפליקציה: געו סביב המסך הראשי כדי למצוא אותו.</li>
-                        <li>ל-Pagi יש מדור משלה בהגדרות: עונה אוטומטית, תלבושות עונתיות מחוץ לעונה וסקינים.</li>
-                        <li>סמלי אפליקציה ל-Pro: בחרו את שלכם בהגדרות, עם גרסאות של ליל כל הקדושים, חג המולד וראש השנה. אם תפעילו החלפה עונתית אוטומטית, הסמל מתחלף בתאריכים שלו ואז חוזר לשלכם. היא כבויה כברירת מחדל.</li>
-                        <li>ב-Android, אם ניסיתם את Pro, תקבלו במתנה גם אחד מסמלי ה-Pro.</li>
-                        <li>סנכרנו את ההתקדמות שלכם עם הקורא האלקטרוני דרך KOSync (KOReader ותואמים), עם אשף שלב אחר שלב.</li>
-                        <li>האפליקציה זמינה עכשיו בערבית, עברית, פרסית ואורדו, עם ממשק מימין לשמאל. אפשר לבחור אותן גם כשפת הספר כשמוסיפים ספר ידנית.</li>
-                        <li>צלילי טיימר חדשים ל-Pro, עם קטגוריה חדשה, Cozy.</li>
-                    </ul>
-                    <strong>תיקונים</strong>
-                    <ul>
-                        <li>בחירת ז'אנר משופרת לכל סוג של ספר.</li>
-                        <li>שינינו כמה צבעים בסטטיסטיקות כדי להבדיל טוב יותר בין נתון לנתון.</li>
-                        <li>אם לספר מהקורא האלקטרוני אין כותרת, מוצג שם קריא במקום קוד, והאשף מתריע אם לא מגיעה התקדמות עם המשתמש שלכם.</li>
-                        <li>בינגו מתורגם עכשיו לכל השפות.</li>
-                        <li>כל השפות נבדקו: טקסטים שהופיעו באנגלית או בספרדית מופיעים עכשיו בשפה שלכם.</li>
-                        <li>גיבויים שנשמרים בטלפון כבר לא מסתיימים ריקים אם השמירה נכשלת.</li>
-                        <li>שינוי סטטוס של ספר כבר לא מוחק את תאריכי הקריאות הקודמות.</li>
-                        <li>הסיכום החודשי סופר גם ספרים שהושלמו בלי סשנים.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; בטא ל-iPhone, קומיקס ומנגה כספרים לכל דבר, תצוגת סדרות</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>חדש</strong>
-                    <ul>
-                        <li>Lecturameter מגיעה ל-iPhone בבטא, דרך TestFlight</li>
-                        <li>קומיקס, מנגה וספרי שמע כפריטים לכל דבר: הוסף אותם בטופס ידני אחד או כמה בבת אחת, ושתף את הכרטיס של ספרי השמע שלך</li>
-                        <li>הבא את הספרייה שלך מאפליקציה אחרת (Goodreads, StoryGraph, Bookmory, Fable) עם תצוגה מקדימה</li>
-                        <li>תצוגת סדרות: הספרים שלך מקובצים לפי סדרה, שממולאת אוטומטית כשאתה מוסיף אותם</li>
-                        <li>סיכום חודשי עם כרטיס לשיתוף, ובנוסף "הספר שלך בכל חודש" ב-Wrapped</li>
-                        <li>התפתחות הקריאה בסטטיסטיקות</li>
-                        <li>הכרטיסים שלי: כל הכרטיסים ששיתפת, במקום אחד</li>
-                        <li>ווידג׳טים של אתגרים ושל בינגו</li>
-                        <li>הוסף כמה ספרים בבת אחת מהחיפוש</li>
-                        <li>מסננים מתקדמים בספרייה</li>
-                        <li>קרדיטים לפי מהדורה: קריינים, מתרגמים ומאיירים</li>
-                        <li>Pro עובד בעד 3 מכשירים, Android ו-iOS</li>
-                        <li>הגיבויים שומרים עכשיו גם את התגיות והתזכורות שלך</li>
-                        <li>עכשיו אפשר לשמור סשן קריאה בלי עמודים, רק עם הזמן (שימושי אם אתה קורא בדיגיטל)</li>
-                    </ul>
-                    <strong>תיקונים</strong>
-                    <ul>
-                        <li>מחיקת כמה ספרים נותנת ביטול פעולה אחד בלבד</li>
-                        <li>הטקסטים מציינים את הסוג: ספר, קומיקס, מנגה או ספר שמע</li>
-                        <li>שורת הכוכבים כבר לא מדרגת בזמן גלילה</li>
-                        <li>הערות ארוכות מוצגות במלואן</li>
-                        <li>תאריכים ושגיאות גיבוי בשפת האפליקציה</li>
-                        <li>שחזור מ-Drive כבר לא בוחר בקובץ הלא נכון</li>
-                        <li>נמנעה קריסה בהקשה על קישור של מחבר במצבים מסוימים</li>
-                        <li>הודעות ייבוא וייצוא ברורות יותר</li>
-                        <li>נמנעה סגירה לא צפויה של שעון העצר ברקע</li>
-                        <li>נמנעו סגירות לא צפויות בעת רכישת Pro ובחלק מהווידג׳טים</li>
-                        <li>תוקן מספר מבלבל בתוצאות החיפוש של קומיקס ומנגה</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; תגיות, דירוגים, 40 שפות, ספרייה מחודשת</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>חדש</strong>
-                    <ul>
-                        <li>ההגדרות אורגנו מחדש לפי מקטעים</li>
-                        <li>מערכת <strong>תגיות</strong> (עד 3 לכל ספר, חיפוש עם #)</li>
-                        <li>כרטיסי ספרים ודף פרטי ספר מחודשים, 4 גדלי כרטיסים</li>
-                        <li><strong>דירוג של 5 כוכבים עם חצאי כוכבים</strong></li>
-                        <li>ההערות מחולקות ל: ציטוטים, הערות ודעה</li>
-                        <li>שיתוף ספרים, אתגרים, בינגו, מפות חום וסטטיסטיקות</li>
-                        <li>תזכורות קריאה מותאמות אישית</li>
-                        <li>ערכת הנושא <strong>דמדומים</strong> ל-Pro</li>
-                        <li><strong>תמיכה ב-40 שפות</strong></li>
-                    </ul>
-                    <strong>תיקונים</strong>
-                    <ul>
-                        <li>פריסה טובה יותר במצב לרוחב ובמסכים גדולים</li>
-                        <li>חיפוש ספרים מהיר ואמין יותר</li>
-                        <li>ווידג׳ט Pro עם השוואה חודשית</li>
-                        <li>פעולות הרסניות עם אפשרות ביטול</li>
-                        <li>איפוס טיפים מתוך הגדרות &gt; עזרה</li>
-                        <li>Pagi כבר לא מסתיר כותרות ולא מופיע בהגדרות</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; פס צלילים בסשן הסוחף, שיפורים במצב לרוחב</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>חדש</strong>
-                    <ul>
-                        <li>פס הצלילים של הסשן הסוחף נפתח עכשיו גם במצב לרוחב, עם פקדי הקודם/הבא ולולאה/רצף</li>
-                        <li>קבוצות הצלילים מדגישות טוב יותר את צבע ההדגשה של ערכת הנושא</li>
-                    </ul>
-                    <strong>תיקונים</strong>
-                    <ul>
-                        <li>מצב לרוחב כבר לא נתקע במצב לאורך כשאתה משתמש באפליקציה בשפה שונה משפת הטלפון</li>
-                        <li>יותר מרווח בין כרטיס הצלילים לכפתורי שעון העצר כשהוא פתוח</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">לכל השאלות</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">קטלוג ספרים</a>
                 <a href="#themes">ערכות נושא</a>
                 <a href="#events">אירועים</a>
-                <a href="#pricing">מחירים</a>
+                <a href="./pro/">מחירים</a>
                 <a href="../precios-regionales.html">מחירים לפי אזור</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>משאבים</h4>
                 <a href="./blog/">בלוג</a>
-                <a href="#whatsnew">חדשות</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">פלטפורמות</a>
+                <a href="./news/">חדשות</a>
+                <a href="./roadmap/">מפת דרכים</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">פלטפורמות</a>
             </div>
             <div class="footer-col">
                 <h4>משפטי ויצירת קשר</h4>

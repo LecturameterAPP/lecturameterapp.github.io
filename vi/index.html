@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Nhật ký đọc sách · Thống kê và đồng hồ</title>
     <meta name="description" content="Lecturameter: Nhật ký đọc sách cho Android và iPhone. Bấm giờ khi đọc, theo dõi số trang, tốc độ và thống kê, nhập từ Goodreads. Không cần tài khoản, không quảng cáo.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Chủ đề</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Vũ trụ <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Tài nguyên <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blog</a></li>
-                    <li><a href="#whatsnew">Tin tức</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Nền tảng</a></li>
+                    <li><a href="./news/">Tin tức</a></li>
+                    <li><a href="./roadmap/">Lộ trình</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Nền tảng</a></li>
                     <li class="nav-dd-label" role="presentation">Pháp lý</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Chính sách bảo mật</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Điều khoản dịch vụ</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Mua một lần, không phải đăng ký trả phí.</p>
                 <p class="price-ios-offer">Ưu đãi ra mắt trên iOS: <strong>&#8364;2.99</strong> trong tháng đầu tiên. Sau đó là &#8364;4.99 (cùng giá với Android). Vẫn là mua một lần.</p>
-                <details class="price-currency-list">
-                    <summary>Giá gần đúng theo tiền tệ của bạn</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Giá cuối cùng do App Store quyết định; có thể chênh lệch đôi chút.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Xem giá theo khu vực</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Xem cách kích hoạt Pro</a></p>
                 <p class="price-note">Cùng giá trên Android và iOS sau tháng ra mắt.</p>
-                <p class="price-note price-experiment-note">* Một số người có thể thấy mức giá khác vì chúng tôi đang thử nghiệm giá.</p>
                 <p class="price-trial">Dùng thử Pro miễn phí 7 ngày, ngay trong ứng dụng</p>
                 <p class="price-trial">Không cần thẻ để dùng thử</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Mọi thứ còn lại vẫn miễn phí. Pro chỉ thêm phần bổ sung.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro chi tiết và giá theo khu vực</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Menu nhanh:</strong> chuyển từ mục này sang mục khác bằng ba chấm (···), không cần quay về Trang chủ</li>
                     <li><strong>Tạm dừng:</strong> cất một cuốn sách sang bên một thời gian mà không làm hỏng thống kê của bạn</li>
                     <li><strong>Hai giao diện Pro mới:</strong> Vở và Rừng</li>
-                    <li>Giao diện Pro còn có thể mua lẻ hoặc theo gói 3, có xem trước, và màn hình Pro được làm mới</li>
-                    <li><strong>Đọc không tuần tự</strong> cho tuyển tập và thi tập: các trang chồng nhau không bị tính hai lần và thanh tiến độ được chia thành từng đoạn</li>
-                    <li>Bắt đầu đọc từ widget của sách, không cần mở ứng dụng</li>
-                    <li>Bản tóm tắt theo tuần và theo tháng với thiết kế mới và nhiều số liệu hơn</li>
-                    <li>Email tùy chọn trong “Gửi phản hồi”, chỉ để mình có thể trả lời bạn</li>
-                    <li>Đồng hồ bấm giờ riêng cho từng giao diện</li>
-                    <li>Pagi chọn giúp bạn một cuốn từ Muốn đọc</li>
-                    <li>KOSync với thời gian đọc thực của KOReader</li>
-                    <li>Thông báo theo danh mục và thông báo tin mới của ứng dụng</li>
-                    <li>Trang chủ với thanh bên được nhóm thành Mục tiêu, Việc đọc của tôi và Công cụ</li>
-                    <li>Đổi trạng thái sách từ thao tác nhanh và hoàn tác nếu bạn nhầm</li>
-                    <li>Biểu tượng Material thay cho emoji và số liệu dễ đọc hơn ở mọi giao diện</li>
-                    <li>Có thông báo khi thêm sách từ tìm kiếm</li>
-                    <li>Ngày của các chu kỳ đọc trên một hàng, dễ chỉnh sửa hơn</li>
-                    <li>Bingo với 24 mẫu theo kích thước</li>
-                    <li>Trên iPhone, Live Activity của đồng hồ bấm giờ theo màu giao diện của bạn</li>
-                    <li>Danh mục học từ các lượt tìm kiếm và quét ISBN không có kết quả và bổ sung những sách còn thiếu (từ ngày 15 tháng 11)</li>
-                    <li>Tiếng Trung phồn thể</li>
-                    <li>Bộ truyện trong CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Sửa lỗi</h3>
-                <ul>
-                    <li>Tiêu đề ở Bingo, Wrapped và các màn hình khác giờ nằm cùng độ cao như ở các menu còn lại</li>
-                    <li>Biểu tượng Bingo và Wrapped có lại màu sắc</li>
-                    <li>Bộ đếm sách theo trạng thái ở Trang chủ dễ nhìn hơn trong các giao diện Tối, OLED, Hoàng hôn, Aurora và Da</li>
-                    <li>Chỉ còn một cảnh báo cho sách thiếu dữ liệu: tam giác vàng biến mất, tam giác đỏ được giữ lại</li>
-                    <li>Tải lại bìa và thể loại sẽ cho bạn biết khi mọi thứ vốn đã ổn, và cảnh báo màu đỏ khi không tìm thấy gì đó</li>
-                    <li>Sao lưu Google Drive của các thư viện rất lớn không còn thất bại do thiếu bộ nhớ</li>
-                    <li>Nhiều bản sửa lỗi trên iPhone</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Tất cả ghi chú cập nhật và lịch sử phiên bản</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter trên iPhone và Android</h2>
         <p>Phiên bản iPhone có các tính năng chính giống Android: thư viện, đồng hồ bấm giờ đọc sách, thống kê, thử thách, bingo, Pagi và các chủ đề giao diện. Dưới đây là những điểm khác biệt.</p>
-        <details class="differences-details">
-            <summary>Khác biệt giữa iPhone và Android</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Chỉ trên iPhone</h3>
-                    <ul>
-                        <li>Đồng hồ bấm giờ trên Màn hình khóa và trong Dynamic Island, có tạm dừng và dừng.</li>
-                        <li>Điều khiển iOS 18: Đang đọc, Quét ISBN, Thêm sách và Bắt đầu đồng hồ.</li>
-                        <li>Sao lưu iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Chỉ trên Android</h3>
-                    <ul>
-                        <li>Điều khiển đồng hồ từ thông báo.</li>
-                        <li>Tự động bật Không làm phiền trong phiên đắm chìm.</li>
-                        <li>Cấu hình và ghim widget.</li>
-                        <li>Máy tính bảng (phiên bản iPhone không chạy trên iPad).</li>
-                        <li>Đổi mã <code>lm-…</code>.</li>
-                        <li>Tặng một chủ đề và biểu tượng Pro khi kết thúc thời gian dùng thử.</li>
-                        <li>Tiền boa và quyên góp.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Trên cả hai</h3>
-                    <ul>
-                        <li>Widget Sách, Thống kê, Thử thách và Bingo.</li>
-                        <li>Bộ chọn ngôn ngữ đầy đủ.</li>
-                        <li>Chế độ ngang trên điện thoại.</li>
-                        <li>Sao lưu Google Drive.</li>
-                        <li>Đồng bộ máy đọc sách điện tử (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Mua Pro</h3>
-                    <ul>
-                        <li>Trên iPhone, Pro là giao dịch mua trong ứng dụng qua App Store. Trên Android, đó là giao dịch mua qua Google Play.</li>
-                        <li>Bản dùng thử 7 ngày trên iPhone là giao dịch mua trong ứng dụng miễn phí qua App Store, gắn với Apple ID của bạn.</li>
-                        <li>Tạm thời Pro không chuyển giữa Android và iPhone: mỗi lượt mua ở lại trên nền tảng của nó.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Xem tất cả khác biệt</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Có dùng được ngoại tuyến không?</button>
                 <div class="faq-a"><div class="faq-a-inner">Hầu hết mọi thứ đều dùng được ngoại tuyến. Bạn chỉ cần kết nối mạng để tìm sách mới và để tải bản sao lưu lên Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Có phiên bản iPhone không?</button>
-                <div class="faq-a"><div class="faq-a-inner">Có: bạn có thể tải xuống ngay bây giờ từ <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Tôi có thể dùng thử trước khi mua không?</button>
-                <div class="faq-a"><div class="faq-a-inner">Có. Có bản dùng thử miễn phí 7 ngày các tính năng Pro, không cần thẻ. Trên iPhone, đó là giao dịch mua trong ứng dụng miễn phí qua App Store, gắn với Apple ID của bạn. Trên Android, khi hết thời gian dùng thử, dù bạn không mua Pro, bạn vẫn nhận được một chủ đề Pro miễn phí tùy chọn.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Pro của tôi sẽ ra sao nếu tôi đổi điện thoại?</button>
-                <div class="faq-a"><div class="faq-a-inner">Tùy vào nơi bạn đã mua. Nếu bạn mua trên <strong>Google Play</strong> và chuyển sang một máy Android khác với cùng tài khoản Google, hãy cài Lecturameter và nhấn <strong>Khôi phục giao dịch mua</strong> trong Cài đặt. Nếu bạn mua trên <strong>App Store</strong> và chuyển sang một iPhone khác với cùng Apple ID thì cũng tương tự: cài đặt rồi nhấn <strong>Khôi phục giao dịch mua</strong>. Tạm thời Pro không chuyển giữa Android và iPhone: mỗi lượt mua ở lại trên nền tảng của nó. <code>lm-…</code> chỉ có thể được đổi trên Android. Xem thêm chi tiết trong <a href="../activar-pro.html">Cách kích hoạt Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Tôi có thể chuyển Pro giữa các điện thoại và giữa iOS và Android không?</button>
-                <div class="faq-a"><div class="faq-a-inner">Giữa Android và iPhone thì tạm thời chưa được: mỗi lượt mua ở lại trên nền tảng của nó. Chúng tôi đang xem có cách nào làm được không. Giữa hai điện thoại cùng nền tảng thì được: hãy dùng <strong>Khôi phục giao dịch mua</strong> với tài khoản Google hoặc Apple ID của bạn.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Lịch sử phiên bản</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Sự kiện · Menu nhanh · Hai giao diện Pro mới</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Mới</strong>
-                    <ul>
-                        <li><strong>Sự kiện:</strong> thử thách đọc toàn cầu và Lecturameter Quest khi có sự kiện đang diễn ra</li>
-                        <li><strong>Menu nhanh:</strong> chuyển từ mục này sang mục khác bằng ba chấm (···), không cần quay về Trang chủ</li>
-                        <li><strong>Tạm dừng:</strong> cất một cuốn sách sang bên một thời gian mà không làm hỏng thống kê của bạn</li>
-                        <li><strong>Hai giao diện Pro mới:</strong> Vở và Rừng</li>
-                        <li>Giao diện Pro còn có thể mua lẻ hoặc theo gói 3, có xem trước, và màn hình Pro được làm mới</li>
-                        <li><strong>Đọc không tuần tự</strong> cho tuyển tập và thi tập: các trang chồng nhau không bị tính hai lần và thanh tiến độ được chia thành từng đoạn</li>
-                        <li>Bắt đầu đọc từ widget của sách, không cần mở ứng dụng</li>
-                        <li>Bản tóm tắt theo tuần và theo tháng với thiết kế mới và nhiều số liệu hơn</li>
-                        <li>Email tùy chọn trong “Gửi phản hồi”, chỉ để mình có thể trả lời bạn</li>
-                        <li>Đồng hồ bấm giờ riêng cho từng giao diện</li>
-                        <li>Pagi chọn giúp bạn một cuốn từ Muốn đọc</li>
-                        <li>KOSync với thời gian đọc thực của KOReader</li>
-                        <li>Thông báo theo danh mục và thông báo tin mới của ứng dụng</li>
-                        <li>Trang chủ với thanh bên được nhóm thành Mục tiêu, Việc đọc của tôi và Công cụ</li>
-                        <li>Đổi trạng thái sách từ thao tác nhanh và hoàn tác nếu bạn nhầm</li>
-                        <li>Biểu tượng Material thay cho emoji và số liệu dễ đọc hơn ở mọi giao diện</li>
-                        <li>Có thông báo khi thêm sách từ tìm kiếm</li>
-                        <li>Ngày của các chu kỳ đọc trên một hàng, dễ chỉnh sửa hơn</li>
-                        <li>Bingo với 24 mẫu theo kích thước</li>
-                        <li>Trên iPhone, Live Activity của đồng hồ bấm giờ theo màu giao diện của bạn</li>
-                        <li>Danh mục học từ các lượt tìm kiếm và quét ISBN không có kết quả và bổ sung những sách còn thiếu (từ ngày 15 tháng 11)</li>
-                        <li>Tiếng Trung phồn thể</li>
-                        <li>Bộ truyện trong CSV</li>
-                    </ul>
-                    <strong>Sửa lỗi</strong>
-                    <ul>
-                        <li>Tiêu đề ở Bingo, Wrapped và các màn hình khác giờ nằm cùng độ cao như ở các menu còn lại</li>
-                        <li>Biểu tượng Bingo và Wrapped có lại màu sắc</li>
-                        <li>Bộ đếm sách theo trạng thái ở Trang chủ dễ nhìn hơn trong các giao diện Tối, OLED, Hoàng hôn, Aurora và Da</li>
-                        <li>Chỉ còn một cảnh báo cho sách thiếu dữ liệu: tam giác vàng biến mất, tam giác đỏ được giữ lại</li>
-                        <li>Tải lại bìa và thể loại sẽ cho bạn biết khi mọi thứ vốn đã ổn, và cảnh báo màu đỏ khi không tìm thấy gì đó</li>
-                        <li>Sao lưu Google Drive của các thư viện rất lớn không còn thất bại do thiếu bộ nhớ</li>
-                        <li>Nhiều bản sửa lỗi trên iPhone</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Tiến độ theo %, trang phục và giao diện của Pagi, KOSync, các ngôn ngữ viết từ phải sang trái</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Mới</strong>
-                    <ul>
-                        <li>Tiến độ theo %: ghi lại phiên đọc theo phần trăm trong sách, truyện tranh, manga và sách nói. Với sách nói, bạn cũng có thể ghi thời gian.</li>
-                        <li>Đổi định dạng của sách, truyện tranh, manga hoặc sách nói sau khi thêm, mà không mất phiên đọc, ghi chú hay thống kê.</li>
-                        <li>Nhiều ghi chú và trích dẫn khi kết thúc một phiên, mỗi cái riêng biệt.</li>
-                        <li>Nếu bạn rời khỏi phiên mà chưa lưu, phiên đó được giữ dưới dạng bản nháp và bạn có thể khôi phục vào lần lưu phiên tiếp theo.</li>
-                        <li>Thống kê: biểu đồ vành khuyên cho thấy bạn đã đọc gì theo định dạng và bộ lọc định dạng để xem riêng từng loại.</li>
-                        <li>Thử thách sách nói (số giờ đã nghe và số sách nói đã hoàn thành) và Bingo với sách nói: 1 giờ nghe được tính là 30 trang.</li>
-                        <li>Pagi ra mắt 7 bộ trang phục theo mùa có hoạt ảnh, dùng được với mọi chủ đề, cùng 9 giao diện mới (Thi sĩ, Đạo chích đêm, Bá tước ma cà rồng, Thuyền trưởng tàu ngầm, Mực, Origami, Người đọc đêm, Hiệp sĩ giang hồ và Phi hành gia cổ điển), mỗi giao diện có hoạt ảnh chạm riêng. Trong ứng dụng còn có một giao diện bí mật: hãy chạm quanh màn hình chính để tìm ra.</li>
-                        <li>Pagi có mục riêng trong Cài đặt: mùa tự động, trang phục theo mùa ngoài mùa và các giao diện.</li>
-                        <li>Biểu tượng ứng dụng cho Pro: chọn biểu tượng của bạn trong Cài đặt, có các phiên bản Halloween, Giáng sinh và Năm mới. Nếu bật tự động đổi theo mùa, biểu tượng sẽ đổi vào đúng ngày rồi quay về biểu tượng của bạn. Tính năng này mặc định tắt.</li>
-                        <li>Trên Android, nếu bạn đã dùng thử Pro, bạn cũng được tặng một biểu tượng Pro.</li>
-                        <li>Đồng bộ tiến độ với máy đọc sách điện tử qua KOSync (KOReader và các máy tương thích), kèm trợ lý hướng dẫn từng bước.</li>
-                        <li>Ứng dụng giờ có tiếng Ả Rập, Do Thái, Ba Tư và Urdu, với giao diện viết từ phải sang trái. Bạn cũng có thể chọn các ngôn ngữ này làm ngôn ngữ sách khi thêm sách thủ công.</li>
-                        <li>Âm thanh đồng hồ bấm giờ Pro mới, với một danh mục mới là Ấm cúng.</li>
-                    </ul>
-                    <strong>Sửa lỗi</strong>
-                    <ul>
-                        <li>Chọn thể loại tốt hơn cho mọi loại sách.</li>
-                        <li>Một số màu trong thống kê đã được đổi để phân biệt từng dữ liệu rõ hơn.</li>
-                        <li>Nếu sách từ máy đọc sách điện tử không có tiêu đề, ứng dụng hiện một tên dễ đọc thay vì mã, và trợ lý sẽ cảnh báo nếu không có tiến độ nào gửi về cùng tài khoản của bạn.</li>
-                        <li>Bingo giờ đã được dịch sang mọi ngôn ngữ.</li>
-                        <li>Đã rà soát tất cả ngôn ngữ: các văn bản từng hiện bằng tiếng Anh hoặc tiếng Tây Ban Nha giờ hiện bằng ngôn ngữ của bạn.</li>
-                        <li>Bản sao lưu lưu trên điện thoại không còn bị rỗng nếu việc lưu thất bại.</li>
-                        <li>Đổi trạng thái của một cuốn sách không còn xóa ngày của các lần đọc trước.</li>
-                        <li>Bản tổng kết hằng tháng cũng tính cả những cuốn đã đọc xong nhưng không có phiên nào.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; Bản beta iPhone, truyện tranh và manga như sách chính thức, chế độ xem Bộ truyện</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Mới</strong>
-                    <ul>
-                        <li>Lecturameter đến với iPhone dưới dạng beta, qua TestFlight</li>
-                        <li>Truyện tranh, manga và sách nói như các mục chính thức: thêm chúng bằng một biểu mẫu thủ công hoặc nhiều cái cùng lúc, và chia sẻ thẻ sách nói của bạn</li>
-                        <li>Mang thư viện của bạn từ ứng dụng khác sang (Goodreads, StoryGraph, Bookmory, Fable) kèm bản xem trước</li>
-                        <li>Chế độ xem Bộ truyện: sách của bạn được nhóm theo bộ, tự động điền khi bạn thêm chúng</li>
-                        <li>Tổng kết tháng với thẻ có thể chia sẻ, cùng "Cuốn sách của mỗi tháng" trong Wrapped</li>
-                        <li>Diễn biến việc đọc trong Thống kê</li>
-                        <li>Thẻ của tôi: mọi thẻ bạn đã chia sẻ, gom về một chỗ</li>
-                        <li>Widget thử thách và bingo</li>
-                        <li>Thêm nhiều sách cùng lúc từ kết quả tìm kiếm</li>
-                        <li>Bộ lọc nâng cao trong Thư viện</li>
-                        <li>Ghi công theo từng ấn bản: người đọc, người dịch và họa sĩ minh họa</li>
-                        <li>Pro dùng được trên tối đa 3 thiết bị, Android và iOS</li>
-                        <li>Bản sao lưu giờ cũng lưu cả thẻ và nhắc nhở của bạn</li>
-                        <li>Giờ bạn có thể lưu một phiên đọc không có số trang, chỉ có thời gian (tiện nếu bạn đọc bản kỹ thuật số)</li>
-                    </ul>
-                    <strong>Sửa lỗi</strong>
-                    <ul>
-                        <li>Xóa nhiều sách chỉ cần một lần Hoàn tác</li>
-                        <li>Các văn bản giờ nêu rõ loại: sách, truyện tranh, manga hoặc sách nói</li>
-                        <li>Hàng sao không còn chấm điểm khi bạn cuộn</li>
-                        <li>Ghi chú dài được hiển thị đầy đủ</li>
-                        <li>Ngày tháng và lỗi sao lưu hiển thị bằng ngôn ngữ của ứng dụng</li>
-                        <li>Khôi phục từ Drive không còn chọn nhầm tệp</li>
-                        <li>Ngăn lỗi đóng đột ngột khi nhấn vào liên kết tác giả trong một số trường hợp</li>
-                        <li>Thông báo Nhập và Xuất rõ ràng hơn</li>
-                        <li>Ngăn đồng hồ bấm giờ đóng đột ngột khi chạy nền</li>
-                        <li>Ngăn lỗi đóng đột ngột khi mua Pro và ở một số widget</li>
-                        <li>Sửa một con số gây nhầm lẫn trong kết quả tìm truyện tranh và manga</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Thẻ, điểm số, 40 ngôn ngữ, thư viện được làm mới</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Mới</strong>
-                    <ul>
-                        <li>Cài đặt được sắp xếp lại thành các mục</li>
-                        <li>Hệ thống <strong>Thẻ</strong> (tối đa 3 thẻ mỗi sách, tìm kiếm bằng #)</li>
-                        <li>Làm mới thẻ sách và trang chi tiết, 4 kích thước thẻ</li>
-                        <li><strong>Điểm số 5 sao có nửa sao</strong></li>
-                        <li>Ghi chú được chia thành: trích dẫn, ghi chú và nhận xét</li>
-                        <li>Chia sẻ sách, thử thách, bingo, bản đồ nhiệt và thống kê</li>
-                        <li>Nhắc nhở đọc sách tùy chỉnh</li>
-                        <li>Chủ đề <strong>Hoàng hôn</strong> cho Pro</li>
-                        <li><strong>Hỗ trợ 40 ngôn ngữ</strong></li>
-                    </ul>
-                    <strong>Sửa lỗi</strong>
-                    <ul>
-                        <li>Bố cục tốt hơn ở chế độ ngang và trên màn hình lớn</li>
-                        <li>Tìm sách nhanh và đáng tin cậy hơn</li>
-                        <li>Widget Pro với so sánh theo tháng</li>
-                        <li>Các thao tác xóa có thể hoàn tác</li>
-                        <li>Đặt lại các mẹo từ Cài đặt &gt; Trợ giúp</li>
-                        <li>Pagi không còn che tiêu đề hay xuất hiện trong Cài đặt</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Thanh âm thanh phiên đắm chìm, cải thiện chế độ ngang</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Mới</strong>
-                    <ul>
-                        <li>Thanh âm thanh của phiên đắm chìm giờ cũng mở rộng được ở chế độ ngang, với điều khiển trước/sau và lặp/tuần tự</li>
-                        <li>Các nhóm âm thanh làm nổi bật màu nhấn của chủ đề rõ hơn</li>
-                    </ul>
-                    <strong>Sửa lỗi</strong>
-                    <ul>
-                        <li>Chế độ ngang không còn bị kẹt ở chế độ dọc khi bạn dùng ứng dụng bằng ngôn ngữ khác với ngôn ngữ điện thoại</li>
-                        <li>Thoáng hơn giữa thẻ âm thanh và các nút đồng hồ khi được mở rộng</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Xem tất cả câu hỏi</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Danh mục sách</a>
                 <a href="#themes">Chủ đề</a>
                 <a href="#events">Sự kiện</a>
-                <a href="#pricing">Giá</a>
+                <a href="./pro/">Giá</a>
                 <a href="../precios-regionales.html">Giá theo khu vực</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Tài nguyên</h4>
                 <a href="./blog/">Blog</a>
-                <a href="#whatsnew">Tin tức</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Nền tảng</a>
+                <a href="./news/">Tin tức</a>
+                <a href="./roadmap/">Lộ trình</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Nền tảng</a>
             </div>
             <div class="footer-col">
                 <h4>Pháp lý và liên hệ</h4>

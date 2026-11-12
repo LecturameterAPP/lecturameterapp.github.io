@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Skaitymo sekimas · Knygų statistika ir laikmatis</title>
     <meta name="description" content="Lecturameter: Skaitymo sekimas, skirtas Android ir iPhone. Matuok skaitymo laiką, sek puslapius, tempą ir statistiką, importuok iš Goodreads. Be paskyros, be reklamų.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Temos</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Visata <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Ištekliai <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Tinklaraštis</a></li>
-                    <li><a href="#whatsnew">Naujienos</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Platformos</a></li>
+                    <li><a href="./news/">Naujienos</a></li>
+                    <li><a href="./roadmap/">Planai</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Platformos</a></li>
                     <li class="nav-dd-label" role="presentation">Teisinė informacija</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Privatumo politika</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Paslaugų teikimo sąlygos</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Vienkartinis pirkinys, ne prenumerata.</p>
                 <p class="price-ios-offer">iOS išleidimo pasiūlymas: <strong>&#8364;2.99</strong> pirmąjį mėnesį. Vėliau &#8364;4.99 (ta pati kaina kaip Android). Vis tiek vienkartinis pirkinys.</p>
-                <details class="price-currency-list">
-                    <summary>Apytikslė kaina tavo valiuta</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Galutines kainas nustato App Store; jos gali šiek tiek skirtis.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Žiūrėti kainas pagal regioną</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Kaip aktyvuoti Pro</a></p>
                 <p class="price-note">Po išleidimo mėnesio ta pati kaina Android ir iOS.</p>
-                <p class="price-note price-experiment-note">* Kai kurie žmonės gali matyti kitokią kainą, nes atliekame kainų eksperimentus.</p>
                 <p class="price-trial">Išbandyk Pro nemokamai 7 dienas programėlėje</p>
                 <p class="price-trial">Bandomajam laikotarpiui kortelės nereikia</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Visa kita lieka nemokama. Pro tik prideda priedų.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro išsamiai ir regioninės kainos</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Greitasis meniu:</strong> šokinėkite tarp skyrių trimis taškais (···), negrįždami į Pradžią</li>
                     <li><strong>Pristabdyta:</strong> pasidėk knygą šalia kuriam laikui nesugadindamas statistikos</li>
                     <li><strong>Dvi naujos Pro temos:</strong> Sąsiuvinis ir Giraitė</li>
-                    <li>Pro temas taip pat galima pirkti po vieną arba po 3 rinkiniais, su peržiūra, o Pro ekranas naujas</li>
-                    <li><strong>Netiesinis skaitymas</strong> antologijoms ir poezijos rinkiniams: persidengiantys puslapiai neskaičiuojami dukart, o eigos juosta suskirstyta į atkarpas</li>
-                    <li>Pradėkite skaityti iš knygos valdiklio, neatidarę programėlės</li>
-                    <li>Savaitės ir mėnesio suvestinės su nauju dizainu ir daugiau statistikos</li>
-                    <li>Neprivalomas el. paštas skiltyje „Siųsti atsiliepimą“, tik kad galėčiau jums atsakyti</li>
-                    <li>Savas laikmačio laikrodis kiekvienai temai</li>
-                    <li>Pagi parenka knygą iš sąrašo Noriu skaityti</li>
-                    <li>KOSync su tikru KOReader skaitymo laiku</li>
-                    <li>Pranešimai pagal kategoriją ir pranešimai apie programėlės naujienas</li>
-                    <li>Pradžia su juosta, sugrupuota į Tikslus, Mano skaitymus ir Įrankius</li>
-                    <li>Pakeiskite knygos būseną iš jos greitųjų veiksmų ir atšaukite, jei suklystumėte</li>
-                    <li>Material piktogramos vietoj jaustukų ir geriau įskaitoma statistika visose temose</li>
-                    <li>Pranešimas pridėjus knygą iš paieškos</li>
-                    <li>Skaitymo ciklų datos vienoje eilutėje, lengviau redaguoti</li>
-                    <li>Bingo su 24 šablonais pagal dydį</li>
-                    <li>„iPhone“ telefone laikmačio Live Activity jūsų temos spalvomis</li>
-                    <li>Katalogas mokosi iš paieškų ir ISBN nuskaitymų, kurie nieko neranda, ir prideda trūkstamas knygas (nuo lapkričio 15 d.)</li>
-                    <li>Tradicinė kinų kalba</li>
-                    <li>Serija CSV faile</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Pataisymai</h3>
-                <ul>
-                    <li>Bingo, Wrapped ir kitų ekranų antraštės dabar yra tame pačiame aukštyje kaip kituose meniu</li>
-                    <li>Bingo ir Wrapped piktogramos atgauna spalvas</li>
-                    <li>Knygų skaitikliai pagal būseną Pradžioje geriau matomi temose Tamsi, OLED, Prieblanda, Aurora ir Oda</li>
-                    <li>Vienas įspėjimas knygoms su trūkstamais duomenimis: geltonas trikampis dingo, lieka raudonas</li>
-                    <li>Perkrovus viršelį ir žanrą pasakoma, kai viskas jau buvo gerai, o raudonai įspėjama, jei kažko nerandama</li>
-                    <li>Labai didelių bibliotekų „Google Drive“ atsarginės kopijos nebesibaigia nesėkme dėl atminties trūkumo</li>
-                    <li>Keli pataisymai „iPhone“ telefone</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Visos naujinimų pastabos ir versijų istorija</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter iPhone ir Android</h2>
         <p>iPhone versija turi tas pačias pagrindines funkcijas kaip ir Android: biblioteką, skaitymo laikmatį, statistiką, iššūkius, bingo, Pagi ir vizualines temas. Štai skirtumai.</p>
-        <details class="differences-details">
-            <summary>iPhone ir Android skirtumai</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Tik iPhone</h3>
-                    <ul>
-                        <li>Laikmatis užrakinimo ekrane ir Dynamic Island, su pristabdymu ir sustabdymu.</li>
-                        <li>iOS 18 valdikliai: „Dabar skaitau“, „Nuskaityti ISBN“, „Pridėti knygą“ ir „Paleisti laikmatį“.</li>
-                        <li>Atsarginė kopija iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Tik Android</h3>
-                    <ul>
-                        <li>Laikmačio valdymas iš pranešimo.</li>
-                        <li>Automatinis režimas „Netrukdyti“ įtraukiančioje sesijoje.</li>
-                        <li>Valdiklių nustatymas ir prisegimas.</li>
-                        <li>Planšetiniai kompiuteriai (iPhone versija neveikia iPad).</li>
-                        <li>Galima panaudoti <code>lm-…</code> kodus.</li>
-                        <li>Pro tema ir piktograma dovanų bandomojo laikotarpio pabaigoje.</li>
-                        <li>Arbatpinigiai ir aukos.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Abiejose</h3>
-                    <ul>
-                        <li>Knygos, statistikos, iššūkių ir bingo valdikliai.</li>
-                        <li>Visas kalbos pasirinkimas.</li>
-                        <li>Gulsčiasis (horizontalus) režimas telefonuose.</li>
-                        <li>Atsarginė kopija Google Drive.</li>
-                        <li>Sinchronizavimas su el. skaitykle (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Pro pirkimas</h3>
-                    <ul>
-                        <li>iPhone Pro perkamas programėlėje per App Store. Android – per Google Play.</li>
-                        <li>7 dienų bandomasis laikotarpis iPhone yra nemokamas pirkinys programėlėje per App Store, susietas su tavo Apple ID.</li>
-                        <li>Kol kas Pro neperkeliamas tarp Android ir iPhone: kiekvienas pirkinys lieka savo platformoje.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Peržiūrėti visus skirtumus</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Ar veikia neprisijungus?</button>
                 <div class="faq-a"><div class="faq-a-inner">Beveik viskas veikia neprisijungus. Ryšio reikia tik ieškant naujų knygų ir keliant atsargines kopijas į Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Ar yra iPhone versija?</button>
-                <div class="faq-a"><div class="faq-a-inner">Taip: gali ją atsisiųsti jau dabar iš <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Ar galiu išbandyti prieš pirkdamas?</button>
-                <div class="faq-a"><div class="faq-a-inner">Taip. Yra nemokamas 7 dienų Pro funkcijų bandomasis laikotarpis, kortelės nereikia. iPhone tai nemokamas pirkinys programėlėje per App Store, susietas su tavo Apple ID. Android pasibaigus bandomajam laikotarpiui, net jei Pro nepirksi, gausi dovanų vieną pasirinktą Pro temą.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Kas nutiks mano Pro, jei pakeisiu telefoną?</button>
-                <div class="faq-a"><div class="faq-a-inner">Priklauso nuo to, kur jį pirkai. Jei pirkai <strong>Google Play</strong> ir pereini prie kito Android su ta pačia Google paskyra, įdiek Lecturameter ir Nustatymuose bakstelėk <strong>Atkurti pirkinį</strong>. Jei pirkai <strong>App Store</strong> ir pereini prie kito iPhone su tuo pačiu Apple ID – tas pats: įdiek ir bakstelėk <strong>Atkurti pirkinį</strong>. Kol kas Pro neperkeliamas tarp Android ir iPhone: kiekvienas pirkinys lieka savo platformoje. <code>lm-…</code> kodus galima panaudoti tik Android. Daugiau informacijos: <a href="../activar-pro.html">Kaip aktyvuoti Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Ar galiu perkelti Pro tarp telefonų ir tarp iOS bei Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">Tarp Android ir iPhone kol kas ne: kiekvienas pirkinys lieka savo platformoje. Žiūrime, ar tai galima padaryti kokiu nors būdu. Tarp dviejų tos pačios platformos telefonų taip: naudok „<strong>Atkurti pirkinį</strong>“ su savo Google paskyra arba Apple ID.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Versijų istorija</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Renginiai · Greitasis meniu · Dvi naujos Pro temos</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nauja</strong>
-                    <ul>
-                        <li><strong>Renginiai:</strong> pasauliniai skaitymo iššūkiai ir Lecturameter Quest, kai yra aktyvus</li>
-                        <li><strong>Greitasis meniu:</strong> šokinėkite tarp skyrių trimis taškais (···), negrįždami į Pradžią</li>
-                        <li><strong>Pristabdyta:</strong> pasidėk knygą šalia kuriam laikui nesugadindamas statistikos</li>
-                        <li><strong>Dvi naujos Pro temos:</strong> Sąsiuvinis ir Giraitė</li>
-                        <li>Pro temas taip pat galima pirkti po vieną arba po 3 rinkiniais, su peržiūra, o Pro ekranas naujas</li>
-                        <li><strong>Netiesinis skaitymas</strong> antologijoms ir poezijos rinkiniams: persidengiantys puslapiai neskaičiuojami dukart, o eigos juosta suskirstyta į atkarpas</li>
-                        <li>Pradėkite skaityti iš knygos valdiklio, neatidarę programėlės</li>
-                        <li>Savaitės ir mėnesio suvestinės su nauju dizainu ir daugiau statistikos</li>
-                        <li>Neprivalomas el. paštas skiltyje „Siųsti atsiliepimą“, tik kad galėčiau jums atsakyti</li>
-                        <li>Savas laikmačio laikrodis kiekvienai temai</li>
-                        <li>Pagi parenka knygą iš sąrašo Noriu skaityti</li>
-                        <li>KOSync su tikru KOReader skaitymo laiku</li>
-                        <li>Pranešimai pagal kategoriją ir pranešimai apie programėlės naujienas</li>
-                        <li>Pradžia su juosta, sugrupuota į Tikslus, Mano skaitymus ir Įrankius</li>
-                        <li>Pakeiskite knygos būseną iš jos greitųjų veiksmų ir atšaukite, jei suklystumėte</li>
-                        <li>Material piktogramos vietoj jaustukų ir geriau įskaitoma statistika visose temose</li>
-                        <li>Pranešimas pridėjus knygą iš paieškos</li>
-                        <li>Skaitymo ciklų datos vienoje eilutėje, lengviau redaguoti</li>
-                        <li>Bingo su 24 šablonais pagal dydį</li>
-                        <li>„iPhone“ telefone laikmačio Live Activity jūsų temos spalvomis</li>
-                        <li>Katalogas mokosi iš paieškų ir ISBN nuskaitymų, kurie nieko neranda, ir prideda trūkstamas knygas (nuo lapkričio 15 d.)</li>
-                        <li>Tradicinė kinų kalba</li>
-                        <li>Serija CSV faile</li>
-                    </ul>
-                    <strong>Pataisymai</strong>
-                    <ul>
-                        <li>Bingo, Wrapped ir kitų ekranų antraštės dabar yra tame pačiame aukštyje kaip kituose meniu</li>
-                        <li>Bingo ir Wrapped piktogramos atgauna spalvas</li>
-                        <li>Knygų skaitikliai pagal būseną Pradžioje geriau matomi temose Tamsi, OLED, Prieblanda, Aurora ir Oda</li>
-                        <li>Vienas įspėjimas knygoms su trūkstamais duomenimis: geltonas trikampis dingo, lieka raudonas</li>
-                        <li>Perkrovus viršelį ir žanrą pasakoma, kai viskas jau buvo gerai, o raudonai įspėjama, jei kažko nerandama</li>
-                        <li>Labai didelių bibliotekų „Google Drive“ atsarginės kopijos nebesibaigia nesėkme dėl atminties trūkumo</li>
-                        <li>Keli pataisymai „iPhone“ telefone</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Pažanga %, Pagi apranga ir išvaizdos, KOSync, kalbos, rašomos iš dešinės į kairę</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nauja</strong>
-                    <ul>
-                        <li>Pažanga %: registruok savo sesijas procentais knygose, komiksuose, mangose ir audioknygose. Audioknygose gali užsirašyti ir laiką.</li>
-                        <li>Pakeisk knygos, komikso, mangos ar audioknygos formatą jau pridėjus, neprarandant sesijų, užrašų ar statistikos.</li>
-                        <li>Keli užrašai ir citatos baigiant sesiją, kiekvienas atskirai.</li>
-                        <li>Jei iš sesijos išeinama neišsaugojus, ji paliekama kaip juodraštis, o kitą kartą išsaugant sesiją galima ją atkurti.</li>
-                        <li>Statistika: žiedinė diagrama su tuo, ką skaitai pagal formatą, ir formato filtras, kad kiekvieną tipą matytum atskirai.</li>
-                        <li>Audioknygų iššūkiai (išklausytos valandos ir baigtos audioknygos) ir Bingo su audioknygomis: 1 valanda klausymosi skaičiuojama kaip 30 puslapių.</li>
-                        <li>Pagi debiutuoja su 7 animuotais sezoniniais apdarais, tinkančiais prie bet kurios temos, 9 naujomis išvaizdomis (Bardas, Nakties vagis, Grafas vampyras, Povandeninio laivo kapitonas, Rašalas, Origami, Nakties skaitytojas, Klajojantis riteris ir Retro astronautas) ir kiekvienai skirta liesties animacija. Programėlėje paslėpta ir slapta išvaizda: paliesk pagrindinį ekraną įvairiose vietose ir ją rasi.</li>
-                        <li>Pagi turi savo skiltį nustatymuose: automatinis sezonas, sezoniniai apdarai ne sezono metu ir išvaizdos.</li>
-                        <li>Programėlės piktogramos Pro: pasirink savo nustatymuose, yra Helovino, Kalėdų ir Naujųjų metų versijos. Jei įjungsi automatinį sezono keitimą, piktograma pasikeis tomis datomis, o paskui grįš prie tavo pasirinktos. Pagal nutylėjimą išjungta.</li>
-                        <li>Android sistemoje, jei išbandei Pro, gausi ir vieną iš Pro piktogramų dovanų.</li>
-                        <li>Sinchronizuok savo pažangą su el. knygų skaitykle per KOSync (KOReader ir suderinamos), pagal žingsnis po žingsnio vedlį.</li>
-                        <li>Programėlė dabar veikia arabų, hebrajų, persų ir urdu kalbomis su sąsaja iš dešinės į kairę. Jas taip pat gali pasirinkti kaip knygos kalbą, pridėdamas knygą rankiniu būdu.</li>
-                        <li>Nauji Pro laikmačio garsai su nauja kategorija Jauki.</li>
-                    </ul>
-                    <strong>Pataisymai</strong>
-                    <ul>
-                        <li>Geresnis žanro pasirinkimas visų rūšių knygoms.</li>
-                        <li>Pakeistos kai kurios statistikos spalvos, kad kiekvieną duomenų tašką būtų lengviau atskirti.</li>
-                        <li>Jei el. skaityklės knyga neturi pavadinimo, vietoj kodo rodomas skaitomas pavadinimas, o vedlys įspėja, jei su tavo naudotoju negaunama jokios pažangos.</li>
-                        <li>Bingo dabar išverstas į visas kalbas.</li>
-                        <li>Peržiūrėtos visos kalbos: tekstai, kurie rodėsi angliškai ar ispaniškai, dabar rodomi tavo kalba.</li>
-                        <li>Telefone išsaugotos atsarginės kopijos nebelieka tuščios, jei išsaugoti nepavyksta.</li>
-                        <li>Pakeitus knygos būseną nebeištrinamos ankstesnių skaitymų datos.</li>
-                        <li>Mėnesio apžvalgoje skaičiuojamos ir baigtos knygos be sesijų.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; iPhone beta, komiksai ir manga kaip pilnavertės knygos, Sagų rodinys</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nauja</strong>
-                    <ul>
-                        <li>Lecturameter atkeliauja į iPhone kaip beta versija per TestFlight</li>
-                        <li>Komiksai, manga ir audioknygos kaip pilnaverčiai įrašai: pridėk juos rankiniu būdu vienoje formoje arba kelis iškart ir bendrink savo audioknygų kortelę</li>
-                        <li>Perkelk biblioteką iš kitos programėlės (Goodreads, StoryGraph, Bookmory, Fable) su peržiūra</li>
-                        <li>Sagų rodinys: tavo knygos sugrupuotos pagal sagas, o saga užpildoma automatiškai, kai pridedi</li>
-                        <li>Mėnesio apžvalga su bendrinama kortele ir „Kiekvieno mėnesio knyga“ skiltyje Wrapped</li>
-                        <li>Skaitymo raida skiltyje Statistika</li>
-                        <li>Mano kortelės: visos kortelės, kuriomis pasidalijai, vienoje vietoje</li>
-                        <li>Iššūkių ir bingo valdikliai</li>
-                        <li>Pridėk kelias knygas iškart iš paieškos</li>
-                        <li>Išplėstiniai filtrai Bibliotekoje</li>
-                        <li>Kreditai pagal leidimą: skaitytojai, vertėjai ir iliustratoriai</li>
-                        <li>Pro veikia iki 3 įrenginių, Android ir iOS</li>
-                        <li>Atsarginės kopijos dabar išsaugo ir tavo žymas bei priminimus</li>
-                        <li>Dabar gali išsaugoti skaitymo sesiją be puslapių, tik su laiku (patogu, jei skaitai skaitmeniniu būdu)</li>
-                    </ul>
-                    <strong>Pataisymai</strong>
-                    <ul>
-                        <li>Ištrynus kelias knygas, pasirodo vienas Anuliavimas</li>
-                        <li>Tekstuose dabar nurodomas tipas: knyga, komiksas, manga ar audioknyga</li>
-                        <li>Žvaigždučių eilutė nebeįvertina, kai slenki ekraną</li>
-                        <li>Ilgos pastabos rodomos visos</li>
-                        <li>Datos ir atsarginių kopijų klaidos programėlės kalba</li>
-                        <li>Atkuriant iš Drive nebepasirenkamas netinkamas failas</li>
-                        <li>Išvengta strigimo palietus autoriaus nuorodą kai kuriose situacijose</li>
-                        <li>Aiškesni importavimo ir eksportavimo pranešimai</li>
-                        <li>Išvengta netikėto laikmačio užsidarymo fone</li>
-                        <li>Išvengta netikėto užsidarymo perkant Pro ir kai kuriuose valdikliuose</li>
-                        <li>Ištaisytas painus skaičius komiksų ir manga paieškos rezultatuose</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Žymos, įvertinimai, 40 kalbų, atnaujinta biblioteka</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nauja</strong>
-                    <ul>
-                        <li>Nustatymai suskirstyti į skyrius</li>
-                        <li><strong>Žymų</strong> sistema (iki 3 vienai knygai, ieškok su #)</li>
-                        <li>Atnaujintos knygų kortelės ir išsami informacija, 4 kortelių dydžiai</li>
-                        <li><strong>5 žvaigždučių įvertinimai su pusinėmis žvaigždutėmis</strong></li>
-                        <li>Pastabos išskirstytos į citatas, pastabas ir nuomonę</li>
-                        <li>Bendrink knygas, iššūkius, bingo, šilumos žemėlapius ir statistiką</li>
-                        <li>Pritaikomi skaitymo priminimai</li>
-                        <li>Tema <strong>Prieblanda</strong> Pro naudotojams</li>
-                        <li><strong>40 kalbų palaikymas</strong></li>
-                    </ul>
-                    <strong>Pataisymai</strong>
-                    <ul>
-                        <li>Geresnis išdėstymas gulsčiame režime ir dideliuose ekranuose</li>
-                        <li>Greitesnė ir patikimesnė knygų paieška</li>
-                        <li>Pro valdiklis su mėnesių palyginimu</li>
-                        <li>Negrįžtamus veiksmus galima atšaukti</li>
-                        <li>Patarimus galima atkurti per Nustatymai &gt; Pagalba</li>
-                        <li>Pagi nebeuždengia pavadinimų ir nebepasirodo Nustatymuose</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Įtraukiančios sesijos garso juosta, gulsčio režimo patobulinimai</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nauja</strong>
-                    <ul>
-                        <li>Įtraukiančios sesijos garso juosta dabar išsiskleidžia ir gulsčiame režime, su ankstesnio / kito ir kartojimo / sekos valdikliais</li>
-                        <li>Garsų grupės aiškiau išryškina tavo temos akcento spalvą</li>
-                    </ul>
-                    <strong>Pataisymai</strong>
-                    <ul>
-                        <li>Gulsčias režimas nebeužstringa stačiame, kai programėlę naudoji kita kalba nei telefono</li>
-                        <li>Daugiau erdvės tarp garso kortelės ir laikmačio mygtukų, kai ji išskleista</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Peržiūrėti visus klausimus</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Knygų katalogas</a>
                 <a href="#themes">Temos</a>
                 <a href="#events">Renginiai</a>
-                <a href="#pricing">Kainos</a>
+                <a href="./pro/">Kainos</a>
                 <a href="../precios-regionales.html">Regioninės kainos</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Ištekliai</h4>
                 <a href="./blog/">Tinklaraštis</a>
-                <a href="#whatsnew">Naujienos</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Platformos</a>
+                <a href="./news/">Naujienos</a>
+                <a href="./roadmap/">Planai</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Platformos</a>
             </div>
             <div class="footer-col">
                 <h4>Teisinė informacija ir kontaktai</h4>

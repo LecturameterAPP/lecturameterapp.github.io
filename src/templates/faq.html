@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="{{code}}" dir="{{dir}}">
+<head>
+{{> head}}
+</head>
+<body>
+
+{{> promo}}
+
+{{> nav}}
+
+<main class="subpage-body">
+<section class="band">
+    <div class="container">
+{{> breadcrumb}}
+        <div class="page-hero">
+            <h1 class="page-heading">{{home.faq.frequently_asked_questions}}</h1>
+        </div>
+    </div>
+</section>
+
+<section class="band" id="faq">
+    <div class="container">
+        <div class="section-head faq-head">
+            <div class="pagi-faq" data-state="pensativo" role="button" tabindex="0" aria-label="{{home.faq.pensive_pagi.aria-label}}"></div>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.can_i_bring_my_library}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_go_to_settings_import}}
+                    <ul>
+                        <li>{{home.faq.goodreads_csv_goodreads_com_my}}</li>
+                        <li>{{home.faq.storygraph_csv_app_thestorygraph_c}}</li>
+                        <li>{{home.faq.bookmory_bookmory_or_xlsx_settings}}</li>
+                        <li>{{home.faq.fable_shelfbridge_csv_export_via}}</li>
+                        <li>{{home.faq.book_tracker_csv_settings_export}}</li>
+                        <li>{{home.faq.lecturameter_csv_if_you_exported}}</li>
+                        <li>{{home.faq.other_apps_babelio_pagebound_books}}</li>
+                    </ul></div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.is_my_data_mine}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.absolutely_your_data_is_stored}} <a href="{{link_privacy}}">{{home.faq.privacy_policy}}</a>{{home.faq.if_you_enable_google_drive}}</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.is_there_a_subscription}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.no_the_app_is_free}}</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.does_it_work_offline}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.almost_everything_works_offline_yo}}</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.is_there_an_iphone_version}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_in_public_beta_you}} <a href="{{ios_url}}" target="_blank" rel="noopener">{{home.faq.testflight}}</a>{{home.faq.if_it_won_t_install}}</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.can_i_try_before_buying}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_there_s_a_free}}</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.what_happens_to_my_pro}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.it_depends_on_where_you}} <code>lm-…</code> {{home.faq.codes_can_only_be_redeemed}} <a href="{{root}}activar-pro.html">{{home.faq.how_to_activate_pro}}</a>.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">{{home.faq.can_i_move_my_pro}}</button>
+                <div class="faq-a"><div class="faq-a-inner">{{home.faq.yes_between_android_and_iphone}}</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+{{> footer}}
+
+{{> scripts}}
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{code}}" dir="{{dir}}">
+<head>
+{{> head}}
+</head>
+<body>
+
+{{> promo}}
+
+{{> nav}}
+
+<main class="subpage-body">
+<section class="band">
+    <div class="container">
+{{> breadcrumb}}
+        <div class="page-hero">
+            <h1 class="page-heading">{{common.nav.roadmap}}</h1>
+            <p class="tagline">{{roadmap.page.intro}}</p>
+        </div>
+    </div>
+</section>
+
+{{#if has_roadmap}}
+<section class="band band-alt">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{roadmap_heading}}</h2>
+            <p>{{roadmap_sub}}</p>
+        </div>
+        <div class="roadmap-list">
+{{roadmap_items}}
+        </div>
+    </div>
+</section>
+
+{{/if}}
+<section class="band">
+    <div class="container">
+{{roadmap_published_html}}
+        <p style="text-align:center; margin-top:2rem;"><a href="{{link_page_news}}" class="btn">{{common.nav.news}}</a></p>
+    </div>
+</section>
+</main>
+
+{{> footer}}
+
+{{> scripts}}
+</body>
+</html>

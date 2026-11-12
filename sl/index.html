@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Bralni dnevnik · Statistika in časovnik</title>
     <meta name="description" content="Lecturameter: Bralni dnevnik za Android in iPhone. Merite čas branja, spremljajte strani, tempo in statistiko ter uvozite iz Goodreads. Brez računa, brez oglasov.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Teme</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Vesolje <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Viri <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blog</a></li>
-                    <li><a href="#whatsnew">Novice</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Platforme</a></li>
+                    <li><a href="./news/">Novice</a></li>
+                    <li><a href="./roadmap/">Načrt razvoja</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Platforme</a></li>
                     <li class="nav-dd-label" role="presentation">Pravno</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Politika zasebnosti</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Pogoji uporabe</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Enkraten nakup, ne naročnina.</p>
                 <p class="price-ios-offer">Uvodna ponudba za iOS: <strong>&#8364;2.99</strong> prvi mesec. Nato &#8364;4.99 (enaka cena kot na Androidu). Še vedno enkraten nakup.</p>
-                <details class="price-currency-list">
-                    <summary>Približna cena v tvoji valuti</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Končne cene določi App Store; lahko se rahlo razlikujejo.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Poglej regionalne cene</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Poglej, kako aktivirati Pro</a></p>
                 <p class="price-note">Enaka cena na Androidu in iOS po uvodnem mesecu.</p>
-                <p class="price-note price-experiment-note">* Nekateri lahko vidijo drugačno ceno, ker izvajamo cenovne eksperimente.</p>
                 <p class="price-trial">Preizkusi Pro brezplačno 7 dni, v aplikaciji</p>
                 <p class="price-trial">Za preizkus kartica ni potrebna</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Vse ostalo ostane brezplačno. Pro doda samo dodatke.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro podrobno in regionalne cene</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Hitri meni:</strong> preskakuj med razdelki s tremi pikami (···), ne da bi se vračal na Domov</li>
                     <li><strong>Premor:</strong> knjigo za nekaj časa odložite, ne da bi si pokvarili statistiko</li>
                     <li><strong>Dve novi temi Pro:</strong> Zvezek in Gozd</li>
-                    <li>Teme Pro lahko kupiš tudi posamično ali v paketih po 3, s predogledom, zaslon Pro pa je nov</li>
-                    <li><strong>Nelinearno branje</strong> za antologije in pesniške zbirke: strani, ki se prekrivajo, se ne štejejo dvakrat, vrstica napredka pa je razdeljena na odseke</li>
-                    <li>Začni brati iz pripomočka knjige, ne da bi odprl aplikacijo</li>
-                    <li>Tedenski in mesečni povzetki z novim videzom in več statistike</li>
-                    <li>Neobvezen e-naslov v »Pošlji povratne informacije«, samo da ti lahko odgovorim</li>
-                    <li>Lastna ura časovnika za vsako temo</li>
-                    <li>Pagi ti izbere knjigo s seznama Želim prebrati</li>
-                    <li>KOSync z resničnim časom branja iz KOReaderja</li>
-                    <li>Obvestila po kategorijah in obvestila o novostih v aplikaciji</li>
-                    <li>Domov z vrstico, razdeljeno na Cilji, Moje branje in Orodja</li>
-                    <li>Spremeni stanje knjige v hitrih dejanjih in ga razveljavi, če se zzmotiš</li>
-                    <li>Ikone Material namesto emojijev in bolj berljiva statistika v vseh temah</li>
-                    <li>Obvestilo ob dodajanju knjige iz iskanja</li>
-                    <li>Datumi ciklov branja v eni vrstici, lažje za urejanje</li>
-                    <li>Bingo s 24 predlogami po velikosti</li>
-                    <li>Na iPhonu Live Activity časovnika v barvah tvoje teme</li>
-                    <li>Katalog se uči iz iskanj in skeniranj ISBN brez zadetkov in dodaja manjkajoče knjige (od 15. novembra)</li>
-                    <li>Tradicionalna kitajščina</li>
-                    <li>Serija v CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Popravki</h3>
-                <ul>
-                    <li>Naslovi v Bingo, Wrapped in drugih zaslonih so zdaj na isti višini kot v drugih menijih</li>
-                    <li>Ikoni Bingo in Wrapped spet dobita barve</li>
-                    <li>Števci knjig po stanju na Domov so bolje vidni v temah Temna, OLED, Somrak, Aurora in Usnje</li>
-                    <li>Eno samo opozorilo za knjige z manjkajočimi podatki: rumeni trikotnik izgine, rdeči ostane</li>
-                    <li>Ponovno nalaganje naslovnice in žanra ti pove, če je bilo vse že v redu, in z rdečo opozori, če česa ne najde</li>
-                    <li>Varnostne kopije zelo velikih knjižnic v Google Drive ne odpovejo več zaradi pomanjkanja pomnilnika</li>
-                    <li>Več popravkov na iPhonu</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Vse opombe ob izdajah in zgodovina različic</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter na iPhonu in Androidu</h2>
         <p>Različica za iPhone ima enake glavne funkcije kot Android: knjižnico, bralni časovnik, statistiko, izzive, bingo, Pagi in vizualne teme. Tu so razlike.</p>
-        <details class="differences-details">
-            <summary>Razlike med iPhonom in Androidom</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Samo iPhone</h3>
-                    <ul>
-                        <li>Časovnik na zaklenjenem zaslonu in v Dynamic Island, s premorom in ustavitvijo.</li>
-                        <li>Kontrolniki iOS 18: Berem zdaj, Skeniraj ISBN, Dodaj knjigo in Zaženi časovnik.</li>
-                        <li>Varnostna kopija v iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Samo Android</h3>
-                    <ul>
-                        <li>Upravljanje časovnika iz obvestila.</li>
-                        <li>Samodejni način »Ne moti« v poglobljeni seji.</li>
-                        <li>Nastavitev in pripenjanje pripomočkov.</li>
-                        <li>Tablični računalniki (različica za iPhone ne deluje na iPadu).</li>
-                        <li>Vnovčitev <code>lm-…</code> kod.</li>
-                        <li>Tema in ikona Pro kot darilo ob koncu preizkusa.</li>
-                        <li>Napitnine in donacije.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Na obeh</h3>
-                    <ul>
-                        <li>Pripomočki Knjiga, Statistika, Izzivi in Bingo.</li>
-                        <li>Popoln izbirnik jezika.</li>
-                        <li>Ležeči način na telefonih.</li>
-                        <li>Varnostna kopija v Google Drive.</li>
-                        <li>Sinhronizacija z bralnikom e-knjig (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Nakup Pro</h3>
-                    <ul>
-                        <li>Na iPhonu je Pro nakup v aplikaciji prek App Store. Na Androidu je nakup v Google Play.</li>
-                        <li>7-dnevni preizkus na iPhonu je brezplačen nakup v aplikaciji prek App Store, vezan na tvoj Apple ID.</li>
-                        <li>Pro se zaenkrat ne prenaša med Androidom in iPhonom: vsak nakup ostane na svoji platformi.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Poglej vse razlike</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Ali deluje brez povezave?</button>
                 <div class="faq-a"><div class="faq-a-inner">Skoraj vse deluje brez povezave. Povezavo potrebuješ samo za iskanje novih knjig in nalaganje varnostnih kopij v Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Ali obstaja različica za iPhone?</button>
-                <div class="faq-a"><div class="faq-a-inner">Da: zdaj jo lahko prenesel(-la) iz <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Ali lahko preizkusim pred nakupom?</button>
-                <div class="faq-a"><div class="faq-a-inner">Da. Na voljo je brezplačen 7-dnevni preizkus funkcij Pro, kartica ni potrebna. Na iPhonu je to brezplačen nakup v aplikaciji prek App Store, vezan na tvoj Apple ID. Na Androidu dobiš ob koncu preizkusa brezplačno temo Pro po svoji izbiri, tudi če Pro ne kupiš.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Kaj se zgodi z mojim Pro, če zamenjam telefon?</button>
-                <div class="faq-a"><div class="faq-a-inner">Odvisno od tega, kje si ga kupil(a). Če si ga kupil(a) v <strong>Google Play</strong> in preideš na drug Android z istim Google računom, namesti Lecturameter in v Nastavitvah tapni <strong>Obnovi nakup</strong>. Če si ga kupil(a) v <strong>App Store</strong> in preideš na drug iPhone z istim Apple ID, enako: namesti in tapni <strong>Obnovi nakup</strong>. Pro se zaenkrat ne prenaša med Androidom in iPhonom: vsak nakup ostane na svoji platformi. <code>lm-…</code> kod je mogoče vnovčiti samo na Androidu. Več podrobnosti v <a href="../activar-pro.html">Kako aktivirati Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Ali lahko Pro prenesem med telefoni ter med iOS in Androidom?</button>
-                <div class="faq-a"><div class="faq-a-inner">Med Androidom in iPhonom zaenkrat ne: vsak nakup ostane na svoji platformi. Preverjamo, ali bi šlo to narediti na kakšen način. Med dvema telefonoma na isti platformi gre: uporabi <strong>Obnovi nakup</strong> s svojim Google računom ali Apple ID.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Zgodovina različic</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Dogodki · Hitri meni · Dve novi temi Pro</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novo</strong>
-                    <ul>
-                        <li><strong>Dogodki:</strong> svetovni bralni izzivi in Lecturameter Quest, kadar je kakšen aktiven</li>
-                        <li><strong>Hitri meni:</strong> preskakuj med razdelki s tremi pikami (···), ne da bi se vračal na Domov</li>
-                        <li><strong>Premor:</strong> knjigo za nekaj časa odložite, ne da bi si pokvarili statistiko</li>
-                        <li><strong>Dve novi temi Pro:</strong> Zvezek in Gozd</li>
-                        <li>Teme Pro lahko kupiš tudi posamično ali v paketih po 3, s predogledom, zaslon Pro pa je nov</li>
-                        <li><strong>Nelinearno branje</strong> za antologije in pesniške zbirke: strani, ki se prekrivajo, se ne štejejo dvakrat, vrstica napredka pa je razdeljena na odseke</li>
-                        <li>Začni brati iz pripomočka knjige, ne da bi odprl aplikacijo</li>
-                        <li>Tedenski in mesečni povzetki z novim videzom in več statistike</li>
-                        <li>Neobvezen e-naslov v »Pošlji povratne informacije«, samo da ti lahko odgovorim</li>
-                        <li>Lastna ura časovnika za vsako temo</li>
-                        <li>Pagi ti izbere knjigo s seznama Želim prebrati</li>
-                        <li>KOSync z resničnim časom branja iz KOReaderja</li>
-                        <li>Obvestila po kategorijah in obvestila o novostih v aplikaciji</li>
-                        <li>Domov z vrstico, razdeljeno na Cilji, Moje branje in Orodja</li>
-                        <li>Spremeni stanje knjige v hitrih dejanjih in ga razveljavi, če se zzmotiš</li>
-                        <li>Ikone Material namesto emojijev in bolj berljiva statistika v vseh temah</li>
-                        <li>Obvestilo ob dodajanju knjige iz iskanja</li>
-                        <li>Datumi ciklov branja v eni vrstici, lažje za urejanje</li>
-                        <li>Bingo s 24 predlogami po velikosti</li>
-                        <li>Na iPhonu Live Activity časovnika v barvah tvoje teme</li>
-                        <li>Katalog se uči iz iskanj in skeniranj ISBN brez zadetkov in dodaja manjkajoče knjige (od 15. novembra)</li>
-                        <li>Tradicionalna kitajščina</li>
-                        <li>Serija v CSV</li>
-                    </ul>
-                    <strong>Popravki</strong>
-                    <ul>
-                        <li>Naslovi v Bingo, Wrapped in drugih zaslonih so zdaj na isti višini kot v drugih menijih</li>
-                        <li>Ikoni Bingo in Wrapped spet dobita barve</li>
-                        <li>Števci knjig po stanju na Domov so bolje vidni v temah Temna, OLED, Somrak, Aurora in Usnje</li>
-                        <li>Eno samo opozorilo za knjige z manjkajočimi podatki: rumeni trikotnik izgine, rdeči ostane</li>
-                        <li>Ponovno nalaganje naslovnice in žanra ti pove, če je bilo vse že v redu, in z rdečo opozori, če česa ne najde</li>
-                        <li>Varnostne kopije zelo velikih knjižnic v Google Drive ne odpovejo več zaradi pomanjkanja pomnilnika</li>
-                        <li>Več popravkov na iPhonu</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Napredek v %, Pagijine obleke in preobleke, KOSync, jeziki od desne proti levi</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novo</strong>
-                    <ul>
-                        <li>Napredek v %: seje beleži v odstotkih pri knjigah, stripih, mangi in zvočnih knjigah. Pri zvočnih knjigah lahko zabeležiš tudi čas.</li>
-                        <li>Spremeni format knjige, stripa, mange ali zvočne knjige po dodajanju, ne da bi izgubil seje, zapiske ali statistiko.</li>
-                        <li>Več zapiskov in citatov ob koncu seje, vsak posebej.</li>
-                        <li>Če sejo zapustiš brez shranjevanja, se ohrani kot osnutek in jo lahko obnoviš ob naslednjem shranjevanju.</li>
-                        <li>Statistika: krof z deležem prebranega po formatih in filter formata za ogled vsake vrste posebej.</li>
-                        <li>Izzivi za zvočne knjige (poslušane ure in dokončane zvočne knjige) ter Bingo z zvočnimi knjigami: 1 ura poslušanja šteje kot 30 strani.</li>
-                        <li>Pagi debitira s 7 animiranimi sezonskimi oblekami, ki se podajo k vsaki temi, 9 novimi preoblekami (Bard, Nočni tat, Grof vampir, Kapitan podmornice, Črnilo, Origami, Nočni bralec, Potujoči vitez in Retro astronavt) ter lastno animacijo ob dotiku za vsako. V aplikaciji je skrita tudi skrivna preobleka: tapkaj po glavnem zaslonu, da jo najdeš.</li>
-                        <li>Pagi ima svoj razdelek v Nastavitvah: samodejni letni čas, sezonske obleke izven sezone in preobleke.</li>
-                        <li>Ikone aplikacije za Pro: izberi svojo v Nastavitvah, na voljo so različice za noč čarovnic, božič in novo leto. Če vklopiš samodejno sezonsko menjavo, se ikona spremeni na ustrezne datume in se nato vrne na tvojo. Privzeto je izklopljena.</li>
-                        <li>Na Androidu, če si preizkusil Pro, dobiš v dar tudi eno od ikon Pro.</li>
-                        <li>Sinhroniziraj napredek z bralnikom prek KOSync (KOReader in združljivi) s čarovnikom po korakih.</li>
-                        <li>Aplikacija je zdaj na voljo v arabščini, hebrejščini, perzijščini in urdujščini z vmesnikom od desne proti levi. Izbereš jih lahko tudi kot jezik knjige pri ročnem dodajanju.</li>
-                        <li>Novi zvoki časovnika Pro z novo kategorijo Udobje.</li>
-                    </ul>
-                    <strong>Popravki</strong>
-                    <ul>
-                        <li>Boljša izbira žanra za vsako vrsto knjige.</li>
-                        <li>Nekatere barve v statistiki so spremenjene, da je podatkovne točke lažje ločiti.</li>
-                        <li>Če knjiga iz bralnika nima naslova, se namesto kode prikaže berljivo ime, čarovnik pa te opozori, če za tvojega uporabnika ne prispe noben napredek.</li>
-                        <li>Bingo je zdaj preveden v vse jezike.</li>
-                        <li>Vsi jeziki so pregledani: besedila, ki so se prikazovala v angleščini ali španščini, so zdaj v tvojem jeziku.</li>
-                        <li>Varnostne kopije, shranjene v telefonu, niso več prazne, če shranjevanje ne uspe.</li>
-                        <li>Sprememba stanja knjige ne izbriše več datumov prejšnjih branj.</li>
-                        <li>Mesečni povzetek šteje tudi dokončane knjige brez sej.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; Beta za iPhone, stripi in manga kot polnopravne knjige, pogled Serija</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novo</strong>
-                    <ul>
-                        <li>Lecturameter prihaja na iPhone v beta različici, prek TestFlight</li>
-                        <li>Stripi, manga in zvočne knjige kot polnopravni elementi: dodaj jih v enem ročnem obrazcu ali več naenkrat in deli kartico zvočne knjige</li>
-                        <li>Prenesi knjižnico iz druge aplikacije (Goodreads, StoryGraph, Bookmory, Fable) s predogledom</li>
-                        <li>Pogled Serija: tvoje knjige, združene po serijah, samodejno izpolnjene ob dodajanju</li>
-                        <li>Mesečni pregled z deljivo kartico ter »Knjiga vsakega meseca« v Wrapped</li>
-                        <li>Razvoj branja v Statistiki</li>
-                        <li>Moje kartice: vse kartice, ki si jih delil(a), na enem mestu</li>
-                        <li>Pripomočki za izzive in bingo</li>
-                        <li>Dodaj več knjig naenkrat iz iskanja</li>
-                        <li>Napredni filtri v Knjižnici</li>
-                        <li>Zasluge po izdaji: bralci, prevajalci in ilustratorji</li>
-                        <li>Pro deluje na do 3 napravah, Android in iOS</li>
-                        <li>Varnostne kopije zdaj shranijo tudi tvoje oznake in opomnike</li>
-                        <li>Zdaj lahko shraniš bralno sejo brez strani, samo s časom (uporabno, če bereš digitalno)</li>
-                    </ul>
-                    <strong>Popravki</strong>
-                    <ul>
-                        <li>Brisanje več knjig daje eno samo možnost Razveljavi</li>
-                        <li>Besedila zdaj poimenujejo vrsto: knjiga, strip, manga ali zvočna knjiga</li>
-                        <li>Vrstica zvezdic ne ocenjuje več med drsenjem</li>
-                        <li>Dolgi zapiski se prikažejo v celoti</li>
-                        <li>Datumi in napake varnostnih kopij v jeziku aplikacije</li>
-                        <li>Obnova iz Drive ne izbere več napačne datoteke</li>
-                        <li>Preprečena zrušitev ob tapu na povezavo avtorja v nekaterih primerih</li>
-                        <li>Jasnejša sporočila pri uvozu in izvozu</li>
-                        <li>Preprečeno nepričakovano zaprtje časovnika v ozadju</li>
-                        <li>Preprečena nepričakovana zaprtja ob nakupu Pro in v nekaterih pripomočkih</li>
-                        <li>Popravljena zbegana številka v rezultatih iskanja stripov in mange</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Oznake, ocene, 40 jezikov, prenovljena knjižnica</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novo</strong>
-                    <ul>
-                        <li>Nastavitve urejene v razdelke</li>
-                        <li>Sistem <strong>oznak</strong> (do 3 na knjigo, iskanje z #)</li>
-                        <li>Prenovljene kartice knjig in podrobnosti, 4 velikosti kartic</li>
-                        <li><strong>Ocene s 5 zvezdicami s polovičnimi zvezdicami</strong></li>
-                        <li>Zapiski razdeljeni na: citate, zapiske in mnenje</li>
-                        <li>Deli knjige, izzive, binge, toplotne zemljevide in statistiko</li>
-                        <li>Prilagodljivi bralni opomniki</li>
-                        <li>Tema <strong>Somrak</strong> za Pro</li>
-                        <li><strong>Podpora za 40 jezikov</strong></li>
-                    </ul>
-                    <strong>Popravki</strong>
-                    <ul>
-                        <li>Boljša postavitev v ležečem načinu in na velikih zaslonih</li>
-                        <li>Hitrejše in zanesljivejše iskanje knjig</li>
-                        <li>Pripomoček Pro z mesečno primerjavo</li>
-                        <li>Dejanja brisanja z možnostjo razveljavitve</li>
-                        <li>Ponastavi nasvete v Nastavitve &gt; Pomoč</li>
-                        <li>Pagi ne prekriva več naslovov in se ne prikazuje v Nastavitvah</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Zvočna vrstica poglobljene seje, izboljšave ležečega načina</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Novo</strong>
-                    <ul>
-                        <li>Zvočna vrstica poglobljene seje se zdaj razširi tudi v ležečem načinu, s kontrolniki prejšnji/naslednji in zanka/zaporedje</li>
-                        <li>Skupine zvokov jasneje poudarijo poudarno barvo tvoje teme</li>
-                    </ul>
-                    <strong>Popravki</strong>
-                    <ul>
-                        <li>Ležeči način se ne zatakne več v pokončnem, ko aplikacijo uporabljaš v drugem jeziku, kot je jezik telefona</li>
-                        <li>Več prostora med zvočno kartico in gumbi časovnika, ko je razširjena</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Poglej vsa vprašanja</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Katalog knjig</a>
                 <a href="#themes">Teme</a>
                 <a href="#events">Dogodki</a>
-                <a href="#pricing">Cene</a>
+                <a href="./pro/">Cene</a>
                 <a href="../precios-regionales.html">Regionalne cene</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Viri</h4>
                 <a href="./blog/">Blog</a>
-                <a href="#whatsnew">Novice</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Platforme</a>
+                <a href="./news/">Novice</a>
+                <a href="./roadmap/">Načrt razvoja</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Platforme</a>
             </div>
             <div class="footer-col">
                 <h4>Pravno in kontakt</h4>

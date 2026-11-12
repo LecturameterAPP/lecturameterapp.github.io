@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Okuma Günlüğü · Kitap istatistikleri ve zamanlayıcı</title>
     <meta name="description" content="Lecturameter: Okuma Günlüğü, Android ve iPhone için. Okuma süreni ölç, sayfaları, temponu ve istatistiklerini takip et, Goodreads'ten içe aktar. Hesapsız, reklamsız.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Temalar</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Evren <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Kaynaklar <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blog</a></li>
-                    <li><a href="#whatsnew">Haberler</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Platformlar</a></li>
+                    <li><a href="./news/">Haberler</a></li>
+                    <li><a href="./roadmap/">Yol haritası</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Platformlar</a></li>
                     <li class="nav-dd-label" role="presentation">Yasal</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Gizlilik politikası</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Hizmet Şartları</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Tek seferlik satın alma, abonelik değil.</p>
                 <p class="price-ios-offer">iOS lansman teklifi: ilk ay boyunca <strong>&#8364;2.99</strong>. Sonrasında &#8364;4.99 (Android ile aynı fiyat). Yine tek seferlik satın alma.</p>
-                <details class="price-currency-list">
-                    <summary>Para biriminde yaklaşık fiyat</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Nihai fiyatları App Store belirler; biraz değişebilir.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Bölgesel fiyatları gör</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Pro'nun nasıl etkinleştirileceğini gör</a></p>
                 <p class="price-note">Lansman ayından sonra Android ve iOS'ta aynı fiyat.</p>
-                <p class="price-note price-experiment-note">* Fiyat denemeleri yaptığımız için bazı kişiler farklı bir fiyat görebilir.</p>
                 <p class="price-trial">Pro'yu uygulama içinden 7 gün ücretsiz dene</p>
                 <p class="price-trial">Deneme için kart gerekmez</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Geri kalan her şey ücretsiz kalır. Pro yalnızca ekstralar ekler.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro ayrıntılı ve bölgesel fiyatlar</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Hızlı menü:</strong> Ana sayfa'ya dönmeden üç noktayla (···) bir bölümden diğerine geçin</li>
                     <li><strong>Duraklatıldı:</strong> bir kitabı istatistiklerini bozmadan bir süre kenara koy</li>
                     <li><strong>İki yeni Pro tema:</strong> Defter ve Orman</li>
-                    <li>Pro temalar ön izlemeyle tek tek ya da 3'lü paketler halinde de satın alınabiliyor, Pro ekranı da yeni</li>
-                    <li>Antolojiler ve şiir kitapları için <strong>doğrusal olmayan okuma</strong>: çakışan sayfalar iki kez sayılmaz, ilerleme çubuğu bölümlere ayrılır</li>
-                    <li>Uygulamayı açmadan kitap widget'ından okumaya başlayın</li>
-                    <li>Yeni tasarımlı ve daha fazla istatistikli haftalık ve aylık özetler</li>
-                    <li>“Geri bildirim gönder”de isteğe bağlı e-posta, yalnızca size yanıt verebilmem için</li>
-                    <li>Her tema için kendine ait bir zamanlayıcı saati</li>
-                    <li>Pagi, Okunacak listesinden sana bir kitap seçer</li>
-                    <li>KOSync ile KOReader'ın gerçek okuma süresi</li>
-                    <li>Kategoriye göre bildirimler ve uygulama haberleri uyarıları</li>
-                    <li>Rayı Hedefler, Okumalarım ve Araçlar olarak gruplanmış Ana sayfa</li>
-                    <li>Bir kitabın durumunu hızlı işlemlerinden değiştirin, yanlışlık olursa geri alın</li>
-                    <li>Emoji yerine Material simgeleri ve tüm temalarda daha okunaklı istatistikler</li>
-                    <li>Aramadan kitap eklerken bir bildirim</li>
-                    <li>Okuma döngüsü tarihleri tek satırda, düzenlemesi daha kolay</li>
-                    <li>Boyuta göre 24 şablonlu Bingo</li>
-                    <li>iPhone'da, zamanlayıcının Live Activity'si temanızın renklerinde</li>
-                    <li>Katalog, sonuç bulamayan aramalardan ve ISBN taramalarından öğrenir ve eksik kitapları ekler (15 Kasım'dan itibaren)</li>
-                    <li>Geleneksel Çince</li>
-                    <li>CSV'de seri</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Düzeltmeler</h3>
-                <ul>
-                    <li>Bingo, Wrapped ve diğer ekranlardaki başlıklar artık diğer menülerle aynı yükseklikte</li>
-                    <li>Bingo ve Wrapped simgeleri renklerine kavuştu</li>
-                    <li>Ana sayfa'daki duruma göre kitap sayaçları Koyu, OLED, Alacakaranlık, Aurora ve Deri temalarında daha net görünüyor</li>
-                    <li>Eksik verili kitaplar için tek bir uyarı: sarı üçgen kalktı, kırmızı kaldı</li>
-                    <li>Kapağı ve türü yeniden yüklemek her şeyin zaten yolunda olduğunu söyler, bir şey bulunamazsa kırmızıyla uyarır</li>
-                    <li>Çok büyük kütüphanelerin Google Drive yedekleri artık bellek yetersizliğinden başarısız olmuyor</li>
-                    <li>iPhone'da çeşitli düzeltmeler</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Tüm yama notları ve sürüm geçmişi</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">iPhone ve Android'de Lecturameter</h2>
         <p>iPhone sürümünde Android ile aynı ana özellikler var: kitaplık, okuma zamanlayıcısı, istatistikler, meydan okumalar, bingo, Pagi ve görsel temalar. Farklar şunlar.</p>
-        <details class="differences-details">
-            <summary>iPhone ve Android arasındaki farklar</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Yalnızca iPhone</h3>
-                    <ul>
-                        <li>Kilit Ekranında ve Dynamic Island'da duraklatma ve durdurma özellikli zamanlayıcı.</li>
-                        <li>iOS 18 denetimleri: Şu an okunan, ISBN tara, Kitap ekle ve Zamanlayıcıyı başlat.</li>
-                        <li>iCloud Drive yedeklemesi.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Yalnızca Android</h3>
-                    <ul>
-                        <li>Zamanlayıcıyı bildirimden kontrol etme.</li>
-                        <li>Sürükleyici oturumda otomatik Rahatsız Etmeyin.</li>
-                        <li>Widget yapılandırma ve sabitleme.</li>
-                        <li>Tabletler (iPhone sürümü iPad'de çalışmaz).</li>
-                        <li>Kod <code>lm-…</code> kullanma.</li>
-                        <li>Deneme sürenin sonunda hediye olarak bir Pro tema ve simge.</li>
-                        <li>Bahşiş ve bağışlar.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>İkisinde de</h3>
-                    <ul>
-                        <li>Kitap, İstatistikler, Meydan okumalar ve Bingo widget'ları.</li>
-                        <li>Tam dil seçici.</li>
-                        <li>Telefonlarda yatay mod.</li>
-                        <li>Google Drive yedeklemesi.</li>
-                        <li>E-okuyucu senkronizasyonu (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Pro satın alma</h3>
-                    <ul>
-                        <li>iPhone'da Pro, App Store içi satın almadır. Android'de ise Google Play satın almasıdır.</li>
-                        <li>iPhone'daki 7 günlük deneme, Apple Kimliğine bağlı, ücretsiz bir App Store içi satın almadır.</li>
-                        <li>Şimdilik Pro, Android ile iPhone arasında geçmiyor: her satın alma kendi platformunda kalır.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Tüm farkları gör</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Çevrimdışı çalışır mı?</button>
                 <div class="faq-a"><div class="faq-a-inner">Hemen hemen her şey çevrimdışı çalışır. Bağlantıya yalnızca yeni kitap aramak ve Google Drive yedeklerini yüklemek için ihtiyacın var.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">iPhone sürümü var mı?</button>
-                <div class="faq-a"><div class="faq-a-inner">Evet: şimdi şuradan indirebilirsin: <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Satın almadan önce deneyebilir miyim?</button>
-                <div class="faq-a"><div class="faq-a-inner">Evet. Pro özelliklerini kart gerektirmeden 7 gün ücretsiz deneyebilirsin. iPhone'da bu, Apple Kimliğine bağlı, ücretsiz bir App Store içi satın almadır. Android'de deneme sürenin sonunda Pro almasan bile seçtiğin bir Pro temayı ücretsiz alırsın.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Telefon değiştirirsem Pro'm ne olur?</button>
-                <div class="faq-a"><div class="faq-a-inner">Nereden satın aldığına bağlı. <strong>Google Play</strong>'den aldıysan ve aynı Google hesabıyla başka bir Android'e geçiyorsan, Lecturameter'ı yükle ve Ayarlar'da <strong>Satın alımı geri yükle</strong>'ye dokun. <strong>App Store</strong>'dan aldıysan ve aynı Apple Kimliğiyle başka bir iPhone'a geçiyorsan, aynısı: yükle ve <strong>Satın alımı geri yükle</strong>'ye dokun. Şimdilik Pro, Android ile iPhone arasında geçmiyor: her satın alma kendi platformunda kalır. <code>lm-…</code>  kodları yalnızca Android'de kullanılabilir. Daha fazla ayrıntı: <a href="../activar-pro.html">Pro nasıl etkinleştirilir</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Pro'mu telefonlar arasında ve iOS ile Android arasında taşıyabilir miyim?</button>
-                <div class="faq-a"><div class="faq-a-inner">Android ile iPhone arasında şimdilik hayır: her satın alma kendi platformunda kalır. Bunun bir şekilde yapılıp yapılamayacağına bakıyoruz. Aynı platformdaki iki telefon arasında evet: Google hesabın veya Apple Kimliğinle <strong>Satın alımı geri yükle</strong>'yi kullan.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Sürüm geçmişi</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Etkinlikler · Hızlı menü · İki yeni Pro tema</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Yeni</strong>
-                    <ul>
-                        <li><strong>Etkinlikler:</strong> küresel okuma görevleri ve etkin olduğunda Lecturameter Quest</li>
-                        <li><strong>Hızlı menü:</strong> Ana sayfa'ya dönmeden üç noktayla (···) bir bölümden diğerine geçin</li>
-                        <li><strong>Duraklatıldı:</strong> bir kitabı istatistiklerini bozmadan bir süre kenara koy</li>
-                        <li><strong>İki yeni Pro tema:</strong> Defter ve Orman</li>
-                        <li>Pro temalar ön izlemeyle tek tek ya da 3'lü paketler halinde de satın alınabiliyor, Pro ekranı da yeni</li>
-                        <li>Antolojiler ve şiir kitapları için <strong>doğrusal olmayan okuma</strong>: çakışan sayfalar iki kez sayılmaz, ilerleme çubuğu bölümlere ayrılır</li>
-                        <li>Uygulamayı açmadan kitap widget'ından okumaya başlayın</li>
-                        <li>Yeni tasarımlı ve daha fazla istatistikli haftalık ve aylık özetler</li>
-                        <li>“Geri bildirim gönder”de isteğe bağlı e-posta, yalnızca size yanıt verebilmem için</li>
-                        <li>Her tema için kendine ait bir zamanlayıcı saati</li>
-                        <li>Pagi, Okunacak listesinden sana bir kitap seçer</li>
-                        <li>KOSync ile KOReader'ın gerçek okuma süresi</li>
-                        <li>Kategoriye göre bildirimler ve uygulama haberleri uyarıları</li>
-                        <li>Rayı Hedefler, Okumalarım ve Araçlar olarak gruplanmış Ana sayfa</li>
-                        <li>Bir kitabın durumunu hızlı işlemlerinden değiştirin, yanlışlık olursa geri alın</li>
-                        <li>Emoji yerine Material simgeleri ve tüm temalarda daha okunaklı istatistikler</li>
-                        <li>Aramadan kitap eklerken bir bildirim</li>
-                        <li>Okuma döngüsü tarihleri tek satırda, düzenlemesi daha kolay</li>
-                        <li>Boyuta göre 24 şablonlu Bingo</li>
-                        <li>iPhone'da, zamanlayıcının Live Activity'si temanızın renklerinde</li>
-                        <li>Katalog, sonuç bulamayan aramalardan ve ISBN taramalarından öğrenir ve eksik kitapları ekler (15 Kasım'dan itibaren)</li>
-                        <li>Geleneksel Çince</li>
-                        <li>CSV'de seri</li>
-                    </ul>
-                    <strong>Düzeltmeler</strong>
-                    <ul>
-                        <li>Bingo, Wrapped ve diğer ekranlardaki başlıklar artık diğer menülerle aynı yükseklikte</li>
-                        <li>Bingo ve Wrapped simgeleri renklerine kavuştu</li>
-                        <li>Ana sayfa'daki duruma göre kitap sayaçları Koyu, OLED, Alacakaranlık, Aurora ve Deri temalarında daha net görünüyor</li>
-                        <li>Eksik verili kitaplar için tek bir uyarı: sarı üçgen kalktı, kırmızı kaldı</li>
-                        <li>Kapağı ve türü yeniden yüklemek her şeyin zaten yolunda olduğunu söyler, bir şey bulunamazsa kırmızıyla uyarır</li>
-                        <li>Çok büyük kütüphanelerin Google Drive yedekleri artık bellek yetersizliğinden başarısız olmuyor</li>
-                        <li>iPhone'da çeşitli düzeltmeler</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; % olarak ilerleme, Pagi kıyafetleri ve görünümleri, KOSync, sağdan sola yazılan diller</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Yeni</strong>
-                    <ul>
-                        <li>% olarak ilerleme: oturumlarını kitaplarda, çizgi romanlarda, mangalarda ve sesli kitaplarda yüzde olarak kaydet. Sesli kitaplarda süreyi de not edebilirsin.</li>
-                        <li>Bir kitabın, çizgi romanın, manganın veya sesli kitabın formatını ekledikten sonra değiştir; oturumlarını, notlarını ve istatistiklerini kaybetmezsin.</li>
-                        <li>Oturumu bitirirken birden fazla not ve alıntı, her biri ayrı.</li>
-                        <li>Bir oturumdan kaydetmeden çıkarsan taslak olarak saklanır ve bir sonraki oturum kaydedişinde geri alabilirsin.</li>
-                        <li>İstatistikler: okuduklarını formata göre gösteren halka grafik ve her türü ayrı görmek için format filtresi.</li>
-                        <li>Sesli kitap meydan okumaları (dinlenen saat ve bitirilen sesli kitap) ve sesli kitaplarla Bingo: 1 saatlik dinleme 30 sayfa sayılır.</li>
-                        <li>Pagi, her temayla çalışan 7 animasyonlu mevsimlik kıyafetle, 9 yeni görünümle (Ozan, Gece Hırsızı, Vampir Kont, Denizaltı Kaptanı, Mürekkep, Origami, Gece Okuru, Gezgin Şövalye ve Retro Astronot) ve her biri için kendi dokunma animasyonuyla sahneye çıkıyor. Uygulamada gizli bir görünüm de saklı: bulmak için ana ekrana oradan oraya dokun.</li>
-                        <li>Pagi'nin Ayarlar'da kendi bölümü var: otomatik mevsim, mevsim dışında mevsimlik kıyafetler ve görünümler.</li>
-                        <li>Pro için uygulama simgeleri: Ayarlar'dan kendininkini seç; Cadılar Bayramı, Noel ve Yeni Yıl sürümleri var. Otomatik mevsim değişimini açarsan simge o tarihlerde değişir, sonra seninkine döner. Varsayılan olarak kapalıdır.</li>
-                        <li>Android'de, Pro'yu denediysen Pro simgelerinden birini de hediye olarak alırsın.</li>
-                        <li>İlerlemeni e-okuyucunla KOSync üzerinden (KOReader ve uyumlular) adım adım bir sihirbazla senkronize et.</li>
-                        <li>Uygulama artık Arapça, İbranice, Farsça ve Urduca ve sağdan sola arayüzle sunuluyor. Elle kitap eklerken bunları kitap dili olarak da seçebilirsin.</li>
-                        <li>Yeni Pro zamanlayıcı sesleri, yeni bir kategoriyle: Rahat.</li>
-                    </ul>
-                    <strong>Düzeltmeler</strong>
-                    <ul>
-                        <li>Her tür kitap için daha iyi tür seçimi.</li>
-                        <li>Her veri noktasını daha iyi ayırt etmek için bazı istatistik renkleri değiştirildi.</li>
-                        <li>Bir e-okuyucu kitabının başlığı yoksa kod yerine okunabilir bir ad gösterilir ve kullanıcınla hiç ilerleme gelmezse sihirbaz seni uyarır.</li>
-                        <li>Bingo artık her dilde çevrildi.</li>
-                        <li>Tüm diller gözden geçirildi: İngilizce veya İspanyolca görünen metinler artık senin dilinde görünüyor.</li>
-                        <li>Telefonuna kaydedilen yedekler, kaydetme başarısız olursa artık boş kalmıyor.</li>
-                        <li>Bir kitabın durumunu değiştirmek artık önceki okumaların tarihlerini silmiyor.</li>
-                        <li>Aylık özet, oturumu olmayan bitmiş kitapları da sayıyor.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; iPhone betası, birinci sınıf kitap olarak çizgi romanlar ve mangalar, Seri görünümü</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Yeni</strong>
-                    <ul>
-                        <li>Lecturameter, TestFlight üzerinden beta olarak iPhone'a geliyor</li>
-                        <li>Çizgi romanlar, mangalar ve sesli kitaplar birinci sınıf öğeler olarak: tek bir manuel formla ya da birkaçını birden ekle ve sesli kitap kartını paylaş</li>
-                        <li>Kitaplığını başka bir uygulamadan (Goodreads, StoryGraph, Bookmory, Fable) önizlemeyle getir</li>
-                        <li>Seri görünümü: kitapların seriye göre gruplanır, eklerken otomatik doldurulur</li>
-                        <li>Paylaşılabilir kartlı aylık özet ve Wrapped'da "Her ayın kitabı"</li>
-                        <li>İstatistikler'de okuma gelişimi</li>
-                        <li>Kartlarım: paylaştığın tüm kartlar tek yerde</li>
-                        <li>Meydan okuma ve bingo widget'ları</li>
-                        <li>Aramadan aynı anda birkaç kitap ekle</li>
-                        <li>Kitaplık'ta gelişmiş filtreler</li>
-                        <li>Baskı başına katkıda bulunanlar: anlatıcılar, çevirmenler ve çizerler</li>
-                        <li>Pro, Android ve iOS'ta 3 cihaza kadar çalışır</li>
-                        <li>Yedekler artık etiketlerini ve hatırlatıcılarını da kaydediyor</li>
-                        <li>Artık bir okuma oturumunu sayfa olmadan, yalnızca süreyle kaydedebilirsin (dijital okuyorsan kullanışlı)</li>
-                    </ul>
-                    <strong>Düzeltmeler</strong>
-                    <ul>
-                        <li>Birkaç kitabı silmek tek bir Geri al ile geri alınıyor</li>
-                        <li>Metinler artık türü söylüyor: kitap, çizgi roman, manga veya sesli kitap</li>
-                        <li>Yıldız satırı artık kaydırırken puan vermiyor</li>
-                        <li>Uzun notlar tamamen gösteriliyor</li>
-                        <li>Tarihler ve yedekleme hataları uygulama dilinde</li>
-                        <li>Drive'dan geri yüklerken artık yanlış dosya seçilmiyor</li>
-                        <li>Bazı durumlarda yazar bağlantısına dokunulduğunda oluşan çökme önlendi</li>
-                        <li>Daha anlaşılır İçe aktarma ve Dışa aktarma mesajları</li>
-                        <li>Zamanlayıcının arka planda beklenmedik şekilde kapanması önlendi</li>
-                        <li>Pro satın alırken ve bazı widget'larda beklenmedik kapanmalar önlendi</li>
-                        <li>Çizgi roman ve manga arama sonuçlarındaki kafa karıştırıcı bir sayı düzeltildi</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Etiketler, puanlar, 40 dil, yenilenen kitaplık</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Yeni</strong>
-                    <ul>
-                        <li>Ayarlar bölümlere ayrıldı</li>
-                        <li><strong>Etiket</strong> sistemi (kitap başına 3'e kadar, # ile arama)</li>
-                        <li>Yenilenen kitap kartları ve ayrıntı sayfası, 4 kart boyutu</li>
-                        <li><strong>Yarım yıldızlı 5 yıldız puanlama</strong></li>
-                        <li>Notlar şu şekilde ayrıldı: alıntılar, notlar ve görüş</li>
-                        <li>Kitapları, meydan okumaları, bingoları, ısı haritalarını ve istatistikleri paylaş</li>
-                        <li>Özelleştirilebilir okuma hatırlatıcıları</li>
-                        <li>Pro için <strong>Alacakaranlık</strong> teması</li>
-                        <li><strong>40 dil desteği</strong></li>
-                    </ul>
-                    <strong>Düzeltmeler</strong>
-                    <ul>
-                        <li>Yatay modda ve büyük ekranlarda daha iyi yerleşim</li>
-                        <li>Daha hızlı ve daha güvenilir kitap araması</li>
-                        <li>Aylık karşılaştırmalı Pro widget'ı</li>
-                        <li>Silme gibi geri dönüşsüz işlemlerde geri alma</li>
-                        <li>İpuçlarını Ayarlar &gt; Yardım'dan sıfırla</li>
-                        <li>Pagi artık başlıkları kapatmıyor ve Ayarlar'da görünmüyor</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Sürükleyici oturum ses çubuğu, yatay mod iyileştirmeleri</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Yeni</strong>
-                    <ul>
-                        <li>Sürükleyici oturumun ses çubuğu artık yatay modda da genişliyor; önceki/sonraki ve döngü/sıra denetimleri var</li>
-                        <li>Ses grupları temanın vurgu rengini daha belirgin gösteriyor</li>
-                    </ul>
-                    <strong>Düzeltmeler</strong>
-                    <ul>
-                        <li>Uygulamayı telefonundan farklı bir dilde kullandığında yatay mod artık dikeyde takılı kalmıyor</li>
-                        <li>Genişletildiğinde ses kartı ile zamanlayıcı düğmeleri arasında daha fazla boşluk</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Tüm soruları gör</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Kitap Kataloğu</a>
                 <a href="#themes">Temalar</a>
                 <a href="#events">Etkinlikler</a>
-                <a href="#pricing">Fiyatlandırma</a>
+                <a href="./pro/">Fiyatlandırma</a>
                 <a href="../precios-regionales.html">Bölgesel fiyatlar</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Kaynaklar</h4>
                 <a href="./blog/">Blog</a>
-                <a href="#whatsnew">Haberler</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Platformlar</a>
+                <a href="./news/">Haberler</a>
+                <a href="./roadmap/">Yol haritası</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Platformlar</a>
             </div>
             <div class="footer-col">
                 <h4>Yasal ve iletişim</h4>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Jurnal de citit · Statistici și cronometru</title>
     <meta name="description" content="Lecturameter: Jurnal de citit pentru Android și iPhone. Cronometrează lectura, urmărește paginile, ritmul și statisticile și importă din Goodreads. Fără cont, fără reclame.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Teme</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Univers <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Resurse <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blog</a></li>
-                    <li><a href="#whatsnew">Noutăți</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Platforme</a></li>
+                    <li><a href="./news/">Noutăți</a></li>
+                    <li><a href="./roadmap/">Roadmap</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Platforme</a></li>
                     <li class="nav-dd-label" role="presentation">Legal</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Politica de confidențialitate</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Termeni și condiții</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Achiziție unică, nu abonament.</p>
                 <p class="price-ios-offer">Ofertă de lansare iOS: <strong>&#8364;2.99</strong> în prima lună. Apoi &#8364;4.99 (același preț ca pe Android). Tot o achiziție unică.</p>
-                <details class="price-currency-list">
-                    <summary>Preț aproximativ în moneda ta</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Prețurile finale sunt stabilite de App Store și pot varia ușor.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Vezi prețurile regionale</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Vezi cum activezi Pro</a></p>
                 <p class="price-note">Același preț pe Android și iOS după luna de lansare.</p>
-                <p class="price-note price-experiment-note">* Unele persoane pot vedea un alt preț, deoarece facem experimente cu prețul.</p>
                 <p class="price-trial">Încearcă Pro gratuit 7 zile, în aplicație</p>
                 <p class="price-trial">Fără card pentru perioada de probă</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Restul rămâne gratuit. Pro adaugă doar extra.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro în detaliu și prețuri regionale</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Meniu rapid:</strong> sari de la o secțiune la alta cu cele trei puncte (···), fără să te întorci la Acasă</li>
                     <li><strong>În pauză:</strong> pune o carte deoparte pentru o vreme fără să-ți strici statisticile</li>
                     <li><strong>Două teme Pro noi:</strong> Caiet și Pădure</li>
-                    <li>Temele Pro se pot cumpăra și individual sau în pachete de 3, cu previzualizare, iar ecranul Pro este nou</li>
-                    <li><strong>Lectură neliniară</strong> pentru antologii și volume de poezii: paginile suprapuse nu se numără de două ori, iar bara de progres este împărțită în segmente</li>
-                    <li>Începe să citești din widgetul cărții, fără să deschizi aplicația</li>
-                    <li>Rezumate săptămânale și lunare cu design nou și mai multe statistici</li>
-                    <li>E-mail opțional în „Trimite feedback”, doar ca să îți pot răspunde</li>
-                    <li>Un ceas de cronometru propriu pentru fiecare temă</li>
-                    <li>Pagi alege o carte din Vreau să citesc</li>
-                    <li>KOSync cu timpul real de citire din KOReader</li>
-                    <li>Notificări pe categorii și anunțuri despre noutățile aplicației</li>
-                    <li>Acasă cu bara grupată în Obiective, Lecturile mele și Instrumente</li>
-                    <li>Schimbă starea unei cărți din acțiunile ei rapide și anulează dacă greșești</li>
-                    <li>Pictograme Material în loc de emoji și statistici mai ușor de citit în fiecare temă</li>
-                    <li>O notificare când adaugi o carte din căutare</li>
-                    <li>Datele ciclurilor de lectură pe un singur rând, mai ușor de editat</li>
-                    <li>Bingo cu 24 de șabloane în funcție de mărime</li>
-                    <li>Pe iPhone, Live Activity a cronometrului în culorile temei tale</li>
-                    <li>Catalogul învață din căutările și scanările de ISBN fără rezultat și adaugă cărțile lipsă (din 15 noiembrie)</li>
-                    <li>Chineză tradițională</li>
-                    <li>Serie în CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Corecturi</h3>
-                <ul>
-                    <li>Titlurile din Bingo, Wrapped și alte ecrane sunt acum la aceeași înălțime ca în celelalte meniuri</li>
-                    <li>Pictogramele Bingo și Wrapped își recapătă culorile</li>
-                    <li>Contoarele de cărți pe stări de pe Acasă se văd mai bine în temele Întunecat, OLED, Amurg, Aurora și Piele</li>
-                    <li>Un singur avertisment pentru cărțile cu date lipsă: triunghiul galben dispare și rămâne cel roșu</li>
-                    <li>Reîncărcarea copertei și a genului îți spune când totul era deja în regulă și avertizează cu roșu când nu găsește ceva</li>
-                    <li>Copiile de rezervă pe Google Drive ale bibliotecilor foarte mari nu mai eșuează din lipsă de memorie</li>
-                    <li>Mai multe corecturi pe iPhone</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Toate notele de actualizare și istoricul versiunilor</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter pe iPhone și Android</h2>
         <p>Versiunea pentru iPhone are aceleași funcții principale ca cea pentru Android: bibliotecă, cronometru de lectură, statistici, provocări, bingo, Pagi și temele vizuale. Iată diferențele.</p>
-        <details class="differences-details">
-            <summary>Diferențe între iPhone și Android</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Doar pe iPhone</h3>
-                    <ul>
-                        <li>Cronometru pe ecranul de blocare și în Dynamic Island, cu pauză și oprire.</li>
-                        <li>Controale iOS 18: Citesc acum, Scanează ISBN, Adaugă carte și Pornește cronometrul.</li>
-                        <li>Copie de rezervă pe iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Doar pe Android</h3>
-                    <ul>
-                        <li>Controlul cronometrului din notificare.</li>
-                        <li>Nu deranja automat în sesiunea imersivă.</li>
-                        <li>Configurarea și fixarea widgeturilor.</li>
-                        <li>Tablete (versiunea pentru iPhone nu rulează pe iPad).</li>
-                        <li>Răscumpărarea <code>lm-…</code>codurilor.</li>
-                        <li>O temă și o pictogramă Pro cadou la sfârșitul perioadei de probă.</li>
-                        <li>Bacșișuri și donații.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Pe ambele</h3>
-                    <ul>
-                        <li>Widgeturi Carte, Statistici, Provocări și Bingo.</li>
-                        <li>Selector complet de limbă.</li>
-                        <li>Modul peisaj pe telefoane.</li>
-                        <li>Copie de rezervă pe Google Drive.</li>
-                        <li>Sincronizare cu e-readerul (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Achiziția Pro</h3>
-                    <ul>
-                        <li>Pe iPhone, Pro este o achiziție în aplicație din App Store. Pe Android, este o achiziție din Google Play.</li>
-                        <li>Perioada de probă de 7 zile pe iPhone este o achiziție gratuită în aplicație din App Store, legată de Apple ID-ul tău.</li>
-                        <li>Deocamdată Pro nu trece de pe Android pe iPhone sau invers: fiecare achiziție rămâne pe platforma ei.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Vezi toate diferențele</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Funcționează offline?</button>
                 <div class="faq-a"><div class="faq-a-inner">Aproape totul funcționează offline. Ai nevoie de conexiune doar pentru a căuta cărți noi și pentru a încărca copii de rezervă pe Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Există o versiune pentru iPhone?</button>
-                <div class="faq-a"><div class="faq-a-inner">Da: o poți descărca acum din <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Pot să încerc înainte să cumpăr?</button>
-                <div class="faq-a"><div class="faq-a-inner">Da. Există o perioadă de probă gratuită de 7 zile pentru funcțiile Pro, fără card. Pe iPhone este o achiziție gratuită în aplicație din App Store, legată de Apple ID-ul tău. Pe Android, la finalul perioadei de probă, chiar dacă nu cumperi Pro, primești gratuit o temă Pro la alegere.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Ce se întâmplă cu Pro dacă schimb telefonul?</button>
-                <div class="faq-a"><div class="faq-a-inner">Depinde de unde l-ai cumpărat. Dacă l-ai cumpărat din <strong>Google Play</strong> și treci pe alt Android cu același cont Google, instalează Lecturameter și atinge <strong>Restaurează achiziția</strong> în Setări. Dacă l-ai cumpărat din <strong>App Store</strong> și treci pe alt iPhone cu același Apple ID, la fel: instalează și atinge <strong>Restaurează achiziția</strong>. Deocamdată Pro nu trece de pe Android pe iPhone sau invers: fiecare achiziție rămâne pe platforma ei. <code>lm-…</code> Codurile pot fi răscumpărate doar pe Android. Mai multe detalii în <a href="../activar-pro.html">Cum activezi Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Pot să-mi mut Pro între telefoane și între iOS și Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">Între Android și iPhone, deocamdată nu: fiecare achiziție rămâne pe platforma ei. Vedem dacă se poate face cumva. Între două telefoane de pe aceeași platformă da: folosește <strong>Restaurează achiziția</strong> cu contul Google sau cu Apple ID-ul.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Istoricul versiunilor</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Evenimente · Meniu rapid · Două teme Pro noi</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nou</strong>
-                    <ul>
-                        <li><strong>Evenimente:</strong> provocări de citit globale și Lecturameter Quest când există unul activ</li>
-                        <li><strong>Meniu rapid:</strong> sari de la o secțiune la alta cu cele trei puncte (···), fără să te întorci la Acasă</li>
-                        <li><strong>În pauză:</strong> pune o carte deoparte pentru o vreme fără să-ți strici statisticile</li>
-                        <li><strong>Două teme Pro noi:</strong> Caiet și Pădure</li>
-                        <li>Temele Pro se pot cumpăra și individual sau în pachete de 3, cu previzualizare, iar ecranul Pro este nou</li>
-                        <li><strong>Lectură neliniară</strong> pentru antologii și volume de poezii: paginile suprapuse nu se numără de două ori, iar bara de progres este împărțită în segmente</li>
-                        <li>Începe să citești din widgetul cărții, fără să deschizi aplicația</li>
-                        <li>Rezumate săptămânale și lunare cu design nou și mai multe statistici</li>
-                        <li>E-mail opțional în „Trimite feedback”, doar ca să îți pot răspunde</li>
-                        <li>Un ceas de cronometru propriu pentru fiecare temă</li>
-                        <li>Pagi alege o carte din Vreau să citesc</li>
-                        <li>KOSync cu timpul real de citire din KOReader</li>
-                        <li>Notificări pe categorii și anunțuri despre noutățile aplicației</li>
-                        <li>Acasă cu bara grupată în Obiective, Lecturile mele și Instrumente</li>
-                        <li>Schimbă starea unei cărți din acțiunile ei rapide și anulează dacă greșești</li>
-                        <li>Pictograme Material în loc de emoji și statistici mai ușor de citit în fiecare temă</li>
-                        <li>O notificare când adaugi o carte din căutare</li>
-                        <li>Datele ciclurilor de lectură pe un singur rând, mai ușor de editat</li>
-                        <li>Bingo cu 24 de șabloane în funcție de mărime</li>
-                        <li>Pe iPhone, Live Activity a cronometrului în culorile temei tale</li>
-                        <li>Catalogul învață din căutările și scanările de ISBN fără rezultat și adaugă cărțile lipsă (din 15 noiembrie)</li>
-                        <li>Chineză tradițională</li>
-                        <li>Serie în CSV</li>
-                    </ul>
-                    <strong>Corecturi</strong>
-                    <ul>
-                        <li>Titlurile din Bingo, Wrapped și alte ecrane sunt acum la aceeași înălțime ca în celelalte meniuri</li>
-                        <li>Pictogramele Bingo și Wrapped își recapătă culorile</li>
-                        <li>Contoarele de cărți pe stări de pe Acasă se văd mai bine în temele Întunecat, OLED, Amurg, Aurora și Piele</li>
-                        <li>Un singur avertisment pentru cărțile cu date lipsă: triunghiul galben dispare și rămâne cel roșu</li>
-                        <li>Reîncărcarea copertei și a genului îți spune când totul era deja în regulă și avertizează cu roșu când nu găsește ceva</li>
-                        <li>Copiile de rezervă pe Google Drive ale bibliotecilor foarte mari nu mai eșuează din lipsă de memorie</li>
-                        <li>Mai multe corecturi pe iPhone</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Progres în %, costume și skinuri Pagi, KOSync, limbi scrise de la dreapta la stânga</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nou</strong>
-                    <ul>
-                        <li>Progres în %: înregistrează sesiunile în procente la cărți, benzi desenate, manga și cărți audio. La cărțile audio poți nota și timpul.</li>
-                        <li>Schimbă formatul unei cărți, benzi desenate, manga sau cărți audio după ce le-ai adăugat, fără să pierzi sesiuni, note sau statistici.</li>
-                        <li>Mai multe note și citate la încheierea unei sesiuni, fiecare separat.</li>
-                        <li>Dacă ieși dintr-o sesiune fără să salvezi, ea se păstrează ca ciornă și o poți recupera data viitoare când salvezi una.</li>
-                        <li>Statistici: grafic inelar cu ce citești pe formate și un filtru de format pentru a vedea fiecare tip separat.</li>
-                        <li>Provocări pentru cărți audio (ore ascultate și cărți audio terminate) și Bingo cu cărți audio: 1 oră de ascultare valorează 30 de pagini.</li>
-                        <li>Pagi debutează cu 7 costume de sezon animate care merg cu orice temă, 9 skinuri noi (Bardul, Hoțul de noapte, Contele vampir, Căpitanul submarinist, Cerneala, Origami, Cititorul de noapte, Cavalerul rătăcitor și Astronautul retro) și o animație proprie la atingere pentru fiecare. În aplicație este ascuns și un skin secret: atinge ecranul principal ca să-l găsești.</li>
-                        <li>Pagi are o secțiune proprie în Setări: sezon automat, costume de sezon în afara sezonului și skinuri.</li>
-                        <li>Pictograme de aplicație pentru Pro: alege-o pe a ta în Setări, cu versiuni de Halloween, Crăciun și Anul Nou. Dacă activezi schimbarea sezonieră automată, pictograma se schimbă la datele respective și apoi revine la a ta. Este dezactivată implicit.</li>
-                        <li>Pe Android, dacă ai încercat Pro, primești cadou și una dintre pictogramele Pro.</li>
-                        <li>Sincronizează-ți progresul cu e-readerul prin KOSync (KOReader și compatibile), cu un asistent pas cu pas.</li>
-                        <li>Aplicația este acum disponibilă în arabă, ebraică, persană și urdu, cu interfață de la dreapta la stânga. Le poți alege și ca limbă a cărții când adaugi una manual.</li>
-                        <li>Sunete noi pentru cronometrul Pro, cu o categorie nouă, Cozy.</li>
-                    </ul>
-                    <strong>Corecturi</strong>
-                    <ul>
-                        <li>Selecție mai bună a genului pentru orice fel de carte.</li>
-                        <li>Unele culori din statistici au fost schimbate pentru a distinge mai bine fiecare dată.</li>
-                        <li>Dacă o carte de pe e-reader nu are titlu, se afișează un nume ușor de citit în loc de un cod, iar asistentul te avertizează dacă nu ajunge niciun progres cu utilizatorul tău.</li>
-                        <li>Bingo este acum tradus în toate limbile.</li>
-                        <li>Toate limbile au fost revizuite: textele care apăreau în engleză sau spaniolă apar acum în limba ta.</li>
-                        <li>Copiile de rezervă salvate pe telefon nu mai rămân goale dacă salvarea eșuează.</li>
-                        <li>Schimbarea stării unei cărți nu mai șterge datele citirilor anterioare.</li>
-                        <li>Rezumatul lunar numără și cărțile terminate fără sesiuni.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; Beta pentru iPhone, benzi desenate și manga ca cărți de primă clasă, vizualizarea Serii</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nou</strong>
-                    <ul>
-                        <li>Lecturameter ajunge pe iPhone în beta, prin TestFlight</li>
-                        <li>Benzi desenate, manga și cărți audio ca elemente de primă clasă: adaugă-le într-un singur formular manual sau mai multe deodată și distribuie cardul cărții tale audio</li>
-                        <li>Adu-ți biblioteca dintr-o altă aplicație (Goodreads, StoryGraph, Bookmory, Fable) cu previzualizare</li>
-                        <li>Vizualizarea Serii: cărțile tale grupate pe serii, completate automat când le adaugi</li>
-                        <li>Recapitularea lunii cu un card de distribuit, plus „Cartea ta din fiecare lună" în Wrapped</li>
-                        <li>Evoluția lecturii în Statistici</li>
-                        <li>Cardurile mele: toate cardurile pe care le-ai distribuit, într-un singur loc</li>
-                        <li>Widgeturi pentru provocări și bingo</li>
-                        <li>Adaugă mai multe cărți deodată din căutare</li>
-                        <li>Filtre avansate în Bibliotecă</li>
-                        <li>Credite pe ediție: naratori, traducători și ilustratori</li>
-                        <li>Pro funcționează pe până la 3 dispozitive, Android și iOS</li>
-                        <li>Copiile de rezervă salvează acum și tagurile și mementourile</li>
-                        <li>Acum poți salva o sesiune de lectură fără pagini, doar cu timpul (util dacă citești digital)</li>
-                    </ul>
-                    <strong>Corecturi</strong>
-                    <ul>
-                        <li>Ștergerea mai multor cărți oferă o singură opțiune de Anulare</li>
-                        <li>Textele numesc acum tipul: carte, benzi desenate, manga sau carte audio</li>
-                        <li>Rândul de stele nu mai acordă scor în timp ce derulezi</li>
-                        <li>Notele lungi se afișează integral</li>
-                        <li>Datele și erorile de copie de rezervă, în limba aplicației</li>
-                        <li>Restaurarea din Drive nu mai alege fișierul greșit</li>
-                        <li>Am prevenit o blocare la atingerea unui link de autor în anumite situații</li>
-                        <li>Mesaje mai clare la Import și Export</li>
-                        <li>Am prevenit o închidere neașteptată a cronometrului în fundal</li>
-                        <li>Am prevenit închideri neașteptate la cumpărarea Pro și în unele widgeturi</li>
-                        <li>Am corectat un număr derutant în rezultatele căutării de benzi desenate și manga</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Taguri, scoruri, 40 de limbi, bibliotecă reînnoită</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nou</strong>
-                    <ul>
-                        <li>Setări reorganizate pe secțiuni</li>
-                        <li>Sistem de <strong>taguri</strong> (până la 3 pe carte, căutare cu #)</li>
-                        <li>Carduri și detalii de carte reînnoite, 4 dimensiuni de card</li>
-                        <li><strong>Scoruri de 5 stele cu jumătăți de stea</strong></li>
-                        <li>Notele sunt împărțite în: citate, note și părere</li>
-                        <li>Distribuie cărți, provocări, bingo, hărți de căldură și statistici</li>
-                        <li>Mementouri de lectură personalizabile</li>
-                        <li>Tema <strong>Amurg</strong> pentru Pro</li>
-                        <li><strong>Suport pentru 40 de limbi</strong></li>
-                    </ul>
-                    <strong>Corecturi</strong>
-                    <ul>
-                        <li>Aspect mai bun în mod peisaj și pe ecrane mari</li>
-                        <li>Căutare de cărți mai rapidă și mai fiabilă</li>
-                        <li>Widget Pro cu comparație lunară</li>
-                        <li>Acțiuni distructive cu posibilitate de anulare</li>
-                        <li>Resetează sfaturile din Setări &gt; Ajutor</li>
-                        <li>Pagi nu mai acoperă titlurile și nu mai apare în Setări</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Bară de sunet în sesiunea imersivă, îmbunătățiri pentru modul peisaj</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nou</strong>
-                    <ul>
-                        <li>Bara de sunet din sesiunea imersivă se extinde acum și în mod peisaj, cu controale anterior/următor și buclă/secvență</li>
-                        <li>Grupurile de sunete evidențiază mai clar culoarea de accent a temei tale</li>
-                    </ul>
-                    <strong>Corecturi</strong>
-                    <ul>
-                        <li>Modul peisaj nu mai rămâne blocat pe portret când folosești aplicația într-o limbă diferită de cea a telefonului</li>
-                        <li>Mai mult spațiu între cardul de sunete și butoanele cronometrului când e extins</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Vezi toate întrebările</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Catalog de cărți</a>
                 <a href="#themes">Teme</a>
                 <a href="#events">Evenimente</a>
-                <a href="#pricing">Prețuri</a>
+                <a href="./pro/">Prețuri</a>
                 <a href="../precios-regionales.html">Prețuri regionale</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Resurse</h4>
                 <a href="./blog/">Blog</a>
-                <a href="#whatsnew">Noutăți</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Platforme</a>
+                <a href="./news/">Noutăți</a>
+                <a href="./roadmap/">Roadmap</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Platforme</a>
             </div>
             <div class="footer-col">
                 <h4>Legal și contact</h4>

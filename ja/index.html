@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: 読書記録 · 統計とタイマー</title>
     <meta name="description" content="Lecturameter: 読書記録アプリ（Android・iPhone対応）。読書時間を計測し、ページ数・ペース・統計を記録。Goodreadsからのインポートも。アカウント不要、広告なし。">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">テーマ</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">ユニバース <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">リソース <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">ブログ</a></li>
-                    <li><a href="#whatsnew">お知らせ</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">対応プラットフォーム</a></li>
+                    <li><a href="./news/">お知らせ</a></li>
+                    <li><a href="./roadmap/">ロードマップ</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">対応プラットフォーム</a></li>
                     <li class="nav-dd-label" role="presentation">法的情報</li>
                     <li class="nav-dd-sub"><a href="./privacy/">プライバシーポリシー</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">利用規約</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">買い切りで、サブスクではありません。</p>
                 <p class="price-ios-offer">iOSリリース記念価格：最初の一か月は<strong>&#8364;2.99</strong>。その後は&#8364;4.99（Androidと同じ価格）。もちろん買い切りです。</p>
-                <details class="price-currency-list">
-                    <summary>お住まいの通貨でのおおよその価格</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">最終価格はApp Storeが決定します。多少異なる場合があります。</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">地域別の価格を見る</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Proの有効化方法を見る</a></p>
                 <p class="price-note">リリース月以降はAndroidとiOSで同じ価格。</p>
-                <p class="price-note price-experiment-note">* 価格の実験を行っているため、人によって異なる価格が表示される場合があります。</p>
                 <p class="price-trial">アプリ内でProを7日間無料でお試し</p>
                 <p class="price-trial">お試しにカードは不要</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">ほかはすべて無料のまま。Proはおまけを追加するだけ。</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro の詳細と地域別価格</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>クイックメニュー:</strong> ホームに戻らず、3つのドット(···)でセクション間を移動</li>
                     <li><strong>一時停止中:</strong> 統計を崩さずに、本をしばらく脇に置けます</li>
                     <li><strong>新しいProテーマが2つ:</strong> ノートと森</li>
-                    <li>Proテーマは1つずつ、または3つのパックでも購入でき、プレビューも可能。Pro画面も一新</li>
-                    <li>アンソロジーや詩集向けの<strong>非線形読書</strong>:重なるページは二重にカウントされず、進捗バーは区間に分かれます</li>
-                    <li>アプリを開かずに、本のウィジェットから読書を開始</li>
-                    <li>新デザインで統計が増えた週間・月間サマリー</li>
-                    <li>「フィードバックを送信」の任意のメールアドレス。返信のためだけに使用します</li>
-                    <li>テーマごとに専用のタイマー時計</li>
-                    <li>Pagiが「読みたい」から本を1冊選びます</li>
-                    <li>KOReaderの実際の読書時間に対応したKOSync</li>
-                    <li>カテゴリ別の通知とアプリのお知らせ通知</li>
-                    <li>目標、マイ読書、ツールにグループ化されたレールのホーム</li>
-                    <li>本のクイックアクションからステータスを変更でき、間違えても元に戻せます</li>
-                    <li>絵文字に代わるMaterialアイコンと、すべてのテーマで読みやすくなった統計</li>
-                    <li>検索から本を追加したときの通知</li>
-                    <li>読書サイクルの日付を1行にまとめ、編集しやすく</li>
-                    <li>サイズ別に24種類のテンプレートがあるビンゴ</li>
-                    <li>iPhoneで、タイマーのLive Activityがテーマの色に対応</li>
-                    <li>カタログは、結果のない検索やISBNスキャンから学習し、不足している本を追加します(11月15日から)</li>
-                    <li>繁体字中国語</li>
-                    <li>CSVにシリーズ</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>修正</h3>
-                <ul>
-                    <li>ビンゴ、Wrappedなどの画面のタイトルが、他のメニューと同じ高さになりました</li>
-                    <li>ビンゴとWrappedのアイコンの色が元に戻りました</li>
-                    <li>ホームのステータス別の本のカウンターが、ダーク、OLED、夕暮れ、オーロラ、レザーで見やすくなりました</li>
-                    <li>データ不足の本の警告を1つに統一:黄色の三角形はなくなり、赤が残ります</li>
-                    <li>表紙とジャンルの再読み込みで、すべて問題なかった場合はそう通知され、見つからない場合は赤で警告されます</li>
-                    <li>非常に大きなライブラリのGoogle Driveバックアップが、メモリ不足で失敗しなくなりました</li>
-                    <li>iPhoneのいくつかの修正</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">すべてのパッチノートとバージョン履歴</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">iPhoneとAndroidのLecturameter</h2>
         <p>iPhone版にはAndroid版と同じ主な機能があります：ライブラリ、読書タイマー、統計、チャレンジ、Bingo、Pagi、そしてテーマ。違いは次のとおりです。</p>
-        <details class="differences-details">
-            <summary>iPhoneとAndroidの違い</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>iPhoneのみ</h3>
-                    <ul>
-                        <li>ロック画面とDynamic Islandにタイマーを表示。一時停止と停止もできます。</li>
-                        <li>iOS 18のコントロール：今読んでいる本、ISBNをスキャン、本を追加、タイマーを開始。</li>
-                        <li>iCloud Driveへのバックアップ。</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Androidのみ</h3>
-                    <ul>
-                        <li>通知からタイマーを操作。</li>
-                        <li>没入セッション中は自動でおやすみモード。</li>
-                        <li>ウィジェットの設定と固定。</li>
-                        <li>タブレット（iPhone版はiPadでは動作しません）。</li>
-                        <li>引き換え： <code>lm-…</code>のコード。</li>
-                        <li>お試し終了時にProのテーマとアイコンをプレゼント。</li>
-                        <li>チップと寄付。</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>両方で</h3>
-                    <ul>
-                        <li>本、統計、チャレンジ、Bingoのウィジェット。</li>
-                        <li>すべての言語を選べる言語選択。</li>
-                        <li>スマートフォンでの横画面。</li>
-                        <li>Google Driveへのバックアップ。</li>
-                        <li>電子書籍リーダーとの同期（KOSync）。</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Proの購入</h3>
-                    <ul>
-                        <li>iPhoneではProはApp Storeのアプリ内課金、AndroidではGoogle Playでの購入です。</li>
-                        <li>iPhoneの7日間お試しは、App Storeの無料アプリ内課金で、Apple IDに紐づきます。</li>
-                        <li>今のところ、ProはAndroidとiPhoneの間では引き継げません。購入はそれぞれのプラットフォームに残ります。</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">すべての違いを見る</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">オフラインでも使える？</button>
                 <div class="faq-a"><div class="faq-a-inner">ほぼすべてオフラインで使えます。ネット接続が必要なのは、新しい本を検索するときとGoogle Driveにバックアップをアップロードするときだけです。</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">iPhone版はある？</button>
-                <div class="faq-a"><div class="faq-a-inner">はい：今すぐこちらからダウンロードできます： <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">買う前に試せる？</button>
-                <div class="faq-a"><div class="faq-a-inner">はい。Pro機能を7日間無料で試せて、カードは不要です。iPhoneではApp Storeの無料アプリ内課金で、Apple IDに紐づきます。Androidでは、お試し終了後、Proを買わなくても好きなProテーマを一つプレゼントします。</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">スマホを替えたらProはどうなる？</button>
-                <div class="faq-a"><div class="faq-a-inner">どこで購入したかによります。<strong>Google Play</strong>で購入して、同じGoogleアカウントの別のAndroidに替える場合は、Lecturameterをインストールして設定の<strong>購入を復元</strong>をタップ。<strong>App Store</strong>で購入して、同じApple IDの別のiPhoneに替える場合も同じで、インストールして<strong>購入を復元</strong>をタップするだけ。今のところ、ProはAndroidとiPhoneの間では引き継げません。購入はそれぞれのプラットフォームに残ります。 <code>lm-…</code> のコードはAndroidでのみ引き換えできます。詳しくは <a href="../activar-pro.html">Proの有効化方法</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Proをスマホ間やiOSとAndroidの間で移せる？</button>
-                <div class="faq-a"><div class="faq-a-inner">AndroidとiPhoneの間は、今のところできません。購入はそれぞれのプラットフォームに残ります。何か方法がないか検討しています。同じプラットフォームのスマホ同士ならできます。GoogleアカウントやApple IDで<strong>購入を復元</strong>を使ってください。</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>バージョン履歴</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; イベント · クイックメニュー · 新しいProテーマ2種</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>新機能</strong>
-                    <ul>
-                        <li><strong>イベント:</strong> 世界規模の読書チャレンジと、開催中のLecturameter Quest</li>
-                        <li><strong>クイックメニュー:</strong> ホームに戻らず、3つのドット(···)でセクション間を移動</li>
-                        <li><strong>一時停止中:</strong> 統計を崩さずに、本をしばらく脇に置けます</li>
-                        <li><strong>新しいProテーマが2つ:</strong> ノートと森</li>
-                        <li>Proテーマは1つずつ、または3つのパックでも購入でき、プレビューも可能。Pro画面も一新</li>
-                        <li>アンソロジーや詩集向けの<strong>非線形読書</strong>:重なるページは二重にカウントされず、進捗バーは区間に分かれます</li>
-                        <li>アプリを開かずに、本のウィジェットから読書を開始</li>
-                        <li>新デザインで統計が増えた週間・月間サマリー</li>
-                        <li>「フィードバックを送信」の任意のメールアドレス。返信のためだけに使用します</li>
-                        <li>テーマごとに専用のタイマー時計</li>
-                        <li>Pagiが「読みたい」から本を1冊選びます</li>
-                        <li>KOReaderの実際の読書時間に対応したKOSync</li>
-                        <li>カテゴリ別の通知とアプリのお知らせ通知</li>
-                        <li>目標、マイ読書、ツールにグループ化されたレールのホーム</li>
-                        <li>本のクイックアクションからステータスを変更でき、間違えても元に戻せます</li>
-                        <li>絵文字に代わるMaterialアイコンと、すべてのテーマで読みやすくなった統計</li>
-                        <li>検索から本を追加したときの通知</li>
-                        <li>読書サイクルの日付を1行にまとめ、編集しやすく</li>
-                        <li>サイズ別に24種類のテンプレートがあるビンゴ</li>
-                        <li>iPhoneで、タイマーのLive Activityがテーマの色に対応</li>
-                        <li>カタログは、結果のない検索やISBNスキャンから学習し、不足している本を追加します(11月15日から)</li>
-                        <li>繁体字中国語</li>
-                        <li>CSVにシリーズ</li>
-                    </ul>
-                    <strong>修正</strong>
-                    <ul>
-                        <li>ビンゴ、Wrappedなどの画面のタイトルが、他のメニューと同じ高さになりました</li>
-                        <li>ビンゴとWrappedのアイコンの色が元に戻りました</li>
-                        <li>ホームのステータス別の本のカウンターが、ダーク、OLED、夕暮れ、オーロラ、レザーで見やすくなりました</li>
-                        <li>データ不足の本の警告を1つに統一:黄色の三角形はなくなり、赤が残ります</li>
-                        <li>表紙とジャンルの再読み込みで、すべて問題なかった場合はそう通知され、見つからない場合は赤で警告されます</li>
-                        <li>非常に大きなライブラリのGoogle Driveバックアップが、メモリ不足で失敗しなくなりました</li>
-                        <li>iPhoneのいくつかの修正</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; %での進捗、Pagiの衣装とスキン、KOSync、右から左へ書く言語</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>新機能</strong>
-                    <ul>
-                        <li>%での進捗：本、コミック、漫画、オーディオブックで、セッションをパーセントで記録できます。オーディオブックでは時間も記録できます。</li>
-                        <li>本、コミック、漫画、オーディオブックの形式は、追加したあとでも変更でき、セッション、メモ、統計は失われません。</li>
-                        <li>セッション終了時に複数のメモと引用を、それぞれ別々に残せます。</li>
-                        <li>保存せずにセッションを閉じても下書きとして残り、次にセッションを保存するときに復元できます。</li>
-                        <li>統計：読んだものを形式別に示すドーナツグラフと、形式ごとに表示できる形式フィルター。</li>
-                        <li>オーディオブックのチャレンジ（聴いた時間と聴き終えた冊数）と、オーディオブック対応のBingo：1時間の視聴は30ページとして数えます。</li>
-                        <li>Pagiに、どのテーマでも使えるアニメーション付きの季節の衣装が7種類、新しいスキンが9種類（吟遊詩人、夜の盗賊、吸血鬼伯爵、潜水艦の艦長、インク、折り紙、夜の読書家、遍歴の騎士、レトロ宇宙飛行士）登場し、それぞれ専用のタップアニメーションもあります。アプリの中にはシークレットスキンも隠れています。メイン画面をあちこちタップして探してみてください。</li>
-                        <li>設定にPagi専用のセクションができました：自動の季節切り替え、オフシーズンの季節の衣装、スキン。</li>
-                        <li>Pro向けのアプリアイコン：設定で好きなものを選べます。ハロウィン、クリスマス、お正月バージョンもあります。季節の自動切り替えをオンにすると、その日にアイコンが変わり、あとで元のアイコンに戻ります。初期設定ではオフです。</li>
-                        <li>Androidでは、Proをお試しになった方には、Proアイコンのひとつもプレゼントされます。</li>
-                        <li>KOSync（KOReaderおよび対応機器）で電子書籍リーダーと進捗を同期できます。ステップごとのウィザード付きです。</li>
-                        <li>アプリがアラビア語、ヘブライ語、ペルシア語、ウルドゥー語に対応し、右から左へのレイアウトになりました。本を手動で追加するときの本の言語としても選べます。</li>
-                        <li>Proのタイマーサウンドが新登場。新カテゴリー「Cozy」を追加しました。</li>
-                    </ul>
-                    <strong>修正</strong>
-                    <ul>
-                        <li>あらゆる種類の本で、ジャンルを選びやすくなりました。</li>
-                        <li>統計の一部の色を変更し、データを見分けやすくしました。</li>
-                        <li>電子書籍リーダーの本にタイトルがない場合、コードではなく読みやすい名前を表示し、ユーザーに進捗が届かないときはウィザードが知らせます。</li>
-                        <li>Bingoがすべての言語に翻訳されました。</li>
-                        <li>全言語を見直しました：英語やスペイン語で表示されていた文章が、あなたの言語で表示されます。</li>
-                        <li>保存に失敗しても、スマートフォンに保存したバックアップが空になることはなくなりました。</li>
-                        <li>本のステータスを変更しても、以前の読書の日付が消えなくなりました。</li>
-                        <li>月間まとめに、セッションのない読了本も含まれるようになりました。</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; iPhoneベータ、コミックと漫画を本と同等に、シリーズ表示</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>新機能</strong>
-                    <ul>
-                        <li>LecturameterがTestFlightでiPhoneにベータ登場</li>
-                        <li>コミック、漫画、オーディオブックを本と同じように扱えるように。手動フォームで一冊ずつ、またはまとめて追加でき、オーディオブックのカードも共有できます</li>
-                        <li>ほかのアプリ（Goodreads、StoryGraph、Bookmory、Fable）からプレビューつきでライブラリを取り込み</li>
-                        <li>シリーズ表示：本をシリーズごとにまとめて表示。追加時に自動で入力されます</li>
-                        <li>共有できるカードつきの月間まとめ、さらにWrappedに「毎月の一冊」</li>
-                        <li>統計に読書の推移を追加</li>
-                        <li>マイカード：共有したすべてのカードを一か所に</li>
-                        <li>チャレンジとBingoのウィジェット</li>
-                        <li>検索から複数の本をまとめて追加</li>
-                        <li>ライブラリに詳細フィルター</li>
-                        <li>版ごとのクレジット：ナレーター、翻訳者、イラストレーター</li>
-                        <li>ProはAndroidとiOSあわせて3台まで使えるように</li>
-                        <li>バックアップにタグとリマインダーも保存されるように</li>
-                        <li>ページ数なしで時間だけの読書セッションも保存できるように（電子書籍で読むときに便利）</li>
-                    </ul>
-                    <strong>修正</strong>
-                    <ul>
-                        <li>複数の本を削除しても「元に戻す」は一回でOK</li>
-                        <li>テキストに種類を表示：本、コミック、漫画、オーディオブック</li>
-                        <li>スクロール中に星の列でスコアがついてしまわないように</li>
-                        <li>長いメモも全文表示</li>
-                        <li>日付とバックアップのエラーをアプリの言語で表示</li>
-                        <li>ドライブからの復元で間違ったファイルを選ばないように</li>
-                        <li>一部の状況で著者リンクをタップしたときのクラッシュを防止</li>
-                        <li>インポートとエクスポートのメッセージをわかりやすく</li>
-                        <li>バックグラウンドでタイマーが予期せず終了する問題を防止</li>
-                        <li>Pro購入時や一部のウィジェットで予期せず終了する問題を防止</li>
-                        <li>コミックと漫画の検索結果に出ていたわかりにくい数字を修正</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; タグ、スコア、40言語、ライブラリを刷新</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>新機能</strong>
-                    <ul>
-                        <li>設定をセクションごとに再構成</li>
-                        <li><strong>タグ</strong>機能（一冊につき3つまで、#で検索）</li>
-                        <li>本のカードと詳細画面を刷新、カードサイズは4種類</li>
-                        <li><strong>半星つきの5つ星スコア</strong></li>
-                        <li>メモを引用、メモ、感想に分割</li>
-                        <li>本、チャレンジ、Bingo、ヒートマップ、統計を共有</li>
-                        <li>カスタマイズできる読書リマインダー</li>
-                        <li>Pro向けの<strong>夕暮れ</strong>テーマ</li>
-                        <li><strong>40言語に対応</strong></li>
-                    </ul>
-                    <strong>修正</strong>
-                    <ul>
-                        <li>横画面と大きな画面でのレイアウトを改善</li>
-                        <li>本の検索がより速く、より確実に</li>
-                        <li>月間比較つきのProウィジェット</li>
-                        <li>削除などの操作を元に戻せるように</li>
-                        <li>設定 &gt; ヘルプからヒントをリセット</li>
-                        <li>Pagiがタイトルを隠したり設定画面に出たりしなくなりました</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; 没入セッションのサウンドバー、横画面の改善</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>新機能</strong>
-                    <ul>
-                        <li>没入セッションのサウンドバーが横画面でも展開できるように。前へ/次へ、ループ/連続再生の操作つき</li>
-                        <li>サウンドグループでテーマのアクセントカラーがよりはっきり目立つように</li>
-                    </ul>
-                    <strong>修正</strong>
-                    <ul>
-                        <li>スマホと違う言語でアプリを使っていても、横画面が縦のまま固まらなくなりました</li>
-                        <li>展開時のサウンドカードとタイマーボタンの間に余白を追加</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">すべての質問を見る</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">本のカタログ</a>
                 <a href="#themes">テーマ</a>
                 <a href="#events">イベント</a>
-                <a href="#pricing">価格</a>
+                <a href="./pro/">価格</a>
                 <a href="../precios-regionales.html">地域別の価格</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>リソース</h4>
                 <a href="./blog/">ブログ</a>
-                <a href="#whatsnew">お知らせ</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">対応プラットフォーム</a>
+                <a href="./news/">お知らせ</a>
+                <a href="./roadmap/">ロードマップ</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">対応プラットフォーム</a>
             </div>
             <div class="footer-col">
                 <h4>法的情報とお問い合わせ</h4>

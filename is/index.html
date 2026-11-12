@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Lestrarskráning · Bókatölfræði og tímamælir</title>
     <meta name="description" content="Lecturameter: Lestrarskráning fyrir Android og iPhone. Mældu lestrartímann, fylgstu með blaðsíðum, hraða og tölfræði og fluttu inn úr Goodreads. Enginn aðgangur, engar auglýsingar.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Þemu</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Alheimur <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Úrræði <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blogg</a></li>
-                    <li><a href="#whatsnew">Fréttir</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Kerfi</a></li>
+                    <li><a href="./news/">Fréttir</a></li>
+                    <li><a href="./roadmap/">Framtíðaráætlun</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Kerfi</a></li>
                     <li class="nav-dd-label" role="presentation">Lagalegt</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Persónuverndarstefna</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Þjónustuskilmálar</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Einskiptiskaup, ekki áskrift.</p>
                 <p class="price-ios-offer">Kynningartilboð á iOS: <strong>&#8364;2.99</strong> fyrsta mánuðinn. Eftir það &#8364;4.99 (sama verð og á Android). Áfram einskiptiskaup.</p>
-                <details class="price-currency-list">
-                    <summary>Áætlað verð í þínum gjaldmiðli</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Endanlegt verð er ákveðið af App Store og getur verið örlítið breytilegt.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Sjá verð eftir svæðum</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Sjáðu hvernig á að virkja Pro</a></p>
                 <p class="price-note">Sama verð á Android og iOS eftir kynningarmánuðinn.</p>
-                <p class="price-note price-experiment-note">* Sumir gætu séð annað verð vegna þess að við erum með verðtilraunir í gangi.</p>
                 <p class="price-trial">Prófaðu Pro ókeypis í 7 daga, inni í forritinu</p>
                 <p class="price-trial">Ekkert kort þarf fyrir prufutímann</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Allt annað er áfram ókeypis. Pro bætir bara við aukahlutum.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro í smáatriðum og svæðisverð</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Flýtivalmynd:</strong> farðu milli hluta með punktunum þremur (···), án þess að fara aftur á Heim</li>
                     <li><strong>Í hléi:</strong> leggðu bók til hliðar um stund án þess að skemma tölfræðina þína</li>
                     <li><strong>Tvö ný Pro þemu:</strong> Stílabók og Skógur</li>
-                    <li>Pro-þemu er líka hægt að kaupa eitt og eitt eða í pökkum með 3, með forskoðun, og Pro-skjárinn er nýr</li>
-                    <li><strong>Ólínulegur lestur</strong> fyrir safnrit og ljóðasöfn: síður sem skarast teljast ekki tvisvar og framvindustikan skiptist í hluta</li>
-                    <li>Byrjaðu að lesa úr græju bókarinnar, án þess að opna appið</li>
-                    <li>Vikuleg og mánaðarleg yfirlit með nýju útliti og meiri tölfræði</li>
-                    <li>Valfrjálst netfang í „Senda ábendingu“, aðeins svo ég geti svarað þér</li>
-                    <li>Sérstök tímamælisklukka fyrir hvert þema</li>
-                    <li>Pagi velur bók fyrir þig af listanum Vil lesa</li>
-                    <li>KOSync með raunverulegum lestrartíma úr KOReader</li>
-                    <li>Tilkynningar eftir flokkum og tilkynningar um nýjungar í appinu</li>
-                    <li>Heim með stikunni flokkaðri í Markmið, Lesturinn minn og Verkfæri</li>
-                    <li>Breyttu stöðu bókar úr skjótaðgerðum hennar og afturkallaðu ef þér verður á</li>
-                    <li>Material-tákn í stað emoji og læsilegri tölfræði í öllum þemum</li>
-                    <li>Tilkynning þegar bók er bætt við úr leit</li>
-                    <li>Dagsetningar lestrarlota í einni línu, auðveldari í breytingu</li>
-                    <li>Bingó með 24 sniðmátum eftir stærð</li>
-                    <li>Á iPhone, Live Activity tímamælisins í litum þemans þíns</li>
-                    <li>Skráin lærir af leitum og ISBN-skönnunum sem finna ekkert og bætir við bókunum sem vantar (frá 15. nóvember)</li>
-                    <li>Hefðbundin kínverska</li>
-                    <li>Sería í CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Lagfæringar</h3>
-                <ul>
-                    <li>Titlar í Bingó, Wrapped og öðrum skjám eru nú í sömu hæð og í öðrum valmyndum</li>
-                    <li>Tákn Bingó og Wrapped fá litina sína aftur</li>
-                    <li>Bókateljararnir eftir stöðu á Heim sjást betur í Dökku, OLED, Rökkri, Aurora og Leðri</li>
-                    <li>Ein viðvörun fyrir bækur með vantandi gögn: guli þríhyrningurinn er horfinn og sá rauði er áfram</li>
-                    <li>Endurhleðsla á kápu og flokki segir þér þegar allt var þegar í lagi og varar við í rauðu þegar eitthvað finnst ekki</li>
-                    <li>Afrit á Google Drive af mjög stórum bókasöfnum mistakast ekki lengur vegna minnisskorts</li>
-                    <li>Ýmsar lagfæringar á iPhone</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Allar útgáfuglósur og útgáfusaga</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter á iPhone og Android</h2>
         <p>iPhone-útgáfan hefur sömu helstu eiginleika og Android: bókasafn, lestrartímamæli, tölfræði, áskoranir, bingó, Pagi og útlitsþemun. Þetta er munurinn.</p>
-        <details class="differences-details">
-            <summary>Munur á iPhone og Android</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Aðeins á iPhone</h3>
-                    <ul>
-                        <li>Tímamælir á lásskjánum og í Dynamic Island, með hléi og stöðvun.</li>
-                        <li>Stýringar í iOS 18: Les núna, Skanna ISBN, Bæta við bók og Ræsa tímamæli.</li>
-                        <li>Öryggisafrit á iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Aðeins á Android</h3>
-                    <ul>
-                        <li>Stjórn tímamælis úr tilkynningunni.</li>
-                        <li>Sjálfvirkt Ónáðið ekki í lotu í kafi.</li>
-                        <li>Stillingar og festing græja.</li>
-                        <li>Spjaldtölvur (iPhone-útgáfan keyrir ekki á iPad).</li>
-                        <li>Innleysing <code>lm-…</code> kóða.</li>
-                        <li>Pro-þema og -táknmynd að gjöf í lok prufutímabilsins.</li>
-                        <li>Þjórfé og framlög.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Á báðum</h3>
-                    <ul>
-                        <li>Græjur fyrir bók, tölfræði, áskoranir og bingó.</li>
-                        <li>Fullt tungumálaval.</li>
-                        <li>Lárétt stilling í símum.</li>
-                        <li>Öryggisafrit á Google Drive.</li>
-                        <li>Samstilling við rafbókalesara (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Kaup á Pro</h3>
-                    <ul>
-                        <li>Á iPhone eru Pro kaup innan forrits í App Store. Á Android eru það kaup á Google Play.</li>
-                        <li>7 daga prufutíminn á iPhone eru ókeypis kaup innan forrits í App Store, tengd Apple ID-inu þínu.</li>
-                        <li>Pro flyst ekki á milli Android og iPhone í bili: hver kaup haldast á sínum palli.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Sjá allan muninn</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Virkar það án nettengingar?</button>
                 <div class="faq-a"><div class="faq-a-inner">Nánast allt virkar án nettengingar. Þú þarft aðeins tengingu til að leita að nýjum bókum og til að hlaða upp öryggisafritum á Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Er til iPhone-útgáfa?</button>
-                <div class="faq-a"><div class="faq-a-inner">Já: þú getur sótt það núna í <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Get ég prófað áður en ég kaupi?</button>
-                <div class="faq-a"><div class="faq-a-inner">Já. Það er ókeypis 7 daga prufutími á Pro-eiginleikum, ekkert kort þarf. Á iPhone eru það ókeypis kaup innan forrits í App Store, tengd Apple ID-inu þínu. Á Android færðu í lok prufutímans ókeypis Pro-þema að eigin vali, jafnvel þótt þú kaupir ekki Pro.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Hvað verður um Pro ef ég skipti um síma?</button>
-                <div class="faq-a"><div class="faq-a-inner">Það fer eftir því hvar þú keyptir það. Ef þú keyptir það á <strong>Google Play</strong> og skiptir yfir í annan Android-síma með sama Google-reikningi, settu upp Lecturameter og ýttu á <strong>Endurheimta kaup</strong> í Stillingum. Ef þú keyptir það í <strong>App Store</strong> og skiptir yfir í annan iPhone með sama Apple ID, það sama: settu upp og ýttu á <strong>Endurheimta kaup</strong>. Pro flyst ekki á milli Android og iPhone í bili: hver kaup haldast á sínum palli. <code>lm-…</code> kóða er aðeins hægt að innleysa á Android. Nánar í <a href="../activar-pro.html">Hvernig á að virkja Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Get ég flutt Pro á milli síma og á milli iOS og Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">Á milli Android og iPhone ekki í bili: hver kaup haldast á sínum palli. Við erum að skoða hvort hægt sé að gera það á einhvern hátt. Á milli tveggja síma á sama palli er það hægt: notaðu <strong>Endurheimta kaup</strong> með Google-reikningnum þínum eða Apple ID.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Útgáfusaga</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Viðburðir · Flýtivalmynd · Tvö ný Pro-þemu</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nýtt</strong>
-                    <ul>
-                        <li><strong>Viðburðir:</strong> alþjóðlegar lestraráskoranir og Lecturameter Quest þegar eitt er virkt</li>
-                        <li><strong>Flýtivalmynd:</strong> farðu milli hluta með punktunum þremur (···), án þess að fara aftur á Heim</li>
-                        <li><strong>Í hléi:</strong> leggðu bók til hliðar um stund án þess að skemma tölfræðina þína</li>
-                        <li><strong>Tvö ný Pro þemu:</strong> Stílabók og Skógur</li>
-                        <li>Pro-þemu er líka hægt að kaupa eitt og eitt eða í pökkum með 3, með forskoðun, og Pro-skjárinn er nýr</li>
-                        <li><strong>Ólínulegur lestur</strong> fyrir safnrit og ljóðasöfn: síður sem skarast teljast ekki tvisvar og framvindustikan skiptist í hluta</li>
-                        <li>Byrjaðu að lesa úr græju bókarinnar, án þess að opna appið</li>
-                        <li>Vikuleg og mánaðarleg yfirlit með nýju útliti og meiri tölfræði</li>
-                        <li>Valfrjálst netfang í „Senda ábendingu“, aðeins svo ég geti svarað þér</li>
-                        <li>Sérstök tímamælisklukka fyrir hvert þema</li>
-                        <li>Pagi velur bók fyrir þig af listanum Vil lesa</li>
-                        <li>KOSync með raunverulegum lestrartíma úr KOReader</li>
-                        <li>Tilkynningar eftir flokkum og tilkynningar um nýjungar í appinu</li>
-                        <li>Heim með stikunni flokkaðri í Markmið, Lesturinn minn og Verkfæri</li>
-                        <li>Breyttu stöðu bókar úr skjótaðgerðum hennar og afturkallaðu ef þér verður á</li>
-                        <li>Material-tákn í stað emoji og læsilegri tölfræði í öllum þemum</li>
-                        <li>Tilkynning þegar bók er bætt við úr leit</li>
-                        <li>Dagsetningar lestrarlota í einni línu, auðveldari í breytingu</li>
-                        <li>Bingó með 24 sniðmátum eftir stærð</li>
-                        <li>Á iPhone, Live Activity tímamælisins í litum þemans þíns</li>
-                        <li>Skráin lærir af leitum og ISBN-skönnunum sem finna ekkert og bætir við bókunum sem vantar (frá 15. nóvember)</li>
-                        <li>Hefðbundin kínverska</li>
-                        <li>Sería í CSV</li>
-                    </ul>
-                    <strong>Lagfæringar</strong>
-                    <ul>
-                        <li>Titlar í Bingó, Wrapped og öðrum skjám eru nú í sömu hæð og í öðrum valmyndum</li>
-                        <li>Tákn Bingó og Wrapped fá litina sína aftur</li>
-                        <li>Bókateljararnir eftir stöðu á Heim sjást betur í Dökku, OLED, Rökkri, Aurora og Leðri</li>
-                        <li>Ein viðvörun fyrir bækur með vantandi gögn: guli þríhyrningurinn er horfinn og sá rauði er áfram</li>
-                        <li>Endurhleðsla á kápu og flokki segir þér þegar allt var þegar í lagi og varar við í rauðu þegar eitthvað finnst ekki</li>
-                        <li>Afrit á Google Drive af mjög stórum bókasöfnum mistakast ekki lengur vegna minnisskorts</li>
-                        <li>Ýmsar lagfæringar á iPhone</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Framvinda í %, Pagi-búningar og -útlit, KOSync, tungumál sem skrifuð eru frá hægri til vinstri</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nýtt</strong>
-                    <ul>
-                        <li>Framvinda í %: skráðu lotur sem prósentur í bókum, myndasögum, manga og hljóðbókum. Í hljóðbókum geturðu líka skráð tímann.</li>
-                        <li>Breyttu sniði bókar, myndasögu, manga eða hljóðbókar eftir að þú bætir henni við, án þess að missa lotur, athugasemdir eða tölfræði.</li>
-                        <li>Margar athugasemdir og tilvitnanir þegar þú lýkur lotu, hver fyrir sig.</li>
-                        <li>Ef þú yfirgefur lotu án þess að vista hana helst hún sem drög og þú getur endurheimt hana næst þegar þú vistar lotu.</li>
-                        <li>Tölfræði: kleinuhringjarit með því sem þú lest eftir sniði og síun eftir sniði til að sjá hverja gerð fyrir sig.</li>
-                        <li>Áskoranir í hljóðbókum (hlustaðar klukkustundir og kláraðar hljóðbækur) og Bingo með hljóðbókum: 1 klukkustund af hlustun telst sem 30 blaðsíður.</li>
-                        <li>Pagi kemur fram með 7 hreyfimynduðum árstíðabúningum sem passa við öll þemu, 9 nýjum útlitum (Skáld, Næturþjófur, Vampírugreifi, Kafbátsforingi, Blek, Origami, Næturlesari, Riddari á flakki og Retro-geimfari) og eigin snertihreyfimynd fyrir hvert þeirra. Í forritinu leynist líka leynilegt útlit: pikkaðu á aðalskjáinn til að finna það.</li>
-                        <li>Pagi hefur sinn eigin hluta í stillingum: sjálfvirk árstíð, árstíðabúningar utan árstíðar og útlit.</li>
-                        <li>Táknmyndir forrits fyrir Pro: veldu þína í stillingum, með útgáfum fyrir hrekkjavöku, jól og áramót. Ef þú kveikir á sjálfvirkum árstíðaskiptum breytist táknmyndin á tilteknum dögum og fer svo aftur í þína. Slökkt er á því sjálfgefið.</li>
-                        <li>Á Android, ef þú prófaðir Pro, færðu líka eina af Pro-táknmyndunum að gjöf.</li>
-                        <li>Samstilltu framvindu þína við lesbrettið í gegnum KOSync (KOReader og samhæf forrit) með leiðsögn skref fyrir skref.</li>
-                        <li>Forritið er nú á arabísku, hebresku, persnesku og úrdú, með viðmóti frá hægri til vinstri. Þú getur líka valið þau sem tungumál bókar þegar þú bætir bók við handvirkt.</li>
-                        <li>Ný Pro-tímamælishljóð með nýjum flokki, Notalegt.</li>
-                    </ul>
-                    <strong>Lagfæringar</strong>
-                    <ul>
-                        <li>Betra úrval tegunda fyrir allar gerðir bóka.</li>
-                        <li>Sumum litum í tölfræði var breytt til að gera gagnapunkta auðgreinanlegri.</li>
-                        <li>Ef bók af lesbretti hefur engan titil birtist læsilegt heiti í stað kóða og leiðsögnin varar þig við ef engin framvinda berst með notandanum þínum.</li>
-                        <li>Bingo er nú þýtt á öll tungumál.</li>
-                        <li>Öll tungumál yfirfarin: textar sem birtust á ensku eða spænsku eru nú á þínu tungumáli.</li>
-                        <li>Afrit sem vistuð eru í símanum verða ekki lengur tóm ef vistun mistekst.</li>
-                        <li>Breyting á stöðu bókar eyðir ekki lengur dagsetningum fyrri lestra.</li>
-                        <li>Mánaðaryfirlitið telur líka kláraðar bækur án lota.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; Beta fyrir iPhone, myndasögur og manga sem fullgildar bækur, Seríusýn</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nýtt</strong>
-                    <ul>
-                        <li>Lecturameter kemur á iPhone í beta-útgáfu, í gegnum TestFlight</li>
-                        <li>Myndasögur, manga og hljóðbækur sem fullgild atriði: bættu þeim við í einu handvirku formi eða mörgum í einu, og deildu hljóðbókarspjaldinu þínu</li>
-                        <li>Komdu með bókasafnið úr öðru forriti (Goodreads, StoryGraph, Bookmory, Fable) með forskoðun</li>
-                        <li>Seríusýn: bækurnar þínar flokkaðar eftir seríu, fyllt út sjálfkrafa þegar þú bætir þeim við</li>
-                        <li>Mánaðaryfirlit með spjaldi til að deila, auk „Bók hvers mánaðar“ í Wrapped</li>
-                        <li>Lestrarþróun í Tölfræði</li>
-                        <li>Spjöldin mín: öll spjöldin sem þú hefur deilt, á einum stað</li>
-                        <li>Græjur fyrir áskoranir og bingó</li>
-                        <li>Bættu mörgum bókum við í einu úr leit</li>
-                        <li>Ítarlegar síur í Bókasafninu</li>
-                        <li>Höfundar eftir útgáfu: lesarar, þýðendur og myndskreytar</li>
-                        <li>Pro virkar á allt að 3 tækjum, Android og iOS</li>
-                        <li>Öryggisafrit vista nú líka merkin og áminningarnar þínar</li>
-                        <li>Nú geturðu vistað lestrarlotu án blaðsíðna, bara tímann (hentugt ef þú lest stafrænt)</li>
-                    </ul>
-                    <strong>Lagfæringar</strong>
-                    <ul>
-                        <li>Ef mörgum bókum er eytt kemur ein Afturkalla</li>
-                        <li>Textar nefna nú tegundina: bók, myndasaga, manga eða hljóðbók</li>
-                        <li>Stjörnuröðin gefur ekki lengur einkunn þegar þú flettir</li>
-                        <li>Langar athugasemdir birtast í heild</li>
-                        <li>Dagsetningar og villur í öryggisafritum á tungumáli forritsins</li>
-                        <li>Endurheimt úr Drive velur ekki lengur ranga skrá</li>
-                        <li>Komið í veg fyrir hrun þegar ýtt er á tengil höfundar í sumum tilvikum</li>
-                        <li>Skýrari skilaboð við innflutning og útflutning</li>
-                        <li>Komið í veg fyrir að tímamælirinn lokist óvænt í bakgrunni</li>
-                        <li>Komið í veg fyrir óvæntar lokanir við kaup á Pro og í sumum græjum</li>
-                        <li>Löguð ruglingsleg tala í leitarniðurstöðum fyrir myndasögur og manga</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Merki, einkunnir, 40 tungumál, endurhannað bókasafn</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nýtt</strong>
-                    <ul>
-                        <li>Stillingar endurskipulagðar í hluta</li>
-                        <li><strong>Merkjakerfi</strong> (allt að 3 á bók, leit með #)</li>
-                        <li>Endurhönnuð bókaspjöld og bókarsíða, 4 stærðir spjalda</li>
-                        <li><strong>5 stjörnu einkunnir með hálfum stjörnum</strong></li>
-                        <li>Athugasemdum skipt í: tilvitnanir, athugasemdir og skoðun</li>
-                        <li>Deildu bókum, áskorunum, bingóum, hitakortum og tölfræði</li>
-                        <li>Sérsniðnar lestraráminningar</li>
-                        <li><strong>Rökkur</strong>-þema fyrir Pro</li>
-                        <li><strong>Stuðningur við 40 tungumál</strong></li>
-                    </ul>
-                    <strong>Lagfæringar</strong>
-                    <ul>
-                        <li>Betra útlit í láréttri stöðu og á stórum skjám</li>
-                        <li>Hraðari og áreiðanlegri bókaleit</li>
-                        <li>Pro-græja með mánaðarsamanburði</li>
-                        <li>Hægt að afturkalla aðgerðir sem eyða</li>
-                        <li>Endurstilla ábendingar í Stillingar &gt; Hjálp</li>
-                        <li>Pagi hylur ekki lengur titla og birtist ekki í Stillingum</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Hljóðstika í lotu í kafi, endurbætur í láréttri stöðu</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nýtt</strong>
-                    <ul>
-                        <li>Hljóðstikan í lotu í kafi opnast nú líka í láréttri stöðu, með stýringum fyrir fyrra/næsta og endurtekningu/röð</li>
-                        <li>Hljóðhópar sýna áherslulit þemans þíns skýrar</li>
-                    </ul>
-                    <strong>Lagfæringar</strong>
-                    <ul>
-                        <li>Lárétt staða festist ekki lengur í lóðréttri þegar þú notar forritið á öðru tungumáli en síminn</li>
-                        <li>Meira bil á milli hljóðspjaldsins og hnappa tímamælisins þegar það er opið</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Sjá allar spurningar</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Bókavörulisti</a>
                 <a href="#themes">Þemu</a>
                 <a href="#events">Viðburðir</a>
-                <a href="#pricing">Verð</a>
+                <a href="./pro/">Verð</a>
                 <a href="../precios-regionales.html">Verð eftir svæðum</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Úrræði</h4>
                 <a href="./blog/">Blogg</a>
-                <a href="#whatsnew">Fréttir</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Kerfi</a>
+                <a href="./news/">Fréttir</a>
+                <a href="./roadmap/">Framtíðaráætlun</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Kerfi</a>
             </div>
             <div class="footer-col">
                 <h4>Lagalegt og samband</h4>

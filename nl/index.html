@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Leesdagboek · Boekstatistieken en timer</title>
     <meta name="description" content="Lecturameter: Leesdagboek voor Android en iPhone. Meet je leestijd, volg pagina's, tempo en statistieken en importeer uit Goodreads. Geen account, geen advertenties.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Thema's</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Universum <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Bronnen <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blog</a></li>
-                    <li><a href="#whatsnew">Nieuws</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Platforms</a></li>
+                    <li><a href="./news/">Nieuws</a></li>
+                    <li><a href="./roadmap/">Roadmap</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Platforms</a></li>
                     <li class="nav-dd-label" role="presentation">Juridisch</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Privacybeleid</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Servicevoorwaarden</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Eenmalige aankoop, geen abonnement.</p>
                 <p class="price-ios-offer">Introductieaanbieding op iOS: <strong>&#8364;2.99</strong> in de eerste maand. Daarna &#8364;4.99 (dezelfde prijs als op Android). Nog steeds een eenmalige aankoop.</p>
-                <details class="price-currency-list">
-                    <summary>Geschatte prijs in je valuta</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Definitieve prijzen worden bepaald door de App Store en kunnen iets afwijken.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Prijzen per regio bekijken</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Zo activeer je Pro</a></p>
                 <p class="price-note">Na de introductiemaand dezelfde prijs op Android en iOS.</p>
-                <p class="price-note price-experiment-note">* Sommige mensen zien mogelijk een andere prijs, omdat we prijsexperimenten uitvoeren.</p>
                 <p class="price-trial">Probeer Pro 7 dagen gratis, in de app</p>
                 <p class="price-trial">Geen creditcard nodig voor de proefperiode</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Al het andere blijft gratis. Pro voegt alleen extra's toe.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro in detail en regionale prijzen</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Snelmenu:</strong> spring van de ene sectie naar de andere met de drie puntjes (···), zonder terug te gaan naar Home</li>
                     <li><strong>Gepauzeerd:</strong> leg een boek een tijdje opzij zonder je statistieken te verpesten</li>
                     <li><strong>Twee nieuwe Pro-thema's:</strong> Schrift en Bos</li>
-                    <li>Pro-thema's kun je ook los kopen of in pakketten van 3, met voorbeeld, en het Pro-scherm is nieuw</li>
-                    <li><strong>Niet-lineair lezen</strong> voor bloemlezingen en dichtbundels: overlappende pagina's tellen niet dubbel en de voortgangsbalk is in segmenten verdeeld</li>
-                    <li>Begin met lezen vanuit de boekwidget, zonder de app te openen</li>
-                    <li>Wekelijkse en maandelijkse overzichten met een nieuw ontwerp en meer statistieken</li>
-                    <li>Optioneel e-mailadres bij “Feedback sturen”, alleen zodat ik je kan antwoorden</li>
-                    <li>Een eigen timerklok voor elk thema</li>
-                    <li>Pagi kiest een boek uit Wil ik lezen</li>
-                    <li>KOSync met de echte leestijd van KOReader</li>
-                    <li>Meldingen per categorie en berichten over nieuws in de app</li>
-                    <li>Home met de balk gegroepeerd in Doelen, Mijn lectuur en Hulpmiddelen</li>
-                    <li>Wijzig de status van een boek via de snelle acties en maak het ongedaan als je je vergist</li>
-                    <li>Material-pictogrammen in plaats van emoji's en beter leesbare statistieken in elk thema</li>
-                    <li>Een melding wanneer je een boek toevoegt vanuit zoeken</li>
-                    <li>Datums van leescycli op één rij, makkelijker te bewerken</li>
-                    <li>Bingo met 24 sjablonen per formaat</li>
-                    <li>Op iPhone de Live Activity van de timer in de kleuren van je thema</li>
-                    <li>De catalogus leert van zoekopdrachten en ISBN-scans zonder resultaat en voegt de ontbrekende boeken toe (vanaf 15 november)</li>
-                    <li>Traditioneel Chinees</li>
-                    <li>Serie in de CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Oplossingen</h3>
-                <ul>
-                    <li>Titels in Bingo, Wrapped en andere schermen staan nu op dezelfde hoogte als in de andere menu's</li>
-                    <li>De pictogrammen van Bingo en Wrapped hebben hun kleuren terug</li>
-                    <li>De boekentellers per status op Home zijn beter te zien in Donker, OLED, Schemer, Aurora en Leer</li>
-                    <li>Eén enkele waarschuwing voor boeken met ontbrekende gegevens: de gele driehoek is weg en de rode blijft</li>
-                    <li>Omslag en genre opnieuw laden meldt wanneer alles al in orde was en waarschuwt in het rood als iets niet wordt gevonden</li>
-                    <li>Google Drive-back-ups van zeer grote bibliotheken mislukken niet langer door geheugentekort</li>
-                    <li>Verschillende oplossingen op iPhone</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Alle updatenotities en versiegeschiedenis</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter op iPhone en Android</h2>
         <p>De iPhone-versie heeft dezelfde hoofdfuncties als Android: bibliotheek, leestimer, statistieken, uitdagingen, bingo, Pagi en de visuele thema's. Dit zijn de verschillen.</p>
-        <details class="differences-details">
-            <summary>Verschillen tussen iPhone en Android</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Alleen op iPhone</h3>
-                    <ul>
-                        <li>Timer op het toegangsscherm en in het Dynamic Island, met pauzeren en stoppen.</li>
-                        <li>Bedieningselementen van iOS 18: Nu aan het lezen, ISBN scannen, Boek toevoegen en Timer starten.</li>
-                        <li>Back-up naar iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Alleen op Android</h3>
-                    <ul>
-                        <li>Timer bedienen vanuit de melding.</li>
-                        <li>Automatisch Niet storen tijdens de immersieve sessie.</li>
-                        <li>Widgets instellen en vastzetten.</li>
-                        <li>Tablets (de iPhone-versie werkt niet op iPad).</li>
-                        <li>Inwisselen van <code>lm-…</code>-codes.</li>
-                        <li>Aan het einde van de proefperiode krijg je een Pro-thema en -icoon cadeau.</li>
-                        <li>Fooien en donaties.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Op allebei</h3>
-                    <ul>
-                        <li>Widgets voor Boek, Statistieken, Uitdagingen en Bingo.</li>
-                        <li>Volledige taalkeuze.</li>
-                        <li>Liggende modus op telefoons.</li>
-                        <li>Back-up naar Google Drive.</li>
-                        <li>Synchronisatie met e-reader (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Pro kopen</h3>
-                    <ul>
-                        <li>Op iPhone is Pro een in-app-aankoop via de App Store. Op Android is het een aankoop via Google Play.</li>
-                        <li>De proefperiode van 7 dagen op iPhone is een gratis in-app-aankoop via de App Store, gekoppeld aan je Apple ID.</li>
-                        <li>Voorlopig gaat Pro niet van Android naar iPhone of andersom: elke aankoop blijft op zijn eigen platform.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Bekijk alle verschillen</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Werkt het offline?</button>
                 <div class="faq-a"><div class="faq-a-inner">Bijna alles werkt offline. Je hebt alleen een verbinding nodig om nieuwe boeken te zoeken en om back-ups naar Google Drive te uploaden.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Is er een versie voor iPhone?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ja: je kunt het nu downloaden in de <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Kan ik het proberen voordat ik koop?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ja. Er is een gratis proefperiode van 7 dagen voor de Pro-functies, zonder creditcard. Op iPhone is het een gratis in-app-aankoop via de App Store, gekoppeld aan je Apple ID. Op Android krijg je aan het einde van de proefperiode, ook als je Pro niet koopt, een gratis Pro-thema naar keuze.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Wat gebeurt er met mijn Pro als ik van telefoon wissel?</button>
-                <div class="faq-a"><div class="faq-a-inner">Dat hangt af van waar je het hebt gekocht. Heb je het gekocht via <strong>Google Play</strong> en stap je over op een andere Android met hetzelfde Google-account, installeer dan Lecturameter en tik op <strong>Aankoop herstellen</strong> in Instellingen. Heb je het gekocht in de <strong>App Store</strong> en stap je over op een andere iPhone met dezelfde Apple ID, dan werkt het net zo: installeren en op <strong>Aankoop herstellen</strong> tikken. Voorlopig gaat Pro niet van Android naar iPhone of andersom: elke aankoop blijft op zijn eigen platform. <code>lm-…</code> -codes kun je alleen op Android inwisselen. Meer details in <a href="../activar-pro.html">Zo activeer je Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Kan ik mijn Pro overzetten tussen telefoons en tussen iOS en Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">Tussen Android en iPhone voorlopig niet: elke aankoop blijft op zijn eigen platform. We kijken of het op de een of andere manier kan. Tussen twee telefoons met hetzelfde platform wel: gebruik <strong>Aankoop herstellen</strong> met je Google-account of Apple ID.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Versiegeschiedenis</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Evenementen · Snelmenu · Twee nieuwe Pro-thema's</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nieuw</strong>
-                    <ul>
-                        <li><strong>Evenementen:</strong> wereldwijde leesuitdagingen en Lecturameter Quest als er een actief is</li>
-                        <li><strong>Snelmenu:</strong> spring van de ene sectie naar de andere met de drie puntjes (···), zonder terug te gaan naar Home</li>
-                        <li><strong>Gepauzeerd:</strong> leg een boek een tijdje opzij zonder je statistieken te verpesten</li>
-                        <li><strong>Twee nieuwe Pro-thema's:</strong> Schrift en Bos</li>
-                        <li>Pro-thema's kun je ook los kopen of in pakketten van 3, met voorbeeld, en het Pro-scherm is nieuw</li>
-                        <li><strong>Niet-lineair lezen</strong> voor bloemlezingen en dichtbundels: overlappende pagina's tellen niet dubbel en de voortgangsbalk is in segmenten verdeeld</li>
-                        <li>Begin met lezen vanuit de boekwidget, zonder de app te openen</li>
-                        <li>Wekelijkse en maandelijkse overzichten met een nieuw ontwerp en meer statistieken</li>
-                        <li>Optioneel e-mailadres bij “Feedback sturen”, alleen zodat ik je kan antwoorden</li>
-                        <li>Een eigen timerklok voor elk thema</li>
-                        <li>Pagi kiest een boek uit Wil ik lezen</li>
-                        <li>KOSync met de echte leestijd van KOReader</li>
-                        <li>Meldingen per categorie en berichten over nieuws in de app</li>
-                        <li>Home met de balk gegroepeerd in Doelen, Mijn lectuur en Hulpmiddelen</li>
-                        <li>Wijzig de status van een boek via de snelle acties en maak het ongedaan als je je vergist</li>
-                        <li>Material-pictogrammen in plaats van emoji's en beter leesbare statistieken in elk thema</li>
-                        <li>Een melding wanneer je een boek toevoegt vanuit zoeken</li>
-                        <li>Datums van leescycli op één rij, makkelijker te bewerken</li>
-                        <li>Bingo met 24 sjablonen per formaat</li>
-                        <li>Op iPhone de Live Activity van de timer in de kleuren van je thema</li>
-                        <li>De catalogus leert van zoekopdrachten en ISBN-scans zonder resultaat en voegt de ontbrekende boeken toe (vanaf 15 november)</li>
-                        <li>Traditioneel Chinees</li>
-                        <li>Serie in de CSV</li>
-                    </ul>
-                    <strong>Oplossingen</strong>
-                    <ul>
-                        <li>Titels in Bingo, Wrapped en andere schermen staan nu op dezelfde hoogte als in de andere menu's</li>
-                        <li>De pictogrammen van Bingo en Wrapped hebben hun kleuren terug</li>
-                        <li>De boekentellers per status op Home zijn beter te zien in Donker, OLED, Schemer, Aurora en Leer</li>
-                        <li>Eén enkele waarschuwing voor boeken met ontbrekende gegevens: de gele driehoek is weg en de rode blijft</li>
-                        <li>Omslag en genre opnieuw laden meldt wanneer alles al in orde was en waarschuwt in het rood als iets niet wordt gevonden</li>
-                        <li>Google Drive-back-ups van zeer grote bibliotheken mislukken niet langer door geheugentekort</li>
-                        <li>Verschillende oplossingen op iPhone</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Voortgang in %, Pagi-outfits en -skins, KOSync, talen van rechts naar links</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nieuw</strong>
-                    <ul>
-                        <li>Voortgang in %: log je sessies als percentage in boeken, strips, manga en luisterboeken. Bij luisterboeken kun je ook de tijd noteren.</li>
-                        <li>Wijzig het formaat van een boek, strip, manga of luisterboek nadat je het hebt toegevoegd, zonder sessies, notities of statistieken te verliezen.</li>
-                        <li>Meerdere notities en citaten bij het afronden van een sessie, elk apart.</li>
-                        <li>Als je een sessie verlaat zonder op te slaan, wordt die bewaard als concept en kun je hem herstellen de volgende keer dat je er een opslaat.</li>
-                        <li>Statistieken: donut met wat je leest per formaat en een formaatfilter om elk type apart te bekijken.</li>
-                        <li>Uitdagingen voor luisterboeken (uren geluisterd en luisterboeken uitgelezen) en Bingo met luisterboeken: 1 uur luisteren telt als 30 pagina's.</li>
-                        <li>Pagi debuteert met 7 geanimeerde seizoensoutfits die bij elk thema werken, 9 nieuwe skins (Bard, Nachtdief, Vampiergraaf, Duikbootkapitein, Inkt, Origami, Nachtlezer, Dolende ridder en Retro-astronaut) en bij elke skin een eigen tikanimatie. Er zit ook een geheime skin verstopt in de app: tik rond op het hoofdscherm om hem te vinden.</li>
-                        <li>Pagi heeft een eigen onderdeel in Instellingen: automatisch seizoen, seizoensoutfits buiten het seizoen en skins.</li>
-                        <li>App-iconen voor Pro: kies je eigen in Instellingen, met versies voor Halloween, Kerst en Nieuwjaar. Als je het automatische seizoenswissel inschakelt, verandert het icoon op die data en gaat daarna terug naar het jouwe. Standaard staat het uit.</li>
-                        <li>Op Android krijg je, als je Pro hebt geprobeerd, ook een van de Pro-iconen cadeau.</li>
-                        <li>Synchroniseer je voortgang met je e-reader via KOSync (KOReader en compatibele apps), met een stapsgewijze wizard.</li>
-                        <li>De app is nu beschikbaar in het Arabisch, Hebreeuws, Perzisch en Urdu, met een interface van rechts naar links. Je kunt ze ook kiezen als boektaal wanneer je handmatig een boek toevoegt.</li>
-                        <li>Nieuwe Pro-timergeluiden, met een nieuwe categorie, Cozy.</li>
-                    </ul>
-                    <strong>Oplossingen</strong>
-                    <ul>
-                        <li>Betere genreselectie voor elk soort boek.</li>
-                        <li>Sommige kleuren in de statistieken zijn aangepast om elk gegeven beter te kunnen onderscheiden.</li>
-                        <li>Als een e-readerboek geen titel heeft, wordt een leesbare naam getoond in plaats van een code, en waarschuwt de wizard je als er geen voortgang binnenkomt met je gebruiker.</li>
-                        <li>Bingo is nu in alle talen vertaald.</li>
-                        <li>Alle talen nagekeken: teksten die in het Engels of Spaans verschenen, staan nu in jouw taal.</li>
-                        <li>Back-ups die op je telefoon worden opgeslagen, blijven niet meer leeg als het opslaan mislukt.</li>
-                        <li>Als je de status van een boek wijzigt, worden de data van eerdere leesbeurten niet meer gewist.</li>
-                        <li>Het maandoverzicht telt ook uitgelezen boeken zonder sessies mee.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; iPhone-beta, strips en manga als volwaardige boeken, Serie-weergave</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nieuw</strong>
-                    <ul>
-                        <li>Lecturameter komt als beta naar iPhone, via TestFlight</li>
-                        <li>Strips, manga en luisterboeken als volwaardige items: voeg ze toe met één handmatig formulier of meerdere tegelijk, en deel je luisterboekkaart</li>
-                        <li>Neem je bibliotheek mee uit een andere app (Goodreads, StoryGraph, Bookmory, Fable) met een voorbeeldweergave</li>
-                        <li>Serie-weergave: je boeken gegroepeerd per serie, automatisch ingevuld wanneer je ze toevoegt</li>
-                        <li>Maandoverzicht met een deelbare kaart, plus "Je boek van elke maand" in Wrapped</li>
-                        <li>Leesontwikkeling in Statistieken</li>
-                        <li>Mijn kaarten: alle kaarten die je hebt gedeeld, op één plek</li>
-                        <li>Widgets voor uitdagingen en bingo</li>
-                        <li>Meerdere boeken tegelijk toevoegen via zoeken</li>
-                        <li>Geavanceerde filters in de Bibliotheek</li>
-                        <li>Vermeldingen per editie: sprekers, vertalers en illustratoren</li>
-                        <li>Pro werkt op maximaal 3 apparaten, Android en iOS</li>
-                        <li>Back-ups slaan nu ook je tags en herinneringen op</li>
-                        <li>Je kunt nu een leessessie opslaan zonder pagina's, alleen met de tijd (handig als je digitaal leest)</li>
-                    </ul>
-                    <strong>Oplossingen</strong>
-                    <ul>
-                        <li>Als je meerdere boeken verwijdert, krijg je één keer Ongedaan maken</li>
-                        <li>Teksten noemen nu het type: boek, strip, manga of luisterboek</li>
-                        <li>De sterrenrij geeft geen score meer terwijl je scrolt</li>
-                        <li>Lange notities worden volledig getoond</li>
-                        <li>Datums en back-upfouten in de taal van de app</li>
-                        <li>Herstellen vanuit Drive kiest niet langer het verkeerde bestand</li>
-                        <li>Een crash voorkomen bij het tikken op een auteurslink in sommige situaties</li>
-                        <li>Duidelijkere meldingen bij Importeren en Exporteren</li>
-                        <li>Onverwacht afsluiten van de timer op de achtergrond voorkomen</li>
-                        <li>Onverwacht afsluiten voorkomen bij het kopen van Pro en in sommige widgets</li>
-                        <li>Een verwarrend getal in zoekresultaten voor strips en manga opgelost</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Tags, scores, 40 talen, vernieuwde bibliotheek</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nieuw</strong>
-                    <ul>
-                        <li>Instellingen opnieuw ingedeeld in secties</li>
-                        <li><strong>Tag</strong>systeem (tot 3 per boek, zoeken met #)</li>
-                        <li>Vernieuwde boekkaarten en boekdetails, 4 kaartformaten</li>
-                        <li><strong>Scores met 5 sterren, inclusief halve sterren</strong></li>
-                        <li>Notities opgesplitst in: citaten, notities en mening</li>
-                        <li>Boeken, uitdagingen, bingo's, heatmaps en statistieken delen</li>
-                        <li>Aanpasbare leesherinneringen</li>
-                        <li>Thema <strong>Schemering</strong> voor Pro</li>
-                        <li><strong>Ondersteuning voor 40 talen</strong></li>
-                    </ul>
-                    <strong>Oplossingen</strong>
-                    <ul>
-                        <li>Betere indeling in liggende stand en op grote schermen</li>
-                        <li>Snellere en betrouwbaardere boekenzoeker</li>
-                        <li>Pro-widget met maandvergelijking</li>
-                        <li>Onomkeerbare acties nu met ongedaan maken</li>
-                        <li>Tips opnieuw instellen via Instellingen &gt; Hulp</li>
-                        <li>Pagi bedekt geen titels meer en verschijnt niet meer in Instellingen</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Geluidsbalk in de immersieve sessie, verbeteringen in liggende stand</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nieuw</strong>
-                    <ul>
-                        <li>De geluidsbalk van de immersieve sessie klapt nu ook in liggende stand uit, met vorige/volgende en herhalen/reeks</li>
-                        <li>Geluidsgroepen laten de accentkleur van je thema duidelijker zien</li>
-                    </ul>
-                    <strong>Oplossingen</strong>
-                    <ul>
-                        <li>De liggende stand blijft niet meer vastzitten in staande stand als je de app in een andere taal gebruikt dan je telefoon</li>
-                        <li>Meer ruimte tussen de geluidskaart en de timerknoppen als die is uitgeklapt</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Bekijk alle vragen</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Boekencatalogus</a>
                 <a href="#themes">Thema's</a>
                 <a href="#events">Evenementen</a>
-                <a href="#pricing">Prijzen</a>
+                <a href="./pro/">Prijzen</a>
                 <a href="../precios-regionales.html">Prijzen per regio</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Bronnen</h4>
                 <a href="./blog/">Blog</a>
-                <a href="#whatsnew">Nieuws</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Platforms</a>
+                <a href="./news/">Nieuws</a>
+                <a href="./roadmap/">Roadmap</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Platforms</a>
             </div>
             <div class="footer-col">
                 <h4>Juridisch en contact</h4>

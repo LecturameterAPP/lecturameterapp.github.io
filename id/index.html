@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Jurnal Baca · Statistik buku & timer</title>
     <meta name="description" content="Lecturameter: Jurnal Baca untuk Android dan iPhone. Catat waktu baca, pantau halaman, kecepatan, dan statistik, lalu impor dari Goodreads. Tanpa akun, tanpa iklan.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Tema</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Semesta <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Sumber daya <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blog</a></li>
-                    <li><a href="#whatsnew">Berita</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Platform</a></li>
+                    <li><a href="./news/">Berita</a></li>
+                    <li><a href="./roadmap/">Peta jalan</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Platform</a></li>
                     <li class="nav-dd-label" role="presentation">Hukum</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Kebijakan privasi</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Ketentuan Layanan</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Sekali beli, bukan langganan.</p>
                 <p class="price-ios-offer">Penawaran peluncuran iOS: <strong>&#8364;2.99</strong> selama bulan pertama. Setelah itu, &#8364;4.99 (harga sama dengan Android). Tetap sekali beli.</p>
-                <details class="price-currency-list">
-                    <summary>Perkiraan harga dalam mata uangmu</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Harga akhir ditetapkan oleh App Store; bisa sedikit berbeda.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Lihat harga per wilayah</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Lihat cara mengaktifkan Pro</a></p>
                 <p class="price-note">Harga sama di Android dan iOS setelah bulan peluncuran.</p>
-                <p class="price-note price-experiment-note">* Sebagian orang mungkin melihat harga yang berbeda karena kami sedang melakukan eksperimen harga.</p>
                 <p class="price-trial">Coba Pro gratis 7 hari, di dalam aplikasi</p>
                 <p class="price-trial">Uji coba tanpa perlu kartu</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Semua yang lain tetap gratis. Pro hanya menambah ekstra.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro secara rinci dan harga regional</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Menu cepat:</strong> pindah antarbagian dengan tiga titik (···), tanpa kembali ke Beranda</li>
                     <li><strong>Dijeda:</strong> simpan buku sementara tanpa mengacaukan statistikmu</li>
                     <li><strong>Dua tema Pro baru:</strong> Buku Tulis dan Hutan</li>
-                    <li>Tema Pro juga bisa dibeli satuan atau paket isi 3, dengan pratinjau, dan layar Pro kini baru</li>
-                    <li><strong>Membaca nonlinear</strong> untuk antologi dan kumpulan puisi: halaman yang tumpang tindih tidak dihitung dua kali dan bilah progres dibagi menjadi segmen</li>
-                    <li>Mulai membaca dari widget buku, tanpa membuka aplikasi</li>
-                    <li>Ringkasan mingguan dan bulanan dengan desain baru dan lebih banyak statistik</li>
-                    <li>Email opsional di “Kirim masukan”, hanya agar saya bisa membalasmu</li>
-                    <li>Jam pengatur waktu tersendiri untuk setiap tema</li>
-                    <li>Pagi memilihkan buku dari Ingin dibaca</li>
-                    <li>KOSync dengan waktu baca asli dari KOReader</li>
-                    <li>Notifikasi per kategori dan kabar terbaru aplikasi</li>
-                    <li>Beranda dengan rail yang dikelompokkan menjadi Target, Bacaan saya, dan Alat</li>
-                    <li>Ubah status buku dari aksi cepatnya, dan batalkan jika salah</li>
-                    <li>Ikon Material menggantikan emoji dan statistik yang lebih mudah dibaca di semua tema</li>
-                    <li>Pemberitahuan saat menambahkan buku dari pencarian</li>
-                    <li>Tanggal siklus membaca dalam satu baris, lebih mudah diedit</li>
-                    <li>Bingo dengan 24 templat menurut ukuran</li>
-                    <li>Di iPhone, Live Activity timer dengan warna tema kamu</li>
-                    <li>Katalog belajar dari pencarian dan pemindaian ISBN yang tidak menemukan apa pun dan menambahkan buku yang belum ada (mulai 15 November)</li>
-                    <li>Mandarin Tradisional</li>
-                    <li>Seri di CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Perbaikan</h3>
-                <ul>
-                    <li>Judul di Bingo, Wrapped, dan layar lain kini sejajar dengan menu lainnya</li>
-                    <li>Ikon Bingo dan Wrapped mendapatkan kembali warnanya</li>
-                    <li>Penghitung buku per status di Beranda lebih mudah terlihat di tema Gelap, OLED, Senja, Aurora, dan Kulit</li>
-                    <li>Satu peringatan saja untuk buku dengan data tidak lengkap: segitiga kuning dihapus dan yang merah tetap ada</li>
-                    <li>Memuat ulang sampul dan genre memberi tahu jika semuanya sudah beres, dan memperingatkan dengan warna merah jika ada yang tidak ditemukan</li>
-                    <li>Pencadangan Google Drive untuk pustaka yang sangat besar tidak lagi gagal karena kehabisan memori</li>
-                    <li>Beberapa perbaikan di iPhone</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Semua catatan pembaruan dan riwayat versi</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter di iPhone dan Android</h2>
         <p>Versi iPhone punya fitur utama yang sama dengan Android: perpustakaan, pengatur waktu membaca, statistik, tantangan, bingo, Pagi, dan tema visual. Inilah perbedaannya.</p>
-        <details class="differences-details">
-            <summary>Perbedaan iPhone dan Android</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Hanya di iPhone</h3>
-                    <ul>
-                        <li>Pengatur waktu di Layar Kunci dan Dynamic Island, dengan jeda dan berhenti.</li>
-                        <li>Kontrol iOS 18: Sedang dibaca, Pindai ISBN, Tambahkan buku, dan Mulai pengatur waktu.</li>
-                        <li>Cadangan iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Hanya di Android</h3>
-                    <ul>
-                        <li>Kontrol pengatur waktu dari notifikasi.</li>
-                        <li>Jangan Ganggu otomatis di sesi imersif.</li>
-                        <li>Konfigurasi dan penyematan widget.</li>
-                        <li>Tablet (versi iPhone tidak berjalan di iPad).</li>
-                        <li>Menukarkan kode <code>lm-…</code>.</li>
-                        <li>Tema dan ikon Pro sebagai hadiah di akhir masa percobaan.</li>
-                        <li>Tip dan donasi.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Di keduanya</h3>
-                    <ul>
-                        <li>Widget Buku, Statistik, Tantangan, dan Bingo.</li>
-                        <li>Pemilih bahasa lengkap.</li>
-                        <li>Mode lanskap di ponsel.</li>
-                        <li>Cadangan Google Drive.</li>
-                        <li>Sinkronisasi e-reader (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Pembelian Pro</h3>
-                    <ul>
-                        <li>Di iPhone, Pro adalah pembelian dalam aplikasi App Store. Di Android, pembelian Google Play.</li>
-                        <li>Uji coba 7 hari di iPhone adalah pembelian dalam aplikasi App Store yang gratis, terkait dengan Apple ID-mu.</li>
-                        <li>Untuk saat ini Pro tidak berpindah antara Android dan iPhone: setiap pembelian tetap di platformnya masing-masing.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Lihat semua perbedaan</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Apakah bisa dipakai offline?</button>
                 <div class="faq-a"><div class="faq-a-inner">Hampir semuanya berjalan offline. Kamu hanya butuh koneksi untuk mencari buku baru dan mengunggah cadangan ke Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Apakah ada versi iPhone?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ada: kamu bisa mengunduhnya sekarang dari <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Bisakah aku mencoba sebelum membeli?</button>
-                <div class="faq-a"><div class="faq-a-inner">Bisa. Ada uji coba gratis 7 hari untuk fitur Pro, tanpa kartu. Di iPhone, ini adalah pembelian dalam aplikasi App Store yang gratis, terkait dengan Apple ID-mu. Di Android, di akhir masa uji coba, meski tidak membeli Pro, kamu dapat satu tema Pro gratis pilihanmu.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Bagaimana dengan Pro-ku kalau aku ganti ponsel?</button>
-                <div class="faq-a"><div class="faq-a-inner">Tergantung di mana kamu membelinya. Kalau kamu membelinya di <strong>Google Play</strong> dan pindah ke Android lain dengan akun Google yang sama, pasang Lecturameter lalu ketuk <strong>Pulihkan pembelian</strong> di Pengaturan. Kalau kamu membelinya di <strong>App Store</strong> dan pindah ke iPhone lain dengan Apple ID yang sama, caranya sama: pasang lalu ketuk <strong>Pulihkan pembelian</strong>. Untuk saat ini Pro tidak berpindah antara Android dan iPhone: setiap pembelian tetap di platformnya masing-masing. <code>lm-…</code> kode hanya bisa ditukarkan di Android. Detail lebih lanjut di <a href="../activar-pro.html">Cara mengaktifkan Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Bisakah aku memindahkan Pro-ku antarponsel dan antara iOS dan Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">Antara Android dan iPhone, untuk saat ini belum bisa: setiap pembelian tetap di platformnya masing-masing. Kami sedang melihat apakah bisa dilakukan dengan cara tertentu. Antara dua ponsel di platform yang sama bisa: gunakan <strong>Pulihkan pembelian</strong> dengan akun Google atau Apple ID-mu.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Riwayat versi</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Acara · Menu cepat · Dua tema Pro baru</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Baru</strong>
-                    <ul>
-                        <li><strong>Acara:</strong> tantangan membaca global dan Lecturameter Quest saat ada yang aktif</li>
-                        <li><strong>Menu cepat:</strong> pindah antarbagian dengan tiga titik (···), tanpa kembali ke Beranda</li>
-                        <li><strong>Dijeda:</strong> simpan buku sementara tanpa mengacaukan statistikmu</li>
-                        <li><strong>Dua tema Pro baru:</strong> Buku Tulis dan Hutan</li>
-                        <li>Tema Pro juga bisa dibeli satuan atau paket isi 3, dengan pratinjau, dan layar Pro kini baru</li>
-                        <li><strong>Membaca nonlinear</strong> untuk antologi dan kumpulan puisi: halaman yang tumpang tindih tidak dihitung dua kali dan bilah progres dibagi menjadi segmen</li>
-                        <li>Mulai membaca dari widget buku, tanpa membuka aplikasi</li>
-                        <li>Ringkasan mingguan dan bulanan dengan desain baru dan lebih banyak statistik</li>
-                        <li>Email opsional di “Kirim masukan”, hanya agar saya bisa membalasmu</li>
-                        <li>Jam pengatur waktu tersendiri untuk setiap tema</li>
-                        <li>Pagi memilihkan buku dari Ingin dibaca</li>
-                        <li>KOSync dengan waktu baca asli dari KOReader</li>
-                        <li>Notifikasi per kategori dan kabar terbaru aplikasi</li>
-                        <li>Beranda dengan rail yang dikelompokkan menjadi Target, Bacaan saya, dan Alat</li>
-                        <li>Ubah status buku dari aksi cepatnya, dan batalkan jika salah</li>
-                        <li>Ikon Material menggantikan emoji dan statistik yang lebih mudah dibaca di semua tema</li>
-                        <li>Pemberitahuan saat menambahkan buku dari pencarian</li>
-                        <li>Tanggal siklus membaca dalam satu baris, lebih mudah diedit</li>
-                        <li>Bingo dengan 24 templat menurut ukuran</li>
-                        <li>Di iPhone, Live Activity timer dengan warna tema kamu</li>
-                        <li>Katalog belajar dari pencarian dan pemindaian ISBN yang tidak menemukan apa pun dan menambahkan buku yang belum ada (mulai 15 November)</li>
-                        <li>Mandarin Tradisional</li>
-                        <li>Seri di CSV</li>
-                    </ul>
-                    <strong>Perbaikan</strong>
-                    <ul>
-                        <li>Judul di Bingo, Wrapped, dan layar lain kini sejajar dengan menu lainnya</li>
-                        <li>Ikon Bingo dan Wrapped mendapatkan kembali warnanya</li>
-                        <li>Penghitung buku per status di Beranda lebih mudah terlihat di tema Gelap, OLED, Senja, Aurora, dan Kulit</li>
-                        <li>Satu peringatan saja untuk buku dengan data tidak lengkap: segitiga kuning dihapus dan yang merah tetap ada</li>
-                        <li>Memuat ulang sampul dan genre memberi tahu jika semuanya sudah beres, dan memperingatkan dengan warna merah jika ada yang tidak ditemukan</li>
-                        <li>Pencadangan Google Drive untuk pustaka yang sangat besar tidak lagi gagal karena kehabisan memori</li>
-                        <li>Beberapa perbaikan di iPhone</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Kemajuan dalam %, kostum dan skin Pagi, KOSync, bahasa dengan tulisan kanan ke kiri</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Baru</strong>
-                    <ul>
-                        <li>Kemajuan dalam %: catat sesi bacamu dalam bentuk persentase di buku, komik, manga, dan buku audio. Di buku audio, kamu juga bisa mencatat waktunya.</li>
-                        <li>Ubah format buku, komik, manga, atau buku audio setelah ditambahkan, tanpa kehilangan sesi, catatan, atau statistik.</li>
-                        <li>Beberapa catatan dan kutipan saat kamu menyelesaikan sesi, masing-masing terpisah.</li>
-                        <li>Jika kamu keluar dari sesi tanpa menyimpan, sesi itu disimpan sebagai draf dan bisa kamu pulihkan saat menyimpan sesi berikutnya.</li>
-                        <li>Statistik: diagram donat berisi bacaanmu menurut format dan filter format untuk melihat tiap jenis secara terpisah.</li>
-                        <li>Tantangan buku audio (jam mendengarkan dan buku audio selesai) dan Bingo dengan buku audio: 1 jam mendengarkan dihitung sebagai 30 halaman.</li>
-                        <li>Pagi hadir dengan 7 kostum musiman beranimasi yang cocok dengan tema apa pun, 9 skin baru (Penyair, Pencuri Malam, Count Vampir, Kapten Kapal Selam, Tinta, Origami, Pembaca Malam, Ksatria Pengembara, dan Astronaut Retro), dan animasi ketukan khusus untuk masing-masing. Ada juga skin rahasia yang tersembunyi di aplikasi: ketuk-ketuk layar utama untuk menemukannya.</li>
-                        <li>Pagi punya bagian sendiri di Pengaturan: musim otomatis, kostum musiman di luar musim, dan skin.</li>
-                        <li>Ikon aplikasi untuk Pro: pilih ikonmu di Pengaturan, dengan versi Halloween, Natal, dan Tahun Baru. Jika kamu mengaktifkan pergantian musim otomatis, ikon berganti pada tanggalnya lalu kembali ke ikonmu. Secara bawaan nonaktif.</li>
-                        <li>Di Android, jika kamu pernah mencoba Pro, kamu juga mendapat salah satu ikon Pro sebagai hadiah.</li>
-                        <li>Sinkronkan kemajuanmu dengan e-reader lewat KOSync (KOReader dan yang kompatibel), dengan panduan langkah demi langkah.</li>
-                        <li>Aplikasi kini tersedia dalam bahasa Arab, Ibrani, Persia, dan Urdu, dengan antarmuka kanan ke kiri. Kamu juga bisa memilihnya sebagai bahasa buku saat menambahkan buku secara manual.</li>
-                        <li>Suara timer Pro baru, dengan kategori baru, Nyaman.</li>
-                    </ul>
-                    <strong>Perbaikan</strong>
-                    <ul>
-                        <li>Pilihan genre yang lebih baik untuk semua jenis buku.</li>
-                        <li>Beberapa warna statistik diubah agar tiap data lebih mudah dibedakan.</li>
-                        <li>Jika buku dari e-reader tidak punya judul, nama yang mudah dibaca ditampilkan sebagai ganti kode, dan panduan memperingatkanmu jika tidak ada kemajuan yang masuk dengan penggunamu.</li>
-                        <li>Bingo kini diterjemahkan ke semua bahasa.</li>
-                        <li>Semua bahasa sudah ditinjau: teks yang muncul dalam bahasa Inggris atau Spanyol kini tampil dalam bahasamu.</li>
-                        <li>Cadangan yang disimpan di ponselmu tidak lagi berakhir kosong jika penyimpanan gagal.</li>
-                        <li>Mengubah status buku tidak lagi menghapus tanggal bacaan sebelumnya.</li>
-                        <li>Rekap bulanan juga menghitung buku selesai tanpa sesi.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; Beta iPhone, komik dan manga setara buku, tampilan Seri</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Baru</strong>
-                    <ul>
-                        <li>Lecturameter hadir di iPhone dalam versi beta, lewat TestFlight</li>
-                        <li>Komik, manga, dan buku audio setara buku: tambahkan lewat satu formulir manual atau beberapa sekaligus, dan bagikan kartu buku audiomu</li>
-                        <li>Bawa perpustakaanmu dari aplikasi lain (Goodreads, StoryGraph, Bookmory, Fable) dengan pratinjau</li>
-                        <li>Tampilan Seri: bukumu dikelompokkan per seri, terisi otomatis saat kamu menambahkannya</li>
-                        <li>Rekap bulanan dengan kartu yang bisa dibagikan, plus "Bukumu tiap bulan" di Wrapped</li>
-                        <li>Perkembangan membaca di Statistik</li>
-                        <li>Kartuku: semua kartu yang pernah kamu bagikan, di satu tempat</li>
-                        <li>Widget tantangan dan bingo</li>
-                        <li>Tambahkan beberapa buku sekaligus dari pencarian</li>
-                        <li>Filter lanjutan di Perpustakaan</li>
-                        <li>Kredit per edisi: narator, penerjemah, dan ilustrator</li>
-                        <li>Pro berlaku di hingga 3 perangkat, Android dan iOS</li>
-                        <li>Cadangan kini juga menyimpan tag dan pengingatmu</li>
-                        <li>Kini kamu bisa menyimpan sesi membaca tanpa halaman, cukup waktunya saja (berguna kalau kamu membaca digital)</li>
-                    </ul>
-                    <strong>Perbaikan</strong>
-                    <ul>
-                        <li>Menghapus beberapa buku cukup dengan satu Urungkan</li>
-                        <li>Teks kini menyebut jenisnya: buku, komik, manga, atau buku audio</li>
-                        <li>Baris bintang tidak lagi memberi skor saat kamu menggulir</li>
-                        <li>Catatan panjang ditampilkan utuh</li>
-                        <li>Tanggal dan error cadangan dalam bahasa aplikasi</li>
-                        <li>Memulihkan dari Drive tidak lagi memilih file yang salah</li>
-                        <li>Mencegah aplikasi tertutup saat mengetuk tautan penulis dalam beberapa situasi</li>
-                        <li>Pesan Impor dan Ekspor lebih jelas</li>
-                        <li>Mencegah pengatur waktu tertutup tiba-tiba di latar belakang</li>
-                        <li>Mencegah aplikasi tertutup tiba-tiba saat membeli Pro dan di beberapa widget</li>
-                        <li>Memperbaiki angka yang membingungkan di hasil pencarian komik dan manga</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Tag, skor, 40 bahasa, perpustakaan baru</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Baru</strong>
-                    <ul>
-                        <li>Pengaturan ditata ulang per bagian</li>
-                        <li>Sistem <strong>tag</strong> (hingga 3 per buku, cari dengan #)</li>
-                        <li>Kartu dan detail buku diperbarui, 4 ukuran kartu</li>
-                        <li><strong>Skor 5 bintang dengan setengah bintang</strong></li>
-                        <li>Catatan dipisah menjadi: kutipan, catatan, dan opini</li>
-                        <li>Bagikan buku, tantangan, bingo, peta panas, dan statistik</li>
-                        <li>Pengingat membaca yang bisa diatur</li>
-                        <li>Tema <strong>Senja</strong> untuk Pro</li>
-                        <li><strong>Dukungan 40 bahasa</strong></li>
-                    </ul>
-                    <strong>Perbaikan</strong>
-                    <ul>
-                        <li>Tata letak lebih baik di mode lanskap dan layar besar</li>
-                        <li>Pencarian buku lebih cepat dan andal</li>
-                        <li>Widget Pro dengan perbandingan bulanan</li>
-                        <li>Tindakan penghapusan bisa dibatalkan</li>
-                        <li>Atur ulang tip dari Pengaturan &gt; Bantuan</li>
-                        <li>Pagi tidak lagi menutupi judul atau muncul di Pengaturan</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Bilah suara sesi imersif, perbaikan mode lanskap</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Baru</strong>
-                    <ul>
-                        <li>Bilah suara sesi imersif kini juga bisa dibentangkan di mode lanskap, dengan kontrol sebelumnya/berikutnya dan ulang/urutan</li>
-                        <li>Grup suara menonjolkan warna aksen temamu dengan lebih jelas</li>
-                    </ul>
-                    <strong>Perbaikan</strong>
-                    <ul>
-                        <li>Mode lanskap tidak lagi tertahan di mode potret saat kamu memakai aplikasi dalam bahasa yang berbeda dari bahasa ponselmu</li>
-                        <li>Jarak lebih lega antara kartu suara dan tombol pengatur waktu saat dibentangkan</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Lihat semua pertanyaan</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Katalog Buku</a>
                 <a href="#themes">Tema</a>
                 <a href="#events">Acara</a>
-                <a href="#pricing">Harga</a>
+                <a href="./pro/">Harga</a>
                 <a href="../precios-regionales.html">Harga per wilayah</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Sumber daya</h4>
                 <a href="./blog/">Blog</a>
-                <a href="#whatsnew">Berita</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Platform</a>
+                <a href="./news/">Berita</a>
+                <a href="./roadmap/">Peta jalan</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Platform</a>
             </div>
             <div class="footer-col">
                 <h4>Hukum dan kontak</h4>

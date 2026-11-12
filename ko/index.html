@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: 독서 기록 · 통계와 타이머</title>
     <meta name="description" content="Lecturameter: 독서 기록, Android와 iPhone용. 독서 시간을 재고, 페이지·속도·통계를 기록하고, Goodreads에서 가져오세요. 계정도 광고도 없어요.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">테마</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">유니버스 <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">자료 <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">블로그</a></li>
-                    <li><a href="#whatsnew">소식</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">플랫폼</a></li>
+                    <li><a href="./news/">소식</a></li>
+                    <li><a href="./roadmap/">로드맵</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">플랫폼</a></li>
                     <li class="nav-dd-label" role="presentation">법적 고지</li>
                     <li class="nav-dd-sub"><a href="./privacy/">개인정보 처리방침</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">서비스 약관</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">구독이 아닌 한 번만 구매.</p>
                 <p class="price-ios-offer">iOS 출시 기념 할인: 첫 한 달 동안 <strong>&#8364;2.99</strong>. 그 후에는 &#8364;4.99(Android와 같은 가격). 여전히 한 번만 구매하면 돼요.</p>
-                <details class="price-currency-list">
-                    <summary>현지 통화 기준 대략적인 가격</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">최종 가격은 App Store에서 정하며 약간 다를 수 있어요.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">지역별 가격 보기</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Pro 활성화 방법 보기</a></p>
                 <p class="price-note">출시 첫 달 이후에는 Android와 iOS 가격이 같아요.</p>
-                <p class="price-note price-experiment-note">* 가격 실험을 진행 중이라 일부 사용자에게는 다른 가격이 표시될 수 있습니다.</p>
                 <p class="price-trial">앱 안에서 Pro를 7일간 무료로 체험</p>
                 <p class="price-trial">체험에 카드 등록 필요 없음</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">나머지는 모두 무료예요. Pro는 추가 기능만 더해요.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro 자세히 보기 및 지역별 가격</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>빠른 메뉴:</strong> 홈으로 돌아가지 않고 점 세 개(···)로 섹션 간 이동</li>
                     <li><strong>일시중지:</strong> 통계를 망치지 않고 책을 잠시 옆에 두세요</li>
                     <li><strong>새로운 Pro 테마 2개:</strong> 공책과 숲</li>
-                    <li>Pro 테마를 미리 보기와 함께 하나씩 또는 3개 묶음으로 구매할 수 있으며, Pro 화면도 새로워졌습니다</li>
-                    <li>선집과 시집을 위한 <strong>비선형 독서</strong>: 겹치는 페이지는 두 번 계산되지 않으며 진행 막대가 구간으로 나뉩니다</li>
-                    <li>앱을 열지 않고 책 위젯에서 바로 독서 시작</li>
-                    <li>새 디자인과 더 많은 통계를 담은 주간·월간 요약</li>
-                    <li>“의견 보내기”의 선택 이메일, 답장을 드리기 위한 용도로만 사용됩니다</li>
-                    <li>테마마다 전용 타이머 시계</li>
-                    <li>Pagi가 읽고 싶음에서 책 한 권을 골라 줍니다</li>
-                    <li>KOReader의 실제 독서 시간을 반영하는 KOSync</li>
-                    <li>카테고리별 알림과 앱 소식 알림</li>
-                    <li>목표, 내 독서, 도구로 레일이 그룹화된 홈</li>
-                    <li>책의 빠른 작업에서 상태를 바꾸고, 실수하면 되돌리기</li>
-                    <li>이모지 대신 Material 아이콘, 모든 테마에서 더 읽기 쉬운 통계</li>
-                    <li>검색에서 책을 추가할 때 알림</li>
-                    <li>독서 주기 날짜를 한 줄로 모아 더 쉽게 편집</li>
-                    <li>크기별 24가지 템플릿의 빙고</li>
-                    <li>iPhone에서 타이머의 Live Activity가 테마 색상으로 표시</li>
-                    <li>카탈로그가 결과 없는 검색과 ISBN 스캔에서 학습하여 없는 책을 추가합니다(11월 15일부터)</li>
-                    <li>중국어 번체</li>
-                    <li>CSV에 시리즈 포함</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>수정 사항</h3>
-                <ul>
-                    <li>빙고, Wrapped 등 화면의 제목이 다른 메뉴와 같은 높이로 맞춰집니다</li>
-                    <li>빙고와 Wrapped 아이콘의 색상이 복원됩니다</li>
-                    <li>홈의 상태별 책 카운터가 다크, OLED, 황혼, 오로라, 가죽에서 더 잘 보입니다</li>
-                    <li>데이터가 누락된 책의 경고를 하나로 통합: 노란 삼각형은 사라지고 빨간 삼각형만 남습니다</li>
-                    <li>표지와 장르 다시 불러오기에서 이미 모두 정상이면 알려주고, 찾지 못한 항목이 있으면 빨간색으로 경고합니다</li>
-                    <li>매우 큰 라이브러리의 Google Drive 백업이 메모리 부족으로 실패하지 않습니다</li>
-                    <li>iPhone의 여러 가지 수정</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">모든 패치 노트와 버전 기록</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">iPhone과 Android의 Lecturameter</h2>
         <p>iPhone 버전에는 Android와 같은 주요 기능이 있어요: 서재, 독서 타이머, 통계, 챌린지, Bingo, Pagi, 그리고 테마. 차이점은 다음과 같아요.</p>
-        <details class="differences-details">
-            <summary>iPhone과 Android의 차이점</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>iPhone 전용</h3>
-                    <ul>
-                        <li>잠금 화면과 Dynamic Island의 타이머(일시 정지, 정지 가능).</li>
-                        <li>iOS 18 제어: 지금 읽는 책, ISBN 스캔, 책 추가, 타이머 시작.</li>
-                        <li>iCloud Drive 백업.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Android 전용</h3>
-                    <ul>
-                        <li>알림에서 타이머 제어.</li>
-                        <li>몰입 세션 중 방해 금지 모드 자동 설정.</li>
-                        <li>위젯 설정과 고정.</li>
-                        <li>태블릿 (iPhone 버전은 iPad에서 실행되지 않아요).</li>
-                        <li>코드 사용 <code>lm-…</code>.</li>
-                        <li>체험이 끝나면 Pro 테마와 아이콘을 선물로 드려요.</li>
-                        <li>팁과 후원.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>양쪽 모두</h3>
-                    <ul>
-                        <li>책, 통계, 챌린지, Bingo 위젯.</li>
-                        <li>전체 언어 선택.</li>
-                        <li>휴대폰 가로 모드.</li>
-                        <li>Google Drive 백업.</li>
-                        <li>전자책 리더 동기화(KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Pro 구매</h3>
-                    <ul>
-                        <li>iPhone에서는 Pro가 App Store 인앱 구매이고, Android에서는 Google Play 구매예요.</li>
-                        <li>iPhone의 7일 체험은 Apple ID에 연결된 App Store 무료 인앱 구매예요.</li>
-                        <li>당분간 Pro는 Android와 iPhone 사이를 옮겨 가지 않아요. 구매는 각자의 플랫폼에 그대로 남아요.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">모든 차이점 보기</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">오프라인에서도 되나요?</button>
                 <div class="faq-a"><div class="faq-a-inner">거의 모든 기능이 오프라인에서 작동해요. 새 책을 검색하거나 Google Drive에 백업을 올릴 때만 인터넷이 필요해요.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">iPhone 버전이 있나요?</button>
-                <div class="faq-a"><div class="faq-a-inner">네, 지금 바로 다운로드할 수 있어요: <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">구매 전에 사용해 볼 수 있나요?</button>
-                <div class="faq-a"><div class="faq-a-inner">네. 카드 등록 없이 Pro 기능을 7일간 무료로 체험할 수 있어요. iPhone에서는 Apple ID에 연결된 App Store 무료 인앱 구매예요. Android에서는 체험이 끝나면 Pro를 사지 않아도 원하는 Pro 테마 하나를 무료로 드려요.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">휴대폰을 바꾸면 Pro는 어떻게 되나요?</button>
-                <div class="faq-a"><div class="faq-a-inner">어디서 구매했는지에 따라 달라요. <strong>Google Play</strong>에서 구매하고 같은 Google 계정으로 다른 Android로 바꾼다면, Lecturameter를 설치하고 설정에서 <strong>구매 복원</strong>을 누르세요. <strong>App Store</strong>에서 구매하고 같은 Apple ID로 다른 iPhone으로 바꾼다면 마찬가지로 설치하고 <strong>구매 복원</strong>을 누르면 돼요. 당분간 Pro는 Android와 iPhone 사이를 옮겨 가지 않아요. 구매는 각자의 플랫폼에 그대로 남아요. <code>lm-…</code> 코드는 Android에서만 사용할 수 있어요. 자세한 내용: <a href="../activar-pro.html">Pro 활성화 방법</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">휴대폰 간, iOS와 Android 간에 Pro를 옮길 수 있나요?</button>
-                <div class="faq-a"><div class="faq-a-inner">Android와 iPhone 사이에서는 아직 안 돼요. 구매는 각자의 플랫폼에 그대로 남아요. 어떻게든 할 수 있는지 살펴보고 있어요. 같은 플랫폼의 두 휴대폰 사이에서는 돼요. Google 계정이나 Apple ID로 <strong>구매 복원</strong>을 사용하세요.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>버전 기록</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; 이벤트 · 빠른 메뉴 · 새로운 Pro 테마 2종</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>새 기능</strong>
-                    <ul>
-                        <li><strong>이벤트:</strong> 전 세계 독서 챌린지와 진행 중일 때 Lecturameter Quest</li>
-                        <li><strong>빠른 메뉴:</strong> 홈으로 돌아가지 않고 점 세 개(···)로 섹션 간 이동</li>
-                        <li><strong>일시중지:</strong> 통계를 망치지 않고 책을 잠시 옆에 두세요</li>
-                        <li><strong>새로운 Pro 테마 2개:</strong> 공책과 숲</li>
-                        <li>Pro 테마를 미리 보기와 함께 하나씩 또는 3개 묶음으로 구매할 수 있으며, Pro 화면도 새로워졌습니다</li>
-                        <li>선집과 시집을 위한 <strong>비선형 독서</strong>: 겹치는 페이지는 두 번 계산되지 않으며 진행 막대가 구간으로 나뉩니다</li>
-                        <li>앱을 열지 않고 책 위젯에서 바로 독서 시작</li>
-                        <li>새 디자인과 더 많은 통계를 담은 주간·월간 요약</li>
-                        <li>“의견 보내기”의 선택 이메일, 답장을 드리기 위한 용도로만 사용됩니다</li>
-                        <li>테마마다 전용 타이머 시계</li>
-                        <li>Pagi가 읽고 싶음에서 책 한 권을 골라 줍니다</li>
-                        <li>KOReader의 실제 독서 시간을 반영하는 KOSync</li>
-                        <li>카테고리별 알림과 앱 소식 알림</li>
-                        <li>목표, 내 독서, 도구로 레일이 그룹화된 홈</li>
-                        <li>책의 빠른 작업에서 상태를 바꾸고, 실수하면 되돌리기</li>
-                        <li>이모지 대신 Material 아이콘, 모든 테마에서 더 읽기 쉬운 통계</li>
-                        <li>검색에서 책을 추가할 때 알림</li>
-                        <li>독서 주기 날짜를 한 줄로 모아 더 쉽게 편집</li>
-                        <li>크기별 24가지 템플릿의 빙고</li>
-                        <li>iPhone에서 타이머의 Live Activity가 테마 색상으로 표시</li>
-                        <li>카탈로그가 결과 없는 검색과 ISBN 스캔에서 학습하여 없는 책을 추가합니다(11월 15일부터)</li>
-                        <li>중국어 번체</li>
-                        <li>CSV에 시리즈 포함</li>
-                    </ul>
-                    <strong>수정 사항</strong>
-                    <ul>
-                        <li>빙고, Wrapped 등 화면의 제목이 다른 메뉴와 같은 높이로 맞춰집니다</li>
-                        <li>빙고와 Wrapped 아이콘의 색상이 복원됩니다</li>
-                        <li>홈의 상태별 책 카운터가 다크, OLED, 황혼, 오로라, 가죽에서 더 잘 보입니다</li>
-                        <li>데이터가 누락된 책의 경고를 하나로 통합: 노란 삼각형은 사라지고 빨간 삼각형만 남습니다</li>
-                        <li>표지와 장르 다시 불러오기에서 이미 모두 정상이면 알려주고, 찾지 못한 항목이 있으면 빨간색으로 경고합니다</li>
-                        <li>매우 큰 라이브러리의 Google Drive 백업이 메모리 부족으로 실패하지 않습니다</li>
-                        <li>iPhone의 여러 가지 수정</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; % 진행률, Pagi 의상과 스킨, KOSync, 오른쪽에서 왼쪽으로 쓰는 언어</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>새 기능</strong>
-                    <ul>
-                        <li>% 진행률: 책, 만화책, 만화, 오디오북에서 세션을 퍼센트로 기록하세요. 오디오북에는 시간도 함께 적을 수 있어요.</li>
-                        <li>책, 만화책, 만화, 오디오북을 추가한 뒤에도 형식을 바꿀 수 있어요. 세션, 노트, 통계는 그대로 유지돼요.</li>
-                        <li>세션을 마칠 때 여러 개의 노트와 인용구를 각각 따로 남길 수 있어요.</li>
-                        <li>저장하지 않고 세션을 나가면 임시 저장본으로 보관되고, 다음에 세션을 저장할 때 복구할 수 있어요.</li>
-                        <li>통계: 읽은 책을 형식별로 보여 주는 도넛 차트와 각 유형을 따로 볼 수 있는 형식 필터.</li>
-                        <li>오디오북 챌린지(들은 시간과 완독한 오디오북)와 오디오북 Bingo: 1시간 청취는 30페이지로 계산돼요.</li>
-                        <li>Pagi가 어떤 테마와도 어울리는 애니메이션 계절 의상 7종, 새 스킨 9종(음유시인, 밤도둑, 뱀파이어 백작, 잠수함 함장, 잉크, 종이접기, 밤의 독서가, 방랑 기사, 레트로 우주인), 스킨마다 고유한 탭 애니메이션과 함께 첫선을 보여요. 앱 안에 비밀 스킨도 숨어 있어요. 메인 화면을 여기저기 눌러 찾아보세요.</li>
-                        <li>Pagi 전용 설정 메뉴가 생겼어요. 자동 계절, 계절 외 시즌 의상, 스킨을 설정할 수 있어요.</li>
-                        <li>Pro용 앱 아이콘: 설정에서 원하는 아이콘을 고르세요. 핼러윈, 크리스마스, 새해 버전이 있어요. 자동 계절 변경을 켜면 해당 기간에 아이콘이 바뀌었다가 다시 내가 고른 아이콘으로 돌아와요. 기본값은 꺼짐이에요.</li>
-                        <li>Android에서는 Pro를 체험해 보셨다면 Pro 아이콘 중 하나도 선물로 받아요.</li>
-                        <li>KOSync(KOReader 및 호환 앱)로 전자책 리더와 진행 상황을 동기화하세요. 단계별 마법사가 안내해 드려요.</li>
-                        <li>이제 앱이 아랍어, 히브리어, 페르시아어, 우르두어로도 제공되며, 오른쪽에서 왼쪽으로 읽는 화면을 지원해요. 책을 직접 추가할 때 책 언어로도 고를 수 있어요.</li>
-                        <li>새로운 Pro 타이머 사운드와 새 카테고리 Cozy가 추가됐어요.</li>
-                    </ul>
-                    <strong>수정 사항</strong>
-                    <ul>
-                        <li>모든 종류의 책에서 장르를 더 잘 고를 수 있어요.</li>
-                        <li>데이터를 더 쉽게 구분할 수 있도록 일부 통계 색상을 바꿨어요.</li>
-                        <li>전자책 리더의 책에 제목이 없으면 코드 대신 읽기 쉬운 이름이 표시되고, 사용자 계정으로 진행 상황이 오지 않으면 마법사가 알려 드려요.</li>
-                        <li>이제 Bingo가 모든 언어로 번역돼요.</li>
-                        <li>모든 언어를 검토했어요. 영어나 스페인어로 나오던 문구가 이제 내 언어로 표시돼요.</li>
-                        <li>저장에 실패해도 휴대폰에 저장한 백업이 비어 버리지 않아요.</li>
-                        <li>책의 상태를 바꿔도 이전 독서 날짜가 지워지지 않아요.</li>
-                        <li>월간 요약에 세션이 없는 완독 도서도 포함돼요.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; iPhone 베타, 책과 똑같이 대우받는 코믹스와 만화, 시리즈 보기</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>새 기능</strong>
-                    <ul>
-                        <li>Lecturameter가 TestFlight를 통해 iPhone 베타로 나왔어요</li>
-                        <li>코믹스, 만화, 오디오북도 책과 똑같이: 하나의 직접 입력 양식으로 추가하거나 여러 개를 한꺼번에 추가하고, 오디오북 카드도 공유하세요</li>
-                        <li>다른 앱(Goodreads, StoryGraph, Bookmory, Fable)에서 미리보기와 함께 서재 가져오기</li>
-                        <li>시리즈 보기: 책을 시리즈별로 묶어 보여 주고, 책을 추가하면 시리즈가 자동으로 채워져요</li>
-                        <li>공유 카드가 있는 월간 요약, 그리고 Wrapped의 “달마다 나의 책”</li>
-                        <li>통계에 독서 변화 추이 추가</li>
-                        <li>내 카드: 공유한 모든 카드를 한곳에</li>
-                        <li>챌린지 위젯과 Bingo 위젯</li>
-                        <li>검색에서 여러 권을 한꺼번에 추가</li>
-                        <li>서재의 고급 필터</li>
-                        <li>판본별 참여자: 낭독자, 번역가, 일러스트레이터</li>
-                        <li>Pro는 Android와 iOS를 합쳐 최대 3대의 기기에서 사용 가능</li>
-                        <li>이제 백업에 태그와 알림도 저장돼요</li>
-                        <li>이제 페이지 없이 시간만으로도 독서 세션을 저장할 수 있어요(전자책으로 읽을 때 편리해요)</li>
-                    </ul>
-                    <strong>수정 사항</strong>
-                    <ul>
-                        <li>여러 권을 삭제해도 실행 취소는 한 번만</li>
-                        <li>문구에 종류가 표시돼요: 책, 코믹스, 만화 또는 오디오북</li>
-                        <li>스크롤할 때 별점 줄이 더 이상 점수를 매기지 않아요</li>
-                        <li>긴 노트가 전부 표시돼요</li>
-                        <li>날짜와 백업 오류가 앱 언어로 표시돼요</li>
-                        <li>Drive에서 복원할 때 더 이상 엉뚱한 파일을 고르지 않아요</li>
-                        <li>일부 상황에서 저자 링크를 누르면 앱이 종료되던 문제 수정</li>
-                        <li>더 명확해진 가져오기와 내보내기 안내</li>
-                        <li>백그라운드에서 타이머가 예기치 않게 종료되던 문제 수정</li>
-                        <li>Pro 구매 시와 일부 위젯에서 앱이 예기치 않게 종료되던 문제 수정</li>
-                        <li>코믹스와 만화 검색 결과의 헷갈리는 숫자 수정</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; 태그, 점수, 40개 언어, 새로워진 서재</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>새 기능</strong>
-                    <ul>
-                        <li>설정을 섹션별로 재구성</li>
-                        <li><strong>태그</strong> 기능(책당 최대 3개, #으로 검색)</li>
-                        <li>책 카드와 상세 화면 개편, 카드 크기 4가지</li>
-                        <li><strong>반 별까지 매기는 5점 별점</strong></li>
-                        <li>노트를 인용구, 노트, 감상으로 분리</li>
-                        <li>책, 챌린지, Bingo, 히트맵, 통계 공유</li>
-                        <li>맞춤 독서 알림</li>
-                        <li>Pro용 <strong>노을</strong> 테마</li>
-                        <li><strong>40개 언어 지원</strong></li>
-                    </ul>
-                    <strong>수정 사항</strong>
-                    <ul>
-                        <li>가로 모드와 큰 화면에서 더 나은 레이아웃</li>
-                        <li>더 빠르고 안정적인 책 검색</li>
-                        <li>월별 비교가 있는 Pro 위젯</li>
-                        <li>삭제 같은 작업을 실행 취소 가능</li>
-                        <li>설정 &gt; 도움말에서 팁 초기화</li>
-                        <li>Pagi가 더 이상 제목을 가리거나 설정에 나타나지 않아요</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; 몰입 세션 사운드 바, 가로 모드 개선</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>새 기능</strong>
-                    <ul>
-                        <li>몰입 세션의 사운드 바가 이제 가로 모드에서도 펼쳐지고, 이전/다음과 반복/순서 재생 제어가 생겼어요</li>
-                        <li>소리 그룹이 테마의 강조 색상을 더 잘 드러내요</li>
-                    </ul>
-                    <strong>수정 사항</strong>
-                    <ul>
-                        <li>휴대폰과 다른 언어로 앱을 써도 가로 모드가 세로로 고정되지 않아요</li>
-                        <li>펼쳤을 때 사운드 카드와 타이머 버튼 사이 여백이 넉넉해졌어요</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">모든 질문 보기</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">도서 카탈로그</a>
                 <a href="#themes">테마</a>
                 <a href="#events">이벤트</a>
-                <a href="#pricing">가격</a>
+                <a href="./pro/">가격</a>
                 <a href="../precios-regionales.html">지역별 가격</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>자료</h4>
                 <a href="./blog/">블로그</a>
-                <a href="#whatsnew">소식</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">플랫폼</a>
+                <a href="./news/">소식</a>
+                <a href="./roadmap/">로드맵</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">플랫폼</a>
             </div>
             <div class="footer-col">
                 <h4>법적 고지 및 문의</h4>

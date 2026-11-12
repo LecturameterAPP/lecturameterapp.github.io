@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Kifuatilia Usomaji · Takwimu na kipima muda</title>
     <meta name="description" content="Lecturameter: Kifuatilia Usomaji kwa Android na iPhone. Pima muda wa kusoma, fuatilia kurasa, kasi na takwimu, na uingize kutoka Goodreads. Bila akaunti, bila matangazo.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Mandhari</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Ulimwengu <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Rasilimali <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blogu</a></li>
-                    <li><a href="#whatsnew">Habari</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Majukwaa</a></li>
+                    <li><a href="./news/">Habari</a></li>
+                    <li><a href="./roadmap/">Ramani ya njia</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Majukwaa</a></li>
                     <li class="nav-dd-label" role="presentation">Kisheria</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Sera ya faragha</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Masharti ya Huduma</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Ununuzi wa mara moja, si usajili.</p>
                 <p class="price-ios-offer">Ofa ya uzinduzi wa iOS: <strong>&#8364;2.99</strong> katika mwezi wa kwanza. Baada ya hapo, &#8364;4.99 (bei sawa na Android). Bado ni ununuzi wa mara moja.</p>
-                <details class="price-currency-list">
-                    <summary>Bei ya takriban katika sarafu yako</summary>
-                    <ul>
-                        <li>EUR &#8364;2.99</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19.90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2,990</li>
-                        <li>COP COP 14,900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14.99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Bei za mwisho huwekwa na App Store; zinaweza kutofautiana kidogo.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Tazama bei za kikanda</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Tazama jinsi ya kuwezesha Pro</a></p>
                 <p class="price-note">Bei sawa kwenye Android na iOS baada ya mwezi wa uzinduzi.</p>
-                <p class="price-note price-experiment-note">* Baadhi ya watu wanaweza kuona bei tofauti kwa sababu tunafanya majaribio ya bei.</p>
                 <p class="price-trial">Jaribu Pro bure kwa siku 7, ndani ya programu</p>
                 <p class="price-trial">Hakuna kadi inayohitajika kwa jaribio</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Kila kitu kingine kinabaki bure. Pro huongeza vitu vya ziada tu.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro kwa undani na bei za kikanda</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Menyu ya haraka:</strong> ruka kutoka sehemu moja hadi nyingine kwa nukta tatu (···), bila kurudi Mwanzo</li>
                     <li><strong>Imesitishwa:</strong> weka kitabu pembeni kwa muda bila kuharibu takwimu zako</li>
                     <li><strong>Mandhari mbili mpya za Pro:</strong> Daftari na Msitu</li>
-                    <li>Mandhari za Pro pia zinaweza kununuliwa moja moja au kwa pakiti za 3, na onyesho la awali, na skrini ya Pro ni mpya</li>
-                    <li><strong>Usomaji usio wa mstari</strong> kwa antholojia na makusanyo ya mashairi: kurasa zinazopishana hazihesabiwi mara mbili na upau wa maendeleo umegawanywa katika vipande</li>
-                    <li>Anza kusoma kutoka wijeti ya kitabu, bila kufungua programu</li>
-                    <li>Muhtasari wa kila wiki na kila mwezi wenye muundo mpya na takwimu zaidi</li>
-                    <li>Barua pepe ya hiari katika “Tuma maoni”, ili tu niweze kukujibu</li>
-                    <li>Saa ya kipima muda ya kipekee kwa kila mandhari</li>
-                    <li>Pagi hukuchagulia kitabu kutoka Nataka kusoma</li>
-                    <li>KOSync yenye muda halisi wa kusoma wa KOReader</li>
-                    <li>Arifa kwa kila kategoria na taarifa za habari mpya za programu</li>
-                    <li>Mwanzo na reli iliyopangwa katika Malengo, Usomaji wangu na Zana</li>
-                    <li>Badilisha hali ya kitabu kutoka kwenye vitendo vyake vya haraka, na tengua ukikosea</li>
-                    <li>Aikoni za Material badala ya emoji na takwimu zinazosomeka zaidi katika kila mandhari</li>
-                    <li>Arifa unapoongeza kitabu kutoka kwenye utafutaji</li>
-                    <li>Tarehe za mizunguko ya usomaji kwenye safu moja, rahisi kuhariri</li>
-                    <li>Bingo yenye violezo 24 kulingana na ukubwa</li>
-                    <li>Kwenye iPhone, Live Activity ya kipima muda katika rangi za mandhari yako</li>
-                    <li>Katalogi hujifunza kutokana na utafutaji na uskani wa ISBN usiopata kitu na huongeza vitabu vinavyokosekana (kuanzia Novemba 15)</li>
-                    <li>Kichina cha Jadi</li>
-                    <li>Mfululizo katika CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Marekebisho</h3>
-                <ul>
-                    <li>Vichwa katika Bingo, Wrapped na skrini nyingine sasa viko kwenye urefu uleule kama menyu nyingine</li>
-                    <li>Aikoni za Bingo na Wrapped zimerudi na rangi zake</li>
-                    <li>Vihesabu vya vitabu kwa hali kwenye Mwanzo vinaonekana vizuri zaidi katika Giza, OLED, Jioni, Aurora na Ngozi</li>
-                    <li>Onyo moja tu kwa vitabu vyenye data pungufu: pembetatu ya njano imeondoka na nyekundu inabaki</li>
-                    <li>Kupakia upya jalada na aina hukuambia kila kitu kilipokuwa sawa tayari, na kuonya kwa nyekundu kitu kisipopatikana</li>
-                    <li>Nakala za Google Drive za maktaba kubwa sana hazishindwi tena kwa ukosefu wa kumbukumbu</li>
-                    <li>Marekebisho kadhaa kwenye iPhone</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Madokezo yote ya masasisho na historia ya matoleo</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter kwenye iPhone na Android</h2>
         <p>Toleo la iPhone lina vipengele vikuu vilevile vya Android: maktaba, kipima muda cha kusoma, takwimu, changamoto, bingo, Pagi na mandhari za kuona. Haya ni tofauti.</p>
-        <details class="differences-details">
-            <summary>Tofauti kati ya iPhone na Android</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>iPhone pekee</h3>
-                    <ul>
-                        <li>Kipima muda kwenye Skrini ya Kufunga na kwenye Dynamic Island, chenye kusitisha na kusimamisha.</li>
-                        <li>Vidhibiti vya iOS 18: Inasoma sasa, Changanua ISBN, Ongeza kitabu na Anza kipima muda.</li>
-                        <li>Nakala rudufu ya iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Android pekee</h3>
-                    <ul>
-                        <li>Kudhibiti kipima muda kutoka kwenye arifa.</li>
-                        <li>Usinisumbue kiotomatiki katika kipindi cha kuzama.</li>
-                        <li>Kusanidi na kubandika wijeti.</li>
-                        <li>Kompyuta kibao (toleo la iPhone halifanyi kazi kwenye iPad).</li>
-                        <li>Kukomboa misimbo <code>lm-…</code>.</li>
-                        <li>Mandhari na aikoni ya Pro kama zawadi mwishoni mwa kipindi cha majaribio.</li>
-                        <li>Bakshishi na michango.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Kwenye zote mbili</h3>
-                    <ul>
-                        <li>Wijeti za Kitabu, Takwimu, Changamoto na Bingo.</li>
-                        <li>Kichaguzi kamili cha lugha.</li>
-                        <li>Hali ya mlalo kwenye simu.</li>
-                        <li>Nakala rudufu ya Google Drive.</li>
-                        <li>Usawazishaji na kisomaji cha kielektroniki (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Ununuzi wa Pro</h3>
-                    <ul>
-                        <li>Kwenye iPhone, Pro ni ununuzi ndani ya programu wa App Store. Kwenye Android, ni ununuzi wa Google Play.</li>
-                        <li>Jaribio la siku 7 kwenye iPhone ni ununuzi wa bure ndani ya programu wa App Store, unaohusishwa na Apple ID yako.</li>
-                        <li>Kwa sasa Pro haihamii kati ya Android na iPhone: kila ununuzi unabaki kwenye jukwaa lake.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Tazama tofauti zote</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Inafanya kazi nje ya mtandao?</button>
                 <div class="faq-a"><div class="faq-a-inner">Karibu kila kitu hufanya kazi nje ya mtandao. Unahitaji muunganisho tu kutafuta vitabu vipya na kupakia nakala rudufu za Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Je, kuna toleo la iPhone?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ndiyo: unaweza kulipakua sasa kutoka <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Naweza kujaribu kabla ya kununua?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ndiyo. Kuna jaribio la bure la siku 7 la vipengele vya Pro, bila kadi. Kwenye iPhone ni ununuzi wa bure ndani ya programu wa App Store, unaohusishwa na Apple ID yako. Kwenye Android, jaribio likiisha, hata usiponunua Pro, unapata mandhari moja ya Pro bure unayochagua.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Nini kinatokea kwa Pro yangu nikibadilisha simu?</button>
-                <div class="faq-a"><div class="faq-a-inner">Inategemea ulikoinunua. Ukiinunua kwenye <strong>Google Play</strong> na kuhamia Android nyingine yenye akaunti ileile ya Google, sakinisha Lecturameter na ubonyeze <strong>Rejesha ununuzi</strong> kwenye Mipangilio. Ukiinunua kwenye <strong>App Store</strong> na kuhamia iPhone nyingine yenye Apple ID ileile, ni vilevile: sakinisha na ubonyeze <strong>Rejesha ununuzi</strong>. Kwa sasa Pro haihamii kati ya Android na iPhone: kila ununuzi unabaki kwenye jukwaa lake. <code>lm-…</code> misimbo inaweza kukombolewa kwenye Android pekee. Maelezo zaidi katika <a href="../activar-pro.html">Jinsi ya kuwezesha Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Naweza kuhamisha Pro yangu kati ya simu na kati ya iOS na Android?</button>
-                <div class="faq-a"><div class="faq-a-inner">Kati ya Android na iPhone, kwa sasa hapana: kila ununuzi unabaki kwenye jukwaa lake. Tunaangalia kama inawezekana kwa namna fulani. Kati ya simu mbili za jukwaa moja ndiyo: tumia <strong>Rejesha ununuzi</strong> kwa akaunti yako ya Google au Apple ID.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Historia ya matoleo</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Matukio · Menyu ya haraka · Mandhari mbili mpya za Pro</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Mpya</strong>
-                    <ul>
-                        <li><strong>Matukio:</strong> changamoto za kusoma za kimataifa na Lecturameter Quest inapokuwa hai</li>
-                        <li><strong>Menyu ya haraka:</strong> ruka kutoka sehemu moja hadi nyingine kwa nukta tatu (···), bila kurudi Mwanzo</li>
-                        <li><strong>Imesitishwa:</strong> weka kitabu pembeni kwa muda bila kuharibu takwimu zako</li>
-                        <li><strong>Mandhari mbili mpya za Pro:</strong> Daftari na Msitu</li>
-                        <li>Mandhari za Pro pia zinaweza kununuliwa moja moja au kwa pakiti za 3, na onyesho la awali, na skrini ya Pro ni mpya</li>
-                        <li><strong>Usomaji usio wa mstari</strong> kwa antholojia na makusanyo ya mashairi: kurasa zinazopishana hazihesabiwi mara mbili na upau wa maendeleo umegawanywa katika vipande</li>
-                        <li>Anza kusoma kutoka wijeti ya kitabu, bila kufungua programu</li>
-                        <li>Muhtasari wa kila wiki na kila mwezi wenye muundo mpya na takwimu zaidi</li>
-                        <li>Barua pepe ya hiari katika “Tuma maoni”, ili tu niweze kukujibu</li>
-                        <li>Saa ya kipima muda ya kipekee kwa kila mandhari</li>
-                        <li>Pagi hukuchagulia kitabu kutoka Nataka kusoma</li>
-                        <li>KOSync yenye muda halisi wa kusoma wa KOReader</li>
-                        <li>Arifa kwa kila kategoria na taarifa za habari mpya za programu</li>
-                        <li>Mwanzo na reli iliyopangwa katika Malengo, Usomaji wangu na Zana</li>
-                        <li>Badilisha hali ya kitabu kutoka kwenye vitendo vyake vya haraka, na tengua ukikosea</li>
-                        <li>Aikoni za Material badala ya emoji na takwimu zinazosomeka zaidi katika kila mandhari</li>
-                        <li>Arifa unapoongeza kitabu kutoka kwenye utafutaji</li>
-                        <li>Tarehe za mizunguko ya usomaji kwenye safu moja, rahisi kuhariri</li>
-                        <li>Bingo yenye violezo 24 kulingana na ukubwa</li>
-                        <li>Kwenye iPhone, Live Activity ya kipima muda katika rangi za mandhari yako</li>
-                        <li>Katalogi hujifunza kutokana na utafutaji na uskani wa ISBN usiopata kitu na huongeza vitabu vinavyokosekana (kuanzia Novemba 15)</li>
-                        <li>Kichina cha Jadi</li>
-                        <li>Mfululizo katika CSV</li>
-                    </ul>
-                    <strong>Marekebisho</strong>
-                    <ul>
-                        <li>Vichwa katika Bingo, Wrapped na skrini nyingine sasa viko kwenye urefu uleule kama menyu nyingine</li>
-                        <li>Aikoni za Bingo na Wrapped zimerudi na rangi zake</li>
-                        <li>Vihesabu vya vitabu kwa hali kwenye Mwanzo vinaonekana vizuri zaidi katika Giza, OLED, Jioni, Aurora na Ngozi</li>
-                        <li>Onyo moja tu kwa vitabu vyenye data pungufu: pembetatu ya njano imeondoka na nyekundu inabaki</li>
-                        <li>Kupakia upya jalada na aina hukuambia kila kitu kilipokuwa sawa tayari, na kuonya kwa nyekundu kitu kisipopatikana</li>
-                        <li>Nakala za Google Drive za maktaba kubwa sana hazishindwi tena kwa ukosefu wa kumbukumbu</li>
-                        <li>Marekebisho kadhaa kwenye iPhone</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Maendeleo kwa %, mavazi na ngozi za Pagi, KOSync, lugha zinazoandikwa kutoka kulia kwenda kushoto</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Mpya</strong>
-                    <ul>
-                        <li>Maendeleo kwa %: rekodi vipindi vyako kwa asilimia katika vitabu, katuni, manga na vitabu vya sauti. Katika vitabu vya sauti unaweza pia kuandika muda.</li>
-                        <li>Badilisha muundo wa kitabu, katuni, manga au kitabu cha sauti baada ya kukiongeza, bila kupoteza vipindi, madokezo wala takwimu.</li>
-                        <li>Madokezo na nukuu kadhaa unapomaliza kipindi, kila moja ikiwa peke yake.</li>
-                        <li>Ukiacha kipindi bila kuhifadhi, kinabaki kama rasimu na unaweza kukirejesha wakati ujao utakapohifadhi kipindi.</li>
-                        <li>Takwimu: chati ya donati ya ulichosoma kwa muundo na kichujio cha muundo ili kuona kila aina kivyake.</li>
-                        <li>Changamoto za vitabu vya sauti (saa zilizosikilizwa na vitabu vya sauti vilivyokamilika) na Bingo yenye vitabu vya sauti: saa 1 ya kusikiliza huhesabiwa kama kurasa 30.</li>
-                        <li>Pagi anazindua mavazi 7 ya msimu yenye uhuishaji yanayofanya kazi na mandhari yoyote, ngozi 9 mpya (Mshairi, Mwizi wa Usiku, Kaunti Vampaya, Nahodha wa Nyambizi, Wino, Origami, Msomaji wa Usiku, Shujaa Msafiri na Mwanaanga wa Zamani) na uhuishaji wake wa kugusa kwa kila moja. Pia kuna ngozi ya siri iliyofichwa kwenye programu: gusa sehemu mbalimbali za skrini kuu ili kuipata.</li>
-                        <li>Pagi ana sehemu yake katika Mipangilio: msimu wa kiotomatiki, mavazi ya msimu nje ya msimu, na ngozi.</li>
-                        <li>Aikoni za programu kwa Pro: chagua yako katika Mipangilio, zikiwemo toleo za Halloween, Krismasi na Mwaka Mpya. Ukiwasha mabadiliko ya msimu ya kiotomatiki, aikoni hubadilika siku hizo kisha hurudi kwenye uliyochagua. Imezimwa kwa chaguo-msingi.</li>
-                        <li>Kwenye Android, ikiwa umejaribu Pro, pia unapata moja ya aikoni za Pro kama zawadi.</li>
-                        <li>Sawazisha maendeleo yako na kisomaji chako cha vitabu vya kielektroniki kupitia KOSync (KOReader na vinavyooana), kwa mwongozo wa hatua kwa hatua.</li>
-                        <li>Programu sasa ipo kwa Kiarabu, Kiebrania, Kiajemi na Kiurdu, na kiolesura cha kulia kwenda kushoto. Unaweza pia kuzichagua kama lugha ya kitabu unapoongeza kitabu mwenyewe.</li>
-                        <li>Sauti mpya za kipima muda cha Pro, zikiwa na kategoria mpya, Cozy.</li>
-                    </ul>
-                    <strong>Marekebisho</strong>
-                    <ul>
-                        <li>Uchaguzi bora wa aina kwa kila aina ya kitabu.</li>
-                        <li>Rangi fulani za takwimu zimebadilishwa ili kutofautisha kila data vizuri zaidi.</li>
-                        <li>Kitabu cha kisomaji kisipokuwa na kichwa, jina linalosomeka linaonyeshwa badala ya msimbo, na mwongozo hukuonya ikiwa hakuna maendeleo yanayofika na mtumiaji wako.</li>
-                        <li>Bingo sasa imetafsiriwa katika kila lugha.</li>
-                        <li>Lugha zote zimekaguliwa: maandishi yaliyoonekana kwa Kiingereza au Kihispania sasa yanaonekana kwa lugha yako.</li>
-                        <li>Nakala rudufu zilizohifadhiwa kwenye simu yako hazibaki tupu tena ikiwa kuhifadhi kunashindwa.</li>
-                        <li>Kubadilisha hali ya kitabu hakufuti tena tarehe za usomaji wa awali.</li>
-                        <li>Muhtasari wa kila mwezi pia unahesabu vitabu vilivyokamilika visivyo na vipindi.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; Beta ya iPhone, katuni na manga kama vitabu vya daraja la kwanza, mwonekano wa Mfululizo</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Mpya</strong>
-                    <ul>
-                        <li>Lecturameter inakuja kwenye iPhone katika beta, kupitia TestFlight</li>
-                        <li>Katuni, manga na vitabu vya sauti kama vitu vya daraja la kwanza: viongeze kwa fomu moja ya mkono au kadhaa kwa wakati mmoja, na ushiriki kadi yako ya kitabu cha sauti</li>
-                        <li>Leta maktaba yako kutoka programu nyingine (Goodreads, StoryGraph, Bookmory, Fable) pamoja na hakikisho</li>
-                        <li>Mwonekano wa Mfululizo: vitabu vyako vimepangwa kwa mfululizo, vikijazwa kiotomatiki unapovinongeza</li>
-                        <li>Muhtasari wa mwezi wenye kadi ya kushiriki, pamoja na "Kitabu chako cha kila mwezi" kwenye Wrapped</li>
-                        <li>Mageuzi ya usomaji katika Takwimu</li>
-                        <li>Kadi zangu: kila kadi uliyoshiriki, mahali pamoja</li>
-                        <li>Wijeti za changamoto na bingo</li>
-                        <li>Ongeza vitabu kadhaa kwa wakati mmoja kutoka kwenye utafutaji</li>
-                        <li>Vichujio vya kina katika Maktaba</li>
-                        <li>Sifa kwa kila toleo: wasimulizi, watafsiri na wachoraji</li>
-                        <li>Pro inafanya kazi kwenye hadi vifaa 3, Android na iOS</li>
-                        <li>Nakala rudufu sasa huhifadhi pia lebo na vikumbusho vyako</li>
-                        <li>Sasa unaweza kuhifadhi kipindi cha kusoma bila kurasa, muda tu (rahisi ukisoma kidijitali)</li>
-                    </ul>
-                    <strong>Marekebisho</strong>
-                    <ul>
-                        <li>Kufuta vitabu kadhaa kunatoa Tendua moja tu</li>
-                        <li>Maandishi sasa yanataja aina: kitabu, katuni, manga au kitabu cha sauti</li>
-                        <li>Safu ya nyota haitoi tena alama unapoteleza</li>
-                        <li>Madokezo marefu yanaonyeshwa kikamilifu</li>
-                        <li>Tarehe na hitilafu za nakala rudufu katika lugha ya programu</li>
-                        <li>Kurejesha kutoka Drive hakuchagui tena faili isiyo sahihi</li>
-                        <li>Kuzuia programu kuacha kufanya kazi ukigusa kiungo cha mwandishi katika hali fulani</li>
-                        <li>Ujumbe wazi zaidi wa Leta na Hamisha</li>
-                        <li>Kuzuia kipima muda kufungwa bila kutarajiwa chinichini</li>
-                        <li>Kuzuia kufungwa bila kutarajiwa wakati wa kununua Pro na katika baadhi ya wijeti</li>
-                        <li>Kurekebisha nambari inayochanganya katika matokeo ya utafutaji wa katuni na manga</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Lebo, alama, lugha 40, maktaba iliyofanyiwa upya</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Mpya</strong>
-                    <ul>
-                        <li>Mipangilio imepangwa upya katika sehemu</li>
-                        <li>Mfumo wa <strong>Lebo</strong> (hadi 3 kwa kila kitabu, tafuta kwa #)</li>
-                        <li>Kadi za vitabu na maelezo yaliyofanyiwa upya, ukubwa 4 wa kadi</li>
-                        <li><strong>Alama za nyota 5 pamoja na nusu nyota</strong></li>
-                        <li>Madokezo yamegawanywa katika: nukuu, madokezo na maoni</li>
-                        <li>Shiriki vitabu, changamoto, bingo, ramani za joto na takwimu</li>
-                        <li>Vikumbusho vya kusoma vinavyoweza kubadilishwa</li>
-                        <li>Mandhari ya <strong>Machweo</strong> kwa Pro</li>
-                        <li><strong>Kuunga mkono lugha 40</strong></li>
-                    </ul>
-                    <strong>Marekebisho</strong>
-                    <ul>
-                        <li>Mpangilio bora wa mlalo na kwenye skrini kubwa</li>
-                        <li>Utafutaji wa vitabu wa haraka na unaotegemewa zaidi</li>
-                        <li>Wijeti ya Pro yenye ulinganisho wa kila mwezi</li>
-                        <li>Vitendo vya kufuta vyenye kutendua</li>
-                        <li>Weka upya vidokezo kutoka Mipangilio &gt; Msaada</li>
-                        <li>Pagi hafunikii tena vichwa wala kuonekana kwenye Mipangilio</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Upau wa sauti wa kipindi cha kuzama, maboresho ya mlalo</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Mpya</strong>
-                    <ul>
-                        <li>Upau wa sauti wa kipindi cha kuzama sasa hupanuka pia kwenye mlalo, wenye vidhibiti vya iliyotangulia/inayofuata na kurudia/mfuatano</li>
-                        <li>Vikundi vya sauti vinaangazia rangi kuu ya mandhari yako kwa uwazi zaidi</li>
-                    </ul>
-                    <strong>Marekebisho</strong>
-                    <ul>
-                        <li>Mlalo haukwami tena kwenye wima unapotumia programu kwa lugha tofauti na ya simu yako</li>
-                        <li>Nafasi zaidi kati ya kadi ya sauti na vitufe vya kipima muda vinapopanuliwa</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Tazama maswali yote</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Orodha ya vitabu</a>
                 <a href="#themes">Mandhari</a>
                 <a href="#events">Matukio</a>
-                <a href="#pricing">Bei</a>
+                <a href="./pro/">Bei</a>
                 <a href="../precios-regionales.html">Bei za kikanda</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Rasilimali</h4>
                 <a href="./blog/">Blogu</a>
-                <a href="#whatsnew">Habari</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Majukwaa</a>
+                <a href="./news/">Habari</a>
+                <a href="./roadmap/">Ramani ya njia</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Majukwaa</a>
             </div>
             <div class="footer-col">
                 <h4>Kisheria na mawasiliano</h4>

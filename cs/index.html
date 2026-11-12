@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>if(location.hash==='#catalog'||location.hash==='#catalogo')location.replace('../en/features/book-catalog/');</script>
+    <script>(function(){var h=location.hash;if(h==='#history'||h==='#history'||h==='#historial')location.replace('./news/#history');else if(h==='#roadmap')location.replace('./roadmap/');else if(h==='#ios-differences'||h==='#ios-differences')location.replace('./platforms/')})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturameter: Čtenářský deník · Statistiky a časovač</title>
     <meta name="description" content="Lecturameter: Čtenářský deník pro Android a iPhone. Měř čas čtení, sleduj stránky, tempo a statistiky a importuj z Goodreads. Bez účtu a bez reklam.">
@@ -223,7 +224,7 @@
                 </ul>
             </li>
             <li><a href="#themes">Motivy</a></li>
-            <li><a href="#pricing">Pro</a></li>
+            <li><a href="./pro/">Pro</a></li>
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Vesmír <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
@@ -235,9 +236,10 @@
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Zdroje <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
                     <li><a href="./blog/">Blog</a></li>
-                    <li><a href="#whatsnew">Novinky</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#ios-differences">Platformy</a></li>
+                    <li><a href="./news/">Novinky</a></li>
+                    <li><a href="./roadmap/">Plán vývoje</a></li>
+                    <li><a href="./faq/">FAQ</a></li>
+                    <li><a href="./platforms/">Platformy</a></li>
                     <li class="nav-dd-label" role="presentation">Právní informace</li>
                     <li class="nav-dd-sub"><a href="./privacy/">Zásady ochrany osobních údajů</a></li>
                     <li class="nav-dd-sub"><a href="./terms/">Podmínky služby</a></li>
@@ -884,32 +886,7 @@
                 </div>
                 <p class="price-note">Jednorázový nákup, žádné předplatné.</p>
                 <p class="price-ios-offer">Úvodní nabídka na iOS: <strong>2,99 &#8364;</strong> během prvního měsíce. Potom 4,99 &#8364; (stejná cena jako na Androidu). Pořád jednorázový nákup.</p>
-                <details class="price-currency-list">
-                    <summary>Přibližná cena ve tvé měně</summary>
-                    <ul>
-                        <li>EUR 2,99 &#8364;</li>
-                        <li>USD $2.99</li>
-                        <li>GBP &#163;2.99</li>
-                        <li>CAD CA$3.99</li>
-                        <li>AUD A$4.99</li>
-                        <li>CHF CHF 3.00</li>
-                        <li>MXN MX$69</li>
-                        <li>BRL R$19,90</li>
-                        <li>ARS US$2.99</li>
-                        <li>CLP CLP 2 990</li>
-                        <li>COP COP 14 900</li>
-                        <li>PEN S/ 12.90</li>
-                        <li>JPY &#165;500</li>
-                        <li>CNY &#165;22</li>
-                        <li>INR &#8377;299</li>
-                        <li>PLN 14,99 z&#322;</li>
-                    </ul>
-                    <p class="price-currency-note">Konečné ceny určuje App Store; mohou se mírně lišit.</p>
-                </details>
-                <p class="price-note"><a href="../precios-regionales.html">Zobrazit regionální ceny</a></p>
-                <p class="price-note"><a href="../activar-pro.html">Jak aktivovat Pro</a></p>
                 <p class="price-note">Po úvodním měsíci stejná cena na Androidu i iOS.</p>
-                <p class="price-note price-experiment-note">* Někteří lidé mohou vidět jinou cenu, protože provádíme cenové experimenty.</p>
                 <p class="price-trial">Vyzkoušej Pro 7 dní zdarma přímo v aplikaci</p>
                 <p class="price-trial">Na zkušební dobu nepotřebuješ kartu</p>
                 <ul class="pricing-list">
@@ -925,6 +902,7 @@
                 <div class="pricing-foot">Všechno ostatní zůstává zdarma. Pro jen přidává něco navíc.</div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./pro/" class="btn">Pro podrobně a regionální ceny</a></p>
     </div>
 </section>
 
@@ -943,40 +921,10 @@
                     <li><strong>Rychlé menu:</strong> přeskakuj z jedné sekce do druhé přes tři tečky (···), aniž by ses vracel na Domů</li>
                     <li><strong>Pozastaveno:</strong> odlož knihu na čas, aniž by ti to pokazilo statistiky</li>
                     <li><strong>Dva nové motivy Pro:</strong> Sešit a Lesík</li>
-                    <li>Motivy Pro lze koupit i jednotlivě nebo v balíčcích po 3, s náhledem, a obrazovka Pro je nová</li>
-                    <li><strong>Nelineární čtení</strong> pro antologie a básnické sbírky: překrývající se stránky se nepočítají dvakrát a ukazatel postupu je rozdělen na úseky</li>
-                    <li>Začni číst z widgetu knihy, bez otevření aplikace</li>
-                    <li>Týdenní a měsíční souhrny s novým designem a více statistikami</li>
-                    <li>Nepovinný e-mail v „Odeslat zpětnou vazbu“, jen abych ti mohl odpovědět</li>
-                    <li>Vlastní hodiny časovače pro každý motiv</li>
-                    <li>Pagi ti vybere knihu z Chci číst</li>
-                    <li>KOSync se skutečným časem čtení z KOReaderu</li>
-                    <li>Oznámení podle kategorií a upozornění na novinky v aplikaci</li>
-                    <li>Domů s lištou seskupenou do Cíle, Moje čtení a Nástroje</li>
-                    <li>Změň stav knihy z jejích rychlých akcí a vrať to, když se přepleteš</li>
-                    <li>Ikony Material místo emoji a čitelnější statistiky ve všech motivech</li>
-                    <li>Upozornění při přidání knihy z vyhledávání</li>
-                    <li>Data cyklů čtení v jediném řádku, snáz se upravují</li>
-                    <li>Bingo s 24 šablonami podle velikosti</li>
-                    <li>Na iPhonu Live Activity časovače v barvách tvého motivu</li>
-                    <li>Katalog se učí z hledání a skenů ISBN bez výsledku a doplňuje chybějící knihy (od 15. listopadu)</li>
-                    <li>Tradiční čínština</li>
-                    <li>Série v CSV</li>
-                </ul>
-            </div>
-            <div class="whatsnew-col">
-                <h3>Opravy</h3>
-                <ul>
-                    <li>Nadpisy v Bingo, Wrapped a dalších obrazovkách jsou nyní ve stejné výšce jako v ostatních menu</li>
-                    <li>Ikony Bingo a Wrapped dostaly zpět své barvy</li>
-                    <li>Počítadla knih podle stavu na Domů jsou lépe vidět v motivech Tmavý, OLED, Soumrak, Aurora a Kůže</li>
-                    <li>Jediné upozornění pro knihy s chybějícími údaji: žlutý trojúhelník zmizel a zůstal červený</li>
-                    <li>Opětovné načtení obálky a žánru ti řekne, že už bylo vše v pořádku, a červeně upozorní, když něco nenajde</li>
-                    <li>Zálohy velmi velkých knihoven na Google Drive už nepadají kvůli nedostatku paměti</li>
-                    <li>Několik oprav na iPhonu</li>
                 </ul>
             </div>
         </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./news/" class="btn">Všechny poznámky k verzím a historie</a></p>
     </div>
 </section>
 
@@ -985,49 +933,7 @@
     <div class="container">
         <h2 id="differences-title">Lecturameter na iPhonu a Androidu</h2>
         <p>Verze pro iPhone má stejné hlavní funkce jako Android: knihovnu, časovač čtení, statistiky, výzvy, bingo, Pagi a vizuální motivy. Tady jsou rozdíly.</p>
-        <details class="differences-details">
-            <summary>Rozdíly mezi iPhonem a Androidem</summary>
-            <div class="differences-grid">
-                <div>
-                    <h3>Jen na iPhonu</h3>
-                    <ul>
-                        <li>Časovač na zamčené obrazovce a v Dynamic Islandu, s pozastavením a zastavením.</li>
-                        <li>Ovládací prvky iOS 18: Právě čtu, Skenovat ISBN, Přidat knihu a Spustit časovač.</li>
-                        <li>Záloha na iCloud Drive.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Jen na Androidu</h3>
-                    <ul>
-                        <li>Ovládání časovače z oznámení.</li>
-                        <li>Automatický režim Nerušit v imerzivní relaci.</li>
-                        <li>Nastavení a připínání widgetů.</li>
-                        <li>Tablety (verze pro iPhone na iPadu nefunguje).</li>
-                        <li>Uplatnění <code>lm-…</code> kódů.</li>
-                        <li>Motiv a ikona Pro jako dárek na konci zkušební doby.</li>
-                        <li>Spropitné a dary.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Na obou</h3>
-                    <ul>
-                        <li>Widgety Kniha, Statistiky, Výzvy a Bingo.</li>
-                        <li>Úplný výběr jazyka.</li>
-                        <li>Režim na šířku na telefonech.</li>
-                        <li>Záloha na Google Drive.</li>
-                        <li>Synchronizace se čtečkou (KOSync).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Nákup Pro</h3>
-                    <ul>
-                        <li>Na iPhonu je Pro nákup v aplikaci přes App Store. Na Androidu je to nákup přes Google Play.</li>
-                        <li>7denní zkušební verze na iPhonu je bezplatný nákup v aplikaci přes App Store, vázaný na tvoje Apple ID.</li>
-                        <li>Pro se zatím mezi Androidem a iPhonem nepřenáší: každý nákup zůstává na své platformě.</li>
-                    </ul>
-                </div>
-            </div>
-        </details>
+        <p><a href="./platforms/" class="btn">Zobrazit všechny rozdíly</a></p>
     </div>
 </section>
 
@@ -1064,184 +970,8 @@
                 <button class="faq-q">Funguje offline?</button>
                 <div class="faq-a"><div class="faq-a-inner">Skoro všechno funguje offline. Připojení potřebuješ jen k hledání nových knih a k nahrávání záloh na Google Drive.</div></div>
             </div>
-            <div class="faq-item">
-                <button class="faq-q">Existuje verze pro iPhone?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ano: už teď si ji můžeš stáhnout z <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener">App Store</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Můžu si to vyzkoušet před koupí?</button>
-                <div class="faq-a"><div class="faq-a-inner">Ano. Funkce Pro si můžeš 7 dní zdarma vyzkoušet bez karty. Na iPhonu je to bezplatný nákup v aplikaci přes App Store, vázaný na tvoje Apple ID. Na Androidu dostaneš na konci zkušební doby jeden motiv Pro podle svého výběru zdarma, i když si Pro nekoupíš.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Co se stane s mým Pro, když změním telefon?</button>
-                <div class="faq-a"><div class="faq-a-inner">Záleží na tom, kde jsi ho koupil. Pokud jsi ho koupil na <strong>Google Play</strong> a přecházíš na jiný Android se stejným účtem Google, nainstaluj Lecturameter a v Nastavení klepni na <strong>Obnovit nákup</strong>. Pokud jsi ho koupil v <strong>App Store</strong> a přecházíš na jiný iPhone se stejným Apple ID, je to stejné: nainstaluj a klepni na <strong>Obnovit nákup</strong>. Pro se zatím mezi Androidem a iPhonem nepřenáší: každý nákup zůstává na své platformě. <code>lm-…</code> kódy lze uplatnit jen na Androidu. Víc podrobností najdeš v <a href="../activar-pro.html">Jak aktivovat Pro</a>.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">Můžu přesunout Pro mezi telefony a mezi iOS a Androidem?</button>
-                <div class="faq-a"><div class="faq-a-inner">Mezi Androidem a iPhonem zatím ne: každý nákup zůstává na své platformě. Zkoumáme, jestli by to šlo nějak udělat. Mezi dvěma telefony se stejnou platformou ano: použij <strong>Obnovit nákup</strong> se svým účtem Google nebo Apple ID.</div></div>
-            </div>
         </div>
-    </div>
-</section>
-
-<!-- VERSION HISTORY -->
-<section class="band band-alt" id="history">
-    <div class="container">
-        <div class="section-head">
-            <h2>Historie verzí</h2>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-q">v3.9 / iOS 1.1.0 &middot; Události · Rychlé menu · Dva nové motivy Pro</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nové</strong>
-                    <ul>
-                        <li><strong>Události:</strong> celosvětové čtenářské výzvy a Lecturameter Quest, když je nějaký aktivní</li>
-                        <li><strong>Rychlé menu:</strong> přeskakuj z jedné sekce do druhé přes tři tečky (···), aniž by ses vracel na Domů</li>
-                        <li><strong>Pozastaveno:</strong> odlož knihu na čas, aniž by ti to pokazilo statistiky</li>
-                        <li><strong>Dva nové motivy Pro:</strong> Sešit a Lesík</li>
-                        <li>Motivy Pro lze koupit i jednotlivě nebo v balíčcích po 3, s náhledem, a obrazovka Pro je nová</li>
-                        <li><strong>Nelineární čtení</strong> pro antologie a básnické sbírky: překrývající se stránky se nepočítají dvakrát a ukazatel postupu je rozdělen na úseky</li>
-                        <li>Začni číst z widgetu knihy, bez otevření aplikace</li>
-                        <li>Týdenní a měsíční souhrny s novým designem a více statistikami</li>
-                        <li>Nepovinný e-mail v „Odeslat zpětnou vazbu“, jen abych ti mohl odpovědět</li>
-                        <li>Vlastní hodiny časovače pro každý motiv</li>
-                        <li>Pagi ti vybere knihu z Chci číst</li>
-                        <li>KOSync se skutečným časem čtení z KOReaderu</li>
-                        <li>Oznámení podle kategorií a upozornění na novinky v aplikaci</li>
-                        <li>Domů s lištou seskupenou do Cíle, Moje čtení a Nástroje</li>
-                        <li>Změň stav knihy z jejích rychlých akcí a vrať to, když se přepleteš</li>
-                        <li>Ikony Material místo emoji a čitelnější statistiky ve všech motivech</li>
-                        <li>Upozornění při přidání knihy z vyhledávání</li>
-                        <li>Data cyklů čtení v jediném řádku, snáz se upravují</li>
-                        <li>Bingo s 24 šablonami podle velikosti</li>
-                        <li>Na iPhonu Live Activity časovače v barvách tvého motivu</li>
-                        <li>Katalog se učí z hledání a skenů ISBN bez výsledku a doplňuje chybějící knihy (od 15. listopadu)</li>
-                        <li>Tradiční čínština</li>
-                        <li>Série v CSV</li>
-                    </ul>
-                    <strong>Opravy</strong>
-                    <ul>
-                        <li>Nadpisy v Bingo, Wrapped a dalších obrazovkách jsou nyní ve stejné výšce jako v ostatních menu</li>
-                        <li>Ikony Bingo a Wrapped dostaly zpět své barvy</li>
-                        <li>Počítadla knih podle stavu na Domů jsou lépe vidět v motivech Tmavý, OLED, Soumrak, Aurora a Kůže</li>
-                        <li>Jediné upozornění pro knihy s chybějícími údaji: žlutý trojúhelník zmizel a zůstal červený</li>
-                        <li>Opětovné načtení obálky a žánru ti řekne, že už bylo vše v pořádku, a červeně upozorní, když něco nenajde</li>
-                        <li>Zálohy velmi velkých knihoven na Google Drive už nepadají kvůli nedostatku paměti</li>
-                        <li>Několik oprav na iPhonu</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.8 / iOS 1.0 &middot; Průběh v %, outfity a skiny Pagi, KOSync, jazyky psané zprava doleva</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nové</strong>
-                    <ul>
-                        <li>Průběh v %: zapisuj relace v procentech u knih, komiksů, mangy i audioknih. U audioknih můžeš zadat i čas.</li>
-                        <li>Změň formát knihy, komiksu, mangy nebo audioknihy po přidání, bez ztráty relací, poznámek a statistik.</li>
-                        <li>Několik poznámek a citátů po skončení relace, každý zvlášť.</li>
-                        <li>Když relaci opustíš bez uložení, zůstane jako koncept a můžeš ji obnovit při dalším ukládání.</li>
-                        <li>Statistiky: koláčový graf toho, co čteš podle formátu, a filtr formátu pro samostatné zobrazení každého typu.</li>
-                        <li>Výzvy pro audioknihy (poslechnuté hodiny a dokončené audioknihy) a Bingo s audioknihami: 1 hodina poslechu se počítá jako 30 stránek.</li>
-                        <li>Pagi poprvé s 7 animovanými sezónními outfity, které fungují s jakýmkoli motivem, 9 novými skiny (Bard, Noční zloděj, Upíří hrabě, Kapitán ponorky, Inkoust, Origami, Noční čtenář, Bloudící rytíř a Retro astronaut) a vlastní animací po klepnutí u každého. V aplikaci je ukrytý i tajný skin: klepej po hlavní obrazovce a najdeš ho.</li>
-                        <li>Pagi má v Nastavení vlastní sekci: automatická sezóna, sezónní outfity mimo sezónu a skiny.</li>
-                        <li>Ikony aplikace pro Pro: vyber si svou v Nastavení, i ve verzích pro Halloween, Vánoce a Nový rok. Když zapneš automatickou sezónní změnu, ikona se změní v daných dnech a pak se vrátí k tvé. Ve výchozím stavu je vypnutá.</li>
-                        <li>Na Androidu, pokud sis Pro vyzkoušel(a), dostaneš jednu z ikon Pro jako dárek.</li>
-                        <li>Synchronizuj svůj postup se čtečkou přes KOSync (KOReader a kompatibilní) s průvodcem krok za krokem.</li>
-                        <li>Aplikace je nově v arabštině, hebrejštině, perštině a urdštině s rozhraním zprava doleva. Můžeš je také vybrat jako jazyk knihy při ručním přidávání.</li>
-                        <li>Nové zvuky časovače Pro s novou kategorií Cozy.</li>
-                    </ul>
-                    <strong>Opravy</strong>
-                    <ul>
-                        <li>Lepší výběr žánru pro všechny druhy knih.</li>
-                        <li>Některé barvy ve statistikách změněny, aby šla data lépe rozlišit.</li>
-                        <li>Když kniha ze čtečky nemá název, zobrazí se čitelný název místo kódu a průvodce upozorní, pokud s tvým uživatelem nepřijde žádný postup.</li>
-                        <li>Bingo je nyní přeloženo do všech jazyků.</li>
-                        <li>Všechny jazyky zkontrolovány: texty, které se zobrazovaly anglicky nebo španělsky, jsou nyní ve tvém jazyce.</li>
-                        <li>Zálohy uložené v telefonu už nekončí prázdné, když uložení selže.</li>
-                        <li>Změna stavu knihy už nesmaže data dřívějších přečtení.</li>
-                        <li>Měsíční přehled počítá i dokončené knihy bez relací.</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.7 &middot; Beta pro iPhone, komiksy a manga jako plnohodnotné knihy, zobrazení Série</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nové</strong>
-                    <ul>
-                        <li>Lecturameter přichází na iPhone v betě přes TestFlight</li>
-                        <li>Komiksy, manga a audioknihy jako plnohodnotné položky: přidej je jedním ručním formulářem nebo několik najednou a sdílej kartu své audioknihy</li>
-                        <li>Přenes si knihovnu z jiné aplikace (Goodreads, StoryGraph, Bookmory, Fable) s náhledem</li>
-                        <li>Zobrazení Série: tvoje knihy seskupené podle sérií, doplněné automaticky při přidání</li>
-                        <li>Měsíční shrnutí se sdílitelnou kartou a k tomu „Tvoje kniha každého měsíce“ ve Wrapped</li>
-                        <li>Vývoj čtení ve Statistikách</li>
-                        <li>Moje karty: všechny karty, které jsi sdílel, na jednom místě</li>
-                        <li>Widgety výzev a binga</li>
-                        <li>Přidání několika knih najednou z hledání</li>
-                        <li>Pokročilé filtry v Knihovně</li>
-                        <li>Autoři u každého vydání: interpreti, překladatelé a ilustrátoři</li>
-                        <li>Pro funguje až na 3 zařízeních, s Androidem i iOS</li>
-                        <li>Zálohy teď ukládají i tvoje tagy a upozornění</li>
-                        <li>Relaci čtení teď můžeš uložit i bez stránek, jen s časem (hodí se, když čteš digitálně)</li>
-                    </ul>
-                    <strong>Opravy</strong>
-                    <ul>
-                        <li>Smazání několika knih nabídne jediné Zpět</li>
-                        <li>Texty teď uvádějí typ: kniha, komiks, manga nebo audiokniha</li>
-                        <li>Řada hvězdiček už při posouvání nehodnotí</li>
-                        <li>Dlouhé poznámky se zobrazí celé</li>
-                        <li>Data a chyby zálohy v jazyce aplikace</li>
-                        <li>Obnovení z Disku už nevybere špatný soubor</li>
-                        <li>Opraven pád při klepnutí na odkaz autora v některých situacích</li>
-                        <li>Srozumitelnější zprávy u Importu a Exportu</li>
-                        <li>Opraveno nečekané ukončení časovače na pozadí</li>
-                        <li>Opraveno nečekané zavírání při nákupu Pro a u některých widgetů</li>
-                        <li>Opraveno matoucí číslo ve výsledcích hledání komiksů a mangy</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.6 &middot; Tagy, hodnocení, 40 jazyků, nová knihovna</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nové</strong>
-                    <ul>
-                        <li>Nastavení přeuspořádané do sekcí</li>
-                        <li>Systém <strong>tagů</strong> (až 3 na knihu, hledání přes #)</li>
-                        <li>Nové karty a detail knihy, 4 velikosti karet</li>
-                        <li><strong>Hodnocení 5 hvězdičkami i s polovinami</strong></li>
-                        <li>Poznámky rozdělené na citáty, poznámky a názor</li>
-                        <li>Sdílení knih, výzev, binga, teplotních map a statistik</li>
-                        <li>Upozornění na čtení s vlastním nastavením</li>
-                        <li>Motiv <strong>Soumrak</strong> pro Pro</li>
-                        <li><strong>Podpora 40 jazyků</strong></li>
-                    </ul>
-                    <strong>Opravy</strong>
-                    <ul>
-                        <li>Lepší rozvržení na šířku a na velkých obrazovkách</li>
-                        <li>Rychlejší a spolehlivější hledání knih</li>
-                        <li>Widget Pro s měsíčním srovnáním</li>
-                        <li>Nevratné akce teď jdou vrátit zpět</li>
-                        <li>Obnovení tipů v Nastavení &gt; Nápověda</li>
-                        <li>Pagi už nezakrývá nadpisy a neobjevuje se v Nastavení</li>
-                    </ul>
-                </div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q">v3.5 &middot; Zvuková lišta imerzivní relace, vylepšení na šířku</button>
-                <div class="faq-a"><div class="faq-a-inner">
-                    <strong>Nové</strong>
-                    <ul>
-                        <li>Zvuková lišta imerzivní relace se teď rozbalí i na šířku, s ovládáním předchozí/další a smyčka/sekvence</li>
-                        <li>Skupiny zvuků výrazněji zvýrazňují barvu akcentu tvého motivu</li>
-                    </ul>
-                    <strong>Opravy</strong>
-                    <ul>
-                        <li>Režim na šířku se už nezasekne na výšku, když aplikaci používáš v jiném jazyce, než má telefon</li>
-                        <li>Víc místa mezi kartou zvuku a tlačítky časovače po rozbalení</li>
-                    </ul>
-                </div></div>
-            </div>
-        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./faq/" class="btn">Zobrazit všechny otázky</a></p>
     </div>
 </section>
 
@@ -1265,7 +995,7 @@
                 <a href="../en/features/book-catalog/">Katalog knih</a>
                 <a href="#themes">Motivy</a>
                 <a href="#events">Události</a>
-                <a href="#pricing">Ceny</a>
+                <a href="./pro/">Ceny</a>
                 <a href="../precios-regionales.html">Regionální ceny</a>
             </div>
             <div class="footer-col">
@@ -1276,9 +1006,10 @@
             <div class="footer-col">
                 <h4>Zdroje</h4>
                 <a href="./blog/">Blog</a>
-                <a href="#whatsnew">Novinky</a>
-                <a href="#faq">FAQ</a>
-                <a href="#ios-differences">Platformy</a>
+                <a href="./news/">Novinky</a>
+                <a href="./roadmap/">Plán vývoje</a>
+                <a href="./faq/">FAQ</a>
+                <a href="./platforms/">Platformy</a>
             </div>
             <div class="footer-col">
                 <h4>Právní informace a kontakt</h4>
