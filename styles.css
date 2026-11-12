@@ -439,6 +439,8 @@ html.startupbar-active.promo-dismissed body { padding-top: 84px; }
     max-width: 900px;
     margin: 0 auto;
 }
+.metrics-strip--4 { grid-template-columns: repeat(4, 1fr); }
+.metrics-strip--7 { grid-template-columns: repeat(7, 1fr); }
 .metric-box {
     text-align: center;
     padding: 18px 8px;
@@ -469,10 +471,11 @@ html.startupbar-active.promo-dismissed body { padding-top: 84px; }
     line-height: 1.3;
 }
 @media (max-width: 768px) {
-    .metrics-strip { grid-template-columns: repeat(3, 1fr); }
+    .metrics-strip, .metrics-strip--7 { grid-template-columns: repeat(3, 1fr); }
+    .metrics-strip--4 { grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 480px) {
-    .metrics-strip { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .metrics-strip, .metrics-strip--4, .metrics-strip--7 { grid-template-columns: repeat(2, 1fr); gap: 8px; }
     .metric-box { padding: 14px 6px; }
     .metric-val { font-size: 17px; }
 }
@@ -1919,4 +1922,75 @@ html:not([data-theme="light"]) .tag-free {
     .board .sw > :first-child { animation: none !important; opacity: 0 !important; }
     .board .sw > :last-child { animation: none !important; opacity: 1 !important; }
     .qcard { transition: none; }
+}
+
+/* ─── QA móviles (qa_1211): F01-F13 ─── */
+/* F02: URLs largas dentro del texto no deben ensanchar la página */
+.container p a, .container li a { overflow-wrap: anywhere; }
+
+/* F11: sin cursiva ni tracking negativo en escrituras conectadas (RTL) */
+[dir="rtl"] .hero h1, [dir="rtl"] .section-head h2, [dir="rtl"] .showcase .info h3,
+[dir="rtl"] .footer-cta h3, [dir="rtl"] .testimonial q, [dir="rtl"] .accent-quote {
+    font-style: normal; letter-spacing: 0;
+}
+
+/* F06: panel de idiomas en horizontal */
+@media (max-height: 520px) {
+    .lang-grid { max-height: calc(100dvh - 190px); }
+}
+
+/* F05: menú desplegado con scroll propio (alto de ventana - promo 38 - barra 64 - margen) */
+.nav-collapsed .nav-pills.open { max-height: calc(100dvh - 110px); overflow-y: auto; overscroll-behavior: contain; }
+html.startupbar-active .nav-collapsed .nav-pills.open { max-height: calc(100dvh - 146px); }
+@media (max-width: 768px) {
+    .nav-pills.open { max-height: calc(100dvh - 110px); overflow-y: auto; overscroll-behavior: contain; }
+    html.startupbar-active .nav-pills.open { max-height: calc(100dvh - 146px); }
+}
+
+/* F08: objetivos táctiles de la cabecera */
+@media (max-width: 768px) {
+    .promo-close { padding: 10px 12px; min-width: 44px; min-height: 38px; }
+    .nav-hamburger { padding: 10px; min-width: 44px; min-height: 44px; }
+    .nav-theme-btn, .nav-lang-btn { min-height: 44px; }
+    .nav-brand { min-height: 44px; }
+    body { padding-top: 102px; }
+    html.promo-dismissed body { padding-top: 64px; }
+    html.startupbar-active body { padding-top: 138px; }
+    /* F13: grupo «Funciones» centrado en el menú abierto */
+    .nav-pills.open .has-dropdown { align-self: stretch; text-align: center; }
+    .nav-pills.open .nav-dropdown { padding: 0; align-items: center; text-align: center; }
+    .nav-pills.open .has-dropdown > a { display: inline-block; }
+    /* F09: más objetivos táctiles */
+    .footer-col a { padding: 12px 0; }
+    .footer-social a { width: 44px; height: 44px; }
+    .donate-btn { min-height: 44px; padding-block: 8px; }
+    .theme-pill { min-height: 44px; }
+    .mode-toggle button { min-height: 44px; }
+    .sound-btn { width: 44px; height: 44px; }
+}
+
+/* F10: texto de la barra promo sin pisar el botón × */
+.promo-bar { padding-inline: 12px 58px; }
+.promo-bar > span:not(.promo-pill) { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* F12: textos mínimos de 12 px */
+@media (max-width: 480px) {
+    .promo-pill, .metric-label, .pro-tag, .tag-free, .demo-label,
+    .price-currency-note, .price-note.price-experiment-note { font-size: 12px; }
+}
+
+/* F01: cabecera en 320 px */
+@media (max-width: 359px) {
+    .nav-inner { padding-inline: 12px; gap: 8px; }
+    .nav-controls { gap: 4px; }
+    .nav-theme-btn, .nav-lang-btn { padding: 5px 8px; }
+    .nav-brand { font-size: 15px; gap: 6px; }
+}
+
+/* F04: privacidad.html / tos.html (selector de idioma completo; el botón ES/EN sobra) */
+@media (max-width: 480px) {
+    .nav-lang-select { max-width: 84px; min-height: 44px; }
+    .nav-inner { gap: 6px; padding-inline: 12px; }
+    .nav-controls { gap: 4px; }
+    .nav-controls:has(.nav-lang-select) .nav-lang-btn[data-en] { display: none; }
 }

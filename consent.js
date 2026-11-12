@@ -95,7 +95,10 @@
             '.lm-cb-btn:hover{filter:brightness(1.1)}' +
             '.lm-cb-btn:focus-visible,.lm-cb a:focus-visible{outline:3px solid var(--accent-text,#9AA5FF);outline-offset:2px}' +
             '.lm-cb-link{flex:1 1 100%;font-size:14px;margin-top:2px}' +
-            '@media (min-width:560px){.lm-cb-link{flex:0 0 auto;margin-inline-start:auto;margin-top:0}}';
+            '@media (min-width:560px){.lm-cb-link{flex:0 0 auto;margin-inline-start:auto;margin-top:0}}' +
+            '@media (max-width:360px),(max-height:520px){.lm-cb{font-size:13px;padding:10px 14px;max-height:calc(100dvh - 24px);overflow-y:auto}' +
+            '.lm-cb h2{font-size:14px;margin-bottom:4px}.lm-cb p{margin-bottom:8px;line-height:1.4}' +
+            '.lm-cb-btn{padding:10px 14px;font-size:14px;min-width:110px}}';
         document.head.appendChild(st);
     }
 
