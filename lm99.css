@@ -1,0 +1,100 @@
+/* Lecturameter 99: estilo retro propio. Solo afecta a <main class="lm99-page"> (cabecera y pie quedan con el estilo comun). */
+main.lm99-page{
+  --w-face:#c0c0c0;--w-light:#fff;--w-shadow:#808080;--w-dark:#0a0a0a;--w-title:#000080;--w-title2:#1084d0;--w-desk:#008080;--w-ink:#111;
+  background:var(--w-desk);color:var(--w-ink);
+  font-family:Tahoma,"MS Sans Serif",Verdana,Geneva,sans-serif;font-size:15px;
+  overflow-x:hidden;
+}
+main.lm99-page *{border-radius:0 !important;box-shadow:none;text-shadow:none}
+main.lm99-page .band,main.lm99-page .band-alt,main.lm99-page .band-hero{background:transparent}
+main.lm99-page .band{padding:40px 0}
+main.lm99-page .band-hero{padding:48px 0 12px}
+main.lm99-page .container{max-width:1100px;padding-left:16px;padding-right:16px}
+main.lm99-page .reveal-up{opacity:1;transform:none}
+
+/* Ventana del hero */
+main.lm99-page .band-hero .hero-copy{
+  background:var(--w-face);border:2px solid;border-color:var(--w-light) var(--w-dark) var(--w-dark) var(--w-light);
+  outline:1px solid var(--w-shadow);outline-offset:-3px;padding:44px 24px 26px;position:relative;color:var(--w-ink);
+}
+main.lm99-page .band-hero .hero-copy::before,main.lm99-page .lm99-head::before,main.lm99-page .grid-card::before,main.lm99-page .pricing-card::before,main.lm99-page .showcase::before,main.lm99-page .differences-details>summary::before{
+  content:"\25A3  Lecturameter 99";
+}
+main.lm99-page .band-hero .hero-copy::before{
+  position:absolute;left:3px;right:3px;top:3px;height:24px;line-height:24px;padding:0 8px;
+  background:linear-gradient(90deg,var(--w-title),var(--w-title2));color:#fff;font:700 13px Tahoma,Verdana,sans-serif;text-align:left;
+  white-space:nowrap;overflow:hidden;
+}
+main.lm99-page h1,main.lm99-page h2,main.lm99-page h3{font-family:Tahoma,Verdana,sans-serif;color:var(--w-ink);letter-spacing:0}
+main.lm99-page h1{font-size:clamp(24px,5vw,40px)}
+main.lm99-page .hero-tagline,main.lm99-page p,main.lm99-page li{color:var(--w-ink);opacity:1}
+main.lm99-page .lm99-formerly{font-family:"Courier New",monospace;font-size:13px;background:#fff;border:2px solid;border-color:var(--w-shadow) var(--w-light) var(--w-light) var(--w-shadow);padding:6px 10px;opacity:1}
+
+/* Barras de seccion como barras de titulo */
+main.lm99-page .section-head.lm99-head{
+  background:var(--w-face);border:2px solid;border-color:var(--w-light) var(--w-dark) var(--w-dark) var(--w-light);
+  margin-top:48px;padding:0 0 14px;text-align:center;
+}
+main.lm99-page .section-head.lm99-head::before{display:block;margin:0 0 12px;padding:3px 8px;background:linear-gradient(90deg,var(--w-title),var(--w-title2));color:#fff;font:700 12px Tahoma,Verdana,sans-serif;text-align:left}
+main.lm99-page .lm99-head h2{margin:0 12px 6px;font-size:clamp(20px,3.4vw,28px)}
+main.lm99-page .lm99-head p{margin:6px 14px 0}
+
+/* Ventanas: showcase, tarjetas, precios, comparativa */
+main.lm99-page .showcase,main.lm99-page .grid-card,main.lm99-page .pricing-card,main.lm99-page .differences-details{
+  background:var(--w-face);border:2px solid;border-color:var(--w-light) var(--w-dark) var(--w-dark) var(--w-light);
+  outline:1px solid var(--w-shadow);outline-offset:-4px;color:var(--w-ink);
+}
+main.lm99-page .showcase{margin:32px 0;padding:0 20px 20px;gap:28px;position:relative}
+main.lm99-page .showcase+.showcase{padding-top:0}
+main.lm99-page .showcase::before,main.lm99-page .grid-card::before,main.lm99-page .pricing-card::before,main.lm99-page .differences-details>summary::before{
+  display:block;grid-column:1/-1;margin:0 -20px 16px;padding:3px 8px;
+  background:linear-gradient(90deg,var(--w-title),var(--w-title2));color:#fff;font:700 12px Tahoma,Verdana,sans-serif;text-align:left;
+}
+main.lm99-page .grid-card{padding:0 0 14px;overflow:hidden}
+main.lm99-page .grid-card::before,main.lm99-page .pricing-card::before{margin:0 0 12px}
+main.lm99-page .grid-card-media{background:#000;margin:0 12px;border:2px solid;border-color:var(--w-shadow) var(--w-light) var(--w-light) var(--w-shadow)}
+main.lm99-page .grid-card-media img,main.lm99-page .phone img{max-width:100%;height:auto;image-rendering:auto}
+main.lm99-page .phone{background:#000;border:2px solid;border-color:var(--w-shadow) var(--w-light) var(--w-light) var(--w-shadow);padding:0}
+main.lm99-page .grid-card-body{padding:10px 14px 0}
+main.lm99-page .grid-card-body h3,main.lm99-page .showcase .info h3{color:var(--w-title);font-size:17px;margin-top:0}
+main.lm99-page .showcase .info p,main.lm99-page .grid-card-body p{color:var(--w-ink);font-size:14.5px}
+main.lm99-page .showcase .info li::marker{content:"\25A0  ";color:var(--w-title)}
+main.lm99-page .pricing-grid{gap:24px}
+main.lm99-page .pricing-card{padding:0 20px 18px;opacity:1;transform:none}
+main.lm99-page .pricing-card::before{margin:0 -20px 14px}
+main.lm99-page .pricing-name,main.lm99-page .price-free{color:var(--w-title)}
+main.lm99-page .pricing-list li{color:var(--w-ink)}
+main.lm99-page .pricing-list li::before{color:var(--w-title)}
+main.lm99-page .price-note,main.lm99-page .pricing-foot,main.lm99-page .price-trial{color:#333;background:transparent}
+main.lm99-page .pricing-card.pro{border-color:var(--w-light) var(--w-dark) var(--w-dark) var(--w-light)}
+main.lm99-page .differences-details{margin-top:40px;padding:0 0 16px}
+main.lm99-page .differences-details>summary{cursor:pointer;list-style:none;padding:0;color:var(--w-ink);font-weight:700}
+main.lm99-page .differences-details>summary::-webkit-details-marker{display:none}
+main.lm99-page .differences-details>summary::before{margin:0 0 12px}
+main.lm99-page .differences-details>summary{display:block;padding-right:12px}
+main.lm99-page .differences-grid{padding:0 16px}
+main.lm99-page .differences-grid h3{color:var(--w-title)}
+
+/* Botones 3D */
+main.lm99-page .btn,main.lm99-page .btn-outline{
+  background:var(--w-face);color:var(--w-ink);border:2px solid;border-color:var(--w-light) var(--w-dark) var(--w-dark) var(--w-light);
+  font:700 14px Tahoma,Verdana,sans-serif;padding:9px 22px;transform:none;filter:none;text-decoration:none;
+}
+main.lm99-page .btn:hover{background:#d4d0c8;transform:none;filter:none}
+main.lm99-page .btn:active{border-color:var(--w-dark) var(--w-light) var(--w-light) var(--w-dark);padding:10px 21px 8px 23px}
+main.lm99-page .btn-outline{color:#444;border-style:dashed;border-color:var(--w-shadow)}
+main.lm99-page .lm99-get{gap:14px;flex-wrap:wrap}
+main.lm99-page .lm99-cta{background:var(--w-face);border:2px solid;border-color:var(--w-light) var(--w-dark) var(--w-dark) var(--w-light);padding:12px 16px;margin-top:36px;color:var(--w-ink)}
+main.lm99-page a{color:#0000ee}
+main.lm99-page a:visited{color:#551a8b}
+main.lm99-page .btn:visited{color:var(--w-ink)}
+main.lm99-page a:focus-visible,main.lm99-page summary:focus-visible{outline:2px dotted #000;outline-offset:2px}
+
+@media (max-width:640px){
+  main.lm99-page .container{padding-left:10px;padding-right:10px}
+  main.lm99-page .showcase{padding:0 12px 14px;gap:16px}
+  main.lm99-page .showcase::before{margin:0 -12px 12px}
+  main.lm99-page .pricing-card{padding:0 12px 14px}
+  main.lm99-page .pricing-card::before{margin:0 -12px 12px}
+  main.lm99-page .band-hero .hero-copy{padding:40px 14px 20px}
+}
