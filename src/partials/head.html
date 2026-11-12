@@ -1,0 +1,42 @@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page_title}}</title>
+    <meta name="description" content="{{page_description}}">
+    <meta property="og:title" content="{{page_title}}">
+    <meta property="og:description" content="{{page_description}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{page_url}}">
+    <meta property="og:image" content="{{site_url}}social_card.jpg?v=260807">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{{page_title}}">
+    <meta property="og:locale" content="{{og_locale}}">
+{{og_locale_alternates}}    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{page_title}}">
+    <meta name="twitter:description" content="{{page_description}}">
+    <meta name="twitter:image" content="{{site_url}}social_card.jpg?v=260807">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#121212">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{{root}}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{root}}favicon-16x16.png">
+    <link rel="apple-touch-icon" href="{{root}}apple-touch-icon.png">
+    <link rel="manifest" href="{{root}}site.webmanifest">
+    <link rel="shortcut icon" href="{{root}}favicon.ico">
+
+    <link rel="canonical" href="{{page_url}}">
+{{hreflang_links}}    <link rel="stylesheet" href="{{root}}styles.css?v=7.1">
+
+    <script>if(localStorage.getItem('promo-dismissed'))document.documentElement.classList.add('promo-dismissed');</script>
+    <script src="/consent.js" defer data-policy="{{link_cookies}}"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "{{json:common.footer.home}}", "item": "{{home_abs}}"},
+        {"@type": "ListItem", "position": 2, "name": "{{json:page_name}}", "item": "{{page_url}}"}
+      ]
+    }
+    </script>

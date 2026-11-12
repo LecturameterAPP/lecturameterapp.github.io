@@ -1,0 +1,60 @@
+<nav class="nav-bar">
+    <div class="nav-inner">
+        <a {{@href:link_home}} class="nav-brand">
+            <img src="{{root}}ic_launcher_round.png" alt="{{common.nav.lecturameter.alt}}" width="28" height="28">
+            {{common.nav.lecturameter}}
+        </a>
+        <ul class="nav-pills">
+            <li class="has-dropdown">
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">{{@t:common.nav.features}} <span class="caret" aria-hidden="true">&#x25BE;</span></button>
+                <ul class="nav-dropdown">
+                    <li><a {{@href:link_feat_timer}}>{{@t:common.nav.reading_timer_2}}</a></li>
+                    <li><a {{@href:link_feat_tracker}}>{{@t:common.nav.reading_tracker}}</a></li>
+                    <li><a {{@href:link_feat_stats}}>{{@t:common.nav.reading_statistics_2}}</a></li>
+                    <li><a {{@href:link_feat_goodreads}}>{{@t:common.nav.goodreads_alternative}}</a></li>
+                    <li><a {{@href:link_feat_catalog}}>{{@t:common.nav.book_catalog}}</a></li>
+                    <li class="nav-dd-all"><a {{@href:link_features_all}}>{{@t:common.nav.all_features}}</a></li>
+                </ul>
+            </li>
+            <li><a {{@href:link_themes}}>{{@t:common.nav.themes}}</a></li>
+            <li><a {{@href:link_page_pro}}{{cur_pro}}>{{@t:common.nav.pro}}</a></li>
+            <li class="has-dropdown">
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">{{@t:common.nav.universe}} <span class="caret" aria-hidden="true">&#x25BE;</span></button>
+                <ul class="nav-dropdown">
+                    <li><a {{@href:link_home}}{{cur_home}}>{{common.nav.lecturameter}}</a></li>
+                    <li><a {{@href:link_1999}}{{cur_lm99}}>{{@t:common.footer.lecturameter_1999}}</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">{{@t:common.nav.resources}} <span class="caret" aria-hidden="true">&#x25BE;</span></button>
+                <ul class="nav-dropdown">
+                    <li><a {{@href:link_blog}}{{cur_blog}}>{{@t:common.nav.blog}}</a></li>
+                    <li><a {{@href:link_page_news}}{{cur_news}}>{{@t:common.nav.news}}</a></li>
+                    <li><a {{@href:link_page_roadmap}}{{cur_roadmap}}>{{@t:common.nav.roadmap}}</a></li>
+                    <li><a {{@href:link_page_faq}}{{cur_faq}}>{{@t:common.nav.faq}}</a></li>
+                    <li><a {{@href:link_page_platforms}}{{cur_platforms}}>{{@t:common.nav.platforms}}</a></li>
+                    <li class="nav-dd-label" role="presentation">{{@t:common.nav.legal}}</li>
+                    <li class="nav-dd-sub"><a {{@href:link_privacy}}{{cur_privacy}}>{{@t:common.footer.privacy_policy}}</a></li>
+                    <li class="nav-dd-sub"><a {{@href:link_terms}}{{cur_terms}}>{{@t:common.footer.terms_of_service}}</a></li>
+                    <li class="nav-dd-sub"><a {{@href:link_cookies}}{{cur_cookies}}>{{@t:common.footer.cookies}}</a></li>
+                    <li class="nav-dd-all"><a {{@href:link_contact}}{{cur_contact}}>{{@t:common.footer.contact}}</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="nav-controls">
+            <button class="nav-theme-btn" {{@aria:common.nav.toggle_theme.aria-label}}>&#x263E;</button>
+            {{lang_picker}}
+            <a data-track="nav-play" href="https://play.google.com/store/apps/details?id=com.lecturameter.public&amp;referrer=utm_source%3Dlanding%26utm_medium%3Dweb" target="_blank" rel="noopener" class="nav-cta desktop-only" {{@aria:common.nav.download_google_play.aria-label}}>
+                <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
+                {{@t:common.nav.download}}
+            </a>
+            <a data-track="nav-appstore" href="{{ios_url}}" target="_blank" rel="noopener" class="nav-cta desktop-only" {{@aria:common.nav.download_app_store.aria-label}}>
+                <svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+                {{@t:common.nav.download}}
+            </a>
+        </div>
+        <button class="nav-hamburger" aria-label="{{common.nav.menu.aria-label}}" aria-expanded="false">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+    </div>
+</nav>

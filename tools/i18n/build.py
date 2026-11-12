@@ -14,7 +14,8 @@ import sys
 import urllib.parse
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-MARK = re.compile(r'\{\{(json:|shot:|shot_abs:|shot99:|shot99_abs:)?([A-Za-z0-9_.@/\-]+)\}\}')
+MARK = re.compile(r'\{\{(json:|shot:|shot_abs:|shot99:|shot99_abs:|@t:|@href:|@aria:)?([A-Za-z0-9_.@/\-]+)\}\}')
+PARTIAL_RE = re.compile(r'^[ \t]*\{\{> ([a-z_]+)\}\}\r?\n', re.M)
 
 
 class BuildError(Exception):
@@ -39,13 +40,22 @@ def rel(from_dir, target):
 
 
 def page_locales(page, locales):
-    """Idiomas en los que existe una pagina (pages.<x>.only_locales; sin el campo, todos)."""
-    codes = page.get('only_locales')
+    """Idiomas en los que existe una pagina (pages.<x>.only_locales o las claves de pages.<x>.paths; sin ninguno, todos)."""
+    codes = page.get('only_locales') or (list(page['paths']) if page.get('paths') else None)
     return [l for l in locales if not codes or l['code'] in codes]
 
 
 def page_dir(loc, page):
+    """Carpeta (desde la raiz del sitio) de la pagina en ese idioma. `paths` fija la ruta completa por idioma
+    (paginas escritas a mano en en/es); si no, ruta del idioma + page.dir."""
+    if page.get('paths'):
+        return page['paths'][loc['code']]
     return loc['path'].strip('/') and (loc['path'].strip('/') + '/' + page['dir']) or page['dir']
+
+
+def page_template(page, loc):
+    t = page['template']
+    return t[loc['code']] if isinstance(t, dict) else t
 
 
 def build_vars(cfg, loc, pname, page, others):
@@ -110,7 +120,8 @@ def build_vars(cfg, loc, pname, page, others):
         u = site + page_dir(o, page).rstrip('/')
         u += '/' if page_dir(o, page) else ''
         lines.append('    <link rel="alternate" hreflang="%s" href="%s">\n' % (o['hreflang'], u))
-    xd = site + page['dir']
+    dflt = [o for o in others if o['code'] == cfg['default_locale']]
+    xd = site + (page_dir(dflt[0], page) if dflt else page['dir'])
     lines.append('    <link rel="alternate" hreflang="x-default" href="%s">\n' % xd)
     v['hreflang_links'] = ''.join(lines)
     return v
@@ -303,7 +314,74 @@ def release_vars(cfg, strings, where, errors, loc=None):
         v['roadmap_items'] = '\n'.join(out)
     else:
         v['roadmap_heading'] = v['roadmap_sub'] = v['roadmap_items'] = ''
+    # pagina /roadmap/: lo ya publicado (versiones <= actual con roadmap.<v>.cards), la mas nueva arriba
+    blocks = []
+    for ver in reversed(order[:order.index(cur) + 1]):
+        pcards = strings.get('roadmap.%s.cards' % vkey(ver))
+        if not pcards or 'roadmap.page.published' not in strings:
+            continue
+        label = release_label(cfg, ver, loc)
+        out = ['        <div class="roadmap-block">',
+               '            <div class="section-head"><h2>%s</h2></div>' % strings['roadmap.page.published'].replace('{{pub_label}}', label),
+               '            <div class="roadmap-list">']
+        for c in pcards:
+            out += ['                <div class="roadmap-item">',
+                    '                    <span class="roadmap-tag released">%s</span>' % label,
+                    '                    <h3>%s</h3>' % c['title'],
+                    '                    <p>%s</p>' % c['text'],
+                    '                </div>']
+        out += ['            </div>', '        </div>']
+        blocks.append('
+'.join(out))
+    v['roadmap_published_html'] = '
+'.join(blocks)
     return v
+
+
+NEW_PAGES = ('news', 'roadmap', 'faq', 'platforms', 'pro')
+CUR_KEYS = ('home', 'pro', 'lm99', 'blog', 'news', 'roadmap', 'faq', 'platforms', 'privacy', 'terms', 'cookies', 'contact')
+CURRENT_OF = {'news': 'news', 'roadmap': 'roadmap', 'faq': 'faq', 'platforms': 'platforms', 'pro': 'pro',
+              'cookies': 'cookies', 'lm1999': 'lm99', 'legal_privacy': 'privacy', 'legal_terms': 'terms',
+              'legal_privacy99': 'privacy', 'blog': 'blog'}
+
+
+def nav_vars(cfg, loc, strings, here, is_home, current=''):
+    """Enlaces de la cabecera y el pie comunes (src/partials/nav.html y footer.html) para ese idioma y esa pagina.
+    En la portada los anclas son locales (#features) para que siga el scroll-spy; en el resto apuntan a la portada."""
+    prefix = loc['path'].lstrip('/')
+    home = rel(here, prefix)
+    base = '' if is_home else home
+    v = {
+        'link_home': home,
+        'home_abs': cfg['site_url'] + prefix,
+        'link_features_all': base + '#' + strings['anchor.features'],
+        'link_themes': base + '#' + strings['anchor.themes'],
+        'link_events': base + '#' + strings['anchor.events'],
+        'link_contact': rel(here, 'contact.html'),
+        'link_regional': rel(here, 'precios-regionales.html'),
+        'link_activate': rel(here, 'activar-pro.html'),
+    }
+    for sl in NEW_PAGES:
+        v['link_page_' + sl] = rel(here, prefix + sl + '/')
+    for c in CUR_KEYS:
+        v['cur_' + c] = ' aria-current="page"' if c == current else ''
+    return v
+
+
+def bilingual_lang_controls(locales, seg, indent):
+    """Controles de idioma de las paginas bilingues escritas a mano (boton ES/EN y, si hay version traducida
+    en /<code>/<seg>/, selector con los 49 idiomas). Es lo que llevaban antes."""
+    lines = ['<button type="button" class="nav-lang-btn" data-en="ES" data-es="EN" '
+             'onclick="setLang(document.documentElement.lang === 'es' ? 'en' : 'es')">ES</button>']
+    if seg:
+        opts = []
+        for o in locales:
+            lang_attr = '' if o['code'] in ('en', 'es') else ' lang="%s"' % html.escape(o['code'])
+            opts.append('<option value="%s"%s>%s</option>' % (html.escape(o['code']), lang_attr, html.escape(o['nativeName'])))
+        lines.append('<select class="nav-lang-select" id="legalLangSelect" aria-label="Language" title="Language" '
+                     'data-seg="%s">%s</select>' % (seg, ''.join(opts)))
+    return ('
+' + indent).join(lines)
 
 
 def list_vars(strings, where, errors):
@@ -344,15 +422,73 @@ def resolve_ifs(text, variables):
     return IF_RE.sub(sub, text)
 
 
+PARTIALS = {}
+
+
+def expand_partials(text, where=''):
+    """{{> nombre}} (en su propia linea) -> contenido de src/partials/<nombre>.html."""
+    def sub(m):
+        name = m.group(1)
+        if name not in PARTIALS:
+            path = os.path.join(ROOT, 'src', 'partials', name + '.html')
+            if not os.path.exists(path):
+                raise BuildError('%s: parcial inexistente {{> %s}}' % (where, name))
+            with open(path, encoding='utf-8', newline='') as f:
+                PARTIALS[name] = f.read().replace(CRLF, LF)
+        return PARTIALS[name]
+    return PARTIAL_RE.sub(sub, text)
+
+
+def lookup(key, variables, strings, where, errors, live, depth):
+    if key in variables:
+        val = variables[key]
+    elif key in strings:
+        val = pick(strings, key, live)
+    else:
+        errors.append('%s: clave inexistente {{%s}}' % (where, key))
+        return None
+    if '{{' in val:
+        val = render(val, variables, strings, where, errors, depth + 1)
+    return val
+
+
+def bilingual_marker(prefix, key, variables, strings, where, errors, live, depth):
+    """{{@t:clave}} / {{@href:variable}} / {{@aria:clave}}: texto, enlace o aria-label. En paginas bilingues
+    (variables['__bi'] con las variables y textos del segundo idioma) llevan tambien los atributos data-en/es que lee setLang."""
+    bi = variables.get('__bi')
+    a = lookup(key, variables, strings, where, errors, live, depth)
+    if a is None:
+        return ''
+    b = lookup(key, bi['variables'], bi['strings'], where, errors, live, depth) if bi else a
+    if b is None:
+        b = a
+    if prefix == '@t:':
+        if a == b:
+            return a
+        return '<span data-en="%s" data-es="%s">%s</span>' % (a, b, a)
+    if prefix == '@href:':
+        out = 'href="%s"' % a
+        if a != b:
+            out += ' data-href-en="%s" data-href-es="%s"' % (a, b)
+        return out
+    out = 'aria-label="%s"' % a
+    if a != b:
+        out += ' data-aria-en="%s" data-aria-es="%s"' % (a, b)
+    return out
+
+
 def render(text, variables, strings, where, errors, depth=0):
     if depth > 6:
         raise BuildError('plantillas anidadas en bucle en ' + where)
     if depth == 0:
+        text = expand_partials(text, where)
         text = resolve_ifs(text, variables)
     live = bool(variables.get('ios_live'))
 
     def sub(m):
         prefix, key = m.group(1), m.group(2)
+        if prefix in ('@t:', '@href:', '@aria:'):
+            return bilingual_marker(prefix, key, variables, strings, where, errors, live, depth)
         as_json = prefix == 'json:'
         if prefix in ('shot99:', 'shot99_abs:'):
             path = urllib.parse.quote(resolve_shot99(variables['__loc'], key))
@@ -431,10 +567,44 @@ def main():
     written = []
     if cfg.get('ios_live') and not cfg.get('app_store_url'):
         raise BuildError('ios_live es true pero app_store_url esta vacio en i18n/locales.json')
+    strings_by = {l['code']: load_json(os.path.join(ROOT, 'i18n', l['code'] + '.json')) for l in locales}
+
+    def make_variables(loc, pname, page, plocs):
+        strings = strings_by[loc['code']]
+        where = '%s/%s' % (loc['code'], page_template(page, loc))
+        variables = build_vars(cfg, loc, pname, page, plocs)
+        variables.update(release_vars(cfg, strings, where, errors, loc))
+        if page_template(page, loc) == 'index.html':
+            variables.update(list_vars(strings, where, errors))
+        variables['__loc'] = loc
+        variables['__shot'] = make_shot_resolver(cfg, loc, errors, where)
+        variables['ios_live'] = '1' if cfg.get('ios_live') else ''
+        variables['ios_url'] = cfg['app_store_url'] if cfg.get('ios_live') else cfg['testflight_url']
+        variables['testflight_1999_url'] = cfg['testflight_1999_url']
+        variables['app_store_1999_url'] = cfg.get('app_store_1999_url', '')
+        variables['lm_i18n_json'] = js_payload(strings, bool(cfg.get('ios_live')))
+        pdir = page_dir(loc, page).rstrip('/')
+        current = page.get('current') or CURRENT_OF.get(pname, '')
+        variables.update(nav_vars(cfg, loc, strings, pdir, pname == 'index', current))
+        if page.get('bilingual'):
+            variables['lang_picker'] = bilingual_lang_controls(locales, page.get('lang_seg'), ' ' * 12)
+        else:
+            variables['lang_picker'] = lang_picker(loc, page, plocs, strings, ' ' * 12)
+        # paginas nuevas de Recursos/Pro: title, description y nombre (migas) desde i18n
+        key = page.get('i18n_key')
+        if key:
+            for var, k in (('page_title', 'head.%s.title' % key), ('page_description', 'head.%s.description' % key),
+                           ('page_name', page['name_key'])):
+                if k not in strings:
+                    errors.append('%s: falta la clave %s' % (where, k))
+                else:
+                    variables[var] = strings[k]
+        return variables
+
     for loc in locales:
         if only is not None and loc['code'] not in only:
             continue
-        strings = load_json(os.path.join(ROOT, 'i18n', loc['code'] + '.json'))
+        strings = strings_by[loc['code']]
         check_seo(strings, loc['code'], errors)
         todo = list(cfg['pages'].items())
         if not loc.get('legal_original'):
@@ -443,26 +613,20 @@ def main():
             plocs = page_locales(page, locales)
             if loc not in plocs:
                 continue
-            tpl_path = os.path.join(ROOT, 'src', 'templates', page['template'])
+            tname = page_template(page, loc)
+            tpl_path = os.path.join(ROOT, 'src', 'templates', *tname.split('/'))
             with open(tpl_path, encoding='utf-8', newline='') as f:
-                tpl = f.read()
-            where = '%s/%s' % (loc['code'], page['template'])
-            variables = build_vars(cfg, loc, pname, page, plocs)
-            variables.update(release_vars(cfg, strings, where, errors, loc))
-            if page['template'] == 'index.html':
-                variables.update(list_vars(strings, where, errors))
-            variables['__loc'] = loc
-            variables['__shot'] = make_shot_resolver(cfg, loc, errors, where)
-            variables['ios_live'] = '1' if cfg.get('ios_live') else ''
-            variables['ios_url'] = cfg['app_store_url'] if cfg.get('ios_live') else cfg['testflight_url']
-            variables['testflight_1999_url'] = cfg['testflight_1999_url']
-            variables['app_store_1999_url'] = cfg.get('app_store_1999_url', '')
-            variables['lm_i18n_json'] = js_payload(strings, bool(cfg.get('ios_live')))
-            variables['lang_picker'] = lang_picker(loc, page, plocs, strings, ' ' * 12)
+                tpl = f.read().replace(CRLF, LF)
+            where = '%s/%s' % (loc['code'], tname)
+            variables = make_variables(loc, pname, page, plocs)
+            if page.get('bilingual'):
+                other = [o for o in locales if o['code'] == ('es' if loc['code'] == 'en' else 'en')][0]
+                variables['__bi'] = {'variables': make_variables(other, pname, dict(page, paths={other['code']: ''}), [other]),
+                                     'strings': strings_by[other['code']]}
             out = render(tpl, variables, strings, where, errors)
             if page.get('legal'):
                 out = fix_legal_links(out, variables['root'])
-            out_rel = page_dir(loc, page) + 'index.html'
+            out_rel = page.get('file') or (page_dir(loc, page) + 'index.html')
             written.append((os.path.join(ROOT, *out_rel.split('/')), out))
     if errors:
         for e in sorted(set(errors)):
