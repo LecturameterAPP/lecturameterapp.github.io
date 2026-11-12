@@ -58,7 +58,7 @@
 
 {{> nav}}
 
-<main class="subpage-body">
+<main class="subpage-body page-blog">
 <section class="band band-hero">
     <div class="container">
         <div class="hero" style="grid-template-columns:1fr;">
@@ -134,6 +134,28 @@
         <p>{{blog.hfr.p_07}}</p>
         <p>{{blog.hfr.p_08}}</p>
         <p>{{blog.hfr.p_09}}</p>
+    </div>
+</section>
+
+<section class="band blog-related">
+    <div class="container">
+        <div class="section-head" style="text-align:center;">
+            <h2>{{common.nav.blog}}</h2>
+        </div>
+        <div class="post-cards">
+            <a class="post-card" href="{{post_fvm}}">
+                <h3>{{blog.fvm.title}}</h3>
+                <p>{{blog.fvm.description}}</p>
+            </a>
+            <a class="post-card" href="{{post_rtp}}">
+                <h3>{{blog.rtp.title}}</h3>
+                <p>{{blog.rtp.description}}</p>
+            </a>
+            <a class="post-card" href="{{post_egl}}">
+                <h3>{{blog.egl.title}}</h3>
+                <p>{{blog.egl.description}}</p>
+            </a>
+        </div>
     </div>
 </section>
 

@@ -2031,3 +2031,12 @@ html.startupbar-active .nav-collapsed .nav-pills.open { max-height: calc(100dvh 
 .breadcrumb li + li::before { content: "/"; margin-inline-end: 6px; opacity: 0.6; }
 .breadcrumb a { color: inherit; text-decoration: none; }
 .breadcrumb a:hover { text-decoration: underline; }
+
+/* Plantillas interiores: funcion y blog */
+.page-blog .band .container > p { font-size: 1.04em; line-height: 1.75; }
+.page-blog .band .container > p:first-of-type::first-line { font-weight: 600; }
+.page-blog .hero-eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .8em; }
+.page-blog .hero-eyebrow a::before { content: "\25CF\00a0"; color: var(--accent-text); }
+.page-blog .blog-related .post-card, .page-func .func-related .post-card { height: 100%; }
+.page-func .func-related .post-cards { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.page-func .band-hero .hero-copy h1 { text-wrap: balance; }

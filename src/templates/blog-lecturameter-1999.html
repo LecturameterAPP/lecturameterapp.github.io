@@ -67,7 +67,7 @@
 
 {{> nav}}
 
-<main class="subpage-body">
+<main class="subpage-body page-blog">
 <section class="band band-hero">
     <div class="container">
         <div class="hero" style="grid-template-columns:1fr;">
@@ -192,6 +192,28 @@
         </div>
         <p>{{blog.l99.p_19}}</p>
         <p>{{blog.l99.p_20}}</p>
+    </div>
+</section>
+
+<section class="band blog-related">
+    <div class="container">
+        <div class="section-head" style="text-align:center;">
+            <h2>{{common.nav.blog}}</h2>
+        </div>
+        <div class="post-cards">
+            <a class="post-card" href="{{post_hfr}}">
+                <h3>{{blog.hfr.title}}</h3>
+                <p>{{blog.hfr.description}}</p>
+            </a>
+            <a class="post-card" href="{{post_fvm}}">
+                <h3>{{blog.fvm.title}}</h3>
+                <p>{{blog.fvm.description}}</p>
+            </a>
+            <a class="post-card" href="{{post_rtp}}">
+                <h3>{{blog.rtp.title}}</h3>
+                <p>{{blog.rtp.description}}</p>
+            </a>
+        </div>
     </div>
 </section>
 
