@@ -996,5 +996,17 @@
  "head.platforms.title": "Lecturameter op iPhone en Android",
  "head.platforms.description": "De iPhone-versie heeft dezelfde hoofdfuncties als Android: bibliotheek, leestimer, statistieken, uitdagingen, bingo, Pagi en de visuele thema's.",
  "head.pro.title": "Prijzen · Pro | Lecturameter",
- "head.pro.description": "Probeer de Pro-functies 7 dagen zonder creditcard. Aan het einde van de proefperiode krijg je, ook als je Pro niet koopt, een gratis Pro-thema naar keuze."
+ "head.pro.description": "Probeer de Pro-functies 7 dagen zonder creditcard. Aan het einde van de proefperiode krijg je, ook als je Pro niet koopt, een gratis Pro-thema naar keuze.",
+ "home.trust.title": "Je bibliotheek is van jou",
+ "home.trust.p1": "Geen account nodig",
+ "home.trust.p2": "Je gegevens blijven op je telefoon",
+ "home.trust.p3": "Lokale back-ups en Google Drive, als je wilt",
+ "home.trust.p4": "Telemetrie is gepseudonimiseerd en je kunt hem uitzetten",
+ "home.universe.title": "Twee ervaringen. Eén universum.",
+ "home.universe.sub": "Lecturameter is de moderne leestracker. Lecturameter 99 is de retro-herinterpretatie: een alternatief, niet beter en niet slechter.",
+ "home.universe.lm": "De moderne leestracker voor Android en iOS.",
+ "home.universe.lm99": "Een retroversie van hetzelfde idee, gratis op Google Play en de App Store.",
+ "common.nav.universe_portal": "Universumportaal",
+ "head.universe.title": "Twee ervaringen. Eén universum. | Lecturameter",
+ "head.universe.description": "Lecturameter is de moderne leestracker. Lecturameter 99 is de retro-herinterpretatie: een alternatief, niet beter en niet slechter."
 }

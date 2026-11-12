@@ -996,5 +996,17 @@
  "head.platforms.title": "Lecturameter di iPhone dan Android",
  "head.platforms.description": "Versi iPhone punya fitur utama yang sama dengan Android: perpustakaan, pengatur waktu membaca, statistik, tantangan, bingo, Pagi, dan tema visual.",
  "head.pro.title": "Harga · Pro | Lecturameter",
- "head.pro.description": "Coba fitur Pro selama 7 hari tanpa kartu. Di akhir masa uji coba, meski tidak membeli Pro, kamu dapat satu tema Pro gratis pilihanmu."
+ "head.pro.description": "Coba fitur Pro selama 7 hari tanpa kartu. Di akhir masa uji coba, meski tidak membeli Pro, kamu dapat satu tema Pro gratis pilihanmu.",
+ "home.trust.title": "Perpustakaanmu milikmu",
+ "home.trust.p1": "Tidak perlu akun",
+ "home.trust.p2": "Datamu tetap di ponselmu",
+ "home.trust.p3": "Cadangan lokal dan Google Drive, jika kamu mau",
+ "home.trust.p4": "Telemetri bersifat pseudonim dan bisa kamu matikan",
+ "home.universe.title": "Dua pengalaman. Satu semesta.",
+ "home.universe.sub": "Lecturameter adalah pelacak bacaan modern. Lecturameter 99 adalah tafsir retronya: sebuah alternatif, tidak lebih baik dan tidak lebih buruk.",
+ "home.universe.lm": "Pelacak bacaan modern, untuk Android dan iOS.",
+ "home.universe.lm99": "Versi retro dari ide yang sama, gratis di Google Play dan App Store.",
+ "common.nav.universe_portal": "Portal Semesta",
+ "head.universe.title": "Dua pengalaman. Satu semesta. | Lecturameter",
+ "head.universe.description": "Lecturameter adalah pelacak bacaan modern. Lecturameter 99 adalah tafsir retronya: sebuah alternatif, tidak lebih baik dan tidak lebih buruk."
 }

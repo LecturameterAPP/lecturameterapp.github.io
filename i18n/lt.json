@@ -992,9 +992,21 @@
  "head.roadmap.title": "Planai | Lecturameter",
  "head.roadmap.description": "Skaitymo iššūkiai visai bendruomenei, žaidimas su tavo paties knygomis ir atnaujintas pradžios ekranas. Be tikslių datų: viskas išeis, kai bus paruošta.",
  "head.faq.title": "Dažniausiai užduodami klausimai | Lecturameter",
- "head.faq.description": "Dažniausiai užduodami klausimai: Ar galiu perkelti savo biblioteką iš kitų programėlių? · Ar mano duomenys priklauso man? · Ar yra prenumerata? · Ar veikia…",
+ "head.faq.description": "Dažniausiai užduodami klausimai: Ar galiu perkelti savo biblioteką iš kitų programėlių? · Ar mano duomenys priklauso man? · Ar yra prenumerata?",
  "head.platforms.title": "Lecturameter iPhone ir Android",
  "head.platforms.description": "iPhone versija turi tas pačias pagrindines funkcijas kaip ir Android: biblioteką, skaitymo laikmatį, statistiką, iššūkius, bingo, Pagi ir vizualines temas.",
  "head.pro.title": "Kainos · Pro | Lecturameter",
- "head.pro.description": "Išbandyk Pro funkcijas 7 dienas be kortelės. Pasibaigus bandomajam laikotarpiui, net jei Pro nepirksi, gausi dovanų vieną pasirinktą Pro temą."
+ "head.pro.description": "Išbandyk Pro funkcijas 7 dienas be kortelės. Pasibaigus bandomajam laikotarpiui, net jei Pro nepirksi, gausi dovanų vieną pasirinktą Pro temą.",
+ "home.trust.title": "Tavo biblioteka yra tavo",
+ "home.trust.p1": "Paskyros nereikia",
+ "home.trust.p2": "Tavo duomenys lieka tavo telefone",
+ "home.trust.p3": "Vietinės atsarginės kopijos ir Google Drive, jei nori",
+ "home.trust.p4": "Telemetrija pseudonimizuota, ją gali išjungti",
+ "home.universe.title": "Dvi patirtys. Viena visata.",
+ "home.universe.sub": "Lecturameter yra modernus skaitymo sekimo įrankis. Lecturameter 99 yra jo retro interpretacija: alternatyva, nei geresnė, nei blogesnė.",
+ "home.universe.lm": "Modernus skaitymo sekimo įrankis Android ir iOS.",
+ "home.universe.lm99": "Retro tos pačios idėjos versija, nemokama Google Play ir App Store.",
+ "common.nav.universe_portal": "Visatos portalas",
+ "head.universe.title": "Dvi patirtys. Viena visata. | Lecturameter",
+ "head.universe.description": "Lecturameter yra modernus skaitymo sekimo įrankis. Lecturameter 99 yra jo retro interpretacija: alternatyva, nei geresnė, nei blogesnė."
 }

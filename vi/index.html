@@ -228,6 +228,7 @@
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Vũ trụ <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
+                    <li><a href="./universe/">Cổng Vũ trụ</a></li>
                     <li><a href="./">Lecturameter</a></li>
                     <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
                 </ul>
@@ -611,105 +612,12 @@
     </div>
 </section>
 
-<!-- 3.1 PAUSADO -->
-<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+<!-- 4. ECOSISTEMA (pausado y cards; retos y bingo en la rejilla de arriba, eventos debajo) -->
+<section class="band band-alt" id="paused">
     <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Mới trong 3.9 / iOS 1.1.0</span>
-            <h2 id="paused-title">Cất một cuốn sách sang bên một thời gian mà không làm hỏng thống kê của bạn</h2>
-            <p>Tạm dừng là một trạng thái riêng, khác với Đã bỏ dở. Cuốn sách chờ ở chỗ bạn để lại, và những ngày tạm dừng không được tính.</p>
-        </div>
-        <div class="paused-viz reveal-up" aria-hidden="true">
-            <div class="paused-tabs">
-                <span>Muốn đọc</span>
-                <span>Đang đọc</span>
-                <span class="is-paused">Tạm dừng</span>
-                <span>Đã bỏ dở</span>
-            </div>
-            <div class="paused-timeline">
-                <span class="seg read" style="flex:3"></span>
-                <span class="seg pause" style="flex:2"></span>
-                <span class="seg read" style="flex:4"></span>
-            </div>
-            <div class="paused-legend">
-                <span><i class="dot read"></i>Đang đọc</span>
-                <span><i class="dot pause"></i>Tạm dừng &middot; Những ngày tạm dừng không được tính</span>
-            </div>
-        </div>
         <div class="paused-grid">
-            <div class="paused-card reveal-up"><h3>Một trạng thái riêng</h3><p>Tạm dừng không phải là Đã bỏ dở. Sách của bạn không vào chồng sách đã bỏ: nó chờ sẵn và quay lại bất cứ khi nào bạn muốn.</p></div>
-            <div class="paused-card reveal-up"><h3>Từ Đang đọc hoặc Đọc lại</h3><p>Đổi trạng thái bằng nút hình viên thuốc trong trang sách hoặc bằng “Đổi trạng thái” trong thao tác nhanh (nhấn giữ thẻ sách). Áp dụng cho sách, truyện tranh, manga và sách nói.</p></div>
-            <div class="paused-card reveal-up"><h3>Những ngày tạm dừng không được tính</h3><p>Không tính vào số ngày để đọc xong, cũng không tính vào tốc độ đọc của bạn. Thống kê vẫn như lúc bạn đang đọc.</p></div>
-            <div class="paused-card reveal-up"><h3>Một ghi chú, nếu bạn muốn</h3><p>Khi tạm dừng và khi tiếp tục, bạn có thể ghi lại lý do. Việc này là tùy chọn. Mọi thứ nằm trong mục “Các lần tạm dừng” của trang sách, kèm lịch sử.</p></div>
-            <div class="paused-card reveal-up"><h3>Một tab riêng</h3><p>Trong thư viện của bạn, giữa Muốn đọc và Đã bỏ dở, bạn sẽ thấy những cuốn sách đang tạm dừng.</p></div>
-            <div class="paused-card reveal-up"><h3>Nhắc nhở, và tự tiếp tục</h3><p>Nhắc nhở của cuốn sách đó sẽ tạm dừng và quay lại khi bạn tiếp tục. Nếu bạn bấm giờ một phiên hoặc có một phiên gửi từ KOReader, sách sẽ tự tiếp tục, kèm thông báo và tùy chọn Hoàn tác.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.2 MENU RAPIDO -->
-<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Mới trong 3.9 / iOS 1.1.0</span>
-            <h2 id="quickmenu-title">Chuyển giữa các mục mà không cần quay về Trang chủ</h2>
-            <p>Trước đây, muốn đi từ Bingo sang Cài đặt, bạn phải ghé Trang chủ trước. Giờ chỉ cần chạm vào ba chấm (···) ở góc trên bên phải là đến thẳng nơi cần tới.</p>
-        </div>
-        <div class="qm-viz reveal-up" aria-hidden="true">
-            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
-            <div class="qm-panel">
-                <p class="qm-panel-title">Menu nhanh</p>
-                <div class="qm-groups">
-                    <div class="qm-group is-current"><p class="qm-group-title">Mục tiêu</p><p>Sự kiện · Thử thách · Bingo</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Việc đọc của tôi</p><p>Thống kê · Thẻ của tôi · Wrapped</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Công cụ</p><p>Nhắc nhở · Quản lý thẻ · Quét mã ISBN</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Lối tắt chung</p><p>Trang chủ · Cài đặt · Dữ liệu và bản sao lưu</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="paused-grid">
-            <div class="paused-card qm-card reveal-up"><h3>Trên hầu hết mọi màn hình</h3><p>Biểu tượng ba chấm ngang (···) nằm ở góc trên bên phải. Nếu màn hình có nút chia sẻ, nút đó sẽ dời sang bên trái.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Các nhóm giống như Trang chủ</h3><p>Mục tiêu, Việc đọc của tôi và Công cụ, cùng với Trang chủ, Cài đặt và Dữ liệu và bản sao lưu. Mục bạn đang ở được làm nổi bật: chạm vào đó để quay về đầu mục.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Cả trong trang sách</h3><p>Mở menu ba chấm dọc trong trang sách và chọn “Menu nhanh”. Các trình hướng dẫn từng bước không có menu này, để bạn không mất những gì đang điền.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.3 COMPARTIR CARDS -->
-<section class="band band-alt" id="cards" aria-labelledby="cards-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Chia sẻ</span>
-            <h2 id="cards-title">Lecturameter không phải mạng xã hội. Thẻ của bạn đi đến mạng bạn đang dùng.</h2>
-            <p>Tạo thẻ dọc 1080×1920, sẵn sàng cho story, và chia sẻ ngay nơi bạn đang ở. Không tài khoản, không hồ sơ, không người theo dõi. Ở bản 3.9 / iOS 1.1.0, bản tóm tắt theo tuần và theo tháng có thiết kế mới và nhiều số liệu hơn.</p>
-        </div>
-        <div class="share-wrap">
-            <div class="share-fan reveal-up" aria-hidden="true">
-                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <span class="share-size">1080×1920 · định dạng story</span>
-            </div>
-            <div class="share-side">
-                <ul class="share-chips">
-                <li>Sách</li>
-                <li>Sách đã đọc xong</li>
-                <li>Thống kê sách</li>
-                <li>Thống kê</li>
-                <li>Tóm tắt tuần</li>
-                <li>Tóm tắt tháng</li>
-                <li>Thử thách</li>
-                <li>Bingo</li>
-                <li>Wrapped</li>
-                <li>Sự kiện</li>
-                <li>Quest</li>
-                </ul>
-                <ol class="share-steps">
-            <li class="share-step reveal-up"><h3>Chọn thứ muốn hiển thị</h3><p>Một cuốn sách, một cuốn bạn vừa đọc xong, thống kê của bạn, tuần hoặc tháng của bạn, một thử thách, Bingo, Wrapped hoặc một sự kiện.</p></li>
-            <li class="share-step reveal-up"><h3>Được lưu trong “Thẻ của tôi”</h3><p>Mọi thứ bạn chia sẻ đều nằm trong Thẻ của tôi, để bạn dùng lại bất cứ khi nào muốn.</p></li>
-            <li class="share-step reveal-up"><h3>Chia sẻ ngay nơi bạn đang ở</h3><p>Qua menu chia sẻ của điện thoại, vào ứng dụng bạn vẫn dùng. Hoặc lưu vào thư viện ảnh.</p></li>
-                </ol>
-            </div>
+            <div class="paused-card reveal-up"><h3>Cất một cuốn sách sang bên một thời gian mà không làm hỏng thống kê của bạn</h3><p>Tạm dừng là một trạng thái riêng, khác với Đã bỏ dở. Cuốn sách chờ ở chỗ bạn để lại, và những ngày tạm dừng không được tính.</p></div>
+            <div class="paused-card reveal-up" id="cards"><h3>Lecturameter không phải mạng xã hội. Thẻ của bạn đi đến mạng bạn đang dùng.</h3><p>Tạo thẻ dọc 1080×1920, sẵn sàng cho story, và chia sẻ ngay nơi bạn đang ở. Không tài khoản, không hồ sơ, không người theo dõi. Ở bản 3.9 / iOS 1.1.0, bản tóm tắt theo tuần và theo tháng có thiết kế mới và nhiều số liệu hơn.</p></div>
         </div>
     </div>
 </section>
@@ -767,6 +675,20 @@
             </article>
         </div>
         <p class="events-note">Bạn cần từ 16 tuổi trở lên để tham gia. Nếu hiện không có sự kiện nào, ứng dụng sẽ cho bạn biết.</p>
+    </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section class="band" id="trust" aria-labelledby="trust-title">
+    <div class="container">
+        <div class="section-head"><h2 id="trust-title">Thư viện của bạn là của bạn</h2></div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><p>Không cần tài khoản</p></div>
+            <div class="paused-card reveal-up"><p>Dữ liệu ở lại trên điện thoại của bạn</p></div>
+            <div class="paused-card reveal-up"><p>Sao lưu cục bộ và Google Drive, nếu bạn muốn</p></div>
+            <div class="paused-card reveal-up"><p>Dữ liệu đo lường dùng bí danh và bạn có thể tắt</p></div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./privacy/" class="btn">Chính sách bảo mật</a></p>
     </div>
 </section>
 
@@ -847,6 +769,28 @@
                 <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span><strong>Hoàng hôn</strong> <span class="pro-tag">Pro</span></figcaption>
             </figure>
         </div>
+    </div>
+</section>
+
+<!-- 7b. UNIVERSO -->
+<section class="band" id="universe">
+    <div class="container">
+        <div class="section-head">
+            <h2>Hai trải nghiệm. Một vũ trụ.</h2>
+            <p>Lecturameter là trình theo dõi đọc sách hiện đại. Lecturameter 99 là bản diễn giải retro của nó: một lựa chọn khác, không hơn không kém.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">Lecturameter</div>
+                <p class="price-note">Trình theo dõi đọc sách hiện đại, cho Android và iOS.</p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">Lecturameter 99</div>
+                <p class="price-note">Phiên bản retro của cùng ý tưởng, miễn phí trên Google Play và App Store.</p>
+                <p><a href="./lecturameter-1999/" class="btn">Lecturameter 99</a></p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./universe/" class="btn">Cổng Vũ trụ</a></p>
     </div>
 </section>
 
@@ -1000,6 +944,7 @@
             </div>
             <div class="footer-col">
                 <h4>Vũ trụ</h4>
+                <a href="./universe/">Cổng Vũ trụ</a>
                 <a href="./">Lecturameter</a>
                 <a href="./lecturameter-1999/">Lecturameter 99</a>
             </div>

@@ -992,9 +992,21 @@
  "head.roadmap.title": "Tiekartta | Lecturameter",
  "head.roadmap.description": "Lukuhaasteita koko yhteisölle, peli, jota pelataan omilla kirjoillasi, ja uusittu Etusivu. Ei kiinteitä päivämääriä: kaikki julkaistaan, kun se on valmis.",
  "head.faq.title": "Usein kysytyt kysymykset | Lecturameter",
- "head.faq.description": "Usein kysytyt kysymykset: Voinko tuoda kirjastoni muista sovelluksista? · Ovatko tietoni minun? · Onko sovelluksessa tilaus? · Toimiiko se ilman…",
+ "head.faq.description": "Usein kysytyt kysymykset: Voinko tuoda kirjastoni muista sovelluksista? · Ovatko tietoni minun? · Onko sovelluksessa tilaus? · Toimiiko se ilman nettiyhteyttä?",
  "head.platforms.title": "Lecturameter iPhonella ja Androidilla",
  "head.platforms.description": "iPhone-versiossa on samat pääominaisuudet kuin Androidissa: kirjasto, lukuajastin, tilastot, haasteet, bingo, Pagi ja visuaaliset teemat. Nämä ovat erot.",
  "head.pro.title": "Hinnoittelu · Pro | Lecturameter",
- "head.pro.description": "Kokeile Pro-ominaisuuksia 7 päivää ilman korttia. Kokeilun lopussa saat valitsemasi Pro-teeman lahjaksi, vaikka et ostaisi Prota."
+ "head.pro.description": "Kokeile Pro-ominaisuuksia 7 päivää ilman korttia. Kokeilun lopussa saat valitsemasi Pro-teeman lahjaksi, vaikka et ostaisi Prota.",
+ "home.trust.title": "Kirjastosi on sinun",
+ "home.trust.p1": "Tiliä ei tarvita",
+ "home.trust.p2": "Tietosi pysyvät puhelimessasi",
+ "home.trust.p3": "Paikalliset varmuuskopiot ja Google Drive, jos haluat",
+ "home.trust.p4": "Telemetria on pseudonyymiä ja sen voi kytkeä pois",
+ "home.universe.title": "Kaksi kokemusta. Yksi universumi.",
+ "home.universe.sub": "Lecturameter on moderni lukuseuranta. Lecturameter 99 on sen retrotulkinta: vaihtoehto, ei parempi eikä huonompi.",
+ "home.universe.lm": "Moderni lukuseuranta Androidille ja iOS:lle.",
+ "home.universe.lm99": "Retroversio samasta ideasta, ilmainen Google Playssa ja App Storessa.",
+ "common.nav.universe_portal": "Universumi-portaali",
+ "head.universe.title": "Kaksi kokemusta. Yksi universumi. | Lecturameter",
+ "head.universe.description": "Lecturameter on moderni lukuseuranta. Lecturameter 99 on sen retrotulkinta: vaihtoehto, ei parempi eikä huonompi."
 }

@@ -994,7 +994,19 @@
  "head.faq.title": "Întrebări frecvente | Lecturameter",
  "head.faq.description": "Întrebări frecvente: Pot să-mi aduc biblioteca din alte aplicații? · Datele mele sunt ale mele? · Există abonament? · Funcționează offline?",
  "head.platforms.title": "Lecturameter pe iPhone și Android",
- "head.platforms.description": "Versiunea pentru iPhone are aceleași funcții principale ca cea pentru Android: bibliotecă, cronometru de lectură, statistici, provocări, bingo, Pagi și…",
+ "head.platforms.description": "Versiunea pentru iPhone are aceleași funcții principale ca cea pentru Android.",
  "head.pro.title": "Prețuri · Pro | Lecturameter",
- "head.pro.description": "Încearcă funcțiile Pro 7 zile fără card. La finalul perioadei de probă, chiar dacă nu cumperi Pro, primești gratuit o temă Pro la alegere."
+ "head.pro.description": "Încearcă funcțiile Pro 7 zile fără card. La finalul perioadei de probă, chiar dacă nu cumperi Pro, primești gratuit o temă Pro la alegere.",
+ "home.trust.title": "Biblioteca ta este a ta",
+ "home.trust.p1": "Nu ai nevoie de cont",
+ "home.trust.p2": "Datele tale rămân pe telefonul tău",
+ "home.trust.p3": "Copii locale și Google Drive, dacă vrei",
+ "home.trust.p4": "Telemetria este pseudonimă și o poți dezactiva",
+ "home.universe.title": "Două experiențe. Un singur univers.",
+ "home.universe.sub": "Lecturameter este trackerul modern de lectură. Lecturameter 99 este reinterpretarea lui retro: o alternativă, nici mai bună, nici mai slabă.",
+ "home.universe.lm": "Trackerul modern de lectură, pentru Android și iOS.",
+ "home.universe.lm99": "O variantă retro a aceleiași idei, gratuită pe Google Play și App Store.",
+ "common.nav.universe_portal": "Portal Univers",
+ "head.universe.title": "Două experiențe. Un singur univers. | Lecturameter",
+ "head.universe.description": "Lecturameter este trackerul modern de lectură. Lecturameter 99 este reinterpretarea lui retro: o alternativă, nici mai bună, nici mai slabă."
 }

@@ -992,9 +992,21 @@
  "head.roadmap.title": "路线图 | Lecturameter",
  "head.roadmap.description": "面向整个社区的阅读挑战、一款用你自己的书来玩的游戏，以及全新主页。没有固定日期：准备好了才会发布。",
  "head.faq.title": "常见问题 | Lecturameter",
- "head.faq.description": "常见问题: 我可以把其他应用里的书库带过来吗？ · 我的数据归我吗？ · 需要订阅吗？ · 可以离线使用吗？",
+ "head.faq.description": "常见问题: 我可以把其他应用里的书库带过来吗？ · 我的数据归我吗？ · 需要订阅吗？ · 可以离线使用吗？ · 可以离线使用吗？",
  "head.platforms.title": "iPhone 和 Android 上的 Lecturameter",
  "head.platforms.description": "iPhone 版拥有与 Android 相同的主要功能：书库、阅读计时器、统计、挑战、Bingo、Pagi 和各种视觉主题。以下是两者的差异。",
  "head.pro.title": "价格 · Pro | Lecturameter",
- "head.pro.description": "无需绑卡，免费试用 Pro 功能 7 天。试用结束后，即使你不购买 Pro，也可以免费获得一个你选择的 Pro 主题。"
+ "head.pro.description": "无需绑卡，免费试用 Pro 功能 7 天。试用结束后，即使你不购买 Pro，也可以免费获得一个你选择的 Pro 主题。",
+ "home.trust.title": "你的书库属于你",
+ "home.trust.p1": "无需账号",
+ "home.trust.p2": "数据留在你的手机上",
+ "home.trust.p3": "可选本地备份和 Google Drive",
+ "home.trust.p4": "遥测使用假名，且可以关闭",
+ "home.universe.title": "两种体验。同一个宇宙。",
+ "home.universe.sub": "Lecturameter 是现代的阅读追踪器。Lecturameter 99 是它的复古再诠释：一个替代选择，无所谓更好或更差。",
+ "home.universe.lm": "适用于 Android 和 iOS 的现代阅读追踪器。",
+ "home.universe.lm99": "同一想法的复古版本，在 Google Play 和 App Store 免费。",
+ "common.nav.universe_portal": "宇宙入口",
+ "head.universe.title": "两种体验。同一个宇宙。 | Lecturameter",
+ "head.universe.description": "Lecturameter 是现代的阅读追踪器。Lecturameter 99 是它的复古再诠释：一个替代选择，无所谓更好或更差。"
 }

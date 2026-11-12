@@ -992,9 +992,21 @@
  "head.roadmap.title": "ロードマップ | Lecturameter",
  "head.roadmap.description": "コミュニティみんなでの読書チャレンジ、あなた自身の本で遊ぶゲーム、そして新しくなったホーム。決まった日付はなく、準備ができしだいリリースします。",
  "head.faq.title": "よくある質問 | Lecturameter",
- "head.faq.description": "よくある質問: ほかのアプリからライブラリを持ってこられる？ · データは自分のもの？ · サブスクはある？ · オフラインでも使える？",
+ "head.faq.description": "よくある質問: ほかのアプリからライブラリを持ってこられる？ · データは自分のもの？ · サブスクはある？ · オフラインでも使える？ · オフラインでも使える？",
  "head.platforms.title": "iPhoneとAndroidのLecturameter",
  "head.platforms.description": "iPhone版にはAndroid版と同じ主な機能があります：ライブラリ、読書タイマー、統計、チャレンジ、Bingo、Pagi、そしてテーマ。違いは次のとおりです。",
  "head.pro.title": "価格 · Pro | Lecturameter",
- "head.pro.description": "カード登録なしでPro機能を7日間お試し。お試し終了後、Proを買わなくても好きなProテーマを一つプレゼント。"
+ "head.pro.description": "カード登録なしでPro機能を7日間お試し。お試し終了後、Proを買わなくても好きなProテーマを一つプレゼント。",
+ "home.trust.title": "あなたの本棚はあなたのもの",
+ "home.trust.p1": "アカウントは不要",
+ "home.trust.p2": "データはスマホの中に残ります",
+ "home.trust.p3": "ローカルバックアップとGoogle Drive（お好みで）",
+ "home.trust.p4": "テレメトリは仮名化され、オフにできます",
+ "home.universe.title": "2つの体験。ひとつの世界。",
+ "home.universe.sub": "Lecturameterは現代的な読書トラッカー。Lecturameter 99はそのレトロな再解釈です。優劣ではなく、もうひとつの選択肢です。",
+ "home.universe.lm": "Android・iOS向けの現代的な読書トラッカー。",
+ "home.universe.lm99": "同じ発想のレトロ版。Google PlayとApp Storeで無料。",
+ "common.nav.universe_portal": "ユニバースポータル",
+ "head.universe.title": "2つの体験。ひとつの世界。 | Lecturameter",
+ "head.universe.description": "Lecturameterは現代的な読書トラッカー。Lecturameter 99はそのレトロな再解釈です。優劣ではなく、もうひとつの選択肢です。"
 }

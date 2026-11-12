@@ -228,6 +228,7 @@
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Visums <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
+                    <li><a href="./universe/">Visuma portāls</a></li>
                     <li><a href="./">Lecturameter</a></li>
                     <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
                 </ul>
@@ -611,105 +612,12 @@
     </div>
 </section>
 
-<!-- 3.1 PAUSADO -->
-<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+<!-- 4. ECOSISTEMA (pausado y cards; retos y bingo en la rejilla de arriba, eventos debajo) -->
+<section class="band band-alt" id="paused">
     <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Jaunums 3.9 / iOS 1.1.0</span>
-            <h2 id="paused-title">Noliec grāmatu malā uz laiku, nesabojājot savu statistiku</h2>
-            <p>Pauzēts ir atsevišķs statuss, atšķirīgs no Pamesta. Grāmata gaida tur, kur to atstāji, un pauzes dienas netiek skaitītas.</p>
-        </div>
-        <div class="paused-viz reveal-up" aria-hidden="true">
-            <div class="paused-tabs">
-                <span>Vēlos izlasīt</span>
-                <span>Lasīšana</span>
-                <span class="is-paused">Pauzēts</span>
-                <span>Pamesta</span>
-            </div>
-            <div class="paused-timeline">
-                <span class="seg read" style="flex:3"></span>
-                <span class="seg pause" style="flex:2"></span>
-                <span class="seg read" style="flex:4"></span>
-            </div>
-            <div class="paused-legend">
-                <span><i class="dot read"></i>Lasīšana</span>
-                <span><i class="dot pause"></i>Pauzēts &middot; Pauzes dienas netiek skaitītas</span>
-            </div>
-        </div>
         <div class="paused-grid">
-            <div class="paused-card reveal-up"><h3>Atsevišķs statuss</h3><p>Pauzēts nav Pamesta. Tava grāmata nenonāk to grāmatu kaudzē, ko esi pametis: tā gaida un atgriežas, kad vien vēlies.</p></div>
-            <div class="paused-card reveal-up"><h3>No Lasīšana vai Pārlasīšana</h3><p>Maini statusu ar tableti grāmatas lapā vai ar „Mainīt statusu” ātrajās darbībās (turi nospiestu grāmatas kartīti). Darbojas grāmatām, komiksiem, mangai un audiogrāmatām.</p></div>
-            <div class="paused-card reveal-up"><h3>Pauzes dienas netiek skaitītas</h3><p>Ne dienās līdz pabeigšanai, ne tavā lasīšanas ātrumā. Statistika paliek tāda, kāda tā bija, kad lasīji.</p></div>
-            <div class="paused-card reveal-up"><h3>Piezīme, ja vēlies</h3><p>Kad pauzē un kad atsāc, vari pierakstīt iemeslu. Tas nav obligāti. Viss paliek grāmatas lapas sadaļā „Pauzes“ ar savu vēsturi.</p></div>
-            <div class="paused-card reveal-up"><h3>Sava cilne</h3><p>Savā bibliotēkā, starp Vēlos izlasīt un Pamesta, atradīsi pauzētās grāmatas.</p></div>
-            <div class="paused-card reveal-up"><h3>Atgādinājumi un atsākšana pašai no sevis</h3><p>Šīs grāmatas atgādinājumi tiek pauzēti un atgriežas, kad atsāc grāmatu. Ja nomēri sesiju ar taimeri vai kāda atnāk no KOReader, grāmata atsākas pati, ar paziņojumu un opciju Atsaukt.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.2 MENU RAPIDO -->
-<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Jaunums 3.9 / iOS 1.1.0</span>
-            <h2 id="quickmenu-title">Pārlēc starp sadaļām, neatgriežoties sākumā</h2>
-            <p>Lai no Bingo nokļūtu Iestatījumos, agrāk vajadzēja iegriezties sadaļā Sākums. Tagad pieskaries trim punktiem (···) augšējā labajā stūrī un nonāc turp tieši.</p>
-        </div>
-        <div class="qm-viz reveal-up" aria-hidden="true">
-            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
-            <div class="qm-panel">
-                <p class="qm-panel-title">Ātrā izvēlne</p>
-                <div class="qm-groups">
-                    <div class="qm-group is-current"><p class="qm-group-title">Mērķi</p><p>Pasākumi · Izaicinājumi · Bingo</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Mana lasīšana</p><p>Statistika · Manas kartītes · Wrapped</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Rīki</p><p>Atgādinājumi · Birku pārvaldība · Skenēt ISBN</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Vispārīgas saīsnes</p><p>Sākums · Iestatījumi · Dati un kopijas</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="paused-grid">
-            <div class="paused-card qm-card reveal-up"><h3>Gandrīz katrā ekrānā</h3><p>Horizontālā trīs punktu ikona (···) atrodas augšējā labajā stūrī. Ja ekrānā bija kopīgošanas poga, tā pārvietojas pa kreisi no tās.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Tās pašas grupas, kas sadaļā Sākums</h3><p>Mērķi, Mana lasīšana un Rīki, kā arī Sākums, Iestatījumi un Dati un kopijas. Sadaļa, kurā atrodies, ir iezīmēta: pieskaries tai, lai atgrieztos tās sākumā.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Arī grāmatas lapā</h3><p>Atver vertikālo trīs punktu izvēlni grāmatas lapā un izvēlies „Ātrā izvēlne”. Soli pa solim vedņos tās nav, lai nepazaudētu to, ko aizpildi.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.3 COMPARTIR CARDS -->
-<section class="band band-alt" id="cards" aria-labelledby="cards-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Kopīgot</span>
-            <h2 id="cards-title">Lecturameter nav sociālais tīkls. Tavas kartes dodas uz to, ko izmanto.</h2>
-            <p>Veido vertikālas 1080×1920 kartes, gatavas stāstiem, un kopīgo tur, kur jau esi. Bez konta, bez profila un bez sekotājiem. Versijā 3.9 / iOS 1.1.0 nedēļas un mēneša kopsavilkumiem ir jauns dizains un vairāk statistikas.</p>
-        </div>
-        <div class="share-wrap">
-            <div class="share-fan reveal-up" aria-hidden="true">
-                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <span class="share-size">1080×1920 · stāsta formāts</span>
-            </div>
-            <div class="share-side">
-                <ul class="share-chips">
-                <li>Grāmata</li>
-                <li>Pabeigta grāmata</li>
-                <li>Grāmatas statistika</li>
-                <li>Statistika</li>
-                <li>Nedēļas kopsavilkums</li>
-                <li>Mēneša kopsavilkums</li>
-                <li>Izaicinājumi</li>
-                <li>Bingo</li>
-                <li>Wrapped</li>
-                <li>Notikums</li>
-                <li>Quest</li>
-                </ul>
-                <ol class="share-steps">
-            <li class="share-step reveal-up"><h3>Izvēlies, ko rādīt</h3><p>Grāmatu, tikko pabeigtu grāmatu, savu statistiku, savu nedēļu vai mēnesi, izaicinājumu, Bingo, Wrapped vai notikumu.</p></li>
-            <li class="share-step reveal-up"><h3>Saglabājas sadaļā „Manas kartītes“</h3><p>Viss, ko kopīgo, paliek sadaļā Manas kartītes, lai vari to izmantot atkal, kad vien vēlies.</p></li>
-            <li class="share-step reveal-up"><h3>Kopīgo tur, kur jau esi</h3><p>Caur tālruņa kopīgošanas izvēlni uz lietotni, ko jau izmanto. Vai saglabā galerijā.</p></li>
-                </ol>
-            </div>
+            <div class="paused-card reveal-up"><h3>Noliec grāmatu malā uz laiku, nesabojājot savu statistiku</h3><p>Pauzēts ir atsevišķs statuss, atšķirīgs no Pamesta. Grāmata gaida tur, kur to atstāji, un pauzes dienas netiek skaitītas.</p></div>
+            <div class="paused-card reveal-up" id="cards"><h3>Lecturameter nav sociālais tīkls. Tavas kartes dodas uz to, ko izmanto.</h3><p>Veido vertikālas 1080×1920 kartes, gatavas stāstiem, un kopīgo tur, kur jau esi. Bez konta, bez profila un bez sekotājiem. Versijā 3.9 / iOS 1.1.0 nedēļas un mēneša kopsavilkumiem ir jauns dizains un vairāk statistikas.</p></div>
         </div>
     </div>
 </section>
@@ -767,6 +675,20 @@
             </article>
         </div>
         <p class="events-note">Lai piedalītos, jābūt 16 gadus vecam vai vecākam. Ja pašlaik nav aktīva pasākuma, lietotne tev to pasaka.</p>
+    </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section class="band" id="trust" aria-labelledby="trust-title">
+    <div class="container">
+        <div class="section-head"><h2 id="trust-title">Tava bibliotēka ir tava</h2></div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><p>Konts nav vajadzīgs</p></div>
+            <div class="paused-card reveal-up"><p>Tavi dati paliek tavā tālrunī</p></div>
+            <div class="paused-card reveal-up"><p>Vietējās rezerves kopijas un Google Drive, ja vēlies</p></div>
+            <div class="paused-card reveal-up"><p>Telemetrija ir pseidonīma, un to var izslēgt</p></div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./privacy/" class="btn">Privātuma politika</a></p>
     </div>
 </section>
 
@@ -847,6 +769,28 @@
                 <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span><strong>Krēsla</strong> <span class="pro-tag">Pro</span></figcaption>
             </figure>
         </div>
+    </div>
+</section>
+
+<!-- 7b. UNIVERSO -->
+<section class="band" id="universe">
+    <div class="container">
+        <div class="section-head">
+            <h2>Divas pieredzes. Viens Visums.</h2>
+            <p>Lecturameter ir modernais lasīšanas izsekotājs. Lecturameter 99 ir tā retro interpretācija: alternatīva, ne labāka, ne sliktāka.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">Lecturameter</div>
+                <p class="price-note">Modernais lasīšanas izsekotājs Android un iOS.</p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">Lecturameter 99</div>
+                <p class="price-note">Retro versija tai pašai idejai, bez maksas Google Play un App Store.</p>
+                <p><a href="./lecturameter-1999/" class="btn">Lecturameter 99</a></p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./universe/" class="btn">Visuma portāls</a></p>
     </div>
 </section>
 
@@ -1000,6 +944,7 @@
             </div>
             <div class="footer-col">
                 <h4>Visums</h4>
+                <a href="./universe/">Visuma portāls</a>
                 <a href="./">Lecturameter</a>
                 <a href="./lecturameter-1999/">Lecturameter 99</a>
             </div>

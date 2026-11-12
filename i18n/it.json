@@ -992,9 +992,21 @@
  "head.roadmap.title": "Roadmap | Lecturameter",
  "head.roadmap.description": "Sfide di lettura per tutta la community, un gioco con i tuoi libri e una Home rinnovata. Nessuna data fissa: tutto esce quando è pronto.",
  "head.faq.title": "Domande frequenti | Lecturameter",
- "head.faq.description": "Domande frequenti: Posso portare la mia libreria da altre app? · I miei dati sono miei? · C'è un abbonamento? · Funziona offline?",
+ "head.faq.description": "Domande frequenti: Posso portare la mia libreria da altre app? · I miei dati sono miei? · C'è un abbonamento? · Funziona offline? · Funziona offline?",
  "head.platforms.title": "Lecturameter su iPhone e Android",
  "head.platforms.description": "La versione per iPhone ha le stesse funzioni principali di quella Android: libreria, cronometro di lettura, statistiche, sfide, bingo, Pagi e i temi grafici.",
  "head.pro.title": "Prezzi · Pro | Lecturameter",
- "head.pro.description": "Prova le funzioni Pro per 7 giorni senza carta. Alla fine della prova, anche se non acquisti Pro, ricevi in regalo un tema Pro a tua scelta."
+ "head.pro.description": "Prova le funzioni Pro per 7 giorni senza carta. Alla fine della prova, anche se non acquisti Pro, ricevi in regalo un tema Pro a tua scelta.",
+ "home.trust.title": "La tua biblioteca è tua",
+ "home.trust.p1": "Nessun account necessario",
+ "home.trust.p2": "I tuoi dati restano sul tuo telefono",
+ "home.trust.p3": "Backup locali e Google Drive, se vuoi",
+ "home.trust.p4": "La telemetria è pseudonima e puoi disattivarla",
+ "home.universe.title": "Due esperienze. Un solo universo.",
+ "home.universe.sub": "Lecturameter è il tracker di lettura moderno. Lecturameter 99 ne è la reinterpretazione retrò: un'alternativa, né migliore né peggiore.",
+ "home.universe.lm": "Il tracker di lettura moderno, per Android e iOS.",
+ "home.universe.lm99": "Una versione retrò della stessa idea, gratis su Google Play e App Store.",
+ "common.nav.universe_portal": "Portale Universo",
+ "head.universe.title": "Due esperienze. Un solo universo. | Lecturameter",
+ "head.universe.description": "Lecturameter è il tracker di lettura moderno. Lecturameter 99 ne è la reinterpretazione retrò: un'alternativa, né migliore né peggiore."
 }

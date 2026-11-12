@@ -994,7 +994,19 @@
  "head.faq.title": "Vanliga frågor | Lecturameter",
  "head.faq.description": "Vanliga frågor: Kan jag ta med mitt bibliotek från andra appar? · Är min data min egen? · Finns det en prenumeration? · Fungerar den offline?",
  "head.platforms.title": "Lecturameter på iPhone och Android",
- "head.platforms.description": "iPhone-versionen har samma huvudfunktioner som Android: bibliotek, lästidtagare, statistik, utmaningar, bingo, Pagi och de visuella teman.",
+ "head.platforms.description": "iPhone-versionen har samma huvudfunktioner som Android: bibliotek, lästidtagare, statistik, utmaningar, bingo, Pagi och de visuella teman. Här är skillnaderna.",
  "head.pro.title": "Priser · Pro | Lecturameter",
- "head.pro.description": "Testa Pro-funktionerna i 7 dagar utan kort. När provperioden är slut får du ett gratis Pro-tema som du själv väljer, även om du inte köper Pro."
+ "head.pro.description": "Testa Pro-funktionerna i 7 dagar utan kort. När provperioden är slut får du ett gratis Pro-tema som du själv väljer, även om du inte köper Pro.",
+ "home.trust.title": "Ditt bibliotek är ditt",
+ "home.trust.p1": "Inget konto behövs",
+ "home.trust.p2": "Din data stannar på din telefon",
+ "home.trust.p3": "Lokala säkerhetskopior och Google Drive, om du vill",
+ "home.trust.p4": "Telemetrin är pseudonym och du kan stänga av den",
+ "home.universe.title": "Två upplevelser. Ett universum.",
+ "home.universe.sub": "Lecturameter är den moderna lässpåraren. Lecturameter 99 är dess retrotolkning: ett alternativ, varken bättre eller sämre.",
+ "home.universe.lm": "Den moderna lässpåraren för Android och iOS.",
+ "home.universe.lm99": "En retroversion av samma idé, gratis på Google Play och App Store.",
+ "common.nav.universe_portal": "Universumportal",
+ "head.universe.title": "Två upplevelser. Ett universum. | Lecturameter",
+ "head.universe.description": "Lecturameter är den moderna lässpåraren. Lecturameter 99 är dess retrotolkning: ett alternativ, varken bättre eller sämre."
 }

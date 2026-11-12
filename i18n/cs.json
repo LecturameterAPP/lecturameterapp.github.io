@@ -992,9 +992,21 @@
  "head.roadmap.title": "Plán vývoje | Lecturameter",
  "head.roadmap.description": "Čtenářské výzvy pro celou komunitu, hra, kterou hraješ se svými vlastními knihami, a obnovená domovská obrazovka.",
  "head.faq.title": "Časté dotazy | Lecturameter",
- "head.faq.description": "Časté dotazy: Můžu si přenést knihovnu z jiných aplikací? · Patří moje data mně? · Je tu předplatné? · Funguje offline?",
+ "head.faq.description": "Časté dotazy: Můžu si přenést knihovnu z jiných aplikací? · Patří moje data mně? · Je tu předplatné? · Funguje offline? · Funguje offline?",
  "head.platforms.title": "Lecturameter na iPhonu a Androidu",
  "head.platforms.description": "Verze pro iPhone má stejné hlavní funkce jako Android: knihovnu, časovač čtení, statistiky, výzvy, bingo, Pagi a vizuální motivy. Tady jsou rozdíly.",
  "head.pro.title": "Ceny · Pro | Lecturameter",
- "head.pro.description": "Vyzkoušej funkce Pro na 7 dní bez karty. Na konci zkušební doby dostaneš jeden motiv Pro podle svého výběru zdarma, i když si Pro nekoupíš."
+ "head.pro.description": "Vyzkoušej funkce Pro na 7 dní bez karty. Na konci zkušební doby dostaneš jeden motiv Pro podle svého výběru zdarma, i když si Pro nekoupíš.",
+ "home.trust.title": "Tvoje knihovna je tvoje",
+ "home.trust.p1": "Nepotřebuješ účet",
+ "home.trust.p2": "Tvá data zůstávají v telefonu",
+ "home.trust.p3": "Místní zálohy i Google Drive, pokud chceš",
+ "home.trust.p4": "Telemetrie je pseudonymní a můžeš ji vypnout",
+ "home.universe.title": "Dva zážitky. Jeden vesmír.",
+ "home.universe.sub": "Lecturameter je moderní čtenářský tracker. Lecturameter 99 je jeho retro reinterpretace: alternativa, ani lepší, ani horší.",
+ "home.universe.lm": "Moderní čtenářský tracker pro Android a iOS.",
+ "home.universe.lm99": "Retro pojetí stejné myšlenky, zdarma na Google Play a App Store.",
+ "common.nav.universe_portal": "Portál Vesmír",
+ "head.universe.title": "Dva zážitky. Jeden vesmír. | Lecturameter",
+ "head.universe.description": "Lecturameter je moderní čtenářský tracker. Lecturameter 99 je jeho retro reinterpretace: alternativa, ani lepší, ani horší."
 }

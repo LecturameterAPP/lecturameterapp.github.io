@@ -994,7 +994,19 @@
  "head.faq.title": "Perguntas frequentes | Lecturameter",
  "head.faq.description": "Perguntas frequentes: Posso trazer a minha biblioteca de outras aplicações? · Os meus dados são meus? · Há subscrição? · Funciona sem ligação?",
  "head.platforms.title": "Lecturameter no iPhone e no Android",
- "head.platforms.description": "A versão para iPhone tem as mesmas funcionalidades principais que a do Android: biblioteca, cronómetro de leitura, estatísticas, desafios, bingo, Pagi e os…",
+ "head.platforms.description": "A versão para iPhone tem as mesmas funcionalidades principais que a do Android.",
  "head.pro.title": "Preços · Pro | Lecturameter",
- "head.pro.description": "Experimenta as funcionalidades Pro durante 7 dias sem cartão. No fim da experiência, mesmo que não compres o Pro, ficas com um tema Pro à tua escolha, grátis."
+ "head.pro.description": "Experimenta as funcionalidades Pro durante 7 dias sem cartão. No fim da experiência, mesmo que não compres o Pro, ficas com um tema Pro à tua escolha, grátis.",
+ "home.trust.title": "A tua biblioteca é tua",
+ "home.trust.p1": "Não precisas de conta",
+ "home.trust.p2": "Os teus dados ficam no teu telemóvel",
+ "home.trust.p3": "Cópias locais e Google Drive, se quiseres",
+ "home.trust.p4": "A telemetria é pseudónima e podes desativá-la",
+ "home.universe.title": "Duas experiências. Um só universo.",
+ "home.universe.sub": "O Lecturameter é o registo de leitura moderno. O Lecturameter 99 é a sua reinterpretação retro: uma alternativa, nem melhor nem pior.",
+ "home.universe.lm": "O registo de leitura moderno, para Android e iOS.",
+ "home.universe.lm99": "Uma versão retro da mesma ideia, grátis no Google Play e na App Store.",
+ "common.nav.universe_portal": "Portal Universo",
+ "head.universe.title": "Duas experiências. Um só universo. | Lecturameter",
+ "head.universe.description": "O Lecturameter é o registo de leitura moderno. O Lecturameter 99 é a sua reinterpretação retro: uma alternativa, nem melhor nem pior."
 }

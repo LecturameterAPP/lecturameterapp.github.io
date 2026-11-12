@@ -228,6 +228,7 @@
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Вселенная <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
+                    <li><a href="./universe/">Портал «Вселенная»</a></li>
                     <li><a href="./">Lecturameter</a></li>
                     <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
                 </ul>
@@ -611,105 +612,12 @@
     </div>
 </section>
 
-<!-- 3.1 PAUSADO -->
-<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+<!-- 4. ECOSISTEMA (pausado y cards; retos y bingo en la rejilla de arriba, eventos debajo) -->
+<section class="band band-alt" id="paused">
     <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Новое в 3.9 / iOS 1.1.0</span>
-            <h2 id="paused-title">Отложи книгу на время, не испортив статистику</h2>
-            <p>«На паузе» — отдельный статус, не то же самое, что «Брошено». Книга ждёт там, где ты остановился, а дни паузы не считаются.</p>
-        </div>
-        <div class="paused-viz reveal-up" aria-hidden="true">
-            <div class="paused-tabs">
-                <span>Хочу прочитать</span>
-                <span>Читаю</span>
-                <span class="is-paused">На паузе</span>
-                <span>Брошено</span>
-            </div>
-            <div class="paused-timeline">
-                <span class="seg read" style="flex:3"></span>
-                <span class="seg pause" style="flex:2"></span>
-                <span class="seg read" style="flex:4"></span>
-            </div>
-            <div class="paused-legend">
-                <span><i class="dot read"></i>Читаю</span>
-                <span><i class="dot pause"></i>На паузе &middot; Дни паузы не считаются</span>
-            </div>
-        </div>
         <div class="paused-grid">
-            <div class="paused-card reveal-up"><h3>Отдельный статус</h3><p>«На паузе» — это не «Брошено». Книга не попадает в стопку тех, что ты бросил: она ждёт и возвращается, когда захочешь.</p></div>
-            <div class="paused-card reveal-up"><h3>Из «Читаю» или «Перечитываю»</h3><p>Меняйте статус через метку на странице книги или через «Изменить статус» в быстрых действиях (удерживайте карточку книги). Работает для книг, комиксов, манги и аудиокниг.</p></div>
-            <div class="paused-card reveal-up"><h3>Дни паузы не считаются</h3><p>Ни в днях до завершения, ни в твоей скорости чтения. Статистика остаётся такой, какой была, пока ты читал.</p></div>
-            <div class="paused-card reveal-up"><h3>Заметка, если хочешь</h3><p>Когда ставишь на паузу и когда возобновляешь, можно записать причину. Это необязательно. Всё остаётся в разделе «Паузы» на странице книги, вместе с историей.</p></div>
-            <div class="paused-card reveal-up"><h3>Отдельная вкладка</h3><p>В библиотеке, между «Хочу прочитать» и «Брошено», ты найдёшь книги на паузе.</p></div>
-            <div class="paused-card reveal-up"><h3>Напоминания и самостоятельное возобновление</h3><p>Напоминания этой книги ставятся на паузу и возвращаются, когда ты её возобновишь. Если ты засечёшь сессию таймером или придёт сессия из KOReader, книга возобновится сама — с уведомлением и кнопкой «Отменить».</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.2 MENU RAPIDO -->
-<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Новое в 3.9 / iOS 1.1.0</span>
-            <h2 id="quickmenu-title">Переходите между разделами, не возвращаясь на Главную</h2>
-            <p>Раньше, чтобы попасть из Бинго в Настройки, нужно было сначала зайти на Главную. Теперь достаточно нажать три точки (···) в правом верхнем углу, и вы сразу там.</p>
-        </div>
-        <div class="qm-viz reveal-up" aria-hidden="true">
-            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Бинго</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
-            <div class="qm-panel">
-                <p class="qm-panel-title">Быстрое меню</p>
-                <div class="qm-groups">
-                    <div class="qm-group is-current"><p class="qm-group-title">Цели</p><p>События · Вызовы · Бинго</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Моё чтение</p><p>Статистика · Мои карточки · Годовой итог</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Инструменты</p><p>Напоминания · Управление тегами · Сканировать ISBN</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Общие разделы</p><p>Главная · Настройки · Данные и копии</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="paused-grid">
-            <div class="paused-card qm-card reveal-up"><h3>Почти на каждом экране</h3><p>Значок с тремя горизонтальными точками (···) находится в правом верхнем углу. Если на экране была кнопка «Поделиться», она сдвигается влево от него.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Те же группы, что и на Главной</h3><p>Цели, Моё чтение и Инструменты, а также Главная, Настройки и Данные и копии. Раздел, в котором вы находитесь, выделен: нажмите на него, чтобы вернуться к его началу.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>И на странице книги</h3><p>Откройте меню с тремя вертикальными точками на странице книги и выберите «Быстрое меню». В пошаговых мастерах его нет, чтобы вы не потеряли то, что заполняете.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.3 COMPARTIR CARDS -->
-<section class="band band-alt" id="cards" aria-labelledby="cards-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Поделиться</span>
-            <h2 id="cards-title">Lecturameter — не соцсеть. Твои карточки отправляются в ту, которой ты пользуешься.</h2>
-            <p>Делай вертикальные карточки 1080×1920, готовые для сторис, и делись ими там, где ты уже есть. Без аккаунта, без профиля и без подписчиков. В версии 3.9 / iOS 1.1.0 недельные и месячные сводки получают новый дизайн и больше статистики.</p>
-        </div>
-        <div class="share-wrap">
-            <div class="share-fan reveal-up" aria-hidden="true">
-                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <span class="share-size">1080×1920 · формат сторис</span>
-            </div>
-            <div class="share-side">
-                <ul class="share-chips">
-                <li>Книга</li>
-                <li>Прочитанная книга</li>
-                <li>Статистика книги</li>
-                <li>Статистика</li>
-                <li>Итоги недели</li>
-                <li>Итоги месяца</li>
-                <li>Вызовы</li>
-                <li>Bingo</li>
-                <li>Wrapped</li>
-                <li>Событие</li>
-                <li>Quest</li>
-                </ul>
-                <ol class="share-steps">
-            <li class="share-step reveal-up"><h3>Выбери, что показать</h3><p>Книгу, только что прочитанную книгу, свою статистику, неделю или месяц, вызов, Bingo, Wrapped или событие.</p></li>
-            <li class="share-step reveal-up"><h3>Сохраняется в «Мои карточки»</h3><p>Всё, чем ты делишься, остаётся в «Моих карточках», так что можно использовать снова, когда захочешь.</p></li>
-            <li class="share-step reveal-up"><h3>Делись там, где ты уже есть</h3><p>Через меню «Поделиться» на телефоне — в приложение, которым ты уже пользуешься. Или сохрани в галерею.</p></li>
-                </ol>
-            </div>
+            <div class="paused-card reveal-up"><h3>Отложи книгу на время, не испортив статистику</h3><p>«На паузе» — отдельный статус, не то же самое, что «Брошено». Книга ждёт там, где ты остановился, а дни паузы не считаются.</p></div>
+            <div class="paused-card reveal-up" id="cards"><h3>Lecturameter — не соцсеть. Твои карточки отправляются в ту, которой ты пользуешься.</h3><p>Делай вертикальные карточки 1080×1920, готовые для сторис, и делись ими там, где ты уже есть. Без аккаунта, без профиля и без подписчиков. В версии 3.9 / iOS 1.1.0 недельные и месячные сводки получают новый дизайн и больше статистики.</p></div>
         </div>
     </div>
 </section>
@@ -767,6 +675,20 @@
             </article>
         </div>
         <p class="events-note">Чтобы участвовать, тебе должно быть 16 лет или больше. Если сейчас нет активного события, приложение сообщит об этом.</p>
+    </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section class="band" id="trust" aria-labelledby="trust-title">
+    <div class="container">
+        <div class="section-head"><h2 id="trust-title">Твоя библиотека принадлежит тебе</h2></div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><p>Аккаунт не нужен</p></div>
+            <div class="paused-card reveal-up"><p>Твои данные остаются на твоём телефоне</p></div>
+            <div class="paused-card reveal-up"><p>Локальные копии и Google Drive, если хочешь</p></div>
+            <div class="paused-card reveal-up"><p>Телеметрия псевдонимная, и её можно отключить</p></div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./privacy/" class="btn">Политика конфиденциальности</a></p>
     </div>
 </section>
 
@@ -847,6 +769,28 @@
                 <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span><strong>Сумерки</strong> <span class="pro-tag">Pro</span></figcaption>
             </figure>
         </div>
+    </div>
+</section>
+
+<!-- 7b. UNIVERSO -->
+<section class="band" id="universe">
+    <div class="container">
+        <div class="section-head">
+            <h2>Два опыта. Одна вселенная.</h2>
+            <p>Lecturameter — современный трекер чтения. Lecturameter 99 — его ретро-переосмысление: альтернатива, не лучше и не хуже.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">Lecturameter</div>
+                <p class="price-note">Современный трекер чтения для Android и iOS.</p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">Lecturameter 99</div>
+                <p class="price-note">Ретро-версия той же идеи, бесплатно в Google Play и App Store.</p>
+                <p><a href="./lecturameter-1999/" class="btn">Lecturameter 99</a></p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./universe/" class="btn">Портал «Вселенная»</a></p>
     </div>
 </section>
 
@@ -1000,6 +944,7 @@
             </div>
             <div class="footer-col">
                 <h4>Вселенная</h4>
+                <a href="./universe/">Портал «Вселенная»</a>
                 <a href="./">Lecturameter</a>
                 <a href="./lecturameter-1999/">Lecturameter 99</a>
             </div>

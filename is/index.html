@@ -228,6 +228,7 @@
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Alheimur <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
+                    <li><a href="./universe/">Heimsgátt</a></li>
                     <li><a href="./">Lecturameter</a></li>
                     <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
                 </ul>
@@ -611,105 +612,12 @@
     </div>
 </section>
 
-<!-- 3.1 PAUSADO -->
-<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+<!-- 4. ECOSISTEMA (pausado y cards; retos y bingo en la rejilla de arriba, eventos debajo) -->
+<section class="band band-alt" id="paused">
     <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Nýtt í 3.9 / iOS 1.1.0</span>
-            <h2 id="paused-title">Leggðu bók til hliðar um stund án þess að skemma tölfræðina þína</h2>
-            <p>Í hléi er sérstök staða, ólík stöðunni Hætt við. Bókin bíður þar sem þú skildir við hana og dagarnir í hléi telja ekki.</p>
-        </div>
-        <div class="paused-viz reveal-up" aria-hidden="true">
-            <div class="paused-tabs">
-                <span>Vil lesa</span>
-                <span>Les</span>
-                <span class="is-paused">Í hléi</span>
-                <span>Hætt við</span>
-            </div>
-            <div class="paused-timeline">
-                <span class="seg read" style="flex:3"></span>
-                <span class="seg pause" style="flex:2"></span>
-                <span class="seg read" style="flex:4"></span>
-            </div>
-            <div class="paused-legend">
-                <span><i class="dot read"></i>Les</span>
-                <span><i class="dot pause"></i>Í hléi &middot; Dagar í hléi telja ekki</span>
-            </div>
-        </div>
         <div class="paused-grid">
-            <div class="paused-card reveal-up"><h3>Sérstök staða</h3><p>Í hléi er ekki það sama og Hætt við. Bókin þín fer ekki í bunkann yfir bækur sem þú gafst upp á: hún bíður og snýr aftur þegar þú vilt.</p></div>
-            <div class="paused-card reveal-up"><h3>Úr Les eða Endurlestur</h3><p>Breyttu stöðunni með hnappinum á síðu bókarinnar eða með „Breyta stöðu“ í skjótaðgerðum (haltu inni á spjaldi bókarinnar). Þetta virkar fyrir bækur, myndasögur, manga og hljóðbækur.</p></div>
-            <div class="paused-card reveal-up"><h3>Dagar í hléi telja ekki</h3><p>Hvorki í dögum til að klára né í lestrarhraðanum þínum. Tölfræðin helst eins og hún var þegar þú last.</p></div>
-            <div class="paused-card reveal-up"><h3>Athugasemd, ef þú vilt</h3><p>Þegar þú setur í hlé og þegar þú heldur áfram geturðu skrifað hvers vegna. Það er valfrjálst. Allt er geymt í hlutanum „Hlé“ á síðu bókarinnar, með sögu.</p></div>
-            <div class="paused-card reveal-up"><h3>Sérstakur flipi</h3><p>Í bókasafninu þínu, milli Vil lesa og Hætt við, finnurðu bækurnar sem eru í hléi.</p></div>
-            <div class="paused-card reveal-up"><h3>Áminningar og sjálfvirk áframhaldandi lestur</h3><p>Áminningar þeirrar bókar fara í hlé og snúa aftur þegar þú heldur áfram með hana. Ef þú tímamælir lotu eða ein berst frá KOReader heldur bókin sjálf áfram, með tilkynningu og möguleika á að afturkalla.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.2 MENU RAPIDO -->
-<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Nýtt í 3.9 / iOS 1.1.0</span>
-            <h2 id="quickmenu-title">Farðu milli hluta án þess að fara aftur á Heim</h2>
-            <p>Áður þurfti að fara fyrst á Heim til að komast úr Bingó í Stillingar. Nú ýtirðu á punktana þrjá (···) efst í hægra horninu og ferð beint þangað.</p>
-        </div>
-        <div class="qm-viz reveal-up" aria-hidden="true">
-            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingó</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
-            <div class="qm-panel">
-                <p class="qm-panel-title">Flýtivalmynd</p>
-                <div class="qm-groups">
-                    <div class="qm-group is-current"><p class="qm-group-title">Markmið</p><p>Viðburðir · Áskoranir · Bingó</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Lesturinn minn</p><p>Tölfræði · Spjöldin mín · Wrapped</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Verkfæri</p><p>Áminningar · Umsjón með merkjum · Skanna ISBN</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Almennar flýtileiðir</p><p>Heim · Stillingar · Gögn og afrit</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="paused-grid">
-            <div class="paused-card qm-card reveal-up"><h3>Á nánast öllum skjám</h3><p>Táknið með þremur láréttum punktum (···) er efst í hægra horninu. Ef skjárinn var með deilingarhnapp færist hann til vinstri við það.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Sömu hópar og á Heim</h3><p>Markmið, Lesturinn minn og Verkfæri, auk Heim, Stillingar og Gögn og afrit. Hlutinn sem þú ert í er auðkenndur: ýttu á hann til að fara aftur á upphaf hans.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Líka á bókarsíðunni</h3><p>Opnaðu valmyndina með þremur lóðréttum punktum á síðu bókarinnar og veldu „Flýtivalmynd“. Leiðsagnir í skrefum hafa hana ekki, svo þú glatir ekki því sem þú ert að fylla út.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.3 COMPARTIR CARDS -->
-<section class="band band-alt" id="cards" aria-labelledby="cards-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Deila</span>
-            <h2 id="cards-title">Lecturameter er ekki samfélagsmiðill. Spjöldin þín fara á þann miðil sem þú notar.</h2>
-            <p>Gerðu lóðrétt spjöld, 1080×1920, tilbúin í sögur, og deildu þeim þar sem þú ert nú þegar. Enginn aðgangur, enginn prófíll og engir fylgjendur. Í 3.9 / iOS 1.1.0 fá vikuleg og mánaðarleg yfirlit nýtt útlit og meiri tölfræði.</p>
-        </div>
-        <div class="share-wrap">
-            <div class="share-fan reveal-up" aria-hidden="true">
-                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <span class="share-size">1080×1920 · sagnasnið</span>
-            </div>
-            <div class="share-side">
-                <ul class="share-chips">
-                <li>Bók</li>
-                <li>Bók lokið</li>
-                <li>Bókatölfræði</li>
-                <li>Tölfræði</li>
-                <li>Vikuyfirlit</li>
-                <li>Mánaðaryfirlit</li>
-                <li>Áskoranir</li>
-                <li>Bingo</li>
-                <li>Wrapped</li>
-                <li>Viðburður</li>
-                <li>Quest</li>
-                </ul>
-                <ol class="share-steps">
-            <li class="share-step reveal-up"><h3>Veldu hvað þú vilt sýna</h3><p>Bók, bók sem þú varst að klára, tölfræðina þína, vikuna eða mánuðinn, áskorun, Bingo, Wrapped eða viðburð.</p></li>
-            <li class="share-step reveal-up"><h3>Vistast í „Spjöldin mín“</h3><p>Allt sem þú deilir helst í Spjöldin mín, svo þú getir notað það aftur hvenær sem þú vilt.</p></li>
-            <li class="share-step reveal-up"><h3>Deildu því þar sem þú ert nú þegar</h3><p>Í gegnum deilingarvalmynd símans, yfir í forritið sem þú notar nú þegar. Eða vistaðu það í myndasafnið.</p></li>
-                </ol>
-            </div>
+            <div class="paused-card reveal-up"><h3>Leggðu bók til hliðar um stund án þess að skemma tölfræðina þína</h3><p>Í hléi er sérstök staða, ólík stöðunni Hætt við. Bókin bíður þar sem þú skildir við hana og dagarnir í hléi telja ekki.</p></div>
+            <div class="paused-card reveal-up" id="cards"><h3>Lecturameter er ekki samfélagsmiðill. Spjöldin þín fara á þann miðil sem þú notar.</h3><p>Gerðu lóðrétt spjöld, 1080×1920, tilbúin í sögur, og deildu þeim þar sem þú ert nú þegar. Enginn aðgangur, enginn prófíll og engir fylgjendur. Í 3.9 / iOS 1.1.0 fá vikuleg og mánaðarleg yfirlit nýtt útlit og meiri tölfræði.</p></div>
         </div>
     </div>
 </section>
@@ -767,6 +675,20 @@
             </article>
         </div>
         <p class="events-note">Þú þarft að vera 16 ára eða eldri til að taka þátt. Ef enginn viðburður er virkur núna segir forritið þér það.</p>
+    </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section class="band" id="trust" aria-labelledby="trust-title">
+    <div class="container">
+        <div class="section-head"><h2 id="trust-title">Bókasafnið þitt er þitt</h2></div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><p>Enginn reikningur nauðsynlegur</p></div>
+            <div class="paused-card reveal-up"><p>Gögnin þín haldast í símanum þínum</p></div>
+            <div class="paused-card reveal-up"><p>Staðbundin afrit og Google Drive, ef þú vilt</p></div>
+            <div class="paused-card reveal-up"><p>Fjarmælingar eru dulnefndar og þú getur slökkt á þeim</p></div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./privacy/" class="btn">Persónuverndarstefna</a></p>
     </div>
 </section>
 
@@ -847,6 +769,28 @@
                 <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span><strong>Rökkur</strong> <span class="pro-tag">Pro</span></figcaption>
             </figure>
         </div>
+    </div>
+</section>
+
+<!-- 7b. UNIVERSO -->
+<section class="band" id="universe">
+    <div class="container">
+        <div class="section-head">
+            <h2>Tvær upplifanir. Einn heimur.</h2>
+            <p>Lecturameter er nútímalegur lestrarskráningar. Lecturameter 99 er retró-túlkun þess: valkostur, hvorki betri né verri.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">Lecturameter</div>
+                <p class="price-note">Nútímalegur lestrarskráningar fyrir Android og iOS.</p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">Lecturameter 99</div>
+                <p class="price-note">Retró útgáfa af sömu hugmynd, ókeypis á Google Play og App Store.</p>
+                <p><a href="./lecturameter-1999/" class="btn">Lecturameter 99</a></p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./universe/" class="btn">Heimsgátt</a></p>
     </div>
 </section>
 
@@ -1000,6 +944,7 @@
             </div>
             <div class="footer-col">
                 <h4>Alheimur</h4>
+                <a href="./universe/">Heimsgátt</a>
                 <a href="./">Lecturameter</a>
                 <a href="./lecturameter-1999/">Lecturameter 99</a>
             </div>

@@ -992,9 +992,21 @@
  "head.roadmap.title": "Roadmap | Lecturameter",
  "head.roadmap.description": "Desafios de leitura para toda a comunidade, um jogo que se joga com seus próprios livros e uma Home renovada. Sem datas fixas: tudo sai quando estiver pronto.",
  "head.faq.title": "Perguntas frequentes | Lecturameter",
- "head.faq.description": "Perguntas frequentes: Posso trazer minha biblioteca de outros apps? · Meus dados são meus? · Existe assinatura? · Funciona sem conexão?",
+ "head.faq.description": "Perguntas frequentes: Posso trazer minha biblioteca de outros apps? · Meus dados são meus? · Existe assinatura? · Funciona sem conexão? · Funciona sem conexão?",
  "head.platforms.title": "Lecturameter no iPhone e no Android",
  "head.platforms.description": "A versão para iPhone tem os mesmos recursos principais do Android: biblioteca, cronômetro de leitura, estatísticas, desafios, bingo, Pagi e os temas visuais.",
  "head.pro.title": "Preços · Pro | Lecturameter",
- "head.pro.description": "Teste os recursos Pro por 7 dias sem cartão. No fim do período de teste, mesmo que você não compre o Pro, você ganha um tema Pro grátis à sua escolha."
+ "head.pro.description": "Teste os recursos Pro por 7 dias sem cartão. No fim do período de teste, mesmo que você não compre o Pro, você ganha um tema Pro grátis à sua escolha.",
+ "home.trust.title": "Sua biblioteca é sua",
+ "home.trust.p1": "Não precisa de conta",
+ "home.trust.p2": "Seus dados ficam no seu celular",
+ "home.trust.p3": "Backups locais e Google Drive, se você quiser",
+ "home.trust.p4": "A telemetria é pseudônima e você pode desativá-la",
+ "home.universe.title": "Duas experiências. Um mesmo universo.",
+ "home.universe.sub": "O Lecturameter é o registro de leitura moderno. O Lecturameter 99 é sua reinterpretação retrô: uma alternativa, nem melhor nem pior.",
+ "home.universe.lm": "O registro de leitura moderno, para Android e iOS.",
+ "home.universe.lm99": "Uma versão retrô da mesma ideia, grátis no Google Play e na App Store.",
+ "common.nav.universe_portal": "Portal Universo",
+ "head.universe.title": "Duas experiências. Um mesmo universo. | Lecturameter",
+ "head.universe.description": "O Lecturameter é o registro de leitura moderno. O Lecturameter 99 é sua reinterpretação retrô: uma alternativa, nem melhor nem pior."
 }

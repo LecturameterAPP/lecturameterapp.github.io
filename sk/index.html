@@ -228,6 +228,7 @@
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Vesmír <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
+                    <li><a href="./universe/">Portál Vesmír</a></li>
                     <li><a href="./">Lecturameter</a></li>
                     <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
                 </ul>
@@ -611,105 +612,12 @@
     </div>
 </section>
 
-<!-- 3.1 PAUSADO -->
-<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+<!-- 4. ECOSISTEMA (pausado y cards; retos y bingo en la rejilla de arriba, eventos debajo) -->
+<section class="band band-alt" id="paused">
     <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Novinka v 3.9 / iOS 1.1.0</span>
-            <h2 id="paused-title">Odlož knihu na čas bez toho, aby ti pokazila štatistiky</h2>
-            <p>Pozastavené je samostatný stav, odlišný od Opustené. Kniha čaká tam, kde si skončil, a dni na pauze sa nepočítajú.</p>
-        </div>
-        <div class="paused-viz reveal-up" aria-hidden="true">
-            <div class="paused-tabs">
-                <span>Chcem čítať</span>
-                <span>Čítanie</span>
-                <span class="is-paused">Pozastavené</span>
-                <span>Opustené</span>
-            </div>
-            <div class="paused-timeline">
-                <span class="seg read" style="flex:3"></span>
-                <span class="seg pause" style="flex:2"></span>
-                <span class="seg read" style="flex:4"></span>
-            </div>
-            <div class="paused-legend">
-                <span><i class="dot read"></i>Čítanie</span>
-                <span><i class="dot pause"></i>Pozastavené &middot; Dni na pauze sa nepočítajú</span>
-            </div>
-        </div>
         <div class="paused-grid">
-            <div class="paused-card reveal-up"><h3>Samostatný stav</h3><p>Pozastavené nie je Opustené. Tvoja kniha nepôjde do kôpky tých, ktoré si vzdal: čaká a vráti sa, kedykoľvek budeš chcieť.</p></div>
-            <div class="paused-card reveal-up"><h3>Zo stavu Čítanie alebo Znovu čítam</h3><p>Zmeňte stav cez štítok na stránke knihy alebo cez „Zmeniť stav“ v rýchlych akciách (podržte kartu knihy). Funguje pre knihy, komiksy, mangu a audioknihy.</p></div>
-            <div class="paused-card reveal-up"><h3>Dni na pauze sa nepočítajú</h3><p>Ani do dní do dočítania, ani do tvojej rýchlosti čítania. Štatistiky zostanú také, aké boli, keď si čítal.</p></div>
-            <div class="paused-card reveal-up"><h3>Poznámka, ak chceš</h3><p>Keď knihu pozastavíš aj keď ju obnovíš, môžeš si poznačiť prečo. Je to dobrovoľné. Všetko zostane v sekcii „Pauzy“ na stránke knihy aj s históriou.</p></div>
-            <div class="paused-card reveal-up"><h3>Vlastná karta</h3><p>V knižnici nájdeš pozastavené knihy medzi Chcem čítať a Opustené.</p></div>
-            <div class="paused-card reveal-up"><h3>Pripomienky a samo obnovenie</h3><p>Pripomienky tej knihy sa pozastavia a vrátia sa, keď ju obnovíš. Ak zmeriaš reláciu alebo nejaká príde z KOReadera, kniha sa obnoví sama, s oznámením a možnosťou Späť.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.2 MENU RAPIDO -->
-<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Novinka v 3.9 / iOS 1.1.0</span>
-            <h2 id="quickmenu-title">Prechádzajte medzi sekciami bez návratu na Domov</h2>
-            <p>Na to, aby ste sa z Bingo dostali do Nastavení, bolo predtým treba najprv prejsť cez Domov. Teraz ťuknete na tri bodky (···) v pravom hornom rohu a ste tam hneď.</p>
-        </div>
-        <div class="qm-viz reveal-up" aria-hidden="true">
-            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
-            <div class="qm-panel">
-                <p class="qm-panel-title">Rýchle menu</p>
-                <div class="qm-groups">
-                    <div class="qm-group is-current"><p class="qm-group-title">Ciele</p><p>Udalosti · Výzvy · Bingo</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Moje čítanie</p><p>Štatistiky · Moje karty · Wrapped</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Nástroje</p><p>Pripomienky · Správa tagov · Naskenovať ISBN</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Všeobecné skratky</p><p>Domov · Nastavenia · Údaje a zálohy</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="paused-grid">
-            <div class="paused-card qm-card reveal-up"><h3>Na takmer každej obrazovke</h3><p>Ikona troch vodorovných bodiek (···) je v pravom hornom rohu. Ak mala obrazovka tlačidlo zdieľania, posunie sa vľavo od nej.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Rovnaké skupiny ako na Domov</h3><p>Ciele, Moje čítanie a Nástroje, plus Domov, Nastavenia a Údaje a zálohy. Sekcia, v ktorej sa nachádzate, je zvýraznená: ťuknite na ňu a vrátite sa na jej začiatok.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Aj na stránke knihy</h3><p>Otvorte ponuku troch zvislých bodiek na stránke knihy a vyberte „Rýchle menu“. Sprievodcovia krok za krokom ju nemajú, aby ste nestratili, čo vypĺňate.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.3 COMPARTIR CARDS -->
-<section class="band band-alt" id="cards" aria-labelledby="cards-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Zdieľanie</span>
-            <h2 id="cards-title">Lecturameter nie je sociálna sieť. Tvoje karty idú na tú, ktorú používaš.</h2>
-            <p>Vytváraj zvislé karty 1080×1920, pripravené na stories, a zdieľaj ich tam, kde už si. Bez účtu, bez profilu a bez sledovateľov. Vo verzii 3.9 / iOS 1.1.0 dostanú týždenné a mesačné prehľady nový dizajn a viac štatistík.</p>
-        </div>
-        <div class="share-wrap">
-            <div class="share-fan reveal-up" aria-hidden="true">
-                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <span class="share-size">1080×1920 · formát stories</span>
-            </div>
-            <div class="share-side">
-                <ul class="share-chips">
-                <li>Kniha</li>
-                <li>Dočítaná kniha</li>
-                <li>Štatistiky knihy</li>
-                <li>Štatistiky</li>
-                <li>Týždenný prehľad</li>
-                <li>Mesačný prehľad</li>
-                <li>Výzvy</li>
-                <li>Bingo</li>
-                <li>Wrapped</li>
-                <li>Udalosť</li>
-                <li>Quest</li>
-                </ul>
-                <ol class="share-steps">
-            <li class="share-step reveal-up"><h3>Vyber, čo ukázať</h3><p>Knihu, práve dočítanú knihu, svoje štatistiky, týždeň alebo mesiac, výzvu, Bingo, Wrapped alebo udalosť.</p></li>
-            <li class="share-step reveal-up"><h3>Uloží sa do „Mojich kariet“</h3><p>Všetko, čo zdieľaš, zostane v Mojich kartách, takže to môžeš použiť znova, kedykoľvek budeš chcieť.</p></li>
-            <li class="share-step reveal-up"><h3>Zdieľaj tam, kde už si</h3><p>Cez ponuku zdieľania v telefóne do aplikácie, ktorú už používaš. Alebo ulož do galérie.</p></li>
-                </ol>
-            </div>
+            <div class="paused-card reveal-up"><h3>Odlož knihu na čas bez toho, aby ti pokazila štatistiky</h3><p>Pozastavené je samostatný stav, odlišný od Opustené. Kniha čaká tam, kde si skončil, a dni na pauze sa nepočítajú.</p></div>
+            <div class="paused-card reveal-up" id="cards"><h3>Lecturameter nie je sociálna sieť. Tvoje karty idú na tú, ktorú používaš.</h3><p>Vytváraj zvislé karty 1080×1920, pripravené na stories, a zdieľaj ich tam, kde už si. Bez účtu, bez profilu a bez sledovateľov. Vo verzii 3.9 / iOS 1.1.0 dostanú týždenné a mesačné prehľady nový dizajn a viac štatistík.</p></div>
         </div>
     </div>
 </section>
@@ -767,6 +675,20 @@
             </article>
         </div>
         <p class="events-note">Účasť je od 16 rokov. Ak práve nebeží žiadna udalosť, aplikácia ti to oznámi.</p>
+    </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section class="band" id="trust" aria-labelledby="trust-title">
+    <div class="container">
+        <div class="section-head"><h2 id="trust-title">Tvoja knižnica je tvoja</h2></div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><p>Účet nepotrebuješ</p></div>
+            <div class="paused-card reveal-up"><p>Tvoje dáta zostávajú v telefóne</p></div>
+            <div class="paused-card reveal-up"><p>Lokálne zálohy a Google Drive, ak chceš</p></div>
+            <div class="paused-card reveal-up"><p>Telemetria je pseudonymná a môžeš ju vypnúť</p></div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./privacy/" class="btn">Zásady ochrany osobných údajov</a></p>
     </div>
 </section>
 
@@ -847,6 +769,28 @@
                 <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span><strong>Súmrak</strong> <span class="pro-tag">Pro</span></figcaption>
             </figure>
         </div>
+    </div>
+</section>
+
+<!-- 7b. UNIVERSO -->
+<section class="band" id="universe">
+    <div class="container">
+        <div class="section-head">
+            <h2>Dva zážitky. Jeden vesmír.</h2>
+            <p>Lecturameter je moderný čitateľský tracker. Lecturameter 99 je jeho retro reinterpretácia: alternatíva, ani lepšia, ani horšia.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">Lecturameter</div>
+                <p class="price-note">Moderný čitateľský tracker pre Android a iOS.</p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">Lecturameter 99</div>
+                <p class="price-note">Retro podoba tej istej myšlienky, zadarmo v Google Play a App Store.</p>
+                <p><a href="./lecturameter-1999/" class="btn">Lecturameter 99</a></p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./universe/" class="btn">Portál Vesmír</a></p>
     </div>
 </section>
 
@@ -1000,6 +944,7 @@
             </div>
             <div class="footer-col">
                 <h4>Vesmír</h4>
+                <a href="./universe/">Portál Vesmír</a>
                 <a href="./">Lecturameter</a>
                 <a href="./lecturameter-1999/">Lecturameter 99</a>
             </div>

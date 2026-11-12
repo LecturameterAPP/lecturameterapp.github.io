@@ -996,5 +996,17 @@
  "head.platforms.title": "Lecturameter á iPhone og Android",
  "head.platforms.description": "iPhone-útgáfan hefur sömu helstu eiginleika og Android: bókasafn, lestrartímamæli, tölfræði, áskoranir, bingó, Pagi og útlitsþemun. Þetta er munurinn.",
  "head.pro.title": "Verð · Pro | Lecturameter",
- "head.pro.description": "Prófaðu Pro-eiginleika í 7 daga án korts. Í lok prufutímans færðu ókeypis Pro-þema að eigin vali, jafnvel þótt þú kaupir ekki Pro."
+ "head.pro.description": "Prófaðu Pro-eiginleika í 7 daga án korts. Í lok prufutímans færðu ókeypis Pro-þema að eigin vali, jafnvel þótt þú kaupir ekki Pro.",
+ "home.trust.title": "Bókasafnið þitt er þitt",
+ "home.trust.p1": "Enginn reikningur nauðsynlegur",
+ "home.trust.p2": "Gögnin þín haldast í símanum þínum",
+ "home.trust.p3": "Staðbundin afrit og Google Drive, ef þú vilt",
+ "home.trust.p4": "Fjarmælingar eru dulnefndar og þú getur slökkt á þeim",
+ "home.universe.title": "Tvær upplifanir. Einn heimur.",
+ "home.universe.sub": "Lecturameter er nútímalegur lestrarskráningar. Lecturameter 99 er retró-túlkun þess: valkostur, hvorki betri né verri.",
+ "home.universe.lm": "Nútímalegur lestrarskráningar fyrir Android og iOS.",
+ "home.universe.lm99": "Retró útgáfa af sömu hugmynd, ókeypis á Google Play og App Store.",
+ "common.nav.universe_portal": "Heimsgátt",
+ "head.universe.title": "Tvær upplifanir. Einn heimur. | Lecturameter",
+ "head.universe.description": "Lecturameter er nútímalegur lestrarskráningar. Lecturameter 99 er retró-túlkun þess: valkostur, hvorki betri né verri."
 }

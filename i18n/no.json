@@ -996,5 +996,17 @@
  "head.platforms.title": "Lecturameter på iPhone og Android",
  "head.platforms.description": "iPhone-versjonen har de samme hovedfunksjonene som Android: bibliotek, tidtaker, statistikk, utfordringer, bingo, Pagi og de visuelle temaene.",
  "head.pro.title": "Priser · Pro | Lecturameter",
- "head.pro.description": "Prøv Pro-funksjonene i 7 dager uten kort. Når prøveperioden er over, får du et gratis Pro-tema etter eget valg, selv om du ikke kjøper Pro."
+ "head.pro.description": "Prøv Pro-funksjonene i 7 dager uten kort. Når prøveperioden er over, får du et gratis Pro-tema etter eget valg, selv om du ikke kjøper Pro.",
+ "home.trust.title": "Biblioteket ditt er ditt",
+ "home.trust.p1": "Ingen konto nødvendig",
+ "home.trust.p2": "Dataene dine blir på telefonen din",
+ "home.trust.p3": "Lokale sikkerhetskopier og Google Drive, hvis du vil",
+ "home.trust.p4": "Telemetrien er pseudonym, og du kan slå den av",
+ "home.universe.title": "To opplevelser. Ett univers.",
+ "home.universe.sub": "Lecturameter er den moderne lesetrackeren. Lecturameter 99 er retrotolkningen av den: et alternativ, verken bedre eller dårligere.",
+ "home.universe.lm": "Den moderne lesetrackeren for Android og iOS.",
+ "home.universe.lm99": "En retroversjon av samme idé, gratis på Google Play og App Store.",
+ "common.nav.universe_portal": "Univers-portal",
+ "head.universe.title": "To opplevelser. Ett univers. | Lecturameter",
+ "head.universe.description": "Lecturameter er den moderne lesetrackeren. Lecturameter 99 er retrotolkningen av den: et alternativ, verken bedre eller dårligere."
 }

@@ -992,9 +992,21 @@
  "head.roadmap.title": "خارطة الطريق | Lecturameter",
  "head.roadmap.description": "تحديات قراءة للمجتمع كله، ولعبة تُلعب بكتبك أنت، وشاشة رئيسية متجددة. بلا مواعيد ثابتة: كل شيء يصدر عندما يكون جاهزًا.",
  "head.faq.title": "الأسئلة الشائعة | Lecturameter",
- "head.faq.description": "الأسئلة الشائعة: هل يمكنني نقل مكتبتي من تطبيقات أخرى؟ · هل بياناتي ملكي؟ · هل يوجد اشتراك؟ · هل يعمل بلا اتصال؟",
+ "head.faq.description": "الأسئلة الشائعة: هل يمكنني نقل مكتبتي من تطبيقات أخرى؟ · هل بياناتي ملكي؟ · هل يوجد اشتراك؟ · هل يعمل بلا اتصال؟ · هل يعمل بلا اتصال؟",
  "head.platforms.title": "Lecturameter على iPhone وAndroid",
  "head.platforms.description": "نسخة iPhone فيها نفس الميزات الرئيسية الموجودة في Android: المكتبة ومؤقّت القراءة والإحصاءات والتحديات والبينغو وPagi والسمات المرئية. هذه هي الفروق.",
  "head.pro.title": "الأسعار · Pro | Lecturameter",
- "head.pro.description": "جرّب ميزات Pro لمدة 7 أيام دون بطاقة. وفي نهاية التجربة، حتى لو لم تشترِ Pro، تحصل على سمة Pro مجانية من اختيارك."
+ "head.pro.description": "جرّب ميزات Pro لمدة 7 أيام دون بطاقة. وفي نهاية التجربة، حتى لو لم تشترِ Pro، تحصل على سمة Pro مجانية من اختيارك.",
+ "home.trust.title": "مكتبتك ملكك",
+ "home.trust.p1": "لا حاجة إلى حساب",
+ "home.trust.p2": "تبقى بياناتك على هاتفك",
+ "home.trust.p3": "نسخ احتياطية محلية وعلى Google Drive إن أردت",
+ "home.trust.p4": "القياس عن بُعد بأسماء مستعارة ويمكنك إيقافه",
+ "home.universe.title": "تجربتان. كون واحد.",
+ "home.universe.sub": "Lecturameter هو متتبع القراءة الحديث. Lecturameter 99 هو إعادة تفسيره بالطابع القديم: بديل، لا أفضل ولا أسوأ.",
+ "home.universe.lm": "متتبع القراءة الحديث، لأندرويد وiOS.",
+ "home.universe.lm99": "نسخة بطابع قديم من الفكرة نفسها، مجانية على Google Play وApp Store.",
+ "common.nav.universe_portal": "بوابة الكون",
+ "head.universe.title": "تجربتان. كون واحد. | Lecturameter",
+ "head.universe.description": "Lecturameter هو متتبع القراءة الحديث. Lecturameter 99 هو إعادة تفسيره بالطابع القديم: بديل، لا أفضل ولا أسوأ."
 }

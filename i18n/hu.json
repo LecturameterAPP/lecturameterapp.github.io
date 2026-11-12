@@ -992,9 +992,21 @@
  "head.roadmap.title": "Ütemterv | Lecturameter",
  "head.roadmap.description": "Olvasási kihívások az egész közösségnek, egy játék, amelyet a saját könyveiddel játszol, és egy megújult Kezdőlap.",
  "head.faq.title": "Gyakori kérdések | Lecturameter",
- "head.faq.description": "Gyakori kérdések: Áthozhatom a könyvtáramat más appokból? · Az adataim az enyémek? · Van előfizetés? · Működik internet nélkül?",
+ "head.faq.description": "Gyakori kérdések: Áthozhatom a könyvtáramat más appokból? · Az adataim az enyémek? · Van előfizetés? · Működik internet nélkül? · Működik internet nélkül?",
  "head.platforms.title": "Lecturameter iPhone-on és Androidon",
  "head.platforms.description": "Az iPhone-os verzió fő funkciói ugyanazok, mint Androidon: könyvtár, olvasási időzítő, statisztika, kihívások, bingó, Pagi és a vizuális témák.",
  "head.pro.title": "Árak · Pro | Lecturameter",
- "head.pro.description": "Próbáld ki a Pro funkciókat 7 napig, kártya nélkül. A próbaidő végén akkor is kapsz egy általad választott ingyenes Pro témát, ha nem veszed meg a Pro-t."
+ "head.pro.description": "Próbáld ki a Pro funkciókat 7 napig, kártya nélkül. A próbaidő végén akkor is kapsz egy általad választott ingyenes Pro témát, ha nem veszed meg a Pro-t.",
+ "home.trust.title": "A könyvtárad a tiéd",
+ "home.trust.p1": "Nincs szükség fiókra",
+ "home.trust.p2": "Az adataid a telefonodon maradnak",
+ "home.trust.p3": "Helyi mentések és Google Drive, ha szeretnéd",
+ "home.trust.p4": "A telemetria álnevesített, és kikapcsolhatod",
+ "home.universe.title": "Két élmény. Egy univerzum.",
+ "home.universe.sub": "A Lecturameter a modern olvasáskövető. A Lecturameter 99 a retró újraértelmezése: alternatíva, nem jobb és nem rosszabb.",
+ "home.universe.lm": "A modern olvasáskövető Androidra és iOS-re.",
+ "home.universe.lm99": "Ugyanennek az ötletnek a retró változata, ingyenes a Google Playen és az App Store-ban.",
+ "common.nav.universe_portal": "Univerzum-portál",
+ "head.universe.title": "Két élmény. Egy univerzum. | Lecturameter",
+ "head.universe.description": "A Lecturameter a modern olvasáskövető. A Lecturameter 99 a retró újraértelmezése: alternatíva, nem jobb és nem rosszabb."
 }

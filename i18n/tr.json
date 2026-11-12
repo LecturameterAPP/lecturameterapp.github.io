@@ -996,5 +996,17 @@
  "head.platforms.title": "iPhone ve Android'de Lecturameter",
  "head.platforms.description": "iPhone sürümünde Android ile aynı ana özellikler var: kitaplık, okuma zamanlayıcısı, istatistikler, meydan okumalar, bingo, Pagi ve görsel temalar.",
  "head.pro.title": "Fiyatlandırma · Pro | Lecturameter",
- "head.pro.description": "Pro özelliklerini kart olmadan 7 gün dene. Deneme sürenin sonunda Pro almasan bile seçtiğin bir Pro temayı ücretsiz alırsın."
+ "head.pro.description": "Pro özelliklerini kart olmadan 7 gün dene. Deneme sürenin sonunda Pro almasan bile seçtiğin bir Pro temayı ücretsiz alırsın.",
+ "home.trust.title": "Kitaplığın senin",
+ "home.trust.p1": "Hesap gerekmez",
+ "home.trust.p2": "Verilerin telefonunda kalır",
+ "home.trust.p3": "İstersen yerel yedekler ve Google Drive",
+ "home.trust.p4": "Telemetri takma adlıdır ve kapatabilirsin",
+ "home.universe.title": "İki deneyim. Tek evren.",
+ "home.universe.sub": "Lecturameter modern okuma takipçisidir. Lecturameter 99 onun retro yorumudur: bir alternatif, ne daha iyi ne daha kötü.",
+ "home.universe.lm": "Android ve iOS için modern okuma takipçisi.",
+ "home.universe.lm99": "Aynı fikrin retro hali, Google Play ve App Store'da ücretsiz.",
+ "common.nav.universe_portal": "Evren portalı",
+ "head.universe.title": "İki deneyim. Tek evren. | Lecturameter",
+ "head.universe.description": "Lecturameter modern okuma takipçisidir. Lecturameter 99 onun retro yorumudur: bir alternatif, ne daha iyi ne daha kötü."
 }

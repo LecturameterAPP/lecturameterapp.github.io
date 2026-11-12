@@ -996,5 +996,17 @@
  "head.platforms.title": "iPhone, Android లో Lecturameter",
  "head.platforms.description": "iPhone వెర్షన్‌లో Android లో ఉన్న ప్రధాన ఫీచర్లే ఉన్నాయి: లైబ్రరీ, రీడింగ్ టైమర్, గణాంకాలు, సవాళ్లు, Bingo, Pagi, దృశ్య థీమ్‌లు. తేడాలు ఇవి.",
  "head.pro.title": "ధరలు · Pro | Lecturameter",
- "head.pro.description": "కార్డు లేకుండా 7 రోజులు Pro ఫీచర్లను ప్రయత్నించండి. ట్రయల్ ముగిశాక, Pro కొనకపోయినా, మీకు నచ్చిన ఒక Pro థీమ్ ఉచితంగా లభిస్తుంది."
+ "head.pro.description": "కార్డు లేకుండా 7 రోజులు Pro ఫీచర్లను ప్రయత్నించండి. ట్రయల్ ముగిశాక, Pro కొనకపోయినా, మీకు నచ్చిన ఒక Pro థీమ్ ఉచితంగా లభిస్తుంది.",
+ "home.trust.title": "మీ లైబ్రరీ మీదే",
+ "home.trust.p1": "ఖాతా అవసరం లేదు",
+ "home.trust.p2": "మీ డేటా మీ ఫోన్‌లోనే ఉంటుంది",
+ "home.trust.p3": "కావాలంటే లోకల్ బ్యాకప్‌లు మరియు Google Drive",
+ "home.trust.p4": "టెలిమెట్రీ మారుపేరుతో ఉంటుంది, మీరు దాన్ని ఆఫ్ చేయవచ్చు",
+ "home.universe.title": "రెండు అనుభవాలు. ఒకే విశ్వం.",
+ "home.universe.sub": "Lecturameter ఆధునిక పఠన ట్రాకర్. Lecturameter 99 దాని రెట్రో పునర్వ్యాఖ్యానం: ఒక ప్రత్యామ్నాయం, మెరుగైనదీ కాదు, తక్కువదీ కాదు.",
+ "home.universe.lm": "ఆధునిక పఠన ట్రాకర్, Android మరియు iOS కోసం.",
+ "home.universe.lm99": "అదే ఆలోచనకు రెట్రో రూపం, Google Play మరియు App Store లో ఉచితం.",
+ "common.nav.universe_portal": "యూనివర్స్ పోర్టల్",
+ "head.universe.title": "రెండు అనుభవాలు. ఒకే విశ్వం. | Lecturameter",
+ "head.universe.description": "Lecturameter ఆధునిక పఠన ట్రాకర్. Lecturameter 99 దాని రెట్రో పునర్వ్యాఖ్యానం: ఒక ప్రత్యామ్నాయం, మెరుగైనదీ కాదు, తక్కువదీ కాదు."
 }

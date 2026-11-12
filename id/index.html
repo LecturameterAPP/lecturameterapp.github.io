@@ -228,6 +228,7 @@
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Semesta <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
+                    <li><a href="./universe/">Portal Semesta</a></li>
                     <li><a href="./">Lecturameter</a></li>
                     <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
                 </ul>
@@ -611,105 +612,12 @@
     </div>
 </section>
 
-<!-- 3.1 PAUSADO -->
-<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+<!-- 4. ECOSISTEMA (pausado y cards; retos y bingo en la rejilla de arriba, eventos debajo) -->
+<section class="band band-alt" id="paused">
     <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Baru di 3.9 / iOS 1.1.0</span>
-            <h2 id="paused-title">Simpan buku sementara tanpa mengacaukan statistikmu</h2>
-            <p>Dijeda adalah status tersendiri, berbeda dari Ditinggalkan. Buku menunggu di tempat kamu berhenti, dan hari-hari saat dijeda tidak dihitung.</p>
-        </div>
-        <div class="paused-viz reveal-up" aria-hidden="true">
-            <div class="paused-tabs">
-                <span>Ingin dibaca</span>
-                <span>Sedang dibaca</span>
-                <span class="is-paused">Dijeda</span>
-                <span>Ditinggalkan</span>
-            </div>
-            <div class="paused-timeline">
-                <span class="seg read" style="flex:3"></span>
-                <span class="seg pause" style="flex:2"></span>
-                <span class="seg read" style="flex:4"></span>
-            </div>
-            <div class="paused-legend">
-                <span><i class="dot read"></i>Sedang dibaca</span>
-                <span><i class="dot pause"></i>Dijeda &middot; Hari-hari saat dijeda tidak dihitung</span>
-            </div>
-        </div>
         <div class="paused-grid">
-            <div class="paused-card reveal-up"><h3>Status tersendiri</h3><p>Dijeda bukan Ditinggalkan. Bukumu tidak masuk ke tumpukan buku yang kamu tinggalkan: ia menunggu dan kembali kapan pun kamu mau.</p></div>
-            <div class="paused-card reveal-up"><h3>Dari Sedang dibaca atau Membaca ulang</h3><p>Ubah status dari pil di halaman buku atau dengan “Ubah status” di aksi cepat (tekan lama kartu buku). Berlaku untuk buku, komik, manga, dan buku audio.</p></div>
-            <div class="paused-card reveal-up"><h3>Hari-hari saat dijeda tidak dihitung</h3><p>Tidak masuk dalam hari untuk menyelesaikan dan tidak masuk dalam kecepatan bacamu. Statistikmu tetap seperti saat kamu membaca.</p></div>
-            <div class="paused-card reveal-up"><h3>Catatan, kalau mau</h3><p>Saat menjeda dan saat melanjutkan, kamu bisa menulis alasannya. Ini opsional. Semuanya tersimpan di bagian “Jeda” pada halaman buku, lengkap dengan riwayatnya.</p></div>
-            <div class="paused-card reveal-up"><h3>Tab tersendiri</h3><p>Di perpustakaanmu, di antara Ingin dibaca dan Ditinggalkan, ada buku-buku yang kamu jeda.</p></div>
-            <div class="paused-card reveal-up"><h3>Pengingat, dan lanjut sendiri</h3><p>Pengingat buku itu ikut dijeda dan kembali saat kamu melanjutkannya. Jika kamu mencatat sesi dengan timer atau ada sesi masuk dari KOReader, buku lanjut dengan sendirinya, disertai pemberitahuan dan opsi Urungkan.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.2 MENU RAPIDO -->
-<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Baru di 3.9 / iOS 1.1.0</span>
-            <h2 id="quickmenu-title">Pindah antarbagian tanpa kembali ke Beranda</h2>
-            <p>Dulu, untuk pindah dari Bingo ke Pengaturan, kamu harus mampir ke Beranda dulu. Sekarang cukup ketuk tiga titik (···) di pojok kanan atas dan langsung sampai.</p>
-        </div>
-        <div class="qm-viz reveal-up" aria-hidden="true">
-            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
-            <div class="qm-panel">
-                <p class="qm-panel-title">Menu cepat</p>
-                <div class="qm-groups">
-                    <div class="qm-group is-current"><p class="qm-group-title">Target</p><p>Acara · Tantangan · Bingo</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Bacaan saya</p><p>Statistik · Kartu saya · Wrapped</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Alat</p><p>Pengingat · Kelola tag · Pindai ISBN</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Pintasan umum</p><p>Beranda · Pengaturan · Data dan cadangan</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="paused-grid">
-            <div class="paused-card qm-card reveal-up"><h3>Di hampir semua layar</h3><p>Ikon tiga titik horizontal (···) ada di pojok kanan atas. Jika layar punya tombol bagikan, tombol itu bergeser ke kirinya.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Grup yang sama seperti Beranda</h3><p>Target, Bacaan saya, dan Alat, plus Beranda, Pengaturan, dan Data dan cadangan. Bagian tempatmu berada ditandai: ketuk untuk kembali ke awalnya.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Di halaman buku juga</h3><p>Buka menu tiga titik vertikal di halaman buku dan pilih “Menu cepat”. Wizard langkah demi langkah tidak memilikinya, supaya isian kamu tidak hilang.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.3 COMPARTIR CARDS -->
-<section class="band band-alt" id="cards" aria-labelledby="cards-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Bagikan</span>
-            <h2 id="cards-title">Lecturameter bukan jejaring sosial. Kartumu pergi ke jejaring yang kamu pakai.</h2>
-            <p>Buat kartu vertikal 1080×1920, siap untuk story, dan bagikan di tempat kamu sudah berada. Tanpa akun, tanpa profil, dan tanpa pengikut. Di 3.9 / iOS 1.1.0, ringkasan mingguan dan bulanan mendapat desain baru dengan lebih banyak statistik.</p>
-        </div>
-        <div class="share-wrap">
-            <div class="share-fan reveal-up" aria-hidden="true">
-                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <span class="share-size">1080×1920 · format story</span>
-            </div>
-            <div class="share-side">
-                <ul class="share-chips">
-                <li>Buku</li>
-                <li>Buku selesai</li>
-                <li>Statistik buku</li>
-                <li>Statistik</li>
-                <li>Ringkasan mingguan</li>
-                <li>Ringkasan bulanan</li>
-                <li>Tantangan</li>
-                <li>Bingo</li>
-                <li>Wrapped</li>
-                <li>Acara</li>
-                <li>Quest</li>
-                </ul>
-                <ol class="share-steps">
-            <li class="share-step reveal-up"><h3>Pilih apa yang mau ditampilkan</h3><p>Sebuah buku, buku yang baru selesai, statistikmu, minggu atau bulanmu, sebuah tantangan, Bingo, Wrapped, atau sebuah acara.</p></li>
-            <li class="share-step reveal-up"><h3>Tersimpan di “Kartu saya”</h3><p>Semua yang kamu bagikan tetap ada di Kartu saya, jadi bisa dipakai lagi kapan pun kamu mau.</p></li>
-            <li class="share-step reveal-up"><h3>Bagikan di tempat kamu sudah berada</h3><p>Lewat menu bagikan di ponselmu, ke aplikasi yang sudah kamu pakai. Atau simpan ke galeri.</p></li>
-                </ol>
-            </div>
+            <div class="paused-card reveal-up"><h3>Simpan buku sementara tanpa mengacaukan statistikmu</h3><p>Dijeda adalah status tersendiri, berbeda dari Ditinggalkan. Buku menunggu di tempat kamu berhenti, dan hari-hari saat dijeda tidak dihitung.</p></div>
+            <div class="paused-card reveal-up" id="cards"><h3>Lecturameter bukan jejaring sosial. Kartumu pergi ke jejaring yang kamu pakai.</h3><p>Buat kartu vertikal 1080×1920, siap untuk story, dan bagikan di tempat kamu sudah berada. Tanpa akun, tanpa profil, dan tanpa pengikut. Di 3.9 / iOS 1.1.0, ringkasan mingguan dan bulanan mendapat desain baru dengan lebih banyak statistik.</p></div>
         </div>
     </div>
 </section>
@@ -767,6 +675,20 @@
             </article>
         </div>
         <p class="events-note">Kamu harus berusia 16 tahun atau lebih untuk ikut. Jika sedang tidak ada acara aktif, aplikasi akan memberi tahu.</p>
+    </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section class="band" id="trust" aria-labelledby="trust-title">
+    <div class="container">
+        <div class="section-head"><h2 id="trust-title">Perpustakaanmu milikmu</h2></div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><p>Tidak perlu akun</p></div>
+            <div class="paused-card reveal-up"><p>Datamu tetap di ponselmu</p></div>
+            <div class="paused-card reveal-up"><p>Cadangan lokal dan Google Drive, jika kamu mau</p></div>
+            <div class="paused-card reveal-up"><p>Telemetri bersifat pseudonim dan bisa kamu matikan</p></div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./privacy/" class="btn">Kebijakan privasi</a></p>
     </div>
 </section>
 
@@ -847,6 +769,28 @@
                 <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span><strong>Senja</strong> <span class="pro-tag">Pro</span></figcaption>
             </figure>
         </div>
+    </div>
+</section>
+
+<!-- 7b. UNIVERSO -->
+<section class="band" id="universe">
+    <div class="container">
+        <div class="section-head">
+            <h2>Dua pengalaman. Satu semesta.</h2>
+            <p>Lecturameter adalah pelacak bacaan modern. Lecturameter 99 adalah tafsir retronya: sebuah alternatif, tidak lebih baik dan tidak lebih buruk.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">Lecturameter</div>
+                <p class="price-note">Pelacak bacaan modern, untuk Android dan iOS.</p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">Lecturameter 99</div>
+                <p class="price-note">Versi retro dari ide yang sama, gratis di Google Play dan App Store.</p>
+                <p><a href="./lecturameter-1999/" class="btn">Lecturameter 99</a></p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./universe/" class="btn">Portal Semesta</a></p>
     </div>
 </section>
 
@@ -1000,6 +944,7 @@
             </div>
             <div class="footer-col">
                 <h4>Semesta</h4>
+                <a href="./universe/">Portal Semesta</a>
                 <a href="./">Lecturameter</a>
                 <a href="./lecturameter-1999/">Lecturameter 99</a>
             </div>

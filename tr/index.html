@@ -228,6 +228,7 @@
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Evren <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
+                    <li><a href="./universe/">Evren portalı</a></li>
                     <li><a href="./">Lecturameter</a></li>
                     <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
                 </ul>
@@ -611,105 +612,12 @@
     </div>
 </section>
 
-<!-- 3.1 PAUSADO -->
-<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+<!-- 4. ECOSISTEMA (pausado y cards; retos y bingo en la rejilla de arriba, eventos debajo) -->
+<section class="band band-alt" id="paused">
     <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">3.9 / iOS 1.1.0'da yeni</span>
-            <h2 id="paused-title">Bir kitabı istatistiklerini bozmadan bir süre kenara koy</h2>
-            <p>Duraklatıldı, Bırakıldı'dan farklı, ayrı bir durumdur. Kitap kaldığın yerde bekler ve duraklatılan günler sayılmaz.</p>
-        </div>
-        <div class="paused-viz reveal-up" aria-hidden="true">
-            <div class="paused-tabs">
-                <span>Okunacak</span>
-                <span>Okunuyor</span>
-                <span class="is-paused">Duraklatıldı</span>
-                <span>Bırakıldı</span>
-            </div>
-            <div class="paused-timeline">
-                <span class="seg read" style="flex:3"></span>
-                <span class="seg pause" style="flex:2"></span>
-                <span class="seg read" style="flex:4"></span>
-            </div>
-            <div class="paused-legend">
-                <span><i class="dot read"></i>Okunuyor</span>
-                <span><i class="dot pause"></i>Duraklatıldı &middot; Duraklatılan günler sayılmaz</span>
-            </div>
-        </div>
         <div class="paused-grid">
-            <div class="paused-card reveal-up"><h3>Ayrı bir durum</h3><p>Duraklatıldı, Bırakıldı demek değildir. Kitabın vazgeçtiklerinin yığınına gitmez: beklemede kalır ve istediğin zaman geri gelir.</p></div>
-            <div class="paused-card reveal-up"><h3>Okunuyor veya Yeniden okunuyor durumundan</h3><p>Durumu kitap sayfasındaki hapla ya da hızlı işlemlerdeki (kitap kartına uzun basın) “Durumu değiştir” ile değiştirin. Kitaplar, çizgi romanlar, mangalar ve sesli kitaplar için çalışır.</p></div>
-            <div class="paused-card reveal-up"><h3>Duraklatılan günler sayılmaz</h3><p>Ne bitirmek için gereken günlere ne de okuma hızına dahil edilir. İstatistiklerin okuduğun zamanki gibi kalır.</p></div>
-            <div class="paused-card reveal-up"><h3>İstersen bir not</h3><p>Duraklatırken ve devam ederken nedenini not edebilirsin. İsteğe bağlıdır. Her şey kitap sayfasındaki “Duraklamalar” bölümünde geçmişiyle birlikte durur.</p></div>
-            <div class="paused-card reveal-up"><h3>Kendi sekmesi</h3><p>Kitaplığında, Okunacak ile Bırakıldı arasında duraklattığın kitapları bulursun.</p></div>
-            <div class="paused-card reveal-up"><h3>Hatırlatıcılar ve kendiliğinden devam</h3><p>O kitabın hatırlatıcıları duraklatılır ve kitaba devam ettiğinde geri gelir. Bir oturumu zamanlarsan ya da KOReader'dan bir oturum gelirse kitap kendiliğinden devam eder; bir bildirim ve Geri al seçeneği çıkar.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.2 MENU RAPIDO -->
-<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">3.9 / iOS 1.1.0'da yeni</span>
-            <h2 id="quickmenu-title">Ana sayfaya dönmeden bölümler arasında geçiş yapın</h2>
-            <p>Bingo'dan Ayarlar'a gitmek için eskiden önce Ana sayfa'ya uğramak gerekiyordu. Şimdi sağ üstteki üç noktaya (···) dokunup doğrudan oraya gidiyorsunuz.</p>
-        </div>
-        <div class="qm-viz reveal-up" aria-hidden="true">
-            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
-            <div class="qm-panel">
-                <p class="qm-panel-title">Hızlı menü</p>
-                <div class="qm-groups">
-                    <div class="qm-group is-current"><p class="qm-group-title">Hedefler</p><p>Etkinlikler · Meydan okumalar · Bingo</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Okumalarım</p><p>İstatistikler · Kartlarım · Wrapped</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Araçlar</p><p>Hatırlatıcılar · Etiket yönetimi · ISBN tara</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Genel erişimler</p><p>Ana sayfa · Ayarlar · Veriler ve yedekler</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="paused-grid">
-            <div class="paused-card qm-card reveal-up"><h3>Neredeyse her ekranda</h3><p>Yatay üç nokta simgesi (···) sağ üst köşede durur. Ekranda paylaş düğmesi varsa, onun soluna kayar.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Ana sayfa ile aynı gruplar</h3><p>Hedefler, Okumalarım ve Araçlar; ayrıca Ana sayfa, Ayarlar ve Veriler ve yedekler. Bulunduğunuz bölüm vurgulanır: dokunursanız başına dönersiniz.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Kitap sayfasında da</h3><p>Kitap sayfasındaki dikey üç nokta menüsünü açıp “Hızlı menü”yü seçin. Adım adım sihirbazlarda yoktur, böylece doldurduğunuz bilgiler kaybolmaz.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.3 COMPARTIR CARDS -->
-<section class="band band-alt" id="cards" aria-labelledby="cards-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Paylaş</span>
-            <h2 id="cards-title">Lecturameter bir sosyal ağ değil. Kartların kullandığın ağa gider.</h2>
-            <p>Hikâyelere hazır 1080×1920 dikey kartlar yap ve zaten bulunduğun yerde paylaş. Hesap yok, profil yok, takipçi yok. 3.9 / iOS 1.1.0'da haftalık ve aylık özetler yeni bir tasarım ve daha fazla istatistikle geliyor.</p>
-        </div>
-        <div class="share-wrap">
-            <div class="share-fan reveal-up" aria-hidden="true">
-                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <span class="share-size">1080×1920 · hikâye formatı</span>
-            </div>
-            <div class="share-side">
-                <ul class="share-chips">
-                <li>Kitap</li>
-                <li>Biten kitap</li>
-                <li>Kitap istatistikleri</li>
-                <li>İstatistikler</li>
-                <li>Haftalık özet</li>
-                <li>Aylık özet</li>
-                <li>Meydan okumalar</li>
-                <li>Bingo</li>
-                <li>Wrapped</li>
-                <li>Etkinlik</li>
-                <li>Quest</li>
-                </ul>
-                <ol class="share-steps">
-            <li class="share-step reveal-up"><h3>Neyi göstereceğini seç</h3><p>Bir kitap, yeni bitirdiğin bir kitap, istatistiklerin, haftan ya da ayın, bir meydan okuma, Bingo, Wrapped veya bir etkinlik.</p></li>
-            <li class="share-step reveal-up"><h3>“Kartlarım”a kaydedilir</h3><p>Paylaştığın her şey Kartlarım'da kalır, böylece istediğin zaman yeniden kullanabilirsin.</p></li>
-            <li class="share-step reveal-up"><h3>Zaten bulunduğun yerde paylaş</h3><p>Telefonunun paylaşım menüsünden, zaten kullandığın uygulamaya. Ya da galerine kaydet.</p></li>
-                </ol>
-            </div>
+            <div class="paused-card reveal-up"><h3>Bir kitabı istatistiklerini bozmadan bir süre kenara koy</h3><p>Duraklatıldı, Bırakıldı'dan farklı, ayrı bir durumdur. Kitap kaldığın yerde bekler ve duraklatılan günler sayılmaz.</p></div>
+            <div class="paused-card reveal-up" id="cards"><h3>Lecturameter bir sosyal ağ değil. Kartların kullandığın ağa gider.</h3><p>Hikâyelere hazır 1080×1920 dikey kartlar yap ve zaten bulunduğun yerde paylaş. Hesap yok, profil yok, takipçi yok. 3.9 / iOS 1.1.0'da haftalık ve aylık özetler yeni bir tasarım ve daha fazla istatistikle geliyor.</p></div>
         </div>
     </div>
 </section>
@@ -767,6 +675,20 @@
             </article>
         </div>
         <p class="events-note">Katılmak için 16 yaşında veya daha büyük olmalısın. Şu anda aktif bir etkinlik yoksa uygulama bunu söyler.</p>
+    </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section class="band" id="trust" aria-labelledby="trust-title">
+    <div class="container">
+        <div class="section-head"><h2 id="trust-title">Kitaplığın senin</h2></div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><p>Hesap gerekmez</p></div>
+            <div class="paused-card reveal-up"><p>Verilerin telefonunda kalır</p></div>
+            <div class="paused-card reveal-up"><p>İstersen yerel yedekler ve Google Drive</p></div>
+            <div class="paused-card reveal-up"><p>Telemetri takma adlıdır ve kapatabilirsin</p></div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./privacy/" class="btn">Gizlilik politikası</a></p>
     </div>
 </section>
 
@@ -847,6 +769,28 @@
                 <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span><strong>Alacakaranlık</strong> <span class="pro-tag">Pro</span></figcaption>
             </figure>
         </div>
+    </div>
+</section>
+
+<!-- 7b. UNIVERSO -->
+<section class="band" id="universe">
+    <div class="container">
+        <div class="section-head">
+            <h2>İki deneyim. Tek evren.</h2>
+            <p>Lecturameter modern okuma takipçisidir. Lecturameter 99 onun retro yorumudur: bir alternatif, ne daha iyi ne daha kötü.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">Lecturameter</div>
+                <p class="price-note">Android ve iOS için modern okuma takipçisi.</p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">Lecturameter 99</div>
+                <p class="price-note">Aynı fikrin retro hali, Google Play ve App Store'da ücretsiz.</p>
+                <p><a href="./lecturameter-1999/" class="btn">Lecturameter 99</a></p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./universe/" class="btn">Evren portalı</a></p>
     </div>
 </section>
 
@@ -1000,6 +944,7 @@
             </div>
             <div class="footer-col">
                 <h4>Evren</h4>
+                <a href="./universe/">Evren portalı</a>
                 <a href="./">Lecturameter</a>
                 <a href="./lecturameter-1999/">Lecturameter 99</a>
             </div>

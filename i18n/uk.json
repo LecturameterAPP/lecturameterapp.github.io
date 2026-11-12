@@ -996,5 +996,17 @@
  "head.platforms.title": "Lecturameter на iPhone та Android",
  "head.platforms.description": "Версія для iPhone має ті самі основні функції, що й для Android: бібліотека, таймер читання, статистика, виклики, Bingo, Pagi та візуальні теми.",
  "head.pro.title": "Ціни · Pro | Lecturameter",
- "head.pro.description": "Спробуй функції Pro 7 днів без картки. Після завершення пробного періоду, навіть якщо ти не купиш Pro, ти отримаєш безкоштовну тему Pro на свій вибір."
+ "head.pro.description": "Спробуй функції Pro 7 днів без картки. Після завершення пробного періоду, навіть якщо ти не купиш Pro, ти отримаєш безкоштовну тему Pro на свій вибір.",
+ "home.trust.title": "Твоя бібліотека належить тобі",
+ "home.trust.p1": "Акаунт не потрібен",
+ "home.trust.p2": "Твої дані залишаються на твоєму телефоні",
+ "home.trust.p3": "Локальні копії та Google Drive, якщо хочеш",
+ "home.trust.p4": "Телеметрія псевдонімна, і її можна вимкнути",
+ "home.universe.title": "Два досвіди. Один всесвіт.",
+ "home.universe.sub": "Lecturameter — сучасний трекер читання. Lecturameter 99 — його ретро-переосмислення: альтернатива, не краща і не гірша.",
+ "home.universe.lm": "Сучасний трекер читання для Android та iOS.",
+ "home.universe.lm99": "Ретро-версія тієї самої ідеї, безкоштовно в Google Play і App Store.",
+ "common.nav.universe_portal": "Портал «Всесвіт»",
+ "head.universe.title": "Два досвіди. Один всесвіт. | Lecturameter",
+ "head.universe.description": "Lecturameter — сучасний трекер читання. Lecturameter 99 — його ретро-переосмислення: альтернатива, не краща і не гірша."
 }

@@ -996,5 +996,17 @@
  "head.platforms.title": "Lecturameter na iPhoneu i Androidu",
  "head.platforms.description": "Verzija za iPhone ima iste glavne značajke kao Android: knjižnicu, štopericu za čitanje, statistiku, izazove, bingo, Pagija i vizualne teme. Ovo su razlike.",
  "head.pro.title": "Cijene · Pro | Lecturameter",
- "head.pro.description": "Isprobaj Pro značajke 7 dana bez kartice. Na kraju probnog razdoblja, čak i ako ne kupiš Pro, dobivaš besplatnu Pro temu po izboru."
+ "head.pro.description": "Isprobaj Pro značajke 7 dana bez kartice. Na kraju probnog razdoblja, čak i ako ne kupiš Pro, dobivaš besplatnu Pro temu po izboru.",
+ "home.trust.title": "Tvoja knjižnica je tvoja",
+ "home.trust.p1": "Račun nije potreban",
+ "home.trust.p2": "Tvoji podaci ostaju na tvom telefonu",
+ "home.trust.p3": "Lokalne sigurnosne kopije i Google Drive, ako želiš",
+ "home.trust.p4": "Telemetrija je pseudonimna i možeš je isključiti",
+ "home.universe.title": "Dva iskustva. Jedan svemir.",
+ "home.universe.sub": "Lecturameter je moderni tracker čitanja. Lecturameter 99 njegova je retro reinterpretacija: alternativa, ni bolja ni lošija.",
+ "home.universe.lm": "Moderni tracker čitanja za Android i iOS.",
+ "home.universe.lm99": "Retro verzija iste ideje, besplatna na Google Playu i App Storeu.",
+ "common.nav.universe_portal": "Portal Svemir",
+ "head.universe.title": "Dva iskustva. Jedan svemir. | Lecturameter",
+ "head.universe.description": "Lecturameter je moderni tracker čitanja. Lecturameter 99 njegova je retro reinterpretacija: alternativa, ni bolja ni lošija."
 }

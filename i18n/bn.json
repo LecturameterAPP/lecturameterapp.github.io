@@ -992,9 +992,21 @@
  "head.roadmap.title": "রোডম্যাপ | Lecturameter",
  "head.roadmap.description": "পুরো কমিউনিটির জন্য পড়ার চ্যালেঞ্জ, আপনার নিজের বই দিয়ে খেলার একটি গেম আর নতুন করে সাজানো হোম। কোনো নির্দিষ্ট তারিখ নেই: সবকিছু তৈরি হলেই আসবে।",
  "head.faq.title": "প্রায়শই জিজ্ঞাসিত প্রশ্ন | Lecturameter",
- "head.faq.description": "প্রায়শই জিজ্ঞাসিত প্রশ্ন: অন্য অ্যাপ থেকে কি আমার লাইব্রেরি আনতে পারব? · আমার ডেটা কি আমারই? · কোনো সাবস্ক্রিপশন আছে কি? · অফলাইনে চলে কি?",
+ "head.faq.description": "প্রায়শই জিজ্ঞাসিত প্রশ্ন: অন্য অ্যাপ থেকে কি আমার লাইব্রেরি আনতে পারব? · আমার ডেটা কি আমারই? · কোনো সাবস্ক্রিপশন আছে কি? · অফলাইনে চলে কি? · অফলাইনে চলে কি?",
  "head.platforms.title": "iPhone আর Android-এ Lecturameter",
  "head.platforms.description": "iPhone সংস্করণে Android-এর মতোই প্রধান ফিচারগুলো আছে: লাইব্রেরি, পড়ার টাইমার, পরিসংখ্যান, চ্যালেঞ্জ, Bingo, Pagi আর ভিজ্যুয়াল থিম। পার্থক্যগুলো এই।",
  "head.pro.title": "দাম · Pro | Lecturameter",
- "head.pro.description": "কার্ড ছাড়াই ৭ দিন Pro ফিচার চেষ্টা করুন। ট্রায়াল শেষে Pro না কিনলেও আপনার পছন্দের একটি Pro থিম ফ্রিতে পাবেন।"
+ "head.pro.description": "কার্ড ছাড়াই ৭ দিন Pro ফিচার চেষ্টা করুন। ট্রায়াল শেষে Pro না কিনলেও আপনার পছন্দের একটি Pro থিম ফ্রিতে পাবেন।",
+ "home.trust.title": "আপনার লাইব্রেরি আপনারই",
+ "home.trust.p1": "কোনো অ্যাকাউন্ট লাগে না",
+ "home.trust.p2": "আপনার ডেটা আপনার ফোনেই থাকে",
+ "home.trust.p3": "চাইলে লোকাল ব্যাকআপ ও Google Drive",
+ "home.trust.p4": "টেলিমেট্রি ছদ্মনামযুক্ত, আপনি বন্ধ করতে পারেন",
+ "home.universe.title": "দুটি অভিজ্ঞতা। একটি মহাবিশ্ব।",
+ "home.universe.sub": "Lecturameter আধুনিক পড়ার ট্র্যাকার। Lecturameter 99 তার রেট্রো নতুন রূপ: একটি বিকল্প, ভালোও নয়, খারাপও নয়।",
+ "home.universe.lm": "আধুনিক পড়ার ট্র্যাকার, Android ও iOS-এর জন্য।",
+ "home.universe.lm99": "একই ধারণার রেট্রো রূপ, Google Play ও App Store-এ বিনামূল্যে।",
+ "common.nav.universe_portal": "ইউনিভার্স পোর্টাল",
+ "head.universe.title": "দুটি অভিজ্ঞতা। একটি মহাবিশ্ব। | Lecturameter",
+ "head.universe.description": "Lecturameter আধুনিক পড়ার ট্র্যাকার। Lecturameter 99 তার রেট্রো নতুন রূপ: একটি বিকল্প, ভালোও নয়, খারাপও নয়।"
 }

@@ -996,5 +996,17 @@
  "head.platforms.title": "iPhone અને Android પર Lecturameter",
  "head.platforms.description": "iPhone વર્ઝનમાં Android જેવી જ મુખ્ય સુવિધાઓ છે: લાઇબ્રેરી, વાંચન ટાઈમર, આંકડા, પડકારો, Bingo, Pagi અને વિઝ્યુઅલ થીમ્સ. આ રહ્યા તફાવતો.",
  "head.pro.title": "કિંમતો · Pro | Lecturameter",
- "head.pro.description": "કાર્ડ વિના 7 દિવસ માટે Pro સુવિધાઓ અજમાવો. ટ્રાયલના અંતે, ભલે તમે Pro ન ખરીદો, તમને તમારી પસંદની એક Pro થીમ મફતમાં મળે છે."
+ "head.pro.description": "કાર્ડ વિના 7 દિવસ માટે Pro સુવિધાઓ અજમાવો. ટ્રાયલના અંતે, ભલે તમે Pro ન ખરીદો, તમને તમારી પસંદની એક Pro થીમ મફતમાં મળે છે.",
+ "home.trust.title": "તમારી લાઇબ્રેરી તમારી છે",
+ "home.trust.p1": "ખાતાની જરૂર નથી",
+ "home.trust.p2": "તમારો ડેટા તમારા ફોનમાં જ રહે છે",
+ "home.trust.p3": "સ્થાનિક બેકઅપ અને Google Drive, જો તમે ઇચ્છો તો",
+ "home.trust.p4": "ટેલિમેટ્રી ઉપનામ આધારિત છે અને તમે તેને બંધ કરી શકો છો",
+ "home.universe.title": "બે અનુભવ. એક બ્રહ્માંડ.",
+ "home.universe.sub": "Lecturameter આધુનિક વાંચન ટ્રેકર છે. Lecturameter 99 તેનું રેટ્રો પુનઃઅર્થઘટન છે: એક વિકલ્પ, ન વધુ સારું ન વધુ ખરાબ.",
+ "home.universe.lm": "આધુનિક વાંચન ટ્રેકર, Android અને iOS માટે.",
+ "home.universe.lm99": "એ જ વિચારનું રેટ્રો રૂપ, Google Play અને App Store પર મફત.",
+ "common.nav.universe_portal": "યુનિવર્સ પોર્ટલ",
+ "head.universe.title": "બે અનુભવ. એક બ્રહ્માંડ. | Lecturameter",
+ "head.universe.description": "Lecturameter આધુનિક વાંચન ટ્રેકર છે. Lecturameter 99 તેનું રેટ્રો પુનઃઅર્થઘટન છે: એક વિકલ્પ, ન વધુ સારું ન વધુ ખરાબ."
 }

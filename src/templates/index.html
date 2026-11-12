@@ -395,83 +395,12 @@
     </div>
 </section>
 
-<!-- 3.1 PAUSADO -->
-<section class="band band-alt" id="{{anchor.paused}}" aria-labelledby="paused-title">
+<!-- 4. ECOSISTEMA (pausado y cards; retos y bingo en la rejilla de arriba, eventos debajo) -->
+<section class="band band-alt" id="{{anchor.paused}}">
     <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">{{home.paused.tag}}</span>
-            <h2 id="paused-title">{{home.paused.title}}</h2>
-            <p>{{home.paused.sub}}</p>
-        </div>
-        <div class="paused-viz reveal-up" aria-hidden="true">
-            <div class="paused-tabs">
-                <span>{{home.paused.tab_pending}}</span>
-                <span>{{home.paused.tab_reading}}</span>
-                <span class="is-paused">{{home.paused.tab_paused}}</span>
-                <span>{{home.paused.tab_dropped}}</span>
-            </div>
-            <div class="paused-timeline">
-                <span class="seg read" style="flex:3"></span>
-                <span class="seg pause" style="flex:2"></span>
-                <span class="seg read" style="flex:4"></span>
-            </div>
-            <div class="paused-legend">
-                <span><i class="dot read"></i>{{home.paused.tab_reading}}</span>
-                <span><i class="dot pause"></i>{{home.paused.tab_paused}} &middot; {{home.paused.timeline_caption}}</span>
-            </div>
-        </div>
         <div class="paused-grid">
-{{paused_cards_html}}
-        </div>
-    </div>
-</section>
-
-<!-- 3.2 MENU RAPIDO -->
-<section class="band" id="{{anchor.quickmenu}}" aria-labelledby="quickmenu-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">{{home.quickmenu.tag}}</span>
-            <h2 id="quickmenu-title">{{home.quickmenu.title}}</h2>
-            <p>{{home.quickmenu.sub}}</p>
-        </div>
-        <div class="qm-viz reveal-up" aria-hidden="true">
-            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">{{home.quickmenu.screen}}</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
-            <div class="qm-panel">
-                <p class="qm-panel-title">{{home.quickmenu.menu_title}}</p>
-                <div class="qm-groups">
-{{quickmenu_groups_html}}
-                </div>
-            </div>
-        </div>
-        <div class="paused-grid">
-{{quickmenu_cards_html}}
-        </div>
-    </div>
-</section>
-
-<!-- 3.3 COMPARTIR CARDS -->
-<section class="band band-alt" id="{{anchor.cards}}" aria-labelledby="cards-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">{{home.cards.tag}}</span>
-            <h2 id="cards-title">{{home.cards.title}}</h2>
-            <p>{{home.cards.sub}}</p>
-        </div>
-        <div class="share-wrap">
-            <div class="share-fan reveal-up" aria-hidden="true">
-                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <span class="share-size">{{home.cards.size_label}}</span>
-            </div>
-            <div class="share-side">
-                <ul class="share-chips">
-{{cards_chips_html}}
-                </ul>
-                <ol class="share-steps">
-{{cards_steps_html}}
-                </ol>
-            </div>
+            <div class="paused-card reveal-up"><h3>{{home.paused.title}}</h3><p>{{home.paused.sub}}</p></div>
+            <div class="paused-card reveal-up" id="{{anchor.cards}}"><h3>{{home.cards.title}}</h3><p>{{home.cards.sub}}</p></div>
         </div>
     </div>
 </section>
@@ -523,6 +452,20 @@
             </article>
         </div>
         <p class="events-note">{{home.events.note}}</p>
+    </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section class="band" id="trust" aria-labelledby="trust-title">
+    <div class="container">
+        <div class="section-head"><h2 id="trust-title">{{home.trust.title}}</h2></div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><p>{{home.trust.p1}}</p></div>
+            <div class="paused-card reveal-up"><p>{{home.trust.p2}}</p></div>
+            <div class="paused-card reveal-up"><p>{{home.trust.p3}}</p></div>
+            <div class="paused-card reveal-up"><p>{{home.trust.p4}}</p></div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="{{link_privacy}}" class="btn">{{common.footer.privacy_policy}}</a></p>
     </div>
 </section>
 
@@ -603,6 +546,28 @@
                 <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span>{{home.themes.dusk_2}} <span class="pro-tag">{{home.themes.pro}}</span></figcaption>
             </figure>
         </div>
+    </div>
+</section>
+
+<!-- 7b. UNIVERSO -->
+<section class="band" id="universe">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{home.universe.title}}</h2>
+            <p>{{home.universe.sub}}</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">{{common.nav.lecturameter}}</div>
+                <p class="price-note">{{home.universe.lm}}</p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">{{common.footer.lecturameter_1999}}</div>
+                <p class="price-note">{{home.universe.lm99}}</p>
+                <p><a href="{{link_1999}}" class="btn">{{common.footer.lecturameter_1999}}</a></p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="{{link_page_universe}}" class="btn">{{common.nav.universe_portal}}</a></p>
     </div>
 </section>
 

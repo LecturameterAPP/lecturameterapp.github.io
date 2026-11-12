@@ -992,9 +992,21 @@
  "head.roadmap.title": "로드맵 | Lecturameter",
  "head.roadmap.description": "커뮤니티 전체가 함께하는 독서 챌린지, 내 책으로 즐기는 게임, 새로워진 홈. 정해진 날짜는 없어요. 준비되면 나와요.",
  "head.faq.title": "자주 묻는 질문 | Lecturameter",
- "head.faq.description": "자주 묻는 질문: 다른 앱에서 서재를 가져올 수 있나요? · 내 데이터는 내 것인가요? · 구독이 있나요? · 오프라인에서도 되나요?",
+ "head.faq.description": "자주 묻는 질문: 다른 앱에서 서재를 가져올 수 있나요? · 내 데이터는 내 것인가요? · 구독이 있나요? · 오프라인에서도 되나요? · 오프라인에서도 되나요?",
  "head.platforms.title": "iPhone과 Android의 Lecturameter",
  "head.platforms.description": "iPhone 버전에는 Android와 같은 주요 기능이 있어요: 서재, 독서 타이머, 통계, 챌린지, Bingo, Pagi, 그리고 테마. 차이점은 다음과 같아요.",
  "head.pro.title": "가격 · Pro | Lecturameter",
- "head.pro.description": "카드 등록 없이 Pro 기능을 7일 동안 사용해 보세요. 체험이 끝나면 Pro를 사지 않아도 원하는 Pro 테마 하나를 무료로 드려요."
+ "head.pro.description": "카드 등록 없이 Pro 기능을 7일 동안 사용해 보세요. 체험이 끝나면 Pro를 사지 않아도 원하는 Pro 테마 하나를 무료로 드려요.",
+ "home.trust.title": "내 서재는 내 것",
+ "home.trust.p1": "계정이 필요 없습니다",
+ "home.trust.p2": "데이터는 내 휴대폰에 남습니다",
+ "home.trust.p3": "원하면 로컬 백업과 Google Drive",
+ "home.trust.p4": "원격 측정은 가명 처리되며 끌 수 있습니다",
+ "home.universe.title": "두 가지 경험. 하나의 세계.",
+ "home.universe.sub": "Lecturameter는 현대적인 독서 트래커입니다. Lecturameter 99는 그 레트로 재해석으로, 더 낫지도 못하지도 않은 또 하나의 선택지입니다.",
+ "home.universe.lm": "Android와 iOS를 위한 현대적인 독서 트래커.",
+ "home.universe.lm99": "같은 아이디어의 레트로 버전, Google Play와 App Store에서 무료.",
+ "common.nav.universe_portal": "유니버스 포털",
+ "head.universe.title": "두 가지 경험. 하나의 세계. | Lecturameter",
+ "head.universe.description": "Lecturameter는 현대적인 독서 트래커입니다. Lecturameter 99는 그 레트로 재해석으로, 더 낫지도 못하지도 않은 또 하나의 선택지입니다."
 }

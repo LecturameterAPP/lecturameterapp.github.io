@@ -338,9 +338,9 @@ def release_vars(cfg, strings, where, errors, loc=None):
 
 
 NL = '\n'
-NEW_PAGES = ('news', 'roadmap', 'faq', 'platforms', 'pro')
-CUR_KEYS = ('home', 'pro', 'lm99', 'blog', 'news', 'roadmap', 'faq', 'platforms', 'privacy', 'terms', 'cookies', 'contact')
-CURRENT_OF = {'news': 'news', 'roadmap': 'roadmap', 'faq': 'faq', 'platforms': 'platforms', 'pro': 'pro',
+NEW_PAGES = ('news', 'roadmap', 'faq', 'platforms', 'pro', 'universe')
+CUR_KEYS = ('home', 'universe', 'pro', 'lm99', 'blog', 'news', 'roadmap', 'faq', 'platforms', 'privacy', 'terms', 'cookies', 'contact')
+CURRENT_OF = {'universe': 'universe', 'news': 'news', 'roadmap': 'roadmap', 'faq': 'faq', 'platforms': 'platforms', 'pro': 'pro',
               'cookies': 'cookies', 'lm1999': 'lm99', 'legal_privacy': 'privacy', 'legal_terms': 'terms',
               'legal_privacy99': 'privacy', 'blog': 'blog'}
 
@@ -364,7 +364,7 @@ def nav_vars(cfg, loc, strings, here, is_home, current=''):
     # Paginas nuevas (fase 2): mientras no existan en cfg['pages'], enlazan al ancla equivalente de la portada
     # (o se ocultan con show_<pagina>, via {{#if}} en los parciales).
     fallback = {'pro': strings['anchor.pricing'], 'news': strings['anchor.whatsnew'], 'faq': 'faq',
-                'platforms': strings['anchor.ios_differences'], 'roadmap': 'roadmap'}
+                'platforms': strings['anchor.ios_differences'], 'roadmap': 'roadmap', 'universe': 'universe'}
     for sl in NEW_PAGES:
         if sl in cfg['pages']:
             v['link_page_' + sl] = rel(here, prefix + sl + '/')

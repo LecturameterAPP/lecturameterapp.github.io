@@ -992,9 +992,21 @@
  "head.roadmap.title": "रोडमैप | Lecturameter",
  "head.roadmap.description": "पूरी कम्युनिटी के लिए पठन चुनौतियाँ, आपकी अपनी किताबों से खेला जाने वाला एक गेम और नया होम। कोई तय तारीख नहीं: सब कुछ तैयार होने पर आएगा।",
  "head.faq.title": "अक्सर पूछे जाने वाले सवाल | Lecturameter",
- "head.faq.description": "अक्सर पूछे जाने वाले सवाल: क्या मैं दूसरे ऐप्स से अपनी लाइब्रेरी ला सकता हूँ? · क्या मेरा डेटा मेरा ही है? · क्या कोई सब्सक्रिप्शन है? · क्या यह ऑफ़लाइन काम…",
+ "head.faq.description": "अक्सर पूछे जाने वाले सवाल: क्या मैं दूसरे ऐप्स से अपनी लाइब्रेरी ला सकता हूँ? · क्या मेरा डेटा मेरा ही है? · क्या कोई सब्सक्रिप्शन है?",
  "head.platforms.title": "iPhone और Android पर Lecturameter",
  "head.platforms.description": "iPhone वर्शन में Android जैसे ही मुख्य फ़ीचर हैं: लाइब्रेरी, पढ़ने का टाइमर, आँकड़े, चुनौतियाँ, Bingo, Pagi और विज़ुअल थीम। ये हैं अंतर।",
  "head.pro.title": "कीमतें · Pro | Lecturameter",
- "head.pro.description": "बिना कार्ड के 7 दिन तक Pro फ़ीचर आज़माएँ। ट्रायल खत्म होने पर, Pro न खरीदें तब भी आपको अपनी पसंद की एक Pro थीम मुफ़्त मिलती है।"
+ "head.pro.description": "बिना कार्ड के 7 दिन तक Pro फ़ीचर आज़माएँ। ट्रायल खत्म होने पर, Pro न खरीदें तब भी आपको अपनी पसंद की एक Pro थीम मुफ़्त मिलती है।",
+ "home.trust.title": "आपकी लाइब्रेरी आपकी है",
+ "home.trust.p1": "खाते की ज़रूरत नहीं",
+ "home.trust.p2": "आपका डेटा आपके फ़ोन में ही रहता है",
+ "home.trust.p3": "चाहें तो लोकल बैकअप और Google Drive",
+ "home.trust.p4": "टेलीमेट्री छद्मनाम वाली है और आप इसे बंद कर सकते हैं",
+ "home.universe.title": "दो अनुभव। एक ब्रह्मांड।",
+ "home.universe.sub": "Lecturameter आधुनिक रीडिंग ट्रैकर है। Lecturameter 99 उसकी रेट्रो पुनर्व्याख्या है: एक विकल्प, न बेहतर न कमतर।",
+ "home.universe.lm": "आधुनिक रीडिंग ट्रैकर, Android और iOS के लिए।",
+ "home.universe.lm99": "उसी विचार का रेट्रो रूप, Google Play और App Store पर मुफ़्त।",
+ "common.nav.universe_portal": "यूनिवर्स पोर्टल",
+ "head.universe.title": "दो अनुभव। एक ब्रह्मांड। | Lecturameter",
+ "head.universe.description": "Lecturameter आधुनिक रीडिंग ट्रैकर है। Lecturameter 99 उसकी रेट्रो पुनर्व्याख्या है: एक विकल्प, न बेहतर न कमतर।"
 }

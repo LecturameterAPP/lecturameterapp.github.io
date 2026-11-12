@@ -996,5 +996,17 @@
  "head.platforms.title": "Lecturameter на iPhone и Android",
  "head.platforms.description": "Версията за iPhone има същите основни функции като Android: библиотека, таймер за четене, статистика, предизвикателства, Bingo, Pagi и визуалните теми.",
  "head.pro.title": "Цени · Pro | Lecturameter",
- "head.pro.description": "Пробвай функциите на Pro 7 дни без карта. В края на пробния период, дори да не купиш Pro, получаваш безплатно една Pro тема по избор."
+ "head.pro.description": "Пробвай функциите на Pro 7 дни без карта. В края на пробния период, дори да не купиш Pro, получаваш безплатно една Pro тема по избор.",
+ "home.trust.title": "Библиотеката ти е твоя",
+ "home.trust.p1": "Не е нужен акаунт",
+ "home.trust.p2": "Данните ти остават в телефона ти",
+ "home.trust.p3": "Локални копия и Google Drive, ако искаш",
+ "home.trust.p4": "Телеметрията е псевдонимна и можеш да я изключиш",
+ "home.universe.title": "Две преживявания. Една вселена.",
+ "home.universe.sub": "Lecturameter е модерният тракер за четене. Lecturameter 99 е неговото ретро преосмисляне: алтернатива, нито по-добра, нито по-лоша.",
+ "home.universe.lm": "Модерният тракер за четене, за Android и iOS.",
+ "home.universe.lm99": "Ретро прочит на същата идея, безплатен в Google Play и App Store.",
+ "common.nav.universe_portal": "Портал Вселена",
+ "head.universe.title": "Две преживявания. Една вселена. | Lecturameter",
+ "head.universe.description": "Lecturameter е модерният тракер за четене. Lecturameter 99 е неговото ретро преосмисляне: алтернатива, нито по-добра, нито по-лоша."
 }

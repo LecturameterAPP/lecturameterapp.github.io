@@ -992,9 +992,21 @@
  "head.roadmap.title": "Teekaart | Lecturameter",
  "head.roadmap.description": "Lugemisväljakutsed kogu kogukonnale, mäng, mida mängitakse sinu enda raamatutega, ja uuenenud avaleht. Kindlaid kuupäevi pole: kõik ilmub siis, kui on valmis.",
  "head.faq.title": "Korduma kippuvad küsimused | Lecturameter",
- "head.faq.description": "Korduma kippuvad küsimused: Kas saan oma raamatukogu teistest rakendustest üle tuua? · Kas minu andmed on minu omad? · Kas on tellimus? · Kas see töötab…",
+ "head.faq.description": "Korduma kippuvad küsimused: Kas saan oma raamatukogu teistest rakendustest üle tuua? · Kas minu andmed on minu omad? · Kas on tellimus?",
  "head.platforms.title": "Lecturameter iPhone'is ja Androidis",
  "head.platforms.description": "iPhone'i versioonil on samad põhifunktsioonid mis Androidil: raamatukogu, lugemistaimer, statistika, väljakutsed, bingo, Pagi ja visuaalsed teemad.",
  "head.pro.title": "Hinnad · Pro | Lecturameter",
- "head.pro.description": "Proovi Pro funktsioone 7 päeva ilma kaardita. Prooviaja lõpus, isegi kui Pro-d ei osta, saad tasuta ühe Pro teema omal valikul."
+ "head.pro.description": "Proovi Pro funktsioone 7 päeva ilma kaardita. Prooviaja lõpus, isegi kui Pro-d ei osta, saad tasuta ühe Pro teema omal valikul.",
+ "home.trust.title": "Sinu raamatukogu on sinu oma",
+ "home.trust.p1": "Kontot pole vaja",
+ "home.trust.p2": "Sinu andmed jäävad sinu telefoni",
+ "home.trust.p3": "Kohalikud varukoopiad ja Google Drive, kui soovid",
+ "home.trust.p4": "Telemeetria on pseudonüümne ja selle saab välja lülitada",
+ "home.universe.title": "Kaks kogemust. Üks universum.",
+ "home.universe.sub": "Lecturameter on kaasaegne lugemisjälgija. Lecturameter 99 on selle retro tõlgendus: alternatiiv, mitte parem ega halvem.",
+ "home.universe.lm": "Kaasaegne lugemisjälgija Androidile ja iOS-ile.",
+ "home.universe.lm99": "Sama idee retrovorm, tasuta Google Plays ja App Store'is.",
+ "common.nav.universe_portal": "Universumi portaal",
+ "head.universe.title": "Kaks kogemust. Üks universum. | Lecturameter",
+ "head.universe.description": "Lecturameter on kaasaegne lugemisjälgija. Lecturameter 99 on selle retro tõlgendus: alternatiiv, mitte parem ega halvem."
 }

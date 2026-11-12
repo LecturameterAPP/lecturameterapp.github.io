@@ -228,6 +228,7 @@
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">宇宙 <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
+                    <li><a href="./universe/">宇宙入口</a></li>
                     <li><a href="./">Lecturameter</a></li>
                     <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
                 </ul>
@@ -611,105 +612,12 @@
     </div>
 </section>
 
-<!-- 3.1 PAUSADO -->
-<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+<!-- 4. ECOSISTEMA (pausado y cards; retos y bingo en la rejilla de arriba, eventos debajo) -->
+<section class="band band-alt" id="paused">
     <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">3.9 / iOS 1.1.0 新功能</span>
-            <h2 id="paused-title">把一本书先放一放，又不会弄乱你的统计</h2>
-            <p>“已暂停”是独立的状态，和“已放弃”不同。书会停在你放下的地方，暂停的天数不计入。</p>
-        </div>
-        <div class="paused-viz reveal-up" aria-hidden="true">
-            <div class="paused-tabs">
-                <span>想读</span>
-                <span>阅读中</span>
-                <span class="is-paused">已暂停</span>
-                <span>已放弃</span>
-            </div>
-            <div class="paused-timeline">
-                <span class="seg read" style="flex:3"></span>
-                <span class="seg pause" style="flex:2"></span>
-                <span class="seg read" style="flex:4"></span>
-            </div>
-            <div class="paused-legend">
-                <span><i class="dot read"></i>阅读中</span>
-                <span><i class="dot pause"></i>已暂停 &middot; 暂停的天数不计入</span>
-            </div>
-        </div>
         <div class="paused-grid">
-            <div class="paused-card reveal-up"><h3>独立的状态</h3><p>“已暂停”不是“已放弃”。你的书不会进入放弃的那一堆：它只是搁置，想读时随时回来。</p></div>
-            <div class="paused-card reveal-up"><h3>从“阅读中”或“重读中”</h3><p>可通过书籍页面上的状态标签，或快捷操作（长按书籍卡片）中的“更改状态”来更改状态。适用于图书、漫画、日漫和有声书。</p></div>
-            <div class="paused-card reveal-up"><h3>暂停的天数不计入</h3><p>既不算进读完所需的天数，也不影响你的阅读速度。统计保持你阅读时的样子。</p></div>
-            <div class="paused-card reveal-up"><h3>想写就写一条备注</h3><p>暂停和恢复时，可以记下原因。这是可选的。所有内容连同历史记录都保存在书籍页面的“暂停记录”中。</p></div>
-            <div class="paused-card reveal-up"><h3>专属标签页</h3><p>在你的书库里，“想读”和“已放弃”之间，就是你暂停的书。</p></div>
-            <div class="paused-card reveal-up"><h3>提醒，以及自动恢复</h3><p>这本书的提醒会暂停，恢复后再回来。如果你为一次阅读计时，或有一条记录从 KOReader 传来，这本书会自动恢复，并给出通知和“撤销”选项。</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.2 MENU RAPIDO -->
-<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">3.9 / iOS 1.1.0 新功能</span>
-            <h2 id="quickmenu-title">无需返回主页，即可在各板块之间跳转</h2>
-            <p>以前从宾果去设置，要先回到主页。现在只需点按右上角的三个点（···），即可直接前往。</p>
-        </div>
-        <div class="qm-viz reveal-up" aria-hidden="true">
-            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">宾果</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
-            <div class="qm-panel">
-                <p class="qm-panel-title">快捷菜单</p>
-                <div class="qm-groups">
-                    <div class="qm-group is-current"><p class="qm-group-title">目标</p><p>活动 · 挑战 · 宾果</p></div>
-                    <div class="qm-group"><p class="qm-group-title">我的阅读</p><p>统计 · 我的卡片 · 年度总结</p></div>
-                    <div class="qm-group"><p class="qm-group-title">工具</p><p>提醒 · 标签管理 · 扫描 ISBN</p></div>
-                    <div class="qm-group"><p class="qm-group-title">通用入口</p><p>主页 · 设置 · 数据与备份</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="paused-grid">
-            <div class="paused-card qm-card reveal-up"><h3>几乎每个屏幕都有</h3><p>横向三点图标（···）位于右上角。如果该屏幕有分享按钮，它会移到分享按钮的左侧。</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>与主页相同的分组</h3><p>目标、我的阅读和工具，以及主页、设置和数据与备份。你当前所在的板块会高亮显示：点按它即可回到该板块的起始页。</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>书籍页面中也有</h3><p>在书籍页面打开纵向三点菜单，选择“快捷菜单”。分步向导中没有该菜单，以免丢失你正在填写的内容。</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.3 COMPARTIR CARDS -->
-<section class="band band-alt" id="cards" aria-labelledby="cards-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">分享</span>
-            <h2 id="cards-title">Lecturameter 不是社交网络。你的卡片会发到你正在用的那个平台。</h2>
-            <p>制作适合 Story 的 1080×1920 竖版卡片，直接分享到你已经在用的地方。无需账号，没有主页，没有粉丝。 在 3.9 / iOS 1.1.0 版本中，每周和每月总结采用了全新设计，并提供更多统计数据。</p>
-        </div>
-        <div class="share-wrap">
-            <div class="share-fan reveal-up" aria-hidden="true">
-                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <span class="share-size">1080×1920 · Story 格式</span>
-            </div>
-            <div class="share-side">
-                <ul class="share-chips">
-                <li>书籍</li>
-                <li>读完的书</li>
-                <li>书籍统计</li>
-                <li>统计</li>
-                <li>周度总结</li>
-                <li>月度总结</li>
-                <li>挑战</li>
-                <li>Bingo</li>
-                <li>Wrapped</li>
-                <li>活动</li>
-                <li>Quest</li>
-                </ul>
-                <ol class="share-steps">
-            <li class="share-step reveal-up"><h3>选择要展示的内容</h3><p>一本书、刚读完的书、你的统计、你的一周或一个月、一项挑战、Bingo、Wrapped 或一场活动。</p></li>
-            <li class="share-step reveal-up"><h3>保存在“我的卡片”</h3><p>你分享的所有内容都留在我的卡片里，想用时随时可以再用。</p></li>
-            <li class="share-step reveal-up"><h3>分享到你已经在用的地方</h3><p>通过手机的分享菜单发到你常用的应用，也可以保存到相册。</p></li>
-                </ol>
-            </div>
+            <div class="paused-card reveal-up"><h3>把一本书先放一放，又不会弄乱你的统计</h3><p>“已暂停”是独立的状态，和“已放弃”不同。书会停在你放下的地方，暂停的天数不计入。</p></div>
+            <div class="paused-card reveal-up" id="cards"><h3>Lecturameter 不是社交网络。你的卡片会发到你正在用的那个平台。</h3><p>制作适合 Story 的 1080×1920 竖版卡片，直接分享到你已经在用的地方。无需账号，没有主页，没有粉丝。 在 3.9 / iOS 1.1.0 版本中，每周和每月总结采用了全新设计，并提供更多统计数据。</p></div>
         </div>
     </div>
 </section>
@@ -767,6 +675,20 @@
             </article>
         </div>
         <p class="events-note">需年满 16 岁才能参加。如果当前没有进行中的活动，应用会告诉你。</p>
+    </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section class="band" id="trust" aria-labelledby="trust-title">
+    <div class="container">
+        <div class="section-head"><h2 id="trust-title">你的书库属于你</h2></div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><p>无需账号</p></div>
+            <div class="paused-card reveal-up"><p>数据留在你的手机上</p></div>
+            <div class="paused-card reveal-up"><p>可选本地备份和 Google Drive</p></div>
+            <div class="paused-card reveal-up"><p>遥测使用假名，且可以关闭</p></div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./privacy/" class="btn">隐私政策</a></p>
     </div>
 </section>
 
@@ -847,6 +769,28 @@
                 <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span><strong>黄昏</strong> <span class="pro-tag">Pro</span></figcaption>
             </figure>
         </div>
+    </div>
+</section>
+
+<!-- 7b. UNIVERSO -->
+<section class="band" id="universe">
+    <div class="container">
+        <div class="section-head">
+            <h2>两种体验。同一个宇宙。</h2>
+            <p>Lecturameter 是现代的阅读追踪器。Lecturameter 99 是它的复古再诠释：一个替代选择，无所谓更好或更差。</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">Lecturameter</div>
+                <p class="price-note">适用于 Android 和 iOS 的现代阅读追踪器。</p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">Lecturameter 99</div>
+                <p class="price-note">同一想法的复古版本，在 Google Play 和 App Store 免费。</p>
+                <p><a href="./lecturameter-1999/" class="btn">Lecturameter 99</a></p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./universe/" class="btn">宇宙入口</a></p>
     </div>
 </section>
 
@@ -1000,6 +944,7 @@
             </div>
             <div class="footer-col">
                 <h4>宇宙</h4>
+                <a href="./universe/">宇宙入口</a>
                 <a href="./">Lecturameter</a>
                 <a href="./lecturameter-1999/">Lecturameter 99</a>
             </div>

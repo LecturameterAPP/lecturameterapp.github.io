@@ -228,6 +228,7 @@
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Svemir <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
+                    <li><a href="./universe/">Portal Svemir</a></li>
                     <li><a href="./">Lecturameter</a></li>
                     <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
                 </ul>
@@ -611,105 +612,12 @@
     </div>
 </section>
 
-<!-- 3.1 PAUSADO -->
-<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+<!-- 4. ECOSISTEMA (pausado y cards; retos y bingo en la rejilla de arriba, eventos debajo) -->
+<section class="band band-alt" id="paused">
     <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Novo u 3.9 / iOS 1.1.0</span>
-            <h2 id="paused-title">Odloži knjigu na neko vrijeme, a da ti ne pokvari statistiku</h2>
-            <p>Pauzirano je zasebno stanje, različito od Napušteno. Knjiga čeka gdje si stao, a dani pauze se ne računaju.</p>
-        </div>
-        <div class="paused-viz reveal-up" aria-hidden="true">
-            <div class="paused-tabs">
-                <span>Želim čitati</span>
-                <span>Čitanje</span>
-                <span class="is-paused">Pauzirano</span>
-                <span>Napušteno</span>
-            </div>
-            <div class="paused-timeline">
-                <span class="seg read" style="flex:3"></span>
-                <span class="seg pause" style="flex:2"></span>
-                <span class="seg read" style="flex:4"></span>
-            </div>
-            <div class="paused-legend">
-                <span><i class="dot read"></i>Čitanje</span>
-                <span><i class="dot pause"></i>Pauzirano &middot; Dani pauze se ne računaju</span>
-            </div>
-        </div>
         <div class="paused-grid">
-            <div class="paused-card reveal-up"><h3>Zasebno stanje</h3><p>Pauzirano nije Napušteno. Tvoja knjiga ne završava u hrpi knjiga koje si odustao čitati: čeka i vraća se kad god želiš.</p></div>
-            <div class="paused-card reveal-up"><h3>Iz Čitanja ili Ponovnog čitanja</h3><p>Promijenite stanje pomoću pločice na stranici knjige ili pomoću „Promijeni stanje” u prečacima (dugo pritisnite karticu knjige). Radi za knjige, stripove, mange i audioknjige.</p></div>
-            <div class="paused-card reveal-up"><h3>Dani pauze se ne računaju</h3><p>Ni u danima do završetka ni u tvojoj brzini čitanja. Statistika ostaje ona iz vremena kad si čitao.</p></div>
-            <div class="paused-card reveal-up"><h3>Bilješka, ako želiš</h3><p>Kad pauziraš i kad nastaviš, možeš zapisati zašto. Nije obavezno. Sve ostaje u odjeljku „Pauze“ na stranici knjige, s poviješću.</p></div>
-            <div class="paused-card reveal-up"><h3>Zasebna kartica</h3><p>U svojoj knjižnici, između Želim čitati i Napušteno, naći ćeš pauzirane knjige.</p></div>
-            <div class="paused-card reveal-up"><h3>Podsjetnici i samostalan nastavak</h3><p>Podsjetnici te knjige se pauziraju i vraćaju kad je nastaviš. Ako izmjeriš sesiju ili stigne jedna iz KOReadera, knjiga se nastavlja sama, uz obavijest i opciju Poništi.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.2 MENU RAPIDO -->
-<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Novo u 3.9 / iOS 1.1.0</span>
-            <h2 id="quickmenu-title">Prelazite iz odjeljka u odjeljak bez povratka na Početnu</h2>
-            <p>Nekad je za prelazak s Bingoa na Postavke trebalo prvo proći kroz Početnu. Sada dodirnete tri točkice (···) u gornjem desnom kutu i odmah ste tamo.</p>
-        </div>
-        <div class="qm-viz reveal-up" aria-hidden="true">
-            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
-            <div class="qm-panel">
-                <p class="qm-panel-title">Brzi izbornik</p>
-                <div class="qm-groups">
-                    <div class="qm-group is-current"><p class="qm-group-title">Ciljevi</p><p>Događaji · Izazovi · Bingo</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Moja čitanja</p><p>Statistika · Moje kartice · Wrapped</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Alati</p><p>Podsjetnici · Upravljanje tagovima · Skeniraj ISBN</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Opći prečaci</p><p>Početna · Postavke · Podaci i sigurnosne kopije</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="paused-grid">
-            <div class="paused-card qm-card reveal-up"><h3>Na gotovo svakom zaslonu</h3><p>Ikona s tri vodoravne točkice (···) nalazi se u gornjem desnom kutu. Ako je zaslon imao gumb za dijeljenje, on se pomiče lijevo od nje.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Iste grupe kao na Početnoj</h3><p>Ciljevi, Moja čitanja i Alati, uz Početnu, Postavke i Podaci i sigurnosne kopije. Odjeljak u kojem se nalazite istaknut je: dodirnite ga i vratit ćete se na njegov početak.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>I na stranici knjige</h3><p>Otvorite izbornik s tri okomite točkice na stranici knjige i odaberite „Brzi izbornik”. Čarobnjaci korak po korak ga nemaju, kako ne biste izgubili ono što ispunjavate.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.3 COMPARTIR CARDS -->
-<section class="band band-alt" id="cards" aria-labelledby="cards-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Podijeli</span>
-            <h2 id="cards-title">Lecturameter nije društvena mreža. Tvoje kartice idu na onu koju koristiš.</h2>
-            <p>Izradi okomite kartice 1080×1920, spremne za storyje, i podijeli ih tamo gdje već jesi. Bez računa, bez profila i bez pratitelja. U verziji 3.9 / iOS 1.1.0 tjedni i mjesečni sažeci dobivaju novi dizajn i više statistika.</p>
-        </div>
-        <div class="share-wrap">
-            <div class="share-fan reveal-up" aria-hidden="true">
-                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <span class="share-size">1080×1920 · format storyja</span>
-            </div>
-            <div class="share-side">
-                <ul class="share-chips">
-                <li>Knjiga</li>
-                <li>Završena knjiga</li>
-                <li>Statistika knjige</li>
-                <li>Statistika</li>
-                <li>Tjedni pregled</li>
-                <li>Mjesečni pregled</li>
-                <li>Izazovi</li>
-                <li>Bingo</li>
-                <li>Wrapped</li>
-                <li>Događaj</li>
-                <li>Quest</li>
-                </ul>
-                <ol class="share-steps">
-            <li class="share-step reveal-up"><h3>Odaberi što ćeš prikazati</h3><p>Knjigu, upravo završenu knjigu, svoju statistiku, svoj tjedan ili mjesec, izazov, Bingo, Wrapped ili događaj.</p></li>
-            <li class="share-step reveal-up"><h3>Sprema se u „Moje kartice“</h3><p>Sve što podijeliš ostaje u Mojim karticama, pa ga možeš ponovno koristiti kad god želiš.</p></li>
-            <li class="share-step reveal-up"><h3>Podijeli je tamo gdje već jesi</h3><p>Preko izbornika za dijeljenje na telefonu, u aplikaciju koju već koristiš. Ili je spremi u galeriju.</p></li>
-                </ol>
-            </div>
+            <div class="paused-card reveal-up"><h3>Odloži knjigu na neko vrijeme, a da ti ne pokvari statistiku</h3><p>Pauzirano je zasebno stanje, različito od Napušteno. Knjiga čeka gdje si stao, a dani pauze se ne računaju.</p></div>
+            <div class="paused-card reveal-up" id="cards"><h3>Lecturameter nije društvena mreža. Tvoje kartice idu na onu koju koristiš.</h3><p>Izradi okomite kartice 1080×1920, spremne za storyje, i podijeli ih tamo gdje već jesi. Bez računa, bez profila i bez pratitelja. U verziji 3.9 / iOS 1.1.0 tjedni i mjesečni sažeci dobivaju novi dizajn i više statistika.</p></div>
         </div>
     </div>
 </section>
@@ -767,6 +675,20 @@
             </article>
         </div>
         <p class="events-note">Za sudjelovanje moraš imati 16 ili više godina. Ako trenutačno nema aktivnog događaja, aplikacija ti to kaže.</p>
+    </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section class="band" id="trust" aria-labelledby="trust-title">
+    <div class="container">
+        <div class="section-head"><h2 id="trust-title">Tvoja knjižnica je tvoja</h2></div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><p>Račun nije potreban</p></div>
+            <div class="paused-card reveal-up"><p>Tvoji podaci ostaju na tvom telefonu</p></div>
+            <div class="paused-card reveal-up"><p>Lokalne sigurnosne kopije i Google Drive, ako želiš</p></div>
+            <div class="paused-card reveal-up"><p>Telemetrija je pseudonimna i možeš je isključiti</p></div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./privacy/" class="btn">Pravila o privatnosti</a></p>
     </div>
 </section>
 
@@ -847,6 +769,28 @@
                 <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span><strong>Sumrak</strong> <span class="pro-tag">Pro</span></figcaption>
             </figure>
         </div>
+    </div>
+</section>
+
+<!-- 7b. UNIVERSO -->
+<section class="band" id="universe">
+    <div class="container">
+        <div class="section-head">
+            <h2>Dva iskustva. Jedan svemir.</h2>
+            <p>Lecturameter je moderni tracker čitanja. Lecturameter 99 njegova je retro reinterpretacija: alternativa, ni bolja ni lošija.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">Lecturameter</div>
+                <p class="price-note">Moderni tracker čitanja za Android i iOS.</p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">Lecturameter 99</div>
+                <p class="price-note">Retro verzija iste ideje, besplatna na Google Playu i App Storeu.</p>
+                <p><a href="./lecturameter-1999/" class="btn">Lecturameter 99</a></p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./universe/" class="btn">Portal Svemir</a></p>
     </div>
 </section>
 
@@ -1000,6 +944,7 @@
             </div>
             <div class="footer-col">
                 <h4>Svemir</h4>
+                <a href="./universe/">Portal Svemir</a>
                 <a href="./">Lecturameter</a>
                 <a href="./lecturameter-1999/">Lecturameter 99</a>
             </div>

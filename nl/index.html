@@ -228,6 +228,7 @@
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Universum <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
+                    <li><a href="./universe/">Universumportaal</a></li>
                     <li><a href="./">Lecturameter</a></li>
                     <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
                 </ul>
@@ -611,105 +612,12 @@
     </div>
 </section>
 
-<!-- 3.1 PAUSADO -->
-<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+<!-- 4. ECOSISTEMA (pausado y cards; retos y bingo en la rejilla de arriba, eventos debajo) -->
+<section class="band band-alt" id="paused">
     <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Nieuw in 3.9 / iOS 1.1.0</span>
-            <h2 id="paused-title">Leg een boek een tijdje opzij zonder je statistieken te verpesten</h2>
-            <p>Gepauzeerd is een aparte status, anders dan Gestopt. Het boek wacht waar je het liet liggen en de dagen op pauze tellen niet mee.</p>
-        </div>
-        <div class="paused-viz reveal-up" aria-hidden="true">
-            <div class="paused-tabs">
-                <span>Wil ik lezen</span>
-                <span>Aan het lezen</span>
-                <span class="is-paused">Gepauzeerd</span>
-                <span>Gestopt</span>
-            </div>
-            <div class="paused-timeline">
-                <span class="seg read" style="flex:3"></span>
-                <span class="seg pause" style="flex:2"></span>
-                <span class="seg read" style="flex:4"></span>
-            </div>
-            <div class="paused-legend">
-                <span><i class="dot read"></i>Aan het lezen</span>
-                <span><i class="dot pause"></i>Gepauzeerd &middot; Dagen op pauze tellen niet mee</span>
-            </div>
-        </div>
         <div class="paused-grid">
-            <div class="paused-card reveal-up"><h3>Een aparte status</h3><p>Gepauzeerd is niet Gestopt. Je boek belandt niet op de stapel boeken die je hebt opgegeven: het wacht en komt terug wanneer jij wilt.</p></div>
-            <div class="paused-card reveal-up"><h3>Vanuit Aan het lezen of Herlezen</h3><p>Wijzig de status via de pil op de boekpagina of met “Status wijzigen” in de snelle acties (houd de kaart van het boek lang ingedrukt). Het werkt voor boeken, strips, manga en luisterboeken.</p></div>
-            <div class="paused-card reveal-up"><h3>Dagen op pauze tellen niet mee</h3><p>Niet bij de dagen tot je klaar bent en niet in je leessnelheid. Je statistieken blijven zoals ze waren toen je las.</p></div>
-            <div class="paused-card reveal-up"><h3>Een notitie, als je wilt</h3><p>Als je pauzeert en als je hervat, kun je opschrijven waarom. Dat is optioneel. Alles blijft in het onderdeel „Pauzes” van de boekpagina, met de geschiedenis.</p></div>
-            <div class="paused-card reveal-up"><h3>Een eigen tabblad</h3><p>In je bibliotheek vind je tussen Wil ik lezen en Gestopt je gepauzeerde boeken.</p></div>
-            <div class="paused-card reveal-up"><h3>Herinneringen, en vanzelf hervatten</h3><p>De herinneringen van dat boek worden gepauzeerd en komen terug als je het hervat. Als je een sessie met de timer meet of er komt er een binnen vanuit KOReader, wordt het boek vanzelf hervat, met een melding en de optie Ongedaan maken.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.2 MENU RAPIDO -->
-<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Nieuw in 3.9 / iOS 1.1.0</span>
-            <h2 id="quickmenu-title">Spring van de ene sectie naar de andere zonder terug te gaan naar Home</h2>
-            <p>Van Bingo naar Instellingen gaan betekende vroeger eerst langs Home. Nu tik je op de drie puntjes (···) rechtsboven en ga je er rechtstreeks heen.</p>
-        </div>
-        <div class="qm-viz reveal-up" aria-hidden="true">
-            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
-            <div class="qm-panel">
-                <p class="qm-panel-title">Snelmenu</p>
-                <div class="qm-groups">
-                    <div class="qm-group is-current"><p class="qm-group-title">Doelen</p><p>Evenementen · Uitdagingen · Bingo</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Mijn lectuur</p><p>Statistieken · Mijn kaarten · Wrapped</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Hulpmiddelen</p><p>Herinneringen · Tagbeheer · ISBN scannen</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Algemene snelkoppelingen</p><p>Home · Instellingen · Gegevens en back-ups</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="paused-grid">
-            <div class="paused-card qm-card reveal-up"><h3>Op bijna elk scherm</h3><p>Het horizontale pictogram met drie puntjes (···) staat rechtsboven. Als het scherm een deelknop had, verschuift die naar links ervan.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Dezelfde groepen als Home</h3><p>Doelen, Mijn lectuur en Hulpmiddelen, plus Home, Instellingen en Gegevens en back-ups. De sectie waarin je zit is gemarkeerd: tik erop om terug te gaan naar het begin ervan.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Ook op de boekpagina</h3><p>Open het verticale menu met drie puntjes op de pagina van een boek en kies “Snelmenu”. Stapsgewijze wizards hebben het niet, zodat je niet kwijtraakt wat je invult.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.3 COMPARTIR CARDS -->
-<section class="band band-alt" id="cards" aria-labelledby="cards-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Delen</span>
-            <h2 id="cards-title">Lecturameter is geen sociaal netwerk. Je kaarten gaan naar het netwerk dat jij gebruikt.</h2>
-            <p>Maak verticale kaarten van 1080×1920, klaar voor stories, en deel ze waar je al bent. Geen account, geen profiel en geen volgers. In 3.9 / iOS 1.1.0 krijgen de wekelijkse en maandelijkse overzichten een nieuw ontwerp met meer statistieken.</p>
-        </div>
-        <div class="share-wrap">
-            <div class="share-fan reveal-up" aria-hidden="true">
-                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <span class="share-size">1080×1920 · storyformaat</span>
-            </div>
-            <div class="share-side">
-                <ul class="share-chips">
-                <li>Boek</li>
-                <li>Boek uit</li>
-                <li>Boekstatistieken</li>
-                <li>Statistieken</li>
-                <li>Weekoverzicht</li>
-                <li>Maandoverzicht</li>
-                <li>Uitdagingen</li>
-                <li>Bingo</li>
-                <li>Wrapped</li>
-                <li>Evenement</li>
-                <li>Quest</li>
-                </ul>
-                <ol class="share-steps">
-            <li class="share-step reveal-up"><h3>Kies wat je wilt laten zien</h3><p>Een boek, een boek dat je net uit hebt, je statistieken, je week of maand, een uitdaging, Bingo, Wrapped of een evenement.</p></li>
-            <li class="share-step reveal-up"><h3>Wordt bewaard in „Mijn kaarten”</h3><p>Alles wat je deelt blijft in Mijn kaarten, zodat je het kunt hergebruiken wanneer je wilt.</p></li>
-            <li class="share-step reveal-up"><h3>Deel het waar je al bent</h3><p>Via het deelmenu van je telefoon, naar de app die je al gebruikt. Of bewaar het in je galerij.</p></li>
-                </ol>
-            </div>
+            <div class="paused-card reveal-up"><h3>Leg een boek een tijdje opzij zonder je statistieken te verpesten</h3><p>Gepauzeerd is een aparte status, anders dan Gestopt. Het boek wacht waar je het liet liggen en de dagen op pauze tellen niet mee.</p></div>
+            <div class="paused-card reveal-up" id="cards"><h3>Lecturameter is geen sociaal netwerk. Je kaarten gaan naar het netwerk dat jij gebruikt.</h3><p>Maak verticale kaarten van 1080×1920, klaar voor stories, en deel ze waar je al bent. Geen account, geen profiel en geen volgers. In 3.9 / iOS 1.1.0 krijgen de wekelijkse en maandelijkse overzichten een nieuw ontwerp met meer statistieken.</p></div>
         </div>
     </div>
 </section>
@@ -767,6 +675,20 @@
             </article>
         </div>
         <p class="events-note">Je moet 16 jaar of ouder zijn om mee te doen. Als er nu geen evenement actief is, laat de app dat weten.</p>
+    </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section class="band" id="trust" aria-labelledby="trust-title">
+    <div class="container">
+        <div class="section-head"><h2 id="trust-title">Je bibliotheek is van jou</h2></div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><p>Geen account nodig</p></div>
+            <div class="paused-card reveal-up"><p>Je gegevens blijven op je telefoon</p></div>
+            <div class="paused-card reveal-up"><p>Lokale back-ups en Google Drive, als je wilt</p></div>
+            <div class="paused-card reveal-up"><p>Telemetrie is gepseudonimiseerd en je kunt hem uitzetten</p></div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./privacy/" class="btn">Privacybeleid</a></p>
     </div>
 </section>
 
@@ -847,6 +769,28 @@
                 <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span><strong>Schemering</strong> <span class="pro-tag">Pro</span></figcaption>
             </figure>
         </div>
+    </div>
+</section>
+
+<!-- 7b. UNIVERSO -->
+<section class="band" id="universe">
+    <div class="container">
+        <div class="section-head">
+            <h2>Twee ervaringen. Eén universum.</h2>
+            <p>Lecturameter is de moderne leestracker. Lecturameter 99 is de retro-herinterpretatie: een alternatief, niet beter en niet slechter.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">Lecturameter</div>
+                <p class="price-note">De moderne leestracker voor Android en iOS.</p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">Lecturameter 99</div>
+                <p class="price-note">Een retroversie van hetzelfde idee, gratis op Google Play en de App Store.</p>
+                <p><a href="./lecturameter-1999/" class="btn">Lecturameter 99</a></p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./universe/" class="btn">Universumportaal</a></p>
     </div>
 </section>
 
@@ -1000,6 +944,7 @@
             </div>
             <div class="footer-col">
                 <h4>Universum</h4>
+                <a href="./universe/">Universumportaal</a>
                 <a href="./">Lecturameter</a>
                 <a href="./lecturameter-1999/">Lecturameter 99</a>
             </div>

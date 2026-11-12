@@ -992,9 +992,21 @@
  "head.roadmap.title": "Roadmap | Lecturameter",
  "head.roadmap.description": "Čitateľské výzvy pre celú komunitu, hra s tvojimi vlastnými knihami a obnovená domovská obrazovka. Bez pevných dátumov: všetko vyjde, keď bude hotové.",
  "head.faq.title": "Často kladené otázky | Lecturameter",
- "head.faq.description": "Často kladené otázky: Môžem si preniesť knižnicu z iných aplikácií? · Sú moje údaje moje? · Je tu predplatné? · Funguje offline?",
+ "head.faq.description": "Často kladené otázky: Môžem si preniesť knižnicu z iných aplikácií? · Sú moje údaje moje? · Je tu predplatné? · Funguje offline? · Funguje offline?",
  "head.platforms.title": "Lecturameter na iPhone a Androide",
  "head.platforms.description": "Verzia pre iPhone má rovnaké hlavné funkcie ako Android: knižnicu, časovač čítania, štatistiky, výzvy, bingo, Pagi a vizuálne témy. Tu sú rozdiely.",
  "head.pro.title": "Cenník · Pro | Lecturameter",
- "head.pro.description": "Vyskúšaj funkcie Pro 7 dní bez karty. Po skončení skúšobnej doby dostaneš, aj keď Pro nekúpiš, jednu tému Pro podľa vlastného výberu zadarmo."
+ "head.pro.description": "Vyskúšaj funkcie Pro 7 dní bez karty. Po skončení skúšobnej doby dostaneš, aj keď Pro nekúpiš, jednu tému Pro podľa vlastného výberu zadarmo.",
+ "home.trust.title": "Tvoja knižnica je tvoja",
+ "home.trust.p1": "Účet nepotrebuješ",
+ "home.trust.p2": "Tvoje dáta zostávajú v telefóne",
+ "home.trust.p3": "Lokálne zálohy a Google Drive, ak chceš",
+ "home.trust.p4": "Telemetria je pseudonymná a môžeš ju vypnúť",
+ "home.universe.title": "Dva zážitky. Jeden vesmír.",
+ "home.universe.sub": "Lecturameter je moderný čitateľský tracker. Lecturameter 99 je jeho retro reinterpretácia: alternatíva, ani lepšia, ani horšia.",
+ "home.universe.lm": "Moderný čitateľský tracker pre Android a iOS.",
+ "home.universe.lm99": "Retro podoba tej istej myšlienky, zadarmo v Google Play a App Store.",
+ "common.nav.universe_portal": "Portál Vesmír",
+ "head.universe.title": "Dva zážitky. Jeden vesmír. | Lecturameter",
+ "head.universe.description": "Lecturameter je moderný čitateľský tracker. Lecturameter 99 je jeho retro reinterpretácia: alternatíva, ani lepšia, ani horšia."
 }

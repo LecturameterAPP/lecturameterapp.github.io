@@ -994,7 +994,19 @@
  "head.faq.title": "Preguntes freqüents | Lecturameter",
  "head.faq.description": "Preguntes freqüents: Puc portar la meva biblioteca des d'altres apps? · Les meves dades són meves? · Té subscripció? · Funciona sense connexió?",
  "head.platforms.title": "Lecturameter a l'iPhone i a Android",
- "head.platforms.description": "La versió d'iPhone té les mateixes funcions principals que la d'Android: biblioteca, cronòmetre de lectura, estadístiques, reptes, bingo, Pagi i els temes…",
+ "head.platforms.description": "La versió d'iPhone té les mateixes funcions principals que la d'Android.",
  "head.pro.title": "Preus · Pro | Lecturameter",
- "head.pro.description": "Prova les funcions Pro durant 7 dies sense targeta. En acabar la prova, encara que no compris Pro, et regalem un tema Pro a la teva elecció."
+ "head.pro.description": "Prova les funcions Pro durant 7 dies sense targeta. En acabar la prova, encara que no compris Pro, et regalem un tema Pro a la teva elecció.",
+ "home.trust.title": "La teva biblioteca és teva",
+ "home.trust.p1": "No cal compte",
+ "home.trust.p2": "Les teves dades es queden al mòbil",
+ "home.trust.p3": "Còpies locals i a Google Drive, si les vols",
+ "home.trust.p4": "La telemetria és pseudònima i pots desactivar-la",
+ "home.universe.title": "Dues experiències. Un mateix univers.",
+ "home.universe.sub": "Lecturameter és el registre de lectura modern. Lecturameter 99 n'és la reinterpretació retro: una alternativa, ni millor ni pitjor.",
+ "home.universe.lm": "El registre de lectura modern, per a Android i iOS.",
+ "home.universe.lm99": "Una versió retro de la mateixa idea, gratuïta a Google Play i l'App Store.",
+ "common.nav.universe_portal": "Portal Univers",
+ "head.universe.title": "Dues experiències. Un mateix univers. | Lecturameter",
+ "head.universe.description": "Lecturameter és el registre de lectura modern. Lecturameter 99 n'és la reinterpretació retro: una alternativa, ni millor ni pitjor."
 }

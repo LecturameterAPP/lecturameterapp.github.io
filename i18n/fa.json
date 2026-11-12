@@ -996,5 +996,17 @@
  "head.platforms.title": "Lecturameter روی iPhone و Android",
  "head.platforms.description": "نسخه iPhone همان قابلیت‌های اصلی Android را دارد: کتابخانه، کرنومتر مطالعه، آمار، چالش‌ها، بینگو، Pagi و پوسته‌های ظاهری. تفاوت‌ها این‌هاست.",
  "head.pro.title": "قیمت‌ها · Pro | Lecturameter",
- "head.pro.description": "قابلیت‌های Pro را 7 روز بدون کارت امتحان کنید. در پایان دوره آزمایشی، حتی اگر Pro را نخرید، یک پوسته Pro به انتخاب خودتان رایگان می‌گیرید."
+ "head.pro.description": "قابلیت‌های Pro را 7 روز بدون کارت امتحان کنید. در پایان دوره آزمایشی، حتی اگر Pro را نخرید، یک پوسته Pro به انتخاب خودتان رایگان می‌گیرید.",
+ "home.trust.title": "کتابخانه‌ات مال خودت است",
+ "home.trust.p1": "نیازی به حساب نیست",
+ "home.trust.p2": "داده‌هایت روی گوشی‌ات می‌ماند",
+ "home.trust.p3": "پشتیبان محلی و Google Drive، اگر بخواهی",
+ "home.trust.p4": "تله‌متری با نام مستعار است و می‌توانی آن را خاموش کنی",
+ "home.universe.title": "دو تجربه. یک جهان.",
+ "home.universe.sub": "Lecturameter ردیاب مدرن مطالعه است. Lecturameter 99 بازتفسیر کلاسیک آن است: یک جایگزین، نه بهتر و نه بدتر.",
+ "home.universe.lm": "ردیاب مدرن مطالعه برای اندروید و iOS.",
+ "home.universe.lm99": "برداشتی کلاسیک از همان ایده، رایگان در Google Play و App Store.",
+ "common.nav.universe_portal": "پورتال جهان",
+ "head.universe.title": "دو تجربه. یک جهان. | Lecturameter",
+ "head.universe.description": "Lecturameter ردیاب مدرن مطالعه است. Lecturameter 99 بازتفسیر کلاسیک آن است: یک جایگزین، نه بهتر و نه بدتر."
 }

@@ -228,6 +228,7 @@
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Universum <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
+                    <li><a href="./universe/">Universum-Portal</a></li>
                     <li><a href="./">Lecturameter</a></li>
                     <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
                 </ul>
@@ -611,105 +612,12 @@
     </div>
 </section>
 
-<!-- 3.1 PAUSADO -->
-<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+<!-- 4. ECOSISTEMA (pausado y cards; retos y bingo en la rejilla de arriba, eventos debajo) -->
+<section class="band band-alt" id="paused">
     <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Neu in 3.9 / iOS 1.1.0</span>
-            <h2 id="paused-title">Leg ein Buch eine Weile beiseite, ohne deine Statistiken zu verfälschen</h2>
-            <p>Pausiert ist ein eigener Status, anders als Abgebrochen. Das Buch wartet, wo du aufgehört hast, und die pausierten Tage zählen nicht.</p>
-        </div>
-        <div class="paused-viz reveal-up" aria-hidden="true">
-            <div class="paused-tabs">
-                <span>Merkliste</span>
-                <span>Lesen</span>
-                <span class="is-paused">Pausiert</span>
-                <span>Abgebrochen</span>
-            </div>
-            <div class="paused-timeline">
-                <span class="seg read" style="flex:3"></span>
-                <span class="seg pause" style="flex:2"></span>
-                <span class="seg read" style="flex:4"></span>
-            </div>
-            <div class="paused-legend">
-                <span><i class="dot read"></i>Lesen</span>
-                <span><i class="dot pause"></i>Pausiert &middot; Pausierte Tage zählen nicht</span>
-            </div>
-        </div>
         <div class="paused-grid">
-            <div class="paused-card reveal-up"><h3>Ein eigener Status</h3><p>Pausiert ist nicht Abgebrochen. Dein Buch landet nicht im Stapel der aufgegebenen Bücher: Es wartet und kommt zurück, wann du willst.</p></div>
-            <div class="paused-card reveal-up"><h3>Von Lesen oder Erneutes Lesen</h3><p>Ändere den Status über die Pille auf der Buchseite oder mit „Status ändern“ in den Schnellaktionen (Buchkarte lange drücken). Das funktioniert für Bücher, Comics, Manga und Hörbücher.</p></div>
-            <div class="paused-card reveal-up"><h3>Pausierte Tage zählen nicht</h3><p>Weder bei den Tagen bis zum Ende noch bei deiner Lesegeschwindigkeit. Deine Statistiken bleiben so, wie sie waren, als du gelesen hast.</p></div>
-            <div class="paused-card reveal-up"><h3>Eine Notiz, wenn du willst</h3><p>Wenn du pausierst und wenn du weiterliest, kannst du den Grund notieren. Das ist optional. Alles bleibt mit Verlauf im Bereich „Pausen“ der Buchseite.</p></div>
-            <div class="paused-card reveal-up"><h3>Ein eigener Tab</h3><p>In deiner Bibliothek findest du zwischen Merkliste und Abgebrochen deine pausierten Bücher.</p></div>
-            <div class="paused-card reveal-up"><h3>Erinnerungen und automatisches Weiterlesen</h3><p>Die Erinnerungen dieses Buchs pausieren und kommen zurück, wenn du es fortsetzt. Wenn du eine Sitzung stoppst oder eine aus KOReader eintrifft, wird das Buch von selbst fortgesetzt, mit Hinweis und Rückgängig-Option.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.2 MENU RAPIDO -->
-<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Neu in 3.9 / iOS 1.1.0</span>
-            <h2 id="quickmenu-title">Zwischen Bereichen wechseln, ohne zurück zum Start zu gehen</h2>
-            <p>Um von Bingo zu den Einstellungen zu kommen, musste man früher erst zum Start. Jetzt tippst du oben rechts auf die drei Punkte (···) und bist direkt da.</p>
-        </div>
-        <div class="qm-viz reveal-up" aria-hidden="true">
-            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
-            <div class="qm-panel">
-                <p class="qm-panel-title">Schnellmenü</p>
-                <div class="qm-groups">
-                    <div class="qm-group is-current"><p class="qm-group-title">Ziele</p><p>Events · Herausforderungen · Bingo</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Meine Lektüre</p><p>Statistiken · Meine Karten · Wrapped</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Werkzeuge</p><p>Erinnerungen · Tag-Verwaltung · ISBN scannen</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Allgemeine Zugriffe</p><p>Start · Einstellungen · Daten und Backups</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="paused-grid">
-            <div class="paused-card qm-card reveal-up"><h3>Auf fast jedem Bildschirm</h3><p>Das waagerechte Drei-Punkte-Symbol (···) sitzt oben rechts. Hatte der Bildschirm eine Teilen-Schaltfläche, rückt sie nach links.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Dieselben Gruppen wie im Start</h3><p>Ziele, Meine Lektüre und Werkzeuge, dazu Start, Einstellungen und Daten und Backups. Der Bereich, in dem du dich befindest, ist hervorgehoben: Tippe darauf, um zu seinem Anfang zurückzukehren.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Auch auf der Buchseite</h3><p>Öffne auf der Buchseite das senkrechte Drei-Punkte-Menü und wähle „Schnellmenü“. Assistenten mit mehreren Schritten haben es nicht, damit nichts von dem verloren geht, was du gerade ausfüllst.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.3 COMPARTIR CARDS -->
-<section class="band band-alt" id="cards" aria-labelledby="cards-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Teilen</span>
-            <h2 id="cards-title">Lecturameter ist kein soziales Netzwerk. Deine Karten gehen dorthin, wo du ohnehin bist.</h2>
-            <p>Erstelle Karten im Hochformat 1080×1920, bereit für Stories, und teile sie dort, wo du schon bist. Kein Konto, kein Profil, keine Follower. In 3.9 / iOS 1.1.0 bekommen die Wochen- und Monatsübersichten ein neues Design mit mehr Statistiken.</p>
-        </div>
-        <div class="share-wrap">
-            <div class="share-fan reveal-up" aria-hidden="true">
-                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <span class="share-size">1080×1920 · Story-Format</span>
-            </div>
-            <div class="share-side">
-                <ul class="share-chips">
-                <li>Buch</li>
-                <li>Buch beendet</li>
-                <li>Buchstatistik</li>
-                <li>Statistiken</li>
-                <li>Wochenrückblick</li>
-                <li>Monatsrückblick</li>
-                <li>Herausforderungen</li>
-                <li>Bingo</li>
-                <li>Wrapped</li>
-                <li>Event</li>
-                <li>Quest</li>
-                </ul>
-                <ol class="share-steps">
-            <li class="share-step reveal-up"><h3>Wähle, was du zeigen willst</h3><p>Ein Buch, eines, das du gerade beendet hast, deine Statistiken, deine Woche oder deinen Monat, eine Herausforderung, Bingo, Wrapped oder ein Event.</p></li>
-            <li class="share-step reveal-up"><h3>Wird in „Meine Karten“ gespeichert</h3><p>Alles, was du teilst, bleibt in Meine Karten, damit du es jederzeit wieder verwenden kannst.</p></li>
-            <li class="share-step reveal-up"><h3>Teile sie dort, wo du schon bist</h3><p>Über das Teilen-Menü deines Handys, direkt in die App, die du ohnehin nutzt. Oder speichere sie in deiner Galerie.</p></li>
-                </ol>
-            </div>
+            <div class="paused-card reveal-up"><h3>Leg ein Buch eine Weile beiseite, ohne deine Statistiken zu verfälschen</h3><p>Pausiert ist ein eigener Status, anders als Abgebrochen. Das Buch wartet, wo du aufgehört hast, und die pausierten Tage zählen nicht.</p></div>
+            <div class="paused-card reveal-up" id="cards"><h3>Lecturameter ist kein soziales Netzwerk. Deine Karten gehen dorthin, wo du ohnehin bist.</h3><p>Erstelle Karten im Hochformat 1080×1920, bereit für Stories, und teile sie dort, wo du schon bist. Kein Konto, kein Profil, keine Follower. In 3.9 / iOS 1.1.0 bekommen die Wochen- und Monatsübersichten ein neues Design mit mehr Statistiken.</p></div>
         </div>
     </div>
 </section>
@@ -767,6 +675,20 @@
             </article>
         </div>
         <p class="events-note">Zum Mitmachen musst du mindestens 16 sein. Wenn gerade kein Event läuft, sagt dir das die App.</p>
+    </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section class="band" id="trust" aria-labelledby="trust-title">
+    <div class="container">
+        <div class="section-head"><h2 id="trust-title">Deine Bibliothek gehört dir</h2></div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><p>Kein Konto nötig</p></div>
+            <div class="paused-card reveal-up"><p>Deine Daten bleiben auf deinem Handy</p></div>
+            <div class="paused-card reveal-up"><p>Lokale Backups und Google Drive, wenn du willst</p></div>
+            <div class="paused-card reveal-up"><p>Die Telemetrie ist pseudonym und lässt sich abschalten</p></div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./privacy/" class="btn">Datenschutzrichtlinie</a></p>
     </div>
 </section>
 
@@ -847,6 +769,28 @@
                 <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span><strong>Dämmerung</strong> <span class="pro-tag">Pro</span></figcaption>
             </figure>
         </div>
+    </div>
+</section>
+
+<!-- 7b. UNIVERSO -->
+<section class="band" id="universe">
+    <div class="container">
+        <div class="section-head">
+            <h2>Zwei Erlebnisse. Ein Universum.</h2>
+            <p>Lecturameter ist der moderne Lese-Tracker. Lecturameter 99 ist seine Retro-Neuinterpretation: eine Alternative, weder besser noch schlechter.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">Lecturameter</div>
+                <p class="price-note">Der moderne Lese-Tracker für Android und iOS.</p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">Lecturameter 99</div>
+                <p class="price-note">Eine Retro-Variante derselben Idee, kostenlos bei Google Play und im App Store.</p>
+                <p><a href="./lecturameter-1999/" class="btn">Lecturameter 99</a></p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./universe/" class="btn">Universum-Portal</a></p>
     </div>
 </section>
 
@@ -1000,6 +944,7 @@
             </div>
             <div class="footer-col">
                 <h4>Universum</h4>
+                <a href="./universe/">Universum-Portal</a>
                 <a href="./">Lecturameter</a>
                 <a href="./lecturameter-1999/">Lecturameter 99</a>
             </div>

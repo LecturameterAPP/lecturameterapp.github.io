@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{code}}" dir="{{dir}}">
+<head>
+{{> head}}
+</head>
+<body>
+
+{{> promo}}
+
+{{> nav}}
+
+<main class="subpage-body">
+<section class="band">
+    <div class="container">
+{{> breadcrumb}}
+        <div class="page-hero">
+            <h1 class="page-heading">{{home.universe.title}}</h1>
+            <p class="tagline">{{home.universe.sub}}</p>
+        </div>
+    </div>
+</section>
+
+<section class="band">
+    <div class="container">
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <img src="{{root}}ic_launcher_round.png" alt="{{common.nav.lecturameter.alt}}" class="pricing-icon" width="56" height="56" loading="lazy">
+                <div class="pricing-name">{{common.nav.lecturameter}}</div>
+                <p class="price-note">{{home.universe.lm}}</p>
+                <p><a href="{{home}}" class="btn">{{common.nav.lecturameter}}</a></p>
+                <p><a data-track="cta-play" href="https://play.google.com/store/apps/details?id=com.lecturameter.public&amp;referrer=utm_source%3Dlanding%26utm_medium%3Dweb" target="_blank" rel="noopener" class="btn">{{common.footer.get_on_google_play}}</a></p>
+                <p><a data-track="cta-appstore" href="{{ios_url}}" target="_blank" rel="noopener" class="btn">{{home.home.try_on_iphone}}</a></p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">{{common.footer.lecturameter_1999}}</div>
+                <p class="price-note">{{home.universe.lm99}}</p>
+                <p><a href="{{link_1999}}" class="btn">{{common.footer.lecturameter_1999}}</a></p>
+                <p><a data-track="cta-play99" href="{{play_1999_url}}" target="_blank" rel="noopener" class="btn">{{common.footer.get_on_google_play}}</a></p>
+                <p><a data-track="cta-appstore99" href="{{app_store_1999_url}}" target="_blank" rel="noopener" class="btn">{{home.home.try_on_iphone@live}}</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+{{> footer}}
+
+{{> scripts}}
+</body>
+</html>

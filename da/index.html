@@ -228,6 +228,7 @@
             <li class="has-dropdown">
                 <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Univers <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
+                    <li><a href="./universe/">Univers-portal</a></li>
                     <li><a href="./">Lecturameter</a></li>
                     <li><a href="./lecturameter-1999/">Lecturameter 99</a></li>
                 </ul>
@@ -611,105 +612,12 @@
     </div>
 </section>
 
-<!-- 3.1 PAUSADO -->
-<section class="band band-alt" id="paused" aria-labelledby="paused-title">
+<!-- 4. ECOSISTEMA (pausado y cards; retos y bingo en la rejilla de arriba, eventos debajo) -->
+<section class="band band-alt" id="paused">
     <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Nyt i 3.9 / iOS 1.1.0</span>
-            <h2 id="paused-title">Læg en bog væk et stykke tid uden at ødelægge din statistik</h2>
-            <p>Pauset er en status for sig, forskellig fra Opgivet. Bogen venter, hvor du slap den, og dagene på pause tæller ikke med.</p>
-        </div>
-        <div class="paused-viz reveal-up" aria-hidden="true">
-            <div class="paused-tabs">
-                <span>Vil læse</span>
-                <span>Læser</span>
-                <span class="is-paused">Pauset</span>
-                <span>Opgivet</span>
-            </div>
-            <div class="paused-timeline">
-                <span class="seg read" style="flex:3"></span>
-                <span class="seg pause" style="flex:2"></span>
-                <span class="seg read" style="flex:4"></span>
-            </div>
-            <div class="paused-legend">
-                <span><i class="dot read"></i>Læser</span>
-                <span><i class="dot pause"></i>Pauset &middot; Dage på pause tæller ikke med</span>
-            </div>
-        </div>
         <div class="paused-grid">
-            <div class="paused-card reveal-up"><h3>En status for sig</h3><p>Pauset er ikke Opgivet. Din bog havner ikke i bunken af bøger, du har givet op på: den venter og vender tilbage, når du vil.</p></div>
-            <div class="paused-card reveal-up"><h3>Fra Læser eller Genlæser</h3><p>Skift status fra pillen på bogens side eller med “Skift status” i genvejene (hold bogens kort nede). Det virker for bøger, tegneserier, manga og lydbøger.</p></div>
-            <div class="paused-card reveal-up"><h3>Dage på pause tæller ikke med</h3><p>Hverken i dage til færdig eller i din læsehastighed. Din statistik forbliver den, den var, da du læste.</p></div>
-            <div class="paused-card reveal-up"><h3>En note, hvis du vil</h3><p>Når du sætter på pause, og når du genoptager, kan du skrive hvorfor. Det er valgfrit. Alt ligger i afsnittet “Pauser” på bogens side, med sin historik.</p></div>
-            <div class="paused-card reveal-up"><h3>En fane for sig</h3><p>I dit bibliotek, mellem Vil læse og Opgivet, finder du dine pausede bøger.</p></div>
-            <div class="paused-card reveal-up"><h3>Påmindelser og automatisk genoptagelse</h3><p>Påmindelserne for den bog sættes på pause og vender tilbage, når du genoptager den. Hvis du tager tid på en session, eller der kommer en fra KOReader, genoptages bogen af sig selv, med en besked og en Fortryd-mulighed.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.2 MENU RAPIDO -->
-<section class="band" id="quick-menu" aria-labelledby="quickmenu-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Nyt i 3.9 / iOS 1.1.0</span>
-            <h2 id="quickmenu-title">Hop mellem sektioner uden at gå tilbage til Hjem</h2>
-            <p>Før skulle du forbi Hjem for at komme fra Bingo til Indstillinger. Nu trykker du på de tre prikker (···) øverst til højre og går direkte derhen.</p>
-        </div>
-        <div class="qm-viz reveal-up" aria-hidden="true">
-            <div class="qm-bar"><span class="qm-back">&lsaquo;</span><span class="qm-screen">Bingo</span><span class="qm-dots">&middot;&middot;&middot;</span></div>
-            <div class="qm-panel">
-                <p class="qm-panel-title">Hurtigmenu</p>
-                <div class="qm-groups">
-                    <div class="qm-group is-current"><p class="qm-group-title">Mål</p><p>Begivenheder · Udfordringer · Bingo</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Mine læsninger</p><p>Statistik · Mine kort · Wrapped</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Værktøjer</p><p>Påmindelser · Tag-administration · Scan ISBN</p></div>
-                    <div class="qm-group"><p class="qm-group-title">Generelle genveje</p><p>Hjem · Indstillinger · Data og sikkerhedskopier</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="paused-grid">
-            <div class="paused-card qm-card reveal-up"><h3>På næsten alle skærme</h3><p>Ikonet med tre vandrette prikker (···) sidder øverst til højre. Hvis skærmen havde en delingsknap, flytter den til venstre for det.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>De samme grupper som på Hjem</h3><p>Mål, Mine læsninger og Værktøjer, plus Hjem, Indstillinger og Data og sikkerhedskopier. Den sektion, du er i, er fremhævet: tryk på den for at gå tilbage til dens start.</p></div>
-            <div class="paused-card qm-card reveal-up"><h3>Også på bogsiden</h3><p>Åbn menuen med tre lodrette prikker på bogens side og vælg “Hurtigmenu”. Trin-for-trin-guider har den ikke, så du ikke mister det, du er ved at udfylde.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- 3.3 COMPARTIR CARDS -->
-<section class="band band-alt" id="cards" aria-labelledby="cards-title">
-    <div class="container">
-        <div class="section-head">
-            <span class="sec-tag">Del</span>
-            <h2 id="cards-title">Lecturameter er ikke et socialt netværk. Dine kort går til det, du bruger.</h2>
-            <p>Lav lodrette kort på 1080×1920, klar til stories, og del dem, hvor du allerede er. Ingen konto, ingen profil og ingen følgere. I 3.9 / iOS 1.1.0 får de ugentlige og månedlige oversigter nyt design med flere statistikker.</p>
-        </div>
-        <div class="share-wrap">
-            <div class="share-fan reveal-up" aria-hidden="true">
-                <div class="story-card sc1"><span class="sc-bar b1"></span><span class="sc-bar b2"></span><span class="sc-cover"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc2"><span class="sc-bars"><i></i><i></i><i></i><i></i><i></i></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <div class="story-card sc3"><span class="sc-ring"></span><span class="sc-line"></span><span class="sc-line short"></span></div>
-                <span class="share-size">1080×1920 · story-format</span>
-            </div>
-            <div class="share-side">
-                <ul class="share-chips">
-                <li>Bog</li>
-                <li>Færdig bog</li>
-                <li>Bogstatistik</li>
-                <li>Statistik</li>
-                <li>Ugeoversigt</li>
-                <li>Månedsoversigt</li>
-                <li>Udfordringer</li>
-                <li>Bingo</li>
-                <li>Wrapped</li>
-                <li>Begivenhed</li>
-                <li>Quest</li>
-                </ul>
-                <ol class="share-steps">
-            <li class="share-step reveal-up"><h3>Vælg, hvad du vil vise</h3><p>En bog, en du lige har læst færdig, din statistik, din uge eller måned, en udfordring, Bingo, Wrapped eller en begivenhed.</p></li>
-            <li class="share-step reveal-up"><h3>Gemmes i “Mine kort”</h3><p>Alt, hvad du deler, bliver i Mine kort, så du kan bruge det igen, når du vil.</p></li>
-            <li class="share-step reveal-up"><h3>Del det, hvor du allerede er</h3><p>Via din telefons delemenu, ind i den app, du allerede bruger. Eller gem det i dit galleri.</p></li>
-                </ol>
-            </div>
+            <div class="paused-card reveal-up"><h3>Læg en bog væk et stykke tid uden at ødelægge din statistik</h3><p>Pauset er en status for sig, forskellig fra Opgivet. Bogen venter, hvor du slap den, og dagene på pause tæller ikke med.</p></div>
+            <div class="paused-card reveal-up" id="cards"><h3>Lecturameter er ikke et socialt netværk. Dine kort går til det, du bruger.</h3><p>Lav lodrette kort på 1080×1920, klar til stories, og del dem, hvor du allerede er. Ingen konto, ingen profil og ingen følgere. I 3.9 / iOS 1.1.0 får de ugentlige og månedlige oversigter nyt design med flere statistikker.</p></div>
         </div>
     </div>
 </section>
@@ -767,6 +675,20 @@
             </article>
         </div>
         <p class="events-note">Du skal være 16 år eller ældre for at deltage. Hvis ingen begivenhed er aktiv lige nu, fortæller appen dig det.</p>
+    </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section class="band" id="trust" aria-labelledby="trust-title">
+    <div class="container">
+        <div class="section-head"><h2 id="trust-title">Dit bibliotek er dit</h2></div>
+        <div class="paused-grid">
+            <div class="paused-card reveal-up"><p>Ingen konto nødvendig</p></div>
+            <div class="paused-card reveal-up"><p>Dine data bliver på din telefon</p></div>
+            <div class="paused-card reveal-up"><p>Lokale sikkerhedskopier og Google Drive, hvis du vil</p></div>
+            <div class="paused-card reveal-up"><p>Telemetrien er pseudonym, og du kan slå den fra</p></div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./privacy/" class="btn">Privatlivspolitik</a></p>
     </div>
 </section>
 
@@ -847,6 +769,28 @@
                 <figcaption><span class="theme-swatch" style="background: linear-gradient(to bottom, #4A6FC8 0%, #6B4FC1 30%, #985FA3 52%, #D88B38 75%, #F08E3A 100%)"></span><strong>Skumring</strong> <span class="pro-tag">Pro</span></figcaption>
             </figure>
         </div>
+    </div>
+</section>
+
+<!-- 7b. UNIVERSO -->
+<section class="band" id="universe">
+    <div class="container">
+        <div class="section-head">
+            <h2>To oplevelser. Ét univers.</h2>
+            <p>Lecturameter er den moderne læsetracker. Lecturameter 99 er dens retrofortolkning: et alternativ, hverken bedre eller dårligere.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">Lecturameter</div>
+                <p class="price-note">Den moderne læsetracker til Android og iOS.</p>
+            </div>
+            <div class="pricing-card pro">
+                <div class="pricing-name">Lecturameter 99</div>
+                <p class="price-note">En retroversion af den samme idé, gratis på Google Play og App Store.</p>
+                <p><a href="./lecturameter-1999/" class="btn">Lecturameter 99</a></p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><a href="./universe/" class="btn">Univers-portal</a></p>
     </div>
 </section>
 
@@ -1000,6 +944,7 @@
             </div>
             <div class="footer-col">
                 <h4>Univers</h4>
+                <a href="./universe/">Univers-portal</a>
                 <a href="./">Lecturameter</a>
                 <a href="./lecturameter-1999/">Lecturameter 99</a>
             </div>

@@ -109,6 +109,14 @@
       "name_key": "common.nav.pro",
       "priority": "0.8",
       "changefreq": "monthly"
+    },
+    "universe": {
+      "template": "universe.html",
+      "dir": "universe/",
+      "i18n_key": "universe",
+      "name_key": "common.nav.universe_portal",
+      "priority": "0.7",
+      "changefreq": "monthly"
     }
   },
   "locales": [

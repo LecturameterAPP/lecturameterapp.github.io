@@ -996,5 +996,17 @@
  "head.platforms.title": "Lecturameter en iPhone y Android",
  "head.platforms.description": "La versión de iPhone tiene las mismas funciones principales que la de Android: biblioteca, cronómetro, estadísticas, retos, bingo, Pagi y los temas visuales.",
  "head.pro.title": "Precios · Pro | Lecturameter",
- "head.pro.description": "Prueba las funciones Pro durante 7 días sin poner tarjeta. Al final de la prueba, incluso si no compras Pro, te regalamos uno de los 3 temas Pro a tu…"
+ "head.pro.description": "Prueba las funciones Pro durante 7 días sin poner tarjeta. Al final de la prueba, incluso si no compras Pro, te regalamos uno de los 3 temas Pro a tu elección.",
+ "home.trust.title": "Tu biblioteca es tuya",
+ "home.trust.p1": "No necesitas cuenta",
+ "home.trust.p2": "Tus datos se quedan en tu móvil",
+ "home.trust.p3": "Copias locales y en Google Drive, si las quieres",
+ "home.trust.p4": "La telemetría es seudónima y puedes desactivarla",
+ "home.universe.title": "Dos experiencias. Un mismo universo.",
+ "home.universe.sub": "Lecturameter es el registro de lectura moderno. Lecturameter 99 es su reinterpretación retro: una alternativa, ni mejor ni peor.",
+ "home.universe.lm": "El registro de lectura moderno, para Android e iOS.",
+ "home.universe.lm99": "Una versión retro de la misma idea, gratis en Google Play y App Store.",
+ "common.nav.universe_portal": "Portal Universo",
+ "head.universe.title": "Dos experiencias. Un mismo universo. | Lecturameter",
+ "head.universe.description": "Lecturameter es el registro de lectura moderno. Lecturameter 99 es su reinterpretación retro: una alternativa, ni mejor ni peor."
 }

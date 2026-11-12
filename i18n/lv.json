@@ -996,5 +996,17 @@
  "head.platforms.title": "Lecturameter iPhone un Android",
  "head.platforms.description": "iPhone versijai ir tās pašas galvenās funkcijas kā Android: bibliotēka, lasīšanas taimeris, statistika, izaicinājumi, bingo, Pagi un vizuālās tēmas.",
  "head.pro.title": "Cenas · Pro | Lecturameter",
- "head.pro.description": "Izmēģini Pro funkcijas 7 dienas bez kartes. Izmēģinājuma beigās, pat ja Pro nenopērc, tu saņem vienu Pro tēmu pēc savas izvēles bez maksas."
+ "head.pro.description": "Izmēģini Pro funkcijas 7 dienas bez kartes. Izmēģinājuma beigās, pat ja Pro nenopērc, tu saņem vienu Pro tēmu pēc savas izvēles bez maksas.",
+ "home.trust.title": "Tava bibliotēka ir tava",
+ "home.trust.p1": "Konts nav vajadzīgs",
+ "home.trust.p2": "Tavi dati paliek tavā tālrunī",
+ "home.trust.p3": "Vietējās rezerves kopijas un Google Drive, ja vēlies",
+ "home.trust.p4": "Telemetrija ir pseidonīma, un to var izslēgt",
+ "home.universe.title": "Divas pieredzes. Viens Visums.",
+ "home.universe.sub": "Lecturameter ir modernais lasīšanas izsekotājs. Lecturameter 99 ir tā retro interpretācija: alternatīva, ne labāka, ne sliktāka.",
+ "home.universe.lm": "Modernais lasīšanas izsekotājs Android un iOS.",
+ "home.universe.lm99": "Retro versija tai pašai idejai, bez maksas Google Play un App Store.",
+ "common.nav.universe_portal": "Visuma portāls",
+ "head.universe.title": "Divas pieredzes. Viens Visums. | Lecturameter",
+ "head.universe.description": "Lecturameter ir modernais lasīšanas izsekotājs. Lecturameter 99 ir tā retro interpretācija: alternatīva, ne labāka, ne sliktāka."
 }

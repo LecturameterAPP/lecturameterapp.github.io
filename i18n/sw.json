@@ -992,9 +992,21 @@
  "head.roadmap.title": "Ramani ya njia | Lecturameter",
  "head.roadmap.description": "Changamoto za kusoma kwa jumuiya nzima, mchezo unaochezwa kwa vitabu vyako mwenyewe na Skrini ya Mwanzo mpya.",
  "head.faq.title": "Maswali yanayoulizwa mara kwa mara | Lecturameter",
- "head.faq.description": "Maswali yanayoulizwa mara kwa mara: Naweza kuleta maktaba yangu kutoka kwa programu nyingine? · Data yangu ni yangu? · Je, kuna usajili? · Inafanya kazi nje…",
+ "head.faq.description": "Maswali yanayoulizwa mara kwa mara: Naweza kuleta maktaba yangu kutoka kwa programu nyingine? · Data yangu ni yangu? · Je, kuna usajili?",
  "head.platforms.title": "Lecturameter kwenye iPhone na Android",
  "head.platforms.description": "Toleo la iPhone lina vipengele vikuu vilevile vya Android: maktaba, kipima muda cha kusoma, takwimu, changamoto, bingo, Pagi na mandhari za kuona.",
  "head.pro.title": "Bei · Pro | Lecturameter",
- "head.pro.description": "Jaribu vipengele vya Pro kwa siku 7 bila kadi. Jaribio likiisha, hata usiponunua Pro, unapata mandhari moja ya Pro bure unayochagua."
+ "head.pro.description": "Jaribu vipengele vya Pro kwa siku 7 bila kadi. Jaribio likiisha, hata usiponunua Pro, unapata mandhari moja ya Pro bure unayochagua.",
+ "home.trust.title": "Maktaba yako ni yako",
+ "home.trust.p1": "Huhitaji akaunti",
+ "home.trust.p2": "Data yako inabaki kwenye simu yako",
+ "home.trust.p3": "Nakala za ndani na Google Drive, ukitaka",
+ "home.trust.p4": "Telemetri ni ya jina bandia na unaweza kuizima",
+ "home.universe.title": "Uzoefu mbili. Ulimwengu mmoja.",
+ "home.universe.sub": "Lecturameter ni kifuatiliaji cha kisasa cha usomaji. Lecturameter 99 ni tafsiri yake ya zamani: mbadala, si bora wala si duni.",
+ "home.universe.lm": "Kifuatiliaji cha kisasa cha usomaji, cha Android na iOS.",
+ "home.universe.lm99": "Toleo la zamani la wazo lilelile, bila malipo kwenye Google Play na App Store.",
+ "common.nav.universe_portal": "Lango la Ulimwengu",
+ "head.universe.title": "Uzoefu mbili. Ulimwengu mmoja. | Lecturameter",
+ "head.universe.description": "Lecturameter ni kifuatiliaji cha kisasa cha usomaji. Lecturameter 99 ni tafsiri yake ya zamani: mbadala, si bora wala si duni."
 }
