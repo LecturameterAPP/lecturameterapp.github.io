@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Retro različica iste ideje, brezplačna v Google Play in App Store.",
  "common.nav.universe_portal": "Portal Vesolje",
  "head.universe.title": "Dve izkušnji. Eno vesolje. | Lecturameter",
- "head.universe.description": "Lecturameter je sodoben sledilnik branja. Lecturameter 99 je njegova retro reinterpretacija: alternativa, ne boljša in ne slabša."
+ "head.universe.description": "Lecturameter je sodoben sledilnik branja. Lecturameter 99 je njegova retro reinterpretacija: alternativa, ne boljša in ne slabša.",
+ "home.data.title": "Vaši podatki so vaši",
+ "home.data.sub": "Vzemite vse s seboj, kadar koli želite. Lecturameter izvozi vašo knjižnico na tri načine, vsi so v Nastavitvah, pod Varnostne kopije.",
+ "home.data.csv.title": "CSV: vaše knjige v tabeli",
+ "home.data.csv.body": "Datoteka .csv z vsemi vašimi knjigami v obliki, združljivi z Goodreads in StoryGraph. Priročna za selitev v drugo aplikacijo ali za shranjevanje seznama zunaj telefona.",
+ "home.data.json.title": "Popolna varnostna kopija (JSON)",
+ "home.data.json.body": "Vaše knjige, bralne seje, izzivi in nastavitve v eni datoteki. To obnovite, ko zamenjate telefon. Shranite jo v telefon ali v oblak: Google Drive v Androidu, iCloud v iOS.",
+ "home.data.sqlite.badge": "Novost v 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: celotna zbirka podatkov",
+ "home.data.sqlite.body": "Ena sama datoteka zbirke podatkov z 23 tabelami: knjige, izdaje, seje, zapiski, citati, ocene, oznake, izzivi, bingo in letni povzetki ter že pripravljeni pogledi po dnevih, knjigah in letih. Odprite jo z DB Browser for SQLite, Datasette ali z lastnimi skripti.",
+ "home.data.sqlite.note": "Ne vključuje naslovnic in fotografij (samo povezavo do naslovnice), vaših nastavitev ali licence Pro in je ni mogoče obnoviti v aplikaciji: za zamenjavo telefona uporabite popolno varnostno kopijo.",
+ "common.nav.discord": "Skupnost na Discordu",
+ "common.footer.discord.aria-label": "Lecturameter na Discordu"
 }

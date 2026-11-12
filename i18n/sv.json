@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "En retroversion av samma idé, gratis på Google Play och App Store.",
  "common.nav.universe_portal": "Universumportal",
  "head.universe.title": "Två upplevelser. Ett universum. | Lecturameter",
- "head.universe.description": "Lecturameter är den moderna lässpåraren. Lecturameter 99 är dess retrotolkning: ett alternativ, varken bättre eller sämre."
+ "head.universe.description": "Lecturameter är den moderna lässpåraren. Lecturameter 99 är dess retrotolkning: ett alternativ, varken bättre eller sämre.",
+ "home.data.title": "Din data är din",
+ "home.data.sub": "Ta med dig allt när du vill. Lecturameter exporterar ditt bibliotek på tre sätt, alla från Inställningar under Backups.",
+ "home.data.csv.title": "CSV: dina böcker i en tabell",
+ "home.data.csv.body": "En .csv-fil med alla dina böcker, i ett format som är kompatibelt med Goodreads och StoryGraph. Praktiskt när du vill flytta till en annan app eller spara din lista utanför telefonen.",
+ "home.data.json.title": "Fullständig säkerhetskopia (JSON)",
+ "home.data.json.body": "Dina böcker, lässessioner, utmaningar och inställningar i en enda fil. Det är den du återställer när du byter telefon. Spara den på telefonen eller i molnet: Google Drive på Android, iCloud på iOS.",
+ "home.data.sqlite.badge": "Nytt i 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: hela databasen",
+ "home.data.sqlite.body": "En enda databasfil med 23 tabeller: böcker, utgåvor, sessioner, anteckningar, citat, recensioner, taggar, utmaningar, bingo och årssammanfattningar, plus färdiga vyer per dag, bok och år. Öppna den med DB Browser for SQLite, Datasette eller egna skript.",
+ "home.data.sqlite.note": "Den innehåller inga omslag eller foton (bara länken till omslaget), inte dina inställningar och inte din Pro-licens, och den kan inte återställas i appen: när du byter telefon använder du den fullständiga säkerhetskopian.",
+ "common.nav.discord": "Discord-community",
+ "common.footer.discord.aria-label": "Lecturameter på Discord"
 }

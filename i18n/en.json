@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "A retro take on the same idea, free on Google Play and the App Store.",
  "common.nav.universe_portal": "Universe portal",
  "head.universe.title": "Two experiences. One universe. | Lecturameter",
- "head.universe.description": "Lecturameter is the modern reading tracker. Lecturameter 99 is its retro reinterpretation: an alternative, neither better nor worse."
+ "head.universe.description": "Lecturameter is the modern reading tracker. Lecturameter 99 is its retro reinterpretation: an alternative, neither better nor worse.",
+ "home.data.title": "Your data is yours",
+ "home.data.sub": "Take everything with you whenever you want. Lecturameter exports your library in three ways, all from Settings, under Backups.",
+ "home.data.csv.title": "CSV: your books in a table",
+ "home.data.csv.body": "A .csv file with all your books, in a format compatible with Goodreads and StoryGraph. Handy for moving to another app or keeping your list outside your phone.",
+ "home.data.json.title": "Full backup (JSON)",
+ "home.data.json.body": "Your books, reading sessions, challenges and settings in a single file. It is what you restore when you switch phones. Keep it on your phone or in the cloud: Google Drive on Android, iCloud on iOS.",
+ "home.data.sqlite.badge": "New in 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: the whole database",
+ "home.data.sqlite.body": "A single database file with 23 tables: books, editions, sessions, notes, quotes, reviews, tags, challenges, bingo and yearly summaries, plus ready-made views by day, book and year. Open it with DB Browser for SQLite, Datasette or your own scripts.",
+ "home.data.sqlite.note": "It leaves out covers and photos (only the cover link), your settings and your Pro license, and it cannot be restored into the app: to switch phones, use the full backup.",
+ "common.nav.discord": "Discord community",
+ "common.footer.discord.aria-label": "Lecturameter on Discord"
 }

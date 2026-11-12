@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Ugyanennek az ötletnek a retró változata, ingyenes a Google Playen és az App Store-ban.",
  "common.nav.universe_portal": "Univerzum-portál",
  "head.universe.title": "Két élmény. Egy univerzum. | Lecturameter",
- "head.universe.description": "A Lecturameter a modern olvasáskövető. A Lecturameter 99 a retró újraértelmezése: alternatíva, nem jobb és nem rosszabb."
+ "head.universe.description": "A Lecturameter a modern olvasáskövető. A Lecturameter 99 a retró újraértelmezése: alternatíva, nem jobb és nem rosszabb.",
+ "home.data.title": "Az adataid a tieid",
+ "home.data.sub": "Vidd magaddal az egészet, amikor csak akarod. A Lecturameter háromféleképpen exportálja a könyvtáradat, mindegyik a Beállításokban, a Biztonsági mentések alatt érhető el.",
+ "home.data.csv.title": "CSV: a könyveid egy táblázatban",
+ "home.data.csv.body": "Egy .csv fájl az összes könyveddel, a Goodreads és a StoryGraph által is kezelhető formátumban. Hasznos, ha másik alkalmazásra váltasz, vagy a listádat a telefonodon kívül is meg szeretnéd őrizni.",
+ "home.data.json.title": "Teljes biztonsági mentés (JSON)",
+ "home.data.json.body": "A könyveid, olvasási munkameneteid, kihívásaid és beállításaid egyetlen fájlban. Ezt állítod vissza, amikor telefont cserélsz. Tárold a telefonodon vagy a felhőben: Google Drive Androidon, iCloud iOS-en.",
+ "home.data.sqlite.badge": "Újdonság a 3.9 / iOS 1.1.0 verzióban",
+ "home.data.sqlite.title": "SQLite: a teljes adatbázis",
+ "home.data.sqlite.body": "Egyetlen adatbázisfájl 23 táblával: könyvek, kiadások, munkamenetek, jegyzetek, idézetek, értékelések, címkék, kihívások, bingó és éves összegzések, valamint kész nézetek nap, könyv és év szerint. Nyisd meg a DB Browser for SQLite, a Datasette vagy a saját szkriptjeid segítségével.",
+ "home.data.sqlite.note": "Nem tartalmaz borítókat és fotókat (csak a borító hivatkozását), a beállításaidat és a Pro licencedet, és nem állítható vissza az alkalmazásba: telefoncseréhez használd a teljes biztonsági mentést.",
+ "common.nav.discord": "Discord közösség",
+ "common.footer.discord.aria-label": "Lecturameter a Discordon"
 }

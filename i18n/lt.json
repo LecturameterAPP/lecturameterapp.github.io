@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Retro tos pačios idėjos versija, nemokama Google Play ir App Store.",
  "common.nav.universe_portal": "Visatos portalas",
  "head.universe.title": "Dvi patirtys. Viena visata. | Lecturameter",
- "head.universe.description": "Lecturameter yra modernus skaitymo sekimo įrankis. Lecturameter 99 yra jo retro interpretacija: alternatyva, nei geresnė, nei blogesnė."
+ "head.universe.description": "Lecturameter yra modernus skaitymo sekimo įrankis. Lecturameter 99 yra jo retro interpretacija: alternatyva, nei geresnė, nei blogesnė.",
+ "home.data.title": "Jūsų duomenys priklauso jums",
+ "home.data.sub": "Pasiimkite viską, kada tik norite. Lecturameter eksportuoja jūsų biblioteką trimis būdais, visi jie yra skiltyje Nustatymai, dalyje Atsarginės kopijos.",
+ "home.data.csv.title": "CSV: jūsų knygos lentelėje",
+ "home.data.csv.body": ".csv failas su visomis jūsų knygomis formatu, suderinamu su Goodreads ir StoryGraph. Patogu norint pereiti prie kitos programėlės arba saugoti sąrašą ne telefone.",
+ "home.data.json.title": "Pilna atsarginė kopija (JSON)",
+ "home.data.json.body": "Jūsų knygos, skaitymo sesijos, iššūkiai ir nustatymai viename faile. Tai atkuriate keisdami telefoną. Saugokite ją telefone arba debesyje: Google Drive sistemoje Android, iCloud sistemoje iOS.",
+ "home.data.sqlite.badge": "Naujiena 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: visa duomenų bazė",
+ "home.data.sqlite.body": "Vienas duomenų bazės failas su 23 lentelėmis: knygos, leidimai, sesijos, užrašai, citatos, atsiliepimai, žymos, iššūkiai, bingo ir metinės santraukos, taip pat paruošti rodiniai pagal dieną, knygą ir metus. Atidarykite su DB Browser for SQLite, Datasette arba savo scenarijais.",
+ "home.data.sqlite.note": "Joje nėra viršelių ir nuotraukų (tik nuoroda į viršelį), jūsų nustatymų ar Pro licencijos, ir jos negalima atkurti programėlėje: keisdami telefoną naudokite pilną atsarginę kopiją.",
+ "common.nav.discord": "Discord bendruomenė",
+ "common.footer.discord.aria-label": "Lecturameter platformoje Discord"
 }

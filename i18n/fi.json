@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Retroversio samasta ideasta, ilmainen Google Playssa ja App Storessa.",
  "common.nav.universe_portal": "Universumi-portaali",
  "head.universe.title": "Kaksi kokemusta. Yksi universumi. | Lecturameter",
- "head.universe.description": "Lecturameter on moderni lukuseuranta. Lecturameter 99 on sen retrotulkinta: vaihtoehto, ei parempi eikä huonompi."
+ "head.universe.description": "Lecturameter on moderni lukuseuranta. Lecturameter 99 on sen retrotulkinta: vaihtoehto, ei parempi eikä huonompi.",
+ "home.data.title": "Tietosi ovat sinun",
+ "home.data.sub": "Ota kaikki mukaasi milloin haluat. Lecturameter vie kirjastosi kolmella tavalla, kaikki Asetuksista, kohdasta Varmuuskopiot.",
+ "home.data.csv.title": "CSV: kirjasi taulukkona",
+ "home.data.csv.body": "Yksi .csv-tiedosto kaikista kirjoistasi Goodreadsin ja StoryGraphin kanssa yhteensopivassa muodossa. Kätevä, kun siirryt toiseen sovellukseen tai haluat säilyttää listasi puhelimen ulkopuolella.",
+ "home.data.json.title": "Täysi varmuuskopio (JSON)",
+ "home.data.json.body": "Kirjasi, lukukerrat, haasteet ja asetukset yhdessä tiedostossa. Se palautetaan, kun vaihdat puhelinta. Säilytä se puhelimessa tai pilvessä: Google Drive Androidilla, iCloud iOS:llä.",
+ "home.data.sqlite.badge": "Uutta versiossa 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: koko tietokanta",
+ "home.data.sqlite.body": "Yksi tietokantatiedosto, jossa on 23 taulua: kirjat, painokset, lukukerrat, muistiinpanot, lainaukset, arvostelut, tunnisteet, haasteet, bingo ja vuosiyhteenvedot sekä valmiit näkymät päivittäin, kirjoittain ja vuosittain. Avaa se DB Browser for SQLitella, Datasetella tai omilla skripteilläsi.",
+ "home.data.sqlite.note": "Siinä ei ole kansikuvia eikä valokuvia (vain kansilinkki), asetuksiasi eikä Pro-lisenssiäsi, eikä sitä voi palauttaa sovellukseen: puhelinta vaihtaessasi käytä täyttä varmuuskopiota.",
+ "common.nav.discord": "Discord-yhteisö",
+ "common.footer.discord.aria-label": "Lecturameter Discordissa"
 }

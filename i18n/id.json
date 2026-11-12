@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Versi retro dari ide yang sama, gratis di Google Play dan App Store.",
  "common.nav.universe_portal": "Portal Semesta",
  "head.universe.title": "Dua pengalaman. Satu semesta. | Lecturameter",
- "head.universe.description": "Lecturameter adalah pelacak bacaan modern. Lecturameter 99 adalah tafsir retronya: sebuah alternatif, tidak lebih baik dan tidak lebih buruk."
+ "head.universe.description": "Lecturameter adalah pelacak bacaan modern. Lecturameter 99 adalah tafsir retronya: sebuah alternatif, tidak lebih baik dan tidak lebih buruk.",
+ "home.data.title": "Datamu adalah milikmu",
+ "home.data.sub": "Bawa semuanya kapan pun kamu mau. Lecturameter mengekspor pustakamu dengan tiga cara, semuanya dari Pengaturan, di Cadangan.",
+ "home.data.csv.title": "CSV: bukumu dalam satu tabel",
+ "home.data.csv.body": "Berkas .csv berisi semua bukumu, dalam format yang kompatibel dengan Goodreads dan StoryGraph. Berguna untuk pindah ke aplikasi lain atau menyimpan daftarmu di luar ponsel.",
+ "home.data.json.title": "Cadangan lengkap (JSON)",
+ "home.data.json.body": "Buku, sesi membaca, tantangan, dan pengaturanmu dalam satu berkas. Inilah yang kamu pulihkan saat berganti ponsel. Simpan di ponsel atau di cloud: Google Drive di Android, iCloud di iOS.",
+ "home.data.sqlite.badge": "Baru di 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: seluruh basis data",
+ "home.data.sqlite.body": "Satu berkas basis data dengan 23 tabel: buku, edisi, sesi, catatan, kutipan, ulasan, tag, tantangan, bingo, dan ringkasan tahunan, plus tampilan siap pakai per hari, buku, dan tahun. Buka dengan DB Browser for SQLite, Datasette, atau skripmu sendiri.",
+ "home.data.sqlite.note": "Tidak menyertakan sampul dan foto (hanya tautan sampul), pengaturanmu, maupun lisensi Pro-mu, dan tidak dapat dipulihkan ke aplikasi: untuk berganti ponsel, gunakan cadangan lengkap.",
+ "common.nav.discord": "Komunitas Discord",
+ "common.footer.discord.aria-label": "Lecturameter di Discord"
 }

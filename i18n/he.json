@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "גרסת רטרו לאותו רעיון, בחינם ב-Google Play וב-App Store.",
  "common.nav.universe_portal": "שער היקום",
  "head.universe.title": "שתי חוויות. יקום אחד. | Lecturameter",
- "head.universe.description": "Lecturameter הוא מעקב הקריאה המודרני. Lecturameter 99 הוא הפרשנות הרטרו שלו: חלופה, לא טובה ולא גרועה יותר."
+ "head.universe.description": "Lecturameter הוא מעקב הקריאה המודרני. Lecturameter 99 הוא הפרשנות הרטרו שלו: חלופה, לא טובה ולא גרועה יותר.",
+ "home.data.title": "הנתונים שלך שייכים לך",
+ "home.data.sub": "קח הכול איתך מתי שתרצה. Lecturameter מייצאת את הספרייה שלך בשלוש דרכים, כולן מתוך הגדרות, בגיבויים.",
+ "home.data.csv.title": "CSV: הספרים שלך בטבלה",
+ "home.data.csv.body": "קובץ csv. עם כל הספרים שלך, בפורמט תואם ל-Goodreads ול-StoryGraph. שימושי למעבר לאפליקציה אחרת או לשמירת הרשימה מחוץ לטלפון.",
+ "home.data.json.title": "גיבוי מלא (JSON)",
+ "home.data.json.body": "הספרים, סשני הקריאה, האתגרים וההגדרות שלך בקובץ אחד. זה מה ששחזרים כשמחליפים טלפון. שמור אותו בטלפון או בענן: Google Drive ב-Android, iCloud ב-iOS.",
+ "home.data.sqlite.badge": "חדש ב-3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: מסד הנתונים כולו",
+ "home.data.sqlite.body": "קובץ מסד נתונים יחיד עם 23 טבלאות: ספרים, מהדורות, סשנים, הערות, ציטוטים, ביקורות, תגיות, אתגרים, בינגו וסיכומים שנתיים, וגם תצוגות מוכנות לפי יום, ספר ושנה. פתח אותו עם DB Browser for SQLite, Datasette או הסקריפטים שלך.",
+ "home.data.sqlite.note": "הוא אינו כולל עטיפות ותמונות (רק הקישור לעטיפה), את ההגדרות שלך ואת רישיון ה-Pro שלך, ואי אפשר לשחזר אותו באפליקציה: כדי להחליף טלפון, השתמש בגיבוי המלא.",
+ "common.nav.discord": "קהילת Discord",
+ "common.footer.discord.aria-label": "Lecturameter ב-Discord"
 }

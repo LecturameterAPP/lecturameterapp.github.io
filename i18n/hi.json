@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "उसी विचार का रेट्रो रूप, Google Play और App Store पर मुफ़्त।",
  "common.nav.universe_portal": "यूनिवर्स पोर्टल",
  "head.universe.title": "दो अनुभव। एक ब्रह्मांड। | Lecturameter",
- "head.universe.description": "Lecturameter आधुनिक रीडिंग ट्रैकर है। Lecturameter 99 उसकी रेट्रो पुनर्व्याख्या है: एक विकल्प, न बेहतर न कमतर।"
+ "head.universe.description": "Lecturameter आधुनिक रीडिंग ट्रैकर है। Lecturameter 99 उसकी रेट्रो पुनर्व्याख्या है: एक विकल्प, न बेहतर न कमतर।",
+ "home.data.title": "आपका डेटा आपका है",
+ "home.data.sub": "जब चाहें, सब कुछ अपने साथ ले जाएँ। Lecturameter आपकी लाइब्रेरी को तीन तरीकों से एक्सपोर्ट करता है, सभी सेटिंग्स में, बैकअप के अंतर्गत।",
+ "home.data.csv.title": "CSV: आपकी किताबें एक तालिका में",
+ "home.data.csv.body": "आपकी सभी किताबों वाली एक .csv फ़ाइल, Goodreads और StoryGraph के अनुकूल फ़ॉर्मैट में। किसी दूसरे ऐप में जाने या अपनी सूची फ़ोन के बाहर रखने के लिए उपयोगी।",
+ "home.data.json.title": "पूरा बैकअप (JSON)",
+ "home.data.json.body": "आपकी किताबें, पढ़ने के सत्र, चैलेंज और सेटिंग्स एक ही फ़ाइल में। फ़ोन बदलते समय आप यही रीस्टोर करते हैं। इसे फ़ोन में या क्लाउड में रखें: Android पर Google Drive, iOS पर iCloud।",
+ "home.data.sqlite.badge": "3.9 / iOS 1.1.0 में नया",
+ "home.data.sqlite.title": "SQLite: पूरा डेटाबेस",
+ "home.data.sqlite.body": "23 तालिकाओं वाली एक ही डेटाबेस फ़ाइल: किताबें, संस्करण, सत्र, नोट्स, उद्धरण, समीक्षाएँ, टैग, चैलेंज, बिंगो और वार्षिक सारांश, साथ ही दिन, किताब और वर्ष के अनुसार तैयार व्यू। इसे DB Browser for SQLite, Datasette या अपनी स्क्रिप्ट से खोलें।",
+ "home.data.sqlite.note": "इसमें कवर और फ़ोटो (केवल कवर का लिंक), आपकी सेटिंग्स और आपका Pro लाइसेंस शामिल नहीं हैं, और इसे ऐप में रीस्टोर नहीं किया जा सकता: फ़ोन बदलने के लिए पूरा बैकअप इस्तेमाल करें।",
+ "common.nav.discord": "Discord समुदाय",
+ "common.footer.discord.aria-label": "Discord पर Lecturameter"
 }

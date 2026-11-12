@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Une version rétro de la même idée, gratuite sur Google Play et l'App Store.",
  "common.nav.universe_portal": "Portail Univers",
  "head.universe.title": "Deux expériences. Un même univers. | Lecturameter",
- "head.universe.description": "Lecturameter est le suivi de lecture moderne. Lecturameter 99 en est la réinterprétation rétro : une alternative, ni meilleure ni moins bonne."
+ "head.universe.description": "Lecturameter est le suivi de lecture moderne. Lecturameter 99 en est la réinterprétation rétro : une alternative, ni meilleure ni moins bonne.",
+ "home.data.title": "Vos données vous appartiennent",
+ "home.data.sub": "Emportez tout quand vous voulez. Lecturameter exporte votre bibliothèque de trois façons, toutes depuis Réglages, dans Sauvegardes.",
+ "home.data.csv.title": "CSV : vos livres dans un tableau",
+ "home.data.csv.body": "Un fichier .csv avec tous vos livres, dans un format compatible avec Goodreads et StoryGraph. Pratique pour passer à une autre appli ou garder votre liste en dehors de votre téléphone.",
+ "home.data.json.title": "Sauvegarde complète (JSON)",
+ "home.data.json.body": "Vos livres, séances de lecture, défis et réglages dans un seul fichier. C'est ce que vous restaurez quand vous changez de téléphone. Gardez-le sur votre téléphone ou dans le cloud : Google Drive sur Android, iCloud sur iOS.",
+ "home.data.sqlite.badge": "Nouveau dans la 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite : toute la base de données",
+ "home.data.sqlite.body": "Un seul fichier de base de données avec 23 tables : livres, éditions, séances, notes, citations, avis, étiquettes, défis, bingo et bilans annuels, ainsi que des vues prêtes à l'emploi par jour, livre et année. Ouvrez-le avec DB Browser for SQLite, Datasette ou vos propres scripts.",
+ "home.data.sqlite.note": "Il n'inclut ni les couvertures ni les photos (seulement le lien de la couverture), ni vos réglages, ni votre licence Pro, et il ne peut pas être restauré dans l'appli : pour changer de téléphone, utilisez la sauvegarde complète.",
+ "common.nav.discord": "Communauté Discord",
+ "common.footer.discord.aria-label": "Lecturameter sur Discord"
 }

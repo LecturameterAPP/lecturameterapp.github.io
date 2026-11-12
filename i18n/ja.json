@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "同じ発想のレトロ版。Google PlayとApp Storeで無料。",
  "common.nav.universe_portal": "ユニバースポータル",
  "head.universe.title": "2つの体験。ひとつの世界。 | Lecturameter",
- "head.universe.description": "Lecturameterは現代的な読書トラッカー。Lecturameter 99はそのレトロな再解釈です。優劣ではなく、もうひとつの選択肢です。"
+ "head.universe.description": "Lecturameterは現代的な読書トラッカー。Lecturameter 99はそのレトロな再解釈です。優劣ではなく、もうひとつの選択肢です。",
+ "home.data.title": "データはあなたのもの",
+ "home.data.sub": "いつでもすべてを持ち出せます。Lecturameterは3つの方法でライブラリを書き出せます。いずれも「設定」の「バックアップ」から行えます。",
+ "home.data.csv.title": "CSV:本を表形式で",
+ "home.data.csv.body": "すべての本を収めた.csvファイルで、GoodreadsやStoryGraphと互換性のある形式です。別のアプリへの移行や、スマートフォンの外にリストを保管するのに便利です。",
+ "home.data.json.title": "完全バックアップ(JSON)",
+ "home.data.json.body": "本、読書セッション、チャレンジ、設定を1つのファイルにまとめます。機種変更のときに復元するのがこのファイルです。スマートフォン内またはクラウドに保存できます。AndroidではGoogle Drive、iOSではiCloudです。",
+ "home.data.sqlite.badge": "3.9 / iOS 1.1.0の新機能",
+ "home.data.sqlite.title": "SQLite:データベースまるごと",
+ "home.data.sqlite.body": "23個のテーブルを持つ1つのデータベースファイルです。本、版、セッション、メモ、引用、レビュー、タグ、チャレンジ、ビンゴ、年間サマリーに加え、日別・本別・年別のすぐ使えるビューも含まれます。DB Browser for SQLite、Datasette、または自作のスクリプトで開けます。",
+ "home.data.sqlite.note": "表紙や写真(表紙へのリンクのみ)、設定、Proライセンスは含まれず、アプリへの復元もできません。機種変更の際は完全バックアップを使ってください。",
+ "common.nav.discord": "Discordコミュニティ",
+ "common.footer.discord.aria-label": "LecturameterのDiscord"
 }

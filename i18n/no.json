@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "En retroversjon av samme idé, gratis på Google Play og App Store.",
  "common.nav.universe_portal": "Univers-portal",
  "head.universe.title": "To opplevelser. Ett univers. | Lecturameter",
- "head.universe.description": "Lecturameter er den moderne lesetrackeren. Lecturameter 99 er retrotolkningen av den: et alternativ, verken bedre eller dårligere."
+ "head.universe.description": "Lecturameter er den moderne lesetrackeren. Lecturameter 99 er retrotolkningen av den: et alternativ, verken bedre eller dårligere.",
+ "home.data.title": "Dataene dine er dine",
+ "home.data.sub": "Ta med deg alt når du vil. Lecturameter eksporterer biblioteket ditt på tre måter, alle fra Innstillinger, under Sikkerhetskopier.",
+ "home.data.csv.title": "CSV: bøkene dine i en tabell",
+ "home.data.csv.body": "En .csv-fil med alle bøkene dine, i et format som er kompatibelt med Goodreads og StoryGraph. Praktisk for å bytte til en annen app eller ha listen din utenfor telefonen.",
+ "home.data.json.title": "Full sikkerhetskopi (JSON)",
+ "home.data.json.body": "Bøkene, leseøktene, utfordringene og innstillingene dine i én enkelt fil. Dette er det du gjenoppretter når du bytter telefon. Ta vare på den på telefonen eller i skyen: Google Drive på Android, iCloud på iOS.",
+ "home.data.sqlite.badge": "Nytt i 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: hele databasen",
+ "home.data.sqlite.body": "Én enkelt databasefil med 23 tabeller: bøker, utgaver, økter, notater, sitater, anmeldelser, merkelapper, utfordringer, bingo og årsoppsummeringer, pluss ferdige visninger per dag, bok og år. Åpne den med DB Browser for SQLite, Datasette eller dine egne skript.",
+ "home.data.sqlite.note": "Den inkluderer ikke omslag og bilder (bare lenken til omslaget), innstillingene dine eller Pro-lisensen din, og den kan ikke gjenopprettes i appen: for å bytte telefon, bruk den fulle sikkerhetskopien.",
+ "common.nav.discord": "Discord-fellesskap",
+ "common.footer.discord.aria-label": "Lecturameter på Discord"
 }

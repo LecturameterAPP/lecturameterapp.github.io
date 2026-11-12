@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Aynı fikrin retro hali, Google Play ve App Store'da ücretsiz.",
  "common.nav.universe_portal": "Evren portalı",
  "head.universe.title": "İki deneyim. Tek evren. | Lecturameter",
- "head.universe.description": "Lecturameter modern okuma takipçisidir. Lecturameter 99 onun retro yorumudur: bir alternatif, ne daha iyi ne daha kötü."
+ "head.universe.description": "Lecturameter modern okuma takipçisidir. Lecturameter 99 onun retro yorumudur: bir alternatif, ne daha iyi ne daha kötü.",
+ "home.data.title": "Verileriniz sizindir",
+ "home.data.sub": "İstediğiniz zaman her şeyi yanınıza alın. Lecturameter kütüphanenizi üç şekilde dışa aktarır, hepsi Ayarlar içinde Backups bölümünden.",
+ "home.data.csv.title": "CSV: kitaplarınız bir tabloda",
+ "home.data.csv.body": "Tüm kitaplarınızı içeren, Goodreads ve StoryGraph ile uyumlu biçimde bir .csv dosyası. Başka bir uygulamaya geçmek veya listenizi telefonunuzun dışında saklamak için kullanışlıdır.",
+ "home.data.json.title": "Tam yedek (JSON)",
+ "home.data.json.body": "Kitaplarınız, okuma oturumlarınız, hedefleriniz ve ayarlarınız tek bir dosyada. Telefon değiştirdiğinizde geri yüklediğiniz dosya budur. Telefonunuzda veya bulutta saklayın: Android'de Google Drive, iOS'ta iCloud.",
+ "home.data.sqlite.badge": "3.9 / iOS 1.1.0 ile yeni",
+ "home.data.sqlite.title": "SQLite: tüm veritabanı",
+ "home.data.sqlite.body": "23 tablodan oluşan tek bir veritabanı dosyası: kitaplar, baskılar, oturumlar, notlar, alıntılar, incelemeler, etiketler, hedefler, bingo ve yıllık özetler; ayrıca güne, kitaba ve yıla göre hazır görünümler. DB Browser for SQLite, Datasette veya kendi betiklerinizle açabilirsiniz.",
+ "home.data.sqlite.note": "Kapakları ve fotoğrafları (yalnızca kapak bağlantısı), ayarlarınızı ve Pro lisansınızı içermez ve uygulamaya geri yüklenemez: telefon değiştirmek için tam yedeği kullanın.",
+ "common.nav.discord": "Discord topluluğu",
+ "common.footer.discord.aria-label": "Discord'da Lecturameter"
 }

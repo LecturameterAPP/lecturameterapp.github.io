@@ -453,6 +453,35 @@
     </div>
 </section>
 
+<!-- 5b. TUS DATOS SON TUYOS -->
+<section class="band band-alt" id="data" aria-labelledby="data-title">
+    <div class="container">
+        <div class="section-head">
+            <h2 id="data-title">{{home.data.title}}</h2>
+            <p>{{home.data.sub}}</p>
+        </div>
+        <div class="data-grid">
+            <div class="data-card reveal-up">
+                <div class="data-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></svg></div>
+                <h3>{{home.data.csv.title}}</h3>
+                <p>{{home.data.csv.body}}</p>
+            </div>
+            <div class="data-card reveal-up d1">
+                <div class="data-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-.6-7.96A6 6 0 0 1 18 9.5a4.2 4.2 0 0 1-.5 8.5H7z"/><path d="M12 11v5M9.8 13.8L12 16l2.2-2.2"/></svg></div>
+                <h3>{{home.data.json.title}}</h3>
+                <p>{{home.data.json.body}}</p>
+            </div>
+            <div class="data-card data-card-new reveal-up d2">
+                <span class="pricing-badge">{{home.data.sqlite.badge}}</span>
+                <div class="data-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.66 3.58 3 8 3s8-1.34 8-3v-13M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg></div>
+                <h3>{{home.data.sqlite.title}}</h3>
+                <p>{{home.data.sqlite.body}}</p>
+                <p class="data-note">{{home.data.sqlite.note}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- 4. PAGI + THEMES -->
 <section class="band" id="{{anchor.themes}}">
     <div class="container">

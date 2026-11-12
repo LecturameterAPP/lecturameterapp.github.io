@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Una versió retro de la mateixa idea, gratuïta a Google Play i l'App Store.",
  "common.nav.universe_portal": "Portal Univers",
  "head.universe.title": "Dues experiències. Un mateix univers. | Lecturameter",
- "head.universe.description": "Lecturameter és el registre de lectura modern. Lecturameter 99 n'és la reinterpretació retro: una alternativa, ni millor ni pitjor."
+ "head.universe.description": "Lecturameter és el registre de lectura modern. Lecturameter 99 n'és la reinterpretació retro: una alternativa, ni millor ni pitjor.",
+ "home.data.title": "Les teves dades són teves",
+ "home.data.sub": "Emporta-t'ho tot quan vulguis. Lecturameter exporta la teva biblioteca de tres maneres, totes des d'Configuració, a Còpies de seguretat.",
+ "home.data.csv.title": "CSV: els teus llibres en una taula",
+ "home.data.csv.body": "Un fitxer .csv amb tots els teus llibres, en un format compatible amb Goodreads i StoryGraph. Útil per passar-los a una altra app o desar la teva llista fora del mòbil.",
+ "home.data.json.title": "Còpia de seguretat completa (JSON)",
+ "home.data.json.body": "Els teus llibres, sessions de lectura, reptes i configuració en un sol fitxer. És el que restaures quan canvies de mòbil. Desa'l al telèfon o al núvol: Google Drive a Android, iCloud a iOS.",
+ "home.data.sqlite.badge": "Novetat de 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: tota la base de dades",
+ "home.data.sqlite.body": "Un únic fitxer de base de dades amb 23 taules: llibres, edicions, sessions, notes, cites, ressenyes, etiquetes, reptes, bingo i resums anuals, a més de vistes llestes per usar per dia, llibre i any. Obre'l amb DB Browser for SQLite, Datasette o els teus propis scripts.",
+ "home.data.sqlite.note": "No inclou cobertes ni fotos (només l'enllaç de la coberta), la teva configuració ni la teva llicència Pro, i no es pot restaurar a l'app: per canviar de mòbil, fes servir la còpia de seguretat completa.",
+ "common.nav.discord": "Comunitat a Discord",
+ "common.footer.discord.aria-label": "Lecturameter a Discord"
 }

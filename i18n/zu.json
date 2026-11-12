@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Uhlobo lwakudala lomqondo ofanayo, mahhala ku-Google Play ne-App Store.",
  "common.nav.universe_portal": "Isango leNdawo Yonke",
  "head.universe.title": "Okuhlangenwe nakho okubili. Indawo yonke eyodwa. | Lecturameter",
- "head.universe.description": "I-Lecturameter iyisilandeli sokufunda sesimanje. I-Lecturameter 99 iwukuhunyushwa kwayo kwakudala: enye indlela, hhayi engcono noma embi kakhulu."
+ "head.universe.description": "I-Lecturameter iyisilandeli sokufunda sesimanje. I-Lecturameter 99 iwukuhunyushwa kwayo kwakudala: enye indlela, hhayi engcono noma embi kakhulu.",
+ "home.data.title": "Idatha yakho eyakho",
+ "home.data.sub": "Thatha konke nawe noma nini lapho ufuna. I-Lecturameter ithumela ilabhulali yakho ngezindlela ezintathu, konke kusuka kuMasethingi, ngaphansi kwe-Backups.",
+ "home.data.csv.title": "I-CSV: izincwadi zakho kuthebula",
+ "home.data.csv.body": "Ifayela le-.csv elinazo zonke izincwadi zakho, ngefomethi ehambisana ne-Goodreads ne-StoryGraph. Iyasiza uma uthutha uye kolunye uhlelo lokusebenza noma ugcina uhlu lwakho ngaphandle kocingo lwakho.",
+ "home.data.json.title": "Ikhophi yasenqolobaneni egcwele (JSON)",
+ "home.data.json.body": "Izincwadi zakho, amasesho okufunda, izinselelo namasethingi kufayela elilodwa. Yilokhu ukubuyisela uma ushintsha ifoni. Igcine efonini yakho noma efwini: i-Google Drive ku-Android, i-iCloud ku-iOS.",
+ "home.data.sqlite.badge": "Kusha ku-3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "I-SQLite: yonke i-database",
+ "home.data.sqlite.body": "Ifayela elilodwa le-database elinamatafula angu-23: izincwadi, izinhlobo, amasesho, amanothi, imibhalo ecashunwe, uhlolojwayelo, omaka, izinselelo, i-bingo nezifinyezo zonyaka, kanye nokubukwa okulungisiwe ngosuku, incwadi nonyaka. Yivule nge-DB Browser for SQLite, i-Datasette noma izikripthi zakho.",
+ "home.data.sqlite.note": "Ayifaki izikhava nezithombe (kuphela isixhumanisi sesikhava), amasethingi akho nelayisense yakho ye-Pro, futhi ayikwazi ukubuyiselwa uhlelweni lokusebenza: ukushintsha ifoni, sebenzisa ikhophi yasenqolobaneni egcwele.",
+ "common.nav.discord": "Umphakathi we-Discord",
+ "common.footer.discord.aria-label": "I-Lecturameter ku-Discord"
 }

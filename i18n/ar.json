@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "نسخة بطابع قديم من الفكرة نفسها، مجانية على Google Play وApp Store.",
  "common.nav.universe_portal": "بوابة الكون",
  "head.universe.title": "تجربتان. كون واحد. | Lecturameter",
- "head.universe.description": "Lecturameter هو متتبع القراءة الحديث. Lecturameter 99 هو إعادة تفسيره بالطابع القديم: بديل، لا أفضل ولا أسوأ."
+ "head.universe.description": "Lecturameter هو متتبع القراءة الحديث. Lecturameter 99 هو إعادة تفسيره بالطابع القديم: بديل، لا أفضل ولا أسوأ.",
+ "home.data.title": "بياناتك ملكك",
+ "home.data.sub": "خذ كل شيء معك متى شئت. يصدّر Lecturameter مكتبتك بثلاث طرق، كلها من الإعدادات، ضمن النسخ الاحتياطية.",
+ "home.data.csv.title": "CSV: كتبك في جدول",
+ "home.data.csv.body": "ملف .csv يضم جميع كتبك، بصيغة متوافقة مع Goodreads وStoryGraph. مفيد للانتقال إلى تطبيق آخر أو لحفظ قائمتك خارج هاتفك.",
+ "home.data.json.title": "نسخة احتياطية كاملة (JSON)",
+ "home.data.json.body": "كتبك وجلسات القراءة والتحديات والإعدادات في ملف واحد. هذا ما تستعيده عند تغيير هاتفك. احفظه على هاتفك أو في السحابة: Google Drive على Android، وiCloud على iOS.",
+ "home.data.sqlite.badge": "جديد في 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: قاعدة البيانات بالكامل",
+ "home.data.sqlite.body": "ملف قاعدة بيانات واحد يضم 23 جدولًا: الكتب والإصدارات والجلسات والملاحظات والاقتباسات والمراجعات والوسوم والتحديات والبينغو والملخصات السنوية، إضافةً إلى عروض جاهزة حسب اليوم والكتاب والسنة. افتحه باستخدام DB Browser for SQLite أو Datasette أو نصوصك البرمجية الخاصة.",
+ "home.data.sqlite.note": "لا يتضمن الأغلفة والصور (رابط الغلاف فقط) ولا إعداداتك ولا ترخيص Pro، ولا يمكن استعادته في التطبيق: لتغيير الهاتف، استخدم النسخة الاحتياطية الكاملة.",
+ "common.nav.discord": "مجتمع Discord",
+ "common.footer.discord.aria-label": "Lecturameter على Discord"
 }

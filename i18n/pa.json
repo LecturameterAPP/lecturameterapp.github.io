@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "ਉਸੇ ਵਿਚਾਰ ਦਾ ਰੈਟਰੋ ਰੂਪ, Google Play ਅਤੇ App Store ਉੱਤੇ ਮੁਫ਼ਤ।",
  "common.nav.universe_portal": "ਯੂਨੀਵਰਸ ਪੋਰਟਲ",
  "head.universe.title": "ਦੋ ਅਨੁਭਵ। ਇੱਕ ਬ੍ਰਹਿਮੰਡ। | Lecturameter",
- "head.universe.description": "Lecturameter ਆਧੁਨਿਕ ਪੜ੍ਹਾਈ ਟ੍ਰੈਕਰ ਹੈ। Lecturameter 99 ਉਸਦੀ ਰੈਟਰੋ ਪੁਨਰ-ਵਿਆਖਿਆ ਹੈ: ਇੱਕ ਬਦਲ, ਨਾ ਬਿਹਤਰ ਨਾ ਮਾੜਾ।"
+ "head.universe.description": "Lecturameter ਆਧੁਨਿਕ ਪੜ੍ਹਾਈ ਟ੍ਰੈਕਰ ਹੈ। Lecturameter 99 ਉਸਦੀ ਰੈਟਰੋ ਪੁਨਰ-ਵਿਆਖਿਆ ਹੈ: ਇੱਕ ਬਦਲ, ਨਾ ਬਿਹਤਰ ਨਾ ਮਾੜਾ।",
+ "home.data.title": "ਤੁਹਾਡਾ ਡੇਟਾ ਤੁਹਾਡਾ ਹੀ ਹੈ",
+ "home.data.sub": "ਜਦੋਂ ਚਾਹੋ ਸਭ ਕੁਝ ਆਪਣੇ ਨਾਲ ਲੈ ਜਾਓ। Lecturameter ਤੁਹਾਡੀ ਲਾਇਬ੍ਰੇਰੀ ਨੂੰ ਤਿੰਨ ਤਰੀਕਿਆਂ ਨਾਲ ਐਕਸਪੋਰਟ ਕਰਦਾ ਹੈ, ਸਭ ਸੈਟਿੰਗਾਂ ਵਿੱਚ, ਬੈਕਅੱਪ ਹੇਠਾਂ।",
+ "home.data.csv.title": "CSV: ਤੁਹਾਡੀਆਂ ਕਿਤਾਬਾਂ ਇੱਕ ਟੇਬਲ ਵਿੱਚ",
+ "home.data.csv.body": "ਤੁਹਾਡੀਆਂ ਸਾਰੀਆਂ ਕਿਤਾਬਾਂ ਵਾਲੀ ਇੱਕ .csv ਫਾਈਲ, Goodreads ਅਤੇ StoryGraph ਨਾਲ ਅਨੁਕੂਲ ਫਾਰਮੈਟ ਵਿੱਚ। ਕਿਸੇ ਹੋਰ ਐਪ ਵਿੱਚ ਜਾਣ ਜਾਂ ਆਪਣੀ ਸੂਚੀ ਨੂੰ ਫ਼ੋਨ ਤੋਂ ਬਾਹਰ ਰੱਖਣ ਲਈ ਲਾਭਦਾਇਕ।",
+ "home.data.json.title": "ਪੂਰਾ ਬੈਕਅੱਪ (JSON)",
+ "home.data.json.body": "ਤੁਹਾਡੀਆਂ ਕਿਤਾਬਾਂ, ਪੜ੍ਹਨ ਦੇ ਸੈਸ਼ਨ, ਚੁਣੌਤੀਆਂ ਅਤੇ ਸੈਟਿੰਗਾਂ ਇੱਕੋ ਫਾਈਲ ਵਿੱਚ। ਫ਼ੋਨ ਬਦਲਣ ਵੇਲੇ ਤੁਸੀਂ ਇਹੀ ਰੀਸਟੋਰ ਕਰਦੇ ਹੋ। ਇਸਨੂੰ ਫ਼ੋਨ ਜਾਂ ਕਲਾਊਡ ਵਿੱਚ ਰੱਖੋ: Android ਉੱਤੇ Google Drive, iOS ਉੱਤੇ iCloud।",
+ "home.data.sqlite.badge": "3.9 / iOS 1.1.0 ਵਿੱਚ ਨਵਾਂ",
+ "home.data.sqlite.title": "SQLite: ਪੂਰਾ ਡੇਟਾਬੇਸ",
+ "home.data.sqlite.body": "23 ਟੇਬਲਾਂ ਵਾਲੀ ਇੱਕ ਡੇਟਾਬੇਸ ਫਾਈਲ: ਕਿਤਾਬਾਂ, ਸੰਸਕਰਣ, ਸੈਸ਼ਨ, ਨੋਟਸ, ਹਵਾਲੇ, ਸਮੀਖਿਆਵਾਂ, ਟੈਗ, ਚੁਣੌਤੀਆਂ, ਬਿੰਗੋ ਅਤੇ ਸਾਲਾਨਾ ਸਾਰ, ਨਾਲ ਹੀ ਦਿਨ, ਕਿਤਾਬ ਅਤੇ ਸਾਲ ਅਨੁਸਾਰ ਤਿਆਰ ਵਿਊ। ਇਸਨੂੰ DB Browser for SQLite, Datasette ਜਾਂ ਆਪਣੀਆਂ ਸਕ੍ਰਿਪਟਾਂ ਨਾਲ ਖੋਲ੍ਹੋ।",
+ "home.data.sqlite.note": "ਇਸ ਵਿੱਚ ਕਵਰ ਅਤੇ ਫ਼ੋਟੋਆਂ (ਸਿਰਫ਼ ਕਵਰ ਦਾ ਲਿੰਕ), ਤੁਹਾਡੀਆਂ ਸੈਟਿੰਗਾਂ ਅਤੇ ਤੁਹਾਡਾ Pro ਲਾਇਸੰਸ ਸ਼ਾਮਲ ਨਹੀਂ ਹਨ, ਅਤੇ ਇਸਨੂੰ ਐਪ ਵਿੱਚ ਰੀਸਟੋਰ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ: ਫ਼ੋਨ ਬਦਲਣ ਲਈ ਪੂਰਾ ਬੈਕਅੱਪ ਵਰਤੋ।",
+ "common.nav.discord": "Discord ਕਮਿਊਨਿਟੀ",
+ "common.footer.discord.aria-label": "Discord ਉੱਤੇ Lecturameter"
 }

@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Phiên bản retro của cùng ý tưởng, miễn phí trên Google Play và App Store.",
  "common.nav.universe_portal": "Cổng Vũ trụ",
  "head.universe.title": "Hai trải nghiệm. Một vũ trụ. | Lecturameter",
- "head.universe.description": "Lecturameter là trình theo dõi đọc sách hiện đại. Lecturameter 99 là bản diễn giải retro của nó: một lựa chọn khác, không hơn không kém."
+ "head.universe.description": "Lecturameter là trình theo dõi đọc sách hiện đại. Lecturameter 99 là bản diễn giải retro của nó: một lựa chọn khác, không hơn không kém.",
+ "home.data.title": "Dữ liệu của bạn là của bạn",
+ "home.data.sub": "Mang mọi thứ đi bất cứ khi nào bạn muốn. Lecturameter xuất thư viện của bạn theo ba cách, tất cả đều từ Cài đặt, trong mục Sao lưu.",
+ "home.data.csv.title": "CSV: sách của bạn trong một bảng",
+ "home.data.csv.body": "Một tệp .csv chứa toàn bộ sách của bạn, theo định dạng tương thích với Goodreads và StoryGraph. Tiện để chuyển sang ứng dụng khác hoặc lưu danh sách bên ngoài điện thoại.",
+ "home.data.json.title": "Sao lưu đầy đủ (JSON)",
+ "home.data.json.body": "Sách, phiên đọc, thử thách và cài đặt của bạn trong một tệp duy nhất. Đây là thứ bạn khôi phục khi đổi điện thoại. Hãy lưu trên điện thoại hoặc trên đám mây: Google Drive trên Android, iCloud trên iOS.",
+ "home.data.sqlite.badge": "Mới trong 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: toàn bộ cơ sở dữ liệu",
+ "home.data.sqlite.body": "Một tệp cơ sở dữ liệu duy nhất với 23 bảng: sách, ấn bản, phiên đọc, ghi chú, trích dẫn, đánh giá, thẻ, thử thách, bingo và tổng kết hằng năm, cùng các khung nhìn dựng sẵn theo ngày, sách và năm. Mở bằng DB Browser for SQLite, Datasette hoặc các tập lệnh của riêng bạn.",
+ "home.data.sqlite.note": "Tệp này không bao gồm bìa sách và ảnh (chỉ có liên kết bìa), cài đặt của bạn và giấy phép Pro, và không thể khôi phục vào ứng dụng: để đổi điện thoại, hãy dùng bản sao lưu đầy đủ.",
+ "common.nav.discord": "Cộng đồng Discord",
+ "common.footer.discord.aria-label": "Lecturameter trên Discord"
 }

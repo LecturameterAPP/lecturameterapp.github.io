@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Retro versija tai pašai idejai, bez maksas Google Play un App Store.",
  "common.nav.universe_portal": "Visuma portāls",
  "head.universe.title": "Divas pieredzes. Viens Visums. | Lecturameter",
- "head.universe.description": "Lecturameter ir modernais lasīšanas izsekotājs. Lecturameter 99 ir tā retro interpretācija: alternatīva, ne labāka, ne sliktāka."
+ "head.universe.description": "Lecturameter ir modernais lasīšanas izsekotājs. Lecturameter 99 ir tā retro interpretācija: alternatīva, ne labāka, ne sliktāka.",
+ "home.data.title": "Tavi dati pieder tev",
+ "home.data.sub": "Paņem visu sev līdzi, kad vien vēlies. Lecturameter eksportē tavu bibliotēku trīs veidos, visus no sadaļas Iestatījumi, kategorijā Dublēšana.",
+ "home.data.csv.title": "CSV: tavas grāmatas tabulā",
+ "home.data.csv.body": ".csv fails ar visām tavām grāmatām formātā, kas ir saderīgs ar Goodreads un StoryGraph. Noderīgi, lai pārceltos uz citu lietotni vai glabātu savu sarakstu ārpus telefona.",
+ "home.data.json.title": "Pilna rezerves kopija (JSON)",
+ "home.data.json.body": "Tavas grāmatas, lasīšanas sesijas, izaicinājumi un iestatījumi vienā failā. To atjauno, kad maini telefonu. Glabā to telefonā vai mākonī: Google Drive Android ierīcēs, iCloud iOS ierīcēs.",
+ "home.data.sqlite.badge": "Jaunums versijā 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: visa datubāze",
+ "home.data.sqlite.body": "Viens datubāzes fails ar 23 tabulām: grāmatas, izdevumi, sesijas, piezīmes, citāti, atsauksmes, birkas, izaicinājumi, bingo un gada kopsavilkumi, kā arī gatavi skati pēc dienas, grāmatas un gada. Atver to ar DB Browser for SQLite, Datasette vai saviem skriptiem.",
+ "home.data.sqlite.note": "Tajā nav iekļauti vāki un fotoattēli (tikai saite uz vāku), tavi iestatījumi un Pro licence, un to nevar atjaunot lietotnē: lai mainītu telefonu, izmanto pilno rezerves kopiju.",
+ "common.nav.discord": "Discord kopiena",
+ "common.footer.discord.aria-label": "Lecturameter vietnē Discord"
 }

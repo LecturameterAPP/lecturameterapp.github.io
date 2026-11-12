@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "برداشتی کلاسیک از همان ایده، رایگان در Google Play و App Store.",
  "common.nav.universe_portal": "پورتال جهان",
  "head.universe.title": "دو تجربه. یک جهان. | Lecturameter",
- "head.universe.description": "Lecturameter ردیاب مدرن مطالعه است. Lecturameter 99 بازتفسیر کلاسیک آن است: یک جایگزین، نه بهتر و نه بدتر."
+ "head.universe.description": "Lecturameter ردیاب مدرن مطالعه است. Lecturameter 99 بازتفسیر کلاسیک آن است: یک جایگزین، نه بهتر و نه بدتر.",
+ "home.data.title": "داده‌هایت مال خودت است",
+ "home.data.sub": "هر وقت خواستی همه چیز را با خودت ببر. Lecturameter کتابخانه‌ات را به سه روش صادر می‌کند، همه از بخش تنظیمات، در پشتیبان‌ها.",
+ "home.data.csv.title": "CSV: کتاب‌هایت در یک جدول",
+ "home.data.csv.body": "یک فایل .csv با همه کتاب‌هایت، در قالبی سازگار با Goodreads و StoryGraph. برای رفتن به برنامه‌ای دیگر یا نگه‌داشتن فهرستت بیرون از گوشی کاربردی است.",
+ "home.data.json.title": "پشتیبان کامل (JSON)",
+ "home.data.json.body": "کتاب‌ها، جلسه‌های مطالعه، چالش‌ها و تنظیماتت در یک فایل. وقتی گوشی‌ات را عوض می‌کنی همین را بازیابی می‌کنی. آن را روی گوشی یا در فضای ابری نگه دار: Google Drive در Android و iCloud در iOS.",
+ "home.data.sqlite.badge": "جدید در 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: کل پایگاه داده",
+ "home.data.sqlite.body": "یک فایل پایگاه داده با 23 جدول: کتاب‌ها، ویرایش‌ها، جلسه‌ها، یادداشت‌ها، نقل‌قول‌ها، نقدها، برچسب‌ها، چالش‌ها، بینگو و خلاصه‌های سالانه، به‌علاوه نماهای آماده بر اساس روز، کتاب و سال. آن را با DB Browser for SQLite، Datasette یا اسکریپت‌های خودت باز کن.",
+ "home.data.sqlite.note": "جلدها و عکس‌ها (فقط پیوند جلد)، تنظیماتت و مجوز Pro را شامل نمی‌شود و در برنامه قابل بازیابی نیست: برای عوض کردن گوشی از پشتیبان کامل استفاده کن.",
+ "common.nav.discord": "جامعه Discord",
+ "common.footer.discord.aria-label": "Lecturameter در Discord"
 }

@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Toleo la zamani la wazo lilelile, bila malipo kwenye Google Play na App Store.",
  "common.nav.universe_portal": "Lango la Ulimwengu",
  "head.universe.title": "Uzoefu mbili. Ulimwengu mmoja. | Lecturameter",
- "head.universe.description": "Lecturameter ni kifuatiliaji cha kisasa cha usomaji. Lecturameter 99 ni tafsiri yake ya zamani: mbadala, si bora wala si duni."
+ "head.universe.description": "Lecturameter ni kifuatiliaji cha kisasa cha usomaji. Lecturameter 99 ni tafsiri yake ya zamani: mbadala, si bora wala si duni.",
+ "home.data.title": "Data yako ni yako",
+ "home.data.sub": "Chukua kila kitu wakati wowote unapotaka. Lecturameter husafirisha maktaba yako kwa njia tatu, zote kutoka Mipangilio, ndani ya Backups.",
+ "home.data.csv.title": "CSV: vitabu vyako kwenye jedwali",
+ "home.data.csv.body": "Faili ya .csv yenye vitabu vyako vyote, kwa muundo unaooana na Goodreads na StoryGraph. Inafaa unapohamia programu nyingine au kuhifadhi orodha yako nje ya simu.",
+ "home.data.json.title": "Nakala kamili ya hifadhi (JSON)",
+ "home.data.json.body": "Vitabu vyako, vipindi vya kusoma, changamoto na mipangilio katika faili moja. Ndiyo unayoirejesha unapobadilisha simu. Iweke kwenye simu au kwenye wingu: Google Drive kwenye Android, iCloud kwenye iOS.",
+ "home.data.sqlite.badge": "Mpya katika 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: hifadhidata nzima",
+ "home.data.sqlite.body": "Faili moja ya hifadhidata yenye majedwali 23: vitabu, matoleo, vipindi, madokezo, nukuu, maoni, lebo, changamoto, bingo na muhtasari wa kila mwaka, pamoja na mionekano tayari kwa siku, kitabu na mwaka. Ifungue kwa DB Browser for SQLite, Datasette au hati zako mwenyewe.",
+ "home.data.sqlite.note": "Haijumuishi vifuniko wala picha (kiungo cha jalada pekee), mipangilio yako wala leseni yako ya Pro, na haiwezi kurejeshwa kwenye programu: ili kubadilisha simu, tumia nakala kamili ya hifadhi.",
+ "common.nav.discord": "Jumuiya ya Discord",
+ "common.footer.discord.aria-label": "Lecturameter kwenye Discord"
 }

@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Retró útgáfa af sömu hugmynd, ókeypis á Google Play og App Store.",
  "common.nav.universe_portal": "Heimsgátt",
  "head.universe.title": "Tvær upplifanir. Einn heimur. | Lecturameter",
- "head.universe.description": "Lecturameter er nútímalegur lestrarskráningar. Lecturameter 99 er retró-túlkun þess: valkostur, hvorki betri né verri."
+ "head.universe.description": "Lecturameter er nútímalegur lestrarskráningar. Lecturameter 99 er retró-túlkun þess: valkostur, hvorki betri né verri.",
+ "home.data.title": "Gögnin þín eru þín",
+ "home.data.sub": "Taktu allt með þér hvenær sem þú vilt. Lecturameter flytur bókasafnið þitt út á þrjá vegu, allt úr Stillingum, undir Afritun.",
+ "home.data.csv.title": "CSV: bækurnar þínar í töflu",
+ "home.data.csv.body": "Ein .csv skrá með öllum bókunum þínum, á sniði sem er samhæft við Goodreads og StoryGraph. Hentugt til að flytja í annað forrit eða geyma listann utan símans.",
+ "home.data.json.title": "Fullt afrit (JSON)",
+ "home.data.json.body": "Bækurnar þínar, lestrarlotur, áskoranir og stillingar í einni skrá. Þetta er það sem þú endurheimtir þegar þú skiptir um síma. Geymdu hana í símanum eða í skýinu: Google Drive á Android, iCloud á iOS.",
+ "home.data.sqlite.badge": "Nýtt í 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: allur gagnagrunnurinn",
+ "home.data.sqlite.body": "Ein gagnagrunnsskrá með 23 töflum: bækur, útgáfur, lotur, athugasemdir, tilvitnanir, umsagnir, merki, áskoranir, bingó og ársyfirlit, auk tilbúinna sýna eftir degi, bók og ári. Opnaðu hana með DB Browser for SQLite, Datasette eða þínum eigin skriftum.",
+ "home.data.sqlite.note": "Hún inniheldur ekki kápur eða myndir (aðeins tengil á kápuna), stillingarnar þínar eða Pro leyfið þitt, og ekki er hægt að endurheimta hana í forritið: til að skipta um síma skaltu nota fulla afritið.",
+ "common.nav.discord": "Discord samfélag",
+ "common.footer.discord.aria-label": "Lecturameter á Discord"
 }

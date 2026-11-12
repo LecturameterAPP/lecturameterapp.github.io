@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Een retroversie van hetzelfde idee, gratis op Google Play en de App Store.",
  "common.nav.universe_portal": "Universumportaal",
  "head.universe.title": "Twee ervaringen. Eén universum. | Lecturameter",
- "head.universe.description": "Lecturameter is de moderne leestracker. Lecturameter 99 is de retro-herinterpretatie: een alternatief, niet beter en niet slechter."
+ "head.universe.description": "Lecturameter is de moderne leestracker. Lecturameter 99 is de retro-herinterpretatie: een alternatief, niet beter en niet slechter.",
+ "home.data.title": "Jouw gegevens zijn van jou",
+ "home.data.sub": "Neem alles mee wanneer je maar wilt. Lecturameter exporteert je bibliotheek op drie manieren, allemaal via Instellingen, onder Back-ups.",
+ "home.data.csv.title": "CSV: je boeken in een tabel",
+ "home.data.csv.body": "Een .csv-bestand met al je boeken, in een formaat dat compatibel is met Goodreads en StoryGraph. Handig om over te stappen naar een andere app of om je lijst buiten je telefoon te bewaren.",
+ "home.data.json.title": "Volledige back-up (JSON)",
+ "home.data.json.body": "Je boeken, leessessies, uitdagingen en instellingen in één bestand. Dit herstel je wanneer je van telefoon wisselt. Bewaar het op je telefoon of in de cloud: Google Drive op Android, iCloud op iOS.",
+ "home.data.sqlite.badge": "Nieuw in 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: de hele database",
+ "home.data.sqlite.body": "Eén databasebestand met 23 tabellen: boeken, edities, sessies, notities, citaten, recensies, tags, uitdagingen, bingo en jaaroverzichten, plus kant-en-klare weergaven per dag, boek en jaar. Open het met DB Browser for SQLite, Datasette of je eigen scripts.",
+ "home.data.sqlite.note": "Omslagen en foto's zijn niet inbegrepen (alleen de link naar het omslag), evenmin als je instellingen en je Pro-licentie, en het kan niet in de app worden hersteld: gebruik de volledige back-up om van telefoon te wisselen.",
+ "common.nav.discord": "Discord-community",
+ "common.footer.discord.aria-label": "Lecturameter op Discord"
 }

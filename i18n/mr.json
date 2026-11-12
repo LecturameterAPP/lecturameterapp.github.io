@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "त्याच कल्पनेचे रेट्रो रूप, Google Play आणि App Store वर मोफत.",
  "common.nav.universe_portal": "युनिव्हर्स पोर्टल",
  "head.universe.title": "दोन अनुभव. एक विश्व. | Lecturameter",
- "head.universe.description": "Lecturameter हा आधुनिक वाचन ट्रॅकर आहे. Lecturameter 99 हे त्याचे रेट्रो पुनर्अर्थ आहे: एक पर्याय, चांगलाही नाही आणि वाईटही नाही."
+ "head.universe.description": "Lecturameter हा आधुनिक वाचन ट्रॅकर आहे. Lecturameter 99 हे त्याचे रेट्रो पुनर्अर्थ आहे: एक पर्याय, चांगलाही नाही आणि वाईटही नाही.",
+ "home.data.title": "तुमचा डेटा तुमचाच आहे",
+ "home.data.sub": "हवे तेव्हा सर्व काही सोबत घेऊन जा. Lecturameter तुमची लायब्ररी तीन प्रकारे एक्स्पोर्ट करते, सर्व सेटिंग्जमधून, बॅकअपमध्ये.",
+ "home.data.csv.title": "CSV: तुमची पुस्तके एका तक्त्यात",
+ "home.data.csv.body": "तुमच्या सर्व पुस्तकांसह एक .csv फाइल, Goodreads आणि StoryGraph शी सुसंगत फॉरमॅटमध्ये. दुसऱ्या अॅपवर जाण्यासाठी किंवा तुमची यादी फोनबाहेर ठेवण्यासाठी उपयुक्त.",
+ "home.data.json.title": "संपूर्ण बॅकअप (JSON)",
+ "home.data.json.body": "तुमची पुस्तके, वाचन सत्रे, आव्हाने आणि सेटिंग्ज एकाच फाइलमध्ये. फोन बदलताना तुम्ही हेच रिस्टोअर करता. ते फोनवर किंवा क्लाउडमध्ये ठेवा: Android वर Google Drive, iOS वर iCloud.",
+ "home.data.sqlite.badge": "3.9 / iOS 1.1.0 मधील नवीन",
+ "home.data.sqlite.title": "SQLite: संपूर्ण डेटाबेस",
+ "home.data.sqlite.body": "23 टेबल्स असलेली एकच डेटाबेस फाइल: पुस्तके, आवृत्त्या, सत्रे, नोट्स, उद्धरणे, परीक्षणे, टॅग, आव्हाने, बिंगो आणि वार्षिक सारांश, तसेच दिवस, पुस्तक आणि वर्षानुसार तयार व्ह्यूज. ती DB Browser for SQLite, Datasette किंवा तुमच्या स्वतःच्या स्क्रिप्ट्सने उघडा.",
+ "home.data.sqlite.note": "यात मुखपृष्ठे आणि फोटो (फक्त मुखपृष्ठाची लिंक), तुमची सेटिंग्ज आणि तुमचा Pro परवाना समाविष्ट नाही, आणि ती अॅपमध्ये रिस्टोअर करता येत नाही: फोन बदलण्यासाठी संपूर्ण बॅकअप वापरा.",
+ "common.nav.discord": "Discord समुदाय",
+ "common.footer.discord.aria-label": "Discord वर Lecturameter"
 }

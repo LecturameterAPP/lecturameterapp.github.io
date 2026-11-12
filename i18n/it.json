@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Una versione retrò della stessa idea, gratis su Google Play e App Store.",
  "common.nav.universe_portal": "Portale Universo",
  "head.universe.title": "Due esperienze. Un solo universo. | Lecturameter",
- "head.universe.description": "Lecturameter è il tracker di lettura moderno. Lecturameter 99 ne è la reinterpretazione retrò: un'alternativa, né migliore né peggiore."
+ "head.universe.description": "Lecturameter è il tracker di lettura moderno. Lecturameter 99 ne è la reinterpretazione retrò: un'alternativa, né migliore né peggiore.",
+ "home.data.title": "I tuoi dati sono tuoi",
+ "home.data.sub": "Porta via tutto quando vuoi. Lecturameter esporta la tua libreria in tre modi, tutti da Impostazioni, in Backup.",
+ "home.data.csv.title": "CSV: i tuoi libri in una tabella",
+ "home.data.csv.body": "Un file .csv con tutti i tuoi libri, in un formato compatibile con Goodreads e StoryGraph. Utile per passare a un'altra app o per tenere la tua lista fuori dal telefono.",
+ "home.data.json.title": "Backup completo (JSON)",
+ "home.data.json.body": "I tuoi libri, le sessioni di lettura, le sfide e le impostazioni in un unico file. È ciò che ripristini quando cambi telefono. Conservalo sul telefono o nel cloud: Google Drive su Android, iCloud su iOS.",
+ "home.data.sqlite.badge": "Novità di 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: l'intero database",
+ "home.data.sqlite.body": "Un unico file di database con 23 tabelle: libri, edizioni, sessioni, note, citazioni, recensioni, tag, sfide, bingo e riepiloghi annuali, oltre a viste già pronte per giorno, libro e anno. Aprilo con DB Browser for SQLite, Datasette o i tuoi script.",
+ "home.data.sqlite.note": "Non include copertine e foto (solo il link alla copertina), le tue impostazioni né la tua licenza Pro, e non può essere ripristinato nell'app: per cambiare telefono usa il backup completo.",
+ "common.nav.discord": "Community Discord",
+ "common.footer.discord.aria-label": "Lecturameter su Discord"
 }

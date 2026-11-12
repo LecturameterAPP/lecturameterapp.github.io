@@ -1012,5 +1012,17 @@
  "home.universe.lm99": "Sama idee retrovorm, tasuta Google Plays ja App Store'is.",
  "common.nav.universe_portal": "Universumi portaal",
  "head.universe.title": "Kaks kogemust. Üks universum. | Lecturameter",
- "head.universe.description": "Lecturameter on kaasaegne lugemisjälgija. Lecturameter 99 on selle retro tõlgendus: alternatiiv, mitte parem ega halvem."
+ "head.universe.description": "Lecturameter on kaasaegne lugemisjälgija. Lecturameter 99 on selle retro tõlgendus: alternatiiv, mitte parem ega halvem.",
+ "home.data.title": "Sinu andmed kuuluvad sulle",
+ "home.data.sub": "Võta kõik endaga kaasa, millal soovid. Lecturameter ekspordib sinu raamatukogu kolmel viisil, kõik Seadetest, jaotisest Varukoopiad.",
+ "home.data.csv.title": "CSV: sinu raamatud tabelina",
+ "home.data.csv.body": "Fail .csv kõigi sinu raamatutega, Goodreadsi ja StoryGraphiga ühilduvas vormingus. Käepärane, kui tahad kolida teise rakendusse või hoida oma nimekirja telefonist väljaspool.",
+ "home.data.json.title": "Täielik varukoopia (JSON)",
+ "home.data.json.body": "Sinu raamatud, lugemissessioonid, väljakutsed ja seaded ühes failis. Selle taastad, kui vahetad telefoni. Hoia seda telefonis või pilves: Google Drive Androidis, iCloud iOS-is.",
+ "home.data.sqlite.badge": "Uus versioonis 3.9 / iOS 1.1.0",
+ "home.data.sqlite.title": "SQLite: kogu andmebaas",
+ "home.data.sqlite.body": "Üks andmebaasifail 23 tabeliga: raamatud, väljaanded, sessioonid, märkmed, tsitaadid, arvustused, sildid, väljakutsed, bingo ja aastakokkuvõtted, lisaks valmis vaated päeva, raamatu ja aasta kaupa. Ava see DB Browser for SQLite'iga, Datasette'iga või oma skriptidega.",
+ "home.data.sqlite.note": "See ei sisalda kaasi ega fotosid (ainult kaanelinki), sinu seadeid ega Pro litsentsi ning seda ei saa rakendusse taastada: telefoni vahetamiseks kasuta täielikku varukoopiat.",
+ "common.nav.discord": "Discordi kogukond",
+ "common.footer.discord.aria-label": "Lecturameter Discordis"
 }
