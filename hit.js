@@ -1,7 +1,7 @@
 /* Lecturameter web: contador propio y anonimo de visitas y clics (sin cookies, sin terceros).
  *
  * - Envia {t:"view"|"click", path, target?, lang?, ref?} al Worker de LM Intelligence (POST /web/hit).
- * - No guarda nada en el navegador (ni cookies ni localStorage). El servidor no guarda la IP.
+ * - A los visitantes no se les guarda nada en el navegador (ni cookies ni localStorage); solo el propietario guarda una marca de exclusion (ver abajo). El servidor no guarda la IP.
  * - Si el navegador manda "No rastrear" (Do Not Track), no envia nada.
  * - Exclusion del propietario: abrir <web>/?lm_owner=1 deja una marca local (localStorage "lm_owner") en ESE navegador y
  *   desde entonces no se envia nada (ni visitas ni clics); <web>/?lm_owner=0 la quita. La marca la pone solo quien abre la URL,
