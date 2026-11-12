@@ -45,6 +45,16 @@
       }
     }
   },
+  "hand_pages": [
+    {"file": "activar-pro.html", "bilingual": true, "noindex": true},
+    {"file": "contact.html", "bilingual": true, "current": "contact"},
+    {"file": "precios-regionales.html", "bilingual": true},
+    {"file": "privacidad.html", "bilingual": true, "current": "privacy"},
+    {"file": "privacidad-1999.html", "bilingual": true, "current": "privacy"},
+    {"file": "tos.html", "bilingual": true, "current": "terms"},
+    {"glob": "en/features/*/index.html", "loc": "en"},
+    {"glob": "es/funciones/*/index.html", "loc": "es"}
+  ],
   "pages": {
     "index": {
       "template": "index.html",

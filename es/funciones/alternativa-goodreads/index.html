@@ -9,7 +9,6 @@
     <meta property="og:description" content="Un tracker de lectura para Android e iPhone con cronómetro de verdad, tu biblioteca y sin cuenta. Trae tu biblioteca desde Goodreads, StoryGraph, Bookmory, Fable y más.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lecturameterapp.github.io/es/funciones/alternativa-goodreads/">
-    <meta property="og:url" content="https://lecturameterapp.github.io/es/funciones/catalogo-libros/">
     <meta property="og:image" content="https://lecturameterapp.github.io/social_card.jpg?v=260807">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -30,14 +29,10 @@
     <link rel="shortcut icon" href="../../../favicon.ico">
 
     <link rel="canonical" href="https://lecturameterapp.github.io/es/funciones/alternativa-goodreads/">
-    <link rel="canonical" href="https://lecturameterapp.github.io/es/funciones/catalogo-libros/">
     <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/alternativa-goodreads/">
-    <link rel="alternate" hreflang="es" href="https://lecturameterapp.github.io/es/funciones/catalogo-libros/">
     <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/goodreads-alternative/">
-    <link rel="alternate" hreflang="en" href="https://lecturameterapp.github.io/en/features/book-catalog/">
     <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/goodreads-alternative/">
-    <link rel="alternate" hreflang="x-default" href="https://lecturameterapp.github.io/en/features/book-catalog/">
-    <link rel="stylesheet" href="../../../styles.css?v=6.10">
+    <link rel="stylesheet" href="../../../styles.css?v=8.0">
     <style>
         .only-light,.only-dark{display:none;}
         :root[data-theme="light"] .only-light{display:block;}
@@ -54,7 +49,6 @@
       "@type": "SoftwareApplication",
       "name": "Lecturameter",
       "url": "https://lecturameterapp.github.io/es/funciones/alternativa-goodreads/",
-      "url": "https://lecturameterapp.github.io/es/funciones/catalogo-libros/",
       "image": "https://lecturameterapp.github.io/ic_launcher_round.png",
       "description": "Alternativa a Goodreads para Android e iPhone. Biblioteca privada, cronómetro de lectura, páginas por minuto, historial de sesiones y resumen anual. Importa CSVs de Goodreads y StoryGraph.",
       "applicationCategory": "BookApplication",
@@ -87,32 +81,48 @@
 
 <nav class="nav-bar">
     <div class="nav-inner">
-        <a href="../../../es/" class="nav-brand">
+        <a href="../../" class="nav-brand">
             <img src="../../../ic_launcher_round.png" alt="Lecturameter" width="28" height="28">
             Lecturameter
         </a>
         <ul class="nav-pills">
             <li class="has-dropdown">
-                <a href="../../../#funciones">Funciones <span class="caret" aria-hidden="true">▾</span></a>
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Funciones <span class="caret" aria-hidden="true">&#x25BE;</span></button>
                 <ul class="nav-dropdown">
-                    <li><a href="../cronometro-lectura/">Cronómetro de lectura</a></li>
+                    <li><a href="../cronometro-lectura/">Cron&#xF3;metro de lectura</a></li>
                     <li><a href="../registro-lectura/">Tracker de lectura</a></li>
-                    <li><a href="../estadisticas-lectura/">Estadísticas de lectura</a></li>
-                    <li><a href="../alternativa-goodreads/">Alternativa a Goodreads</a></li>
+                    <li><a href="../estadisticas-lectura/">Estad&#xED;sticas de lectura</a></li>
+                    <li><a href="./">Alternativa a Goodreads</a></li>
                     <li><a href="../catalogo-libros/">Catálogo de libros</a></li>
+                    <li class="nav-dd-all"><a href="../../#funciones">Todas las funciones</a></li>
                 </ul>
             </li>
-            <li><a href="../../../es/#temas">Temas</a></li>
-            <li><a href="../../../es/#precios">Pro</a></li>
-            <li><a href="../../../es/#novedades">Notas de Parche</a></li>
-            <li><a href="../../../es/#historial">Historial</a></li>
-            <li><a href="../../../es/#roadmap">Roadmap</a></li>
-            <li><a href="../../../es/#faq">FAQ</a></li>
-            <li><a href="../../lecturameter-1999/">1999</a></li>
-            <li><a href="../../../es/blog/">Blog</a></li>
+            <li><a href="../../#temas">Temas</a></li>
+            <li><a href="../../#precios">Pro</a></li>
+            <li class="has-dropdown">
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Universo <span class="caret" aria-hidden="true">&#x25BE;</span></button>
+                <ul class="nav-dropdown">
+                    <li><a href="../../">Lecturameter</a></li>
+                    <li><a href="../../lecturameter-1999/">Lecturameter 99</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <button type="button" class="nav-dd-btn" aria-haspopup="true" aria-expanded="false">Recursos <span class="caret" aria-hidden="true">&#x25BE;</span></button>
+                <ul class="nav-dropdown">
+                    <li><a href="../../blog/">Blog</a></li>
+                    <li><a href="../../#novedades">Novedades</a></li>
+                    <li><a href="../../#faq">FAQ</a></li>
+                    <li><a href="../../#ios-diferencias">Plataformas</a></li>
+                    <li class="nav-dd-label" role="presentation">Legal</li>
+                    <li class="nav-dd-sub"><a href="../../../privacidad.html">Política de privacidad</a></li>
+                    <li class="nav-dd-sub"><a href="../../../tos.html">Términos de Servicio</a></li>
+                    <li class="nav-dd-sub"><a href="../../cookies/">Política de cookies</a></li>
+                    <li class="nav-dd-all"><a href="../../../contact.html">Contacto</a></li>
+                </ul>
+            </li>
         </ul>
         <div class="nav-controls">
-            <button class="nav-theme-btn" aria-label="Cambiar tema">☾</button>
+            <button class="nav-theme-btn" aria-label="Cambiar tema">&#x263E;</button>
             <div class="lang-picker">
                 <button type="button" class="nav-lang-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-panel" aria-label="Idioma">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
@@ -173,16 +183,16 @@
                     </div>
                 </div>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public&amp;referrer=utm_source%3Dlanding%26utm_medium%3Dweb" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="Descargar en Google Play">
+            <a data-track="nav-play" href="https://play.google.com/store/apps/details?id=com.lecturameter.public&amp;referrer=utm_source%3Dlanding%26utm_medium%3Dweb" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="Descargar en Google Play">
                 <svg viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.52l2.79-1.61c.52-.3.52-1.06 0-1.36l-2.79-1.61-2.47 2.29 2.47 2.29zM6.05 2.66l10.76 6.22-2.27 2.27L6.05 2.66z"/></svg>
                 Descargar
             </a>
-            <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="Descárgala en la App Store">
+            <a data-track="nav-appstore" href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="nav-cta desktop-only" aria-label="Descárgala en la App Store">
                 <svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
                 Descargar
             </a>
         </div>
-        <button class="nav-hamburger" aria-label="Menu">
+        <button class="nav-hamburger" aria-label="Menu" aria-expanded="false">
             <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
     </div>
@@ -288,15 +298,89 @@
 
 <footer class="site-footer">
     <div class="container">
+        <div class="footer-cta">
+            <h3>Empieza a registrar tu lectura de verdad.</h3>
+            <a data-track="cta-play" href="https://play.google.com/store/apps/details?id=com.lecturameter.public&amp;referrer=utm_source%3Dlanding%26utm_medium%3Dweb" target="_blank" rel="noopener" class="btn">Descargar en Google Play</a>
+            <a data-track="cta-appstore" href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" class="btn">Descárgala en la App Store</a>
+        </div>
+
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Producto</h4>
+                <a href="../../#funciones">Funciones</a>
+                <a href="../cronometro-lectura/">Cronómetro</a>
+                <a href="../registro-lectura/">Tracker</a>
+                <a href="../estadisticas-lectura/">Estadísticas</a>
+                <a href="./">Alternativa a Goodreads</a>
+                <a href="../catalogo-libros/">Catálogo de libros</a>
+                <a href="../../#temas">Temas</a>
+                <a href="../../#eventos">Eventos</a>
+                <a href="../../#precios">Precios</a>
+                <a href="../../../precios-regionales.html">Precios regionales</a>
+            </div>
+            <div class="footer-col">
+                <h4>Universo</h4>
+                <a href="../../">Lecturameter</a>
+                <a href="../../lecturameter-1999/">Lecturameter 99</a>
+            </div>
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <a href="../../blog/">Blog</a>
+                <a href="../../#novedades">Novedades</a>
+                <a href="../../#faq">FAQ</a>
+                <a href="../../#ios-diferencias">Plataformas</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal y contacto</h4>
+                <a href="../../../privacidad.html">Política de privacidad</a>
+                <a href="../../../tos.html">Términos de Servicio</a>
+                <a href="../../cookies/">Política de cookies</a>
+                <a href="#" data-lm-cookie-prefs>Preferencias de cookies</a>
+                <a href="../../../contact.html">Contacto</a>
+                <a href="mailto:lecturameter.app@gmail.com">lecturameter.app@gmail.com</a>
+                <div class="donate-row">
+                    <a href="https://ko-fi.com/lecturameter" target="_blank" rel="noopener" class="donate-btn kofi" aria-label="Ko-fi">
+                        <img src="../../../kofi_logo.svg?v=1" alt="Ko-fi" width="738" height="202">
+                    </a>
+                    <a href="https://paypal.me/Lecturameter" target="_blank" rel="noopener" class="donate-btn paypal" aria-label="PayPal">
+                        <img src="../../../paypal_logo.svg?v=1" alt="PayPal" width="124" height="33">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Redes</h4>
+                <div class="footer-social">
+                    <a href="https://play.google.com/store/apps/details?id=com.lecturameter.public&amp;referrer=utm_source%3Dlanding%26utm_medium%3Dweb" target="_blank" rel="noopener" aria-label="Google Play">
+                        <svg viewBox="0 0 24 24"><path d="M1 2.571C1 1.804 1.459 1.2 2.144.988L12.233 12 2.144 23.012C1.46 22.8 1 22.196 1 21.429V2.571z" fill="#4285F4"/><path d="M2.144 23.012L14.396 12l3.167 3.096L5.07 22.47a2.325 2.325 0 01-2.926.542z" fill="#EA4335"/><path d="M22.14 10.693l-4.578 2.636L14.396 12l3.166-3.096 4.578 2.636c.86.495.86 1.658 0 2.153z" fill="#FBBC04"/><path d="M2.144.988A2.325 2.325 0 015.07 1.53l12.492 7.374L14.396 12 2.144.988z" fill="#34A853"/></svg>
+                    </a>
+                    <a href="https://apps.apple.com/app/lecturameter-diario-lector/id6814164711" target="_blank" rel="noopener" aria-label="App Store">
+                        <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+                    </a>
+                    <a href="https://x.com/LecturameterAPP" target="_blank" rel="noopener" aria-label="X / Twitter">
+                        <svg viewBox="0 0 24 24" fill="var(--text)"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                    </a>
+                    <a href="https://www.reddit.com/user/LM_Reader_Dev/" target="_blank" rel="noopener" aria-label="Reddit">
+                        <svg viewBox="0 0 24 24"><path fill="#FF4500" d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/lecturameter.app/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="5.5" fill="url(#ig)"/><path fill="#fff" d="M12 3.8c2.67 0 2.987.01 4.04.058 2.71.124 3.98 1.407 4.102 4.102.048 1.053.058 1.37.058 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.692-1.39 3.977-4.102 4.1-1.053.05-1.37.06-4.04.06-2.67 0-2.987-.01-4.04-.06-2.717-.123-3.977-1.412-4.102-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.127-2.694 1.39-3.978 4.102-4.102 1.053-.047 1.37-.058 4.04-.058zM12 2c-2.716 0-3.056.012-4.123.06-3.6.164-5.613 2.174-5.777 5.777C2.012 8.944 2 9.284 2 12s.012 3.057.06 4.123c.164 3.6 2.174 5.614 5.777 5.777 1.067.049 1.407.06 4.123.06s3.057-.011 4.123-.06c3.6-.163 5.615-2.174 5.777-5.777.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122c-.163-3.604-2.174-5.614-5.777-5.778C15.056 2.012 14.716 2 12 2zm0 4.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27zm0 8.468a3.333 3.333 0 1 1 0-6.666 3.333 3.333 0 0 1 0 6.666zm5.338-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>
+                    </a>
+                    <a href="https://linktr.ee/lecturameter" target="_blank" rel="noopener" aria-label="Linktree">
+                        <svg viewBox="0 0 24 24" fill="#43E660"><path d="M13.736 5.853l4.005-4.117 2.325 2.38-4.2 4.005h5.908v3.305h-5.937l4.229 4.108-2.325 2.334-5.74-5.769-5.741 5.769-2.325-2.325 4.229-4.108H2.226V8.121h5.909l-4.2-4.004 2.324-2.381 4.005 4.117V0h3.472zm-3.472 10.306h3.472V24h-3.472z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer-signature">Hecho entre libros muchas noches.</p>
         <p class="footer-note">Del mismo creador: <strong>Drakehold</strong>, tu archivo personal que se ordena solo. <a href="https://drakehold.pages.dev/?utm_source=lecturameter&amp;lang=es" target="_blank" rel="noopener">Únete a la lista de espera →</a></p>
         <div class="footer-bottom">
             <span>&copy; 2026 Lecturameter &middot; Proyecto independiente</span>
-            <a href="../../../es/">Inicio</a>
         </div>
     </div>
 </footer>
 
-<script src="../../../main.js?v=6.5" defer></script>
-<script src="../../../hit.js?v=1" defer></script>
+<script src="../../../main.js?v=8.0" defer></script>
+<script src="../../../hit.js?v=8.0" defer></script>
 </body>
 </html>

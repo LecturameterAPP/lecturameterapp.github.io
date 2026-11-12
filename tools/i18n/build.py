@@ -653,6 +653,12 @@ def main():
         with open(path, 'w', encoding='utf-8', newline=LF) as f:
             f.write(out)
         print('ok     ' if prev == out else 'updated', os.path.relpath(path, ROOT).replace(os.sep, '/'))
+    hand = inject_chrome(cfg, locales, strings_by, errors)
+    if errors:
+        for e in sorted(set(errors)):
+            print('ERROR:', e, file=sys.stderr)
+        sys.exit(1)
+    print('chrome %d paginas a mano' % len(hand))
     update_sitemap(cfg, changed)
     for w in sorted(set(WARNINGS)):
         print('WARNING:', w, file=sys.stderr)
@@ -660,6 +666,96 @@ def main():
 
 CRLF = '\r\n'
 LF = '\n'
+
+
+NAV_RE = re.compile(r'<nav class="nav-bar">.*?</nav>\n', re.S)
+FOOT_RE = re.compile(r'<footer class="site-footer">.*?</footer>\n', re.S)
+OLD_FOOT_RE = re.compile(r'\n[ \t]*<div class="footer">[^\n]*</div>(?=\n)')
+CTRL_RE = re.compile(r'nav-theme-btn[^>]*>[^<]*</button>\s*(.*?)\s*<a (?:data-track="[^"]*" )?href="https://play\.google', re.S)
+
+
+def hand_variables(cfg, loc, strings, here):
+    """Variables de cabecera y pie para una pagina escrita a mano que vive en la carpeta `here` (sin / final)."""
+    prefix = loc['path'].lstrip('/')
+    v = {
+        'root': rel(here, ''),
+        'home': rel(here, prefix),
+        'site_url': cfg['site_url'],
+        'link_blog': rel(here, loc['blog']),
+        'link_1999': rel(here, prefix + 'lecturameter-1999/'),
+        'link_cookies': rel(here, prefix + 'cookies/'),
+        'ios_url': cfg['app_store_url'] if cfg.get('ios_live') else cfg['testflight_url'],
+        'ios_live': '1' if cfg.get('ios_live') else '',
+        'drakehold_url': 'https://drakehold.pages.dev/?utm_source=lecturameter' + ('&amp;lang=es' if loc['code'] == 'es' else ''),
+    }
+    for k, p in loc['features'].items():
+        v['link_feat_' + k] = rel(here, p)
+    for lk, lp in cfg.get('legal_pages', {}).items():
+        v['link_' + lk] = rel(here, lp['original']) if loc.get('legal_original') else rel(here, prefix + lp['dir'])
+    return v
+
+
+def inject_chrome(cfg, locales, strings_by, errors):
+    """Paso reproducible para las paginas escritas a mano (locales.json -> hand_pages): sustituye su <nav> y su <footer>
+    por los parciales src/partials/nav.html y footer.html (un pie nuevo si la pagina no lo tenia), conserva el selector
+    de idioma propio de cada pagina, quita el mini-pie antiguo y aplica noindex si se pide. Es idempotente."""
+    import glob as _glob
+    by = {l['code']: l for l in locales}
+    done = []
+    for ent in cfg.get('hand_pages', []):
+        files = [ent['file']] if 'file' in ent else sorted(
+            os.path.relpath(f, ROOT).replace(os.sep, '/') for f in _glob.glob(os.path.join(ROOT, *ent['glob'].split('/'))))
+        for f in files:
+            path = os.path.join(ROOT, *f.split('/'))
+            with open(path, encoding='utf-8', newline='') as fh:
+                text = fh.read().replace(CRLF, LF)
+            here = posixpath.dirname(f)
+            bil = ent.get('bilingual')
+            loc = by['en'] if bil else by[ent['loc']]
+            strings = strings_by[loc['code']]
+            where = 'hand:' + f
+            m = CTRL_RE.search(text)
+            if not m:
+                errors.append('%s: no se encuentran los controles de idioma de la cabecera' % where)
+                continue
+            variables = hand_variables(cfg, loc, strings, here)
+            variables.update(nav_vars(cfg, loc, strings, here, False, ent.get('current', '')))
+            variables.update(release_vars(cfg, strings, where, errors, loc))
+            if not variables.get('show_roadmap') and variables.get('has_roadmap'):
+                variables['show_roadmap'] = '1'
+            variables['lang_picker'] = m.group(1)
+            if bil:
+                es = by['es']
+                ev = hand_variables(cfg, es, strings_by['es'], here)
+                ev.update(nav_vars(cfg, es, strings_by['es'], here, False, ent.get('current', '')))
+                variables['__bi'] = {'variables': ev, 'strings': strings_by['es']}
+            nav = render('{{> nav}}\n', variables, strings, where, errors)
+            foot = render('{{> footer}}\n', variables, strings, where, errors)
+            out = NAV_RE.sub(lambda _m: nav, text, count=1)
+            if FOOT_RE.search(out):
+                out = FOOT_RE.sub(lambda _m: foot, out, count=1)
+            else:
+                i = out.index(nav) + len(nav)
+                j = out.find('<script', i)
+                j = j if j >= 0 else out.index('</body>', i)
+                out = out[:j] + foot + out[j:]
+            out = OLD_FOOT_RE.sub('', out)
+            out = re.sub(r'(styles\.css|main\.js|hit\.js)\?v=[0-9.]+', r'\1?v=8.0', out)
+            if ent.get('noindex'):
+                out = out.replace('<meta name="robots" content="index, follow">', '<meta name="robots" content="noindex, follow">')
+            if bil:
+                # Una sola URL sirve es y en (cambio por JS): hreflang en/es/x-default apuntan a ella, sin ?lang= ni copias
+                # traducidas (/<codigo>/privacy/ etc. son noindex y no pueden ser alternates). noindex -> sin hreflang.
+                out = re.sub(r'[ \t]*<link rel="alternate" hreflang="[^"]*" href="[^"]*">\n', '', out)
+                if not ent.get('noindex'):
+                    u = cfg['site_url'] + f
+                    alts = ''.join('    <link rel="alternate" hreflang="%s" href="%s">\n' % (h, u) for h in ('en', 'es', 'x-default'))
+                    out = re.sub(r'(    <link rel="canonical" href="[^"]*">\n)', lambda _m: _m.group(1) + alts, out, count=1)
+            if out != text:
+                with open(path, 'w', encoding='utf-8', newline=LF) as fh:
+                    fh.write(out)
+            done.append(f)
+    return done
 
 
 def update_sitemap(cfg, changed):
