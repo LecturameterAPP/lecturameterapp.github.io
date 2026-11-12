@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV:本を表形式で",
  "home.data.csv.body": "すべての本を収めた.csvファイルで、GoodreadsやStoryGraphと互換性のある形式です。別のアプリへの移行や、スマートフォンの外にリストを保管するのに便利です。",
  "home.data.json.title": "完全バックアップ(JSON)",
- "home.data.json.body": "本、読書セッション、チャレンジ、設定を1つのファイルにまとめます。機種変更のときに復元するのがこのファイルです。スマートフォン内またはクラウドに保存できます。AndroidではGoogle Drive、iOSではiCloudです。",
+ "home.data.json.body": "本、読書セッション、チャレンジ、設定を1つのファイルにまとめました。アプリ内でLecturameterのデータを復元するためのファイルで、機種変更やアプリの再インストールの際に使います。スマートフォン内またはクラウドに保存できます。AndroidではGoogle Drive、iOSではiCloudです。",
  "home.data.sqlite.badge": "3.9 / iOS 1.1.0の新機能",
  "home.data.sqlite.title": "SQLite:データベースまるごと",
  "home.data.sqlite.body": "23個のテーブルを持つ1つのデータベースファイルです。本、版、セッション、メモ、引用、レビュー、タグ、チャレンジ、ビンゴ、年間サマリーに加え、日別・本別・年別のすぐ使えるビューも含まれます。DB Browser for SQLite、Datasette、または自作のスクリプトで開けます。",

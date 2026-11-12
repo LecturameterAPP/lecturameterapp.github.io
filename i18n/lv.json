@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: tavas grāmatas tabulā",
  "home.data.csv.body": ".csv fails ar visām tavām grāmatām formātā, kas ir saderīgs ar Goodreads un StoryGraph. Noderīgi, lai pārceltos uz citu lietotni vai glabātu savu sarakstu ārpus telefona.",
  "home.data.json.title": "Pilna rezerves kopija (JSON)",
- "home.data.json.body": "Tavas grāmatas, lasīšanas sesijas, izaicinājumi un iestatījumi vienā failā. To atjauno, kad maini telefonu. Glabā to telefonā vai mākonī: Google Drive Android ierīcēs, iCloud iOS ierīcēs.",
+ "home.data.json.body": "Tavas grāmatas, lasīšanas sesijas, izaicinājumi un iestatījumi vienā failā, kas paredzēts, lai lietotnē atjaunotu tavus Lecturameter datus: izmanto to, kad maini telefonu vai pārinstalē lietotni. Glabā to telefonā vai mākonī: Google Drive Android ierīcēs, iCloud iOS ierīcēs.",
  "home.data.sqlite.badge": "Jaunums versijā 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite: visa datubāze",
  "home.data.sqlite.body": "Viens datubāzes fails ar 23 tabulām: grāmatas, izdevumi, sesijas, piezīmes, citāti, atsauksmes, birkas, izaicinājumi, bingo un gada kopsavilkumi, kā arī gatavi skati pēc dienas, grāmatas un gada. Atver to ar DB Browser for SQLite, Datasette vai saviem skriptiem.",

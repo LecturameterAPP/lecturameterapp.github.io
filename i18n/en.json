@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: your books in a table",
  "home.data.csv.body": "A .csv file with all your books, in a format compatible with Goodreads and StoryGraph. Handy for moving to another app or keeping your list outside your phone.",
  "home.data.json.title": "Full backup (JSON)",
- "home.data.json.body": "Your books, reading sessions, challenges and settings in a single file. It is what you restore when you switch phones. Keep it on your phone or in the cloud: Google Drive on Android, iCloud on iOS.",
+ "home.data.json.body": "Your books, reading sessions, challenges and settings in a single file, made to restore your Lecturameter data inside the app: use it when you switch phones or reinstall. Keep it on your phone or in the cloud: Google Drive on Android, iCloud on iOS.",
  "home.data.sqlite.badge": "New in 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite: the whole database",
  "home.data.sqlite.body": "A single database file with 23 tables: books, editions, sessions, notes, quotes, reviews, tags, challenges, bingo and yearly summaries, plus ready-made views by day, book and year. Open it with DB Browser for SQLite, Datasette or your own scripts.",

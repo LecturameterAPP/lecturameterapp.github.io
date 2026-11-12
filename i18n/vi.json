@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: sách của bạn trong một bảng",
  "home.data.csv.body": "Một tệp .csv chứa toàn bộ sách của bạn, theo định dạng tương thích với Goodreads và StoryGraph. Tiện để chuyển sang ứng dụng khác hoặc lưu danh sách bên ngoài điện thoại.",
  "home.data.json.title": "Sao lưu đầy đủ (JSON)",
- "home.data.json.body": "Sách, phiên đọc, thử thách và cài đặt của bạn trong một tệp duy nhất. Đây là thứ bạn khôi phục khi đổi điện thoại. Hãy lưu trên điện thoại hoặc trên đám mây: Google Drive trên Android, iCloud trên iOS.",
+ "home.data.json.body": "Sách, phiên đọc, thử thách và cài đặt của bạn trong một tệp duy nhất, được tạo để khôi phục dữ liệu Lecturameter của bạn ngay trong ứng dụng: hãy dùng khi bạn đổi điện thoại hoặc cài lại ứng dụng. Hãy lưu trên điện thoại hoặc trên đám mây: Google Drive trên Android, iCloud trên iOS.",
  "home.data.sqlite.badge": "Mới trong 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite: toàn bộ cơ sở dữ liệu",
  "home.data.sqlite.body": "Một tệp cơ sở dữ liệu duy nhất với 23 bảng: sách, ấn bản, phiên đọc, ghi chú, trích dẫn, đánh giá, thẻ, thử thách, bingo và tổng kết hằng năm, cùng các khung nhìn dựng sẵn theo ngày, sách và năm. Mở bằng DB Browser for SQLite, Datasette hoặc các tập lệnh của riêng bạn.",

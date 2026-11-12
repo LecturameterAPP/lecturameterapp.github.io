@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: bukumu dalam satu tabel",
  "home.data.csv.body": "Berkas .csv berisi semua bukumu, dalam format yang kompatibel dengan Goodreads dan StoryGraph. Berguna untuk pindah ke aplikasi lain atau menyimpan daftarmu di luar ponsel.",
  "home.data.json.title": "Cadangan lengkap (JSON)",
- "home.data.json.body": "Buku, sesi membaca, tantangan, dan pengaturanmu dalam satu berkas. Inilah yang kamu pulihkan saat berganti ponsel. Simpan di ponsel atau di cloud: Google Drive di Android, iCloud di iOS.",
+ "home.data.json.body": "Buku, sesi membaca, tantangan, dan pengaturanmu dalam satu berkas, dibuat untuk memulihkan data Lecturameter-mu di dalam aplikasi: gunakan saat kamu berganti ponsel atau memasang ulang aplikasi. Simpan di ponsel atau di cloud: Google Drive di Android, iCloud di iOS.",
  "home.data.sqlite.badge": "Baru di 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite: seluruh basis data",
  "home.data.sqlite.body": "Satu berkas basis data dengan 23 tabel: buku, edisi, sesi, catatan, kutipan, ulasan, tag, tantangan, bingo, dan ringkasan tahunan, plus tampilan siap pakai per hari, buku, dan tahun. Buka dengan DB Browser for SQLite, Datasette, atau skripmu sendiri.",

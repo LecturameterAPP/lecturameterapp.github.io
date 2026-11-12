@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: sinu raamatud tabelina",
  "home.data.csv.body": "Fail .csv kõigi sinu raamatutega, Goodreadsi ja StoryGraphiga ühilduvas vormingus. Käepärane, kui tahad kolida teise rakendusse või hoida oma nimekirja telefonist väljaspool.",
  "home.data.json.title": "Täielik varukoopia (JSON)",
- "home.data.json.body": "Sinu raamatud, lugemissessioonid, väljakutsed ja seaded ühes failis. Selle taastad, kui vahetad telefoni. Hoia seda telefonis või pilves: Google Drive Androidis, iCloud iOS-is.",
+ "home.data.json.body": "Sinu raamatud, lugemissessioonid, väljakutsed ja seaded ühes failis, mis on mõeldud sinu Lecturameteri andmete taastamiseks rakenduses: kasuta seda, kui vahetad telefoni või installid rakenduse uuesti. Hoia seda telefonis või pilves: Google Drive Androidis, iCloud iOS-is.",
  "home.data.sqlite.badge": "Uus versioonis 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite: kogu andmebaas",
  "home.data.sqlite.body": "Üks andmebaasifail 23 tabeliga: raamatud, väljaanded, sessioonid, märkmed, tsitaadid, arvustused, sildid, väljakutsed, bingo ja aastakokkuvõtted, lisaks valmis vaated päeva, raamatu ja aasta kaupa. Ava see DB Browser for SQLite'iga, Datasette'iga või oma skriptidega.",

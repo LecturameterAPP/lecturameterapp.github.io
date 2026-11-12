@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV:表格形式的藏书",
  "home.data.csv.body": "一个包含你所有书籍的 .csv 文件,格式兼容 Goodreads 和 StoryGraph。方便迁移到其他应用,或把书单保存在手机之外。",
  "home.data.json.title": "完整备份(JSON)",
- "home.data.json.body": "你的书籍、阅读记录、挑战和设置都在一个文件里。换手机时就用它来恢复。可以保存在手机或云端:Android 用 Google Drive,iOS 用 iCloud。",
+ "home.data.json.body": "你的书籍、阅读记录、挑战和设置都在一个文件里,专为在应用内恢复你的 Lecturameter 数据而生:换手机或重新安装应用时就用它。可以保存在手机或云端:Android 用 Google Drive,iOS 用 iCloud。",
  "home.data.sqlite.badge": "3.9 / iOS 1.1.0 新功能",
  "home.data.sqlite.title": "SQLite:完整的数据库",
  "home.data.sqlite.body": "一个包含 23 张表的数据库文件:书籍、版本、阅读记录、笔记、摘录、书评、标签、挑战、宾果和年度总结,另有按天、按书、按年整理好的现成视图。可用 DB Browser for SQLite、Datasette 或你自己的脚本打开。",

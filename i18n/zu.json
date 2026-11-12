@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "I-CSV: izincwadi zakho kuthebula",
  "home.data.csv.body": "Ifayela le-.csv elinazo zonke izincwadi zakho, ngefomethi ehambisana ne-Goodreads ne-StoryGraph. Iyasiza uma uthutha uye kolunye uhlelo lokusebenza noma ugcina uhlu lwakho ngaphandle kocingo lwakho.",
  "home.data.json.title": "Ikhophi yasenqolobaneni egcwele (JSON)",
- "home.data.json.body": "Izincwadi zakho, amasesho okufunda, izinselelo namasethingi kufayela elilodwa. Yilokhu ukubuyisela uma ushintsha ifoni. Igcine efonini yakho noma efwini: i-Google Drive ku-Android, i-iCloud ku-iOS.",
+ "home.data.json.body": "Izincwadi zakho, amasesho okufunda, izinselelo namasethingi kufayela elilodwa, elenzelwe ukubuyisela idatha yakho ye-Lecturameter ngaphakathi kohlelo lokusebenza: lisebenzise uma ushintsha ifoni noma ufaka kabusha uhlelo lokusebenza. Ligcine efonini yakho noma efwini: i-Google Drive ku-Android, i-iCloud ku-iOS.",
  "home.data.sqlite.badge": "Kusha ku-3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "I-SQLite: yonke i-database",
  "home.data.sqlite.body": "Ifayela elilodwa le-database elinamatafula angu-23: izincwadi, izinhlobo, amasesho, amanothi, imibhalo ecashunwe, uhlolojwayelo, omaka, izinselelo, i-bingo nezifinyezo zonyaka, kanye nokubukwa okulungisiwe ngosuku, incwadi nonyaka. Yivule nge-DB Browser for SQLite, i-Datasette noma izikripthi zakho.",

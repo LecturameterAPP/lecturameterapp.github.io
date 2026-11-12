@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: tvoje knjige u tablici",
  "home.data.csv.body": "Datoteka .csv sa svim tvojim knjigama, u formatu kompatibilnom s Goodreadsom i StoryGraphom. Zgodno za prelazak na drugu aplikaciju ili za čuvanje popisa izvan telefona.",
  "home.data.json.title": "Potpuna sigurnosna kopija (JSON)",
- "home.data.json.body": "Tvoje knjige, sesije čitanja, izazovi i postavke u jednoj datoteci. To vraćaš kad mijenjaš telefon. Spremi je na telefon ili u oblak: Google Drive na Androidu, iCloud na iOS-u.",
+ "home.data.json.body": "Tvoje knjige, sesije čitanja, izazovi i postavke u jednoj datoteci, napravljenoj za vraćanje tvojih podataka iz Lecturametera unutar aplikacije: koristi je kad mijenjaš telefon ili ponovno instaliraš aplikaciju. Spremi je na telefon ili u oblak: Google Drive na Androidu, iCloud na iOS-u.",
  "home.data.sqlite.badge": "Novo u 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite: cijela baza podataka",
  "home.data.sqlite.body": "Jedna datoteka baze podataka s 23 tablice: knjige, izdanja, sesije, bilješke, citati, recenzije, oznake, izazovi, bingo i godišnji sažeci, plus gotovi prikazi po danu, knjizi i godini. Otvori je s DB Browser for SQLite, Datasetteom ili vlastitim skriptama.",

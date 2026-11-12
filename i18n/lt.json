@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: jūsų knygos lentelėje",
  "home.data.csv.body": ".csv failas su visomis jūsų knygomis formatu, suderinamu su Goodreads ir StoryGraph. Patogu norint pereiti prie kitos programėlės arba saugoti sąrašą ne telefone.",
  "home.data.json.title": "Pilna atsarginė kopija (JSON)",
- "home.data.json.body": "Jūsų knygos, skaitymo sesijos, iššūkiai ir nustatymai viename faile. Tai atkuriate keisdami telefoną. Saugokite ją telefone arba debesyje: Google Drive sistemoje Android, iCloud sistemoje iOS.",
+ "home.data.json.body": "Jūsų knygos, skaitymo sesijos, iššūkiai ir nustatymai viename faile, skirtame atkurti jūsų Lecturameter duomenis programėlėje: naudokite jį keisdami telefoną arba iš naujo įdiegdami programėlę. Saugokite jį telefone arba debesyje: Google Drive sistemoje Android, iCloud sistemoje iOS.",
  "home.data.sqlite.badge": "Naujiena 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite: visa duomenų bazė",
  "home.data.sqlite.body": "Vienas duomenų bazės failas su 23 lentelėmis: knygos, leidimai, sesijos, užrašai, citatos, atsiliepimai, žymos, iššūkiai, bingo ir metinės santraukos, taip pat paruošti rodiniai pagal dieną, knygą ir metus. Atidarykite su DB Browser for SQLite, Datasette arba savo scenarijais.",

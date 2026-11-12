@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: vaše knihy v tabuľke",
  "home.data.csv.body": "Súbor .csv so všetkými vašimi knihami vo formáte kompatibilnom s Goodreads a StoryGraph. Hodí sa na prechod do inej aplikácie alebo na uloženie zoznamu mimo telefónu.",
  "home.data.json.title": "Úplná záloha (JSON)",
- "home.data.json.body": "Vaše knihy, čitateľské relácie, výzvy a nastavenia v jednom súbore. Práve ten obnovíte pri zmene telefónu. Uložte si ho do telefónu alebo do cloudu: Google Drive na Androide, iCloud na iOS.",
+ "home.data.json.body": "Vaše knihy, čitateľské relácie, výzvy a nastavenia v jednom súbore, určenom na obnovenie vašich údajov Lecturameter v aplikácii: použite ho pri zmene telefónu alebo preinštalovaní aplikácie. Uložte si ho do telefónu alebo do cloudu: Google Drive na Androide, iCloud na iOS.",
  "home.data.sqlite.badge": "Novinka v 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite: celá databáza",
  "home.data.sqlite.body": "Jediný súbor databázy s 23 tabuľkami: knihy, vydania, relácie, poznámky, citáty, recenzie, štítky, výzvy, bingo a ročné prehľady, plus hotové zobrazenia podľa dňa, knihy a roka. Otvorte ho v DB Browser for SQLite, Datasette alebo vlastných skriptoch.",

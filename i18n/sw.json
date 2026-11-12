@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: vitabu vyako kwenye jedwali",
  "home.data.csv.body": "Faili ya .csv yenye vitabu vyako vyote, kwa muundo unaooana na Goodreads na StoryGraph. Inafaa unapohamia programu nyingine au kuhifadhi orodha yako nje ya simu.",
  "home.data.json.title": "Nakala kamili ya hifadhi (JSON)",
- "home.data.json.body": "Vitabu vyako, vipindi vya kusoma, changamoto na mipangilio katika faili moja. Ndiyo unayoirejesha unapobadilisha simu. Iweke kwenye simu au kwenye wingu: Google Drive kwenye Android, iCloud kwenye iOS.",
+ "home.data.json.body": "Vitabu vyako, vipindi vya kusoma, changamoto na mipangilio katika faili moja, iliyotengenezwa kurejesha data yako ya Lecturameter ndani ya programu: itumie unapobadilisha simu au kusakinisha upya programu. Iweke kwenye simu au kwenye wingu: Google Drive kwenye Android, iCloud kwenye iOS.",
  "home.data.sqlite.badge": "Mpya katika 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite: hifadhidata nzima",
  "home.data.sqlite.body": "Faili moja ya hifadhidata yenye majedwali 23: vitabu, matoleo, vipindi, madokezo, nukuu, maoni, lebo, changamoto, bingo na muhtasari wa kila mwaka, pamoja na mionekano tayari kwa siku, kitabu na mwaka. Ifungue kwa DB Browser for SQLite, Datasette au hati zako mwenyewe.",

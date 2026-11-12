@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: bækurnar þínar í töflu",
  "home.data.csv.body": "Ein .csv skrá með öllum bókunum þínum, á sniði sem er samhæft við Goodreads og StoryGraph. Hentugt til að flytja í annað forrit eða geyma listann utan símans.",
  "home.data.json.title": "Fullt afrit (JSON)",
- "home.data.json.body": "Bækurnar þínar, lestrarlotur, áskoranir og stillingar í einni skrá. Þetta er það sem þú endurheimtir þegar þú skiptir um síma. Geymdu hana í símanum eða í skýinu: Google Drive á Android, iCloud á iOS.",
+ "home.data.json.body": "Bækurnar þínar, lestrarlotur, áskoranir og stillingar í einni skrá, gerð til að endurheimta Lecturameter-gögnin þín í appinu: notaðu hana þegar þú skiptir um síma eða setur appið upp aftur. Geymdu hana í símanum eða í skýinu: Google Drive á Android, iCloud á iOS.",
  "home.data.sqlite.badge": "Nýtt í 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite: allur gagnagrunnurinn",
  "home.data.sqlite.body": "Ein gagnagrunnsskrá með 23 töflum: bækur, útgáfur, lotur, athugasemdir, tilvitnanir, umsagnir, merki, áskoranir, bingó og ársyfirlit, auk tilbúinna sýna eftir degi, bók og ári. Opnaðu hana með DB Browser for SQLite, Datasette eða þínum eigin skriftum.",

@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: els teus llibres en una taula",
  "home.data.csv.body": "Un fitxer .csv amb tots els teus llibres, en un format compatible amb Goodreads i StoryGraph. Útil per passar-los a una altra app o desar la teva llista fora del mòbil.",
  "home.data.json.title": "Còpia de seguretat completa (JSON)",
- "home.data.json.body": "Els teus llibres, sessions de lectura, reptes i configuració en un sol fitxer. És el que restaures quan canvies de mòbil. Desa'l al telèfon o al núvol: Google Drive a Android, iCloud a iOS.",
+ "home.data.json.body": "Els teus llibres, sessions de lectura, reptes i configuració en un sol fitxer, pensat per restaurar les teves dades de Lecturameter dins de l'aplicació: fes-lo servir quan canviïs de mòbil o reinstal·lis l'aplicació. Desa'l al telèfon o al núvol: Google Drive a Android, iCloud a iOS.",
  "home.data.sqlite.badge": "Novetat de 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite: tota la base de dades",
  "home.data.sqlite.body": "Un únic fitxer de base de dades amb 23 taules: llibres, edicions, sessions, notes, cites, ressenyes, etiquetes, reptes, bingo i resums anuals, a més de vistes llestes per usar per dia, llibre i any. Obre'l amb DB Browser for SQLite, Datasette o els teus propis scripts.",

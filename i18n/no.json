@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: bøkene dine i en tabell",
  "home.data.csv.body": "En .csv-fil med alle bøkene dine, i et format som er kompatibelt med Goodreads og StoryGraph. Praktisk for å bytte til en annen app eller ha listen din utenfor telefonen.",
  "home.data.json.title": "Full sikkerhetskopi (JSON)",
- "home.data.json.body": "Bøkene, leseøktene, utfordringene og innstillingene dine i én enkelt fil. Dette er det du gjenoppretter når du bytter telefon. Ta vare på den på telefonen eller i skyen: Google Drive på Android, iCloud på iOS.",
+ "home.data.json.body": "Bøkene, leseøktene, utfordringene og innstillingene dine i én enkelt fil, laget for å gjenopprette Lecturameter-dataene dine i appen: bruk den når du bytter telefon eller installerer appen på nytt. Ta vare på den på telefonen eller i skyen: Google Drive på Android, iCloud på iOS.",
  "home.data.sqlite.badge": "Nytt i 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite: hele databasen",
  "home.data.sqlite.body": "Én enkelt databasefil med 23 tabeller: bøker, utgaver, økter, notater, sitater, anmeldelser, merkelapper, utfordringer, bingo og årsoppsummeringer, pluss ferdige visninger per dag, bok og år. Åpne den med DB Browser for SQLite, Datasette eller dine egne skript.",

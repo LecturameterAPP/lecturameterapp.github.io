@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: 표로 정리한 내 책",
  "home.data.csv.body": "모든 책이 담긴 .csv 파일로, Goodreads 및 StoryGraph와 호환되는 형식입니다. 다른 앱으로 옮기거나 목록을 휴대폰 밖에 보관할 때 유용합니다.",
  "home.data.json.title": "전체 백업 (JSON)",
- "home.data.json.body": "책, 독서 세션, 챌린지, 설정을 하나의 파일에 담았습니다. 휴대폰을 바꿀 때 복원하는 파일입니다. 휴대폰이나 클라우드에 보관하세요. Android에서는 Google Drive, iOS에서는 iCloud를 사용합니다.",
+ "home.data.json.body": "책, 독서 세션, 챌린지, 설정을 하나의 파일에 담았습니다. 앱 안에서 Lecturameter 데이터를 복원하기 위한 파일로, 휴대폰을 바꾸거나 앱을 다시 설치할 때 사용하세요. 휴대폰이나 클라우드에 보관하세요. Android에서는 Google Drive, iOS에서는 iCloud를 사용합니다.",
  "home.data.sqlite.badge": "3.9 / iOS 1.1.0 신규",
  "home.data.sqlite.title": "SQLite: 데이터베이스 전체",
  "home.data.sqlite.body": "23개의 테이블이 들어 있는 단일 데이터베이스 파일입니다. 책, 판본, 세션, 메모, 인용구, 리뷰, 태그, 챌린지, 빙고, 연간 요약은 물론 일별, 책별, 연도별로 바로 쓸 수 있는 뷰도 포함됩니다. DB Browser for SQLite, Datasette 또는 직접 만든 스크립트로 열어 보세요.",

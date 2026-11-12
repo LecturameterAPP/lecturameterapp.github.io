@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV : vos livres dans un tableau",
  "home.data.csv.body": "Un fichier .csv avec tous vos livres, dans un format compatible avec Goodreads et StoryGraph. Pratique pour passer à une autre appli ou garder votre liste en dehors de votre téléphone.",
  "home.data.json.title": "Sauvegarde complète (JSON)",
- "home.data.json.body": "Vos livres, séances de lecture, défis et réglages dans un seul fichier. C'est ce que vous restaurez quand vous changez de téléphone. Gardez-le sur votre téléphone ou dans le cloud : Google Drive sur Android, iCloud sur iOS.",
+ "home.data.json.body": "Vos livres, séances de lecture, défis et réglages dans un seul fichier, conçu pour restaurer vos données Lecturameter dans l'application : utilisez-le quand vous changez de téléphone ou réinstallez l'application. Gardez-le sur votre téléphone ou dans le cloud : Google Drive sur Android, iCloud sur iOS.",
  "home.data.sqlite.badge": "Nouveau dans la 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite : toute la base de données",
  "home.data.sqlite.body": "Un seul fichier de base de données avec 23 tables : livres, éditions, séances, notes, citations, avis, étiquettes, défis, bingo et bilans annuels, ainsi que des vues prêtes à l'emploi par jour, livre et année. Ouvrez-le avec DB Browser for SQLite, Datasette ou vos propres scripts.",

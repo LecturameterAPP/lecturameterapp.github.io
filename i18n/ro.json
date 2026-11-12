@@ -1018,7 +1018,7 @@
  "home.data.csv.title": "CSV: cărțile tale într-un tabel",
  "home.data.csv.body": "Un fișier .csv cu toate cărțile tale, într-un format compatibil cu Goodreads și StoryGraph. Util pentru a trece la altă aplicație sau pentru a-ți păstra lista în afara telefonului.",
  "home.data.json.title": "Backup complet (JSON)",
- "home.data.json.body": "Cărțile, sesiunile de lectură, provocările și setările tale într-un singur fișier. Este ceea ce restaurezi când schimbi telefonul. Păstrează-l pe telefon sau în cloud: Google Drive pe Android, iCloud pe iOS.",
+ "home.data.json.body": "Cărțile, sesiunile de lectură, provocările și setările tale într-un singur fișier, creat pentru a-ți restaura datele Lecturameter în aplicație: folosește-l când schimbi telefonul sau reinstalezi aplicația. Păstrează-l pe telefon sau în cloud: Google Drive pe Android, iCloud pe iOS.",
  "home.data.sqlite.badge": "Nou în 3.9 / iOS 1.1.0",
  "home.data.sqlite.title": "SQLite: întreaga bază de date",
  "home.data.sqlite.body": "Un singur fișier de bază de date cu 23 de tabele: cărți, ediții, sesiuni, notițe, citate, recenzii, etichete, provocări, bingo și rezumate anuale, plus vizualizări gata de folosit pe zile, cărți și ani. Deschide-l cu DB Browser for SQLite, Datasette sau propriile scripturi.",
