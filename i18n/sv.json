@@ -979,5 +979,22 @@
  "common.nav.news": "Nyheter",
  "common.nav.legal": "Juridiskt",
  "common.nav.all_features": "Alla funktioner",
- "common.footer.legal_contact": "Juridiskt och kontakt"
+ "common.footer.legal_contact": "Juridiskt och kontakt",
+ "roadmap.page.published": "Utgiven i {{pub_label}}",
+ "roadmap.page.intro": "Vad varje version har gett, version för version. Inga fasta datum: allt kommer när det är klart.",
+ "home.link.news": "Alla uppdateringsnoteringar och versionshistorik",
+ "home.link.faq": "Se alla frågor",
+ "home.link.platforms": "Se alla skillnader",
+ "home.link.pro": "Pro i detalj och regionala priser",
+ "common.breadcrumb.aria-label": "Sökväg",
+ "head.news.title": "Nyheter · Versionshistorik | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Evenemang · Snabbmeny · Två nya Pro-teman. De senaste nyheterna i Lecturameter.",
+ "head.roadmap.title": "Roadmap | Lecturameter",
+ "head.roadmap.description": "Läsutmaningar för hela communityn, ett spel som spelas med dina egna böcker och en förnyad startsida. Inga fasta datum: allt släpps när det är klart.",
+ "head.faq.title": "Vanliga frågor | Lecturameter",
+ "head.faq.description": "Vanliga frågor: Kan jag ta med mitt bibliotek från andra appar? · Är min data min egen? · Finns det en prenumeration? · Fungerar den offline?",
+ "head.platforms.title": "Lecturameter på iPhone och Android",
+ "head.platforms.description": "iPhone-versionen har samma huvudfunktioner som Android: bibliotek, lästidtagare, statistik, utmaningar, bingo, Pagi och de visuella teman.",
+ "head.pro.title": "Priser · Pro | Lecturameter",
+ "head.pro.description": "Testa Pro-funktionerna i 7 dagar utan kort. När provperioden är slut får du ett gratis Pro-tema som du själv väljer, även om du inte köper Pro."
 }

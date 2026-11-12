@@ -979,5 +979,22 @@
  "common.nav.news": "Naujienos",
  "common.nav.legal": "Teisinė informacija",
  "common.nav.all_features": "Visos funkcijos",
- "common.footer.legal_contact": "Teisinė informacija ir kontaktai"
+ "common.footer.legal_contact": "Teisinė informacija ir kontaktai",
+ "roadmap.page.published": "Išleista versijoje {{pub_label}}",
+ "roadmap.page.intro": "Ką atnešė kiekviena versija, po vieną. Jokių fiksuotų datų: viskas išleidžiama, kai būna paruošta.",
+ "home.link.news": "Visos naujinimų pastabos ir versijų istorija",
+ "home.link.faq": "Peržiūrėti visus klausimus",
+ "home.link.platforms": "Peržiūrėti visus skirtumus",
+ "home.link.pro": "Pro išsamiai ir regioninės kainos",
+ "common.breadcrumb.aria-label": "Naršymo kelias",
+ "head.news.title": "Naujienos · Versijų istorija | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Renginiai · Greitasis meniu · Dvi naujos Pro temos. Naujausi Lecturameter papildymai.",
+ "head.roadmap.title": "Planai | Lecturameter",
+ "head.roadmap.description": "Skaitymo iššūkiai visai bendruomenei, žaidimas su tavo paties knygomis ir atnaujintas pradžios ekranas. Be tikslių datų: viskas išeis, kai bus paruošta.",
+ "head.faq.title": "Dažniausiai užduodami klausimai | Lecturameter",
+ "head.faq.description": "Dažniausiai užduodami klausimai: Ar galiu perkelti savo biblioteką iš kitų programėlių? · Ar mano duomenys priklauso man? · Ar yra prenumerata? · Ar veikia…",
+ "head.platforms.title": "Lecturameter iPhone ir Android",
+ "head.platforms.description": "iPhone versija turi tas pačias pagrindines funkcijas kaip ir Android: biblioteką, skaitymo laikmatį, statistiką, iššūkius, bingo, Pagi ir vizualines temas.",
+ "head.pro.title": "Kainos · Pro | Lecturameter",
+ "head.pro.description": "Išbandyk Pro funkcijas 7 dienas be kortelės. Pasibaigus bandomajam laikotarpiui, net jei Pro nepirksi, gausi dovanų vieną pasirinktą Pro temą."
 }

@@ -979,5 +979,22 @@
  "common.nav.news": "వార్తలు",
  "common.nav.legal": "చట్టపరమైనవి",
  "common.nav.all_features": "అన్ని ఫీచర్లు",
- "common.footer.legal_contact": "చట్టపరమైనవి మరియు సంప్రదింపు"
+ "common.footer.legal_contact": "చట్టపరమైనవి మరియు సంప్రదింపు",
+ "roadmap.page.published": "{{pub_label}} లో విడుదలైంది",
+ "roadmap.page.intro": "ప్రతి వెర్షన్ ఏమి తెచ్చిందో, ఒక్కొక్కటిగా. నిర్ణీత తేదీలు లేవు: ప్రతిదీ సిద్ధమైనప్పుడే విడుదలవుతుంది.",
+ "home.link.news": "అన్ని ప్యాచ్ నోట్స్ మరియు వెర్షన్ చరిత్ర",
+ "home.link.faq": "అన్ని ప్రశ్నలను చూడండి",
+ "home.link.platforms": "అన్ని తేడాలను చూడండి",
+ "home.link.pro": "Pro వివరంగా మరియు ప్రాంతీయ ధరలు",
+ "common.breadcrumb.aria-label": "నావిగేషన్ మార్గం",
+ "head.news.title": "వార్తలు · వెర్షన్ చరిత్ర | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: ఈవెంట్‌లు · త్వరిత మెను · రెండు కొత్త Pro థీమ్‌లు. Lecturameter లో తాజా చేర్పులు.",
+ "head.roadmap.title": "రోడ్‌మ్యాప్ | Lecturameter",
+ "head.roadmap.description": "మొత్తం కమ్యూనిటీ కోసం పఠన సవాళ్లు, మీ సొంత పుస్తకాలతో ఆడే ఆట, కొత్తగా మారిన హోమ్. నిర్దిష్ట తేదీలు లేవు: సిద్ధమైనప్పుడే అన్నీ విడుదలవుతాయి.",
+ "head.faq.title": "తరచూ అడిగే ప్రశ్నలు | Lecturameter",
+ "head.faq.description": "తరచూ అడిగే ప్రశ్నలు: ఇతర యాప్‌ల నుండి నా లైబ్రరీని తెచ్చుకోవచ్చా? · నా డేటా నాదేనా? · సబ్‌స్క్రిప్షన్ ఉందా? · ఆఫ్‌లైన్‌లో పనిచేస్తుందా?",
+ "head.platforms.title": "iPhone, Android లో Lecturameter",
+ "head.platforms.description": "iPhone వెర్షన్‌లో Android లో ఉన్న ప్రధాన ఫీచర్లే ఉన్నాయి: లైబ్రరీ, రీడింగ్ టైమర్, గణాంకాలు, సవాళ్లు, Bingo, Pagi, దృశ్య థీమ్‌లు. తేడాలు ఇవి.",
+ "head.pro.title": "ధరలు · Pro | Lecturameter",
+ "head.pro.description": "కార్డు లేకుండా 7 రోజులు Pro ఫీచర్లను ప్రయత్నించండి. ట్రయల్ ముగిశాక, Pro కొనకపోయినా, మీకు నచ్చిన ఒక Pro థీమ్ ఉచితంగా లభిస్తుంది."
 }

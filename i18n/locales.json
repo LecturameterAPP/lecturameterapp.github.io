@@ -69,6 +69,46 @@
       "dir": "cookies/",
       "priority": "0.3",
       "changefreq": "yearly"
+    },
+    "news": {
+      "template": "news.html",
+      "dir": "news/",
+      "i18n_key": "news",
+      "name_key": "common.nav.news",
+      "priority": "0.7",
+      "changefreq": "monthly"
+    },
+    "roadmap": {
+      "template": "roadmap.html",
+      "dir": "roadmap/",
+      "i18n_key": "roadmap",
+      "name_key": "common.nav.roadmap",
+      "priority": "0.5",
+      "changefreq": "monthly"
+    },
+    "faq": {
+      "template": "faq.html",
+      "dir": "faq/",
+      "i18n_key": "faq",
+      "name_key": "common.nav.faq",
+      "priority": "0.7",
+      "changefreq": "monthly"
+    },
+    "platforms": {
+      "template": "platforms.html",
+      "dir": "platforms/",
+      "i18n_key": "platforms",
+      "name_key": "common.nav.platforms",
+      "priority": "0.7",
+      "changefreq": "monthly"
+    },
+    "pro": {
+      "template": "pro.html",
+      "dir": "pro/",
+      "i18n_key": "pro",
+      "name_key": "common.nav.pro",
+      "priority": "0.8",
+      "changefreq": "monthly"
     }
   },
   "locales": [

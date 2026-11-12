@@ -979,5 +979,22 @@
  "common.nav.news": "খবর",
  "common.nav.legal": "আইনি",
  "common.nav.all_features": "সব ফিচার",
- "common.footer.legal_contact": "আইনি ও যোগাযোগ"
+ "common.footer.legal_contact": "আইনি ও যোগাযোগ",
+ "roadmap.page.published": "{{pub_label}}-এ প্রকাশিত",
+ "roadmap.page.intro": "প্রতিটি সংস্করণ কী এনেছে, একটি একটি করে। নির্দিষ্ট তারিখ নেই: সবকিছু প্রস্তুত হলেই প্রকাশ পায়।",
+ "home.link.news": "সব প্যাচ নোট ও সংস্করণের ইতিহাস",
+ "home.link.faq": "সব প্রশ্ন দেখুন",
+ "home.link.platforms": "সব পার্থক্য দেখুন",
+ "home.link.pro": "Pro বিস্তারিত ও আঞ্চলিক মূল্য",
+ "common.breadcrumb.aria-label": "নেভিগেশন পথ",
+ "head.news.title": "খবর · সংস্করণের ইতিহাস | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: ইভেন্ট · দ্রুত মেনু · দুটি নতুন Pro থিম. Lecturameter-এ সর্বশেষ যা যোগ হয়েছে।",
+ "head.roadmap.title": "রোডম্যাপ | Lecturameter",
+ "head.roadmap.description": "পুরো কমিউনিটির জন্য পড়ার চ্যালেঞ্জ, আপনার নিজের বই দিয়ে খেলার একটি গেম আর নতুন করে সাজানো হোম। কোনো নির্দিষ্ট তারিখ নেই: সবকিছু তৈরি হলেই আসবে।",
+ "head.faq.title": "প্রায়শই জিজ্ঞাসিত প্রশ্ন | Lecturameter",
+ "head.faq.description": "প্রায়শই জিজ্ঞাসিত প্রশ্ন: অন্য অ্যাপ থেকে কি আমার লাইব্রেরি আনতে পারব? · আমার ডেটা কি আমারই? · কোনো সাবস্ক্রিপশন আছে কি? · অফলাইনে চলে কি?",
+ "head.platforms.title": "iPhone আর Android-এ Lecturameter",
+ "head.platforms.description": "iPhone সংস্করণে Android-এর মতোই প্রধান ফিচারগুলো আছে: লাইব্রেরি, পড়ার টাইমার, পরিসংখ্যান, চ্যালেঞ্জ, Bingo, Pagi আর ভিজ্যুয়াল থিম। পার্থক্যগুলো এই।",
+ "head.pro.title": "দাম · Pro | Lecturameter",
+ "head.pro.description": "কার্ড ছাড়াই ৭ দিন Pro ফিচার চেষ্টা করুন। ট্রায়াল শেষে Pro না কিনলেও আপনার পছন্দের একটি Pro থিম ফ্রিতে পাবেন।"
 }

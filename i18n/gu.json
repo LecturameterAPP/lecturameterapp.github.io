@@ -979,5 +979,22 @@
  "common.nav.news": "સમાચાર",
  "common.nav.legal": "કાનૂની",
  "common.nav.all_features": "બધી સુવિધાઓ",
- "common.footer.legal_contact": "કાનૂની અને સંપર્ક"
+ "common.footer.legal_contact": "કાનૂની અને સંપર્ક",
+ "roadmap.page.published": "{{pub_label}} માં પ્રકાશિત",
+ "roadmap.page.intro": "દરેક સંસ્કરણે શું લાવ્યું, એક પછી એક. કોઈ નિશ્ચિત તારીખ નથી: બધું તૈયાર થાય ત્યારે જ આવે છે.",
+ "home.link.news": "બધી પેચ નોંધો અને સંસ્કરણનો ઇતિહાસ",
+ "home.link.faq": "બધા પ્રશ્નો જુઓ",
+ "home.link.platforms": "બધા તફાવતો જુઓ",
+ "home.link.pro": "Pro વિગતે અને પ્રાદેશિક કિંમતો",
+ "common.breadcrumb.aria-label": "નેવિગેશન પાથ",
+ "head.news.title": "સમાચાર · વર્ઝન ઇતિહાસ | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: ઇવેન્ટ્સ · ઝડપી મેનુ · બે નવી Pro થીમ્સ. Lecturameter માં ઉમેરાયેલી સૌથી નવી વસ્તુઓ.",
+ "head.roadmap.title": "રોડમેપ | Lecturameter",
+ "head.roadmap.description": "આખા સમુદાય માટે વાંચન પડકારો, તમારાં પોતાનાં પુસ્તકો સાથે રમાતી રમત અને નવું હોમ. કોઈ નક્કી તારીખ નથી: બધું તૈયાર થશે ત્યારે આવશે.",
+ "head.faq.title": "વારંવાર પૂછાતા પ્રશ્નો | Lecturameter",
+ "head.faq.description": "વારંવાર પૂછાતા પ્રશ્નો: શું હું બીજી એપ્સમાંથી મારી લાઇબ્રેરી લાવી શકું? · શું મારો ડેટા મારો જ છે? · શું કોઈ સબ્સ્ક્રિપ્શન છે? · શું તે ઑફલાઇન ચાલે છે?",
+ "head.platforms.title": "iPhone અને Android પર Lecturameter",
+ "head.platforms.description": "iPhone વર્ઝનમાં Android જેવી જ મુખ્ય સુવિધાઓ છે: લાઇબ્રેરી, વાંચન ટાઈમર, આંકડા, પડકારો, Bingo, Pagi અને વિઝ્યુઅલ થીમ્સ. આ રહ્યા તફાવતો.",
+ "head.pro.title": "કિંમતો · Pro | Lecturameter",
+ "head.pro.description": "કાર્ડ વિના 7 દિવસ માટે Pro સુવિધાઓ અજમાવો. ટ્રાયલના અંતે, ભલે તમે Pro ન ખરીદો, તમને તમારી પસંદની એક Pro થીમ મફતમાં મળે છે."
 }

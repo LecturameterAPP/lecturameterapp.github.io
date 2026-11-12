@@ -979,5 +979,22 @@
  "common.nav.news": "Nieuws",
  "common.nav.legal": "Juridisch",
  "common.nav.all_features": "Alle functies",
- "common.footer.legal_contact": "Juridisch en contact"
+ "common.footer.legal_contact": "Juridisch en contact",
+ "roadmap.page.published": "Uitgebracht in {{pub_label}}",
+ "roadmap.page.intro": "Wat elke versie heeft gebracht, versie voor versie. Geen vaste data: alles komt uit als het klaar is.",
+ "home.link.news": "Alle updatenotities en versiegeschiedenis",
+ "home.link.faq": "Bekijk alle vragen",
+ "home.link.platforms": "Bekijk alle verschillen",
+ "home.link.pro": "Pro in detail en regionale prijzen",
+ "common.breadcrumb.aria-label": "Kruimelpad",
+ "head.news.title": "Nieuws · Versiegeschiedenis | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Evenementen · Snelmenu · Twee nieuwe Pro-thema's. De nieuwste toevoegingen aan Lecturameter.",
+ "head.roadmap.title": "Roadmap | Lecturameter",
+ "head.roadmap.description": "Leesuitdagingen voor de hele community, een spel met je eigen boeken en een vernieuwd Home. Geen vaste data: alles verschijnt zodra het klaar is.",
+ "head.faq.title": "Veelgestelde vragen | Lecturameter",
+ "head.faq.description": "Veelgestelde vragen: Kan ik mijn bibliotheek uit andere apps meenemen? · Zijn mijn gegevens van mij? · Is er een abonnement? · Werkt het offline?",
+ "head.platforms.title": "Lecturameter op iPhone en Android",
+ "head.platforms.description": "De iPhone-versie heeft dezelfde hoofdfuncties als Android: bibliotheek, leestimer, statistieken, uitdagingen, bingo, Pagi en de visuele thema's.",
+ "head.pro.title": "Prijzen · Pro | Lecturameter",
+ "head.pro.description": "Probeer de Pro-functies 7 dagen zonder creditcard. Aan het einde van de proefperiode krijg je, ook als je Pro niet koopt, een gratis Pro-thema naar keuze."
 }

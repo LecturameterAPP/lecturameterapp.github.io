@@ -979,5 +979,22 @@
  "common.nav.news": "Izindaba",
  "common.nav.legal": "Ezomthetho",
  "common.nav.all_features": "Zonke izici",
- "common.footer.legal_contact": "Ezomthetho nokuxhumana"
+ "common.footer.legal_contact": "Ezomthetho nokuxhumana",
+ "roadmap.page.published": "Kukhishwe ku-{{pub_label}}",
+ "roadmap.page.intro": "Okulethwe yinguqulo ngayinye, inguqulo ngenguqulo. Azikho izinsuku ezinqunyiwe: konke kuphuma uma sekulungile.",
+ "home.link.news": "Wonke amanothi ezibuyekezo nomlando wezinguqulo",
+ "home.link.faq": "Bona yonke imibuzo",
+ "home.link.platforms": "Bona wonke amahlukaniso",
+ "home.link.pro": "I-Pro ngokuningiliziwe namanani ezifunda",
+ "common.breadcrumb.aria-label": "Indlela yokuzulazula",
+ "head.news.title": "Izindaba · Umlando weziqephu | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Imicimbi · Imenyu esheshayo · Izingqikithi ezimbili ezintsha ze-Pro. Okwengeziwe kwakamuva ku-Lecturameter.",
+ "head.roadmap.title": "Uhlelo lwekusasa | Lecturameter",
+ "head.roadmap.description": "Izinselelo zokufunda zomphakathi wonke, umdlalo odlalwa nge-zincwadi zakho kanye neKhaya elisha. Ayikho izinsuku ezimisiwe: konke kuphuma uma sekulungile.",
+ "head.faq.title": "Imibuzo evame ukubuzwa | Lecturameter",
+ "head.faq.description": "Imibuzo evame ukubuzwa: Ngingayilethela ilabhulali yami evela kwezinye izinhlelo zokusebenza? · Ingabe idatha yami ingeyami? · Ingabe kukhona ukubhalisa? ·…",
+ "head.platforms.title": "I-Lecturameter ku-iPhone nase-Android",
+ "head.platforms.description": "Inguqulo ye-iPhone inezici ezifanayo eziyinhloko ne-Android: ilabhulali, isitophuwashi sokufunda, izibalo, izinselelo, i-bingo, uPagi nezindikimba…",
+ "head.pro.title": "Amanani · Pro | Lecturameter",
+ "head.pro.description": "Zama izici ze-Pro izinsuku eziyi-7 ngaphandle kwekhadi. Ekupheleni kokuzama, ngisho noma ungayithengi i-Pro, uthola ithemu le-Pro mahhala olikhethayo."
 }

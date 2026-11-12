@@ -979,5 +979,22 @@
  "common.nav.news": "חדשות",
  "common.nav.legal": "משפטי",
  "common.nav.all_features": "כל התכונות",
- "common.footer.legal_contact": "משפטי ויצירת קשר"
+ "common.footer.legal_contact": "משפטי ויצירת קשר",
+ "roadmap.page.published": "פורסם בגרסה {{pub_label}}",
+ "roadmap.page.intro": "מה כל גרסה הביאה, גרסה אחר גרסה. בלי תאריכים קבועים: הכול יוצא כשהוא מוכן.",
+ "home.link.news": "כל הערות העדכון והיסטוריית הגרסאות",
+ "home.link.faq": "לכל השאלות",
+ "home.link.platforms": "לכל ההבדלים",
+ "home.link.pro": "Pro בפירוט ומחירים אזוריים",
+ "common.breadcrumb.aria-label": "נתיב ניווט",
+ "head.news.title": "חדשות · היסטוריית גרסאות | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: אירועים · תפריט מהיר · שתי ערכות נושא Pro חדשות. התוספות האחרונות ל-Lecturameter.",
+ "head.roadmap.title": "מפת דרכים | Lecturameter",
+ "head.roadmap.description": "אתגרי קריאה לכל הקהילה, משחק עם הספרים שלך ומסך בית מחודש. בלי תאריכים קבועים: הכול יוצא כשהוא מוכן.",
+ "head.faq.title": "שאלות נפוצות | Lecturameter",
+ "head.faq.description": "שאלות נפוצות: אפשר להביא את הספרייה שלי מאפליקציות אחרות? · הנתונים שלי שייכים לי? · יש מנוי? · זה עובד בלי חיבור לאינטרנט?",
+ "head.platforms.title": "Lecturameter ב-iPhone וב-Android",
+ "head.platforms.description": "לגרסת ה-iPhone יש את אותן תכונות עיקריות כמו ל-Android: ספרייה, שעון עצר לקריאה, סטטיסטיקות, אתגרים, בינגו, Pagi וערכות הנושא. אלה ההבדלים.",
+ "head.pro.title": "מחירים · Pro | Lecturameter",
+ "head.pro.description": "נסה את תכונות ה-Pro במשך 7 ימים בלי כרטיס אשראי. בסוף תקופת הניסיון, גם אם לא תקנה Pro, תקבל במתנה ערכת נושא Pro לבחירתך."
 }

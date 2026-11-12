@@ -979,5 +979,22 @@
  "common.nav.news": "Habari",
  "common.nav.legal": "Kisheria",
  "common.nav.all_features": "Vipengele vyote",
- "common.footer.legal_contact": "Kisheria na mawasiliano"
+ "common.footer.legal_contact": "Kisheria na mawasiliano",
+ "roadmap.page.published": "Ilitolewa katika {{pub_label}}",
+ "roadmap.page.intro": "Kile ambacho kila toleo limeleta, toleo baada ya toleo. Hakuna tarehe zisizobadilika: kila kitu hutoka kikiwa tayari.",
+ "home.link.news": "Madokezo yote ya masasisho na historia ya matoleo",
+ "home.link.faq": "Tazama maswali yote",
+ "home.link.platforms": "Tazama tofauti zote",
+ "home.link.pro": "Pro kwa undani na bei za kikanda",
+ "common.breadcrumb.aria-label": "Njia ya urambazaji",
+ "head.news.title": "Habari · Historia ya matoleo | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Matukio · Menyu ya haraka · Mandhari mbili mpya za Pro. Nyongeza za hivi karibuni za Lecturameter.",
+ "head.roadmap.title": "Ramani ya njia | Lecturameter",
+ "head.roadmap.description": "Changamoto za kusoma kwa jumuiya nzima, mchezo unaochezwa kwa vitabu vyako mwenyewe na Skrini ya Mwanzo mpya.",
+ "head.faq.title": "Maswali yanayoulizwa mara kwa mara | Lecturameter",
+ "head.faq.description": "Maswali yanayoulizwa mara kwa mara: Naweza kuleta maktaba yangu kutoka kwa programu nyingine? · Data yangu ni yangu? · Je, kuna usajili? · Inafanya kazi nje…",
+ "head.platforms.title": "Lecturameter kwenye iPhone na Android",
+ "head.platforms.description": "Toleo la iPhone lina vipengele vikuu vilevile vya Android: maktaba, kipima muda cha kusoma, takwimu, changamoto, bingo, Pagi na mandhari za kuona.",
+ "head.pro.title": "Bei · Pro | Lecturameter",
+ "head.pro.description": "Jaribu vipengele vya Pro kwa siku 7 bila kadi. Jaribio likiisha, hata usiponunua Pro, unapata mandhari moja ya Pro bure unayochagua."
 }

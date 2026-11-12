@@ -979,5 +979,22 @@
  "common.nav.news": "소식",
  "common.nav.legal": "법적 고지",
  "common.nav.all_features": "모든 기능",
- "common.footer.legal_contact": "법적 고지 및 문의"
+ "common.footer.legal_contact": "법적 고지 및 문의",
+ "roadmap.page.published": "{{pub_label}}에서 출시",
+ "roadmap.page.intro": "각 버전이 가져온 것을 버전별로 소개합니다. 정해진 날짜는 없습니다. 준비되면 출시됩니다.",
+ "home.link.news": "모든 패치 노트와 버전 기록",
+ "home.link.faq": "모든 질문 보기",
+ "home.link.platforms": "모든 차이점 보기",
+ "home.link.pro": "Pro 자세히 보기 및 지역별 가격",
+ "common.breadcrumb.aria-label": "탐색 경로",
+ "head.news.title": "소식 · 버전 기록 | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: 이벤트 · 빠른 메뉴 · 새로운 Pro 테마 2종. Lecturameter에 새로 추가된 것들.",
+ "head.roadmap.title": "로드맵 | Lecturameter",
+ "head.roadmap.description": "커뮤니티 전체가 함께하는 독서 챌린지, 내 책으로 즐기는 게임, 새로워진 홈. 정해진 날짜는 없어요. 준비되면 나와요.",
+ "head.faq.title": "자주 묻는 질문 | Lecturameter",
+ "head.faq.description": "자주 묻는 질문: 다른 앱에서 서재를 가져올 수 있나요? · 내 데이터는 내 것인가요? · 구독이 있나요? · 오프라인에서도 되나요?",
+ "head.platforms.title": "iPhone과 Android의 Lecturameter",
+ "head.platforms.description": "iPhone 버전에는 Android와 같은 주요 기능이 있어요: 서재, 독서 타이머, 통계, 챌린지, Bingo, Pagi, 그리고 테마. 차이점은 다음과 같아요.",
+ "head.pro.title": "가격 · Pro | Lecturameter",
+ "head.pro.description": "카드 등록 없이 Pro 기능을 7일 동안 사용해 보세요. 체험이 끝나면 Pro를 사지 않아도 원하는 Pro 테마 하나를 무료로 드려요."
 }

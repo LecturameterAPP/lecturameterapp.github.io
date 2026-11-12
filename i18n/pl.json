@@ -979,5 +979,22 @@
  "common.nav.news": "Aktualności",
  "common.nav.legal": "Informacje prawne",
  "common.nav.all_features": "Wszystkie funkcje",
- "common.footer.legal_contact": "Informacje prawne i kontakt"
+ "common.footer.legal_contact": "Informacje prawne i kontakt",
+ "roadmap.page.published": "Wydano w {{pub_label}}",
+ "roadmap.page.intro": "Co przyniosła każda wersja, wersja po wersji. Bez stałych dat: wszystko wychodzi, gdy jest gotowe.",
+ "home.link.news": "Wszystkie informacje o aktualizacjach i historia wersji",
+ "home.link.faq": "Zobacz wszystkie pytania",
+ "home.link.platforms": "Zobacz wszystkie różnice",
+ "home.link.pro": "Pro szczegółowo i ceny regionalne",
+ "common.breadcrumb.aria-label": "Ścieżka nawigacji",
+ "head.news.title": "Aktualności · Historia wersji | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Wydarzenia · Szybkie menu · Dwa nowe motywy Pro. Najnowsze dodatki do Lecturameter.",
+ "head.roadmap.title": "Roadmapa | Lecturameter",
+ "head.roadmap.description": "Wyzwania czytelnicze dla całej społeczności, gra na Twoich własnych książkach i odnowiony ekran główny. Bez stałych dat: wszystko wychodzi, gdy będzie gotowe.",
+ "head.faq.title": "Najczęstsze pytania | Lecturameter",
+ "head.faq.description": "Najczęstsze pytania: Czy mogę przenieść bibliotekę z innych aplikacji? · Czy moje dane są moje? · Czy jest subskrypcja? · Czy działa offline?",
+ "head.platforms.title": "Lecturameter na iPhone i Androida",
+ "head.platforms.description": "Wersja na iPhone ma te same główne funkcje co na Androida: bibliotekę, stoper czytania, statystyki, wyzwania, bingo, Pagi i motywy wizualne. Oto różnice.",
+ "head.pro.title": "Cennik · Pro | Lecturameter",
+ "head.pro.description": "Wypróbuj funkcje Pro przez 7 dni bez karty. Na koniec okresu próbnego, nawet jeśli nie kupisz Pro, dostaniesz w prezencie jeden darmowy motyw Pro do wyboru."
 }

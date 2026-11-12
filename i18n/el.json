@@ -979,5 +979,22 @@
  "common.nav.news": "Νέα",
  "common.nav.legal": "Νομικά",
  "common.nav.all_features": "Όλες οι λειτουργίες",
- "common.footer.legal_contact": "Νομικά και επικοινωνία"
+ "common.footer.legal_contact": "Νομικά και επικοινωνία",
+ "roadmap.page.published": "Κυκλοφόρησε στην {{pub_label}}",
+ "roadmap.page.intro": "Τι έφερε κάθε έκδοση, μία προς μία. Χωρίς σταθερές ημερομηνίες: όλα βγαίνουν όταν είναι έτοιμα.",
+ "home.link.news": "Όλες οι σημειώσεις ενημερώσεων και το ιστορικό εκδόσεων",
+ "home.link.faq": "Δείτε όλες τις ερωτήσεις",
+ "home.link.platforms": "Δείτε όλες τις διαφορές",
+ "home.link.pro": "Το Pro αναλυτικά και περιφερειακές τιμές",
+ "common.breadcrumb.aria-label": "Διαδρομή πλοήγησης",
+ "head.news.title": "Νέα · Ιστορικό εκδόσεων | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Εκδηλώσεις · Γρήγορο μενού · Δύο νέα θέματα Pro. Οι πιο πρόσφατες προσθήκες στο Lecturameter.",
+ "head.roadmap.title": "Πλάνο | Lecturameter",
+ "head.roadmap.description": "Προκλήσεις ανάγνωσης για όλη την κοινότητα, ένα παιχνίδι με τα δικά σου βιβλία και μια ανανεωμένη Αρχική.",
+ "head.faq.title": "Συχνές ερωτήσεις | Lecturameter",
+ "head.faq.description": "Συχνές ερωτήσεις: Μπορώ να φέρω τη βιβλιοθήκη μου από άλλες εφαρμογές; · Τα δεδομένα μου είναι δικά μου; · Υπάρχει συνδρομή; · Λειτουργεί χωρίς σύνδεση;",
+ "head.platforms.title": "Το Lecturameter σε iPhone και Android",
+ "head.platforms.description": "Η έκδοση για iPhone έχει τις ίδιες βασικές λειτουργίες με το Android: βιβλιοθήκη, χρονόμετρο ανάγνωσης, στατιστικά, προκλήσεις, Bingo, Pagi και τα οπτικά…",
+ "head.pro.title": "Τιμές · Pro | Lecturameter",
+ "head.pro.description": "Δοκίμασε τις λειτουργίες Pro για 7 ημέρες χωρίς κάρτα. Στο τέλος της δοκιμής, ακόμα κι αν δεν αγοράσεις Pro, παίρνεις δώρο ένα θέμα Pro της επιλογής σου."
 }

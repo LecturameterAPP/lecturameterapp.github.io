@@ -979,5 +979,22 @@
  "common.nav.news": "Uutiset",
  "common.nav.legal": "Oikeudelliset",
  "common.nav.all_features": "Kaikki ominaisuudet",
- "common.footer.legal_contact": "Oikeudelliset tiedot ja yhteys"
+ "common.footer.legal_contact": "Oikeudelliset tiedot ja yhteys",
+ "roadmap.page.published": "Julkaistu versiossa {{pub_label}}",
+ "roadmap.page.intro": "Mitä kukin versio on tuonut, versio kerrallaan. Ei kiinteitä päivämääriä: kaikki julkaistaan, kun se on valmis.",
+ "home.link.news": "Kaikki päivitysmuistiinpanot ja versiohistoria",
+ "home.link.faq": "Katso kaikki kysymykset",
+ "home.link.platforms": "Katso kaikki erot",
+ "home.link.pro": "Pro tarkemmin ja alueelliset hinnat",
+ "common.breadcrumb.aria-label": "Murupolku",
+ "head.news.title": "Uutiset · Versiohistoria | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Tapahtumat · Pikavalikko · Kaksi uutta Pro-teemaa. Lecturameterin uusimmat lisäykset.",
+ "head.roadmap.title": "Tiekartta | Lecturameter",
+ "head.roadmap.description": "Lukuhaasteita koko yhteisölle, peli, jota pelataan omilla kirjoillasi, ja uusittu Etusivu. Ei kiinteitä päivämääriä: kaikki julkaistaan, kun se on valmis.",
+ "head.faq.title": "Usein kysytyt kysymykset | Lecturameter",
+ "head.faq.description": "Usein kysytyt kysymykset: Voinko tuoda kirjastoni muista sovelluksista? · Ovatko tietoni minun? · Onko sovelluksessa tilaus? · Toimiiko se ilman…",
+ "head.platforms.title": "Lecturameter iPhonella ja Androidilla",
+ "head.platforms.description": "iPhone-versiossa on samat pääominaisuudet kuin Androidissa: kirjasto, lukuajastin, tilastot, haasteet, bingo, Pagi ja visuaaliset teemat. Nämä ovat erot.",
+ "head.pro.title": "Hinnoittelu · Pro | Lecturameter",
+ "head.pro.description": "Kokeile Pro-ominaisuuksia 7 päivää ilman korttia. Kokeilun lopussa saat valitsemasi Pro-teeman lahjaksi, vaikka et ostaisi Prota."
 }

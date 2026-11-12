@@ -979,5 +979,22 @@
  "common.nav.news": "Novinky",
  "common.nav.legal": "Právní informace",
  "common.nav.all_features": "Všechny funkce",
- "common.footer.legal_contact": "Právní informace a kontakt"
+ "common.footer.legal_contact": "Právní informace a kontakt",
+ "roadmap.page.published": "Vydáno ve verzi {{pub_label}}",
+ "roadmap.page.intro": "Co přinesla každá verze, jedna po druhé. Žádná pevná data: všechno vyjde, až bude hotové.",
+ "home.link.news": "Všechny poznámky k verzím a historie",
+ "home.link.faq": "Zobrazit všechny otázky",
+ "home.link.platforms": "Zobrazit všechny rozdíly",
+ "home.link.pro": "Pro podrobně a regionální ceny",
+ "common.breadcrumb.aria-label": "Drobečková navigace",
+ "head.news.title": "Novinky · Historie verzí | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Události · Rychlé menu · Dva nové motivy Pro. Co je v Lecturameter nového.",
+ "head.roadmap.title": "Plán vývoje | Lecturameter",
+ "head.roadmap.description": "Čtenářské výzvy pro celou komunitu, hra, kterou hraješ se svými vlastními knihami, a obnovená domovská obrazovka.",
+ "head.faq.title": "Časté dotazy | Lecturameter",
+ "head.faq.description": "Časté dotazy: Můžu si přenést knihovnu z jiných aplikací? · Patří moje data mně? · Je tu předplatné? · Funguje offline?",
+ "head.platforms.title": "Lecturameter na iPhonu a Androidu",
+ "head.platforms.description": "Verze pro iPhone má stejné hlavní funkce jako Android: knihovnu, časovač čtení, statistiky, výzvy, bingo, Pagi a vizuální motivy. Tady jsou rozdíly.",
+ "head.pro.title": "Ceny · Pro | Lecturameter",
+ "head.pro.description": "Vyzkoušej funkce Pro na 7 dní bez karty. Na konci zkušební doby dostaneš jeden motiv Pro podle svého výběru zdarma, i když si Pro nekoupíš."
 }

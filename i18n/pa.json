@@ -979,5 +979,22 @@
  "common.nav.news": "ਖ਼ਬਰਾਂ",
  "common.nav.legal": "ਕਾਨੂੰਨੀ",
  "common.nav.all_features": "ਸਾਰੀਆਂ ਸੁਵਿਧਾਵਾਂ",
- "common.footer.legal_contact": "ਕਾਨੂੰਨੀ ਅਤੇ ਸੰਪਰਕ"
+ "common.footer.legal_contact": "ਕਾਨੂੰਨੀ ਅਤੇ ਸੰਪਰਕ",
+ "roadmap.page.published": "{{pub_label}} ਵਿੱਚ ਜਾਰੀ",
+ "roadmap.page.intro": "ਹਰ ਵਰਜ਼ਨ ਨੇ ਕੀ ਲਿਆਂਦਾ, ਇੱਕ-ਇੱਕ ਕਰਕੇ। ਕੋਈ ਪੱਕੀ ਤਾਰੀਖ਼ ਨਹੀਂ: ਸਭ ਕੁਝ ਤਿਆਰ ਹੋਣ 'ਤੇ ਹੀ ਆਉਂਦਾ ਹੈ।",
+ "home.link.news": "ਸਾਰੇ ਪੈਚ ਨੋਟਸ ਅਤੇ ਵਰਜ਼ਨ ਇਤਿਹਾਸ",
+ "home.link.faq": "ਸਾਰੇ ਸਵਾਲ ਵੇਖੋ",
+ "home.link.platforms": "ਸਾਰੇ ਫ਼ਰਕ ਵੇਖੋ",
+ "home.link.pro": "Pro ਵਿਸਥਾਰ ਵਿੱਚ ਅਤੇ ਖੇਤਰੀ ਕੀਮਤਾਂ",
+ "common.breadcrumb.aria-label": "ਨੈਵੀਗੇਸ਼ਨ ਮਾਰਗ",
+ "head.news.title": "ਖ਼ਬਰਾਂ · ਵਰਜਨਾਂ ਦਾ ਇਤਿਹਾਸ | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: ਇਵੈਂਟ · ਤੁਰੰਤ ਮੇਨੂ · ਦੋ ਨਵੇਂ Pro ਥੀਮ. Lecturameter ਵਿੱਚ ਸਭ ਤੋਂ ਨਵਾਂ ਜੋੜਿਆ ਗਿਆ।",
+ "head.roadmap.title": "ਰੋਡਮੈਪ | Lecturameter",
+ "head.roadmap.description": "ਪੂਰੇ ਭਾਈਚਾਰੇ ਲਈ ਪੜ੍ਹਨ ਦੀਆਂ ਚੁਣੌਤੀਆਂ, ਤੁਹਾਡੀਆਂ ਆਪਣੀਆਂ ਕਿਤਾਬਾਂ ਨਾਲ ਖੇਡੀ ਜਾਣ ਵਾਲੀ ਇੱਕ ਖੇਡ ਅਤੇ ਨਵਾਂ ਹੋਮ।",
+ "head.faq.title": "ਅਕਸਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਸਵਾਲ | Lecturameter",
+ "head.faq.description": "ਅਕਸਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਸਵਾਲ: ਕੀ ਮੈਂ ਦੂਜੀਆਂ ਐਪਾਂ ਤੋਂ ਆਪਣੀ ਲਾਇਬ੍ਰੇਰੀ ਲਿਆ ਸਕਦਾ ਹਾਂ? · ਕੀ ਮੇਰਾ ਡਾਟਾ ਮੇਰਾ ਹੀ ਹੈ? · ਕੀ ਇਸ ਦੀ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਹੈ? · ਕੀ ਇਹ ਇੰਟਰਨੈੱਟ ਤੋਂ…",
+ "head.platforms.title": "iPhone ਅਤੇ Android 'ਤੇ Lecturameter",
+ "head.platforms.description": "iPhone ਵਰਜਨ ਵਿੱਚ Android ਵਾਲੇ ਹੀ ਮੁੱਖ ਫ਼ੀਚਰ ਹਨ: ਲਾਇਬ੍ਰੇਰੀ, ਪੜ੍ਹਨ ਦਾ ਟਾਈਮਰ, ਅੰਕੜੇ, ਚੁਣੌਤੀਆਂ, Bingo, ਪਾਗੀ ਅਤੇ ਵਿਜ਼ੂਅਲ ਥੀਮ। ਫ਼ਰਕ ਇਹ ਹਨ।",
+ "head.pro.title": "ਕੀਮਤਾਂ · Pro | Lecturameter",
+ "head.pro.description": "Pro ਫੀਚਰ 7 ਦਿਨਾਂ ਲਈ ਬਿਨਾਂ ਕਾਰਡ ਦੇ ਅਜ਼ਮਾਓ। ਟ੍ਰਾਇਲ ਦੇ ਅੰਤ ਵਿੱਚ, ਭਾਵੇਂ ਤੁਸੀਂ Pro ਨਾ ਵੀ ਖ਼ਰੀਦੋ, ਤੁਹਾਨੂੰ ਆਪਣੀ ਪਸੰਦ ਦਾ ਇੱਕ Pro ਥੀਮ ਮੁਫ਼ਤ ਮਿਲਦਾ ਹੈ।"
 }

@@ -979,5 +979,22 @@
  "common.nav.news": "Haberler",
  "common.nav.legal": "Yasal",
  "common.nav.all_features": "Tüm özellikler",
- "common.footer.legal_contact": "Yasal ve iletişim"
+ "common.footer.legal_contact": "Yasal ve iletişim",
+ "roadmap.page.published": "{{pub_label}} sürümünde yayımlandı",
+ "roadmap.page.intro": "Her sürümün neler getirdiği, sürüm sürüm. Sabit tarih yok: her şey hazır olduğunda yayımlanır.",
+ "home.link.news": "Tüm yama notları ve sürüm geçmişi",
+ "home.link.faq": "Tüm soruları gör",
+ "home.link.platforms": "Tüm farkları gör",
+ "home.link.pro": "Pro ayrıntılı ve bölgesel fiyatlar",
+ "common.breadcrumb.aria-label": "Gezinme yolu",
+ "head.news.title": "Haberler · Sürüm geçmişi | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Etkinlikler · Hızlı menü · İki yeni Pro tema. Lecturameter'a eklenen son yenilikler.",
+ "head.roadmap.title": "Yol haritası | Lecturameter",
+ "head.roadmap.description": "Tüm topluluk için okuma meydan okumaları, kendi kitaplarınla oynanan bir oyun ve yenilenen bir Ana Sayfa. Sabit tarih yok: her şey hazır olunca çıkar.",
+ "head.faq.title": "Sık sorulan sorular | Lecturameter",
+ "head.faq.description": "Sık sorulan sorular: Kitaplığımı başka uygulamalardan getirebilir miyim? · Verilerim bana mı ait? · Abonelik var mı? · Çevrimdışı çalışır mı?",
+ "head.platforms.title": "iPhone ve Android'de Lecturameter",
+ "head.platforms.description": "iPhone sürümünde Android ile aynı ana özellikler var: kitaplık, okuma zamanlayıcısı, istatistikler, meydan okumalar, bingo, Pagi ve görsel temalar.",
+ "head.pro.title": "Fiyatlandırma · Pro | Lecturameter",
+ "head.pro.description": "Pro özelliklerini kart olmadan 7 gün dene. Deneme sürenin sonunda Pro almasan bile seçtiğin bir Pro temayı ücretsiz alırsın."
 }

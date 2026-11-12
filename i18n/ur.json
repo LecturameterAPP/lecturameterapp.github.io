@@ -979,5 +979,22 @@
  "common.nav.news": "خبریں",
  "common.nav.legal": "قانونی",
  "common.nav.all_features": "تمام خصوصیات",
- "common.footer.legal_contact": "قانونی اور رابطہ"
+ "common.footer.legal_contact": "قانونی اور رابطہ",
+ "roadmap.page.published": "{{pub_label}} میں جاری ہوا",
+ "roadmap.page.intro": "ہر ورژن نے کیا دیا، ایک ایک کر کے۔ کوئی مقررہ تاریخ نہیں: سب کچھ تیار ہونے پر جاری ہوتا ہے۔",
+ "home.link.news": "تمام پیچ نوٹس اور ورژن کی تاریخ",
+ "home.link.faq": "تمام سوالات دیکھیں",
+ "home.link.platforms": "تمام فرق دیکھیں",
+ "home.link.pro": "Pro تفصیل سے اور علاقائی قیمتیں",
+ "common.breadcrumb.aria-label": "نیویگیشن کا راستہ",
+ "head.news.title": "خبریں · ورژن کی تاریخ | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: ایونٹس · فوری مینو · دو نئے Pro تھیمز. Lecturameter میں تازہ ترین اضافے۔",
+ "head.roadmap.title": "روڈ میپ | Lecturameter",
+ "head.roadmap.description": "پوری کمیونٹی کے لیے مطالعے کے چیلنجز، آپ کی اپنی کتابوں کے ساتھ کھیلا جانے والا گیم اور ایک نیا ہوم۔ کوئی مقررہ تاریخیں نہیں: سب کچھ تیار ہونے پر آتا ہے۔",
+ "head.faq.title": "اکثر پوچھے جانے والے سوالات | Lecturameter",
+ "head.faq.description": "اکثر پوچھے جانے والے سوالات: کیا میں دوسری ایپس سے اپنی لائبریری لا سکتا ہوں؟ · کیا میرا ڈیٹا میرا ہی ہے؟ · کیا کوئی سبسکرپشن ہے؟",
+ "head.platforms.title": "iPhone اور Android پر Lecturameter",
+ "head.platforms.description": "iPhone ورژن میں Android جیسی ہی بنیادی خصوصیات ہیں: لائبریری، مطالعے کی اسٹاپ واچ، اعداد و شمار، چیلنجز، بنگو، Pagi اور بصری تھیمز۔ فرق یہ ہیں۔",
+ "head.pro.title": "قیمتیں · Pro | Lecturameter",
+ "head.pro.description": "Pro کی خصوصیات 7 دن بغیر کارڈ کے آزمائیں۔ آزمائش کے اختتام پر، چاہے آپ Pro نہ خریدیں، آپ کو اپنی پسند کا ایک Pro تھیم مفت ملتا ہے۔"
 }

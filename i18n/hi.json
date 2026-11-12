@@ -979,5 +979,22 @@
  "common.nav.news": "समाचार",
  "common.nav.legal": "कानूनी",
  "common.nav.all_features": "सभी सुविधाएँ",
- "common.footer.legal_contact": "कानूनी और संपर्क"
+ "common.footer.legal_contact": "कानूनी और संपर्क",
+ "roadmap.page.published": "{{pub_label}} में जारी",
+ "roadmap.page.intro": "हर संस्करण में क्या आया, एक-एक करके। कोई तय तारीख़ नहीं: सब कुछ तैयार होने पर ही आता है।",
+ "home.link.news": "सभी पैच नोट्स और संस्करण इतिहास",
+ "home.link.faq": "सभी प्रश्न देखें",
+ "home.link.platforms": "सभी अंतर देखें",
+ "home.link.pro": "Pro विस्तार से और क्षेत्रीय कीमतें",
+ "common.breadcrumb.aria-label": "नेविगेशन पथ",
+ "head.news.title": "समाचार · संस्करण इतिहास | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: इवेंट · त्वरित मेन्यू · दो नई Pro थीम. Lecturameter में सबसे नई चीज़ें।",
+ "head.roadmap.title": "रोडमैप | Lecturameter",
+ "head.roadmap.description": "पूरी कम्युनिटी के लिए पठन चुनौतियाँ, आपकी अपनी किताबों से खेला जाने वाला एक गेम और नया होम। कोई तय तारीख नहीं: सब कुछ तैयार होने पर आएगा।",
+ "head.faq.title": "अक्सर पूछे जाने वाले सवाल | Lecturameter",
+ "head.faq.description": "अक्सर पूछे जाने वाले सवाल: क्या मैं दूसरे ऐप्स से अपनी लाइब्रेरी ला सकता हूँ? · क्या मेरा डेटा मेरा ही है? · क्या कोई सब्सक्रिप्शन है? · क्या यह ऑफ़लाइन काम…",
+ "head.platforms.title": "iPhone और Android पर Lecturameter",
+ "head.platforms.description": "iPhone वर्शन में Android जैसे ही मुख्य फ़ीचर हैं: लाइब्रेरी, पढ़ने का टाइमर, आँकड़े, चुनौतियाँ, Bingo, Pagi और विज़ुअल थीम। ये हैं अंतर।",
+ "head.pro.title": "कीमतें · Pro | Lecturameter",
+ "head.pro.description": "बिना कार्ड के 7 दिन तक Pro फ़ीचर आज़माएँ। ट्रायल खत्म होने पर, Pro न खरीदें तब भी आपको अपनी पसंद की एक Pro थीम मुफ़्त मिलती है।"
 }

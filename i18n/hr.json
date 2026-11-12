@@ -979,5 +979,22 @@
  "common.nav.news": "Novosti",
  "common.nav.legal": "Pravne informacije",
  "common.nav.all_features": "Sve značajke",
- "common.footer.legal_contact": "Pravne informacije i kontakt"
+ "common.footer.legal_contact": "Pravne informacije i kontakt",
+ "roadmap.page.published": "Objavljeno u {{pub_label}}",
+ "roadmap.page.intro": "Što je donijela svaka verzija, jedna po jedna. Bez fiksnih datuma: sve izlazi kad je spremno.",
+ "home.link.news": "Sve bilješke o izdanjima i povijest verzija",
+ "home.link.faq": "Pogledaj sva pitanja",
+ "home.link.platforms": "Pogledaj sve razlike",
+ "home.link.pro": "Pro detaljno i regionalne cijene",
+ "common.breadcrumb.aria-label": "Navigacijski trag",
+ "head.news.title": "Novosti · Povijest verzija | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Događaji · Brzi izbornik · Dvije nove Pro teme. Najnovije u Lecturameteru.",
+ "head.roadmap.title": "Plan razvoja | Lecturameter",
+ "head.roadmap.description": "Izazovi čitanja za cijelu zajednicu, igra s tvojim vlastitim knjigama i obnovljeni početni zaslon. Bez fiksnih datuma: sve izlazi kad bude spremno.",
+ "head.faq.title": "Česta pitanja | Lecturameter",
+ "head.faq.description": "Česta pitanja: Mogu li prenijeti svoju knjižnicu iz drugih aplikacija? · Jesu li moji podaci moji? · Postoji li pretplata? · Radi li izvan mreže?",
+ "head.platforms.title": "Lecturameter na iPhoneu i Androidu",
+ "head.platforms.description": "Verzija za iPhone ima iste glavne značajke kao Android: knjižnicu, štopericu za čitanje, statistiku, izazove, bingo, Pagija i vizualne teme. Ovo su razlike.",
+ "head.pro.title": "Cijene · Pro | Lecturameter",
+ "head.pro.description": "Isprobaj Pro značajke 7 dana bez kartice. Na kraju probnog razdoblja, čak i ako ne kupiš Pro, dobivaš besplatnu Pro temu po izboru."
 }

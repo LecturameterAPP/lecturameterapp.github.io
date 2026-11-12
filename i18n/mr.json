@@ -979,5 +979,22 @@
  "common.nav.news": "बातम्या",
  "common.nav.legal": "कायदेशीर",
  "common.nav.all_features": "सर्व वैशिष्ट्ये",
- "common.footer.legal_contact": "कायदेशीर आणि संपर्क"
+ "common.footer.legal_contact": "कायदेशीर आणि संपर्क",
+ "roadmap.page.published": "{{pub_label}} मध्ये प्रकाशित",
+ "roadmap.page.intro": "प्रत्येक आवृत्तीने काय आणले, एकेक करून. निश्चित तारखा नाहीत: सर्वकाही तयार झाले की प्रसिद्ध होते.",
+ "home.link.news": "सर्व पॅच नोट्स आणि आवृत्तीचा इतिहास",
+ "home.link.faq": "सर्व प्रश्न पहा",
+ "home.link.platforms": "सर्व फरक पहा",
+ "home.link.pro": "Pro तपशीलवार आणि प्रादेशिक किमती",
+ "common.breadcrumb.aria-label": "नेव्हिगेशन मार्ग",
+ "head.news.title": "बातम्या · आवृत्ती इतिहास | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: इव्हेंट्स · झटपट मेनू · दोन नवीन Pro थीम. Lecturameter मध्ये नुकत्याच जोडलेल्या गोष्टी.",
+ "head.roadmap.title": "पुढील योजना | Lecturameter",
+ "head.roadmap.description": "संपूर्ण समुदायासाठी वाचन आव्हाने, तुमच्या स्वतःच्या पुस्तकांसह खेळायचा खेळ आणि नवीन होम. निश्चित तारखा नाहीत: सर्व काही तयार झाल्यावर येईल.",
+ "head.faq.title": "वारंवार विचारले जाणारे प्रश्न | Lecturameter",
+ "head.faq.description": "वारंवार विचारले जाणारे प्रश्न: इतर ॲप्समधून माझी लायब्ररी आणता येईल का? · माझा डेटा माझाच आहे का? · सदस्यता आहे का? · ते ऑफलाइन चालते का?",
+ "head.platforms.title": "iPhone आणि Android वर Lecturameter",
+ "head.platforms.description": "iPhone आवृत्तीमध्ये Android सारखीच मुख्य वैशिष्ट्ये आहेत: लायब्ररी, वाचन स्टॉपवॉच, आकडेवारी, आव्हाने, Bingo, Pagi आणि दृश्य थीम. फरक असे आहेत.",
+ "head.pro.title": "किंमत · Pro | Lecturameter",
+ "head.pro.description": "कार्डशिवाय 7 दिवस Pro वैशिष्ट्ये वापरून पहा. चाचणी संपल्यावर तुम्ही Pro विकत घेतले नाही तरी तुमच्या आवडीची एक Pro थीम मोफत मिळते."
 }

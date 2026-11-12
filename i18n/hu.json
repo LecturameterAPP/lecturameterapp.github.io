@@ -979,5 +979,22 @@
  "common.nav.news": "Hírek",
  "common.nav.legal": "Jogi információk",
  "common.nav.all_features": "Minden funkció",
- "common.footer.legal_contact": "Jogi információk és kapcsolat"
+ "common.footer.legal_contact": "Jogi információk és kapcsolat",
+ "roadmap.page.published": "Megjelent: {{pub_label}}",
+ "roadmap.page.intro": "Mit hozott az egyes verzió, verzióról verzióra. Nincsenek fix dátumok: minden akkor jelenik meg, amikor kész.",
+ "home.link.news": "Az összes frissítési jegyzet és a verziótörténet",
+ "home.link.faq": "Összes kérdés megtekintése",
+ "home.link.platforms": "Összes különbség megtekintése",
+ "home.link.pro": "A Pro részletesen és a regionális árak",
+ "common.breadcrumb.aria-label": "Navigációs útvonal",
+ "head.news.title": "Hírek · Verzióelőzmények | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Események · Gyorsmenü · Két új Pro téma. A Lecturameter legújabb fejlesztései.",
+ "head.roadmap.title": "Ütemterv | Lecturameter",
+ "head.roadmap.description": "Olvasási kihívások az egész közösségnek, egy játék, amelyet a saját könyveiddel játszol, és egy megújult Kezdőlap.",
+ "head.faq.title": "Gyakori kérdések | Lecturameter",
+ "head.faq.description": "Gyakori kérdések: Áthozhatom a könyvtáramat más appokból? · Az adataim az enyémek? · Van előfizetés? · Működik internet nélkül?",
+ "head.platforms.title": "Lecturameter iPhone-on és Androidon",
+ "head.platforms.description": "Az iPhone-os verzió fő funkciói ugyanazok, mint Androidon: könyvtár, olvasási időzítő, statisztika, kihívások, bingó, Pagi és a vizuális témák.",
+ "head.pro.title": "Árak · Pro | Lecturameter",
+ "head.pro.description": "Próbáld ki a Pro funkciókat 7 napig, kártya nélkül. A próbaidő végén akkor is kapsz egy általad választott ingyenes Pro témát, ha nem veszed meg a Pro-t."
 }

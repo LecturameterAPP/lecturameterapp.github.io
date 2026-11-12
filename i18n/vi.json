@@ -979,5 +979,22 @@
  "common.nav.news": "Tin tức",
  "common.nav.legal": "Pháp lý",
  "common.nav.all_features": "Tất cả tính năng",
- "common.footer.legal_contact": "Pháp lý và liên hệ"
+ "common.footer.legal_contact": "Pháp lý và liên hệ",
+ "roadmap.page.published": "Đã phát hành trong {{pub_label}}",
+ "roadmap.page.intro": "Mỗi phiên bản đã mang lại gì, từng phiên bản một. Không có ngày cố định: mọi thứ ra mắt khi đã sẵn sàng.",
+ "home.link.news": "Tất cả ghi chú cập nhật và lịch sử phiên bản",
+ "home.link.faq": "Xem tất cả câu hỏi",
+ "home.link.platforms": "Xem tất cả khác biệt",
+ "home.link.pro": "Pro chi tiết và giá theo khu vực",
+ "common.breadcrumb.aria-label": "Đường dẫn điều hướng",
+ "head.news.title": "Tin tức · Lịch sử phiên bản | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Sự kiện · Menu nhanh · Hai giao diện Pro mới. Những điều mới nhất của Lecturameter.",
+ "head.roadmap.title": "Lộ trình | Lecturameter",
+ "head.roadmap.description": "Thử thách đọc sách cho cả cộng đồng, một trò chơi chơi bằng chính những cuốn sách của bạn và Trang chủ mới.",
+ "head.faq.title": "Câu hỏi thường gặp | Lecturameter",
+ "head.faq.description": "Câu hỏi thường gặp: Tôi có thể mang thư viện từ các ứng dụng khác sang không? · Dữ liệu của tôi có thật sự là của tôi không? · Có phải đăng ký trả phí…",
+ "head.platforms.title": "Lecturameter trên iPhone và Android",
+ "head.platforms.description": "Phiên bản iPhone có các tính năng chính giống Android: thư viện, đồng hồ bấm giờ đọc sách, thống kê, thử thách, bingo, Pagi và các chủ đề giao diện.",
+ "head.pro.title": "Giá · Pro | Lecturameter",
+ "head.pro.description": "Dùng thử các tính năng Pro trong 7 ngày mà không cần thẻ. Khi hết thời gian dùng thử, dù bạn không mua Pro, bạn vẫn nhận được một chủ đề Pro miễn phí tùy…"
 }

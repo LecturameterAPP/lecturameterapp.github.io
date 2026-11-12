@@ -979,5 +979,22 @@
  "common.nav.news": "الأخبار",
  "common.nav.legal": "قانوني",
  "common.nav.all_features": "كل الميزات",
- "common.footer.legal_contact": "القانونية والتواصل"
+ "common.footer.legal_contact": "القانونية والتواصل",
+ "roadmap.page.published": "صدر في {{pub_label}}",
+ "roadmap.page.intro": "ما جلبته كل نسخة، نسخةً بعد نسخة. لا مواعيد ثابتة: كل شيء يصدر عندما يكون جاهزًا.",
+ "home.link.news": "كل ملاحظات التحديثات وسجل الإصدارات",
+ "home.link.faq": "عرض كل الأسئلة",
+ "home.link.platforms": "عرض كل الاختلافات",
+ "home.link.pro": "Pro بالتفصيل والأسعار الإقليمية",
+ "common.breadcrumb.aria-label": "مسار التنقل",
+ "head.news.title": "الأخبار · سجل الإصدارات | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: الفعاليات · القائمة السريعة · سمتان جديدتان في Pro. أحدث ما أضفناه إلى Lecturameter.",
+ "head.roadmap.title": "خارطة الطريق | Lecturameter",
+ "head.roadmap.description": "تحديات قراءة للمجتمع كله، ولعبة تُلعب بكتبك أنت، وشاشة رئيسية متجددة. بلا مواعيد ثابتة: كل شيء يصدر عندما يكون جاهزًا.",
+ "head.faq.title": "الأسئلة الشائعة | Lecturameter",
+ "head.faq.description": "الأسئلة الشائعة: هل يمكنني نقل مكتبتي من تطبيقات أخرى؟ · هل بياناتي ملكي؟ · هل يوجد اشتراك؟ · هل يعمل بلا اتصال؟",
+ "head.platforms.title": "Lecturameter على iPhone وAndroid",
+ "head.platforms.description": "نسخة iPhone فيها نفس الميزات الرئيسية الموجودة في Android: المكتبة ومؤقّت القراءة والإحصاءات والتحديات والبينغو وPagi والسمات المرئية. هذه هي الفروق.",
+ "head.pro.title": "الأسعار · Pro | Lecturameter",
+ "head.pro.description": "جرّب ميزات Pro لمدة 7 أيام دون بطاقة. وفي نهاية التجربة، حتى لو لم تشترِ Pro، تحصل على سمة Pro مجانية من اختيارك."
 }

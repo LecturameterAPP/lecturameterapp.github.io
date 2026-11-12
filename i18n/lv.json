@@ -979,5 +979,22 @@
  "common.nav.news": "Jaunumi",
  "common.nav.legal": "Juridiskā informācija",
  "common.nav.all_features": "Visas funkcijas",
- "common.footer.legal_contact": "Juridiskā informācija un kontakti"
+ "common.footer.legal_contact": "Juridiskā informācija un kontakti",
+ "roadmap.page.published": "Izdots versijā {{pub_label}}",
+ "roadmap.page.intro": "Ko katra versija ir sniegusi, versija pa versijai. Nekādu fiksētu datumu: viss tiek izlaists, kad ir gatavs.",
+ "home.link.news": "Visas atjauninājumu piezīmes un versiju vēsture",
+ "home.link.faq": "Skatīt visus jautājumus",
+ "home.link.platforms": "Skatīt visas atšķirības",
+ "home.link.pro": "Pro sīkāk un reģionālās cenas",
+ "common.breadcrumb.aria-label": "Navigācijas ceļš",
+ "head.news.title": "Jaunumi · Versiju vēsture | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Pasākumi · Ātrā izvēlne · Divi jauni Pro motīvi. Jaunākie Lecturameter papildinājumi.",
+ "head.roadmap.title": "Ceļvedis | Lecturameter",
+ "head.roadmap.description": "Lasīšanas izaicinājumi visai kopienai, spēle ar tavām pašu grāmatām un atjaunots sākumekrāns. Bez fiksētiem datumiem: viss iznāk, kad ir gatavs.",
+ "head.faq.title": "Biežāk uzdotie jautājumi | Lecturameter",
+ "head.faq.description": "Biežāk uzdotie jautājumi: Vai varu pārnest savu bibliotēku no citām lietotnēm? · Vai mani dati pieder man? · Vai ir abonements? · Vai tā darbojas bezsaistē?",
+ "head.platforms.title": "Lecturameter iPhone un Android",
+ "head.platforms.description": "iPhone versijai ir tās pašas galvenās funkcijas kā Android: bibliotēka, lasīšanas taimeris, statistika, izaicinājumi, bingo, Pagi un vizuālās tēmas.",
+ "head.pro.title": "Cenas · Pro | Lecturameter",
+ "head.pro.description": "Izmēģini Pro funkcijas 7 dienas bez kartes. Izmēģinājuma beigās, pat ja Pro nenopērc, tu saņem vienu Pro tēmu pēc savas izvēles bez maksas."
 }

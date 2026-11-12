@@ -979,5 +979,22 @@
  "common.nav.news": "Fréttir",
  "common.nav.legal": "Lagalegt",
  "common.nav.all_features": "Allir eiginleikar",
- "common.footer.legal_contact": "Lagalegt og samband"
+ "common.footer.legal_contact": "Lagalegt og samband",
+ "roadmap.page.published": "Gefið út í {{pub_label}}",
+ "roadmap.page.intro": "Hvað hver útgáfa hefur fært, útgáfu fyrir útgáfu. Engar fastar dagsetningar: allt kemur út þegar það er tilbúið.",
+ "home.link.news": "Allar útgáfuglósur og útgáfusaga",
+ "home.link.faq": "Sjá allar spurningar",
+ "home.link.platforms": "Sjá allan muninn",
+ "home.link.pro": "Pro í smáatriðum og svæðisverð",
+ "common.breadcrumb.aria-label": "Slóð",
+ "head.news.title": "Fréttir · Útgáfusaga | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Viðburðir · Flýtivalmynd · Tvö ný Pro-þemu. Það nýjasta í Lecturameter.",
+ "head.roadmap.title": "Framtíðaráætlun | Lecturameter",
+ "head.roadmap.description": "Lestraráskoranir fyrir allt samfélagið, leikur með þínum eigin bókum og nýr heimaskjár. Engar fastar dagsetningar: allt kemur þegar það er tilbúið.",
+ "head.faq.title": "Algengar spurningar | Lecturameter",
+ "head.faq.description": "Algengar spurningar: Get ég komið með bókasafnið mitt úr öðrum forritum? · Eru gögnin mín mín? · Er áskrift? · Virkar það án nettengingar?",
+ "head.platforms.title": "Lecturameter á iPhone og Android",
+ "head.platforms.description": "iPhone-útgáfan hefur sömu helstu eiginleika og Android: bókasafn, lestrartímamæli, tölfræði, áskoranir, bingó, Pagi og útlitsþemun. Þetta er munurinn.",
+ "head.pro.title": "Verð · Pro | Lecturameter",
+ "head.pro.description": "Prófaðu Pro-eiginleika í 7 daga án korts. Í lok prufutímans færðu ókeypis Pro-þema að eigin vali, jafnvel þótt þú kaupir ekki Pro."
 }

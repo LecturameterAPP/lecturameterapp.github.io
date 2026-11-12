@@ -979,5 +979,22 @@
  "common.nav.news": "News",
  "common.nav.legal": "Legal",
  "common.nav.all_features": "All features",
- "common.footer.legal_contact": "Legal and contact"
+ "common.footer.legal_contact": "Legal and contact",
+ "roadmap.page.published": "Shipped in {{pub_label}}",
+ "roadmap.page.intro": "What each version has brought, release by release. No fixed dates: everything ships when it's ready.",
+ "home.link.news": "All patch notes and version history",
+ "home.link.faq": "See all questions",
+ "home.link.platforms": "See all the differences",
+ "home.link.pro": "Pro in detail and regional prices",
+ "common.breadcrumb.aria-label": "Breadcrumb",
+ "head.news.title": "News · Version history | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Events · Quick menu · Two new Pro themes. The latest additions to Lecturameter.",
+ "head.roadmap.title": "Roadmap | Lecturameter",
+ "head.roadmap.description": "Reading challenges for the whole community, a game played with your own books and a renewed Home. No fixed dates: everything ships when it's ready.",
+ "head.faq.title": "Frequently asked questions | Lecturameter",
+ "head.faq.description": "Frequently asked questions: Can I bring my library from other apps? · Is my data mine? · Is there a subscription? · Does it work offline?",
+ "head.platforms.title": "Lecturameter on iPhone and Android",
+ "head.platforms.description": "The iPhone version has the same main features as Android: library, reading timer, statistics, challenges, bingo, Pagi and the visual themes.",
+ "head.pro.title": "Pricing · Pro | Lecturameter",
+ "head.pro.description": "Try Pro features for 7 days without a card. At the end of the trial, even if you don't buy Pro, you get a free Pro theme of your choice."
 }

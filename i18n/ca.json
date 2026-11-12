@@ -979,5 +979,22 @@
  "common.nav.news": "Novetats",
  "common.nav.legal": "Legal",
  "common.nav.all_features": "Totes les funcions",
- "common.footer.legal_contact": "Legal i contacte"
+ "common.footer.legal_contact": "Legal i contacte",
+ "roadmap.page.published": "Publicat a {{pub_label}}",
+ "roadmap.page.intro": "El que ha portat cada versió, una per una. Sense dates fixes: tot surt quan està llest.",
+ "home.link.news": "Totes les notes de la versió i l'historial",
+ "home.link.faq": "Veure totes les preguntes",
+ "home.link.platforms": "Veure totes les diferències",
+ "home.link.pro": "Pro en detall i preus regionals",
+ "common.breadcrumb.aria-label": "Ruta de navegació",
+ "head.news.title": "Novetats · Historial de versions | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Esdeveniments · Menú ràpid · Dos temes Pro nous. El més nou que hem afegit a Lecturameter.",
+ "head.roadmap.title": "Full de ruta | Lecturameter",
+ "head.roadmap.description": "Reptes de lectura per a tota la comunitat, un joc amb els teus propis llibres i un Inici renovat. Sense dates fixes: tot surt quan està llest.",
+ "head.faq.title": "Preguntes freqüents | Lecturameter",
+ "head.faq.description": "Preguntes freqüents: Puc portar la meva biblioteca des d'altres apps? · Les meves dades són meves? · Té subscripció? · Funciona sense connexió?",
+ "head.platforms.title": "Lecturameter a l'iPhone i a Android",
+ "head.platforms.description": "La versió d'iPhone té les mateixes funcions principals que la d'Android: biblioteca, cronòmetre de lectura, estadístiques, reptes, bingo, Pagi i els temes…",
+ "head.pro.title": "Preus · Pro | Lecturameter",
+ "head.pro.description": "Prova les funcions Pro durant 7 dies sense targeta. En acabar la prova, encara que no compris Pro, et regalem un tema Pro a la teva elecció."
 }

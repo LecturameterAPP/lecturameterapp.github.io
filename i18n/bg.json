@@ -979,5 +979,22 @@
  "common.nav.news": "Новини",
  "common.nav.legal": "Правна информация",
  "common.nav.all_features": "Всички функции",
- "common.footer.legal_contact": "Правна информация и контакт"
+ "common.footer.legal_contact": "Правна информация и контакт",
+ "roadmap.page.published": "Пуснато във {{pub_label}}",
+ "roadmap.page.intro": "Какво донесе всяка версия, една по една. Без фиксирани дати: всичко излиза, когато е готово.",
+ "home.link.news": "Всички бележки за промените и историята на версиите",
+ "home.link.faq": "Всички въпроси",
+ "home.link.platforms": "Всички разлики",
+ "home.link.pro": "Pro в детайли и регионални цени",
+ "common.breadcrumb.aria-label": "Навигационна пътека",
+ "head.news.title": "Новини · История на версиите | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Събития · Бързо меню · Две нови Pro теми. Последните нововъведения в Lecturameter.",
+ "head.roadmap.title": "Пътна карта | Lecturameter",
+ "head.roadmap.description": "Предизвикателства за четене за цялата общност, игра с твоите собствени книги и обновен начален екран. Без фиксирани дати: всичко излиза, когато е готово.",
+ "head.faq.title": "Често задавани въпроси | Lecturameter",
+ "head.faq.description": "Често задавани въпроси: Мога ли да пренеса библиотеката си от други приложения? · Моите данни мои ли са? · Има ли абонамент? · Работи ли офлайн?",
+ "head.platforms.title": "Lecturameter на iPhone и Android",
+ "head.platforms.description": "Версията за iPhone има същите основни функции като Android: библиотека, таймер за четене, статистика, предизвикателства, Bingo, Pagi и визуалните теми.",
+ "head.pro.title": "Цени · Pro | Lecturameter",
+ "head.pro.description": "Пробвай функциите на Pro 7 дни без карта. В края на пробния период, дори да не купиш Pro, получаваш безплатно една Pro тема по избор."
 }

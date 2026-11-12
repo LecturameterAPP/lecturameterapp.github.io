@@ -979,5 +979,22 @@
  "common.nav.news": "Noutăți",
  "common.nav.legal": "Legal",
  "common.nav.all_features": "Toate funcțiile",
- "common.footer.legal_contact": "Legal și contact"
+ "common.footer.legal_contact": "Legal și contact",
+ "roadmap.page.published": "Lansat în {{pub_label}}",
+ "roadmap.page.intro": "Ce a adus fiecare versiune, una câte una. Fără date fixe: totul apare când este gata.",
+ "home.link.news": "Toate notele de actualizare și istoricul versiunilor",
+ "home.link.faq": "Vezi toate întrebările",
+ "home.link.platforms": "Vezi toate diferențele",
+ "home.link.pro": "Pro în detaliu și prețuri regionale",
+ "common.breadcrumb.aria-label": "Calea de navigare",
+ "head.news.title": "Noutăți · Istoricul versiunilor | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Evenimente · Meniu rapid · Două teme Pro noi. Cele mai recente adăugiri în Lecturameter.",
+ "head.roadmap.title": "Roadmap | Lecturameter",
+ "head.roadmap.description": "Provocări de lectură pentru toată comunitatea, un joc cu propriile tale cărți și un Acasă reînnoit. Fără date fixe: totul apare când e gata.",
+ "head.faq.title": "Întrebări frecvente | Lecturameter",
+ "head.faq.description": "Întrebări frecvente: Pot să-mi aduc biblioteca din alte aplicații? · Datele mele sunt ale mele? · Există abonament? · Funcționează offline?",
+ "head.platforms.title": "Lecturameter pe iPhone și Android",
+ "head.platforms.description": "Versiunea pentru iPhone are aceleași funcții principale ca cea pentru Android: bibliotecă, cronometru de lectură, statistici, provocări, bingo, Pagi și…",
+ "head.pro.title": "Prețuri · Pro | Lecturameter",
+ "head.pro.description": "Încearcă funcțiile Pro 7 zile fără card. La finalul perioadei de probă, chiar dacă nu cumperi Pro, primești gratuit o temă Pro la alegere."
 }

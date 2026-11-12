@@ -979,5 +979,22 @@
  "common.nav.news": "اخبار",
  "common.nav.legal": "حقوقی",
  "common.nav.all_features": "همه امکانات",
- "common.footer.legal_contact": "حقوقی و تماس"
+ "common.footer.legal_contact": "حقوقی و تماس",
+ "roadmap.page.published": "منتشرشده در {{pub_label}}",
+ "roadmap.page.intro": "هر نسخه چه چیزی آورده است، نسخه به نسخه. تاریخ ثابتی وجود ندارد: همه‌چیز وقتی آماده شد منتشر می‌شود.",
+ "home.link.news": "همهٔ یادداشت‌های به‌روزرسانی و تاریخچهٔ نسخه‌ها",
+ "home.link.faq": "دیدن همهٔ پرسش‌ها",
+ "home.link.platforms": "دیدن همهٔ تفاوت‌ها",
+ "home.link.pro": "Pro با جزئیات و قیمت‌های منطقه‌ای",
+ "common.breadcrumb.aria-label": "مسیر پیمایش",
+ "head.news.title": "اخبار · تاریخچه نسخه‌ها | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: رویدادها · منوی سریع · دو تم Pro جدید. تازه‌ترین چیزهایی که به Lecturameter اضافه شده.",
+ "head.roadmap.title": "نقشه راه | Lecturameter",
+ "head.roadmap.description": "چالش‌های مطالعه برای کل جامعه، بازی‌ای با کتاب‌های خودتان و صفحه اصلی نو. بدون تاریخ ثابت: همه‌چیز وقتی آماده شد منتشر می‌شود.",
+ "head.faq.title": "پرسش‌های متداول | Lecturameter",
+ "head.faq.description": "پرسش‌های متداول: می‌توانم کتابخانه‌ام را از برنامه‌های دیگر بیاورم؟ · داده‌هایم مال خودم است؟ · اشتراک دارد؟ · بدون اینترنت کار می‌کند؟",
+ "head.platforms.title": "Lecturameter روی iPhone و Android",
+ "head.platforms.description": "نسخه iPhone همان قابلیت‌های اصلی Android را دارد: کتابخانه، کرنومتر مطالعه، آمار، چالش‌ها، بینگو، Pagi و پوسته‌های ظاهری. تفاوت‌ها این‌هاست.",
+ "head.pro.title": "قیمت‌ها · Pro | Lecturameter",
+ "head.pro.description": "قابلیت‌های Pro را 7 روز بدون کارت امتحان کنید. در پایان دوره آزمایشی، حتی اگر Pro را نخرید، یک پوسته Pro به انتخاب خودتان رایگان می‌گیرید."
 }

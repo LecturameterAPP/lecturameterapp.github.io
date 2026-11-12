@@ -979,5 +979,22 @@
  "common.nav.news": "お知らせ",
  "common.nav.legal": "法的情報",
  "common.nav.all_features": "すべての機能",
- "common.footer.legal_contact": "法的情報とお問い合わせ"
+ "common.footer.legal_contact": "法的情報とお問い合わせ",
+ "roadmap.page.published": "{{pub_label}} で公開",
+ "roadmap.page.intro": "各バージョンが何をもたらしたか、バージョンごとに。決まった日付はありません。準備ができたものから公開します。",
+ "home.link.news": "すべてのパッチノートとバージョン履歴",
+ "home.link.faq": "すべての質問を見る",
+ "home.link.platforms": "すべての違いを見る",
+ "home.link.pro": "Pro の詳細と地域別価格",
+ "common.breadcrumb.aria-label": "パンくずリスト",
+ "head.news.title": "お知らせ · バージョン履歴 | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: イベント · クイックメニュー · 新しいProテーマ2種. Lecturameterに追加された最新の機能。",
+ "head.roadmap.title": "ロードマップ | Lecturameter",
+ "head.roadmap.description": "コミュニティみんなでの読書チャレンジ、あなた自身の本で遊ぶゲーム、そして新しくなったホーム。決まった日付はなく、準備ができしだいリリースします。",
+ "head.faq.title": "よくある質問 | Lecturameter",
+ "head.faq.description": "よくある質問: ほかのアプリからライブラリを持ってこられる？ · データは自分のもの？ · サブスクはある？ · オフラインでも使える？",
+ "head.platforms.title": "iPhoneとAndroidのLecturameter",
+ "head.platforms.description": "iPhone版にはAndroid版と同じ主な機能があります：ライブラリ、読書タイマー、統計、チャレンジ、Bingo、Pagi、そしてテーマ。違いは次のとおりです。",
+ "head.pro.title": "価格 · Pro | Lecturameter",
+ "head.pro.description": "カード登録なしでPro機能を7日間お試し。お試し終了後、Proを買わなくても好きなProテーマを一つプレゼント。"
 }

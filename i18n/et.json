@@ -979,5 +979,22 @@
  "common.nav.news": "Uudised",
  "common.nav.legal": "Juriidiline",
  "common.nav.all_features": "Kõik funktsioonid",
- "common.footer.legal_contact": "Juriidiline info ja kontakt"
+ "common.footer.legal_contact": "Juriidiline info ja kontakt",
+ "roadmap.page.published": "Avaldatud versioonis {{pub_label}}",
+ "roadmap.page.intro": "Mida iga versioon on toonud, versioon versiooni haaval. Kindlaid kuupäevi pole: kõik ilmub siis, kui on valmis.",
+ "home.link.news": "Kõik uuenduste märkmed ja versiooniajalugu",
+ "home.link.faq": "Vaata kõiki küsimusi",
+ "home.link.platforms": "Vaata kõiki erinevusi",
+ "home.link.pro": "Pro põhjalikult ja piirkondlikud hinnad",
+ "common.breadcrumb.aria-label": "Leivapuru-navigatsioon",
+ "head.news.title": "Uudised · Versiooniajalugu | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: Sündmused · Kiirmenüü · Kaks uut Pro teemat. Viimased uuendused Lecturameteris.",
+ "head.roadmap.title": "Teekaart | Lecturameter",
+ "head.roadmap.description": "Lugemisväljakutsed kogu kogukonnale, mäng, mida mängitakse sinu enda raamatutega, ja uuenenud avaleht. Kindlaid kuupäevi pole: kõik ilmub siis, kui on valmis.",
+ "head.faq.title": "Korduma kippuvad küsimused | Lecturameter",
+ "head.faq.description": "Korduma kippuvad küsimused: Kas saan oma raamatukogu teistest rakendustest üle tuua? · Kas minu andmed on minu omad? · Kas on tellimus? · Kas see töötab…",
+ "head.platforms.title": "Lecturameter iPhone'is ja Androidis",
+ "head.platforms.description": "iPhone'i versioonil on samad põhifunktsioonid mis Androidil: raamatukogu, lugemistaimer, statistika, väljakutsed, bingo, Pagi ja visuaalsed teemad.",
+ "head.pro.title": "Hinnad · Pro | Lecturameter",
+ "head.pro.description": "Proovi Pro funktsioone 7 päeva ilma kaardita. Prooviaja lõpus, isegi kui Pro-d ei osta, saad tasuta ühe Pro teema omal valikul."
 }

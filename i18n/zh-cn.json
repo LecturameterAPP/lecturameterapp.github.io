@@ -979,5 +979,22 @@
  "common.nav.news": "动态",
  "common.nav.legal": "法律",
  "common.nav.all_features": "全部功能",
- "common.footer.legal_contact": "法律与联系"
+ "common.footer.legal_contact": "法律与联系",
+ "roadmap.page.published": "已在 {{pub_label}} 中发布",
+ "roadmap.page.intro": "每个版本带来了什么，逐版介绍。没有固定日期：一切准备好就发布。",
+ "home.link.news": "全部更新说明与版本历史",
+ "home.link.faq": "查看所有问题",
+ "home.link.platforms": "查看所有差异",
+ "home.link.pro": "Pro 详情与地区价格",
+ "common.breadcrumb.aria-label": "面包屑导航",
+ "head.news.title": "动态 · 版本历史 | Lecturameter",
+ "head.news.description": "3.9 / iOS 1.1.0: 活动 · 快捷菜单 · 两款全新 Pro 主题. Lecturameter 的最新更新。",
+ "head.roadmap.title": "路线图 | Lecturameter",
+ "head.roadmap.description": "面向整个社区的阅读挑战、一款用你自己的书来玩的游戏，以及全新主页。没有固定日期：准备好了才会发布。",
+ "head.faq.title": "常见问题 | Lecturameter",
+ "head.faq.description": "常见问题: 我可以把其他应用里的书库带过来吗？ · 我的数据归我吗？ · 需要订阅吗？ · 可以离线使用吗？",
+ "head.platforms.title": "iPhone 和 Android 上的 Lecturameter",
+ "head.platforms.description": "iPhone 版拥有与 Android 相同的主要功能：书库、阅读计时器、统计、挑战、Bingo、Pagi 和各种视觉主题。以下是两者的差异。",
+ "head.pro.title": "价格 · Pro | Lecturameter",
+ "head.pro.description": "无需绑卡，免费试用 Pro 功能 7 天。试用结束后，即使你不购买 Pro，也可以免费获得一个你选择的 Pro 主题。"
 }
