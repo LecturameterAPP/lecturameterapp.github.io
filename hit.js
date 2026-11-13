@@ -1,8 +1,17 @@
 /* Lecturameter web: contador propio y anonimo de visitas y clics (sin cookies, sin terceros).
  *
  * - Envia {t:"view"|"click", path, target?, lang?, ref?} al Worker de LM Intelligence (POST /web/hit).
- * - No guarda nada en el navegador (ni cookies ni localStorage). El servidor no guarda la IP.
+ * - A los visitantes no se les guarda nada en el navegador (ni cookies ni localStorage); solo el propietario guarda una marca de exclusion (ver abajo). El servidor no guarda la IP.
  * - Si el navegador manda "No rastrear" (Do Not Track), no envia nada.
+ * - Exclusion del propietario: abrir <web>/?lm_owner=1 deja una marca local (localStorage "lm_owner") en ESE navegador y
+ *   desde entonces no se envia nada (ni visitas ni clics); <web>/?lm_owner=0 la quita. La marca la pone solo quien abre la URL,
+ *   no identifica a nadie y nunca se envia al servidor.
+ * - UTM: si la URL trae utm_source / utm_medium / utm_campaign (convencion: landing_utm.md en Recursos LM/mockups/tanda_1211/landing/), se envian junto a la
+ *   visita y a los clics de esa misma pagina como utm:{s,m,c}. No se guardan en el navegador.
+ * - Propagacion a Google Play: si la URL de la pagina trae utm_source / utm_medium / utm_campaign (limpiados igual que arriba), se reescribe el
+ *   href de los enlaces a play.google.com cambiando su parametro "referrer" por encodeURIComponent("utm_source=..&utm_medium=..&utm_campaign=..").
+ *   Lo que falte se rellena con lo que el enlace ya traia (hoy utm_source=landing&utm_medium=web) y se conservan utm_content / utm_term del referrer.
+ *   Sin UTM en la pagina los enlaces no se tocan. Esto ocurre ANTES de las salidas por No rastrear y por lm_owner porque no envia nada a ningun servidor.
  * - Clics: target = data-track del enlace (o de un ancestro); si no, se deduce del href:
  *   play / appstore / lm99-play / lm99-appstore / blog / outbound:<host>. Otros enlaces internos no se cuentan.
  */
@@ -10,10 +19,61 @@
     'use strict';
     var ENDPOINT = 'https://lecturameter-intelligence.appaugur.workers.dev/web/hit';
 
+    // UTM de la pagina actual (solo en memoria).
+    var utm = null;
+    try {
+        var q = new URLSearchParams(location.search);
+        var clean = function (v) { return (v || '').toLowerCase().replace(/[^a-z0-9_.-]/g, '').slice(0, 40); };
+        var us = clean(q.get('utm_source')), um = clean(q.get('utm_medium')), uc = clean(q.get('utm_campaign'));
+        if (us || um || uc) utm = { s: us, m: um, c: uc };
+    } catch (e) {}
+
+    // Propagacion de UTM a Google Play (ver cabecera). Va ANTES de las salidas de abajo: no envia nada a ningun servidor.
+    function tagPlayLinks() {
+        if (!utm) return;
+        var links = document.querySelectorAll('a[href*="play.google.com"]');
+        for (var i = 0; i < links.length; i++) {
+            try {
+                var raw = links[i].getAttribute('href');
+                var u = new URL(raw, location.href);
+                if (u.hostname !== 'play.google.com') continue;
+                var cur = new URLSearchParams(u.searchParams.get('referrer') || '');
+                var parts = [];
+                var s = utm.s || cur.get('utm_source'), m = utm.m || cur.get('utm_medium'), c = utm.c || cur.get('utm_campaign');
+                if (s) parts.push('utm_source=' + s);
+                if (m) parts.push('utm_medium=' + m);
+                if (c) parts.push('utm_campaign=' + c);
+                ['utm_content', 'utm_term'].forEach(function (k) {
+                    if (cur.get(k)) parts.push(k + '=' + encodeURIComponent(cur.get(k)));
+                });
+                var ref = 'referrer=' + encodeURIComponent(parts.join('&'));
+                var hash = raw.indexOf('#') >= 0 ? raw.slice(raw.indexOf('#')) : '';
+                var base = raw.split('#')[0];
+                var qi = base.indexOf('?');
+                var path = qi >= 0 ? base.slice(0, qi) : base;
+                var kept = (qi >= 0 ? base.slice(qi + 1).split('&') : []).filter(function (p) { return p && p.split('=')[0] !== 'referrer'; });
+                kept.push(ref);
+                links[i].setAttribute('href', path + '?' + kept.join('&') + hash);
+            } catch (e) {}
+        }
+    }
+    try {
+        tagPlayLinks();
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', tagPlayLinks);
+    } catch (e) {}
+
     try {
         if (navigator.doNotTrack === '1' || window.doNotTrack === '1' || navigator.msDoNotTrack === '1') return;
     } catch (e) {}
     if (!/^https?:$/.test(location.protocol)) return;
+
+    // Exclusion del propietario (ver cabecera).
+    try {
+        var qs = new URLSearchParams(location.search);
+        if (qs.get('lm_owner') === '1') localStorage.setItem('lm_owner', '1');
+        else if (qs.get('lm_owner') === '0') localStorage.removeItem('lm_owner');
+        if (localStorage.getItem('lm_owner') === '1') return;
+    } catch (e) {}
 
     function send(payload) {
         try {
@@ -26,7 +86,9 @@
 
     function lang() { return document.documentElement.getAttribute('lang') || ''; }
 
-    send({ t: 'view', path: location.pathname, lang: lang(), ref: document.referrer || '' });
+    var view = { t: 'view', path: location.pathname, lang: lang(), ref: document.referrer || '' };
+    if (utm) view.utm = utm;
+    send(view);
 
     function targetFor(a) {
         var tracked = a.closest('[data-track]');
@@ -47,7 +109,11 @@
         var a = el.closest('a[href]');
         if (!a) return;
         var target = targetFor(a);
-        if (target) send({ t: 'click', path: location.pathname, target: target, lang: lang() });
+        if (target) {
+            var click = { t: 'click', path: location.pathname, target: target, lang: lang() };
+            if (utm) click.utm = utm;
+            send(click);
+        }
     }
     document.addEventListener('click', onClick, true);
     document.addEventListener('auxclick', onClick, true);
