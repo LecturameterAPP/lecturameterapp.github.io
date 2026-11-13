@@ -696,7 +696,7 @@
  "legal.privacy.p_050": "<span class=\"highlight\">11. 第三方</span>",
  "legal.privacy.p_051": "<span class=\"highlight\">在 Android 上：</span>Google Play Billing 处理 Pro 的付款；应用绝不会看到你的支付数据。Google Drive 将你的可选备份存储在你自己的 Google 账号中，应用只能看到它自己创建的文件。条形码扫描器（Google ML Kit）和文档扫描器（Google Play 服务）在你的设备上处理图像；Google 可能会根据其自己的隐私政策，从这些组件接收使用情况和性能指标以及每次安装的标识符。公共图书目录会通过我们的服务器接收你的搜索，如上所述。Cloudflare 托管 Lecturameter 的服务器。我们不会出售你的数据，也不会为广告而共享你的数据。",
  "legal.privacy.p_052": "<span class=\"highlight\">在 iOS 上：</span>App Store 处理 Pro 的付款；应用绝不会看到你的支付数据。Google Drive 可以将你的可选备份存储在你自己的 Google 账号中，应用只能看到它自己创建的文件。公共图书目录会通过我们的服务器接收你的搜索，如上所述。Cloudflare 托管 Lecturameter 的服务器。我们不会出售你的数据，也不会为广告而共享你的数据。",
- "legal.privacy.p_052b": "<span class=\"highlight\">Google Analytics for Firebase</span>(Google LLC / Google Ireland Ltd.),仅在您允许时:使用情况分析,不含广告标识符。Firebase Cloud Messaging (Google) 负责推送活动通知和“应用动态”通知，仅在你允许通知时使用：应用会订阅一个对应你所用语言的主题，用于接收新活动提醒；为你参加的每个活动订阅一个主题；再订阅一个对应你所用语言的主题，用于接收应用动态；这两个通用主题默认开启，可在“设置 › 通知”中关闭。它接收的是设备令牌，而不是你的阅读数据。",
+ "legal.privacy.p_052b": "<span class=\"highlight\">Google Analytics for Firebase</span>(Google LLC / Google Ireland Ltd.),仅在您允许时:使用情况分析,不含广告标识符。Firebase Cloud Messaging (Google) 负责推送活动通知和“应用动态”通知：应用会订阅一个对应你所用语言的主题，用于接收新活动提醒；为你参加的每个活动订阅一个主题；再订阅一个对应你所用语言的主题，用于接收应用动态；这两个通用主题默认开启，可在“设置 › 通知”中关闭。通知需要系统权限才能显示。它接收的是设备令牌，而不是你的阅读数据。",
  "legal.privacy.p_052_ev": "<span class=\"highlight\">活动：</span> Lecturameter，服务器托管在 Cloudflare（数据处理者）。有人举报某个昵称时，我们团队在 Discord（该通知的服务提供方）上的私密频道会收到通知，内容仅为：活动、被举报的昵称、目前累计的举报次数、是否为测试活动、原因、时间以及指向我们管理面板的链接；绝不包含举报者的任何数据。通知由 Google（Firebase Cloud Messaging）投递。",
  "legal.privacy.p_053": "<span class=\"highlight\">12. 联系方式</span>",
  "legal.privacy.p_054": "如果你对隐私有任何疑问，请写信到 <span style=\"color:#BB86FC;\">lecturameter.app@gmail.com</span>。",
