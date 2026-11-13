@@ -934,7 +934,7 @@
  "lm99.get.intro_live": "Lecturameter 99 on tasuta ja saadaval iPhone'ile ning Androidile.",
  "lm99.get.app_store": "Laadi alla App Storest",
  "lm99.get.play_soon": "Varsti Google Plays",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Veebilehe külastusloendur:</span> sellel veebilehel (mitte rakendusel) on oma anonüümne loendur, ilma küpsisteta ja ilma kolmandate osapoolteta. See registreerib külastatud lehe, sinu klõpsud poodide linkidel, riigi, lehe keele, seadme tüübi (mobiil või arvuti) ja saidi, kust tulid. See ei salvesta sinu IP-aadressi ega midagi, mis sind tuvastaks: ainult anonüümse koodi, mis arvutatakse iga päev uuesti ja mille põhjal ei saa sind ühelt päevalt teisele ära tunda. Kui sinu brauser saadab signaali „Do Not Track“, ei saadeta midagi.",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Veebilehe külastusloendur:</span> sellel veebilehel (mitte rakendusel) on oma pseudonüümne loendur, ilma küpsisteta ja ilma kolmandate osapoolteta. See registreerib külastatud lehe, sinu klõpsud poodide linkidel, riigi, lehe keele, seadme tüübi (mobiil või arvuti) ja saidi, kust tulid. See ei salvesta sinu IP-aadressi ega midagi, mis sind tuvastaks: ainult anonüümse koodi, mis arvutatakse iga päev uuesti ja mille põhjal ei saa sind ühelt päevalt teisele ära tunda. Kui sinu brauser saadab signaali „Do Not Track“, ei saadeta midagi.",
  "home.quickmenu.title": "Liigu jaotiste vahel tagasi Avalehele minemata",
  "home.quickmenu.sub": "Bingost Seadetesse jõudmiseks tuli enne läbi Avalehe käia. Nüüd puudutad üleval paremal kolme punkti (···) ja oled kohe kohal.",
  "home.quickmenu.cards": [

@@ -934,7 +934,7 @@
  "lm99.get.intro_live": "O Lecturameter 99 é grátis e está disponível para iPhone e para Android.",
  "lm99.get.app_store": "Descarregar na App Store",
  "lm99.get.play_soon": "Em breve na Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Contador de visitas do site:</span> este site (não a app) tem um contador próprio e anónimo, sem cookies e sem terceiros. Regista a página que visita, os seus cliques nas ligações para as lojas, o país, o idioma da página, o tipo de dispositivo (telemóvel ou computador) e o site de onde veio. Não guarda o seu endereço IP nem nada que o identifique: apenas um código anónimo que é recalculado todos os dias e não permite reconhecê-lo de um dia para o outro. Se o seu navegador enviar «Do Not Track», não é enviado nada.",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Contador de visitas do site:</span> este site (não a app) tem um contador próprio e pseudonimizado, sem cookies e sem terceiros. Regista a página que visita, os seus cliques nas ligações para as lojas, o país, o idioma da página, o tipo de dispositivo (telemóvel ou computador) e o site de onde veio. Não guarda o seu endereço IP nem nada que o identifique: apenas um código anónimo que é recalculado todos os dias e não permite reconhecê-lo de um dia para o outro. Se o seu navegador enviar «Do Not Track», não é enviado nada.",
  "home.quickmenu.title": "Salta entre secções sem voltar ao Início",
  "home.quickmenu.sub": "Para ir do Bingo às Definições era preciso passar primeiro pelo Início. Agora tocas nos três pontos (···) no canto superior direito e vais diretamente.",
  "home.quickmenu.cards": [

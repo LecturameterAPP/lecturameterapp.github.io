@@ -934,7 +934,7 @@
  "lm99.get.intro_live": "Lecturameter 99 miễn phí và có cho iPhone lẫn Android.",
  "lm99.get.app_store": "Tải trên App Store",
  "lm99.get.play_soon": "Sắp có trên Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Bộ đếm lượt truy cập trang web:</span> trang web này (không phải ứng dụng) có bộ đếm ẩn danh riêng, không dùng cookie và không có bên thứ ba. Bộ đếm ghi lại trang bạn truy cập, lượt nhấp của bạn vào các liên kết đến cửa hàng ứng dụng, quốc gia, ngôn ngữ của trang, loại thiết bị (điện thoại hoặc máy tính) và trang web bạn đến từ đó. Bộ đếm không lưu địa chỉ IP của bạn hay bất cứ thứ gì xác định được bạn: chỉ có một mã ẩn danh được tính lại mỗi ngày và không thể dùng để nhận ra bạn từ ngày này sang ngày khác. Nếu trình duyệt của bạn gửi tín hiệu \"Do Not Track\", sẽ không có gì được gửi đi.",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Bộ đếm lượt truy cập trang web:</span> trang web này (không phải ứng dụng) có bộ đếm giả danh riêng, không dùng cookie và không có bên thứ ba. Bộ đếm ghi lại trang bạn truy cập, lượt nhấp của bạn vào các liên kết đến cửa hàng ứng dụng, quốc gia, ngôn ngữ của trang, loại thiết bị (điện thoại hoặc máy tính) và trang web bạn đến từ đó. Bộ đếm không lưu địa chỉ IP của bạn hay bất cứ thứ gì xác định được bạn: chỉ có một mã ẩn danh được tính lại mỗi ngày và không thể dùng để nhận ra bạn từ ngày này sang ngày khác. Nếu trình duyệt của bạn gửi tín hiệu \"Do Not Track\", sẽ không có gì được gửi đi.",
  "home.quickmenu.title": "Chuyển giữa các mục mà không cần quay về Trang chủ",
  "home.quickmenu.sub": "Trước đây, muốn đi từ Bingo sang Cài đặt, bạn phải ghé Trang chủ trước. Giờ chỉ cần chạm vào ba chấm (···) ở góc trên bên phải là đến thẳng nơi cần tới.",
  "home.quickmenu.cards": [

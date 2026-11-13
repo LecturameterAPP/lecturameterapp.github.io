@@ -934,7 +934,7 @@
  "lm99.get.intro_live": "Lecturameter 99 és gratis i està disponible per a iPhone i per a Android.",
  "lm99.get.app_store": "Descarrega-la a l'App Store",
  "lm99.get.play_soon": "Aviat a Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Comptador de visites del web:</span> aquest web (no l'app) té un comptador propi i anònim, sense cookies i sense tercers. Registra la pàgina que visites, els clics als enllaços a les botigues, el país, l'idioma de la pàgina, el tipus de dispositiu (mòbil o ordinador) i el web des del qual arribes. No desa la teva adreça IP ni res que t'identifiqui: només un codi anònim que es recalcula cada dia i no permet reconèixer-te d'un dia per a l'altre. Si el teu navegador envia «No em segueixis» (Do Not Track), no s'envia res.",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Comptador de visites del web:</span> aquest web (no l'app) té un comptador propi i pseudònim, sense cookies i sense tercers. Registra la pàgina que visites, els clics als enllaços a les botigues, el país, l'idioma de la pàgina, el tipus de dispositiu (mòbil o ordinador) i el web des del qual arribes. No desa la teva adreça IP ni res que t'identifiqui: només un codi anònim que es recalcula cada dia i no permet reconèixer-te d'un dia per a l'altre. Si el teu navegador envia «No em segueixis» (Do Not Track), no s'envia res.",
  "home.quickmenu.title": "Salta d'una secció a una altra sense tornar a Inici",
  "home.quickmenu.sub": "Abans, per anar del Bingo a Ajustaments calia passar per Inici. Ara toques els tres punts (···) de dalt a la dreta i hi vas directe.",
  "home.quickmenu.cards": [

@@ -934,7 +934,7 @@
  "lm99.get.intro_live": "Lecturameter 99 yra nemokama ir prieinama iPhone bei Android.",
  "lm99.get.app_store": "Atsisiųsti iš App Store",
  "lm99.get.play_soon": "Netrukus Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Svetainės apsilankymų skaitiklis:</span> ši svetainė (ne programėlė) turi savo anoniminį skaitiklį, be slapukų ir be trečiųjų šalių. Jis registruoja puslapį, kurį aplankai, tavo paspaudimus ant nuorodų į parduotuves, šalį, puslapio kalbą, įrenginio tipą (telefonas ar kompiuteris) ir svetainę, iš kurios atėjai. Jis nesaugo tavo IP adreso ar nieko, kas tave identifikuotų: tik anoniminį kodą, kuris perskaičiuojamas kiekvieną dieną ir pagal kurį negalima atpažinti tavęs iš vienos dienos į kitą. Jei tavo naršyklė siunčia „Do Not Track“, niekas nesiunčiama.",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Svetainės apsilankymų skaitiklis:</span> ši svetainė (ne programėlė) turi savo pseudonimizuotą skaitiklį, be slapukų ir be trečiųjų šalių. Jis registruoja puslapį, kurį aplankai, tavo paspaudimus ant nuorodų į parduotuves, šalį, puslapio kalbą, įrenginio tipą (telefonas ar kompiuteris) ir svetainę, iš kurios atėjai. Jis nesaugo tavo IP adreso ar nieko, kas tave identifikuotų: tik anoniminį kodą, kuris perskaičiuojamas kiekvieną dieną ir pagal kurį negalima atpažinti tavęs iš vienos dienos į kitą. Jei tavo naršyklė siunčia „Do Not Track“, niekas nesiunčiama.",
  "home.quickmenu.title": "Šokinėkite tarp skyrių negrįždami į Pradžią",
  "home.quickmenu.sub": "Anksčiau norint iš Bingo patekti į Nustatymus reikėjo užsukti į Pradžią. Dabar paliečiate tris taškus (···) viršutiniame dešiniajame kampe ir einate tiesiai.",
  "home.quickmenu.cards": [

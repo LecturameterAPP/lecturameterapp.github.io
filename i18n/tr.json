@@ -934,7 +934,7 @@
  "lm99.get.intro_live": "Lecturameter 99 ücretsizdir ve iPhone ile Android için mevcuttur.",
  "lm99.get.app_store": "App Store'dan indir",
  "lm99.get.play_soon": "Yakında Google Play'de",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Web sitesi ziyaret sayacı:</span> bu web sitesinin (uygulamanın değil) çerezsiz ve üçüncü taraflarsız, kendine ait anonim bir sayacı vardır. Ziyaret ettiğin sayfayı, mağaza bağlantılarına tıklamalarını, ülkeyi, sayfa dilini, cihaz türünü (telefon veya bilgisayar) ve geldiğin siteyi kaydeder. IP adresini ya da seni tanımlayan hiçbir şeyi saklamaz: yalnızca her gün yeniden hesaplanan ve seni bir günden diğerine tanımak için kullanılamayan anonim bir kod saklar. Tarayıcın «Do Not Track» (İzlenmek İstemiyorum) gönderirse hiçbir şey gönderilmez.",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Web sitesi ziyaret sayacı:</span> bu web sitesinin (uygulamanın değil) çerezsiz ve üçüncü taraflarsız, kendine ait takma adlı bir sayacı vardır. Ziyaret ettiğin sayfayı, mağaza bağlantılarına tıklamalarını, ülkeyi, sayfa dilini, cihaz türünü (telefon veya bilgisayar) ve geldiğin siteyi kaydeder. IP adresini ya da seni tanımlayan hiçbir şeyi saklamaz: yalnızca her gün yeniden hesaplanan ve seni bir günden diğerine tanımak için kullanılamayan anonim bir kod saklar. Tarayıcın «Do Not Track» (İzlenmek İstemiyorum) gönderirse hiçbir şey gönderilmez.",
  "home.quickmenu.title": "Ana sayfaya dönmeden bölümler arasında geçiş yapın",
  "home.quickmenu.sub": "Bingo'dan Ayarlar'a gitmek için eskiden önce Ana sayfa'ya uğramak gerekiyordu. Şimdi sağ üstteki üç noktaya (···) dokunup doğrudan oraya gidiyorsunuz.",
  "home.quickmenu.cards": [

@@ -934,7 +934,7 @@
  "lm99.get.intro_live": "Lecturameter 99 je brezplačen in na voljo za iPhone ter Android.",
  "lm99.get.app_store": "Prenesi iz App Store",
  "lm99.get.play_soon": "Kmalu v Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Števec obiskov spletnega mesta:</span> to spletno mesto (ne aplikacija) ima svoj anonimni števec, brez piškotkov in brez tretjih oseb. Beleži stran, ki jo obiščeš, tvoje klike na povezave do trgovin, državo, jezik strani, vrsto naprave (telefon ali računalnik) in spletno mesto, od koder prihajaš. Ne shranjuje tvojega naslova IP ali česar koli, kar bi te identificiralo: samo anonimno kodo, ki se vsak dan znova izračuna in ne omogoča, da bi te prepoznali iz enega dne v drugega. Če tvoj brskalnik pošilja »Do Not Track«, se ne pošlje nič.",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Števec obiskov spletnega mesta:</span> to spletno mesto (ne aplikacija) ima svoj psevdonimni števec, brez piškotkov in brez tretjih oseb. Beleži stran, ki jo obiščeš, tvoje klike na povezave do trgovin, državo, jezik strani, vrsto naprave (telefon ali računalnik) in spletno mesto, od koder prihajaš. Ne shranjuje tvojega naslova IP ali česar koli, kar bi te identificiralo: samo anonimno kodo, ki se vsak dan znova izračuna in ne omogoča, da bi te prepoznali iz enega dne v drugega. Če tvoj brskalnik pošilja »Do Not Track«, se ne pošlje nič.",
  "home.quickmenu.title": "Preskakuj med razdelki, ne da bi se vračal na Domov",
  "home.quickmenu.sub": "Za prehod iz Bingo v Nastavitve je bilo prej treba iti prek Domov. Zdaj tapneš tri pike (···) zgoraj desno in greš naravnost tja.",
  "home.quickmenu.cards": [

@@ -934,7 +934,7 @@
  "lm99.get.intro_live": "Lecturameter 99 ir bez maksas un pieejama iPhone un Android.",
  "lm99.get.app_store": "Lejupielādēt no App Store",
  "lm99.get.play_soon": "Drīz Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Tīmekļa vietnes apmeklējumu skaitītājs:</span> šai tīmekļa vietnei (nevis lietotnei) ir savs anonīms skaitītājs bez sīkdatnēm un bez trešajām personām. Tas reģistrē lapu, kuru apmeklē, tavus klikšķus uz saitēm uz veikaliem, valsti, lapas valodu, ierīces veidu (mobilais tālrunis vai dators) un vietni, no kuras atnāci. Tas nesaglabā tavu IP adresi vai kaut ko, kas tevi identificētu: tikai anonīmu kodu, ko pārrēķina katru dienu un pēc kura nevar tevi atpazīt no vienas dienas uz otru. Ja tavs pārlūks sūta „Do Not Track“, netiek nosūtīts nekas.",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Tīmekļa vietnes apmeklējumu skaitītājs:</span> šai tīmekļa vietnei (nevis lietotnei) ir savs pseidonimizēts skaitītājs bez sīkdatnēm un bez trešajām personām. Tas reģistrē lapu, kuru apmeklē, tavus klikšķus uz saitēm uz veikaliem, valsti, lapas valodu, ierīces veidu (mobilais tālrunis vai dators) un vietni, no kuras atnāci. Tas nesaglabā tavu IP adresi vai kaut ko, kas tevi identificētu: tikai anonīmu kodu, ko pārrēķina katru dienu un pēc kura nevar tevi atpazīt no vienas dienas uz otru. Ja tavs pārlūks sūta „Do Not Track“, netiek nosūtīts nekas.",
  "home.quickmenu.title": "Pārlēc starp sadaļām, neatgriežoties sākumā",
  "home.quickmenu.sub": "Lai no Bingo nokļūtu Iestatījumos, agrāk vajadzēja iegriezties sadaļā Sākums. Tagad pieskaries trim punktiem (···) augšējā labajā stūrī un nonāc turp tieši.",
  "home.quickmenu.cards": [

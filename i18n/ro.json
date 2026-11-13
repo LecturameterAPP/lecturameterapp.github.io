@@ -934,7 +934,7 @@
  "lm99.get.intro_live": "Lecturameter 99 este gratuită și disponibilă pentru iPhone și pentru Android.",
  "lm99.get.app_store": "Descarcă din App Store",
  "lm99.get.play_soon": "În curând în Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Contor de vizite al site-ului:</span> acest site web (nu aplicația) are propriul contor anonim, fără cookie-uri și fără terți. Înregistrează pagina pe care o vizitezi, clicurile tale pe linkurile către magazine, țara, limba paginii, tipul de dispozitiv (telefon sau computer) și site-ul de pe care vii. Nu stochează adresa ta IP și nici nimic care să te identifice: doar un cod anonim care se recalculează în fiecare zi și nu permite recunoașterea ta de la o zi la alta. Dacă browserul tău trimite «Do Not Track», nu se trimite nimic.",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Contor de vizite al site-ului:</span> acest site web (nu aplicația) are propriul contor pseudonim, fără cookie-uri și fără terți. Înregistrează pagina pe care o vizitezi, clicurile tale pe linkurile către magazine, țara, limba paginii, tipul de dispozitiv (telefon sau computer) și site-ul de pe care vii. Nu stochează adresa ta IP și nici nimic care să te identifice: doar un cod anonim care se recalculează în fiecare zi și nu permite recunoașterea ta de la o zi la alta. Dacă browserul tău trimite «Do Not Track», nu se trimite nimic.",
  "home.quickmenu.title": "Sari între secțiuni fără să te întorci la Acasă",
  "home.quickmenu.sub": "Pentru a ajunge de la Bingo la Setări, trebuia să treci mai întâi pe la Acasă. Acum atingi cele trei puncte (···) din colțul din dreapta sus și ajungi direct.",
  "home.quickmenu.cards": [

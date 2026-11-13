@@ -934,7 +934,7 @@
  "lm99.get.intro_live": "Lecturameter 99 免费，支持 iPhone 和 Android。",
  "lm99.get.app_store": "在 App Store 下载",
  "lm99.get.play_soon": "即将登陆 Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">网站访问计数器：</span> 本网站（不是应用）有自己的匿名计数器，不使用 Cookie，也没有第三方。它会记录你访问的页面、你对商店链接的点击、国家或地区、页面语言、设备类型（手机或电脑）以及你来自的网站。它不会保存你的 IP 地址或任何可识别你身份的信息：只有一个每天重新计算的匿名代码，无法用来跨天识别你。如果你的浏览器发送“Do Not Track”（请勿跟踪）信号，则不会发送任何内容。",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">网站访问计数器：</span> 本网站（不是应用）有自己的假名计数器，不使用 Cookie，也没有第三方。它会记录你访问的页面、你对商店链接的点击、国家或地区、页面语言、设备类型（手机或电脑）以及你来自的网站。它不会保存你的 IP 地址或任何可识别你身份的信息：只有一个每天重新计算的匿名代码，无法用来跨天识别你。如果你的浏览器发送“Do Not Track”（请勿跟踪）信号，则不会发送任何内容。",
  "home.quickmenu.title": "无需返回主页，即可在各板块之间跳转",
  "home.quickmenu.sub": "以前从宾果去设置，要先回到主页。现在只需点按右上角的三个点（···），即可直接前往。",
  "home.quickmenu.cards": [

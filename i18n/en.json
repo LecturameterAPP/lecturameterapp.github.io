@@ -934,7 +934,7 @@
  "lm99.get.intro_live": "Lecturameter 99 is free and available for iPhone and for Android.",
  "lm99.get.app_store": "Download on the App Store",
  "lm99.get.play_soon": "Coming soon to Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Website visit counter:</span> this website (not the app) has its own anonymous counter, with no cookies and no third parties. It records the page you visit, your clicks on links to the stores, the country, the page language, the type of device (mobile or desktop) and the site you came from. It does not store your IP address or anything that identifies you: only an anonymous code that is recalculated every day and cannot be used to recognise you from one day to the next. If your browser sends \"Do Not Track\", nothing is sent.",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Website visit counter:</span> this website (not the app) has its own pseudonymous counter, with no cookies and no third parties. It records the page you visit, your clicks on links to the stores, the country, the page language, the type of device (mobile or desktop) and the site you came from. It does not store your IP address or anything that identifies you: only an anonymous code that is recalculated every day and cannot be used to recognise you from one day to the next. If your browser sends \"Do Not Track\", nothing is sent.",
  "home.quickmenu.title": "Jump between sections without going back to Home",
  "home.quickmenu.sub": "Going from Bingo to Settings used to mean a stop at Home first. Now you tap the three dots (···) in the top-right corner and go straight there.",
  "home.quickmenu.cards": [

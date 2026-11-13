@@ -934,7 +934,7 @@
  "lm99.get.intro_live": "Lecturameter 99 er ókeypis og fáanlegt fyrir iPhone og fyrir Android.",
  "lm99.get.app_store": "Sækja í App Store",
  "lm99.get.play_soon": "Væntanlegt í Google Play",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Heimsóknateljari vefsíðunnar:</span> þessi vefsíða (ekki appið) er með sinn eigin nafnlausa teljara, án vefkaka og án þriðju aðila. Hann skráir síðuna sem þú heimsækir, smelli þína á tengla í verslanirnar, landið, tungumál síðunnar, gerð tækis (sími eða tölva) og vefinn sem þú komst frá. Hann geymir hvorki IP-tölu þína né neitt sem auðkennir þig: aðeins nafnlausan kóða sem er endurreiknaður á hverjum degi og er ekki hægt að nota til að þekkja þig frá einum degi til annars. Ef vafrinn þinn sendir „Do Not Track“ er engu sent.",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Heimsóknateljari vefsíðunnar:</span> þessi vefsíða (ekki appið) er með sinn eigin dulnefnda teljara, án vefkaka og án þriðju aðila. Hann skráir síðuna sem þú heimsækir, smelli þína á tengla í verslanirnar, landið, tungumál síðunnar, gerð tækis (sími eða tölva) og vefinn sem þú komst frá. Hann geymir hvorki IP-tölu þína né neitt sem auðkennir þig: aðeins nafnlausan kóða sem er endurreiknaður á hverjum degi og er ekki hægt að nota til að þekkja þig frá einum degi til annars. Ef vafrinn þinn sendir „Do Not Track“ er engu sent.",
  "home.quickmenu.title": "Farðu milli hluta án þess að fara aftur á Heim",
  "home.quickmenu.sub": "Áður þurfti að fara fyrst á Heim til að komast úr Bingó í Stillingar. Nú ýtirðu á punktana þrjá (···) efst í hægra horninu og ferð beint þangað.",
  "home.quickmenu.cards": [

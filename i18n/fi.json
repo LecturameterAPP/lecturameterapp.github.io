@@ -934,7 +934,7 @@
  "lm99.get.intro_live": "Lecturameter 99 on ilmainen ja saatavilla iPhonelle ja Androidille.",
  "lm99.get.app_store": "Lataa App Storesta",
  "lm99.get.play_soon": "Pian Google Playssa",
- "legal.privacy.p_052_web": "<span class=\"highlight\">Verkkosivuston kävijälaskuri:</span> tällä verkkosivustolla (ei sovelluksella) on oma anonyymi laskuri, ilman evästeitä ja ilman kolmansia osapuolia. Se kirjaa käymäsi sivun, klikkauksesi kauppoihin johtaviin linkkeihin, maan, sivun kielen, laitetyypin (mobiili tai tietokone) ja sivuston, jolta tulit. Se ei tallenna IP-osoitettasi eikä mitään sellaista, mikä tunnistaisi sinut: vain anonyymin koodin, joka lasketaan uudelleen joka päivä eikä sen avulla voi tunnistaa sinua päivästä toiseen. Jos selaimesi lähettää «Do Not Track» -signaalin, mitään ei lähetetä.",
+ "legal.privacy.p_052_web": "<span class=\"highlight\">Verkkosivuston kävijälaskuri:</span> tällä verkkosivustolla (ei sovelluksella) on oma pseudonyymi laskuri, ilman evästeitä ja ilman kolmansia osapuolia. Se kirjaa käymäsi sivun, klikkauksesi kauppoihin johtaviin linkkeihin, maan, sivun kielen, laitetyypin (mobiili tai tietokone) ja sivuston, jolta tulit. Se ei tallenna IP-osoitettasi eikä mitään sellaista, mikä tunnistaisi sinut: vain anonyymin koodin, joka lasketaan uudelleen joka päivä eikä sen avulla voi tunnistaa sinua päivästä toiseen. Jos selaimesi lähettää «Do Not Track» -signaalin, mitään ei lähetetä.",
  "home.quickmenu.title": "Siirry osiosta toiseen palaamatta Kotiin",
  "home.quickmenu.sub": "Bingosta Asetuksiin pääsi ennen vain Kodin kautta. Nyt napautat oikean yläkulman kolmea pistettä (···) ja menet suoraan perille.",
  "home.quickmenu.cards": [
