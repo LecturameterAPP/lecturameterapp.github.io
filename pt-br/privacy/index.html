@@ -167,7 +167,7 @@
             <div class="privacy-highlight">
                 <div class="icon">🔒</div>
                 <div class="title">Seus dados de leitura são seus</div>
-                <div class="desc"><span class="highlight">O Lecturameter não tem servidor próprio para a sua biblioteca.</span> Seus livros, sessões e estatísticas ficam apenas no seu celular e nos seus próprios backups. Sem publicidade, sem contas de usuário, sem identificadores de publicidade, e nunca vendemos seus dados nem os usamos para publicidade.</div>
+                <div class="desc"><span class="highlight">O Lecturameter não tem servidor próprio para a sua biblioteca.</span> Seus livros, sessões e estatísticas ficam apenas no seu celular e nos seus próprios backups. Sem publicidade, sem contas de usuário (exceto o KOSync opcional e os dados de eventos, veja as seções correspondentes), sem identificadores de publicidade, e nunca vendemos seus dados nem os usamos para publicidade.</div>
             </div>
 
             <div class="section" id="privacy">
@@ -191,7 +191,7 @@
                         <li>Não mostramos anúncios.</li>
                         <li>Você não precisa criar nenhuma conta para usar o app. Se você participar de um evento, uma identidade pseudônima é criada apenas para eventos (seção 9).</li>
                         <li>Nunca vendemos seus dados nem os usamos para publicidade ou criação de perfis.</li>
-                        <li>Coletamos, sim, nossas próprias estatísticas de uso pseudonimizadas e relatórios de falhas, opcionais, ambos descritos na seção 3. Você pode desativá-los em Configurações &gt; Ajuda e sobre &gt; Privacidade.</li>
+                        <li>Coletamos, sim, nossas próprias estatísticas de uso pseudonimizadas e relatórios de falhas e, se você permitir, o Google Analytics para Firebase, todos opcionais e descritos na seção 3. Você pode desativá-los em Configurações &gt; Ajuda e sobre &gt; Privacidade.</li>
                     </ul>
 
                     <p style="margin-top:14px;"><span class="highlight">3. Estatísticas de uso pseudonimizadas e relatórios de falhas</span></p>
@@ -210,11 +210,11 @@
                     <p>Enviar feedback ou responder a uma pesquisa dentro do app é totalmente opcional. Se você decidir fazê-lo, o texto que escreveu é enviado junto com informações técnicas do dispositivo (modelo, versão do sistema (Android ou iOS) e versão do app) ao desenvolvedor do Lecturameter, para que ele possa lê-lo e melhorar o app. Se você também decidir anexar logs do app ou capturas de tela, eles também são enviados; ambos são opcionais e só são incluídos se você os adicionar. Se você escrever um e-mail de contato no formulário de comentários, ele é enviado junto com o seu comentário e usado apenas para responder a você; é opcional e não fica guardado no app.</p>
                     <p style="margin-top:8px;">Responder a uma pesquisa dentro do app é opcional, e a resposta só é enviada se você tocar em Enviar. Ela inclui seu tema favorito, o tema que você está usando, a seção do app que você mais usa, uma resposta de escolha única na pergunta rotativa do momento e os textos opcionais que você decidir escrever (pedimos que não inclua dados pessoais), junto com a versão do app, o idioma e a plataforma (Android ou iOS). A resposta chega por e-mail ao desenvolvedor, como o feedback, e também é guardada no servidor de estatísticas próprio do Lecturameter (hospedado na Cloudflare) por 6 meses, sem identificador do dispositivo nem endereço IP; depois desse prazo, é apagada automaticamente.</p>
 
-                    <p style="margin-top:14px;"><span class="highlight">6. Lecturameter Pro e resgate de códigos</span></p>
-                    <p>Os pagamentos do Lecturameter Pro são processados pelo Google Play (no Android) ou pela Apple App Store (no iOS): o app nunca vê nem guarda seus dados de pagamento. Quando você faz ou restaura uma compra, o identificador de compra da loja é enviado ao servidor de licenças do Lecturameter somente para validar a compra. Se você resgatar um código promocional, esse código e um identificador do dispositivo são enviados ao servidor de resgate do Lecturameter, somente para validar o código e limitar quantos dispositivos podem usá-lo.</p>
+                    <p style="margin-top:14px;"><span class="highlight">6. Lecturameter Pro</span></p>
+                    <p>Os pagamentos do Lecturameter Pro são processados pelo Google Play (no Android) ou pela Apple App Store (no iOS): o app nunca vê nem guarda seus dados de pagamento. Quando você faz ou restaura uma compra, o identificador de compra da loja é enviado ao servidor de licenças do Lecturameter somente para validar a compra.</p>
 
                     <p style="margin-top:14px;"><span class="highlight">7. Identificador do dispositivo</span></p>
-                    <p>Para evitar abusos do teste grátis e verificar sua licença Pro, o app envia um identificador do dispositivo ao servidor de licenças do Lecturameter (hospedado na Cloudflare): o Android ID no Android, o identificador do fornecedor no iOS. Ele é enviado quando você inicia o teste grátis, quando resgata ou restaura o Pro com um código, quando restaura compras e quando o app tenta de novo, na inicialização, um registro de teste pendente. Não é usado para publicidade nem para criação de perfis e não está vinculado ao seu nome.</p>
+                    <p>Para evitar abusos do teste grátis e verificar sua licença Pro, o app envia um identificador do dispositivo ao servidor de licenças do Lecturameter (hospedado na Cloudflare): o Android ID no Android, o identificador do fornecedor no iOS. Ele é enviado quando você inicia o teste grátis, quando restaura compras e quando o app tenta de novo, na inicialização, um registro de teste pendente. Não é usado para publicidade nem para criação de perfis e não está vinculado ao seu nome.</p>
 
                     <p style="margin-top:14px;"><span class="highlight">8. Sincronização com e-reader (KOSync)</span></p>
                     <p>É opcional: se você não conectar um e-reader, nada é enviado. Se conectar um (KOReader, CrossPoint ou qualquer outro compatível com KOSync), o app envia ao servidor de sincronização do Lecturameter (hospedado na Cloudflare, na Europa Ocidental) um nome de usuário de sincronização (de 3 a 32 caracteres, sem e-mail nem dados pessoais; não é uma conta do Lecturameter) e a chave que seu e-reader usa, que o servidor guarda apenas como um hash com salt. Para cada livro sincronizado, guarda o identificador do documento, a posição, a porcentagem, o nome e o id do dispositivo, a data e, se o seu e-reader os enviar, o título, os autores e o nome do arquivo. Não guardamos seu endereço IP: os limites de requisições são contados na hora pela Cloudflare.</p>
@@ -236,7 +236,7 @@
                     <p style="margin-top:14px;"><span class="highlight">10. Permissões do app</span></p>
                     <p><span class="highlight">Android:</span></p>
                     <ul style="padding-left:18px; margin:6px 0;">
-                        <li><span class="highlight">Internet:</span> para buscar livros, fazer backup no Drive, enviar feedback, resgatar códigos, iniciar o teste grátis e enviar estatísticas pseudonimizadas e relatórios de falhas (quando ativados).</li>
+                        <li><span class="highlight">Internet:</span> para buscar livros, fazer backup no Drive, enviar feedback, iniciar o teste grátis, enviar estatísticas pseudonimizadas e relatórios de falhas (quando ativados) e usar o Google Analytics (se você permitir), eventos, sincronização KOSync e notificações.</li>
                         <li><span class="highlight">Armazenamento local e imagens:</span> para salvar e ler seus backups e capas de livros no dispositivo.</li>
                         <li><span class="highlight">Câmera:</span> para escanear o código de barras (ISBN) de um livro e, se você quiser, tirar fotos da lombada e das bordas do seu exemplar. Essas fotos ficam guardadas apenas no seu dispositivo e nos seus backups (se ativados), e nunca são enviadas a nenhum outro lugar.</li>
                         <li><span class="highlight">Notificações:</span> para o cronômetro da sessão de leitura ativa e para avisar sobre o seu resumo semanal e quando o seu Wrapped estiver pronto.</li>

@@ -147,12 +147,12 @@
       "@type": "FAQPage",
       "mainEntity": [
         {"@type":"Question","name":"Vai varu pārnest savu bibliotēku no citām lietotnēm?","acceptedAnswer":{"@type":"Answer","text":"Jā. Atver Iestatījumi > Imports/Eksports un seko soli pa solim vednim. Atbalstītās lietotnes: Goodreads (CSV): eksportē no goodreads.com > My Books > Import and export > Export Library. StoryGraph (CSV): eksportē no app.thestorygraph.com > Manage account > Import/Export > Export STG Library (CSV pienāk e-pastā). Bookmory (.bookmory vai XLSX): Iestatījumi > Dublējumkopija > Eksportēt. Fable / ShelfBridge (CSV): eksportē ar paplašinājumu ShelfBridge. Book Tracker (CSV): Iestatījumi > Eksportēt. Lecturameter CSV: eksportēts no citas ierīces ar Lecturameter. Citas lietotnes (Babelio, Pagebound, Bookshelf, Delibrista…): jebkurš CSV, kas saderīgs ar Goodreads/StoryGraph formātu."}},
-        {"@type":"Question","name":"Vai mani dati pieder man?","acceptedAnswer":{"@type":"Answer","text":"Pilnīgi noteikti. Tavi dati tiek glabāti tikai tavā telefonā. Tava bibliotēka nekad nepamet tavu ierīci. Lietotne sūta pseidonīmu lietošanas statistiku un avāriju atskaites, ko vari izslēgt iestatījumos. Turklāt, ja meklēšanā nekas netiek atrasts, šis teksts vai ISBN tiek saglabāts bez jebkāda identifikatora, lai varētu pievienot trūkstošos darbus. Ja ieslēdz dublēšanu Google Drive, piekļuve šiem failiem ir tikai tev."}},
+        {"@type":"Question","name":"Vai mani dati pieder man?","acceptedAnswer":{"@type":"Answer","text":"Pilnīgi noteikti. Tavi dati tiek glabāti tikai tavā telefonā. Tava bibliotēka nekad nepamet tavu ierīci. Lietotne sūta pseidonīmu lietošanas statistiku un avāriju atskaites un, ja atļauj, Google Analytics (Firebase). Tie ir trīs atsevišķi slēdži sadaļā Iestatījumi > Privātums, ko vari izslēgt. Turklāt, ja meklēšanā nekas netiek atrasts, šis teksts vai ISBN tiek saglabāts bez jebkāda identifikatora, lai varētu pievienot trūkstošos darbus. Ja ieslēdz dublēšanu Google Drive, piekļuve šiem failiem ir tikai tev."}},
         {"@type":"Question","name":"Vai ir abonements?","acceptedAnswer":{"@type":"Answer","text":"Nē. Lietotne ir bezmaksas, ar neobligātu vienreizēju Pro pirkumu."}},
-        {"@type":"Question","name":"Vai tā darbojas bezsaistē?","acceptedAnswer":{"@type":"Answer","text":"Gandrīz viss darbojas bezsaistē. Savienojums vajadzīgs tikai, lai meklētu jaunas grāmatas un augšupielādētu dublējumkopijas Google Drive."}},
+        {"@type":"Question","name":"Vai tā darbojas bezsaistē?","acceptedAnswer":{"@type":"Answer","text":"Gandrīz viss darbojas bezsaistē. Savienojums vajadzīgs, lai meklētu grāmatas, augšupielādētu dublējumkopijas Google Drive, sinhronizētu ar KOSync un piedalītos notikumos."}},
         {"@type":"Question","name":"Vai ir iPhone versija?","acceptedAnswer":{"@type":"Answer","text":"Jā: tagad vari to lejupielādēt App Store."}},
         {"@type":"Question","name":"Vai varu izmēģināt pirms pirkšanas?","acceptedAnswer":{"@type":"Answer","text":"Jā. Ir bezmaksas 7 dienu Pro funkciju izmēģinājums, karte nav vajadzīga. iPhone tas ir bezmaksas App Store pirkums lietotnē, piesaistīts tavam Apple ID. Android ierīcē izmēģinājuma beigās, pat ja Pro nenopērc, tu saņem vienu Pro tēmu pēc savas izvēles bez maksas."}},
-        {"@type":"Question","name":"Kas notiek ar manu Pro, ja nomainu telefonu?","acceptedAnswer":{"@type":"Answer","text":"Tas atkarīgs no tā, kur to nopirki. Ja nopirki to Google Play un pārej uz citu Android ar to pašu Google kontu, instalē Lecturameter un iestatījumos pieskaries Atjaunot pirkumu. Ja nopirki to App Store un pārej uz citu iPhone ar to pašu Apple ID, viss tāpat: instalē un pieskaries Atjaunot pirkumu. Pagaidām Pro nepāriet starp Android un iPhone: katrs pirkums paliek savā platformā. lm-... kodus var izmantot tikai Android."}},
+        {"@type":"Question","name":"Kas notiek ar manu Pro, ja nomainu telefonu?","acceptedAnswer":{"@type":"Answer","text":"Tas atkarīgs no tā, kur to nopirki. Ja nopirki to Google Play un pārej uz citu Android ar to pašu Google kontu, instalē Lecturameter un iestatījumos pieskaries Atjaunot pirkumu. Ja nopirki to App Store un pārej uz citu iPhone ar to pašu Apple ID, viss tāpat: instalē un pieskaries Atjaunot pirkumu. Pagaidām Pro nepāriet starp Android un iPhone: katrs pirkums paliek savā platformā."}},
         {"@type":"Question","name":"Vai varu pārnest savu Pro starp telefoniem un starp iOS un Android?","acceptedAnswer":{"@type":"Answer","text":"Starp Android un iPhone pagaidām nē: katrs pirkums paliek savā platformā. Skatāmies, vai to var izdarīt kaut kā. Starp diviem vienas platformas telefoniem var: izmanto Atjaunot pirkumu ar savu Google kontu vai Apple ID."}}
       ]
     }
@@ -326,7 +326,7 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">Vai mani dati pieder man?</button>
-                <div class="faq-a"><div class="faq-a-inner">Pilnīgi noteikti. Tavi dati tiek glabāti tikai tavā telefonā. Tava bibliotēka nekad nepamet tavu ierīci. Lietotne sūta pseidonīmu lietošanas statistiku un avāriju atskaites, ko vari izslēgt iestatījumos. Turklāt, ja meklēšanā nekas netiek atrasts, šis teksts vai ISBN tiek saglabāts bez jebkāda identifikatora, lai varētu pievienot trūkstošos darbus. Sīkāk to skaties <a href="../privacy/">privātuma politikā</a>. Ja ieslēdz dublēšanu Google Drive, piekļuve šiem failiem ir tikai tev.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Pilnīgi noteikti. Tavi dati tiek glabāti tikai tavā telefonā. Tava bibliotēka nekad nepamet tavu ierīci. Lietotne sūta pseidonīmu lietošanas statistiku un avāriju atskaites un, ja atļauj, Google Analytics (Firebase). Tie ir trīs atsevišķi slēdži sadaļā Iestatījumi > Privātums, ko vari izslēgt. Turklāt, ja meklēšanā nekas netiek atrasts, šis teksts vai ISBN tiek saglabāts bez jebkāda identifikatora, lai varētu pievienot trūkstošos darbus. Sīkāk to skaties <a href="../privacy/">privātuma politikā</a>. Ja ieslēdz dublēšanu Google Drive, piekļuve šiem failiem ir tikai tev.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Vai ir abonements?</button>
@@ -334,7 +334,7 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">Vai tā darbojas bezsaistē?</button>
-                <div class="faq-a"><div class="faq-a-inner">Gandrīz viss darbojas bezsaistē. Savienojums vajadzīgs tikai, lai meklētu jaunas grāmatas un augšupielādētu dublējumkopijas Google Drive.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Gandrīz viss darbojas bezsaistē. Savienojums vajadzīgs, lai meklētu grāmatas, augšupielādētu dublējumkopijas Google Drive, sinhronizētu ar KOSync un piedalītos notikumos.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Vai ir iPhone versija?</button>
@@ -346,7 +346,7 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">Kas notiek ar manu Pro, ja nomainu telefonu?</button>
-                <div class="faq-a"><div class="faq-a-inner">Tas atkarīgs no tā, kur to nopirki. Ja nopirki to <strong>Google Play</strong> un pārej uz citu Android ar to pašu Google kontu, instalē Lecturameter un iestatījumos pieskaries <strong>Atjaunot pirkumu</strong>. Ja nopirki to <strong>App Store</strong> un pārej uz citu iPhone ar to pašu Apple ID, viss tāpat: instalē un pieskaries <strong>Atjaunot pirkumu</strong>. Pagaidām Pro nepāriet starp Android un iPhone: katrs pirkums paliek savā platformā. <code>lm-…</code> kodus var izmantot tikai Android. Sīkāk: <a href="../../activar-pro.html">Kā aktivizēt Pro</a>.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Tas atkarīgs no tā, kur to nopirki. Ja nopirki to <strong>Google Play</strong> un pārej uz citu Android ar to pašu Google kontu, instalē Lecturameter un iestatījumos pieskaries <strong>Atjaunot pirkumu</strong>. Ja nopirki to <strong>App Store</strong> un pārej uz citu iPhone ar to pašu Apple ID, viss tāpat: instalē un pieskaries <strong>Atjaunot pirkumu</strong>. Pagaidām Pro nepāriet starp Android un iPhone: katrs pirkums paliek savā platformā.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Vai varu pārnest savu Pro starp telefoniem un starp iOS un Android?</button>

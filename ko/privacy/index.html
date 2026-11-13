@@ -167,7 +167,7 @@
             <div class="privacy-highlight">
                 <div class="icon">🔒</div>
                 <div class="title">당신의 독서 데이터는 당신의 것이에요</div>
-                <div class="desc"><span class="highlight">Lecturameter에는 서재를 위한 자체 서버가 없어요.</span> 책, 세션, 통계는 휴대폰과 직접 만든 백업에만 저장돼요. 광고도, 사용자 계정도, 광고 식별자도 없고, 데이터를 판매하거나 광고에 사용하는 일은 절대 없어요.</div>
+                <div class="desc"><span class="highlight">Lecturameter에는 서재를 위한 자체 서버가 없어요.</span> 책, 세션, 통계는 휴대폰과 직접 만든 백업에만 저장돼요. 광고도, 사용자 계정도(선택 사항인 KOSync와 이벤트 데이터는 제외, 해당 항목 참조), 광고 식별자도 없고, 데이터를 판매하거나 광고에 사용하는 일은 절대 없어요.</div>
             </div>
 
             <div class="section" id="privacy">
@@ -191,7 +191,7 @@
                         <li>광고를 표시하지 않아요.</li>
                         <li>앱을 사용하기 위해 계정을 만들 필요가 없어요. 이벤트에 참여하면 이벤트 전용 가명 신원이 만들어집니다(9절).</li>
                         <li>데이터를 판매하거나 광고 또는 프로파일링에 사용하지 않아요.</li>
-                        <li>다만 자체적인 선택형 가명 사용 통계와 오류 보고서는 수집하며, 둘 다 3항에서 설명해요. 설정 &gt; 도움말 및 정보 &gt; 개인정보에서 끌 수 있어요.</li>
+                        <li>다만 자체적인 선택형 가명 사용 통계와 오류 보고서, 그리고 허용하면 Google Analytics for Firebase도 수집하며, 모두 3항에서 설명해요. 설정 &gt; 도움말 및 정보 &gt; 개인정보에서 모두 끌 수 있어요.</li>
                     </ul>
 
                     <p style="margin-top:14px;"><span class="highlight">3. 가명 사용 통계와 오류 보고서</span></p>
@@ -210,11 +210,11 @@
                     <p>앱 안에서 의견을 보내거나 설문에 답하는 것은 전적으로 선택 사항입니다. 보내기로 하면 작성한 텍스트가 기기의 기술 정보(모델, OS 버전(Android 또는 iOS), 앱 버전)와 함께 Lecturameter 개발자에게 전송되며, 개발자가 이를 읽고 앱을 개선하는 데 사용합니다. 앱 로그나 스크린샷을 첨부하기로 선택하면 그것도 함께 전송됩니다. 둘 다 선택 사항이며 사용자가 추가한 경우에만 포함됩니다. 의견 양식에 연락용 이메일을 입력하면 해당 이메일이 의견과 함께 전송되며 오직 답변을 드리는 데에만 사용됩니다. 입력은 선택 사항이며 앱에는 저장되지 않습니다.</p>
                     <p style="margin-top:8px;">앱 안의 설문에 응답하는 것은 선택 사항이며, 보내기를 눌러야만 응답이 전송됩니다. 응답에는 가장 좋아하는 테마, 현재 설정한 테마, 가장 많이 쓰는 앱 섹션, 그때그때 바뀌는 질문에 대한 단일 선택 답변, 그리고 직접 쓰기로 한 선택 입력 텍스트(개인정보는 적지 말아 주세요)가 앱 버전, 언어, 플랫폼(Android 또는 iOS)과 함께 포함됩니다. 응답은 피드백처럼 이메일로 개발자에게 전달되며, 추가로 Lecturameter 자체 통계 서버(Cloudflare에서 호스팅)에 기기 식별자와 IP 주소 없이 6개월간 저장된 뒤 자동으로 삭제됩니다.</p>
 
-                    <p style="margin-top:14px;"><span class="highlight">6. Lecturameter Pro 및 코드 사용</span></p>
-                    <p>Lecturameter Pro 결제는 Google Play(Android) 또는 Apple App Store(iOS)에서 처리되며, 앱은 사용자의 결제 정보를 보거나 저장하지 않습니다. 구매하거나 구매를 복원하면 스토어의 구매 식별자가 구매 확인 목적으로만 Lecturameter 라이선스 서버로 전송됩니다. 프로모션 코드를 사용하면 해당 코드와 기기 식별자가 Lecturameter 코드 사용 서버로 전송되며, 이는 코드를 확인하고 사용할 수 있는 기기 수를 제한하기 위한 용도로만 쓰입니다.</p>
+                    <p style="margin-top:14px;"><span class="highlight">6. Lecturameter Pro</span></p>
+                    <p>Lecturameter Pro 결제는 Google Play(Android) 또는 Apple App Store(iOS)에서 처리되며, 앱은 사용자의 결제 정보를 보거나 저장하지 않습니다. 구매하거나 구매를 복원하면 스토어의 구매 식별자가 구매 확인 목적으로만 Lecturameter 라이선스 서버로 전송됩니다.</p>
 
                     <p style="margin-top:14px;"><span class="highlight">7. 기기 식별자</span></p>
-                    <p>무료 체험의 악용을 방지하고 Pro 라이선스를 확인하기 위해, 앱은 기기 식별자를 Lecturameter 라이선스 서버(Cloudflare에서 호스팅)로 전송합니다. Android에서는 Android ID, iOS에서는 벤더 식별자입니다. 무료 체험을 시작할 때, 코드로 Pro를 사용하거나 복원할 때, 구매를 복원할 때, 그리고 앱이 시작될 때 보류 중인 체험 등록을 다시 시도할 때 전송됩니다. 광고나 프로파일링에 사용되지 않으며 사용자의 이름과 연결되지 않습니다.</p>
+                    <p>무료 체험의 악용을 방지하고 Pro 라이선스를 확인하기 위해, 앱은 기기 식별자를 Lecturameter 라이선스 서버(Cloudflare에서 호스팅)로 전송합니다. Android에서는 Android ID, iOS에서는 벤더 식별자입니다. 무료 체험을 시작할 때, 구매를 복원할 때, 그리고 앱이 시작될 때 보류 중인 체험 등록을 다시 시도할 때 전송됩니다. 광고나 프로파일링에 사용되지 않으며 사용자의 이름과 연결되지 않습니다.</p>
 
                     <p style="margin-top:14px;"><span class="highlight">8. 전자책 리더 동기화(KOSync)</span></p>
                     <p>선택 사항입니다. 전자책 리더를 연결하지 않으면 아무것도 전송되지 않습니다. 리더(KOReader, CrossPoint 또는 KOSync와 호환되는 다른 기기)를 연결하면, 앱은 Lecturameter 동기화 서버(Cloudflare에서 호스팅, 서유럽)로 동기화 사용자 이름(3~32자, 이메일이나 개인 정보 없음, Lecturameter 계정이 아님)과 전자책 리더가 사용하는 키를 보내며, 서버는 이 키를 솔트가 적용된 해시로만 저장합니다. 동기화된 각 책에 대해 문서 식별자, 위치, 백분율, 기기 이름과 ID, 날짜를 저장하고, 전자책 리더가 보내는 경우 제목, 저자, 파일 이름도 저장합니다. 사용자의 IP 주소는 저장하지 않으며, 요청 제한은 Cloudflare가 그때그때 집계합니다.</p>
@@ -236,7 +236,7 @@
                     <p style="margin-top:14px;"><span class="highlight">10. 앱 권한</span></p>
                     <p><span class="highlight">Android:</span></p>
                     <ul style="padding-left:18px; margin:6px 0;">
-                        <li><span class="highlight">인터넷:</span> 책 검색, 드라이브 백업, 의견 전송, 코드 사용, 무료 체험 시작, 그리고 (사용 설정 시) 익명 처리된 통계와 오류 보고서 전송에 사용됩니다.</li>
+                        <li><span class="highlight">인터넷:</span> 책 검색, 드라이브 백업, 의견 전송, 무료 체험 시작, (사용 설정 시) 가명 처리된 통계와 오류 보고서 전송, (허용 시) Google Analytics, 이벤트, KOSync 동기화, 알림에 사용됩니다.</li>
                         <li><span class="highlight">로컬 저장소 및 이미지:</span> 기기에서 백업과 책 표지를 저장하고 읽기 위해 사용됩니다.</li>
                         <li><span class="highlight">카메라:</span> 책의 바코드(ISBN)를 스캔하고, 원하는 경우 책등과 가장자리 사진을 찍기 위해 사용됩니다. 이 사진은 기기와 (사용 설정 시) 백업에만 저장되며 다른 곳으로 전송되지 않습니다.</li>
                         <li><span class="highlight">알림:</span> 진행 중인 독서 세션 타이머, 주간 요약, Wrapped 준비 완료 알림에 사용됩니다.</li>

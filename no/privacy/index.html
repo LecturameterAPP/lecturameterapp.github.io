@@ -167,7 +167,7 @@
             <div class="privacy-highlight">
                 <div class="icon">🔒</div>
                 <div class="title">Lesedataene dine er dine</div>
-                <div class="desc"><span class="highlight">Lecturameter har ingen egen server for biblioteket ditt.</span> Bøkene, øktene og statistikken din ligger bare på telefonen din og i dine egne sikkerhetskopier. Ingen reklame, ingen brukerkontoer, ingen reklame-ID-er, og vi selger aldri dataene dine eller bruker dem til reklame.</div>
+                <div class="desc"><span class="highlight">Lecturameter har ingen egen server for biblioteket ditt.</span> Bøkene, øktene og statistikken din ligger bare på telefonen din og i dine egne sikkerhetskopier. Ingen reklame, ingen brukerkontoer (unntatt valgfri KOSync og arrangementsdata, se de aktuelle seksjonene), ingen reklame-ID-er, og vi selger aldri dataene dine eller bruker dem til reklame.</div>
             </div>
 
             <div class="section" id="privacy">
@@ -191,7 +191,7 @@
                         <li>Vi viser ingen reklame.</li>
                         <li>Du trenger ikke opprette noen konto for å bruke appen. Hvis du deltar i et arrangement, opprettes en pseudonym identitet bare for arrangementer (avsnitt 9).</li>
                         <li>Vi selger aldri dataene dine og bruker dem aldri til reklame eller profilering.</li>
-                        <li>Vi samler inn vår egen valgfrie pseudonyme bruksstatistikk og krasjrapporter, begge beskrevet i seksjon 3. Du kan slå dem av i Innstillinger &gt; Hjelp og om &gt; Personvern.</li>
+                        <li>Vi samler inn vår egen valgfrie pseudonyme bruksstatistikk og krasjrapporter og, hvis du tillater det, Google Analytics for Firebase, alt beskrevet i seksjon 3. Du kan slå dem av i Innstillinger &gt; Hjelp og om &gt; Personvern.</li>
                     </ul>
 
                     <p style="margin-top:14px;"><span class="highlight">3. Pseudonym bruksstatistikk og krasjrapporter</span></p>
@@ -210,11 +210,11 @@
                     <p>Å sende tilbakemelding eller svare på en undersøkelse i appen er helt valgfritt. Hvis du velger å gjøre det, sendes teksten du skrev sammen med teknisk enhetsinformasjon (modell, operativsystemversjon (Android eller iOS) og appversjon) til Lecturameters utvikler, slik at vedkommende kan lese den og forbedre appen. Hvis du i tillegg velger å legge ved applogger eller skjermbilder, sendes også disse; begge deler er valgfrie og tas bare med hvis du legger dem til. Hvis du skriver inn en kontakt-e-post i tilbakemeldingsskjemaet, sendes den sammen med kommentaren din og brukes bare til å svare deg; den er valgfri og lagres ikke i appen.</p>
                     <p style="margin-top:8px;">Det er frivillig å svare på en spørreundersøkelse i appen, og svaret ditt sendes bare hvis du trykker på Send. Det inneholder yndlingstemaet ditt, temaet du har valgt, delen av appen du bruker mest, et enkeltvalgssvar på det roterende spørsmålet akkurat nå og de valgfrie tekstene du velger å skrive (ikke oppgi personopplysninger), sammen med appversjon, språk og plattform (Android eller iOS). Svaret når utvikleren på e-post, som tilbakemeldinger, og lagres i tillegg på Lecturameters egen statistikkserver (driftet hos Cloudflare) i 6 måneder, uten enhets-ID og uten IP-adresse; deretter slettes det automatisk.</p>
 
-                    <p style="margin-top:14px;"><span class="highlight">6. Lecturameter Pro og innløsning av koder</span></p>
-                    <p>Betalinger for Lecturameter Pro håndteres av Google Play (på Android) eller Apple App Store (på iOS): appen ser eller lagrer aldri betalingsopplysningene dine. Når du foretar eller gjenoppretter et kjøp, sendes butikkens kjøpsidentifikator til Lecturameters lisensserver bare for å validere kjøpet. Hvis du innløser en kampanjekode, sendes den koden og en enhetsidentifikator til Lecturameters innløsningsserver, bare for å validere koden og begrense hvor mange enheter som kan bruke den.</p>
+                    <p style="margin-top:14px;"><span class="highlight">6. Lecturameter Pro</span></p>
+                    <p>Betalinger for Lecturameter Pro håndteres av Google Play (på Android) eller Apple App Store (på iOS): appen ser eller lagrer aldri betalingsopplysningene dine. Når du foretar eller gjenoppretter et kjøp, sendes butikkens kjøpsidentifikator til Lecturameters lisensserver bare for å validere kjøpet.</p>
 
                     <p style="margin-top:14px;"><span class="highlight">7. Enhetsidentifikator</span></p>
-                    <p>For å forhindre misbruk av den gratis prøveperioden og verifisere Pro-lisensen din sender appen en enhetsidentifikator til Lecturameters lisensserver (driftet på Cloudflare): Android ID på Android, leverandøridentifikatoren på iOS. Den sendes når du starter den gratis prøveperioden, når du innløser eller gjenoppretter Pro med en kode, når du gjenoppretter kjøp, og når appen prøver på nytt ved oppstart å registrere en ventende prøveperiode. Den brukes ikke til reklame eller profilering og er ikke knyttet til navnet ditt.</p>
+                    <p>For å forhindre misbruk av den gratis prøveperioden og verifisere Pro-lisensen din sender appen en enhetsidentifikator til Lecturameters lisensserver (driftet på Cloudflare): Android ID på Android, leverandøridentifikatoren på iOS. Den sendes når du starter den gratis prøveperioden, når du gjenoppretter kjøp, og når appen prøver på nytt ved oppstart å registrere en ventende prøveperiode. Den brukes ikke til reklame eller profilering og er ikke knyttet til navnet ditt.</p>
 
                     <p style="margin-top:14px;"><span class="highlight">8. Synkronisering med e-leser (KOSync)</span></p>
                     <p>Det er valgfritt: hvis du ikke kobler til noen e-leser, sendes ingenting. Hvis du kobler til en (KOReader, CrossPoint eller en annen KOSync-kompatibel), sender appen til Lecturameters synkroniseringsserver (driftet på Cloudflare, i Vest-Europa) et synkroniseringsbrukernavn (3 til 32 tegn, uten e-post eller personopplysninger; det er ikke en Lecturameter-konto) og nøkkelen e-leseren din bruker, som serveren bare lagrer som en saltet hash. For hver synkroniserte bok lagres dokumentidentifikatoren, posisjonen, prosenten, enhetens navn og id, datoen og, hvis e-leseren din sender dem, tittelen, forfatterne og filnavnet. Vi lagrer ikke IP-adressen din: grenser for antall forespørsler telles underveis av Cloudflare.</p>
@@ -236,7 +236,7 @@
                     <p style="margin-top:14px;"><span class="highlight">10. Apptillatelser</span></p>
                     <p><span class="highlight">Android:</span></p>
                     <ul style="padding-left:18px; margin:6px 0;">
-                        <li><span class="highlight">Internett:</span> for å søke etter bøker, ta sikkerhetskopi til Drive, sende tilbakemeldinger, innløse koder, starte den gratis prøveperioden, og sende pseudonym statistikk og krasjrapporter (når de er slått på).</li>
+                        <li><span class="highlight">Internett:</span> for å søke etter bøker, ta sikkerhetskopi til Drive, sende tilbakemeldinger, starte den gratis prøveperioden, sende pseudonym statistikk og krasjrapporter (når de er slått på), og bruke Google Analytics (hvis du tillater det), arrangementer, KOSync-synkronisering og varsler.</li>
                         <li><span class="highlight">Lokal lagring og bilder:</span> for å lagre og lese sikkerhetskopiene dine og bokomslagene på enheten.</li>
                         <li><span class="highlight">Kamera:</span> for å skanne strekkoden (ISBN) til en bok og, hvis du vil, for å ta bilder av ryggen og kantene på eksemplaret ditt. Disse bildene lagres bare på enheten din og i sikkerhetskopiene dine (hvis de er slått på), og sendes aldri noe annet sted.</li>
                         <li><span class="highlight">Varsler:</span> for tidtakeren til den aktive leseøkten og for å varsle deg om ukesoppsummeringen og når Wrapped er klart.</li>

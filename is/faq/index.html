@@ -147,12 +147,12 @@
       "@type": "FAQPage",
       "mainEntity": [
         {"@type":"Question","name":"Get ég komið með bókasafnið mitt úr öðrum forritum?","acceptedAnswer":{"@type":"Answer","text":"Já. Farðu í Stillingar > Flytja inn/út og fylgdu leiðsögninni skref fyrir skref. Studd forrit: Goodreads (CSV): flyttu út á goodreads.com > My Books > Import and export > Export Library. StoryGraph (CSV): flyttu út á app.thestorygraph.com > Manage account > Import/Export > Export STG Library (CSV-skráin berst í tölvupósti). Bookmory (.bookmory eða XLSX): Stillingar > Öryggisafrit > Flytja út. Fable / ShelfBridge (CSV): flyttu út með ShelfBridge-viðbótinni. Book Tracker (CSV): Stillingar > Flytja út. Lecturameter CSV: flutt út úr öðru tæki með Lecturameter. Önnur forrit (Babelio, Pagebound, Bookshelf, Delibrista…): hvaða CSV-skrá sem er sem er samhæf sniði Goodreads/StoryGraph."}},
-        {"@type":"Question","name":"Eru gögnin mín mín?","acceptedAnswer":{"@type":"Answer","text":"Algjörlega. Gögnin þín eru aðeins geymd í símanum þínum. Bókasafnið þitt fer aldrei úr tækinu. Forritið sendir dulnefnda notkunartölfræði og hrunskýrslur, sem þú getur slökkt á í Stillingum. Auk þess, ef leit skilar engu, er sá texti eða ISBN geymdur, án auðkennis, svo hægt sé að bæta við verkunum sem vantar. Ef þú virkjar öryggisafrit á Google Drive hefur aðeins þú aðgang að þeim skrám."}},
+        {"@type":"Question","name":"Eru gögnin mín mín?","acceptedAnswer":{"@type":"Answer","text":"Algjörlega. Gögnin þín eru aðeins geymd í símanum þínum. Bókasafnið þitt fer aldrei úr tækinu. Forritið sendir dulnefnda notkunartölfræði og hrunskýrslur og, ef þú leyfir það, Google Analytics (Firebase). Þetta eru þrír aðskildir rofar í Stillingum > Persónuvernd, sem þú getur slökkt á. Auk þess, ef leit skilar engu, er sá texti eða ISBN geymdur, án auðkennis, svo hægt sé að bæta við verkunum sem vantar. Ef þú virkjar öryggisafrit á Google Drive hefur aðeins þú aðgang að þeim skrám."}},
         {"@type":"Question","name":"Er áskrift?","acceptedAnswer":{"@type":"Answer","text":"Nei. Forritið er ókeypis með valfrjálsum einskiptiskaupum á Pro."}},
-        {"@type":"Question","name":"Virkar það án nettengingar?","acceptedAnswer":{"@type":"Answer","text":"Nánast allt virkar án nettengingar. Þú þarft aðeins tengingu til að leita að nýjum bókum og til að hlaða upp öryggisafritum á Google Drive."}},
+        {"@type":"Question","name":"Virkar það án nettengingar?","acceptedAnswer":{"@type":"Answer","text":"Nánast allt virkar án nettengingar. Þú þarft tengingu til að leita að bókum, hlaða upp öryggisafritum á Google Drive, samstilla við KOSync og taka þátt í viðburðum."}},
         {"@type":"Question","name":"Er til iPhone-útgáfa?","acceptedAnswer":{"@type":"Answer","text":"Já: þú getur sótt það núna í App Store."}},
         {"@type":"Question","name":"Get ég prófað áður en ég kaupi?","acceptedAnswer":{"@type":"Answer","text":"Já. Það er ókeypis 7 daga prufutími á Pro-eiginleikum, ekkert kort þarf. Á iPhone eru það ókeypis kaup innan forrits í App Store, tengd Apple ID-inu þínu. Á Android færðu í lok prufutímans ókeypis Pro-þema að eigin vali, jafnvel þótt þú kaupir ekki Pro."}},
-        {"@type":"Question","name":"Hvað verður um Pro ef ég skipti um síma?","acceptedAnswer":{"@type":"Answer","text":"Það fer eftir því hvar þú keyptir það. Ef þú keyptir það á Google Play og skiptir yfir í annan Android-síma með sama Google-reikningi, settu upp Lecturameter og ýttu á Endurheimta kaup í Stillingum. Ef þú keyptir það í App Store og skiptir yfir í annan iPhone með sama Apple ID, það sama: settu upp og ýttu á Endurheimta kaup. Pro flyst ekki á milli Android og iPhone í bili: hver kaup haldast á sínum palli. lm-... kóða er aðeins hægt að innleysa á Android."}},
+        {"@type":"Question","name":"Hvað verður um Pro ef ég skipti um síma?","acceptedAnswer":{"@type":"Answer","text":"Það fer eftir því hvar þú keyptir það. Ef þú keyptir það á Google Play og skiptir yfir í annan Android-síma með sama Google-reikningi, settu upp Lecturameter og ýttu á Endurheimta kaup í Stillingum. Ef þú keyptir það í App Store og skiptir yfir í annan iPhone með sama Apple ID, það sama: settu upp og ýttu á Endurheimta kaup. Pro flyst ekki á milli Android og iPhone í bili: hver kaup haldast á sínum palli."}},
         {"@type":"Question","name":"Get ég flutt Pro á milli síma og á milli iOS og Android?","acceptedAnswer":{"@type":"Answer","text":"Á milli Android og iPhone ekki í bili: hver kaup haldast á sínum palli. Við erum að skoða hvort hægt sé að gera það á einhvern hátt. Á milli tveggja síma á sama palli er það hægt: notaðu Endurheimta kaup með Google-reikningnum þínum eða Apple ID."}}
       ]
     }
@@ -326,7 +326,7 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">Eru gögnin mín mín?</button>
-                <div class="faq-a"><div class="faq-a-inner">Algjörlega. Gögnin þín eru aðeins geymd í símanum þínum. Bókasafnið þitt fer aldrei úr tækinu. Forritið sendir dulnefnda notkunartölfræði og hrunskýrslur, sem þú getur slökkt á í Stillingum. Auk þess, ef leit skilar engu, er sá texti eða ISBN geymdur, án auðkennis, svo hægt sé að bæta við verkunum sem vantar. Nánar í <a href="../privacy/">persónuverndarstefnunni</a>. Ef þú virkjar öryggisafrit á Google Drive hefur aðeins þú aðgang að þeim skrám.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Algjörlega. Gögnin þín eru aðeins geymd í símanum þínum. Bókasafnið þitt fer aldrei úr tækinu. Forritið sendir dulnefnda notkunartölfræði og hrunskýrslur og, ef þú leyfir það, Google Analytics (Firebase). Þetta eru þrír aðskildir rofar í Stillingum > Persónuvernd, sem þú getur slökkt á. Auk þess, ef leit skilar engu, er sá texti eða ISBN geymdur, án auðkennis, svo hægt sé að bæta við verkunum sem vantar. Nánar í <a href="../privacy/">persónuverndarstefnunni</a>. Ef þú virkjar öryggisafrit á Google Drive hefur aðeins þú aðgang að þeim skrám.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Er áskrift?</button>
@@ -334,7 +334,7 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">Virkar það án nettengingar?</button>
-                <div class="faq-a"><div class="faq-a-inner">Nánast allt virkar án nettengingar. Þú þarft aðeins tengingu til að leita að nýjum bókum og til að hlaða upp öryggisafritum á Google Drive.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Nánast allt virkar án nettengingar. Þú þarft tengingu til að leita að bókum, hlaða upp öryggisafritum á Google Drive, samstilla við KOSync og taka þátt í viðburðum.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Er til iPhone-útgáfa?</button>
@@ -346,7 +346,7 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">Hvað verður um Pro ef ég skipti um síma?</button>
-                <div class="faq-a"><div class="faq-a-inner">Það fer eftir því hvar þú keyptir það. Ef þú keyptir það á <strong>Google Play</strong> og skiptir yfir í annan Android-síma með sama Google-reikningi, settu upp Lecturameter og ýttu á <strong>Endurheimta kaup</strong> í Stillingum. Ef þú keyptir það í <strong>App Store</strong> og skiptir yfir í annan iPhone með sama Apple ID, það sama: settu upp og ýttu á <strong>Endurheimta kaup</strong>. Pro flyst ekki á milli Android og iPhone í bili: hver kaup haldast á sínum palli. <code>lm-…</code> kóða er aðeins hægt að innleysa á Android. Nánar í <a href="../../activar-pro.html">Hvernig á að virkja Pro</a>.</div></div>
+                <div class="faq-a"><div class="faq-a-inner">Það fer eftir því hvar þú keyptir það. Ef þú keyptir það á <strong>Google Play</strong> og skiptir yfir í annan Android-síma með sama Google-reikningi, settu upp Lecturameter og ýttu á <strong>Endurheimta kaup</strong> í Stillingum. Ef þú keyptir það í <strong>App Store</strong> og skiptir yfir í annan iPhone með sama Apple ID, það sama: settu upp og ýttu á <strong>Endurheimta kaup</strong>. Pro flyst ekki á milli Android og iPhone í bili: hver kaup haldast á sínum palli.</div></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Get ég flutt Pro á milli síma og á milli iOS og Android?</button>

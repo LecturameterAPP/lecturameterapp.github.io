@@ -167,7 +167,7 @@
             <div class="privacy-highlight">
                 <div class="icon">🔒</div>
                 <div class="title">你的阅读数据属于你</div>
-                <div class="desc"><span class="highlight">Lecturameter 没有专门存放你书库的自有服务器。</span>你的书、阅读会话和统计数据只保存在你的手机和你自己的备份中。没有广告，没有用户账号，没有广告标识符，我们也绝不会出售你的数据或将其用于广告。</div>
+                <div class="desc"><span class="highlight">Lecturameter 没有专门存放你书库的自有服务器。</span>你的书、阅读会话和统计数据只保存在你的手机和你自己的备份中。没有广告，没有用户账号（可选的 KOSync 和活动数据除外，见相应章节），没有广告标识符，我们也绝不会出售你的数据或将其用于广告。</div>
             </div>
 
             <div class="section" id="privacy">
@@ -191,7 +191,7 @@
                         <li>我们不展示任何广告。</li>
                         <li>使用应用无需创建任何账号。 如果你参加活动，会创建一个仅用于活动的化名身份（第 9 节）。</li>
                         <li>我们绝不会出售你的数据，也不会将其用于广告或用户画像。</li>
-                        <li>我们确实会收集我们自己的、可选的假名化使用统计和崩溃报告，两者都在第 3 节中说明。你可以在设置 &gt; 帮助与关于 &gt; 隐私中关闭它们。</li>
+                        <li>我们确实会收集我们自己的、可选的假名化使用统计和崩溃报告，并且在你允许的情况下收集 Google Analytics for Firebase，均在第 3 节中说明。它们都是可选的，你可以在设置 &gt; 帮助与关于 &gt; 隐私中关闭它们。</li>
                     </ul>
 
                     <p style="margin-top:14px;"><span class="highlight">3. 假名化使用统计和崩溃报告</span></p>
@@ -210,11 +210,11 @@
                     <p>在应用内发送反馈或回答调查完全是可选的。如果你选择这样做，你写下的文字会连同设备的技术信息（型号、操作系统版本（Android 或 iOS）和应用版本）一起发送给 Lecturameter 的开发者，以便他阅读并改进应用。如果你还选择附上应用日志或截图，这些也会一并发送；两者都是可选的，只有在你添加时才会包含。 如果你在反馈表单中填写联系邮箱,该邮箱会随你的反馈一同发送,仅用于回复你;此项为可选,并且不会保存在应用中。</p>
                     <p style="margin-top:8px;">在应用内回答问卷是可选的，只有点击“发送”后才会发送。回答内容包括你最喜欢的主题、当前使用的主题、你最常用的应用板块、对当期轮换问题的单选答案，以及你选择填写的可选文字（请勿填写个人信息），同时包含应用版本、语言和平台（Android 或 iOS）。回答会像反馈一样通过电子邮件发送给开发者，并另外保存在 Lecturameter 自有的统计服务器（托管于 Cloudflare）上 6 个月，不含设备标识符和 IP 地址；期满后自动删除。</p>
 
-                    <p style="margin-top:14px;"><span class="highlight">6. Lecturameter Pro 与兑换码兑换</span></p>
-                    <p>Lecturameter Pro 的付款由 Google Play（在 Android 上）或 Apple App Store（在 iOS 上）处理：应用绝不会看到或存储你的支付信息。当你购买或恢复购买时，商店的购买标识符会发送到 Lecturameter 的许可证服务器，仅用于验证购买。如果你兑换促销码，该代码和一个设备标识符会发送到 Lecturameter 的兑换服务器，仅用于验证代码并限制可使用该代码的设备数量。</p>
+                    <p style="margin-top:14px;"><span class="highlight">6. Lecturameter Pro</span></p>
+                    <p>Lecturameter Pro 的付款由 Google Play（在 Android 上）或 Apple App Store（在 iOS 上）处理：应用绝不会看到或存储你的支付信息。当你购买或恢复购买时，商店的购买标识符会发送到 Lecturameter 的许可证服务器，仅用于验证购买。</p>
 
                     <p style="margin-top:14px;"><span class="highlight">7. 设备标识符</span></p>
-                    <p>为防止免费试用被滥用并验证你的 Pro 许可证，应用会向 Lecturameter 的许可证服务器（托管在 Cloudflare 上）发送一个设备标识符：在 Android 上是 Android ID，在 iOS 上是供应商标识符。它会在你开始免费试用、用代码兑换或恢复 Pro、恢复购买，以及应用在启动时重试待处理的试用注册时发送。它不用于广告或用户画像，也不与你的姓名关联。</p>
+                    <p>为防止免费试用被滥用并验证你的 Pro 许可证，应用会向 Lecturameter 的许可证服务器（托管在 Cloudflare 上）发送一个设备标识符：在 Android 上是 Android ID，在 iOS 上是供应商标识符。它会在你开始免费试用、恢复购买，以及应用在启动时重试待处理的试用注册时发送。它不用于广告或用户画像，也不与你的姓名关联。</p>
 
                     <p style="margin-top:14px;"><span class="highlight">8. 电子阅读器同步（KOSync）</span></p>
                     <p>这是可选的：如果你不连接电子阅读器，就不会发送任何内容。如果你连接了一台（KOReader、CrossPoint 或任何其他兼容 KOSync 的设备），应用会向 Lecturameter 的同步服务器（托管在 Cloudflare 上，位于西欧）发送一个同步用户名（3 至 32 个字符，不含电子邮件或个人数据；它不是 Lecturameter 账号）以及你的电子阅读器使用的密钥，服务器仅以加盐哈希的形式存储该密钥。对于每本已同步的图书，它会存储文档标识符、位置、百分比、设备名称和 ID、日期，以及（如果你的电子阅读器发送了的话）书名、作者和文件名。我们不存储你的 IP 地址：请求限制由 Cloudflare 即时计数。</p>
@@ -236,7 +236,7 @@
                     <p style="margin-top:14px;"><span class="highlight">10. 应用权限</span></p>
                     <p><span class="highlight">Android:</span></p>
                     <ul style="padding-left:18px; margin:6px 0;">
-                        <li><span class="highlight">互联网：</span>用于搜索图书、备份到 Drive、发送反馈、兑换代码、开始免费试用，以及发送假名化统计和崩溃报告（启用时）。</li>
+                        <li><span class="highlight">互联网：</span>用于搜索图书、备份到 Drive、发送反馈、开始免费试用，发送假名化统计和崩溃报告（启用时），以及 Google Analytics（如果你允许）、活动、KOSync 同步和通知。</li>
                         <li><span class="highlight">本地存储和图片：</span>用于在设备上保存和读取你的备份和图书封面。</li>
                         <li><span class="highlight">相机：</span>用于扫描图书的条形码（ISBN），以及（如果你愿意）为你那本书的书脊和书口拍照。这些照片只存储在你的设备和你的备份中（如已启用），绝不会发送到其他任何地方。</li>
                         <li><span class="highlight">通知：</span>用于进行中的阅读会话计时器，以及提醒你查看每周回顾和 Wrapped 何时准备好。</li>
