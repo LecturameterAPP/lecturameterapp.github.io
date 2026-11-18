@@ -1,0 +1,16 @@
+# Lecturameter
+
+> Lecturameter is a free reading tracker for Android and iPhone. It times your reading sessions, keeps your library on shelves and shows detailed statistics, with no account and no ads. Your data stays on your phone. Available on Google Play (Android) and on the App Store (iPhone, since October 2026). The iPhone version is no longer a TestFlight beta.
+
+## Download
+
+- [Lecturameter on Google Play](https://play.google.com/store/apps/details?id=com.lecturameter.public)
+- [Lecturameter on the App Store](https://apps.apple.com/app/lecturameter-diario-lector/id6814164711)
+
+## Main pages
+
+- [Home (English)](https://lecturameterapp.github.io/): what the app does, screenshots, FAQ, version history and download links
+- [Inicio (Español)](https://lecturameterapp.github.io/es/): home page in Spanish
+- [Blog](https://lecturameterapp.github.io/blog/): notes on reading, written from real tracked data
+- [Privacy policy (Spanish)](https://lecturameterapp.github.io/privacidad.html): how data is handled
+- [Contact](https://lecturameterapp.github.io/contact.html): support and feedback
