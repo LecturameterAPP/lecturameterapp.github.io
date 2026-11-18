@@ -50,7 +50,7 @@
       "description": "{{json:head.index.ld_description}}",
       "featureList": "{{json:head.index.ld_featurelist}}",
       "applicationCategory": "BookApplication",
-      "operatingSystem": "Android",
+      "operatingSystem": "Android, iOS",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -73,7 +73,9 @@
         "email": "lecturameter.app@gmail.com",
         "sameAs": ["https://x.com/LecturameterAPP","https://www.reddit.com/user/LM_Reader_Dev/"]
       },
-      "sameAs": "https://play.google.com/store/apps/details?id=com.lecturameter.public"
+      "installUrl": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "{{ios_url}}"],
+      "downloadUrl": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "{{ios_url}}"],
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.lecturameter.public", "{{ios_url}}"]
     }
     </script>
     <script type="application/ld+json">
